@@ -7894,4 +7894,5 @@
   <block id="399bd1ee587245ecac6f39beaa99886f" category="sidebar">PostgreSQL</block>
   <block id="14590850b4107a6f92feb1af739b82eb" category="sidebar">Puppet</block>
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">RethinkDB</block>
+  <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">登录问题：</block>
 </blocks>
