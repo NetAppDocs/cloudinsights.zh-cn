@@ -1,0 +1,97 @@
+---
+sidebar: sidebar 
+permalink: task_cs_add_agent.html 
+keywords: agent, Cloud Secure, installation 
+summary: 正在添加 Cloud Secure 代理 
+---
+= Cloud Secure 代理安装
+
+
+[role="lead"]
+Cloud Secure 使用一个或多个代理收集用户活动数据。代理连接到环境中的设备并收集发送到 Cloud Secure SaaS 层进行分析的数据。请参见 link:concept_cs_agent_requirements.html["代理要求"] 配置代理虚拟机。
+
+
+
+== 开始之前
+
+* 安装，运行脚本和卸载需要 sudo 权限。
+
+
+
+
+== 安装代理的步骤
+
+. 以管理员或帐户所有者身份登录到您的 Cloud Secure 环境。
+. 单击 * 管理 > 数据收集器 > 代理 > +Agent*
++
+系统将显示 "Add an Agent" 页面：
+
++
+image::Add-agent-1.png[添加代理 1]
+
+. 选择要安装代理的操作系统。
+. 验证代理服务器是否满足最低系统要求。
+. 要验证代理服务器是否正在运行受支持的 Linux 版本，请单击 _versions supported （ i ） _ 。
+. 如果您的网络使用代理服务器，请按照代理部分中的说明设置代理服务器详细信息。
++
+image:CloudSecureAgentWithProxy.png["代理安装与代理注意事项"]
+
+. 单击复制到剪贴板图标以复制安装命令。
+. 在终端窗口中运行安装命令。
+. 安装成功完成后，系统将显示以下消息：
++
+image::new-agent-detect.png[新代理检测]
+
+
+
+.完成后
+. 您需要配置 link:task_config_user_dir_connect.html["用户目录收集器"]。
+. 您需要配置一个或多个数据收集器。
+
+
+
+
+== 网络配置：
+
+在本地系统上运行以下命令，以打开 Cloud Secure 要使用的端口。
+
+.步骤
+. `sudo firewall-cmd -perf持久 -zone=public -add-port=35000-55000/tcp`
+. `sudo firewall-cmd -reload`
+. `sUdo iptables-save | grep 35000`
++
+示例输出： -a in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctstate new -j accept
+
+
+
+
+
+== 对代理错误进行故障排除
+
+下表介绍了已知问题及其解决方法。
+
+[cols="2*"]
+|===
+| 问题： | 解决方法： 
+
+
+| 代理安装无法创建 /opt/netapp/cloudsecurity/agent/logs/agent.log 文件夹，并且 install.log 文件不提供任何相关信息。 | 在启动代理期间发生此错误。此错误不会记录在日志文件中，因为它会在日志程序初始化之前发生。此错误将重定向到标准输出，并可使用 `jlogalctl -u cloudsecure-agent.service` 命令在服务日志中看到。此命令可用于进一步对问题描述进行故障排除。 
+
+
+| 代理安装失败，并显示 ‘不支持此 Linux 版本。正在退出安装。 | Cloud Secure 1.0.0 支持的平台为 RHEL 7.x / CentOS 7.x确保您不在 RHEL 6.x 或 CentOS 6.x 系统上安装代理。 
+
+
+| 代理安装失败，并显示错误： "-bash ： unzip ： command not found" | 安装 unzip ，然后再次运行安装命令。如果计算机上安装了 Yum ，请尝试 " yum install unzip " 以安装解压缩软件。然后，从代理安装 UI 中重新复制此命令并将其粘贴到命令行界面中以重新执行安装。 
+
+
+| 代理已安装并正在运行。但是，代理已突然停止。 | 通过 SSH 连接到代理计算机。通过 `sUdo systemctl status cloudsecure-agent.service` 检查代理服务的状态。1. 检查日志是否显示消息 " 无法启动 Cloud Secure 守护进程服务 " 。2. 检查 Agent 计算机中是否存在 cssys 用户。使用 root 权限逐个执行以下命令，并检查 cssys 用户和组是否存在。`sUdo id cssys` `sUdo groups cssys` 3.如果不存在，则集中式监控策略可能已删除 cssys 用户。4. 执行以下命令手动创建 cssys 用户和组。`sUdo useradd cssys` `sUdo groupadd cssys` 5.然后，执行以下命令重新启动代理服务： `sudo systemctl restart cloudsecure-agent.service` 6 。如果仍未运行，请检查其他故障排除选项。 
+
+
+| 无法向代理添加 10 个以上的数据收集器。 | 一个代理只能添加 10 个数据收集器。这可以是所有收集器类型的组合，例如 Active Directory ， SVM 和其他收集器。 
+
+
+| UI 显示 Agent 处于 not_connected 状态。 | 重新启动代理的步骤。1. 通过 SSH 连接到代理计算机。2. 执行以下命令重新启动代理服务： `sudo systemctl restart cloudsecure-agent.service` 3.通过 `sUdo systemctl status cloudsecure-agent.service` 检查代理服务的状态。4. 代理应处于已连接状态。 
+
+
+| 代理 VM 位于 Zscaler 代理之后，代理安装失败。由于 Zscaler 代理的 SSL 检查， Cloud Secure 证书会在 Zscaler CA 签名时呈现，因此代理不会信任通信。 | 要解析问题描述，请执行以下操作： 1.获取在 Zscaler 中使用的 CA 证书，可通过浏览器或 openssl 等工具使用。如果适用，还可以下载所有中间 CA 证书。2. 使用以下命令将 CA 证书导入到 Cloud Secure 代理的信任存储中。/opt/netapp/cloudsecurity/agent/java64/bin/keytool -importcert -file <ca_ct_path> -keystore /opt/netapp/cloudsecurity/agent-certs/cert/client.keystore -alias <alias_name> 3.执行以下命令以重新启动代理。systemctl restart cloudsecure-agent.service 4.代理现在应正常工作。5. 如果代理仍出现 SSL 错误，请使用浏览器或 openssl 等工具导入租户 URL 提供的即时证书。6. 重新启动代理。 
+|===
