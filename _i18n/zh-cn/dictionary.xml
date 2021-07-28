@@ -5255,8 +5255,6 @@
   <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights 每 5 分钟注销一次</block>
   <block id="8f65024231687a39efcddb86a1e9debb" category="cell">在浏览器设置中从 _[* 。 ]auth0.com 启用第三方 Cookie 接受。例如，在 Chrome 的匿名模式下，默认浏览器设置会阻止第三方 Cookie 。请尝试以下操作：在浏览器 URL 中输入 "chrome ： //settings/cookies" 。选择 " 允许所有 Cookie " 选项。</block>
   <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">我有一个 Cloud Central 帐户，但无法登录到 Cloud Central 。</block>
-  <block id="c7b5c69b88b615b5ffbd50c2abf7767f" category="inline-link-macro">NetApp Cloud Central 支持</block>
-  <block id="0588b19c4e8ed78d9a6a07ed16644f59" category="cell">联系方式 <block ref="7a7ddcf557d43d3f87fc9d300eba8724" category="inline-link-macro-rx"></block></block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">我受邀访问 Cloud Insights ，但收到 " 未授权 " 消息。</block>
   <block id="199017f1d912993f091b6b969d3442ad" category="cell">确认您已注册 Cloud Central 帐户，或者您的组织使用 Cloud Central 的 SSO 登录。验证您的 Cloud Central 个人资料电子邮件地址是否与 Cloud Insights 欢迎电子邮件中显示的电子邮件地址匹配。如果此电子邮件不匹配，请使用正确的电子邮件地址请求新的邀请。</block>
   <block id="176f8c6fa466059df49f2717c021d306" category="cell">我已从 Cloud Central 或 Cloud Secure 注销，并自动从 Cloud Insights 注销。</block>
@@ -5266,14 +5264,12 @@
   <block id="8b6ee0d30d0749811a1b65835a1d82ad" category="cell">我收到错误消息 " 不再授权登录 " 。</block>
   <block id="acf29dcaa06698c29122cba5402e3145" category="cell">请联系您的帐户管理员以验证对 Cloud Insights 的访问权限。验证您的 Cloud Central 个人资料电子邮件地址是否与 Cloud Insights 欢迎电子邮件中显示的电子邮件地址匹配</block>
   <block id="96121ba0b77816de52c6e906145fa0f1" category="cell">其他登录错误</block>
-  <block id="3d9f64f97a5fa2f93be7575a7227b5aa" category="cell">清除浏览器历史记录， Cookie 和缓存。请尝试使用其他浏览器配置文件（例如 Chrome - 添加人员）。</block>
   <block id="8e4250e46b39cafa83925c4406214353" category="paragraph">如果您拥有有效的 Cloud Insights 订阅，则可以使用以下支持选项：</block>
   <block id="bcc254b55c4a1babdf1dcb82c207506b" category="inline-link-macro">电话</block>
   <block id="0af89698bf5d1150026d4fcbbcf784a6" category="inline-link-macro">支持服务单</block>
   <block id="b0441ab0b89b994706e83faa77bbe107" category="paragraph"><block ref="5924baf98227cb4c4a870a2369035bbd" category="inline-link-macro-rx"></block>
 <block ref="de1cde84399fb2a6056b099cf302293f" category="inline-link-macro-rx"></block></block>
   <block id="b1dcce069d63ced71a6dcf2e76c2ac23" category="inline-link">Cloud Insights 支持文档</block>
-  <block id="72dff50b0ed3324ddc4eee96368fc5ae" category="paragraph">有关详细信息，请参见<block ref="1bec10f1d366b365989be1df4a658dcb" category="inline-link-rx"></block>。</block>
   <block id="c7f969b5afde9ddd59008de6e90242fd" category="summary">在本节中，您将找到一些提示和技巧，可帮助您解决 Cloud Insights 环境中的问题。</block>
   <block id="1da3ee5df88bebf25333c76ca47fa680" category="doc">对 Cloud Insights 问题进行故障排除</block>
   <block id="595d5a6ca6bc47b43d6f21ee94bcfc0e" category="paragraph">本节中的主题提供了在 Cloud Insights 环境出现问题时的故障排除建议。</block>
@@ -7895,4 +7891,8 @@
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">RethinkDB</block>
   <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">登录问题：</block>
   <block id="9b08a379d02da9e64bce4ee2389fc783" category="admonition">以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。</block>
+  <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">NetApp 支持</block>
+  <block id="a1e1a390bdf9bd8ec2847b6827bb051b" category="cell">请联系 saas.support@netapp.com 。这专门针对 Cloud Central 问题或问题。对于所有其他 Cloud Insights 问题，请联系 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="f4300936bf66917c778b4197c0a05315" category="cell">请尝试在 Chrome 中使用匿名模式，或者清除浏览器历史记录， Cookie 和缓存。请尝试使用其他浏览器配置文件（例如 Chrome - 添加人员）。</block>
+  <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">有关详细信息，请参见<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
 </blocks>
