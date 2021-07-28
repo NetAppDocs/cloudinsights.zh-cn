@@ -78,6 +78,9 @@ Stop-Service telegraf
 
 ==== 为 Windows 配置代理支持
 
+
+NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
+
 对于驻留在代理后面的系统，请执行以下操作以设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量 * 先前 * 以安装 Telegraf 代理：
 
 ....
@@ -154,6 +157,9 @@ sudo service telegraf stop
 
 
 ==== 为 RHEL/CentOS 配置代理支持
+
+
+NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
 
 对于驻留在代理后面的系统，请执行以下步骤 * 先前 * 以安装 Telegraf 代理：
 
@@ -252,6 +258,9 @@ sudo service telegraf stop
 
 ==== 为 Ubuntu 或 Debian 配置代理支持
 
+
+NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
+
 对于驻留在代理后面的系统，请执行以下步骤 * 先前 * 以安装 Telegraf 代理：
 
 . 为当前用户设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量：
@@ -342,10 +351,14 @@ sudo launchctl stop telegraf
 
 ==== 为 macOS 配置代理支持
 
+
+NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
+
 对于驻留在代理后面的系统，请执行以下操作，为当前用户 * 先前 * 设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量，以安装 Telegraf 代理：
 
-导出 https_proxy=<proxy_server> ： <proxy_port>
-
+....
+export https_proxy=<proxy_server>:<proxy_port>
+....
 * 安装 Telegraf 代理之后，在 _/Applications/Telegraf.app/Contents/telegraf.plist_: 中添加并设置适当的 _https_proxy_and/or _http_proxy_ 变量
 
 ....
@@ -518,6 +531,9 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
 
 
 ==== 为 Kubernetes 配置代理支持
+
+
+NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
 
 对于驻留在代理后面的系统，请执行以下操作，为当前用户 * 先前 * 设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量，以安装 Telegraf 代理：
 

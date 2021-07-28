@@ -6039,7 +6039,6 @@
   <block id="b74009f2c5c0b882b11f994865916e2d" category="list-text">如果您之前使用 Homebrew 安装了 Telegraf 代理，则系统将提示您将其卸载。卸载先前安装的 Telegraf 代理后，重新运行上述步骤 5 中的命令。</block>
   <block id="e747d1c9206ef290e765c44899e8276d" category="section-title">为 macOS 配置代理支持</block>
   <block id="86ca857cd13e48a665c06adacc3bc11c" category="paragraph">对于驻留在代理后面的系统，请执行以下操作，为当前用户 * 先前 * 设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量，以安装 Telegraf 代理：</block>
-  <block id="cbfc0fd431f90278d0b6b3592211b73b" category="paragraph">导出 https_proxy=&lt;proxy_server&gt; ： &lt;proxy_port&gt;</block>
   <block id="b7811096d82a6677a2e9256752cdbc44" category="paragraph">* 安装 Telegraf 代理之后，在 _/Applications/Telegraf.app/Contents/telegraf.plist_: 中添加并设置适当的 _https_proxy_and/or _http_proxy_ 变量</block>
   <block id="8bbdd3c386723d33a3bfe476f361744c" category="paragraph">然后，加载上述更改后重新启动 Telegraf ：</block>
   <block id="903f8d1093beeadb9d59b74d760a40e8" category="paragraph">要在 macOS 上卸载代理，请在 Bash 终端中运行以下命令：</block>
@@ -7895,4 +7894,5 @@
   <block id="14590850b4107a6f92feb1af739b82eb" category="sidebar">Puppet</block>
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">RethinkDB</block>
   <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">登录问题：</block>
+  <block id="9b08a379d02da9e64bce4ee2389fc783" category="admonition">以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。</block>
 </blocks>
