@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_feature_tutorials.html 
 summary: Cloud Insights 提供了一些教程，用于向您展示如何执行许多任务。 
-keywords: onboarding, getting started, video, tutorial, 
+keywords: onboarding, getting started, video, tutorial, resolution, dashboard, query, troubleshooting 
 ---
 = 功能教程
 
@@ -25,7 +25,7 @@ video::howTo.mp4[]
 
 Cloud Insights 站点上显示的 * 启动检查清单 * 包含几个有用的任务和概念的列表。在检查清单中选择一项将转到该概念对应的 Cloud Insights 页面。例如，单击 _Create a Dashboard_ 项可打开 Cloud Insights * Dashboards* 页面。
 
-image:TutorialProgress.png["教程检查清单进度"]
+image:OnboardingChecklist.png["教程检查清单进度"]
 
 页面顶部是一个视频教程链接，用于显示如何创建信息板。您可以根据需要多次查看此视频，直到单击 _got it ！不要再显示此内容 _ 链接。每次转到 " 信息板 " 页面时，都会显示此视频，直到您将其取消为止。
 
@@ -61,3 +61,8 @@ video::Dashboards.mp4[]
 === 故障排除
 
 video::Troubleshooting.mp4[]
+
+
+=== 解析设备
+
+video::AHR_sm.mp4[]

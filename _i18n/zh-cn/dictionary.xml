@@ -7914,4 +7914,6 @@
   <block id="3d6c314d1d40b7ae81ed46c8b5c0488d" category="paragraph">如果您不想使用自动小工具名称，只需键入一个新名称即可。</block>
   <block id="2f9b84f8f04989f1fd035633789615c2" category="paragraph"><block ref="2f9b84f8f04989f1fd035633789615c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b7063e6cc35eb537040e7e42725b0597" category="paragraph">您可以选择要在性能图表中查看选定时间段的指标。单击 _Display Metrics 下拉列表，然后从列出的指标中进行选择。</block>
+  <block id="8d72a33fb7e1e81326ed633058c4c3c6" category="paragraph"><block ref="8d72a33fb7e1e81326ed633058c4c3c6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="730fe644f1d87eaec727a65945705b30" category="section-title">解析设备</block>
 </blocks>
