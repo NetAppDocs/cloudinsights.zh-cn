@@ -16,9 +16,9 @@ keywords: asset page, expert view, metrics, greedy, degraded, correlated, contri
 
 以下是存储资产页面中的专家视图部分示例：
 
-image:ExpertViewExample1.png["专家视图示例"]
+image:Expert_View_2021.png["专家视图示例"]
 
-您可以选择要在性能图表中查看选定时间段的指标。
+您可以选择要在性能图表中查看选定时间段的指标。单击 _Display Metrics 下拉列表，然后从列出的指标中进行选择。
 
 "* 资源 * " 部分显示基本资产的名称以及性能图表中表示基本资产的颜色。如果 "Top correlated" 部分不包含要在性能图表中查看的资产，则可以使用 "* 其他资源 * " 部分中的 "* 搜索资产 " 框来查找该资产并将其添加到性能图表中。添加资源时，这些资源将显示在 Additional Resources 部分中。
 

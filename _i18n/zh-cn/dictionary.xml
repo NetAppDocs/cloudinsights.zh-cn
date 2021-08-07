@@ -7272,8 +7272,6 @@
   <block id="a095544b81060891734744ad5bd2a5c3" category="section-title">使用专家视图部分</block>
   <block id="62329137e14077120c0de9e866ecae4b" category="paragraph">以下是存储资产页面中的专家视图部分示例：</block>
   <block id="beaa4bde61b31a115ee598bebfa3f120" category="inline-image-macro">专家视图示例</block>
-  <block id="c0a63668026cee5ab2f2a2f56ef05cbc" category="paragraph"><block ref="c0a63668026cee5ab2f2a2f56ef05cbc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9c44d4d64ec4bf523dbfd27c6a6eb2f2" category="paragraph">您可以选择要在性能图表中查看选定时间段的指标。</block>
   <block id="52bba81eec3bcd739db5c4692bdb626d" category="paragraph">"* 资源 * " 部分显示基本资产的名称以及性能图表中表示基本资产的颜色。如果 "Top correlated" 部分不包含要在性能图表中查看的资产，则可以使用 "* 其他资源 * " 部分中的 "* 搜索资产 " 框来查找该资产并将其添加到性能图表中。添加资源时，这些资源将显示在 Additional Resources 部分中。</block>
   <block id="a6c58f8b0b99d3cf3c8cb8460dc02a17" category="paragraph">如果适用， " 资源 " 部分还会显示以下类别中与基础资产相关的任何资产：</block>
   <block id="372457ae1ff6520e9685ae7d892510c0" category="list-text">相关度最高</block>
@@ -7914,4 +7912,6 @@
   <block id="b22dfa24432a78bdc096d5f0126a1668" category="paragraph"><block ref="b22dfa24432a78bdc096d5f0126a1668" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ad6fcc59633fa84a4ef87cb86b15271" category="paragraph">选择新对象或分组属性将更新自动名称。</block>
   <block id="3d6c314d1d40b7ae81ed46c8b5c0488d" category="paragraph">如果您不想使用自动小工具名称，只需键入一个新名称即可。</block>
+  <block id="2f9b84f8f04989f1fd035633789615c2" category="paragraph"><block ref="2f9b84f8f04989f1fd035633789615c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b7063e6cc35eb537040e7e42725b0597" category="paragraph">您可以选择要在性能图表中查看选定时间段的指标。单击 _Display Metrics 下拉列表，然后从列出的指标中进行选择。</block>
 </blocks>
