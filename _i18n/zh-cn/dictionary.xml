@@ -1704,7 +1704,6 @@
   <block id="56ca607cd6f00ec4f229948d5883aa41" category="paragraph">您有许多设备尚未标识，您也有多个规则可以成功标识其他设备。</block>
   <block id="80417d99848bd3c6df64a373088d8feb" category="admonition">如果源仅包含主机或设备名称的一部分，请使用正则表达式规则并对其进行格式化以添加缺少的文本。</block>
   <block id="3bdda4101b77ea3179807e0d80165c9d" category="list-text">单击 * 光纤通道标识 * 选项卡。</block>
-  <block id="5e338405fdce77f55a8730c3c46812c1" category="paragraph">系统将显示已标识和未标识的设备。</block>
   <block id="aadbb3e880e10f6a73da5cb562311ad3" category="list-text">选择多个未标识的设备。</block>
   <block id="a308c80622a7b6bb834fa15c63317707" category="list-text">单击 * 批量操作 * 并选择 * 设置主机解析 * 或 * 设置磁带解析 * 。</block>
   <block id="d0fdbe1af4bd027dd42a711e4db3126e" category="paragraph">系统将显示 "Identify" 屏幕，其中包含成功标识设备的所有规则的列表。</block>
@@ -4168,7 +4167,6 @@
   <block id="cb012b6dbcdc973d91bcab4bd8383bd2" category="cell">两次清单轮询的间隔。默认值为 60 分钟。</block>
   <block id="46d0b067f3ba692193c0773f225a42f2" category="doc">光纤通道设备解析</block>
   <block id="d3421dc80ccb8ce0c229fb4f0ddd16eb" category="paragraph">Fibre Channel Identify 屏幕显示主机尚未通过自动设备解析进行标识的光纤通道设备的 WWN 和 WWPN 。此屏幕还会显示通过手动设备解析解决的所有设备。</block>
-  <block id="8430e906cc34598cee9d3efae35ed414" category="paragraph">已通过手动解析解决的设备的状态为 _OK_ ，并标识用于标识设备的规则。缺少的设备的状态为 _unidentifed_.此页面列出了用于标识设备的总覆盖范围。</block>
   <block id="d940a17e6eb011c7dd5f92ad40511b3c" category="paragraph">您可以通过选择 Fibre Channel Identify 屏幕左侧的多个设备来执行批量操作。可以通过将鼠标悬停在某个设备上并选择列表最右侧的 _identify" 或 "_Unidentify" 按钮对单个设备执行操作。</block>
   <block id="38ddbe749bcc1a3d6738b5da7ab18670" category="paragraph">总覆盖范围 _ 链接显示已识别设备数 / 可用于您的配置的设备数的列表：</block>
   <block id="55704bfa757d6e25076487b4c57e8de5" category="list-text">SRM 别名</block>
@@ -6328,7 +6326,6 @@
   <block id="58c5f5cd89ff92b78324a2c742d56016" category="list-text">您可以选择在主机名中使用下划线，并在结果中使用 "connected to" 别名，而不是标准端口别名。</block>
   <block id="1138c307af29b241997f69e2c9cf73d3" category="section-title">包括或排除特定存储和磁带供应商</block>
   <block id="a30d6254f1988f303cc6f05bd5ffd41d" category="paragraph">您可以包括或排除特定的存储和磁带供应商以进行自动解析。例如，如果您知道某个特定主机将成为旧主机并应从新环境中排除，则可能需要排除特定供应商。您还可以重新添加先前已排除但不再希望排除的供应商。</block>
-  <block id="af4ea0abc14a78c763ab08ad28f8d1b2" category="admonition">磁带的设备解析规则仅适用于 WWN ，如果此 WWN 的供应商在供应商首选项中设置为仅包含在磁带中。</block>
   <block id="48efe9ecb0bd1de1d09e3291068bd38a" category="inline-link-macro">正则表达式示例</block>
   <block id="5554fa4604a77c00b97cc92dddbddae0" category="paragraph">另请参见： <block ref="ea87b650688a440fdf731c2f51da4279" category="inline-link-macro-rx"></block></block>
   <block id="b9249fd328314d6a7d2f42e8e3c6b5d4" category="summary">配置 VPLEX 数据收集器。</block>
@@ -7916,4 +7913,7 @@
   <block id="b7063e6cc35eb537040e7e42725b0597" category="paragraph">您可以选择要在性能图表中查看选定时间段的指标。单击 _Display Metrics 下拉列表，然后从列出的指标中进行选择。</block>
   <block id="8d72a33fb7e1e81326ed633058c4c3c6" category="paragraph"><block ref="8d72a33fb7e1e81326ed633058c4c3c6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="730fe644f1d87eaec727a65945705b30" category="section-title">解析设备</block>
+  <block id="6794b8d2d4895f94dbd5ad6796ba5257" category="paragraph">系统将显示这些设备及其解析状态。</block>
+  <block id="785ec09cddf9283f24922c1e4d3f399c" category="paragraph">已通过手动解析解决的设备的状态为 _OK_ ，并标识用于标识设备的规则。缺少的设备的状态为 _unidentifed_.明确排除在标识之外的设备的状态为 _excluded_.此页面列出了用于标识设备的总覆盖范围。</block>
+  <block id="61e633e96f8c431ad3c5895ac9689491" category="admonition">磁带的设备解析规则仅适用于 WWN ，如果此 WWN 的供应商在供应商首选项中设置为 _included as Tape only_ 。</block>
 </blocks>
