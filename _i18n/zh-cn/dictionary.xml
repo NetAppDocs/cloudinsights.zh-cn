@@ -827,18 +827,9 @@
   <block id="b63a1c6d2cba6eafec34be4992c1cbd7" category="cell">SMI-S Provider 主机的密码</block>
   <block id="3f1b70a3ec875ea55e15beb4035704a0" category="cell">性能轮询之间的时间间隔。默认值为 300 秒。</block>
   <block id="350ff3e6edca65920342bf3e930281fd" category="summary">Cloud Insights 提供了多个具有不同权限级别的用户帐户。</block>
-  <block id="e55adecd2f6d6a34c281c35189b654ed" category="doc">用户帐户</block>
   <block id="0f9642bcff1dc3cd224f1f3e2f1ca629" category="inline-link-macro">已邀请</block>
-  <block id="9fce19546febdd9fe7f82ab3fb27efa0" category="paragraph">Cloud Insights 提供了四个用户帐户：帐户所有者，管理员，用户和来宾。系统会为每个帐户分配特定的权限级别。用户可以是其中之一 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> Cloud Insights 并分配了特定角色，或者可以通过登录 <block ref="ad5fb263849a72a8deb279dee2f51c3b" category="inline-link-macro-rx"></block> 具有默认角色。SSO 作为 Cloud Insights 高级版的一项功能提供。</block>
   <block id="4239d1a0d4b43b912ff81e4656377274" category="section-title">权限级别</block>
-  <block id="90fa13c5a35a3b53cf6f6304e20cd18f" category="paragraph">您可以使用具有管理员权限的帐户来创建或修改用户帐户。系统会为每个用户帐户分配以下权限级别之一。</block>
-  <block id="7b3facab682b4850162ca1bea28f2376" category="list-text">* 来宾 * 可以查看资产页面，信息板和查询，并运行查询。</block>
-  <block id="20f5d83d84f802c94fc0ae53d8dca92d" category="list-text">* 用户 * 可以执行所有子系统级别的特权，也可以创建，修改或删除信息板，查询，标注， 标注规则和应用程序。</block>
-  <block id="5912555c04861ffef19f6f7ae12a4675" category="list-text">* 管理员 * 和 * 帐户所有者 * 可以执行所有功能，还可以创建，修改和删除策略，导入信息板以及管理所有用户和数据收集器。</block>
-  <block id="1e22648f9649ba09f0f0c8e3255e1ba0" category="paragraph">帐户所有者是在注册 Cloud Insights 时创建的。</block>
   <block id="14c247a563d9d05855d0098eb6c48901" category="paragraph">最佳实践是限制具有管理员权限的用户数量。最大数量的帐户应为用户或来宾帐户。</block>
-  <block id="44bebabde95299e9b772202a5079fef3" category="admonition">强烈建议每个 Cloud Insights 环境至少有两个帐户所有者。 </block>
-  <block id="6bc2f8b37482c5d1efbc6212d064fd25" category="section-title">按用户角色划分的权限</block>
   <block id="493f8916db2d1425825fe2b7b914f379" category="paragraph">下表显示了为每个用户角色授予的 Cloud Insights 权限。</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">功能</block>
   <block id="6072e63b8d5a9912977c211ab173fe58" category="cell">管理员 / 帐户所有者</block>
@@ -882,8 +873,6 @@
   <block id="b6a0e047e7e6ca00fb7aa5b12314c2c8" category="paragraph">此时将显示 * 邀请用户 * 屏幕。</block>
   <block id="1f8dd0c047e5f2c6c0d3267fff9f2bdb" category="list-text">输入一个或多个邀请电子邮件地址。</block>
   <block id="b1e58a6582b4b8cf5f1631eac44903a9" category="paragraph">* 注意： * 输入多个地址时，这些地址都是使用相同角色创建的。您只能将多个用户设置为同一角色。</block>
-  <block id="a391767332f28333f275a87ca64adccf" category="list-text">输入用户的电子邮件地址。</block>
-  <block id="7d8df87ee0841d4f08b7606de8d90585" category="list-text">选择用户角色。</block>
   <block id="3b44544b9d947c143a9cfcb45be1aeff" category="list-text">单击 * 邀请 *</block>
   <block id="5f4c0be7b69ed6065ee66f5bb276c68b" category="paragraph">此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户，则只需登录即可访问其 Cloud Insights 环境。</block>
   <block id="ae34cecb877a210f81bf4d446541e619" category="section-title">单点登录（ SSO ）和身份联合</block>
@@ -1498,7 +1487,6 @@
   <block id="5e5521164b1b5af65706898441efc15d" category="paragraph">默认情况下，资产页面会显示最近 24 小时的数据；但是，您可以通过选择其他固定时间范围或自定义时间范围来更改显示的数据段，以查看较少或更多数据。</block>
   <block id="8c4cd8b70017d76d9f40fc77fd6c6f13" category="paragraph">无论资产类型如何，您都可以使用每个资产页面上的选项来更改所显示数据的时间段。要更改时间范围，请单击顶部栏中显示的时间范围，然后从以下时间段中进行选择：</block>
   <block id="a926f64f96f29ebfa9e64241032a55b2" category="list-text">过去 15 分钟</block>
-  <block id="b6ffe31620582d08b5d07fc65eeb9fdc" category="list-text">过去 1 小时</block>
   <block id="c96fe014e6d0803a91c277c56a15524a" category="list-text">过去 3 小时（这是默认值）</block>
   <block id="91cffeca95beab0e4685fd8b11a50803" category="list-text">过去 24 小时</block>
   <block id="0ad331ed80e13a88f270d542cb3fbb40" category="list-text">过去 3 天</block>
@@ -7895,4 +7883,23 @@
   <block id="a1e1a390bdf9bd8ec2847b6827bb051b" category="cell">请联系 saas.support@netapp.com 。这专门针对 Cloud Central 问题或问题。对于所有其他 Cloud Insights 问题，请联系 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">请尝试在 Chrome 中使用匿名模式，或者清除浏览器历史记录， Cookie 和缓存。请尝试使用其他浏览器配置文件（例如 Chrome - 添加人员）。</block>
   <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">有关详细信息，请参见<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
+  <block id="fc1a24cc0d6d7c3e25a51a3d66a9d033" category="inline-link-macro">单点登录（ SSO ）授权</block>
+  <block id="ebbdc244249c4bebdb539839ef825e95" category="paragraph">Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管理员，用户和来宾。为每个帐户分配特定的权限级别，如下表所示。（请注意， _User_ 和 _Guest_ 角色在 Cloud Secure 功能中不可用。）用户可以是其中之一 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> Cloud Insights 并分配了特定角色，或者可以通过登录 <block ref="5714c3cacaaaa4fdc97a235dfa644756" category="inline-link-macro-rx"></block> 具有默认角色。Cloud Insights 高级版提供了 SSO 授权功能。</block>
+  <block id="9e81fe47cff9df70ea875a449221eb62" category="paragraph">您可以使用具有管理员权限的帐户来创建或修改用户帐户。每个用户帐户都会从以下权限级别为每个 Cloud Insights 功能分配一个角色。</block>
+  <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="cell">监控</block>
+  <block id="305de530147912d72a50568ee4d65d26" category="cell">帐户所有者</block>
+  <block id="b754159e4e957eec4566aef2214ed483" category="cell">可以修改订阅，查看计费和使用情况信息，并执行监控和优化， Cloud Secure 和报告的所有管理员功能。所有者还可以邀请和管理用户，以及管理 SSO 身份验证和身份联合设置。注册 Cloud Insights 时会创建第一个帐户所有者。强烈建议每个 Cloud Insights 环境至少有两个帐户所有者。 </block>
+  <block id="44b70724be7ec840b9d0d29c9f2451a3" category="cell">可以执行所有监控和优化功能，所有用户功能以及数据收集器， API 密钥和通知管理。管理员还可以邀请其他用户，但只能分配 " 监控 " 和 " 优化 " 角色。</block>
+  <block id="3ef783c8ab0b0ca9f4834b6aa0f8fdf6" category="cell">可以执行所有 Cloud Secure 功能，包括警报，取证，数据收集器，自动响应策略和 Cloud Secure API 等功能。管理员还可以邀请其他用户，但只能分配 Cloud Secure 角色。</block>
+  <block id="844adbc2fbc9a63340cee63b3801153a" category="cell">可以执行所有用户 / 作者功能以及所有管理任务，例如配置报告以及关闭和重新启动报告任务。管理员还可以邀请其他用户，但只能分配报告角色。</block>
+  <block id="9912eb0cfbb27a071ceaf89334fe4dbc" category="cell">可以查看和修改信息板，查询，警报，标注，标注规则， 和应用程序，并管理设备解析。</block>
+  <block id="274b68192b056e268f128ff63bfcd4a4" category="cell">不适用</block>
+  <block id="70fb52e38580a301b191eb366ac4d029" category="cell">可以执行所有来宾 / 使用者功能以及创建和管理报告和信息板。</block>
+  <block id="76da35e3189c47f58355f9b7d58e7e97" category="cell">对资产页面，信息板，警报具有只读访问权限，并且可以查看和运行查询。</block>
+  <block id="024adade9cb0061af998b7d3f3e85f0a" category="cell">可以查看，计划和运行报告并设置个人首选项，例如语言和时区的首选项。来宾 / 使用者无法创建报告或执行管理任务。</block>
+  <block id="ec0921e40c81a97ba64c076f0ada5cc3" category="section-title">按用户角色划分的 Cloud Insights 权限</block>
+  <block id="83182dfe9652d91a9dff49ae5051115e" category="list-text">为 Cloud Insights 的每个功能选择用户的角色。</block>
+  <block id="6e8526c3709a72705e37b6942beed39a" category="admonition">您可以选择的功能和角色取决于您以特定管理员角色访问的功能。例如，如果您只具有报告管理员角色，则可以将用户分配给报告中的任何角色，但不能为监控和优化或 Cloud Secure 分配角色。</block>
+  <block id="0e37aaee59fd92b0c2231a3435ccb705" category="inline-image-macro">用户角色选择</block>
+  <block id="be79de8824d9bc14fde4037b481d09cf" category="paragraph"><block ref="be79de8824d9bc14fde4037b481d09cf" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
