@@ -7902,4 +7902,10 @@
   <block id="6e8526c3709a72705e37b6942beed39a" category="admonition">您可以选择的功能和角色取决于您以特定管理员角色访问的功能。例如，如果您只具有报告管理员角色，则可以将用户分配给报告中的任何角色，但不能为监控和优化或 Cloud Secure 分配角色。</block>
   <block id="0e37aaee59fd92b0c2231a3435ccb705" category="inline-image-macro">用户角色选择</block>
   <block id="be79de8824d9bc14fde4037b481d09cf" category="paragraph"><block ref="be79de8824d9bc14fde4037b481d09cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="248f830b158797f9c038ea35ea266b89" category="section-title">2021年8月</block>
+  <block id="35c0ef8e82e5f124245cd4a182515707" category="section-title">增强的用户角色管理</block>
+  <block id="67d5547dc426dda2eb38c9f2cfbc7b4e" category="paragraph">现在， Cloud Insights 可以更加自由地分配用户角色和访问控制。现在，可以为用户分别分配监控，报告和 Cloud Secure 的粒度权限。</block>
+  <block id="7eb14abb5476231afc532997fa6a50a4" category="paragraph">这意味着，您可以允许更多用户对监控，优化和报告功能进行管理访问，同时将对敏感的 Cloud Secure 审核和活动数据的访问限制为仅需要这些数据的用户。</block>
+  <block id="093ef2eaceae626b1d4dcb1a11bd70a2" category="inline-link-macro">了解更多信息</block>
+  <block id="f5ef3def59ec03a725568ccb496ba619" category="paragraph"><block ref="e5cac74dba8477e0a100d4c693f32c03" category="inline-link-macro-rx"></block> 有关不同访问级别的信息，请参见 Cloud Insights 文档。</block>
 </blocks>

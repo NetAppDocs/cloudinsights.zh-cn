@@ -11,6 +11,21 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+=== 2021年8月
+
+
+
+==== 增强的用户角色管理
+
+现在， Cloud Insights 可以更加自由地分配用户角色和访问控制。现在，可以为用户分别分配监控，报告和 Cloud Secure 的粒度权限。
+
+这意味着，您可以允许更多用户对监控，优化和报告功能进行管理访问，同时将对敏感的 Cloud Secure 审核和活动数据的访问限制为仅需要这些数据的用户。
+
+link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["了解更多信息"] 有关不同访问级别的信息，请参见 Cloud Insights 文档。
+
+'''
+
+
 === 2021 年 6 月
 
 
@@ -103,6 +118,7 @@ image:CloudSecure_SnapshotPurgeSettings.png["清除设置"]
 
 现在，一个数据收集器代理系统每秒最多可以向 Cloud Secure 发布 20 ， 000 个事件。
 
+'''
 
 
 === 2021 年 5 月
@@ -150,6 +166,7 @@ API 访问现在可在所有版本的 Cloud Insights 中使用。现在， Basic
 |===
 有关 API 使用情况的详细信息，请参见 link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["API 文档"]。
 
+'''
 
 
 === 2021年4月
@@ -213,6 +230,7 @@ image:CloudSecure_SetupChecklist.png["Cloud Secure 检查清单"]
 
 我们一如既往地乐意倾听您的建议！请将其发送至 ng-cloudinsights-customerfeedback@netapp.com 。
 
+'''
 
 
 === 2021年2月
@@ -262,6 +280,7 @@ image:Filter_Null_Example.png["下拉列表中为空筛选器"]
 
 单击 link:http://docs.netapp.com/us-en/cloudinsights/security_information_and_region.html["此处"] 有关详细信息 ...
 
+'''
 
 
 === 2021年1月
@@ -417,6 +436,7 @@ image:Filter_Null_Example.png["下拉列表中为空筛选器"]
 
 image:Kubernetes_Cluster_Detail_Example.png["Kubernetes 资源管理器"]
 
+'''
 
 
 === 2020年12月
@@ -427,6 +447,7 @@ image:Kubernetes_Cluster_Detail_Example.png["Kubernetes 资源管理器"]
 
 Kubernetes Agent 安装经过简化，只需较少的用户交互即可完成。 link:task_config_telegraf_agent.html#kubernetes["安装 Kubernetes Agent"] 现在包括 Kubernetes 数据收集。
 
+'''
 
 
 === 2020年11月
@@ -462,6 +483,7 @@ Kubernetes Agent 安装经过简化，只需较少的用户交互即可完成。
 
 image:Table_Widget_Column_Rename.png["表小工具重命名列"]
 
+'''
 
 
 === 2020年10月
@@ -484,6 +506,7 @@ image:Table_Widget_Column_Rename.png["表小工具重命名列"]
 
 Cloud Secure 支持 link:concept_cs_api.html["REST API"] 用于访问活动和警报信息。这是通过使用 API 访问令牌来实现的，该令牌通过 Cloud Secure 管理 UI 创建，然后用于访问 REST API 。这些 REST API 的 Swagger 文档已与 Cloud Secure 集成在一起。
 
+'''
 
 
 === 2020 年 9 月
@@ -550,6 +573,7 @@ IMPORTANT: 如果您是最新的 Premium Edition 客户，并且希望保留您�
 
 Cloud Insights 增加了一个 * 数据载入 * API 类别，可让您更好地控制自定义数据和代理。有关此 API 类别和其他 API 类别的详细文档，请导航到 * 管理员 > API 访问 * 并单击 _API 文档 _ 链接，在 Cloud Insights 中找到。您还可以在注释字段中为 AU 附加注释，该注释显示在 AU 详细信息页面以及 AU 列表页面上。
 
+'''
 
 
 === 2020 年 8 月
@@ -562,6 +586,7 @@ Cloud Insights 增加了一个 * 数据载入 * API 类别，可让您更好地�
 
 image:define_monitor_conditions_2.png["监控条件"]
 
+'''
 
 
 === 2020 年 7 月
@@ -733,6 +758,7 @@ rules:
   - get
   - list            <== Add this line
 ----
+'''
 
 
 === 2020 年 6 月
@@ -761,6 +787,7 @@ image:Object_Metric_Chooser.png["对象 / 度量选择器"]
 
 image:MultipleGroupsIntegrationLineChart.png["显示集成数据时进行多个分组"]
 
+'''
 
 
 === 2020 年 5 月
@@ -822,6 +849,7 @@ link:concept_dashboard_features.html#tv-mode-and-auto-refresh["TV 模式和自�
 
 结合使用 " 电视模式 " 和 " 自动刷新 " ，可以实时查看 Cloud Insights 数据，非常适合无缝演示或内部监控。
 
+'''
 
 
 === 2020年4月
@@ -886,6 +914,7 @@ image:api_assets_import.png["导入标注"]
 
 image:NewWidgetPicker.png["新的小工具选择器"]
 
+'''
 
 
 === 2020年2月
@@ -929,6 +958,7 @@ image:DuplicateWidget.png["复制小工具"]
 
 NOTE: SSO 仅在 Cloud Insights 高级版中可用，必须先进行配置，然后才能为 Cloud Insights 启用它。SSO 配置包括 link:https://services.cloud.netapp.com/misc/federation-support["身份联合"] 通过 NetApp Cloud Central 。联合允许单点登录用户使用公司目录中的凭据访问您的 NetApp Cloud Central 帐户。
 
+'''
 
 
 === 2020年1月
@@ -977,6 +1007,7 @@ image:Onboarding_Progress.png["进度条"]
 
 
 
+'''
 
 
 === 2019年12月
@@ -1011,6 +1042,7 @@ Cloud Insights 中的受管单元（ MTU ）计算已更改为以下值：
 
 此更改会将您可以使用现有 Cloud Insights 订阅监控的环境容量有效地提高一倍。
 
+'''
 
 
 === 2019年11月
@@ -1021,6 +1053,7 @@ Cloud Insights 中的受管单元（ MTU ）计算已更改为以下值：
 
 "* 管理 ">" 订阅 * " 页面 link:concept_subscribing_to_cloud_insights.html#key-features["比较表"] 已进行更新，以列出 Cloud Insights 基本版，标准版和高级版中提供的功能集。NetApp 不断改进其云服务，因此请经常查看此页面，找到适合您不断变化的业务需求的版本。
 
+'''
 
 
 === 2019年10月
@@ -1058,6 +1091,7 @@ Cloud Insights * 高级版 * 提供报告功能。
 
 link:concept_activeiq.html["Active IQ 风险"] 现在可用作对象，可在信息板表小工具中查询和使用。其中包括以下风险对象属性： * 类别 * 缓解类别 * 潜在影响 * 风险详细信息 * 严重性 * 源 * 存储 * 存储节点 * UI 类别
 
+'''
 
 
 === 2019 年 9 月
@@ -1091,6 +1125,7 @@ image:Single-Value Widgets - Formatted.png["具有格式的单值小工具"]
 
 数据收集器详细信息页面已进行改进，可以更易读的格式显示错误。现在，错误会显示在页面上的单独表中，如果数据收集器出现多个错误，则每个错误都会显示在单独的行中。
 
+'''
 
 
 === 2019 年 8 月
@@ -1107,6 +1142,7 @@ image:Single-Value Widgets - Formatted.png["具有格式的单值小工具"]
 
 Cloud Insights 从 NetApp ActiveIQ 收集数据，该 Active IQ 可为 NetApp 客户及其硬件 / 软件系统提供一系列可视化，分析和其他支持相关服务。Cloud Insights 可与 ONTAP 数据管理系统集成。请参见 link:concept_activeiq.html["Active IQ"] 有关详细信息 ...
 
+'''
 
 
 === 2019 年 7 月
@@ -1135,6 +1171,7 @@ Cloud Insights 从 NetApp ActiveIQ 收集数据，该 Active IQ 可为 NetApp �
 
 。 link:task_config_telegraf_kubernetes.html["Kubernetes Data Collector"] 现在，可从 Kube-state-metrics 插件收集对象和计数器，从而大大扩展了可在 Cloud Insights 中监控的指标的数量和范围。
 
+'''
 
 
 === 2019 年 6 月
@@ -1154,6 +1191,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 
 请注意， HCI 数据收集器仅从 HCI 虚拟中心采集数据。要从存储系统收集数据，还必须配置 NetApp link:task_dc_na_solidfire["SolidFire"] 数据收集器。
 
+'''
 
 
 === 2019 年 5 月
@@ -1213,6 +1251,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 
 | CentOS 7.3 64 位 CentOS 7.4 64 位 CentOS 7.6 64 位 Debian 9 64 位 Red Hat Enterprise Linux 7.3 64 位 Red Hat Enterprise Linux 7.4 64 位 Red Hat Enterprise Linux 7.6 64 位 Ubuntu Server 18.04 LTS | Microsoft Windows 10 64 位 Microsoft Windows Server 2008 R2 Microsoft Windows Server 2019 
 |===
+'''
 
 
 === 2019年4月
@@ -1228,6 +1267,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 * link:task_dc_google_cloud.html#advanced_configuration["Google 云平台"]
 
 
+'''
 
 
 === 2019 年 3 月
@@ -1257,6 +1297,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 
 
 
+'''
 
 
 === 2019年2月
@@ -1282,6 +1323,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 * 您可以在 Windows 服务器 /VM 上配置 Cloud Insights 采集单元。查看 Windows link:concept_acquisition_unit_requirements.html["前提条件"] 安装之前 。
 
 
+'''
 
 
 === 2019年1月
@@ -1300,6 +1342,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 * 对于 * 管理 > 订阅 * 页面上列出的每个数据收集器，您现在可以查看主机和存储的受管单元（ Managed Unit ， MU ）计数以及总数的细分。
 
 
+'''
 
 
 === 2018年12月
@@ -1328,6 +1371,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 * 在入职工作流期间，您可以导航到 * 帮助 > 支持 * 和 * 管理员 > 订阅 * 页面。如果您尚未关闭浏览器选项卡，则从这些页面返回将返回到入职工作流。
 
 
+'''
 
 
 === 2018年11月
