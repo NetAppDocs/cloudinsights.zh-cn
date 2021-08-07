@@ -7908,4 +7908,10 @@
   <block id="7eb14abb5476231afc532997fa6a50a4" category="paragraph">这意味着，您可以允许更多用户对监控，优化和报告功能进行管理访问，同时将对敏感的 Cloud Secure 审核和活动数据的访问限制为仅需要这些数据的用户。</block>
   <block id="093ef2eaceae626b1d4dcb1a11bd70a2" category="inline-link-macro">了解更多信息</block>
   <block id="f5ef3def59ec03a725568ccb496ba619" category="paragraph"><block ref="e5cac74dba8477e0a100d4c693f32c03" category="inline-link-macro-rx"></block> 有关不同访问级别的信息，请参见 Cloud Insights 文档。</block>
+  <block id="554c387b4cc54e5b15b7b9ce27d28df0" category="section-title">小工具命名</block>
+  <block id="59f8ad2450d81d69bb7178de28870ace" category="paragraph">小工具会根据为第一个小工具查询选择的对象，指标或属性自动命名。如果您还为小工具选择了分组，则 " 分组依据 " 属性将包含在自动命名（聚合方法和指标）中。</block>
+  <block id="f311dd325e3f7f8553f9d8fda43458a7" category="inline-image-macro">小工具命名示例</block>
+  <block id="b22dfa24432a78bdc096d5f0126a1668" category="paragraph"><block ref="b22dfa24432a78bdc096d5f0126a1668" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5ad6fcc59633fa84a4ef87cb86b15271" category="paragraph">选择新对象或分组属性将更新自动名称。</block>
+  <block id="3d6c314d1d40b7ae81ed46c8b5c0488d" category="paragraph">如果您不想使用自动小工具名称，只需键入一个新名称即可。</block>
 </blocks>
