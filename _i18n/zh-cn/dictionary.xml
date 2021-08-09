@@ -895,14 +895,9 @@
   <block id="d6034d333b0966edaeeea729724c4988" category="section-title">单点登录（ SSO ）用户自动配置</block>
   <block id="6c59be6231105da08319ced12f4e659b" category="paragraph">除了邀请用户之外，管理员还可以为公司域中的所有用户启用 * 单点登录（ SSO ）用户自动配置 * 对 Cloud Insights 的访问，而无需单独邀请用户。启用 SSO 后，具有相同域电子邮件地址的任何用户均可使用其公司凭据登录到 Cloud Insights 。</block>
   <block id="a4e769bbaabeca7372ca6634d43bf1a5" category="admonition">_SSO 用户自动配置 _ 在 Cloud Insights 高级版中可用，必须先进行配置，然后才能为 Cloud Insights 启用它。SSO 用户自动配置包括 <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 通过 NetApp Cloud Central ，如上一节所述。联合允许单点登录用户使用安全断言标记语言 2.0 （ SAML ）和 OpenID Connect （ OIDC ）等开放式标准，使用公司目录中的凭据访问您的 NetApp Cloud Central 帐户。</block>
-  <block id="cb1e53c2e5a61103858f490826f50656" category="paragraph">要配置 _SSO 用户自动配置 _ ，请在 * 管理员 &gt; 用户管理 * 页面上单击 * 配置 SSO* 按钮。配置后，管理员可以启用 SSO 用户登录。当管理员启用 _SSO 用户自动配置 _ 时，他们会为所有 SSO 用户（如来宾或用户）选择一个默认角色。通过 SSO 登录的用户将具有此默认角色。</block>
-  <block id="f195cf5607300293910fd98e7dccf666" category="inline-image-macro">使用 SSO 进行用户管理</block>
-  <block id="6069e8e5b0596ffcd915e407d5d354e9" category="paragraph"><block ref="6069e8e5b0596ffcd915e407d5d354e9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8180ff7e185bcd2693971907be3065b6" category="paragraph">有时，管理员会希望将单个用户提升为默认 SSO 角色之外的用户（例如，使其成为管理员）。他们可以在 * 管理员 &gt; 用户管理 * 页面上单击用户的右侧菜单并选择 _Assign role_ 来完成此操作。以这种方式分配了显式角色的用户仍可访问 Cloud Insights ，即使 _SSO 用户自动配置 _ 随后被禁用也是如此。</block>
   <block id="784219fd668203a8e5c8b86ac08efba1" category="paragraph">如果用户不再需要提升的角色，您可以单击菜单以删除用户 _ 。此用户将从列表中删除。如果启用了 _SSO 用户自动配置 _ ，则用户可以继续使用默认角色通过 SSO 登录到 Cloud Insights 。</block>
   <block id="5b838d1db2b0c90f3965d582815bd387" category="paragraph">您可以通过取消选中 * 显示 SSO 用户 * 复选框来选择隐藏 SSO 用户。</block>
-  <block id="3c099038b85e4fdf6d4898b404fb70eb" category="inline-image-macro">已启用 SSO</block>
-  <block id="d288f498f6cd38806c24c28adc80ee7c" category="paragraph"><block ref="d288f498f6cd38806c24c28adc80ee7c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b8ebf4409c7ad7b050814935893a9c1f" category="paragraph">但是，如果满足以下任一条件，请勿启用 _SSO 用户自动配置 _ ：</block>
   <block id="0a4ddee9467e17088a4ed61c86d33e29" category="list-text">您的组织具有多个 Cloud Insights 租户</block>
   <block id="5fa16e988bd57824af7b89bb4e983aef" category="list-text">您的组织不希望联合域中的任何 / 每个用户对 Cloud Insights 租户具有一定程度的自动访问权限。_at this point in time ， we do not have the ability to use groups to control role access with this op选项 _ 。</block>
@@ -7929,4 +7924,8 @@
   <block id="ce5f9e14bbd4a967c3c432f4319e1a01" category="paragraph">警报还会显示在资产登录页面的 "Expert View" 部分中，其中显示了警报的时间和持续时间以及触发警报的监控条件。</block>
   <block id="22d49532ff07c48997ea5c32826181db" category="paragraph"><block ref="22d49532ff07c48997ea5c32826181db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="48ea80f3c83ef15f01fec95ea4b83ec8" category="sidebar">相关警报部分</block>
+  <block id="5dfc56f9cd6a0615db0ca10f1fbbfe79" category="cell">设备解析</block>
+  <block id="8454d6429fbbbb85edb89463f6d1f0a6" category="paragraph">要配置 _SSO 用户自动配置 _ ，请在 * 管理员 &gt; 用户管理 * 页面上单击 * 请求联合 * 按钮。配置后，管理员可以启用 SSO 用户登录。当管理员启用 _SSO 用户自动配置 _ 时，他们会为所有 SSO 用户（如来宾或用户）选择一个默认角色。通过 SSO 登录的用户将具有此默认角色。</block>
+  <block id="69b24ac806086d8120c6941f51bea8c7" category="inline-image-macro">使用联合进行用户管理</block>
+  <block id="141cee4c6d3099b12c6927aace6bf538" category="paragraph"><block ref="141cee4c6d3099b12c6927aace6bf538" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

@@ -99,6 +99,9 @@ Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管�
 | 查询：查看 / 运行 | Y | Y | Y 
 
 
+| 设备解析 | Y | Y | 不包括 
+
+
 | 报告 * ：查看 / 运行 | Y | Y | Y 
 
 
@@ -195,17 +198,15 @@ Cloud Central 使用 Auth0 实施身份联合并与 Active Directory 联合身�
 
 NOTE: _SSO 用户自动配置 _ 在 Cloud Insights 高级版中可用，必须先进行配置，然后才能为 Cloud Insights 启用它。SSO 用户自动配置包括 link:https://services.cloud.netapp.com/misc/federation-support["身份联合"] 通过 NetApp Cloud Central ，如上一节所述。联合允许单点登录用户使用安全断言标记语言 2.0 （ SAML ）和 OpenID Connect （ OIDC ）等开放式标准，使用公司目录中的凭据访问您的 NetApp Cloud Central 帐户。
 
-要配置 _SSO 用户自动配置 _ ，请在 * 管理员 > 用户管理 * 页面上单击 * 配置 SSO* 按钮。配置后，管理员可以启用 SSO 用户登录。当管理员启用 _SSO 用户自动配置 _ 时，他们会为所有 SSO 用户（如来宾或用户）选择一个默认角色。通过 SSO 登录的用户将具有此默认角色。
+要配置 _SSO 用户自动配置 _ ，请在 * 管理员 > 用户管理 * 页面上单击 * 请求联合 * 按钮。配置后，管理员可以启用 SSO 用户登录。当管理员启用 _SSO 用户自动配置 _ 时，他们会为所有 SSO 用户（如来宾或用户）选择一个默认角色。通过 SSO 登录的用户将具有此默认角色。
 
-image:SSOBanner.jpg["使用 SSO 进行用户管理"]
+image:Roles_federation_Banner.png["使用联合进行用户管理"]
 
 有时，管理员会希望将单个用户提升为默认 SSO 角色之外的用户（例如，使其成为管理员）。他们可以在 * 管理员 > 用户管理 * 页面上单击用户的右侧菜单并选择 _Assign role_ 来完成此操作。以这种方式分配了显式角色的用户仍可访问 Cloud Insights ，即使 _SSO 用户自动配置 _ 随后被禁用也是如此。
 
 如果用户不再需要提升的角色，您可以单击菜单以删除用户 _ 。此用户将从列表中删除。如果启用了 _SSO 用户自动配置 _ ，则用户可以继续使用默认角色通过 SSO 登录到 Cloud Insights 。
 
 您可以通过取消选中 * 显示 SSO 用户 * 复选框来选择隐藏 SSO 用户。
-
-image:UserListWithSSO.png["已启用 SSO"]
 
 但是，如果满足以下任一条件，请勿启用 _SSO 用户自动配置 _ ：
 
