@@ -7917,4 +7917,16 @@
   <block id="61e633e96f8c431ad3c5895ac9689491" category="admonition">磁带的设备解析规则仅适用于 WWN ，如果此 WWN 的供应商在供应商首选项中设置为 _included as Tape only_ 。</block>
   <block id="43523ef8cffdeaaafa0e6c8e15986699" category="doc">搜索资产和警报的提示和提示</block>
   <block id="252a2cf622edba8a5638ad07b4ae60cc" category="cell">运行以下任一许可版本的计算机： * CentOS （ 64 位）： 7.2 到 7.9 ， 8.1 到 8.3 * Debian （ 64 位）： 9 和 10 * Oracle Enterprise Linux （ 64 位）： 7.5 到 7.9 ， 8.1 到 8.3 * Red Hat Enterprise Linux （ 64 位）： 7.2 到 7.9 ， 8.1 到 8.3 * Ubuntu 服务器： 18.04 和 20.04 LTS 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
+  <block id="55d1aacd9076657a9c3f2551a759f3f7" category="summary">Cloud Insights 中的资产页面相关警报部分概述。</block>
+  <block id="1b7dc1deafc07ca39a6334e1152f20e6" category="doc">资产页面相关警报部分</block>
+  <block id="3608951e73671567ed9225929310279b" category="paragraph">您可以使用资产页面的相关警报部分查看因分配给资产的监控器而在您的环境中发生的任何警报。监控器会根据您设置的条件生成警报，并使您能够识别问题的含义，并分析问题的影响和根本发生原因，以便快速有效地进行更正。</block>
+  <block id="1da67e7bef682d4c0fcc23895b1a2b8e" category="paragraph">以下示例显示了资产页面上显示的 " 典型相关警报 " 部分：</block>
+  <block id="ec6d90c44091b0e7388a69c552bb2373" category="inline-image-macro">相关警报表</block>
+  <block id="0378c8b9cb8856d2de86d1b0e39fda27" category="paragraph"><block ref="0378c8b9cb8856d2de86d1b0e39fda27" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15b718639bc71838d0ee4200ab331bff" category="paragraph">通过 " 相关警报 " 部分，您可以查看和管理因分配给资产的监控条件而在网络中发生的警报。</block>
+  <block id="b5363541d312dc24d8c6a6139091855c" category="paragraph">此时将显示资产页面。相关警报部分显示触发警报的时间，警报的当前状态以及触发警报的监控器。您可以单击警报 ID 以打开警报的登录页面以进行进一步调查。</block>
+  <block id="a7fd66167e9a4b5030676f8f2b2ad02f" category="section-title">专家视图中的警报</block>
+  <block id="ce5f9e14bbd4a967c3c432f4319e1a01" category="paragraph">警报还会显示在资产登录页面的 "Expert View" 部分中，其中显示了警报的时间和持续时间以及触发警报的监控条件。</block>
+  <block id="22d49532ff07c48997ea5c32826181db" category="paragraph"><block ref="22d49532ff07c48997ea5c32826181db" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48ea80f3c83ef15f01fec95ea4b83ec8" category="sidebar">相关警报部分</block>
 </blocks>
