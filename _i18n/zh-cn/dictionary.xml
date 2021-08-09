@@ -7916,4 +7916,5 @@
   <block id="6794b8d2d4895f94dbd5ad6796ba5257" category="paragraph">系统将显示这些设备及其解析状态。</block>
   <block id="785ec09cddf9283f24922c1e4d3f399c" category="paragraph">已通过手动解析解决的设备的状态为 _OK_ ，并标识用于标识设备的规则。缺少的设备的状态为 _unidentifed_.明确排除在标识之外的设备的状态为 _excluded_.此页面列出了用于标识设备的总覆盖范围。</block>
   <block id="61e633e96f8c431ad3c5895ac9689491" category="admonition">磁带的设备解析规则仅适用于 WWN ，如果此 WWN 的供应商在供应商首选项中设置为 _included as Tape only_ 。</block>
+  <block id="43523ef8cffdeaaafa0e6c8e15986699" category="doc">搜索资产和警报的提示和提示</block>
 </blocks>
