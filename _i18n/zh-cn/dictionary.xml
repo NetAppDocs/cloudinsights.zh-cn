@@ -6686,34 +6686,9 @@
   <block id="58e92099c75821827b7a665f2931deb2" category="paragraph"><block ref="58e92099c75821827b7a665f2931deb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8cddd68e9275728e34c400e58a9183d1" category="summary">Audit 可提供 Cloud Insights 系统中系统和用户活动的视图。</block>
   <block id="78f48b8a03facd61000db8f7ae6f9227" category="doc">审核</block>
-  <block id="383428b08db42063b918c95cd7e86d3d" category="paragraph">要确定意外更改，您可以查看 Cloud Insights 系统及其用户活动的审核跟踪。</block>
-  <block id="0fdd668274c7e6e9405f0b461c5d2ab0" category="paragraph">Cloud Insights 会为影响系统或用户的更改生成审核条目。这些更改包括：</block>
-  <block id="6596e863cf1d0baa0dbccff0e9088e4a" category="list-text">登录</block>
-  <block id="bae14673a8e0dfadef8ac3c958393b11" category="list-text">授权或取消授权路径</block>
-  <block id="fd38170e3b6aab028a0d7ad24a137d75" category="list-text">正在更新授权路径</block>
-  <block id="341f9b49b42c4f765af53a9c59d7534d" category="list-text">设置全局策略或阈值</block>
-  <block id="5dd1d7d6cf7e78d047c932258e93b51e" category="list-text">添加或删除数据收集器</block>
-  <block id="7f79b62e589265799c67d80323c845ee" category="list-text">启动或停止数据收集器</block>
-  <block id="9541662d7aaca919ed28e596d5bb6646" category="list-text">正在更新数据收集器属性</block>
-  <block id="093c9fd1557bc4379f75a84f1d8f6519" category="list-text">添加，编辑或删除任务</block>
-  <block id="46599911849e4d9b42501e4b1f8cfb64" category="list-text">删除应用程序组</block>
-  <block id="a6f0abbf8bb5b2f8339e124e6c1036c2" category="list-text">确定或更改设备的标识</block>
-  <block id="5ea612112102d80a9585a25bec0c835a" category="paragraph">按照以下步骤访问审核系统：</block>
-  <block id="6b4de57088425876af3198f9028aa98c" category="list-text">在 Cloud Insights 菜单中，单击 * 管理员 &gt; 审核 *</block>
-  <block id="ae89f007bf11d002237f72b47f2337ff" category="paragraph">此时将显示 Audit 页面，其中为每个审核条目提供了以下详细信息：</block>
-  <block id="410de27c1de24ac3025483a3f946964e" category="list-text">* 时间 * - 进行更改的日期和时间</block>
-  <block id="0c87ef2b4c32e4e9aee38ffbf7aaa08d" category="list-text">* 用户 * - 用户帐户的角色（来宾，用户或管理员）</block>
-  <block id="426f38c2c637a8299e56489281c1c61f" category="list-text">*IP* —与审核条目关联的 IP 地址</block>
-  <block id="c3064cc3488066ec9776cac645a30e83" category="list-text">* 操作 * —审核条目中的活动类型</block>
-  <block id="6b057e669f5e1969672291b5b4cf26c0" category="list-text">* 详细信息 * - 审核条目的详细信息</block>
-  <block id="10e43b8cce1c65acf85e80744c8164c8" category="paragraph">如果存在影响资源的用户活动，例如数据收集器或应用程序，则详细信息将包含指向资源登录页面的链接。</block>
-  <block id="3bd200db85f67e901200f4f50171dc31" category="paragraph">* 注意 * 删除数据收集器后，与数据收集器相关的用户活动详细信息不再包含指向数据收集器登录页面的链接。</block>
   <block id="879d66cd75bfedef98a5f78c91d00905" category="section-title">显示审核条目</block>
   <block id="f117b445f62182f9fb78126941f7d60a" category="paragraph">可通过多种不同方式查看审核条目：</block>
-  <block id="799922d02612e9908ebc313aa0b4ba0b" category="list-text">您可以通过选择特定时间段（ 1 小时， 3 小时， 24 小时， 3 天和 7 天）来显示审核条目。 Cloud Insights 在选定时间段内最多显示 1000 个违规。</block>
-  <block id="b9c9a86e10684ae346da56bc1f20ee34" category="list-text">您可以通过单击列标题中的箭头将表中列的排序顺序更改为升序（向上箭头）或降序（向下箭头）。</block>
   <block id="5392e0033662acf4510f59d25c75cb77" category="paragraph">默认情况下，此表按降序时间顺序显示条目。</block>
-  <block id="e8907ce89ed55a4e6d734b1727de64f8" category="list-text">您可以使用筛选器框仅显示表中所需的条目。</block>
   <block id="4f64e4d2d0b40a09df727cdb00378860" category="summary">配置 NetApp E 系列数据收集器。</block>
   <block id="99f7508fc77f6415a72debd8f680d7cf" category="paragraph">NetApp E 系列数据收集器可收集清单和性能数据。此收集器支持使用相同配置并报告相同数据的固件 7.x+ 。</block>
   <block id="20d1b58bf59d1451203fb42bdc412ad3" category="paragraph">Cloud Insight 从 NetApp E 系列数据收集器采集以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
@@ -7928,4 +7903,53 @@
   <block id="8454d6429fbbbb85edb89463f6d1f0a6" category="paragraph">要配置 _SSO 用户自动配置 _ ，请在 * 管理员 &gt; 用户管理 * 页面上单击 * 请求联合 * 按钮。配置后，管理员可以启用 SSO 用户登录。当管理员启用 _SSO 用户自动配置 _ 时，他们会为所有 SSO 用户（如来宾或用户）选择一个默认角色。通过 SSO 登录的用户将具有此默认角色。</block>
   <block id="69b24ac806086d8120c6941f51bea8c7" category="inline-image-macro">使用联合进行用户管理</block>
   <block id="141cee4c6d3099b12c6927aace6bf538" category="paragraph"><block ref="141cee4c6d3099b12c6927aace6bf538" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a6f1dcc9d358c0cdb54ec05673906e45" category="section-title">新的审核页面用户界面</block>
+  <block id="50c786c9efcadf10b6b80a91b4bb98cf" category="inline-link-macro">审核页面</block>
+  <block id="34da7615df3d3af56927cee9350f8197" category="paragraph">。 <block ref="0fc95413be1f4602f176a8d23796c479" category="inline-link-macro-rx"></block> 提供了一个更清晰的界面，现在可以将审核事件导出到 .CSV 文件。</block>
+  <block id="96da8a4e581dd2bee953a91b4a726a87" category="paragraph">要确定预期更改（用于跟踪）或意外更改（用于故障排除），您可以查看 Cloud Insights 系统事件和用户活动的审核跟踪。</block>
+  <block id="651bba7950593ebb3a30ce056e02d435" category="section-title">查看已审核事件</block>
+  <block id="50c2e307c62b6bdee9bab7a06a0f94bd" category="paragraph">要查看审核页面，请单击菜单中的 * 管理员 &gt; 审核 * 。此时将显示 Audit 页面，其中为每个审核条目提供了以下详细信息：</block>
+  <block id="ddd4c9a31b3ca91ed60983b390c54a28" category="list-text">* 时间 * - 事件或活动的日期和时间</block>
+  <block id="328ce41e650b8ebabdfb846f83c36310" category="list-text">* 用户 * —启动活动的用户</block>
+  <block id="d17a9db742265dcdd4ca05c00d1d0b96" category="list-text">* 角色 * —用户在 Cloud Insights 中的角色（来宾，用户，管理员）</block>
+  <block id="2371d3134aba5e426570bddc2f309af4" category="list-text">*IP* —与事件关联的 IP 地址</block>
+  <block id="57a6064ecdf5f0ef23cc5dc68b3df3ed" category="list-text">* 操作 * - 活动类型，例如登录，创建，更新</block>
+  <block id="5cfe8205bb7066b1f512040e2274a7ee" category="list-text">* 类别 * —活动类别</block>
+  <block id="e500c9df361735a56030989f0a9d4770" category="list-text">* 详细信息 * - 活动详细信息</block>
+  <block id="f659f1d9f9e712d51a9a5a26511d4467" category="list-text">您可以通过选择特定时间段（ 1 小时， 24 小时， 3 天等）来显示审核条目。</block>
+  <block id="55835b02eae4c7bba18d01b078777e60" category="list-text">您可以通过单击列标题中的箭头将条目的排序顺序更改为升序（向上箭头）或降序（向下箭头）。</block>
+  <block id="00050359801f7074039fe9ab1b959b8a" category="list-text">您可以使用筛选器字段仅显示表中所需的条目。单击 "+" 按钮以添加其他筛选器。</block>
+  <block id="223ca1cdcae3af8ac673f864fefdd7d7" category="inline-image-macro">审核筛选器</block>
+  <block id="000328adbb5b305cbbe3545105632061" category="paragraph"><block ref="000328adbb5b305cbbe3545105632061" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="478ab967903ac7b240c1e1f179d06cce" category="cell">在选定的任何字段中搜索空白 / 空 / 无</block>
+  <block id="aed6f1a48ccdaaad2f7867e33e36d188" category="cell">返回目标字段不为空的结果</block>
+  <block id="680047555a70b7b321a371fdbc9de004" category="cell">与上述 _NONES_ 一样，但您也可以使用此表单在 _text-only_ 字段中搜索 NULL 值</block>
+  <block id="aad080d144d75dcf74a31b9f11c82651" category="cell">返回目标字段不为空的结果。</block>
+  <block id="9d4568c009d203ab10e33ea9953a0264" category="cell">""</block>
+  <block id="1716e0f2a2c2edb5d888b9267d905914" category="cell">搜索精确匹配项</block>
+  <block id="048e5b41d504e581f9dfd5df04b0de4b" category="cell">"NetApp*"</block>
+  <block id="08612e5f3ea69a3841565d99fc760eed" category="cell">返回包含确切文字字符串 _NetApp* _ 的结果</block>
+  <block id="e79313bfe03c4561628e01c7102ba5fb" category="section-title">已审核的事件和操作</block>
+  <block id="6fffa02826aca9a14ee11d85609b3e25" category="paragraph">Cloud Insights 审核的事件和操作可分为以下几大类：</block>
+  <block id="c5c594e685367681b202d84ba0c87407" category="list-text">* 用户帐户 * ：登录，注销，角色更改等</block>
+  <block id="5a3b3866ed7beab8b728614f1d33c0b5" category="paragraph">示例： _User * Tony Lavoie* 已从 * 10.1.120.15* 登录，用户代理 * Mozilla /5.0 （ Windows NT 10.0 ； Win64 ； x64 ） AppleWebKit/537.36 （ KHTML ，类似 Gecko ） Chrome /85.0.4183.121 Safari /537.36* ，登录方法 * Cloud Central Portal Login_*</block>
+  <block id="f8c4f6c2455f59fa0c1cc9fed5a8c6c1" category="list-text">* 采集单元 * ：创建，删除等</block>
+  <block id="c1e8e78730ec648eeb7339e916d33231" category="paragraph">示例： _Acquisition unit * 澳大利亚 - 波士顿 1* removed_.</block>
+  <block id="fa421109b9971a24c53c504a4c5ef88d" category="list-text">* 数据收集器 * ：添加，删除，修改，延迟 / 恢复，更改采集单元， 启动 / 停止等</block>
+  <block id="9f5749c99453bcb3a5efae0e6060f380" category="paragraph">示例： _Datasource * 已删除 FlexPod Lab* ，供应商 * NetApp * ，型号 * ONTAP 数据管理软件 * ， IP * ： 192.168.106.5_* 。</block>
+  <block id="009305c3c48e6972cdc469ec8cbf945e" category="list-text">* 应用程序 * ：添加，分配给对象，删除等</block>
+  <block id="63989304ab7763e03af58b6acb38623b" category="paragraph">示例： _Internal Volume * ocisudev ： t1appSVM01 ： t1appFlexVol01* 已添加到应用程序 * 测试应用程序 _* 。</block>
+  <block id="229bb4b0ef4bf3003c00dbc9673a1297" category="list-text">* 标注 * ：添加，分配，删除，标注规则操作，标注值更改 等</block>
+  <block id="87a53abc11763ddea4f9371fc1e44370" category="paragraph">示例： _Annotation value * boston* added to annotation type * ， SalesOffice_* 。</block>
+  <block id="8a81dbcb513f42473a2a1624bcbd0075" category="list-text">* 查询 * ：添加，删除等</block>
+  <block id="60fbfec2bf13c71d5127945e1fc5924a" category="paragraph">示例： _Query * TL Sales Query* is added_.</block>
+  <block id="68a1dd6cd1601ee008ef1e9bf1d5f084" category="list-text">* 监控 * ：添加，删除等</block>
+  <block id="01d32b03716f8341c6b9315ce7a62a79" category="paragraph">示例： monitor _Aggr size - 已更新 CI 警报通知 Dev_</block>
+  <block id="b44079e3afc3ddd8b7e0eb6c349ff207" category="list-text">* 通知 * ：更改电子邮件等</block>
+  <block id="a7db7dc4150ec783edb2d63c007de590" category="paragraph">示例：已创建 Recipient _cI-alers-notifications -dl_</block>
+  <block id="448e25eb5970504212b6d755b8adce41" category="section-title">导出审核事件</block>
+  <block id="17d3fac6e64b0db4110d016480972d5a" category="paragraph">您可以将审核显示结果导出到 .CSV 文件，以便分析数据或将其导入到其他应用程序中。</block>
+  <block id="4654b0becf9d1cd6185abd5644dddf77" category="list-text">在 Audit 页面上，设置所需的时间范围以及所需的任何筛选器。Cloud Insights 将仅导出与您设置的筛选和时间范围匹配的审核条目。</block>
+  <block id="81e9e10a5416438d2549dae075160792" category="list-text">单击 _Export_ 按钮 <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> 在表的右上角。</block>
+  <block id="7201440e51225680b60dccf28366c73d" category="paragraph">显示的审核事件将导出到 .CSV 文件，最多 10 ， 000 行。</block>
 </blocks>
