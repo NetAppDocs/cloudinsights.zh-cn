@@ -214,5 +214,8 @@ image:CS_Data_Collector_Error.png[""]
 
 
 | 连接器处于错误状态。服务名称： audit 。失败原因：无法配置（ SVM svmname 上的策略。原因：为 "fpolicy.policy.scope-modify ： "Federal " 中的 "share-to include" 元素指定的值无效 | 共享名称必须在不带任何引号的情况下提供。编辑 ONTAP SVM DSC 配置以更正共享名称。_include 和 exclude shares_ 不适用于长列表的共享名称。如果要包含或排除大量共享，请改用按卷筛选。 
+
+
+| 集群中存在未使用的现有 fpolicies 。在安装 Cloud Secure 之前，应如何处理这些问题？ | 建议删除所有现有未使用的 fpolicy 设置，即使它们处于已断开连接状态也是如此。Cloud Secure 将创建前缀为 "cloudsure_" 的 fpolicy 。可以删除所有其他未使用的 fpolicy 配置。用于显示 fpolicy list 的 CLI 命令： _fpolicy show-steps to delete fpolicy configurations ： _fpolicy disable -vserver <svmname> -policy-name <policy_name>_ _fpolicy policy policy scope delete -vserver <svmname> -policy-name <policy_name>_fpolicy policy policy policy policy delete -vserver <svmname> -policy -policy -engine -<policy_name> -policy -<vmname> -node -engine -<policy_name> -policy_name> -vserver -vserver -policy> <policy_name> -vpolicy -policy -engine -<vm> <policy_name> -node -policy_name> -vpolicy -engine -vpolicy -<policy_name> -vpolicy 
 |===
 如果您仍遇到问题，请访问 * 帮助 > 支持 * 页面中提到的支持链接。

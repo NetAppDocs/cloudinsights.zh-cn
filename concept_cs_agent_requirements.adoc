@@ -102,6 +102,9 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 
 
 | TCP | 35000 - 55000 | SVM 数据 LIF IP 地址 | 入站 / 出站 | 与 ONTAP 通信以处理 Fpolicy 事件 
+
+
+| TCP | 7. | SVM 数据 LIF IP 地址 | 出站 | 在 ONTAP 和 Cloud Secure 之间实现双向。代理对 SVM LIF 执行 Ping 操作。 
 |===
 
 

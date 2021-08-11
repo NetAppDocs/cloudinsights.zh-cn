@@ -41,7 +41,7 @@ summary: 配置 Cloud Secure Active Directory 用户目录收集器
 | 服务器 IP/ 域名 | 托管 Active Directory 的服务器的 IP 地址或完全限定域名（ FQDN ） 
 
 
-| 林名称 | 目录结构的林级别。林名称支持以下两种格式： _x.y.z_ => SVM 上的直接域名。例如： hq.companyname.com] _dc=x ， DC=y ， DC=z_ => 相对可分辨名称（例如： DC=HQ ， DC= CompanyName ， DC=com ），或者您可以指定为以下内容： _OU=engineering ， DC=HQ ， DC= CompanyName ， DC=com_ 【按特定 OU engineering 进行筛选】 _CN=username ， OU=engineering ， DC=CompanyName ， DC=NetApp ， DC=com_ 【仅从 OU <engineering>> 获取 < 用户名 > 的特定用户】 _CN=Acrobat 用户， CN=Users ， DC=HQ ， DC=com ， DC=All Users ， DC=US ， 
+| 林名称 | 目录结构的林级别。林名称支持以下两种格式： _x.y.z_ => SVM 上的直接域名。例如： hq.companyname.com] _dc=x ， DC=y ， DC=z_ => 相对可分辨名称（例如： DC=HQ ， DC= CompanyName ， DC=com ），或者您可以指定为以下内容： _OU=engineering ， DC=HQ ， DC= CompanyName ， DC=com_ 【按特定 OU engineering 进行筛选】 _CN=username ， OU=engineering ， DC=CompanyName ， DC=NetApp ， DC=com_ 【仅从 OU <engineering>] 中获取具有 <username> 的特定用户， compcn=Acrobat 用户， CN=Users ， DC=HQ ， DC=com ， DC=All Users ， 
 
 
 | 绑定 DN | 允许搜索目录的用户。例如： _username@companyname.com_ 或 _username@domainname.com_ 
