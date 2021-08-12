@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_creating_custom_reports.html 
-summary: 使用报告创作工具创建自定义（ "ad-hoc " ）报告 
+summary: '使用报告创作工具创建自定义（ "ad-hoc " ）报告' 
 keywords: reporting, cognos, data warehouse, dwh, ad-hoc, custom 
 ---
 = 创建自定义报告

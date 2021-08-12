@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_asset_expert_view_section.html 
-summary: 资产页面的 "Expert View" 部分是一个功能强大的故障排除或监控工具。 
+summary: '资产页面的 "Expert View" 部分是一个功能强大的故障排除或监控工具。' 
 keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, 
 ---
 = 专家视图
