@@ -73,3 +73,19 @@ keywords: AU, acquisition unit, trioubleshooting
 *.cloudinsights.netapp.com
 ....
 如果未设置代理来进行流量检查，则可能需要或不需要例外列表。如果您不确定是否需要将 Cloud Insights 添加到例外列表中，或者由于代理和 / 或防火墙配置而在安装或运行 Cloud Insights 时遇到困难，请与您的代理管理团队联系，设置代理对 SSL 截获的处理方式。
+
+
+
+==== 查看代理端点
+
+在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 > 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。
+
+image:ProxyEndpoints_NewTable.png["代理端点表"]
+
+
+
+=== 资源
+
+有关其他故障排除提示，请参见 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights["NetApp 知识库"] （需要支持部门登录）。
+
+有关其他支持信息，请参见 Cloud Insights link:concept_requesting_support.html["支持"] 页面。

@@ -61,6 +61,14 @@ keywords: AU, acquisition unit, trioubleshooting
 
 
 
+==== 查看代理端点
+
+在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 > 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。
+
+image:ProxyEndpoints_NewTable.png["代理端点表"]
+
+
+
 === 资源
 
 有关其他故障排除提示，请参见 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights["NetApp 知识库"] （需要支持部门登录）。

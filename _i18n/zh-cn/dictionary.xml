@@ -7934,4 +7934,6 @@
   <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9bdb1d7869cec3eaa75aaa48b414845" category="inline-link-macro">Kube-state-metrics 文档</block>
   <block id="755cdea554078bb6dfed008a027e421c" category="admonition">强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完整的功能集，包括将 Kubernetes 永久性卷（永久性卷）链接到后端存储设备的功能。另请注意，对于 Kube-state-metrics 2.0 及更高版本，默认情况下不会导出 Kubernetes 对象标签。要配置 Kube-state-metrics 以导出 Kubernetes 对象标签，必须指定指标标签 "allow" 列表。请参见中的 _-metric-labks-allowlist_ 选项 <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="8bdbfb2fbcb4d30bcb7f3456068bf952" category="section-title">查看代理端点</block>
+  <block id="711a1c1d22485d3da55bc2c4b91c710f" category="paragraph">在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。</block>
 </blocks>
