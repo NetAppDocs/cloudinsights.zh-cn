@@ -4327,24 +4327,6 @@
   <block id="6f6c7e0bd9df07afbd8f27f303fba934" category="inline-link-macro">Redis 文档</block>
   <block id="ae042fc4879ccb38022624b37b7c15bd" category="paragraph">有关信息，请参见 <block ref="f84fd6d9d2467b4d3f4dd370ee4175c5" category="inline-link-macro-rx"></block>。</block>
   <block id="e111446745a1825b862f8727ae63bce4" category="cell">Redis</block>
-  <block id="73a89ddad6f271dfb9abc32f89a57045" category="doc">性能故障排除</block>
-  <block id="31224fc8dfdb9328f10dbd5f0f73feb7" category="paragraph">本常见问题解答解答解答了有关 Cloud Insights 性能故障排除的常见问题。</block>
-  <block id="98841a1c07ce00fcf821c5bf40b9f3ac" category="section-title">如何创建环境中所有耗用资源的列表？</block>
-  <block id="14ddd71c0500c986590418e5708664c5" category="paragraph">Cloud Insights 的关联分析有助于识别 " 指定 " 服务路径中的资源耗用和降级情况。在查看每个对象时，系统会实时执行关联功能生成的分析。通过提供的分析，可以大大减少对性能问题进行故障排除和识别根发生原因所需的时间。要发现资源耗用或已降级，首先需要了解所定义的性能策略生成的违规情况。Cloud Insights 的异常检测功能也可用作一种更主动的方法，用于在应用程序基础架构资源耗竭或降级后，避免其造成服务中断。使用最新查询功能的小工具和信息板均有助于筛选，排序和可视化 IOPS （ Greedy ），利用率或延迟高于预期的资源。</block>
-  <block id="4089cd1e996ba52d014e733947953738" category="section-title">Cloud Insights 能否提供一个位置来诊断性能问题？</block>
-  <block id="c1f235543621a35e007b47bb967e180a" category="paragraph">是的。Cloud Insights 中的性能故障排除方法有多种。Cloud Insights 可以采用多种警报方法。通常使用 SNMP ，系统日志和电子邮件警报。通过电子邮件发送的警报，用户可以快速单击并启动到 Cloud Insights 中受影响的资源。管理员可以通过全局搜索窗口键入资源名称来开始分析情况。</block>
-  <block id="5f8691f5a9063e74553ea023feffce50" category="paragraph">Cloud Insights 的违规信息板允许用户根据事件数量，持续时间和一天中的时间确定工作的优先级。各种警报类型的示例包括延迟， IOPS ，利用率，严重性，业务单位甚至应用程序。</block>
-  <block id="b0fe456219bebfbba8a557218b55b7ab" category="paragraph">Cloud Insights 的关联分析可帮助管理员将对象与受影响的资源进行比较，并确定其对 IOPS ，延迟，利用率， CPU 和 BB 信用的影响。</block>
-  <block id="ce749c265d1e7bb24d28f752b1dcca13" category="paragraph">Cloud Insights 在异常检测和以太网监控方面的最新进步提供了一种更积极主动的方法，可以在资源行为发生服务中断或中断之前检测其偏差。</block>
-  <block id="480b5bf3800349b9653e4b0b404be613" category="paragraph">Cloud Insights 的查询技术和小工具信息板可用于在有组织的视图中精确定位数据中心内的问题区域。</block>
-  <block id="ab5c6b62dabfb05639fb90386c597f30" category="section-title">Cloud Insights 能否帮助我从 7- 模式迁移到 cDOT ？</block>
-  <block id="4b4b7c33a4733274f98d0ef62a787c64" category="paragraph">可以， Cloud Insights 为现有工作负载需求和迁移后验证提供了宝贵的了解。Cloud Insights 在现代化当今数据中心方面所起的作用有助于进行变更管理模拟，迁移前优化规划以及定义合适的服务层。只需单击几下鼠标， Cloud Insights 便可轻松收集和关联多供应商环境中数千个 NFS 共享和光纤通道路径的业务影响。从迁移到技术更新， Cloud Insights 提供了一条实现可靠，规模合适的迁移的途径，并可减少计划外服务中断。</block>
-  <block id="0211d0fa2fac4ee7391de9b5f29f83bf" category="section-title">Cloud Insights 性能监控是如何实现 " 实时 " 的？</block>
-  <block id="5a57e82d3cb6dbea258dc5986c414b1f" category="paragraph">对于内部和混合云数据中心管理， Cloud Insights 被视为近乎实时。虽然可以将轮询数据源配置为更频繁地进行，但对于大多数设备，性能收集间隔不到 5 分钟不会给大多数用户带来显著的分析优势。更频繁地收集可能会给所管理的对象和执行的分析带来不必要的负担。当然，在某些情况下，可能需要更精细的收集，幸运的是， Cloud Insights 可以提供完全的灵活性，包括可配置的设备清单和性能轮询间隔，以满足您的特定数据中心环境需求。</block>
-  <block id="ae51f3e4b7b1060a173feb169a620eeb" category="section-title">为什么我的 " 总计 " 与 " 读取 " 加上 " 写入 " 不同？</block>
-  <block id="bcfe1cb353f7bdd6f21dd93826152bb3" category="paragraph">在某些情况下，您可能会注意到计数器的总数不等于该计数器的读取加写入总和。在某些情况下，可能会发生这种情况。</block>
-  <block id="cd958f6c749a3e9af044cd09db06dcf9" category="paragraph">IOPS ：除了读取和写入之外，存储阵列或其他资产还会处理与工作负载数据流无关的内部操作。这些操作有时称为 " 系统 " ， " 元数据 " 或简单的 " 其他 " 操作，可归因于内部进程，例如快照，重复数据删除或空间重新分配。在这些情况下，要查找给定资产的系统操作量，请从总 IOPS 中减去读取和写入 IOPS 之和。" 读写 IOPS" 与数据流直接相关的总 IOPS 之和。</block>
-  <block id="c84c694fe770a36a04c54d2d0f2b03a5" category="paragraph">延迟：操作的总响应时间（延迟）有时可能报告为小于写入响应时间，因为总响应时间是时间加权平均值。I/O 工作负载通常包含的读取操作多于写入操作，而写入操作通常会观察到较长的延迟。例如，如果一个工作负载执行了 10 个读取操作，平均延迟为 5 毫秒，而执行了 5 个写入操作，平均延迟为 10 毫秒，则总加权平均延迟将通过读取次数乘以平均读取延迟计算得出。 加上写入次数乘以平均写入延迟，再除以 I/O 操作总数，例如（ 10 * 5 + 5 * 10 ） / （ 10 + 5 ） = 6.33 毫秒。</block>
   <block id="07d8a20311bb7ef0fdd0a319b9667a65" category="summary">Cloud Insights 中的资产页面摘要部分概述。</block>
   <block id="29128cb5215fb2e80e1ee7a20fe86126" category="doc">资产页面摘要部分</block>
   <block id="e021c698cb903a9473be86e3d40217ed" category="paragraph">资产页面的摘要部分显示有关资产的常规信息，包括任何指标或性能策略是否为相关的发生原因。潜在问题区域通过指标或性能策略旁边的红色圆圈来指示。</block>
@@ -7947,4 +7929,8 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">Cloud Insights 注意事项</block>
   <block id="5b6169d0d5d664ce4f07f6328cd547c6" category="list-text"><block ref="5b6169d0d5d664ce4f07f6328cd547c6" category="inline-link-macro-rx"></block></block>
+  <block id="042f2a856726ac957ea57dbbe84766ca" category="section-title">查看代理 URL</block>
+  <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">您可以通过以下方式查看代理端点 URL ：在入职期间选择数据收集器时单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接。此时将显示如下表。</block>
+  <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">代理端点表</block>
+  <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
