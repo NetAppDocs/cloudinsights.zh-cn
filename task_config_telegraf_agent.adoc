@@ -637,7 +637,7 @@ kubectl delete pod telegraf-rs-*
 安装 Kube-state-metrics 服务器时，您可以启用以下 Kubernetes 对象的收集： StatusSet ， DemonSet ， Deployment ， PV ， PVC ， ReplicaSet ， Service ，命名空间， Secret ， ConfigMap ， POD 卷和传入。
 
 
-NOTE: 强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完整的功能集，包括将 Kubernetes 永久性卷（永久性卷）链接到后端存储设备的功能。
+NOTE: 强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完整的功能集，包括将 Kubernetes 永久性卷（永久性卷）链接到后端存储设备的功能。另请注意，对于 Kube-state-metrics 2.0 及更高版本，默认情况下不会导出 Kubernetes 对象标签。要配置 Kube-state-metrics 以导出 Kubernetes 对象标签，必须指定指标标签 "allow" 列表。请参见中的 _-metric-labks-allowlist_ 选项 link:https://github.com/kubernetes/kube-state-metrics/blob/master/docs/cli-arguments.md["Kube-state-metrics 文档"]。
 
 按照以下步骤安装 Kube-state-metrics 服务器：
 

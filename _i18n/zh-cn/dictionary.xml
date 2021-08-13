@@ -6048,7 +6048,6 @@
   <block id="16fbf864377203e70ce04c9b7fbcef86" category="paragraph">这些 Kubernetes 对象会在 Cloud Insights UI 中提供的 Kubernetes 代理安装命令中自动创建。Kubernetes 的某些变体（例如 OpenShift ）实施了更高的安全级别，可能会阻止对这些组件的访问。_SecurityContextConstrent_ 不是在 Cloud Insights UI 中提供的 Kubernetes 代理安装命令中创建的，必须手动创建。创建后，重新启动 Telegraf Pod 。</block>
   <block id="708b7f7f18eb293652df29349e867172" category="section-title">安装 Kube-state-metrics 服务器</block>
   <block id="07472d5f2af611d646007b614784f7ee" category="paragraph">安装 Kube-state-metrics 服务器时，您可以启用以下 Kubernetes 对象的收集： StatusSet ， DemonSet ， Deployment ， PV ， PVC ， ReplicaSet ， Service ，命名空间， Secret ， ConfigMap ， POD 卷和传入。</block>
-  <block id="c3452e749c72d202ada66eb99e6c005e" category="admonition">强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完整的功能集，包括将 Kubernetes 永久性卷（永久性卷）链接到后端存储设备的功能。</block>
   <block id="a2ad229e09caec752191079182a7adae" category="paragraph">按照以下步骤安装 Kube-state-metrics 服务器：</block>
   <block id="ba86ea7c2dbdd3f6b9064aa53b496ca9" category="list-text">创建一个临时文件夹（例如， //tmp/Kube-state-yamal-files/_ ），然后从复制 .yaml 文件<block ref="6c1d035244e82592cca4953c7743d814" category="inline-link-rx"></block> 到该文件夹。</block>
   <block id="abcf7e32baf550db167b82496350d414" category="list-text">运行以下命令以应用安装 Kube-state-metrics 所需的 .yaml 文件：</block>
@@ -7933,4 +7932,6 @@
   <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">您可以通过以下方式查看代理端点 URL ：在入职期间选择数据收集器时单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接。此时将显示如下表。</block>
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">代理端点表</block>
   <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d9bdb1d7869cec3eaa75aaa48b414845" category="inline-link-macro">Kube-state-metrics 文档</block>
+  <block id="755cdea554078bb6dfed008a027e421c" category="admonition">强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完整的功能集，包括将 Kubernetes 永久性卷（永久性卷）链接到后端存储设备的功能。另请注意，对于 Kube-state-metrics 2.0 及更高版本，默认情况下不会导出 Kubernetes 对象标签。要配置 Kube-state-metrics 以导出 Kubernetes 对象标签，必须指定指标标签 "allow" 列表。请参见中的 _-metric-labks-allowlist_ 选项 <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
 </blocks>
