@@ -15,7 +15,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | 组件 | Linux 要求 
 
 
-| 操作系统 | 运行以下许可版本之一的计算机： Red Hat Enterprise Linux 7.2 64 位 Red Hat Enterprise Linux 7.2 64 位 KVM Red Hat Enterprise Linux 7.5 64 位 Red Hat Enterprise Linux 7.5 64 位 KVM Red Hat Enterprise Linux 7.8 64 位 Red Hat Enterprise Linux 7.8 64 位 KVM CentOS 7.2 64 位 CentOS 7.2 64 位 KVM CentOS 7.5 64 位 KVM CentOS 7.5 64 位 CentOS 7.5 64 位 CentOS 7.5 64 位 KVM CentOS 7.8 64 位 CentOS 7.8 64 位 KVM 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。 
+| 操作系统 | 运行以下任一许可版本的计算机： Red Hat Enterprise Linux 7.x ， 8.x 64 位 CentOS 7.x ， 8.x 64 位此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。 
 
 
 | 命令 | 要安装，运行脚本和卸载，需要使用 "sudo su – " 命令。 
@@ -27,7 +27,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | 内存 | 16 GB RAM 
 
 
-| 可用磁盘空间 | 应按以下方式分配磁盘空间： /opt/netapp 25 GB 
+| 可用磁盘空间 | 应按以下方式分配磁盘空间： /opt/netapp 25-30 GB 
 
 
 | 网络 | 100 Mbps 到 1 Gbps 以太网连接，静态 IP 地址，与所有设备的 IP 连接以及与 Cloud Secure 实例的所需端口（ 80 或 443 ）。 
@@ -37,7 +37,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 |===
 
 
-| 可用磁盘空间 | 50 GB 对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 25 GB /var/log/netapp 25 GB 
+| 可用磁盘空间 | 对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 25-30 GB /var/log/netapp 25 GB 
 |===
 
 

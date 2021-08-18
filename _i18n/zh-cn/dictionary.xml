@@ -6970,17 +6970,14 @@
   <block id="36bb58d4c9e71b2c4ea1af277d7e3a81" category="paragraph">您必须 <block ref="8c7f43ef892529523b024d4c41e5a1ca" category="inline-link-macro-rx"></block> 以便从数据收集器获取信息。在安装 Agent 之前，您应确保环境满足操作系统， CPU ，内存和磁盘空间要求。</block>
   <block id="129f8880167531920bb3396830948e86" category="cell">Linux 要求</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">操作系统</block>
-  <block id="6515f00f81fc95ac6b768a3f68a46b2a" category="cell">运行以下许可版本之一的计算机： Red Hat Enterprise Linux 7.2 64 位 Red Hat Enterprise Linux 7.2 64 位 KVM Red Hat Enterprise Linux 7.5 64 位 Red Hat Enterprise Linux 7.5 64 位 KVM Red Hat Enterprise Linux 7.8 64 位 Red Hat Enterprise Linux 7.8 64 位 KVM CentOS 7.2 64 位 CentOS 7.2 64 位 KVM CentOS 7.5 64 位 KVM CentOS 7.5 64 位 CentOS 7.5 64 位 CentOS 7.5 64 位 KVM CentOS 7.8 64 位 CentOS 7.8 64 位 KVM 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="c441ee50c88f6e5e3a7c69fc69dad8b8" category="cell">命令</block>
   <block id="6068dbca35f237e6b23584f701dc4aa1" category="cell">要安装，运行脚本和卸载，需要使用 "sudo su – " 命令。</block>
   <block id="805053e0ff5abb1e01f2d2ce7d07ad96" category="cell">4 个 CPU 核</block>
   <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB RAM</block>
   <block id="da65b8cea76748b286bd905feef4a5fa" category="cell">可用磁盘空间</block>
-  <block id="2157bb8257f78bca1292d794ed01d4c8" category="cell">应按以下方式分配磁盘空间： /opt/netapp 25 GB</block>
   <block id="eec89088ee408b80387155272b113256" category="cell">网络</block>
   <block id="a4c9f60f11d808285b05aa24c83f213b" category="cell">100 Mbps 到 1 Gbps 以太网连接，静态 IP 地址，与所有设备的 IP 连接以及与 Cloud Secure 实例的所需端口（ 80 或 443 ）。</block>
   <block id="a6bf350fd489cc256fc955fcaf117bbd" category="paragraph">请注意： Cloud Insights 代理和 Cloud Secure 代理可以安装在同一台计算机上。但是，最好将其安装在不同的计算机上。如果两个代理安装在同一台计算机上，请按如下所示分配磁盘空间：</block>
-  <block id="dea4b0efd05a45109167707253f642fe" category="cell">50 GB 对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 25 GB /var/log/netapp 25 GB</block>
   <block id="7049e466c3c4a154b7cc62cffe2ca36b" category="section-title">其他建议</block>
   <block id="d35391dc3c80304f928b511837b6f6a5" category="list-text">强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 来同步 ONTAP 系统和代理计算机上的时间。</block>
   <block id="2209fa650bb8459f4028b704176e2a4b" category="section-title">云网络访问规则</block>
@@ -7960,4 +7957,7 @@
   <block id="4654b0becf9d1cd6185abd5644dddf77" category="list-text">在 Audit 页面上，设置所需的时间范围以及所需的任何筛选器。Cloud Insights 将仅导出与您设置的筛选和时间范围匹配的审核条目。</block>
   <block id="81e9e10a5416438d2549dae075160792" category="list-text">单击 _Export_ 按钮 <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> 在表的右上角。</block>
   <block id="7201440e51225680b60dccf28366c73d" category="paragraph">显示的审核事件将导出到 .CSV 文件，最多 10 ， 000 行。</block>
+  <block id="8d27ed17859baac177ef9c6571d0c222" category="cell">运行以下任一许可版本的计算机： Red Hat Enterprise Linux 7.x ， 8.x 64 位 CentOS 7.x ， 8.x 64 位此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
+  <block id="75cd5bf9b1dea198b36ca9987682e874" category="cell">应按以下方式分配磁盘空间： /opt/netapp 25-30 GB</block>
+  <block id="74a747110c8997f51592b496d16006be" category="cell">对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 25-30 GB /var/log/netapp 25 GB</block>
 </blocks>
