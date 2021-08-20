@@ -56,9 +56,7 @@ keywords: AU, acquisition unit, trioubleshooting
 
 * 首先，贵组织是否默认阻止访问，并且例外情况下仅允许访问特定网站 / 域？如果是，则需要将以下域添加到异常列表中：
 +
-....
-*.cloudinsights.netapp.com
-....
+ *.cloudinsights.netapp.com
 +
 您的 Cloud Insights 采集单元以及您在 Web 浏览器中与 Cloud Insights 的交互都将转到具有该域名的主机。
 
@@ -69,9 +67,7 @@ keywords: AU, acquisition unit, trioubleshooting
 
 执行此操作的最简单方法是将 Cloud Insights 域本身添加到异常列表：
 
-....
-*.cloudinsights.netapp.com
-....
+ *.cloudinsights.netapp.com
 如果未设置代理来进行流量检查，则可能需要或不需要例外列表。如果您不确定是否需要将 Cloud Insights 添加到例外列表中，或者由于代理和 / 或防火墙配置而在安装或运行 Cloud Insights 时遇到困难，请与您的代理管理团队联系，设置代理对 SSL 截获的处理方式。
 
 

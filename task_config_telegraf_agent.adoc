@@ -83,9 +83,7 @@ NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所�
 
 对于驻留在代理后面的系统，请执行以下操作以设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量 * 先前 * 以安装 Telegraf 代理：
 
-....
-[System.Environment]::SetEnvironmentVariable(“https_proxy”, “<proxy_server>:<proxy_port>”, [System.EnvironmentVariableTarget]::Machine)
-....
+ [System.Environment]::SetEnvironmentVariable(“https_proxy”, “<proxy_server>:<proxy_port>”, [System.EnvironmentVariableTarget]::Machine)
 
 
 ==== 卸载代理
@@ -165,14 +163,10 @@ NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所�
 
 . 为当前用户设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量：
 +
-....
-export https_proxy=<proxy_server>:<proxy_port>
-....
+ export https_proxy=<proxy_server>:<proxy_port>
 . 创建 _/etc/default/tengraf_ ，并插入 _https_proxy_and/or _http_proxy_ 变量的定义：
 +
-....
-https_proxy=<proxy_server>:<proxy_port>
-....
+ https_proxy=<proxy_server>:<proxy_port>
 
 
 
@@ -189,9 +183,7 @@ systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ an
 ....
 . 删除 Telegraf 代理：
 +
-....
-yum remove telegraf
-....
+ yum remove telegraf
 . 删除可能遗留的任何配置或日志文件：
 +
 ....
@@ -214,9 +206,7 @@ systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ an
 ....
 . 删除先前的电报代理：
 +
-....
-yum remove telegraf
-....
+ yum remove telegraf
 . link:#rhel-and-centos["安装新代理"]。
 
 
@@ -265,14 +255,10 @@ NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所�
 
 . 为当前用户设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量：
 +
-....
-export https_proxy=<proxy_server>:<proxy_port>
-....
+ export https_proxy=<proxy_server>:<proxy_port>
 . 创建 /etc/default/celaff ，并插入 _https_proxy_and/or _http_proxy_ 变量的定义：
 +
-....
-https_proxy=<proxy_server>:<proxy_port>
-....
+ https_proxy=<proxy_server>:<proxy_port>
 
 
 
@@ -289,9 +275,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 ....
 . 删除 Telegraf 代理：
 +
-....
-dpkg -r telegraf
-....
+ dpkg -r telegraf
 . 删除可能遗留的任何配置或日志文件：
 +
 ....
@@ -314,9 +298,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 ....
 . 删除先前的电报代理：
 +
-....
-dpkg -r telegraf
-....
+ dpkg -r telegraf
 . link:#ubuntu-and-debian["安装新代理"]。
 
 
@@ -356,9 +338,7 @@ NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所�
 
 对于驻留在代理后面的系统，请执行以下操作，为当前用户 * 先前 * 设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量，以安装 Telegraf 代理：
 
-....
-export https_proxy=<proxy_server>:<proxy_port>
-....
+ export https_proxy=<proxy_server>:<proxy_port>
 * 安装 Telegraf 代理之后，在 _/Applications/Telegraf.app/Contents/telegraf.plist_: 中添加并设置适当的 _https_proxy_and/or _http_proxy_ 变量
 
 ....
@@ -406,9 +386,7 @@ sudo launchctl start telegraf
 
 . 停止 Telegraf 服务：
 +
-....
-sudo launchctl stop telegraf
-....
+ sudo launchctl stop telegraf
 . 卸载此电报代理：
 +
 ....
@@ -431,9 +409,7 @@ rm -rf /usr/local/var/log/telegraf.*
 
 . 停止电报服务：
 +
-....
-sudo launchctl stop telegraf
-....
+ sudo launchctl stop telegraf
 . 卸载先前的电报代理：
 +
 ....
@@ -494,9 +470,7 @@ Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查�
 滚动以下示例以在命令块中正确查看此示例：
 
 +
-....
-installerName=cloudinsights-kubernetes.sh && token=<token> && key=c642e336-91f4-4c6f-8086-72faabd6aff6 && domain=tenant1.testk8.cloudinsights-test.netapp.com && curl -k -X GET -H "Authorization: Bearer $token" -H "X-CloudInsights-ApiKey-Id: $key" -o $installerName https://$domain/rest/v1/lake/telegraf/platforms/installer?platform=kubernetes && chmod +x $installerName && sudo --preserve-env JWT=$token DOMAIN_NAME=$domain API_KEY_ID=$key CLUSTER_NAME=TEST_CLUSTER NAMESPACE=NEW-NAMESPACE ./$installerName
-....
+ installerName=cloudinsights-kubernetes.sh && token=<token> && key=c642e336-91f4-4c6f-8086-72faabd6aff6 && domain=tenant1.testk8.cloudinsights-test.netapp.com && curl -k -X GET -H "Authorization: Bearer $token" -H "X-CloudInsights-ApiKey-Id: $key" -o $installerName https://$domain/rest/v1/lake/telegraf/platforms/installer?platform=kubernetes && chmod +x $installerName && sudo --preserve-env JWT=$token DOMAIN_NAME=$domain API_KEY_ID=$key CLUSTER_NAME=TEST_CLUSTER NAMESPACE=NEW-NAMESPACE ./$installerName
 +
 
 TIP: _cluster_name_ 是 Cloud Insights 收集指标的 Kubernetes 集群的名称，而 _namespace_是 要将 Telegraf 代理部署到的命名空间。如果指定的命名空间尚不存在，则会创建该命名空间。
@@ -537,14 +511,10 @@ NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所�
 
 对于驻留在代理后面的系统，请执行以下操作，为当前用户 * 先前 * 设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量，以安装 Telegraf 代理：
 
-....
-export https_proxy=<proxy_server>:<proxy_port>
-....
+ export https_proxy=<proxy_server>:<proxy_port>
 * 安装 Telegraf 代理之后，将适当的 _https_proxy_ 和 / 或 _http_proxy_ 环境变量添加并设置为 _telecraf-DS_ emonset 和 _telecraf-RS_ replicaset 。
 
-....
-kubectl edit ds telegraf-ds
-....
+ kubectl edit ds telegraf-ds
 ....
 …
        env:
@@ -557,9 +527,7 @@ kubectl edit ds telegraf-ds
              fieldPath: status.hostIP
 …
 ....
-....
-kubectl edit rs telegraf-rs
-....
+ kubectl edit rs telegraf-rs
 ....
 …
        env:
@@ -645,9 +613,7 @@ NOTE: 强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完�
 . 创建一个临时文件夹（例如， //tmp/Kube-state-yamal-files/_ ），然后从复制 .yaml 文件 https://github.com/kubernetes/kube-state-metrics/tree/master/examples/standard[] 到该文件夹。
 . 运行以下命令以应用安装 Kube-state-metrics 所需的 .yaml 文件：
 +
-....
-kubectl apply -f /tmp/kube-state-yaml-files/
-....
+ kubectl apply -f /tmp/kube-state-yaml-files/
 
 
 
@@ -681,17 +647,11 @@ kubectl apply -f /tmp/kube-state-yaml-files/
 
 如果监控命名空间仅用于 Telegraf ：
 
-....
-kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
-....
-....
-kubectl delete ns ci-monitoring
-....
+ kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
+ kubectl delete ns ci-monitoring
 如果除了 Telegraf 之外，监控命名空间还用于其他目的：
 
-....
-kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
-....
+ kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
 
 
 ==== 升级代理
@@ -702,9 +662,7 @@ kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebind
 
 . 备份现有配置：
 +
-....
-kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
-....
+ kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 . 卸载代理（有关说明，请参见上文）
 . link:#kubernetes["安装新代理"]。
 

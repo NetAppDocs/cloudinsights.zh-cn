@@ -57,9 +57,7 @@ JobManager ： Flink 主系统。协调一系列 TaskManager 。在高可用性�
 
 要将 JobManager 配置为公开此 Jobokia API ，您可以在节点上设置以下环境变量，然后重新启动 JobManager ：
 
-....
-export FLINK_ENV_JAVA_OPTS="-javaagent:/opt/flink/lib/jolokia-jvm-1.6.0-agent.jar=port=8778,host=0.0.0.0"
-....
+ export FLINK_ENV_JAVA_OPTS="-javaagent:/opt/flink/lib/jolokia-jvm-1.6.0-agent.jar=port=8778,host=0.0.0.0"
 您可以为朱洛基亚选择其他端口（ 8778 ）。如果您有一个内部 IP 来锁定 Jallokia ，则可以将 "catch all" 0.0.0.0 替换为您自己的 IP 。请注意，此 IP 需要可从电报插件访问。
 
 
@@ -68,9 +66,7 @@ export FLINK_ENV_JAVA_OPTS="-javaagent:/opt/flink/lib/jolokia-jvm-1.6.0-agent.ja
 
 要配置 TaskManager 以公开此 JOLokia API ，您可以在节点上设置以下环境变量，然后重新启动 TaskManager ：
 
-....
-export FLINK_ENV_JAVA_OPTS="-javaagent:/opt/flink/lib/jolokia-jvm-1.6.0-agent.jar=port=8778,host=0.0.0.0"
-....
+ export FLINK_ENV_JAVA_OPTS="-javaagent:/opt/flink/lib/jolokia-jvm-1.6.0-agent.jar=port=8778,host=0.0.0.0"
 您可以为朱洛基亚选择其他端口（ 8778 ）。如果您有一个内部 IP 来锁定 Jallokia ，则可以将 "catch all" 0.0.0.0 替换为您自己的 IP 。请注意，此 IP 需要可从电报插件访问。
 
 

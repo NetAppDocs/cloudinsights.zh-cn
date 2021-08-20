@@ -48,9 +48,7 @@ image:DockerDCConfigLinux.png["Docker 配置"]
 
 如果 Telegraf 代理正在 BareMetal 上运行，请运行以下命令将此 Telegraf Unix 用户添加到 Docker Unix 组：
 
-....
-sudo usermod -aG docker telegraf
-....
+ sudo usermod -aG docker telegraf
 如果 Telegraf 代理在 Kubernetes Pod 中运行，请将此套接字映射到 Pod 中作为卷，然后将此卷挂载到 /var/run/docker.sock ，以公开 Docker Unix 套接字。例如，将以下内容添加到 PodSpec 中：
 
 [listing]

@@ -27,9 +27,7 @@ image:api_assets_import.png["导入 API"]
 
 CSV 文件的常规格式如下。文件的第一行定义了导入字段并指定了字段的顺序。之后为每个标注或应用程序添加单独的行。您无需定义每个字段。但是，后续标注行必须遵循与定义行相同的顺序。
 
-....
-[Object Type] , [Object Name or ID] , Annotation Type [, Annotation Type,  ...] [, Application] [, Tenant] [, Line_Of_Business] [, Business_Unit] [, Project]
-....
+ [Object Type] , [Object Name or ID] , Annotation Type [, Annotation Type,  ...] [, Application] [, Tenant] [, Line_Of_Business] [, Business_Unit] [, Project]
 有关 .CSV 文件的示例，请参见 API 文档。
 
 您可以从 API Swagger 本身中的 .CSV 文件导入和分配标注。只需选择要使用的文件并单击 _Execute_ 按钮：

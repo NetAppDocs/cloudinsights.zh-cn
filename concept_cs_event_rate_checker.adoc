@@ -24,30 +24,22 @@ NOTE: 运行此脚本时，不应为要确定事件速率的 SVM 运行任何 ON
 . 按照 CloudSecure 中的说明安装代理。
 . 安装代理后，以 sudo 用户身份运行 _server_data_rate_checker.sh_ 脚本：
 +
-....
-/opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
-....
+ /opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
 . 此脚本要求在 Linux 计算机中安装 _sshpass_ 。可通过两种方式安装它：
 +
 .. 运行 fiolling 命令：
 +
-....
-linux_prompt> yum install sshpass
-....
+ linux_prompt> yum install sshpass
 .. 如果不起作用，请从 Web 将 _sshpass_ 下载到 Linux 计算机并运行以下命令：
 +
-....
-linux_prompt> rpm -i sshpass
-....
+ linux_prompt> rpm -i sshpass
 
 
 . 出现提示时，请提供正确的值。请参见以下示例。
 . 运行此脚本大约需要 5 分钟。
 . 运行完成后，此脚本将从 SVM 中打印事件速率。您可以在控制台输出中检查每个 SVM 的事件速率：
 +
-....
-“Svm svm_rate is generating 100 events/sec”.
-....
+ “Svm svm_rate is generating 100 events/sec”.
 
 
 . 每个 ONTAP SVM 数据收集器都可以与一个 SVM 相关联，这意味着每个数据收集器都能够接收单个 SVM 生成的事件数量。
@@ -76,9 +68,7 @@ B + C 应小于 A ，否则 Agent 计算机将无法监控。
 
 换言之，可添加到单个代理计算机的数据收集器数量应遵循以下公式：
 
-....
-Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
-....
+ Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
 
 
 === 示例
@@ -102,9 +92,7 @@ Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% <
 
 下面显示了一个脚本运行示例：
 
-....
-[root@ci-cs-data agent]# /opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
-....
+ [root@ci-cs-data agent]# /opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
 ....
 Enter the cluster ip: 10.192.139.166
 Enter the username to SSH: admin
@@ -141,9 +129,7 @@ fpolicy stats of svm audit_svm is saved in fpolicy_stat_audit_svm.log
 Svm audit_svm is generating 200 SMB events/sec and 100 NFS events/sec
 Overall svm audit_svm is generating 300 events/sec
 ....
-....
-[root@ci-cs-data agent]#
-....
+ [root@ci-cs-data agent]#
 
 
 == 故障排除

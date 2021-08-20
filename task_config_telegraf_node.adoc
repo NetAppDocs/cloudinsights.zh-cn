@@ -57,16 +57,12 @@ Cloud Insights （通过 Telegraf ）和 macOS 报告的内存使用量不同。
 
 * 远程格拉夫 * 计算 _Memory Used Total_ ，如下所示：
 
-....
-Memory Used Total = Memory Total - Memory Available Total
-....
+ Memory Used Total = Memory Total - Memory Available Total
 其中 _Memory Available Total_ 是从 _VM_stat_ 中的 " 可用页面 " 和 " 非活动页面 " 之和得出的。
 
 另一方面， * Mac 活动监控器 * 将按如下所示计算已用内存：
 
-....
-Memory Used = App Memory + Wired Memory + Compressed
-....
+ Memory Used = App Memory + Wired Memory + Compressed
 其中：
 
 * _App Memory 是从 _vm_stat_ 中的 " 匿名页面 " 和 " 可清除页面 " 之间的差异派生的，

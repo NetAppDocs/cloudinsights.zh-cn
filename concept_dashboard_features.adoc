@@ -378,9 +378,7 @@ image::SecondaryAxisExplained.png[二级轴示例]
 
 在此示例中，我们希望将读取 IOPS 显示为总 IOPS 的百分比。您可以将其视为以下公式：
 
-....
-Read Percentage = (Read IOPS / Total IOPS) x 100
-....
+ Read Percentage = (Read IOPS / Total IOPS) x 100
 这些数据可以显示在信息板上的折线图中。要执行此操作，请执行以下步骤：
 
 .步骤
@@ -402,9 +400,7 @@ Read Percentage = (Read IOPS / Total IOPS) x 100
 
 . 在 * 表达式 * 字段中，您可以使用与每个变量对应的字母来构建表达式。我们知道读取百分比 = （读取 IOPS/ 总 IOPS ） x 100 ，因此我们将此表达式写入为：
 +
-....
-(b / a) * 100
-....
+ (b / a) * 100
 . * 标签 * 字段用于标识表达式。将此标签更改为 " 读取百分比 " 或对您同样有意义的内容。
 . 将 * 单元 * 字段更改为 "%" 或 "percent" 。
 +
@@ -424,9 +420,7 @@ Read Percentage = (Read IOPS / Total IOPS) x 100
 
 要显示这些系统 I/O ，您可以从采集报告的总 IOPS 中减去读取和写入 IOPS 。公式可能如下所示：
 
-....
-System IOPS = Total IOPS - (Read IOPS + Write IOPS)
-....
+ System IOPS = Total IOPS - (Read IOPS + Write IOPS)
 然后，这些数据可以显示在信息板上的折线图中。要执行此操作，请执行以下步骤：
 
 .步骤
@@ -454,9 +448,7 @@ System IOPS = Total IOPS - (Read IOPS + Write IOPS)
 . 在 "* b*" 变量字段中，单击 * 选择 * 并选择 _IOPS - Write_ 。
 . 在 * 表达式 * 字段中，您可以使用与每个变量对应的字母来构建表达式。我们将表达式简单地写为：
 +
-....
-a + b
-....
+ a + b
 +
 在显示部分中，为此表达式选择 * 分区图 * 。
 

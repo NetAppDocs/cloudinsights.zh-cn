@@ -78,9 +78,7 @@ image:NewLinuxAUInstall.png["《 Linux AU 说明》"]
 
 执行此操作的最简单方法是在代理 / 防火墙中指定通配符配置，以便与 Cloud Insights 进行通信，例如：
 
-....
-*.cloudinsights.netapp.com
-....
+ *.cloudinsights.netapp.com
 
 NOTE: 通配符通常使用星号（ * ），但代理 / 防火墙配置可能使用不同的格式。请查阅代理文档，以确保环境中的通配符规范正确无误。
 
@@ -121,9 +119,7 @@ image::NewWindowsAUInstall.png[Windows AU 安装]
 * 您可以在 <install dir>\Cloud Insights \Acquisition Unity\log\acq.log 中访问采集单元日志
 * 使用以下脚本停止，启动，重新启动或检查采集单元的状态：
 +
-....
-cloudinsights-service.sh
-....
+ cloudinsights-service.sh
 
 
 
@@ -134,9 +130,7 @@ cloudinsights-service.sh
 
 执行此操作的最简单方法是在代理 / 防火墙中指定通配符配置，以便与 Cloud Insights 进行通信，例如：
 
-....
-*.cloudinsights.netapp.com
-....
+ *.cloudinsights.netapp.com
 
 NOTE: 通配符通常使用星号（ * ），但代理 / 防火墙配置可能使用不同的格式。请查阅代理文档，以确保环境中的通配符规范正确无误。
 
@@ -164,14 +158,10 @@ image:ProxyEndpoints_NewTable.png["代理端点表"]
 
 . 在采集单元服务器 /VM 上，运行以下命令：
 +
-....
-sudo cloudinsights-uninstall.sh -p
-....
+ sudo cloudinsights-uninstall.sh -p
 . 要获得卸载帮助，请运行：
 +
-....
-sudo cloudinsights-uninstall.sh --help
-....
+ sudo cloudinsights-uninstall.sh --help
 
 
 * 两者： *

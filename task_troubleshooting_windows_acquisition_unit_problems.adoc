@@ -50,9 +50,7 @@ keywords: AU, acquisition unit, trioubleshooting
 
 * 首先，贵组织是否默认阻止访问，并且例外情况下仅允许访问特定网站 / 域？如果是，则需要将以下域添加到例外列表中：
 +
-....
-*.cloudinsights.netapp.com
-....
+ *.cloudinsights.netapp.com
 +
 您的 Cloud Insights 采集单元以及您在 Web 浏览器中与 Cloud Insights 的交互都将转到具有该域名的主机。
 

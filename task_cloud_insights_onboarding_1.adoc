@@ -54,9 +54,7 @@ toc::[]
 
 您也可以直接打开浏览器访问 Cloud Insights 环境 URL ，例如：
 
-....
-https://<environment-name>.c01.cloudinsights.netapp.com/
-....
+ https://<environment-name>.c01.cloudinsights.netapp.com/
 每个用户的邀请函电子邮件中也会包含此 URL ，以便于访问和添加书签。如果用户尚未登录到 Cloud Central ，系统将提示他们登录。
 
 

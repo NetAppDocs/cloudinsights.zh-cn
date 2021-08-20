@@ -59,12 +59,8 @@ Telegraf 用于 Apache HTTP 服务器的插件依赖于 "mod_status" 模块的�
 
 模块的加载由 "/usr/local/apache/conf/httpd.conf " 下的配置文件控制。编辑此配置文件并取消注释以下行：
 
-....
-LoadModule status_module modules/mod_status.so
-....
-....
-Include conf/extra/httpd-info.conf
-....
+ LoadModule status_module modules/mod_status.so
+ Include conf/extra/httpd-info.conf
 
 
 ==== 从模块公开统计信息：
