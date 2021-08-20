@@ -874,7 +874,6 @@
   <block id="1f8dd0c047e5f2c6c0d3267fff9f2bdb" category="list-text">输入一个或多个邀请电子邮件地址。</block>
   <block id="b1e58a6582b4b8cf5f1631eac44903a9" category="paragraph">* 注意： * 输入多个地址时，这些地址都是使用相同角色创建的。您只能将多个用户设置为同一角色。</block>
   <block id="3b44544b9d947c143a9cfcb45be1aeff" category="list-text">单击 * 邀请 *</block>
-  <block id="5f4c0be7b69ed6065ee66f5bb276c68b" category="paragraph">此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户，则只需登录即可访问其 Cloud Insights 环境。</block>
   <block id="ae34cecb877a210f81bf4d446541e619" category="section-title">单点登录（ SSO ）和身份联合</block>
   <block id="4743b9c396b4a51215bcc90cb20ea986" category="section-title">在 Cloud Insights 中为 SSO 启用身份联合</block>
   <block id="3c55703ac1b754437c4ca4d09b9083c0" category="paragraph">使用身份联合：</block>
@@ -7960,4 +7959,5 @@
   <block id="8d27ed17859baac177ef9c6571d0c222" category="cell">运行以下任一许可版本的计算机： Red Hat Enterprise Linux 7.x ， 8.x 64 位 CentOS 7.x ， 8.x 64 位此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="75cd5bf9b1dea198b36ca9987682e874" category="cell">应按以下方式分配磁盘空间： /opt/netapp 25-30 GB</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 25-30 GB /var/log/netapp 25 GB</block>
+  <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户，则只需登录即可访问其 Cloud Insights 环境。</block>
 </blocks>
