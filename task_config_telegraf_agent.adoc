@@ -122,10 +122,10 @@ sc.exe delete telegraf
 
 === RHEL 和 CentOS
 
-image:AgentInstallRHELCentOS.png["RHEL/CentOS 代理安装"]
+image:Agent_Requirements_Rhel.png["RHEL/CentOS 代理安装"]
 
 .前提条件：
-* 必须提供以下命令： curl ， sudo ， ping 和 dmidecode
+* 必须提供以下命令： curl ， sudo ， ping ， sha256sum 和 dmidecode
 * 如果您使用的是代理，请按照 * 为 RHEL/CentOS* 配置代理支持 " 一节中的说明进行操作。
 
 
@@ -214,10 +214,10 @@ systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ an
 
 === Ubuntu 和 Debian
 
-image:AgentInstallUbuntuDebian.png["Ubuntu 或 Debian 代理安装"]
+image:Agent_Requirements_Ubuntu.png["Ubuntu 或 Debian 代理安装"]
 
 .前提条件：
-* 必须提供以下命令： curl ， sudo ， ping 和 dmidecode
+* 必须提供以下命令： curl ， sudo ， ping ， sha256sum 和 dmidecode
 * 如果您使用的是代理，请按照 * 为 Ubuntu 或 Debian 配置代理支持 * 一节中的说明进行操作。
 
 
@@ -306,10 +306,10 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 === macOS
 
-image:AgentInstallMacOS.png["安装 macOS 代理"]
+image:Agent_Requirements_Macos.png["安装 macOS 代理"]
 
 .前提条件：
-* 必须可以使用 "ccur" 命令
+* 必须提供以下命令： curl ， sudo 和 shasum
 * 如果您使用的是代理，请按照 * 为 macOS* 配置代理支持 " 一节中的说明进行操作。
 
 

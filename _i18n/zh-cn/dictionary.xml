@@ -5956,9 +5956,6 @@
   <block id="44bbcb23890d6d6f6e19f827fe6a3239" category="inline-link-macro">安装新代理</block>
   <block id="1e3047ccd30b2ed259aa8b3fe3e877d1" category="list-text"><block ref="67cec2de8f18c94e7ba97311262ff17e" category="inline-link-macro-rx"></block>。</block>
   <block id="b523f646735e8e8381556641bbff1d1f" category="section-title">RHEL 和 CentOS</block>
-  <block id="cbfbb1b02b42a0eb1382790d79b41265" category="inline-image-macro">RHEL/CentOS 代理安装</block>
-  <block id="06f93f18f33f178cff969f63c9f5ff1e" category="paragraph"><block ref="06f93f18f33f178cff969f63c9f5ff1e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4cef5e349d4b015b2d82a8e22a764831" category="list-text">必须提供以下命令： curl ， sudo ， ping 和 dmidecode</block>
   <block id="c05b6a8cffe30e13e26576fdbc5eaea7" category="list-text">如果您使用的是代理，请按照 * 为 RHEL/CentOS* 配置代理支持 " 一节中的说明进行操作。</block>
   <block id="c9a13bf8b19a106ff517d02fffbce168" category="list-title">在 RHEL/CentOS 上安装代理的步骤：</block>
   <block id="371155faf9e65eedebc467c42881ab64" category="list-text">打开 Bash 窗口</block>
@@ -5978,7 +5975,6 @@
   <block id="bf2c36be7f2bc4dd2e37e375e76d6d4a" category="list-text"><block ref="8fae6fa4f132bafa12a111b0e12ddf22" category="inline-link-macro-rx"></block>。</block>
   <block id="7ae220dde836123a83ab52aa985caa47" category="section-title">Ubuntu 和 Debian</block>
   <block id="3fcd2752c343d8536926bfb628eec3dc" category="inline-image-macro">Ubuntu 或 Debian 代理安装</block>
-  <block id="26d94383d6b14d8d7d3b0d1ecc801f79" category="paragraph"><block ref="26d94383d6b14d8d7d3b0d1ecc801f79" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c67ca839a2354a09852b2eedf2223a7" category="list-text">如果您使用的是代理，请按照 * 为 Ubuntu 或 Debian 配置代理支持 * 一节中的说明进行操作。</block>
   <block id="2ccb8fda807f639572273dc350f43bbf" category="list-title">在 Debian 或 Ubuntu 上安装代理的步骤：</block>
   <block id="6271d65c06a7a1fd244d963c100a1a1c" category="paragraph">如果您的操作系统使用的是 systemd ：</block>
@@ -5988,9 +5984,6 @@
   <block id="936ff88b3ce432ac2624f7f2bb4998a4" category="paragraph">要在 Ubuntu 或 Debian 上卸载代理，请在 Bash 终端中运行以下命令：</block>
   <block id="7f3a9bda6122a676154f73d5edf02232" category="list-text"><block ref="760050cb55c606cd7ef0af21f798bf45" category="inline-link-macro-rx"></block>。</block>
   <block id="8b06df0295926efcdcc1f9e13c49848e" category="section-title">macOS</block>
-  <block id="e3669c2861138f3274c1558fb9ab1e09" category="inline-image-macro">安装 macOS 代理</block>
-  <block id="8354b5f38043b44dae26ee6a037270b9" category="paragraph"><block ref="8354b5f38043b44dae26ee6a037270b9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9ee3c223b54a72f4992a571824175068" category="list-text">必须可以使用 "ccur" 命令</block>
   <block id="9081c1ab02feb1730d134201f823bf3c" category="list-text">如果您使用的是代理，请按照 * 为 macOS* 配置代理支持 " 一节中的说明进行操作。</block>
   <block id="b23f4e2f2268beeee7ca70611f0a7a37" category="list-title">在 macOS 上安装代理的步骤：</block>
   <block id="b74009f2c5c0b882b11f994865916e2d" category="list-text">如果您之前使用 Homebrew 安装了 Telegraf 代理，则系统将提示您将其卸载。卸载先前安装的 Telegraf 代理后，重新运行上述步骤 5 中的命令。</block>
@@ -7960,4 +7953,11 @@
   <block id="75cd5bf9b1dea198b36ca9987682e874" category="cell">应按以下方式分配磁盘空间： /opt/netapp 25-30 GB</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 25-30 GB /var/log/netapp 25 GB</block>
   <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户，则只需登录即可访问其 Cloud Insights 环境。</block>
+  <block id="e0d7a90b12ef3cae3c8429a34b69736a" category="inline-image-macro">RHEL/CentOS 代理安装</block>
+  <block id="530723ab95ea5239b9c308f8890b5069" category="paragraph"><block ref="530723ab95ea5239b9c308f8890b5069" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6f2ec5bf691b67e423ea64e2cefce5af" category="list-text">必须提供以下命令： curl ， sudo ， ping ， sha256sum 和 dmidecode</block>
+  <block id="49d620df1cdf6184275e83524131195e" category="paragraph"><block ref="49d620df1cdf6184275e83524131195e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fa69f910ba4ca92eb71af48996add386" category="inline-image-macro">安装 macOS 代理</block>
+  <block id="3594374519a82758e6268cba4373faae" category="paragraph"><block ref="3594374519a82758e6268cba4373faae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ee65e792eaad8713f252a27e5b5164ed" category="list-text">必须提供以下命令： curl ， sudo 和 shasum</block>
 </blocks>
