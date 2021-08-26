@@ -7903,5 +7903,5 @@
   <block id="ee65e792eaad8713f252a27e5b5164ed" category="list-text">必须提供以下命令： curl ， sudo 和 shasum</block>
   <block id="97e0d834bc800959e3bd09edcaa9de7e" category="section-title">监控组</block>
   <block id="861cce966793d64acfe10deceab95b98" category="paragraph">要创建新组，请单击 "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</block>
-  <block id="d5b99247687b3f87ffa28f0d709c14f9" category="paragraph">通过单击某个组并从菜单中选择 _Remove from Group_ 来删除监控器。您不能从 _all monitors 或 _Custom Monitors_ 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。</block>
+  <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">通过单击某个组并从菜单中选择 _Remove from Group_ 来删除监控器。您不能从 _all monitors_ 或 _Custom Monitors_ 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。</block>
 </blocks>

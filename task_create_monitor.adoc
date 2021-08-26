@@ -170,7 +170,7 @@ image:Monitors_AssociateToGroup.png["与组关联"]
 
 
 
-通过单击某个组并从菜单中选择 _Remove from Group_ 来删除监控器。您不能从 _all monitors 或 _Custom Monitors_ 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。
+通过单击某个组并从菜单中选择 _Remove from Group_ 来删除监控器。您不能从 _all monitors_ 或 _Custom Monitors_ 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。
 
 
 NOTE: 从组中删除监控器不会从 Cloud Insights 中删除该监控器。要完全删除某个监控器，请选择该监控器，然后单击 _Delete_ 。此操作还会将其从所属组中删除，并且任何用户都无法再使用它。
