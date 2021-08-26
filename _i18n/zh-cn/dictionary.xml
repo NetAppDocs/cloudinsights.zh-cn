@@ -4136,9 +4136,6 @@
   <block id="fc5482f286ef5daafd6a8d85c7885c03" category="list-text">选择要导出其标识的一个或多个光纤通道设备。</block>
   <block id="1831b018233352e80cd4ae41174733e5" category="list-text">单击 * 导出 * <block ref="5a6850cb7f51e9dfd8e09198487d79d2" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
   <block id="72e518a27a4c3f4be36166b3d74723b8" category="paragraph">选择是打开 .CSV 文件还是保存文件。</block>
-  <block id="ba1a61a04ac4665aebb09d9300cbec6c" category="paragraph">相关：<block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
-<block ref="6475e16c5d8b79197b844437d05b9412" category="inline-link-macro-rx"></block>
-<block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
   <block id="99f1acff1d2f1ebc7fdf8742d4379f66" category="summary">创建一个网络挂钩，以便针对可宽延性的性能或清单阈值发出警报</block>
   <block id="24b87c1b869473ea3ff363d0080b7620" category="doc">Slack 的 webhook 示例</block>
   <block id="4bee282a8c22686bb3e6595e1333fbdc" category="paragraph">网络挂机允许用户使用自定义的网络挂机通道向各种应用程序发送警报通知。此页面提供了一个为 Slack 设置 webhooks 的示例。</block>
@@ -5807,8 +5804,6 @@
   <block id="d208bc48ca9e6fe4b4936dce12add557" category="paragraph">将 IP 设备标识导出到 .CSV 文件时，该文件将按所示顺序包含以下信息：</block>
   <block id="47e5e39b3cac687a3b73edfe98c861de" category="list-text">选择 * IP 地址标识 * 选项卡。</block>
   <block id="43a4485688412a4e4e4fab069e3e9921" category="list-text">选择要导出其标识的 IP 设备。</block>
-  <block id="5f54f90c1320f8cf425ceb12c8181b5e" category="paragraph">相关：链接： task_device_resolution fibre_channel.html[ 光纤通道设备解析 ]<block ref="6475e16c5d8b79197b844437d05b9412" category="inline-link-macro-rx"></block>
-<block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
   <block id="a1151f371f1db5ddea0adcadbc49738e" category="summary">PostgreSQL 数据收集器配置</block>
   <block id="28279ca1d2fa23440d64e252b10c2f2e" category="doc">PostgreSQL 数据收集器</block>
   <block id="45946606e52c951c2b379ff7a77d2b76" category="paragraph">Cloud Insights 使用此数据收集器从 PostgreSQL 收集指标。</block>
@@ -7904,4 +7899,10 @@
   <block id="97e0d834bc800959e3bd09edcaa9de7e" category="section-title">监控组</block>
   <block id="861cce966793d64acfe10deceab95b98" category="paragraph">要创建新组，请单击 "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</block>
   <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">通过单击某个组并从菜单中选择 _Remove from Group_ 来删除监控器。您不能从 _all monitors_ 或 _Custom Monitors_ 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。</block>
+  <block id="479ed2d8eafc15acde1a42e1b6a98860" category="paragraph">相关：<block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
+<block ref="03d103531f94c82411117d01aa2e8036" category="inline-link-macro-rx"></block>
+<block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
+  <block id="ab9ecb106589bb37422c33e81b2e5e08" category="paragraph">相关：<block ref="280bfa8feb63e3ce80ec4f66b259f852" category="inline-link-macro-rx"></block>
+<block ref="03d103531f94c82411117d01aa2e8036" category="inline-link-macro-rx"></block>
+<block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
 </blocks>

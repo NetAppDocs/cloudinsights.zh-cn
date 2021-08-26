@@ -84,5 +84,6 @@ NOTE: 作为最佳实践，建议先将 IP Address Identify 信息导出到 .CSV
 
 
 
-相关：链接： task_device_resolution fibre_channel.html[ 光纤通道设备解析 ]link:task_creating_device_resolution_rules.html["正在创建设备解析规则"]
+相关：link:task_device_resolution_fibre_channel.html["光纤通道设备解析"]
+
 
