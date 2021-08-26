@@ -2903,69 +2903,13 @@
   <block id="a2786365bad51d811f1602d581fb9374" category="paragraph">您可以通过单击监控器右侧的菜单并选择 * 暂停 * 来选择临时暂停监控某个对象类型。准备好恢复监控后，单击 * 恢复 * 。</block>
   <block id="11a8d5beba27513c507b302b1ef0545d" category="paragraph">您可以从菜单中选择 * 复制 * 来复制监控器。然后，您可以修改新的监控器并更改对象 / 指标，筛选器，条件，电子邮件收件人等</block>
   <block id="785af682b2cf8712cbb6039f68f0b952" category="paragraph">如果不再需要显示器，您可以从菜单中选择 * 删除 * 来将其删除。</block>
-  <block id="d949f536805b6d868a713209ceaef01c" category="section-title">监控组和系统定义的监控器</block>
   <block id="03beff1464928590c48c07d06198e305" category="paragraph">通过分组，您可以查看和管理相关监控器。例如，您可以为环境中的存储配置一个专用监控组，也可以为特定收件人列表配置相关监控器。</block>
-  <block id="902cd21e06ae1405c080afd5ab26ff9c" category="inline-image-macro">监控组列表</block>
-  <block id="1465c5ebe3ecf2c67bf86d6526a84bcd" category="paragraph"><block ref="1465c5ebe3ecf2c67bf86d6526a84bcd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d0c3ceff1be949611a80f9a88d0ae7f3" category="paragraph">监控器分为以下几类：</block>
-  <block id="e8f4cd9cd57cfcd2264a2600d3e83a62" category="list-text">所有监控器 * ：用户创建的和系统定义的所有监控器</block>
-  <block id="dfde348b4a5197657e243b86ddeb4e5d" category="list-text">* 自定义监控器 * ：包括用户创建的监控器</block>
-  <block id="0e4ebfa9980eb252c08464de3062dd7b" category="list-text">* 系统监控组 * ：这些组包括系统定义的监控器，这些监控器基于环境中的数据收集器</block>
-  <block id="22ba4b6ac4d9ec56fd5a89a92d6260a5" category="list-text">* 用户创建的监控组 * ：这些是您创建的监控组</block>
   <block id="9c639a1450f6874f6897e1393bc7e090" category="paragraph">组名称旁边会显示组中包含的监控器数量。</block>
-  <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">自定义监控器可以暂停，恢复，删除或移动到其他组。系统定义的监控器可以暂停和恢复，但不能删除或移动。</block>
-  <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="section-title">系统定义的监控器</block>
-  <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">系统定义的监控器由预定义的指标和条件以及默认说明和更正操作组成，这些内容无法修改。您可以修改系统定义的监控器的通知收件人列表。要查看指标，条件，问题描述和更正操作，或者修改收件人列表，请打开系统定义的监控组，然后单击列表中的监控器名称。</block>
-  <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">无法修改或删除系统定义的监控组。</block>
-  <block id="cabbbf7fefe4319bf83cb8fc4f054cbb" category="paragraph">以下系统定义的监控器可在所记录的组中使用。</block>
-  <block id="8c3d5985ed501d011f08dd2f4a6a027f" category="list-text">* ONTAP Infrastructure* 可监控 ONTAP 集群中与基础架构相关的问题。</block>
-  <block id="2bd726cf12f9292e804f46bb3ca1133e" category="list-text">* ONTAP 工作负载示例 * 包括与工作负载相关的问题的监控器。</block>
-  <block id="141e31818558b2f9c106f51987380a29" category="list-text">两个组中的监控器默认为 _Paused_state 。</block>
-  <block id="72abf8aec41374681348ca7f6c410986" category="cell">监控问题描述</block>
-  <block id="32c3164a94bfcc777dde834487e62809" category="cell">ONTAP 基础架构</block>
-  <block id="ceb1cc2256839013af7a760f6f0fb2b4" category="cell">存储容量限制</block>
-  <block id="b3849714e1ad79f2d16d461e15dca3a2" category="cell">当存储池（聚合）填满时， I/O 操作会减慢并最终停止，从而导致存储中断意外事件。警告警报表示应尽快采取计划内的操作来还原最小可用空间。严重警报表示服务即将中断，应采取紧急措施释放空间以确保服务连续性。</block>
-  <block id="f5ae90fdb331775a72189e50b3cf0431" category="cell">存储性能限制</block>
-  <block id="b991ec39b96c6e338cea2afcc68c860c" category="cell">当存储池达到性能限制时，操作会减慢，延迟会增加，工作负载和应用程序可能会开始出现故障。ONTAP 会评估因工作负载而导致的存储池利用率，并估计已消耗的性能百分比。警告警报表示应采取计划内操作以减少存储池负载，因为可能没有足够的存储池性能来处理工作负载峰值。严重警报表示性能下降即将发生，应采取紧急措施来减少存储池负载，以确保服务连续性。</block>
-  <block id="9a72a542d201595a0c69429633355dc6" category="cell">光纤通道端口利用率高</block>
-  <block id="5c7b84856003f9b9aa3c4efa82f60383" category="cell">光纤通道协议端口用于在客户主机系统和 ONTAP LUN 之间接收和传输 SAN 流量。如果端口利用率较高，则会成为瓶颈，并最终影响光纤通道协议工作负载的性能。警告警报表示应采取计划内操作来平衡网络流量。严重警报表示服务即将中断，应采取紧急措施平衡网络流量，以确保服务连续性。</block>
-  <block id="19047134aad7045d35d0da633e495b47" category="cell">网络端口利用率高</block>
-  <block id="87985bf6f86759284ec0fddecec96e27" category="cell">网络端口用于在客户主机系统和 ONTAP 卷之间接收和传输 NFS ， CIFS 和 iSCSI 协议流量。如果端口利用率较高，则会成为瓶颈，并最终影响 NFS ， CIFS 和 iSCSI 工作负载的性能。警告警报表示应采取计划内操作来平衡网络流量。严重警报表示服务即将中断，应采取紧急措施平衡网络流量，以确保服务连续性。</block>
-  <block id="5951ac71ce3e3a74d6315d409967bd7c" category="cell">ONTAP 工作负载示例</block>
-  <block id="fbc825226ae4d8f31c0f222df5d96f7a" category="cell">卷索引节点限制</block>
-  <block id="441f03fbe64b22adf68601bd508c0e34" category="cell">存储文件的卷使用索引节点（索引节点）来存储文件元数据。当卷用尽其索引节点分配时，无法再向其添加文件。警告警报表示应采取计划内操作来增加可用索引节点的数量。严重警报表示文件限制即将耗尽，应采取紧急措施释放索引节点以确保服务连续性。</block>
-  <block id="32eace249ad21e4aa459717fcc33485b" category="cell">qtree 容量已满</block>
-  <block id="433e6602b9c6d89dec1d50d40c438bb5" category="cell">qtree 是一种逻辑上定义的文件系统，可以作为卷中根目录的一个特殊子目录存在。每个 qtree 都有一个默认空间配额或一个配额策略定义的配额，用于在卷容量范围内限制树中存储的数据量。警告警报表示应采取计划内操作来增加空间。严重警报表示服务即将中断，应采取紧急措施释放空间以确保服务连续性。</block>
-  <block id="c3707091081e6eb8649650e62bc36b73" category="cell">LUN 高延迟</block>
-  <block id="a99bd8f2f6a8c9aff3f73ac6ca155e54" category="cell">LUN 是指通常由性能敏感型应用程序（如数据库）驱动的 IO 流量的对象。高 LUN 延迟意味着应用程序本身可能会受到影响，无法完成其任务。警告警报表示应采取计划内操作将 LUN 移动到相应的节点或聚合。严重警报表示服务即将中断，应采取紧急措施以确保服务连续性。以下是基于介质类型的预期延迟 - SSD 最长 1-2 毫秒； SAS 最长 8-10 毫秒； SATA HDD 17 至 20 毫秒</block>
-  <block id="ed10a6b7e834968d466c125d820e777d" category="cell">NVMe 命名空间延迟高</block>
-  <block id="ffd078a14328f161cf5786373205e452" category="cell">NVMe 命名空间是指通常由性能敏感型应用程序（如数据库）驱动的 IO 流量提供服务的对象。NVMe 命名空间延迟较高意味着应用程序本身可能会受到影响，无法完成其任务。警告警报表示应采取计划内操作将 LUN 移动到相应的节点或聚合。严重警报表示服务即将中断，应采取紧急措施以确保服务连续性。</block>
-  <block id="cb3585a56d4c0d533a416ccff0308ea5" category="cell">qtree 文件软限制</block>
-  <block id="645253a0bb6c972452a4096e8011ad88" category="cell">qtree 是一种逻辑上定义的文件系统，可以作为卷中根目录的一个特殊子目录存在。每个 qtree 都有一个可包含的文件数量配额，以便在卷中保持可管理的文件系统大小。qtree 会保留软文件编号配额，以便能够在达到 qtree 中的文件限制并无法存储任何其他文件之前主动向用户发出警报。监控 qtree 中的文件数量可确保用户获得无中断的数据服务。</block>
-  <block id="3a849e3a8e6ffdec2ee97f7288ddb7cb" category="cell">qtree 文件硬限制</block>
-  <block id="98770547b2bdfdcdc051602230349651" category="cell">qtree 是一种逻辑上定义的文件系统，可以作为卷中根目录的一个特殊子目录存在。每个 qtree 都有一个可包含的文件数量配额，以便在卷中保持可管理的文件系统大小。qtree 会保留硬文件编号配额，超过此配额，树中的新文件将被拒绝。监控 qtree 中的文件数量可确保用户获得无中断的数据服务。</block>
-  <block id="5ee0fc799fda7fd7a07c81cd1d94046e" category="cell">qtree 容量软限制</block>
-  <block id="e3bd2fb3f4246f971186017eede42c69" category="cell">qtree 是一种逻辑上定义的文件系统，可以作为卷中根目录的一个特殊子目录存在。每个 qtree 都有一个以 KB 为单位的空间配额，可用于存储数据，以控制卷中用户数据的增长，并且不超过其总容量。qtree 保持软存储容量配额，以便能够在达到 qtree 中的总容量配额限制并无法再存储数据之前主动向用户发出警报。监控 qtree 中存储的数据量可确保用户接收到无中断的数据服务。</block>
-  <block id="e2600ee10a370308a427638d9891da2a" category="cell">qtree 容量硬限制</block>
-  <block id="38b0d50f9e083e1f199ce38f31ddf19c" category="cell">qtree 是一种逻辑上定义的文件系统，可以作为卷中根目录的一个特殊子目录存在。每个 qtree 都有一个以 KB 为单位的空间配额，可用于存储数据，以控制卷中用户数据的增长，并且不超过其总容量。qtree 硬存储容量配额用作一个阈值，超过此阈值后，将拒绝对 qtree 进行写入。监控 qtree 中存储的数据量可确保用户接收到无中断的数据服务。</block>
-  <block id="e89c167818c91da4b65948a699087631" category="cell">用户配额容量软限制</block>
-  <block id="87a3d8aa8300932148ee3d29711c5f21" category="cell">ONTAP 可识别有权访问卷中的卷，文件或目录的 Unix 或 Windows 系统的用户。因此， ONTAP 允许客户为其 Linux 或 Windows 系统的用户或用户组配置存储容量。用户或组策略配额用于限制用户可用于其自己数据的空间量。此配额的软限制允许在卷中已用容量达到总容量配额时主动通知用户。监控用户配额或组配额中存储的数据量可确保用户获得不间断的数据服务。</block>
-  <block id="6f020841b73e150f652a53c82807c34c" category="cell">用户配额容量硬限制</block>
-  <block id="62e99db53e433bbee6ce2b44aca6ab65" category="cell">ONTAP 可识别有权访问卷中的卷，文件或目录的 Unix 或 Windows 系统的用户。因此， ONTAP 允许客户为其 Linux 或 Windows 系统的用户或用户组配置存储容量。用户或组策略配额用于限制用户可用于其自己数据的空间量。此配额的硬限制允许在达到总容量配额之前，当卷中已用容量正确时向用户发出通知。监控用户配额或组配额中存储的数据量可确保用户获得不间断的数据服务。</block>
-  <block id="37ae4fd86e75b4d79cca8e7f3b882fc5" category="cell">卷高延迟</block>
-  <block id="e2ce6f22b72050332f9818afc321a703" category="cell">卷是指通常由性能敏感型应用程序（包括 DevOps 应用程序，主目录和数据库）驱动的 IO 流量提供服务的对象。高卷延迟意味着应用程序本身可能会受到影响，无法完成其任务。监控卷延迟对于保持应用程序一致的性能至关重要。以下是基于介质类型的预期延迟 - SSD 最长 1-2 毫秒； SAS 最长 8-10 毫秒； SATA HDD 17 至 20 毫秒</block>
-  <block id="b7ff395c6ddc73655a4b2da28aebe1cc" category="cell">Snapshot 预留容量已满</block>
-  <block id="d6a2a00b450971f882ec854a09aad1eb" category="cell">存储应用程序和客户数据需要卷的存储容量。其中一部分空间称为 Snapshot 预留空间，用于存储快照，以便在本地保护数据。ONTAP 卷中存储的新数据和更新数据越多，快照容量就越多，未来的新数据或更新数据可用的快照存储容量也就越少。如果卷中的快照数据容量达到总快照预留空间，可能会导致客户无法存储新的快照数据，并降低卷中数据的保护级别。监控卷已用快照容量可确保数据服务的连续性。</block>
-  <block id="a2122ea859eba435f18c98c20037d48c" category="cell">卷容量已满</block>
-  <block id="b4377e0135c3410c9594eae5882bfb8e" category="cell">存储应用程序和客户数据需要卷的存储容量。ONTAP 卷中存储的数据越多，未来数据的存储可用性就越低。如果卷中的数据存储容量达到总存储容量，则可能会导致客户由于缺少存储容量而无法存储数据。监控卷已用存储容量可确保数据服务的连续性。</block>
-  <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">自定义监控组</block>
-  <block id="46823a39af1ef1aeeeec87c034852563" category="paragraph">要创建新的自定义监控组，请单击 * "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</block>
   <block id="7c886a234bf4d8691074a08c126c8625" category="paragraph">要向组中添加监控器，请转到 _all monitors_ 组（建议）并执行以下操作之一：</block>
   <block id="b1fff7b254bfcb153bd679158818bf82" category="list-text">要添加单个显示器，请单击该显示器右侧的菜单，然后选择 _Add to Group_ 。选择要将监控器添加到的组。</block>
   <block id="0afe02aafcb932fbc2c281b9036adebd" category="list-text">单击监控器名称以打开监控器的编辑视图，然后在 _Associate to a monitor group_ 部分中选择一个组。</block>
   <block id="850550000a544306e2d25d5b4ee17d9e" category="inline-image-macro">与组关联</block>
   <block id="e2bc4bcf0670da96e21e208bf6bcc766" category="paragraph"><block ref="e2bc4bcf0670da96e21e208bf6bcc766" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">通过单击某个组并从菜单中选择 _Remove from Group_ 来删除监控器。您不能从 _all monitors_ 或 _Custom Monitors_ 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。</block>
   <block id="e30c931a1dd5474d9e4ca4e7c88580c7" category="admonition">从组中删除监控器不会从 Cloud Insights 中删除该监控器。要完全删除某个监控器，请选择该监控器，然后单击 _Delete_ 。此操作还会将其从所属组中删除，并且任何用户都无法再使用它。</block>
   <block id="cdd3916c98efbf8a767744185462ffec" category="paragraph">您也可以按相同方式将显示器移动到其他组，选择 _move to Group_ 。</block>
   <block id="4cd1a4d2d0079954614c21e4318c8a2a" category="admonition">在任何给定时间，每个监控器只能属于一个组。</block>
@@ -4875,9 +4819,6 @@
   <block id="f7e83685d25e3038170e83ca19c3cbf0" category="section-title">警报详细信息页面</block>
   <block id="b254b175b71c2c7dca19ba0dcbc5da07" category="paragraph">" 警报详细信息 " 页面提供了有关警报的其他详细信息，包括 _Summary_ ，显示与对象数据相关的图形的 _Expert View_ ，警报调查人员输入的任何 _related asset_ 和 _comment_ 。</block>
   <block id="1b489429111564ed0ac0109b22575d28" category="paragraph"><block ref="1b489429111564ed0ac0109b22575d28" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="910ba96085a400a51981e26de1f1777c" category="section-title">" 永久活动 " 警报</block>
-  <block id="61e3c9516f5f3d6a1d770780589866f5" category="paragraph">可以对监控器进行配置，使其状态为 "* 始终 * " 存在于受监控对象上，例如， IOPS &gt; 1 或延迟 &gt; 0 。它们通常创建为 " 测试 " 监控器，然后被遗忘。此类监控器会创建在成分卷对象上永久处于打开状态的警报，这些警报可能会随着时间的推移出现发生原因系统压力和稳定性问题。</block>
-  <block id="074eac2d2550921cfca0dbad722daa0f" category="paragraph">为防止出现这种情况， Cloud Insights 将在 7 天后自动关闭任何 " 永久活动 " 警报。请注意，底层监控条件可能会（可能会）继续存在，从而导致几乎立即发出新警报，但关闭 " 始终处于活动状态 " 警报可缓解否则可能发生的某些系统压力。</block>
   <block id="91b3f80f2945e60d6c3e3769a4e0e948" category="summary">配置系统存储 DS8000 系列数据收集器。</block>
   <block id="3f29caefc6c8f50acf9dfa8ec83f2119" category="doc">IBM System Storage DS8000 系列数据收集器</block>
   <block id="fb095a48fdd91339a182559490b78f3b" category="paragraph">IBM DS （ CLI ）数据收集器支持为 DS6xxx 和 DS8xxx 设备采集清单和性能数据。</block>
@@ -7960,4 +7901,7 @@
   <block id="fa69f910ba4ca92eb71af48996add386" category="inline-image-macro">安装 macOS 代理</block>
   <block id="3594374519a82758e6268cba4373faae" category="paragraph"><block ref="3594374519a82758e6268cba4373faae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ee65e792eaad8713f252a27e5b5164ed" category="list-text">必须提供以下命令： curl ， sudo 和 shasum</block>
+  <block id="97e0d834bc800959e3bd09edcaa9de7e" category="section-title">监控组</block>
+  <block id="861cce966793d64acfe10deceab95b98" category="paragraph">要创建新组，请单击 "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</block>
+  <block id="d5b99247687b3f87ffa28f0d709c14f9" category="paragraph">通过单击某个组并从菜单中选择 _Remove from Group_ 来删除监控器。您不能从 _all monitors 或 _Custom Monitors_ 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。</block>
 </blocks>
