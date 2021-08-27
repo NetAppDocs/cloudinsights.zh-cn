@@ -7906,4 +7906,5 @@
 <block ref="03d103531f94c82411117d01aa2e8036" category="inline-link-macro-rx"></block>
 <block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
   <block id="4262a364178344226a6201df72deaa22" category="paragraph">注意：您不能删除默认采集单元。在删除旧 AU 之前，请选择另一个 AU 作为默认值。</block>
+  <block id="943873dd443de1bb107661fec0ffddf6" category="section-title">在信息板小工具查询中筛选</block>
 </blocks>
