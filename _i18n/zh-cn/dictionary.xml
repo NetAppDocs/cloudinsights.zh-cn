@@ -7910,4 +7910,7 @@
   <block id="910ba96085a400a51981e26de1f1777c" category="section-title">" 永久活动 " 警报</block>
   <block id="61e3c9516f5f3d6a1d770780589866f5" category="paragraph">可以对监控器进行配置，使其状态为 "* 始终 * " 存在于受监控对象上，例如， IOPS &gt; 1 或延迟 &gt; 0 。它们通常创建为 " 测试 " 监控器，然后被遗忘。此类监控器会创建在成分卷对象上永久处于打开状态的警报，这些警报可能会随着时间的推移出现发生原因系统压力和稳定性问题。</block>
   <block id="074eac2d2550921cfca0dbad722daa0f" category="paragraph">为防止出现这种情况， Cloud Insights 将在 7 天后自动关闭任何 " 永久活动 " 警报。请注意，底层监控条件可能会（可能会）继续存在，从而导致几乎立即发出新警报，但关闭 " 始终处于活动状态 " 警报可缓解否则可能发生的某些系统压力。</block>
+  <block id="36e498f46668dc7b2127a0e5f83abd6c" category="section-title">删除用户</block>
+  <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">具有管理员角色的用户可以通过单击用户的名称并单击对话框中的 _Delete User_ 来删除用户（例如，不再与公司合作的用户）。此用户将从 Cloud Insights 环境中删除。</block>
+  <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">请注意，即使删除用户，用户创建的任何信息板，查询等也将在 Cloud Insights 环境中保持可用。</block>
 </blocks>
