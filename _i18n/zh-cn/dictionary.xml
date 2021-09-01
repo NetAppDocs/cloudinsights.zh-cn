@@ -5938,7 +5938,6 @@
   <block id="85ec37ca86f40643ef57d677de07ac20" category="paragraph">为获得最佳结果，请将这些命令添加到路径中。</block>
   <block id="1414710b4943b74148ba07c3c051ac64" category="list-text">必须安装 Kube-state-metrics 。有关详细信息，请参见下文。</block>
   <block id="80c0723b28b89c49ac0b2c207486cf90" category="list-text">如果您使用的是代理，请按照 * 为 Kubernetes 配置代理支持 * 一节中的说明进行操作。</block>
-  <block id="69050ee5fbbc9a5032ccbfb2e3d03ee9" category="list-text">如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。</block>
   <block id="56cb6633aba007c9c91082eb591c6ac6" category="section-title">监控仅安装在 Linux 节点上</block>
   <block id="748fdb05a8ec278d9ce5ea3bde4405f4" category="paragraph">Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查找以下 Kubernetes 标签，支持监控运行 Linux 的 Kubernetes 节点：</block>
   <block id="419f3742e6de8e0ec4b22cce005e7630" category="cell">平台</block>
@@ -6023,7 +6022,6 @@
   <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">我未看到 Kubernetes 永久性卷与相应后端存储设备之间的超链接 / 连接。我的 Kubernetes 永久性卷使用存储服务器的主机名进行配置。</block>
   <block id="87955a26e39fa43f43dbcb18a7dfa9f0" category="cell">按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。</block>
   <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">我在日志中看到类似以下内容的消息： E0901 15 ： 21 ： 39.962145 1 个 trirror.go ： 178] K8s.io/Kube-state-metrics/internal/store/builer.go ： 352 ：无法列出 * 。 MutatingWebhookConfiguration ：服务器找不到请求的资源 E091.IO/Kube-state-metrics ：内部 /8.171.Go ：无法找到服务器</block>
-  <block id="c1ff4355d36a72adccd13da5ff1b12c1" category="cell">如果 Kube-state-metrics 版本高于 Kubernetes 版本，则可能会出现这些消息。例如，运行 Kube-state-metrics 2.0.0 或更高版本和 Kubernetes 1.17 。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubecget deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ "_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用 leases _mutatingwebkconfigurations ， _webkingconfigurations ， _webhood_ 和 _webconnection_ 。更具体地说，它们可以使用以下 CLI 参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ，持久，作业，限制范围，复制空间，网络策略，节点，持久性卷，持久性卷，中断资源预算，资源，自动分配器，存储器，卷，存储器，存储器，卷，存储器，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器</block>
   <block id="5f06573aae905166447bf8d646c6bf89" category="summary">查询概述</block>
   <block id="fadb076bccad39c075c50bfa7f81bc31" category="doc">查询中使用的资产</block>
   <block id="74e62ba1fb3e060a16a3310628a9de3e" category="paragraph">通过查询，您可以根据用户选择的标准（例如标注）在粒度级别搜索环境中的资产和指标，从而监控网络并对其进行故障排除。</block>
@@ -7833,7 +7831,6 @@
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">代理端点表</block>
   <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9bdb1d7869cec3eaa75aaa48b414845" category="inline-link-macro">Kube-state-metrics 文档</block>
-  <block id="755cdea554078bb6dfed008a027e421c" category="admonition">强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完整的功能集，包括将 Kubernetes 永久性卷（永久性卷）链接到后端存储设备的功能。另请注意，对于 Kube-state-metrics 2.0 及更高版本，默认情况下不会导出 Kubernetes 对象标签。要配置 Kube-state-metrics 以导出 Kubernetes 对象标签，必须指定指标标签 "allow" 列表。请参见中的 _-metric-labks-allowlist_ 选项 <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
   <block id="8bdbfb2fbcb4d30bcb7f3456068bf952" category="section-title">查看代理端点</block>
   <block id="711a1c1d22485d3da55bc2c4b91c710f" category="paragraph">在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。</block>
   <block id="a6f1dcc9d358c0cdb54ec05673906e45" category="section-title">新的审核页面用户界面</block>
@@ -7913,4 +7910,7 @@
   <block id="36e498f46668dc7b2127a0e5f83abd6c" category="section-title">删除用户</block>
   <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">具有管理员角色的用户可以通过单击用户的名称并单击对话框中的 _Delete User_ 来删除用户（例如，不再与公司合作的用户）。此用户将从 Cloud Insights 环境中删除。</block>
   <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">请注意，即使删除用户，用户创建的任何信息板，查询等也将在 Cloud Insights 环境中保持可用。</block>
+  <block id="29dda85c81caa16abcd4f195deac6098" category="list-text">如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。</block>
+  <block id="f15a3c589417e8499878c4798162a622" category="admonition">强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完整的功能集，包括将 Kubernetes 永久性卷（永久性卷）链接到后端存储设备的功能。另请注意，对于 Kube-state-metrics 2.0 及更高版本，默认情况下不会导出 Kubernetes 对象标签。要配置 Kube-state-metrics 以导出 Kubernetes 对象标签，必须指定指标标签 "allow" 列表。请参见中的 _-metric-labks-allowlist_ 选项 <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
+  <block id="267ff646bbb6207d9a7e512acddc33ed" category="cell">如果 Kube-state-metrics 版本高于 Kubernetes 版本，则可能会出现这些消息。例如，运行 Kube-state-metrics 2.0.0 或更高版本和 Kubernetes 1.17 。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubecget deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ "_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用 leases _mutatingwebkconfigurations ， _webkingconfigurations ， _webhood_ 和 _webconnection_ 。更具体地说，它们可以使用以下 CLI 参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ，持久，作业，限制范围，复制空间，网络策略，节点，持久性卷，持久性卷，中断资源预算，资源，自动分配器，存储器，卷，存储器，存储器，卷，存储器，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器</block>
 </blocks>
