@@ -87,11 +87,14 @@ image::new-agent-detect.png[新代理检测]
 | 代理已安装并正在运行。但是，代理已突然停止。 | 通过 SSH 连接到代理计算机。通过 `sUdo systemctl status cloudsecure-agent.service` 检查代理服务的状态。1. 检查日志是否显示消息 " 无法启动 Cloud Secure 守护进程服务 " 。2. 检查 Agent 计算机中是否存在 cssys 用户。使用 root 权限逐个执行以下命令，并检查 cssys 用户和组是否存在。`sUdo id cssys` `sUdo groups cssys` 3.如果不存在，则集中式监控策略可能已删除 cssys 用户。4. 执行以下命令手动创建 cssys 用户和组。`sUdo useradd cssys` `sUdo groupadd cssys` 5.然后，执行以下命令重新启动代理服务： `sudo systemctl restart cloudsecure-agent.service` 6 。如果仍未运行，请检查其他故障排除选项。 
 
 
-| 无法向代理添加 10 个以上的数据收集器。 | 一个代理只能添加 10 个数据收集器。这可以是所有收集器类型的组合，例如 Active Directory ， SVM 和其他收集器。 
+| 无法向代理添加 20 个以上的数据收集器。 | 一个代理只能添加 20 个数据收集器。这可以是所有收集器类型的组合，例如 Active Directory ， SVM 和其他收集器。 
 
 
 | UI 显示 Agent 处于 not_connected 状态。 | 重新启动代理的步骤。1. 通过 SSH 连接到代理计算机。2. 执行以下命令重新启动代理服务： `sudo systemctl restart cloudsecure-agent.service` 3.通过 `sUdo systemctl status cloudsecure-agent.service` 检查代理服务的状态。4. 代理应处于已连接状态。 
 
 
-| 代理 VM 位于 Zscaler 代理之后，代理安装失败。由于 Zscaler 代理的 SSL 检查， Cloud Secure 证书会在 Zscaler CA 签名时呈现，因此代理不会信任通信。 | 要解析问题描述，请执行以下操作： 1.获取在 Zscaler 中使用的 CA 证书，可通过浏览器或 openssl 等工具使用。如果适用，还可以下载所有中间 CA 证书。2. 使用以下命令将 CA 证书导入到 Cloud Secure 代理的信任存储中。/opt/netapp/cloudsecurity/agent/java64/bin/keytool -importcert -file <ca_ct_path> -keystore /opt/netapp/cloudsecurity/agent-certs/cert/client.keystore -alias <alias_name> 3.执行以下命令以重新启动代理。systemctl restart cloudsecure-agent.service 4.代理现在应正常工作。5. 如果代理仍出现 SSL 错误，请使用浏览器或 openssl 等工具导入租户 URL 提供的即时证书。6. 重新启动代理。 
+| 代理 VM 位于 Zscaler 代理之后，代理安装失败。由于 Zscaler 代理的 SSL 检查， Cloud Secure 证书会在 Zscaler CA 签名时呈现，因此代理不会信任通信。 | 在 Zscaler 代理中禁用 * 。 .cloudinsights.netapp.com URL 的 SSL 检查。如果 Zscaleer 执行 SSL 检查并替换证书，则 Cloud Secure 将不起作用。 
+
+
+| 安装代理时，安装将在解压缩后挂起。 | "chmod 755 -rf " 命令失败。如果代理安装命令由非 root sudo 用户运行，而该用户的文件位于工作目录中，属于另一个用户，并且无法更改这些文件的权限，则此命令将失败。由于 chmod 命令失败，其余安装不会执行。1. 创建一个名为 cloudsecure 的新目录。2. 转到该目录。3. 复制并粘贴完整的 "token=…… … ./cloudsure-agent-install.sh" 安装命令并按 Enter 键。4. 安装应能继续进行。 
 |===
