@@ -7918,4 +7918,28 @@
   <block id="664eaf7f7371b5bb01b58dd1401a3f24" category="cell">安装代理时，安装将在解压缩后挂起。</block>
   <block id="af5d24d9bf0b86e25aac0207e1738aa7" category="cell">"chmod 755 -rf " 命令失败。如果代理安装命令由非 root sudo 用户运行，而该用户的文件位于工作目录中，属于另一个用户，并且无法更改这些文件的权限，则此命令将失败。由于 chmod 命令失败，其余安装不会执行。1. 创建一个名为 cloudsecure 的新目录。2. 转到该目录。3. 复制并粘贴完整的 "token=…… … ./cloudsure-agent-install.sh" 安装命令并按 Enter 键。4. 安装应能继续进行。</block>
   <block id="4d61d7f29cf85a233f556b1c4130ca43" category="cell">如果您运行的是 Kube-state-metrics 版本 2.0.0 或更高版本以及 Kubernetes 版本 1.17 或更低版本，则可能会出现这些消息。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubecget deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ "_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用 leases _mutatingwebkconfigurations ， _webkingconfigurations ， _webhood_ 和 _webconnection_ 。更具体地说，它们可以使用以下 CLI 参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ，持久，作业，限制范围，复制空间，网络策略，节点，持久性卷，持久性卷，中断资源预算，资源，自动分配器，存储器，卷，存储器，存储器，卷，存储器，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器</block>
+  <block id="049a91683d521aa6961c9d61aa5dd97e" category="summary">配置 NetApp Astra 数据存储库</block>
+  <block id="67d4d4df6543fc9b1d67546c146be6ad" category="doc">NetApp Astra 数据存储库数据收集器</block>
+  <block id="683bbcd43dc9592630ea190b632d0c03" category="paragraph">NetApp Astra 数据存储库数据源可监控和报告单个 Astra 数据存储库（ ADS ）集群的配置和性能数据。</block>
+  <block id="3dcd4b7650b0373219bccea330da8d96" category="paragraph">Cloud Insights 从此收集器获取清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="30849cb98e37d0646fe727a1092f47dd" category="cell">AstraDSVolume</block>
+  <block id="4da6d4792b95d2d99cc3e0f5d7ef90d2" category="cell">AstraNodeInfo.status.drives</block>
+  <block id="df94c295a2794c1c2ccdaa129403f929" category="cell">AstraNodeInfo</block>
+  <block id="d1f334283c677818d712ba42cb98bff0" category="cell">AstraDSExportPolicy</block>
+  <block id="1720f1876e19d7a553b6a4f1df02a70c" category="cell">共享 / 共享启动程序</block>
+  <block id="bc84b80d565099f26b1c5343ee7bf019" category="cell">AstraDSCluster</block>
+  <block id="556bedb976dcb84829858a9acc896162" category="cell">Kubernetes API IP 地址</block>
+  <block id="a67af0c5c8cede5fa158c95c93fd237a" category="cell">Kubernetes API 服务器的 IP 地址</block>
+  <block id="1e8aa97a1731c7d3e5e7121b93eacbaa" category="cell">Kubernetes API 端口</block>
+  <block id="3914b8c6357eda30ed5b898317939218" category="cell">Kubernetes API 服务器的端口</block>
+  <block id="9b3098ff06241109f699cfd1a1a63a35" category="cell">Kubernetes API 令牌</block>
+  <block id="9b4c9e8da576a331cc15e2c7566aa96f" category="cell">Base64 编码的 Kubernetes API 令牌</block>
+  <block id="6df87d028cb86b6bcdf018f91b2d21c3" category="cell">包括集群名称</block>
+  <block id="9cf7642a84a9974b1eb32542a6d225f5" category="cell">要监控的集群名称的逗号分隔列表。空 = 监控所有集群</block>
+  <block id="d8aad4b7acfa8db84fdf059fd2a51f34" category="cell">ADS 指标端点</block>
+  <block id="0d861a18c8e6662b624ecf03648a220a" category="cell">ADS 集群指标端点（可能不需要）</block>
+  <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">以下是配置此数据源的要求：</block>
+  <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">分配了 Metric 查询和租户访问角色的用户的用户名和密码</block>
+  <block id="1a978842f1e7a26f0c1b752970be58e5" category="inline-link-macro">NetApp Astra 数据存储库</block>
+  <block id="bdbbf759f283aa7967b60fbeea087553" category="cell"><block ref="bdbbf759f283aa7967b60fbeea087553" category="inline-link-macro-rx"></block></block>
 </blocks>
