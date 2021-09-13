@@ -97,4 +97,7 @@ image::new-agent-detect.png[新代理检测]
 
 
 | 安装代理时，安装将在解压缩后挂起。 | "chmod 755 -rf " 命令失败。如果代理安装命令由非 root sudo 用户运行，而该用户的文件位于工作目录中，属于另一个用户，并且无法更改这些文件的权限，则此命令将失败。由于 chmod 命令失败，其余安装不会执行。1. 创建一个名为 cloudsecure 的新目录。2. 转到该目录。3. 复制并粘贴完整的 "token=…… … ./cloudsure-agent-install.sh" 安装命令并按 Enter 键。4. 安装应能继续进行。 
+
+
+| 如果工程师仍无法连接到 SaaS ，请向 NetApp 支持部门创建案例。请提供 Cloud Insight 创建案例的序列号，并在创建案例时附加日志，如上所述。 | 在向 NetApp 创建案例时附加日志。1. 使用 root 权限执行以下脚本并共享输出 zip （ cloudsure-agent-symps.zip ）。答/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh 2.在 root 权限下逐个执行以下命令，并共享输出。答ID cssys b.组 cssys c.cat /etc/os-release 
 |===

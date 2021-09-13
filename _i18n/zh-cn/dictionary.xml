@@ -7912,4 +7912,6 @@
   <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">分配了 Metric 查询和租户访问角色的用户的用户名和密码</block>
   <block id="12cfd5219151c53639372267440b1f0f" category="paragraph">在中选择网络挂机通知 <block ref="1896b2660f404c5b1ef983b849bd2fa1" category="inline-link-macro-rx"></block>，转至 * 警报 &gt; 管理监控器 * 并选择所需的监控器，或者添加新的监控器。在 _set up team notifications _ 部分中，选择 _Webhook_ 作为交付方法。选择警报级别（严重，警告，已解决），然后选择所需的网络连接。</block>
   <block id="deb0c7f8df07119c770312dca6ff6edc" category="paragraph"><block ref="deb0c7f8df07119c770312dca6ff6edc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="414899beff8141a9eaddc6128c95494b" category="cell">如果工程师仍无法连接到 SaaS ，请向 NetApp 支持部门创建案例。请提供 Cloud Insight 创建案例的序列号，并在创建案例时附加日志，如上所述。</block>
+  <block id="fb5123fb5b5c740dedfc3e8e1b971dc9" category="cell">在向 NetApp 创建案例时附加日志。1. 使用 root 权限执行以下脚本并共享输出 zip （ cloudsure-agent-symps.zip ）。答/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh 2.在 root 权限下逐个执行以下命令，并共享输出。答ID cssys b.组 cssys c.cat /etc/os-release</block>
 </blocks>
