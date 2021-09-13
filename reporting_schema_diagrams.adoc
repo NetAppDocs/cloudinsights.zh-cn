@@ -83,7 +83,7 @@ image:Storage_and_Storage_Pool_Capacity_Fact.png[""]
 
 === 卷容量
 
-image:Volume_Capacity.jpg[""]
+image:Volume_Capacity.png[""]
 
 
 

@@ -626,7 +626,6 @@
   <block id="de772959ff260628e0b3b7a40c31299d" category="paragraph">在本节中，您可以添加所需的任何自定义参数和 / 或密码。出于安全原因，如果定义了密钥，则只有 webhook 创建程序可以修改此 webhook 通道。它对其他用户是只读的。</block>
   <block id="9f0bfcad9805fdb266c75890257a496e" category="section-title">选择监控器中的 Webhook 通知</block>
   <block id="08b5411f848a2581a41672a759c87380" category="inline-link-macro">监控</block>
-  <block id="7679ee036d38ec9489cb8bc4c5aa0547" category="paragraph">在中选择网络挂机通知 <block ref="9f1b6ac9c8a94cb876f83c905e9abcdc" category="inline-link-macro-rx"></block>，转至 * 警报 &gt; 管理监控器 * 并选择所需的监控器，或者添加新的监控器。在 _set up team notifications _ 部分中，选择 _Webhook_ 作为交付方法。选择警报级别（严重，警告，已解决），然后选择所需的网络连接。</block>
   <block id="7f44d407783e89c1aced666e867dd410" category="inline-image-macro">Webhook 监控通知</block>
   <block id="4b43841fab74d16cf87af7d828515aa0" category="paragraph"><block ref="4b43841fab74d16cf87af7d828515aa0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41e96c412b3694cd49b21435dba2aa8b" category="section-title">webhook 示例：</block>
@@ -4389,25 +4388,17 @@
   <block id="0e07493de1ccce1a68aff3dbd2cd6cac" category="list-text"><block ref="0e07493de1ccce1a68aff3dbd2cd6cac" category="inline-link-macro-rx"></block></block>
   <block id="e87433704018842ba5eb9ad6c1a93e26" category="inline-link-macro">NetApp 隐私原则</block>
   <block id="e56b6ba842252c40995f764b4ae57614" category="list-text"><block ref="e56b6ba842252c40995f764b4ae57614" category="inline-link-macro-rx"></block></block>
-  <block id="38c884e1d867a937b8413a5858358657" category="summary">信息板小工具中的查询和筛选器。</block>
   <block id="9c03aeff3f0df812a2cff2cd25e5e8b0" category="doc">信息板小工具查询和筛选器</block>
   <block id="cf43137803fb51915f84cbc5c3068d34" category="section-title">查询</block>
   <block id="6d691908e0846dc176f3bb1d0a3effd2" category="paragraph">信息板小工具中的查询是一个用于管理数据显示的强大工具。下面是有关小工具查询的一些注意事项。</block>
   <block id="756a8962240493ebca6043dc6e8bf4f9" category="paragraph">某些小工具最多可以包含五个查询。每个查询都将在小工具中绘制自己的一组折线或图形。在一个查询上设置汇总，分组，前 / 后结果等不会影响小工具的任何其他查询。</block>
   <block id="578ad6a9c75727e78b8745b1d7745fd7" category="paragraph">您可以单击眼睛图标以临时隐藏查询。隐藏或显示查询时，小工具显示会自动更新。这样，您就可以在构建小工具时检查所显示的数据中的各个查询。</block>
   <block id="72f55a3c85ed37b3ae5f1d57d5b61526" category="paragraph">以下小工具类型可以包含多个查询：</block>
-  <block id="f2d8526ef78f668bd3550d18c096c484" category="paragraph">分区图堆栈分区图折线图样条曲线图单值小工具</block>
   <block id="ac75cc2b8dcffd0377aaed3f9b53d77a" category="paragraph">其余小工具类型只能有一个查询：</block>
-  <block id="b5de6263dc8bd651f90cc4f8615cf764" category="paragraph">表条形图框图散点图</block>
-  <block id="b23b66260ad1d2fbd2536d1484ed51de" category="section-title">在信息板查询中筛选</block>
   <block id="65702064f4934de2865add560bd35d1e" category="paragraph">您可以使用以下任一方法来优化筛选器：</block>
-  <block id="8500b51d012e09dafe8a98cb883ab91d" category="cell">返回 BOS-PRD* ， _12__S12 ， BOS-PRD* ， _13_**-S12 等</block>
-  <block id="ac82982f546845c8b9d99e679f468920" category="cell">仅返回指定的资源</block>
   <block id="4107b1f2124500c28e3fff7e81147f68" category="paragraph">如果将筛选器字符串用双引号括起来， Insight 会将第一个和最后一个报价之间的所有内容视为完全匹配。引号中的任何特殊字符或运算符将被视为文字。例如，筛选 "*" 将返回文字星号结果；在这种情况下，星号不会视为通配符。如果用双引号括起来，则操作符 AND ， OR 和 NOT 也会被视为文字字符串。</block>
   <block id="5962b59fee2f1092aea89c5d18aeaa84" category="section-title">确定查询和筛选器返回的对象</block>
   <block id="33b013de46ebfe3f233e12e26bb762a4" category="paragraph">查询和筛选器返回的对象与下图所示的对象类似。分配有 " 标记 " 的对象是标注，而不带标记的对象是性能计数器或对象属性。</block>
-  <block id="a412b1c12cf9a0acd7695a4f578e5b78" category="image-alt">对象 ReturnedByFilters.</block>
-  <block id="2dd00a32ff223ca766c1a49defaf2c49" category="paragraph">除了在小工具中筛选对象的属性 / 标记之外，您还可以筛选指标。</block>
   <block id="8cc7620b98f53d4670d8d98f87e96bb6" category="summary">有关采集单元问题的故障排除提示。</block>
   <block id="67714f40f76da8e998f34935a33be570" category="doc">排除 Linux 上的采集单元问题</block>
   <block id="799af4349bd49a845da3921295bd9dbe" category="paragraph">您可以在此处找到有关排除 Linux 服务器上采集单元问题的建议。</block>
@@ -5626,7 +5617,6 @@
   <block id="72ef24c018bdda1f94bc3f159a543c04" category="section-title">存储和存储池容量</block>
   <block id="f3b797f67d469dd37ce40731bcd8be54" category="paragraph"><block ref="f3b797f67d469dd37ce40731bcd8be54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="69ba447dc5e9ab1619f330f106eabbf3" category="section-title">卷容量</block>
-  <block id="9b22f33443efbd129de475d16dc7d7ee" category="paragraph"><block ref="9b22f33443efbd129de475d16dc7d7ee" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c407084b02a56538766fb242db0b4450" category="section-title">VM 容量</block>
   <block id="68e6551a1f63bb301cc7fca6362929c5" category="paragraph"><block ref="68e6551a1f63bb301cc7fca6362929c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca2219979432d21faba231a579345d08" category="section-title">内部卷容量</block>
@@ -7920,4 +7910,6 @@
   <block id="b37e5afaddcc3a71b84e9c4dac7caba9" category="cell">如果您运行的是 Kube-state-metrics 版本 2.0.0 或更高版本以及 Kubernetes 版本 1.17 或更低版本，则可能会出现这些消息。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubectl get deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ '_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用以下租约： _mutatingwebconfigurations _webhook_ ，具体可以使用以下参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ， ingeses ，作业，限制范围，命名空间，网络策略，节点，复制卷，持久性卷， poddis中断 预算， Pod ，证书集，资源控制器，资源等，网络，存储器，卷，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器， 验证 webhookconfigurations ， volumeattachments</block>
   <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">以下是配置此数据源的要求：</block>
   <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">分配了 Metric 查询和租户访问角色的用户的用户名和密码</block>
+  <block id="12cfd5219151c53639372267440b1f0f" category="paragraph">在中选择网络挂机通知 <block ref="1896b2660f404c5b1ef983b849bd2fa1" category="inline-link-macro-rx"></block>，转至 * 警报 &gt; 管理监控器 * 并选择所需的监控器，或者添加新的监控器。在 _set up team notifications _ 部分中，选择 _Webhook_ 作为交付方法。选择警报级别（严重，警告，已解决），然后选择所需的网络连接。</block>
+  <block id="deb0c7f8df07119c770312dca6ff6edc" category="paragraph"><block ref="deb0c7f8df07119c770312dca6ff6edc" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
