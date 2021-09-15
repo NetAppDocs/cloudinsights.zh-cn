@@ -72,9 +72,6 @@ Cloud Insights 功能强大的 API 比以往任何时候都更易于访问，而
 
 
 | 数据载入 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
-
-
-| 数据仓库 |  |  | image:SmallCheckMark.png[""] 
 |===
 
 
