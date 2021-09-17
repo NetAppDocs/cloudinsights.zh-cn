@@ -7097,7 +7097,6 @@
   <block id="2dc583e44ae8bb38c2d7e6793d5d7a0f" category="list-text">* 注释小工具 * ：最多 1000 个自由文本字符。</block>
   <block id="ce287e5a43f4cff982d733255cd75a33" category="inline-image-macro">注释小工具</block>
   <block id="a40acf27d2cb90c20aa5d11ed16ef69a" category="paragraph"><block ref="a40acf27d2cb90c20aa5d11ed16ef69a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b6c910c90407fc4c96a8fd8486601234" category="list-text">* 违规表 * ：最多显示最近 1 ， 000 个性能策略违规。</block>
   <block id="a4ea91cd0d1ea33d8113457644dd6157" category="inline-link-macro">单击此处</block>
   <block id="367b5f76f23230911b687579ada3a5ed" category="paragraph">有关这些及其他信息板功能的详细说明， <block ref="5f5e44cd187dac84fc7db7a39eba8511" category="inline-link-macro-rx"></block>。</block>
   <block id="a37f9261af1410c0546f1e5542f832ef" category="section-title">将信息板设置为主页</block>
@@ -7917,4 +7916,10 @@
   <block id="20c1070136d4b279e653e88c774414d7" category="section-title">细化筛选器</block>
   <block id="2e67f2e161843cbb570102912ea3cae7" category="paragraph">筛选时，在开始键入时，系统会根据当前文本显示一个 * 通配符筛选器 * 。选择此选项将返回与通配符表达式匹配的所有结果。您也可以使用 NOT 或 OR 创建 * 表达式 * ，也可以选择 " 无 " 选项来筛选字段中的空值。</block>
   <block id="39a314abc65bf7d64ebaaee9846c7fb6" category="paragraph"><block ref="39a314abc65bf7d64ebaaee9846c7fb6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4ae5f63a46f8664d39fdcb2649f7245b" category="paragraph">在时间序列小工具（折线图，样条曲线图，区域图，堆积分区图）中，您可以将鼠标悬停在图例上以突出显示图表中的关联数据。相反，将鼠标悬停在图表中的某个数据点上将突出显示关联的图例。单击数据点可打开对象的登录页面。</block>
+  <block id="d2417309d3dbd441b2c0ae2ec69ead52" category="inline-image-macro">图例突出显示</block>
+  <block id="a577a8b01a7c0914557ded1aca9ce084" category="paragraph"><block ref="a577a8b01a7c0914557ded1aca9ce084" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4bc6c1367385625a07de47bbcf13d08b" category="inline-image-macro">可用小工具</block>
+  <block id="d913272d1d72d646f584c46e2f98e40c" category="paragraph"><block ref="d913272d1d72d646f584c46e2f98e40c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c867c0e90aa97c787b5fd4550b6154b5" category="list-text">* 警报表 * ：最多显示最后 1 ， 000 个性能警报。</block>
 </blocks>
