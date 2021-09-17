@@ -7914,4 +7914,7 @@
   <block id="deb0c7f8df07119c770312dca6ff6edc" category="paragraph"><block ref="deb0c7f8df07119c770312dca6ff6edc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4739762b1e0a0ecb9ce6ddc2f357d43e" category="cell">如果工程师仍无法连接到 SaaS ，请向 NetApp 支持部门创建案例。提供 Cloud Insights 序列号以创建案例，并按照说明将日志附加到案例。</block>
   <block id="e425bb5b2301657bf74d7cac77b0f44a" category="cell">将日志附加到案例： 1.使用 root 权限执行以下脚本并共享输出文件（ cloudsure-agent-symps.zip ）。答/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh 2.在 root 权限下逐个执行以下命令，并共享输出。答ID cssys b.组 cssys c.cat /etc/os-release</block>
+  <block id="20c1070136d4b279e653e88c774414d7" category="section-title">细化筛选器</block>
+  <block id="2e67f2e161843cbb570102912ea3cae7" category="paragraph">筛选时，在开始键入时，系统会根据当前文本显示一个 * 通配符筛选器 * 。选择此选项将返回与通配符表达式匹配的所有结果。您也可以使用 NOT 或 OR 创建 * 表达式 * ，也可以选择 " 无 " 选项来筛选字段中的空值。</block>
+  <block id="39a314abc65bf7d64ebaaee9846c7fb6" category="paragraph"><block ref="39a314abc65bf7d64ebaaee9846c7fb6" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
