@@ -1488,50 +1488,6 @@
   <block id="993bb582982b324ee6465cc1d0c1a2bd" category="paragraph">自定义时间范围允许您最多选择 31 个连续日期。您还可以为此范围设置开始时间和一天中的结束时间。默认开始时间为选定第一天的中午 12 ： 00 ，默认结束时间为选定最后一天的晚上 11 ： 59 。单击应用将对资产页面应用自定义时间范围。</block>
   <block id="4feea054535349a31f7c12b7dcbc4d2b" category="section-title">添加自定义小工具</block>
   <block id="2c6503d76e77d1cf4b2836c66fb29d6e" category="paragraph">您可以将自己的小工具添加到任何资产页面。您添加的小工具将显示在该类型所有对象的资产页面上。例如，将自定义小工具添加到存储资产页面将在所有存储资产的资产页面上显示此小工具。</block>
-  <block id="cec12e8ff04bb0df8358a8824b00e931" category="summary">突出显示存储节点利用率的信息板示例。</block>
-  <block id="ca4fc3bc2739a900a41348a989b46d95" category="doc">信息板示例：包含变量的存储节点利用率</block>
-  <block id="f01bd1e829d5f77d2c524fbd312d051f" category="paragraph">为存储分析创建一个自定义信息板，其中包含存储，存储池，节点，层，利用率和延迟的变量。</block>
-  <block id="405869fb758828129ec9233839f217ce" category="paragraph">建议您熟悉信息板，但这并不是必需的。</block>
-  <block id="4649f79f8682d7370d575f3c046da785" category="paragraph">以下操作步骤将创建一个自定义存储分析概述信息板，其中使用存储，存储池，节点，层，利用率和延迟等变量。以下示例中的变量将用于筛选信息板上一个或多个小工具中显示的资产或指标。使用这些变量作为筛选器的小工具将根据在信息板的变量字段中输入的值根据需要更新经过筛选的内容，从而可以快速筛选多个图表和图形以深入查看特定感兴趣区域。</block>
-  <block id="f1b1d442a741f139538d681e6b05258d" category="paragraph">按照本示例中的步骤，您将创建如下所示的信息板。您可以更改这些小工具或添加任意数量的其他小工具以突出显示所选的任何数据。</block>
-  <block id="5ba0e46b57f09f7983b2e0a08e359bfd" category="list-text">创建一个新的信息板，并将其命名为 " 分析：存储概述 " 或其他描述性相同的内容。</block>
-  <block id="7429854dfe77f7783fcd07e239be782a" category="list-text">单击 Variable 下拉列表并选择 Text variable type 。默认情况下，变量名为 $var1 。单击 $var1 以编辑此名称，并将其更改为 $storage ，然后单击复选标记以保存此变量。重复此步骤为 $node ， $pool 和 $volume 创建文本变量。</block>
-  <block id="5db3d8df88f513d79e51c5ccd4647ecd" category="list-text">重复上述过程以创建名为 $utilization 和 $latency 的数字类型变量。</block>
-  <block id="e543cf51114b9b7e58d27ca0ecda4829" category="list-text">单击 Variable 下拉列表并搜索 Tier 标注。选择此选项可创建一个名为 $tier 的变量。</block>
-  <block id="443b5d6be333d27aedaa6e37d3bfd44a" category="paragraph">您可以随时添加变量，但可以更轻松地预先创建这些变量，因此在创建这些变量时，所有小工具都可以使用这些变量。</block>
-  <block id="62c0b28c6f3133e767cf1610bba84fff" category="list-text">通过单击 Widget 下拉列表并选择折线图或分区图小工具来添加小工具。将小工具命名为 "Node Utilization" 。单击存储资产类型并将其更改为存储节点。为图表数据选择 Utilization - Total 。</block>
-  <block id="b46f56d62ad60e31b5a2e7dcb8079889" category="list-text">单击 Filter by + 按钮以添加筛选器。搜索并选择存储，然后单击任意并选择 $storage 变量。</block>
-  <block id="409482642783ef595c5c57fa83577355" category="list-text">单击 + 按钮为名称添加另一个筛选器。将变量设置为 $node 。</block>
-  <block id="e9d393958573ffa3bc59eea0c01b1e30" category="paragraph">可以为标注名称筛选器分配不同的变量。根据小工具中的对象，在最低级别使用名称 / 变量对。例如：</block>
-  <block id="4deda5954d2a2e1c320a1e66332f3806" category="list-text">您可以将 $node 变量分配给以节点为中心的小工具的名称筛选器。</block>
-  <block id="287f52005c2e9ca7e19e7896d89c2cb9" category="list-text">您可以将 $pool 变量分配给以池为中心的小工具的名称筛选器。</block>
-  <block id="97e68401c2324ecb680f48a2b8416c1a" category="list-text">单击 + 按钮为 "Utilization - Total （ % ） " 添加另一个筛选器。将变量设置为 &gt;= $utilization 。</block>
-  <block id="8a97018c309b8df8135912ef63825924" category="list-text">单击汇总字段后的 X 可折叠此字段。</block>
-  <block id="c143a08ed5903043c651bed342e1d57b" category="list-text">选择 Show Top 5 ，然后单击 Save 以保存小工具并返回到信息板。</block>
-  <block id="41db0f7bcc0cddf88b9790290da76271" category="paragraph">小工具应如下所示：</block>
-  <block id="8f41c91b5eeb97e40e1afc18100c2a94" category="paragraph">向信息板添加另一个折线图或分区图小工具。选择 Storage Node 作为资产类型，选择 Latency - Total 作为要绘制图表的指标。</block>
-  <block id="a8244103391ac63aa60d550e56909d0e" category="list-text">单击 Filter by + 按钮为 Storage ： $storage 和 Name ： $node 添加筛选器。</block>
-  <block id="7dac634b9c502fb323a592900da207bb" category="list-text">为 Latency - Total 添加一个筛选器，然后选择 $latency 变量。</block>
-  <block id="cf623e454ed1332f1c4a9b057c85d507" category="list-text">将小工具命名为 "Node Latency" 并保存。</block>
-  <block id="e1c43fe06202099b25c1e137fb59f1c4" category="paragraph">您可以添加支持表以显示所创建图表的更多详细信息，例如 " 最大节点利用率 " 或 " 平均节点利用率 " 。向信息板添加 Table 小工具并选择 Storage Node 作为资产类型，然后为 Storage ： $storage ， Name ： $node 和 Utilization - Total ： $utilization 创建筛选器。</block>
-  <block id="a449b93f53efa3e17f263d45abe5c483" category="list-text">向表中添加 " 利用率 - 最大 " ， " 利用率 - 总计 " 或任何其他所需列。</block>
-  <block id="b09ea45e70cd2e61c6c3f666a86295fd" category="list-text">将小工具命名为 "Node Peak and Avg Utilization" 并保存。</block>
-  <block id="32e206383d6084be40536ab5e848e2ee" category="paragraph">重复上述步骤，为节点延迟创建一个表，根据需要显示延迟 - 最大，延迟 - 总计或其他列。要对信息板进行全面说明，您可以为以下部分或全部添加其他图表和表小工具：</block>
-  <block id="faad54269e8b5a9689580f94bac852c8" category="list-text">图表表</block>
-  <block id="50e322591ffd0a984669adb2cc46a3b5" category="list-text">存储池利用率存储池利用率峰值和平均利用率</block>
-  <block id="2cf74b6fabfb6357d4d86f12637c6d79" category="list-text">存储池吞吐量存储池峰值和平均吞吐量</block>
-  <block id="60d1d925cc8c42bb5268cc3e8d38d963" category="list-text">卷延迟卷峰值和平均延迟</block>
-  <block id="81ff427ef204defdc4bc7c5154750503" category="list-text">卷 IOPS 卷峰值和平均 IOPS</block>
-  <block id="c638006732390e2a4f5b0634277922f2" category="paragraph">您可以根据需要在信息板上的任何位置移动小工具并调整其大小。完成后，请务必保存信息板。</block>
-  <block id="a352fe39c54ee6fe4109ffc2eecdb4cb" category="paragraph">最后一个信息板将如下所示：</block>
-  <block id="71a684e532f0ad390228a7b1829fa6e6" category="paragraph">您可以使用变量关注信息板中的特定资产。在变量字段中输入值时，小工具会自动更新以反映这些变量。例如，通过在 $utilization 变量字段中输入 "15" ，使用该变量的小工具将仅更新以显示总利用率 &gt;= 15% 的资产。</block>
-  <block id="e124114b2e213b8f47d2994301fc1d26" category="paragraph">显示所有节点中排名前 5 位的节点利用率小工具：</block>
-  <block id="3c67286305cd10ca9b47e5e36f91bc5f" category="paragraph">节点利用率小工具，显示利用率为 15% 或更高的节点：</block>
-  <block id="0beb18af3a3e55bf0b613bf92f60eae2" category="paragraph">创建小工具时，请记住以下几点：</block>
-  <block id="22110bb2a7e6a10443a907c3d49dacf8" category="list-text">$ti层 变量仅会影响使用层标注标注标注的资源。</block>
-  <block id="0e3ec5da8adf808c126f572bfb483535" category="list-text">并非所有筛选器都会影响所有小工具，具体取决于小工具是否设计为接受指定的变量。</block>
-  <block id="17ec074ea402b128f9416ef1632d59a1" category="list-text">数字变量应用为 " 大于或等于 " 指定值。</block>
-  <block id="ff9593ff5aa8a1d136237f414d2e698e" category="paragraph">请注意，只要任何变量对运行此小工具的资产有效，就可以将其用作存储层次结构中任何级别的任何小工具的筛选器。当您从节点级别向下移动到存储池再移动到卷小工具时，有更多变量可作为筛选器进行分配。例如，在存储节点级别的小工具中，可以将存储和名称变量分配为筛选器。在存储池级别，存储，节点，存储池和名称均可用。根据需要分配变量，并在堆栈中的最低级别使用 $name 变量。这样， $name 变量就可以筛选正在运行小工具的资产的实际名称。</block>
   <block id="c98d332ba8a502696256ec21ebc2eab0" category="summary">配置 NetApp StorageGRID 数据收集器</block>
   <block id="40d661645d6b35dfe2c38e25507244ac" category="doc">NetApp StorageGRID 数据收集器</block>
   <block id="f9df060c8d375048604f19820f72d8cf" category="paragraph">NetApp StorageGRID 数据收集器支持从 StorageGRID 配置收集清单和性能。</block>
@@ -4598,77 +4554,15 @@
   <block id="03df896fc71cd516fdcf44aa699c4933" category="section-title">变量</block>
   <block id="b4b0f4b96c62f1b25f5e8866a7d69ab6" category="paragraph">通过变量，您可以一次性更改信息板上部分或所有小工具中显示的数据。通过将一个或多个小工具设置为使用通用变量，在一个位置所做的更改将每个小工具中显示的数据设置为发生原因以自动更新。</block>
   <block id="933e469cb306a0ea9faabd3e4235d3be" category="inline-link-macro">标注</block>
-  <block id="21e649fef2937bbcd0b3e48d433c1e10" category="paragraph">以下示例要求在多个存储资产上设置 * 城市 * 标注（也称为 " 城市 " 属性）。为了获得最佳效果，请在不同的存储上设置不同的城市。请参见 <block ref="a38b5364ba241b76b0f2b5f3268f2629" category="inline-link-macro-rx"></block> 有关使用标注的详细信息，请参见相关主题。</block>
-  <block id="2ad7ca8cf5922ffac8171b9df4b04418" category="paragraph">变量提供了一种快速简单的方法来筛选自定义信息板上部分或全部小工具中显示的数据。以下步骤将指导您创建使用变量的小工具，并向您展示如何在信息板上使用这些小工具。</block>
-  <block id="ec35cdf79df7bfbf1fad60a09aae829f" category="list-text">单击 * 信息板 &gt; + 新建信息板 * 。</block>
-  <block id="8ca72dcc65f97b8235a7da6da2d065fd" category="list-text">在添加小工具之前，您必须定义用于筛选信息板数据的变量。单击 * 添加变量 * 按钮。</block>
-  <block id="fbd09c176d9a94fcd8d77cf20457ff2e" category="paragraph">此时将显示属性列表。</block>
-  <block id="272a559fda9e2ec6a456c1a2deb204c9" category="list-text">假设我们希望将信息板设置为根据城市进行筛选。从列表中选择 _City" 属性。</block>
-  <block id="bfbee1deb4505683565c575571685a37" category="paragraph">此时将创建 $city 变量字段并将其添加到信息板中。信息板使用的变量显示在任何小工具上方。</block>
-  <block id="c04d812778aa68fa3a3ee1c4b86e8df5" category="list-text">接下来，我们必须告诉小工具使用此变量。最简单的说明方法是添加一个显示 _City_ 列的表小工具。单击 * 添加小工具 * 按钮，然后选择 _Table_ 小工具。</block>
-  <block id="a4682674577532c89e24d47c5a53b883" category="list-text">首先，通过从 "GEAR" 按钮选择 _City" 列，将其添加到表中。</block>
-  <block id="a72ec8ab221771a3b8bd4ebbeb10c6b7" category="paragraph">City 是一个列表类型的属性，因此它包含先前定义的选项列表。您还可以选择文本，布尔值或日期类型属性。</block>
-  <block id="9437f28a94674215a4a5a021b0529d80" category="list-text">接下来，单击 * 按 +* 筛选按钮，然后选择 _City" 。</block>
-  <block id="669c96eed4e45d57ce2c572c3d4db86a" category="list-text">单击 _any_ 可查看 City 的可能筛选选项。请注意，除了先前提供的任何选项之外，此列表现在还在顶部包含 "* $city" 。选择 _$city" 以使用此信息板变量。</block>
-  <block id="43aa33e31448f6706b95126b3b6f5aa2" category="paragraph">只有在先前已在主信息板页面上定义时，才会在此显示 $city" 选项。如果先前未定义此变量，则仅显示筛选器的现有选项。只有适用于选定属性类型的变量才会显示在该筛选器的下拉列表中。</block>
-  <block id="6d0d5c7098c1a31c3ff14a083c6955c2" category="list-text">* 保存 * 小工具。</block>
-  <block id="6756de8d263a06de09973f82981fcf67" category="list-text">在信息板页面上，单击 _$city" 变量旁边的 _any_ ，然后选择要查看的城市。</block>
-  <block id="c41d22fd6d3c5649235645fb311238c6" category="paragraph">此时将更新表小工具，以便仅显示选定的城市。您可以随意更改 _$city" 变量中的值，信息板上设置为使用 $city 变量的所有小工具将自动刷新，以便仅显示选定值的数据。</block>
-  <block id="f454e897b6edaed9845e7083cdbb539f" category="paragraph">如果您已根据需要对信息板进行了配置，请务必 * 保存 * 。</block>
-  <block id="11ee19e9bda197e69176b7e817fdb82f" category="section-title">有关信息板变量的更多信息</block>
   <block id="45430f654166211a655017eedb515347" category="paragraph">信息板变量有多种类型，可以在不同的字段中使用，并且必须遵循命名规则。此处将介绍这些概念。</block>
   <block id="e8196d2aa0d7c28cd131d991850f1cea" category="section-title">变量类型</block>
   <block id="f39814a3ff54979da6b688b16b8244e2" category="paragraph">变量可以是以下类型之一：</block>
-  <block id="013468f5a5c6c88a9fd87ad0abc6d455" category="list-text">* 文本 * ：字母数字字符串。这是默认变量类型。</block>
-  <block id="7eba3ce6fc865969a20a8a5ab8069f70" category="list-text">* 数字 * ：数字或数字范围。</block>
-  <block id="c232c88704a2049e8fa0eb89bf1f0a0a" category="list-text">* 布尔值 * ：用于值为 True/False ， Yes/No ， 0/1 等的字段。对于布尔变量，选项为 " 是 " ， " 否 " ， " 无 " ， " 任何 " 。</block>
-  <block id="9af9474b188e99a7953457f8eafaef74" category="list-text">* 日期 * ：日期或日期范围。</block>
-  <block id="75b48bb74d9d62b90d34e888b5fba119" category="section-title">" 通用 " 变量</block>
-  <block id="50bb6b06ee635715972681ba0956f3f3" category="paragraph">您可以通过单击 * 添加变量 * 按钮并选择上述类型之一来设置通用变量或通用变量。这些类型始终显示在下拉列表的顶部。此变量将被指定一个默认名称，例如 "$var1" ，并且不与特定标注或属性绑定。</block>
-  <block id="a4c3a7ac62e94db73aa3468c76c054c3" category="paragraph">通过配置通用变量，您可以在小工具中使用该变量来筛选此类型的任何字段。例如，如果您的表小工具显示名称，别名和供应商（均为文本类型属性），而 "$var1" 是文本类型变量，则可以在小工具中为每个字段设置筛选器以使用 $var1 变量。您可以将其他小工具设置为对这些字段或任何文本字段使用 $var1 。</block>
-  <block id="207107972aa0b5063ce2f5fcf94a7ed3" category="paragraph">在信息板页面上，将 $var1 设置为值（例如 "NetApp" ）将筛选所有小工具中设置为使用该变量的所有字段。通过这种方式，您可以一次更新多个小工具，以根据需要突出显示所选的信息板数据。</block>
-  <block id="5b94a19d50421298c62c68fb4cee8587" category="paragraph">由于通用变量可用于此类型的任何字段，因此您可以更改通用变量的名称，而无需更改其功能。</block>
-  <block id="df65b5248463dd22b65415741848f510" category="paragraph">注意：所有变量都被视为 " 通用 " 变量，即使您为特定属性创建的变量也是如此，因为在为某个类型的任何属性或标注设置筛选器时，系统会显示此类型的所有已配置变量。但是，最佳实践是，如果要使用通用变量筛选多个字段中的值，请创建一个通用变量，如上面的 " 名称 / 别名 / 供应商 " 示例所示。</block>
   <block id="2a46cb9b02abf484df12b645f3880ef6" category="section-title">变量命名</block>
   <block id="5ea93eebddf3c0fcbea8b0186b4a73e6" category="paragraph">变量名称：</block>
-  <block id="994981e153145ccccd72dd6a9297b9a2" category="list-text">必须始终以 "$" 作为前缀。配置变量时，系统会自动添加此变量。</block>
-  <block id="11ffd765b1caf4a268b6bbd4bf3a25ec" category="list-text">不能包含任何特殊字符；仅允许使用字母 a-z 和数字 0-9 。</block>
-  <block id="6d63d94cb2c39d43ab504adb5d661641" category="list-text">不能超过 20 个字符，包括 "$" 符号。</block>
   <block id="b21821f6ffb5a74109c6957fe4b62012" category="list-text">区分大小写： $CityName 和 $CityName 是不同的变量。</block>
   <block id="2c197f6fb840731a100668adaf2fc960" category="list-text">不能与现有变量名称相同。</block>
-  <block id="7f8113c3f27eef2d507d4754d88bff62" category="list-text">不能只是 "$" 符号。</block>
-  <block id="3e9ad59672c6fdc3c31f6a3acd26eda6" category="section-title">使用变量的小工具</block>
-  <block id="4e51509ff81e7fbaba8e43ddab304674" category="paragraph">变量可用于以下小工具：</block>
-  <block id="4df3132c4492fa73c3a9e7289b4d8894" category="list-text">区域图表</block>
-  <block id="d00d3123db60d6cd9b71dc08d6c750bb" category="list-text">条形图</block>
-  <block id="2d20bca6ce43e885b8204caed409c41d" category="list-text">盒形图</block>
-  <block id="16bdf88c6b4485864755c6e60efd6308" category="list-text">折线图</block>
-  <block id="77d4f55856ddeed8776dafc61cc248d3" category="list-text">散点图</block>
-  <block id="2223e156e1f4f71719c45d2462587f2d" category="list-text">单值小工具</block>
-  <block id="da5e7f71824d77bfa0ba1af04b87e67e" category="list-text">样条曲线图</block>
-  <block id="ca2feae3b53b34a151b6041d9137823a" category="list-text">堆积面积图</block>
   <block id="a4e887565916ef8ad7cb90f7d4f3cd3c" category="list-text">表小工具</block>
   <block id="6199bdbb3abd6dbb11893dc878ea2a32" category="list-text">饼图</block>
-  <block id="b68c1fe5a27f38fb20ddc4da37a38d8a" category="section-title">了解 "$this" 变量</block>
-  <block id="61a03d699d269269a0e08ae01e3fae79" category="paragraph">通过资产登录页面上的特殊变量，您可以轻松展示与当前资产直接相关的追加信息。这些特殊变量的名称以 "$this" 开头。</block>
-  <block id="cbca4591efd074dfc155a2ad71a8a831" category="list-text">有关此任务要在资产登录页面的小工具中使用 "$this" 变量，请执行以下步骤。在此示例中，我们将添加一个 * 表小工具 * 。</block>
-  <block id="1cd4cfbaba5e2e0e8ed83abcda708d41" category="admonition">"$this" 变量仅对资产的登录页面有效。它们不适用于其他信息板。可用的 "$this" 变量因资产类型而异。</block>
-  <block id="661b1a00e3e60c1ebb6bc641a5c968fd" category="list-text">导航到您选择的资产的登录页面。在此示例中，我们选择一个虚拟机（ VM ）资产页面。查询或搜索虚拟机，然后单击链接以转到该虚拟机的资产页面。</block>
-  <block id="5571452d3f537a989eeada4d5a86222e" category="paragraph">此时将打开虚拟机的资产页面。</block>
-  <block id="ac48cb14d0958e35ace8e1673192a641" category="list-text">单击 * 编辑 * 切换到编辑模式，然后单击 * 添加小工具 * 按钮。选择 * 表 * 小工具。</block>
-  <block id="6ec1440a72a5413b5e235906cf4c492b" category="paragraph">此时将打开表小工具进行编辑。默认情况下，所有存储都会显示在表中。</block>
-  <block id="19799aded35256016f2b50fee428edde" category="list-text">我们希望显示所有虚拟机。单击资产选择器并将 _Storage_ 更改为 _Virtual Machine_ 。</block>
-  <block id="030195d80d5aa4527341979ec813de51" category="paragraph">此时，表中将显示所有虚拟机。</block>
-  <block id="15e69887123587d39cf387d32617932f" category="list-text">单击齿轮按钮，然后将 _Hypervisor Name_ 列添加到表中。</block>
-  <block id="aae1b2659903fc2036a9b32890b6329e" category="paragraph">表中显示了每个虚拟机的虚拟机管理程序名称。</block>
-  <block id="224d363db76b5a466dcaa47cb7919c38" category="list-text">我们只关心托管当前虚拟机的虚拟机管理程序。单击 * 筛选依据 * 字段的 * + * 按钮，然后选择 _Hypervisor Name_ 。</block>
-  <block id="eb0ae7019f720939def9faa09a17daf0" category="list-text">单击 _any_ 并选择 * $this.host.name * 变量。按 Enter 或单击此字段以应用筛选器。</block>
-  <block id="7b7aaa5c351cef12d57dc18eb2e40225" category="paragraph">此时，此表将显示由当前虚拟机的虚拟机管理程序托管的所有虚拟机。</block>
-  <block id="5364f9840cc543b63c9dc7499783e473" category="list-text">单击 * 保存 * 以保存小工具。</block>
-  <block id="8f2c70b0c35aa460a15da0146b97c99c" category="list-text">单击 * 保存 * 以保存资产页面。</block>
-  <block id="727d6fcab174741a470cfcd341264440" category="paragraph">您为此 VM 资产页面创建的表将显示在您显示的任何 VM 资产页面中。在小工具中使用 _$this.host.name 变量意味着表中仅显示由 _current assets_ 虚拟机管理程序拥有的虚拟机。</block>
-  <block id="d707ceb2c4d776ccbc82707547a477c0" category="inline-link-macro">* 上下文中筛选器 *</block>
-  <block id="978af4812d3391f8407a59f4ca09e7f7" category="paragraph">您也可以应用 <block ref="21751e7952e698c76a33595fbfd671e2" category="inline-link-macro-rx"></block> 以资产页面小工具来实现类似结果。</block>
   <block id="5f49d04559b317e0624673bd522e624e" category="section-title">正在格式化 Gauge 小工具</block>
   <block id="584265e9d9c83bd9cb0ea49fb162f99e" category="paragraph">通过 Solid 和 Bullet Gauge 小工具，您可以为 _Warning_ 和 / 或 _critical_ 级别设置阈值，从而清晰地表示您指定的数据。</block>
   <block id="aefa521a4da54fd91cef4af086fa3b43" category="inline-image-macro">Gauge Widget 的格式设置</block>
@@ -7916,10 +7810,24 @@
   <block id="20c1070136d4b279e653e88c774414d7" category="section-title">细化筛选器</block>
   <block id="2e67f2e161843cbb570102912ea3cae7" category="paragraph">筛选时，在开始键入时，系统会根据当前文本显示一个 * 通配符筛选器 * 。选择此选项将返回与通配符表达式匹配的所有结果。您也可以使用 NOT 或 OR 创建 * 表达式 * ，也可以选择 " 无 " 选项来筛选字段中的空值。</block>
   <block id="39a314abc65bf7d64ebaaee9846c7fb6" category="paragraph"><block ref="39a314abc65bf7d64ebaaee9846c7fb6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4ae5f63a46f8664d39fdcb2649f7245b" category="paragraph">在时间序列小工具（折线图，样条曲线图，区域图，堆积分区图）中，您可以将鼠标悬停在图例上以突出显示图表中的关联数据。相反，将鼠标悬停在图表中的某个数据点上将突出显示关联的图例。单击数据点可打开对象的登录页面。</block>
-  <block id="d2417309d3dbd441b2c0ae2ec69ead52" category="inline-image-macro">图例突出显示</block>
-  <block id="a577a8b01a7c0914557ded1aca9ce084" category="paragraph"><block ref="a577a8b01a7c0914557ded1aca9ce084" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4bc6c1367385625a07de47bbcf13d08b" category="inline-image-macro">可用小工具</block>
-  <block id="d913272d1d72d646f584c46e2f98e40c" category="paragraph"><block ref="d913272d1d72d646f584c46e2f98e40c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c867c0e90aa97c787b5fd4550b6154b5" category="list-text">* 警报表 * ：最多显示最后 1 ， 000 个性能警报。</block>
+  <block id="55f6611cb342565cf0f5002400f53a95" category="inline-link-macro">标注</block>
+  <block id="bdc4d24d590d2c4f74d28cf65664af3f" category="list-text">* 标注 * ：使用预定义的 <block ref="bb75b560e5c64cb7dd473c74ae53e8f0" category="inline-link-macro-rx"></block> 筛选小工具数据。</block>
+  <block id="23b7f3c5f273dff8dfc28b1d3d393075" category="list-text">* 文本 * ：字母数字字符串。</block>
+  <block id="e77ea662dc2d45a324194dca8b908bc3" category="list-text">* 数字 * ：数字值。单独使用，或者作为 " 发件人 " 或 " 收件人 " 值，具体取决于小工具字段。</block>
+  <block id="087c14b96c9dccdfb944c17d359d937d" category="list-text">* 布尔值 * ：用于值为 True/False ， Yes/No 等的字段。对于布尔变量，选项包括 " 是 " ， " 否 " ， " 无 " ， " 任何 " 。</block>
+  <block id="e8d8c9065d231417a82d017542ad50f6" category="list-text">* 日期 * ：日期值。单独使用，或者作为 " 发件人 " 或 " 收件人 " 值，具体取决于小工具字段。</block>
+  <block id="53cc3f1a4b0d0e434a93a7372b931ac6" category="inline-image-macro">变量类型</block>
+  <block id="916ee1d24159df2a85679ef0774f9828" category="paragraph"><block ref="916ee1d24159df2a85679ef0774f9828" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3f4aa78e28bef68e621211c255de6e97" category="section-title">变量筛选器范围</block>
+  <block id="38f9fe234760a4b03b85217374ec1bd5" category="paragraph">默认情况下，向信息板添加标注变量时，该变量将应用于信息板上的 _all_ 小工具，这意味着信息板上的所有小工具将根据您在该变量中设置的值显示筛选的结果。</block>
+  <block id="d0365c2d28a2b320782a5d2554e29461" category="inline-image-macro">自动筛选器</block>
+  <block id="d57164545a0388f20a8a7c16b4a505ee" category="paragraph"><block ref="d57164545a0388f20a8a7c16b4a505ee" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f9a364b2beeb2d73119727d97ad842f0" category="paragraph">请注意，只能使用此类变量自动筛选类型为 _text_ ， _booole_ 或 _List_ 的标注。不能自动筛选数字或日期等非文本标注类型，也不能自动筛选 _non-Annotation_variables （ number ， Date ， Boolean ）。必须将每个小工具配置为使用这些类型的变量。</block>
+  <block id="501d7d63535eac3f0b04a86a5c59a0fc" category="paragraph">要禁用自动筛选，以便标注变量仅对您专门设置的小工具进行适用场景，请单击 " 自动筛选 " 滑块将其禁用。</block>
+  <block id="2e0d68aed2d95c1e5370cf57c66cdd6f" category="paragraph">要在单个小工具中设置标注类型变量，请在编辑模式下打开此小工具，然后在 _Filter by" 字段中选择特定标注。使用 Annotation 变量，您可以选择一个或多个特定值，也可以选择变量名称（由前导 "$" 指示），以便在信息板级别键入变量。只有您为其设置了变量的小工具才会显示经过筛选的结果。</block>
+  <block id="db9429945479bdf8469ebfb0e45edfa4" category="paragraph">您可以将小工具配置为以相同方式使用非标注变量（数字，日期，布尔值）。</block>
+  <block id="ede4219a6b2ff39b8d02b4bc0d9c4c21" category="list-text">不能包含任何特殊字符；仅允许使用字母 a-z ，数字 0-9 ，句点（ . ）和下划线（ _ ）。</block>
+  <block id="be23148a3ac9dc4d52c903da3ce8e996" category="list-text">不能超过 20 个字符。</block>
+  <block id="1e0924a9571cb084a1694224ea94a701" category="list-text">不能为空。</block>
+  <block id="b6c910c90407fc4c96a8fd8486601234" category="list-text">* 违规表 * ：最多显示最近 1 ， 000 个性能策略违规。</block>
 </blocks>

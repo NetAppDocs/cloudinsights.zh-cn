@@ -45,8 +45,6 @@ toc::[]
 
 
 
-image:Widgets_All.png["可用小工具"]
-
 
 
 == 小工具类型
@@ -89,7 +87,7 @@ image:Pie Chart.png["饼图"]
 +
 image:Note Widget.png["注释小工具"]
 
-* * 警报表 * ：最多显示最后 1 ， 000 个性能警报。
+* * 违规表 * ：最多显示最近 1 ， 000 个性能策略违规。
 
 
 有关这些及其他信息板功能的详细说明， link:concept_dashboard_features.html["单击此处"]。
