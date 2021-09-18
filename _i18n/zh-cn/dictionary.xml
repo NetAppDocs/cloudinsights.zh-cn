@@ -7830,4 +7830,27 @@
   <block id="be23148a3ac9dc4d52c903da3ce8e996" category="list-text">不能超过 20 个字符。</block>
   <block id="1e0924a9571cb084a1694224ea94a701" category="list-text">不能为空。</block>
   <block id="b6c910c90407fc4c96a8fd8486601234" category="list-text">* 违规表 * ：最多显示最近 1 ， 000 个性能策略违规。</block>
+  <block id="d802637b72ebddd27cf9b28f9f198763" category="section-title">2021年9月</block>
+  <block id="a4413391e48749ff74c546db2a59ee06" category="section-title">现在，性能策略会进行监控</block>
+  <block id="d6db008f3336978f78907dc7439f7208" category="paragraph">监控和警报已在整个 Cloud Insights 中取代性能策略和违规。 <block ref="f2add95ab51f678552422c58c3cbdf54" category="inline-link-macro-rx"></block> 提高灵活性，深入了解环境中的潜在问题或趋势。</block>
+  <block id="f9e43a06d9912e66c01c1f17da3e7a74" category="section-title">监控器中的 AutoComplete 建议，通配符和表达式</block>
+  <block id="da1a0b10456bcebce92fc1c5743ec214" category="paragraph">创建用于警报的监控器时，键入筛选器现在可以预测性，便于您轻松搜索和查找监控器的指标或属性。此外，您还可以选择根据键入的文本创建通配符筛选器。</block>
+  <block id="753f7c002bb4e46625d621a4771782f7" category="inline-image-macro">监控器中的预键入筛选器</block>
+  <block id="27bc8135f4ef84225ffdbb7a8cdaac6c" category="paragraph"><block ref="27bc8135f4ef84225ffdbb7a8cdaac6c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="59495c5ad12d3e6fde7e57fa29f02978" category="paragraph">用于载入电报集成数据的代理已更新到版本 * 。 1.19.3* ，并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 <block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block> 文档。先前版本的代理将继续运行，无需用户操作。</block>
+  <block id="1f2d992e8780d587b579686194b5cd02" category="section-title">Data Collector 支持</block>
+  <block id="8e6d421edf87c8de878155646b3c16a3" category="paragraph">我们对 Cloud Insights 数据收集器进行了一些改进。下面是一些亮点：</block>
+  <block id="2061dec3bfaa38c2bcac9db25f15a705" category="list-text">Microsoft Hyper-V 收集器现在使用 PowerShell ，而不是 WMI</block>
+  <block id="908ad574c2d5532ffa8271534573ed97" category="list-text">由于并行调用， Azure VM 和 VHD 收集器的速度现在高达 10 倍</block>
+  <block id="345ccae122d8e69d40277935daf9828a" category="list-text">HPE Nimble 现在支持联合配置和 iSCSI 配置</block>
+  <block id="4c54dac2c664d1c686c5ceedbd6db99d" category="paragraph">由于我们始终在改进数据收集，因此以下是最近的一些其他更改：</block>
+  <block id="59ca380cb570f5dd9004cd3c2ca9cd74" category="list-text">适用于 EMC Powerstore 的新收集器</block>
+  <block id="ba36b61a0a1b3b73db67f36047549607" category="list-text">Hitachi Ops Center 的新收集器</block>
+  <block id="be587cd3ec8a4fa1c4df9554e51d4805" category="list-text">Hitachi 内容平台的新收集器</block>
+  <block id="5c19d53c722f2b706c4be3c9e86410d4" category="list-text">增强了 ONTAP 收集器以报告网络结构池</block>
+  <block id="72fcf9e6c9aed6284c89073e1f22979e" category="list-text">通过存储池和卷性能增强了 ANF</block>
+  <block id="f4538372cb5da6bdc81464960f97a7fc" category="list-text">具有存储节点和存储性能以及存储分段中的对象计数的增强型 EMC ECS</block>
+  <block id="186435169ab16121eaece4afe6efd0a1" category="list-text">具有存储节点和 qtree 指标的增强型 EMC Isilon</block>
+  <block id="a5a5be00af4eb57319eff500ca9e8c27" category="list-text">具有卷 QoS 限制指标的增强型 EMC Symmetrix</block>
+  <block id="6737c67be3775177035b7486a3285000" category="list-text">具有存储节点父序列号的增强型 IBM SVC 和 EMC PowerStore</block>
 </blocks>

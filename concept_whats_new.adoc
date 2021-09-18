@@ -11,6 +11,54 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+=== 2021年9月
+
+
+
+==== 现在，性能策略会进行监控
+
+监控和警报已在整个 Cloud Insights 中取代性能策略和违规。 link:task_create_monitor.html["向监控器发出警报"] 提高灵活性，深入了解环境中的潜在问题或趋势。
+
+
+
+==== 监控器中的 AutoComplete 建议，通配符和表达式
+
+创建用于警报的监控器时，键入筛选器现在可以预测性，便于您轻松搜索和查找监控器的指标或属性。此外，您还可以选择根据键入的文本创建通配符筛选器。
+
+image:Type-Ahead_Monitor_1.png["监控器中的预键入筛选器"]
+
+
+
+==== 已更新 Telegraf 代理
+
+用于载入电报集成数据的代理已更新到版本 * 。 1.19.3* ，并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 link:task_config_telegraf_agent.html["代理安装"] 文档。先前版本的代理将继续运行，无需用户操作。
+
+
+
+==== Data Collector 支持
+
+我们对 Cloud Insights 数据收集器进行了一些改进。下面是一些亮点：
+
+* Microsoft Hyper-V 收集器现在使用 PowerShell ，而不是 WMI
+* 由于并行调用， Azure VM 和 VHD 收集器的速度现在高达 10 倍
+* HPE Nimble 现在支持联合配置和 iSCSI 配置
+
+
+由于我们始终在改进数据收集，因此以下是最近的一些其他更改：
+
+* 适用于 EMC Powerstore 的新收集器
+* Hitachi Ops Center 的新收集器
+* Hitachi 内容平台的新收集器
+* 增强了 ONTAP 收集器以报告网络结构池
+* 通过存储池和卷性能增强了 ANF
+* 具有存储节点和存储性能以及存储分段中的对象计数的增强型 EMC ECS
+* 具有存储节点和 qtree 指标的增强型 EMC Isilon
+* 具有卷 QoS 限制指标的增强型 EMC Symmetrix
+* 具有存储节点父序列号的增强型 IBM SVC 和 EMC PowerStore
+
+
+
+
 === 2021年8月
 
 
