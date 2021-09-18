@@ -8,9 +8,9 @@ summary: 'Cloud Insights 支持 link:https://docs.influxdata.com/telegraf/v1.14/
 
 
 [role="lead"]
-Cloud Insights 使用 link:https://docs.influxdata.com/telegraf/v1.17/["Telegraf"] 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。
+Cloud Insights 使用 link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf"] 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。
 
-Cloud Insights 的当前 Telegraf 版本为 * 。 1.17.3 * 。
+Cloud Insights 的当前 Telegraf 版本为 * 。 1.19.3 * 。
 
 
 NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步 Agent 计算机上的时间。
