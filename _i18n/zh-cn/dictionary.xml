@@ -289,25 +289,11 @@
   <block id="de4c464655d04aaaf8358ee2427b5c78" category="section-title">标注规则需要查询</block>
   <block id="d33900b640b6dc7fb413a869f6adf259" category="inline-link-macro">标注规则</block>
   <block id="aa74838358ad534ab462a543660f57a1" category="paragraph">如果要配置 <block ref="e4c310fb06df0298e7dcaf91dedea80b" category="inline-link-macro-rx"></block>，每个规则都必须有一个底层查询才能使用。但是，如上所述，可以根据需要进行广泛或缩小范围的查询。</block>
-  <block id="bd91833aa08bef28116bc52ab85a2506" category="summary">Cloud Insights 中的资产页面 Viol 部分概述。</block>
-  <block id="8fda921bae205bad5b2528481307b9ca" category="doc">资产页面违规部分</block>
-  <block id="ad71df612f01d2fa298b11355ac61129" category="paragraph">您可以使用资产页面的违规部分查看因分配给资产的性能策略而在您的环境中发生的违规（如果有）。性能策略可监控阈值，并使您能够立即检测到违反阈值的情况，确定影响，以及分析问题的影响和根发生原因，以便快速有效地进行更正。</block>
-  <block id="6d747b8fe76b5337827499a25f44de7e" category="paragraph">以下示例显示了虚拟机管理程序的资产页面上显示的违规部分：</block>
-  <block id="c8cc6df17ed27643764686d0fd42c510" category="inline-image-macro">违规表</block>
-  <block id="fdf948c7fc1d9ae4d7ab0e763a95f951" category="paragraph"><block ref="fdf948c7fc1d9ae4d7ab0e763a95f951" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="921a7ab277b185dfdbb44095b69dd0ca" category="paragraph">通过 Violations 部分，您可以查看和管理因分配给资产的性能策略而在网络中发生的任何违规。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
   <block id="f091c93ef2139cac2a83b2cebb156538" category="list-text">通过执行以下任一操作找到资产页面：</block>
   <block id="9c87453c8b019bb5636f35716c021e8b" category="list-text">在搜索区域中键入资产的名称，然后从列表中选择资产。</block>
   <block id="a8a0c96234cbba0b8bdeffb59fc574c7" category="list-text">在信息板小工具中，单击资产的名称。</block>
   <block id="4282e47440b4205380b1c7e1a0f9339c" category="list-text">查询一组资产，然后从结果列表中选择 On 。</block>
-  <block id="3a83a6a82307e97766028118b213d323" category="paragraph">此时将显示资产页面。Violations 部分显示违规发生的时间和超过阈值的问题描述，以及指向发生违规的资产的超链接（例如， "2 violations for DS-30 with Latency - Total &gt; 50" ）。</block>
-  <block id="c7ddf06e868b25fc2b18247a71454cba" category="paragraph">您可以执行以下任一可选任务：</block>
-  <block id="354999bf68febd17777b179dcec161c0" category="list-text">使用筛选器框仅显示特定违规。</block>
-  <block id="7449a21652b7bb35d95bc6d5c994614d" category="list-text">单击列标题中的箭头，将表中列的排序顺序更改为升序（向上箭头）或降序（向下箭头）。</block>
-  <block id="fe36ec2498138eb53b520605aca3a51f" category="list-text">单击任何问题描述中的资产名称以显示其资产页面；红色圆圈表示需要进一步调查的问题。</block>
-  <block id="cac2506fc11b4a155ac8f0dc35342e04" category="list-text">您可以单击性能策略以显示编辑策略对话框，以查看性能策略并在必要时对策略进行更改。</block>
-  <block id="77f68220e3dfca43391d0989463b0e93" category="paragraph">如果您确定问题描述不再是值得关注的发生原因，请单击右侧的 " 三点 " 菜单并选择 " 消除违规 " 以从列表中删除违规。</block>
   <block id="cfbf1d79d6b8c6542bc0c846048611fc" category="summary">您可以使用 Storage Manager 信息板对存储服务进行日常管理。</block>
   <block id="662f8024f59fc1c2dd8a5286eea38232" category="doc">Storage Manager 信息板</block>
   <block id="d74252d9dcf59266ed739f9e49821535" category="paragraph">Storage Manager 信息板为您提供了一个集中式可视化视图，可用于将一段时间内的资源使用情况与可接受范围和前几天的活动进行比较和对比。只显示存储服务的关键性能指标，您可以决定如何维护数据中心。</block>
@@ -1666,35 +1652,6 @@
   <block id="ea4f37cdc61f22bab06bd53f38731b48" category="paragraph">相关：<block ref="9606d230686b3a54ef0c843c6a8d06ee" category="inline-link-macro-rx"></block>
 <block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
 <block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
-  <block id="135b10654d54349e84b06ece50e6ac40" category="summary">正在创建性能策略。</block>
-  <block id="fa5d0adc230f2993896f54d4fefc4c45" category="doc">如何使用性能策略监控资源</block>
-  <block id="27534223a667947df92565c82686f0ee" category="paragraph">您可以创建性能策略来设置阈值，这些阈值会触发警报，以向您通知与网络中资源相关的问题。</block>
-  <block id="7d9a2e16261da5f156def3158056b5f7" category="paragraph">例如，您可以创建一个性能策略，以便在存储池中使用的总容量大于 60 GB 时向您发出警报。</block>
-  <block id="8509668c67befd4280c0d11e3b4be035" category="section-title">创建性能策略</block>
-  <block id="cb3350cd44f8b08ef803c74e42096afd" category="paragraph">以下步骤介绍如何创建性能策略，以便在第 1 层数据存储库的已用容量超过 600 GB 时发出警报。</block>
-  <block id="1801a6e2cc067796473e110fb73aa038" category="list-text">打开 Cloud Insights</block>
-  <block id="7bae9a6d997e2c73d756fcba3886c5bf" category="list-text">单击 * 管理 &gt; 性能策略 *</block>
-  <block id="09cbd36e7743263072ed95a33085a006" category="paragraph">策略按对象进行组织，并按其在每个对象的列表中的显示顺序进行评估。</block>
-  <block id="766f8b141ab2409fe5fe34a73cc35a6a" category="list-text">单击 * + 性能策略 * 。</block>
-  <block id="99e1f68a35ad50194d068a464d2bbe10" category="list-text">添加策略名称</block>
-  <block id="9180b19202c7b40689c340edd8a3441c" category="list-text">添加对象类型（数据存储库）</block>
-  <block id="583a88bd127efc654eea6eee48ed5765" category="list-text">标注 = 层</block>
-  <block id="4cf8d69efbc77c74eeb10fa7f8dd26d0" category="list-text">标注值 = 层 1</block>
-  <block id="1c404d5a2fe7aefe3672947f2dab3769" category="list-text">在窗口 = 首次出现后应用</block>
-  <block id="cbac9c9b235dc322db1fd6342d3e767d" category="list-text">严重性 = 警告</block>
-  <block id="c928183b74da0d0cc99593eca2fdc4bc" category="list-text">电子邮件收件人可以是一个全局列表，也可以是每个策略的特定列表</block>
-  <block id="4f5b46b0408ad975f90dab775ffe33da" category="list-text">创建阈值 = 已用容量 &gt; 600 GB</block>
-  <block id="bbd672ddf9d28cd54c6d90809642e63d" category="list-text">选中此框可将策略配置为在第一次警报后停止处理。</block>
-  <block id="2c83c2dac11bf1b6d37b1aafc3b401f6" category="section-title">监控性能策略违规</block>
-  <block id="dbc5d498f08d8392d1699654ed4244cf" category="paragraph">可以使用违规信息板查看性能策略违规。此信息板列出了网络中发生的所有违规行为，并使您能够轻松确定应解决的问题。</block>
-  <block id="72fae61d5989f9eadb86d5603056f061" category="paragraph">单击 * 信息板 &gt; Violotions* 以访问违规信息板。</block>
-  <block id="ae1f9c4a351a509685b823ffec1609bd" category="paragraph">您可以按设备，策略名称，日期，时间，严重性 等等。</block>
-  <block id="a878a7beb1ce27488b30aa54e4e1f06b" category="paragraph">单击时间列至</block>
-  <block id="9fad82e12274e34d266e50f39e581ea5" category="paragraph">单击违规 ID 或在问题描述字段中突出显示的设备将打开生成违规的设备的资产页面。</block>
-  <block id="0ce9f9488093bc957d093f2f9e61c266" category="paragraph">在资产页面中，违规部分列出了资产发生的所有违规。在专家视图中，选择指标以直观显示违规情况。</block>
-  <block id="fa12d87c7b14fa6b94621f7d49264e5c" category="section-title">违规通知</block>
-  <block id="a46f10d244d8514729533dbbf3dfce39" category="paragraph">您可以配置性能策略，以便在发生策略违规时发送电子邮件通知。</block>
-  <block id="4ee1bca872bfdc5903f88ba3ca76e8ee" category="paragraph">要将收件人添加到全局电子邮件列表中，请单击 * 管理员 &gt; 通知 * ，然后输入收件人的电子邮件地址，以逗号分隔。通过性能策略阈值违规发出警报的电子邮件将发送给列表中的所有收件人。配置策略时，您可以覆盖特定策略的全局列表。</block>
   <block id="7cf19f2c233335b0e0262d17d9d4f8dd" category="summary">Cloud Insights 中提供的新特性和功能。</block>
   <block id="9dbaba9eaf242fb8457fed4378ce0f93" category="doc">Cloud Insights 的新增功能</block>
   <block id="9cd1885267b8b63d53217c5f31b579c9" category="paragraph">NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一些最新特性和功能。</block>
@@ -2801,14 +2758,6 @@
   <block id="a0fb87896105c24e490432fa6ee285d3" category="paragraph">您可以创建监控器来设置触发警报的阈值，以便向您通知与网络中资源相关的问题。例如，您可以创建一个监控器，以便针对任意多种协议发出 _node write latency 警报。</block>
   <block id="dda9f0c203ae2856394dd81972db157f" category="admonition">Cloud Insights 标准版及更高版本提供了监控和警报功能。</block>
   <block id="f2be52b4efc2ef40ce2e8e30d38bcac1" category="paragraph">达到或超过受监控的阈值和条件时， Cloud Insights 将创建警报。一个监控器可以具有 _Warning_ 阈值， _critical_ 阈值，也可以同时具有这两者。</block>
-  <block id="daf2ae82a570eced51f8f73820e73147" category="section-title">监控或性能策略？</block>
-  <block id="3120b3f5d3d461cb4b516e3283b5da80" category="paragraph">* 性能策略 * 与 * 监控 * 之间有何区别？</block>
-  <block id="2eb71833d40e5fd7b36e97f5c508ed43" category="paragraph">_policies_ 允许您为 " 基础架构 " 对象设置阈值，例如存储， VM ， EC2 和端口。达到或超过阈值时，这些策略将触发违规。可以对每个违规进行调查以进行故障排除。本节其他部分将详细介绍策略 <block ref="1b8a477724c4aa8032c899801a449415" category="inline-link-macro-rx"></block>。</block>
-  <block id="a29bb98e7f56cb7027f1c0b83e6f1432" category="paragraph">_monitors_ 为 " 集成 " 数据提供类似的功能，例如为 Kubernetes ， ONTAP 高级指标和 Telegraf 插件收集的数据，并在超过阈值时发出警报。使用监控器，您可以为 " 警告 " 或 " 严重 " 级别的警报设置阈值，也可以同时为这两者设置阈值。</block>
-  <block id="c7ffad00052b6516b8fc92f115a99ed0" category="paragraph">策略和监控器位于 * 警报 * 菜单下。</block>
-  <block id="d5d7f126c02377e0f706721f4bd892ee" category="inline-image-macro">警报菜单</block>
-  <block id="8bb1844f03db65b530c4e2d3befad827" category="paragraph"><block ref="8bb1844f03db65b530c4e2d3befad827" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4f7079ad7309563ea299783e4ee80367" category="paragraph">触发策略或监控器后，可以发送电子邮件。</block>
   <block id="839c283c68f2ef98e768a7975afd5e37" category="section-title">创建监控器</block>
   <block id="dfbbb6ad7733d63b680f9238f7dce10b" category="paragraph">在以下示例中，我们将创建一个监控器，以便在 _Volume Node NFS 写入延迟 _ 达到或超过 200 毫秒时发出警告警报，并在达到或超过 400 毫秒时发出严重警报。我们只希望在超过任一阈值至少持续 15 分钟时收到警报。</block>
   <block id="41072a21a5aa3d5e2d1c4423269fe77e" category="list-text">必须配置 Cloud Insights 以收集集成数据，并且正在收集该数据。</block>
@@ -2882,33 +2831,10 @@
   <block id="6590f621515d064417bb91bd8f6cb526" category="cell">Nutanix 容器</block>
   <block id="ca64cbe5ecbf364909413a596766fbc8" category="list-text">TCP 端口要求： 9440</block>
   <block id="49c74cfc814defdf4c6e66676f86702d" category="cell">用于连接到阵列的 TCP 端口。默认值为 9440. 。</block>
-  <block id="ccbe8f0e2c53dd2f40016660abdce59d" category="summary">创建性能策略以设置阈值</block>
-  <block id="f8b44fb58e818cf177e7bb909954758a" category="doc">使用性能策略发出警报</block>
-  <block id="edb1bea2a7d7facba265387def9ca60b" category="paragraph">您可以创建性能策略来设置阈值，这些阈值会触发警报，以向您通知与网络中资源相关的问题。例如，您可以创建一个性能策略，以便在存储池的总利用率超过 60% 时向您发出警报。</block>
-  <block id="54b593b3ae2f24acf66e33cef682f4cf" category="paragraph">您可以为以下对象创建性能策略：</block>
   <block id="1b21b0d71706897b69f108572c444d40" category="cell">虚拟机管理程序</block>
-  <block id="0b7e67b6cdcf0432b624d53588d520fb" category="cell">SVM</block>
   <block id="583a65df9db4119165f5ea0abaa50281" category="cell">虚拟机</block>
-  <block id="bb23dde3c021f8b596c4577dd0f915f2" category="paragraph">您可以为与要监控的对象关联的指标创建具有阈值的性能策略。默认情况下，性能策略会在创建时应用于指定类型的所有对象。您可以创建标注，以便在性能策略中仅包含特定资产或一组资产。</block>
   <block id="46eff80b72ed7bce5ea093f9ee782eb6" category="paragraph">在性能策略中使用标注时，必须在创建此策略之前存在此标注。</block>
-  <block id="9cb11562d8852cb48b6f28ab5cca2689" category="paragraph">您可以创建一个性能策略，以便在监控的一个或多个设备超过您设置的阈值时提供通知。您的系统可能已包含满足您需求的全局策略，或者使用标注的策略在为设备添加标注时也可能起作用。</block>
-  <block id="56ed60eef1732d1ee9b0df6dd72dab04" category="list-text">在 Cloud Insights 菜单栏中，单击 * 管理 &gt; 性能策略 *</block>
-  <block id="b96d9e515d75802c7e709b920c765e64" category="paragraph">此时将显示性能策略页面。策略按对象进行组织，并按其在列表中的显示顺序进行评估。</block>
-  <block id="f2053288ebaaea4b9ebd30f33cd6f093" category="list-text">在性能策略页面中，单击 * + 性能策略 *</block>
-  <block id="5364c135d98473f7e31d836ca68bfd5f" category="paragraph">此时将显示 * 添加策略 * 对话框。</block>
-  <block id="c08cad54d9fd5d18f9e28df74b4bdffd" category="list-text">在 * 策略名称 * 字段中，输入策略的名称。</block>
-  <block id="9ce1bdc850f140bda47d25c3260186e1" category="paragraph">您必须使用对象的所有策略名称中唯一的名称。例如，不能为内部卷设置两个名为 " 延迟 " 的策略；但是，您可以为内部卷设置一个 " 延迟 " 策略，为其他卷设置另一个 " 延迟 " 策略。最佳做法是，无论对象类型如何，始终为任何策略使用唯一名称。</block>
-  <block id="d91e7060e626c0719b4d5d00921de6ae" category="list-text">从 * 应用于类型 * 的对象列表中，选择策略适用的对象类型。</block>
-  <block id="fde455d6f5d676a4198fb0711c427475" category="paragraph">选择 * 虚拟机 * 。</block>
-  <block id="ce19d48c59e27dd929fc20af51d5c449" category="list-text">从 * 带标注列表 * 中，选择一个标注类型（如果适用），然后在 * 标注值 * 框中为标注输入值，以便仅将策略应用于设置了此特定标注的对象。</block>
-  <block id="798ef89131c0c0c5b9403d4ba4ded92d" category="list-text">从 * 应用窗口后 * 中选择何时发出警报以指示阈值违规。</block>
-  <block id="4c55416d2b1a2a42fc6580a2a71cad34" category="paragraph">首次超过阈值时 * 首次出现 * 将触发警报。所有其他选项都会在超过阈值一次且至少在指定时间内持续超过阈值时触发警报。</block>
-  <block id="92837519a20badfd9eccc766a262ccb5" category="list-text">从 * 严重性 * 列表中，选择违规的严重性。</block>
   <block id="f3717fe39c26695a39a817b7e21f0c5b" category="paragraph">默认情况下，有关策略违规的电子邮件警报会发送到全局电子邮件列表中的收件人。您可以覆盖这些设置，以便将特定策略的警报发送给特定收件人。</block>
-  <block id="15c517f5d9d6d296f61dc7076b5c5640" category="list-text">在 * 创建警报 if* 部分中，选择性能计数器和运算符，然后输入一个值以创建阈值。</block>
-  <block id="40fbe6fbcfd2ffd70cdb2127f2f56493" category="paragraph">单击 * + 阈值 * 为策略添加其他计数器。</block>
-  <block id="57db6d7559217a12ee8b05710fa3fecd" category="list-text">单击 * 保存 * 以保存新策略。</block>
-  <block id="a4fa46c40b23ef5f9492948fbf19f3b2" category="list-text">如果特定资产类型有多个策略，您可以更改策略的评估顺序。使用编辑菜单更改策略顺序。</block>
   <block id="7e59305c585ffd6c40dfc23da8c99b10" category="summary">业务实体标注可用于监控和报告业务层次结构中的资产</block>
   <block id="feeb52be3f50cf19c972dbe8bca2b5fd" category="doc">业务实体标注</block>
   <block id="cc5bee20a21c1239fd0c62986099a877" category="paragraph">使用 * 业务实体 * 标注类型为您的企业环境创建和管理业务实体。</block>
@@ -4224,8 +4150,6 @@
   <block id="e111446745a1825b862f8727ae63bce4" category="cell">Redis</block>
   <block id="07d8a20311bb7ef0fdd0a319b9667a65" category="summary">Cloud Insights 中的资产页面摘要部分概述。</block>
   <block id="29128cb5215fb2e80e1ee7a20fe86126" category="doc">资产页面摘要部分</block>
-  <block id="e021c698cb903a9473be86e3d40217ed" category="paragraph">资产页面的摘要部分显示有关资产的常规信息，包括任何指标或性能策略是否为相关的发生原因。潜在问题区域通过指标或性能策略旁边的红色圆圈来指示。</block>
-  <block id="5e5349ab0436f47c66334894023a0aae" category="paragraph"><block ref="5e5349ab0436f47c66334894023a0aae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ce7951793151a0f69487b414bdd8b498" category="paragraph">注意：摘要部分中显示的信息因您正在查看的资产类型而异。</block>
   <block id="77e5be94869a677b15024b30a6f71dbd" category="paragraph">您可以单击任何资产链接以查看其资产页面。例如，如果您正在查看存储节点，则可以单击某个链接以查看与其关联的存储的资产页面。</block>
   <block id="74202c0b51dce91cb2d7ff8a3db7b041" category="paragraph">您可以查看与资产关联的指标。指标旁边的红色圆圈表示您可能需要诊断和解决潜在问题。</block>
@@ -7514,8 +7438,6 @@
   <block id="cdd0e837105d3238f7da72918d54613a" category="sidebar">创建监控器</block>
   <block id="ad9a3a2d37a9151fd99385dc40e9ceb2" category="sidebar">配置通知收件人</block>
   <block id="566ac423e0ab287a48ae088d16840ac5" category="sidebar">使用 API</block>
-  <block id="1519699a343e5821b121d67a58c4503e" category="sidebar">性能策略和警报</block>
-  <block id="d51112e4ad231aad36a6f89c7d54cc82" category="sidebar">使用性能策略发出警报</block>
   <block id="7808e188a885339f3f8e1e464ed4c37e" category="sidebar">网络挂机通知</block>
   <block id="f828d0c542b9e35bc1e04acdf228286c" category="sidebar">监控环境</block>
   <block id="5aed3a2004d458b540a49bfa80187d68" category="sidebar">审核事件</block>
@@ -7524,7 +7446,6 @@
   <block id="4fff047134fd613268df82a3fa05b4f4" category="sidebar">对象的上下文内筛选</block>
   <block id="e718a563ac80582f7757e3df11c40de9" category="sidebar">摘要拓扑部分</block>
   <block id="aeddd81d4219f42f5592ea31912fb399" category="sidebar">专家视图部分</block>
-  <block id="28c0eb2e204196a9941152b0f21cabec" category="sidebar">违规部分</block>
   <block id="ebe085ef7e29214280a16ef989f4eddd" category="sidebar">报告概述</block>
   <block id="1d140984e8baec02fa2faf26dd665a56" category="sidebar">使用预定义报告</block>
   <block id="037017bd3cea5d1b35bfe243f7697965" category="sidebar">创建示例报告</block>
@@ -7829,7 +7750,6 @@
   <block id="ede4219a6b2ff39b8d02b4bc0d9c4c21" category="list-text">不能包含任何特殊字符；仅允许使用字母 a-z ，数字 0-9 ，句点（ . ）和下划线（ _ ）。</block>
   <block id="be23148a3ac9dc4d52c903da3ce8e996" category="list-text">不能超过 20 个字符。</block>
   <block id="1e0924a9571cb084a1694224ea94a701" category="list-text">不能为空。</block>
-  <block id="b6c910c90407fc4c96a8fd8486601234" category="list-text">* 违规表 * ：最多显示最近 1 ， 000 个性能策略违规。</block>
   <block id="d802637b72ebddd27cf9b28f9f198763" category="section-title">2021年9月</block>
   <block id="a4413391e48749ff74c546db2a59ee06" category="section-title">现在，性能策略会进行监控</block>
   <block id="d6db008f3336978f78907dc7439f7208" category="paragraph">监控和警报已在整个 Cloud Insights 中取代性能策略和违规。 <block ref="f2add95ab51f678552422c58c3cbdf54" category="inline-link-macro-rx"></block> 提高灵活性，深入了解环境中的潜在问题或趋势。</block>
@@ -7853,4 +7773,8 @@
   <block id="186435169ab16121eaece4afe6efd0a1" category="list-text">具有存储节点和 qtree 指标的增强型 EMC Isilon</block>
   <block id="a5a5be00af4eb57319eff500ca9e8c27" category="list-text">具有卷 QoS 限制指标的增强型 EMC Symmetrix</block>
   <block id="6737c67be3775177035b7486a3285000" category="list-text">具有存储节点父序列号的增强型 IBM SVC 和 EMC PowerStore</block>
+  <block id="de1246f2ba95371b711d65f46fa80725" category="paragraph">您可以使用监控器为 " 基础架构 " 对象（例如存储， VM ， EC2 和端口）以及 " 集成 " 数据（例如为 Kubernetes ， ONTAP 高级指标和 Telegraf 插件收集的数据）设置阈值。监控超过阈值时向您发出的警报，您可以设置警告级别警报，严重级别警报或两者的阈值。</block>
+  <block id="1928ab7a05e24c9e7bde67fb9a528d0d" category="paragraph">资产页面的摘要部分显示有关资产的常规信息，包括任何指标或性能策略是否为相关的发生原因。潜在问题区域用红色圆圈表示。</block>
+  <block id="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="paragraph"><block ref="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="abfbd1f823b5763f9a41683ebc883036" category="list-text">* 警报表 * ：最多显示最后 1 ， 000 个警报。</block>
 </blocks>

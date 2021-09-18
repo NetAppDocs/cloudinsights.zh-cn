@@ -118,14 +118,6 @@ entries:
     url: "/concept_notifications_email.html"
 - title: 使用 API
   url: "/API_Overview.html"
-- title: 性能策略和警报
-  entries:
-  - title: 使用性能策略发出警报
-    url: "/task_create_monitor.html"
-  - title: 查看和管理警报
-    url: "/task_view_and_manage_alerts.html"
-  - title: 配置通知收件人
-    url: "/concept_notifications_email.html"
 - title: 网络挂机通知
   url: "/task_create_webhook.html"
 - title: 监控环境
@@ -148,8 +140,6 @@ entries:
     url: "/concept_asset_user_data_section.html"
   - title: 相关警报部分
     url: "/concept_asset_alerts_section.html"
-  - title: 违规部分
-    url: "/concept_asset_violation_section.html"
   - title: 搜索资产的提示和提示
     url: "/concept_searching_assets.html"
 - title: 报告
