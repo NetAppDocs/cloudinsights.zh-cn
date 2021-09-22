@@ -5092,25 +5092,8 @@
   <block id="9681b8ede5c132930da76a11a12ee1e0" category="paragraph">在进行更改后，请务必 * 。保存 * 信息板。</block>
   <block id="ca1b516707306a7db85b8ed1c44a3272" category="paragraph">最后一个虚拟机性能信息板将如下所示：</block>
   <block id="8b8c0577487afb0f8113ae70ab69f902" category="paragraph"><block ref="8b8c0577487afb0f8113ae70ab69f902" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8779f531bee882fde978252250e67a66" category="summary">配置 Ceph 数据收集器。</block>
-  <block id="0b97251ca6f4b3af1a85bad8da411f93" category="doc">Ceph 存储数据收集器</block>
-  <block id="2df552e1d9fa9f55c263c24464306b8d" category="paragraph">Cloud Insights 使用 Ceph 存储数据收集器从 Ceph 存储平台发现清单数据。</block>
-  <block id="f5bc1e7a77b609c3dda0655274a09c8c" category="paragraph">Cloud Insights 通过 Ceph 存储数据收集器采集清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="def36b726efed529b13ba240dd331a12" category="cell">池</block>
-  <block id="e2d63d195b2bce9c8d5bf797a268bcec" category="cell">文件系统</block>
-  <block id="a7289131cf6f284839a3419197c04b6c" category="cell">屏显</block>
-  <block id="4393a6333b5bc335a0b3bd551b0f5197" category="list-text">Ceph 管理员 IP 地址</block>
-  <block id="3a8b3eca5c438a888a2dbcda76f5bb4f" category="list-text">端口要求： SSH 端口 22</block>
-  <block id="55bb8bf0d8d3c5ae5bc28f46e9e4324a" category="cell">Ceph 管理 IP 地址</block>
-  <block id="175ef90ee77cf7402daf70c38ae36bec" category="cell">Ceph 存储的 IP 地址</block>
-  <block id="ee733c1a21e25f5f375ff5693f927e69" category="cell">Ceph 存储系统管理员用户帐户的用户名</block>
   <block id="d167b91043f53ee5f6f7861abfb85a30" category="cell">管理员用户帐户的密码</block>
-  <block id="16edc0a1efe44cbefb80cc685033941a" category="cell">SSH 端口</block>
-  <block id="5104929e71f890bae07b4ae88f11bc7a" category="cell">默认值为端口 22 。</block>
-  <block id="2592a62af24a7c63992d730af8fc630b" category="cell">缺少命令</block>
-  <block id="d1ae6641a133ee11d8bb87d1f707a5ac" category="cell">验证用户是否有权在设备上运行以下命令 * 确认已安装 Ceph 管理工具，请运行以下命令： rpm -q ceph common.x86_64 * 验证向导中使用的凭据是否与设备凭据匹配</block>
-  <block id="85265e940fbb820dd2475946e7bc48d9" category="cell">配置无效</block>
-  <block id="f3f1a749d01f95d055d9e8706c8089db" category="cell">* 确认已在系统中配置池，请尝试运行以下命令： ceph 屏显 lspool -f json-pretty * 验证向导中使用的凭据与设备凭据匹配</block>
   <block id="a9bf92fda03d47c7754371c461a7b15c" category="summary">通过资产页面的 User Data 部分，您可以为当前资产分配标注或应用程序。</block>
   <block id="c2bb4a41eb70c8ef98d0a34bf2c6b8a0" category="doc">用户数据部分</block>
   <block id="5b85956dec7b32235b467a7425211daf" category="paragraph">资产页面的 User Data 部分将显示并允许您更改任何用户定义的数据，例如应用程序和标注。</block>
@@ -7693,4 +7676,44 @@
 <block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
 <block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
 <block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block></block>
+  <block id="049a91683d521aa6961c9d61aa5dd97e" category="summary">配置 NetApp Astra 数据存储库</block>
+  <block id="67d4d4df6543fc9b1d67546c146be6ad" category="doc">NetApp Astra 数据存储库数据收集器</block>
+  <block id="683bbcd43dc9592630ea190b632d0c03" category="paragraph">NetApp Astra 数据存储库数据源可监控和报告单个 Astra 数据存储库（ ADS ）集群的配置和性能数据。</block>
+  <block id="3dcd4b7650b0373219bccea330da8d96" category="paragraph">Cloud Insights 从此收集器获取清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="30849cb98e37d0646fe727a1092f47dd" category="cell">AstraDSVolume</block>
+  <block id="4da6d4792b95d2d99cc3e0f5d7ef90d2" category="cell">AstraNodeInfo.status.drives</block>
+  <block id="df94c295a2794c1c2ccdaa129403f929" category="cell">AstraNodeInfo</block>
+  <block id="d1f334283c677818d712ba42cb98bff0" category="cell">AstraDSExportPolicy</block>
+  <block id="1720f1876e19d7a553b6a4f1df02a70c" category="cell">共享 / 共享启动程序</block>
+  <block id="bc84b80d565099f26b1c5343ee7bf019" category="cell">AstraDSCluster</block>
+  <block id="82f59b932944c8d3e51b299753b0b577" category="inline-link-macro">采集单元安装</block>
+  <block id="5c4e04ad1190e5c90b1b0f619ffdfce8" category="list-text">采集单元必须在 Astra Data Store Kubernetes 集群中的 Kubernetes Pod 中运行。请参见 <block ref="685689410070e2ca4b2a238a29a6485a" category="inline-link-macro-rx"></block> 有关详细信息：</block>
+  <block id="8155879da2f06fed5df19d6c696fb9eb" category="list-text">要安装采集单元，您需要一个 Cloud Insights <block ref="5decf952854a75ba62436d35e6c78b28" category="inline-link-macro-rx"></block> 对类别具有读 / 写权限： _Acquisition Unit ， Data Collection ， Data ingestion_</block>
+  <block id="d94f21371b1ddf718eac12a52a2c04d5" category="list-text">使用的 Kubernetes API 令牌必须授予对 _astrads.netapp.io_ apiGroup 的只读访问权限</block>
+  <block id="7fd42c59429dd49f7d8d2046c25561a2" category="list-text">要检索 astrads-system 默认服务帐户的 API 令牌，请在 bash shell 中运行以下命令：</block>
+  <block id="cb058d58577afc1218e66a94de6c292d" category="cell">Kubernetes API 服务器 IP 地址</block>
+  <block id="9dca872f2c091f19598e310ff5fd7a2e" category="cell">Kubernetes API 服务器的 IP 地址</block>
+  <block id="6c78114b7032d73ba3ed6e8cbd74b060" category="cell">Kubernetes API 服务器端口</block>
+  <block id="66ec2c94d71df69ff637dbdbc2def19e" category="cell">Kubernetes API 服务器的端口</block>
+  <block id="9b3098ff06241109f699cfd1a1a63a35" category="cell">Kubernetes API 令牌</block>
+  <block id="9b4c9e8da576a331cc15e2c7566aa96f" category="cell">Base64 编码的 Kubernetes API 令牌</block>
+  <block id="cbf38915f7dd92dccde1fe3dad2469bf" category="cell">包含的 ADS 集群名称</block>
+  <block id="e0412bb84ea8e005d283cd9efaeeaafb" category="cell">要包括在轮询中的 ADS 集群名称的逗号分隔列表。留空可监控所有集群。</block>
+  <block id="965c5c6eb8381e5b51445a5fbc3048b3" category="section-title">安装采集单元， Telegraf 和 Fluent Bit</block>
+  <block id="942ad6ae4cfb77253ea0ed5053f1c538" category="paragraph">NetApp 监控操作员将安装在使用 Astra 数据存储的 Kubernetes 集群中。监控操作员负责管理采集单元，用于高级指标的 Telegraf 代理以及用于日志的 Fluent Bit 代理的安装和配置。</block>
+  <block id="60c94873e829d5ca6d386970af565e78" category="paragraph">要配置操作员，请执行以下步骤：</block>
+  <block id="d2953a6d1dc9e4c2944f4fbe26ac3e38" category="list-text">复制以下自定义资源定义代码片段</block>
+  <block id="cf1bba394802bae24b1516ceecd24b5f" category="list-text">如果 Kubernetes 集群中未配置存储配置程序，请取消注释 _storageClassName_ 并提供采集单元中包含 PV 的存储类的名称。必须已创建这些 PV 。留空以使用默认 StorageClass 。</block>
+  <block id="9b8755d743dc0ce6277cdc31ef224b5e" category="list-text">将 &lt;insert cluster_name&gt; 替换为 Astra 数据存储集群的名称</block>
+  <block id="a2f1c521dfa91f6c85597ffffd4ad0dc" category="list-text">将 &lt;insert_CI_API_key&gt; 替换为 Cloud Insights API 访问令牌</block>
+  <block id="cbbd92d6b955f7ab9a2e14bd02c8ae67" category="list-text">将 &lt;insert cI_domain_name&gt; 替换为 Cloud Insights 租户域名</block>
+  <block id="0708c6c6efe0076d2e9dac362af766e5" category="list-text">运行以下命令以编辑监控操作员代理规范：</block>
+  <block id="f9e160d20c2644dfc7d3e369f872c3e4" category="list-text">将上述自定义资源定义代码片段与现有监控操作员代理规范合并。</block>
+  <block id="150d2b6856d23f8d526cc61f0fb19907" category="list-text">保存并关闭编辑器窗口。</block>
+  <block id="98b3e324b6c5777cb1d2831d88b1132f" category="paragraph">监控操作员现在将安装采集单元， Telegraf 和 Fluent Bit 。完成此操作可能需要几分钟时间。定期运行以下命令以检查采集单元状态，直到状态为 up 为止。或者，您也可以等待新采集单元显示在 Cloud Insights UI 中。</block>
+  <block id="a7b3be6177e953276c8908078af9035c" category="paragraph">安装采集单元后，您可以从 Cloud Insights UI 添加 Astra 数据存储收集器。</block>
+  <block id="711f972f5e82f211f310ac06c2f8e036" category="cell">您会看到一条 " 未授权 " 消息</block>
+  <block id="90b86e404196295299e2aa0d840dad62" category="cell">检查 Kubernetes API 令牌是否有权调用 _astrads.netapp.io_ apiGroup 中的 API</block>
+  <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">" 未知主机： astrads-metrics-service.astrads-system.svc.cluster.local ：名称或服务未知 "</block>
+  <block id="045f84b2e6e4af9113106c8c9ce287f4" category="cell">验证收集器是否安装在 ADS Kubernetes 集群内运行的采集单元 POD 中。验证 astrads-metrics-service 是否正在运行 astrads-system 命名空间。</block>
 </blocks>

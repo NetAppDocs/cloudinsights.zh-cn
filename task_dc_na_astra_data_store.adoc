@@ -1,0 +1,167 @@
+---
+sidebar: sidebar 
+permalink: task_dc_na_astra_data_store.html 
+summary: 配置 NetApp Astra 数据存储库 
+keywords: data collector, queries, create, astra, ads 
+---
+= NetApp Astra 数据存储库数据收集器
+
+
+[role="lead"]
+NetApp Astra 数据存储库数据源可监控和报告单个 Astra 数据存储库（ ADS ）集群的配置和性能数据。
+
+
+
+== 术语
+
+Cloud Insights 从此收集器获取清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+
+[cols="2*"]
+|===
+| 供应商 / 型号术语 | Cloud Insights 术语 
+
+
+| AstraDSVolume | 内部卷 
+
+
+| AstraNodeInfo.status.drives | 磁盘 
+
+
+| AstraNodeInfo | 存储节点 
+
+
+| AstraDSExportPolicy | 共享 / 共享启动程序 
+
+
+| AstraDSCluster | 存储 
+|===
+
+
+== 要求
+
+* 采集单元必须在 Astra Data Store Kubernetes 集群中的 Kubernetes Pod 中运行。请参见 link:task_configure_acquisition_unit.html["采集单元安装"] 有关详细信息：
++
+** 要安装采集单元，您需要一个 Cloud Insights link:API_Overview.html["API 密钥"] 对类别具有读 / 写权限： _Acquisition Unit ， Data Collection ， Data ingestion_
+** 使用的 Kubernetes API 令牌必须授予对 _astrads.netapp.io_ apiGroup 的只读访问权限
+
+
+* 要检索 astrads-system 默认服务帐户的 API 令牌，请在 bash shell 中运行以下命令：
++
+....
+SECRET_NAME=$(kubectl get secrets -n astrads-system| grep ^default| cut -f1 -d ' ' )
+kubectl describe secret $SECRET_NAME -n astrads-system | grep -E '^token' | cut -f2 -d':' | tr -d " "
+....
+
+
+
+
+== 配置
+
+[cols="2*"]
+|===
+| 字段 | 说明 
+
+
+| Kubernetes API 服务器 IP 地址 | Kubernetes API 服务器的 IP 地址 
+
+
+| Kubernetes API 服务器端口 | Kubernetes API 服务器的端口 
+
+
+| Kubernetes API 令牌 | Base64 编码的 Kubernetes API 令牌 
+|===
+
+
+== 高级配置
+
+[cols="2*"]
+|===
+| 字段 | 说明 
+
+
+| 清单轮询间隔（分钟） | 两次清单轮询的间隔。默认值为 60 分钟。 
+
+
+| 性能轮询间隔（秒） | 性能轮询之间的时间间隔。默认值为 300 秒。 
+
+
+| 包含的 ADS 集群名称 | 要包括在轮询中的 ADS 集群名称的逗号分隔列表。留空可监控所有集群。 
+|===
+
+
+== 安装采集单元， Telegraf 和 Fluent Bit
+
+NetApp 监控操作员将安装在使用 Astra 数据存储的 Kubernetes 集群中。监控操作员负责管理采集单元，用于高级指标的 Telegraf 代理以及用于日志的 Fluent Bit 代理的安装和配置。
+
+要配置操作员，请执行以下步骤：
+
+. 复制以下自定义资源定义代码片段
++
+....
+spec:
+  au:
+    isEnabled: true
+    #storageClassName: ""
+  telegraf:
+  - name: "open-metric"
+    run-mode:
+    - ReplicaSet
+    substitutions:
+    - key: URLS
+      values:
+      - "http://astrads-metrics-service.astrads-system.svc.cluster.local:9341"
+    - key: METRIC_TYPE
+      value: "ads-metrics"
+    outputs:
+    - sink: CI
+  fluent-bit:
+  - name: "ads-tail-ci"
+    substitutions:
+    - key: TAG
+      value: "ads-logs"
+    - key: ADS_CLUSTER_NAME
+      value: "<INSERT_CLUSTER_NAME>"
+    - key: LOG_FILE
+      values:
+      - "/var/log/firetap/*/ems/ems"
+      - "/var/log/firetap/ems/*/ems/ems"
+    outputs:
+    - sink: CI
+  output-sink:
+  - api-key: "<INSERT_CI_API_KEY>"
+    domain-name: "<INSERT_CI_DOMAIN_NAME>"
+    name: CI
+....
+. 如果 Kubernetes 集群中未配置存储配置程序，请取消注释 _storageClassName_ 并提供采集单元中包含 PV 的存储类的名称。必须已创建这些 PV 。留空以使用默认 StorageClass 。
+. 将 <insert cluster_name> 替换为 Astra 数据存储集群的名称
+. 将 <insert_CI_API_key> 替换为 Cloud Insights API 访问令牌
+. 将 <insert cI_domain_name> 替换为 Cloud Insights 租户域名
+. 运行以下命令以编辑监控操作员代理规范：
++
+ kubectl --namespace netapp-monitoring edit agent acc-monitoring
+. 将上述自定义资源定义代码片段与现有监控操作员代理规范合并。
+. 保存并关闭编辑器窗口。
+
+
+监控操作员现在将安装采集单元， Telegraf 和 Fluent Bit 。完成此操作可能需要几分钟时间。定期运行以下命令以检查采集单元状态，直到状态为 up 为止。或者，您也可以等待新采集单元显示在 Cloud Insights UI 中。
+
+ kubectl --namespace netapp-monitoring get agent -o jsonpath='{.status.au-pod-status}' acc-monitoring
+安装采集单元后，您可以从 Cloud Insights UI 添加 Astra 数据存储收集器。
+
+
+
+== 故障排除
+
+如果此数据收集器出现问题，请尝试执行以下操作：
+
+[cols="2*"]
+|===
+| 问题： | 请尝试以下操作： 
+
+
+| 您会看到一条 " 未授权 " 消息 | 检查 Kubernetes API 令牌是否有权调用 _astrads.netapp.io_ apiGroup 中的 API 
+
+
+| " 未知主机： astrads-metrics-service.astrads-system.svc.cluster.local ：名称或服务未知 " | 验证收集器是否安装在 ADS Kubernetes 集群内运行的采集单元 POD 中。验证 astrads-metrics-service 是否正在运行 astrads-system 命名空间。 
+|===
+可从中找到此数据收集器上的追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
