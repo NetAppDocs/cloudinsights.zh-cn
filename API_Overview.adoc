@@ -109,6 +109,8 @@ Cloud Insights API 基于类别，目前包含以下类别：
 
 其他类别和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 link:#api-documentation-swagger["API Swagger 文档"]。
 
+请注意，用户有权访问的 API 类别也取决于 link:concept_user_roles.html["用户角色"] 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。
+
 
 
 == 清单遍历

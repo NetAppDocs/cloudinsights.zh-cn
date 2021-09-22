@@ -7716,4 +7716,5 @@
   <block id="90b86e404196295299e2aa0d840dad62" category="cell">检查 Kubernetes API 令牌是否有权调用 _astrads.netapp.io_ apiGroup 中的 API</block>
   <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">" 未知主机： astrads-metrics-service.astrads-system.svc.cluster.local ：名称或服务未知 "</block>
   <block id="045f84b2e6e4af9113106c8c9ce287f4" category="cell">验证收集器是否安装在 ADS Kubernetes 集群内运行的采集单元 POD 中。验证 astrads-metrics-service 是否正在运行 astrads-system 命名空间。</block>
+  <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">请注意，用户有权访问的 API 类别也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</block>
 </blocks>
