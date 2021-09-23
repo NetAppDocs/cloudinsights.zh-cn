@@ -7737,4 +7737,15 @@
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">适用于 ONTAP 9.9+ 的 NetApp 云连接</block>
   <block id="e192aac42870d4b95309597771e9a5fe" category="cell"><block ref="e192aac42870d4b95309597771e9a5fe" category="inline-link-macro-rx"></block></block>
   <block id="9af59f8630623af6e68c2c7648957031" category="sidebar">适用于 ONTAP 9.9+ 的云连接</block>
+  <block id="f41274c1ce20e5e73cc8aff93a484f51" category="inline-link-macro">FSX-NetApp</block>
+  <block id="47b5a4776ee0e5c60f02b4cbf9af7b50" category="cell"><block ref="47b5a4776ee0e5c60f02b4cbf9af7b50" category="inline-link-macro-rx"></block></block>
+  <block id="04cfeb854c88891dec7c9991ca350912" category="summary">适用于 NetApp ONTAP 数据收集器的 Amazon FSX</block>
+  <block id="e9a83bb8e223f30a5b64c2f63410624e" category="doc">适用于 NetApp ONTAP 数据收集器的 Amazon FSX</block>
+  <block id="3f949888a1354566f0873f9ba5ab02fd" category="paragraph">此数据收集器从适用于 NetApp ONTAP 的 Amazon FSX 采集清单和性能数据。此数据收集器将在整个 Cloud Insights 服务区域内逐渐可用。如果您在 Cloud Insights 环境中未看到此收集器的图标，请联系您的销售人员。</block>
+  <block id="cdad9ea129073a077b510b1984d0f835" category="paragraph">Cloud Insights 从 FSx-NetApp 数据收集器采集清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="ff375e581f364889148467ea5e52a623" category="section-title">FSX-NetApp 术语</block>
+  <block id="4fa58ee56d24ddf7d851b6745d93de64" category="paragraph">以下术语适用于您在 FSx-NetApp 存储资产登录页面上可能找到的对象或引用。其中许多术语也适用于其他数据收集器。</block>
+  <block id="babe9919cc418959cabb293a6a0542be" category="list-text">型号—此集群中唯一的离散型号名称的逗号分隔列表。</block>
+  <block id="10ba50408b6f39dc849eed2581112ddc" category="list-text">供应商— AWS</block>
+  <block id="8e389fb3ac7d81dc69e2faaa1a45f7df" category="list-text">Serial Number —阵列序列号。</block>
 </blocks>
