@@ -7717,4 +7717,24 @@
   <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">" 未知主机： astrads-metrics-service.astrads-system.svc.cluster.local ：名称或服务未知 "</block>
   <block id="045f84b2e6e4af9113106c8c9ce287f4" category="cell">验证收集器是否安装在 ADS Kubernetes 集群内运行的采集单元 POD 中。验证 astrads-metrics-service 是否正在运行 astrads-system 命名空间。</block>
   <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">请注意，用户有权访问的 API 类别也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</block>
+  <block id="ab94ba13e0011bb7ea0d255f086ced38" category="summary">配置适用于 ONTAP 9.9+ 数据收集器的 NetApp 云连接</block>
+  <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器</block>
+  <block id="03ed380a346e6e1e6da0653779eca74b" category="paragraph">此数据收集器可创建云连接，以支持从 ONTAP 9.9+ 系统收集数据。</block>
+  <block id="86697e189a8abaad2c14305da76b6e58" category="admonition">本文档被视为 _Preview_ 文档，因此可能会更改。</block>
+  <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights 使用 * 云连接 * 从 ONTAP 9.9+ 收集数据，无需安装外部采集单元，从而简化了故障排除，维护和初始部署。要为 ONTAP 9.9+ 数据收集器配置云连接，您需要将 * 配对代码 * 复制到 ONTAP 系统管理器，然后该管理器将与 Cloud Insights 环境建立连接。建立连接后，收集的数据与通过采集单元收集的数据相同。</block>
+  <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector 配置</block>
+  <block id="686b6f246c6d71648125bb6df261eda5" category="paragraph"><block ref="686b6f246c6d71648125bb6df261eda5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b3f4b400496b1f1be79ceb4e94a91c9a" category="paragraph">按照以下步骤配置连接：</block>
+  <block id="3e71c2acb888e5c54e107a6e20c6d734" category="list-text">生成一个唯一令牌，用于与 ONTAP 系统建立连接。</block>
+  <block id="5aa319f21d7d467c78e0900ae3ce4fe7" category="list-text">复制配对代码，其中包括令牌。您可以单击 _[+] 显示代码片段 _ 来查看配对代码。</block>
+  <block id="92d743a425aee6a9d199011e37f4a7a4" category="paragraph">复制配对代码后，数据收集器配置屏幕将显示步骤 6 ，提示您等待建立连接。在建立连接之前，无需在此屏幕上执行任何其他操作。</block>
+  <block id="91984937f546d43518e93c72ed5b7c0f" category="inline-image-macro">正在等待连接</block>
+  <block id="5e9af3de724d92d3056b1b1acbe5c289" category="paragraph"><block ref="5e9af3de724d92d3056b1b1acbe5c289" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="017330578692e5d7e9299cce45d52f9a" category="list-text">在新的浏览器选项卡中，登录到 ONTAP 系统管理器并导航到 _Cluster&gt; 设置 &gt; 云连接 _ 。</block>
+  <block id="5e1ab5a21ba64b40d2b3a2b6b18b1d7d" category="list-text">单击 _Add Cloud Connection_ 并粘贴配对代码。</block>
+  <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">返回到 Cloud Insights 浏览器选项卡并等待建立连接。建立后，将显示一个 _complete_ 按钮。</block>
+  <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">单击 _complete_ 。</block>
+  <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">适用于 ONTAP 9.9+ 的 NetApp 云连接</block>
+  <block id="e192aac42870d4b95309597771e9a5fe" category="cell"><block ref="e192aac42870d4b95309597771e9a5fe" category="inline-link-macro-rx"></block></block>
+  <block id="9af59f8630623af6e68c2c7648957031" category="sidebar">适用于 ONTAP 9.9+ 的云连接</block>
 </blocks>
