@@ -30,9 +30,6 @@ NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Insights API 
 
 
 | 数据载入 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
-
-
-| 数据仓库 |  |  | image:SmallCheckMark.png[""] 
 |===
 
 
