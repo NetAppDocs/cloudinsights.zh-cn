@@ -7750,4 +7750,19 @@
   <block id="8e389fb3ac7d81dc69e2faaa1a45f7df" category="list-text">Serial Number —阵列序列号。</block>
   <block id="d0dbaa8b32b0761ae3d382c5f69eec7e" category="inline-link-macro">适用于 NetApp ONTAP 的 Amazon FSX</block>
   <block id="29528f054166735f3e8a10f7fc97f3dd" category="cell"><block ref="29528f054166735f3e8a10f7fc97f3dd" category="inline-link-macro-rx"></block></block>
+  <block id="abd9e0bb14f8b22570a2f7f71cda1899" category="doc">适用于 NetApp ONTAP 配置的 Amazon FSX</block>
+  <block id="e5444155690679de3490c237e18db0c4" category="paragraph">此数据收集器从适用于 NetApp ONTAP 的 Amazon FSX 收集文件和用户访问数据。此数据收集器将在整个 Cloud Insights 服务区域内逐渐可用。如果您在 Cloud Insights 环境中未看到此收集器的图标，请联系您的销售人员。</block>
+  <block id="0ee580e185da35a40a1d1984bc4f414a" category="list-text">登录到 AWS 控制台并导航到 EC2-Instances 页面，然后选择 Launch Instance 。</block>
+  <block id="5beb340d7612e5199a7f1cf1fa8559a6" category="list-text">选择具有中所述的相应版本的 RHEL 或 CentOS AMI <block ref="f14b7add63be60d820928fdd866e56cc" category="inline-link-macro-rx"></block>。</block>
+  <block id="7c197f72661240062d16ebc1d01f474a" category="list-text">在 Amazon FSX for NetApp ONTAP 实例所在的同一 VPC 和子网中创建代理框。</block>
+  <block id="84cdd7b041998cf9db566c8249b20d66" category="paragraph">或者，代理箱应位于连接到适用于 NetApp ONTAP VPC 的 Amazon FSX 的 VPC 中。</block>
+  <block id="d390a93ae0bf8ecb5f3eafac479ff1b7" category="paragraph">确保代理与适用于 NetApp ONTAP 的 Amazon FSX 之间存在双向通信。</block>
+  <block id="244fc1e8ff83d4d166131ec1052c59de" category="list-text">选择 T2.xlarge （ 4 个 vCPU 和 16 GB RAM ）作为已分配的资源。</block>
+  <block id="8b7fcdb58af006bf84d991e49eeebe51" category="list-text">安装 wget 并解压缩原生 Linux 软件包。</block>
+  <block id="d885b39aec33db3575946cc072241a27" category="list-text">导航到 Cloud Secure 管理 &gt; 数据收集器，然后单击代理选项卡。</block>
+  <block id="30bfaded2cce7bc8bce0c34aedd60d6a" category="list-text">单击 +Agent 并指定 RHEL 作为目标平台。</block>
+  <block id="6e9db8c0f07c6f970099588928158b5d" category="list-text">将代理安装命令粘贴到您已登录的 RHEL EC2 实例中。</block>
+  <block id="fbdfba9c1edac47c47090ea8623a8231" category="paragraph">此操作将安装 Cloud Secure 代理，前提是满足此代理的所有前提条件。</block>
+  <block id="662c8fe551cd48617d7f1ceaea434408" category="paragraph">有关详细步骤，请参见 Cloud Secure <block ref="7902d0521fa6bd726229418f042a3bdf" category="inline-link-macro-rx"></block> 页面。</block>
+  <block id="87e8a04e229031e564067b38ae8a72c8" category="sidebar">配置适用于 NetApp ONTAP 收集器的 Amazon FSX</block>
 </blocks>

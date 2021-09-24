@@ -185,6 +185,8 @@ sidebar:
         url: "/task_config_user_dir_connect.html"
       - title: 配置 LDAP 目录收集器
         url: "/task_config_user_dir_connect_ldap.html"
+      - title: 配置适用于 NetApp ONTAP 收集器的 Amazon FSX
+        url: "/task_config_cs_amazon_fsx.html"
       - title: 配置 ONTAP SVM 数据收集器
         url: "/task_add_collector_svm.html"
       - title: 配置 Cloud ONTAP 数据收集器
