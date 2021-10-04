@@ -6651,9 +6651,7 @@
   <block id="00aa35cd2ad7f27d6f122e0e11fbfc82" category="section-title">关于规模估算</block>
   <block id="5a54a6a63c3925e4e34795f96e2f4aec" category="paragraph">您可以先使用一个仅包含 8 GB 内存和 50 GB 磁盘空间的 Cloud Insights 采集单元，但是，对于较大的环境，您应该问自己以下问题：</block>
   <block id="f44484d5ce5419fb11093a3c170b223c" category="paragraph">您是否希望：</block>
-  <block id="3a54878bfbc1da5bf91dfb1c66010b40" category="list-text">在此采集单元上发现 2500 多个虚拟机或 10 个大型（大于 2 节点） ONTAP ， Symmetrix 或 HDS/HPE VSP/XP 阵列？</block>
   <block id="e0dc2ed956b3711e722d965954939344" category="list-text">在此采集单元上总共部署 75 个或更多数据收集器？</block>
-  <block id="bc77013fdb04f9783b5a4097be392845" category="paragraph">对于上述每个 " 是 " 问题解答，建议向 AU 添加 8 GB 内存和 50 GB 磁盘空间。因此，例如，如果您对这两者都回答 " 是 " ，则应部署一个具有 150 GB 或以上磁盘空间的 24 GB 内存系统。</block>
   <block id="11bb1da5c9cf0248245ce5b24119d183" category="paragraph">有关其他规模估算问题，请联系 NetApp 支持部门。</block>
   <block id="c5c601f0f7513cb66c54f7740aebd769" category="summary">IBM TotalStorage DS4000 数据收集器</block>
   <block id="bb368e45192fd41360b40a61c441bbf7" category="paragraph">此数据收集器从 IBM DS4000 存储系统采集清单和性能信息。有两种可能的配置（固件 6.x 和固件 7.x+ ），它们的值相同。</block>
@@ -7765,4 +7763,6 @@
   <block id="fbdfba9c1edac47c47090ea8623a8231" category="paragraph">此操作将安装 Cloud Secure 代理，前提是满足此代理的所有前提条件。</block>
   <block id="662c8fe551cd48617d7f1ceaea434408" category="paragraph">有关详细步骤，请参见 Cloud Secure <block ref="7902d0521fa6bd726229418f042a3bdf" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="87e8a04e229031e564067b38ae8a72c8" category="sidebar">配置适用于 NetApp ONTAP 收集器的 Amazon FSX</block>
+  <block id="d3dc1fc44d23379b3a3e3c6e5eaed716" category="list-text">在此采集单元上发现 2500 多个虚拟机或 10 个大型（大于 2 节点） ONTAP 集群， Symmetrix 或 HDS/HPE VSP/XP 阵列？</block>
+  <block id="159904c45b61bfdda4989e18bf9891e8" category="paragraph">对于上述每个 " 是 " 问题解答，建议向 AU 添加 8 GB 内存和 50 GB 磁盘空间。因此，例如，如果您对这两者都回答 " 是 " ，则应部署一个具有 150 GB 或以上磁盘空间的 24 GB 内存系统。在 Linux 上，要添加到日志位置的磁盘空间。</block>
 </blocks>
