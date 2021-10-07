@@ -595,7 +595,7 @@ kubectl delete pod telegraf-rs-*
       type: RunAsAny
     readOnlyRootFilesystem: false
     users:
-    - system:serviceaccount:ci-monitoring:telegraf-user
+    - system:serviceaccount:ci-monitoring:monitoring-operator
     groups: []
 ----
 
