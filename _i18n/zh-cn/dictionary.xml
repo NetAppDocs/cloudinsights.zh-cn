@@ -7674,9 +7674,6 @@
 <block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
 <block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
 <block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block></block>
-  <block id="049a91683d521aa6961c9d61aa5dd97e" category="summary">配置 NetApp Astra 数据存储库</block>
-  <block id="67d4d4df6543fc9b1d67546c146be6ad" category="doc">NetApp Astra 数据存储库数据收集器</block>
-  <block id="683bbcd43dc9592630ea190b632d0c03" category="paragraph">NetApp Astra 数据存储库数据源可监控和报告单个 Astra 数据存储库（ ADS ）集群的配置和性能数据。</block>
   <block id="3dcd4b7650b0373219bccea330da8d96" category="paragraph">Cloud Insights 从此收集器获取清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="30849cb98e37d0646fe727a1092f47dd" category="cell">AstraDSVolume</block>
   <block id="4da6d4792b95d2d99cc3e0f5d7ef90d2" category="cell">AstraNodeInfo.status.drives</block>
@@ -7690,11 +7687,8 @@
   <block id="d94f21371b1ddf718eac12a52a2c04d5" category="list-text">使用的 Kubernetes API 令牌必须授予对 _astrads.netapp.io_ apiGroup 的只读访问权限</block>
   <block id="7fd42c59429dd49f7d8d2046c25561a2" category="list-text">要检索 astrads-system 默认服务帐户的 API 令牌，请在 bash shell 中运行以下命令：</block>
   <block id="cb058d58577afc1218e66a94de6c292d" category="cell">Kubernetes API 服务器 IP 地址</block>
-  <block id="9dca872f2c091f19598e310ff5fd7a2e" category="cell">Kubernetes API 服务器的 IP 地址</block>
   <block id="6c78114b7032d73ba3ed6e8cbd74b060" category="cell">Kubernetes API 服务器端口</block>
-  <block id="66ec2c94d71df69ff637dbdbc2def19e" category="cell">Kubernetes API 服务器的端口</block>
   <block id="9b3098ff06241109f699cfd1a1a63a35" category="cell">Kubernetes API 令牌</block>
-  <block id="9b4c9e8da576a331cc15e2c7566aa96f" category="cell">Base64 编码的 Kubernetes API 令牌</block>
   <block id="cbf38915f7dd92dccde1fe3dad2469bf" category="cell">包含的 ADS 集群名称</block>
   <block id="e0412bb84ea8e005d283cd9efaeeaafb" category="cell">要包括在轮询中的 ADS 集群名称的逗号分隔列表。留空可监控所有集群。</block>
   <block id="965c5c6eb8381e5b51445a5fbc3048b3" category="section-title">安装采集单元， Telegraf 和 Fluent Bit</block>
@@ -7765,4 +7759,10 @@
   <block id="87e8a04e229031e564067b38ae8a72c8" category="sidebar">配置适用于 NetApp ONTAP 收集器的 Amazon FSX</block>
   <block id="d3dc1fc44d23379b3a3e3c6e5eaed716" category="list-text">在此采集单元上发现 2500 多个虚拟机或 10 个大型（大于 2 节点） ONTAP 集群， Symmetrix 或 HDS/HPE VSP/XP 阵列？</block>
   <block id="159904c45b61bfdda4989e18bf9891e8" category="paragraph">对于上述每个 " 是 " 问题解答，建议向 AU 添加 8 GB 内存和 50 GB 磁盘空间。因此，例如，如果您对这两者都回答 " 是 " ，则应部署一个具有 150 GB 或以上磁盘空间的 24 GB 内存系统。在 Linux 上，要添加到日志位置的磁盘空间。</block>
+  <block id="21d6683e9fb00a0e8c451185a0fefc00" category="summary">配置 NetApp Astra 数据存储库</block>
+  <block id="66857f3f017c56c7d6bc365ead0549cc" category="doc">NetApp Astra 数据存储库数据收集器</block>
+  <block id="c81d3de0d63693ca7ae8a4c83d9b9678" category="paragraph">NetApp Astra Data Store 数据收集器可监控和报告单个 Astra Data Store （ ADS ）集群的配置和性能数据。</block>
+  <block id="23d69dc5c46eb576cdde08fed5bdc4c7" category="cell">Kubernetes API 服务器的 IP 地址</block>
+  <block id="f2e0eea4e8022b610a38c7ca5b2987f2" category="cell">Kubernetes API 服务器的端口默认值为 6443.</block>
+  <block id="ca4d8b2cea754e64a8db55441ca30fca" category="cell">Base64 编码的 Kubernetes API 令牌</block>
 </blocks>
