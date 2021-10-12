@@ -7765,4 +7765,5 @@
   <block id="23d69dc5c46eb576cdde08fed5bdc4c7" category="cell">Kubernetes API 服务器的 IP 地址</block>
   <block id="f2e0eea4e8022b610a38c7ca5b2987f2" category="cell">Kubernetes API 服务器的端口默认值为 6443.</block>
   <block id="ca4d8b2cea754e64a8db55441ca30fca" category="cell">Base64 编码的 Kubernetes API 令牌</block>
+  <block id="bc593a7d4784d165423875d1c30b5ce3" category="cell">我在 Kubernetes 上安装或升级了 Telegraf ，但 Telegraf Pod 未启动。Telegraf ReplicaSet 或 DemonSet 报告了类似以下内容的故障：创建时出错： Pod "telaf-RS- " is foreged" ：无法针对任何安全上下文限制进行验证： [spec.volumes_2 ：无效值： "hostPath" ：不允许使用 hostPath 卷 ]</block>
 </blocks>
