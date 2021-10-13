@@ -7770,4 +7770,10 @@
   <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">此 GitHub 文章</block>
   <block id="8f176f657f418586c2a4828045ab0c37" category="cell">这是一个已知的问题描述。请参见 <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> 有关详细信息：只要 Telegraf 启动并运行，用户就可以忽略这些错误消息。</block>
   <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">我看到来自 Telegraf 的错误消息如下所示，但 Telegraf 确实启动并运行： Oct 11 14 ： 23 ： 41 IP-172-31-39-47 systemd1* ：启动了插件驱动的服务器代理，以便向 InfluxDB 报告指标。Oct 11 14 ： 23 ： 41 IP-172-31-39-47 cailaf[1827] ： time="2021-10-11T14 ： 23 ： 41Z" level=error msg="failed to create cache directory" 。/etc/celaf/.cache/snowvelc ，错误： mkdir /etc/tengraf/.ca ChE ：权限被拒绝。ignored\n" func="gosnowchelf.（ * defaultLogger ） .Errorf" fil="log.go ： 120" Oct 11 14 ： 23 ： 41 IP-172-31 ： 39-47 celaf[1827] ： time="2021-10-11T14 ： 23 ： 41Z" level=error msg="failed to open.已忽略。打开 /etc/celaf/.cache/snowlife/OCSP_response_cache.json ： no such file or directory\n" func="gosnowchlafe.（ * defaultLogger ） .Errorf" fil="log.go ： 120" Oct 11 14 ： 23 ： 41 IP-172-31-39-47 craaf[1827] ： I-41Z-2021 ：启动 Telegraf 1.19.3</block>
+  <block id="ae5c20191cb62f32246efcf9d57ec771" category="section-title">什么是 ETL ？</block>
+  <block id="ed3737df147bb5e0883ec9917bb6de42" category="paragraph">使用报告时，您将听到术语 " 数据仓库 " 和 "ETL" 。ETL 表示 " 提取，转换和加载 " 。ETL 进程将检索在 Cloud Insights 中收集的数据，并将数据转换为用于报告的格式。" 数据仓库 " 是指可用于报告的已收集数据。</block>
+  <block id="59cfd65b8b6dc724aca0f9d1c7d41298" category="paragraph">ETL 流程包括以下各个流程：</block>
+  <block id="012dbbc1d11595c2198bbd160e0d5ed3" category="list-text">* 提取 * ：从 Cloud Insights 获取数据。</block>
+  <block id="1cfa626b7f4f0f4088038dadc1956884" category="list-text">* 转换 * ：将业务逻辑规则或功能应用于从 Cloud Insights 提取的数据。</block>
+  <block id="942ba8ad752db9c168906cf68cf6cfcf" category="list-text">* 加载 * ：将转换后的数据保存到数据仓库中，以用于报告。</block>
 </blocks>
