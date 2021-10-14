@@ -118,9 +118,6 @@ image:email_monitor_alerts.png["通过电子邮件发送警报收件人"]
 image:Webhook_Monitor_Notifications.png["webhook 警报"]
 
 
-NOTE: webhooks 被视为预览功能，因此可能会发生更改。
-
-
 
 === 保存您的显示器
 
