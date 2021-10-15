@@ -1341,8 +1341,6 @@
   <block id="23a0a69ba2da60844941129c97d32149" category="summary">通过 Kubernetes 节点详细信息页面，您可以深入了解后端 PV 和 Pod 存储。</block>
   <block id="47e3b127c663c8b9509f25ef96d3c6be" category="doc">Kubernetes Node 详细信息页面</block>
   <block id="e767946157d182cf237f259a3b6478c4" category="paragraph">在 Kubernetes 资源管理器中，您可以单击节点图标以打开该节点的详细信息页面。在此页面上，您可以查看有关节点的信息，并浏览 VM ， Pod 和容器信息。</block>
-  <block id="2dd4a201d2c01681a201bffc1ab75dcb" category="inline-image-macro">Kubernetes 节点页面</block>
-  <block id="22cdeb2bd209eeac77231f150422ffed" category="paragraph"><block ref="22cdeb2bd209eeac77231f150422ffed" category="inline-image-macro-rx" type="image"></block></block>
   <block id="088972153fa4b405527a2376c07113eb" category="section-title">了解节点的 Pod 和永久性卷</block>
   <block id="3e38ab0c0d78abbf789ae718cc2c8707" category="paragraph">通过 Cloud Insights ，您可以查看 Kubernetes 环境的后端存储，从而深入了解 Kubernetes Pod 和永久性卷（ Persistent Volume ， PV ）。您可以跟踪从单个 Pod 的使用情况到 PV 以及一直到后端存储设备的 PV 计数器，例如 IOPS ，延迟和吞吐量。</block>
   <block id="4f199152407556f59fa94af499f084e0" category="paragraph">在 PV 级别， Cloud Insights 会收集后端（内部卷或卷，具体取决于 PV 类型）容量信息（总容量，已用容量，已用容量百分比）以及内部卷快照计数。在 Pod 到存储级别，它会收集后端容量和内部卷快照计数。</block>
@@ -2792,7 +2790,6 @@
   <block id="28eb73d0f92882a1159f796ebff046f9" category="paragraph">指定警报通知的 webhook 。如果需要，您可以为警告或严重警报选择不同的网络挂钩。</block>
   <block id="f1e3e3e95ba9bc35dccbfc26dd4ce6c3" category="inline-image-macro">webhook 警报</block>
   <block id="5a66c8fa12fdbdf101ab8030b60f6e31" category="paragraph"><block ref="5a66c8fa12fdbdf101ab8030b60f6e31" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c1c354049f1e5c1a3ac483bf9b54d91c" category="admonition">webhooks 被视为预览功能，因此可能会发生更改。</block>
   <block id="442dfc0b50af1fca2df31c2705cff46f" category="section-title">保存您的显示器</block>
   <block id="36af2a8d878789b86ef8d08fc1afe14d" category="list-text">如果需要，您可以添加监控器的问题描述。</block>
   <block id="4b4662d4706eea3e8bbf2bb4c06888a9" category="list-text">为 Monitor 指定一个有意义的名称，然后单击 * 保存 * 。</block>
@@ -4517,7 +4514,6 @@
   <block id="7175b0a435baf1ba17f00b97c6cf5d14" category="paragraph">Cloud Insights 将在何时显示警报 <block ref="6237c321048ea1332593fdb4bbfce320" category="inline-link-macro-rx"></block> 已超过。</block>
   <block id="66c4a1617e80afeb2335f5c047465edb" category="section-title">查看和管理警报</block>
   <block id="c2c8a0c7eb9ee3eecc0a42c64bcb2046" category="paragraph">要查看和管理警报，请执行以下操作。</block>
-  <block id="47ef8c903eaf6cd7a28209d0bb1b571d" category="list-text">导航到 * 警报 &gt; 集成警报 * 页面。</block>
   <block id="2cbf36bc1e683ba8c9d04a00f2b5287f" category="list-text">此时将显示一个列表，其中最多包含最近 1 ， 000 个警报。您可以通过单击任何字段的列标题对此列表进行排序。此列表将显示以下信息。请注意，默认情况下并不会显示所有这些列。您可以单击齿轮图标来选择要显示的列 <block ref="cc215051337679eeb66ae441f05b909e" category="inline-image-macro-rx" type="image"></block>：</block>
   <block id="64fce6220915f409c8df78402bca6bda" category="list-text">* 警报 ID* ：系统生成的唯一警报 ID</block>
   <block id="e2d5d5ebfc6031996760c84f1641da4e" category="list-text">* 触发时间 * ：相关监控器触发警报的时间</block>
@@ -6955,10 +6951,6 @@
   <block id="47f35a3903fc398c5f8e7a6493d18e8c" category="cell">Nimble 阵列的密码</block>
   <block id="504153dba55dae032aeb4a2bc21e177f" category="cell">Nimble REST API 使用的端口。默认值为 5392. 。</block>
   <block id="167f1c81881d9e3d3fe3e3defab73e75" category="paragraph">注意：默认性能轮询间隔为 300 秒，无法更改。这是 Nimble 唯一支持的间隔。</block>
-  <block id="1e09eec410e42ff83e0e216eb0694513" category="doc">管理您的环境</block>
-  <block id="f9c96c59bec6c65a88c1d215b06d2104" category="paragraph">本常见问题解答解答解答了有关管理 Cloud Insights 环境的常见问题。</block>
-  <block id="57b8def897f0a2ea2ed2efe403327dad" category="section-title">是否可以将 Cloud Insights 的访问权限授予特定用户，而将视图限制为仅包含特定资源（例如SVM 和相关卷， VM ，服务器）？</block>
-  <block id="266cca43002133f86c8df667186c2499" category="paragraph">Cloud Insights 提供基于角色的访问。例如，对报告的访问通过 Cloud Insights 的数据仓库报告进行控制。可以计划报告，并通过电子邮件以 PDF ， HTML 或 CSV 格式发送报告，也可以发送到文件共享，甚至需要用户在查看之前进行身份验证的 URL 。基于用户的访问权限以管理员，用户和来宾的形式授予。此外，还支持 Active Directory/LDAP 。</block>
   <block id="d1f2d0eb68a6b45c8dc6a6dba792539e" category="summary">Dcos 配置</block>
   <block id="072a17ceb11d2f7027c8a1539261d0b0" category="doc">数据中心 / 操作系统数据收集器</block>
   <block id="54005140701b4d1ac4638683a951ef68" category="paragraph">Cloud Insights 使用此数据收集器从数据中心 / 操作系统收集指标。</block>
@@ -7776,4 +7768,15 @@
   <block id="012dbbc1d11595c2198bbd160e0d5ed3" category="list-text">* 提取 * ：从 Cloud Insights 获取数据。</block>
   <block id="1cfa626b7f4f0f4088038dadc1956884" category="list-text">* 转换 * ：将业务逻辑规则或功能应用于从 Cloud Insights 提取的数据。</block>
   <block id="942ba8ad752db9c168906cf68cf6cfcf" category="list-text">* 加载 * ：将转换后的数据保存到数据仓库中，以用于报告。</block>
+  <block id="4f29fd9657915b51e00ee112dd495873" category="inline-image-macro">显示筛选的 Kubernetes Node 详细信息页面</block>
+  <block id="ff9dcb7868c4ad1ee30492b12c57b9d3" category="paragraph"><block ref="ff9dcb7868c4ad1ee30492b12c57b9d3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="66aeedbda698450efad722126ebd8f7e" category="inline-image-macro">显示监控器活动警报的图标</block>
+  <block id="17c7b5b8572d25de3ba213dc8154a40d" category="paragraph">您可以通过单击监控器名称旁边的铃形图标来查看与监控器关联的任何活动警报。<block ref="be97aacfa5a3607bff376896033db0e0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ed5e844b9f893059024a6390e869b4a3" category="list-text">导航到 * 警报 &gt; 所有警报 * 页面。</block>
+  <block id="17296f4349896b7279e58a091c3a382d" category="paragraph">筛选时，在开始键入时，系统会根据当前文本显示一个 * 通配符筛选器 * 。选择此选项将返回与通配符表达式匹配的所有结果。您也可以使用 NOT 或 AND 创建 * 表达式 * ，也可以选择 " 无 " 选项来筛选字段中的空值。</block>
+  <block id="1d76e0ea81fa06876e48804ecf1f0d24" category="inline-image-macro">在 K8S 资源管理器中使用通配符筛选</block>
+  <block id="ee1f323bbcbb0afd9325abd475cf0090" category="paragraph"><block ref="ee1f323bbcbb0afd9325abd475cf0090" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="48a056707ced77b5d50afec66c6d1fb0" category="paragraph">基于通配符或表达式（例如 NOT ， AND ， "None" 等）在筛选器字段中显示为深蓝色。您直接从列表中选择的项目将以淡蓝色显示。</block>
+  <block id="4c2b4732517e1639ec049c545ac89dea" category="inline-image-macro">显示通配符和选定项的筛选器</block>
+  <block id="900a446c6bbff849c8592d8788be4d66" category="paragraph"><block ref="900a446c6bbff849c8592d8788be4d66" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

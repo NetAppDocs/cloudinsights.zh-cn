@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: kubernetes_landing_page.html 
-keywords: telegraf, installation, install, kubernetes, pods, clusters 
+keywords: telegraf, installation, install, kubernetes, pods, clusters, filters, filtering, k8s 
 summary: 介绍了 Kubernetes 登录页面 
 ---
 = Kubernetes 集群概述
@@ -56,3 +56,17 @@ image:Kubernetes_Node_Pod_Status.png["节点和 Pod 状态"]
 屏幕右侧列出了每个集群中使用的前三个命名空间。单击 * 全部 * 链接可查看集群的所有命名空间。
 
 image:Kubernetes_Namespaces.png["命名空间"]
+
+
+
+=== 细化筛选器
+
+筛选时，在开始键入时，系统会根据当前文本显示一个 * 通配符筛选器 * 。选择此选项将返回与通配符表达式匹配的所有结果。您也可以使用 NOT 或 AND 创建 * 表达式 * ，也可以选择 " 无 " 选项来筛选字段中的空值。
+
+image:Filter_Kubernetes_Explorer.png["在 K8S 资源管理器中使用通配符筛选"]
+
+基于通配符或表达式（例如 NOT ， AND ， "None" 等）在筛选器字段中显示为深蓝色。您直接从列表中选择的项目将以淡蓝色显示。
+
+image:Filter_Kubernetes_Explorer_2.png["显示通配符和选定项的筛选器"]
+
+请注意，通配符和表达式筛选适用于文本或列表，但不适用于数值，日期或布尔值。
