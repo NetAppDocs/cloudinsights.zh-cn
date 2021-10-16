@@ -7779,4 +7779,7 @@
   <block id="48a056707ced77b5d50afec66c6d1fb0" category="paragraph">基于通配符或表达式（例如 NOT ， AND ， "None" 等）在筛选器字段中显示为深蓝色。您直接从列表中选择的项目将以淡蓝色显示。</block>
   <block id="4c2b4732517e1639ec049c545ac89dea" category="inline-image-macro">显示通配符和选定项的筛选器</block>
   <block id="900a446c6bbff849c8592d8788be4d66" category="paragraph"><block ref="900a446c6bbff849c8592d8788be4d66" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="33d6981ebb390960e4f355a9c9d53054" category="list-text">当系统提示您配置通知时，选择通过电子邮件， Webhook 或这两者发出警报，然后选择要通知的警报类型（严重，警告，信息和 / 或已解决）。您可以选择通知到全局监控器收件人列表（在 * 管理 &gt; 通知 * 中配置），也可以指定其他收件人。准备好继续后，单击 * 完成设置 *</block>
+  <block id="41f078f53c9079fa0fee65e798eb0300" category="inline-image-macro">设置期间的 Data Collector 通知</block>
+  <block id="c571d21cbf53176bfa722c73aea76689" category="paragraph"><block ref="c571d21cbf53176bfa722c73aea76689" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
