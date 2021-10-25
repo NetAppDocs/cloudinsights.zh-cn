@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, installation, install, agent, telegraf agent 
-summary: 'Cloud Insights 支持 link:https://docs.influxdata.com/telegraf/v1.14/["Telegraf"] 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。' 
+summary: 'Cloud Insights 支持 link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf"] 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。' 
 ---
 = 配置代理以收集数据
 
@@ -14,6 +14,9 @@ Cloud Insights 的当前 Telegraf 版本为 * 。 1.19.3 * 。
 
 
 NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步 Agent 计算机上的时间。
+
+
+NOTE: 如果要在安装代理之前验证安装文件，请参见以下章节 <<Verifying Checksums>>。
 
 
 
@@ -95,6 +98,12 @@ NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所�
 ....
 Stop-Service telegraf
 sc.exe delete telegraf
+....
+. 从存储中删除证书：
++
+....
+cd Cert:\CurrentUser\Root
+rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
 ....
 . 删除 _C ： \Program Files\Ceraf_ 文件夹以删除二进制文件，日志和配置文件
 . 从注册表中删除 _system\CurrentControlSet\Services\EventLog\Application\Ceaf_ 密钥
@@ -423,16 +432,29 @@ sudo /tmp/uninstall
 
 === Kubernetes
 
-image:Kubernetes_Install_Agent_screen.png["Kubernetes Agent 安装"]
+Kubernetes 提供了两种数据收集方式：
+
+* 基于操作员的配置。建议对 Kubernetes 执行此操作。
+* 基于脚本的传统代理安装
+
+
+安装说明因您选择的图块而异。
+
+image:Kubernetes_Operator_Tile_Choices.png["Kubernetes 安装选项"]
+
+
+NOTE: 基于操作员的安装被视为 _Preview_ 功能，因此可能会发生更改。
 
 .前提条件：
 * 必须提供以下命令： curl ， sudo ， kubectl
 +
 为获得最佳结果，请将这些命令添加到路径中。
 
-* 必须安装 Kube-state-metrics 。有关详细信息，请参见下文。
+* 必须安装 Kube-state-metrics 。有关详细信息，请参见下文。Kube-state-metrics 会随基于操作员的安装自动安装。
 * 如果您使用的是代理，请按照 * 为 Kubernetes 配置代理支持 * 一节中的说明进行操作。
-* 如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。
+* 如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。基于操作员的安装可为您安装此软件。
+* 您必须具有创建 Kubernetes 集群角色和角色绑定的权限。
+* 基于操作员的安装已通过测试，预计可与 AWS EKS 1.18 和 OpenShift 3.11 配合使用。
 
 
 
@@ -455,13 +477,28 @@ Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查�
 |===
 
 
-==== 安装
+==== 基于操作员的安装
 
-.在 Kubernetes 上安装代理的步骤：
+image:Kubernetes_Operator_Agent_Instructions.png["基于操作员的安装"]
+
+.在 Kubernetes 上安装基于操作员的代理的步骤：
+. 输入集群名称和命名空间。
+. 输入这些内容后，您可以复制 Agent 安装程序代码片段
+. 单击按钮将此片段复制到剪贴板。
+. 将此代码片段粘贴到 _bash_ 窗口中并执行。
+. 安装将自动进行。完成后，单击 _complete Setup_ 按钮。
+
+
+
+
+==== 基于脚本的安装
+
+image:Kubernetes_Install_Agent_screen.png["基于脚本的安装"]
+
+.在 Kubernetes 上安装基于脚本的代理的步骤：
 . 选择代理访问密钥。
 . 单击安装对话框中的 * 复制代理安装程序 Snippet* 按钮。如果要查看命令块，您可以选择单击 _+reveal Agent Installer Snippet_ 按钮。
-. 打开 Bash 窗口。
-. 将命令粘贴到 Bash 窗口中。
+. 将命令粘贴到 _bash_ 窗口中。
 . 或者，您也可以在 install 命令中覆盖命名空间或提供集群名称，方法是修改命令块，在最终的 _./$installerName_ 之前添加以下一项或两项
 +
 ** cluster_name=< 集群名称 >
@@ -481,6 +518,10 @@ TIP: _cluster_name_ 是 Cloud Insights 收集指标的 Kubernetes 集群的名�
 . 此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。如果尚未明确设置 _namespaces_ ，系统将提示您输入此名称。完成后，此脚本将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。
 . 完成后，单击 * 完成设置 * 。
 
+
+
+
+==== DemonSet ， ReplicaSet 以及停止 / 启动代理
 
 将在 Kubernetes 集群上创建 DemonSet 和 ReplicaSet ，以运行所需的 Telegraf 代理 / Pod 。默认情况下，这些 Telegraf 代理 / Pod 将同时计划在主节点和非主节点上。
 
@@ -550,7 +591,9 @@ kubectl delete pod telegraf-rs-*
 
 ==== 配置代理以从 Kubernetes 收集数据
 
-对于 Kubernetes 环境， Cloud Insights 会将 Telegraf 代理部署为 DemonSet 和 ReplicaSet 。运行代理的 Pod 需要能够访问以下内容：
+注意：基于脚本的安装的默认命名空间为 _cI-monitoring-.对于基于操作员的安装，默认命名空间为 _netapp-monitoring-.在涉及命名空间的命令中，请务必为您的安装指定正确的命名空间。
+
+运行代理的 Pod 需要能够访问以下内容：
 
 * HostPath
 * 配置映射
@@ -602,12 +645,13 @@ kubectl delete pod telegraf-rs-*
 
 ==== 安装 Kube-state-metrics 服务器
 
-安装 Kube-state-metrics 服务器时，您可以启用以下 Kubernetes 对象的收集： StatusSet ， DemonSet ， Deployment ， PV ， PVC ， ReplicaSet ， Service ，命名空间， Secret ， ConfigMap ， POD 卷和传入。
+
+NOTE: 基于操作员的安装可处理 Kube-state-metrics 的安装。如果要执行基于操作员的安装，请跳过此部分。
 
 
 NOTE: 强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完整的功能集，包括将 Kubernetes 永久性卷（永久性卷）链接到后端存储设备的功能。另请注意，对于 Kube-state-metrics 2.0 及更高版本，默认情况下不会导出 Kubernetes 对象标签。要配置 Kube-state-metrics 以导出 Kubernetes 对象标签，必须指定指标标签 "allow" 列表。请参见中的 _-metric-labks-allowlist_ 选项 link:https://github.com/kubernetes/kube-state-metrics/blob/master/docs/cli-arguments.md["Kube-state-metrics 文档"]。
 
-按照以下步骤安装 Kube-state-metrics 服务器：
+按照以下步骤安装 Kube-state-metrics 服务器（如果正在执行基于脚本的安装，则需要此服务器）：
 
 .步骤
 . 创建一个临时文件夹（例如， //tmp/Kube-state-yamal-files/_ ），然后从复制 .yaml 文件 https://github.com/kubernetes/kube-state-metrics/tree/master/examples/standard[] 到该文件夹。
@@ -643,7 +687,7 @@ NOTE: 强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完�
 
 请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。
 
-要卸载 Kubernetes 上的代理，请执行以下操作：
+要卸载 Kubernetes 上基于脚本的代理，请执行以下操作：
 
 如果监控命名空间仅用于 Telegraf ：
 
@@ -652,6 +696,16 @@ NOTE: 强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完�
 如果除了 Telegraf 之外，监控命名空间还用于其他目的：
 
  kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
+对于基于操作员的安装，请运行以下命令：
+
+....
+kubectl delete ns netapp-monitoring
+kubectl delete agent agent-monitoring-netapp
+kubectl delete crd agents.monitoring.netapp.com
+kubectl delete role agent-leader-election-role
+kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
+kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
+....
 
 
 ==== 升级代理
@@ -663,10 +717,89 @@ NOTE: 强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完�
 . 备份现有配置：
 +
  kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
+
+
 . 卸载代理（有关说明，请参见上文）
 . link:#kubernetes["安装新代理"]。
 
 
+
+
+== 验证校验和
+
+Cloud Insights 代理安装程序会执行完整性检查，但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。要执行仅下载操作（与默认的下载和安装操作相反），这些用户可以编辑从 UI 获取的代理安装命令并删除尾随的 "install" 选项。
+
+请按照以下步骤操作：
+
+. 按照说明复制 Agent 安装程序代码片段。
+. 请将代码片段粘贴到文本编辑器中，而不是将其粘贴到命令窗口中。
+. 从命令中删除尾随的 "-install" （ Linux/Mac ）或 "-install" （ Windows ）。
+. 从文本编辑器复制整个命令。
+. 现在，将其粘贴到命令窗口（在工作目录中）并运行。
+
+
+非 Windows ：
+
+* Download and install （下载并安装）（默认）：
++
+ installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
+* 仅下载：
++
+ installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
+
+
+Windows
+
+* Download and install （下载并安装）（默认）：
++
+ !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download -install)
+* 仅下载：
++
+ !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download)
+
+
+仅下载命令会将所有所需的项目从 Cloud Insights 下载到工作目录。这些项目包括但不限于：
+
+* 安装脚本
+* 环境文件
+* YAML 文件
+* 签名校验和文件（ SHA256.signed ）
+* 用于签名验证的 PEM 文件（ netapp_cert.pem ）
+
+
+安装脚本，环境文件和 YAML 文件可以通过目视检查进行验证。
+
+可以通过确认 PEM 文件的指纹为以下内容来验证 PEM 文件：
+
+ E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+更具体地说，
+
+* 非 Windows ：
++
+ openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
+* Windows
++
+ Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
+
+
+可以使用 PEM 文件验证签名校验和文件：
+
+* 非 Windows ：
++
+ openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
+* Windows （通过上述 Import-Certificate 安装证书后）：
++
+ Get-AuthenticodeSignature -FilePath .\sha256.ps1 $result = Get-AuthenticodeSignature -FilePath .\sha256.ps1 $signer = $result.SignerCertificate Add-Type -Assembly System.Security [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
+
+
+在对所有项目进行满意的验证后，可以通过运行以下命令启动代理安装：
+
+非 Windows ：
+
+ sudo -E -H ./<installation_script_name> --install
+Windows
+
+ .\ cloudinsights-windows.ps1 -install
 
 
 == 代理安装故障排除
@@ -684,7 +817,7 @@ NOTE: 强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完�
 | 我已安装代理，但未使用 Cloud Insights 安装程序安装代理 | 删除先前的代理并运行 Cloud Insights 代理安装，以确保正确的默认配置文件设置。完成后，单击 * 继续 * 或 * 完成 * 。 
 
 
-| 我未看到 Kubernetes 永久性卷与相应后端存储设备之间的超链接 / 连接。我的 Kubernetes 永久性卷使用存储服务器的主机名进行配置。 | 按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。 
+| 我未看到 Kubernetes 永久性卷与相应后端存储设备之间的超链接 / 连接。我的 Kubernetes 永久性卷使用存储服务器的主机名进行配置。 | 按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。您必须使用 Telegraf 2.0 或更高版本。 
 
 
 | 我在日志中看到类似以下内容的消息： E0901 15 ： 21 ： 39.962145 1 个 trirror.go ： 178] K8s.io/Kube-state-metrics/internal/store/builer.go ： 352 ：无法列出 * 。 MutatingWebhookConfiguration ：服务器找不到请求的资源 E091.IO/Kube-state-metrics ：内部 /8.171.Go ：无法找到服务器 | 如果您运行的是 Kube-state-metrics 版本 2.0.0 或更高版本以及 Kubernetes 版本 1.17 或更低版本，则可能会出现这些消息。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubectl get deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ '_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用以下租约： _mutatingwebconfigurations _webhook_ ，具体可以使用以下参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ， ingeses ，作业，限制范围，命名空间，网络策略，节点，复制卷，持久性卷， poddis中断 预算， Pod ，证书集，资源控制器，资源等，网络，存储器，卷，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器， 验证 webhookconfigurations ， volumeattachments 

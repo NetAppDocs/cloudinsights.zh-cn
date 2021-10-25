@@ -69,4 +69,6 @@ image:Filter_Kubernetes_Explorer.png["在 K8S 资源管理器中使用通配符�
 
 image:Filter_Kubernetes_Explorer_2.png["显示通配符和选定项的筛选器"]
 
+Kubernetes 筛选器为上下文筛选器，例如，如果您位于特定节点页面上，则 pod_name 筛选器仅会列出与该节点相关的 Pod 。此外，如果您对特定命名空间应用筛选器，则 pod_name 筛选器将仅列出该命名空间中节点 _and_ 上的 Pod 。
+
 请注意，通配符和表达式筛选适用于文本或列表，但不适用于数值，日期或布尔值。

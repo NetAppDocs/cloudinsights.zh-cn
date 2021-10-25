@@ -11,6 +11,43 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+=== 2021年10月
+
+
+
+==== 在 K8S 资源管理器页面上筛选
+
+link:kubernetes_landing_page.html["Kubernetes 资源管理器"] 通过页面筛选器，您可以集中控制为 Kubernetes 集群，节点和 POD 探索显示的数据。
+
+image:Filter_Kubernetes_Explorer.png["Kubernetes 资源管理器筛选示例"]
+
+
+
+==== 用于报告的 K8s 数据
+
+现在， Kubernetes 数据可用于报告，从而可以创建成本分摊或其他报告。
+
+image:Kubernetes_ETL_Example.png["Kubernetes 数据显示在成本分摊报告中"]
+
+
+
+==== 暗主题已出现
+
+你们中的许多人都要求使用非公开主题， Cloud Insights 也回答了这个问题。要在浅色和暗色主题之间切换，请单击用户名旁边的下拉列表。image:DarkModeSwitch.png["用户下拉列表中提供了切换到暗主题"]
+image:DarkModeDashboard.png["以暗主题显示的典型信息板的图像"]
+
+
+
+==== Data Collector 支持
+
+我们对 Cloud Insights 数据收集器进行了一些改进。下面是一些亮点：
+
+* 适用于 ONTAP 的 Amazon FSX 的新收集器
+
+
+'''
+
+
 === 2021年9月
 
 
@@ -57,6 +94,7 @@ image:Type-Ahead_Monitor_1.png["监控器中的预键入筛选器"]
 * 具有存储节点父序列号的增强型 IBM SVC 和 EMC PowerStore
 
 
+'''
 
 
 === 2021年8月

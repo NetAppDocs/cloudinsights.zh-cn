@@ -5536,7 +5536,6 @@
   <block id="05894ba2c918dd33592bf1bd21c347f6" category="cell">已缓存内存</block>
   <block id="05345376e590de98cc623cdd4392065e" category="cell">接受连接已处理身份验证请求失败身份验证字节数已用字节数读取（每秒）写入的字节数（每秒） CAS Badval CAS 命中 CAS 未命中刷新 Reqs （每秒）获取 Reqs （每秒）设置 Reqs （每秒）触摸 Reqs （每秒）连接生成率（每秒） 连接结构打开连接当前已存储项数据删除请求命中（每秒）数据删除请求未命中（每秒）删除请求命中（每秒）删除请求未命中（每秒）项目已逐出有效的逐出已过期项目获取命中（每秒）获取未命中（每秒） 已用哈希字节哈希正在扩展哈希功率级别增量请求命中数（每秒）增量请求未命中数（每秒）服务器最大字节侦听已禁用已回收的工作线程数已打开连接总数已存储的项目数触摸未命中服务器正常运行时间</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Telegraf</block>
-  <block id="0eaadae7a1116194846bc062f12d3eaa" category="summary">Cloud Insights 支持 <block ref="5035b910ac2dcfd6f07336a0e7898d37" category="inline-link-macro-rx"></block> 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。</block>
   <block id="7e25453d6939c3c3ab0bd1656d5fcad2" category="doc">配置代理以收集数据</block>
   <block id="ae2f2b5e87a12f1cd650f0e46b92e4ec" category="admonition">为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步 Agent 计算机上的时间。</block>
   <block id="137bac1c26ca6d0b61bc783c9a2fcbbd" category="section-title">安装代理</block>
@@ -5624,11 +5623,8 @@
   <block id="eb95277827afbd8e2e2e8f76d8b46c1a" category="list-text">卸载先前的电报代理：</block>
   <block id="eaca524ca350c2f4a68505fcd46722dc" category="list-text"><block ref="233c0aad358add3bf73c9fdb84825ed1" category="inline-link-macro-rx"></block>。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
-  <block id="b2257c8ee159c6db38a3a4db5f1bbb63" category="inline-image-macro">Kubernetes Agent 安装</block>
-  <block id="9b46ce6c5d23752c2df12a37c9f7fd99" category="paragraph"><block ref="9b46ce6c5d23752c2df12a37c9f7fd99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8904cc29551e19496fd1ef88d03dbdb2" category="list-text">必须提供以下命令： curl ， sudo ， kubectl</block>
   <block id="85ec37ca86f40643ef57d677de07ac20" category="paragraph">为获得最佳结果，请将这些命令添加到路径中。</block>
-  <block id="1414710b4943b74148ba07c3c051ac64" category="list-text">必须安装 Kube-state-metrics 。有关详细信息，请参见下文。</block>
   <block id="80c0723b28b89c49ac0b2c207486cf90" category="list-text">如果您使用的是代理，请按照 * 为 Kubernetes 配置代理支持 * 一节中的说明进行操作。</block>
   <block id="56cb6633aba007c9c91082eb591c6ac6" category="section-title">监控仅安装在 Linux 节点上</block>
   <block id="748fdb05a8ec278d9ce5ea3bde4405f4" category="paragraph">Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查找以下 Kubernetes 标签，支持监控运行 Linux 的 Kubernetes 节点：</block>
@@ -5640,10 +5636,7 @@
   <block id="25d70ab71729a44b7af3c8593c6ea423" category="cell">测试版 .Kubernetes 。 IO/OS = Linux</block>
   <block id="9e2a330d57e085e593849abad3159d54" category="cell">Rancher + catt.io 作为流程编排 /Kubernetes 平台</block>
   <block id="210d6dd076b2d2e1dd1645c99d185fbd" category="cell">catt.io/OS = Linux</block>
-  <block id="89749f6127dbab76424cf1683e6f46e8" category="list-title">在 Kubernetes 上安装代理的步骤：</block>
   <block id="3c3ac08f88c7317ac9d41d3b669cbc27" category="list-text">单击安装对话框中的 * 复制代理安装程序 Snippet* 按钮。如果要查看命令块，您可以选择单击 _+reveal Agent Installer Snippet_ 按钮。</block>
-  <block id="3a0b4939c688d05edd3a0e10ec0d2e86" category="list-text">打开 Bash 窗口。</block>
-  <block id="ada6dab7d7bfbffaf72122580fad35de" category="list-text">将命令粘贴到 Bash 窗口中。</block>
   <block id="c3e7ae0efafea510710a12fe0f0d609a" category="list-text">或者，您也可以在 install 命令中覆盖命名空间或提供集群名称，方法是修改命令块，在最终的 _./$installerName_ 之前添加以下一项或两项</block>
   <block id="e1a5dab3e4ad3574b29d38315af67877" category="list-text">cluster_name=&lt; 集群名称 &gt;</block>
   <block id="8d452c9dd71946426462bb948da29ba1" category="list-text">namespace=&lt; 命名空间 &gt;</block>
@@ -5660,14 +5653,11 @@
   <block id="d3f2095232996254a1ce9d2dd9efc5b0" category="paragraph">* 安装 Telegraf 代理之后，将适当的 _https_proxy_ 和 / 或 _http_proxy_ 环境变量添加并设置为 _telecraf-DS_ emonset 和 _telecraf-RS_ replicaset 。</block>
   <block id="fc8f446a9ea6e6bdd7e365563b8c3851" category="paragraph">然后，重新启动 Telegraf ：</block>
   <block id="1a2ec26374f8d36de076929c5ff28aa8" category="section-title">配置代理以从 Kubernetes 收集数据</block>
-  <block id="e40b87cec56d11ac491fd844b7bb27d3" category="paragraph">对于 Kubernetes 环境， Cloud Insights 会将 Telegraf 代理部署为 DemonSet 和 ReplicaSet 。运行代理的 Pod 需要能够访问以下内容：</block>
   <block id="f1e81401ee0afe2275193298ef588120" category="list-text">HostPath</block>
   <block id="5eeadeea1e2bd82727f9a220408a5f2a" category="list-text">配置映射</block>
   <block id="7de38f3c3d3baa7ca58a366f09577586" category="list-text">机密</block>
   <block id="16fbf864377203e70ce04c9b7fbcef86" category="paragraph">这些 Kubernetes 对象会在 Cloud Insights UI 中提供的 Kubernetes 代理安装命令中自动创建。Kubernetes 的某些变体（例如 OpenShift ）实施了更高的安全级别，可能会阻止对这些组件的访问。_SecurityContextConstrent_ 不是在 Cloud Insights UI 中提供的 Kubernetes 代理安装命令中创建的，必须手动创建。创建后，重新启动 Telegraf Pod 。</block>
   <block id="708b7f7f18eb293652df29349e867172" category="section-title">安装 Kube-state-metrics 服务器</block>
-  <block id="07472d5f2af611d646007b614784f7ee" category="paragraph">安装 Kube-state-metrics 服务器时，您可以启用以下 Kubernetes 对象的收集： StatusSet ， DemonSet ， Deployment ， PV ， PVC ， ReplicaSet ， Service ，命名空间， Secret ， ConfigMap ， POD 卷和传入。</block>
-  <block id="a2ad229e09caec752191079182a7adae" category="paragraph">按照以下步骤安装 Kube-state-metrics 服务器：</block>
   <block id="ba86ea7c2dbdd3f6b9064aa53b496ca9" category="list-text">创建一个临时文件夹（例如， //tmp/Kube-state-yamal-files/_ ），然后从复制 .yaml 文件<block ref="6c1d035244e82592cca4953c7743d814" category="inline-link-rx"></block> 到该文件夹。</block>
   <block id="abcf7e32baf550db167b82496350d414" category="list-text">运行以下命令以应用安装 Kube-state-metrics 所需的 .yaml 文件：</block>
   <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">Kube-state-metrics 计数器</block>
@@ -5699,7 +5689,6 @@
   <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">StatusSet 指标</block>
   <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
   <block id="307dff894f6575c33c4a314d918feab1" category="paragraph">请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。</block>
-  <block id="7dc4fa7e87abeecb05988c4d2a77082d" category="paragraph">要卸载 Kubernetes 上的代理，请执行以下操作：</block>
   <block id="71342d32523395c97fae80cc75bd023d" category="paragraph">如果监控命名空间仅用于 Telegraf ：</block>
   <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">如果除了 Telegraf 之外，监控命名空间还用于其他目的：</block>
   <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">备份现有配置：</block>
@@ -5712,7 +5701,6 @@
   <block id="eca45129c8446e68f5ce8f765f25b4c7" category="cell">我已安装代理，但未使用 Cloud Insights 安装程序安装代理</block>
   <block id="ceba88aab9e14c687ffb3ce263a229a1" category="cell">删除先前的代理并运行 Cloud Insights 代理安装，以确保正确的默认配置文件设置。完成后，单击 * 继续 * 或 * 完成 * 。</block>
   <block id="3dcf0a51075fbcf98f9e53d661506adf" category="cell">我未看到 Kubernetes 永久性卷与相应后端存储设备之间的超链接 / 连接。我的 Kubernetes 永久性卷使用存储服务器的主机名进行配置。</block>
-  <block id="87955a26e39fa43f43dbcb18a7dfa9f0" category="cell">按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。</block>
   <block id="a603e86bb87b54e9b7acc7e242269514" category="cell">我在日志中看到类似以下内容的消息： E0901 15 ： 21 ： 39.962145 1 个 trirror.go ： 178] K8s.io/Kube-state-metrics/internal/store/builer.go ： 352 ：无法列出 * 。 MutatingWebhookConfiguration ：服务器找不到请求的资源 E091.IO/Kube-state-metrics ：内部 /8.171.Go ：无法找到服务器</block>
   <block id="5f06573aae905166447bf8d646c6bf89" category="summary">查询概述</block>
   <block id="fadb076bccad39c075c50bfa7f81bc31" category="doc">查询中使用的资产</block>
@@ -7589,7 +7577,6 @@
   <block id="36e498f46668dc7b2127a0e5f83abd6c" category="section-title">删除用户</block>
   <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">具有管理员角色的用户可以通过单击用户的名称并单击对话框中的 _Delete User_ 来删除用户（例如，不再与公司合作的用户）。此用户将从 Cloud Insights 环境中删除。</block>
   <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">请注意，即使删除用户，用户创建的任何信息板，查询等也将在 Cloud Insights 环境中保持可用。</block>
-  <block id="29dda85c81caa16abcd4f195deac6098" category="list-text">如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。</block>
   <block id="f15a3c589417e8499878c4798162a622" category="admonition">强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完整的功能集，包括将 Kubernetes 永久性卷（永久性卷）链接到后端存储设备的功能。另请注意，对于 Kube-state-metrics 2.0 及更高版本，默认情况下不会导出 Kubernetes 对象标签。要配置 Kube-state-metrics 以导出 Kubernetes 对象标签，必须指定指标标签 "allow" 列表。请参见中的 _-metric-labks-allowlist_ 选项 <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
   <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">此问题描述</block>
   <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">Data ONTAP 9.2 及更高版本要获得最佳性能，请使用 Data ONTAP 版本，其中 <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> 已修复。</block>
@@ -7600,7 +7587,6 @@
   <block id="941f6670886082a432b8033949c34311" category="cell">在 Zscaler 代理中禁用 * 。 .cloudinsights.netapp.com URL 的 SSL 检查。如果 Zscaleer 执行 SSL 检查并替换证书，则 Cloud Secure 将不起作用。</block>
   <block id="664eaf7f7371b5bb01b58dd1401a3f24" category="cell">安装代理时，安装将在解压缩后挂起。</block>
   <block id="af5d24d9bf0b86e25aac0207e1738aa7" category="cell">"chmod 755 -rf " 命令失败。如果代理安装命令由非 root sudo 用户运行，而该用户的文件位于工作目录中，属于另一个用户，并且无法更改这些文件的权限，则此命令将失败。由于 chmod 命令失败，其余安装不会执行。1. 创建一个名为 cloudsecure 的新目录。2. 转到该目录。3. 复制并粘贴完整的 "token=…… … ./cloudsure-agent-install.sh" 安装命令并按 Enter 键。4. 安装应能继续进行。</block>
-  <block id="b37e5afaddcc3a71b84e9c4dac7caba9" category="cell">如果您运行的是 Kube-state-metrics 版本 2.0.0 或更高版本以及 Kubernetes 版本 1.17 或更低版本，则可能会出现这些消息。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubectl get deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ '_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用以下租约： _mutatingwebconfigurations _webhook_ ，具体可以使用以下参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ， ingeses ，作业，限制范围，命名空间，网络策略，节点，复制卷，持久性卷， poddis中断 预算， Pod ，证书集，资源控制器，资源等，网络，存储器，卷，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器， 验证 webhookconfigurations ， volumeattachments</block>
   <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">以下是配置此数据源的要求：</block>
   <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">分配了 Metric 查询和租户访问角色的用户的用户名和密码</block>
   <block id="12cfd5219151c53639372267440b1f0f" category="paragraph">在中选择网络挂机通知 <block ref="1896b2660f404c5b1ef983b849bd2fa1" category="inline-link-macro-rx"></block>，转至 * 警报 &gt; 管理监控器 * 并选择所需的监控器，或者添加新的监控器。在 _set up team notifications _ 部分中，选择 _Webhook_ 作为交付方法。选择警报级别（严重，警告，已解决），然后选择所需的网络连接。</block>
@@ -7779,7 +7765,227 @@
   <block id="48a056707ced77b5d50afec66c6d1fb0" category="paragraph">基于通配符或表达式（例如 NOT ， AND ， "None" 等）在筛选器字段中显示为深蓝色。您直接从列表中选择的项目将以淡蓝色显示。</block>
   <block id="4c2b4732517e1639ec049c545ac89dea" category="inline-image-macro">显示通配符和选定项的筛选器</block>
   <block id="900a446c6bbff849c8592d8788be4d66" category="paragraph"><block ref="900a446c6bbff849c8592d8788be4d66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="33d6981ebb390960e4f355a9c9d53054" category="list-text">当系统提示您配置通知时，选择通过电子邮件， Webhook 或这两者发出警报，然后选择要通知的警报类型（严重，警告，信息和 / 或已解决）。您可以选择通知到全局监控器收件人列表（在 * 管理 &gt; 通知 * 中配置），也可以指定其他收件人。准备好继续后，单击 * 完成设置 *</block>
-  <block id="41f078f53c9079fa0fee65e798eb0300" category="inline-image-macro">设置期间的 Data Collector 通知</block>
-  <block id="c571d21cbf53176bfa722c73aea76689" category="paragraph"><block ref="c571d21cbf53176bfa722c73aea76689" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="98f1b16edd9c418c18f29042ee157677" category="summary">Telegraf 数据显示选项</block>
+  <block id="a5f3f63c2f6e1d6d4605650633b9ce8a" category="section-title">2021年10月</block>
+  <block id="2b8277dc59593a3beec619c816d77dc1" category="section-title">在 K8S 资源管理器页面上筛选</block>
+  <block id="1cfce78051e23f0d9fc12410754424ee" category="paragraph"><block ref="40b10aa2345bc7500d58a69dfe0565c3" category="inline-link-macro-rx"></block> 通过页面筛选器，您可以集中控制为 Kubernetes 集群，节点和 POD 探索显示的数据。</block>
+  <block id="651ecedd8d25ab4ae212856320c2b07d" category="inline-image-macro">Kubernetes 资源管理器筛选示例</block>
+  <block id="3c66c495f12a25be56d72e7b3f6df498" category="paragraph"><block ref="3c66c495f12a25be56d72e7b3f6df498" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1f99134a154434d88680184fbf03690c" category="section-title">用于报告的 K8s 数据</block>
+  <block id="b780477f78288d46124bd3fa35adcdf6" category="paragraph">现在， Kubernetes 数据可用于报告，从而可以创建成本分摊或其他报告。</block>
+  <block id="794bb0e615ad8cbde31e79e047b05977" category="inline-image-macro">Kubernetes 数据显示在成本分摊报告中</block>
+  <block id="72cb1c8d0bd036efb577af713c14ee92" category="paragraph"><block ref="72cb1c8d0bd036efb577af713c14ee92" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d358290cdffc932cfc83fc42f086cdfc" category="section-title">暗主题已出现</block>
+  <block id="8f91642da0d4bf72e0cf6415689f7c5c" category="inline-image-macro">用户下拉列表中提供了切换到暗主题</block>
+  <block id="8c22ff9161ced6a775c88721bd6b5d26" category="inline-image-macro">以暗主题显示的典型信息板的图像</block>
+  <block id="840d2d42752bca749d1766ad11c7592a" category="paragraph">你们中的许多人都要求使用非公开主题， Cloud Insights 也回答了这个问题。要在浅色和暗色主题之间切换，请单击用户名旁边的下拉列表。<block ref="8eb4a7aca7d209ac2d8fd3e7d62c3442" category="inline-image-macro-rx" type="image"></block>
+<block ref="3f488cb6a8d73935352ae358a16b41fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="89d2c05fd752bacd15546a3e7343e4ca" category="list-text">适用于 ONTAP 的 Amazon FSX 的新收集器</block>
+  <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="inline-link-macro">系统定义的监控器</block>
+  <block id="571a4c7b2a21f7d5320e568101487965" category="paragraph">请参见下面的 <block ref="336c342709e4378716804c9ce097a6ae" category="inline-link-macro-rx"></block> 预览文档。</block>
+  <block id="78f5442b44403af2b19916532d824297" category="section-title">系统定义的监控器（预览）</block>
+  <block id="96243a9e9260d57336856a77aebc69e9" category="paragraph">从 2021 年 10 月开始， Cloud Insights 将预览许多系统定义的指标和日志监控器。监控器界面将进行多项更改，以适应这些系统监控器。本节将介绍这些内容。</block>
+  <block id="48eb2cd1e9b8d7db7bb79328591d4368" category="admonition">由于系统定义的监控器是一项预览功能，因此可能会发生更改。</block>
+  <block id="18c9f77aeb499c7dba30bf110efc7428" category="list-text">要修改现有监控器，请单击列表中的监控器名称。</block>
+  <block id="ab8f2caed7bd8dd082843b17dd59b109" category="list-text">要添加监控器，请单击 * + Monitor* 。</block>
+  <block id="65117c1214622a1ce8c32b4de0f6dedc" category="inline-image-macro">选择系统或日志监控器</block>
+  <block id="3aff4942a9a35d98c6fdcb7dee853d59" category="paragraph"><block ref="3aff4942a9a35d98c6fdcb7dee853d59" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c58ee317c84221459556bf1d8e52753f" category="paragraph">添加新监控器时，系统会提示您创建指标监控器或日志监控器。</block>
+  <block id="fc2f22eed1d01c032a18cfe4cba78d61" category="list-text">_Metric _ 监控与基础架构或性能相关的触发器的警报</block>
+  <block id="a0974f4b9ee8ae7e61310df23d207909" category="list-text">_Log_ 监控日志相关活动的警报</block>
+  <block id="684fd3873f49a70f4bba03d396531c40" category="paragraph">选择监控器类型后，将显示监控器配置对话框。</block>
+  <block id="269c9bcd9ea3883a3a121a1b88af9e34" category="section-title">指标监控器</block>
+  <block id="313acdf9633421e44aea4a9be12b5071" category="list-text">在下拉列表中，搜索并选择要监控的对象类型和指标。</block>
+  <block id="734f668bd72716899c84bbaedc8d2564" category="list-text">对于 _Warning_ 级别，为我们的示例输入 200 。指示此警告级别的虚线显示在示例图中。</block>
+  <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">定义监控器的条件</block>
+  <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">日志监控器</block>
+  <block id="2537071834a07a838e1fbe450ad077ac" category="paragraph">在 * 日志监控器 * 中，首先从可用日志列表中选择要监控的日志。然后，您可以根据上述可用属性进行筛选。</block>
+  <block id="92e0462f18b6159955eb265400fc3fac" category="paragraph">例如，您可以选择筛选 logs.netapp.ems 源中的 "object.store.unavailabe" 消息类型：</block>
+  <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">日志监控器筛选器不能为空。</block>
+  <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">选择要监控的日志并设置筛选器</block>
+  <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="454176c970e70022beb38f8813bea495" category="section-title">定义警报行为</block>
+  <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">选择在触发日志警报时要发出警报的方式。您可以根据上述筛选条件将监控器设置为具有 _Warning_ ， _critical_ 或 _Informational_ 严重性的警报。</block>
+  <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">定义要监控的日志行为</block>
+  <block id="1b1f71445d1920c9625e6c1f2018a229" category="paragraph"><block ref="1b1f71445d1920c9625e6c1f2018a229" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">定义警报解析行为</block>
+  <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">您可以选择如何解决日志监控警报。您可以选择三种方式：</block>
+  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">* 立即解决 * ：立即解决警报，无需采取进一步操作</block>
+  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">* 基于时间解决 * ：在指定时间过后，警报将得到解决</block>
+  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">* 基于日志条目解决 * ：在发生后续日志活动时解决警报。例如，当对象记录为 " 可用 " 时。</block>
+  <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">警报解决</block>
+  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c1c354049f1e5c1a3ac483bf9b54d91c" category="admonition">webhooks 被视为预览功能，因此可能会发生更改。</block>
+  <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">自定义监控器可以暂停，恢复，删除或移动到其他组。系统定义的监控器可以暂停和恢复，但不能删除或移动。</block>
+  <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">自定义监控组</block>
+  <block id="46823a39af1ef1aeeeec87c034852563" category="paragraph">要创建新的自定义监控组，请单击 * "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</block>
+  <block id="c98010a3b96739beb4d94394baec101e" category="admonition">在任何给定时间，每个监控器只能属于一个组（除了属于 " 所有监控器 " 和 " 自定义监控器 " 之外）。</block>
+  <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">系统定义的监控器由预定义的指标和条件以及默认说明和更正操作组成，这些内容无法修改。您可以修改系统定义的监控器的通知收件人列表。要查看指标，条件，问题描述和更正操作，或者修改收件人列表，请打开系统定义的监控组，然后单击列表中的监控器名称。</block>
+  <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">无法修改或删除系统定义的监控组。</block>
+  <block id="cabbbf7fefe4319bf83cb8fc4f054cbb" category="paragraph">以下系统定义的监控器可在所记录的组中使用。</block>
+  <block id="8c3d5985ed501d011f08dd2f4a6a027f" category="list-text">* ONTAP Infrastructure* 可监控 ONTAP 集群中与基础架构相关的问题。</block>
+  <block id="2bd726cf12f9292e804f46bb3ca1133e" category="list-text">* ONTAP 工作负载示例 * 包括与工作负载相关的问题的监控器。</block>
+  <block id="141e31818558b2f9c106f51987380a29" category="list-text">两个组中的监控器默认为 _Paused_state 。</block>
+  <block id="007cc9547ae8884ad597cd92ba505422" category="cell">severity</block>
+  <block id="72abf8aec41374681348ca7f6c410986" category="cell">监控问题描述</block>
+  <block id="7650364136ffbfe1cfd659068e6c1327" category="cell">更正操作</block>
+  <block id="7e07c1b11f24151c7ec5fb952780452c" category="cell">已超过 WAFL 配额 qtree</block>
+  <block id="551b723eafd6a31d444fcb2f5920fbd3" category="cell">信息</block>
+  <block id="2f27b54966acbd77fd99f77dd88d2303" category="cell">如果卷上的树配额已超过，则会发生此事件。此树在一定时间内或在执行 " 配额调整大小 " 之前不会重复此事件。时间量由 "quota logmsg" 命令指定。</block>
+  <block id="ef50e307d2e9be873ea2971a14d5b95b" category="cell">减少此树中的使用量或增加配额并运行 "quota resize" 命令。</block>
+  <block id="efc83f7260baf1b3eaf2a294710e5f7c" category="cell">卷自动调整大小成功</block>
+  <block id="257622ffd7c34820865a6e53d852e0ec" category="cell">" 如果卷的自动大小调整成功，则会发生此事件。如果启用了 "autosize grow" 选项，并且卷达到增长阈值百分比，则会发生这种情况。 "</block>
+  <block id="983e45d9f14c8e4b92b207877e7cabb0" category="cell">无</block>
+  <block id="5c944485181d1e268a758d9ab0938b45" category="cell">卷自动调整大小失败</block>
+  <block id="059e9861e0400dfbe05c98a841f3f96b" category="cell">警告</block>
+  <block id="5136aec052d7a6b07b4c2e8985d1c2bb" category="cell">卷的自动大小调整失败。如果不采取更正操作，卷可能会用尽空间。</block>
+  <block id="e3e71a613c7224718e0cd05d1c6d7283" category="cell">分析自动调整大小失败的原因：卷是否已达到其最大容量？存储池（聚合）是否空间不足？自动调整卷大小时，增加卷的最大容量。</block>
+  <block id="705f553c53a10b3d987f138b81d9b95e" category="cell">SnapMirror 关系不同步</block>
+  <block id="99cd1c61610c76a57cb8d10d6df6b870" category="cell">严重</block>
+  <block id="fab0b51172b44e603c713fb9fc5873b5" category="cell">如果 SnapMirror （ R ） Sync 关系状态从 " 同步 " 更改为 " 不同步 " ，则会发生此事件。根据复制模式对源卷施加 I/O 限制。对于 "trict-sync-mirror" 策略类型的关系，不允许客户端对卷进行读写访问。数据保护受到影响。</block>
+  <block id="3a3d51f180a8def13c29dadf3adcd379" category="cell">检查源卷和目标卷之间的网络连接。使用 "snapmirror show" 命令监控 SnapMirror 同步关系状态。"Auto-resync" 尝试将关系恢复为 "in-sync" 状态。</block>
+  <block id="b2d567ee5fee74ade7380c5d8ec61bf1" category="cell">SAN 的 " 主动 - 主动 " 状态已更改</block>
+  <block id="d14e330b5ba5f38a60a83e8f959c8ff3" category="cell">" SAN 路径不再对称。路径只能在 ASA 上不对称，因为 AFF 和 FAS 都是不对称的。 "</block>
+  <block id="aeaa319486c33f0820b5cbe313bbb45a" category="cell">尝试并启用 "active-active" 状态。如果问题仍然存在，请联系客户支持。 "</block>
+  <block id="5afd7a3b86246d7571c9844e9b576764" category="cell">QoS 监控内存已达到上限</block>
+  <block id="f3ee7c32a9c1d087f309bd490e0d7a2d" category="cell">QoS 子系统的动态内存已达到当前平台硬件的限制。某些 QoS 功能可能在有限容量下运行。</block>
+  <block id="f5a8402275cb829f51457c302c84f68c" category="cell">" 删除某些活动工作负载或流以释放内存。使用 "statistics show -object workload -counter ops" 命令确定哪些工作负载处于活动状态。活动工作负载显示非零操作。然后，多次使用 "workload delete &lt;workload_name&gt;" 命令删除特定工作负载。或者，也可以使用 "tream delete -workload &lt;workload name&gt; * " 命令从活动工作负载中删除关联的流。 "</block>
+  <block id="46b149ef7b2c99176c0ddf2261efc9b1" category="cell">NVMe 命名空间联机</block>
+  <block id="5038f23a9607a6f0fd794ac78ad6bc2c" category="cell">手动使 NVMe 命名空间联机时会发生此事件。</block>
+  <block id="664c37f0ecd058a31c6dcac229532d65" category="cell">NVMe 命名空间脱机</block>
+  <block id="1752bb5b659936090c8349f33b76c1be" category="cell">手动使 NVMe 命名空间脱机时会发生此事件。</block>
+  <block id="721fab84bff6414011f3779d88867b2d" category="cell">NVMe 命名空间已销毁</block>
+  <block id="5e62f05db6de18d76e6a2980c16eb2ec" category="cell">销毁 NVMe 命名空间时会发生此事件。</block>
+  <block id="b6414d5ea9e456f1d51aea104b6326db" category="cell">无响应的防病毒服务器</block>
+  <block id="03fcd847dc1726b2adf9d7caec2470f1" category="cell">如果 ONTAP （ R ）检测到无响应防病毒（ AV ）服务器并强制关闭其 Vscan 连接，则会发生此事件。</block>
+  <block id="84d79cc8b76b1c87f14f6175d78e942a" category="cell">确保安装在 AV 连接器上的 AV 服务器可以连接到 Storage Virtual Machine （ SVM ）并接收扫描请求。</block>
+  <block id="62e125953adc91727621ebbd266a008d" category="cell">LUN 已销毁</block>
+  <block id="76395740b26f78901b20dcc0394cf6b4" category="cell">销毁 LUN 时会发生此事件。</block>
+  <block id="cf60233a7909687d8680857f1521b1f5" category="cell">已超过 FC 目标端口命令</block>
+  <block id="b07e4ebd90ef9f761db4a8092e019f2b" category="cell">物理 FC 目标端口上未处理的命令数超过支持的限制。此端口没有足够的缓冲区来容纳未完成的命令。由于启动程序 I/O 太多，因此发生超限或扇入过陡。</block>
+  <block id="039d7531701e4faeb74a34d432afd9d9" category="cell">执行以下更正操作： "1.评估端口上的主机扇入，并执行以下操作之一： " a.减少登录到此端口的主机数量。B减少登录到此端口的主机访问的 LUN 数量。c.减小 host 命令队列深度。2.监控 "FCP_port" CM 对象上的 "queue_full" 计数器，并确保其不会增加。例如： " statistics show -object fcp_port -counter queue_full -instance port.portname -raw 3.监控阈值计数器并确保其不会增加。例如： statistics show -object fcp_port -counter threshold_full -instance port.portname -raw</block>
+  <block id="d4bd8d52d9f5248461eab65877c33cd4" category="cell">LUN 脱机</block>
+  <block id="c879db7459104a5347aa882f8638ec4e" category="cell">手动使 LUN 脱机时会发生此事件。</block>
+  <block id="03867f916783d279d2e18bebd13cd956" category="cell">将 LUN 恢复联机。</block>
+  <block id="b8de81d6f52d224f773817fe81217dad" category="cell">AWS 凭据未初始化</block>
+  <block id="1d66554c78febceda1243e001f9eb24a" category="cell">如果模块在初始化之前尝试从云凭据线程访问 Amazon Web Services （ AWS ）身份和访问管理（ IAM ）基于角色的凭据，则会发生此事件。</block>
+  <block id="359da6745ab4ceb004d767ea2a17723c" category="cell">" 等待云凭据线程以及系统完成初始化。"</block>
+  <block id="a146f13e0af345143ecc33ea983a5c06" category="cell">无法访问云层</block>
+  <block id="34cd9019bbd8c57317268ed06f95dc66" category="cell">存储节点无法连接到 Cloud Tier 对象存储 API 。某些数据将无法访问。</block>
+  <block id="1d2c365995cd335672fe069fb1198c52" category="cell">" 如果您使用内部产品，请执行以下更正操作： "1.使用 "network interface show" 命令验证集群间 LIF 是否联机且正常运行。 "2.通过对目标节点集群间 LIF 使用 "ping" 命令检查与对象存储服务器的网络连接。 3.确保满足以下条件： a.对象存储的配置未更改。B登录和连接信息仍然有效。如果问题描述仍然存在，请联系 NetApp 技术支持。" 如果使用 Cloud Volumes ONTAP ，请执行以下更正操作： " 1.确保对象存储的配置未更改。2. 确保登录和连接信息仍然有效。如果问题描述仍然存在，请联系 NetApp 技术支持。</block>
+  <block id="93ec7808a5f104bb53817af485a82bf5" category="cell">FlexGroup 成分卷已用尽索引节点</block>
+  <block id="df5f49430662785a6102f7231d4f9ea3" category="cell">" FlexGroup 卷的成分卷已用尽索引节点，这可能会导致发生原因服务中断。您不能在此成分卷上创建新文件。这可能会导致整个 FlexGroup 卷中的内容分布不平衡。 "</block>
+  <block id="ccf57afa1c3f5b02b340c44d6cbe237f" category="cell">建议您使用 "volume modify -files +X" 命令向 FlexGroup 卷添加容量。 " 或者，从 FlexGroup 卷中删除文件。但是，很难确定哪些文件已登录到成分卷上。 "</block>
+  <block id="efc0cb7afd23cf91b4ebc52c3e2d8ed6" category="cell">FlexGroup 成分卷接近索引节点数</block>
+  <block id="92e5bc812a7bd4db7beec964ee6d2cfa" category="cell">" FlexGroup 卷中的成分卷几乎没有索引节点，这可能会导致发生原因服务中断。成分卷收到的创建请求小于平均值。这可能会影响 FlexGroup 卷的整体性能，因为请求会路由到索引节点数更多的成分卷。 "</block>
+  <block id="04b8993945a972c4f74f19996bef05cb" category="cell">FlexGroup 成分卷完整</block>
+  <block id="ae8c663cc646802cec67c86d3da0c302" category="cell">" FlexGroup 卷中的成分卷已满，这可能发生原因会导致服务中断。您仍然可以在 FlexGroup 卷上创建或扩展文件。但是，不能修改成分卷上存储的任何文件。因此，在尝试对 FlexGroup 卷执行写入操作时，可能会出现随机的空间不足错误。 "</block>
+  <block id="1c5e1ca65bf95c63d58c93315f4ae493" category="cell">FlexGroup 成分卷已接近全满</block>
+  <block id="eb045b5c651ed69670b74a39e79b1da5" category="cell">" FlexGroup 卷中的成分卷空间几乎用尽，这可能会导致发生原因服务中断。可以创建和扩展文件。但是，如果成分卷用尽空间，您可能无法附加到成分卷上的文件或对其进行修改。"</block>
+  <block id="9c6ad5ed6fb9625d863e1ec1e8ea9b78" category="cell">未配置服务处理器</block>
+  <block id="377950572a25b3c9bbed72ccb1d18db8" category="cell">" 此事件每周发生一次，提醒您配置服务处理器（ SP ）。SP 是一种物理设备，集成在您的系统中，用于提供远程访问和远程管理功能。您应将 SP 配置为使用其全部功能。"</block>
+  <block id="c9bb9ccc463ac90e5e35fd29778c6f47" category="cell">执行以下更正操作： "1.使用 "system service-processor network modify" 命令配置 SP 。 "2.或者，也可以使用 "system service-processor network show" 命令获取 SP 的 MAC 地址。 "3.使用 system service-processor network show 命令验证 SP 网络配置。 "4.使用 "system service-processor AutoSupport invoke" 命令验证 SP 是否可以发送 AutoSupport 电子邮件。 注意：在问题描述此命令之前，应在 ONTAP 中配置 AutoSupport 电子邮件主机和收件人。</block>
+  <block id="0b7a641d1d319fdb4c77401df9d2f87c" category="cell">服务处理器脱机</block>
+  <block id="5b559ecd66459aaad69801dc328044f4" category="cell">ONTAP 不再从服务处理器（ SP ）接收检测信号，即使已执行所有 SP 恢复操作也是如此。如果没有 SP ， ONTAP 将无法监控硬件的运行状况。 "</block>
+  <block id="05086fb01a99514da4238c9449a1b48c" category="cell">通过执行以下操作重新启动系统：系统将关闭以防止硬件损坏和数据丢失。设置崩溃警报，以便在 SP 脱机时立即收到通知。1. 将控制器从机箱中拉出。2. 推回控制器。3. 重新打开控制器。' 如果问题仍然存在，请更换控制器模块。 '</block>
+  <block id="c3a767bd8fbb8085e22929b47fd36414" category="cell">未分配的磁盘</block>
+  <block id="254fb8d955e04a3313ad5e5301e71f5b" category="cell">系统具有未分配的磁盘 - 正在浪费容量，并且您的系统可能会应用某些配置错误或部分配置更改。</block>
+  <block id="dfb062fedc80885c3861979b9af93620" category="cell">执行以下更正操作： "1.使用 "disk show -n" 命令确定哪些磁盘未分配。 "2.使用 "disk assign" 命令将磁盘分配给系统。</block>
+  <block id="58ccd5f37da2888cd8fd105a89e6f35d" category="cell">由于风扇故障，系统无法运行</block>
+  <block id="acdf17d1700ef733e1bc9589658c3063" category="cell">" 一个或多个主单元风扇发生故障，导致系统运行中断。这可能会导致数据丢失。"</block>
+  <block id="01be3ab019ddde1879838930070e7694" category="cell">更换发生故障的风扇。</block>
+  <block id="0e5494bb182fccf24e7aab7ae722aba3" category="cell">风扇出现故障</block>
+  <block id="884fd32cdc7ec0e5ab2267febcd8775c" category="cell">一个或多个主单元风扇出现故障。系统仍可正常运行。</block>
+  <block id="867cfb3a6b7e5e6a70aa29bfda943c97" category="cell">" 重新拔插故障风扇。如果此错误仍然存在，请更换它们。 " " 但是，如果此情况持续时间过长，则过热可能会触发自动关闭。 "</block>
+  <block id="0fe57005c986e2a422f9e83cc0f40710" category="cell">风扇处于警告状态</block>
+  <block id="0ad8ab237e7a20839fa95565f0a01a10" category="cell">如果一个或多个风扇处于警告状态，则会发生此事件。</block>
+  <block id="d102c04ae84b00d946f024f5a6fd34f0" category="cell">更换指示的风扇以避免过热。</block>
+  <block id="fb973d4258ae588d5d24c45dddfdf7ca" category="cell">NVRAM 电池电量低</block>
+  <block id="599c7fa10af5b0143462d3baae46ebf1" category="cell">NVRAM 电池容量严重不足。如果电池电量耗尽，可能会丢失数据。</block>
+  <block id="bd330b49de1500792e5ddc0d32f10bc6" category="cell">执行以下更正操作： " 您的系统会生成 AutoSupport 或 "call home" 消息并将其传输到 NetApp 技术支持和已配置的目标（如果已配置此消息）。成功传送 AutoSupport 消息可显著提高问题的确定和解决能力。 " "1.使用 "system node environment sensors show" 命令查看电池的当前状态，容量和充电状态。 "2.如果最近更换了电池或系统长时间不运行，请监控电池以确认其充电正常。 " "3.如果电池运行时间持续降低到临界水平以下，并且存储系统自动关闭，请联系 NetApp 技术支持。 "</block>
+  <block id="029f2c939400c57163aca6fd2dc822ba" category="cell">磁盘已停止服务</block>
+  <block id="bd9e124d4e0bd654de0467d9f03f0f2c" category="cell">" 如果磁盘因标记为故障，正在清理或已进入维护中心而从服务中删除，则会发生此事件。 "</block>
+  <block id="0be32396accd4c0553371f175fd39ca0" category="cell">存储交换机风扇出现故障</block>
+  <block id="6dbee9dd4622f9aa274d58875a6b39a6" category="cell">' 磁盘架中指示的散热风扇或风扇模块出现故障。磁盘架中的磁盘可能无法获得足够的散热气流，从而可能导致磁盘故障。 "</block>
+  <block id="1d9a5a4895ada00dc5149b2d3dfe35ed" category="cell">执行以下更正操作： 1.验证风扇模块是否已完全就位并固定。注：风扇集成在某些磁盘架的电源模块中。2.如果问题描述仍然存在，请更换风扇模块。 ' "3.如果此问题描述仍然存在，请联系 NetApp 技术支持以获得帮助。 "</block>
+  <block id="e1043b98a3cb90eb47cd13ebba153f39" category="section-title">暗主题</block>
+  <block id="3165b1e68882eb4c8b5a4eb378f539a0" category="paragraph">您可以选择使用浅色主题（默认设置）来显示 Cloud Insights ，该主题使用浅色背景和暗文本显示大多数屏幕，或者使用暗背景和浅文本显示大多数屏幕。</block>
+  <block id="13952a31cfc47a6b1bb37f7aa091cd46" category="paragraph">要在浅色和暗色主题之间切换，请单击屏幕右上角的用户名按钮并选择所需主题。</block>
+  <block id="c8fd30c576e80caca5481c6f50542358" category="inline-image-macro">在浅色和暗色主题之间切换</block>
+  <block id="e0681ae9763ce64f8166eea32156ceb2" category="paragraph"><block ref="e0681ae9763ce64f8166eea32156ceb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1b02986b7d5400aee269e6af8849ca3d" category="inline-image-macro">暗主题信息板示例</block>
+  <block id="0638e442525f22fb26d6c0e29817f16b" category="paragraph">暗主题信息板视图：<block ref="c7e41c3dc1c39ed56713f00caef1f8c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1d7ddf9b9a61df297a03c0ea168e07e1" category="inline-image-macro">轻型主题信息板示例</block>
+  <block id="27ca7f7d641b8f097d5abd88830c85ec" category="paragraph">轻型主题信息板视图：<block ref="8331b94faa07667191361da3a9fe38d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="34e5045f115b5836d80d9776d1d13dc9" category="admonition">某些屏幕区域（例如某些小工具图表）仍会显示浅色背景，即使在以暗主题查看时也是如此。</block>
+  <block id="7890c65c9613f0296dda2849907ff360" category="summary">Cloud Insights 支持 <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。</block>
+  <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">如果要在安装代理之前验证安装文件，请参见以下章节 <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
+  <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">从存储中删除证书：</block>
+  <block id="d836a7075094860f48ae2ac37b8ee84a" category="paragraph">Kubernetes 提供了两种数据收集方式：</block>
+  <block id="2f1de2d4cf0537bc6054605965911b29" category="list-text">基于操作员的配置。建议对 Kubernetes 执行此操作。</block>
+  <block id="7b30b1516f4acc31dd26b0ee7b225209" category="list-text">基于脚本的传统代理安装</block>
+  <block id="a320be9a73c79b20f24e64a06a11d19f" category="paragraph">安装说明因您选择的图块而异。</block>
+  <block id="e973aa335528494c3881ffe9a6be0e81" category="inline-image-macro">Kubernetes 安装选项</block>
+  <block id="b81ec4ed4165242831d809ec7e442e82" category="paragraph"><block ref="b81ec4ed4165242831d809ec7e442e82" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="81afb36611998eaaa0271156b5cdcf90" category="admonition">基于操作员的安装被视为 _Preview_ 功能，因此可能会发生更改。</block>
+  <block id="c464aab0e1d91c1e20dba1868d499f0e" category="list-text">必须安装 Kube-state-metrics 。有关详细信息，请参见下文。Kube-state-metrics 会随基于操作员的安装自动安装。</block>
+  <block id="37c93461ccb3b9d32a460c02b4fc8ce6" category="list-text">如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。基于操作员的安装可为您安装此软件。</block>
+  <block id="4e7860768ab50263cd322fefea021fdc" category="list-text">您必须具有创建 Kubernetes 集群角色和角色绑定的权限。</block>
+  <block id="50cce61a9e4474feaef6870b764fdda9" category="list-text">基于操作员的安装已通过测试，预计可与 AWS EKS 1.18 和 OpenShift 3.11 配合使用。</block>
+  <block id="e34603ef348552f7a29cbb18d1ee78c0" category="section-title">基于操作员的安装</block>
+  <block id="640dbe189d66fa73b9cedb44a9424843" category="inline-image-macro">基于操作员的安装</block>
+  <block id="4a64a7036f6051830b5665f656513166" category="paragraph"><block ref="4a64a7036f6051830b5665f656513166" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2f12ec4a5f81cdedf75b58fc93e3ab6a" category="list-title">在 Kubernetes 上安装基于操作员的代理的步骤：</block>
+  <block id="bff23b25f3e125bae18792a45a51c015" category="list-text">输入集群名称和命名空间。</block>
+  <block id="5b82931325db3333d72e29bd0c4c7b88" category="list-text">输入这些内容后，您可以复制 Agent 安装程序代码片段</block>
+  <block id="69fe7b86f073ff27417a8bb4f40bf251" category="list-text">单击按钮将此片段复制到剪贴板。</block>
+  <block id="60359575c1541888619045ed924fc983" category="list-text">将此代码片段粘贴到 _bash_ 窗口中并执行。</block>
+  <block id="ecf5918b75414ec8e1874242a839d017" category="list-text">安装将自动进行。完成后，单击 _complete Setup_ 按钮。</block>
+  <block id="54afcf6213f1a3b61770613a9ebc68df" category="section-title">基于脚本的安装</block>
+  <block id="2c221df7e5c48bd54511af38bd07dbad" category="inline-image-macro">基于脚本的安装</block>
+  <block id="ac80a29f37fb946121c0253c4976bde6" category="paragraph"><block ref="ac80a29f37fb946121c0253c4976bde6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b64f662cc5cf3d2e1684d86487aea6f6" category="list-title">在 Kubernetes 上安装基于脚本的代理的步骤：</block>
+  <block id="f5371c459cefaaee7b5b7685e956ff88" category="list-text">将命令粘贴到 _bash_ 窗口中。</block>
+  <block id="d3eca57feea30c8725375ed32c9285fd" category="section-title">DemonSet ， ReplicaSet 以及停止 / 启动代理</block>
+  <block id="8c357155c34910d917ac705e248f3417" category="paragraph">注意：基于脚本的安装的默认命名空间为 _cI-monitoring-.对于基于操作员的安装，默认命名空间为 _netapp-monitoring-.在涉及命名空间的命令中，请务必为您的安装指定正确的命名空间。</block>
+  <block id="d101f99762aa933eab885ac5a54fb726" category="paragraph">运行代理的 Pod 需要能够访问以下内容：</block>
+  <block id="e4f58bd0ebfcc73f188eead8e62fdd51" category="admonition">基于操作员的安装可处理 Kube-state-metrics 的安装。如果要执行基于操作员的安装，请跳过此部分。</block>
+  <block id="85d9e7fafd4cca5a1545c9cbf16d8e80" category="paragraph">按照以下步骤安装 Kube-state-metrics 服务器（如果正在执行基于脚本的安装，则需要此服务器）：</block>
+  <block id="368e58ca73434aae8ab3a7bf3f6d2955" category="paragraph">要卸载 Kubernetes 上基于脚本的代理，请执行以下操作：</block>
+  <block id="aca5f422c992e53669a31d99958653bc" category="paragraph">对于基于操作员的安装，请运行以下命令：</block>
+  <block id="99b7973dda927022b1a7232d7b78e926" category="section-title">验证校验和</block>
+  <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">Cloud Insights 代理安装程序会执行完整性检查，但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。要执行仅下载操作（与默认的下载和安装操作相反），这些用户可以编辑从 UI 获取的代理安装命令并删除尾随的 "install" 选项。</block>
+  <block id="deadee5e2cfce7600cfd5def40a7d618" category="paragraph">请按照以下步骤操作：</block>
+  <block id="8c386e0a7a8cfc20ef9a26dacd925e69" category="list-text">按照说明复制 Agent 安装程序代码片段。</block>
+  <block id="225b18b0098145b352b8fbf6c04e8098" category="list-text">请将代码片段粘贴到文本编辑器中，而不是将其粘贴到命令窗口中。</block>
+  <block id="e596e19d0eb6c82c1aba63c3fd5cc626" category="list-text">从命令中删除尾随的 "-install" （ Linux/Mac ）或 "-install" （ Windows ）。</block>
+  <block id="34e3334224025c0302c21ab69b535b6e" category="list-text">从文本编辑器复制整个命令。</block>
+  <block id="d2a9c05594a3807487efd306f7e06ff5" category="list-text">现在，将其粘贴到命令窗口（在工作目录中）并运行。</block>
+  <block id="47a6cd89e04d0d805a75aa0fe5822c20" category="paragraph">非 Windows ：</block>
+  <block id="051ab73b0c77a3e60cd6e6de57fc9319" category="list-text">Download and install （下载并安装）（默认）：</block>
+  <block id="a3ef489d553e0422ea8926faf65bf77a" category="list-text">仅下载：</block>
+  <block id="140710a8dd48496a1ea3b09f2799c408" category="paragraph">Windows</block>
+  <block id="9f38037f1d71ce0a3fe1ba3e1c8aa8e1" category="paragraph">仅下载命令会将所有所需的项目从 Cloud Insights 下载到工作目录。这些项目包括但不限于：</block>
+  <block id="8d4a361a3f25b78818c569d8f15cf4a6" category="list-text">安装脚本</block>
+  <block id="b015398c226e1e3576258432ece31819" category="list-text">环境文件</block>
+  <block id="004cac3ce7d67014b5fadcffaf9b5b70" category="list-text">YAML 文件</block>
+  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">签名校验和文件（ SHA256.signed ）</block>
+  <block id="e1f4fa985535cfb2dd4b3f50c918b7eb" category="list-text">用于签名验证的 PEM 文件（ netapp_cert.pem ）</block>
+  <block id="4f1c754cd67cd57cebe0be2f5e8638a4" category="paragraph">安装脚本，环境文件和 YAML 文件可以通过目视检查进行验证。</block>
+  <block id="7c9f5399bb10652ab7e06778c4de02e1" category="paragraph">可以通过确认 PEM 文件的指纹为以下内容来验证 PEM 文件：</block>
+  <block id="7a2babd4fa48c9b0c07e4b865ff53efa" category="paragraph">更具体地说，</block>
+  <block id="76dfc651463ab4e67ce2140b8aadb473" category="paragraph">可以使用 PEM 文件验证签名校验和文件：</block>
+  <block id="fbc384836aa7cdd1a408df0773faf595" category="list-text">Windows （通过上述 Import-Certificate 安装证书后）：</block>
+  <block id="6c32334bfce9f857b0fdbdca68040a0b" category="paragraph">在对所有项目进行满意的验证后，可以通过运行以下命令启动代理安装：</block>
+  <block id="82de65b0bf7b606fd79ebba95608bb77" category="cell">按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。您必须使用 Telegraf 2.0 或更高版本。</block>
+  <block id="ad946bd62c8170d1ad5c5d5250abeb85" category="cell">如果您运行的是 Kube-state-metrics 版本 2.0.0 或更高版本以及 Kubernetes 版本 1.17 或更低版本，则可能会出现这些消息。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubectl get deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ '_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用以下租约： _mutatingwebconfigurations _webhook_ ，具体可以使用以下参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ， ingeses ，作业，限制范围，命名空间，网络策略，节点，复制卷，持久性卷， poddis中断 预算， Pod ，证书集，资源控制器，资源等，网络，存储器，卷，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器， 验证 webhookconfigurations ， volumeattachments</block>
+  <block id="013aa4ffc40507022dd1b0b1a936ff20" category="paragraph">Kubernetes 筛选器为上下文筛选器，例如，如果您位于特定节点页面上，则 pod_name 筛选器仅会列出与该节点相关的 Pod 。此外，如果您对特定命名空间应用筛选器，则 pod_name 筛选器将仅列出该命名空间中节点 _and_ 上的 Pod 。</block>
+  <block id="e2b330c7ae678ef7cd6514d5ae7e7e7c" category="list-text">当系统提示您配置通知时，选择通过电子邮件， Webhook 或这两者发出警报，然后选择要通知的警报类型（严重，警告，信息和 / 或已解决）。您可以选择通知到全局监控器收件人列表（在 * 管理 &gt; 通知 * 中配置），也可以指定其他收件人。准备好继续后，单击 * 完成设置 *</block>
+  <block id="923a4b017c0560e9f308c651b65fd92e" category="admonition">收集器级别通知是一种预览功能，因此可能会更改。</block>
+  <block id="0292cc6d66cbe7b6a5ec202251834d24" category="inline-image-macro">收集器通知</block>
+  <block id="6e4e94174c881dd343d58645dcd7fece" category="paragraph"><block ref="6e4e94174c881dd343d58645dcd7fece" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0b41236db81804f1da11b4001c3d143f" category="paragraph">查看数据收集器登录页面时，您可以单击数据收集器摘要部分 " 通知 " 字段中的铅笔图标来修改通知。</block>
+  <block id="5d1096bf66c89ad0f817c4dc28e58b2f" category="inline-image-macro">编辑收集器通知</block>
+  <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

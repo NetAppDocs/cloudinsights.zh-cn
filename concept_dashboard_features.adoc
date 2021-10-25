@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_dashboard_features.html 
 summary: 信息板功能和概念。 
-keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, 
+keywords: dashboard, widget, custom, concepts, queries, variables, rollup, roll up, grouping, aggregate, aggregation, filter, axis, group by, expressions, timeseries, exact match, theme, visibility 
 ---
 = 信息板功能
 :toc: macro
@@ -746,3 +746,20 @@ NOTE: 从组中删除信息板不会从 Cloud Insights 中删除信息板。要�
 信息板固定 / 取消固定是单个用户首选项，与信息板所属的组无关。
 
 image:DashboardPin.png["固定信息板"]
+
+
+
+== 暗主题
+
+您可以选择使用浅色主题（默认设置）来显示 Cloud Insights ，该主题使用浅色背景和暗文本显示大多数屏幕，或者使用暗背景和浅文本显示大多数屏幕。
+
+要在浅色和暗色主题之间切换，请单击屏幕右上角的用户名按钮并选择所需主题。
+
+image:DarkThemeSwitch.png["在浅色和暗色主题之间切换"]
+
+暗主题信息板视图：image:DarkThemeDashboardExample.png["暗主题信息板示例"]
+
+轻型主题信息板视图：image:LightThemeDashboardExample.png["轻型主题信息板示例"]
+
+
+NOTE: 某些屏幕区域（例如某些小工具图表）仍会显示浅色背景，即使在以暗主题查看时也是如此。
