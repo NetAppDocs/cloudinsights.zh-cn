@@ -588,7 +588,6 @@
   <block id="49ee3087348e8d44e1feda1917443987" category="cell">名称</block>
   <block id="76aeab63a36298ab54940aa1b9114b6a" category="cell">唯一名称</block>
   <block id="e6b391a8d2c4d45902a23a8b6585703d" category="cell">URL</block>
-  <block id="c341276cddbe0142f1e9f7289d375a2c" category="cell">webhook 目标 URL ，包括 _http ： //_ 或 _https ： //_ 前缀</block>
   <block id="4c3880bb027f159e801041b1021e88e8" category="cell">方法</block>
   <block id="d637b8284e88b5decabacf15da1813d0" category="cell">GET ， POST —默认值为 POST</block>
   <block id="e6e0d1a62695cc00641f3acf197aecf7" category="cell">自定义标题</block>
@@ -609,7 +608,6 @@
   <block id="0f85580ce6e6d044094ef0c2641ecb3a" category="paragraph"><block ref="0f85580ce6e6d044094ef0c2641ecb3a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="148ae64fb8adbd43176cf285dcc8110f" category="section-title">参数：它们是什么？如何使用它们？</block>
   <block id="f5733c88893536362c2727d1d77f6f0b" category="paragraph">警报参数是为每个警报填充的动态值。例如， _%%TrigeredOn%_ 参数将替换为触发警报的对象。</block>
-  <block id="de772959ff260628e0b3b7a40c31299d" category="paragraph">在本节中，您可以添加所需的任何自定义参数和 / 或密码。出于安全原因，如果定义了密钥，则只有 webhook 创建程序可以修改此 webhook 通道。它对其他用户是只读的。</block>
   <block id="9f0bfcad9805fdb266c75890257a496e" category="section-title">选择监控器中的 Webhook 通知</block>
   <block id="08b5411f848a2581a41672a759c87380" category="inline-link-macro">监控</block>
   <block id="7f44d407783e89c1aced666e867dd410" category="inline-image-macro">Webhook 监控通知</block>
@@ -3886,9 +3884,6 @@
   <block id="057865fdced8cf279cb948d9a000b58a" category="paragraph">在用户成功进行身份验证并授权访问后，应用程序会收到访问令牌，然后在调用目标 API 时将访问令牌作为凭据传递。传递的令牌将通知 API 令牌的持有人已获得访问 API 的授权，并根据授权期间授予的范围执行特定操作。</block>
   <block id="4885bebed0a488d050e9e3b9016b3fda" category="paragraph">传递访问令牌的 HTTP 标头为 * 。 X-CloudInsights ApiKey ： *</block>
   <block id="b9250c46598db43daf799f07c7d996da" category="paragraph">有关详细信息，请参见 _API Documentation_ 链接中的 * 管理 &gt; API 访问 * 。</block>
-  <block id="ed89f5ecd4fadaf5dc74eceb6fe89ad4" category="summary">配置 Dell XC 系列数据收集器。</block>
-  <block id="10a06a8f7eef4f1e96bda13fdd3cbb44" category="doc">Dell xC 系列数据收集器</block>
-  <block id="e1c9ce4acff77923a2d852216713d8d6" category="paragraph">Cloud Insights 使用此数据收集器来发现 Dell XC 系列存储阵列的清单和性能信息。</block>
   <block id="697692f9f37aff72a2e2f46815ab9e7c" category="cell">xC 服务器的 IP 地址</block>
   <block id="934f1948bd404852ea3dc187b5787459" category="cell">xC 服务器的用户名</block>
   <block id="517175e83f63522981c0f643b5cb207b" category="cell">用于 xC 服务器的密码</block>
@@ -7988,4 +7983,10 @@
   <block id="0b41236db81804f1da11b4001c3d143f" category="paragraph">查看数据收集器登录页面时，您可以单击数据收集器摘要部分 " 通知 " 字段中的铅笔图标来修改通知。</block>
   <block id="5d1096bf66c89ad0f817c4dc28e58b2f" category="inline-image-macro">编辑收集器通知</block>
   <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="eb546fdc997b493ec3d379e70e3852fd" category="cell">webhook 目标 URL ，包括 _http ： //_ 或 _https ： //_ 前缀以及 URL 参数</block>
+  <block id="227a088b608ffd64b71ecc436b993f13" category="paragraph">在本节中，您可以添加所需的任何自定义参数和 / 或密码。出于安全原因，如果定义了密钥，则只有 webhook 创建程序可以修改此 webhook 通道。它对其他用户是只读的。您可以在 URL/Headers 中使用密码： _%%&lt;secret_name&gt;%%_ 。</block>
+  <block id="614568b04aa19eaf96a3b92a727988aa" category="summary">配置 Dell EMC XC 系列数据收集器。</block>
+  <block id="8482b7a1c15e20c8eab0296778760d7a" category="doc">Dell EMC XC 系列数据收集器</block>
+  <block id="08b341cebd72c11ab08d59bd6ceda0b6" category="paragraph">Cloud Insights 使用此数据收集器来发现 Dell EMC XC 系列存储阵列的清单和性能信息。</block>
+  <block id="fd3a8e3a47c3fee35fa518456dc6307b" category="admonition">从 2021 年 11 月开始，默认情况下将启用 ONTAP 高级计数器数据收集。此功能将逐渐推出；随着时间的推移，您将在信息板中看到高级数据。要禁用高级数据收集，请编辑 ONTAP 数据收集器并取消选中 " 选择部署高级计数器数据收集 " 复选框。</block>
 </blocks>

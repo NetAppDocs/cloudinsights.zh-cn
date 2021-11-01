@@ -22,7 +22,7 @@ webhook 通道实例由以下元素组成：
 | 名称 | 唯一名称 
 
 
-| URL | webhook 目标 URL ，包括 _http ： //_ 或 _https ： //_ 前缀 
+| URL | webhook 目标 URL ，包括 _http ： //_ 或 _https ： //_ 前缀以及 URL 参数 
 
 
 | 方法 | GET ， POST —默认值为 POST 
@@ -63,7 +63,7 @@ image:Webhook_Default_Parameters.png["Cloud Insights 默认 Webhook 参数"]
 
 ==== 自定义参数和机密
 
-在本节中，您可以添加所需的任何自定义参数和 / 或密码。出于安全原因，如果定义了密钥，则只有 webhook 创建程序可以修改此 webhook 通道。它对其他用户是只读的。
+在本节中，您可以添加所需的任何自定义参数和 / 或密码。出于安全原因，如果定义了密钥，则只有 webhook 创建程序可以修改此 webhook 通道。它对其他用户是只读的。您可以在 URL/Headers 中使用密码： _%%<secret_name>%%_ 。
 
 
 
