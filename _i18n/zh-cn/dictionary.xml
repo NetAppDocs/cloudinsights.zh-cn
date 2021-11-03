@@ -5635,7 +5635,6 @@
   <block id="c3e7ae0efafea510710a12fe0f0d609a" category="list-text">或者，您也可以在 install 命令中覆盖命名空间或提供集群名称，方法是修改命令块，在最终的 _./$installerName_ 之前添加以下一项或两项</block>
   <block id="e1a5dab3e4ad3574b29d38315af67877" category="list-text">cluster_name=&lt; 集群名称 &gt;</block>
   <block id="8d452c9dd71946426462bb948da29ba1" category="list-text">namespace=&lt; 命名空间 &gt;</block>
-  <block id="a3cf478bf3671fb508fdc9672df15a8c" category="paragraph">滚动以下示例以在命令块中正确查看此示例：</block>
   <block id="a16c56e9bf65ad3b7b874edee04a172d" category="admonition">_cluster_name_ 是 Cloud Insights 收集指标的 Kubernetes 集群的名称，而 _namespace_是 要将 Telegraf 代理部署到的命名空间。如果指定的命名空间尚不存在，则会创建该命名空间。</block>
   <block id="a49846985b439fe0226db69fec5a37b3" category="list-text">准备好后，执行命令块。</block>
   <block id="f8dad256798b9f55db0111e9f6fa89aa" category="list-text">此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。如果尚未明确设置 _namespaces_ ，系统将提示您输入此名称。完成后，此脚本将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。</block>
@@ -7996,4 +7995,6 @@
   <block id="0ffffb06548ffa1c8997d13d2b9f5839" category="paragraph">示例输出：</block>
   <block id="df8efe1c37f513ed79defb9aa3eafe5d" category="paragraph">* CentOS 8.x / RHEL 8.x * ：</block>
   <block id="b0ce4b6c932ff5bff57734c112bda53e" category="list-text">`sUdo firewall-cmd -zone=public -list-ports | grep 35000` （适用于 CentOS 8 ）</block>
+  <block id="2b88b6e768b59c582a319ed7678901c8" category="paragraph">命令块中已安装此命令：</block>
+  <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">非 Windows （这些示例适用于 Kubernetes ；实际脚本名称可能有所不同）：</block>
 </blocks>
