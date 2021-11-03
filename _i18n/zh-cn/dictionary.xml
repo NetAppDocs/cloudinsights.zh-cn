@@ -5861,11 +5861,9 @@
   <block id="efb42161e6d534718356bdb292677612" category="list-text">您需要配置 <block ref="a207b7d2a96200a9b4b411f4896b3d1d" category="inline-link-macro-rx"></block>。</block>
   <block id="066439fec0176e1d7455c3e156a2140e" category="list-text">您需要配置一个或多个数据收集器。</block>
   <block id="dce011ea921230b4e3061bb70569c598" category="section-title">网络配置：</block>
-  <block id="5150e061841bdf157264cc03a5578e22" category="paragraph">在本地系统上运行以下命令，以打开 Cloud Secure 要使用的端口。</block>
   <block id="2639e25d9d81ec2fa03963e7278b760b" category="list-text">`sudo firewall-cmd -perf持久 -zone=public -add-port=35000-55000/tcp`</block>
   <block id="60329aa357bfa085f1ed3612c6b4a1d7" category="list-text">`sudo firewall-cmd -reload`</block>
   <block id="ded4f1f8f5d9909122d1f0de13abe7c0" category="list-text">`sUdo iptables-save | grep 35000`</block>
-  <block id="04eccc4686137dc161be9a96de582b3d" category="paragraph">示例输出： -a in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctstate new -j accept</block>
   <block id="04d265de0148836a00102bb171aa6456" category="section-title">对代理错误进行故障排除</block>
   <block id="e71794867788b5cf67da8f5fae629c4c" category="cell">代理安装无法创建 /opt/netapp/cloudsecurity/agent/logs/agent.log 文件夹，并且 install.log 文件不提供任何相关信息。</block>
   <block id="1d46e6c358fd06d5a1f7a440acc48347" category="cell">在启动代理期间发生此错误。此错误不会记录在日志文件中，因为它会在日志程序初始化之前发生。此错误将重定向到标准输出，并可使用 `jlogalctl -u cloudsecure-agent.service` 命令在服务日志中看到。此命令可用于进一步对问题描述进行故障排除。</block>
@@ -7576,7 +7574,6 @@
   <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">此问题描述</block>
   <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">Data ONTAP 9.2 及更高版本要获得最佳性能，请使用 Data ONTAP 版本，其中 <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> 已修复。</block>
   <block id="4d9921582b3bc6dc32845b40e4b4c522" category="cell">启用 Cloud Secure 后， ONTAP 性能将受到影响：延迟偶尔会高， IOPS 偶尔会低。</block>
-  <block id="36559f342f280f0538ba93b4f5b7a6da" category="cell">确保您使用的是 Data ONTAP 版本，其中 <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> 已修复。</block>
   <block id="7555bf5d0bf36ac15cb2b4123cb1b5f1" category="cell">无法向代理添加 20 个以上的数据收集器。</block>
   <block id="472592ad16d3986c536902056a791829" category="cell">一个代理只能添加 20 个数据收集器。这可以是所有收集器类型的组合，例如 Active Directory ， SVM 和其他收集器。</block>
   <block id="941f6670886082a432b8033949c34311" category="cell">在 Zscaler 代理中禁用 * 。 .cloudinsights.netapp.com URL 的 SSL 检查。如果 Zscaleer 执行 SSL 检查并替换证书，则 Cloud Secure 将不起作用。</block>
@@ -7989,4 +7986,14 @@
   <block id="8482b7a1c15e20c8eab0296778760d7a" category="doc">Dell EMC XC 系列数据收集器</block>
   <block id="08b341cebd72c11ab08d59bd6ceda0b6" category="paragraph">Cloud Insights 使用此数据收集器来发现 Dell EMC XC 系列存储阵列的清单和性能信息。</block>
   <block id="fd3a8e3a47c3fee35fa518456dc6307b" category="admonition">从 2021 年 11 月开始，默认情况下将启用 ONTAP 高级计数器数据收集。此功能将逐渐推出；随着时间的推移，您将在信息板中看到高级数据。要禁用高级数据收集，请编辑 ONTAP 数据收集器并取消选中 " 选择部署高级计数器数据收集 " 复选框。</block>
+  <block id="ff4d6902497a0527749455a3bab6c881" category="cell">确保您使用的是 Data ONTAP 版本，其中 <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> 已修复。建议的 ONTAP 最低版本为 9.8P7 。</block>
+  <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">数据收集器出错，显示此错误消息。" 错误：连接器处于错误状态。服务名称： audit 。失败原因：无法在 SVM SVM_test 上配置策略。原因： ZAPI 字段： Events 缺少值。"</block>
+  <block id="db45b764838c9131ffbab7063103f890" category="cell">从仅配置 NFS 服务的新 SVM 开始。在 Cloud Secure 中添加 ONTAP SVM 数据收集器。在 Cloud Secure 中添加 ONTAP SVM 数据收集器时， CIFS 会配置为 SVM 的允许协议。请稍候，直到 Cloud Secure 中的数据收集器显示错误为止。由于未在 SVM 上配置 CIFS 服务器，因此 Cloud Secure 将显示左侧所示的此错误。编辑 ONTAP SVM 数据收集器并取消选中 CIFS 作为允许的协议。保存数据收集器。它将在仅启用 NFS 协议的情况下开始运行。</block>
+  <block id="f2ca27a5a85ae2cd72b932650e54dc20" category="paragraph">如果先前为 Telegraf 创建了安全上下文限制（指向 " 配置代理以从 Kubernetes 收集数据 " 的超链接）：</block>
+  <block id="419692fe9178bca2f0f252349995b13c" category="paragraph">在本地系统上运行以下命令，以打开 Cloud Secure 要使用的端口。如果对端口范围存在安全问题，可以使用较小的端口范围，例如 _35000 ： 35100_ 。每个 SVM 使用两个端口。</block>
+  <block id="cd97e5515b0cad32cadf2b0e90813f6d" category="paragraph">根据您的平台执行以下步骤：</block>
+  <block id="504510de5d7df6b369756702c8c3a365" category="paragraph">* CentOS 7.x / RHEL 7.x * ：</block>
+  <block id="0ffffb06548ffa1c8997d13d2b9f5839" category="paragraph">示例输出：</block>
+  <block id="df8efe1c37f513ed79defb9aa3eafe5d" category="paragraph">* CentOS 8.x / RHEL 8.x * ：</block>
+  <block id="b0ce4b6c932ff5bff57734c112bda53e" category="list-text">`sUdo firewall-cmd -zone=public -list-ports | grep 35000` （适用于 CentOS 8 ）</block>
 </blocks>

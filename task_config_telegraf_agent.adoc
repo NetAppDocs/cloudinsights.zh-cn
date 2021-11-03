@@ -706,6 +706,9 @@ kubectl delete role agent-leader-election-role
 kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader
 kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding
 ....
+如果先前为 Telegraf 创建了安全上下文限制（指向 " 配置代理以从 Kubernetes 收集数据 " 的超链接）：
+
+ kubectl delete scc telegraf-hostaccess
 
 
 ==== 升级代理

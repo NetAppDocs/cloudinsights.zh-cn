@@ -217,6 +217,9 @@ image:CS_Data_Collector_Error.png[""]
 | 集群中存在未使用的现有 fpolicies 。在安装 Cloud Secure 之前，应如何处理这些问题？ | 建议删除所有现有未使用的 fpolicy 设置，即使它们处于已断开连接状态也是如此。Cloud Secure 将创建前缀为 "cloudsure_" 的 fpolicy 。可以删除所有其他未使用的 fpolicy 配置。用于显示 fpolicy list 的 CLI 命令： _fpolicy show-steps to delete fpolicy configurations ： _fpolicy disable -vserver <svmname> -policy-name <policy_name>_ _fpolicy policy policy scope delete -vserver <svmname> -policy-name <policy_name>_fpolicy policy policy policy policy delete -vserver <svmname> -policy -policy -engine -<policy_name> -policy -<vmname> -node -engine -<policy_name> -policy_name> -vserver -vserver -policy> <policy_name> -vpolicy -policy -engine -<vm> <policy_name> -node -policy_name> -vpolicy -engine -vpolicy -<policy_name> -vpolicy 
 
 
-| 启用 Cloud Secure 后， ONTAP 性能将受到影响：延迟偶尔会高， IOPS 偶尔会低。 | 确保您使用的是 Data ONTAP 版本，其中 link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["此问题描述"] 已修复。 
+| 启用 Cloud Secure 后， ONTAP 性能将受到影响：延迟偶尔会高， IOPS 偶尔会低。 | 确保您使用的是 Data ONTAP 版本，其中 link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1415152["此问题描述"] 已修复。建议的 ONTAP 最低版本为 9.8P7 。 
+
+
+| 数据收集器出错，显示此错误消息。" 错误：连接器处于错误状态。服务名称： audit 。失败原因：无法在 SVM SVM_test 上配置策略。原因： ZAPI 字段： Events 缺少值。" | 从仅配置 NFS 服务的新 SVM 开始。在 Cloud Secure 中添加 ONTAP SVM 数据收集器。在 Cloud Secure 中添加 ONTAP SVM 数据收集器时， CIFS 会配置为 SVM 的允许协议。请稍候，直到 Cloud Secure 中的数据收集器显示错误为止。由于未在 SVM 上配置 CIFS 服务器，因此 Cloud Secure 将显示左侧所示的此错误。编辑 ONTAP SVM 数据收集器并取消选中 CIFS 作为允许的协议。保存数据收集器。它将在仅启用 NFS 协议的情况下开始运行。 
 |===
 如果您仍遇到问题，请访问 * 帮助 > 支持 * 页面中提到的支持链接。

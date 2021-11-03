@@ -53,17 +53,31 @@ image::new-agent-detect.png[新代理检测]
 
 == 网络配置：
 
-在本地系统上运行以下命令，以打开 Cloud Secure 要使用的端口。
+在本地系统上运行以下命令，以打开 Cloud Secure 要使用的端口。如果对端口范围存在安全问题，可以使用较小的端口范围，例如 _35000 ： 35100_ 。每个 SVM 使用两个端口。
 
 .步骤
 . `sudo firewall-cmd -perf持久 -zone=public -add-port=35000-55000/tcp`
 . `sudo firewall-cmd -reload`
+
+
+根据您的平台执行以下步骤：
+
+* CentOS 7.x / RHEL 7.x * ：
+
 . `sUdo iptables-save | grep 35000`
-+
-示例输出： -a in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctstate new -j accept
 
 
+示例输出：
 
+ -A IN_public_allow -p tcp -m tcp --dport 35000:55000 -m conntrack -ctstate NEW,UNTRACKED -j ACCEPT
+* CentOS 8.x / RHEL 8.x * ：
+
+. `sUdo firewall-cmd -zone=public -list-ports | grep 35000` （适用于 CentOS 8 ）
+
+
+示例输出：
+
+ 35000-55000/tcp
 
 
 == 对代理错误进行故障排除
