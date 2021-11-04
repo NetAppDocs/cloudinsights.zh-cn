@@ -7680,7 +7680,6 @@
   <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">请注意，用户有权访问的 API 类别也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</block>
   <block id="ab94ba13e0011bb7ea0d255f086ced38" category="summary">配置适用于 ONTAP 9.9+ 数据收集器的 NetApp 云连接</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器</block>
-  <block id="03ed380a346e6e1e6da0653779eca74b" category="paragraph">此数据收集器可创建云连接，以支持从 ONTAP 9.9+ 系统收集数据。</block>
   <block id="86697e189a8abaad2c14305da76b6e58" category="admonition">本文档被视为 _Preview_ 文档，因此可能会更改。</block>
   <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights 使用 * 云连接 * 从 ONTAP 9.9+ 收集数据，无需安装外部采集单元，从而简化了故障排除，维护和初始部署。要为 ONTAP 9.9+ 数据收集器配置云连接，您需要将 * 配对代码 * 复制到 ONTAP 系统管理器，然后该管理器将与 Cloud Insights 环境建立连接。建立连接后，收集的数据与通过采集单元收集的数据相同。</block>
   <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector 配置</block>
@@ -7997,4 +7996,6 @@
   <block id="b0ce4b6c932ff5bff57734c112bda53e" category="list-text">`sUdo firewall-cmd -zone=public -list-ports | grep 35000` （适用于 CentOS 8 ）</block>
   <block id="2b88b6e768b59c582a319ed7678901c8" category="paragraph">命令块中已安装此命令：</block>
   <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">非 Windows （这些示例适用于 Kubernetes ；实际脚本名称可能有所不同）：</block>
+  <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">此数据收集器可创建云连接，以支持从 ONTAP 9.9+ CVO ， AFF 和 FAS 系统收集数据。</block>
+  <block id="72c287aa31792e43cc71160178046540" category="paragraph">此数据收集器支持 ONTAP 9.9+ CVO ， AFF 和 FAS 系统。</block>
 </blocks>
