@@ -78,6 +78,8 @@ keywords: AU, acquisition unit, trioubleshooting
 
 image:ProxyEndpoints_NewTable.png["代理端点表"]
 
+如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。
+
 
 
 === 资源

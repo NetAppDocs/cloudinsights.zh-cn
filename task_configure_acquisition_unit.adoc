@@ -90,6 +90,8 @@ NOTE: 通配符通常使用星号（ * ），但代理 / 防火墙配置可能�
 
 image:ProxyEndpoints_NewTable.png["代理端点表"]
 
+如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。
+
 
 
 == 添加 Windows 采集单元
@@ -141,6 +143,8 @@ NOTE: 通配符通常使用星号（ * ），但代理 / 防火墙配置可能�
 您可以通过以下方式查看代理端点 URL ：在入职期间选择数据收集器时单击 * 代理设置 * 链接，或者单击 * 帮助 > 支持 * 页面上 _ 代理设置 _ 下的链接。此时将显示如下表。
 
 image:ProxyEndpoints_NewTable.png["代理端点表"]
+
+如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。
 
 
 
