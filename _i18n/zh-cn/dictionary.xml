@@ -8123,4 +8123,5 @@
   <block id="204c2306ca4f4bb7c09f85d28fdc95cb" category="cell">检测到病毒</block>
   <block id="aa8582c4c58c34070341b5960e4edc7c" category="cell">Vscan 服务器已向存储系统报告错误。这通常表示已发现病毒。但是， Vscan 服务器上的其他错误可能会发生原因此事件。…客户端对文件的访问被拒绝。Vscan 服务器可能会根据其设置和配置清理文件，隔离或删除文件。</block>
   <block id="39a107762943f2a3b73c54078d50973e" category="cell">检查 "syslog" 事件中报告的 Vscan 服务器的日志，查看它是否能够成功清理，隔离或删除受感染的文件。如果无法执行此操作，系统管理员可能需要手动删除此文件。</block>
+  <block id="4cdcdb149afd3a4dfdaaf3ff86277a6b" category="list-text">* 已采取更正操作 * ：警报已建议更正操作。打开警报页面以查看这些内容。</block>
 </blocks>
