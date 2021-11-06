@@ -6612,7 +6612,6 @@
   <block id="1e6f2d5fb7c78a27ba0dc78e9cc7c9b5" category="doc">采集单元要求</block>
   <block id="15948ad6c9474a20f044eee0ea809fda" category="paragraph">您必须安装采集单元（ AU ），才能从基础架构数据收集器（存储， VM ，端口， EC2 等）中获取信息。在安装采集单元之前，您应确保环境满足操作系统， CPU ，内存和磁盘空间要求。</block>
   <block id="033d64e0352a24070b4d6ba6e37207af" category="cell">Windows 要求</block>
-  <block id="ed240b1d94ff8bd0a48742f333f56c27" category="cell">运行以下许可版本之一的计算机： * Microsoft Windows 10 64 位 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="36b415ace97b614344903d1d039cc60d" category="cell">2 个 CPU 核</block>
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">相同</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8 GB RAM</block>
@@ -7448,7 +7447,6 @@
   <block id="785ec09cddf9283f24922c1e4d3f399c" category="paragraph">已通过手动解析解决的设备的状态为 _OK_ ，并标识用于标识设备的规则。缺少的设备的状态为 _unidentifed_.明确排除在标识之外的设备的状态为 _excluded_.此页面列出了用于标识设备的总覆盖范围。</block>
   <block id="61e633e96f8c431ad3c5895ac9689491" category="admonition">磁带的设备解析规则仅适用于 WWN ，如果此 WWN 的供应商在供应商首选项中设置为 _included as Tape only_ 。</block>
   <block id="43523ef8cffdeaaafa0e6c8e15986699" category="doc">搜索资产和警报的提示和提示</block>
-  <block id="252a2cf622edba8a5638ad07b4ae60cc" category="cell">运行以下任一许可版本的计算机： * CentOS （ 64 位）： 7.2 到 7.9 ， 8.1 到 8.3 * Debian （ 64 位）： 9 和 10 * Oracle Enterprise Linux （ 64 位）： 7.5 到 7.9 ， 8.1 到 8.3 * Red Hat Enterprise Linux （ 64 位）： 7.2 到 7.9 ， 8.1 到 8.3 * Ubuntu 服务器： 18.04 和 20.04 LTS 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="55d1aacd9076657a9c3f2551a759f3f7" category="summary">Cloud Insights 中的资产页面相关警报部分概述。</block>
   <block id="1b7dc1deafc07ca39a6334e1152f20e6" category="doc">资产页面相关警报部分</block>
   <block id="3608951e73671567ed9225929310279b" category="paragraph">您可以使用资产页面的相关警报部分查看因分配给资产的监控器而在您的环境中发生的任何警报。监控器会根据您设置的条件生成警报，并使您能够识别问题的含义，并分析问题的影响和根本发生原因，以便快速有效地进行更正。</block>
@@ -7491,7 +7489,6 @@
   <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d9bdb1d7869cec3eaa75aaa48b414845" category="inline-link-macro">Kube-state-metrics 文档</block>
   <block id="8bdbfb2fbcb4d30bcb7f3456068bf952" category="section-title">查看代理端点</block>
-  <block id="711a1c1d22485d3da55bc2c4b91c710f" category="paragraph">在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。</block>
   <block id="a6f1dcc9d358c0cdb54ec05673906e45" category="section-title">新的审核页面用户界面</block>
   <block id="50c786c9efcadf10b6b80a91b4bb98cf" category="inline-link-macro">审核页面</block>
   <block id="34da7615df3d3af56927cee9350f8197" category="paragraph">。 <block ref="0fc95413be1f4602f176a8d23796c479" category="inline-link-macro-rx"></block> 提供了一个更清晰的界面，现在可以将审核事件导出到 .CSV 文件。</block>
@@ -8126,4 +8123,6 @@
   <block id="4cdcdb149afd3a4dfdaaf3ff86277a6b" category="list-text">* 已采取更正操作 * ：警报已建议更正操作。打开警报页面以查看这些内容。</block>
   <block id="9de47b26bb491f5ab145336bb77b8aa0" category="paragraph">如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。</block>
   <block id="c18e9bacb0ed35f6b26e407a261491be" category="paragraph">在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。</block>
+  <block id="763e7c73a838930a9b9e74b5d349cbd6" category="cell">运行以下任一许可版本的计算机： * CentOS （ 64 位）： 7.2 到 7.9 ， 8.1 到 8.4 * Debian （ 64 位）： 9 和 10 * Oracle Enterprise Linux （ 64 位）： 7.5 到 7.9 ， 8.1 到 8.4 * Red Hat Enterprise Linux （ 64 位）： 7.2 到 7.9 ， 8.1 到 8.4 * Ubuntu 服务器： 18.04 和 20.04 LTS 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
+  <block id="35d156c90b71a0fab57ae717b06aecd8" category="cell">运行以下许可版本之一的计算机： * Microsoft Windows 10 64 位 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
 </blocks>
