@@ -4344,7 +4344,6 @@
   <block id="ac60c998c7a8dc4dde987fedb05c0f55" category="paragraph">此时，延迟线将按自己的比例绘制，并显示在图表的右侧。</block>
   <block id="7dbc268ba4014394e1084d227d3b8b49" category="image-alt">二级轴示例</block>
   <block id="05e5b67cad098092f46a63799fe75cca" category="section-title">小工具中的表达式</block>
-  <block id="5e688ca913b6ca9d60a85e2df86ab3ad" category="paragraph">在信息板中，任何时间序列小工具（折线，样条曲线，区域，堆积区）均可用于根据您选择的指标构建表达式，并在一个图形中显示这些表达式的结果。以下示例使用表达式解决特定问题。在第一个示例中，我们希望将环境中所有存储资产的读取 IOPS 显示为总 IOPS 的百分比。第二个示例显示了环境中发生的 " 系统 " 或 " 开销 " IOPS ，即不直接从读取或写入数据中获取的 IOPS 。</block>
   <block id="dba748e01f6c17fbbaa14a2441a39cb7" category="section-title">表达式示例：读取 IOPS 百分比</block>
   <block id="ce28af985b1b52bd86ddbc97a3281b27" category="paragraph">在此示例中，我们希望将读取 IOPS 显示为总 IOPS 的百分比。您可以将其视为以下公式：</block>
   <block id="3e1d30ddfb12b31902c9e219489955ba" category="paragraph">这些数据可以显示在信息板上的折线图中。要执行此操作，请执行以下步骤：</block>
@@ -7589,18 +7588,11 @@
   <block id="23b7f3c5f273dff8dfc28b1d3d393075" category="list-text">* 文本 * ：字母数字字符串。</block>
   <block id="e77ea662dc2d45a324194dca8b908bc3" category="list-text">* 数字 * ：数字值。单独使用，或者作为 " 发件人 " 或 " 收件人 " 值，具体取决于小工具字段。</block>
   <block id="087c14b96c9dccdfb944c17d359d937d" category="list-text">* 布尔值 * ：用于值为 True/False ， Yes/No 等的字段。对于布尔变量，选项包括 " 是 " ， " 否 " ， " 无 " ， " 任何 " 。</block>
-  <block id="e8d8c9065d231417a82d017542ad50f6" category="list-text">* 日期 * ：日期值。单独使用，或者作为 " 发件人 " 或 " 收件人 " 值，具体取决于小工具字段。</block>
   <block id="53cc3f1a4b0d0e434a93a7372b931ac6" category="inline-image-macro">变量类型</block>
   <block id="916ee1d24159df2a85679ef0774f9828" category="paragraph"><block ref="916ee1d24159df2a85679ef0774f9828" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3f4aa78e28bef68e621211c255de6e97" category="section-title">变量筛选器范围</block>
-  <block id="38f9fe234760a4b03b85217374ec1bd5" category="paragraph">默认情况下，向信息板添加标注变量时，该变量将应用于信息板上的 _all_ 小工具，这意味着信息板上的所有小工具将根据您在该变量中设置的值显示筛选的结果。</block>
   <block id="d0365c2d28a2b320782a5d2554e29461" category="inline-image-macro">自动筛选器</block>
   <block id="d57164545a0388f20a8a7c16b4a505ee" category="paragraph"><block ref="d57164545a0388f20a8a7c16b4a505ee" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9a364b2beeb2d73119727d97ad842f0" category="paragraph">请注意，只能使用此类变量自动筛选类型为 _text_ ， _booole_ 或 _List_ 的标注。不能自动筛选数字或日期等非文本标注类型，也不能自动筛选 _non-Annotation_variables （ number ， Date ， Boolean ）。必须将每个小工具配置为使用这些类型的变量。</block>
-  <block id="501d7d63535eac3f0b04a86a5c59a0fc" category="paragraph">要禁用自动筛选，以便标注变量仅对您专门设置的小工具进行适用场景，请单击 " 自动筛选 " 滑块将其禁用。</block>
-  <block id="2e0d68aed2d95c1e5370cf57c66cdd6f" category="paragraph">要在单个小工具中设置标注类型变量，请在编辑模式下打开此小工具，然后在 _Filter by" 字段中选择特定标注。使用 Annotation 变量，您可以选择一个或多个特定值，也可以选择变量名称（由前导 "$" 指示），以便在信息板级别键入变量。只有您为其设置了变量的小工具才会显示经过筛选的结果。</block>
-  <block id="db9429945479bdf8469ebfb0e45edfa4" category="paragraph">您可以将小工具配置为以相同方式使用非标注变量（数字，日期，布尔值）。</block>
-  <block id="ede4219a6b2ff39b8d02b4bc0d9c4c21" category="list-text">不能包含任何特殊字符；仅允许使用字母 a-z ，数字 0-9 ，句点（ . ）和下划线（ _ ）。</block>
   <block id="be23148a3ac9dc4d52c903da3ce8e996" category="list-text">不能超过 20 个字符。</block>
   <block id="1e0924a9571cb084a1694224ea94a701" category="list-text">不能为空。</block>
   <block id="d802637b72ebddd27cf9b28f9f198763" category="section-title">2021年9月</block>
@@ -8125,4 +8117,40 @@
   <block id="c18e9bacb0ed35f6b26e407a261491be" category="paragraph">在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。</block>
   <block id="763e7c73a838930a9b9e74b5d349cbd6" category="cell">运行以下任一许可版本的计算机： * CentOS （ 64 位）： 7.2 到 7.9 ， 8.1 到 8.4 * Debian （ 64 位）： 9 和 10 * Oracle Enterprise Linux （ 64 位）： 7.5 到 7.9 ， 8.1 到 8.4 * Red Hat Enterprise Linux （ 64 位）： 7.2 到 7.9 ， 8.1 到 8.4 * Ubuntu 服务器： 18.04 和 20.04 LTS 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="35d156c90b71a0fab57ae717b06aecd8" category="cell">运行以下许可版本之一的计算机： * Microsoft Windows 10 64 位 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
+  <block id="39785ac77a465811e3584e33640cbff4" category="paragraph">在信息板中，任何时间序列小工具（线，样条曲线，区域，堆积区），单值， 或 Gauge Widget 可用于根据您选择的指标构建表达式，并在一个图形中显示这些表达式的结果。以下示例使用表达式解决特定问题。在第一个示例中，我们希望将环境中所有存储资产的读取 IOPS 显示为总 IOPS 的百分比。第二个示例显示了环境中发生的 " 系统 " 或 " 开销 " IOPS ，即不直接从读取或写入数据中获取的 IOPS 。</block>
+  <block id="295ae6b0d3f79982844cbe49616552f4" category="paragraph">您可以在表达式中使用变量（例如： _$VAR1 * 100_ ）</block>
+  <block id="0f17f6019d7d24f40bc97f9856c0ef14" category="paragraph">要在表达式中使用变量，只需键入变量名称即可，例如 _$var1 * 100_ 。表达式只能使用数字变量。</block>
+  <block id="1634ed475d7378ae8b2f149b1a4c43e3" category="list-text">* 属性 * ：使用对象的属性或指标进行筛选</block>
+  <block id="a33e4b0669b0dcd6c6727f25e8e1c46b" category="list-text">* 日期 * ：日期值。根据小工具的配置，使用作为 " 从 " 或 " 到 " 值。</block>
+  <block id="75514bc8f4a0fcfa4d6e233cf6293d4f" category="section-title">属性变量</block>
+  <block id="cdd0539c5f9ee15c61a20d8600fe7ca5" category="paragraph">通过选择属性类型变量，您可以筛选包含指定属性值或值的小工具数据。以下示例显示了一个折线小工具，其中显示了代理节点的可用内存趋势。我们为代理节点 IP 创建了一个变量，当前设置为显示所有 IP ：</block>
+  <block id="e3f9b576b0f66601c43decf70ddc3a40" category="inline-image-macro">可变筛选器之前的代理节点</block>
+  <block id="8e1962312d6932465c5534f5b70114c0" category="paragraph"><block ref="8e1962312d6932465c5534f5b70114c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c3953a499e26fb5cad07e67c40f3db25" category="paragraph">但是，如果您暂时只想查看环境中各个子网上的节点，则可以将变量设置或更改为特定的代理节点 IP 。此处，我们仅查看 "123" 子网上的节点：</block>
+  <block id="5246fe894302a8a0c6ddc8e1a8eabbac" category="inline-image-macro">变量筛选器后的代理节点</block>
+  <block id="56fe99e38514c0cce0008ef626b7a0cf" category="paragraph"><block ref="56fe99e38514c0cce0008ef626b7a0cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ef91a7cc72502b96c9cf6aab818dfd2d" category="paragraph">此外，您还可以通过在变量字段中指定 _* 。 vendor_ 来设置一个变量以筛选具有特定属性的 _all_ 对象，而不考虑对象类型，例如属性为 "vendor" 的对象。您无需键入 "* 。 " ；如果选择通配符选项， Cloud Insights 将提供此选项。</block>
+  <block id="ed7dd290eed78fda8a7e6e57c0454d62" category="inline-image-macro">供应商的属性变量</block>
+  <block id="bf22e0e1581a335446f830bdd58ad47d" category="paragraph"><block ref="bf22e0e1581a335446f830bdd58ad47d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88c2cb6ab02290c4fc8aef63c5b379a8" category="paragraph">下拉可变值的选项列表时，结果将进行筛选，以便根据信息板上的对象仅显示可用供应商。</block>
+  <block id="f4a39005b25ac84fc634debc8f4cbe5c" category="inline-image-macro">仅显示可用供应商的属性变量</block>
+  <block id="fd28faabd766aae1e084504d5c10cf4a" category="paragraph"><block ref="fd28faabd766aae1e084504d5c10cf4a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ba6f53c32d52d02efcd2dfba8a0231d5" category="paragraph">如果在信息板上编辑与属性筛选器相关的小工具（即，小工具的对象包含任何 _* 。 vendor attribute_ ），则会显示属性筛选器已自动应用。</block>
+  <block id="9f4e7d91bfa478e05808ba1cfbbb3570" category="inline-image-macro">自动应用属性变量</block>
+  <block id="f2875ccdf69b564c6d35e14d51c547c7" category="paragraph"><block ref="f2875ccdf69b564c6d35e14d51c547c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="111611046ca2e62af91c6a3b49b12fc3" category="paragraph">应用变量与更改所选属性数据一样简单。</block>
+  <block id="04bdeda9cdd8fc15fd3f3ab8857bd58f" category="section-title">标注变量</block>
+  <block id="31effee05032b02b685624c161070fbe" category="paragraph">通过选择 Annotation 变量，您可以筛选与该标注关联的对象，例如属于同一数据中心的对象。</block>
+  <block id="052dd0291ff86eb47b09d284fb13286f" category="inline-image-macro">使用变量筛选标注</block>
+  <block id="8b85c6131cb4766252f9b46d491f912a" category="paragraph"><block ref="8b85c6131cb4766252f9b46d491f912a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="94c6931deb0190d81ed0646c35c8c5d9" category="section-title">文本，数字，日期或布尔变量</block>
+  <block id="5908fcd083b5a6010603af57587a15c5" category="paragraph">您可以通过选择 _text_ ， _number_ ， _boooleal_ 或 _Date_ 的变量类型来创建与特定属性不关联的通用变量。创建变量后，您可以在小工具筛选字段中选择它。在小工具中设置筛选器时，除了可以为筛选器选择的特定值之外，为信息板创建的任何变量都会显示在列表中，这些变量分组在下拉列表的 " 变量 " 部分下，名称以 "$" 开头。通过在此筛选器中选择一个变量，您可以搜索在信息板本身的变量字段中输入的值。在筛选器中使用该变量的任何小工具都将动态更新。</block>
+  <block id="b91cd248a68eda4420f9e24801f43500" category="inline-image-macro">在小工具中选择变量</block>
+  <block id="efc036ec669d0a7c4d69953fdb5d2816" category="paragraph"><block ref="efc036ec669d0a7c4d69953fdb5d2816" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0ad3f08cdc417752157181744937565a" category="paragraph">在向信息板添加标注或属性变量时，该变量可以应用于信息板上的 _all_ 小工具，这意味着信息板上的所有小工具都将显示根据您在该变量中设置的值进行筛选的结果。</block>
+  <block id="48a8dc187796007b2f7f8ef0f1df5f8f" category="paragraph">请注意，只能按此方式自动筛选属性和标注变量。不能自动筛选非标注或 -Attribute-variables 。必须将每个小工具配置为使用这些类型的变量。</block>
+  <block id="1badbb2ce16697c2f2cc7b0ed794b0f0" category="paragraph">要禁用自动筛选，以便变量仅对您专门设置的小工具进行适用场景，请单击 " 自动筛选 " 滑块将其禁用。</block>
+  <block id="955733e6dd3ef01c7890d89e4ba3cf6a" category="paragraph">要在单个小工具中设置变量，请在编辑模式下打开此小工具，然后在 _Filter by" 字段中选择特定标注或属性。使用 Annotation 变量，您可以选择一个或多个特定值，也可以选择变量名称（由前导 "$" 指示），以便在信息板级别键入变量。相同的适用场景属性变量。只有您为其设置了变量的小工具才会显示经过筛选的结果。</block>
+  <block id="a0b6145fddba5dc1acba510c52493191" category="paragraph">要在表达式中使用变量，只需在表达式中键入变量名称即可，例如： _$var1 * 100_ 。表达式只能使用数字变量。不能在表达式中使用数值标注或属性变量。</block>
+  <block id="f54581bbcc974db12605038b8963649e" category="list-text">必须仅包含字母 a-z ，数字 0-9 ，句点（ . ），下划线（ _ ）和空格（）。</block>
 </blocks>
