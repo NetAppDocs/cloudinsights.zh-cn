@@ -8202,4 +8202,9 @@
   <block id="f07ffec998a0d91a573274ae4a20cba9" category="list-text">属性值 "&lt;apikey&gt;"</block>
   <block id="5455308b1c7692a68b58d6059d1af0fe" category="paragraph">您的 API 密钥将特定于您的 Cloud Insights 环境。</block>
   <block id="d5da864a003c6e8dd171d9f5f67d6bcf" category="sidebar">报告数据库 API</block>
+  <block id="eb6885d6f664b5497f03e959d40f3cec" category="section-title">正在添加授权 ID</block>
+  <block id="f61771ce04d790a82e1d9fadba23d65d" category="paragraph">如果您拥有与 Cloud Insights 捆绑的有效 NetApp 产品，则可以将该产品序列号添加到现有的 Cloud Insights 订阅中。例如，如果您已购买 NetApp Astra ，并且 Cloud Insights 与 Astra 交易捆绑在一起，则可以使用 Astra 许可证序列号在 Cloud Insights 中标识订阅。Cloud Insights 是指一个 _Entitlement ID_ 。</block>
+  <block id="a159f2d918a0f780067f357af177a7d4" category="paragraph">要将授权 ID 添加到 Cloud Insights 订阅中，请在 * 管理员 &gt; 订阅 * 页面上单击 _+ 授权 ID_ 。</block>
+  <block id="1a62a39ff140f77355b83522e3f6dae5" category="inline-image-macro">向订阅添加授权 ID</block>
+  <block id="c7eef52484be0c21d2593dac7ed32583" category="paragraph"><block ref="c7eef52484be0c21d2593dac7ed32583" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
