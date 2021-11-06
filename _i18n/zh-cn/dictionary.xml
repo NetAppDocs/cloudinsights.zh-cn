@@ -8153,4 +8153,53 @@
   <block id="955733e6dd3ef01c7890d89e4ba3cf6a" category="paragraph">要在单个小工具中设置变量，请在编辑模式下打开此小工具，然后在 _Filter by" 字段中选择特定标注或属性。使用 Annotation 变量，您可以选择一个或多个特定值，也可以选择变量名称（由前导 "$" 指示），以便在信息板级别键入变量。相同的适用场景属性变量。只有您为其设置了变量的小工具才会显示经过筛选的结果。</block>
   <block id="a0b6145fddba5dc1acba510c52493191" category="paragraph">要在表达式中使用变量，只需在表达式中键入变量名称即可，例如： _$var1 * 100_ 。表达式只能使用数字变量。不能在表达式中使用数值标注或属性变量。</block>
   <block id="f54581bbcc974db12605038b8963649e" category="list-text">必须仅包含字母 a-z ，数字 0-9 ，句点（ . ），下划线（ _ ）和空格（）。</block>
+  <block id="0899fcc28c04aa81ead738e68e460060" category="summary">使用 Cloud Insights API 直接查询报告数据库。</block>
+  <block id="a6df26890e0a18d3e3ae4d3fdbfc8b83" category="doc">通过 API 访问报告数据库</block>
+  <block id="e6c1acbe24ac928f9d0ef2fae722595a" category="paragraph">Cloud Insights 功能强大的 API 允许用户直接查询 Cloud Insights 报告数据库，而无需通过 Cognos 报告环境。</block>
+  <block id="839e9965620da680dac976910eb42800" category="admonition">本文档涉及中提供的 Cloud Insights 报告功能 <block ref="4403a1ad625c6a857c60069d4bc3b41a" category="inline-link-macro-rx"></block>。</block>
+  <block id="2946f573e2e09deeeecdc2af8dba7379" category="section-title">OData</block>
+  <block id="ebb397c50a10a758892e24ffe755b4e4" category="inline-link-macro">OData v4</block>
+  <block id="a755b355075d62b57c54f7a8a785c054" category="inline-link-macro">本教程</block>
+  <block id="b82b439fceeed91eb6cf1e17ac845ee4" category="paragraph">Cloud Insights 报告 API 遵循 <block ref="3174809a10586791538fc9a640526e27" category="inline-link-macro-rx"></block> （开放式数据协议）用于查询报告数据库的标准。要了解更多信息或了解更多信息，请查看 <block ref="e667935284fd58d7e65ea97109344a3b" category="inline-link-macro-rx"></block> 在 OData 上。</block>
+  <block id="3577e510a3f1c74a7bb3874de14515b5" category="paragraph">所有请求均以 URL ： _\https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/OData_ 开头</block>
+  <block id="125afb495c1f31ea312e38a98946b3a3" category="section-title">生成一个 APKey</block>
+  <block id="75fecb4e276dfa405fa92b53630b1a6c" category="inline-link-macro">Cloud Insights APIs</block>
+  <block id="f35f47be5754883ff13c19633478e116" category="paragraph">了解更多信息 <block ref="b08969031f7130627c2547d43f65cf8d" category="inline-link-macro-rx"></block>。</block>
+  <block id="3033424387de8a8ff6a929d95d0520cf" category="paragraph">要生成 API 密钥，请执行以下操作：</block>
+  <block id="daac61be276185790d79d2f7a9326d42" category="list-text">登录到 Cloud Insights 环境并选择 * 管理 &gt; API 访问 * 。</block>
+  <block id="1af9f192377d89a75177427725293c59" category="list-text">单击 "+ API Access Token" 。</block>
+  <block id="e7db5ae96f31544fc1ce8098ba62749d" category="list-text">输入名称和问题描述。</block>
+  <block id="2376f0f686e8de0393e5e1ddaeb4f7b6" category="list-text">对于类型，请选择 _Data Warehouse 。</block>
+  <block id="b035f264e2d66667aac580634dbe607d" category="list-text">将权限设置为读 / 写。</block>
+  <block id="8cf4a3bec43eb5523f7aebc751974a95" category="list-text">设置所需要的到期日期。</block>
+  <block id="180ebf1ad2f81cbd9a8112c041856a19" category="list-text">单击 " 保存 " ，然后 * 复制密钥并将其保存 * 到安全位置。您稍后将无法访问完整密钥。</block>
+  <block id="7415c956bfe8a68bf044e258a167601a" category="paragraph">您可以使用 _Sync_ 或 _Async_ &lt;TBD 更多信息 &gt; 使用此类按键</block>
+  <block id="3d62db14635eb8da302c8e072258a87b" category="section-title">直接查询表</block>
+  <block id="461dd189a57c1dc872768b7c8d5359aa" category="paragraph">使用 API 密钥后，可以直接查询报告数据库。为了便于显示，长 URL 可以简化为 \https://.../odata/ ，而不是完整的 \https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/OData/</block>
+  <block id="a2a3fc9e51cdd71061084aa6403ef9df" category="paragraph">请尝试类似的简单查询</block>
+  <block id="a46f2ca5771aa079cc7e5856afeaa757" category="list-text">https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/OData/dwh_custom</block>
+  <block id="0d34a983260a100641ecd9e249496394" category="list-text">https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/OData/dwh_inventory</block>
+  <block id="03ebeceea5ea916ef7b51a3a95a49d11" category="list-text">https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/OData/dwh_inventory/storage</block>
+  <block id="2ab0f9fbf7fd8c1c02b31fa8c169136a" category="list-text">https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/OData/dwh_inventory/disk</block>
+  <block id="18e7612d8417cb1a04ad930369915d59" category="list-text">https://.../odata/dwh_custom/custom_queries</block>
+  <block id="25de0257c507b6c736e10a9674011469" category="section-title">REST API 示例</block>
+  <block id="7c747afe26ddf80110c972b197e875f1" category="paragraph">所有调用的 URL 为： _\https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/OData_ 。</block>
+  <block id="538c8f380c1292ec200c79af465d46b6" category="list-text">GET / ｛ schema ｝ /** - 从报告数据库检索数据，至少需要 _Guest_ 角色。</block>
+  <block id="6989b99c608e30f67ef33cbb04a24e33" category="paragraph">格式： _\https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/OData/&lt;schema_name&gt;/&lt;query&gt;_</block>
+  <block id="81eeab9506186e2dca8faefa78d54067" category="paragraph">示例</block>
+  <block id="5aac38deec604d81565722cc5a2a6be1" category="paragraph">结果</block>
+  <block id="9d0a9858786cdf7480d0249e4c00b68b" category="section-title">有用的提示</block>
+  <block id="622cc3cd255274a9efa2b5fab43cefab" category="paragraph">使用报告 API 查询时，请记住以下几点。</block>
+  <block id="5a03c61f1a0712e54da17d0ac8d82602" category="list-text">查询有效负载必须是有效的 JSON 字符串</block>
+  <block id="9553d82a7d1118dc4901d6486c74ba20" category="list-text">查询有效负载必须包含在一行中</block>
+  <block id="d38246b0166d90788ce89df63b2bf0b3" category="list-text">必须转义双引号，即 \"</block>
+  <block id="63120938c0e559d26c98c9576a1d2ecb" category="list-text">选项卡支持为 \t</block>
+  <block id="cc93dd8699d557a2b66d1c5a5490d28f" category="list-text">避免注释</block>
+  <block id="4478764ebfa3eddbaccd1d177b34133a" category="list-text">支持小写表名称</block>
+  <block id="f018faa29d3a2ffeb961b60dfaa40a06" category="paragraph">此外：</block>
+  <block id="0d6642fdc7f58abaa6abe00db247d66a" category="list-text">需要 2 个标题：</block>
+  <block id="a06751273618aaa2a3136426034f3331" category="list-text">将名称命名为 X-CloudInsights ApiKey</block>
+  <block id="f07ffec998a0d91a573274ae4a20cba9" category="list-text">属性值 "&lt;apikey&gt;"</block>
+  <block id="5455308b1c7692a68b58d6059d1af0fe" category="paragraph">您的 API 密钥将特定于您的 Cloud Insights 环境。</block>
+  <block id="d5da864a003c6e8dd171d9f5f67d6bcf" category="sidebar">报告数据库 API</block>
 </blocks>
