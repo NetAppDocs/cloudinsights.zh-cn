@@ -8207,4 +8207,28 @@
   <block id="a159f2d918a0f780067f357af177a7d4" category="paragraph">要将授权 ID 添加到 Cloud Insights 订阅中，请在 * 管理员 &gt; 订阅 * 页面上单击 _+ 授权 ID_ 。</block>
   <block id="1a62a39ff140f77355b83522e3f6dae5" category="inline-image-macro">向订阅添加授权 ID</block>
   <block id="c7eef52484be0c21d2593dac7ed32583" category="paragraph"><block ref="c7eef52484be0c21d2593dac7ed32583" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="62783f5d69cb5d3cb22b077c1d2b8777" category="section-title">2021年11月</block>
+  <block id="d4debff8a7476e18245ba3de78caa64d" category="section-title">自适应信息板</block>
+  <block id="fa2e624f267fd72536c09f1bb81ca72e" category="paragraph">_New variables for attributes and the ability to use variables in widerts_ 。</block>
+  <block id="87cd8b8808600624d8c590cfc2e6e94b" category="inline-link-macro">变量</block>
+  <block id="b9d6ed474c251dd95442fcafec00806b" category="paragraph">信息板现在比以往更强大，更灵活。使用属性变量构建自适应信息板，以便快速地实时筛选信息板。使用这些和其他原有的 <block ref="1f4728a3536b8e2cc43013fb8f17db6c" category="inline-link-macro-rx"></block> 现在，您可以创建一个高级别信息板来查看整个环境的指标，并按资源名称，类型，位置等进行无缝筛选。在小工具中使用数字变量将原始指标与成本相关联，例如存储即服务的每 GB 成本。</block>
+  <block id="3063e25af4e9f3b6080b388ac1aad070" category="paragraph"><block ref="3d859cfde5726d14af67cb7dbeb9e18a" category="inline-image-macro-rx" type="image"></block>
+<block ref="d1f7027beb3d94ad8ba6281c876e2b8a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="db974238714ca8de634a7ce1d083a14f" category="inline-link-macro">API</block>
+  <block id="252b86cd65deaa141a3f516e7ef483bd" category="paragraph">增强了与第三方报告， ITSM 和自动化工具集成的功能： Cloud Insights 功能强大 <block ref="9591c9ad7e66434ec5fdd8eaa821cdd2" category="inline-link-macro-rx"></block> 允许用户直接查询 Cloud Insights 报告数据库，而无需通过 Cognos 报告环境。</block>
+  <block id="6b492909f89fdcefb2c45d261f5ea471" category="section-title">VM 登录页面上的 POD 表</block>
+  <block id="6b6c4aab5bc0e2484a08309b0c1e5f31" category="paragraph">在 VM 和 Kubernetes Pod 之间使用它们进行无缝导航：为了改进故障排除和性能余量管理， VM 登录页面上将显示一个关联的 Kubernetes Pod 表。</block>
+  <block id="af2a66e1036c187b3bace18be2866836" category="inline-image-macro">VM 登录页面上的 Kubernetes Pod 表</block>
+  <block id="3a21826c39bfcd8733a49e6e9de6525b" category="paragraph"><block ref="3a21826c39bfcd8733a49e6e9de6525b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="91ca79ca741ad91b7dd2b433920a097a" category="section-title">Data Collector 更新</block>
+  <block id="a6c5eb874da424716e4f5f3222be3e71" category="list-text">现在， ECS 将报告存储和节点的固件</block>
+  <block id="4f33e843b4af370653f6de5a827f5021" category="list-text">Isilon 改进了提示检测功能</block>
+  <block id="9a4504a8cb556e25aa3abc16a8d8925f" category="list-text">Azure NetApp Files 可以更快地收集性能数据</block>
+  <block id="ea6c25d7c9478845679258058ce14a2e" category="list-text">StorageGRID 现在支持单点登录（ SSO ）</block>
+  <block id="a8ab5b6b0319f846449cbfc1f4e5d3af" category="list-text">Brocade CLI 正确报告 X-4 的型号</block>
+  <block id="cca47683e1779f63f036209c47cfb008" category="section-title">支持的其他操作系统</block>
+  <block id="38f20b1b4b2d9880e398570c909f233b" category="paragraph">除了已支持的操作系统之外， Cloud Insights 采集单元还支持以下操作系统：</block>
+  <block id="8a9336b93fd9fdd4855b170bfda1938e" category="list-text">CentOS （ 64 位） 8.4</block>
+  <block id="fd8c1b3795a29b1a89e13a4dc20a65d0" category="list-text">Oracle Enterprise Linux （ 64 位） 8.4</block>
+  <block id="8a87577cfcf75b4a6027782bc64ac3ac" category="list-text">Red Hat Enterprise Linux （ 64 位） 8.4</block>
 </blocks>
