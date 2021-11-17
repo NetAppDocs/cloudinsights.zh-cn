@@ -5617,7 +5617,6 @@
   <block id="eb95277827afbd8e2e2e8f76d8b46c1a" category="list-text">卸载先前的电报代理：</block>
   <block id="eaca524ca350c2f4a68505fcd46722dc" category="list-text"><block ref="233c0aad358add3bf73c9fdb84825ed1" category="inline-link-macro-rx"></block>。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
-  <block id="8904cc29551e19496fd1ef88d03dbdb2" category="list-text">必须提供以下命令： curl ， sudo ， kubectl</block>
   <block id="85ec37ca86f40643ef57d677de07ac20" category="paragraph">为获得最佳结果，请将这些命令添加到路径中。</block>
   <block id="80c0723b28b89c49ac0b2c207486cf90" category="list-text">如果您使用的是代理，请按照 * 为 Kubernetes 配置代理支持 * 一节中的说明进行操作。</block>
   <block id="56cb6633aba007c9c91082eb591c6ac6" category="section-title">监控仅安装在 Linux 节点上</block>
@@ -7543,11 +7542,9 @@
   <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户，则只需登录即可访问其 Cloud Insights 环境。</block>
   <block id="e0d7a90b12ef3cae3c8429a34b69736a" category="inline-image-macro">RHEL/CentOS 代理安装</block>
   <block id="530723ab95ea5239b9c308f8890b5069" category="paragraph"><block ref="530723ab95ea5239b9c308f8890b5069" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6f2ec5bf691b67e423ea64e2cefce5af" category="list-text">必须提供以下命令： curl ， sudo ， ping ， sha256sum 和 dmidecode</block>
   <block id="49d620df1cdf6184275e83524131195e" category="paragraph"><block ref="49d620df1cdf6184275e83524131195e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa69f910ba4ca92eb71af48996add386" category="inline-image-macro">安装 macOS 代理</block>
   <block id="3594374519a82758e6268cba4373faae" category="paragraph"><block ref="3594374519a82758e6268cba4373faae" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ee65e792eaad8713f252a27e5b5164ed" category="list-text">必须提供以下命令： curl ， sudo 和 shasum</block>
   <block id="97e0d834bc800959e3bd09edcaa9de7e" category="section-title">监控组</block>
   <block id="861cce966793d64acfe10deceab95b98" category="paragraph">要创建新组，请单击 "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</block>
   <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">通过单击某个组并从菜单中选择 _Remove from Group_ 来删除监控器。您不能从 _all monitors_ 或 _Custom Monitors_ 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。</block>
@@ -8231,4 +8228,43 @@
   <block id="8a9336b93fd9fdd4855b170bfda1938e" category="list-text">CentOS （ 64 位） 8.4</block>
   <block id="fd8c1b3795a29b1a89e13a4dc20a65d0" category="list-text">Oracle Enterprise Linux （ 64 位） 8.4</block>
   <block id="8a87577cfcf75b4a6027782bc64ac3ac" category="list-text">Red Hat Enterprise Linux （ 64 位） 8.4</block>
+  <block id="1b852bd0522bb1e9abdc5b85f45b2eff" category="cell">Data Collector 显示错误消息：错误：无法在 2 次重试内确定收集器的运行状况，请重新尝试重新启动收集器（错误代码： AGENT008 ）。</block>
+  <block id="f2e1c8f11a6d114e56889c093ddb4738" category="cell">在数据收集器页面上，滚动到出现错误的数据收集器右侧，然后单击 3 点菜单。选择 _Edit_ 。再次输入数据收集器的密码。按 _Save_ 按钮保存数据收集器。Data Collector 将重新启动，并应解决此错误。</block>
+  <block id="a60abfe03b8079f9f0eac07879fdf93b" category="paragraph">您可以使用 _Sync_ 或 _Async_ 使用此类按键。</block>
+  <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode</block>
+  <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">必须提供以下命令： curl ， sudo ， openssl 和 shasum</block>
+  <block id="534bf0b54b6a2f4706041a3ede410108" category="list-text">必须提供以下命令： curl ， sudo ， openssl ， sha256sum 和 kubectl</block>
+  <block id="c6baf991a66b3aacc47987de1641b11e" category="summary">日志资源管理器是一个功能强大的工具，可用于调查问题。</block>
+  <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">日志资源管理器</block>
+  <block id="6f0a85aa190cf61bbcf2d473f4c6c50a" category="paragraph">Cloud Insights 日志资源管理器是一个功能强大的工具，可用于查询 EMS 和 Kubernetes 日志。除了有助于调查之外，您还可以将日志查询保存在监控器中，以便在日志触发器激活后提供警报。</block>
+  <block id="78f546f3522c36deb2df39facbe2cbf2" category="admonition">日志资源管理器是一项 _Preview_ 功能，因此可能会更改。</block>
+  <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">要开始浏览日志，请单击 * 查询 &gt;+New Log Query* 。</block>
+  <block id="c7175e137df374ab419bd8746e829439" category="inline-image-macro">日志查询菜单</block>
+  <block id="2476c675ea0ab08eb68e77616d8026cf" category="paragraph"><block ref="2476c675ea0ab08eb68e77616d8026cf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f6ed4a34f2dd3f6ee334d4bce6755dc2" category="paragraph">从列表中选择一个可用日志。此列表可能因您当前的 Cloud Insights 环境配置而异。</block>
+  <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">选择日志</block>
+  <block id="907f85b0ae170f8312420eb89d567ed5" category="paragraph"><block ref="907f85b0ae170f8312420eb89d567ed5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b7588d3859ad2b6d675ed5520f12a393" category="admonition">可通过预览访问一组选定的日志；随着时间的推移，还可以访问其他日志。</block>
+  <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">您可以设置筛选器以进一步细化查询结果。例如，要查找显示失败的所有日志消息，请为包含单词 "Failed" 的 _MESSAGES 设置一个筛选器。</block>
+  <block id="e290a1958705f522c7d916c05fcad28c" category="admonition">您可以开始在筛选器字段中键入所需的文本；键入时， Cloud Insights 将提示您创建包含字符串的通配符搜索。</block>
+  <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">结果将显示在一个图形中，其中显示了所示每个时间段内的日志实例数。图下方是日志条目临时文件。图形和条目会根据选定时间范围自动刷新。</block>
+  <block id="8ef03d84e3fb3a5e09cc1a40b1e60f8d" category="inline-image-macro">显示筛选器的查询示例</block>
+  <block id="a5841d3432662ae9190489b4bf13e03c" category="paragraph"><block ref="a5841d3432662ae9190489b4bf13e03c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6525698622e5d4dd87d39bc69750d2e3" category="section-title">日志图形</block>
+  <block id="5ca1a83f7b7763185645c408d9237058" category="paragraph">此图显示了根据选定信息板时间范围分组到 _bages_ 中的日志条目数。每个时间范围的分段如下所示：</block>
+  <block id="1a07cd9ad36405911f4a827c02141cb5" category="cell">存储分段大小</block>
+  <block id="06cdf20b6eaa0ae9f8c50b0f6158589f" category="cell">30 分钟</block>
+  <block id="90085ccde7a8c066e1f3a5b7580ef07d" category="cell">45 分钟</block>
+  <block id="0d730df753ae6a369323fe6dc1641eb2" category="cell">1 天</block>
+  <block id="0aa0ba82527e49e5c56d1dfce41fc246" category="paragraph">要放大图形，只需从任意一侧拖动滑块即可。要对缩放区域进行水平移动，请单击并按住白色区域，然后向左或向右移动。单击 _Reset Zoom_ 可重置缩放级别。</block>
+  <block id="51e0a539e27933abd9022ece5ebb9dc0" category="inline-image-macro">通过在图形的两侧拖动来放大</block>
+  <block id="03bbd7f405795c5f2f9e6b2aa10a9485" category="paragraph"><block ref="03bbd7f405795c5f2f9e6b2aa10a9485" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9861da4e593f0d876c27ae2472947ec7" category="paragraph">请注意，在缩放图形或滚动表时，信息板自动刷新将暂停，时间范围将显示冻结时间。要恢复刷新，请单击 _Resume_ 按钮 <block ref="aba9fdfd6cc8b6ea17b1ffd7798083ed" category="inline-image-macro-rx" type="image"></block>。此操作还会重置缩放级别。</block>
+  <block id="d376c886c5ff2fc65131f62ba9752f91" category="paragraph">您可以随时单击 _Create a Log Monitor_ 根据当前筛选器创建新的监控器。</block>
+  <block id="5498a5f4896f117c2848f41304cec816" category="section-title">日志详细信息</block>
+  <block id="359af7e1e51e6ea2bf3b35d99ff965eb" category="paragraph">单击列表中日志条目中的任意位置将打开该条目的详细信息窗格。您可以在此处了解有关此活动的更多信息。</block>
+  <block id="13eb6f9ee990a41519e29ed1b850e7d4" category="paragraph">单击 " 添加筛选器 " 将选定字段添加到当前筛选器。日志条目列表将根据新筛选器进行更新。</block>
+  <block id="40cbcf33504e4618736618d0178350da" category="inline-image-macro">日志条目详细信息窗格</block>
+  <block id="ec3637bd1bccc80828f9c014bf3b44f7" category="paragraph"><block ref="ec3637bd1bccc80828f9c014bf3b44f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9493694f9074632615f75f136ee1eb6f" category="sidebar">查询日志（预览）</block>
 </blocks>

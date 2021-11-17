@@ -38,7 +38,7 @@ Cloud Insights 报告 API 遵循 link:https://www.odata.org/["OData v4"] （开�
 * 单击 " 保存 " ，然后 * 复制密钥并将其保存 * 到安全位置。您稍后将无法访问完整密钥。
 
 
-您可以使用 _Sync_ 或 _Async_ <TBD 更多信息 > 使用此类按键
+您可以使用 _Sync_ 或 _Async_ 使用此类按键。
 
 
 

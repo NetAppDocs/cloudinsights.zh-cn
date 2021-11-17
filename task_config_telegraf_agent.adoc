@@ -134,7 +134,7 @@ sc.exe delete telegraf
 image:Agent_Requirements_Rhel.png["RHEL/CentOS 代理安装"]
 
 .前提条件：
-* 必须提供以下命令： curl ， sudo ， ping ， sha256sum 和 dmidecode
+* 必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode
 * 如果您使用的是代理，请按照 * 为 RHEL/CentOS* 配置代理支持 " 一节中的说明进行操作。
 
 
@@ -226,7 +226,7 @@ systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ an
 image:Agent_Requirements_Ubuntu.png["Ubuntu 或 Debian 代理安装"]
 
 .前提条件：
-* 必须提供以下命令： curl ， sudo ， ping ， sha256sum 和 dmidecode
+* 必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode
 * 如果您使用的是代理，请按照 * 为 Ubuntu 或 Debian 配置代理支持 * 一节中的说明进行操作。
 
 
@@ -318,7 +318,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 image:Agent_Requirements_Macos.png["安装 macOS 代理"]
 
 .前提条件：
-* 必须提供以下命令： curl ， sudo 和 shasum
+* 必须提供以下命令： curl ， sudo ， openssl 和 shasum
 * 如果您使用的是代理，请按照 * 为 macOS* 配置代理支持 " 一节中的说明进行操作。
 
 
@@ -446,7 +446,7 @@ image:Kubernetes_Operator_Tile_Choices.png["Kubernetes 安装选项"]
 NOTE: 基于操作员的安装被视为 _Preview_ 功能，因此可能会发生更改。
 
 .前提条件：
-* 必须提供以下命令： curl ， sudo ， kubectl
+* 必须提供以下命令： curl ， sudo ， openssl ， sha256sum 和 kubectl
 +
 为获得最佳结果，请将这些命令添加到路径中。
 

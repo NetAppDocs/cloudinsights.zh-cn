@@ -102,6 +102,8 @@ sidebar:
       url: "/task_query_assign_multiple_applicationss.html"
     - title: 将表值复制到剪贴板
       url: "/task_query_copy_table_values.html"
+    - title: 查询日志（预览）
+      url: "/concept_log_explorer.html"
   - title: 使用标注
     entries:
     - title: 定义标注
