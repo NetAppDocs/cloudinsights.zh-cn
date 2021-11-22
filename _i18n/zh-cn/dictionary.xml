@@ -7307,7 +7307,6 @@
   <block id="a2edb5af3b26bceba849d8277ecb4c3e" category="sidebar">Dell EMC</block>
   <block id="ae9a8809801717aa58285b7bea4069fa" category="sidebar">数据域</block>
   <block id="c8f63ecaff5e983a2441126a241c4cfa" category="sidebar">ECS</block>
-  <block id="8a2b136f2ffaf807c9118c0d93904550" category="sidebar">Isilon</block>
   <block id="6865f7ce4b37b9f0e798abb0d07a7210" category="sidebar">PowerStore</block>
   <block id="78814f3852ff02a5c06c73000467afca" category="sidebar">RecoverPoint</block>
   <block id="89cdc1ad74e26bbad40a1985d965a10f" category="sidebar">ScaleIO</block>
@@ -7321,9 +7320,7 @@
   <block id="053f42c6bae3432cae270ea978f7e638" category="sidebar">Fujitsu</block>
   <block id="8b36e9207c24c76e6719268e49201d94" category="sidebar">Google</block>
   <block id="44cf206eca8a23c81576d1e81a632654" category="sidebar">HP 企业</block>
-  <block id="9f32d5af71579092b903a150460afe90" category="sidebar">HP 3PAR StoreServ</block>
   <block id="f4ef4a0cd5c387866c7083f47f2d4b02" category="sidebar">HP Command View AE</block>
-  <block id="2921dfe077ee0619f9c0cbdfccd3ce53" category="sidebar">HPE Nimble</block>
   <block id="889d4fdad3f71ff1d1026ef62be70373" category="sidebar">Hitachi Data Systems</block>
   <block id="90d7e52dad96e614b49c27a1ae5e84ba" category="sidebar">HDS 命令套件</block>
   <block id="4476b90551717cd4f2d23ec1b61c13db" category="sidebar">HDS HNAS</block>
@@ -8265,4 +8262,7 @@
   <block id="57d18434b15614385369eac3754dcd68" category="list-text">端口要求： 22 （清单收集）， 5988 或 5989 （性能收集）【注： StoreServ OS 3.x+ 支持性能】</block>
   <block id="a7030740f4f337d27513789f491a8c43" category="list-text">对于性能收集，请通过 SSH 登录到阵列以确认 SMI-S 已启用。</block>
   <block id="f05fd5e030381d352de901ca5feef02c" category="cell">从命令行运行 "showsys" 和 "showversion -a" ，并检查阵列是否支持此版本。</block>
+  <block id="f2c32ff362c075e1c65013393f95b23e" category="sidebar">PowerScale</block>
+  <block id="dc20128ad51d4736f32ce4774255be05" category="sidebar">HP Alletra 9000 和 Primera</block>
+  <block id="2e8fa3456cfe892de65ae2fa6f7e0d87" category="sidebar">HPE Alletra 6000</block>
 </blocks>
