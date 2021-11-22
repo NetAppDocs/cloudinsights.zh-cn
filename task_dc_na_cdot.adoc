@@ -188,26 +188,26 @@ Cloud Insights 从 ONTAP 数据收集器采集清单和性能数据。对于所�
 . 使用以下命令创建只读角色。
 +
 ....
-security login role create -role oci_readonly -cmddirname DEFAULT -access readonly
-security login role create -role oci_readonly -cmddirname security -access readonly
-security login role create -role oci_readonly -access all -cmddirname “cluster application-record create”
+security login role create -role ci_readonly -cmddirname DEFAULT -access readonly
+security login role create -role ci_readonly -cmddirname security -access readonly
+security login role create -role ci_readonly -access all -cmddirname “cluster application-record create”
 ....
 . 使用以下命令创建只读用户。执行 create 命令后，系统将提示您输入此用户的密码。
 +
- security login create -username oci_user -application ontapi -authentication-method password -role oci_readonly
+ security login create -username ci_user -application ontapi -authentication-method password -role ci_readonly
 
 
 如果使用 AD/LDAP 帐户，则命令应为
 
- security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role oci_readonly
+ security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
 生成的角色和用户登录将如下所示：
 
 ....
 Role Command/ Access
 Vserver Name Directory Query Level
 ---------- ------------- --------- ------------------ --------
-cluster1 oci_readonly DEFAULT read only
-cluster1 oci_readonly security readonly
+cluster1 ci_readonly DEFAULT read only
+cluster1 ci_readonly security readonly
 ....
 ....
 cluster1::security login> show
@@ -215,7 +215,7 @@ Vserver: cluster1
 Authentication Acct
 UserName    Application   Method      Role Name      Locked
 ---------   -------      ----------- -------------- --------
-ci_user     ontapi      password    oci_readonly   no
+ci_user     ontapi      password    ci_readonly   no
 ....
 
 
