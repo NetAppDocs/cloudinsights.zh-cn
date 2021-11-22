@@ -2632,10 +2632,6 @@
   <block id="3cd143dd04b3c4f3852da4f4b7bb8493" category="cell">用于连接到 Recoverpoint 集群的 TCP 端口</block>
   <block id="d77a6debbc318458430a813af94de098" category="cell">排除的集群</block>
   <block id="94b45e8398089264f0050004fb043bc4" category="cell">要在轮询时排除的集群 ID 或名称的逗号分隔列表。</block>
-  <block id="f7d01656dd320d517f88606fafe2ed73" category="summary">正在配置 task _dc_fitsu_ 数据收集器。</block>
-  <block id="932541c7a18d388902a2b6954a473e0a" category="doc">3PAR StoreServ 存储数据收集器</block>
-  <block id="ba7d77125f1716d425d2a4febaf899f7" category="paragraph">Cloud Insights 使用 3PAR StoreServ 数据收集器来发现 HP 3PAR StoreServ 存储阵列的清单和性能。</block>
-  <block id="6a9454c52d7f894f0732e520d9cbf697" category="paragraph">Cloud Insights 从 3PAR StoreServ 数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="bab16bd280bad939243defec2ae54eba" category="cell">物理磁盘</block>
   <block id="3edcb2400ce9f6580e362c8a9d6102ff" category="cell">控制器节点</block>
   <block id="89693d6595f0aef621cb8fd0804326a5" category="cell">通用配置组</block>
@@ -2643,8 +2639,6 @@
   <block id="c3deb2066e20cbed62d1bfed93943bb1" category="list-text">InServ 集群的 IP 地址或 FQDN</block>
   <block id="1b4137d092037ad17a20e57351c33d8e" category="list-text">对于清单， StoreServ 服务器的只读用户名和密码</block>
   <block id="7abd5032a929f340867545508d1a1933" category="list-text">为提高性能，请将用户名和密码读写到 StoreServ Server</block>
-  <block id="3cb310cc583bd898549052dd130325db" category="list-text">端口要求： 22 （清单收集）， 5988 或 5989 （性能收集） [ 注意： StoreServ OS 3.x+ 支持 3PAR 性能 ]</block>
-  <block id="13177cd93062d11e7a6dea870c61c636" category="list-text">对于性能收集，请通过 SSH 登录到 3PAR 阵列来确认 SMI-S 已启用。</block>
   <block id="c9181e34cd26ca9712ae93c821c8b4ae" category="cell">存储 IP 地址</block>
   <block id="a3245ffe72eb9838766824c524320b02" category="cell">StoreServ 集群的存储 IP 地址或完全限定域名</block>
   <block id="a50dd6230303782ff1258f79789462ab" category="cell">StoreServ 服务器的用户名</block>
@@ -2655,7 +2649,6 @@
   <block id="7a99ffb9a275ff9b58891d9bea24db27" category="cell">覆盖 SMI-S 默认端口</block>
   <block id="6122ba0c22b28aeb9d1afbcfa72aa230" category="cell">如果为空，请使用 SMI-S 连接中的默认端口，否则请输入要使用的连接端口</block>
   <block id="1bc52da2299188649b7a3f999a98703b" category="cell">"showsys" 命令不返回任何结果。</block>
-  <block id="c97753ededf5884d3d81be23a5379646" category="cell">从命令行运行 "showsys" 和 "showversion -a" ，并检查 3PAR 是否支持此版本。</block>
   <block id="7d066f7756eb107e8cf13e5192d0be40" category="cell">无法连接或登录。提供程序初始化失败。</block>
   <block id="9e5597299f7367b3c8697c1756fc41fa" category="cell">全数字阵列名称可能会导致 SMI-S 服务器出现发生原因问题。尝试更改阵列名称。</block>
   <block id="7ef2a69cc38c589c39f627b7d8deae9b" category="cell">配置的 SMI-S 用户不具有任何域</block>
@@ -3345,8 +3338,6 @@
   <block id="bec25ddafd334fd10a087201ff828fc5" category="cell"><block ref="bec25ddafd334fd10a087201ff828fc5" category="inline-link-macro-rx"></block></block>
   <block id="6af495703f2916ea28794681d7297aa3" category="inline-link-macro">Dell EMC ECS</block>
   <block id="f476f509e4376cd5626f5e00f9ae0b36" category="cell"><block ref="f476f509e4376cd5626f5e00f9ae0b36" category="inline-link-macro-rx"></block></block>
-  <block id="136b5e2a34e309f85264231b94898d55" category="inline-link-macro">Dell EMC Isilon</block>
-  <block id="c0352e741bd573dfe781176f23b4cdd8" category="cell"><block ref="c0352e741bd573dfe781176f23b4cdd8" category="inline-link-macro-rx"></block></block>
   <block id="9926fd0e172b4a25000e01c11bb3747f" category="inline-link-macro">Dell EMC PowerStore</block>
   <block id="1b109b38fea9959dbc53058628693aef" category="cell"><block ref="1b109b38fea9959dbc53058628693aef" category="inline-link-macro-rx"></block></block>
   <block id="f8e3c055426933bde369444cdafa0c6b" category="inline-link-macro">Dell EMC Recoverpoint</block>
@@ -3391,10 +3382,6 @@
   <block id="bd75b6fb1fa7e54c239689edee90a9ae" category="cell"><block ref="bd75b6fb1fa7e54c239689edee90a9ae" category="inline-link-macro-rx"></block></block>
   <block id="781887d6dfe7e52bf4b9cd5b7948eeca" category="inline-link-macro">Hitachi 运营中心</block>
   <block id="7c63d67d0f20e6925356941b4b964b9b" category="cell"><block ref="7c63d67d0f20e6925356941b4b964b9b" category="inline-link-macro-rx"></block></block>
-  <block id="94a5ffefd9581213fa4efae0a71f1ee0" category="inline-link-macro">HPE Nimble 存储</block>
-  <block id="1ba65ba3e745a0159d75c307f736aa15" category="cell"><block ref="1ba65ba3e745a0159d75c307f736aa15" category="inline-link-macro-rx"></block></block>
-  <block id="4ff3d144cbf827ccc7702106085db641" category="inline-link-macro">HP Enterprise 3PAR StoreServ 存储</block>
-  <block id="af2b78eab54df72e97c0400f957c41c8" category="cell"><block ref="af2b78eab54df72e97c0400f957c41c8" category="inline-link-macro-rx"></block></block>
   <block id="61512c0f6da21c95662ee9d87c8a49b0" category="inline-link-macro">HP Enterprise Command View</block>
   <block id="e970752c29b4dc15971101c5622cf462" category="cell"><block ref="e970752c29b4dc15971101c5622cf462" category="inline-link-macro-rx"></block></block>
   <block id="412fe4fc321f98207f4b8ebfce7ef2d0" category="inline-link-macro">Huawei OceanStor 和 Dorado Devices</block>
@@ -5278,16 +5265,7 @@
   <block id="d394f4a37cee9ff0a48907bfdacc4a9f" category="cell">覆盖 TCP 端口</block>
   <block id="cd5f584259d833ff583a4824164dfbc3" category="cell">指定要使用的端口（如果不是默认端口）</block>
   <block id="d429fd3fca7067927653f64983b17a44" category="cell">要包含或排除的设备 ID 或阵列名称的逗号分隔列表</block>
-  <block id="6c5e218c950d1b092751341224c0d8bc" category="summary">配置 Dell EMC Isilon 数据收集器。</block>
-  <block id="66762be43d394bef465dbb97810c0155" category="doc">Dell EMC Isilon 数据收集器</block>
-  <block id="501448e0f2148828042314c34766ef72" category="paragraph">Cloud Insights 使用 Isilon SSH 数据收集器从 EMC Isilon 横向扩展 NAS 存储获取清单和性能数据。</block>
-  <block id="c03357666b6eb1c6c3706a9aa26abac5" category="paragraph">Cloud Insights 从 Isilon 数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
-  <block id="d65614fc62f9c0338c946cdc10c3e8ee" category="list-text">Isilon 存储的管理员权限</block>
-  <block id="3e33b147754bb127d74f4bd8f5394467" category="list-text">Isilon 集群的 IP 地址</block>
   <block id="fa48d2e0062f724ae0480024b5f79f3f" category="list-text">通过 SSH 访问端口 22</block>
-  <block id="b1f1e49ca963d19a2f904136b4e6c2f4" category="cell">Isilon 集群的 IP 地址或完全限定域名</block>
-  <block id="1c49ffc4298a2827bbfcc89f1754fe0b" category="cell">Isilon 集群的用户名</block>
-  <block id="13b965cbbb8d3992a834cea122f7ae6e" category="cell">Isilon 集群使用的密码</block>
   <block id="232094a7e5aa55b6c772e1cd66d100a2" category="cell">SSH 服务端口。默认值为 22. 。</block>
   <block id="29fadedb487bdaf18526d1a0ea6d38bf" category="cell">登录凭据无效，并显示错误消息 " 未启用基于角色的管理命令需要 root 用户访问 "</block>
   <block id="d4ac786771333e144acef4c7fbf68def" category="cell">* 验证用户是否有权在设备上运行以下命令： &gt; ISI 版本 osrelease &gt; ISI 状态 -q &gt; ISI 状态 -n &gt; ISI 设备 -d %s &gt; ISI 许可证 * 验证向导中使用的凭据是否与设备凭据匹配</block>
@@ -6907,27 +6885,18 @@
   <block id="8daceea511f33b777d9a93fa2ed3337d" category="list-text">如果 Top correlated 部分不包含要在性能图表中显示以进行比较的资产，则可以使用 Additional Resources 部分中的 Search assets 框来查找其他资产。</block>
   <block id="f2a6c498fb90ee345d997f888fce3b18" category="inline-image-macro">删除</block>
   <block id="031a4379c04797ecf2f8c28fd126a288" category="paragraph">选择资产后，它将显示在 Additional Resources 部分中。如果不再需要查看有关资产的信息，请单击 <block ref="6c871b5a10ada49bb491a0be99b8dd23" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="a2a3d850cdd9a1fbca4b3e235cfdf1c8" category="summary">配置 HPE Nimble 数据收集器。</block>
-  <block id="8c318db4a61565bdfa12e795f8e064ee" category="doc">HPE Nimble 数据收集器</block>
-  <block id="a1ca46524e75f5c1925244ecc90df829" category="paragraph">HPE Nimble 数据收集器支持 HPE Nimble 存储阵列的清单和性能数据。</block>
-  <block id="7d0a352701d551358c27e0a7eec84963" category="paragraph">Cloud Insights 从 HPE Nimble 数据收集器获取以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="4bd7c2ff07dcc66801a9368957d4bff8" category="cell">启动程序</block>
   <block id="32e426d618899eef15acf48d3a99ef1f" category="cell">存储主机别名</block>
   <block id="909165c952bcbf242daa00c04210d5b6" category="cell">光纤通道接口</block>
-  <block id="37ee8185fffd4a6c2e438fbe3948a875" category="paragraph">要从 Nimble 存储阵列收集清单和配置数据，您必须满足以下条件：</block>
   <block id="c746dcebe881f28f79fa97fbab5b2874" category="list-text">阵列必须已安装和配置，并且可通过其完全限定域名（ FQDN ）或阵列管理 IP 地址从客户端访问。</block>
   <block id="93adea92af62be90b76f6244ec1eb034" category="list-text">该阵列必须运行 NimbleOS 2.3.x 或更高版本。</block>
   <block id="d413dafacfda237a60f0f0f672e86883" category="list-text">您必须为至少具有 " 操作员 " 级别角色的阵列提供有效的用户名和密码。" 来宾 " 角色没有足够的访问权限来了解启动程序配置。</block>
   <block id="49a6f4ae5c4852a4e6f39508a61e4d71" category="list-text">阵列上的端口 5392 必须处于打开状态。</block>
-  <block id="4fccd0e92cf453154dadcce7b0aaa4c9" category="paragraph">要从 Nimble 存储阵列收集性能数据，您必须满足以下条件：</block>
   <block id="091b4b2a460426bd7b808204a807ce99" category="list-text">阵列必须运行 NimblesOS 4.0.0 或更高版本</block>
   <block id="7db048f8d70c130a207c65626a3aeba5" category="list-text">阵列必须已配置卷。NimblesOS 唯一的性能 API 适用于卷，任何统计信息 Cloud Insights 报告都是从卷上的统计信息派生的</block>
   <block id="b7af713c90cafa3f5c91a26661d4097f" category="cell">阵列管理 IP 地址</block>
   <block id="42c694e28108785f69ed8a28ee3bbe5e" category="cell">完全限定域名（ FQDN ）或阵列管理 IP 地址。</block>
-  <block id="e75d5763baa451090fd0f39411a297f9" category="cell">Nimble 阵列的用户名</block>
-  <block id="47f35a3903fc398c5f8e7a6493d18e8c" category="cell">Nimble 阵列的密码</block>
   <block id="504153dba55dae032aeb4a2bc21e177f" category="cell">Nimble REST API 使用的端口。默认值为 5392. 。</block>
-  <block id="167f1c81881d9e3d3fe3e3defab73e75" category="paragraph">注意：默认性能轮询间隔为 300 秒，无法更改。这是 Nimble 唯一支持的间隔。</block>
   <block id="d1f2d0eb68a6b45c8dc6a6dba792539e" category="summary">Dcos 配置</block>
   <block id="072a17ceb11d2f7027c8a1539261d0b0" category="doc">数据中心 / 操作系统数据收集器</block>
   <block id="54005140701b4d1ac4638683a951ef68" category="paragraph">Cloud Insights 使用此数据收集器从数据中心 / 操作系统收集指标。</block>
@@ -8267,4 +8236,33 @@
   <block id="40cbcf33504e4618736618d0178350da" category="inline-image-macro">日志条目详细信息窗格</block>
   <block id="ec3637bd1bccc80828f9c014bf3b44f7" category="paragraph"><block ref="ec3637bd1bccc80828f9c014bf3b44f7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9493694f9074632615f75f136ee1eb6f" category="sidebar">查询日志（预览）</block>
+  <block id="e29d4b0022b53ae021c4d0c28ff1c272" category="summary">配置 HP Enterprise Allettra 6000 （以前称为 Nimble ）数据收集器。</block>
+  <block id="1673741a6893cf106b8b69b143097e4c" category="doc">HPE Alletra 6000 数据收集器</block>
+  <block id="bb341a6d938cae0b0a085b354294a7cd" category="paragraph">HP Enterprise Alletra 6000 （以前称为 Nimble ）数据收集器支持 Alletra 6000 存储阵列的清单和性能数据。</block>
+  <block id="414b37b9b0ad7cf6e349073eb1fc66a5" category="paragraph">Cloud Insights 从此收集器获取以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="964f25ca661a0282d426f38ba58c222c" category="paragraph">要从存储阵列收集清单和配置数据，您必须满足以下条件：</block>
+  <block id="13c8d02c6b3a793575981b6c6e9648af" category="paragraph">要从存储阵列收集性能数据，您必须满足以下条件：</block>
+  <block id="8d182415fcd2184a37911a36a5031a24" category="cell">阵列的用户名</block>
+  <block id="0aa574554c08c96c168c1e97ad174912" category="cell">阵列的密码</block>
+  <block id="b658088fb929fb96d594ab2f4ffdab24" category="paragraph">注意：默认性能轮询间隔为 300 秒，无法更改。这是 HPE Alletra 6000 支持的唯一间隔。</block>
+  <block id="940c7504c600c1a52faad7bd127ac49d" category="inline-link-macro">Dell EMC PowerScale （以前称为 Isilon ）</block>
+  <block id="f5e6914e29cffad03c2f603e72e6798b" category="cell"><block ref="f5e6914e29cffad03c2f603e72e6798b" category="inline-link-macro-rx"></block></block>
+  <block id="e75bbaec94b86c9f0bc4b97ca12ceb7d" category="inline-link-macro">HP Enterprise Alletra 6000 （以前称为 Nimble ）存储</block>
+  <block id="c0a1acfd543930b0c5d639c75e1a8e55" category="cell"><block ref="c0a1acfd543930b0c5d639c75e1a8e55" category="inline-link-macro-rx"></block></block>
+  <block id="305f37822555837c4ad9388f47870429" category="inline-link-macro">HP Enterprise Alletra 9000/Primera （以前称为 3PAR ）存储</block>
+  <block id="66ec28b29cce4f599db363824c8d44f9" category="cell"><block ref="66ec28b29cce4f599db363824c8d44f9" category="inline-link-macro-rx"></block></block>
+  <block id="984a0087618fae424d5f2c343636bca5" category="summary">配置 Dell EMC PowerScale （以前称为 Isilon ）数据收集器。</block>
+  <block id="ef8f025044d226b1e7ee553afc614f77" category="doc">Dell EMC PowerScale 数据收集器</block>
+  <block id="c78df3b228fa83624f78682effc809b9" category="paragraph">Cloud Insights 使用 Dell EMC PowerScale （以前称为 Isilon ） SSH 数据收集器从 PowerScale 横向扩展 NAS 存储获取清单和性能数据。</block>
+  <block id="1e01e22573dadc6c7e0745de29fe077f" category="list-text">对 PowerScale 存储的管理员权限</block>
+  <block id="64dbe4df719cfc86076a490d573a93e6" category="list-text">PowerScale 集群的 IP 地址</block>
+  <block id="baf98f27e397ddadd83bcb2134b52b0b" category="cell">PowerScale 集群的 IP 地址或完全限定域名</block>
+  <block id="27882756a5af7d972da76c5d39259550" category="cell">PowerScale 集群的用户名</block>
+  <block id="086277cff14c76660393830e836d297a" category="cell">PowerScale 集群使用的密码</block>
+  <block id="ee2a93e19df5ad763517220a4fecc6e8" category="summary">配置 HP Enterprise Alletra 9000/Primera （以前称为 3PAR ）数据收集器。</block>
+  <block id="0ad305f14374986b7d4c3eb802c0a307" category="doc">HP Enterprise Alletra 9000/Primera 存储数据收集器</block>
+  <block id="e8d428fdd8f92c72e345b165722699b3" category="paragraph">Cloud Insights 使用 HP Enterprise Alletra 9000/HP Enterprise Primera （以前称为 3PAR ）数据收集器来发现清单和性能。</block>
+  <block id="57d18434b15614385369eac3754dcd68" category="list-text">端口要求： 22 （清单收集）， 5988 或 5989 （性能收集）【注： StoreServ OS 3.x+ 支持性能】</block>
+  <block id="a7030740f4f337d27513789f491a8c43" category="list-text">对于性能收集，请通过 SSH 登录到阵列以确认 SMI-S 已启用。</block>
+  <block id="f05fd5e030381d352de901ca5feef02c" category="cell">从命令行运行 "showsys" 和 "showversion -a" ，并检查阵列是否支持此版本。</block>
 </blocks>

@@ -65,7 +65,7 @@ Cloud Insights 支持的数据收集器的按字母顺序列表：
 | link:task_dc_emc_ecs.html["Dell EMC ECS"] | 基础架构 
 
 
-| link:task_dc_emc_isilon.html["Dell EMC Isilon"] | 基础架构 
+| link:task_dc_emc_isilon.html["Dell EMC PowerScale （以前称为 Isilon ）"] | 基础架构 
 
 
 | link:task_dc_emc_powerstore.html["Dell EMC PowerStore"] | 基础架构 
@@ -134,10 +134,10 @@ Cloud Insights 支持的数据收集器的按字母顺序列表：
 | link:task_dc_hds_ops_center.html["Hitachi 运营中心"] | 基础架构 
 
 
-| link:task_dc_hpe_nimble.html["HPE Nimble 存储"] | 基础架构 
+| link:task_dc_hpe_nimble.html["HP Enterprise Alletra 6000 （以前称为 Nimble ）存储"] | 基础架构 
 
 
-| link:task_dc_hp_3par.html["HP Enterprise 3PAR StoreServ 存储"] | 基础架构 
+| link:task_dc_hp_3par.html["HP Enterprise Alletra 9000/Primera （以前称为 3PAR ）存储"] | 基础架构 
 
 
 | link:task_dc_hpe_commandview.html["HP Enterprise Command View"] | 基础架构 

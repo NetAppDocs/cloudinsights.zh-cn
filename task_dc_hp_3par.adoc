@@ -1,20 +1,20 @@
 ---
 sidebar: sidebar 
 permalink: task_dc_hp_3par.html 
-keywords: data collector, 3PAR, HP, HP 3PAR 
-summary: 正在配置 task _dc_fitsu_ 数据收集器。 
+keywords: data collector, 3PAR, HP, HP 3PAR, HPE, 
+summary: 配置 HP Enterprise Alletra 9000/Primera （以前称为 3PAR ）数据收集器。 
 ---
-= 3PAR StoreServ 存储数据收集器
+= HP Enterprise Alletra 9000/Primera 存储数据收集器
 
 
 [role="lead"]
-Cloud Insights 使用 3PAR StoreServ 数据收集器来发现 HP 3PAR StoreServ 存储阵列的清单和性能。
+Cloud Insights 使用 HP Enterprise Alletra 9000/HP Enterprise Primera （以前称为 3PAR ）数据收集器来发现清单和性能。
 
 
 
 == 术语
 
-Cloud Insights 从 3PAR StoreServ 数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+Cloud Insights 从此数据收集器获取以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
 
 [cols="2*"]
 |===
@@ -46,8 +46,8 @@ Cloud Insights 从 3PAR StoreServ 数据收集器采集以下清单信息。对�
 * InServ 集群的 IP 地址或 FQDN
 * 对于清单， StoreServ 服务器的只读用户名和密码
 * 为提高性能，请将用户名和密码读写到 StoreServ Server
-* 端口要求： 22 （清单收集）， 5988 或 5989 （性能收集） [ 注意： StoreServ OS 3.x+ 支持 3PAR 性能 ]
-* 对于性能收集，请通过 SSH 登录到 3PAR 阵列来确认 SMI-S 已启用。
+* 端口要求： 22 （清单收集）， 5988 或 5989 （性能收集）【注： StoreServ OS 3.x+ 支持性能】
+* 对于性能收集，请通过 SSH 登录到阵列以确认 SMI-S 已启用。
 
 
 
@@ -108,7 +108,7 @@ Cloud Insights 从 3PAR StoreServ 数据收集器采集以下清单信息。对�
 | 问题： | 请尝试以下操作： 
 
 
-| "showsys" 命令不返回任何结果。 | 从命令行运行 "showsys" 和 "showversion -a" ，并检查 3PAR 是否支持此版本。 
+| "showsys" 命令不返回任何结果。 | 从命令行运行 "showsys" 和 "showversion -a" ，并检查阵列是否支持此版本。 
 |===
 
 
