@@ -9,7 +9,6 @@
   <block id="e4f3a6f7a1f50be5b653bf57b0b61372" category="list-text">注册 <block ref="82b0fa617f1dfb2e34805f2626cf97a5" category="inline-link-macro-rx"></block> Cloud Insights 中提供的功能，以了解可用的功能。</block>
   <block id="2ef085adce795622c057ad2ea6c13059" category="inline-link-macro">NetApp 销售人员</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link-macro">AWS Marketplace</block>
-  <block id="1fe88286a15e005f0b0bdb5a24ff5a79" category="list-text">* 订阅 * Cloud Insights ，以便通过持续，无中断地访问您的数据 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直接或 <block ref="71bf9afbc646fc95bce99ca169e1cd95" category="inline-link-macro-rx"></block>。</block>
   <block id="7bc1d8b07dfc0e98950abc0c7f3979a5" category="inline-link-macro">信息和区域</block>
   <block id="b1753b5e08c7b339c92f3054363e10bb" category="paragraph">在注册过程中，您可以选择用于托管 Cloud Insights 环境的全局区域。有关详细信息，请阅读有关 Cloud Insights 的信息 <block ref="286a302a1ee50fd59eb368d3d9779037" category="inline-link-macro-rx"></block>。</block>
   <block id="40a5834e83975621427553254177c0ab" category="section-title">版本</block>
@@ -8265,4 +8264,5 @@
   <block id="f2c32ff362c075e1c65013393f95b23e" category="sidebar">PowerScale</block>
   <block id="dc20128ad51d4736f32ce4774255be05" category="sidebar">HP Alletra 9000 和 Primera</block>
   <block id="2e8fa3456cfe892de65ae2fa6f7e0d87" category="sidebar">HPE Alletra 6000</block>
+  <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">* 订阅 * Cloud Insights ，以便通过持续，无中断地访问您的数据 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直销或 AWS Marketplace （<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> 或 <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
 </blocks>
