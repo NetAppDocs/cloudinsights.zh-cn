@@ -3988,33 +3988,6 @@
   <block id="b87490ec259e802346f5e7df5b91062a" category="paragraph"><block ref="73132d77bb27426db0a42572dd9db4fb" category="inline-link-macro-rx"></block> PDF 格式。单击链接以打开，或者右键单击并选择 _Save as..._ 进行下载。</block>
   <block id="4d96a583eb48d3637742ec104f386477" category="inline-link-macro">* 架构图 *</block>
   <block id="4d54eb69a3854b602bfb9614a2088d55" category="paragraph"><block ref="4d54eb69a3854b602bfb9614a2088d55" category="inline-link-macro-rx"></block></block>
-  <block id="f1fa14b2225af7d51a95bab178b84400" category="doc">有关 Cloud Insights 的常见问题解答</block>
-  <block id="dc9719bd19a2537f6ccb17047af7f5df" category="paragraph">本常见问题解答解答解答了有关 Cloud Insights 的常见问题。</block>
-  <block id="6984c07927018d79e440d8c4b6346671" category="section-title">Cloud Insights 是何时推出的？</block>
-  <block id="53348e5d4955f73da672448e24901b06" category="paragraph">Cloud Insights 基于当今业内最成熟的基础架构监控产品，目前已有十年的积极开发。SANscreen 名称以前称为 Onaro 或 SANscreen ，加入 OnCommand 产品组合套件时发生了更改，现在称为 Cloud Insights ，更常见的是 Insight 或 Cloud Insights 。</block>
-  <block id="ab95febe9722882807006fc7dadc2608" category="section-title">在我的环境中部署 Cloud Insights 需要多长时间？</block>
-  <block id="06e87a3eb9a15a1c1a8b27c1acadb9e8" category="paragraph">Cloud Insights 只是一个软件下载。软件安装在两个专用虚拟或物理服务器上。典型安装只需 2 小时即可完成，并且几乎会立即开始提供清单，容量和性能数据。任何其他性能和最佳实践策略，用户标注和成本感知设置都需要进行额外的规划讨论。</block>
-  <block id="09207a3d3178fd271dd05d2363d8a826" category="section-title">Cloud Insights 是否需要代理，收集器或探针？</block>
-  <block id="b41f3814082a7bf654fab24a3c70c5eb" category="paragraph">Cloud Insights 100% 无代理，不需要使用代理，分路器或探针。所有设备发现均为只读，带外和通过 IP 执行。</block>
-  <block id="573c69a33325a43b1885cce27d099d02" category="section-title">Cloud Insights 如何发现和连接到设备？</block>
-  <block id="9ad903989c814402b6cc49bc71387d67" category="paragraph">Cloud Insights 设置可利用数据中心环境中通常已存在的原生 API 和协议，而无需代理或探针。SSH ， HTTP ， SMIS 和 CLI 只是其中的几个示例。如果已存在设备元素管理器（例如 Dell EMC 的 Unisphere ），则 Cloud Insights 会与 Element 管理器通信以捕获现有环境数据。大多数设备发现只需要 IP 地址以及只读用户名和密码。这些设备发现可以是 " 一对多 " 的，例如 Cloud Insights 的 VMware 数据收集器。通过发现 VMware vCenter ， Cloud Insights 进而可以使用一个 IP 地址和凭据发现其所有 ESXi 主机及其关联虚拟机。</block>
-  <block id="08a6326f609a5cd21283279804b6cd17" category="section-title">Cloud Insights 是否需要专业服务？这些功能是否可用？它们提供哪些功能？</block>
-  <block id="e00cb4d893fe4879f4e387639df750e7" category="paragraph">对于规模适中的环境，我们建议使用 * 专业服务 * 进行部署，配置和集成，并提供各种自定义报告和数据验证功能。与 Cloud Insights 团队和客户接洽经理进行简短讨论有助于确定哪些服务最能让您受益。</block>
-  <block id="cf88423d1c12531bc8148711f9f2de79" category="section-title">Cloud Insights 版本更新新功能和改进功能的频率如何？</block>
-  <block id="ed232494ee3448c8faa509486ee6c129" category="paragraph">多个版本的 Cloud Insights 均提供产品更新和服务包。主要或次要版本通常每隔几个月提供一次，服务包包括新设备支持和固件发布频率更高。这两种方法均可从 support.netapp.com 下载站点获得。某些更新会自动推送到 Cloud Insights 软件中，例如制造商经常推出的新磁盘型号。此外，在修复或更新开发之后，可以立即在站点上修补 Cloud Insights 数据收集器设备收集。</block>
-  <block id="fb3efaea23010d7563c6a2df3813c2a5" category="section-title">Cloud Insights 管理团队如何确定新数据收集器请求的优先级？</block>
-  <block id="c181d8b51e8d7c152873059abcc648b8" category="paragraph">Cloud Insights 的产品管理团队会主动跟踪所有客户增强功能和互操作性功能请求（ IFR ）。每个请求都经过详细评估，可行性评估，并根据客户需求和整体战略业务影响确定优先级。一旦被接受，请求将根据工作级别进行规模估算，并计划在将来进行开发。Cloud Insightss 开发流程的灵活性可以使新的数据收集器在定期计划的发布周期之外正常运行。NetApp 客户代表可以协助您处理客户咨询和代表您提交新请求。可以在站点上修补数据收集器，而无需升级 Cloud Insights 。</block>
-  <block id="8b326b4fdb6cccea9142a0228023738a" category="section-title">我的公司完全在 Linux 上运行。Cloud Insights 是否可以在 Linux 上运行？</block>
-  <block id="42cb506177e27657de31a2d00e89f025" category="paragraph">可以。 Cloud Insights 支持 Red Hat Enterprise Linux 7 和 CentOS 7 ，以及采用最新 Service Pack 平台的 64 位 Windows Server 2008 R2 ， 2012 或 2012 R2 。</block>
-  <block id="99236a3f9efcfb3654815437f144c5be" category="section-title">Cloud Insights 是否适用于不能访问 Internet 的安全环境？</block>
-  <block id="cb1db34c6797f8f30f44577aad2c32dc" category="paragraph">是的，目前全球排名前 10 位的财富 500 强企业以及领先的银行，医疗保健，研究和政府机构都在使用 Cloud Insights 。Cloud Insights 支持美国军用通用访问卡（ CAC ），并为地理位置分散或防火墙严重的环境提供解决方案。</block>
-  <block id="fe56efac8f02e28b454054073addd6a3" category="section-title">我一直听说 OnCommand 统一管理器（ OCUM ）是 cDOT 的管理解决方案。您能否帮助我了解为什么我还会使用 Cloud Insights ？</block>
-  <block id="6bf71e8a730d5a4ae60bb0d713f4ed6d" category="paragraph">OnCommand Unified Manager 在存储阵列的 " 设备管理 " 层运行，可对集群模式 Data ONTAP （ cDOT ）阵列及其集群互连进行深入的意外事件和基于事件的分析。Cloud Insights 提供了由 7- 模式，集群模式 Data ONTAP 和其他第三方阵列组成的内部环境和全球分布环境的整体视图。从 VM 到磁盘轴，其端到端可见性支持对容量，性能和成本建模进行历史趋势分析和预测，从而为数据中心管理提供主动式服务质量方法。</block>
-  <block id="82e42bada4db8332b3839d567fde6824" category="section-title">自动化店面中提到的 Cloud Insights 二级 ETL 是什么？</block>
-  <block id="fbbbfac1367c4aaf76c9c623f43f921c" category="paragraph">某些 Cloud Insights 自动化 StoreFront 报告下载中提及的 " 二级 ETL" 要求是指为填充到 Cloud Insights 数据仓库中的人员开发的专业服务实施，用于调用所捕获数据的额外提取，转换和加载（ ETL ）。</block>
-  <block id="b53285194b50bada9843000857addf73" category="paragraph">二级 ETL 流程的主要目的是预取 " 批量 " 数据，以便更快地生成更复杂的报告，或者按计划每天运行报告。</block>
-  <block id="9e13f5bf7aa27b5af4344034b1abafc7" category="paragraph">此二级 ETL 是对 Cloud Insights 数据仓库管理指南中详细介绍的建议的 " 每天一次 "ETL 的补充。</block>
-  <block id="11648dad3c582d867e2807e45edc6d79" category="paragraph">NetApp 专业服务有资格配置二级 ETL 脚本，以避免影响现有 Cloud Insights 报告计划，自动备份，可扩展性或其他系统性能活动。有关追加信息在 ETL 脚本编写或数据验证方面的需求，请联系您的 NetApp 销售代表，并讨论 NetApp 的专业服务如何为您提供帮助。</block>
   <block id="170ac79db4abf3af53c36b5ba23d297a" category="summary">CouchDB 数据收集器配置</block>
   <block id="1aa7fb61fdaf60c81a318c790c7e545e" category="doc">CouchDB Data Collector</block>
   <block id="2aa655c0610f5e45884f5257e54d539e" category="paragraph">Cloud Insights 使用此数据收集器从 CouchDB 收集指标。</block>
@@ -6547,7 +6520,6 @@
   <block id="da65b8cea76748b286bd905feef4a5fa" category="cell">可用磁盘空间</block>
   <block id="eec89088ee408b80387155272b113256" category="cell">网络</block>
   <block id="a4c9f60f11d808285b05aa24c83f213b" category="cell">100 Mbps 到 1 Gbps 以太网连接，静态 IP 地址，与所有设备的 IP 连接以及与 Cloud Secure 实例的所需端口（ 80 或 443 ）。</block>
-  <block id="a6bf350fd489cc256fc955fcaf117bbd" category="paragraph">请注意： Cloud Insights 代理和 Cloud Secure 代理可以安装在同一台计算机上。但是，最好将其安装在不同的计算机上。如果两个代理安装在同一台计算机上，请按如下所示分配磁盘空间：</block>
   <block id="7049e466c3c4a154b7cc62cffe2ca36b" category="section-title">其他建议</block>
   <block id="d35391dc3c80304f928b511837b6f6a5" category="list-text">强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 来同步 ONTAP 系统和代理计算机上的时间。</block>
   <block id="2209fa650bb8459f4028b704176e2a4b" category="section-title">云网络访问规则</block>
@@ -8265,4 +8237,5 @@
   <block id="dc20128ad51d4736f32ce4774255be05" category="sidebar">HP Alletra 9000 和 Primera</block>
   <block id="2e8fa3456cfe892de65ae2fa6f7e0d87" category="sidebar">HPE Alletra 6000</block>
   <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">* 订阅 * Cloud Insights ，以便通过持续，无中断地访问您的数据 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直销或 AWS Marketplace （<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> 或 <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
+  <block id="9b90ea901c2599518f8cdf3fc6d14a42" category="paragraph">请注意： Cloud Secure 代理可以与 Cloud Insights 采集单元和 / 或代理安装在同一台计算机上。但是，最佳做法是在不同的计算机上安装这些软件。如果这些磁盘安装在同一台计算机上，请按如下所示分配磁盘空间：</block>
 </blocks>
