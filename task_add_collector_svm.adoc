@@ -21,7 +21,7 @@ Cloud Secure 使用数据收集器从设备收集文件和用户访问数据。
 ** NFS 协议 4.0 及更早版本
 
 
-* 仅支持数据类型 SVM 。不支持具有无限卷 / 灵活组卷的 SVM
+* 仅支持数据类型 SVM 。不支持具有无限卷的 SVM 。
 * SVM 有多个子类型。其中，仅支持 _default_and _sync_source_。
 * 代理 link:task_cs_add_agent.html["必须进行配置"] 然后才能配置数据收集器。
 * 请确保已正确配置 User Directory Connector ，否则事件将在 " 活动取证 " 页面中显示编码的用户名，而不是实际用户名（存储在 Active Directory 中）。

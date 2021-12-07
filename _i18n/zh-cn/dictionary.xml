@@ -4629,7 +4629,6 @@
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">此数据收集器支持以下功能：</block>
   <block id="e0f5635cfc022e85fc412c023e2e7759" category="list-text">SMB 协议 3.1 及更早版本</block>
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS 协议 4.0 及更早版本</block>
-  <block id="588ac47b76f53afe6880e6f9275995c3" category="list-text">仅支持数据类型 SVM 。不支持具有无限卷 / 灵活组卷的 SVM</block>
   <block id="2c9e0cc2b7277b5bc05ddf23a6ef1d1c" category="list-text">SVM 有多个子类型。其中，仅支持 _default_and _sync_source_。</block>
   <block id="3f1a7a2048c619e7b3997ddc8b02ae5e" category="inline-link-macro">必须进行配置</block>
   <block id="6c1006735c24c4966ad5668af1361000" category="list-text">代理 <block ref="a64dfb2e19772579ec5e757e77e2d502" category="inline-link-macro-rx"></block> 然后才能配置数据收集器。</block>
@@ -8238,4 +8237,5 @@
   <block id="2e8fa3456cfe892de65ae2fa6f7e0d87" category="sidebar">HPE Alletra 6000</block>
   <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">* 订阅 * Cloud Insights ，以便通过持续，无中断地访问您的数据 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直销或 AWS Marketplace （<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> 或 <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
   <block id="9b90ea901c2599518f8cdf3fc6d14a42" category="paragraph">请注意： Cloud Secure 代理可以与 Cloud Insights 采集单元和 / 或代理安装在同一台计算机上。但是，最佳做法是在不同的计算机上安装这些软件。如果这些磁盘安装在同一台计算机上，请按如下所示分配磁盘空间：</block>
+  <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">仅支持数据类型 SVM 。不支持具有无限卷的 SVM 。</block>
 </blocks>
