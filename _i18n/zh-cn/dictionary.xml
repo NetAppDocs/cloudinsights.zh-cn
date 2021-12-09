@@ -8106,7 +8106,6 @@
   <block id="b035f264e2d66667aac580634dbe607d" category="list-text">将权限设置为读 / 写。</block>
   <block id="8cf4a3bec43eb5523f7aebc751974a95" category="list-text">设置所需要的到期日期。</block>
   <block id="180ebf1ad2f81cbd9a8112c041856a19" category="list-text">单击 " 保存 " ，然后 * 复制密钥并将其保存 * 到安全位置。您稍后将无法访问完整密钥。</block>
-  <block id="7415c956bfe8a68bf044e258a167601a" category="paragraph">您可以使用 _Sync_ 或 _Async_ &lt;TBD 更多信息 &gt; 使用此类按键</block>
   <block id="3d62db14635eb8da302c8e072258a87b" category="section-title">直接查询表</block>
   <block id="461dd189a57c1dc872768b7c8d5359aa" category="paragraph">使用 API 密钥后，可以直接查询报告数据库。为了便于显示，长 URL 可以简化为 \https://.../odata/ ，而不是完整的 \https://&lt;Cloud Insights URL&gt;/rest/v1/dwh-management/OData/</block>
   <block id="a2a3fc9e51cdd71061084aa6403ef9df" category="paragraph">请尝试类似的简单查询</block>
@@ -8238,4 +8237,7 @@
   <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">* 订阅 * Cloud Insights ，以便通过持续，无中断地访问您的数据 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直销或 AWS Marketplace （<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> 或 <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
   <block id="9b90ea901c2599518f8cdf3fc6d14a42" category="paragraph">请注意： Cloud Secure 代理可以与 Cloud Insights 采集单元和 / 或代理安装在同一台计算机上。但是，最佳做法是在不同的计算机上安装这些软件。如果这些磁盘安装在同一台计算机上，请按如下所示分配磁盘空间：</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">仅支持数据类型 SVM 。不支持具有无限卷的 SVM 。</block>
+  <block id="578ac85a2fa04a9c847d579bf30ac050" category="paragraph">从 2021 年 10 月开始， Cloud Insights 将包括许多系统定义的指标和日志监控器。监控器界面将进行多项更改，以适应这些系统监控器。本节将介绍这些内容。</block>
+  <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">为 ONTAP 启用高级计数器和 EMS 日志收集</block>
+  <block id="5c8c2ca1685c9247d4c87edc2fa024f4" category="admonition">默认情况下，系统监控器处于 _Paused_state 。在恢复监控之前，您必须确保已在数据收集器中启用 _Advanced 计数器数据收集 _ 和 _Enable ONTAP EMS log collection_ 。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

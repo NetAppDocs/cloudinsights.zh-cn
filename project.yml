@@ -128,6 +128,8 @@ sidebar:
       url: "/task_view_and_manage_alerts.html"
     - title: 配置通知收件人
       url: "/concept_notifications_email.html"
+    - title: 系统定义的监控器
+      url: "/task_system_monitors.html"
   - title: 使用 API
     url: "/API_Overview.html"
   - title: 网络挂机通知
