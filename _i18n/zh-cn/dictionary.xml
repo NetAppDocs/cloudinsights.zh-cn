@@ -4215,7 +4215,6 @@
   <block id="3e95d5bf4d584000651a5f687ba0310a" category="paragraph">下面介绍了一些可以从筛选器中获得最大收益的操作。</block>
   <block id="0ecade71587c79081676c62ef53f935f" category="section-title">精确匹配筛选</block>
   <block id="a19631908d10e6f4ee6597e0c5e8756a" category="paragraph">您可以使用完全匹配筛选器来查找特定资源，例如主机名。如果您只想查找主机名 "arking" ，而不想查找 "arking01" ， "arking-boston" 等内容，只需用双引号将名称 "marketing" 括起来即可。</block>
-  <block id="53fe9d76b1ba589991576c0208798009" category="section-title">高级筛选</block>
   <block id="17c3275b3d2f98d4dfc9281d6efa644b" category="paragraph">以下内容可用于进一步细化筛选器。</block>
   <block id="9a67f09be58d0044199c666795b424b7" category="list-text">星号可用于搜索所有内容。例如：</block>
   <block id="b1a24bdfc0663ae6b0664767e2bfe2e5" category="paragraph">显示以 "vol" 开头，以 "rhel" 结尾的所有资源。</block>
@@ -8242,4 +8241,13 @@
   <block id="5c8c2ca1685c9247d4c87edc2fa024f4" category="admonition">默认情况下，系统监控器处于 _Paused_state 。在恢复监控之前，您必须确保已在数据收集器中启用 _Advanced 计数器数据收集 _ 和 _Enable ONTAP EMS log collection_ 。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">在 Kubernetes 上，我的 Telegraf Pod 报告以下错误： " 处理 mountstats 信息时出错：无法打开 mountstats 文件： /hostfs/proc/1/mountstats ，错误： open /hostfs/proc/1/mountstats ：权限被拒绝 "</block>
   <block id="111b2478c731e7f769050b7a9f8506c6" category="cell">如果启用并强制实施 SELinux ，则可能会阻止 Telegraf Pod 访问 Kubernetes 节点上的 /proc/1/mountstats 文件。要放宽此限制，请执行以下操作之一： •在运行 Telegraf 的每个 Kubernetes 节点上，运行 `chcon -Rt container_runtime_t /proc/1/mountstats` •在运行 Telegraf 的每个 Kubernetes 节点上，将 SELinux 安全策略从 " 强制实施 " 更改为 " 宽松 " •编辑 Telegraf Demonf 并将 spec.containers.securityContext.privileged 设置为 "true"</block>
+  <block id="552ea4b269315a61fd8df84d4c5f4bc4" category="section-title">具有预键入建议的高级文本筛选</block>
+  <block id="d7246d99ca35ad0c30da801caacfa83a" category="paragraph">为某个字段选择一个或多个值时，该查询的其他筛选器将显示与该筛选器相关的值。例如，在为特定对象 _Name_ 设置筛选器时，用于筛选 _Model_ 的字段将仅显示与该对象名称相关的值。</block>
+  <block id="3390387c68439da10e36e8f518ecdc02" category="paragraph">请注意，只有文本筛选器才会显示上下文预键入建议。日期，枚举（列表）等不会显示预键入建议。也就是说，您可以对枚举（即列表）字段设置筛选器，并在上下文中筛选其他文本字段。例如，如果在数据中心等 Enum 字段中选择一个值，则其他筛选器将仅显示该数据中心中的型号 / 名称，而不会显示相反。</block>
+  <block id="b334116b5a6a9ee3f65d46240e877891" category="paragraph">选定时间范围还将为筛选器中显示的数据提供上下文。</block>
+  <block id="87559df59f765da7386b723eed69c3fd" category="section-title">选择筛选单元</block>
+  <block id="464858407d850fd3c9de4f6588a1ee15" category="paragraph">在筛选字段中键入值时，您可以选择要在图表上显示值的单位。例如，您可以按原始容量进行筛选并选择以 deafResult GiB 显示，或者选择其他格式，例如 TiB 。如果您的信息板上有许多图表以 TiB 显示值，并且您希望所有图表显示一致的值，则此功能非常有用。</block>
+  <block id="010696312885774629a0ee644a640ae3" category="inline-image-macro">选择筛选器中的单位</block>
+  <block id="c503bd54dc264736afdfab01b073b12e" category="paragraph"><block ref="c503bd54dc264736afdfab01b073b12e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6302cf6ae35e5844cf2d168fec04aaee" category="section-title">其他筛选改进</block>
 </blocks>
