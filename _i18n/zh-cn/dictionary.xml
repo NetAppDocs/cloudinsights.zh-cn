@@ -8297,4 +8297,6 @@
   <block id="a1a0b877038a8779cc93f4cbc4a6b3e3" category="paragraph">请参见下面的 <block ref="a0423879c34ca2a3017b3959874444e4" category="inline-link-macro-rx"></block> 文档。</block>
   <block id="20a28be528da8febfe3a95f2e81c374b" category="paragraph">从 2021 年 10 月开始， Cloud Insights 包括许多系统定义的指标和日志监控器。</block>
   <block id="dbd05015602851a439c2b0c12269644d" category="paragraph">了解更多信息 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>，包括 Cloud Insights 随附的监控器的说明。</block>
+  <block id="19792527671b24c9f2cb8807d21fea2a" category="inline-link-macro">受管单元（ MU ）</block>
+  <block id="60299c50762b8f548c3ba08173af15db" category="admonition">StorageGRID 按不同的原始 TB 到受管单元速率进行计量。每 40 TB 未格式化的 StorageGRID 容量计费为 1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
 </blocks>

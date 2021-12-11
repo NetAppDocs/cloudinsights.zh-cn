@@ -11,6 +11,9 @@ keywords: data collector, queries, create, storagegrid
 NetApp StorageGRID 数据收集器支持从 StorageGRID 配置收集清单和性能。
 
 
+NOTE: StorageGRID 按不同的原始 TB 到受管单元速率进行计量。每 40 TB 未格式化的 StorageGRID 容量计费为 1 link:concept_subscribing_to_cloud_insights.html#pricing["受管单元（ MU ）"]。
+
+
 
 == 要求
 
