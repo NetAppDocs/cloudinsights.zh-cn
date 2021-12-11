@@ -7690,10 +7690,6 @@
 <block ref="3f488cb6a8d73935352ae358a16b41fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89d2c05fd752bacd15546a3e7343e4ca" category="list-text">适用于 ONTAP 的 Amazon FSX 的新收集器</block>
   <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="inline-link-macro">系统定义的监控器</block>
-  <block id="571a4c7b2a21f7d5320e568101487965" category="paragraph">请参见下面的 <block ref="336c342709e4378716804c9ce097a6ae" category="inline-link-macro-rx"></block> 预览文档。</block>
-  <block id="78f5442b44403af2b19916532d824297" category="section-title">系统定义的监控器（预览）</block>
-  <block id="96243a9e9260d57336856a77aebc69e9" category="paragraph">从 2021 年 10 月开始， Cloud Insights 将预览许多系统定义的指标和日志监控器。监控器界面将进行多项更改，以适应这些系统监控器。本节将介绍这些内容。</block>
-  <block id="48eb2cd1e9b8d7db7bb79328591d4368" category="admonition">由于系统定义的监控器是一项预览功能，因此可能会发生更改。</block>
   <block id="18c9f77aeb499c7dba30bf110efc7428" category="list-text">要修改现有监控器，请单击列表中的监控器名称。</block>
   <block id="ab8f2caed7bd8dd082843b17dd59b109" category="list-text">要添加监控器，请单击 * + Monitor* 。</block>
   <block id="65117c1214622a1ce8c32b4de0f6dedc" category="inline-image-macro">选择系统或日志监控器</block>
@@ -7724,7 +7720,6 @@
   <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">* 基于日志条目解决 * ：在发生后续日志活动时解决警报。例如，当对象记录为 " 可用 " 时。</block>
   <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">警报解决</block>
   <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c1c354049f1e5c1a3ac483bf9b54d91c" category="admonition">webhooks 被视为预览功能，因此可能会发生更改。</block>
   <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">系统定义的监控器由预定义的指标和条件以及默认说明和更正操作组成，这些内容无法修改。您可以修改系统定义的监控器的通知收件人列表。要查看指标，条件，问题描述和更正操作，或者修改收件人列表，请打开系统定义的监控组，然后单击列表中的监控器名称。</block>
   <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">无法修改或删除系统定义的监控组。</block>
   <block id="cabbbf7fefe4319bf83cb8fc4f054cbb" category="paragraph">以下系统定义的监控器可在所记录的组中使用。</block>
@@ -7829,7 +7824,6 @@
   <block id="ad946bd62c8170d1ad5c5d5250abeb85" category="cell">如果您运行的是 Kube-state-metrics 版本 2.0.0 或更高版本以及 Kubernetes 版本 1.17 或更低版本，则可能会出现这些消息。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubectl get deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ '_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用以下租约： _mutatingwebconfigurations _webhook_ ，具体可以使用以下参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ， ingeses ，作业，限制范围，命名空间，网络策略，节点，复制卷，持久性卷， poddis中断 预算， Pod ，证书集，资源控制器，资源等，网络，存储器，卷，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器， 验证 webhookconfigurations ， volumeattachments</block>
   <block id="013aa4ffc40507022dd1b0b1a936ff20" category="paragraph">Kubernetes 筛选器为上下文筛选器，例如，如果您位于特定节点页面上，则 pod_name 筛选器仅会列出与该节点相关的 Pod 。此外，如果您对特定命名空间应用筛选器，则 pod_name 筛选器将仅列出该命名空间中节点 _and_ 上的 Pod 。</block>
   <block id="e2b330c7ae678ef7cd6514d5ae7e7e7c" category="list-text">当系统提示您配置通知时，选择通过电子邮件， Webhook 或这两者发出警报，然后选择要通知的警报类型（严重，警告，信息和 / 或已解决）。您可以选择通知到全局监控器收件人列表（在 * 管理 &gt; 通知 * 中配置），也可以指定其他收件人。准备好继续后，单击 * 完成设置 *</block>
-  <block id="923a4b017c0560e9f308c651b65fd92e" category="admonition">收集器级别通知是一种预览功能，因此可能会更改。</block>
   <block id="0292cc6d66cbe7b6a5ec202251834d24" category="inline-image-macro">收集器通知</block>
   <block id="6e4e94174c881dd343d58645dcd7fece" category="paragraph"><block ref="6e4e94174c881dd343d58645dcd7fece" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b41236db81804f1da11b4001c3d143f" category="paragraph">查看数据收集器登录页面时，您可以单击数据收集器摘要部分 " 通知 " 字段中的铅笔图标来修改通知。</block>
@@ -7856,7 +7850,6 @@
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">此数据收集器可创建云连接，以支持从 ONTAP 9.9+ CVO ， AFF 和 FAS 系统收集数据。</block>
   <block id="72c287aa31792e43cc71160178046540" category="paragraph">此数据收集器支持 ONTAP 9.9+ CVO ， AFF 和 FAS 系统。</block>
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">创建监控器，以便针对性能或清单阈值以及指标或日志条件发出警报。</block>
-  <block id="2af7f5c66d757eadc79ed9a550d63f6c" category="paragraph">了解更多信息 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block></block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">所有显示器 * 列出所有显示器。</block>
   <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* 自定义监控 * 仅列出用户创建的监控器。</block>
   <block id="7d5581330314d1ed3096701515939e9d" category="doc">系统监控器</block>
@@ -8168,7 +8161,6 @@
   <block id="c6baf991a66b3aacc47987de1641b11e" category="summary">日志资源管理器是一个功能强大的工具，可用于调查问题。</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">日志资源管理器</block>
   <block id="6f0a85aa190cf61bbcf2d473f4c6c50a" category="paragraph">Cloud Insights 日志资源管理器是一个功能强大的工具，可用于查询 EMS 和 Kubernetes 日志。除了有助于调查之外，您还可以将日志查询保存在监控器中，以便在日志触发器激活后提供警报。</block>
-  <block id="78f546f3522c36deb2df39facbe2cbf2" category="admonition">日志资源管理器是一项 _Preview_ 功能，因此可能会更改。</block>
   <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">要开始浏览日志，请单击 * 查询 &gt;+New Log Query* 。</block>
   <block id="c7175e137df374ab419bd8746e829439" category="inline-image-macro">日志查询菜单</block>
   <block id="2476c675ea0ab08eb68e77616d8026cf" category="paragraph"><block ref="2476c675ea0ab08eb68e77616d8026cf" category="inline-image-macro-rx" type="image"></block></block>
@@ -8302,4 +8294,7 @@
   <block id="751f6c789f3a22b17d94185a7d67ce2d" category="cell">警告 @ &lt; 15% 严重 @ &lt; 5%</block>
   <block id="89c5f776e16da33d8dd4d53d9de174fb" category="cell">卷的存储容量用于存储应用程序和客户数据。集群卷上存储的数据越多，未来数据的存储可用性就越低。…当卷中使用的数据存储容量达到总存储容量时， 由于缺少可用存储容量，卷将无法存储更多数据。…监控卷已用存储容量可确保数据服务的连续性。</block>
   <block id="7addf18b9a1f6d29c3f12d8e7d08f496" category="cell">如果违反严重阈值：…1 ，则需要立即采取措施以最大限度地减少服务中断。请考虑增加卷的空间，以适应增长…2 。考虑删除不再需要的数据以释放空间…如果违反警告阈值，计划立即采取以下操作：…1 。请考虑增加卷的空间以适应此增长。</block>
+  <block id="a1a0b877038a8779cc93f4cbc4a6b3e3" category="paragraph">请参见下面的 <block ref="a0423879c34ca2a3017b3959874444e4" category="inline-link-macro-rx"></block> 文档。</block>
+  <block id="20a28be528da8febfe3a95f2e81c374b" category="paragraph">从 2021 年 10 月开始， Cloud Insights 包括许多系统定义的指标和日志监控器。</block>
+  <block id="dbd05015602851a439c2b0c12269644d" category="paragraph">了解更多信息 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>，包括 Cloud Insights 随附的监控器的说明。</block>
 </blocks>

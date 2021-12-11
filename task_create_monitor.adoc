@@ -17,7 +17,7 @@ TIP: Cloud Insights 标准版及更高版本提供了监控和警报功能。
 
 您可以使用监控器为 " 基础架构 " 对象（例如存储， VM ， EC2 和端口）以及 " 集成 " 数据（例如为 Kubernetes ， ONTAP 高级指标和 Telegraf 插件收集的数据）设置阈值。监控超过阈值时向您发出的警报，您可以设置警告级别警报，严重级别警报或两者的阈值。
 
-请参见下面的 link:#system-defined-monitors-preview["系统定义的监控器"] 预览文档。
+请参见下面的 link:#system-defined-monitors["系统定义的监控器"] 文档。
 
 
 
@@ -189,20 +189,11 @@ image:Monitors_PauseGroup.png["暂停组"]
 
 
 
-== 系统定义的监控器（预览）
+== 系统定义的监控器
 
-从 2021 年 10 月开始， Cloud Insights 将预览许多系统定义的指标和日志监控器。监控器界面将进行多项更改，以适应这些系统监控器。本节将介绍这些内容。
+从 2021 年 10 月开始， Cloud Insights 包括许多系统定义的指标和日志监控器。
 
-
-NOTE: 由于系统定义的监控器是一项预览功能，因此可能会发生更改。
-
-了解更多信息 link:task_system_monitors.html["系统定义的监控器"]
-
-默认情况下会显示两个组：
-
-* 所有显示器 * 列出所有显示器。
-* * 自定义监控 * 仅列出用户创建的监控器。
-
+了解更多信息 link:task_system_monitors.html["系统定义的监控器"]，包括 Cloud Insights 随附的监控器的说明。
 
 
 
