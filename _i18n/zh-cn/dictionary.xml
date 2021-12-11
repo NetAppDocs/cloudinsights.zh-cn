@@ -8250,4 +8250,56 @@
   <block id="cb9887667fc38a045fa6b13ed03ab244" category="summary">报告架构图</block>
   <block id="6674395fa1826fa5008d38849347faea" category="doc">Cloud Insights 报告架构图</block>
   <block id="4cd8c7a0a81af63c6cf9cab90cbb2336" category="paragraph">本文档提供了报告数据库的架构图。您也可以下载包含的文件 <block ref="2332424ce6d0703b657b351f20f445fe" category="inline-link-macro-rx"></block>。</block>
+  <block id="007cc9547ae8884ad597cd92ba505422" category="cell">severity</block>
+  <block id="3d1affb26fae65c3500845f1205462c8" category="cell">节点高延迟</block>
+  <block id="16087e98c2a0dceb0a5d86db1783f817" category="cell">警告 / 严重</block>
+  <block id="0936dc5961f478a8e9deebd7949d6b66" category="cell">节点延迟已达到可能影响节点上应用程序性能的级别。较低的节点延迟可确保应用程序的性能稳定一致。根据介质类型，预期延迟为： SSD 最长 1-2 毫秒； SAS 最长 8-10 毫秒； SATA HDD 17 至 20 毫秒。</block>
+  <block id="0bf8bc8b0e29e878d584d6f77652398c" category="cell">如果违反严重阈值，则应立即采取措施以最大限度地减少服务中断： 1.暂停已计划的任务，快照或 SnapMirror 复制 2.通过 QoS 限制降低低优先级工作负载的需求 3.停用非基本工作负载考虑在违反警告阈值时立即采取措施： 1.将一个或多个工作负载移动到其他存储位置 2.通过 QoS 限制降低低优先级工作负载的需求 3.添加更多存储节点（ AFF ）或磁盘架（ FAS ）并重新分配工作负载 4.更改工作负载特征（块大小，应用程序缓存等）</block>
+  <block id="62ec8f018fb1fc9656ffdab107197105" category="cell">节点性能限制</block>
+  <block id="bd338ab6f1cef5b238ac1e60af984f7e" category="cell">节点性能利用率已达到可能影响此节点所支持的 IOS 和应用程序性能的水平。低节点性能利用率可确保应用程序的性能稳定一致。</block>
+  <block id="2d936742c3897d2b906b50a2e1888901" category="cell">如果违反严重阈值，应立即采取措施，最大限度地减少服务中断： 1.暂停已计划的任务，快照或 SnapMirror 复制 2.通过 QoS 限制降低低优先级工作负载的需求 3.如果违反警告阈值，则停用非基本工作负载应考虑以下操作： 1.将一个或多个工作负载移动到其他存储位置 2.通过 QoS 限制降低低优先级工作负载的需求 3.添加更多存储节点（ AFF ）或磁盘架（ FAS ）并重新分配工作负载 4.更改工作负载特征（块大小，应用程序缓存等）</block>
+  <block id="afe6e49330908b656c16f3833ee87bf5" category="cell">Storage VM 高延迟</block>
+  <block id="8167ecdcf804b345b6cdfb41b7a605a6" category="cell">Storage VM （ SVM ）延迟已达到可能影响 Storage VM 上应用程序性能的级别。较低的 Storage VM 延迟可确保应用程序的性能稳定一致。根据介质类型，预期延迟为： SSD 最长 1-2 毫秒； SAS 最长 8-10 毫秒； SATA HDD 17 至 20 毫秒。</block>
+  <block id="01b3861ff97cee42de95c84ee157afb1" category="cell">如果违反严重阈值，则立即评估分配了 QoS 策略的 Storage VM 卷的阈值限制，以验证这些卷是否正在导致卷工作负载受到限制。如果违反警告阈值，请考虑立即执行以下操作： 1.如果聚合的利用率也较高，请将 Storage VM 的某些卷移动到另一个聚合。2. 对于分配了 QoS 策略的 Storage VM 中的卷，如果阈值限制导致卷工作负载受到限制，请评估这些阈值限制 3.如果节点的利用率较高，请将 Storage VM 的某些卷移动到另一个节点或减少节点的总工作负载</block>
+  <block id="89487f64f6357385ab0f3d0e4a017cf4" category="cell">用户配额文件硬限制</block>
+  <block id="79363c2ed0907e48b3c1ce4ebc79a2ce" category="cell">卷中创建的文件数已达到严重限制，无法创建其他文件。监控存储的文件数量可确保用户获得无中断的数据服务。</block>
+  <block id="6eb8edfd98d39503af149923d55b02a5" category="cell">如果违反严重阈值，则需要立即采取措施，以最大限度地减少服务中断。…请考虑采取以下措施： 1.增加特定用户的文件数量配额 2.删除不需要的文件以减少特定用户对文件配额的压力</block>
+  <block id="554ae6075f09ac17db492480733bbc3f" category="cell">用户配额文件软限制</block>
+  <block id="b1cba2c862f0b40c1bd34845542e54ab" category="cell">卷中创建的文件数已达到配额的阈值限制，并且接近严重限制。如果配额达到严重限制，则无法创建其他文件。监控用户存储的文件数量可确保用户获得无中断的数据服务。</block>
+  <block id="730e8afb4e9b33075d701c577225cc9f" category="cell">如果违反警告阈值，请考虑立即采取措施： 1.增加特定用户配额 2 的文件数量配额。删除不需要的文件以减少特定用户对文件配额的压力</block>
+  <block id="3ebcb9d1d86ba400a3781b84940118a5" category="cell">卷缓存未命中率</block>
+  <block id="018c3d241ac4914c7226d78d884c3cbf" category="cell">卷缓存未命中率是指从磁盘返回而不是从缓存返回的客户端应用程序读取请求的百分比。这意味着卷已达到设置的阈值。</block>
+  <block id="883bf0845a2612b57fb641fe15206813" category="cell">如果违反严重阈值，则应立即采取措施以最大限度地减少服务中断： 1.将某些工作负载移出卷的节点以减少 IO 负载 2 。如果尚未位于卷的节点上，请通过购买和添加 Flash Cache 3 来增加 WAFL 缓存。通过 QoS 限制降低同一节点上较低优先级工作负载的需求如果违反警告阈值，请考虑立即采取措施： 1.将某些工作负载移出卷的节点以减少 IO 负载 2 。如果尚未位于卷的节点上，请通过购买和添加 Flash Cache 3 来增加 WAFL 缓存。通过 QoS 限制 4 降低同一节点上较低优先级工作负载的需求。更改工作负载特征（块大小，应用程序缓存等）</block>
+  <block id="6a330cc3d1dd1f4ba2997354a3f21845" category="cell">卷 qtree 配额过量提交</block>
+  <block id="fb7354d1ae8b5435bfa69884ef47da15" category="cell">卷 qtree 配额过量使用指定 qtree 配额将卷视为过量使用时的百分比。已达到为卷设置的 qtree 配额阈值。监控卷 qtree 配额过量提交可确保用户接收到无中断的数据服务。</block>
+  <block id="c7138a3f31fdad6a8a7bd85a7c38cf78" category="cell">如果违反严重阈值，则应立即采取措施以最大限度地减少服务中断： 1.增加卷 2 的空间。违反警告阈值时删除不需要的数据，然后考虑增加卷的空间。</block>
+  <block id="58fde537c8a6c2a525f262279a148609" category="section-title">反勒索软件日志监控器</block>
+  <block id="c12ff3bdc3e1fc7c28ce63919dce056b" category="cell">已禁用 Storage VM 反勒索软件监控</block>
+  <block id="9a523419a0c32dc42c28aa6f4c8e8514" category="cell">已禁用 Storage VM 的反勒索软件监控。启用反勒索软件以保护 Storage VM 。</block>
+  <block id="bc64ead7cff239a27defee7e82f07dd8" category="cell">已启用 Storage VM 反勒索软件监控（学习模式）</block>
+  <block id="1f85f76d505221f52f326cbf5c47ff8d" category="cell">在学习模式下为 Storage VM 启用了反勒索软件监控。</block>
+  <block id="887dc131866209437f8ef2fc6e1a9871" category="cell">已启用卷反勒索软件监控</block>
+  <block id="dc9bfcde970906b121a72ccab49848ab" category="cell">已为卷启用反勒索软件监控。</block>
+  <block id="c11f4f33bc154ce6cc134feb8a5f30b0" category="cell">已禁用卷反勒索软件监控</block>
+  <block id="8c716e2406cc2ec123958a8e9ea7518c" category="cell">已禁用卷的反勒索软件监控。启用反勒索软件以保护卷。</block>
+  <block id="4d39fc318c9bd864606168b6c94356cd" category="cell">已启用卷反勒索软件监控（学习模式）</block>
+  <block id="d47e41061de388e6ea7551ca54087e71" category="cell">卷的反勒索软件监控在学习模式下启用。</block>
+  <block id="2b2d7665885d726aedd194cbe39ae249" category="cell">已暂停卷反勒索软件监控（学习模式）</block>
+  <block id="b9c546aa4eea00e189d53e70fbc0c1be" category="cell">卷的反勒索软件监控将在学习模式下暂停。</block>
+  <block id="797ee57f9a436b032308d5bc2fe5a936" category="cell">已暂停卷反勒索软件监控</block>
+  <block id="78def16693e2c4a722ebac8e699f660d" category="cell">卷的反勒索软件监控已暂停。</block>
+  <block id="7fc69e8650940f98c56d06aa6d0eae5e" category="cell">卷反勒索软件监控正在禁用</block>
+  <block id="65652770553c5af0ce1157394fb5dd58" category="cell">正在禁用卷的反勒索软件监控。</block>
+  <block id="091ec35ab95f861018fde1a0588e00ab" category="cell">检测到勒索软件活动</block>
+  <block id="6225aea9b43aee104d64ccb2870be625" category="cell">为了保护数据免受检测到的勒索软件的影响，我们创建了一个 Snapshot 副本，可用于还原原始数据。您的系统会生成 AutoSupport 或 " 回电 " 消息并将其传输到 NetApp 技术支持和任何已配置的目标。AutoSupport 消息可改进问题的确定和解决。</block>
+  <block id="ad588b8a579bb8400cdcd8ad5b889cf7" category="cell">请参见 " 最终文档名称 " ，对勒索软件活动采取补救措施。</block>
+  <block id="c19f755bb5512c54622f3290818d4ac5" category="section-title">Astra 数据存储（ ADS ）监控器</block>
+  <block id="8cd7f8db9d150a04184b8fd02d5f5a6d" category="cell">集群容量已满</block>
+  <block id="35e4b763e20006224c51c97d77f699fa" category="cell">警告 @ &gt; 85% 严重 @ &gt; 95%</block>
+  <block id="a6796b1585daa4bf415caa7d1cfddcde" category="cell">ADS 集群的存储容量用于存储应用程序和客户数据。集群中存储的数据越多，未来数据的存储可用性就越低。…集群中的存储容量达到集群总容量时，集群将无法存储更多数据。监控集群物理容量可确保数据服务的连续性。</block>
+  <block id="23fa9d7af943ee0af2bb663410a00d19" category="cell">如果违反严重阈值：…1 ，则需要立即采取措施以最大限度地减少服务中断。请考虑增加分配给集群的空间，以适应增长…2 。考虑删除不再需要的数据以释放空间…如果违反警告阈值，计划立即采取以下操作：…1 。请考虑增加分配给集群的空间，以适应此增长。</block>
+  <block id="99e0d62cd95722563a6ca27e3142cac5" category="cell">卷容量已满</block>
+  <block id="751f6c789f3a22b17d94185a7d67ce2d" category="cell">警告 @ &lt; 15% 严重 @ &lt; 5%</block>
+  <block id="89c5f776e16da33d8dd4d53d9de174fb" category="cell">卷的存储容量用于存储应用程序和客户数据。集群卷上存储的数据越多，未来数据的存储可用性就越低。…当卷中使用的数据存储容量达到总存储容量时， 由于缺少可用存储容量，卷将无法存储更多数据。…监控卷已用存储容量可确保数据服务的连续性。</block>
+  <block id="7addf18b9a1f6d29c3f12d8e7d08f496" category="cell">如果违反严重阈值：…1 ，则需要立即采取措施以最大限度地减少服务中断。请考虑增加卷的空间，以适应增长…2 。考虑删除不再需要的数据以释放空间…如果违反警告阈值，计划立即采取以下操作：…1 。请考虑增加卷的空间以适应此增长。</block>
 </blocks>
