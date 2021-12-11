@@ -7679,7 +7679,6 @@
   <block id="651ecedd8d25ab4ae212856320c2b07d" category="inline-image-macro">Kubernetes 资源管理器筛选示例</block>
   <block id="3c66c495f12a25be56d72e7b3f6df498" category="paragraph"><block ref="3c66c495f12a25be56d72e7b3f6df498" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1f99134a154434d88680184fbf03690c" category="section-title">用于报告的 K8s 数据</block>
-  <block id="b780477f78288d46124bd3fa35adcdf6" category="paragraph">现在， Kubernetes 数据可用于报告，从而可以创建成本分摊或其他报告。</block>
   <block id="794bb0e615ad8cbde31e79e047b05977" category="inline-image-macro">Kubernetes 数据显示在成本分摊报告中</block>
   <block id="72cb1c8d0bd036efb577af713c14ee92" category="paragraph"><block ref="72cb1c8d0bd036efb577af713c14ee92" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d358290cdffc932cfc83fc42f086cdfc" category="section-title">暗主题已出现</block>
@@ -8300,4 +8299,29 @@
   <block id="60299c50762b8f548c3ba08173af15db" category="admonition">StorageGRID 按不同的原始 TB 到受管单元速率进行计量。每 40 TB 未格式化的 StorageGRID 容量计费为 1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="d4b92ffff3f3199f4cb5dc53c8c0cf84" category="cell">可以查看和管理警报以及查看取证。用户角色可以更改警报状态，添加注释，手动创建快照以及管理限制用户访问。</block>
   <block id="0807462d8fba61c18f849a8f66cf58d7" category="cell">可以查看警报和取证。来宾角色不能更改警报状态，添加备注，手动创建快照或限制用户访问。</block>
+  <block id="a5091aedd97daf7c5a5297fa5d73a469" category="section-title">2021 年 12 月</block>
+  <block id="e4739a788e45bada83755eece8188d9a" category="section-title">更深入地集成 ONTAP 系统</block>
+  <block id="2798b81e41cc279af41eeff00d15882f" category="inline-link-macro">浏览并发出警报</block>
+  <block id="4f6af09f5c870001ac0eaaddb6e18202" category="paragraph">通过与 NetApp 事件管理系统（ EMS ）的全新集成，简化 ONTAP 硬件故障警报等操作。<block ref="eb6f7e8cef286ca3e1b61ec761ff162a" category="inline-link-macro-rx"></block> ONTAP 中的低级别 Cloud Insights 消息，用于通知和改进故障排除工作流，并进一步减少对 ONTAP Element 管理工具的依赖。</block>
+  <block id="4e6a8ff944fc0c2a0442ee92b870bc50" category="section-title">正在查询日志</block>
+  <block id="2a12dfd548f76c18495029720066b44b" category="paragraph">对于 ONTAP 系统， Cloud Insights 查询包含一个功能强大的 <block ref="12422d8daabf8ce7ffc805bfcc34b9ef" category="inline-link-macro-rx"></block>，使您可以轻松地调查 EMS 日志条目并对其进行故障排除。</block>
+  <block id="b8e041a845ecd104be2da44b4d9528c9" category="inline-image-macro">日志查询</block>
+  <block id="3ceb40febd91d8aaa879d7b03af4f7a8" category="paragraph"><block ref="3ceb40febd91d8aaa879d7b03af4f7a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="20bd4d7a1c2eeb9ad384a475097ce55a" category="section-title">数据收集器级别的通知。</block>
+  <block id="5ab86f6bb4fa1286ef2600bccd225460" category="paragraph">除了系统定义和自定义创建的警报监控器之外，您还可以为 ONTAP 数据收集器设置警报通知，从而可以为收集器级别的警报指定收件人，而不受其他监控器警报的影响。</block>
+  <block id="424243ded0b8c86c8f8e062ea8431c32" category="section-title">提高 Cloud Secure 角色的灵活性</block>
+  <block id="4295e8065f2f640103f566df3329e17f" category="inline-link-macro">角色</block>
+  <block id="a65fbabde908c5539a548266c1459783" category="paragraph">可以根据授予用户访问 Cloud Secure 功能的权限 <block ref="2210cd35617833c784f9c717417466ce" category="inline-link-macro-rx"></block> 由管理员设置：</block>
+  <block id="db03a10b973a96816a6cf82300b069fa" category="cell">Cloud Secure 访问</block>
+  <block id="9284a6f8d6d2be481ce874ea641a8f0f" category="section-title">操作系统支持</block>
+  <block id="51603a21ac59ea6c31ff8aa7668d1838" category="paragraph">CentOS 8.x 支持将替换为 * CentOS 8 Stream* 支持。CentOS 8.x 将于 2021 年 12 月 31 日到期。</block>
+  <block id="e7278853d2a6c41f5420ab900e3eca99" category="paragraph">已更新许多 Cloud Insights 数据收集器名称以反映供应商的更改：</block>
+  <block id="d090fa049a63a30d7eaf096103e8cd91" category="cell">供应商 / 型号</block>
+  <block id="6a1ff27319a41df4b8ee2c4d0c43bfaa" category="cell">以前的名称</block>
+  <block id="7c4dcd810c213c036c2f9baf9e3eb16f" category="cell">Dell EMC PowerScale</block>
+  <block id="8a2b136f2ffaf807c9118c0d93904550" category="cell">Isilon</block>
+  <block id="5049bd73700c7777cb34634bcad6fa28" category="cell">HPE Alletra 9000/Primera</block>
+  <block id="a677b71188193c196dc3bbb91b2d692e" category="cell">3PAR</block>
+  <block id="dcd9522b375ce622ac79412f7a5c6e2f" category="cell">Nimble</block>
+  <block id="6762a399f5334f6d77cd7de65d4350ce" category="paragraph">现在， Kubernetes 数据可用于报告，从而可以创建成本分摊或其他报告。要将 Kubernetes 成本分摊数据传递到报告，您必须与 Kubernetes 集群及其后端存储建立活动连接，并且 Cloud Insights 必须从这些集群接收数据。如果未从后端存储收到任何数据，则 Cloud Insights 无法将 Kubernetes 对象数据发送到报告。</block>
 </blocks>
