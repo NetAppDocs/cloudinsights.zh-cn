@@ -1,14 +1,14 @@
 ---
 sidebar: sidebar 
 permalink: reporting_schema_diagrams.html 
-keywords: Schema, DB Schema, premium 
-summary: DWH 架构图 
+keywords: Schema, DB Schema, premium, dwh, data warehouse 
+summary: 报告架构图 
 ---
-= Cloud Insights 数据仓库架构图
+= Cloud Insights 报告架构图
 
 
 [role="lead"]
-本文档提供了数据仓库数据库的架构图。您也可以下载包含的文件 link:ci_reporting_database_schema.pdf["模式表"]。
+本文档提供了报告数据库的架构图。您也可以下载包含的文件 link:ci_reporting_database_schema.pdf["模式表"]。
 
 
 NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_insights.html["高级版"]。

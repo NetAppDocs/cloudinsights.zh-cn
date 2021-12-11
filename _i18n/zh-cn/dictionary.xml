@@ -5241,10 +5241,7 @@
   <block id="d4ac786771333e144acef4c7fbf68def" category="cell">* 验证用户是否有权在设备上运行以下命令： &gt; ISI 版本 osrelease &gt; ISI 状态 -q &gt; ISI 状态 -n &gt; ISI 设备 -d %s &gt; ISI 许可证 * 验证向导中使用的凭据是否与设备凭据匹配</block>
   <block id="e34007722288aaaa30b91fd5ab591b8e" category="cell">"Internal Error" ，并显示错误消息 "Command &lt;your command&gt; run failed with permission ： &lt; 您的当前权限 &gt; 。sudo command run permission 问题描述</block>
   <block id="f8d2d5875b17bbc0406c2dfd617860e3" category="cell">验证用户是否具有在设备上运行以下命令的 sudo 权限</block>
-  <block id="b3fbc5fcb72f0cf438065d8b61978628" category="summary">DWH 架构图</block>
-  <block id="9c4808796a80debbb51a42bd52aef86f" category="doc">Cloud Insights 数据仓库架构图</block>
   <block id="e90f7dd992e0cf34bd039e9aea1bb153" category="inline-link-macro">模式表</block>
-  <block id="2c5aa08f44306dc7e3b2d5f85866d9bb" category="paragraph">本文档提供了数据仓库数据库的架构图。您也可以下载包含的文件 <block ref="2332424ce6d0703b657b351f20f445fe" category="inline-link-macro-rx"></block>。</block>
   <block id="d6b50e981dcf3c483f39cca16ed4a3bf" category="section-title">清单数据集市</block>
   <block id="4ee2fd4b3ba41c46dcb5c95f5ab3c98c" category="paragraph">以下图像介绍了清单数据集市。</block>
   <block id="3e2f25b47c543aeccbef9b6b89e4e5b9" category="paragraph"><block ref="3e2f25b47c543aeccbef9b6b89e4e5b9" category="inline-image-macro-rx" type="image"></block></block>
@@ -8250,4 +8247,7 @@
   <block id="010696312885774629a0ee644a640ae3" category="inline-image-macro">选择筛选器中的单位</block>
   <block id="c503bd54dc264736afdfab01b073b12e" category="paragraph"><block ref="c503bd54dc264736afdfab01b073b12e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6302cf6ae35e5844cf2d168fec04aaee" category="section-title">其他筛选改进</block>
+  <block id="cb9887667fc38a045fa6b13ed03ab244" category="summary">报告架构图</block>
+  <block id="6674395fa1826fa5008d38849347faea" category="doc">Cloud Insights 报告架构图</block>
+  <block id="4cd8c7a0a81af63c6cf9cab90cbb2336" category="paragraph">本文档提供了报告数据库的架构图。您也可以下载包含的文件 <block ref="2332424ce6d0703b657b351f20f445fe" category="inline-link-macro-rx"></block>。</block>
 </blocks>
