@@ -8358,4 +8358,5 @@
   <block id="ac62625b23d0635d3eaed0e05c830d36" category="paragraph">最后，您可以单击 * 复制 Insight 链接 * 将页面 URL 复制到剪贴板，以便更轻松地与同事共享。</block>
   <block id="bfbb887958da2dfcfde3e14473a0a3d3" category="paragraph">Cloud Insights 包括许多系统定义的指标和日志监控器。监控器界面将进行多项更改，以适应这些系统监控器。本节将介绍这些内容。</block>
   <block id="7c77c6e00a2f8a03a7fdfb2757000d7b" category="paragraph"><block ref="7c77c6e00a2f8a03a7fdfb2757000d7b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7693ff20d974f100747cdd1ebb9e2fb9" category="cell">可以查看和管理警报以及查看取证。用户角色可以更改警报状态，添加注释，手动创建快照以及限制用户访问。</block>
 </blocks>
