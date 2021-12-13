@@ -8187,7 +8187,6 @@
   <block id="13eb6f9ee990a41519e29ed1b850e7d4" category="paragraph">单击 " 添加筛选器 " 将选定字段添加到当前筛选器。日志条目列表将根据新筛选器进行更新。</block>
   <block id="40cbcf33504e4618736618d0178350da" category="inline-image-macro">日志条目详细信息窗格</block>
   <block id="ec3637bd1bccc80828f9c014bf3b44f7" category="paragraph"><block ref="ec3637bd1bccc80828f9c014bf3b44f7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9493694f9074632615f75f136ee1eb6f" category="sidebar">查询日志（预览）</block>
   <block id="e29d4b0022b53ae021c4d0c28ff1c272" category="summary">配置 HP Enterprise Allettra 6000 （以前称为 Nimble ）数据收集器。</block>
   <block id="1673741a6893cf106b8b69b143097e4c" category="doc">HPE Alletra 6000 数据收集器</block>
   <block id="bb341a6d938cae0b0a085b354294a7cd" category="paragraph">HP Enterprise Alletra 6000 （以前称为 Nimble ）数据收集器支持 Alletra 6000 存储阵列的清单和性能数据。</block>
@@ -8223,7 +8222,6 @@
   <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">* 订阅 * Cloud Insights ，以便通过持续，无中断地访问您的数据 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直销或 AWS Marketplace （<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> 或 <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
   <block id="9b90ea901c2599518f8cdf3fc6d14a42" category="paragraph">请注意： Cloud Secure 代理可以与 Cloud Insights 采集单元和 / 或代理安装在同一台计算机上。但是，最佳做法是在不同的计算机上安装这些软件。如果这些磁盘安装在同一台计算机上，请按如下所示分配磁盘空间：</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">仅支持数据类型 SVM 。不支持具有无限卷的 SVM 。</block>
-  <block id="578ac85a2fa04a9c847d579bf30ac050" category="paragraph">从 2021 年 10 月开始， Cloud Insights 将包括许多系统定义的指标和日志监控器。监控器界面将进行多项更改，以适应这些系统监控器。本节将介绍这些内容。</block>
   <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">为 ONTAP 启用高级计数器和 EMS 日志收集</block>
   <block id="5c8c2ca1685c9247d4c87edc2fa024f4" category="admonition">默认情况下，系统监控器处于 _Paused_state 。在恢复监控之前，您必须确保已在数据收集器中启用 _Advanced 计数器数据收集 _ 和 _Enable ONTAP EMS log collection_ 。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">在 Kubernetes 上，我的 Telegraf Pod 报告以下错误： " 处理 mountstats 信息时出错：无法打开 mountstats 文件： /hostfs/proc/1/mountstats ，错误： open /hostfs/proc/1/mountstats ：权限被拒绝 "</block>
@@ -8358,4 +8356,5 @@
   <block id="5d43336b0046b068224b4a4c606863ba" category="list-text">添加其他资源</block>
   <block id="31fa4ab3e19080703e914efb949bbced" category="paragraph">如果共享资源（例如存储池）已达到 IOPS 饱和点，则向池中添加更多或更快的磁盘将确保有足够的可用资源来缓解饱和。</block>
   <block id="ac62625b23d0635d3eaed0e05c830d36" category="paragraph">最后，您可以单击 * 复制 Insight 链接 * 将页面 URL 复制到剪贴板，以便更轻松地与同事共享。</block>
+  <block id="bfbb887958da2dfcfde3e14473a0a3d3" category="paragraph">Cloud Insights 包括许多系统定义的指标和日志监控器。监控器界面将进行多项更改，以适应这些系统监控器。本节将介绍这些内容。</block>
 </blocks>
