@@ -7836,7 +7836,6 @@
   <block id="ff4d6902497a0527749455a3bab6c881" category="cell">确保您使用的是 Data ONTAP 版本，其中 <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> 已修复。建议的 ONTAP 最低版本为 9.8P7 。</block>
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">数据收集器出错，显示此错误消息。" 错误：连接器处于错误状态。服务名称： audit 。失败原因：无法在 SVM SVM_test 上配置策略。原因： ZAPI 字段： Events 缺少值。"</block>
   <block id="db45b764838c9131ffbab7063103f890" category="cell">从仅配置 NFS 服务的新 SVM 开始。在 Cloud Secure 中添加 ONTAP SVM 数据收集器。在 Cloud Secure 中添加 ONTAP SVM 数据收集器时， CIFS 会配置为 SVM 的允许协议。请稍候，直到 Cloud Secure 中的数据收集器显示错误为止。由于未在 SVM 上配置 CIFS 服务器，因此 Cloud Secure 将显示左侧所示的此错误。编辑 ONTAP SVM 数据收集器并取消选中 CIFS 作为允许的协议。保存数据收集器。它将在仅启用 NFS 协议的情况下开始运行。</block>
-  <block id="f2ca27a5a85ae2cd72b932650e54dc20" category="paragraph">如果先前为 Telegraf 创建了安全上下文限制（指向 " 配置代理以从 Kubernetes 收集数据 " 的超链接）：</block>
   <block id="419692fe9178bca2f0f252349995b13c" category="paragraph">在本地系统上运行以下命令，以打开 Cloud Secure 要使用的端口。如果对端口范围存在安全问题，可以使用较小的端口范围，例如 _35000 ： 35100_ 。每个 SVM 使用两个端口。</block>
   <block id="cd97e5515b0cad32cadf2b0e90813f6d" category="paragraph">根据您的平台执行以下步骤：</block>
   <block id="504510de5d7df6b369756702c8c3a365" category="paragraph">* CentOS 7.x / RHEL 7.x * ：</block>
@@ -8359,4 +8358,5 @@
   <block id="7c77c6e00a2f8a03a7fdfb2757000d7b" category="paragraph"><block ref="7c77c6e00a2f8a03a7fdfb2757000d7b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7693ff20d974f100747cdd1ebb9e2fb9" category="cell">可以查看和管理警报以及查看取证。用户角色可以更改警报状态，添加注释，手动创建快照以及限制用户访问。</block>
   <block id="2967e4e81e6ef4babcb760cbbd1a80d0" category="paragraph">添加了许多 Cloud Insights 数据收集器名称以反映供应商的更改：</block>
+  <block id="4419ae7806803f11d5bd8d5d040e7961" category="paragraph">如果先前为 Telegraf 创建了安全上下文限制：</block>
 </blocks>
