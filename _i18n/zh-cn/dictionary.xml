@@ -8313,7 +8313,6 @@
   <block id="db03a10b973a96816a6cf82300b069fa" category="cell">Cloud Secure 访问</block>
   <block id="9284a6f8d6d2be481ce874ea641a8f0f" category="section-title">操作系统支持</block>
   <block id="51603a21ac59ea6c31ff8aa7668d1838" category="paragraph">CentOS 8.x 支持将替换为 * CentOS 8 Stream* 支持。CentOS 8.x 将于 2021 年 12 月 31 日到期。</block>
-  <block id="e7278853d2a6c41f5420ab900e3eca99" category="paragraph">已更新许多 Cloud Insights 数据收集器名称以反映供应商的更改：</block>
   <block id="d090fa049a63a30d7eaf096103e8cd91" category="cell">供应商 / 型号</block>
   <block id="6a1ff27319a41df4b8ee2c4d0c43bfaa" category="cell">以前的名称</block>
   <block id="7c4dcd810c213c036c2f9baf9e3eb16f" category="cell">Dell EMC PowerScale</block>
@@ -8359,4 +8358,5 @@
   <block id="bfbb887958da2dfcfde3e14473a0a3d3" category="paragraph">Cloud Insights 包括许多系统定义的指标和日志监控器。监控器界面将进行多项更改，以适应这些系统监控器。本节将介绍这些内容。</block>
   <block id="7c77c6e00a2f8a03a7fdfb2757000d7b" category="paragraph"><block ref="7c77c6e00a2f8a03a7fdfb2757000d7b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7693ff20d974f100747cdd1ebb9e2fb9" category="cell">可以查看和管理警报以及查看取证。用户角色可以更改警报状态，添加注释，手动创建快照以及限制用户访问。</block>
+  <block id="2967e4e81e6ef4babcb760cbbd1a80d0" category="paragraph">添加了许多 Cloud Insights 数据收集器名称以反映供应商的更改：</block>
 </blocks>

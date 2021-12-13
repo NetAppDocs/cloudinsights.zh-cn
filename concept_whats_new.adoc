@@ -63,7 +63,7 @@ CentOS 8.x 支持将替换为 * CentOS 8 Stream* 支持。CentOS 8.x 将于 2021
 
 ==== Data Collector 更新
 
-已更新许多 Cloud Insights 数据收集器名称以反映供应商的更改：
+添加了许多 Cloud Insights 数据收集器名称以反映供应商的更改：
 
 |===
 
