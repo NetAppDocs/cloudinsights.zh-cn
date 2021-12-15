@@ -4796,9 +4796,6 @@
   <block id="f76cc97ccb788e95e43d6e238845fd1f" category="cell">必须在配置节点上执行此命令。</block>
   <block id="2af1bc57f00c07afe945f9aa64a9712f" category="summary">配置 Google Compute 数据收集器</block>
   <block id="ed3cd63dd0baae2764478daf8451ac08" category="doc">NetApp Google 计算数据收集器</block>
-  <block id="adbb21be998ef439e786a2cc5479bf1b" category="paragraph">此数据收集器支持从 Google Compute 云平台配置收集清单。</block>
-  <block id="6cb2830007af9ceb6ce55b4560dc650a" category="cell">项目 ID</block>
-  <block id="72016e08368e92bde4566b6748dcf110" category="cell">Google Cloud Platform 配置的项目 ID</block>
   <block id="76525f0f34b48475e5ca33f71d296f3b" category="cell">客户端 ID</block>
   <block id="0ba940100c87f907596ed0894bd30e64" category="cell">Google Cloud Platform 配置的客户端 ID</block>
   <block id="a2826ab9dd3371db38961f6064c6ce31" category="cell">在此处复制并粘贴 Google 凭据文件的内容</block>
@@ -8359,4 +8356,11 @@
   <block id="7693ff20d974f100747cdd1ebb9e2fb9" category="cell">可以查看和管理警报以及查看取证。用户角色可以更改警报状态，添加注释，手动创建快照以及限制用户访问。</block>
   <block id="2967e4e81e6ef4babcb760cbbd1a80d0" category="paragraph">添加了许多 Cloud Insights 数据收集器名称以反映供应商的更改：</block>
   <block id="4419ae7806803f11d5bd8d5d040e7961" category="paragraph">如果先前为 Telegraf 创建了安全上下文限制：</block>
+  <block id="2e924b339513eb23c96002f278d6b8b8" category="paragraph">此数据收集器支持从 Google Compute 云平台配置收集清单和性能。此收集器将寻求发现一个 Google 组织内所有项目中的所有计算资源。如果您要使用 Cloud Insights 发现多个 Google 组织，则需要为每个组织部署一个 Cloud Insights 收集器。</block>
+  <block id="aeeb23ddda2fbf397bcdca17962b697f" category="cell">组织 ID</block>
+  <block id="0e5d7d7899d2a1bd9df3ce85d8ded643" category="cell">要使用此收集器发现的组织 ID 。如果您的服务帐户可以看到多个组织，则此字段为必填字段</block>
+  <block id="f7f7f8ef6f20a2ef4fbb8ed15c0b3852" category="cell">选择 " 排除 " 或 " 包括 " 以按 ID 筛选 GCP 项目</block>
+  <block id="1823a3293796ab04adae38227fa9a422" category="cell">如果要限制将哪些项目的资源引入 Cloud Insights 。</block>
+  <block id="4fae97854a6cef2a7c02f3b22e8df69c" category="cell">项目 ID</block>
+  <block id="23e7025720ca26f786e85bf276a90711" category="cell">要筛选或筛选发现结果的项目 ID 列表，具体取决于 " 选择 " 排除 "..." 值的值。默认列表为空</block>
 </blocks>
