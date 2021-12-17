@@ -7464,7 +7464,6 @@
   <block id="4654b0becf9d1cd6185abd5644dddf77" category="list-text">在 Audit 页面上，设置所需的时间范围以及所需的任何筛选器。Cloud Insights 将仅导出与您设置的筛选和时间范围匹配的审核条目。</block>
   <block id="81e9e10a5416438d2549dae075160792" category="list-text">单击 _Export_ 按钮 <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> 在表的右上角。</block>
   <block id="7201440e51225680b60dccf28366c73d" category="paragraph">显示的审核事件将导出到 .CSV 文件，最多 10 ， 000 行。</block>
-  <block id="8d27ed17859baac177ef9c6571d0c222" category="cell">运行以下任一许可版本的计算机： Red Hat Enterprise Linux 7.x ， 8.x 64 位 CentOS 7.x ， 8.x 64 位此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="75cd5bf9b1dea198b36ca9987682e874" category="cell">应按以下方式分配磁盘空间： /opt/netapp 25-30 GB</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 25-30 GB /var/log/netapp 25 GB</block>
   <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户，则只需登录即可访问其 Cloud Insights 环境。</block>
@@ -7830,7 +7829,6 @@
   <block id="8482b7a1c15e20c8eab0296778760d7a" category="doc">Dell EMC XC 系列数据收集器</block>
   <block id="08b341cebd72c11ab08d59bd6ceda0b6" category="paragraph">Cloud Insights 使用此数据收集器来发现 Dell EMC XC 系列存储阵列的清单和性能信息。</block>
   <block id="fd3a8e3a47c3fee35fa518456dc6307b" category="admonition">从 2021 年 11 月开始，默认情况下将启用 ONTAP 高级计数器数据收集。此功能将逐渐推出；随着时间的推移，您将在信息板中看到高级数据。要禁用高级数据收集，请编辑 ONTAP 数据收集器并取消选中 " 选择部署高级计数器数据收集 " 复选框。</block>
-  <block id="ff4d6902497a0527749455a3bab6c881" category="cell">确保您使用的是 Data ONTAP 版本，其中 <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> 已修复。建议的 ONTAP 最低版本为 9.8P7 。</block>
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">数据收集器出错，显示此错误消息。" 错误：连接器处于错误状态。服务名称： audit 。失败原因：无法在 SVM SVM_test 上配置策略。原因： ZAPI 字段： Events 缺少值。"</block>
   <block id="db45b764838c9131ffbab7063103f890" category="cell">从仅配置 NFS 服务的新 SVM 开始。在 Cloud Secure 中添加 ONTAP SVM 数据收集器。在 Cloud Secure 中添加 ONTAP SVM 数据收集器时， CIFS 会配置为 SVM 的允许协议。请稍候，直到 Cloud Secure 中的数据收集器显示错误为止。由于未在 SVM 上配置 CIFS 服务器，因此 Cloud Secure 将显示左侧所示的此错误。编辑 ONTAP SVM 数据收集器并取消选中 CIFS 作为允许的协议。保存数据收集器。它将在仅启用 NFS 协议的情况下开始运行。</block>
   <block id="419692fe9178bca2f0f252349995b13c" category="paragraph">在本地系统上运行以下命令，以打开 Cloud Secure 要使用的端口。如果对端口范围存在安全问题，可以使用较小的端口范围，例如 _35000 ： 35100_ 。每个 SVM 使用两个端口。</block>
@@ -8363,4 +8361,51 @@
   <block id="1823a3293796ab04adae38227fa9a422" category="cell">如果要限制将哪些项目的资源引入 Cloud Insights 。</block>
   <block id="4fae97854a6cef2a7c02f3b22e8df69c" category="cell">项目 ID</block>
   <block id="23e7025720ca26f786e85bf276a90711" category="cell">要筛选或筛选发现结果的项目 ID 列表，具体取决于 " 选择 " 排除 "..." 值的值。默认列表为空</block>
+  <block id="77ec532867a94121758e72c95815d1e9" category="summary">您可以使用脚本模拟勒索软件攻击，以测试或演示 Cloud Secure</block>
+  <block id="c91ccdaf7d2d0a73b8c6789c610e9a36" category="doc">Cloud Secure ：模拟攻击</block>
+  <block id="f1767a0d238fd0fa03d86dfe344b7da9" category="paragraph">您可以使用此页面上的说明，使用随附的 Cloud Secure 勒索软件模拟脚本模拟用于测试或演示 Cloud Secure 的攻击。</block>
+  <block id="c8722d0a5f0f718756806afb0f63faf3" category="section-title">开始之前需要注意的事项</block>
+  <block id="228b6b559614ae017988e0b66c4ab82c" category="list-text">勒索软件模拟脚本仅适用于 Linux 。</block>
+  <block id="4b4977f144a612cb5dcc69751db61974" category="list-text">此脚本随 Cloud Secure 代理安装文件一起提供。它可在安装了 Cloud Secure 代理的任何计算机上使用。</block>
+  <block id="5ca377457f233d1116a1177d3c9b8e67" category="list-text">您可以在 Cloud Secure 代理计算机本身上运行此脚本；无需准备其他 Linux 计算机。但是，如果您希望在其他系统上运行此脚本，只需复制此脚本并在其中运行即可。</block>
+  <block id="7507a6fc6500d36cd4c727aec7187901" category="section-title">至少具有 1 ， 000 个示例文件</block>
+  <block id="b67a48562c5c72c2dd1f1ce618e93263" category="paragraph">此脚本应在包含要加密的文件的文件夹的 SVM 上运行。建议在该文件夹和任何子文件夹中至少有 1 ， 000 个文件。这些文件不能为空。请勿使用同一用户创建文件并对其进行加密。Cloud Secure 将此视为低风险活动，因此不会生成警报（即同一用户修改其刚刚创建的文件）。</block>
+  <block id="497ca441ba939bb60a530a6e3409b407" category="inline-link-macro">以编程方式创建非空文件</block>
+  <block id="af64720caca21622d75cb553bfdb8bd9" category="paragraph">有关说明，请参见下面的 <block ref="e4fffc8648374f8ac4aafa6cb656ffb6" category="inline-link-macro-rx"></block>。</block>
+  <block id="3eee06b6e6c02b14b6bf0a76a8e1ee71" category="section-title">准备系统</block>
+  <block id="0864c33fc7e49f7b5dabd2b27c2805d5" category="paragraph">首先，将目标卷挂载到计算机。您可以挂载 NFS 挂载或 CIFS 导出。</block>
+  <block id="6a2eb10d0f7d8e6c5942069b7aa730bf" category="paragraph">要在 Linux 中挂载 NFS 导出，请执行以下操作：</block>
+  <block id="dd94533008fec4ee5889a56fd78e2a26" category="paragraph">请勿挂载 NFS 4.1 ； Fpolicy 不支持此版本。</block>
+  <block id="6006ea3f9ae2b497be9e9bce2d0ead62" category="paragraph">要在 Linux 中挂载 CIFS ，请执行以下操作：</block>
+  <block id="a22c6eb3597528c16b0d46880ae4b1ae" category="paragraph">接下来，设置数据收集器：</block>
+  <block id="047f09d337fa7e61d37a18cdc64b32e2" category="list-text">如果尚未配置 Cloud Secure 代理，请进行配置。</block>
+  <block id="173dfa4be4da90a7d5d1ced4c9f85a25" category="list-text">如果尚未配置 SVM 数据收集器，请进行配置。</block>
+  <block id="79e81469dc70b00e14fd266807fa2813" category="section-title">运行勒索软件模拟器脚本</block>
+  <block id="026dcf0af13659deef26baefcf6ad0c6" category="list-text">登录（ ssh ）到 Cloud Secure 代理计算机。</block>
+  <block id="785c0d55edba879bb891f6155bc195ee" category="list-text">导航到： _/opt/netapp/cloudsecure /agent/install_</block>
+  <block id="430319bb139c1067cd6f898a565a8e7f" category="list-text">调用不带参数的模拟器脚本以查看用法：</block>
+  <block id="873038227b1d58f9be9ac08fa093fdc8" category="section-title">对测试文件进行加密</block>
+  <block id="d6dd6615fa7234326463921d688a17cd" category="paragraph">要对文件进行加密，请运行以下命令：</block>
+  <block id="76b9b68624d8f14bfe2d4fa26a74327e" category="section-title">还原文件</block>
+  <block id="05b9537d4d6b18cde99b176600c5b6cb" category="paragraph">要解密，请运行以下命令：</block>
+  <block id="508c80147534839c8ece65596b3e23ca" category="section-title">多次运行此脚本</block>
+  <block id="3556b7794d88ffd4262465058367fd7f" category="paragraph">在为用户生成勒索软件攻击后，切换到另一个用户以生成额外的攻击。Cloud Secure 可了解用户行为，不会在短时间内对同一用户的重复勒索软件攻击发出警报。</block>
+  <block id="3c00df162167ecfa7cae1012f21e271a" category="section-title">以编程方式创建文件</block>
+  <block id="b7013d500ab0d5c0a0a5ed66e230d702" category="paragraph">在创建文件之前，必须先停止数据收集器处理。在将数据收集器添加到代理之前，请执行以下步骤。如果您已添加数据收集器，只需编辑数据收集器，输入无效密码并保存即可。此操作将暂时使数据收集器处于错误状态。注意：请务必记下原始密码！</block>
+  <block id="7fb4f29b2fbada5675e1ca18652cf155" category="paragraph">在运行模拟之前，您必须先添加要加密的文件。您可以手动将要加密的文件复制到目标文件夹中，也可以使用脚本（请参见以下示例）以编程方式创建文件。无论使用哪种方法，至少复制 1 ， 000 个文件。</block>
+  <block id="ab1689bf65069d89f2858a33f94e7a0c" category="paragraph">如果您选择以编程方式创建文件，请执行以下操作：</block>
+  <block id="1ccbd3884a5f46ebee24ea2d455e82c6" category="list-text">登录到代理框。</block>
+  <block id="aa0db2c21e2f148a0198b8084fbcecf2" category="list-text">将 NFS 导出从存储器的 SVM 挂载到代理计算机。将 CD 复制到该文件夹。</block>
+  <block id="02f49225afe032e62af33156eb24f4d0" category="list-text">在该文件夹中，创建一个名为 createfiles.sh 的文件</block>
+  <block id="8c8c6d282bc49384bfe84c90829113ba" category="list-text">将以下行复制到该文件。</block>
+  <block id="01d3a32280cc94c7c057cd3d14488785" category="list-text">保存文件。</block>
+  <block id="03efecbfeba0123b6899f901d60d957a" category="list-text">确保对文件具有执行权限：</block>
+  <block id="6013cd3d50482e751e798f6b95a53f7e" category="list-text">执行脚本：</block>
+  <block id="f4cc1c9a55de42a2dbb9d5aa67b0ad18" category="paragraph">此时将在当前文件夹中创建 1000 个文件。</block>
+  <block id="f9c38f6218e4bf4132fd48e2dd8413c2" category="list-text">重新启用数据收集器</block>
+  <block id="123d317d6377a1184be4f3542b76e7fc" category="paragraph">如果您在步骤 1 中禁用了数据收集器，请编辑该数据收集器，输入正确的密码并保存。确保数据收集器重新处于运行状态。</block>
+  <block id="9de07b55b73b4474c7f2f607db372035" category="cell">运行以下任一许可版本的计算机： Red Hat Enterprise Linux 7.x ， 8.x 64 位 CentOS 7.x 64 位 CentOS 8 流此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
+  <block id="d867bfc5a8d8ee48bd2e10f3615136cf" category="cell">设置 ONTAP 发送缓冲区大小</block>
+  <block id="b473afd1a1a7f9aa85950e270c33864e" category="cell">设置 ONTAP Fpolicy 发送缓冲区大小。如果使用的是 9.8p7 之前的 ONTAP 版本，并且显示了性能问题描述，则可以更改 ONTAP 发送缓冲区大小以提高 ONTAP 性能。如果您未看到此选项，但希望了解此选项，请联系 NetApp 支持部门。</block>
+  <block id="f27c6ba949e5a69bce4edfd9dbd3316e" category="cell">确保您使用的是 Data ONTAP 版本，其中 <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> 已修复。建议的 ONTAP 最低版本为 9.8P7 。如果使用的是 9.8p7 之前的 ONTAP 版本，并且显示了此性能问题描述，则可以更改 ONTAP 发送缓冲区大小以提高 ONTAP 性能。如果您未看到此选项，但希望了解此选项，请联系 NetApp 支持部门。</block>
 </blocks>
