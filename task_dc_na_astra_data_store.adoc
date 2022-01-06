@@ -2,16 +2,17 @@
 sidebar: sidebar 
 permalink: task_dc_na_astra_data_store.html 
 summary: 配置 NetApp Astra 数据存储库 
-keywords: data collector, queries, create, astra, ads, data, store, 
+keywords: data collector, queries, create, astra, data, store, 
 ---
 = NetApp Astra 数据存储库数据收集器
 
 
 [role="lead"]
-此数据收集器可为单个 Astra 数据存储（ ADS ）集群采集清单和性能数据。除了数据收集器之外，监控操作员还会配置 _Telegraf_ 来收集高级指标，并配置 _fluent bit_ 来收集日志。
+此数据收集器可采集单个 Astra Data Store 集群的清单和性能数据。除了数据收集器之外，监控操作员还会配置 _Telegraf_ 来收集高级指标，并配置 _fluent bit_ 来收集日志。
 
 
-TIP: 也可以在中找到这些安装说明和追加信息 link:https://https://docs.netapp.com/us-en/astra-data-store/monitor-with-cloud-insights.html["Astra Data Store 文档"]。
+TIP: 此外，您还可以在 Astra 数据存储库文档中找到这些安装说明和追加信息：link:https://docs.netapp.com/us-en/astra-data-store/use/monitor-with-cloud-insights.html["使用 Cloud Insights 监控指标"]
+
 
 
 

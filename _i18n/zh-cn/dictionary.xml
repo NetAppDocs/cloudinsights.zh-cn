@@ -8378,9 +8378,6 @@
   <block id="0e3ba895596ae6b82a28fc759871c813" category="paragraph">Cloud Insights 提供了四个用户帐户级别：帐户所有者，管理员，用户和来宾。系统会为每个帐户分配特定的权限级别。具有管理员权限的用户帐户可以创建或修改用户，并为每个用户分配以下 Cloud Secure 角色之一：</block>
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">为每个用户选择所需的角色。</block>
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">添加新用户时，只需选择所需角色（通常为用户或来宾）即可。</block>
-  <block id="bd8b7c0925161675fcd7881a6fbad547" category="paragraph">此数据收集器可为单个 Astra 数据存储（ ADS ）集群采集清单和性能数据。除了数据收集器之外，监控操作员还会配置 _Telegraf_ 来收集高级指标，并配置 _fluent bit_ 来收集日志。</block>
-  <block id="be1c3d3113c4023e29e8dd947523c711" category="inline-link-macro">Astra Data Store 文档</block>
-  <block id="359f9ae1b8107525ade9fca25695caed" category="admonition">也可以在中找到这些安装说明和追加信息 <block ref="e2d5f927a8e191fcb9cf0ddb95ef6d7b" category="inline-link-macro-rx"></block>。</block>
   <block id="a589a4753ac4130f5ad58a40d1aa11f3" category="paragraph">Cloud Insights 从此数据收集器采集清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="c5ecce90295639a685470629720aeea5" category="list-text">必须在具有 Astra 数据存储的 Kubernetes 集群中安装 NetApp 监控操作员。如果在安装 Astra Data Store 期间未安装此操作系统，请按照 Astra Data Store 安装说明安装监控操作员。</block>
   <block id="c9ff350f66cd300384d6bb9ee56d679b" category="list-text">必须安装 _kubectl-astrads_kubectl 插件。如果未安装，请按照 Astra Data Store 安装说明安装 _kubectl-astrads_binary 。</block>
@@ -8412,4 +8409,12 @@
   <block id="f130f336cdc88ab3756994fbfee8af30" category="cell">获取采集单元 POD 的名称： kubectl get pods -namespace netapp-monitoring | grep "au-po" Check the pod logs for errors ： kubectl logs - 命名空间 netapp-monitoring &lt;pod_name&gt; 如果没有错误，并且日志以消息 "Main - Acquisition is up and running ！ " 结尾，则安装成功，但安装时间超出预期。重新运行安装脚本。</block>
   <block id="4dedbdfa903139111848c20c418cf8b9" category="cell">无法从 Cloud Insights 检索采集单元 ID</block>
   <block id="5c8dd5b291686fd09b7f2bd04fa20150" category="cell">验证采集单元是否显示在 Cloud Insights 中。转到 "Admin"&gt;"Data Collectors" ，然后单击 "Acquisition Units" 选项卡。验证 Cloud Insights API 密钥是否具有采集单元的权限。</block>
+  <block id="729716cbbc26046a3f2eae7728a60220" category="inline-link-macro">NetApp Astra 数据存储</block>
+  <block id="0b29c8b6030261b81886de13d7902820" category="cell"><block ref="0b29c8b6030261b81886de13d7902820" category="inline-link-macro-rx"></block></block>
+  <block id="17d0980f445c2a05e39e2cbcbbb44f10" category="paragraph">此数据收集器可采集单个 Astra Data Store 集群的清单和性能数据。除了数据收集器之外，监控操作员还会配置 _Telegraf_ 来收集高级指标，并配置 _fluent bit_ 来收集日志。</block>
+  <block id="9006a134fd1870aca1877d5e1e68dae9" category="inline-link-macro">使用 Cloud Insights 监控指标</block>
+  <block id="f0b65328b01ef9e6301a81ee7e9ed23f" category="inline-link-macro">Astra 数据存储快速入门</block>
+  <block id="b42189ec86d9beb36690d81d11d4ab47" category="admonition">此外，您还可以在 Astra 数据存储库文档中找到这些安装说明和追加信息：<block ref="e8b9f8414fb0a1622a4d51b962548914" category="inline-link-macro-rx"></block>
+<block ref="9e8952bf2d49abc5b376cb6c4ac1dd52" category="inline-link-macro-rx"></block></block>
+  <block id="8035d5d39b2b48f6ec1a3133b688513c" category="sidebar">Astra 数据存储</block>
 </blocks>
