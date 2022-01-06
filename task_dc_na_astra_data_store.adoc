@@ -8,13 +8,16 @@ keywords: data collector, queries, create, astra, ads, data, store,
 
 
 [role="lead"]
-NetApp Astra Data Store 数据收集器可监控和报告单个 Astra Data Store （ ADS ）集群的配置和性能数据。
+此数据收集器可为单个 Astra 数据存储（ ADS ）集群采集清单和性能数据。除了数据收集器之外，监控操作员还会配置 _Telegraf_ 来收集高级指标，并配置 _fluent bit_ 来收集日志。
+
+
+TIP: 也可以在中找到这些安装说明和追加信息 link:https://https://docs.netapp.com/us-en/astra-data-store/monitor-with-cloud-insights.html["Astra Data Store 文档"]。
 
 
 
 == 术语
 
-Cloud Insights 从此收集器获取清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+Cloud Insights 从此数据收集器采集清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
 
 [cols="2*"]
 |===
@@ -39,120 +42,68 @@ Cloud Insights 从此收集器获取清单和性能数据。对于所采集的�
 
 == 要求
 
-* 采集单元必须在 Astra Data Store Kubernetes 集群中的 Kubernetes Pod 中运行。请参见 link:task_configure_acquisition_unit.html["采集单元安装"] 有关详细信息：
+* 必须在具有 Astra 数据存储的 Kubernetes 集群中安装 NetApp 监控操作员。如果在安装 Astra Data Store 期间未安装此操作系统，请按照 Astra Data Store 安装说明安装监控操作员。
+* 必须安装 _kubectl-astrads_kubectl 插件。如果未安装，请按照 Astra Data Store 安装说明安装 _kubectl-astrads_binary 。
+* 必须提供以下命令： _jk ， cURL ， grep 和 JQ_ 。
+
+
+
+
+== 安装
+
+安装脚本将指导您完成 Astra Data Store 数据收集器的安装。按照屏幕上的说明进行操作。完成安装需要几分钟时间。完成后，可能需要几分钟才能在 Cloud Insights 中显示数据。
+
+此脚本将指导您完成以下步骤：
+
+. 选择 API 访问令牌。
+. 从安装对话框中复制安装程序脚本，并将其另存为名为 _cloudinsets-ads-monitoring.sh_ 的文件。您可以单击剪贴板图标将脚本快速复制到剪贴板。
+. 打开 Bash 窗口，将目录更改为 _cloudinsors-ads-monitoring.sh_ 脚本的位置。
+. 从安装对话框复制权限命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。
+. 将权限命令粘贴到 Bash 窗口中，然后按 Enter 键。
+. 从安装对话框中复制 install 命令。您可以单击剪贴板图标将命令快速复制到剪贴板。
+. 将 install 命令粘贴到 Bash 窗口中。
+. 将 <Kubernetes API 服务器的 IP 地址替换为 <Kubernetes IP> 。
+. 将 <Kubernetes 令牌 > 替换为您的 Kubernetes API 令牌。
+. 按 Enter 键。
 +
-** 要安装采集单元，您需要一个 Cloud Insights link:API_Overview.html["API 密钥"] 对类别具有读 / 写权限： _Acquisition Unit ， Data Collection ， Data ingestion_
-** 使用的 Kubernetes API 令牌必须授予对 _astrads.netapp.io_ apiGroup 的只读访问权限
+安装程序脚本将： * 验证是否已安装和配置监控操作员。* 配置流畅位。* 配置 Telegraf 。* 安装采集单元。* 在采集单元运行后安装 Astra 数据存储收集器。
+
+. 单击 _complete Setup_ 。
 
 
-* 要检索 astrads-system 默认服务帐户的 API 令牌，请在 bash shell 中运行以下命令：
-+
+如果安装程序脚本因错误而退出，则可以在解决错误后重新运行它。如果您的环境不使用默认设置，则安装程序脚本支持其他参数，例如监控操作员命名空间和 Kubernetes API 服务器端口。下面列出了可用选项的完整列表。
+
+
+
+=== 安装程序脚本选项：
+
+请注意， Cloud Insights 域名和选定 API 访问密钥将在下载时嵌入到安装程序脚本中。
+
 ....
-SECRET_NAME=$(kubectl get secrets -n astrads-system| grep ^default| cut -f1 -d ' ' )
-kubectl describe secret $SECRET_NAME -n astrads-system | grep -E '^token' | cut -f2 -d':' | tr -d " "
+$ ./cloudinsights-ads-monitoring.sh -h
+USAGE: cloudinsights-ads-monitoring.sh [OPTIONS]
+Configure monitoring of Astra Data Store by Cloud Insights.
+OPTIONS:
+ -h                      Display this help message.
+ -d ci_domain_name       Cloud Insights tenant domain name.
+ -i kubernetes_ip        Kubernetes API server IP address.
+ -k ci_api_key           Cloud Insights API Access Key.
+ -n namespace            Namespace for monitoring components. (default: netapp-monitoring)
+ -p kubernetes_port      Kubernetes API server port. (default: 6443)
+ -r root_pv_dir          Create 3 Persistent Volumes in this directory for the Acquisition Unit.
+                         Only specify this option if there is no Storage Provisioner installed and the PVs do not already exist.
+ -s storage_class        Storage Class name for provisioning Acquisition Unit PVs. If not specified, the default storage class will be used.
+ -t kubernetes_token     Kubernetes API server token.
 ....
-
-
-
-
-== 配置
-
-[cols="2*"]
-|===
-| 字段 | 说明 
-
-
-| Kubernetes API 服务器 IP 地址 | Kubernetes API 服务器的 IP 地址 
-
-
-| Kubernetes API 服务器端口 | Kubernetes API 服务器的端口默认值为 6443. 
-
-
-| Kubernetes API 令牌 | Base64 编码的 Kubernetes API 令牌 
-|===
-
-
-== 高级配置
-
-[cols="2*"]
-|===
-| 字段 | 说明 
-
-
-| 清单轮询间隔（分钟） | 两次清单轮询的间隔。默认值为 60 分钟。 
-
-
-| 性能轮询间隔（秒） | 性能轮询之间的时间间隔。默认值为 300 秒。 
-
-
-| 包含的 ADS 集群名称 | 要包括在轮询中的 ADS 集群名称的逗号分隔列表。留空可监控所有集群。 
-|===
-
-
-== 安装采集单元， Telegraf 和 Fluent Bit
-
-NetApp 监控操作员将安装在使用 Astra 数据存储的 Kubernetes 集群中。监控操作员负责管理采集单元，用于高级指标的 Telegraf 代理以及用于日志的 Fluent Bit 代理的安装和配置。
-
-要配置操作员，请执行以下步骤：
-
-. 复制以下自定义资源定义代码片段
-+
-....
-spec:
-  au:
-    isEnabled: true
-    #storageClassName: ""
-  telegraf:
-  - name: "open-metric"
-    run-mode:
-    - ReplicaSet
-    substitutions:
-    - key: URLS
-      values:
-      - "http://astrads-metrics-service.astrads-system.svc.cluster.local:9341"
-    - key: METRIC_TYPE
-      value: "ads-metrics"
-    outputs:
-    - sink: CI
-  fluent-bit:
-  - name: "ads-tail-ci"
-    substitutions:
-    - key: TAG
-      value: "ads-logs"
-    - key: ADS_CLUSTER_NAME
-      value: "<INSERT_CLUSTER_NAME>"
-    - key: LOG_FILE
-      values:
-      - "/var/log/firetap/*/ems/ems"
-      - "/var/log/firetap/ems/*/ems/ems"
-    outputs:
-    - sink: CI
-  output-sink:
-  - api-key: "<INSERT_CI_API_KEY>"
-    domain-name: "<INSERT_CI_DOMAIN_NAME>"
-    name: CI
-....
-. 如果 Kubernetes 集群中未配置存储配置程序，请取消注释 _storageClassName_ 并提供采集单元中包含 PV 的存储类的名称。必须已创建这些 PV 。留空以使用默认 StorageClass 。
-. 将 <insert cluster_name> 替换为 Astra 数据存储集群的名称
-. 将 <insert_CI_API_key> 替换为 Cloud Insights API 访问令牌
-. 将 <insert cI_domain_name> 替换为 Cloud Insights 租户域名
-. 运行以下命令以编辑监控操作员代理规范：
-+
- kubectl --namespace netapp-monitoring edit agent acc-monitoring
-. 将上述自定义资源定义代码片段与现有监控操作员代理规范合并。
-. 保存并关闭编辑器窗口。
-
-
-监控操作员现在将安装采集单元， Telegraf 和 Fluent Bit 。完成此操作可能需要几分钟时间。定期运行以下命令以检查采集单元状态，直到状态为 up 为止。或者，您也可以等待新采集单元显示在 Cloud Insights UI 中。
-
- kubectl --namespace netapp-monitoring get agent -o jsonpath='{.status.au-pod-status}' acc-monitoring
-安装采集单元后，您可以从 Cloud Insights UI 添加 Astra 数据存储收集器。
-
 
 
 == 故障排除
 
 如果此数据收集器出现问题，请尝试执行以下操作：
+
+
+
+==== Astra 数据存储数据收集器
 
 [cols="2*"]
 |===
@@ -163,5 +114,25 @@ spec:
 
 
 | " 未知主机： astrads-metrics-service.astrads-system.svc.cluster.local ：名称或服务未知 " | 验证收集器是否安装在 ADS Kubernetes 集群内运行的采集单元 POD 中。验证 astrads-metrics-service 是否正在运行 astrads-system 命名空间。 
+|===
+
+
+==== 安装脚本
+
+[cols="2*"]
+|===
+| 问题： | 请尝试以下操作： 
+
+
+| 监控运算符未在 < 命名空间 > 命名空间中运行。 | 按照 Astra Data Store 安装说明进行安装 
+
+
+| 采集单元 POD <pod > 在 300 秒后未成功启动。 | 获取采集单元 POD 的名称： kubectl get pod -namespace netapp-monitoring | grep "au-po" Check the pod events for errors ： kubectl describe pod -namespace netapp-monitoring <pod_name> 
+
+
+| 采集单元安装未在 900 秒后完成 | 获取采集单元 POD 的名称： kubectl get pods -namespace netapp-monitoring | grep "au-po" Check the pod logs for errors ： kubectl logs - 命名空间 netapp-monitoring <pod_name> 如果没有错误，并且日志以消息 "Main - Acquisition is up and running ！ " 结尾，则安装成功，但安装时间超出预期。重新运行安装脚本。 
+
+
+| 无法从 Cloud Insights 检索采集单元 ID | 验证采集单元是否显示在 Cloud Insights 中。转到 "Admin">"Data Collectors" ，然后单击 "Acquisition Units" 选项卡。验证 Cloud Insights API 密钥是否具有采集单元的权限。 
 |===
 可从中找到此数据收集器上的追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。

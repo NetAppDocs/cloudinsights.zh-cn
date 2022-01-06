@@ -7555,36 +7555,12 @@
 <block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
 <block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
 <block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block></block>
-  <block id="3dcd4b7650b0373219bccea330da8d96" category="paragraph">Cloud Insights 从此收集器获取清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="30849cb98e37d0646fe727a1092f47dd" category="cell">AstraDSVolume</block>
   <block id="4da6d4792b95d2d99cc3e0f5d7ef90d2" category="cell">AstraNodeInfo.status.drives</block>
   <block id="df94c295a2794c1c2ccdaa129403f929" category="cell">AstraNodeInfo</block>
   <block id="d1f334283c677818d712ba42cb98bff0" category="cell">AstraDSExportPolicy</block>
   <block id="1720f1876e19d7a553b6a4f1df02a70c" category="cell">共享 / 共享启动程序</block>
   <block id="bc84b80d565099f26b1c5343ee7bf019" category="cell">AstraDSCluster</block>
-  <block id="82f59b932944c8d3e51b299753b0b577" category="inline-link-macro">采集单元安装</block>
-  <block id="5c4e04ad1190e5c90b1b0f619ffdfce8" category="list-text">采集单元必须在 Astra Data Store Kubernetes 集群中的 Kubernetes Pod 中运行。请参见 <block ref="685689410070e2ca4b2a238a29a6485a" category="inline-link-macro-rx"></block> 有关详细信息：</block>
-  <block id="8155879da2f06fed5df19d6c696fb9eb" category="list-text">要安装采集单元，您需要一个 Cloud Insights <block ref="5decf952854a75ba62436d35e6c78b28" category="inline-link-macro-rx"></block> 对类别具有读 / 写权限： _Acquisition Unit ， Data Collection ， Data ingestion_</block>
-  <block id="d94f21371b1ddf718eac12a52a2c04d5" category="list-text">使用的 Kubernetes API 令牌必须授予对 _astrads.netapp.io_ apiGroup 的只读访问权限</block>
-  <block id="7fd42c59429dd49f7d8d2046c25561a2" category="list-text">要检索 astrads-system 默认服务帐户的 API 令牌，请在 bash shell 中运行以下命令：</block>
-  <block id="cb058d58577afc1218e66a94de6c292d" category="cell">Kubernetes API 服务器 IP 地址</block>
-  <block id="6c78114b7032d73ba3ed6e8cbd74b060" category="cell">Kubernetes API 服务器端口</block>
-  <block id="9b3098ff06241109f699cfd1a1a63a35" category="cell">Kubernetes API 令牌</block>
-  <block id="cbf38915f7dd92dccde1fe3dad2469bf" category="cell">包含的 ADS 集群名称</block>
-  <block id="e0412bb84ea8e005d283cd9efaeeaafb" category="cell">要包括在轮询中的 ADS 集群名称的逗号分隔列表。留空可监控所有集群。</block>
-  <block id="965c5c6eb8381e5b51445a5fbc3048b3" category="section-title">安装采集单元， Telegraf 和 Fluent Bit</block>
-  <block id="942ad6ae4cfb77253ea0ed5053f1c538" category="paragraph">NetApp 监控操作员将安装在使用 Astra 数据存储的 Kubernetes 集群中。监控操作员负责管理采集单元，用于高级指标的 Telegraf 代理以及用于日志的 Fluent Bit 代理的安装和配置。</block>
-  <block id="60c94873e829d5ca6d386970af565e78" category="paragraph">要配置操作员，请执行以下步骤：</block>
-  <block id="d2953a6d1dc9e4c2944f4fbe26ac3e38" category="list-text">复制以下自定义资源定义代码片段</block>
-  <block id="cf1bba394802bae24b1516ceecd24b5f" category="list-text">如果 Kubernetes 集群中未配置存储配置程序，请取消注释 _storageClassName_ 并提供采集单元中包含 PV 的存储类的名称。必须已创建这些 PV 。留空以使用默认 StorageClass 。</block>
-  <block id="9b8755d743dc0ce6277cdc31ef224b5e" category="list-text">将 &lt;insert cluster_name&gt; 替换为 Astra 数据存储集群的名称</block>
-  <block id="a2f1c521dfa91f6c85597ffffd4ad0dc" category="list-text">将 &lt;insert_CI_API_key&gt; 替换为 Cloud Insights API 访问令牌</block>
-  <block id="cbbd92d6b955f7ab9a2e14bd02c8ae67" category="list-text">将 &lt;insert cI_domain_name&gt; 替换为 Cloud Insights 租户域名</block>
-  <block id="0708c6c6efe0076d2e9dac362af766e5" category="list-text">运行以下命令以编辑监控操作员代理规范：</block>
-  <block id="f9e160d20c2644dfc7d3e369f872c3e4" category="list-text">将上述自定义资源定义代码片段与现有监控操作员代理规范合并。</block>
-  <block id="150d2b6856d23f8d526cc61f0fb19907" category="list-text">保存并关闭编辑器窗口。</block>
-  <block id="98b3e324b6c5777cb1d2831d88b1132f" category="paragraph">监控操作员现在将安装采集单元， Telegraf 和 Fluent Bit 。完成此操作可能需要几分钟时间。定期运行以下命令以检查采集单元状态，直到状态为 up 为止。或者，您也可以等待新采集单元显示在 Cloud Insights UI 中。</block>
-  <block id="a7b3be6177e953276c8908078af9035c" category="paragraph">安装采集单元后，您可以从 Cloud Insights UI 添加 Astra 数据存储收集器。</block>
   <block id="711f972f5e82f211f310ac06c2f8e036" category="cell">您会看到一条 " 未授权 " 消息</block>
   <block id="90b86e404196295299e2aa0d840dad62" category="cell">检查 Kubernetes API 令牌是否有权调用 _astrads.netapp.io_ apiGroup 中的 API</block>
   <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">" 未知主机： astrads-metrics-service.astrads-system.svc.cluster.local ：名称或服务未知 "</block>
@@ -7641,10 +7617,6 @@
   <block id="159904c45b61bfdda4989e18bf9891e8" category="paragraph">对于上述每个 " 是 " 问题解答，建议向 AU 添加 8 GB 内存和 50 GB 磁盘空间。因此，例如，如果您对这两者都回答 " 是 " ，则应部署一个具有 150 GB 或以上磁盘空间的 24 GB 内存系统。在 Linux 上，要添加到日志位置的磁盘空间。</block>
   <block id="21d6683e9fb00a0e8c451185a0fefc00" category="summary">配置 NetApp Astra 数据存储库</block>
   <block id="66857f3f017c56c7d6bc365ead0549cc" category="doc">NetApp Astra 数据存储库数据收集器</block>
-  <block id="c81d3de0d63693ca7ae8a4c83d9b9678" category="paragraph">NetApp Astra Data Store 数据收集器可监控和报告单个 Astra Data Store （ ADS ）集群的配置和性能数据。</block>
-  <block id="23d69dc5c46eb576cdde08fed5bdc4c7" category="cell">Kubernetes API 服务器的 IP 地址</block>
-  <block id="f2e0eea4e8022b610a38c7ca5b2987f2" category="cell">Kubernetes API 服务器的端口默认值为 6443.</block>
-  <block id="ca4d8b2cea754e64a8db55441ca30fca" category="cell">Base64 编码的 Kubernetes API 令牌</block>
   <block id="bc593a7d4784d165423875d1c30b5ce3" category="cell">我在 Kubernetes 上安装或升级了 Telegraf ，但 Telegraf Pod 未启动。Telegraf ReplicaSet 或 DemonSet 报告了类似以下内容的故障：创建时出错： Pod "telaf-RS- " is foreged" ：无法针对任何安全上下文限制进行验证： [spec.volumes_2 ：无效值： "hostPath" ：不允许使用 hostPath 卷 ]</block>
   <block id="6dba20e9db8c662f2bd1d8bb1008108b" category="cell">如果还不存在安全上下文限制，请创建此限制（请参见上文 " 配置代理以从 Kubernetes 收集数据 " 一节）。确保为安全上下文限制指定的命名空间和服务帐户与 Telegraf ReplicaSet 和 DemonSet 的命名空间和服务帐户匹配。kubectl describe scc talaf-hostaccess |grep serviceaccount kubectl -n ci-monitoring -describe RS talaf-RS | grep -i "Namespace" kubectl -n ci-monitoring describe RS tengraaf-RS | grep -i "service account" ： kubectl -n ci-monitoring -describe DS ci-ds-ds-ds-ds"</block>
   <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">此 GitHub 文章</block>
@@ -8406,4 +8378,38 @@
   <block id="0e3ba895596ae6b82a28fc759871c813" category="paragraph">Cloud Insights 提供了四个用户帐户级别：帐户所有者，管理员，用户和来宾。系统会为每个帐户分配特定的权限级别。具有管理员权限的用户帐户可以创建或修改用户，并为每个用户分配以下 Cloud Secure 角色之一：</block>
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">为每个用户选择所需的角色。</block>
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">添加新用户时，只需选择所需角色（通常为用户或来宾）即可。</block>
+  <block id="bd8b7c0925161675fcd7881a6fbad547" category="paragraph">此数据收集器可为单个 Astra 数据存储（ ADS ）集群采集清单和性能数据。除了数据收集器之外，监控操作员还会配置 _Telegraf_ 来收集高级指标，并配置 _fluent bit_ 来收集日志。</block>
+  <block id="be1c3d3113c4023e29e8dd947523c711" category="inline-link-macro">Astra Data Store 文档</block>
+  <block id="359f9ae1b8107525ade9fca25695caed" category="admonition">也可以在中找到这些安装说明和追加信息 <block ref="e2d5f927a8e191fcb9cf0ddb95ef6d7b" category="inline-link-macro-rx"></block>。</block>
+  <block id="a589a4753ac4130f5ad58a40d1aa11f3" category="paragraph">Cloud Insights 从此数据收集器采集清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="c5ecce90295639a685470629720aeea5" category="list-text">必须在具有 Astra 数据存储的 Kubernetes 集群中安装 NetApp 监控操作员。如果在安装 Astra Data Store 期间未安装此操作系统，请按照 Astra Data Store 安装说明安装监控操作员。</block>
+  <block id="c9ff350f66cd300384d6bb9ee56d679b" category="list-text">必须安装 _kubectl-astrads_kubectl 插件。如果未安装，请按照 Astra Data Store 安装说明安装 _kubectl-astrads_binary 。</block>
+  <block id="55cf41c81d8f2fa848c3a33fd73120b5" category="list-text">必须提供以下命令： _jk ， cURL ， grep 和 JQ_ 。</block>
+  <block id="af27e8481fc7ef90e7ed57735aa486a7" category="paragraph">安装脚本将指导您完成 Astra Data Store 数据收集器的安装。按照屏幕上的说明进行操作。完成安装需要几分钟时间。完成后，可能需要几分钟才能在 Cloud Insights 中显示数据。</block>
+  <block id="d679078549b407f8255ce4a95eb4ccad" category="paragraph">此脚本将指导您完成以下步骤：</block>
+  <block id="73abd6a4d58ac58a260c391fe56f1a57" category="list-text">选择 API 访问令牌。</block>
+  <block id="d81b7ed35f0d2bef601ad8d74fdeb35c" category="list-text">从安装对话框中复制安装程序脚本，并将其另存为名为 _cloudinsets-ads-monitoring.sh_ 的文件。您可以单击剪贴板图标将脚本快速复制到剪贴板。</block>
+  <block id="e62192a6aee08bda18b9aa476e12ac7c" category="list-text">打开 Bash 窗口，将目录更改为 _cloudinsors-ads-monitoring.sh_ 脚本的位置。</block>
+  <block id="fa36e0d10ffde2aefefc27bd0369f2f1" category="list-text">从安装对话框复制权限命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。</block>
+  <block id="0df60a234fa438383cbe9b557bc6ac86" category="list-text">将权限命令粘贴到 Bash 窗口中，然后按 Enter 键。</block>
+  <block id="37ed094e95b1aafa9f96e9189d257a88" category="list-text">从安装对话框中复制 install 命令。您可以单击剪贴板图标将命令快速复制到剪贴板。</block>
+  <block id="8c8c329f90a58cb7d77dde8ca933b56d" category="list-text">将 install 命令粘贴到 Bash 窗口中。</block>
+  <block id="aaf4db30c94d2b3ecd2df73746b66f60" category="list-text">将 &lt;Kubernetes API 服务器的 IP 地址替换为 &lt;Kubernetes IP&gt; 。</block>
+  <block id="37ee78eaea07b1141db2771004cca6c2" category="list-text">将 &lt;Kubernetes 令牌 &gt; 替换为您的 Kubernetes API 令牌。</block>
+  <block id="c7e5cc3cd77f2019256afe7266491452" category="list-text">按 Enter 键。</block>
+  <block id="d29c6dec2ac17ff8872c354eb3f62aea" category="paragraph">安装程序脚本将： * 验证是否已安装和配置监控操作员。* 配置流畅位。* 配置 Telegraf 。* 安装采集单元。* 在采集单元运行后安装 Astra 数据存储收集器。</block>
+  <block id="167fe4db27b48d4d51e6a9656383dbb8" category="list-text">单击 _complete Setup_ 。</block>
+  <block id="96fab0bdb0ff6d498a516ba05e81b851" category="paragraph">如果安装程序脚本因错误而退出，则可以在解决错误后重新运行它。如果您的环境不使用默认设置，则安装程序脚本支持其他参数，例如监控操作员命名空间和 Kubernetes API 服务器端口。下面列出了可用选项的完整列表。</block>
+  <block id="b524f24588085b1e0adf31626117f231" category="section-title">安装程序脚本选项：</block>
+  <block id="df5b5c690ed2b1756bcbac0e24081d89" category="paragraph">请注意， Cloud Insights 域名和选定 API 访问密钥将在下载时嵌入到安装程序脚本中。</block>
+  <block id="5b3edf747d66543d15b01f48fb0a354e" category="section-title">Astra 数据存储数据收集器</block>
+  <block id="81e081c4fe35feb390583edb77bf277e" category="section-title">安装脚本</block>
+  <block id="5afe69e2069028149a518ef6de1e10c5" category="cell">监控运算符未在 &lt; 命名空间 &gt; 命名空间中运行。</block>
+  <block id="6f062aede7e681e4af5f68add3fd7fd7" category="cell">按照 Astra Data Store 安装说明进行安装</block>
+  <block id="4c43e40f1d743a69fcdef8d2b47d0b14" category="cell">采集单元 POD &lt;pod &gt; 在 300 秒后未成功启动。</block>
+  <block id="9434c645e8cc0f2a0d4f6cce62e5542d" category="cell">获取采集单元 POD 的名称： kubectl get pod -namespace netapp-monitoring | grep "au-po" Check the pod events for errors ： kubectl describe pod -namespace netapp-monitoring &lt;pod_name&gt;</block>
+  <block id="900774bd5956acd411393b65417a827b" category="cell">采集单元安装未在 900 秒后完成</block>
+  <block id="f130f336cdc88ab3756994fbfee8af30" category="cell">获取采集单元 POD 的名称： kubectl get pods -namespace netapp-monitoring | grep "au-po" Check the pod logs for errors ： kubectl logs - 命名空间 netapp-monitoring &lt;pod_name&gt; 如果没有错误，并且日志以消息 "Main - Acquisition is up and running ！ " 结尾，则安装成功，但安装时间超出预期。重新运行安装脚本。</block>
+  <block id="4dedbdfa903139111848c20c418cf8b9" category="cell">无法从 Cloud Insights 检索采集单元 ID</block>
+  <block id="5c8dd5b291686fd09b7f2bd04fa20150" category="cell">验证采集单元是否显示在 Cloud Insights 中。转到 "Admin"&gt;"Data Collectors" ，然后单击 "Acquisition Units" 选项卡。验证 Cloud Insights API 密钥是否具有采集单元的权限。</block>
 </blocks>
