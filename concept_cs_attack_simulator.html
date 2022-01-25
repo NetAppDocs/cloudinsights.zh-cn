@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>自动响应策略</title>
+  <title>Cloud Secure ：模拟攻击</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="自动响应策略" />
+  <meta property="og:title" content="Cloud Secure ：模拟攻击" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/cs_automated_response_policies.html" />
-	<meta property="og:description" content="您可以为潜在攻击（例如勒索软件）和 / 或活动警告设置自动响应策略" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/concept_cs_attack_simulator.html" />
+	<meta property="og:description" content="您可以使用脚本模拟勒索软件攻击，以测试或演示 Cloud Secure" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,8 +18,8 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="您可以为潜在攻击（例如勒索软件）和 / 或活动警告设置自动响应策略">
-  <meta name="keywords" content=" alert, snapshot, ransomware, attack">
+  <meta name="description" content="您可以使用脚本模拟勒索软件攻击，以测试或演示 Cloud Secure">
+  <meta name="keywords" content=" ransomware, simulation, simulator, restrict, attack">
   
   
 
@@ -281,11 +281,11 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/cs_automated_response_policies.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/concept_cs_attack_simulator.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/cloudinsights/concept_cs_attack_simulator.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/cs_automated_response_policies.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/concept_cs_attack_simulator.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -883,8 +883,10 @@
   
 
 
+
+
     <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/cloudinsights/pdfs/pages/cs_automated_response_policies.pdf" >
+  <a target="_blank" href="/zh-cn/cloudinsights/pdfs/pages/concept_cs_attack_simulator.pdf" >
     <img src="/zh-cn/cloudinsights/images/pdf.png" width="16" height="16"/>
     PDF of this page
   </a>
@@ -1619,8 +1621,10 @@
         活动取证—实体
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/forensic_user_overview.html">
         用户
-      </a></li></ul></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/cs_automated_response_policies.html">
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/cs_automated_response_policies.html">
         自动响应策略
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/concept_cs_attack_simulator.html">
+        模拟勒索软件攻击
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/cs_notifications_email.html">
         通知
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/concept_cs_api.html">
@@ -1872,7 +1876,7 @@
           <a href="/zh-cn/cloudinsights/">Cloud&nbsp;Insights</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          自动响应策略
+          Cloud Secure ：模拟攻击
         </li>
       </ul>
     </div>
@@ -1895,14 +1899,14 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">自动响应策略</h1>
+  <h1 class="n-doc__component-detail-heading">Cloud Secure ：模拟攻击</h1>
 </div>
 
 
 <p class="page-details">
   
     
-    <time datetime="2022-01-17 12:54:20 +0000">01/17/2022</time>
+    <time datetime="2022-01-25 16:04:37 +0000">01/25/2022</time>
     
   
 
@@ -1921,32 +1925,225 @@
 </p>
 
 
+<div id="preamble">
+<div class="sectionbody">
 <div class="paragraph lead">
-<p>响应策略会触发一些操作，例如在发生攻击或用户行为异常时创建快照。</p>
+<p>您可以使用此页面上的说明，使用随附的 Cloud Secure 勒索软件模拟脚本模拟用于测试或演示 Cloud Secure 的攻击。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="开始之前需要注意的事项">开始之前需要注意的事项</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>勒索软件模拟脚本仅适用于 Linux 。</p>
+</li>
+<li>
+<p>此脚本随 Cloud Secure 代理安装文件一起提供。它可在安装了 Cloud Secure 代理的任何计算机上使用。</p>
+</li>
+<li>
+<p>您可以在 Cloud Secure 代理计算机本身上运行此脚本；无需准备其他 Linux 计算机。但是，如果您希望在其他系统上运行此脚本，只需复制此脚本并在其中运行即可。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="至少具有-1-000-个示例文件">至少具有 1 ， 000 个示例文件</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>此脚本应在包含要加密的文件的文件夹的 SVM 上运行。建议在该文件夹和任何子文件夹中至少有 1 ， 000 个文件。这些文件不能为空。请勿使用同一用户创建文件并对其进行加密。Cloud Secure 将此视为低风险活动，因此不会生成警报（即同一用户修改其刚刚创建的文件）。</p>
 </div>
 <div class="paragraph">
-<p>您可以在特定设备或所有设备上设置策略。要设置响应策略，请选择 * 管理员 &gt; 自动响应策略 * ，然后单击相应的 * + 策略 + 按钮。您可以为攻击或警告创建策略。</p>
+<p>有关说明，请参见下面的 <a href="#create-files-programmatically">"以编程方式创建非空文件"</a>。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="准备系统">准备系统</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>首先，将目标卷挂载到计算机。您可以挂载 NFS 挂载或 CIFS 导出。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="AutomatedAttackPolicy.png" alt="创建攻击策略"></span></p>
+<p>要在 Linux 中挂载 NFS 导出，请执行以下操作：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>mount -t nfs -o vers=4.0 10.193.177.158:/svmvol1 /mntpt
+mount -t nfs -o vers=4.0 Vserver data IP&gt;:/nfsvol /destinationlinuxfolder</pre>
+</div>
 </div>
 <div class="paragraph">
-<p>您必须使用唯一名称保存策略。</p>
+<p>请勿挂载 NFS 4.1 ； Fpolicy 不支持此版本。</p>
 </div>
 <div class="paragraph">
-<p>要禁用自动响应操作（例如，创建 Snapshot ），只需取消选中该操作并保存策略即可。</p>
+<p>要在 Linux 中挂载 CIFS ，请执行以下操作：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> mount -t cifs //10.193.77.91/sharedfolderincluster /root/destinationfolder/ -o username=raisa
+接下来，设置数据收集器：</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>如果尚未配置 Cloud Secure 代理，请进行配置。</p>
+</li>
+<li>
+<p>如果尚未配置 SVM 数据收集器，请进行配置。</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="运行勒索软件模拟器脚本">运行勒索软件模拟器脚本</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>登录（ ssh ）到 Cloud Secure 代理计算机。</p>
+</li>
+<li>
+<p>导航到： <em>/opt/netapp/cloudsecure /agent/install</em></p>
+</li>
+<li>
+<p>调用不带参数的模拟器脚本以查看用法：</p>
+<div class="literalblock">
+<div class="content">
+<pre># pwd
+/opt/netapp/cloudsecure/agent/install
+# ./ransomware_simulator.sh
+Error: Invalid directory  provided.
+Usage: ./ransomware_simulator.sh [-e] [-d] [-i &lt;input_directory&gt;]
+       -e to encrypt files (default)
+       -d to restore files
+       -i &lt;input_directory&gt; - Files under the directory to be encrypted</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Encrypt command example: ./ransomware_simulator.sh -e -i /mnt/audit/reports/
+Decrypt command example: ./ransomware_simulator.sh -d -i /mnt/audit/reports/</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="对测试文件进行加密">对测试文件进行加密</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>要对文件进行加密，请运行以下命令：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre># ./ransomware_simulator.sh -e -i /root/for/
+Encryption key is saved in /opt/netapp/cloudsecure/cloudsecure-agent-1.251.0/install/encryption-key,
+which can be used for restoring the files.
+Encrypted /root/for/File000.txt
+Encrypted /root/for/File001.txt
+Encrypted /root/for/File002.txt
+...</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="还原文件">还原文件</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>要解密，请运行以下命令：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>[root@scspa2527575001 install]# ./ransomware_simulator.sh -d -i /root/for/
+File /root/for/File000.txt is restored.
+File /root/for/File001.txt is restored.
+File /root/for/File002.txt is restored.
+...</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="多次运行此脚本">多次运行此脚本</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在为用户生成勒索软件攻击后，切换到另一个用户以生成额外的攻击。Cloud Secure 可了解用户行为，不会在短时间内对同一用户的重复勒索软件攻击发出警报。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="以编程方式创建文件">以编程方式创建文件</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在创建文件之前，必须先停止数据收集器处理。在将数据收集器添加到代理之前，请执行以下步骤。如果您已添加数据收集器，只需编辑数据收集器，输入无效密码并保存即可。此操作将暂时使数据收集器处于错误状态。注意：请务必记下原始密码！</p>
 </div>
 <div class="paragraph">
-<p>当针对指定设备（或所有设备，如果已选择）触发警报时，自动响应策略将为您的数据创建快照。您可以在上查看快照状态 <a href="cs_alert_data.html#the-alert-details-page">"警报详细信息页面"</a>。</p>
+<p>在运行模拟之前，您必须先添加要加密的文件。您可以手动将要加密的文件复制到目标文件夹中，也可以使用脚本（请参见以下示例）以编程方式创建文件。无论使用哪种方法，至少复制 1 ， 000 个文件。</p>
 </div>
 <div class="paragraph">
-<p>您可以通过在策略的下拉菜单中选择相应选项来修改或暂停自动响应策略。</p>
+<p>如果您选择以编程方式创建文件，请执行以下操作：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>登录到代理框。</p>
+</li>
+<li>
+<p>将 NFS 导出从存储器的 SVM 挂载到代理计算机。将 CD 复制到该文件夹。</p>
+</li>
+<li>
+<p>在该文件夹中，创建一个名为 createfiles.sh 的文件</p>
+</li>
+<li>
+<p>将以下行复制到该文件。</p>
+<div class="literalblock">
+<div class="content">
+<pre>for i in {000..1000}
+do
+   echo hello &gt; "File${i}.txt"
+done
+echo 3 &gt; /proc/sys/vm/drop_caches ; sync</pre>
+</div>
+</div>
+</li>
+<li>
+<p>保存文件。</p>
+</li>
+<li>
+<p>确保对文件具有执行权限：</p>
+<div class="literalblock">
+<div class="content">
+<pre> chmod 777 ./createfiles.sh
+. 执行脚本：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>./createfiles.sh</pre>
+</div>
 </div>
 <div class="paragraph">
-<p>Cloud Secure 将根据 Snapshot 清除设置每天自动删除一次快照。</p>
+<p>此时将在当前文件夹中创建 1000 个文件。</p>
 </div>
+</li>
+<li>
+<p>重新启用数据收集器</p>
 <div class="paragraph">
-<p><span class="image"><img src="CloudSecure_SnapshotPurgeSettings.png" alt="Snapshot 清除设置"></span></p>
+<p>如果您在步骤 1 中禁用了数据收集器，请编辑该数据收集器，输入正确的密码并保存。确保数据收集器重新处于运行状态。</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
 </div>
 
     </article>
@@ -1958,8 +2155,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[自动响应策略](https://docs.netapp.com/zh-cn/cloudinsights/cs_automated_response_policies.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/cs_automated_response_policies.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Cloud Secure ：模拟攻击](https://docs.netapp.com/zh-cn/cloudinsights/concept_cs_attack_simulator.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/concept_cs_attack_simulator.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloudinsights/images/article-sm.svg" class="github-icon" />提供者指南</a>
     </div>
     <div class="page-nav-container">

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>使用标注</title>
+  <title>限制用户访问</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="使用标注" />
+  <meta property="og:title" content="限制用户访问" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/task_create_annotation.html" />
-	<meta property="og:description" content="如何创建标注。" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/cs_restrict_user_access.html" />
+	<meta property="og:description" content="借助 Cloud Secure ，您可以在发生可疑破坏时限制用户访问" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,8 +18,8 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="如何创建标注。">
-  <meta name="keywords" content=" annotations, annotation rules, manual annotations,">
+  <meta name="description" content="借助 Cloud Secure ，您可以在发生可疑破坏时限制用户访问">
+  <meta name="keywords" content=" alert, snapshot,  attack">
   
   
 
@@ -281,11 +281,11 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/task_create_annotation.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/cs_restrict_user_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/task_create_annotation.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/cloudinsights/cs_restrict_user_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/task_create_annotation.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/cs_restrict_user_access.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -611,15 +611,6 @@
           
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/cloudinsights/pdfs/pages/task_create_annotation.pdf" >
-    <img src="/zh-cn/cloudinsights/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 
@@ -1501,7 +1492,7 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_defining_annotations.html">
         定义标注
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_create_annotation.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_create_annotation.html">
         使用标注
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_create_annotation_rules.html">
         使用标注规则
@@ -1876,7 +1867,7 @@
           <a href="/zh-cn/cloudinsights/">Cloud&nbsp;Insights</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          使用标注
+          限制用户访问
         </li>
       </ul>
     </div>
@@ -1899,7 +1890,7 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">使用标注</h1>
+  <h1 class="n-doc__component-detail-heading">限制用户访问</h1>
 </div>
 
 
@@ -1919,14 +1910,6 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/dgracenetapp">
-    <img  class="avatar avatar-small"
-          alt="dgracenetapp"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/38116247?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
 </span>
 
 
@@ -1936,196 +1919,217 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>您可以创建标注并将其分配给所监控的资产。标注是指提供资产相关信息的注释，例如物理位置，使用寿命终结，存储层或卷服务级别。</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="定义标注">定义标注</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>通过标注，您可以将符合业务需求的自定义业务特定数据添加到资产中。虽然 Cloud Insights 提供了一组默认标注，例如资产生命周期（生日或生命周期结束），建筑物或数据中心位置以及层，但您可能会发现您希望以其他方式查看数据。</p>
+<p>检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问来停止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。</p>
 </div>
 <div class="paragraph">
-<p>自定义标注中的数据可补充已收集的设备数据，例如交换机制造商，端口数量和性能统计信息。Cloud Insights 不会发现您使用标注添加的数据。</p>
-</div>
-<div class="ulist">
-<div class="title">开始之前</div>
-<ul>
-<li>
-<p>列出环境数据必须关联的任何行业术语。</p>
-</li>
-<li>
-<p>列出环境数据必须关联的企业术语。</p>
-</li>
-<li>
-<p>确定您可以使用的任何默认标注类型。</p>
-</li>
-<li>
-<p>确定需要创建哪些自定义标注。您需要先创建标注，然后才能将其分配给资产。</p>
-</li>
-</ul>
+<p>在限制用户访问时，您应定义访问限制类型（块或只读）和时间段。选定时间段结束后，系统将自动还原用户访问权限。</p>
 </div>
 <div class="paragraph">
-<p>按照以下步骤创建标注。</p>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>在 Cloud Insights 菜单中，单击 * 管理 &gt; 标注 *</p>
-</li>
-<li>
-<p>单击 * + Annotation * 以创建新标注。</p>
-</li>
-<li>
-<p>为新标注输入名称，问题描述和类型。</p>
-<div class="paragraph">
-<p>例如，输入以下内容创建一个文本标注，用于定义资产在 Data Center 4 中的物理位置：</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>输入标注的名称，例如 " 位置 "</p>
-</li>
-<li>
-<p>输入标注所描述的问题描述，例如 " 物理位置是数据中心 4"</p>
-</li>
-<li>
-<p>输入标注的 " 类型 " ，例如 " 文本 " 。</p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="手动为资产分配标注">手动为资产分配标注</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>为资产分配标注有助于您按照与业务相关的方式对资产进行排序，分组和报告。尽管您可以使用标注规则自动为特定类型的资产分配标注，但您可以使用资产页面为单个资产分配标注。</p>
-</div>
-<div class="ulist">
-<div class="title">开始之前</div>
-<ul>
-<li>
-<p>您必须已创建要分配的标注。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>登录到 Cloud Insights 环境。</p>
-</li>
-<li>
-<p>找到要应用标注的资产。</p>
-<div class="ulist">
-<ul>
-<li>
-<p>您可以通过查询，从 dashoard 小工具中选择或搜索来查找资产。找到所需资产后，单击相应链接以打开该资产的登录页面。</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>在资产页面的 User Data 部分中，单击 * + Annotation * 。</p>
-</li>
-<li>
-<p>此时将显示添加标注对话框。</p>
-</li>
-<li>
-<p>从列表中选择一个标注。</p>
-</li>
-<li>
-<p>单击 Value ，然后根据您选择的标注类型执行以下操作之一：</p>
-<div class="ulist">
-<ul>
-<li>
-<p>如果标注类型为 list ， date 或 boolean ，请从列表中选择一个值。</p>
-</li>
-<li>
-<p>如果标注类型为文本，请键入一个值。</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>单击 * 保存 * 。</p>
-</li>
-</ol>
+<p>SMB 和 NFS 协议均支持访问限制。</p>
 </div>
 <div class="paragraph">
-<p>如果要在分配后更改标注的值，请单击标注字段并选择其他值。如果标注的列表类型选择了 <em>Add new values on the fly</em> 选项，则除了选择现有值之外，您还可以键入新值。</p>
+<p>限制通过主机的 IP 地址发生，即用户访问存储的计算机。这些计算机 IP 地址将被阻止访问 Cloud Secure 监控的任何 Storage Virtual Machine （ SVM ）。</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="使用标注规则分配标注">使用标注规则分配标注</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>要根据定义的条件自动为资产分配标注，请配置标注规则。Cloud Insights 会根据这些规则为资产分配标注。Cloud Insights 还提供了两个默认标注规则，您可以根据需要修改这些规则，如果不想使用这些规则，则可以将其删除。</p>
+<p>例如，假设 Cloud Secure 管理 10 个 SVM ，并为其中 4 个 SVM 配置了自动响应策略。如果攻击源自四个 SVM 中的一个，则用户的访问将在所有 10 个 SVM 中受到限制。仍会在源 SVM 上创建 Snapshot 。</p>
+</div>
+<div class="paragraph">
+<p>如果有四个 SVM ，其中一个 SVM 配置为 CIFS ，一个为 NFS ，其余两个为 NFS 和 CIFS 配置，则如果攻击源自四个 SVM 中的任何一个，则所有 SVM 都将被阻止。</p>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="正在创建标注规则">正在创建标注规则</h3>
+<h3 id="用户访问限制的前提条件">用户访问限制的前提条件</h3>
 <div class="paragraph">
-<p>除了手动将标注应用于单个资产之外，您还可以使用标注规则自动将标注应用于多个资产。在 Insight 评估标注规则时，在单个资产页面上手动设置的标注优先于基于规则的标注。</p>
-</div>
-<div class="paragraph">
-<p>您必须已为标注规则创建查询。</p>
+<p>要使此功能正常运行，客户必须为 SMB 和 NFS 配置导出策略。如果在数据源收集器中配置了 NFS 和 SMB ，请按照以下步骤进行操作。</p>
 </div>
 <div class="paragraph">
-<p>虽然您可以在创建规则时编辑标注类型，但您应提前定义这些类型。</p>
+<p>对于 NFS ，默认情况下会配置导出策略。默认情况下，在 SVM 中创建 NFS 服务时会创建导出策略。对于 SMB ，必须配置导出策略。</p>
 </div>
-<div class="olist arabic">
-<div class="title">步骤</div>
-<ol class="arabic">
-<li>
-<p>单击 * 管理 &gt; 标注规则 *</p>
 <div class="paragraph">
-<p>" 标注规则 " 页面将显示现有标注规则的列表。</p>
+<p>对于 NFS 和 SMB ，必须正确配置 <em>csroles</em> 。在设置 ONTAP SVM 数据源收集器时，客户应配置 <em>csrole</em> （如果尚未配置），如中所述 <a href="task_add_collector_svm.html#a-note-about-permissions">"数据收集器权限"</a> 文档。</p>
 </div>
-</li>
-<li>
-<p>单击 * + Add* 。</p>
-</li>
-<li>
-<p>执行以下操作：</p>
-<div class="olist loweralpha">
-<ol class="loweralpha" type="a">
-<li>
-<p>在 * 名称 * 框中，输入用于描述规则的唯一名称。</p>
 <div class="paragraph">
-<p>此名称将显示在 "Annotation Rules" 页面中。</p>
+<p>如果使用集群 IP 配置数据收集器，请从 ONTAP 命令行执行以下操作：</p>
 </div>
-</li>
-<li>
-<p>单击 * 查询 * ，然后选择用于将标注应用于资产的查询。</p>
-</li>
-<li>
-<p>单击 * 标注 * 并选择要应用的标注。</p>
-</li>
-<li>
-<p>单击 * 值 * 并为标注选择一个值。</p>
+<div class="literalblock">
+<div class="content">
+<pre> security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
+如果使用服务器 IP 配置数据收集器，请从 ONTAP 命令行执行以下操作，并插入正确的 _&lt;vservername&gt;_ 。</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "vserver export-policy rule" -access all
+默认情况下，在 SVM 中创建 NFS 服务时会创建一个导出策略。</pre>
+</div>
+</div>
 <div class="paragraph">
-<p>例如，如果选择 " 生日 " 作为标注，则可以为此值指定日期。</p>
+<p>以下是用于配置导出策略的命令。将以下命令复制到文本编辑器，并将 &lt;vserver&gt; 名称替换为您的 SVM 名称。然后，一次复制一行，并在 ONTAP 控制台中执行该操作。注意：在运行命令之前，必须先切换到高级模式。</p>
 </div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+这对于运行 POC 尤其有用。在要测试的计算机中，可以按如下所示配置 SMB 。在 POC 期间，在数据源收集器中，仅启用 SMB/CIFS 协议并禁用 NFS 协议。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>如果使用集群模式：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> security login role create -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecure_*"
+如果使用 SVM 模式：</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecurity_*"</p>
+</div>
+<div class="paragraph">
+<p>对于这两种模式，请运行以下命令：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>set -privilege advanced
+cifs options modify -is-exportpolicy-enabled true -vserver &lt;vserver&gt;
+export-policy rule create -vserver &lt;vserver&gt; -policyname default -protocol cifs -clientmatch 0.0.0.0/0 -rorule any -rwrule any</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>要检查 <em>exportpolicy</em> 和 <em>exportpolicy rule</em> 是否已正确配置，请在运行上述命令后运行以下命令。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>cifs options show  -fields is-exportpolicy-enabled -vserver &lt;vserver&gt;
+export-policy show -vserver &lt;vserver&gt;
+export-policy rule show -policyname default -vserver &lt;vserver&gt;</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="如何启用此功能">如何启用此功能？</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>在 Cloud Secure 中，导航到 * 管理员 &gt; 自动响应策略 &gt; 响应策略设置 &gt; 访问限制 * 。</p>
 </li>
 <li>
-<p>单击 * 保存 * 。</p>
+<p>将 " 启用限制用户访问 " 设置为 _enabled" 。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="如何设置自动用户访问限制">如何设置自动用户访问限制？</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>创建新的攻击策略或编辑现有攻击策略。</p>
 </li>
 <li>
-<p>如果要立即运行所有规则，请单击 * 运行所有规则 * ；否则，这些规则将按计划的定期间隔运行。</p>
+<p>选择应监控攻击策略的 SVM 。</p>
 </li>
-</ol>
-</div>
+<li>
+<p>单击 " 限制用户 IP 文件访问 " 复选框。选择此选项后，此功能将启用。</p>
 </li>
-</ol>
+<li>
+<p>在 " 限制用户访问 " 下，选择应应用的限制模式。</p>
+</li>
+<li>
+<p>在 " 时间段 " 下，选择应用此限制的截止时间。</p>
+</li>
+<li>
+<p>要测试自动限制，您可以通过模拟攻击 <a href="concept_cs_attack_simulator.html">"模拟脚本"</a>。</p>
+</li>
+</ul>
 </div>
 </div>
+<div class="sect2">
+<h3 id="如何了解系统中是否存在受限用户">如何了解系统中是否存在受限用户？</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>在警报列表页面中，如果任何用户受到限制，则屏幕顶部将显示一个横幅。</p>
+</li>
+<li>
+<p>单击此横幅将转到 " 用户 " 页面。这样就可以看到受限用户的列表。</p>
+</li>
+<li>
+<p>在 " 用户 " 页面中，存在一个名为 "IP 访问 " 的列。在该列中，将显示用户限制的当前状态。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="手动限制和管理用户访问">手动限制和管理用户访问</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>您可以转到警报详细信息或用户详细信息屏幕，然后手动限制或取消限制用户访问这些屏幕。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="用户限制访问历史记录">用户限制访问历史记录</h3>
+<div class="paragraph">
+<p>在警报详细信息和用户详细信息页面的用户面板中，您可以查看对用户的限制访问限制历史记录的审核：时间，操作（块，只读，还原），持续时间， 由 IP ，手动 / 自动 IP 和受影响的 IP 采取的操作。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="如何禁用此功能">如何禁用此功能？</h3>
+<div class="paragraph">
+<p>您可以随时禁用此功能。如果系统中存在受限用户，则必须先还原其访问权限。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>在 Cloud Secure 中，导航到 * 管理员 &gt; 自动响应策略 &gt; 响应策略设置 &gt; 访问限制 *</p>
+</li>
+<li>
+<p>取消选择 " 启用限制用户访问 " 以禁用。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>此功能将在所有页面中隐藏。</p>
+</div>
+</div>
+<div class="sect1">
+<h2 id="故障排除">故障排除</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">问题</th>
+<th class="tableblock halign-left valign-top">请尝试此操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">尽管存在攻击，但某些用户并未受到限制。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. 确保 SVM 的数据收集器和代理处于 _running 状态。如果停止了数据收集器和代理， Cloud Secure 将无法发送命令。2. 这是因为用户可能已使用以前未使用的新 IP 从计算机访问存储。限制通过用户访问存储的主机的 IP 地址进行。在 UI （ "Alert Details" （警报详细信息） &gt;"Access Limtion History" （此用户的访问限制历史记录） &gt;"Affected IPs" （受影响的 IP ））中检查受限 IP 地址列表。如果用户要从 IP 与受限 IP 不同的主机访问存储，则用户仍可通过非受限 IP 访问存储。如果用户尝试从 IP 受限的主机访问，则无法访问存储。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">手动单击限制访问会显示 " 此操作没有用户 IP " 。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">要限制的 IP 已被其他用户限制。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">限制访问失败，并显示警告 " SVM 已禁用 SMB 协议的导出策略使用。启用使用导出策略使用限制用户访问功能</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">确保对 SVM 启用 -is-exportpolicy-enabled 选项为 true ，如前提条件中所述。</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -2138,8 +2142,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[使用标注](https://docs.netapp.com/zh-cn/cloudinsights/task_create_annotation.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/task_create_annotation.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[限制用户访问](https://docs.netapp.com/zh-cn/cloudinsights/cs_restrict_user_access.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/cs_restrict_user_access.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloudinsights/images/article-sm.svg" class="github-icon" />提供者指南</a>
     </div>
     <div class="page-nav-container">
