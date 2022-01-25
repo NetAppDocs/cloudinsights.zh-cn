@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
-permalink: task_add_collector_svm.html 
-keywords: data collector, ONTAP, NetApp, SVM, cloud ontap, firewall 
+permalink: concept_cs_attack_simulator.html 
+keywords: ransomware, simulation, simulator, restrict, attack 
 summary: 您可以使用脚本模拟勒索软件攻击，以测试或演示 Cloud Secure 
 ---
 = Cloud Secure ：模拟攻击

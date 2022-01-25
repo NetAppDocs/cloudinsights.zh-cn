@@ -22,7 +22,7 @@ image:CloudSecureAlertsListPage.png["警报列表"]
 
 * 潜在攻击： *
 
-* 潜在攻击类型（例如勒索软件）
+* 潜在攻击类型（例如勒索软件或破坏）
 * 检测到潜在攻击的日期和时间
 * 警报的 _Status_ ：
 +
@@ -85,7 +85,7 @@ image:CloudSecureChangeAlertStatus.png["更改警报状态"]
 
 === 摘要部分：
 
-* 攻击类型（在此示例中为勒索软件）和警报 ID （由 Cloud Secure 分配）
+* 攻击类型（勒索软件，破坏）和警报 ID （由 Cloud Secure 分配）
 * 检测到攻击的日期和时间
 * 已执行操作（例如，已创建自动快照。Snapshot 时间显示在摘要部分的正下方）
 * 状态（新增，正在进行等）
@@ -106,9 +106,9 @@ image:CloudSecureChangeAlertStatus.png["更改警报状态"]
 
 此部分显示有关参与潜在攻击的用户的详细信息，包括用户的 "Top Activity" 图形。
 
-显示潜在勒索软件攻击的警报页面：image:RansomwareAlertExample.png["勒索软件警报示例"]
+警报页面（此示例显示了潜在的勒索软件攻击）：image:RansomwareAlertExample.png["勒索软件警报示例"]
 
-潜在勒索软件攻击的详细信息页面：image:RansomwareDetailPageExample.png["勒索软件详细信息页面示例"]
+详细信息页面（此示例显示了潜在的勒索软件攻击）：image:RansomwareDetailPageExample.png["勒索软件详细信息页面示例"]
 
 
 

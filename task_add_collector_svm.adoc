@@ -92,6 +92,7 @@ security login role create -role csrole -cmddirname "event notification" -access
 security login role create -role csrole -cmddirname "security certificate" -access all
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
+security login role create -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecure_*"
 ....
 
 
@@ -110,6 +111,7 @@ security login role create -vserver <vservername> -role csrole -cmddirname vserv
 security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
+security login role create -vserver <vservername> -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecure_*"
 ....
 
 
