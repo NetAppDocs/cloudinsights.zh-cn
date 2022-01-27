@@ -8406,58 +8406,18 @@
   <block id="f30c6485c3c21678c5177709acd318b0" category="list-text">攻击类型（勒索软件，破坏）和警报 ID （由 Cloud Secure 分配）</block>
   <block id="7cbf4ba3df1c84539924c37da16db19b" category="paragraph">警报页面（此示例显示了潜在的勒索软件攻击）：<block ref="5ff4dcf9689ef64057d8e82508557b5f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c9d686a827f50aa2feb7087b665c481" category="paragraph">详细信息页面（此示例显示了潜在的勒索软件攻击）：<block ref="9d19bd7639e249113839e28d2fea9963" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="812d24264002531aa5c33dcfea09ae4f" category="summary">借助 Cloud Secure ，您可以在发生可疑破坏时限制用户访问</block>
-  <block id="34f9ae45ea998f4feb8ed8b837da35ce" category="doc">限制用户访问</block>
-  <block id="1ef240a15bef296ddbe95040048f5568" category="paragraph">检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问来停止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。</block>
-  <block id="15db9edd838695d9e8dfe3cc4d26ce0e" category="paragraph">在限制用户访问时，您应定义访问限制类型（块或只读）和时间段。选定时间段结束后，系统将自动还原用户访问权限。</block>
-  <block id="197e52f14728da939ea57554da72942d" category="paragraph">SMB 和 NFS 协议均支持访问限制。</block>
-  <block id="c7f4e2255f2d3462f88ebfd46e1df900" category="paragraph">限制通过主机的 IP 地址发生，即用户访问存储的计算机。这些计算机 IP 地址将被阻止访问 Cloud Secure 监控的任何 Storage Virtual Machine （ SVM ）。</block>
-  <block id="2bf4ce6e35bfc4c6f3801fbf4a98f9ca" category="paragraph">例如，假设 Cloud Secure 管理 10 个 SVM ，并为其中 4 个 SVM 配置了自动响应策略。如果攻击源自四个 SVM 中的一个，则用户的访问将在所有 10 个 SVM 中受到限制。仍会在源 SVM 上创建 Snapshot 。</block>
-  <block id="19e54e03824e649096b70d3644fd0e5f" category="paragraph">如果有四个 SVM ，其中一个 SVM 配置为 CIFS ，一个为 NFS ，其余两个为 NFS 和 CIFS 配置，则如果攻击源自四个 SVM 中的任何一个，则所有 SVM 都将被阻止。</block>
-  <block id="1c86226deccf9173a843b3d83a50b7e4" category="section-title">用户访问限制的前提条件</block>
-  <block id="4625d3b7cfc602f8dda70ae516128ac1" category="paragraph">要使此功能正常运行，客户必须为 SMB 和 NFS 配置导出策略。如果在数据源收集器中配置了 NFS 和 SMB ，请按照以下步骤进行操作。</block>
-  <block id="736a9d0a6c8a973d0fc55e15bec4f867" category="paragraph">对于 NFS ，默认情况下会配置导出策略。默认情况下，在 SVM 中创建 NFS 服务时会创建导出策略。对于 SMB ，必须配置导出策略。</block>
-  <block id="626812abc4a8fdb2dd02487a9302150b" category="inline-link-macro">数据收集器权限</block>
-  <block id="c3c19a07296aa9f669c655127fb6e617" category="paragraph">对于 NFS 和 SMB ，必须正确配置 _csroles_ 。在设置 ONTAP SVM 数据源收集器时，客户应配置 _csrole_ （如果尚未配置），如中所述 <block ref="b2b2b0ccbf010b48a5c08e47d75252e9" category="inline-link-macro-rx"></block> 文档。</block>
-  <block id="09c94b9432079689154a18242f283b8f" category="paragraph">如果使用集群 IP 配置数据收集器，请从 ONTAP 命令行执行以下操作：</block>
-  <block id="2af796c4413341d560aef2af386307ea" category="paragraph">如果使用服务器 IP 配置数据收集器，请从 ONTAP 命令行执行以下操作，并插入正确的 _&lt;vservername&gt;_ 。</block>
-  <block id="619f88c7ecb7dc067cac591110557971" category="paragraph">默认情况下，在 SVM 中创建 NFS 服务时会创建一个导出策略。</block>
-  <block id="5b80f2727c0cb6c0ec0f55e11fc807fb" category="paragraph">以下是用于配置导出策略的命令。将以下命令复制到文本编辑器，并将 &lt;vserver&gt; 名称替换为您的 SVM 名称。然后，一次复制一行，并在 ONTAP 控制台中执行该操作。注意：在运行命令之前，必须先切换到高级模式。</block>
-  <block id="dfb0bf3f02c7a96b047762240862b59d" category="admonition">这对于运行 POC 尤其有用。在要测试的计算机中，可以按如下所示配置 SMB 。在 POC 期间，在数据源收集器中，仅启用 SMB/CIFS 协议并禁用 NFS 协议。</block>
-  <block id="ebe71a0f2c742e9f41b569a9c4c0f781" category="paragraph">如果使用集群模式：</block>
-  <block id="3aef1fa1559480e8342d9e450068392c" category="paragraph">如果使用 SVM 模式：</block>
-  <block id="a0a22a3661d87ec62675853ac74a612b" category="paragraph">security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecurity_*"</block>
-  <block id="2122c7467f3c492bc888c3ad1b34ccb4" category="paragraph">对于这两种模式，请运行以下命令：</block>
-  <block id="5404ae00cde93cccb947d68c27a3c123" category="paragraph">要检查 _exportpolicy_ 和 _exportpolicy rule_ 是否已正确配置，请在运行上述命令后运行以下命令。</block>
-  <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">如何启用此功能？</block>
-  <block id="87ec0cfaa84f34c3c1bd7e7a9573acd3" category="list-text">在 Cloud Secure 中，导航到 * 管理员 &gt; 自动响应策略 &gt; 响应策略设置 &gt; 访问限制 * 。</block>
-  <block id="ff3c40d658e508545278698eddf6f64f" category="list-text">将 " 启用限制用户访问 " 设置为 _enabled" 。</block>
-  <block id="1b8e039cca81e12d3c38dc0474f9b680" category="section-title">如何设置自动用户访问限制？</block>
-  <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">创建新的攻击策略或编辑现有攻击策略。</block>
-  <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">选择应监控攻击策略的 SVM 。</block>
-  <block id="a69b7d29acba1026740c17b1314742da" category="list-text">单击 " 限制用户 IP 文件访问 " 复选框。选择此选项后，此功能将启用。</block>
-  <block id="d08b030c0ac309193f01c8251798645c" category="list-text">在 " 限制用户访问 " 下，选择应应用的限制模式。</block>
-  <block id="f46147cf742d90e9b60b59b73abd3cce" category="list-text">在 " 时间段 " 下，选择应用此限制的截止时间。</block>
-  <block id="48247bb102471f1d0e096ff11dc3ce84" category="inline-link-macro">模拟脚本</block>
-  <block id="25c2a3fab9090e127924dcd73f1ba277" category="list-text">要测试自动限制，您可以通过模拟攻击 <block ref="c144f5bb29c4478b376c3856feebe3da" category="inline-link-macro-rx"></block>。</block>
-  <block id="ecd9a1503c716dad0163cfa442205dc6" category="section-title">如何了解系统中是否存在受限用户？</block>
-  <block id="58c5c3c3ae9ddc777df3471cb0d91f15" category="list-text">在警报列表页面中，如果任何用户受到限制，则屏幕顶部将显示一个横幅。</block>
-  <block id="f70812e312d2dcf5bb1030d22300b486" category="list-text">单击此横幅将转到 " 用户 " 页面。这样就可以看到受限用户的列表。</block>
-  <block id="467c6ea6fc7965c01f9c4a37b4097833" category="list-text">在 " 用户 " 页面中，存在一个名为 "IP 访问 " 的列。在该列中，将显示用户限制的当前状态。</block>
-  <block id="40184bc9041969d58ad379b9b3e319cd" category="section-title">手动限制和管理用户访问</block>
-  <block id="47a27e2a670aec2697933b5787c9b04c" category="list-text">您可以转到警报详细信息或用户详细信息屏幕，然后手动限制或取消限制用户访问这些屏幕。</block>
-  <block id="bc35f531afc4546d2f00d327e39a34bd" category="section-title">用户限制访问历史记录</block>
-  <block id="fa2d13a7c1864e6553f454b50bb86fe3" category="paragraph">在警报详细信息和用户详细信息页面的用户面板中，您可以查看对用户的限制访问限制历史记录的审核：时间，操作（块，只读，还原），持续时间， 由 IP ，手动 / 自动 IP 和受影响的 IP 采取的操作。</block>
-  <block id="b9a6eedc929b25f1d8a4be77ee9da64b" category="section-title">如何禁用此功能？</block>
-  <block id="6efa4058becdd76841666397b456b8bc" category="paragraph">您可以随时禁用此功能。如果系统中存在受限用户，则必须先还原其访问权限。</block>
-  <block id="093cb28dd5afe81970d566b9792edf3c" category="list-text">在 Cloud Secure 中，导航到 * 管理员 &gt; 自动响应策略 &gt; 响应策略设置 &gt; 访问限制 *</block>
-  <block id="badb314ae874abf7996a87ed524a2a2a" category="list-text">取消选择 " 启用限制用户访问 " 以禁用。</block>
-  <block id="d62cebbd54827b8db7ecf72f7e55fa9a" category="paragraph">此功能将在所有页面中隐藏。</block>
-  <block id="2ab997129d2c5216ff0d477e12280e8a" category="cell">尽管存在攻击，但某些用户并未受到限制。</block>
-  <block id="e90c2e3184d693395feccdf9a3d863a1" category="cell">1. 确保 SVM 的数据收集器和代理处于 _running 状态。如果停止了数据收集器和代理， Cloud Secure 将无法发送命令。2. 这是因为用户可能已使用以前未使用的新 IP 从计算机访问存储。限制通过用户访问存储的主机的 IP 地址进行。在 UI （ "Alert Details" （警报详细信息） &gt;"Access Limtion History" （此用户的访问限制历史记录） &gt;"Affected IPs" （受影响的 IP ））中检查受限 IP 地址列表。如果用户要从 IP 与受限 IP 不同的主机访问存储，则用户仍可通过非受限 IP 访问存储。如果用户尝试从 IP 受限的主机访问，则无法访问存储。</block>
-  <block id="6b7a5ef59cd0d78debed9516f04d7350" category="cell">手动单击限制访问会显示 " 此操作没有用户 IP " 。</block>
-  <block id="9d9d839297abd5b6559ef681c302109c" category="cell">要限制的 IP 已被其他用户限制。</block>
-  <block id="59b7bceceaf271dc23260e1c30098a18" category="cell">限制访问失败，并显示警告 " SVM 已禁用 SMB 协议的导出策略使用。启用使用导出策略使用限制用户访问功能</block>
-  <block id="637e226349512d2d7a553322411b83f0" category="cell">确保对 SVM 启用 -is-exportpolicy-enabled 选项为 true ，如前提条件中所述。</block>
   <block id="c52c39354f4ad29d5eea2036eb6bf8a9" category="sidebar">模拟勒索软件攻击</block>
+  <block id="5439b902968ffabf767c31e6ae62e61b" category="summary">您可以为潜在攻击（例如勒索软件）和 / 或活动警告设置自动响应策略</block>
+  <block id="e5da02c738b911c42fb0a45a5b76c8d9" category="paragraph">响应策略会触发一些操作，例如在发生攻击或用户行为异常时创建快照或限制用户访问。</block>
+  <block id="4a2c418e248f1a17cef7314e84e4d21f" category="paragraph">您可以在特定设备或所有设备上设置策略。要设置响应策略，请选择 * 管理员 &gt; 自动响应策略 * ，然后单击相应的 * + 策略 + 按钮。您可以为攻击或警告创建策略。</block>
+  <block id="74caaeae1f2607ea4824df314e3bd233" category="inline-image-macro">创建攻击策略</block>
+  <block id="96dd8b86864f9c90bf0289c5f7b02b4d" category="paragraph"><block ref="96dd8b86864f9c90bf0289c5f7b02b4d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="10519a96ebde07deba902eb606bf97ff" category="paragraph">您必须使用唯一名称保存策略。</block>
+  <block id="168e31fead9fc72274b5723b0c86d27f" category="paragraph">要禁用自动响应操作（例如，创建 Snapshot ），只需取消选中该操作并保存策略即可。</block>
+  <block id="3218ac0e5f26253bd8724ab98d8f5e02" category="inline-link-macro">警报详细信息页面</block>
+  <block id="657cde821ca6ec1fead20aff3f183568" category="paragraph">当针对指定设备（或所有设备，如果已选择）触发警报时，自动响应策略将为您的数据创建快照。您可以在上查看快照状态 <block ref="a2af663b6945ecc2ca4cdaa8eaef2f70" category="inline-link-macro-rx"></block>。</block>
+  <block id="89f1c60e7b4a80e9cdf68af3aa225ef8" category="paragraph">您可以通过在策略的下拉菜单中选择相应选项来修改或暂停自动响应策略。</block>
+  <block id="9d74b91cb5611a18b74d4ea2428c3b2c" category="paragraph">Cloud Secure 将根据 Snapshot 清除设置每天自动删除一次快照。</block>
+  <block id="ef64e7e27fcc41880602820204326750" category="inline-image-macro">Snapshot 清除设置</block>
+  <block id="58e92099c75821827b7a665f2931deb2" category="paragraph"><block ref="58e92099c75821827b7a665f2931deb2" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
