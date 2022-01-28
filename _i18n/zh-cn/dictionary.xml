@@ -5563,10 +5563,7 @@
   <block id="748fdb05a8ec278d9ce5ea3bde4405f4" category="paragraph">Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查找以下 Kubernetes 标签，支持监控运行 Linux 的 Kubernetes 节点：</block>
   <block id="419f3742e6de8e0ec4b22cce005e7630" category="cell">平台</block>
   <block id="b021df6aac4654c454f46c77646e745f" category="cell">标签</block>
-  <block id="2c71aa7734bdf18aa434f68bb8ea5092" category="cell">Kubernetes v1.14 及更高版本</block>
   <block id="f1f45371fb9bb18dae05a3bbc8c3fbc0" category="cell">Kubernetes 。 io/OS = Linux</block>
-  <block id="9482e41821a6d17c990186de48262d12" category="cell">Kubernetes v1.13 及更低</block>
-  <block id="25d70ab71729a44b7af3c8593c6ea423" category="cell">测试版 .Kubernetes 。 IO/OS = Linux</block>
   <block id="9e2a330d57e085e593849abad3159d54" category="cell">Rancher + catt.io 作为流程编排 /Kubernetes 平台</block>
   <block id="210d6dd076b2d2e1dd1645c99d185fbd" category="cell">catt.io/OS = Linux</block>
   <block id="3c3ac08f88c7317ac9d41d3b669cbc27" category="list-text">单击安装对话框中的 * 复制代理安装程序 Snippet* 按钮。如果要查看命令块，您可以选择单击 _+reveal Agent Installer Snippet_ 按钮。</block>
@@ -5581,7 +5578,6 @@
   <block id="4d38edd7b7c9375065c0ea7fde2002ce" category="paragraph">为了便于停止和重新启动代理，请使用以下命令生成 Telegraf DemonSet YAML 和 ReplicaSet YAML 。请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：</block>
   <block id="925b82fe7b7df059708510a3af94e2d0" category="paragraph">如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：</block>
   <block id="27632d6c587ce664ee73ab41cf584c2d" category="paragraph">然后，您可以使用以下命令停止和启动 Telegraf 服务：</block>
-  <block id="a90789c2e01f94bf00b2eb3bc6e6fd80" category="section-title">为 Kubernetes 配置代理支持</block>
   <block id="d3f2095232996254a1ce9d2dd9efc5b0" category="paragraph">* 安装 Telegraf 代理之后，将适当的 _https_proxy_ 和 / 或 _http_proxy_ 环境变量添加并设置为 _telecraf-DS_ emonset 和 _telecraf-RS_ replicaset 。</block>
   <block id="fc8f446a9ea6e6bdd7e365563b8c3851" category="paragraph">然后，重新启动 Telegraf ：</block>
   <block id="1a2ec26374f8d36de076929c5ff28aa8" category="section-title">配置代理以从 Kubernetes 收集数据</block>
@@ -7715,20 +7711,14 @@
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">如果要在安装代理之前验证安装文件，请参见以下章节 <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">从存储中删除证书：</block>
   <block id="d836a7075094860f48ae2ac37b8ee84a" category="paragraph">Kubernetes 提供了两种数据收集方式：</block>
-  <block id="2f1de2d4cf0537bc6054605965911b29" category="list-text">基于操作员的配置。建议对 Kubernetes 执行此操作。</block>
   <block id="7b30b1516f4acc31dd26b0ee7b225209" category="list-text">基于脚本的传统代理安装</block>
-  <block id="a320be9a73c79b20f24e64a06a11d19f" category="paragraph">安装说明因您选择的图块而异。</block>
   <block id="e973aa335528494c3881ffe9a6be0e81" category="inline-image-macro">Kubernetes 安装选项</block>
   <block id="b81ec4ed4165242831d809ec7e442e82" category="paragraph"><block ref="b81ec4ed4165242831d809ec7e442e82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="81afb36611998eaaa0271156b5cdcf90" category="admonition">基于操作员的安装被视为 _Preview_ 功能，因此可能会发生更改。</block>
   <block id="c464aab0e1d91c1e20dba1868d499f0e" category="list-text">必须安装 Kube-state-metrics 。有关详细信息，请参见下文。Kube-state-metrics 会随基于操作员的安装自动安装。</block>
   <block id="37c93461ccb3b9d32a460c02b4fc8ce6" category="list-text">如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。基于操作员的安装可为您安装此软件。</block>
   <block id="4e7860768ab50263cd322fefea021fdc" category="list-text">您必须具有创建 Kubernetes 集群角色和角色绑定的权限。</block>
-  <block id="50cce61a9e4474feaef6870b764fdda9" category="list-text">基于操作员的安装已通过测试，预计可与 AWS EKS 1.18 和 OpenShift 3.11 配合使用。</block>
-  <block id="e34603ef348552f7a29cbb18d1ee78c0" category="section-title">基于操作员的安装</block>
   <block id="640dbe189d66fa73b9cedb44a9424843" category="inline-image-macro">基于操作员的安装</block>
   <block id="4a64a7036f6051830b5665f656513166" category="paragraph"><block ref="4a64a7036f6051830b5665f656513166" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2f12ec4a5f81cdedf75b58fc93e3ab6a" category="list-title">在 Kubernetes 上安装基于操作员的代理的步骤：</block>
   <block id="bff23b25f3e125bae18792a45a51c015" category="list-text">输入集群名称和命名空间。</block>
   <block id="5b82931325db3333d72e29bd0c4c7b88" category="list-text">输入这些内容后，您可以复制 Agent 安装程序代码片段</block>
   <block id="69fe7b86f073ff27417a8bb4f40bf251" category="list-text">单击按钮将此片段复制到剪贴板。</block>
@@ -8475,4 +8465,47 @@
   <block id="9d9d839297abd5b6559ef681c302109c" category="cell">要限制的 IP 已被其他用户限制。</block>
   <block id="59b7bceceaf271dc23260e1c30098a18" category="cell">限制访问失败，并显示警告 " SVM 已禁用 SMB 协议的导出策略使用。启用使用导出策略使用限制用户访问功能</block>
   <block id="637e226349512d2d7a553322411b83f0" category="cell">确保对 SVM 启用 -is-exportpolicy-enabled 选项为 true ，如前提条件中所述。</block>
+  <block id="45584247f153a6738f901d94b5c8cade" category="summary">Cloud Insights 支持 Telegrafas 代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。</block>
+  <block id="c17822d3ce9eb04fef37fc6f007b859e" category="list-text">NetApp Kubernetes 监控操作员配置。这是为 Kubernetes 建议的安装方法。</block>
+  <block id="90997e8d0c35126fbf3794f175f2f0f3" category="paragraph">安装说明因您选择的不同而异。</block>
+  <block id="7851bfe0f67f9341140f846ee10fd94d" category="admonition">NetApp Kubernetes 监控操作员安装被视为 _Preview_ 功能，因此可能会发生更改。</block>
+  <block id="3c320073d2d3a48b02cd316c37a184cd" category="list-text">NetApp Kubernetes 监控操作员安装已通过测试，预计可与 AWS EKS 1.18 ， OpenShift 3.11 和 Rancher 2.6 配合使用。</block>
+  <block id="fcbb3d16fd787d5bff5935ba723121de" category="cell">Kubernetes v1.17 及更高版本</block>
+  <block id="fd72cd4499dbb53af23386bef5341358" category="section-title">安装 NetApp Kubernetes 监控操作员</block>
+  <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：</block>
+  <block id="41433653d03e1d9f51b22f2b34a34907" category="section-title">为 NetApp Kubernetes 监控操作员配置代理支持</block>
+  <block id="d19324560c8bbab552153762aa6318fa" category="paragraph">要为监控操作员配置代理，请执行以下步骤。</block>
+  <block id="c0c113f7f05cafdbe990d465db2be0e5" category="paragraph">首先，打开 _agent-monitoring-netapp_ 文件进行编辑：</block>
+  <block id="0414c00192a7623b809e536f36865665" category="paragraph">在此文件的 _spec： _ 部分中，添加以下代码块：</block>
+  <block id="8437ed95b9fd8dd8ea826c978bfd9d55" category="section-title">使用自定义 / 私有 Docker 存储库</block>
+  <block id="56e769191e8506a40a6cee699a3f9d05" category="paragraph">如果使用自定义 Docker 存储库，请执行以下操作：</block>
+  <block id="76a29f4ebdb348450a0322a9c98cb4bf" category="paragraph">获取 Docker 密钥：</block>
+  <block id="3910d1d80274049b67c375b0000311fb" category="paragraph">复制 / 粘贴上述命令输出中的值 _.dockerconfigjson ： _ 。</block>
+  <block id="683b8010d170fc689e256c2461d9ed7e" category="paragraph">对 Docker 密钥进行解码：</block>
+  <block id="c492f17f4f9184181d9f26e7aa4f9b6b" category="paragraph">此命令的输出将采用以下 json 格式：</block>
+  <block id="e46ad1cf454a36b0aa27d5cb43692c6b" category="paragraph">登录到 Docker 存储库：</block>
+  <block id="e5d1e0154409d9aa2d79f4ab1f1793c2" category="paragraph">从 Cloud Insights 中提取操作员 Docker 映像：</block>
+  <block id="d13bf380d46699b66e5b82e0786c76e3" category="paragraph">使用以下命令查找 &lt;version&gt; 字段：</block>
+  <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。</block>
+  <block id="5ff1fb7ee9a98601079d4ace975dfb0a" category="paragraph">将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像：</block>
+  <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">如果启用了 flual-bit ，请同时下载：</block>
+  <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）。</block>
+  <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">在 _spec__ 部分中，进行以下更改：</block>
+  <block id="44041917404886ef4df8802ca1493c79" category="section-title">为 Kubernetes 配置代理支持—基于脚本</block>
+  <block id="e43d6e3ee8366674f4d3bc6eb87427a7" category="paragraph">使用自定义 / 私有 Docker 存储库设置代理可以从 2021 年 12 月 10 日投入使用的 CI 部署开始，在 CR 中为监控操作员配置代理</block>
+  <block id="1d3227ede43efb9f227fa30469358de3" category="paragraph">kubectl -n netapp-monitoring edit agent agent-monitoring-netapp</block>
+  <block id="f41621a6649a18209de8ab1311719bde" category="paragraph">在此文件的规范：部分中，添加以下代码块</block>
+  <block id="b0c450654b5e94522d011a58967a41c8" category="paragraph">规范：代理： isAuProxyEnabled ： &lt;true 或 false&gt; isTelegrafProxyEnabled ： &lt;true 或 false&gt; isFluentBitProxyEnabled ： &lt;true 或 false&gt; 密码： &lt; 代理密码，可选 &gt; 端口： &lt; 代理端口 &gt; 服务器： &lt; 代理服务器 &gt; 用户名： &lt; 代理用户名，可选 &gt; noProxy ： 使用自定义 / 专用 Docker 存储库获取 Docker 密钥。 &lt; 应绕过代理的 IP 或可解析主机名列表以逗号分隔 &gt;</block>
+  <block id="eb7f0fe8e02a65d56982f5a74f6583c0" category="paragraph">kubectl -n netapp-monitoring get secret docker -o yaml</block>
+  <block id="58e1e7f30cb0fd80bcb9aa7b716cb724" category="paragraph">（复制粘贴上述命令输出中的 .dockerconfigjson ：值）将对 Docker 密钥进行解码</block>
+  <block id="ac785eabe0073fe1171505c99a3724ee" category="paragraph">echo &lt;ste粘贴 自上述步骤 1 &gt; | base64 -d 此命令的输出格式如下： ｛ "auths" ： ｛ "docker" 。 &lt;cluster&gt;.cloudinsights.netapp.com" ： ｛ "username" ： "&lt; 租户 ID&gt;" ， "password" ： "&lt; CI API 密钥的密码 &gt;" ， "auth" ： "&lt; 编码的用户名： auth 基本密码密钥。这是 Docker &gt;" ｝ ｝ 登录到 Docker 存储库的内部组件</block>
+  <block id="c97b0dfe1c937e6a975eddccb95973ef" category="paragraph">Docker 登录 Docker 。 &lt;cluster&gt;.cloudinsights.netapp.com （第 2 步） -u &lt; 第 2 步中的用户名 &gt; 密码： &lt; 第 2 步中的密码 &gt; 从 Cloud Insights 中提取操作员 Docker 映像</block>
+  <block id="3ec8cafe630fb58c78079faf4adeb00a" category="paragraph">Docker 会拉取 Docker 。 &lt; 集群 &gt; .cloudinsights.netapp.com/netapp-monitoring:&lt;version&gt;</block>
+  <block id="f422cefb0886961455efb67de7e26231" category="paragraph">kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image" ：将操作员 Docker 映像推送到您的专用 / 企业 Docker 注册表</block>
+  <block id="43d80889a5a41546c856cf06328616cd" category="paragraph">根据您的企业策略将代码推送到您的私有 / 本地 / 企业 Docker 存储库将所有开源依赖项下载到您的私有 Docker 注册表中</block>
+  <block id="9b7a2fdb4de8c1f948c779a8031bce3a" category="paragraph">需要下载以下开源映像： docker.io/eraf ： 1.19.3 gcr.io/kubebuilder/Kube-RBAC 代理： v0.5.0 k8s.gcr.io/Kube-state-metrics/Kube-state-metrics ： v2.1.0</block>
+  <block id="582e00a87af2a3a98b1dc04e62419ae2" category="paragraph">如果启用了 fluid-bit ： docker.io/fluid-bit ： 1.7.8 docker.io/Kubernetes 事件导出程序： 0.10 编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）</block>
+  <block id="e1b7025ee96a4c8d9b2e85049c8d7375" category="paragraph">enableAutoUpgrade ： false docker-repo ： &lt;Docker repo of the enterprise/corp docker repo&gt; dockerRepoSecret ： &lt;optional ： name of the Docker secret of enterprise/corp docker repo ， this secret should be already created on the K8s cluster in the same namespacy&gt;</block>
+  <block id="304245a5035eb4597234a1b8827c9213" category="paragraph">在规范：部分中，进行以下更改：</block>
+  <block id="44adec27317574513bdc470781ccacb6" category="paragraph">规格： Telegraf ： - 名称： KSM 替换项： - 密钥： K8s.GCR.IO 值： &lt; 与上面的 "docker-repo" 字段相同 &gt;</block>
 </blocks>

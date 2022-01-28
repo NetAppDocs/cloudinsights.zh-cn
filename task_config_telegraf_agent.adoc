@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, installation, install, agent, telegraf agent 
-summary: 'Cloud Insights 支持 link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf"] 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。' 
+summary: Cloud Insights 支持 Telegrafas 代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。 
 ---
 = 配置代理以收集数据
 
@@ -434,16 +434,16 @@ sudo /tmp/uninstall
 
 Kubernetes 提供了两种数据收集方式：
 
-* 基于操作员的配置。建议对 Kubernetes 执行此操作。
+* NetApp Kubernetes 监控操作员配置。这是为 Kubernetes 建议的安装方法。
 * 基于脚本的传统代理安装
 
 
-安装说明因您选择的图块而异。
+安装说明因您选择的不同而异。
 
 image:Kubernetes_Operator_Tile_Choices.png["Kubernetes 安装选项"]
 
 
-NOTE: 基于操作员的安装被视为 _Preview_ 功能，因此可能会发生更改。
+NOTE: NetApp Kubernetes 监控操作员安装被视为 _Preview_ 功能，因此可能会发生更改。
 
 .前提条件：
 * 必须提供以下命令： curl ， sudo ， openssl ， sha256sum 和 kubectl
@@ -454,7 +454,7 @@ NOTE: 基于操作员的安装被视为 _Preview_ 功能，因此可能会发生
 * 如果您使用的是代理，请按照 * 为 Kubernetes 配置代理支持 * 一节中的说明进行操作。
 * 如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。基于操作员的安装可为您安装此软件。
 * 您必须具有创建 Kubernetes 集群角色和角色绑定的权限。
-* 基于操作员的安装已通过测试，预计可与 AWS EKS 1.18 和 OpenShift 3.11 配合使用。
+* NetApp Kubernetes 监控操作员安装已通过测试，预计可与 AWS EKS 1.18 ， OpenShift 3.11 和 Rancher 2.6 配合使用。
 
 
 
@@ -467,21 +467,18 @@ Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查�
 | 平台 | 标签 
 
 
-| Kubernetes v1.14 及更高版本 | Kubernetes 。 io/OS = Linux 
-
-
-| Kubernetes v1.13 及更低 | 测试版 .Kubernetes 。 IO/OS = Linux 
+| Kubernetes v1.17 及更高版本 | Kubernetes 。 io/OS = Linux 
 
 
 | Rancher + catt.io 作为流程编排 /Kubernetes 平台 | catt.io/OS = Linux 
 |===
 
 
-==== 基于操作员的安装
+==== 安装 NetApp Kubernetes 监控操作员
 
 image:Kubernetes_Operator_Agent_Instructions.png["基于操作员的安装"]
 
-.在 Kubernetes 上安装基于操作员的代理的步骤：
+.在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：
 . 输入集群名称和命名空间。
 . 输入这些内容后，您可以复制 Agent 安装程序代码片段
 . 单击按钮将此片段复制到剪贴板。
@@ -489,6 +486,99 @@ image:Kubernetes_Operator_Agent_Instructions.png["基于操作员的安装"]
 . 安装将自动进行。完成后，单击 _complete Setup_ 按钮。
 
 
+
+
+==== 为 NetApp Kubernetes 监控操作员配置代理支持
+
+要为监控操作员配置代理，请执行以下步骤。
+
+首先，打开 _agent-monitoring-netapp_ 文件进行编辑：
+
+ kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+在此文件的 _spec： _ 部分中，添加以下代码块：
+
+....
+spec:
+  proxy:
+    isAuProxyEnabled: <true or false>
+    isTelegrafProxyEnabled: <true or false>
+    isFluentbitProxyEnabled: <true or false>
+    password: <password for proxy, optional>
+    port: <port for proxy>
+    server: <server for proxy>
+    username: <username for proxy, optional>
+    noProxy: <comma separated list of IPs or resolvable hostnames that should bypass a proxy>
+....
+
+
+===== 使用自定义 / 私有 Docker 存储库
+
+如果使用自定义 Docker 存储库，请执行以下操作：
+
+获取 Docker 密钥：
+
+ kubectl -n netapp-monitoring get secret docker -o yaml
+复制 / 粘贴上述命令输出中的值 _.dockerconfigjson ： _ 。
+
+对 Docker 密钥进行解码：
+
+ echo <paste from _.dockerconfigjson:_  output above> | base64 -d
+此命令的输出将采用以下 json 格式：
+
+....
+{ "auths":
+  {"docker.<cluster>.cloudinsights.netapp.com" :
+    {"username":"<tenant id>",
+     "password":"<password which is the CI API key>",
+     "auth"    :"<encoded username:password basic auth key. This is internal to docker>"}
+  }
+}
+....
+登录到 Docker 存储库：
+
+....
+docker login docker.<cluster>.cloudinsights.netapp.com (from step #2) -u <username from step #2>
+password: <password from docker secret step above>
+....
+从 Cloud Insights 中提取操作员 Docker 映像：
+
+ docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
+使用以下命令查找 <version> 字段：
+
+ kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
+根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。
+
+将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像：
+
+....
+docker.io/telegraf:1.19.3
+gcr.io/kubebuilder/kube-rbac-proxy:v0.5.0
+k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.1.0
+....
+如果启用了 flual-bit ，请同时下载：
+
+....
+docker.io/fluent-bit:1.7.8
+docker.io/kubernetes-event-exporter:0.10
+....
+编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）。
+
+ kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+ enableAutoUpgrade: false
+....
+docker-repo: <docker repo of the enterprise/corp docker repo>
+dockerRepoSecret: <optional: name of the docker secret of enterprise/corp docker repo, this secret should be already created on the k8s cluster in the same namespace>
+....
+在 _spec__ 部分中，进行以下更改：
+
+....
+spec:
+  telegraf:
+    - name: ksm
+      substitutions:
+        - key: k8s.gcr.io
+          value: <same as "docker-repo" field above>
+....
 
 
 ==== 基于脚本的安装
@@ -521,31 +611,7 @@ TIP: _cluster_name_ 是 Cloud Insights 收集指标的 Kubernetes 集群的名�
 
 
 
-==== DemonSet ， ReplicaSet 以及停止 / 启动代理
-
-将在 Kubernetes 集群上创建 DemonSet 和 ReplicaSet ，以运行所需的 Telegraf 代理 / Pod 。默认情况下，这些 Telegraf 代理 / Pod 将同时计划在主节点和非主节点上。
-
-为了便于停止和重新启动代理，请使用以下命令生成 Telegraf DemonSet YAML 和 ReplicaSet YAML 。请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：
-
-如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：
-
-....
-kubectl --namespace ci-monitoring get ds telegraf-ds -o yaml > /tmp/telegraf-ds.yaml
-kubectl --namespace ci-monitoring get rs telegraf-rs -o yaml > /tmp/telegraf-rs.yaml
-....
-然后，您可以使用以下命令停止和启动 Telegraf 服务：
-
-....
-kubectl --namespace ci-monitoring delete ds telegraf-ds
-kubectl --namespace ci-monitoring delete rs telegraf-rs
-....
-....
-kubectl --namespace ci-monitoring apply -f /tmp/telegraf-ds.yaml
-kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
-....
-
-
-==== 为 Kubernetes 配置代理支持
+==== 为 Kubernetes 配置代理支持—基于脚本
 
 
 NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
@@ -586,6 +652,30 @@ NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所�
 ....
 kubectl delete pod telegraf-ds-*
 kubectl delete pod telegraf-rs-*
+....
+
+
+==== DemonSet ， ReplicaSet 以及停止 / 启动代理
+
+将在 Kubernetes 集群上创建 DemonSet 和 ReplicaSet ，以运行所需的 Telegraf 代理 / Pod 。默认情况下，这些 Telegraf 代理 / Pod 将同时计划在主节点和非主节点上。
+
+为了便于停止和重新启动代理，请使用以下命令生成 Telegraf DemonSet YAML 和 ReplicaSet YAML 。请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：
+
+如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：
+
+....
+kubectl --namespace ci-monitoring get ds telegraf-ds -o yaml > /tmp/telegraf-ds.yaml
+kubectl --namespace ci-monitoring get rs telegraf-rs -o yaml > /tmp/telegraf-rs.yaml
+....
+然后，您可以使用以下命令停止和启动 Telegraf 服务：
+
+....
+kubectl --namespace ci-monitoring delete ds telegraf-ds
+kubectl --namespace ci-monitoring delete rs telegraf-rs
+....
+....
+kubectl --namespace ci-monitoring apply -f /tmp/telegraf-ds.yaml
+kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml
 ....
 
 
