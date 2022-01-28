@@ -20,6 +20,8 @@ image:AutomatedAttackPolicy.png["创建攻击策略"]
 
 当针对指定设备（或所有设备，如果已选择）触发警报时，自动响应策略将为您的数据创建快照。您可以在上查看快照状态 link:cs_alert_data.html#the-alert-details-page["警报详细信息页面"]。
 
+请参见 link:cs_restrict_user_access.html["限制用户访问"] 第页，了解有关通过 IP 限制用户访问的更多详细信息。
+
 您可以通过在策略的下拉菜单中选择相应选项来修改或暂停自动响应策略。
 
 Cloud Secure 将根据 Snapshot 清除设置每天自动删除一次快照。

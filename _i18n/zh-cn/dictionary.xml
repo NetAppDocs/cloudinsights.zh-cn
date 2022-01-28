@@ -8420,4 +8420,6 @@
   <block id="9d74b91cb5611a18b74d4ea2428c3b2c" category="paragraph">Cloud Secure 将根据 Snapshot 清除设置每天自动删除一次快照。</block>
   <block id="ef64e7e27fcc41880602820204326750" category="inline-image-macro">Snapshot 清除设置</block>
   <block id="58e92099c75821827b7a665f2931deb2" category="paragraph"><block ref="58e92099c75821827b7a665f2931deb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="38e47adb6ecfe4df7c79a3a31541dc49" category="inline-link-macro">限制用户访问</block>
+  <block id="221dc2418a55893a5e042c9e03adccdf" category="paragraph">请参见 <block ref="0db6a779247705464ce31126448b6e46" category="inline-link-macro-rx"></block> 第页，了解有关通过 IP 限制用户访问的更多详细信息。</block>
 </blocks>
