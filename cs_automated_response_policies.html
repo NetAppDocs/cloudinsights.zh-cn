@@ -331,7 +331,7 @@
 <div class="ie-main">
   <!-- Sidebar Column -->
   
-  <div class="col-md-3" >
+  <div class="col-md-3" id="sidebar-height">
       <div class="n-pdf-header">
   <a id="toggleButtonPdf" class="n-pdf-button" type="button">
     <img src="/zh-cn/cloudinsights/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
@@ -1851,6 +1851,13 @@
         法律声明
       </a></li></ul>
 </div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
@@ -1906,7 +1913,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-27 16:43:23 +0000">01/27/2022</time>
+    <time datetime="2022-01-28 15:55:09 +0000">01/28/2022</time>
     
   
 
@@ -1942,6 +1949,9 @@
 </div>
 <div class="paragraph">
 <p>当针对指定设备（或所有设备，如果已选择）触发警报时，自动响应策略将为您的数据创建快照。您可以在上查看快照状态 <a href="cs_alert_data.html#the-alert-details-page">"警报详细信息页面"</a>。</p>
+</div>
+<div class="paragraph">
+<p>请参见 <a href="cs_restrict_user_access.html">"限制用户访问"</a> 第页，了解有关通过 IP 限制用户访问的更多详细信息。</p>
 </div>
 <div class="paragraph">
 <p>您可以通过在策略的下拉菜单中选择相应选项来修改或暂停自动响应策略。</p>
