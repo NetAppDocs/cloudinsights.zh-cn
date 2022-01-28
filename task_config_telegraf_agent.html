@@ -9,7 +9,7 @@
   <meta property="og:title" content="配置代理以收集数据" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_agent.html" />
-	<meta property="og:description" content="Cloud Insights 支持 link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf"] 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。" />
+	<meta property="og:description" content="Cloud Insights 支持 Telegrafas 代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,7 +18,7 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="Cloud Insights 支持 link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf"] 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。">
+  <meta name="description" content="Cloud Insights 支持 Telegrafas 代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。">
   <meta name="keywords" content=" telegraf, installation, install, agent, telegraf agent">
   
   
@@ -1913,7 +1913,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-01-28 16:56:02 +0000">01/28/2022</time>
+    <time datetime="2022-01-28 21:18:29 +0000">01/28/2022</time>
     
   
 
@@ -2692,7 +2692,7 @@ sudo /tmp/uninstall</pre>
 <div class="ulist">
 <ul>
 <li>
-<p>基于操作员的配置。建议对 Kubernetes 执行此操作。</p>
+<p>NetApp Kubernetes 监控操作员配置。这是为 Kubernetes 建议的安装方法。</p>
 </li>
 <li>
 <p>基于脚本的传统代理安装</p>
@@ -2700,7 +2700,7 @@ sudo /tmp/uninstall</pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>安装说明因您选择的图块而异。</p>
+<p>安装说明因您选择的不同而异。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Operator_Tile_Choices.png" alt="Kubernetes 安装选项"></span></p>
@@ -2712,7 +2712,7 @@ sudo /tmp/uninstall</pre>
 <img src="/us-en/cloudinsights/images/note.svg" alt="注">
 </td>
 <td class="content">
-基于操作员的安装被视为 <em>Preview</em> 功能，因此可能会发生更改。
+NetApp Kubernetes 监控操作员安装被视为 <em>Preview</em> 功能，因此可能会发生更改。
 </td>
 </tr>
 </table>
@@ -2739,7 +2739,7 @@ sudo /tmp/uninstall</pre>
 <p>您必须具有创建 Kubernetes 集群角色和角色绑定的权限。</p>
 </li>
 <li>
-<p>基于操作员的安装已通过测试，预计可与 AWS EKS 1.18 和 OpenShift 3.11 配合使用。</p>
+<p>NetApp Kubernetes 监控操作员安装已通过测试，预计可与 AWS EKS 1.18 ， OpenShift 3.11 和 Rancher 2.6 配合使用。</p>
 </li>
 </ul>
 </div>
@@ -2761,12 +2761,8 @@ sudo /tmp/uninstall</pre>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes v1.14 及更高版本</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes v1.17 及更高版本</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes 。 io/OS = Linux</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes v1.13 及更低</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">测试版 .Kubernetes 。 IO/OS = Linux</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Rancher + catt.io 作为流程编排 /Kubernetes 平台</p></td>
@@ -2776,12 +2772,12 @@ sudo /tmp/uninstall</pre>
 </table>
 </div>
 <div class="sect3">
-<h4 id="基于操作员的安装">基于操作员的安装</h4>
+<h4 id="安装-netapp-kubernetes-监控操作员">安装 NetApp Kubernetes 监控操作员</h4>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Operator_Agent_Instructions.png" alt="基于操作员的安装"></span></p>
 </div>
 <div class="olist arabic">
-<div class="title">在 Kubernetes 上安装基于操作员的代理的步骤：</div>
+<div class="title">在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：</div>
 <ol class="arabic">
 <li>
 <p>输入集群名称和命名空间。</p>
@@ -2799,6 +2795,141 @@ sudo /tmp/uninstall</pre>
 <p>安装将自动进行。完成后，单击 <em>complete Setup</em> 按钮。</p>
 </li>
 </ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="为-netapp-kubernetes-监控操作员配置代理支持">为 NetApp Kubernetes 监控操作员配置代理支持</h4>
+<div class="paragraph">
+<p>要为监控操作员配置代理，请执行以下步骤。</p>
+</div>
+<div class="paragraph">
+<p>首先，打开 <em>agent-monitoring-netapp</em> 文件进行编辑：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+在此文件的 _spec： _ 部分中，添加以下代码块：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>spec:
+  proxy:
+    isAuProxyEnabled: &lt;true or false&gt;
+    isTelegrafProxyEnabled: &lt;true or false&gt;
+    isFluentbitProxyEnabled: &lt;true or false&gt;
+    password: &lt;password for proxy, optional&gt;
+    port: &lt;port for proxy&gt;
+    server: &lt;server for proxy&gt;
+    username: &lt;username for proxy, optional&gt;
+    noProxy: &lt;comma separated list of IPs or resolvable hostnames that should bypass a proxy&gt;</pre>
+</div>
+</div>
+<div class="sect4">
+<h5 id="使用自定义-私有-docker-存储库">使用自定义 / 私有 Docker 存储库</h5>
+<div class="paragraph">
+<p>如果使用自定义 Docker 存储库，请执行以下操作：</p>
+</div>
+<div class="paragraph">
+<p>获取 Docker 密钥：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring get secret docker -o yaml
+复制 / 粘贴上述命令输出中的值 _.dockerconfigjson ： _ 。</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>对 Docker 密钥进行解码：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> echo &lt;paste from _.dockerconfigjson:_  output above&gt; | base64 -d
+此命令的输出将采用以下 json 格式：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>{ "auths":
+  {"docker.&lt;cluster&gt;.cloudinsights.netapp.com" :
+    {"username":"&lt;tenant id&gt;",
+     "password":"&lt;password which is the CI API key&gt;",
+     "auth"    :"&lt;encoded username:password basic auth key. This is internal to docker&gt;"}
+  }
+}</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>登录到 Docker 存储库：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>docker login docker.&lt;cluster&gt;.cloudinsights.netapp.com (from step #2) -u &lt;username from step #2&gt;
+password: &lt;password from docker secret step above&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>从 Cloud Insights 中提取操作员 Docker 映像：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> docker pull docker.&lt;cluster&gt;.cloudinsights.netapp.com/netapp-monitoring:&lt;version&gt;
+使用以下命令查找 &lt;version&gt; 字段：</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
+根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>docker.io/telegraf:1.19.3
+gcr.io/kubebuilder/kube-rbac-proxy:v0.5.0
+k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.1.0</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果启用了 flual-bit ，请同时下载：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>docker.io/fluent-bit:1.7.8
+docker.io/kubernetes-event-exporter:0.10</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）。</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+enableAutoUpgrade: false</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>docker-repo: &lt;docker repo of the enterprise/corp docker repo&gt;
+dockerRepoSecret: &lt;optional: name of the docker secret of enterprise/corp docker repo, this secret should be already created on the k8s cluster in the same namespace&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>在 <em>spec_</em> 部分中，进行以下更改：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>spec:
+  telegraf:
+    - name: ksm
+      substitutions:
+        - key: k8s.gcr.io
+          value: &lt;same as "docker-repo" field above&gt;</pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -2864,40 +2995,7 @@ sudo /tmp/uninstall</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="demonset-replicaset-以及停止-启动代理">DemonSet ， ReplicaSet 以及停止 / 启动代理</h4>
-<div class="paragraph">
-<p>将在 Kubernetes 集群上创建 DemonSet 和 ReplicaSet ，以运行所需的 Telegraf 代理 / Pod 。默认情况下，这些 Telegraf 代理 / Pod 将同时计划在主节点和非主节点上。</p>
-</div>
-<div class="paragraph">
-<p>为了便于停止和重新启动代理，请使用以下命令生成 Telegraf DemonSet YAML 和 ReplicaSet YAML 。请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：</p>
-</div>
-<div class="paragraph">
-<p>如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>kubectl --namespace ci-monitoring get ds telegraf-ds -o yaml &gt; /tmp/telegraf-ds.yaml
-kubectl --namespace ci-monitoring get rs telegraf-rs -o yaml &gt; /tmp/telegraf-rs.yaml</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>然后，您可以使用以下命令停止和启动 Telegraf 服务：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>kubectl --namespace ci-monitoring delete ds telegraf-ds
-kubectl --namespace ci-monitoring delete rs telegraf-rs</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>kubectl --namespace ci-monitoring apply -f /tmp/telegraf-ds.yaml
-kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="为-kubernetes-配置代理支持">为 Kubernetes 配置代理支持</h4>
+<h4 id="为-kubernetes-配置代理支持基于脚本">为 Kubernetes 配置代理支持—基于脚本</h4>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2964,6 +3062,39 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 <div class="content">
 <pre>kubectl delete pod telegraf-ds-*
 kubectl delete pod telegraf-rs-*</pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="demonset-replicaset-以及停止-启动代理">DemonSet ， ReplicaSet 以及停止 / 启动代理</h4>
+<div class="paragraph">
+<p>将在 Kubernetes 集群上创建 DemonSet 和 ReplicaSet ，以运行所需的 Telegraf 代理 / Pod 。默认情况下，这些 Telegraf 代理 / Pod 将同时计划在主节点和非主节点上。</p>
+</div>
+<div class="paragraph">
+<p>为了便于停止和重新启动代理，请使用以下命令生成 Telegraf DemonSet YAML 和 ReplicaSet YAML 。请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：</p>
+</div>
+<div class="paragraph">
+<p>如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl --namespace ci-monitoring get ds telegraf-ds -o yaml &gt; /tmp/telegraf-ds.yaml
+kubectl --namespace ci-monitoring get rs telegraf-rs -o yaml &gt; /tmp/telegraf-rs.yaml</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>然后，您可以使用以下命令停止和启动 Telegraf 服务：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl --namespace ci-monitoring delete ds telegraf-ds
+kubectl --namespace ci-monitoring delete rs telegraf-rs</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl --namespace ci-monitoring apply -f /tmp/telegraf-ds.yaml
+kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </div>
 </div>
 </div>

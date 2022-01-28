@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>Elasticsearch Data Collector</title>
+  <title>配置代理以收集数据</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Elasticsearch Data Collector" />
+  <meta property="og:title" content="配置代理以收集数据" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_elasticsearch.html" />
-	<meta property="og:description" content="Elasticsearch 数据收集器配置" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/task_kubernetes_operator_proxy.html" />
+	<meta property="og:description" content="Cloud Insights 支持 link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf"] 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,8 +18,8 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="Elasticsearch 数据收集器配置">
-  <meta name="keywords" content=" telegraf, installation, install, ElasticSearch">
+  <meta name="description" content="Cloud Insights 支持 link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf"] 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。">
+  <meta name="keywords" content=" telegraf, installation, install, agent, telegraf agent">
   
   
 
@@ -281,11 +281,11 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_elasticsearch.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/task_kubernetes_operator_proxy.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_elasticsearch.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/cloudinsights/task_kubernetes_operator_proxy.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/task_config_telegraf_elasticsearch.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/task_kubernetes_operator_proxy.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -1286,15 +1286,6 @@
 
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/cloudinsights/pdfs/pages/task_config_telegraf_elasticsearch.pdf" >
-    <img src="/zh-cn/cloudinsights/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 
@@ -1805,7 +1796,7 @@
         CouchDB
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_config_telegraf_docker.html">
         Docker
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_config_telegraf_elasticsearch.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_config_telegraf_elasticsearch.html">
         Elasticsearch
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_config_telegraf_flink.html">
         Flink
@@ -1883,7 +1874,7 @@
           <a href="/zh-cn/cloudinsights/">Cloud&nbsp;Insights</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          Elasticsearch Data Collector
+          配置代理以收集数据
         </li>
       </ul>
     </div>
@@ -1906,7 +1897,7 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Elasticsearch Data Collector</h1>
+  <h1 class="n-doc__component-detail-heading">配置代理以收集数据</h1>
 </div>
 
 
@@ -1926,102 +1917,65 @@
           style="border-radius: 50%;"/>
   </a>
   
-  <a target="_blank" href="https://github.com/dgracenetapp">
-    <img  class="avatar avatar-small"
-          alt="dgracenetapp"
-          width="20" height="20"
-          src="https://avatars.githubusercontent.com/u/38116247?v=4"
-          style="border-radius: 50%;"/>
-  </a>
-  
 </span>
 
 
 </p>
 
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
-<p>Cloud Insights 使用此数据收集器从 Elasticsearch 收集指标。</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Elasticsearch 。</p>
-<div class="paragraph">
-<p>选择安装了 Telegraf 代理的操作系统或平台。</p>
-</div>
-</li>
-<li>
-<p>如果您尚未安装要收集的代理，或者您希望为其他操作系统或平台安装代理，请单击 _Show Instructions_展开 <a href="task_config_telegraf_agent.html">"代理安装"</a> 说明。</p>
-</li>
-<li>
-<p>选择要用于此数据收集器的代理访问密钥。您可以通过单击 * + 代理访问密钥 * 按钮来添加新的代理访问密钥。最佳实践：仅当您要按操作系统 / 平台对数据收集器进行分组时，才使用其他代理访问密钥。</p>
-</li>
-<li>
-<p>按照配置步骤配置数据收集器。这些说明因用于收集数据的操作系统或平台的类型而异。</p>
-</li>
-</ol>
+<p>使用自定义 / 私有 Docker 存储库设置代理可以从 2021 年 12 月 10 日投入使用的 CI 部署开始，在 CR 中为监控操作员配置代理</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="ElasticsearchDCConfigLinux.png" alt="Elasticsearch 配置"></span></p>
+<p>kubectl -n netapp-monitoring edit agent agent-monitoring-netapp</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="设置">设置</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>有关信息，请参见 <a href="https://www.elastic.co/guide/index.html">"Elasticsearch 文档"</a>。</p>
+<p>在此文件的规范：部分中，添加以下代码块</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="对象和计数器">对象和计数器</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>将收集以下对象及其计数器：</p>
+<p>规范：代理： isAuProxyEnabled ： &lt;true 或 false&gt; isTelegrafProxyEnabled ： &lt;true 或 false&gt; isFluentBitProxyEnabled ： &lt;true 或 false&gt; 密码： &lt; 代理密码，可选 &gt; 端口： &lt; 代理端口 &gt; 服务器： &lt; 代理服务器 &gt; 用户名： &lt; 代理用户名，可选 &gt; noProxy ： 使用自定义 / 专用 Docker 存储库获取 Docker 密钥。 &lt; 应绕过代理的 IP 或可解析主机名列表以逗号分隔 &gt;</p>
 </div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">对象：</th>
-<th class="tableblock halign-left valign-top">标识符：</th>
-<th class="tableblock halign-left valign-top">属性：</th>
-<th class="tableblock halign-left valign-top">数据点：</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch 集群</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">命名空间集群</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">节点 IP 节点名称集群状态</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">主节点计数节点总数节点计数文件系统可用数据（字节）文件系统可用数据（字节）文件系统总数据（字节） JVM 线程操作系统已分配的处理器操作系统可用处理器操作系统无内存（字节）操作系统无内存总数（字节）操作系统已用内存（字节）操作系统已用内存已用进程 CPU 指示完成大小（字节） 索引计数索引文档计数索引文档计数索引文档已删除索引字段数据逐出索引字段数据内存大小（字节）索引查询缓存计数索引缓存大小索引字段计数索引字段文档值内存（字节）标记索引主索引索引指示字段索引主索引平均大小索引主索引字段最小索引 Shards Index Replication Avg Index Shards Index Replication Max Index Shards Index Replication Min Index Shards Avg Index Shards Shards Max Index Shards 主索引 Shards 复制索引 Shards 索引 Shards 索引存储总索引大小（字节）</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Elasticsearch 节点</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">命名空间集群 ES 节点 ID ES 节点 IP ES 节点</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">分区 ID</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">机器学习支持的机器学习内存机器学习最大打开作业 X-Pack 安装的断路器计算估计大小（字节）断路器计算开销断路器计算跳闸器计算跳闸器字段数据估计大小（字节）断路器字段数据限制大小（字节）断路器字段数据开销断路器字段数据触发器 正在运行的估计大小（字节）中断器正在运行的限制大小（字节）中断器正在运行的开销中断器正在运行的跳闸跳闸器父级估计大小（字节）中断器父级限制大小（字节）中断器开销中断器父级跳闸器请求估计大小（字节）中断器请求限制大小（字节）跳闸器请求开销中断器请求可用的父级数据文件系统 （字节）文件系统可用数据（字节）文件系统数据总计（字节）文件系统 IO 统计信息设备操作文件系统 IO 统计信息设备读取（ KB ）文件系统 IO 统计信息设备读取操作文件系统 IO 统计信息设备擦写操作文件系统 IO 统计信息总操作文件系统 IO 统计信息总读取（ KB ）文件系统 IO Stats Read Ops filesystem IO Stats Total Write （ KB ）文件系统 IO Stats Write Ops filesystem Least Usage estimate available （ bytes ）文件系统最小使用量估计总量（字节）文件系统最小使用量估计可用磁盘文件系统最大使用量估计可用量（字节）文件系统最大使用量估计总使用量（字节）文件系统文件系统最常用磁盘文件系统文件系统 总可用空间（字节）文件系统总可用空间（字节）文件系统总空间（字节）指示完成大小（字节）指示文档计数指示文档已删除的指示字段数据逐出指示字段数据内存大小（字节）指示刷新定期指示刷新总指标刷新总时间指示获取当前指标获取存在时间指示 索引总数获取索引总数索引删除索引总数索引索引索引索引索引总数索引索引 Noop 更新索引总索引索引索引控制时间 HTTP 当前打开的 HTTP 打开的总 JVM 缓冲区池直接计数 JVM 类当前已加载计数 JVM GC 收集器旧收集计数 JVM 内存堆已提交（字节）操作系统 CPU 负载平均 15m 操作系统 CPU 无内存（字节）操作系统无交换（字节）进程 CPU 进程 CPU 总进程最大文件描述符进程内存总虚拟（字节）线程池分析活动线程池分析已完成线程池分析最大线程池分析队列线程池分析拒绝的线程池分析 线程线程池提取碎片已启动活动线程池提取碎片已启动已完成线程池提取碎片已启动最大线程池提取碎片已启动队列线程池提取碎片已启动已拒绝线程池提取碎片已启动 Shread 线程池提取碎片存储活动线程池提取碎片存储已完成传输 Rx （每秒）传输 Rx 字节（每秒）传输服务器开放传输 TX （每秒）传输 TX 字节（每秒）</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="故障排除">故障排除</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>可以从找到追加信息 <a href="concept_requesting_support.html">"支持"</a> 页面。</p>
+<p>kubectl -n netapp-monitoring get secret docker -o yaml</p>
 </div>
+<div class="paragraph">
+<p>（复制粘贴上述命令输出中的 .dockerconfigjson ：值）将对 Docker 密钥进行解码</p>
 </div>
+<div class="paragraph">
+<p>echo &lt;ste粘贴 自上述步骤 1 &gt; | base64 -d 此命令的输出格式如下： ｛ "auths" ： ｛ "docker" 。 &lt;cluster&gt;.cloudinsights.netapp.com" ： ｛ "username" ： "&lt; 租户 ID&gt;" ， "password" ： "&lt; CI API 密钥的密码 &gt;" ， "auth" ： "&lt; 编码的用户名： auth 基本密码密钥。这是 Docker &gt;" ｝ ｝ 登录到 Docker 存储库的内部组件</p>
+</div>
+<div class="paragraph">
+<p>Docker 登录 Docker 。 &lt;cluster&gt;.cloudinsights.netapp.com （第 2 步） -u &lt; 第 2 步中的用户名 &gt; 密码： &lt; 第 2 步中的密码 &gt; 从 Cloud Insights 中提取操作员 Docker 映像</p>
+</div>
+<div class="paragraph">
+<p>Docker 会拉取 Docker 。 &lt; 集群 &gt; .cloudinsights.netapp.com/netapp-monitoring:&lt;version&gt;</p>
+</div>
+<div class="paragraph">
+<p>使用以下命令查找 &lt;version&gt; 字段：</p>
+</div>
+<div class="paragraph">
+<p>kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image" ：将操作员 Docker 映像推送到您的专用 / 企业 Docker 注册表</p>
+</div>
+<div class="paragraph">
+<p>根据您的企业策略将代码推送到您的私有 / 本地 / 企业 Docker 存储库将所有开源依赖项下载到您的私有 Docker 注册表中</p>
+</div>
+<div class="paragraph">
+<p>需要下载以下开源映像： docker.io/eraf ： 1.19.3 gcr.io/kubebuilder/Kube-RBAC 代理： v0.5.0 k8s.gcr.io/Kube-state-metrics/Kube-state-metrics ： v2.1.0</p>
+</div>
+<div class="paragraph">
+<p>如果启用了 fluid-bit ： docker.io/fluid-bit ： 1.7.8 docker.io/Kubernetes 事件导出程序： 0.10 编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）</p>
+</div>
+<div class="paragraph">
+<p>kubectl -n netapp-monitoring edit agent agent-monitoring-netapp</p>
+</div>
+<div class="paragraph">
+<p>enableAutoUpgrade ： false docker-repo ： &lt;Docker repo of the enterprise/corp docker repo&gt; dockerRepoSecret ： &lt;optional ： name of the Docker secret of enterprise/corp docker repo ， this secret should be already created on the K8s cluster in the same namespacy&gt;</p>
+</div>
+<div class="paragraph">
+<p>在规范：部分中，进行以下更改：</p>
+</div>
+<div class="paragraph">
+<p>规格： Telegraf ： - 名称： KSM 替换项： - 密钥： K8s.GCR.IO 值： &lt; 与上面的 "docker-repo" 字段相同 &gt;</p>
 </div>
 
     </article>
@@ -2033,8 +1987,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Elasticsearch Data Collector](https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_elasticsearch.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/task_config_telegraf_elasticsearch.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[配置代理以收集数据](https://docs.netapp.com/zh-cn/cloudinsights/task_kubernetes_operator_proxy.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/task_kubernetes_operator_proxy.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloudinsights/images/article-sm.svg" class="github-icon" />提供者指南</a>
     </div>
     <div class="page-nav-container">
