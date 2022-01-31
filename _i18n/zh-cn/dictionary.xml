@@ -1646,7 +1646,6 @@
 <block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
 <block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
   <block id="7cf19f2c233335b0e0262d17d9d4f8dd" category="summary">Cloud Insights 中提供的新特性和功能。</block>
-  <block id="9dbaba9eaf242fb8457fed4378ce0f93" category="doc">Cloud Insights 的新增功能</block>
   <block id="9cd1885267b8b63d53217c5f31b579c9" category="paragraph">NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一些最新特性和功能。</block>
   <block id="db5be383ed95aea37a04f941990f2c45" category="section-title">2021 年 6 月</block>
   <block id="681887c179b6206d3eea17e17b2388dc" category="section-title">筛选器中的 AutoComplete 建议，通配符和表达式</block>
@@ -8508,4 +8507,5 @@
   <block id="e1b7025ee96a4c8d9b2e85049c8d7375" category="paragraph">enableAutoUpgrade ： false docker-repo ： &lt;Docker repo of the enterprise/corp docker repo&gt; dockerRepoSecret ： &lt;optional ： name of the Docker secret of enterprise/corp docker repo ， this secret should be already created on the K8s cluster in the same namespacy&gt;</block>
   <block id="304245a5035eb4597234a1b8827c9213" category="paragraph">在规范：部分中，进行以下更改：</block>
   <block id="44adec27317574513bdc470781ccacb6" category="paragraph">规格： Telegraf ： - 名称： KSM 替换项： - 密钥： K8s.GCR.IO 值： &lt; 与上面的 "docker-repo" 字段相同 &gt;</block>
+  <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights 的新增功能</block>
 </blocks>
