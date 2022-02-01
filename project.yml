@@ -222,6 +222,8 @@ sidebar:
         url: "/forensic_user_overview.html"
     - title: 自动响应策略
       url: "/cs_automated_response_policies.html"
+    - title: 限制用户访问
+      url: "/cs_restrict_user_access.html"
     - title: 模拟勒索软件攻击
       url: "/concept_cs_attack_simulator.html"
     - title: 通知

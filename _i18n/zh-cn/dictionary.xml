@@ -8508,4 +8508,12 @@
   <block id="304245a5035eb4597234a1b8827c9213" category="paragraph">在规范：部分中，进行以下更改：</block>
   <block id="44adec27317574513bdc470781ccacb6" category="paragraph">规格： Telegraf ： - 名称： KSM 替换项： - 密钥： K8s.GCR.IO 值： &lt; 与上面的 "docker-repo" 字段相同 &gt;</block>
   <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights 的新增功能</block>
+  <block id="e229d51ca45046e23340982a0d911a30" category="section-title">保留审核数据</block>
+  <block id="c5ba523259d5f0a8abbc98e09089879a" category="paragraph">Cloud Insights 保留审核数据的时间量取决于您的版本：</block>
+  <block id="6140d54709a2f0707aaa20367fd479a2" category="list-text">基本版本：审核数据保留 30 天</block>
+  <block id="ef14a516a82a51d74eaeb8e2193667cb" category="list-text">标准版和高级版：审核数据保留 1 年 + 1 天</block>
+  <block id="7ad87c3be379b9de0a9009199fb5401c" category="paragraph">系统会自动清除早于保留时间的审核条目。无需用户交互。</block>
+  <block id="c0e7fce2cca0be472d3098957e2a4864" category="paragraph">您可以在此处找到有关对审核问题进行故障排除的建议。</block>
+  <block id="3e31734df6f02c9ad9cd0dc7c1f65a98" category="cell">我会看到一些审核消息，告知我已导出监控器。</block>
+  <block id="256a0ce1cb9ac99794371e404aa7446e" category="cell">在开发和测试新功能期间， NetApp 工程师通常会使用导出自定义监控器配置。如果您不希望看到此消息，请考虑了解审核操作中指定的用户的操作，或者联系支持部门。</block>
 </blocks>
