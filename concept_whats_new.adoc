@@ -11,6 +11,30 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+=== 2022 年 2 月
+
+
+
+==== 预览功能
+
+Cloud Insights 重点介绍了许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
+
+|===
+
+
+| * 功能 * | * 问题描述 * 
+
+
+| 限制用户访问自动响应操作 | 检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问（完整块或设置为只读访问）来阻止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
+
+
+| 数据销毁—文件删除攻击检测 | 检测异常的大规模文件删除活动，阻止恶意用户访问恶意文件，并使用自动响应策略自动创建快照。 
+
+
+| 共享资源面临压力 | 通过 " 受压力的共享资源 " 洞察力，您可以确定： - 由于一个或多个工作负载的高需求而面临压力的共享存储资源 - 共享资源上要求苛刻且受影响的工作负载link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["阅读更多内容"] 
+|===
+
+
 === 2021 年 12 月
 
 

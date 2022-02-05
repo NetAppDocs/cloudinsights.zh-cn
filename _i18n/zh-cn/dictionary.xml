@@ -8516,4 +8516,16 @@
   <block id="c0e7fce2cca0be472d3098957e2a4864" category="paragraph">您可以在此处找到有关对审核问题进行故障排除的建议。</block>
   <block id="3e31734df6f02c9ad9cd0dc7c1f65a98" category="cell">我会看到一些审核消息，告知我已导出监控器。</block>
   <block id="256a0ce1cb9ac99794371e404aa7446e" category="cell">在开发和测试新功能期间， NetApp 工程师通常会使用导出自定义监控器配置。如果您不希望看到此消息，请考虑了解审核操作中指定的用户的操作，或者联系支持部门。</block>
+  <block id="9209b4ae424c71673a607557c64f7eb8" category="section-title">2022 年 2 月</block>
+  <block id="ecf4e9e3c38358de05561be5ed03f5d0" category="section-title">预览功能</block>
+  <block id="2240ee7d4e56b8ba7ac49b14311cdeed" category="inline-link-macro">NetApp 销售团队</block>
+  <block id="c8d0b8a6f32511af92bc09ceb0fccb0d" category="paragraph">Cloud Insights 重点介绍了许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
+  <block id="5fa0ef8fc40e60003288942e2da3e300" category="cell">* 功能 *</block>
+  <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">限制用户访问自动响应操作</block>
+  <block id="decbe415d8accca7c2c16d48a79ee934" category="inline-link-macro">阅读更多内容</block>
+  <block id="f763810a8ec0d5862e0f288795932956" category="cell">检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问（完整块或设置为只读访问）来阻止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="ecd6006dc9161e21cc393e8aee8b161a" category="cell">数据销毁—文件删除攻击检测</block>
+  <block id="802e1838a460af6f9b00de358ee4fd50" category="cell">检测异常的大规模文件删除活动，阻止恶意用户访问恶意文件，并使用自动响应策略自动创建快照。</block>
+  <block id="f1e906bd3edd784d1978ed7c4566e64c" category="cell">共享资源面临压力</block>
+  <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">通过 " 受压力的共享资源 " 洞察力，您可以确定： - 由于一个或多个工作负载的高需求而面临压力的共享存储资源 - 共享资源上要求苛刻且受影响的工作负载<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
 </blocks>
