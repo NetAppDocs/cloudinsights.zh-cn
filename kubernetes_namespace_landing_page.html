@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>Kubernetes 集群详细信息页面</title>
+  <title>Kubernetes 命名空间详细信息页面</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="Kubernetes 集群详细信息页面" />
+  <meta property="og:title" content="Kubernetes 命名空间详细信息页面" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/kubernetes_cluster_detail.html" />
-	<meta property="og:description" content="Kubernetes 详细信息页面提供了有助于进行故障排除和规划的信息和详细信息。" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/kubernetes_namespace_landing_page.html" />
+	<meta property="og:description" content="介绍了 Kubernetes 命名空间登录页面" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,8 +18,8 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="Kubernetes 详细信息页面提供了有助于进行故障排除和规划的信息和详细信息。">
-  <meta name="keywords" content=" kubernetes, pods, clusters, nodes. troubleshooting, planning">
+  <meta name="description" content="介绍了 Kubernetes 命名空间登录页面">
+  <meta name="keywords" content=" telegraf, installation, install, kubernetes, pods, clusters, filters, filtering, k8s, namespace">
   
   
 
@@ -281,13 +281,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/kubernetes_cluster_detail.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/kubernetes_namespace_landing_page.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/kubernetes_cluster_detail.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/cloudinsights/kubernetes_namespace_landing_page.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/kubernetes_cluster_detail.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/kubernetes_namespace_landing_page.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/kubernetes_cluster_detail.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/kubernetes_namespace_landing_page.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -549,15 +549,6 @@
           
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/cloudinsights/pdfs/pages/kubernetes_cluster_detail.pdf" >
-    <img src="/zh-cn/cloudinsights/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 
@@ -1479,7 +1470,7 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/kubernetes_landing_page.html">
         Kubernetes 概述页面
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/kubernetes_cluster_detail.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/kubernetes_cluster_detail.html">
         Kubernetes 集群页面
       </a></li></ul></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 使用查询</div>
@@ -1889,7 +1880,7 @@
           <a href="/zh-cn/cloudinsights/">Cloud&nbsp;Insights</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          Kubernetes 集群详细信息页面
+          Kubernetes 命名空间详细信息页面
         </li>
       </ul>
     </div>
@@ -1912,7 +1903,7 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">Kubernetes 集群详细信息页面</h1>
+  <h1 class="n-doc__component-detail-heading">Kubernetes 命名空间详细信息页面</h1>
 </div>
 
 
@@ -1938,123 +1929,23 @@
 </p>
 
 
-<div id="preamble">
-<div class="sectionbody">
 <div class="paragraph lead">
-<p>Kubernetes 集群详细信息页面显示了有关 Kubernetes 集群的详细信息。</p>
+<p>Kubernetes 命名空间详细信息页面汇总了命名空间使用的所有资产，包括所有后端存储资源及其容量利用率。</p>
 </div>
 <div class="paragraph">
-<p>详细信息页面由三个不同但链接在一起的登录页面组成，这些页面显示集群，节点和 POD 信息。此时， " 资源使用量 " 部分将发生更改，以显示选定项（集群，节点或 POD ）的详细信息。您可以在屏幕顶部看到当前页面类型和名称。当前页面显示在以下结构中： <em>Site Name / Kubernetes / Cluster / Node / Pod</em> 。您可以单击此 " 痕迹 " 跟踪的任何部分直接转到该特定页面。</p>
+<p>单击任何 Kubernetes Explorer 页面上的命名空间链接将打开该命名空间的详细信息页面。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Breadcrumb.png" alt="页面痕迹"></span></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="集群概述">集群概述</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>集群概述页面可提供有用的信息概览：</p>
+<p><span class="image"><img src="Kubernetes_Namespace_Detail_Example_2.png" alt="命名空间详细信息页面"></span></p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Cluster_View_Annotated.png" alt="带标注的集群视图"></span></p>
-</div>
-<div class="sect2">
-<h3 id="节点和-pod-计数">节点和 Pod 计数</h3>
-<div class="paragraph">
-<p>页面顶部的节点 /Pod 计数可显示集群中的节点和 Pod 总数，以及当前正在发出警报或待定的 Pod 数量的细分。</p>
+<p>与其他 Kubernetes Excplorer 页面一样，您可以设置一个筛选器以关注特定节点或其他对象，并可查看 Pod 运行状况和命名空间状态概述，以及显示 CPU 和内存需求以及永久性卷容量（如果适用）的图表。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Pod_Counts.png" alt="节点和 Pod 计数"></span></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注">
-</td>
-<td class="content">
-三个 POD 子计数（运行状况良好，警报，待定）的总和可能超过显示的 Pod 总数。发生这种情况的原因是， <em>pendent</em> 计数包括 <em>all</em> pending Pod ，包括未计划和已计划的 Pod （换言之，未附加和已附加到节点）。
-</td>
-</tr>
-</table>
-</div>
-</div>
-<div class="sect2">
-<h3 id="集群-车轮">集群 " 车轮 "</h3>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Wheel_Section.png" alt="集群车轮"></span></p>
+<p>最后，此页面将显示一个与命名空间关联的工作负载表。</p>
 </div>
 <div class="paragraph">
-<p>集群 " 车轮 " 部分简要介绍了节点和 POD 运行状况，您可以深入了解这些信息。如果集群包含的节点数超过页面此区域中显示的节点数，您可以使用可用按钮转动车轮。</p>
-</div>
-<div class="paragraph">
-<p>警报 Pod 或节点以红色显示。" 警告 " 区域显示为橙色。未计划（即未连接）的 Pod 将显示在集群 " 车轮 " 的下角。</p>
-</div>
-<div class="paragraph">
-<p>将鼠标悬停在 Pod （圆形）或 Node （条形）上可扩展节点视图。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Node_Expand.png" alt="扩展节点"></span></p>
-</div>
-<div class="paragraph">
-<p>单击该视图中的 Pod 或节点将放大到展开的节点视图。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Critical_Pod_Zoom.png" alt="展开节点视图"></span></p>
-</div>
-<div class="paragraph">
-<p>从此处，您可以将鼠标悬停在某个元素上以显示有关该元素的详细信息。例如，将鼠标悬停在此示例中的关键 POD 上可显示有关该 POD 的详细信息。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Pod_Red.png" alt="关键 Pod 信息"></span></p>
-</div>
-<div class="paragraph">
-<p>您可以将鼠标悬停在 Node 元素上方来查看文件系统，内存和 CPU 信息。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Capacity_Info.png" alt="节点容量和分配"></span></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="详细信息部分">详细信息部分</h3>
-<div class="paragraph">
-<p>Kubernetes 资源管理器的每个页面都会显示一组使用情况图，其中可能包括 CPU ，内存和存储。下图显示了每个类别中的顶级对象的摘要和列表，并提供了指向底层详细信息的链接。例如， <em>Node</em> 显示 Pod 和容器， <em>Pod</em> 显示 PVC 以及相关对象和容器等。下图显示了 <em>Node</em> 页面上的详细信息示例：</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Node_Resource_Usage.png" alt="资源使用情况示例"></span></p>
-</div>
-<div class="paragraph">
-<p>出现警报的资源将显示在列表顶部。单击受影响的资源以深入了解更多详细信息。</p>
-</div>
-<div class="sect3">
-<h4 id="有关仪表的说明">有关仪表的说明</h4>
-<div class="paragraph">
-<p>内存和 CPU 量表显示三种颜色，因为它们显示的 <em>used_关系 到 _allocatable capacity</em> 和 <em>total capacity</em> 。存储仪表仅显示两种颜色，因为它们仅显示一对值： <em>used_in relation to _total</em> 。</p>
-</div>
-<div class="paragraph">
-<p>读取仪表时，请记住以下几点。</p>
-</div>
-<div class="paragraph">
-<p>深蓝色带显示已用容量。</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>在 <em>light blue band</em> 下查看时，深蓝色显示 Used 作为可分配量的百分比。此值与所示的 "% of allocatable" 值匹配（以下示例中为 81 ）。</p>
-</li>
-<li>
-<p>在 <em>white background</em> 下查看时，深蓝色显示已用容量占总容量的百分比。此值与所示的 "% of capacity" 值匹配（在此示例中为 63 ）。</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Kubernetes_Gauge_Explained.png" alt="说明了量表编号"></span></p>
-</div>
-</div>
-</div>
-</div>
+<p>单击页面上的任何链接，进一步探索 Kubernetes 环境或对其进行故障排除。</p>
 </div>
 
     </article>
@@ -2066,8 +1957,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Kubernetes 集群详细信息页面](https://docs.netapp.com/zh-cn/cloudinsights/kubernetes_cluster_detail.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/kubernetes_cluster_detail.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[Kubernetes 命名空间详细信息页面](https://docs.netapp.com/zh-cn/cloudinsights/kubernetes_namespace_landing_page.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/kubernetes_namespace_landing_page.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloudinsights/images/article-sm.svg" class="github-icon" />提供者指南</a>
     </div>
     <div class="page-nav-container">
