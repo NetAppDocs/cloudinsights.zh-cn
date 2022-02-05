@@ -55,6 +55,8 @@ image:Kubernetes_Node_Pod_Status.png["节点和 Pod 状态"]
 
 屏幕右侧列出了每个集群中使用的前三个命名空间。单击 * 全部 * 链接可查看集群的所有命名空间。
 
+单击命名空间将打开命名空间详细信息页面。
+
 image:Kubernetes_Namespaces.png["命名空间"]
 
 

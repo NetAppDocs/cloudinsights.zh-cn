@@ -8528,4 +8528,30 @@
   <block id="802e1838a460af6f9b00de358ee4fd50" category="cell">检测异常的大规模文件删除活动，阻止恶意用户访问恶意文件，并使用自动响应策略自动创建快照。</block>
   <block id="f1e906bd3edd784d1978ed7c4566e64c" category="cell">共享资源面临压力</block>
   <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">通过 " 受压力的共享资源 " 洞察力，您可以确定： - 由于一个或多个工作负载的高需求而面临压力的共享存储资源 - 共享资源上要求苛刻且受影响的工作负载<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
+  <block id="e58aeb679b2b8a9e7a899a6123bac66e" category="section-title">Cloud Insights 可解决 Apache Log4j 漏洞</block>
+  <block id="671a3bde6499a097bb904b76a2924a9f" category="paragraph">客户安全是 NetApp 的首要任务。Cloud Insights 对其软件库进行了更新，以解决最新的 Apache Log4j 漏洞。</block>
+  <block id="288805c2814f50aec1c5cc8239cd2bd7" category="paragraph">请参见 NetApp 产品安全建议网站上的以下内容：</block>
+  <block id="2bfa00111c32dc35edaddb47c143c1ef" category="inline-link-macro">CVE-2021-44228</block>
+  <block id="f46441257a7d8ec08af42b1a30aa2e72" category="inline-link-macro">CVE-2021-45046</block>
+  <block id="3aa14225af96c104d78618c2bf4f894d" category="inline-link-macro">CVE-2021-45105</block>
+  <block id="c0e87524dc1210407d64e90828b757df" category="paragraph"><block ref="73b02b07113fb6adcf27db0d98c9ba96" category="inline-link-macro-rx"></block>
+<block ref="9d3f9e70197f80558150e2abec564e42" category="inline-link-macro-rx"></block>
+<block ref="44bc626fb6e5e9bca760e0364261a079" category="inline-link-macro-rx"></block></block>
+  <block id="87061cadde79eb3b3c4e0dcc1c14d24f" category="inline-link-macro">NetApp 新闻中心</block>
+  <block id="849e2d4ad1bbbd3a75c7088a2e84a8d9" category="paragraph">有关这些漏洞以及 NetApp 响应的详细信息，请参见 <block ref="8759507f5384c0409324b697c58ce365" category="inline-link-macro-rx"></block>。</block>
+  <block id="ec9cf927d91c3ad7664fabdee6472d03" category="section-title">Kubernetes 命名空间详细信息页面</block>
+  <block id="92093ab9ea8254ffd952bd6e9cfaff5f" category="paragraph">现在，您可以更好地探索 Kubernetes 环境，并为集群命名空间提供信息丰富的详细信息页面。命名空间详细信息页面提供了命名空间使用的所有资产的摘要，包括所有后端存储资源及其容量利用率。</block>
+  <block id="393ec8728d04ca4c0c87b2259965e9be" category="paragraph"><block ref="393ec8728d04ca4c0c87b2259965e9be" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3de80a4099f2865b8078177e221120f1" category="paragraph">单击命名空间将打开命名空间详细信息页面。</block>
+  <block id="e8488ef49f6dab9af961495fc93e60c3" category="summary">介绍了 Kubernetes 命名空间登录页面</block>
+  <block id="096b06ed37fdb2ba92846987f8f7a8ed" category="paragraph">Kubernetes 命名空间详细信息页面汇总了命名空间使用的所有资产，包括所有后端存储资源及其容量利用率。</block>
+  <block id="314f5a139733e879b0d731d8fdad57ee" category="paragraph">单击任何 Kubernetes Explorer 页面上的命名空间链接将打开该命名空间的详细信息页面。</block>
+  <block id="033ce5e39aff0bd1d4995cfe035d043d" category="inline-image-macro">命名空间详细信息页面</block>
+  <block id="84bf499548eb9730bcc1248ee2b6ddf6" category="paragraph"><block ref="84bf499548eb9730bcc1248ee2b6ddf6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="74c35406227b8d8ec7457220492c0d02" category="paragraph">与其他 Kubernetes Excplorer 页面一样，您可以设置一个筛选器以关注特定节点或其他对象，并可查看 Pod 运行状况和命名空间状态概述，以及显示 CPU 和内存需求以及永久性卷容量（如果适用）的图表。</block>
+  <block id="6470992de7cbd53a2e98767035d8a417" category="paragraph">最后，此页面将显示一个与命名空间关联的工作负载表。</block>
+  <block id="92bc1b7a13a5372aed9762b4aaea086f" category="paragraph">单击页面上的任何链接，进一步探索 Kubernetes 环境或对其进行故障排除。</block>
+  <block id="f8a3f6c3840b144728e1066d84db53ec" category="section-title">折线图插值</block>
+  <block id="d1458c295da095c4f0b8cdf2e41ceaf6" category="paragraph">不同的数据收集器通常会按不同的时间间隔轮询数据。例如，数据收集器 A 可能每 15 分钟轮询一次，而数据收集器 B 则每 5 分钟轮询一次。当折线图小工具（也包括样条曲线图，分区图和堆积分区图）将多个数据收集器中的数据聚合为一行时（例如，当小工具按 " 全部 " 分组时）， 并且每五分钟刷新一次该行，收集器 B 中的数据可能会准确显示，而收集器 A 中的数据可能会出现空隙，从而影响聚合，直到收集器 A 再次轮询为止。</block>
+  <block id="ccf8880e1018ebb2fd1bb2e959e62092" category="paragraph">为了缓解这种情况， Cloud Insights 会在聚合时对数据进行内插，并使用周围的数据点对数据进行 " 最佳推测 " ，直到数据收集器再次轮询为止。您始终可以通过调整小工具的分组来单独查看每个数据收集器的对象数据。</block>
 </blocks>
