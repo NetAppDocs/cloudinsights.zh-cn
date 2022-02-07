@@ -14,7 +14,6 @@
   <block id="40a5834e83975621427553254177c0ab" category="section-title">版本</block>
   <block id="e5357ca832e310fe2d063fed63521e4d" category="paragraph">Cloud Insights 中为您提供的特性和功能取决于您订阅的版本。此处介绍了可用的版本。</block>
   <block id="1dd24ddc8bdc4a8ad7940369b2db779f" category="list-text">* 基本版 * 是免费的，可供具有有效 NetApp 支持帐户的现有 NetApp 客户使用。</block>
-  <block id="551580b22ed2599ef32a07489113307b" category="admonition">非活动 Cloud Insights 基本版环境将被删除，其资源将被回收。如果连续 90 天没有用户活动，则环境将被视为非活动环境。</block>
   <block id="ffec407b7dac5bde197f9fa34cee89d5" category="admonition">Cloud Insights 基本版中收集的功能，数据保留时间以及对象或指标可能会发生更改，恕不另行通知。</block>
   <block id="b0bb53aca4f0808da1b4e8c638bf67a0" category="list-text">* 标准版 * 可通过订阅获得，并提供基本版的所有功能及更多功能。</block>
   <block id="ad7d493af34fa73fe95bf075712a5ec3" category="list-text">* 高级版 * 提供了其他优势，例如业务智能和报告以及 Cloud Secure 审核和威胁检测。</block>
@@ -8554,4 +8553,5 @@
   <block id="f8a3f6c3840b144728e1066d84db53ec" category="section-title">折线图插值</block>
   <block id="d1458c295da095c4f0b8cdf2e41ceaf6" category="paragraph">不同的数据收集器通常会按不同的时间间隔轮询数据。例如，数据收集器 A 可能每 15 分钟轮询一次，而数据收集器 B 则每 5 分钟轮询一次。当折线图小工具（也包括样条曲线图，分区图和堆积分区图）将多个数据收集器中的数据聚合为一行时（例如，当小工具按 " 全部 " 分组时）， 并且每五分钟刷新一次该行，收集器 B 中的数据可能会准确显示，而收集器 A 中的数据可能会出现空隙，从而影响聚合，直到收集器 A 再次轮询为止。</block>
   <block id="ccf8880e1018ebb2fd1bb2e959e62092" category="paragraph">为了缓解这种情况， Cloud Insights 会在聚合时对数据进行内插，并使用周围的数据点对数据进行 " 最佳推测 " ，直到数据收集器再次轮询为止。您始终可以通过调整小工具的分组来单独查看每个数据收集器的对象数据。</block>
+  <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">非活动 Cloud Insights 基本版环境将被删除，其资源将被回收。如果连续 30 天没有用户活动，或者连续 7 天未载入数据，则环境将被视为非活动环境。Cloud Insights 将发送通知，并在删除环境之前提供四天的宽限期。</block>
 </blocks>
