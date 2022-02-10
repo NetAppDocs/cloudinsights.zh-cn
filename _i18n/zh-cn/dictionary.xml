@@ -7649,7 +7649,6 @@
   <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">日志监控器</block>
   <block id="2537071834a07a838e1fbe450ad077ac" category="paragraph">在 * 日志监控器 * 中，首先从可用日志列表中选择要监控的日志。然后，您可以根据上述可用属性进行筛选。</block>
-  <block id="92e0462f18b6159955eb265400fc3fac" category="paragraph">例如，您可以选择筛选 logs.netapp.ems 源中的 "object.store.unavailabe" 消息类型：</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">日志监控器筛选器不能为空。</block>
   <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">选择要监控的日志并设置筛选器</block>
   <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
@@ -8559,4 +8558,5 @@
   <block id="23e8d668fcbe8c5dfe19d7e5be73ea0a" category="list-text">通过指定相应的 RuleIndex ，删除 SVM 上所有策略中的所有规则，这些策略将 "cloudsure_rule" 设置为客户端匹配项。CloudSecure 规则通常为 1 。</block>
   <block id="6c1214115a59d3b11b800993d5bb40fb" category="list-text">确保已删除 cloudsecure 规则（可选的确认步骤）</block>
   <block id="316d81dde3628e46f8db6067cc55e287" category="cell">手动单击限制访问会显示 " 此用户的 IP 地址已受限制 " 。</block>
+  <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">例如，您可以选择筛选 logs.netapp.ems 源中的 "object.store.unavailable" 消息类型：</block>
 </blocks>

@@ -92,7 +92,7 @@ image:Monitor_metric_conditions.png["定义监控器的条件"]
 
 在 * 日志监控器 * 中，首先从可用日志列表中选择要监控的日志。然后，您可以根据上述可用属性进行筛选。
 
-例如，您可以选择筛选 logs.netapp.ems 源中的 "object.store.unavailabe" 消息类型：
+例如，您可以选择筛选 logs.netapp.ems 源中的 "object.store.unavailable" 消息类型：
 
 
 NOTE: 日志监控器筛选器不能为空。
