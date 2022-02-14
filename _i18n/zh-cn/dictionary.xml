@@ -8559,4 +8559,5 @@
   <block id="6c1214115a59d3b11b800993d5bb40fb" category="list-text">确保已删除 cloudsecure 规则（可选的确认步骤）</block>
   <block id="316d81dde3628e46f8db6067cc55e287" category="cell">手动单击限制访问会显示 " 此用户的 IP 地址已受限制 " 。</block>
   <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">例如，您可以选择筛选 logs.netapp.ems 源中的 "object.store.unavailable" 消息类型：</block>
+  <block id="bef090ff3d523fedde21921ae6a366fd" category="paragraph">在批量添加操作上单击 _Save_ 或批量删除操作上单击 _Remove_ 后， Cloud Insights 会通知您此操作将需要一段时间。您可以取消此消息；此操作将在后台继续。</block>
 </blocks>
