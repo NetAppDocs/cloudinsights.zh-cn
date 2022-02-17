@@ -7704,7 +7704,6 @@
   <block id="1d7ddf9b9a61df297a03c0ea168e07e1" category="inline-image-macro">轻型主题信息板示例</block>
   <block id="27ca7f7d641b8f097d5abd88830c85ec" category="paragraph">轻型主题信息板视图：<block ref="8331b94faa07667191361da3a9fe38d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="34e5045f115b5836d80d9776d1d13dc9" category="admonition">某些屏幕区域（例如某些小工具图表）仍会显示浅色背景，即使在以暗主题查看时也是如此。</block>
-  <block id="7890c65c9613f0296dda2849907ff360" category="summary">Cloud Insights 支持 <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。</block>
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">如果要在安装代理之前验证安装文件，请参见以下章节 <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">从存储中删除证书：</block>
   <block id="d836a7075094860f48ae2ac37b8ee84a" category="paragraph">Kubernetes 提供了两种数据收集方式：</block>
@@ -8478,22 +8477,6 @@
   <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">在 _spec__ 部分中，进行以下更改：</block>
   <block id="44041917404886ef4df8802ca1493c79" category="section-title">为 Kubernetes 配置代理支持—基于脚本</block>
-  <block id="e43d6e3ee8366674f4d3bc6eb87427a7" category="paragraph">使用自定义 / 私有 Docker 存储库设置代理可以从 2021 年 12 月 10 日投入使用的 CI 部署开始，在 CR 中为监控操作员配置代理</block>
-  <block id="1d3227ede43efb9f227fa30469358de3" category="paragraph">kubectl -n netapp-monitoring edit agent agent-monitoring-netapp</block>
-  <block id="f41621a6649a18209de8ab1311719bde" category="paragraph">在此文件的规范：部分中，添加以下代码块</block>
-  <block id="b0c450654b5e94522d011a58967a41c8" category="paragraph">规范：代理： isAuProxyEnabled ： &lt;true 或 false&gt; isTelegrafProxyEnabled ： &lt;true 或 false&gt; isFluentBitProxyEnabled ： &lt;true 或 false&gt; 密码： &lt; 代理密码，可选 &gt; 端口： &lt; 代理端口 &gt; 服务器： &lt; 代理服务器 &gt; 用户名： &lt; 代理用户名，可选 &gt; noProxy ： 使用自定义 / 专用 Docker 存储库获取 Docker 密钥。 &lt; 应绕过代理的 IP 或可解析主机名列表以逗号分隔 &gt;</block>
-  <block id="eb7f0fe8e02a65d56982f5a74f6583c0" category="paragraph">kubectl -n netapp-monitoring get secret docker -o yaml</block>
-  <block id="58e1e7f30cb0fd80bcb9aa7b716cb724" category="paragraph">（复制粘贴上述命令输出中的 .dockerconfigjson ：值）将对 Docker 密钥进行解码</block>
-  <block id="ac785eabe0073fe1171505c99a3724ee" category="paragraph">echo &lt;ste粘贴 自上述步骤 1 &gt; | base64 -d 此命令的输出格式如下： ｛ "auths" ： ｛ "docker" 。 &lt;cluster&gt;.cloudinsights.netapp.com" ： ｛ "username" ： "&lt; 租户 ID&gt;" ， "password" ： "&lt; CI API 密钥的密码 &gt;" ， "auth" ： "&lt; 编码的用户名： auth 基本密码密钥。这是 Docker &gt;" ｝ ｝ 登录到 Docker 存储库的内部组件</block>
-  <block id="c97b0dfe1c937e6a975eddccb95973ef" category="paragraph">Docker 登录 Docker 。 &lt;cluster&gt;.cloudinsights.netapp.com （第 2 步） -u &lt; 第 2 步中的用户名 &gt; 密码： &lt; 第 2 步中的密码 &gt; 从 Cloud Insights 中提取操作员 Docker 映像</block>
-  <block id="3ec8cafe630fb58c78079faf4adeb00a" category="paragraph">Docker 会拉取 Docker 。 &lt; 集群 &gt; .cloudinsights.netapp.com/netapp-monitoring:&lt;version&gt;</block>
-  <block id="f422cefb0886961455efb67de7e26231" category="paragraph">kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image" ：将操作员 Docker 映像推送到您的专用 / 企业 Docker 注册表</block>
-  <block id="43d80889a5a41546c856cf06328616cd" category="paragraph">根据您的企业策略将代码推送到您的私有 / 本地 / 企业 Docker 存储库将所有开源依赖项下载到您的私有 Docker 注册表中</block>
-  <block id="9b7a2fdb4de8c1f948c779a8031bce3a" category="paragraph">需要下载以下开源映像： docker.io/eraf ： 1.19.3 gcr.io/kubebuilder/Kube-RBAC 代理： v0.5.0 k8s.gcr.io/Kube-state-metrics/Kube-state-metrics ： v2.1.0</block>
-  <block id="582e00a87af2a3a98b1dc04e62419ae2" category="paragraph">如果启用了 fluid-bit ： docker.io/fluid-bit ： 1.7.8 docker.io/Kubernetes 事件导出程序： 0.10 编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）</block>
-  <block id="e1b7025ee96a4c8d9b2e85049c8d7375" category="paragraph">enableAutoUpgrade ： false docker-repo ： &lt;Docker repo of the enterprise/corp docker repo&gt; dockerRepoSecret ： &lt;optional ： name of the Docker secret of enterprise/corp docker repo ， this secret should be already created on the K8s cluster in the same namespacy&gt;</block>
-  <block id="304245a5035eb4597234a1b8827c9213" category="paragraph">在规范：部分中，进行以下更改：</block>
-  <block id="44adec27317574513bdc470781ccacb6" category="paragraph">规格： Telegraf ： - 名称： KSM 替换项： - 密钥： K8s.GCR.IO 值： &lt; 与上面的 "docker-repo" 字段相同 &gt;</block>
   <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights 的新增功能</block>
   <block id="e229d51ca45046e23340982a0d911a30" category="section-title">保留审核数据</block>
   <block id="c5ba523259d5f0a8abbc98e09089879a" category="paragraph">Cloud Insights 保留审核数据的时间量取决于您的版本：</block>
@@ -8560,4 +8543,7 @@
   <block id="316d81dde3628e46f8db6067cc55e287" category="cell">手动单击限制访问会显示 " 此用户的 IP 地址已受限制 " 。</block>
   <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">例如，您可以选择筛选 logs.netapp.ems 源中的 "object.store.unavailable" 消息类型：</block>
   <block id="bef090ff3d523fedde21921ae6a366fd" category="paragraph">在批量添加操作上单击 _Save_ 或批量删除操作上单击 _Remove_ 后， Cloud Insights 会通知您此操作将需要一段时间。您可以取消此消息；此操作将在后台继续。</block>
+  <block id="c43280f80a1f0bcdf120e5ebc1478afa" category="paragraph">您可以在此处找到有关排除日志查询问题的建议。</block>
+  <block id="a2b7ba428c90a214e64dd3650b09c2d7" category="cell">我的日志查询中未显示 "debug" 消息</block>
+  <block id="dda93de8aa98136e7b08d865d96faa86" category="cell">未收集调试日志消息。要捕获所需的消息，请将相关消息严重性更改为 _informational ， error ， alert ， EMERGENCY ， _ 或 _notic_ 级别。</block>
 </blocks>
