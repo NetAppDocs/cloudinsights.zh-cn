@@ -57,7 +57,6 @@
   <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">如果您的免费试用已过期，并且您尚未订阅 Cloud Insights ，则在订阅之前，您的功能将受到限制。</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">订阅选项</block>
   <block id="91817940c8ccf98f5864299e8c3db4d7" category="paragraph">要订阅，请转到 * 管理员 &gt; 订阅 * 。除了 * 订阅 * 按钮之外，您还可以查看已安装的数据收集器并计算估计定价。对于典型环境，您可以单击自助式 AWS Marketplace * 立即订阅 * 按钮。如果您的环境包含或预期包含 1 ， 000 个或更多受管单元，则您有资格获得卷定价。</block>
-  <block id="ddfb49e4f93a6d4f76ab72bdd9f3c260" category="paragraph"><block ref="ddfb49e4f93a6d4f76ab72bdd9f3c260" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e22ac25b066b201473de7aa700ef5d92" category="section-title">定价</block>
   <block id="5fc2de3da890d5a9abd4414ec9849028" category="paragraph">Cloud Insights 按 * 受管单元 * 定价。受管单元的使用量是根据基础架构环境中管理的 * 主机或虚拟机 * 数量和 * 未格式化容量 * 计算得出的。</block>
   <block id="0b8e651376aa14f43ba4123bb6c8d139" category="list-text">1 个受管单元 = 2 个主机（任何虚拟机或物理机）</block>
@@ -8546,4 +8545,6 @@
   <block id="c43280f80a1f0bcdf120e5ebc1478afa" category="paragraph">您可以在此处找到有关排除日志查询问题的建议。</block>
   <block id="a2b7ba428c90a214e64dd3650b09c2d7" category="cell">我的日志查询中未显示 "debug" 消息</block>
   <block id="dda93de8aa98136e7b08d865d96faa86" category="cell">未收集调试日志消息。要捕获所需的消息，请将相关消息严重性更改为 _informational ， error ， alert ， EMERGENCY ， _ 或 _notic_ 级别。</block>
+  <block id="650dff57aace2bf498b38f129e337c25" category="paragraph"><block ref="650dff57aace2bf498b38f129e337c25" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 个受管单元 = 4 TiB 的未格式化物理或虚拟磁盘容量</block>
 </blocks>
