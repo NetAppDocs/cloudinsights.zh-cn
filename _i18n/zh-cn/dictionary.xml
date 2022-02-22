@@ -8547,4 +8547,7 @@
   <block id="dda93de8aa98136e7b08d865d96faa86" category="cell">未收集调试日志消息。要捕获所需的消息，请将相关消息严重性更改为 _informational ， error ， alert ， EMERGENCY ， _ 或 _notic_ 级别。</block>
   <block id="650dff57aace2bf498b38f129e337c25" category="paragraph"><block ref="650dff57aace2bf498b38f129e337c25" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dc3f15e1a26ca80a17b59bb6db783b8a" category="list-text">1 个受管单元 = 4 TiB 的未格式化物理或虚拟磁盘容量</block>
+  <block id="659ff9500b9dfbdb242e7c46c8777782" category="list-text">Azure OAuth 2.0 重定向 URI （ login.microsoftonline.com ）</block>
+  <block id="7fe84062654c2f7953a6b3832d467cfb" category="list-text">Azure Resource Manager IP （ management.core.windows.net ）</block>
+  <block id="3b2e8fc35def670e931c7dad789c4510" category="paragraph">正确配置帐户并在 Azure 中注册应用程序后，您将拥有在 Cloud Insights 中发现 Azure 实例所需的凭据。以下链接介绍如何设置帐户以进行发现。<block ref="e57a159da4fbdd6739e41c759d2d3d96" category="inline-link-rx"></block></block>
 </blocks>
