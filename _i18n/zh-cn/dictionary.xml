@@ -7647,7 +7647,6 @@
   <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">定义监控器的条件</block>
   <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">日志监控器</block>
-  <block id="2537071834a07a838e1fbe450ad077ac" category="paragraph">在 * 日志监控器 * 中，首先从可用日志列表中选择要监控的日志。然后，您可以根据上述可用属性进行筛选。</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">日志监控器筛选器不能为空。</block>
   <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">选择要监控的日志并设置筛选器</block>
   <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
@@ -8550,4 +8549,6 @@
   <block id="659ff9500b9dfbdb242e7c46c8777782" category="list-text">Azure OAuth 2.0 重定向 URI （ login.microsoftonline.com ）</block>
   <block id="7fe84062654c2f7953a6b3832d467cfb" category="list-text">Azure Resource Manager IP （ management.core.windows.net ）</block>
   <block id="3b2e8fc35def670e931c7dad789c4510" category="paragraph">正确配置帐户并在 Azure 中注册应用程序后，您将拥有在 Cloud Insights 中发现 Azure 实例所需的凭据。以下链接介绍如何设置帐户以进行发现。<block ref="e57a159da4fbdd6739e41c759d2d3d96" category="inline-link-rx"></block></block>
+  <block id="115369a1ed62b7bc3a2d447559a26c19" category="paragraph">创建 * 日志监控器 * 时，首先从可用日志列表中选择要监控的日志。然后，您可以根据上述可用属性进行筛选。</block>
+  <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">您可以通过单击显示器右侧的菜单并选择 * 暂停 * 来选择临时暂停对某个对象类型的监控。准备好恢复监控后，单击 * 恢复 * 。</block>
 </blocks>
