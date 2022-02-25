@@ -1919,7 +1919,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-02-24 15:42:02 +0000">02/24/2022</time>
+    <time datetime="2022-02-25 15:37:56 +0000">02/25/2022</time>
     
   
 
@@ -2243,11 +2243,11 @@ security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname
 <td class="tableblock halign-left valign-top"><p class="tableblock">1. 防火墙很可能会阻止代理计算机中的必要端口。验证是否已为代理计算机打开端口范围 35000-55000/TCP ，以便从 SVM 进行连接。此外，请确保 ONTAP 端未启用防火墙，从而无法与代理计算机进行通信。2. 在代理框中键入以下命令，并确保端口范围处于打开状态。_sudo iptables-save</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grep 3500* _ 示例输出应如下所示： <em>A in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctstate new -j accept</em> 3.登录到 SVM ，输入以下命令并检查是否未设置防火墙以阻止与 ONTAP 的通信。<em>system services firewall show</em> <em>system services firewall policy show_<a href="https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nmg%2FGUID-969851BB-4302-4645-8DAC-1B059D81C5B2.html">"检查防火墙命令"</a> 在 ONTAP 端。4. 通过 SSH 连接到要监控的 SVM/ 集群。从 SVM 管理 LIF 对 Agent 框执行 Ping 操作（支持 CIFS ， NFS 协议），并确保 ping 操作正常： _network ping -vserver &lt;vserver name&gt; -destination &lt;Agent IP&gt; -lif &lt;Lif Name&gt;-show-detail</em> 如果无法执行 Ping 操作，请确保 ONTAP 中的网络设置正确，以便代理计算机可以执行 Ping 操作。如果通过 2 个数据收集器将一个 SVM 添加到租户中两次，则会显示此错误。通过用户界面删除其中一个数据收集器。然后，通过 UI 重新启动另一个数据收集器。然后，数据收集器将显示 " 正在运行 " 状态，并开始从 SVM 接收事件。基本上，在租户中， 1 个 SVM 只能通过 1 个数据收集器添加一次。1 个 SVM 不应通过 2 个数据收集器添加两次。6. 如果在两个不同的 Cloud Secure 环境（租户）中添加了相同的 SVM ，则最后一个 SVM 将始终成功。第二个收集器将使用自己的 IP 地址配置 fpolicy ，并启动第一个收集器。因此，第一个收集器将停止接收事件，其 " 审核 " 服务将进入错误状态。要防止这种情况发生，请在一个环境中配置每个 SVM 。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">grep 3500* _ 示例输出应如下所示： <em>A in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctstate new -j accept</em> 3.登录到 SVM ，输入以下命令并检查是否未设置防火墙以阻止与 ONTAP 的通信。<em>system services firewall show</em> <em>system services firewall policy show_<a href="https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-nmg%2FGUID-969851BB-4302-4645-8DAC-1B059D81C5B2.html">"检查防火墙命令"</a> 在 ONTAP 端。4. 通过 SSH 连接到要监控的 SVM/ 集群。从 SVM 数据 LIF 对 Agent 框执行 Ping 操作（支持 CIFS ， NFS 协议），并确保 ping 操作正常： _network ping -vserver &lt;vserver name&gt; -destination &lt;Agent IP&gt; -lif &lt;Lif Name&gt;-show-detail</em> 如果无法执行 Ping 操作，请确保 ONTAP 中的网络设置正确，以便代理计算机可以执行 Ping 操作。如果通过 2 个数据收集器将一个 SVM 添加到租户中两次，则会显示此错误。通过用户界面删除其中一个数据收集器。然后，通过 UI 重新启动另一个数据收集器。然后，数据收集器将显示 " 正在运行 " 状态，并开始从 SVM 接收事件。基本上，在租户中， 1 个 SVM 只能通过 1 个数据收集器添加一次。1 个 SVM 不应通过 2 个数据收集器添加两次。6. 如果在两个不同的 Cloud Secure 环境（租户）中添加了相同的 SVM ，则最后一个 SVM 将始终成功。第二个收集器将使用自己的 IP 地址配置 fpolicy ，并启动第一个收集器。因此，第一个收集器将停止接收事件，其 " 审核 " 服务将进入错误状态。要防止这种情况发生，请在一个环境中配置每个 SVM 。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">活动页面中未显示任何事件。</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1. 检查 ONTAP 收集器是否处于 " 正在运行 " 状态。如果是，请通过打开某些文件确保在 CIFS 客户端 VM 上生成某些 CIFS 事件。2. 如果未看到任何活动，请登录到 SVM 并输入以下命令。<em>&lt;svm&gt; event log show -source fpolicy</em> 请确保没有与 fpolicy 相关的错误。3. 如果未看到任何活动，请登录到 SVM 。输入以下命令 <em>&lt;svm&gt;fpolicy show</em> Please check if the fpolicy policy named with prefix "metadata_service" has been set and status is "on" 。如果未设置，则代理很可能无法在 SVM 中执行这些命令。请确保已遵循页面开头所述的所有前提条件。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1. 检查 ONTAP 收集器是否处于 " 正在运行 " 状态。如果是，请通过打开某些文件确保在 CIFS 客户端 VM 上生成某些 CIFS 事件。2. 如果未看到任何活动，请登录到 SVM 并输入以下命令。<em>&lt;svm&gt; event log show -source fpolicy</em> 请确保没有与 fpolicy 相关的错误。3. 如果未看到任何活动，请登录到 SVM 。输入以下命令 <em>&lt;svm&gt;fpolicy show</em> 检查是否已设置以前缀 "cloudsecure _ " 命名的 fpolicy 策略且状态为 "on" 。如果未设置，则代理很可能无法在 SVM 中执行这些命令。请确保已遵循页面开头所述的所有前提条件。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">SVM Data Collector 处于错误状态，错误消息为 "Agent failed to connect to the collector"</p></td>
 </tr>
 <tr>
