@@ -101,7 +101,7 @@ image::new-agent-detect.png[新代理检测]
 | 代理已安装并正在运行。但是，代理已突然停止。 | 通过 SSH 连接到代理计算机。通过 `sUdo systemctl status cloudsecure-agent.service` 检查代理服务的状态。1. 检查日志是否显示消息 " 无法启动 Cloud Secure 守护进程服务 " 。2. 检查 Agent 计算机中是否存在 cssys 用户。使用 root 权限逐个执行以下命令，并检查 cssys 用户和组是否存在。`sUdo id cssys` `sUdo groups cssys` 3.如果不存在，则集中式监控策略可能已删除 cssys 用户。4. 执行以下命令手动创建 cssys 用户和组。`sUdo useradd cssys` `sUdo groupadd cssys` 5.然后，执行以下命令重新启动代理服务： `sudo systemctl restart cloudsecure-agent.service` 6 。如果仍未运行，请检查其他故障排除选项。 
 
 
-| 无法向代理添加 20 个以上的数据收集器。 | 一个代理只能添加 20 个数据收集器。这可以是所有收集器类型的组合，例如 Active Directory ， SVM 和其他收集器。 
+| 无法向代理添加 50 个以上的数据收集器。 | 一个代理只能添加 50 个数据收集器。这可以是所有收集器类型的组合，例如 Active Directory ， SVM 和其他收集器。 
 
 
 | UI 显示 Agent 处于 not_connected 状态。 | 重新启动代理的步骤。1. 通过 SSH 连接到代理计算机。2. 执行以下命令重新启动代理服务： `sudo systemctl restart cloudsecure-agent.service` 3.通过 `sUdo systemctl status cloudsecure-agent.service` 检查代理服务的状态。4. 代理应处于已连接状态。 
