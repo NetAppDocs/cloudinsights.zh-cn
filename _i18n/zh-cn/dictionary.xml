@@ -7763,7 +7763,6 @@
   <block id="614568b04aa19eaf96a3b92a727988aa" category="summary">配置 Dell EMC XC 系列数据收集器。</block>
   <block id="8482b7a1c15e20c8eab0296778760d7a" category="doc">Dell EMC XC 系列数据收集器</block>
   <block id="08b341cebd72c11ab08d59bd6ceda0b6" category="paragraph">Cloud Insights 使用此数据收集器来发现 Dell EMC XC 系列存储阵列的清单和性能信息。</block>
-  <block id="fd3a8e3a47c3fee35fa518456dc6307b" category="admonition">从 2021 年 11 月开始，默认情况下将启用 ONTAP 高级计数器数据收集。此功能将逐渐推出；随着时间的推移，您将在信息板中看到高级数据。要禁用高级数据收集，请编辑 ONTAP 数据收集器并取消选中 " 选择部署高级计数器数据收集 " 复选框。</block>
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">数据收集器出错，显示此错误消息。" 错误：连接器处于错误状态。服务名称： audit 。失败原因：无法在 SVM SVM_test 上配置策略。原因： ZAPI 字段： Events 缺少值。"</block>
   <block id="db45b764838c9131ffbab7063103f890" category="cell">从仅配置 NFS 服务的新 SVM 开始。在 Cloud Secure 中添加 ONTAP SVM 数据收集器。在 Cloud Secure 中添加 ONTAP SVM 数据收集器时， CIFS 会配置为 SVM 的允许协议。请稍候，直到 Cloud Secure 中的数据收集器显示错误为止。由于未在 SVM 上配置 CIFS 服务器，因此 Cloud Secure 将显示左侧所示的此错误。编辑 ONTAP SVM 数据收集器并取消选中 CIFS 作为允许的协议。保存数据收集器。它将在仅启用 NFS 协议的情况下开始运行。</block>
   <block id="419692fe9178bca2f0f252349995b13c" category="paragraph">在本地系统上运行以下命令，以打开 Cloud Secure 要使用的端口。如果对端口范围存在安全问题，可以使用较小的端口范围，例如 _35000 ： 35100_ 。每个 SVM 使用两个端口。</block>
@@ -8443,7 +8442,6 @@
   <block id="9d9d839297abd5b6559ef681c302109c" category="cell">要限制的 IP 已被其他用户限制。</block>
   <block id="59b7bceceaf271dc23260e1c30098a18" category="cell">限制访问失败，并显示警告 " SVM 已禁用 SMB 协议的导出策略使用。启用使用导出策略使用限制用户访问功能</block>
   <block id="637e226349512d2d7a553322411b83f0" category="cell">确保对 SVM 启用 -is-exportpolicy-enabled 选项为 true ，如前提条件中所述。</block>
-  <block id="45584247f153a6738f901d94b5c8cade" category="summary">Cloud Insights 支持 Telegrafas 代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。</block>
   <block id="c17822d3ce9eb04fef37fc6f007b859e" category="list-text">NetApp Kubernetes 监控操作员配置。这是为 Kubernetes 建议的安装方法。</block>
   <block id="90997e8d0c35126fbf3794f175f2f0f3" category="paragraph">安装说明因您选择的不同而异。</block>
   <block id="7851bfe0f67f9341140f846ee10fd94d" category="admonition">NetApp Kubernetes 监控操作员安装被视为 _Preview_ 功能，因此可能会发生更改。</block>
@@ -8553,4 +8551,5 @@
   <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">* 降噪 * 用于筛选用户在过去 2 小时内创建的文件。它还用于筛选用户访问的临时文件（例如 .tmp 文件）。</block>
   <block id="65524feb61d50c77bb7ba2638a763f8e" category="cell">UI 中未显示某些 NFS 事件。</block>
   <block id="57312d53719f5635163cdff04dd88136" category="cell">检查以下内容： 1.运行设置了 POSIX 属性的 AD 服务器的用户目录收集器时，应通过 UI 启用 unixid 属性。2. 在 UI 3 的用户页面中搜索时，应看到执行 NFS 访问的任何用户。NFS 4 不支持原始事件（尚未发现用户的事件）。不会监控对 NFS 导出的匿名访问。5. 确保使用的 NFS 版本低于 NFS4.1 。</block>
+  <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">Cloud Insights 支持 Telegraf 作为其代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。</block>
 </blocks>
