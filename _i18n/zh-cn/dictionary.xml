@@ -8553,4 +8553,12 @@
   <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">而是此页面</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
   <block id="f57612bca660c9f1bc786c2d822f16a1" category="paragraph">此页面已废弃，不会更新。请转到 <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
+  <block id="eca6c1d25244ba63719b304531bddef1" category="section-title">警告与关键与已解决警报</block>
+  <block id="923c3cf6fbd418a123c8ebed052a57c2" category="paragraph">监控器是发送 " 警告 " ， " 严重 " 还是 " 已解决 " 警报通知，取决于超过哪个阈值：</block>
+  <block id="dd79419ccedc558e5791cee0d2f316ba" category="list-text">从非触发状态转换为警告状态—发送警告警报</block>
+  <block id="675f6f761966f8fa689b2b7048ae2e6e" category="list-text">从非触发状态转换为严重状态—发送严重警报</block>
+  <block id="eba47cd4406c3d262fae2bbfc7b02691" category="list-text">从警告跨越到严重—发送严重警报</block>
+  <block id="b574b2030f0f6245566ee094ff55bb41" category="list-text">从严重警报跨越到警告 - 发送警告警报</block>
+  <block id="72a32144305d760749f3bb911d5250ba" category="list-text">从警告跨越到非触发 - 发送已解决的警报</block>
+  <block id="9a8ef118d165349829d8c21e084de814" category="list-text">从严重到非触发 - 发送已解决的警报</block>
 </blocks>
