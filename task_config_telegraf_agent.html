@@ -1919,7 +1919,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-02 14:28:09 +0000">03/02/2022</time>
+    <time datetime="2022-03-02 14:31:54 +0000">03/02/2022</time>
     
   
 
@@ -3140,7 +3140,7 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
       labels:
         app: ci-telegraf
     priority: 10
-    allowPrivilegedContainer: false
+    allowPrivilegedContainer: true
     defaultAddCapabilities: []
     requiredDropCapabilities: []
     allowedCapabilities: []
@@ -3299,7 +3299,7 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 </div>
 </div>
 <div class="paragraph">
-<p>如果先前为 Telegraf 创建了安全上下文限制：</p>
+<p>如果先前为基于脚本的 Telegraf 安装手动创建了安全上下文限制：</p>
 </div>
 <div class="literalblock">
 <div class="content">
