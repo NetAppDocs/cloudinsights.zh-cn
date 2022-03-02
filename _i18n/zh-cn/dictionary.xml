@@ -8565,4 +8565,7 @@
   <block id="e2284f166fb986bff4a211a1598659c8" category="cell">如果网络中断导致采集单元与 Cloud Insights 环境之间的通信中断一分钟以上，则可能会发生此错误。验证 AU 和 Cloud Insights 之间的连接是否稳定且处于活动状态。</block>
   <block id="f06aba11198bdba5f39e2cabfd82871d" category="cell">CloudWatch 代理指标命名空间</block>
   <block id="4a508608b5d5c22a19b0ff3e12d1bc61" category="cell">EC2/EBS 中用于收集数据的命名空间。请注意，如果更改了此命名空间中默认指标的名称，则 Cloud Insights 可能无法收集已重命名的数据。建议保留默认指标名称。</block>
+  <block id="33eb2eac94cfbe6aa148fd041d121e27" category="paragraph">使用此数据收集器：</block>
+  <block id="92d3290a1afbd21d7ba484ec66073bda" category="cell">在尝试连接到 Azure CVO 时，我看到以下错误： "The certificate signing request to broker/manager CA service was not completed. "</block>
+  <block id="53d0d22fc59191f4037e101562c4dae2" category="cell">验证 Cloud Manager 代理设置是否已设置为 Cloud Manager 专用 IP 。Cloud Manager 安装可能会设置其他代理。将代理设置为正确的 IP 并在 "Cloud Connector" 对话框中引用此代理后，与 Cloud Insights 的连接将成功连接。</block>
 </blocks>

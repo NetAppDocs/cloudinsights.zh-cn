@@ -40,4 +40,13 @@ image:Cloud_Agent_Step_Waiting.png["正在等待连接"]
 
 == 故障排除
 
+使用此数据收集器：
+
+[cols="2*"]
+|===
+| 问题： | 请尝试以下操作： 
+
+
+| 在尝试连接到 Azure CVO 时，我看到以下错误： "The certificate signing request to broker/manager CA service was not completed. " | 验证 Cloud Manager 代理设置是否已设置为 Cloud Manager 专用 IP 。Cloud Manager 安装可能会设置其他代理。将代理设置为正确的 IP 并在 "Cloud Connector" 对话框中引用此代理后，与 Cloud Insights 的连接将成功连接。 
+|===
 可从中找到此数据收集器上的追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
