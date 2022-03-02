@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>取证用户活动数据</title>
+  <title>适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="取证用户活动数据" />
+  <meta property="og:title" content="适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/forensic_user_actv_data.html" />
-	<meta property="og:description" content="取证用户活动数据" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/task_dc_na_cloud_connection.html" />
+	<meta property="og:description" content="为 ONTAP 9.9+ 数据收集器配置 NetApp 云连接" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
@@ -18,8 +18,8 @@
   <meta http-equiv="nss-type" content="Product Documentation"/>
   <meta http-equiv="nss-subtype" content="User Guide"/>
   
-  <meta name="description" content="取证用户活动数据">
-  <meta name="keywords" content=" Forensic, user activity, user activity data,">
+  <meta name="description" content="为 ONTAP 9.9+ 数据收集器配置 NetApp 云连接">
+  <meta name="keywords" content=" data collector, NetApp, Cloud agent, ONTAP">
   
   
 
@@ -281,13 +281,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/forensic_user_actv_data.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/task_dc_na_cloud_connection.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/forensic_user_actv_data.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/cloudinsights/task_dc_na_cloud_connection.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/forensic_user_actv_data.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/task_dc_na_cloud_connection.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/forensic_user_actv_data.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/task_dc_na_cloud_connection.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -1215,6 +1215,15 @@
           
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-cn/cloudinsights/pdfs/pages/task_dc_na_cloud_connection.pdf" >
+    <img src="/zh-cn/cloudinsights/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
 
 
 
@@ -1755,7 +1764,7 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_dc_na_astra_data_store.html">
         Astra 数据存储
-      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_dc_na_cloud_connection.html">
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_dc_na_cloud_connection.html">
         适用于 ONTAP 9.9+ 的云连接
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_dc_na_cloud_volumes_ontap.html">
         Cloud Volumes ONTAP
@@ -1880,7 +1889,7 @@
           <a href="/zh-cn/cloudinsights/">Cloud&nbsp;Insights</a>
         </li>
         <li class="n-breadcrumb__list-item">
-          取证用户活动数据
+          适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器
         </li>
       </ul>
     </div>
@@ -1903,7 +1912,7 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">取证用户活动数据</h1>
+  <h1 class="n-doc__component-detail-heading">适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器</h1>
 </div>
 
 
@@ -1929,56 +1938,65 @@
 </p>
 
 
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>此数据收集器可创建云连接，以支持从 ONTAP 9.9+ CVO ， AFF 和 FAS 系统收集数据。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="配置">配置</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>" 用户活动 " 页面可帮助您了解用户对实体执行的操作。</p>
+<p>Cloud Insights 使用 * 云连接 * 从 ONTAP 9.9+ 收集数据，无需安装外部采集单元，从而简化了故障排除，维护和初始部署。要为 ONTAP 9.9+ 数据收集器配置云连接，您需要将 * 配对代码 * 复制到 ONTAP 系统管理器，然后该管理器将与 Cloud Insights 环境建立连接。建立连接后，收集的数据与通过采集单元收集的数据相同。</p>
 </div>
 <div class="paragraph">
-<p>此页面中提供的数据介绍：</p>
+<p>此数据收集器支持 ONTAP 9.9+ CVO ， AFF 和 FAS 系统。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Cloud_Agent_DC.png" alt="Cloud Agent Data Collector 配置"></span></p>
+</div>
+<div class="paragraph">
+<p>按照以下步骤配置连接：</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>实体访问时间，包括月份，日期，年份和时间。</p>
+<p>生成一个唯一令牌，用于与 ONTAP 系统建立连接。</p>
 </li>
 <li>
-<p>通过指向的链接访问此实体的用户 <a href="&lt;forensic_user_detail&gt;.html">"用户详细信息数据"</a>。</p>
-</li>
-<li>
-<p>用户执行的活动：</p>
-<div class="ulist">
-<ul>
-<li>
-<p>写入</p>
-</li>
-<li>
-<p>读取</p>
-</li>
-<li>
-<p>访问元数据</p>
-</li>
-</ul>
+<p>复制配对代码，其中包括令牌。您可以单击 _[+] 显示代码片段 _ 来查看配对代码。</p>
+<div class="paragraph">
+<p>复制配对代码后，数据收集器配置屏幕将显示步骤 6 ，提示您等待建立连接。在建立连接之前，无需在此屏幕上执行任何其他操作。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Cloud_Agent_Step_Waiting.png" alt="正在等待连接"></span></p>
 </div>
 </li>
 <li>
-<p>包含指向的链接的实体的路径 <a href="&lt;forensic_entity_detail&gt;.html">"实体详细信息数据"</a></p>
+<p>在新的浏览器选项卡中，登录到 ONTAP 系统管理器并导航到 _Cluster&gt; 设置 &gt; 云连接 _ 。</p>
 </li>
 <li>
-<p>实体类型：</p>
-<div class="ulist">
-<ul>
-<li>
-<p>文件</p>
+<p>单击 <em>Add Cloud Connection</em> 并粘贴配对代码。</p>
 </li>
 <li>
-<p>路径</p>
+<p>返回到 Cloud Insights 浏览器选项卡并等待建立连接。建立后，将显示一个 <em>complete</em> 按钮。</p>
+</li>
+<li>
+<p>单击 <em>complete</em> 。</p>
 </li>
 </ul>
 </div>
-</li>
-<li>
-<p>执行操作所用的 IP 地址。</p>
-</li>
-</ul>
+</div>
+</div>
+<div class="sect1">
+<h2 id="故障排除">故障排除</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>可从中找到此数据收集器上的追加信息 <a href="concept_requesting_support.html">"支持"</a> 页面或中的 <a href="https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf">"数据收集器支持列表"</a>。</p>
+</div>
+</div>
 </div>
 
     </article>
@@ -1990,8 +2008,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[取证用户活动数据](https://docs.netapp.com/zh-cn/cloudinsights/forensic_user_actv_data.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/forensic_user_actv_data.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器](https://docs.netapp.com/zh-cn/cloudinsights/task_dc_na_cloud_connection.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/task_dc_na_cloud_connection.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloudinsights/images/article-sm.svg" class="github-icon" />提供者指南</a>
     </div>
     <div class="page-nav-container">
