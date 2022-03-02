@@ -597,7 +597,7 @@ image:Kubernetes_Install_Agent_screen.png["基于脚本的安装"]
 命令块中已安装此命令：
 
 +
- installerName=cloudinsights-kubernetes.sh ... && CLUSTER_NAME=<cluster_name> NAMESPACE=<new_namespace> && sudo -E -H ./$installerName --download --install
+ installerName=cloudinsights-kubernetes.sh ... && CLUSTER_NAME=<cluster_name> NAMESPACE=<new_namespace> sudo -E -H ./$installerName --download --install
 +
 
 TIP: _cluster_name_ 是 Cloud Insights 收集指标的 Kubernetes 集群的名称，而 _namespace_是 要将 Telegraf 代理部署到的命名空间。如果指定的命名空间尚不存在，则会创建该命名空间。

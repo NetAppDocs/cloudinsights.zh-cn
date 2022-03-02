@@ -5347,7 +5347,6 @@
   <block id="addafe1dd8efeb72ac99a72ca1ce3052" category="doc">Nutanix NX 数据收集器</block>
   <block id="c7a68554d565b4565da4415f43cba67b" category="paragraph">Cloud Insights 使用 Nutanix 数据收集器发现 Nutanix NX 存储系统的清单和性能数据。</block>
   <block id="cd4626f2610d814464e0c885c5b8c62a" category="paragraph">Cloud Insights 从 Nutanix 数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
-  <block id="9da45138db3dc6d08642defc2dfb1855" category="list-text">集群的外部数据服务 IP 地址。</block>
   <block id="bf61ff29d8ff867a7727b034a7efa26f" category="list-text">端口要求： HTTPS 443</block>
   <block id="b8b0b769d3e3395123e9c6b52b36b840" category="cell">用于连接到 Nutanix 阵列的 TCP 端口。默认值为 9440. 。</block>
   <block id="8250aff5bf291c0fd6c60d86a94af326" category="summary">Couchbase 数据收集器配置</block>
@@ -8552,4 +8551,5 @@
   <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">Cloud Insights 支持 Telegraf 作为其代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。</block>
   <block id="73f1df4b50034876b992ea5afa05d7c8" category="cell">如果启用并强制实施 SELinux ，则可能会阻止 Telegraf Pod 访问 Kubernetes 节点上的 /proc/1/mountstats 文件。要放宽此限制，请执行以下操作之一：•对于基于脚本的安装，编辑 crainf DS （`kubectl edit DS crainaf-DS` ），并将 "privileged ： false" 更改为 "privileged ： true" •对于基于操作员的安装，编辑代理（`kubectl edit agent agent-monitoring-netapp` ），然后将 "privileged-mode ： false" 更改为 "privileged-mode ：</block>
   <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">如果先前为基于脚本的 Telegraf 安装手动创建了安全上下文限制：</block>
+  <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">只读用户名和密码，除非使用 volume_groups ，否则在这种情况下，需要管理员用户名和密码</block>
 </blocks>
