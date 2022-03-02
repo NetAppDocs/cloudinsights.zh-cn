@@ -8551,6 +8551,6 @@
   <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">只读用户名和密码，除非使用 volume_groups ，否则在这种情况下，需要管理员用户名和密码</block>
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">为 ONTAP 9.9+ 数据收集器配置 NetApp 云连接</block>
   <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">而是此页面</block>
-  <block id="e919422ac519602135870aa126bbb9f5" category="paragraph">此密码已废弃。请转到 <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
+  <block id="f57612bca660c9f1bc786c2d822f16a1" category="paragraph">此页面已废弃，不会更新。请转到 <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
 </blocks>
