@@ -41,6 +41,9 @@ keywords: AU, acquisition unit, trioubleshooting
 
 
 | 状态：检测信号失败 | 采集单元（ Acquisition Unit ， AU ）每 60 秒向 Cloud Insights 发送一次检测信号，以便续订租约。如果检测信号调用因网络问题描述或 Cloud Insights 无响应而失败，则不会更新 AU 的租用时间。当 AU 的租约时间到期时， Cloud Insights 将显示 "Heartbeat Failed" 状态。故障排除步骤： * 检查采集单元服务器与 CloudInsights 之间的网络连接。* 检查采集单元服务是否正在运行。如果此服务未运行，请启动此服务。* 检查采集单元日志（ <Install dir> ： \Program Files\Cloud Insights \Acquisition Unity\log\acq.log ）以查看是否存在任何错误。 
+
+
+| 我看到一条 " 检测信号错误：消息 | 如果网络中断导致采集单元与 Cloud Insights 环境之间的通信中断一分钟以上，则可能会发生此错误。验证 AU 和 Cloud Insights 之间的连接是否稳定且处于活动状态。 
 |===
 
 

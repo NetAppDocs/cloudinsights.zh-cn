@@ -8561,4 +8561,6 @@
   <block id="b574b2030f0f6245566ee094ff55bb41" category="list-text">从严重警报跨越到警告 - 发送警告警报</block>
   <block id="72a32144305d760749f3bb911d5250ba" category="list-text">从警告跨越到非触发 - 发送已解决的警报</block>
   <block id="9a8ef118d165349829d8c21e084de814" category="list-text">从严重到非触发 - 发送已解决的警报</block>
+  <block id="77b2881850cae0e5dc1c7b60af0bc9b6" category="cell">我看到一条 " 检测信号错误：消息</block>
+  <block id="e2284f166fb986bff4a211a1598659c8" category="cell">如果网络中断导致采集单元与 Cloud Insights 环境之间的通信中断一分钟以上，则可能会发生此错误。验证 AU 和 Cloud Insights 之间的连接是否稳定且处于活动状态。</block>
 </blocks>
