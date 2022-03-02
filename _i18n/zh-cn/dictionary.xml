@@ -7538,9 +7538,7 @@
   <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">" 未知主机： astrads-metrics-service.astrads-system.svc.cluster.local ：名称或服务未知 "</block>
   <block id="045f84b2e6e4af9113106c8c9ce287f4" category="cell">验证收集器是否安装在 ADS Kubernetes 集群内运行的采集单元 POD 中。验证 astrads-metrics-service 是否正在运行 astrads-system 命名空间。</block>
   <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">请注意，用户有权访问的 API 类别也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</block>
-  <block id="ab94ba13e0011bb7ea0d255f086ced38" category="summary">配置适用于 ONTAP 9.9+ 数据收集器的 NetApp 云连接</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器</block>
-  <block id="86697e189a8abaad2c14305da76b6e58" category="admonition">本文档被视为 _Preview_ 文档，因此可能会更改。</block>
   <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights 使用 * 云连接 * 从 ONTAP 9.9+ 收集数据，无需安装外部采集单元，从而简化了故障排除，维护和初始部署。要为 ONTAP 9.9+ 数据收集器配置云连接，您需要将 * 配对代码 * 复制到 ONTAP 系统管理器，然后该管理器将与 Cloud Insights 环境建立连接。建立连接后，收集的数据与通过采集单元收集的数据相同。</block>
   <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector 配置</block>
   <block id="686b6f246c6d71648125bb6df261eda5" category="paragraph"><block ref="686b6f246c6d71648125bb6df261eda5" category="inline-image-macro-rx" type="image"></block></block>
@@ -7555,7 +7553,6 @@
   <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">返回到 Cloud Insights 浏览器选项卡并等待建立连接。建立后，将显示一个 _complete_ 按钮。</block>
   <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">单击 _complete_ 。</block>
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">适用于 ONTAP 9.9+ 的 NetApp 云连接</block>
-  <block id="e192aac42870d4b95309597771e9a5fe" category="cell"><block ref="e192aac42870d4b95309597771e9a5fe" category="inline-link-macro-rx"></block></block>
   <block id="9af59f8630623af6e68c2c7648957031" category="sidebar">适用于 ONTAP 9.9+ 的云连接</block>
   <block id="f41274c1ce20e5e73cc8aff93a484f51" category="inline-link-macro">FSX-NetApp</block>
   <block id="47b5a4776ee0e5c60f02b4cbf9af7b50" category="cell"><block ref="47b5a4776ee0e5c60f02b4cbf9af7b50" category="inline-link-macro-rx"></block></block>
@@ -8552,4 +8549,8 @@
   <block id="73f1df4b50034876b992ea5afa05d7c8" category="cell">如果启用并强制实施 SELinux ，则可能会阻止 Telegraf Pod 访问 Kubernetes 节点上的 /proc/1/mountstats 文件。要放宽此限制，请执行以下操作之一：•对于基于脚本的安装，编辑 crainf DS （`kubectl edit DS crainaf-DS` ），并将 "privileged ： false" 更改为 "privileged ： true" •对于基于操作员的安装，编辑代理（`kubectl edit agent agent-monitoring-netapp` ），然后将 "privileged-mode ： false" 更改为 "privileged-mode ：</block>
   <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">如果先前为基于脚本的 Telegraf 安装手动创建了安全上下文限制：</block>
   <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">只读用户名和密码，除非使用 volume_groups ，否则在这种情况下，需要管理员用户名和密码</block>
+  <block id="a9d11491cdc145dca25e537c123d978b" category="summary">为 ONTAP 9.9+ 数据收集器配置 NetApp 云连接</block>
+  <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">而是此页面</block>
+  <block id="e919422ac519602135870aa126bbb9f5" category="paragraph">此密码已废弃。请转到 <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
+  <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
 </blocks>
