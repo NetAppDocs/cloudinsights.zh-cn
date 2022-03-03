@@ -7624,34 +7624,6 @@
 <block ref="3f488cb6a8d73935352ae358a16b41fb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="89d2c05fd752bacd15546a3e7343e4ca" category="list-text">适用于 ONTAP 的 Amazon FSX 的新收集器</block>
   <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="inline-link-macro">系统定义的监控器</block>
-  <block id="18c9f77aeb499c7dba30bf110efc7428" category="list-text">要修改现有监控器，请单击列表中的监控器名称。</block>
-  <block id="ab8f2caed7bd8dd082843b17dd59b109" category="list-text">要添加监控器，请单击 * + Monitor* 。</block>
-  <block id="65117c1214622a1ce8c32b4de0f6dedc" category="inline-image-macro">选择系统或日志监控器</block>
-  <block id="3aff4942a9a35d98c6fdcb7dee853d59" category="paragraph"><block ref="3aff4942a9a35d98c6fdcb7dee853d59" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c58ee317c84221459556bf1d8e52753f" category="paragraph">添加新监控器时，系统会提示您创建指标监控器或日志监控器。</block>
-  <block id="fc2f22eed1d01c032a18cfe4cba78d61" category="list-text">_Metric _ 监控与基础架构或性能相关的触发器的警报</block>
-  <block id="a0974f4b9ee8ae7e61310df23d207909" category="list-text">_Log_ 监控日志相关活动的警报</block>
-  <block id="684fd3873f49a70f4bba03d396531c40" category="paragraph">选择监控器类型后，将显示监控器配置对话框。</block>
-  <block id="269c9bcd9ea3883a3a121a1b88af9e34" category="section-title">指标监控器</block>
-  <block id="313acdf9633421e44aea4a9be12b5071" category="list-text">在下拉列表中，搜索并选择要监控的对象类型和指标。</block>
-  <block id="734f668bd72716899c84bbaedc8d2564" category="list-text">对于 _Warning_ 级别，为我们的示例输入 200 。指示此警告级别的虚线显示在示例图中。</block>
-  <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">定义监控器的条件</block>
-  <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">日志监控器</block>
-  <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">日志监控器筛选器不能为空。</block>
-  <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">选择要监控的日志并设置筛选器</block>
-  <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="454176c970e70022beb38f8813bea495" category="section-title">定义警报行为</block>
-  <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">选择在触发日志警报时要发出警报的方式。您可以根据上述筛选条件将监控器设置为具有 _Warning_ ， _critical_ 或 _Informational_ 严重性的警报。</block>
-  <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">定义要监控的日志行为</block>
-  <block id="1b1f71445d1920c9625e6c1f2018a229" category="paragraph"><block ref="1b1f71445d1920c9625e6c1f2018a229" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">定义警报解析行为</block>
-  <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">您可以选择如何解决日志监控警报。您可以选择三种方式：</block>
-  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">* 立即解决 * ：立即解决警报，无需采取进一步操作</block>
-  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">* 基于时间解决 * ：在指定时间过后，警报将得到解决</block>
-  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">* 基于日志条目解决 * ：在发生后续日志活动时解决警报。例如，当对象记录为 " 可用 " 时。</block>
-  <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">警报解决</block>
-  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">系统定义的监控器由预定义的指标和条件以及默认说明和更正操作组成，这些内容无法修改。您可以修改系统定义的监控器的通知收件人列表。要查看指标，条件，问题描述和更正操作，或者修改收件人列表，请打开系统定义的监控组，然后单击列表中的监控器名称。</block>
   <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">无法修改或删除系统定义的监控组。</block>
   <block id="cabbbf7fefe4319bf83cb8fc4f054cbb" category="paragraph">以下系统定义的监控器可在所记录的组中使用。</block>
@@ -7772,8 +7744,6 @@
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">此数据收集器可创建云连接，以支持从 ONTAP 9.9+ CVO ， AFF 和 FAS 系统收集数据。</block>
   <block id="72c287aa31792e43cc71160178046540" category="paragraph">此数据收集器支持 ONTAP 9.9+ CVO ， AFF 和 FAS 系统。</block>
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">创建监控器，以便针对性能或清单阈值以及指标或日志条件发出警报。</block>
-  <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">所有显示器 * 列出所有显示器。</block>
-  <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* 自定义监控 * 仅列出用户创建的监控器。</block>
   <block id="7d5581330314d1ed3096701515939e9d" category="doc">系统监控器</block>
   <block id="a126bfb1fdb6bbbe10997dfc35ed2144" category="section-title">监控器说明</block>
   <block id="1d383faadaa1e0469de5520853eab991" category="paragraph">以下是 Cloud Insights 当前附带的系统监控器：</block>
@@ -8526,7 +8496,6 @@
   <block id="23e8d668fcbe8c5dfe19d7e5be73ea0a" category="list-text">通过指定相应的 RuleIndex ，删除 SVM 上所有策略中的所有规则，这些策略将 "cloudsure_rule" 设置为客户端匹配项。CloudSecure 规则通常为 1 。</block>
   <block id="6c1214115a59d3b11b800993d5bb40fb" category="list-text">确保已删除 cloudsecure 规则（可选的确认步骤）</block>
   <block id="316d81dde3628e46f8db6067cc55e287" category="cell">手动单击限制访问会显示 " 此用户的 IP 地址已受限制 " 。</block>
-  <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">例如，您可以选择筛选 logs.netapp.ems 源中的 "object.store.unavailable" 消息类型：</block>
   <block id="bef090ff3d523fedde21921ae6a366fd" category="paragraph">在批量添加操作上单击 _Save_ 或批量删除操作上单击 _Remove_ 后， Cloud Insights 会通知您此操作将需要一段时间。您可以取消此消息；此操作将在后台继续。</block>
   <block id="c43280f80a1f0bcdf120e5ebc1478afa" category="paragraph">您可以在此处找到有关排除日志查询问题的建议。</block>
   <block id="a2b7ba428c90a214e64dd3650b09c2d7" category="cell">我的日志查询中未显示 "debug" 消息</block>
@@ -8536,8 +8505,6 @@
   <block id="659ff9500b9dfbdb242e7c46c8777782" category="list-text">Azure OAuth 2.0 重定向 URI （ login.microsoftonline.com ）</block>
   <block id="7fe84062654c2f7953a6b3832d467cfb" category="list-text">Azure Resource Manager IP （ management.core.windows.net ）</block>
   <block id="3b2e8fc35def670e931c7dad789c4510" category="paragraph">正确配置帐户并在 Azure 中注册应用程序后，您将拥有在 Cloud Insights 中发现 Azure 实例所需的凭据。以下链接介绍如何设置帐户以进行发现。<block ref="e57a159da4fbdd6739e41c759d2d3d96" category="inline-link-rx"></block></block>
-  <block id="115369a1ed62b7bc3a2d447559a26c19" category="paragraph">创建 * 日志监控器 * 时，首先从可用日志列表中选择要监控的日志。然后，您可以根据上述可用属性进行筛选。</block>
-  <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">您可以通过单击显示器右侧的菜单并选择 * 暂停 * 来选择临时暂停对某个对象类型的监控。准备好恢复监控后，单击 * 恢复 * 。</block>
   <block id="01de18c495112b3365a91e052159e782" category="cell">1. 防火墙很可能会阻止代理计算机中的必要端口。验证是否已为代理计算机打开端口范围 35000-55000/TCP ，以便从 SVM 进行连接。此外，请确保 ONTAP 端未启用防火墙，从而无法与代理计算机进行通信。2. 在代理框中键入以下命令，并确保端口范围处于打开状态。_sudo iptables-save | grep 3500* _ 示例输出应如下所示： _A in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctstate new -j accept_ 3.登录到 SVM ，输入以下命令并检查是否未设置防火墙以阻止与 ONTAP 的通信。_system services firewall show_ _system services firewall policy show_<block ref="c2f863dc8aacfc5c321b626bd2f4e2b3" category="inline-link-macro-rx"></block> 在 ONTAP 端。4. 通过 SSH 连接到要监控的 SVM/ 集群。从 SVM 数据 LIF 对 Agent 框执行 Ping 操作（支持 CIFS ， NFS 协议），并确保 ping 操作正常： _network ping -vserver &lt;vserver name&gt; -destination &lt;Agent IP&gt; -lif &lt;Lif Name&gt;-show-detail_ 如果无法执行 Ping 操作，请确保 ONTAP 中的网络设置正确，以便代理计算机可以执行 Ping 操作。如果通过 2 个数据收集器将一个 SVM 添加到租户中两次，则会显示此错误。通过用户界面删除其中一个数据收集器。然后，通过 UI 重新启动另一个数据收集器。然后，数据收集器将显示 " 正在运行 " 状态，并开始从 SVM 接收事件。基本上，在租户中， 1 个 SVM 只能通过 1 个数据收集器添加一次。1 个 SVM 不应通过 2 个数据收集器添加两次。6. 如果在两个不同的 Cloud Secure 环境（租户）中添加了相同的 SVM ，则最后一个 SVM 将始终成功。第二个收集器将使用自己的 IP 地址配置 fpolicy ，并启动第一个收集器。因此，第一个收集器将停止接收事件，其 " 审核 " 服务将进入错误状态。要防止这种情况发生，请在一个环境中配置每个 SVM 。</block>
   <block id="57cb6cf5756643ef9f1a5fc9914bed03" category="cell">1. 检查 ONTAP 收集器是否处于 " 正在运行 " 状态。如果是，请通过打开某些文件确保在 CIFS 客户端 VM 上生成某些 CIFS 事件。2. 如果未看到任何活动，请登录到 SVM 并输入以下命令。_&lt;svm&gt; event log show -source fpolicy_ 请确保没有与 fpolicy 相关的错误。3. 如果未看到任何活动，请登录到 SVM 。输入以下命令 _&lt;svm&gt;fpolicy show_ 检查是否已设置以前缀 "cloudsecure _ " 命名的 fpolicy 策略且状态为 "on" 。如果未设置，则代理很可能无法在 SVM 中执行这些命令。请确保已遵循页面开头所述的所有前提条件。</block>
   <block id="419d595db852dff067e69fe22233733e" category="cell">无法向代理添加 50 个以上的数据收集器。</block>
@@ -8569,4 +8536,7 @@
   <block id="92d3290a1afbd21d7ba484ec66073bda" category="cell">在尝试连接到 Azure CVO 时，我看到以下错误： "The certificate signing request to broker/manager CA service was not completed. "</block>
   <block id="53d0d22fc59191f4037e101562c4dae2" category="cell">验证 Cloud Manager 代理设置是否已设置为 Cloud Manager 专用 IP 。Cloud Manager 安装可能会设置其他代理。将代理设置为正确的 IP 并在 "Cloud Connector" 对话框中引用此代理后，与 Cloud Insights 的连接将成功连接。</block>
   <block id="bbd58b68ee3e3e9c95c32ae30a226786" category="admonition">Cloud Insights 从 V丛 集群收集性能数据要求性能归档服务正常运行，以便填充 Cloud Insights 通过基于 SCP 的文件副本检索到的 .CSV 文件和日志。NetApp 发现，许多 V丛 固件升级 / 管理工作站更新都会使此功能无法运行。计划进行此类升级的客户可能希望主动询问 Dell/EMC ，他们计划进行的升级是否会使此功能无法运行，如果是，他们如何重新启用此功能，以最大限度地减少性能可见性方面的差距？Cloud Insight 的 Vplex 性能代码将在每次轮询时评估所有预期文件是否存在以及是否正在正确更新；如果这些文件缺失或陈旧， Cloud Insights 将记录性能收集失败。</block>
+  <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">自定义监控器可以暂停，恢复，删除或移动到其他组。系统定义的监控器可以暂停和恢复，但不能删除或移动。</block>
+  <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">自定义监控组</block>
+  <block id="46823a39af1ef1aeeeec87c034852563" category="paragraph">要创建新的自定义监控组，请单击 * "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</block>
 </blocks>
