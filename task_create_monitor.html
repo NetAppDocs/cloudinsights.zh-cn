@@ -1919,7 +1919,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-03 15:06:39 +0000">03/03/2022</time>
+    <time datetime="2022-03-03 15:09:01 +0000">03/03/2022</time>
     
   
 
@@ -1974,23 +1974,9 @@ Cloud Insights 标准版及更高版本提供了监控和警报功能。
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="创建监控器">创建监控器</h3>
-<div class="paragraph">
-<p>在以下示例中，我们将创建一个监控器，以便在 _Volume Node NFS 写入延迟 _ 达到或超过 200 毫秒时发出警告警报，并在达到或超过 400 毫秒时发出严重警报。我们只希望在超过任一阈值至少持续 15 分钟时收到警报。</p>
-</div>
-<div class="sect3">
-<h4 id="要求">要求</h4>
-<div class="ulist">
-<ul>
-<li>
-<p>必须配置 Cloud Insights 以收集集成数据，并且正在收集该数据。</p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect3">
-<h4 id="创建监控器-2">创建监控器</h4>
+<div class="sect1">
+<h2 id="创建监控器">创建监控器</h2>
+<div class="sectionbody">
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2000,13 +1986,38 @@ Cloud Insights 标准版及更高版本提供了监控和警报功能。
 </div>
 </li>
 <li>
-<p>要添加监控器，请单击 * + Monitor* 。要修改现有监控器，请单击列表中的监控器名称。</p>
-<div class="paragraph">
-<p>此时将显示 Monitor Configuration 对话框。</p>
-</div>
+<p>要修改现有监控器，请单击列表中的监控器名称。</p>
 </li>
 <li>
-<p>在下拉列表中，搜索并选择要监控的对象类型和指标，例如 <em>netapp_ontap_volume_node_nfs_write_latter</em> 。</p>
+<p>要添加监控器，请单击 * + Monitor* 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="Monitor_log_or_metric.png" alt="选择系统或日志监控器"></span></p>
+</div>
+<div class="paragraph">
+<p>添加新监控器时，系统会提示您创建指标监控器或日志监控器。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>_Metric _ 监控与基础架构或性能相关的触发器的警报</p>
+</li>
+<li>
+<p><em>Log</em> 监控日志相关活动的警报</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>选择监控器类型后，将显示监控器配置对话框。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect3">
+<h4 id="指标监控器">指标监控器</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>在下拉列表中，搜索并选择要监控的对象类型和指标。</p>
 </li>
 </ol>
 </div>
@@ -2031,16 +2042,15 @@ Cloud Insights 标准版及更高版本提供了监控和警报功能。
 </tr>
 </table>
 </div>
-</div>
-<div class="sect3">
-<h4 id="定义监控器的条件">定义监控器的条件。</h4>
+<div class="sect4">
+<h5 id="定义监控器的条件">定义监控器的条件。</h5>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
 <p>选择要监控的对象和指标后，设置警告级别和 / 或严重级别阈值。</p>
 </li>
 <li>
-<p>对于 <em>Warning</em> 级别，输入 200 。指示此警告级别的虚线显示在示例图中。</p>
+<p>对于 <em>Warning</em> 级别，为我们的示例输入 200 。指示此警告级别的虚线显示在示例图中。</p>
 </li>
 <li>
 <p>对于 <em>critical</em> 级别，输入 400 。指示此严重级别的虚线显示在示例图中。</p>
@@ -2054,45 +2064,69 @@ Cloud Insights 标准版及更高版本提供了监控和警报功能。
 <p>您可以选择在违反阈值时触发警报，或者等待阈值在一段时间内持续违反。在我们的示例中，我们不希望在总 IOPS 峰值高于 " 警告 " 或 " 严重 " 级别时都收到警报，但仅当受监控对象持续超过其中一个级别至少 15 分钟时才会收到警报。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="define_monitor_conditions.png" alt="定义条件"></span></p>
+<p><span class="image"><img src="Monitor_metric_conditions.png" alt="定义监控器的条件"></span></p>
 </div>
 </li>
 </ol>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="日志监控器">日志监控器</h3>
+<div class="paragraph">
+<p>创建 * 日志监控器 * 时，首先从可用日志列表中选择要监控的日志。然后，您可以根据上述可用属性进行筛选。</p>
+</div>
+<div class="paragraph">
+<p>例如，您可以选择筛选 logs.netapp.ems 源中的 "object.store.unavailable" 消息类型：</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="注">
+</td>
+<td class="content">
+日志监控器筛选器不能为空。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Monitor_log_monitor_filter.png" alt="选择要监控的日志并设置筛选器"></span></p>
+</div>
 <div class="sect3">
-<h4 id="细化筛选器">细化筛选器</h4>
+<h4 id="定义警报行为">定义警报行为</h4>
 <div class="paragraph">
-<p>筛选时，在开始键入时，系统会根据当前文本显示一个 * 通配符筛选器 * 。选择此选项将返回与通配符表达式匹配的所有结果。您也可以使用 NOT 或 OR 创建 * 表达式 * ，也可以选择 " 无 " 选项来筛选字段中的空值。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Type-Ahead_Monitor_1.png" alt="通配符筛选器"></span></p>
+<p>选择在触发日志警报时要发出警报的方式。您可以根据上述筛选条件将监控器设置为具有 <em>Warning</em> ， <em>critical</em> 或 <em>Informational</em> 严重性的警报。</p>
 </div>
 <div class="paragraph">
-<p>基于通配符或表达式（例如 NOT ， OR ， "None" 等）在筛选器字段中显示为深蓝色。您直接从列表中选择的项目将以淡蓝色显示。</p>
+<p><span class="image"><img src="Monitor_log_alert_behavior.png" alt="定义要监控的日志行为"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="定义警报解析行为">定义警报解析行为</h4>
+<div class="paragraph">
+<p>您可以选择如何解决日志监控警报。您可以选择三种方式：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>* 立即解决 * ：立即解决警报，无需采取进一步操作</p>
+</li>
+<li>
+<p>* 基于时间解决 * ：在指定时间过后，警报将得到解决</p>
+</li>
+<li>
+<p>* 基于日志条目解决 * ：在发生后续日志活动时解决警报。例如，当对象记录为 " 可用 " 时。</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="Type-Ahead-Example-Wildcard-DirectSelect.png" alt="通配符筛选器结果"></span></p>
-</div>
-<div class="paragraph">
-<p>请注意，通配符和表达式筛选适用于文本或列表，但不适用于数值，日期或布尔值。</p>
+<p><span class="image"><img src="Monitor_log_monitor_resolution.png" alt="警报解决"></span></p>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="设置更正操作或追加信息">设置更正操作或追加信息</h3>
-<div class="paragraph">
-<p>您可以通过填写 * 添加警报问题描述 * 部分来添加可选的问题描述以及其他见解和 / 或更正操作。问题描述最多可以包含 1024 个字符，并将随警报一起发送。洞察力 / 更正操作字段最多可包含 67 ， 000 个字符，并将显示在警报登录页面的摘要部分中。</p>
-</div>
-<div class="paragraph">
-<p>在这些字段中，您可以提供注释，链接或更正警报或以其他方式解决警报的步骤。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Monitors_Alert_Description.png" alt="警报更正操作和问题描述"></span></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="选择通知类型和收件人">选择通知类型和收件人</h3>
+<div class="sect3">
+<h4 id="选择通知类型和收件人">选择通知类型和收件人</h4>
 <div class="paragraph">
 <p>在 _set up team notification （ s ） _ 部分中，您可以选择是通过电子邮件还是 Webhook 向您的团队发出警报。</p>
 </div>
@@ -2125,37 +2159,21 @@ Cloud Insights 标准版及更高版本提供了监控和警报功能。
 <div class="paragraph">
 <p><span class="image"><img src="Webhook_Monitor_Notifications.png" alt="webhook 警报"></span></p>
 </div>
+</div>
 <div class="sect3">
-<h4 id="警告与关键与已解决警报">警告与关键与已解决警报</h4>
+<h4 id="设置更正操作或追加信息">设置更正操作或追加信息</h4>
 <div class="paragraph">
-<p>监控器是发送 " 警告 " ， " 严重 " 还是 " 已解决 " 警报通知，取决于超过哪个阈值：</p>
+<p>您可以通过填写 * 添加警报问题描述 * 部分来添加可选的问题描述以及其他见解和 / 或更正操作。问题描述最多可以包含 1024 个字符，并将随警报一起发送。洞察力 / 更正操作字段最多可包含 67 ， 000 个字符，并将显示在警报登录页面的摘要部分中。</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>从非触发状态转换为警告状态—发送警告警报</p>
-</li>
-<li>
-<p>从非触发状态转换为严重状态—发送严重警报</p>
-</li>
-<li>
-<p>从警告跨越到严重—发送严重警报</p>
-</li>
-<li>
-<p>从严重警报跨越到警告 - 发送警告警报</p>
-</li>
-<li>
-<p>从警告跨越到非触发 - 发送已解决的警报</p>
-</li>
-<li>
-<p>从严重到非触发 - 发送已解决的警报</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>在这些字段中，您可以提供注释，链接或更正警报或以其他方式解决警报的步骤。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Monitors_Alert_Description.png" alt="警报更正操作和问题描述"></span></p>
 </div>
 </div>
-</div>
-<div class="sect2">
-<h3 id="保存您的显示器">保存您的显示器</h3>
+<div class="sect3">
+<h4 id="保存您的显示器">保存您的显示器</h4>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -2170,8 +2188,8 @@ Cloud Insights 标准版及更高版本提供了监控和警报功能。
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="监控列表">监控列表</h3>
+<div class="sect3">
+<h4 id="监控列表">监控列表</h4>
 <div class="paragraph">
 <p>" 监控 " 页面列出了当前配置的监控器，显示以下内容：</p>
 </div>
@@ -2192,10 +2210,7 @@ Cloud Insights 标准版及更高版本提供了监控和警报功能。
 </ul>
 </div>
 <div class="paragraph">
-<p>您可以通过单击监控器名称旁边的铃形图标来查看与监控器关联的任何活动警报。<span class="image"><img src="ViewActiveAlerts.png" alt="显示监控器活动警报的图标"></span></p>
-</div>
-<div class="paragraph">
-<p>您可以通过单击监控器右侧的菜单并选择 * 暂停 * 来选择临时暂停监控某个对象类型。准备好恢复监控后，单击 * 恢复 * 。</p>
+<p>您可以通过单击显示器右侧的菜单并选择 * 暂停 * 来选择临时暂停对某个对象类型的监控。准备好恢复监控后，单击 * 恢复 * 。</p>
 </div>
 <div class="paragraph">
 <p>您可以从菜单中选择 * 复制 * 来复制监控器。然后，您可以修改新的监控器并更改对象 / 指标，筛选器，条件，电子邮件收件人等</p>
@@ -2203,76 +2218,33 @@ Cloud Insights 标准版及更高版本提供了监控和警报功能。
 <div class="paragraph">
 <p>如果不再需要显示器，您可以从菜单中选择 * 删除 * 来将其删除。</p>
 </div>
-</div>
-<div class="sect1">
-<h2 id="监控组">监控组</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>通过分组，您可以查看和管理相关监控器。例如，您可以为环境中的存储配置一个专用监控组，也可以为特定收件人列表配置相关监控器。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Monitors_GroupList.png" alt="监控分组"></span></p>
-</div>
-<div class="paragraph">
-<p>组名称旁边会显示组中包含的监控器数量。</p>
-</div>
-<div class="paragraph">
-<p>要创建新组，请单击 "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</p>
-</div>
-<div class="paragraph">
-<p>要向组中添加监控器，请转到 <em>all monitors</em> 组（建议）并执行以下操作之一：</p>
+<p>默认情况下会显示两个组：</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>要添加单个显示器，请单击该显示器右侧的菜单，然后选择 <em>Add to Group</em> 。选择要将监控器添加到的组。</p>
+<p>所有显示器 * 列出所有显示器。</p>
 </li>
 <li>
-<p>单击监控器名称以打开监控器的编辑视图，然后在 <em>Associate to a monitor group</em> 部分中选择一个组。</p>
-<div class="paragraph">
-<p><span class="image"><img src="Monitors_AssociateToGroup.png" alt="与组关联"></span></p>
-</div>
+<p>* 自定义监控 * 仅列出用户创建的监控器。</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>通过单击某个组并从菜单中选择 <em>Remove from Group</em> 来删除监控器。您不能从 <em>all monitors</em> 或 <em>Custom Monitors</em> 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。</p>
+<p>默认情况下会显示两个组：</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注">
-</td>
-<td class="content">
-从组中删除监控器不会从 Cloud Insights 中删除该监控器。要完全删除某个监控器，请选择该监控器，然后单击 <em>Delete</em> 。此操作还会将其从所属组中删除，并且任何用户都无法再使用它。
-</td>
-</tr>
-</table>
+<div class="ulist">
+<ul>
+<li>
+<p>所有显示器 * 列出所有显示器。</p>
+</li>
+<li>
+<p>* 自定义监控 * 仅列出用户创建的监控器。</p>
+</li>
+</ul>
 </div>
-<div class="paragraph">
-<p>您也可以按相同方式将显示器移动到其他组，选择 <em>move to Group</em> 。</p>
 </div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注">
-</td>
-<td class="content">
-在任何给定时间，每个监控器只能属于一个组。
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>要一次性暂停或恢复组中的所有监视器，请选择该组的菜单，然后单击 <em>Pause</em> 或 <em>Resume</em> 。</p>
-</div>
-<div class="paragraph">
-<p>使用同一菜单重命名或删除组。删除组不会从 Cloud Insights 中删除这些监控器；它们在 _all monitors_中 仍然可用。</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="Monitors_PauseGroup.png" alt="暂停组"></span></p>
 </div>
 </div>
 </div>
