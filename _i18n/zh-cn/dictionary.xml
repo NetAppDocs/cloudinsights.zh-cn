@@ -340,16 +340,13 @@
   <block id="cbc8f04159b7864cfdf1f3f9a0639b83" category="paragraph">登录到 Cloud Insights 并导航到 * 管理 &gt; API 访问 * 可查看最新的 API 信息。单击 * API Documentation" 链接。</block>
   <block id="6ce2d3c8c549ab0fd691398bb443efb2" category="inline-image-macro">API 文档</block>
   <block id="6b74edd5cf286c3a22a41e5e6740cb33" category="paragraph"><block ref="6b74edd5cf286c3a22a41e5e6740cb33" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="47d7b551b40becb326c406f74238150a" category="paragraph">API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。</block>
   <block id="cbb70567b5f7ab27a565172b8e1bc114" category="inline-image-macro">API Swagger 示例</block>
   <block id="fc7607d363ea08dec8a8340a1030dd17" category="paragraph"><block ref="fc7607d363ea08dec8a8340a1030dd17" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2dc554f3bbe39578deadcf21e6d30345" category="section-title">API 访问令牌</block>
-  <block id="1281391af6f060d6074a70718d4fe3ea" category="paragraph">在使用 Cloud Insights API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌用于指定的 API 类别，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类别下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。</block>
   <block id="6059fa099fb833766b1f8431a3926056" category="paragraph">创建访问令牌：</block>
   <block id="fecbf5d2c0c13cc8b95b8e609a0f7fe2" category="list-text">单击 * 管理 &gt; API 访问 *</block>
   <block id="2eddd89969bc8a926181a1791b09cfd0" category="list-text">单击 * + API 访问令牌 *</block>
   <block id="bb0b4db3f730b0e00e3f2d490deb6dc0" category="list-text">输入令牌名称</block>
-  <block id="360146f659bd725b350b271d6c503e19" category="list-text">选择 API 类别</block>
   <block id="7c6b7bcc37f76961d2189f2184466a34" category="list-text">指定为此 API 访问授予的权限</block>
   <block id="36422fc03146f715dd2ebf157cb2b018" category="list-text">指定令牌到期日期</block>
   <block id="df7e1abab84c88ca59b75d8179052a13" category="admonition">您的令牌只能在创建过程中复制到剪贴板并进行保存。令牌创建后无法检索，因此强烈建议复制令牌并将其保存在安全位置。系统将提示您单击 * 复制 API 访问令牌 * 按钮，然后才能关闭令牌创建屏幕。</block>
@@ -359,17 +356,11 @@
   <block id="695278b2df4ef830f797b2b85728cd20" category="paragraph">传递访问令牌的 HTTP 标头为 * 。 X-CloudInsights ApiKey ： * 。</block>
   <block id="a3edb14694b58a006156d05e3c4b6d5b" category="paragraph">例如，使用以下命令检索存储资产：</block>
   <block id="eceeec5380f54a75da4fa160c300d56b" category="paragraph">其中， _&lt;API_Access_Token&gt;_ 是您在创建 API 访问密钥期间保存的令牌。</block>
-  <block id="98fbc8e7d31cedd912f33ee6a89818dc" category="section-title">API 类别</block>
-  <block id="c7fb26bb2d197a98dd4605353de8b5fd" category="paragraph">Cloud Insights API 基于类别，目前包含以下类别：</block>
-  <block id="2f90612b2de30393cb574a8125f3b83c" category="list-text">资产类别包含资产，查询和搜索 API 。</block>
   <block id="bf9403ca9242451b7ef055feae5711bb" category="list-text">资产：枚举顶级对象并检索特定对象或对象层次结构。</block>
   <block id="8a471bf409138f673b99273d8183156b" category="list-text">查询：检索和管理 Cloud Insights 查询。</block>
   <block id="c9de14b5a5af8684e29a00e86f5ea9f1" category="list-text">导入：导入标注或应用程序并将其分配给对象</block>
   <block id="cfce3085ae85f2087671061798f85476" category="list-text">搜索：在不知道对象的唯一 ID 或全名的情况下找到特定对象。</block>
-  <block id="19d579e8bdc0964ff6c1b98d9f4077d2" category="list-text">数据收集类别用于检索和管理数据收集器。</block>
-  <block id="2e3e1cf2be708126495ee0409de4ffdc" category="list-text">数据载入类别用于检索和管理载入数据和自定义指标，例如从 Telegraf 代理检索和管理</block>
   <block id="c99f25325f86d3f0c79c43f7e35c908e" category="inline-link-macro">API Swagger 文档</block>
-  <block id="66f4e9202f5d9c4adb625559f7dd6e37" category="paragraph">其他类别和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 <block ref="26737cef142923769504b229d3be204d" category="inline-link-macro-rx"></block>。</block>
   <block id="f62c375c71b04a523593c5019e4aa100" category="section-title">清单遍历</block>
   <block id="f4f1eb3a3565596e151b069fef518185" category="paragraph">本节介绍如何遍历 Cloud Insights 对象的层次结构。</block>
   <block id="c22744ffcc9ee65a97cb166bcf41b4f4" category="section-title">顶级对象</block>
@@ -396,7 +387,6 @@
   <block id="2103fdff3f83cde5feb37c19095d5b93" category="list-text">StoragePoolPerformance</block>
   <block id="358c65aac4f24ec63cc1575e33da13c1" category="list-text">端口性能</block>
   <block id="30b8ec388c3a122cf003beb59b6a428b" category="list-text">磁盘性能</block>
-  <block id="d1d72189f00074c010ad5cdaa0e7efe1" category="paragraph">性能指标具有问题描述和类别，并包含一组性能摘要。例如，延迟，流量和速率。</block>
   <block id="14342261b2648dd695d327dadfdc7c9b" category="paragraph">性能摘要包含一个问题描述，单元，样本开始时间，样本结束时间以及一组汇总值（当前值，最小值，最大值，平均值等），这些值是从一个时间范围（ 1 小时， 24 小时， 3 天等）内的单个性能计数器计算得出的。</block>
   <block id="b3e848961f638d04022e0d810ded842a" category="inline-image-macro">API 性能示例</block>
   <block id="379ee6ecdf21cb4dc0ca4a4c6bd911a7" category="paragraph"><block ref="379ee6ecdf21cb4dc0ca4a4c6bd911a7" category="inline-image-macro-rx" type="image"></block></block>
@@ -404,7 +394,6 @@
   <block id="0412de4a6d9fc6ce32676395cdbe7041" category="list-text">"self-" 是对象的唯一 URL</block>
   <block id="424af895bc123ba13a95c03efd8c3169" category="list-text">" 历史记录 " 是时间戳对和计数器值映射的列表</block>
   <block id="592193e048fbca7e89bbb5d2002328f7" category="list-text">其他每个词典密钥（ "diskThroughput " 等）都是性能指标的名称。</block>
-  <block id="9291545b28f5f21e3694eb57db45da2c" category="paragraph">每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Cloud Insights 支持本文档后面列出的几个性能指标类别。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。</block>
   <block id="5dbe2140a5eccbbcda4fa6164a08c479" category="paragraph">性能摘要计数器是性能计数器的汇总。它会显示计数器的典型聚合值，例如最小值，最大值和平均值，以及最新观察到的值，汇总数据的时间范围，计数器的单位类型以及数据的阈值。只有阈值是可选的；其余属性是必需的。</block>
   <block id="502bc43530a89d32bddc256e33becd06" category="paragraph">以下类型的计数器可提供性能摘要：</block>
   <block id="274c3d5b2a32834eedd5b2684b3cc752" category="list-text">Read —读取操作摘要</block>
@@ -433,7 +422,6 @@
   <block id="85aa7a55c03d4a7d205562096674066a" category="inline-image-macro">存储池容量示例</block>
   <block id="6f0ac10b550f7a116f9d902d16213da3" category="paragraph"><block ref="6f0ac10b550f7a116f9d902d16213da3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="109d056fe4a5bfafadc37d21bc6e5654" category="section-title">使用搜索查找对象</block>
-  <block id="780b9434cb2ebb62e93b92701c3b13b0" category="paragraph">搜索 API 是系统的一个简单入口点。API 的唯一输入参数是自由格式的字符串，生成的 JSON 包含分类结果列表。类别是指与清单不同的资产类型，例如存储，主机，数据存储库等。每个类别都将包含一个与搜索条件匹配的类别类型对象列表。</block>
   <block id="01ebbdd0a50dbc56d987ceb25032be7b" category="paragraph">Cloud Insights 是一种可扩展（广泛开放）的解决方案，可与第三方流程编排，业务管理，变更控制和服务单系统以及自定义 CMDB 集成进行集成。</block>
   <block id="b64fa7905e81fd64c5b00971051ce0f8" category="paragraph">Cloud Insight 的 RESTful API 是一个主要的集成点，支持简单有效地移动数据，并允许用户无缝访问其数据。</block>
   <block id="c13fb1b2303d8e94acc9569811c7a5b8" category="summary">配置 Dell EMC Celerra 数据收集器。</block>
@@ -7295,9 +7283,7 @@
   <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="cell">监控</block>
   <block id="305de530147912d72a50568ee4d65d26" category="cell">帐户所有者</block>
   <block id="b754159e4e957eec4566aef2214ed483" category="cell">可以修改订阅，查看计费和使用情况信息，并执行监控和优化， Cloud Secure 和报告的所有管理员功能。所有者还可以邀请和管理用户，以及管理 SSO 身份验证和身份联合设置。注册 Cloud Insights 时会创建第一个帐户所有者。强烈建议每个 Cloud Insights 环境至少有两个帐户所有者。 </block>
-  <block id="44b70724be7ec840b9d0d29c9f2451a3" category="cell">可以执行所有监控和优化功能，所有用户功能以及数据收集器， API 密钥和通知管理。管理员还可以邀请其他用户，但只能分配 " 监控 " 和 " 优化 " 角色。</block>
   <block id="3ef783c8ab0b0ca9f4834b6aa0f8fdf6" category="cell">可以执行所有 Cloud Secure 功能，包括警报，取证，数据收集器，自动响应策略和 Cloud Secure API 等功能。管理员还可以邀请其他用户，但只能分配 Cloud Secure 角色。</block>
-  <block id="844adbc2fbc9a63340cee63b3801153a" category="cell">可以执行所有用户 / 作者功能以及所有管理任务，例如配置报告以及关闭和重新启动报告任务。管理员还可以邀请其他用户，但只能分配报告角色。</block>
   <block id="9912eb0cfbb27a071ceaf89334fe4dbc" category="cell">可以查看和修改信息板，查询，警报，标注，标注规则， 和应用程序，并管理设备解析。</block>
   <block id="70fb52e38580a301b191eb366ac4d029" category="cell">可以执行所有来宾 / 使用者功能以及创建和管理报告和信息板。</block>
   <block id="76da35e3189c47f58355f9b7d58e7e97" category="cell">对资产页面，信息板，警报具有只读访问权限，并且可以查看和运行查询。</block>
@@ -7514,7 +7500,6 @@
   <block id="90b86e404196295299e2aa0d840dad62" category="cell">检查 Kubernetes API 令牌是否有权调用 _astrads.netapp.io_ apiGroup 中的 API</block>
   <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">" 未知主机： astrads-metrics-service.astrads-system.svc.cluster.local ：名称或服务未知 "</block>
   <block id="045f84b2e6e4af9113106c8c9ce287f4" category="cell">验证收集器是否安装在 ADS Kubernetes 集群内运行的采集单元 POD 中。验证 astrads-metrics-service 是否正在运行 astrads-system 命名空间。</block>
-  <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">请注意，用户有权访问的 API 类别也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器</block>
   <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights 使用 * 云连接 * 从 ONTAP 9.9+ 收集数据，无需安装外部采集单元，从而简化了故障排除，维护和初始部署。要为 ONTAP 9.9+ 数据收集器配置云连接，您需要将 * 配对代码 * 复制到 ONTAP 系统管理器，然后该管理器将与 Cloud Insights 环境建立连接。建立连接后，收集的数据与通过采集单元收集的数据相同。</block>
   <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector 配置</block>
@@ -8559,4 +8544,31 @@
   <block id="2ca57dbd75b94a950c199a1c12cf85b9" category="cell">可以将警告和警报通知发送给不同的收件人，以确保合适的团队随时了解最新信息</block>
   <block id="222414ee53d0c57a1870d9446ce7b005" category="paragraph">用于载入电报集成数据的代理已更新为版本 * 。 1.2* ，并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 <block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block> 文档。先前版本的代理将继续运行，无需用户操作。</block>
   <block id="3d64508ab84203107071583e56c26993" category="list-text">Broadcom 光纤通道交换机数据收集器已进行优化，可减少每次清单轮询发出的 CLI 命令数量。</block>
+  <block id="4199b6880b46eaef66e8d25adefc1ac2" category="cell">可以执行所有监控和优化功能，所有用户功能，以及管理数据收集器，监控和优化 API 令牌和通知。管理员还可以邀请其他用户，但只能分配 " 监控 " 和 " 优化 " 角色。</block>
+  <block id="6d02b22d35efda9cc53c8bd1d5c2d8c5" category="cell">可以执行所有 Cloud Secure 功能，包括针对 Cloud Secure 的警报，取证，数据收集器，自动响应策略和 API 令牌的功能。管理员还可以邀请其他用户，但只能分配 Cloud Secure 角色。</block>
+  <block id="ceecc9f892b56b1081be5d007d545aab" category="cell">可以执行所有用户 / 作者功能，包括管理报告 API 令牌以及所有管理任务，例如配置报告以及关闭和重新启动报告任务。管理员还可以邀请其他用户，但只能分配报告角色。</block>
+  <block id="45268bdcc9ffe3a5807e75085e768efb" category="cell">API 类型</block>
+  <block id="c73695e7529146d82731a287d36e3f1d" category="cell">日志载入</block>
+  <block id="dc1a2dd04ef0a485bbca321805f8ea84" category="inline-link-macro">功能集角色</block>
+  <block id="9229d75b73e189809aaf32ca1941e5cb" category="paragraph">此外，您还可以使用 Cloud Insights <block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block> 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。</block>
+  <block id="990550983c2107ed5ccd87b4a6690b0a" category="inline-image-macro">API 类型</block>
+  <block id="e86bb8cbf77ec00646c7b5fe6b42e633" category="paragraph"><block ref="e86bb8cbf77ec00646c7b5fe6b42e633" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f229a25d4d4958d97a50dc8a836a921f" category="paragraph">API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。根据您的用户角色和 / 或 Cloud Insights 版本，您可以使用的 API 类型可能会有所不同。</block>
+  <block id="9bda043a75ddd802178719c5bb4e0e71" category="paragraph">在使用 Cloud Insights API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌用于指定的 API 类型，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类型下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。</block>
+  <block id="815a8361cf9eb2836d28b11b65b2dc3b" category="list-text">选择 API 类型</block>
+  <block id="9eaefcbfb99d876f3642ba3d021c04d6" category="paragraph">Cloud Insights API 基于类别，目前包含以下类型：</block>
+  <block id="16d532fd527f8b9de1c866f621fb7569" category="list-text">Assets type 包含 asset ， query 和 search API 。</block>
+  <block id="c7ff46f17aacbcc8f9caba752c2fd410" category="list-text">数据收集类型用于检索和管理数据收集器。</block>
+  <block id="c13a40ffc26f5f762f6de126cf232cf5" category="list-text">数据载入类型用于检索和管理载入数据和自定义指标，例如从 Telegraf 代理检索和管理</block>
+  <block id="e2838ba9f29d27f412035bd037388732" category="list-text">日志载入用于检索和管理日志数据</block>
+  <block id="133f61531451649a036c6c806600058c" category="paragraph">其他类型和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 <block ref="26737cef142923769504b229d3be204d" category="inline-link-macro-rx"></block>。</block>
+  <block id="5288b4109c2d4a86ed612074d0baed37" category="paragraph">请注意，用户有权访问的 API 类型也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</block>
+  <block id="8811c3ab0c7b0cc46d2ac67e164d0fc9" category="paragraph">性能指标具有问题描述 和类型，并包含一组性能摘要。例如，延迟，流量和速率。</block>
+  <block id="2bf7ed4a0e334f4b972f700945f47a56" category="paragraph">每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Cloud Insights 支持本文档后面列出的多种性能指标类型。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。</block>
+  <block id="9d31f56324b0322ffe68df1873845bca" category="paragraph">搜索 API 是系统的一个简单入口点。API 的唯一输入参数是自由格式的字符串，生成的 JSON 包含分类结果列表。类型与清单不同，例如存储，主机，数据存储库等。每种类型都将包含一个与搜索条件匹配的对象列表。</block>
+  <block id="20fdb910f7dde76d54b3392d04f062a5" category="section-title">禁用或撤消 API 令牌</block>
+  <block id="e5f3c9e3c596a48a99e4d03c8e19c62a" category="paragraph">要临时禁用 API 令牌，请在 API 令牌列表页面上单击此 API 的 " 三点 " 菜单，然后选择 _Disable_ 。您可以随时使用同一菜单并选择 _Enable_ 来重新启用令牌。</block>
+  <block id="794a9d57da2bd5b4b16e0d11525d4f16" category="paragraph">要永久删除 API 令牌，请从菜单中选择 " 撤消 " 。您不能重新启用已撤销的令牌；您必须创建新令牌。</block>
+  <block id="57d4e87edd35e992f8e4d3c6326ac8d8" category="inline-image-macro">禁用或撤消 API 令牌</block>
+  <block id="209d3712889d6411bf67708e93ef6c63" category="paragraph"><block ref="209d3712889d6411bf67708e93ef6c63" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
