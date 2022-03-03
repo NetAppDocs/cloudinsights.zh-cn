@@ -2740,27 +2740,18 @@
   <block id="a0fb87896105c24e490432fa6ee285d3" category="paragraph">您可以创建监控器来设置触发警报的阈值，以便向您通知与网络中资源相关的问题。例如，您可以创建一个监控器，以便针对任意多种协议发出 _node write latency 警报。</block>
   <block id="dda9f0c203ae2856394dd81972db157f" category="admonition">Cloud Insights 标准版及更高版本提供了监控和警报功能。</block>
   <block id="f2be52b4efc2ef40ce2e8e30d38bcac1" category="paragraph">达到或超过受监控的阈值和条件时， Cloud Insights 将创建警报。一个监控器可以具有 _Warning_ 阈值， _critical_ 阈值，也可以同时具有这两者。</block>
-  <block id="839c283c68f2ef98e768a7975afd5e37" category="section-title">创建监控器</block>
-  <block id="dfbbb6ad7733d63b680f9238f7dce10b" category="paragraph">在以下示例中，我们将创建一个监控器，以便在 _Volume Node NFS 写入延迟 _ 达到或超过 200 毫秒时发出警告警报，并在达到或超过 400 毫秒时发出严重警报。我们只希望在超过任一阈值至少持续 15 分钟时收到警报。</block>
-  <block id="41072a21a5aa3d5e2d1c4423269fe77e" category="list-text">必须配置 Cloud Insights 以收集集成数据，并且正在收集该数据。</block>
   <block id="8d5905c4fc039f80da9bafa3d4cc6555" category="section-title">创建监控器</block>
   <block id="4dacc229b0bc4d687a0aceeaa94b8095" category="list-text">从 Cloud Insights 菜单中，单击 * 警报 &gt; 管理监控器 *</block>
   <block id="7a4d7843cd0dfc634c2485f99960f485" category="paragraph">此时将显示监控器列表页面，其中显示了当前配置的监控器。</block>
-  <block id="c98c015f4f0e82c2ed50d1fa3f1ddb9b" category="list-text">要添加监控器，请单击 * + Monitor* 。要修改现有监控器，请单击列表中的监控器名称。</block>
-  <block id="9b6aa409281581c32384a54312ef9422" category="paragraph">此时将显示 Monitor Configuration 对话框。</block>
-  <block id="e01bb84eddf46370a6fc520159f703b2" category="list-text">在下拉列表中，搜索并选择要监控的对象类型和指标，例如 _netapp_ontap_volume_node_nfs_write_latter_ 。</block>
   <block id="0afd1ac0e8283e24d8739752316dccba" category="paragraph">您可以设置筛选器以缩小要监控的对象属性或指标范围。</block>
   <block id="02421e310193c48e3a305e97cbba58c2" category="paragraph"><block ref="02421e310193c48e3a305e97cbba58c2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8ce06b1a529052723e1fb36a1c2f1a25" category="admonition">要创建多条件监控器（例如， IOPS &gt; X 和延迟 &gt; Y ），请将第一个条件定义为阈值，将第二个条件定义为筛选器。</block>
   <block id="9ef1d5830a24b9e150ec53e978038289" category="section-title">定义监控器的条件。</block>
   <block id="2e75e9aa28dbca090ee157cf8d539e66" category="list-text">选择要监控的对象和指标后，设置警告级别和 / 或严重级别阈值。</block>
-  <block id="4919fae5496230ab8ec4548d4c50c09b" category="list-text">对于 _Warning_ 级别，输入 200 。指示此警告级别的虚线显示在示例图中。</block>
   <block id="a86a316c20ed3c30474a8a9bcbca7f2f" category="list-text">对于 _critical_ 级别，输入 400 。指示此严重级别的虚线显示在示例图中。</block>
   <block id="d00ff899ed7e3bcc490e418870ed0ce4" category="paragraph">此图显示历史数据。图中的 " 警告 " 和 " 严重 " 级别行是监控器的可视表示，因此您可以轻松查看监控器在每种情况下何时可能触发警报。</block>
   <block id="390f4b7f0b6066d4e61aa66cd61b3e6c" category="list-text">对于发生时间间隔，请选择 _continuous_ ，持续时间为 _15 分钟。</block>
   <block id="750f553c0f9776809a020b980f3dc25a" category="paragraph">您可以选择在违反阈值时触发警报，或者等待阈值在一段时间内持续违反。在我们的示例中，我们不希望在总 IOPS 峰值高于 " 警告 " 或 " 严重 " 级别时都收到警报，但仅当受监控对象持续超过其中一个级别至少 15 分钟时才会收到警报。</block>
-  <block id="850762088c3c4c1f8b8fbd3a6391adf8" category="inline-image-macro">定义条件</block>
-  <block id="d678a6c1fad6d1a3decc8bc885eec2ca" category="paragraph"><block ref="d678a6c1fad6d1a3decc8bc885eec2ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="17796f72f8255f9ed8d7715a3abc57ff" category="section-title">设置更正操作或追加信息</block>
   <block id="0e7d6bdae9e86c17f6df720e53ca8bb5" category="paragraph">您可以通过填写 * 添加警报问题描述 * 部分来添加可选的问题描述以及其他见解和 / 或更正操作。问题描述最多可以包含 1024 个字符，并将随警报一起发送。洞察力 / 更正操作字段最多可包含 67 ， 000 个字符，并将显示在警报登录页面的摘要部分中。</block>
   <block id="9684215df29736c508d6e9d4bd429368" category="paragraph">在这些字段中，您可以提供注释，链接或更正警报或以其他方式解决警报的步骤。</block>
@@ -2785,7 +2776,6 @@
   <block id="ec53a8c4f07baed5d8825072c89799be" category="list-text">状态</block>
   <block id="4c5b101f347b58f86395cf1a2e001ac3" category="list-text">正在监控的对象 / 指标</block>
   <block id="80d050a497bb54c9b64ac9c69c1ca376" category="list-text">监控器的条件</block>
-  <block id="a2786365bad51d811f1602d581fb9374" category="paragraph">您可以通过单击监控器右侧的菜单并选择 * 暂停 * 来选择临时暂停监控某个对象类型。准备好恢复监控后，单击 * 恢复 * 。</block>
   <block id="11a8d5beba27513c507b302b1ef0545d" category="paragraph">您可以从菜单中选择 * 复制 * 来复制监控器。然后，您可以修改新的监控器并更改对象 / 指标，筛选器，条件，电子邮件收件人等</block>
   <block id="785af682b2cf8712cbb6039f68f0b952" category="paragraph">如果不再需要显示器，您可以从菜单中选择 * 删除 * 来将其删除。</block>
   <block id="03beff1464928590c48c07d06198e305" category="paragraph">通过分组，您可以查看和管理相关监控器。例如，您可以为环境中的存储配置一个专用监控组，也可以为特定收件人列表配置相关监控器。</block>
@@ -2797,7 +2787,6 @@
   <block id="e2bc4bcf0670da96e21e208bf6bcc766" category="paragraph"><block ref="e2bc4bcf0670da96e21e208bf6bcc766" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e30c931a1dd5474d9e4ca4e7c88580c7" category="admonition">从组中删除监控器不会从 Cloud Insights 中删除该监控器。要完全删除某个监控器，请选择该监控器，然后单击 _Delete_ 。此操作还会将其从所属组中删除，并且任何用户都无法再使用它。</block>
   <block id="cdd3916c98efbf8a767744185462ffec" category="paragraph">您也可以按相同方式将显示器移动到其他组，选择 _move to Group_ 。</block>
-  <block id="4cd1a4d2d0079954614c21e4318c8a2a" category="admonition">在任何给定时间，每个监控器只能属于一个组。</block>
   <block id="9f69190cb4874f8723dbc78ca0008d65" category="paragraph">要一次性暂停或恢复组中的所有监视器，请选择该组的菜单，然后单击 _Pause_ 或 _Resume_ 。</block>
   <block id="c5cc340934b797d2f0bbc7777b820964" category="paragraph">使用同一菜单重命名或删除组。删除组不会从 Cloud Insights 中删除这些监控器；它们在 _all monitors_中 仍然可用。</block>
   <block id="6af18ae8f301c79fa391e8e18308336c" category="inline-image-macro">暂停组</block>
@@ -7446,7 +7435,6 @@
   <block id="fa69f910ba4ca92eb71af48996add386" category="inline-image-macro">安装 macOS 代理</block>
   <block id="3594374519a82758e6268cba4373faae" category="paragraph"><block ref="3594374519a82758e6268cba4373faae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="97e0d834bc800959e3bd09edcaa9de7e" category="section-title">监控组</block>
-  <block id="861cce966793d64acfe10deceab95b98" category="paragraph">要创建新组，请单击 "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</block>
   <block id="a0b50fe45cd95fd9bc311360d50f6366" category="paragraph">通过单击某个组并从菜单中选择 _Remove from Group_ 来删除监控器。您不能从 _all monitors_ 或 _Custom Monitors_ 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。</block>
   <block id="479ed2d8eafc15acde1a42e1b6a98860" category="paragraph">相关：<block ref="f7ab518a04b5eb9592800f6375835782" category="inline-link-macro-rx"></block>
 <block ref="03d103531f94c82411117d01aa2e8036" category="inline-link-macro-rx"></block>
@@ -7476,8 +7464,6 @@
   <block id="4739762b1e0a0ecb9ce6ddc2f357d43e" category="cell">如果工程师仍无法连接到 SaaS ，请向 NetApp 支持部门创建案例。提供 Cloud Insights 序列号以创建案例，并按照说明将日志附加到案例。</block>
   <block id="e425bb5b2301657bf74d7cac77b0f44a" category="cell">将日志附加到案例： 1.使用 root 权限执行以下脚本并共享输出文件（ cloudsure-agent-symps.zip ）。答/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh 2.在 root 权限下逐个执行以下命令，并共享输出。答ID cssys b.组 cssys c.cat /etc/os-release</block>
   <block id="20c1070136d4b279e653e88c774414d7" category="section-title">细化筛选器</block>
-  <block id="2e67f2e161843cbb570102912ea3cae7" category="paragraph">筛选时，在开始键入时，系统会根据当前文本显示一个 * 通配符筛选器 * 。选择此选项将返回与通配符表达式匹配的所有结果。您也可以使用 NOT 或 OR 创建 * 表达式 * ，也可以选择 " 无 " 选项来筛选字段中的空值。</block>
-  <block id="39a314abc65bf7d64ebaaee9846c7fb6" category="paragraph"><block ref="39a314abc65bf7d64ebaaee9846c7fb6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="55f6611cb342565cf0f5002400f53a95" category="inline-link-macro">标注</block>
   <block id="bdc4d24d590d2c4f74d28cf65664af3f" category="list-text">* 标注 * ：使用预定义的 <block ref="bb75b560e5c64cb7dd473c74ae53e8f0" category="inline-link-macro-rx"></block> 筛选小工具数据。</block>
   <block id="23b7f3c5f273dff8dfc28b1d3d393075" category="list-text">* 文本 * ：字母数字字符串。</block>
@@ -7599,8 +7585,6 @@
   <block id="942ba8ad752db9c168906cf68cf6cfcf" category="list-text">* 加载 * ：将转换后的数据保存到数据仓库中，以用于报告。</block>
   <block id="4f29fd9657915b51e00ee112dd495873" category="inline-image-macro">显示筛选的 Kubernetes Node 详细信息页面</block>
   <block id="ff9dcb7868c4ad1ee30492b12c57b9d3" category="paragraph"><block ref="ff9dcb7868c4ad1ee30492b12c57b9d3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="66aeedbda698450efad722126ebd8f7e" category="inline-image-macro">显示监控器活动警报的图标</block>
-  <block id="17c7b5b8572d25de3ba213dc8154a40d" category="paragraph">您可以通过单击监控器名称旁边的铃形图标来查看与监控器关联的任何活动警报。<block ref="be97aacfa5a3607bff376896033db0e0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed5e844b9f893059024a6390e869b4a3" category="list-text">导航到 * 警报 &gt; 所有警报 * 页面。</block>
   <block id="17296f4349896b7279e58a091c3a382d" category="paragraph">筛选时，在开始键入时，系统会根据当前文本显示一个 * 通配符筛选器 * 。选择此选项将返回与通配符表达式匹配的所有结果。您也可以使用 NOT 或 AND 创建 * 表达式 * ，也可以选择 " 无 " 选项来筛选字段中的空值。</block>
   <block id="1d76e0ea81fa06876e48804ecf1f0d24" category="inline-image-macro">在 K8S 资源管理器中使用通配符筛选</block>
@@ -8520,14 +8504,6 @@
   <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">而是此页面</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
   <block id="f57612bca660c9f1bc786c2d822f16a1" category="paragraph">此页面已废弃，不会更新。请转到 <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
-  <block id="eca6c1d25244ba63719b304531bddef1" category="section-title">警告与关键与已解决警报</block>
-  <block id="923c3cf6fbd418a123c8ebed052a57c2" category="paragraph">监控器是发送 " 警告 " ， " 严重 " 还是 " 已解决 " 警报通知，取决于超过哪个阈值：</block>
-  <block id="dd79419ccedc558e5791cee0d2f316ba" category="list-text">从非触发状态转换为警告状态—发送警告警报</block>
-  <block id="675f6f761966f8fa689b2b7048ae2e6e" category="list-text">从非触发状态转换为严重状态—发送严重警报</block>
-  <block id="eba47cd4406c3d262fae2bbfc7b02691" category="list-text">从警告跨越到严重—发送严重警报</block>
-  <block id="b574b2030f0f6245566ee094ff55bb41" category="list-text">从严重警报跨越到警告 - 发送警告警报</block>
-  <block id="72a32144305d760749f3bb911d5250ba" category="list-text">从警告跨越到非触发 - 发送已解决的警报</block>
-  <block id="9a8ef118d165349829d8c21e084de814" category="list-text">从严重到非触发 - 发送已解决的警报</block>
   <block id="77b2881850cae0e5dc1c7b60af0bc9b6" category="cell">我看到一条 " 检测信号错误：消息</block>
   <block id="e2284f166fb986bff4a211a1598659c8" category="cell">如果网络中断导致采集单元与 Cloud Insights 环境之间的通信中断一分钟以上，则可能会发生此错误。验证 AU 和 Cloud Insights 之间的连接是否稳定且处于活动状态。</block>
   <block id="f06aba11198bdba5f39e2cabfd82871d" category="cell">CloudWatch 代理指标命名空间</block>
@@ -8539,4 +8515,37 @@
   <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">自定义监控器可以暂停，恢复，删除或移动到其他组。系统定义的监控器可以暂停和恢复，但不能删除或移动。</block>
   <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">自定义监控组</block>
   <block id="46823a39af1ef1aeeeec87c034852563" category="paragraph">要创建新的自定义监控组，请单击 * "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</block>
+  <block id="18c9f77aeb499c7dba30bf110efc7428" category="list-text">要修改现有监控器，请单击列表中的监控器名称。</block>
+  <block id="ab8f2caed7bd8dd082843b17dd59b109" category="list-text">要添加监控器，请单击 * + Monitor* 。</block>
+  <block id="65117c1214622a1ce8c32b4de0f6dedc" category="inline-image-macro">选择系统或日志监控器</block>
+  <block id="3aff4942a9a35d98c6fdcb7dee853d59" category="paragraph"><block ref="3aff4942a9a35d98c6fdcb7dee853d59" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c58ee317c84221459556bf1d8e52753f" category="paragraph">添加新监控器时，系统会提示您创建指标监控器或日志监控器。</block>
+  <block id="fc2f22eed1d01c032a18cfe4cba78d61" category="list-text">_Metric _ 监控与基础架构或性能相关的触发器的警报</block>
+  <block id="a0974f4b9ee8ae7e61310df23d207909" category="list-text">_Log_ 监控日志相关活动的警报</block>
+  <block id="684fd3873f49a70f4bba03d396531c40" category="paragraph">选择监控器类型后，将显示监控器配置对话框。</block>
+  <block id="269c9bcd9ea3883a3a121a1b88af9e34" category="section-title">指标监控器</block>
+  <block id="313acdf9633421e44aea4a9be12b5071" category="list-text">在下拉列表中，搜索并选择要监控的对象类型和指标。</block>
+  <block id="734f668bd72716899c84bbaedc8d2564" category="list-text">对于 _Warning_ 级别，为我们的示例输入 200 。指示此警告级别的虚线显示在示例图中。</block>
+  <block id="812faed524486085f300f8e0bdba77fe" category="inline-image-macro">定义监控器的条件</block>
+  <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">日志监控器</block>
+  <block id="115369a1ed62b7bc3a2d447559a26c19" category="paragraph">创建 * 日志监控器 * 时，首先从可用日志列表中选择要监控的日志。然后，您可以根据上述可用属性进行筛选。</block>
+  <block id="76b8dd35599916d229b53d3ec6a40bb7" category="paragraph">例如，您可以选择筛选 logs.netapp.ems 源中的 "object.store.unavailable" 消息类型：</block>
+  <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">日志监控器筛选器不能为空。</block>
+  <block id="2648a1582ae14a77bf852bf4354bdc50" category="inline-image-macro">选择要监控的日志并设置筛选器</block>
+  <block id="06601e542f4f628f419d282c214d28c9" category="paragraph"><block ref="06601e542f4f628f419d282c214d28c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="454176c970e70022beb38f8813bea495" category="section-title">定义警报行为</block>
+  <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">选择在触发日志警报时要发出警报的方式。您可以根据上述筛选条件将监控器设置为具有 _Warning_ ， _critical_ 或 _Informational_ 严重性的警报。</block>
+  <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">定义要监控的日志行为</block>
+  <block id="1b1f71445d1920c9625e6c1f2018a229" category="paragraph"><block ref="1b1f71445d1920c9625e6c1f2018a229" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">定义警报解析行为</block>
+  <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">您可以选择如何解决日志监控警报。您可以选择三种方式：</block>
+  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">* 立即解决 * ：立即解决警报，无需采取进一步操作</block>
+  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">* 基于时间解决 * ：在指定时间过后，警报将得到解决</block>
+  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">* 基于日志条目解决 * ：在发生后续日志活动时解决警报。例如，当对象记录为 " 可用 " 时。</block>
+  <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">警报解决</block>
+  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">您可以通过单击显示器右侧的菜单并选择 * 暂停 * 来选择临时暂停对某个对象类型的监控。准备好恢复监控后，单击 * 恢复 * 。</block>
+  <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">所有显示器 * 列出所有显示器。</block>
+  <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* 自定义监控 * 仅列出用户创建的监控器。</block>
 </blocks>
