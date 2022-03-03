@@ -8162,8 +8162,6 @@
   <block id="89c5f776e16da33d8dd4d53d9de174fb" category="cell">卷的存储容量用于存储应用程序和客户数据。集群卷上存储的数据越多，未来数据的存储可用性就越低。…当卷中使用的数据存储容量达到总存储容量时， 由于缺少可用存储容量，卷将无法存储更多数据。…监控卷已用存储容量可确保数据服务的连续性。</block>
   <block id="7addf18b9a1f6d29c3f12d8e7d08f496" category="cell">如果违反严重阈值：…1 ，则需要立即采取措施以最大限度地减少服务中断。请考虑增加卷的空间，以适应增长…2 。考虑删除不再需要的数据以释放空间…如果违反警告阈值，计划立即采取以下操作：…1 。请考虑增加卷的空间以适应此增长。</block>
   <block id="a1a0b877038a8779cc93f4cbc4a6b3e3" category="paragraph">请参见下面的 <block ref="a0423879c34ca2a3017b3959874444e4" category="inline-link-macro-rx"></block> 文档。</block>
-  <block id="20a28be528da8febfe3a95f2e81c374b" category="paragraph">从 2021 年 10 月开始， Cloud Insights 包括许多系统定义的指标和日志监控器。</block>
-  <block id="dbd05015602851a439c2b0c12269644d" category="paragraph">了解更多信息 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>，包括 Cloud Insights 随附的监控器的说明。</block>
   <block id="19792527671b24c9f2cb8807d21fea2a" category="inline-link-macro">受管单元（ MU ）</block>
   <block id="60299c50762b8f548c3ba08173af15db" category="admonition">StorageGRID 按不同的原始 TB 到受管单元速率进行计量。每 40 TB 未格式化的 StorageGRID 容量计费为 1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="d4b92ffff3f3199f4cb5dc53c8c0cf84" category="cell">可以查看和管理警报以及查看取证。用户角色可以更改警报状态，添加注释，手动创建快照以及管理限制用户访问。</block>
@@ -8548,4 +8546,5 @@
   <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">您可以通过单击显示器右侧的菜单并选择 * 暂停 * 来选择临时暂停对某个对象类型的监控。准备好恢复监控后，单击 * 恢复 * 。</block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">所有显示器 * 列出所有显示器。</block>
   <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* 自定义监控 * 仅列出用户创建的监控器。</block>
+  <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">查看 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 第页，介绍 Cloud Insights 随附的监控器。</block>
 </blocks>
