@@ -8356,9 +8356,6 @@
   <block id="19e54e03824e649096b70d3644fd0e5f" category="paragraph">如果有四个 SVM ，其中一个 SVM 配置为 CIFS ，一个为 NFS ，其余两个为 NFS 和 CIFS 配置，则如果攻击源自四个 SVM 中的任何一个，则所有 SVM 都将被阻止。</block>
   <block id="1c86226deccf9173a843b3d83a50b7e4" category="section-title">用户访问限制的前提条件</block>
   <block id="4625d3b7cfc602f8dda70ae516128ac1" category="paragraph">要使此功能正常运行，客户必须为 SMB 和 NFS 配置导出策略。如果在数据源收集器中配置了 NFS 和 SMB ，请按照以下步骤进行操作。</block>
-  <block id="736a9d0a6c8a973d0fc55e15bec4f867" category="paragraph">对于 NFS ，默认情况下会配置导出策略。默认情况下，在 SVM 中创建 NFS 服务时会创建导出策略。对于 SMB ，必须配置导出策略。</block>
-  <block id="619f88c7ecb7dc067cac591110557971" category="paragraph">默认情况下，在 SVM 中创建 NFS 服务时会创建一个导出策略。</block>
-  <block id="5b80f2727c0cb6c0ec0f55e11fc807fb" category="paragraph">以下是用于配置导出策略的命令。将以下命令复制到文本编辑器，并将 &lt;vserver&gt; 名称替换为您的 SVM 名称。然后，一次复制一行，并在 ONTAP 控制台中执行该操作。注意：在运行命令之前，必须先切换到高级模式。</block>
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">如何启用此功能？</block>
   <block id="87ec0cfaa84f34c3c1bd7e7a9573acd3" category="list-text">在 Cloud Secure 中，导航到 * 管理员 &gt; 自动响应策略 &gt; 响应策略设置 &gt; 访问限制 * 。</block>
   <block id="ff3c40d658e508545278698eddf6f64f" category="list-text">将 " 启用限制用户访问 " 设置为 _enabled" 。</block>
@@ -8465,12 +8462,6 @@
   <block id="c1f58328aeef13bbe14c188aa6c895ea" category="paragraph">您可以在此处找到有关报告问题故障排除的建议。</block>
   <block id="f6742e49587a771a1225e7c6e472c682" category="cell">在计划通过电子邮件发送报告时，已登录用户的名称会预先填充到电子邮件的 " 收件人 " 字段中。但是，此名称的形式为 "firstname lastname" （名字，空格，姓氏）。由于此地址不是有效的电子邮件地址，因此在运行计划的报告时，此电子邮件将无法发送。</block>
   <block id="155db2ed9995e9882b3be492b37935dc" category="cell">在计划通过电子邮件发送报告时，请清除预先填充的名称，然后在 " 收件人 " 字段中输入格式正确的有效电子邮件地址。</block>
-  <block id="2ab8b1c842d8f5963816f664491e75da" category="paragraph">如果客户不使用集群凭据，而是使用 CsUser ，则应按照以下步骤支持用户访问限制。</block>
-  <block id="90a8b0d40ba9bed66c3574312f0e54bd" category="paragraph">如果使用集群 IP 配置数据收集器（以及 CsUser ），请从 ONTAP 命令行执行以下操作：</block>
-  <block id="9a165d00ac2421482aebc6c5d626bf4e" category="paragraph">如果使用 Vserver IP 配置数据收集器（以及 CsUser ），请从 ONTAP 命令行执行以下操作，并插入正确的 _&lt;vservername&gt;_ 。</block>
-  <block id="78433a38c746e1646f4d885da42f7742" category="paragraph">如果在集群模式下使用 CSUser ：</block>
-  <block id="c8bdf163f0c6fa0482e3a436c8286e7c" category="paragraph">如果在 SVM 模式下使用 CSUser ：</block>
-  <block id="fd6b6801723e56fea99a681e03dcaf4f" category="paragraph">对于集群模式和 SVM 模式这两种模式，请仅对 SMB 运行以下命令：</block>
   <block id="1e68e39ff63876126f3972751ed432bf" category="paragraph">要检查 _exportpolicy_ 和 _exportpolicy rule_ 是否已正确配置，请在运行上述命令后运行以下命令。</block>
   <block id="669c97c4b794abc0f280d4892a3a503d" category="section-title">手动还原 IP</block>
   <block id="9a77156daa8e3ba32694334a614ff511" category="paragraph">如果您的 Cloud Secure 试用版到期或代理 / 收集器已关闭，请按照以下步骤手动从 ONTAP 还原任何 IP 。</block>
@@ -8547,4 +8538,12 @@
   <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* 自定义监控 * 仅列出用户创建的监控器。</block>
   <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">查看 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 第页，介绍 Cloud Insights 随附的监控器。</block>
   <block id="b94799ea1a34279467ca857a3bdb03d8" category="list-text">* 降噪 * 用于筛选用户新建的文件（即过去 2 小时内）。它还用于筛选用户访问的临时文件（例如 .tmp 文件）。</block>
+  <block id="d2b60d6c86ebcc57140ad12f7fd12e7e" category="paragraph">对于 NFS ，默认情况下会配置导出策略。默认情况下，在 SVM 中创建 NFS 服务时会创建导出策略。</block>
+  <block id="26d70199dca829297ed6a32343711ea8" category="paragraph">对于 SMB ，必须配置导出策略。</block>
+  <block id="97b3d67371c3225085bdd60c4186b650" category="paragraph">如果您使用的不是集群 /SVM 凭据，而是 CsUser ，请首先按照以下步骤操作，以允许 Cloud Secure 创建自定义导出策略规则。</block>
+  <block id="22c7df611bbc787fa84ac34fdd9613e0" category="paragraph">对于具有集群凭据的 CSUser ，请从 ONTAP 命令行执行以下操作：</block>
+  <block id="62e6cfdd88bd2f09782128a89fe25b0b" category="paragraph">对于具有 SVM 凭据的 CSUser ，请从 ONTAP 命令行执行以下操作，并插入正确的 &lt;vservername&gt; ：</block>
+  <block id="fa77163b4c273ad38c4b189f407a970b" category="paragraph">以下是用于配置默认导出策略的命令。将命令复制到文本编辑器，并将 &lt;vserver&gt; 名称替换为 SVM 的名称。然后，一次复制一行，并在 ONTAP 控制台中执行该操作。请注意，在运行命令之前，必须先切换到高级模式。</block>
+  <block id="dfb0bf3f02c7a96b047762240862b59d" category="admonition">这对于运行 POC 尤其有用。在要测试的计算机中，可以按如下所示配置 SMB 。在 POC 期间，在数据源收集器中，仅启用 SMB/CIFS 协议并禁用 NFS 协议。</block>
+  <block id="db386e038002cc8473226f0494cef95f" category="admonition">客户端匹配项可以是特定地址或子网（例如 10.0.3.212 或 192.168.5.0/24 ），主机名或网络组（如 @netgroup ）。如果要将导出策略应用于所有可能的 IP4 地址，请将客户端匹配设置为 0.0.0.0/0 。</block>
 </blocks>

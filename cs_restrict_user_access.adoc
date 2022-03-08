@@ -26,40 +26,34 @@ SMB 和 NFS 协议均支持访问限制。
 
 要使此功能正常运行，客户必须为 SMB 和 NFS 配置导出策略。如果在数据源收集器中配置了 NFS 和 SMB ，请按照以下步骤进行操作。
 
-对于 NFS ，默认情况下会配置导出策略。默认情况下，在 SVM 中创建 NFS 服务时会创建导出策略。对于 SMB ，必须配置导出策略。
+对于 NFS ，默认情况下会配置导出策略。默认情况下，在 SVM 中创建 NFS 服务时会创建导出策略。
 
-如果客户不使用集群凭据，而是使用 CsUser ，则应按照以下步骤支持用户访问限制。
+对于 SMB ，必须配置导出策略。
 
-如果使用集群 IP 配置数据收集器（以及 CsUser ），请从 ONTAP 命令行执行以下操作：
+如果您使用的不是集群 /SVM 凭据，而是 CsUser ，请首先按照以下步骤操作，以允许 Cloud Secure 创建自定义导出策略规则。
 
- security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
-如果使用 Vserver IP 配置数据收集器（以及 CsUser ），请从 ONTAP 命令行执行以下操作，并插入正确的 _<vservername>_ 。
-
- security login role create -vserver <vservername> -role csrole -cmddirname "vserver export-policy rule" -access all
-默认情况下，在 SVM 中创建 NFS 服务时会创建一个导出策略。
-
-以下是用于配置导出策略的命令。将以下命令复制到文本编辑器，并将 <vserver> 名称替换为您的 SVM 名称。然后，一次复制一行，并在 ONTAP 控制台中执行该操作。注意：在运行命令之前，必须先切换到高级模式。
-
-如果在集群模式下使用 CSUser ：
+对于具有集群凭据的 CSUser ，请从 ONTAP 命令行执行以下操作：
 
  security login role create -role csrole -cmddirname "vserver export-policy rule" -access all
-如果在 SVM 模式下使用 CSUser ：
+对于具有 SVM 凭据的 CSUser ，请从 ONTAP 命令行执行以下操作，并插入正确的 <vservername> ：
 
  security login role create -vserver <vservername> -role csrole -cmddirname "vserver export-policy rule" -access all
-对于集群模式和 SVM 模式这两种模式，请仅对 SMB 运行以下命令：
+以下是用于配置默认导出策略的命令。将命令复制到文本编辑器，并将 <vserver> 名称替换为 SVM 的名称。然后，一次复制一行，并在 ONTAP 控制台中执行该操作。请注意，在运行命令之前，必须先切换到高级模式。
 
-....
-set -privilege advanced
-cifs options modify -is-exportpolicy-enabled true -vserver <vserver>
-export-policy rule create -vserver <vserver> -policyname default -protocol cifs -clientmatch 0.0.0.0/0 -rorule any -rwrule any
-....
+
+TIP: 这对于运行 POC 尤其有用。在要测试的计算机中，可以按如下所示配置 SMB 。在 POC 期间，在数据源收集器中，仅启用 SMB/CIFS 协议并禁用 NFS 协议。
+
+ set -privilege advanced
+ cifs options modify -is-exportpolicy-enabled true -vserver <vserver>
+ export-policy rule create -vserver <vserver> -policyname default -protocol cifs -clientmatch 0.0.0.0/0 -rorule any -rwrule any
+
+NOTE: 客户端匹配项可以是特定地址或子网（例如 10.0.3.212 或 192.168.5.0/24 ），主机名或网络组（如 @netgroup ）。如果要将导出策略应用于所有可能的 IP4 地址，请将客户端匹配设置为 0.0.0.0/0 。
+
 要检查 _exportpolicy_ 和 _exportpolicy rule_ 是否已正确配置，请在运行上述命令后运行以下命令。
 
-....
-cifs options show  -fields is-exportpolicy-enabled -vserver <vserver>
-export-policy show -vserver <vserver>
-export-policy rule show -policyname default -vserver <vserver>
-....
+ cifs options show  -fields is-exportpolicy-enabled -vserver <vserver>
+ export-policy show -vserver <vserver>
+ export-policy rule show -policyname default -vserver <vserver>
 
 
 === 如何启用此功能？
