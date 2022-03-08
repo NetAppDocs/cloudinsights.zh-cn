@@ -8034,8 +8034,6 @@
   <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">为 ONTAP 启用高级计数器和 EMS 日志收集</block>
   <block id="5c8c2ca1685c9247d4c87edc2fa024f4" category="admonition">默认情况下，系统监控器处于 _Paused_state 。在恢复监控之前，您必须确保已在数据收集器中启用 _Advanced 计数器数据收集 _ 和 _Enable ONTAP EMS log collection_ 。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">在 Kubernetes 上，我的 Telegraf Pod 报告以下错误： " 处理 mountstats 信息时出错：无法打开 mountstats 文件： /hostfs/proc/1/mountstats ，错误： open /hostfs/proc/1/mountstats ：权限被拒绝 "</block>
-  <block id="552ea4b269315a61fd8df84d4c5f4bc4" category="section-title">具有预键入建议的高级文本筛选</block>
-  <block id="d7246d99ca35ad0c30da801caacfa83a" category="paragraph">为某个字段选择一个或多个值时，该查询的其他筛选器将显示与该筛选器相关的值。例如，在为特定对象 _Name_ 设置筛选器时，用于筛选 _Model_ 的字段将仅显示与该对象名称相关的值。</block>
   <block id="3390387c68439da10e36e8f518ecdc02" category="paragraph">请注意，只有文本筛选器才会显示上下文预键入建议。日期，枚举（列表）等不会显示预键入建议。也就是说，您可以对枚举（即列表）字段设置筛选器，并在上下文中筛选其他文本字段。例如，如果在数据中心等 Enum 字段中选择一个值，则其他筛选器将仅显示该数据中心中的型号 / 名称，而不会显示相反。</block>
   <block id="b334116b5a6a9ee3f65d46240e877891" category="paragraph">选定时间范围还将为筛选器中显示的数据提供上下文。</block>
   <block id="87559df59f765da7386b723eed69c3fd" category="section-title">选择筛选单元</block>
@@ -8607,4 +8605,8 @@
   <block id="57eed663adf466f4dcd0ba0a3a24dac5" category="paragraph">系统监控器可能包括 ONTAP 基础架构（存储，卷等）或工作负载（例如日志监控器）或其他组的监控器。NetApp 不断评估客户需求和产品功能，并会根据需要更新或添加到系统监控器和组中。</block>
   <block id="17364dd4c2252b12bb9eb895bd6e949b" category="paragraph">您可以根据需要创建自己的组来包含监控器。例如，您可能需要为所有存储相关监控器配置一个组。</block>
   <block id="82f4f788b410ddeadb8f7768592f9864" category="list-text">只有当系统已暂停监控器时，才会显示 * 已暂停监控器 * 。</block>
+  <block id="a43e9f5999fa1ed59d407736252e625d" category="section-title">具有上下文预键入建议的高级文本筛选</block>
+  <block id="a8c299f3c69c7a12958c6df554610a93" category="paragraph">在小工具查询中筛选为 _Contextual ；为字段选择筛选器值时，该查询的其他筛选器将显示与该筛选器相关的值。例如，在为特定对象 _Name_ 设置筛选器时，用于筛选 _Model_ 的字段将仅显示与该对象名称相关的值。</block>
+  <block id="8be0f44cccc6817c6fffc31d9156d3c0" category="paragraph">上下文筛选还包括适用场景 信息板页面变量（仅限文本类型属性或标注）。为一个变量选择存储器值时，使用相关对象的任何其他变量将仅根据这些相关变量的上下文显示可能的筛选值。</block>
+  <block id="efbb3ca459b4e1c502f697d1a65cc3d3" category="paragraph">在变量中筛选为 _Contextual ；为某个变量选择一个或多个筛选值时，页面上的其他变量将仅显示与该筛选器相关的值。例如，将变量筛选器设置为特定的 storage _Model_ 时，设置为 storage _Name_ 筛选的任何变量将仅显示与该型号相关的值。</block>
 </blocks>
