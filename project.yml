@@ -262,8 +262,6 @@ sidebar:
           url: "/task_dc_brocade_bna.html"
         - title: 光纤通道交换机
           url: "/task_dc_brocade_fc_switch.html"
-      - title: Ceph
-        url: "/task_dc_ceph_storage.html"
       - title: Cisco
         url: "/task_dc_cisco_fc_switch.html"
       - title: Dell
