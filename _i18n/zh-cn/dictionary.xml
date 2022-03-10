@@ -3819,7 +3819,6 @@
   <block id="caa44442950fc55280b06c8cedc9483c" category="cell">默认值为 3</block>
   <block id="98196464d4c2c123b9a3591724c6d1bc" category="cell">通信端口</block>
   <block id="755d3a152497d4bd8cf5072c3539fcc9" category="cell">筛选设备列表 ...</block>
-  <block id="832ba929e26e6883830b8a8143167c3b" category="cell">此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式</block>
   <block id="be79d6e6a44e0a57d37256e5bc2c0909" category="cell">可能的解决方案： * 验证输入的凭据和 IP 地址。* 尝试使用 VMware Infrastructure Client 与虚拟中心进行通信。* 尝试使用受管对象浏览器（例如 MOB ）与虚拟中心进行通信。</block>
   <block id="4715797e850d7872546c22d0a379ca4f" category="summary">使用查询为对象分配多个应用程序或标注，或者从对象中删除多个应用程序或标注。</block>
   <block id="de1cabd167f3864b78d24d3da683bd0c" category="doc">为资产分配多个应用程序或从资产中删除多个应用程序</block>
@@ -7225,7 +7224,6 @@
   <block id="93933c6ca68705cf2c6eee19987428b0" category="sidebar">Broadcom</block>
   <block id="0fd95facb681ca997fc73f6a94deca25" category="sidebar">Brocade Network Advisor</block>
   <block id="413cdf3c9d7f8e63cf5e98c30d03dde2" category="sidebar">光纤通道交换机</block>
-  <block id="9ef9ac4a14f1ba2a121f57b42ecf4e5e" category="sidebar">Ceph</block>
   <block id="7b1d1185b835814de783483f686e9825" category="sidebar">Cisco</block>
   <block id="ab2724d10b490217916b1bcc56aef48f" category="sidebar">Dell</block>
   <block id="c24155c400371d139928f6e0f1fbb144" category="sidebar">xC 系列</block>
@@ -8546,4 +8544,5 @@
   <block id="fa77163b4c273ad38c4b189f407a970b" category="paragraph">以下是用于配置默认导出策略的命令。将命令复制到文本编辑器，并将 &lt;vserver&gt; 名称替换为 SVM 的名称。然后，一次复制一行，并在 ONTAP 控制台中执行该操作。请注意，在运行命令之前，必须先切换到高级模式。</block>
   <block id="dfb0bf3f02c7a96b047762240862b59d" category="admonition">这对于运行 POC 尤其有用。在要测试的计算机中，可以按如下所示配置 SMB 。在 POC 期间，在数据源收集器中，仅启用 SMB/CIFS 协议并禁用 NFS 协议。</block>
   <block id="db386e038002cc8473226f0494cef95f" category="admonition">客户端匹配项可以是特定地址或子网（例如 10.0.3.212 或 192.168.5.0/24 ），主机名或网络组（如 @netgroup ）。如果要将导出策略应用于所有可能的 IP4 地址，请将客户端匹配设置为 0.0.0.0/0 。</block>
+  <block id="f7d642fa886f4ad115e6600d3a187925" category="cell">此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时，请使用虚拟机管理程序上的 CI 报告的 CI 模式集群名称— CI 在 vSphere 集群名称前面加上 vSphere 数据中心名称和反斜杠— DC1\clusterA 是 CI 将在数据中心 DC1 的 clusterA 中报告的集群名称</block>
 </blocks>
