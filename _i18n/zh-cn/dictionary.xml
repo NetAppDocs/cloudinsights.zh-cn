@@ -2797,7 +2797,6 @@
   <block id="9a6f1c698cc1e100926a6444a2a7f560" category="summary">配置联想数据收集器。</block>
   <block id="b8e7dba3eebb606afc2cdea5e550fae8" category="doc">联想数据收集器</block>
   <block id="b7550fa0abbe6f770a66125cfc4f1ea4" category="paragraph">Cloud Insights 使用联想数据收集器发现联想 HX 存储系统的清单和性能数据。</block>
-  <block id="23880582533f727d2fb6ae300166d972" category="paragraph">Cloud Insights 从联想数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="6590f621515d064417bb91bd8f6cb526" category="cell">Nutanix 容器</block>
   <block id="ca64cbe5ecbf364909413a596766fbc8" category="list-text">TCP 端口要求： 9440</block>
   <block id="49c74cfc814defdf4c6e66676f86702d" category="cell">用于连接到阵列的 TCP 端口。默认值为 9440. 。</block>
@@ -3461,9 +3460,6 @@
   <block id="eaa7024d6bed491bbaada5e2818c012a" category="inline-link-macro">Zookeeper</block>
   <block id="e00d8ef6824afbc3eb164b885bda2e98" category="cell"><block ref="e00d8ef6824afbc3eb164b885bda2e98" category="inline-link-macro-rx"></block></block>
   <block id="ef4bf6f0faac05bfc1b9c6d8660008c2" category="summary">配置 VNX 数据收集器。</block>
-  <block id="5dd8fec2f3419b311df4a52aba6e8d71" category="doc">配置 EMC VNX 统一数据收集器</block>
-  <block id="7f5c08046412547c25f5d5b32150c69d" category="paragraph">在配置方面， EMC VNX Unified （ SSH ）数据收集器需要控制站的 IP 地址以及只读用户名和密码。</block>
-  <block id="9824037158f7f3ff96d24e3abc2ec1f5" category="paragraph">Cloud Insights 从 EMC VNX 统一数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="444d4c127af1a977c6edbecdc0165c56" category="cell">磁盘文件夹</block>
   <block id="53b936091a984a22f4042eeb94499891" category="cell">文件系统</block>
   <block id="6152c3cd584051fa435ae70586f8bb59" category="cell">存储处理器</block>
@@ -8545,4 +8541,6 @@
   <block id="dfb0bf3f02c7a96b047762240862b59d" category="admonition">这对于运行 POC 尤其有用。在要测试的计算机中，可以按如下所示配置 SMB 。在 POC 期间，在数据源收集器中，仅启用 SMB/CIFS 协议并禁用 NFS 协议。</block>
   <block id="db386e038002cc8473226f0494cef95f" category="admonition">客户端匹配项可以是特定地址或子网（例如 10.0.3.212 或 192.168.5.0/24 ），主机名或网络组（如 @netgroup ）。如果要将导出策略应用于所有可能的 IP4 地址，请将客户端匹配设置为 0.0.0.0/0 。</block>
   <block id="31f2d1341b001f9e4ba9f04b36b9fbd1" category="cell">此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时， 使用 CI 在虚拟机管理程序上报告的 Cloud Insights 模式集群名称— Cloud Insights 会在 vSphere 集群名称前面加上 vSphere 数据中心名称和反斜杠— "DC1\clusterA" 是 Cloud Insights 将在数据中心 DC1 的 clusterA 中报告的集群名称</block>
+  <block id="b3d5b2b9a23a5d11e154dd02b6d8f1d0" category="doc">配置 Dell EMC VNX 统一数据收集器</block>
+  <block id="3b4918cfceb6d22dc06a39882714f272" category="paragraph">在配置方面， Dell EMC VNX Unified （ SSH ）数据收集器需要控制站的 IP 地址以及只读用户名和密码。</block>
 </blocks>
