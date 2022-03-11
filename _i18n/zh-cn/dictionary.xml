@@ -2739,8 +2739,6 @@
   <block id="b1268076894d71bd79285945ea54cad5" category="doc">向监控器发出警报</block>
   <block id="a0fb87896105c24e490432fa6ee285d3" category="paragraph">您可以创建监控器来设置触发警报的阈值，以便向您通知与网络中资源相关的问题。例如，您可以创建一个监控器，以便针对任意多种协议发出 _node write latency 警报。</block>
   <block id="dda9f0c203ae2856394dd81972db157f" category="admonition">Cloud Insights 标准版及更高版本提供了监控和警报功能。</block>
-  <block id="f2be52b4efc2ef40ce2e8e30d38bcac1" category="paragraph">达到或超过受监控的阈值和条件时， Cloud Insights 将创建警报。一个监控器可以具有 _Warning_ 阈值， _critical_ 阈值，也可以同时具有这两者。</block>
-  <block id="8d5905c4fc039f80da9bafa3d4cc6555" category="section-title">创建监控器</block>
   <block id="4dacc229b0bc4d687a0aceeaa94b8095" category="list-text">从 Cloud Insights 菜单中，单击 * 警报 &gt; 管理监控器 *</block>
   <block id="7a4d7843cd0dfc634c2485f99960f485" category="paragraph">此时将显示监控器列表页面，其中显示了当前配置的监控器。</block>
   <block id="0afd1ac0e8283e24d8739752316dccba" category="paragraph">您可以设置筛选器以缩小要监控的对象属性或指标范围。</block>
@@ -7493,7 +7491,6 @@
   <block id="186435169ab16121eaece4afe6efd0a1" category="list-text">具有存储节点和 qtree 指标的增强型 EMC Isilon</block>
   <block id="a5a5be00af4eb57319eff500ca9e8c27" category="list-text">具有卷 QoS 限制指标的增强型 EMC Symmetrix</block>
   <block id="6737c67be3775177035b7486a3285000" category="list-text">具有存储节点父序列号的增强型 IBM SVC 和 EMC PowerStore</block>
-  <block id="de1246f2ba95371b711d65f46fa80725" category="paragraph">您可以使用监控器为 " 基础架构 " 对象（例如存储， VM ， EC2 和端口）以及 " 集成 " 数据（例如为 Kubernetes ， ONTAP 高级指标和 Telegraf 插件收集的数据）设置阈值。监控超过阈值时向您发出的警报，您可以设置警告级别警报，严重级别警报或两者的阈值。</block>
   <block id="1928ab7a05e24c9e7bde67fb9a528d0d" category="paragraph">资产页面的摘要部分显示有关资产的常规信息，包括任何指标或性能策略是否为相关的发生原因。潜在问题区域用红色圆圈表示。</block>
   <block id="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="paragraph"><block ref="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="abfbd1f823b5763f9a41683ebc883036" category="list-text">* 警报表 * ：最多显示最后 1 ， 000 个警报。</block>
@@ -8155,7 +8152,6 @@
   <block id="751f6c789f3a22b17d94185a7d67ce2d" category="cell">警告 @ &lt; 15% 严重 @ &lt; 5%</block>
   <block id="89c5f776e16da33d8dd4d53d9de174fb" category="cell">卷的存储容量用于存储应用程序和客户数据。集群卷上存储的数据越多，未来数据的存储可用性就越低。…当卷中使用的数据存储容量达到总存储容量时， 由于缺少可用存储容量，卷将无法存储更多数据。…监控卷已用存储容量可确保数据服务的连续性。</block>
   <block id="7addf18b9a1f6d29c3f12d8e7d08f496" category="cell">如果违反严重阈值：…1 ，则需要立即采取措施以最大限度地减少服务中断。请考虑增加卷的空间，以适应增长…2 。考虑删除不再需要的数据以释放空间…如果违反警告阈值，计划立即采取以下操作：…1 。请考虑增加卷的空间以适应此增长。</block>
-  <block id="a1a0b877038a8779cc93f4cbc4a6b3e3" category="paragraph">请参见下面的 <block ref="a0423879c34ca2a3017b3959874444e4" category="inline-link-macro-rx"></block> 文档。</block>
   <block id="19792527671b24c9f2cb8807d21fea2a" category="inline-link-macro">受管单元（ MU ）</block>
   <block id="60299c50762b8f548c3ba08173af15db" category="admonition">StorageGRID 按不同的原始 TB 到受管单元速率进行计量。每 40 TB 未格式化的 StorageGRID 容量计费为 1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="d4b92ffff3f3199f4cb5dc53c8c0cf84" category="cell">可以查看和管理警报以及查看取证。用户角色可以更改警报状态，添加注释，手动创建快照以及管理限制用户访问。</block>
@@ -8504,7 +8500,6 @@
   <block id="c58ee317c84221459556bf1d8e52753f" category="paragraph">添加新监控器时，系统会提示您创建指标监控器或日志监控器。</block>
   <block id="fc2f22eed1d01c032a18cfe4cba78d61" category="list-text">_Metric _ 监控与基础架构或性能相关的触发器的警报</block>
   <block id="a0974f4b9ee8ae7e61310df23d207909" category="list-text">_Log_ 监控日志相关活动的警报</block>
-  <block id="684fd3873f49a70f4bba03d396531c40" category="paragraph">选择监控器类型后，将显示监控器配置对话框。</block>
   <block id="269c9bcd9ea3883a3a121a1b88af9e34" category="section-title">指标监控器</block>
   <block id="313acdf9633421e44aea4a9be12b5071" category="list-text">在下拉列表中，搜索并选择要监控的对象类型和指标。</block>
   <block id="734f668bd72716899c84bbaedc8d2564" category="list-text">对于 _Warning_ 级别，为我们的示例输入 200 。指示此警告级别的虚线显示在示例图中。</block>
@@ -8548,4 +8543,21 @@
   <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
   <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID</block>
   <block id="2fb85e5bf896399f61e79b4b39655b2b" category="cell">此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时， 使用 CI 在虚拟机管理程序上报告的 Cloud Insights 模式集群名称— Cloud Insights 会在 vSphere 集群名称前面加上 vSphere 数据中心名称和斜杠— "DC1/clusterA" 是 Cloud Insights 将在数据中心 DC1 的 clusterA 中报告的集群名称</block>
+  <block id="3f5fb2a45a144339f9591a104342f79b" category="paragraph">通过监控，您可以为存储， VM ， EC2 和端口等 " 基础架构 " 对象生成的指标以及为 Kubernetes ， ONTAP 高级指标和 Telegraf 插件收集的 " 集成 " 数据设置阈值。当超过警告级别或严重级别阈值时，这些 _metric_ 监控器会向您发出警报。</block>
+  <block id="e730b9c349889018dc9deaccaa5a438b" category="paragraph">您还可以创建监控器，以便在检测到指定的 _log events_之后 触发警告，严重或信息级别的警报。</block>
+  <block id="9fbe6c7c1c16d6c2079f167ca8001516" category="paragraph">Cloud Insights 提供了许多 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 也可以根据您的环境进行选择。</block>
+  <block id="4712a61ef2a234a93ba9db41c631d5b8" category="section-title">衡量指标还是日志监控？</block>
+  <block id="30d058d2916c7c827bc5728654ad1a8d" category="paragraph">选择监控器类型后，将显示监控器配置对话框。配置因要创建的监控器类型而异。</block>
+  <block id="f9014555d08521285ca544350f9dc25a" category="paragraph">此时将显示以下监控组。组名称旁边会显示组中包含的监控器数量。</block>
+  <block id="d9e85911262ba37a5d999e863491d888" category="list-text">* 自定义监控器 * 列出用户创建的所有监控器。</block>
+  <block id="70d96c6a41afb254c16b7b9540d18895" category="list-text">* 已暂停的监控器 * 将列出已被 Cloud Insights 暂停的所有系统监控器。</block>
+  <block id="6dc06af3fe625c90d8b00610f4a3bf8e" category="inline-link-macro">系统定义的监控器</block>
+  <block id="69a8fd4125eb679015842f32069fd971" category="list-text">Cloud Insights 还将显示许多 * 系统监控组 * ，其中将列出一个或多个组 <block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block>，包括 ONTAP 基础架构和工作负载监控器。</block>
+  <block id="c3c2ba86297c67abf1cd56f0d77e8cac" category="section-title">已暂停的监控器</block>
+  <block id="1f4408604ff975de8817060ea3a7330a" category="paragraph">只有当 Cloud Insights 已暂停一个或多个监控器时，才会显示此组。如果监控器生成的警报过多或持续，则可能会暂停。如果此监控器是自定义监控器，请修改条件以防止持续发出警报，然后恢复此监控器。解决导致暂停的问题描述 后，此监控器将从暂停的监控器组中删除。</block>
+  <block id="5f8a706a9be7411e7b652c8139cb2a37" category="paragraph">只要您的环境包含监控器所需的设备和 / 或日志可用性，这些组就会显示 Cloud Insights 提供的监控器。</block>
+  <block id="fc077d90413e1ab9ea5eb4777a02ade3" category="paragraph">无法修改，移动到另一个组或删除系统定义的监控器。但是，您可以复制系统监控器并修改或移动此副本。</block>
+  <block id="57eed663adf466f4dcd0ba0a3a24dac5" category="paragraph">系统监控器可能包括 ONTAP 基础架构（存储，卷等）或工作负载（例如日志监控器）或其他组的监控器。NetApp 不断评估客户需求和产品功能，并会根据需要更新或添加到系统监控器和组中。</block>
+  <block id="17364dd4c2252b12bb9eb895bd6e949b" category="paragraph">您可以根据需要创建自己的组来包含监控器。例如，您可能需要为所有存储相关监控器配置一个组。</block>
+  <block id="82f4f788b410ddeadb8f7768592f9864" category="list-text">只有当系统已暂停监控器时，才会显示 * 已暂停监控器 * 。</block>
 </blocks>
