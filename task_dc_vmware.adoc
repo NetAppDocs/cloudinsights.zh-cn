@@ -118,7 +118,7 @@ Cloud Insights 从 VMware vSphere 数据收集器获取以下清单信息。对�
 | 通信端口 | 默认值为 443 
 
 
-| 筛选设备列表 ... | 此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时， 使用 CI 在虚拟机管理程序上报告的 Cloud Insights 模式集群名称— Cloud Insights 会在 vSphere 集群名称前面加上 vSphere 数据中心名称和反斜杠— "DC1\clusterA" 是 Cloud Insights 将在数据中心 DC1 的 clusterA 中报告的集群名称 
+| 筛选设备列表 ... | 此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时， 使用 CI 在虚拟机管理程序上报告的 Cloud Insights 模式集群名称— Cloud Insights 会在 vSphere 集群名称前面加上 vSphere 数据中心名称和斜杠— "DC1/clusterA" 是 Cloud Insights 将在数据中心 DC1 的 clusterA 中报告的集群名称 
 
 
 | 性能轮询间隔（秒） | 默认值为 300 
