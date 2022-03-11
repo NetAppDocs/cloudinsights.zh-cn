@@ -8543,4 +8543,9 @@
   <block id="31f2d1341b001f9e4ba9f04b36b9fbd1" category="cell">此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时， 使用 CI 在虚拟机管理程序上报告的 Cloud Insights 模式集群名称— Cloud Insights 会在 vSphere 集群名称前面加上 vSphere 数据中心名称和反斜杠— "DC1\clusterA" 是 Cloud Insights 将在数据中心 DC1 的 clusterA 中报告的集群名称</block>
   <block id="b3d5b2b9a23a5d11e154dd02b6d8f1d0" category="doc">配置 Dell EMC VNX 统一数据收集器</block>
   <block id="3b4918cfceb6d22dc06a39882714f272" category="paragraph">在配置方面， Dell EMC VNX Unified （ SSH ）数据收集器需要控制站的 IP 地址以及只读用户名和密码。</block>
+  <block id="5c478d648857e82323360d2328b3dc12" category="paragraph">请注意，以下数据收集器会按不同的原始 TiB 到受管单元速率进行计量。这些数据收集器上每 40 TiB 的未格式化容量计费为 1 个受管单元（ MU ）：</block>
+  <block id="e7289067e05f71335c1c33ab4cb274b5" category="list-text">Dell EMC ECS</block>
+  <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi 内容平台</block>
+  <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
+  <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID</block>
 </blocks>
