@@ -1902,7 +1902,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-03-14 20:39:15 +0000">03/14/2022</time>
+    <time datetime="2022-03-14 23:33:53 +0000">03/14/2022</time>
     
   
 
@@ -1945,7 +1945,7 @@
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">API 类别</th>
+<th class="tableblock halign-left valign-top">API 类型</th>
 <th class="tableblock halign-center valign-top">基本</th>
 <th class="tableblock halign-center valign-top">标准</th>
 <th class="tableblock halign-center valign-top">高级版</th>
@@ -1982,8 +1982,17 @@
 <td class="tableblock halign-center valign-top"><p class="tableblock"><strong><span class="image"><img src="SmallCheckMark.png" alt=""></span></strong></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock"><strong><span class="image"><img src="SmallCheckMark.png" alt=""></span></strong></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">日志载入</p></td>
+<td class="tableblock halign-center valign-top"></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><span class="image"><img src="SmallCheckMark.png" alt=""></span></strong></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock"><strong><span class="image"><img src="SmallCheckMark.png" alt=""></span></strong></p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>此外，您还可以使用 Cloud Insights <a href="https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels">"功能集角色"</a> 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。</p>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -2008,10 +2017,10 @@
 <p>登录到 Cloud Insights 并导航到 * 管理 &gt; API 访问 * 可查看最新的 API 信息。单击 * API Documentation" 链接。</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="API_Documentation.png" alt="API 文档"></span></p>
+<p><span class="image"><img src="API_Swagger_Types.png" alt="API 类型"></span></p>
 </div>
 <div class="paragraph">
-<p>API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。</p>
+<p>API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。根据您的用户角色和 / 或 Cloud Insights 版本，您可以使用的 API 类型可能会有所不同。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="API_Swagger_Example.png" alt="API Swagger 示例"></span></p>
@@ -2022,7 +2031,7 @@
 <h2 id="api-访问令牌">API 访问令牌</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>在使用 Cloud Insights API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌用于指定的 API 类别，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类别下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。</p>
+<p>在使用 Cloud Insights API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌用于指定的 API 类型，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类型下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。</p>
 </div>
 <div class="paragraph">
 <p>创建访问令牌：</p>
@@ -2040,7 +2049,7 @@
 <p>输入令牌名称</p>
 </li>
 <li>
-<p>选择 API 类别</p>
+<p>选择 API 类型</p>
 </li>
 <li>
 <p>指定为此 API 访问授予的权限</p>
@@ -2089,15 +2098,15 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="api-类别">API 类别</h2>
+<h2 id="api-类型">API 类型</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Cloud Insights API 基于类别，目前包含以下类别：</p>
+<p>Cloud Insights API 基于类别，目前包含以下类型：</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>资产类别包含资产，查询和搜索 API 。</p>
+<p>Assets type 包含 asset ， query 和 search API 。</p>
 <div class="ulist">
 <ul>
 <li>
@@ -2116,18 +2125,21 @@
 </div>
 </li>
 <li>
-<p>数据收集类别用于检索和管理数据收集器。</p>
+<p>数据收集类型用于检索和管理数据收集器。</p>
 </li>
 <li>
-<p>数据载入类别用于检索和管理载入数据和自定义指标，例如从 Telegraf 代理检索和管理</p>
+<p>数据载入类型用于检索和管理载入数据和自定义指标，例如从 Telegraf 代理检索和管理</p>
+</li>
+<li>
+<p>日志载入用于检索和管理日志数据</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>其他类别和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 <a href="#api-documentation-swagger">"API Swagger 文档"</a>。</p>
+<p>其他类型和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 <a href="#api-documentation-swagger">"API Swagger 文档"</a>。</p>
 </div>
 <div class="paragraph">
-<p>请注意，用户有权访问的 API 类别也取决于 <a href="concept_user_roles.html">"用户角色"</a> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</p>
+<p>请注意，用户有权访问的 API 类型也取决于 <a href="concept_user_roles.html">"用户角色"</a> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</p>
 </div>
 </div>
 </div>
@@ -2147,7 +2159,7 @@
 </div>
 <div class="literalblock">
 <div class="content">
-<pre> https://&lt;tenant&gt;/rest/v1/&lt;category&gt;/&lt;object&gt;
+<pre> https://&lt;tenant&gt;/rest/v1/&lt;type&gt;/&lt;object&gt;
 例如，要从名为 _mysite.c01.cloudinsights.netapp.com_ 的租户检索所有存储，请求 URL 为：</pre>
 </div>
 </div>
@@ -2234,7 +2246,7 @@ API 将返回对象的所有可用扩展，如下所示：</pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>性能指标具有问题描述和类别，并包含一组性能摘要。例如，延迟，流量和速率。</p>
+<p>性能指标具有问题描述 和类型，并包含一组性能摘要。例如，延迟，流量和速率。</p>
 </div>
 <div class="paragraph">
 <p>性能摘要包含一个问题描述，单元，样本开始时间，样本结束时间以及一组汇总值（当前值，最小值，最大值，平均值等），这些值是从一个时间范围（ 1 小时， 24 小时， 3 天等）内的单个性能计数器计算得出的。</p>
@@ -2259,7 +2271,7 @@ API 将返回对象的所有可用扩展，如下所示：</pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Cloud Insights 支持本文档后面列出的几个性能指标类别。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。</p>
+<p>每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Cloud Insights 支持本文档后面列出的多种性能指标类型。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。</p>
 </div>
 <div class="paragraph">
 <p>性能摘要计数器是性能计数器的汇总。它会显示计数器的典型聚合值，例如最小值，最大值和平均值，以及最新观察到的值，汇总数据的时间范围，计数器的单位类型以及数据的阈值。只有阈值是可选的；其余属性是必需的。</p>
@@ -2367,13 +2379,27 @@ API 将返回对象的所有可用扩展，如下所示：</pre>
 <h2 id="使用搜索查找对象">使用搜索查找对象</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>搜索 API 是系统的一个简单入口点。API 的唯一输入参数是自由格式的字符串，生成的 JSON 包含分类结果列表。类别是指与清单不同的资产类型，例如存储，主机，数据存储库等。每个类别都将包含一个与搜索条件匹配的类别类型对象列表。</p>
+<p>搜索 API 是系统的一个简单入口点。API 的唯一输入参数是自由格式的字符串，生成的 JSON 包含分类结果列表。类型与清单不同，例如存储，主机，数据存储库等。每种类型都将包含一个与搜索条件匹配的对象列表。</p>
 </div>
 <div class="paragraph">
 <p>Cloud Insights 是一种可扩展（广泛开放）的解决方案，可与第三方流程编排，业务管理，变更控制和服务单系统以及自定义 CMDB 集成进行集成。</p>
 </div>
 <div class="paragraph">
 <p>Cloud Insight 的 RESTful API 是一个主要的集成点，支持简单有效地移动数据，并允许用户无缝访问其数据。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="禁用或撤消-api-令牌">禁用或撤消 API 令牌</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>要临时禁用 API 令牌，请在 API 令牌列表页面上单击此 API 的 " 三点 " 菜单，然后选择 <em>Disable</em> 。您可以随时使用同一菜单并选择 <em>Enable</em> 来重新启用令牌。</p>
+</div>
+<div class="paragraph">
+<p>要永久删除 API 令牌，请从菜单中选择 " 撤消 " 。您不能重新启用已撤销的令牌；您必须创建新令牌。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="API_Disable_Token.png" alt="禁用或撤消 API 令牌"></span></p>
 </div>
 </div>
 </div>
