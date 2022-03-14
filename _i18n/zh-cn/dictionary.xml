@@ -8571,4 +8571,9 @@
   <block id="794a9d57da2bd5b4b16e0d11525d4f16" category="paragraph">要永久删除 API 令牌，请从菜单中选择 " 撤消 " 。您不能重新启用已撤销的令牌；您必须创建新令牌。</block>
   <block id="57d4e87edd35e992f8e4d3c6326ac8d8" category="inline-image-macro">禁用或撤消 API 令牌</block>
   <block id="209d3712889d6411bf67708e93ef6c63" category="paragraph"><block ref="209d3712889d6411bf67708e93ef6c63" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5c478d648857e82323360d2328b3dc12" category="paragraph">请注意，以下数据收集器会按不同的原始 TiB 到受管单元速率进行计量。这些数据收集器上每 40 TiB 的未格式化容量计费为 1 个受管单元（ MU ）：</block>
+  <block id="e7289067e05f71335c1c33ab4cb274b5" category="list-text">Dell EMC ECS</block>
+  <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi 内容平台</block>
+  <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
+  <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID</block>
 </blocks>
