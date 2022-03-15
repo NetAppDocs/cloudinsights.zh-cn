@@ -7516,8 +7516,6 @@
   <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">单击 _complete_ 。</block>
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">适用于 ONTAP 9.9+ 的 NetApp 云连接</block>
   <block id="9af59f8630623af6e68c2c7648957031" category="sidebar">适用于 ONTAP 9.9+ 的云连接</block>
-  <block id="f41274c1ce20e5e73cc8aff93a484f51" category="inline-link-macro">FSX-NetApp</block>
-  <block id="47b5a4776ee0e5c60f02b4cbf9af7b50" category="cell"><block ref="47b5a4776ee0e5c60f02b4cbf9af7b50" category="inline-link-macro-rx"></block></block>
   <block id="04cfeb854c88891dec7c9991ca350912" category="summary">适用于 NetApp ONTAP 数据收集器的 Amazon FSX</block>
   <block id="e9a83bb8e223f30a5b64c2f63410624e" category="doc">适用于 NetApp ONTAP 数据收集器的 Amazon FSX</block>
   <block id="3f949888a1354566f0873f9ba5ab02fd" category="paragraph">此数据收集器从适用于 NetApp ONTAP 的 Amazon FSX 采集清单和性能数据。此数据收集器将在整个 Cloud Insights 服务区域内逐渐可用。如果您在 Cloud Insights 环境中未看到此收集器的图标，请联系您的销售人员。</block>
@@ -8613,4 +8611,11 @@
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift 说明</block>
   <block id="17fe4b51b71c74ed46456e14017c7422" category="paragraph">如果您运行的是 OpenShift 4.6- 4.8 ，则必须更改 " 特权模式 " 设置。运行以下命令以打开代理进行编辑。如果您使用的命名空间不是 "netapp-monitoring" ，请在命令行中指定此命名空间：</block>
   <block id="7413b27c2a74484b9a0ae0a20c26cd28" category="paragraph">在文件中，将 _privileged-mode ： false_ 更改为 _privileged-mode ： tru_</block>
+  <block id="4d82a1ec1af02725042c8c785564ee7a" category="inline-link-macro">适用于 NetApp ONTAP 的 Amazon FSX</block>
+  <block id="2399abbf605913dd52d0a8667ed0a87a" category="cell"><block ref="2399abbf605913dd52d0a8667ed0a87a" category="inline-link-macro-rx"></block></block>
+  <block id="71071f9eeb8b3ff7f4a52f9927b52da4" category="section-title">主机区域</block>
+  <block id="2c5e620943b15b31c38df4433ca50af9" category="paragraph">主机区域包括：</block>
+  <block id="b4d0aea9805f5f0f557898d9ea7247df" category="list-text">美国：美国东部 1</block>
+  <block id="566a4c81478be8a9ccd7d6589cefe57c" category="list-text">欧洲，中东和非洲： EU-central-1.</block>
+  <block id="7b1afe899e5efa6ba9f4935be9f98d92" category="list-text">亚太地区： AP-东南部 2</block>
 </blocks>
