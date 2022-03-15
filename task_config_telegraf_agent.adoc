@@ -451,10 +451,11 @@ NOTE: NetApp Kubernetes 监控操作员安装被视为 _Preview_ 功能，因此
 为获得最佳结果，请将这些命令添加到路径中。
 
 * 必须安装 Kube-state-metrics 。有关详细信息，请参见下文。Kube-state-metrics 会随基于操作员的安装自动安装。
+* 如果您运行的是 OpenShift 4.6 - 4.8 ，则必须遵循下面的 * OpenShift 指令 * 。
 * 如果您使用的是代理，请按照 * 为 Kubernetes 配置代理支持 * 一节中的说明进行操作。
 * 如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。基于操作员的安装可为您安装此软件。
 * 您必须具有创建 Kubernetes 集群角色和角色绑定的权限。
-* NetApp Kubernetes 监控操作员安装已通过测试，预计可与 AWS EKS 1.18 ， OpenShift 3.11 和 Rancher 2.6 配合使用。
+* NetApp Kubernetes 监控操作员安装已通过测试，预计可与 AWS EKS 1.18 - 1.21 ， OpenShift 4.6-4.8 和 Rancher 2.4 - 2.6 配合使用。
 
 
 
@@ -485,6 +486,15 @@ image:Kubernetes_Operator_Agent_Instructions.png["基于操作员的安装"]
 . 将此代码片段粘贴到 _bash_ 窗口中并执行。
 . 安装将自动进行。完成后，单击 _complete Setup_ 按钮。
 
+
+
+
+==== OpenShift 说明
+
+如果您运行的是 OpenShift 4.6- 4.8 ，则必须更改 " 特权模式 " 设置。运行以下命令以打开代理进行编辑。如果您使用的命名空间不是 "netapp-monitoring" ，请在命令行中指定此命名空间：
+
+ kubectl edit agent agent-monitoring-netapp -n netapp-monitoring
+在文件中，将 _privileged-mode ： false_ 更改为 _privileged-mode ： tru_
 
 
 

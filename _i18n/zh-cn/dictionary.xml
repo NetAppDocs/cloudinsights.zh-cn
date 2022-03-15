@@ -8322,7 +8322,6 @@
   <block id="c17822d3ce9eb04fef37fc6f007b859e" category="list-text">NetApp Kubernetes 监控操作员配置。这是为 Kubernetes 建议的安装方法。</block>
   <block id="90997e8d0c35126fbf3794f175f2f0f3" category="paragraph">安装说明因您选择的不同而异。</block>
   <block id="7851bfe0f67f9341140f846ee10fd94d" category="admonition">NetApp Kubernetes 监控操作员安装被视为 _Preview_ 功能，因此可能会发生更改。</block>
-  <block id="3c320073d2d3a48b02cd316c37a184cd" category="list-text">NetApp Kubernetes 监控操作员安装已通过测试，预计可与 AWS EKS 1.18 ， OpenShift 3.11 和 Rancher 2.6 配合使用。</block>
   <block id="fcbb3d16fd787d5bff5935ba723121de" category="cell">Kubernetes v1.17 及更高版本</block>
   <block id="fd72cd4499dbb53af23386bef5341358" category="section-title">安装 NetApp Kubernetes 监控操作员</block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：</block>
@@ -8609,4 +8608,9 @@
   <block id="a8c299f3c69c7a12958c6df554610a93" category="paragraph">在小工具查询中筛选为 _Contextual ；为字段选择筛选器值时，该查询的其他筛选器将显示与该筛选器相关的值。例如，在为特定对象 _Name_ 设置筛选器时，用于筛选 _Model_ 的字段将仅显示与该对象名称相关的值。</block>
   <block id="8be0f44cccc6817c6fffc31d9156d3c0" category="paragraph">上下文筛选还包括适用场景 信息板页面变量（仅限文本类型属性或标注）。为一个变量选择存储器值时，使用相关对象的任何其他变量将仅根据这些相关变量的上下文显示可能的筛选值。</block>
   <block id="efbb3ca459b4e1c502f697d1a65cc3d3" category="paragraph">在变量中筛选为 _Contextual ；为某个变量选择一个或多个筛选值时，页面上的其他变量将仅显示与该筛选器相关的值。例如，将变量筛选器设置为特定的 storage _Model_ 时，设置为 storage _Name_ 筛选的任何变量将仅显示与该型号相关的值。</block>
+  <block id="2c724476d225980fc3efb1e524c8e36a" category="list-text">如果您运行的是 OpenShift 4.6 - 4.8 ，则必须遵循下面的 * OpenShift 指令 * 。</block>
+  <block id="0317b3ef8ec7744a6871d2832b20779b" category="list-text">NetApp Kubernetes 监控操作员安装已通过测试，预计可与 AWS EKS 1.18 - 1.21 ， OpenShift 4.6-4.8 和 Rancher 2.4 - 2.6 配合使用。</block>
+  <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift 说明</block>
+  <block id="17fe4b51b71c74ed46456e14017c7422" category="paragraph">如果您运行的是 OpenShift 4.6- 4.8 ，则必须更改 " 特权模式 " 设置。运行以下命令以打开代理进行编辑。如果您使用的命名空间不是 "netapp-monitoring" ，请在命令行中指定此命名空间：</block>
+  <block id="7413b27c2a74484b9a0ae0a20c26cd28" category="paragraph">在文件中，将 _privileged-mode ： false_ 更改为 _privileged-mode ： tru_</block>
 </blocks>
