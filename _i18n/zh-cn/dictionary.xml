@@ -8484,11 +8484,6 @@
   <block id="b3d5b2b9a23a5d11e154dd02b6d8f1d0" category="doc">配置 Dell EMC VNX 统一数据收集器</block>
   <block id="3b4918cfceb6d22dc06a39882714f272" category="paragraph">在配置方面， Dell EMC VNX Unified （ SSH ）数据收集器需要控制站的 IP 地址以及只读用户名和密码。</block>
   <block id="31f2d1341b001f9e4ba9f04b36b9fbd1" category="cell">此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时， 使用 CI 在虚拟机管理程序上报告的 Cloud Insights 模式集群名称— Cloud Insights 会在 vSphere 集群名称前面加上 vSphere 数据中心名称和反斜杠— "DC1\clusterA" 是 Cloud Insights 将在数据中心 DC1 的 clusterA 中报告的集群名称</block>
-  <block id="f2be52b4efc2ef40ce2e8e30d38bcac1" category="paragraph">达到或超过受监控的阈值和条件时， Cloud Insights 将创建警报。一个监控器可以具有 _Warning_ 阈值， _critical_ 阈值，也可以同时具有这两者。</block>
-  <block id="de1246f2ba95371b711d65f46fa80725" category="paragraph">您可以使用监控器为 " 基础架构 " 对象（例如存储， VM ， EC2 和端口）以及 " 集成 " 数据（例如为 Kubernetes ， ONTAP 高级指标和 Telegraf 插件收集的数据）设置阈值。监控超过阈值时向您发出的警报，您可以设置警告级别警报，严重级别警报或两者的阈值。</block>
-  <block id="a1a0b877038a8779cc93f4cbc4a6b3e3" category="paragraph">请参见下面的 <block ref="a0423879c34ca2a3017b3959874444e4" category="inline-link-macro-rx"></block> 文档。</block>
-  <block id="8d5905c4fc039f80da9bafa3d4cc6555" category="section-title">创建监控器</block>
-  <block id="684fd3873f49a70f4bba03d396531c40" category="paragraph">选择监控器类型后，将显示监控器配置对话框。</block>
   <block id="e50e258ecc9eaa88d6c653c3a24cb319" category="section-title">2022 年 3 月</block>
   <block id="6051317bfc603cd4488e0e5a5946f64c" category="inline-link-macro">适用于 ONTAP 9.9+ 的 NetApp 云连接</block>
   <block id="81b63bcf37c281fa62b348f70cb153a7" category="paragraph">。 <block ref="abed7fb19b7000e31d7e181bcda0de86" category="inline-link-macro-rx"></block> 数据收集器无需安装外部采集单元，从而简化了故障排除，维护和初始部署。</block>
@@ -8596,4 +8591,20 @@
   <block id="bde543e95a082d314b18ec0dd4054254" category="cell">如果违反严重阈值：…1 ，则需要立即采取措施以最大限度地减少服务中断。请考虑将快照配置为在快照预留已满…2 时使用卷中的数据空间。考虑删除一些可能不再需要的旧快照以释放空间……如果违反警告阈值，计划立即采取以下操作：…1 。请考虑增加卷中的快照预留空间以适应增长…2 。请考虑将快照配置为在快照预留空间已满时使用卷中的数据空间</block>
   <block id="478d052d4cfb6a52aa1167cc91369a53" category="cell">FSX 卷缓存未命中率</block>
   <block id="3285dee4815080320066f09ef70efdc0" category="cell">如果违反严重阈值，则应立即采取措施以最大限度地减少服务中断： 1.将某些工作负载移出卷的节点以减少 IO 负载 2 。通过 QoS 限制降低同一节点上较低优先级工作负载的需求…在违反警告阈值时考虑立即采取措施： 1.将某些工作负载移出卷的节点以减少 IO 负载 2 。通过 QoS 限制 3 降低同一节点上较低优先级工作负载的需求。更改工作负载特征（块大小，应用程序缓存等）</block>
+  <block id="3f5fb2a45a144339f9591a104342f79b" category="paragraph">通过监控，您可以为存储， VM ， EC2 和端口等 " 基础架构 " 对象生成的指标以及为 Kubernetes ， ONTAP 高级指标和 Telegraf 插件收集的 " 集成 " 数据设置阈值。当超过警告级别或严重级别阈值时，这些 _metric_ 监控器会向您发出警报。</block>
+  <block id="e730b9c349889018dc9deaccaa5a438b" category="paragraph">您还可以创建监控器，以便在检测到指定的 _log events_之后 触发警告，严重或信息级别的警报。</block>
+  <block id="9fbe6c7c1c16d6c2079f167ca8001516" category="paragraph">Cloud Insights 提供了许多 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 也可以根据您的环境进行选择。</block>
+  <block id="4712a61ef2a234a93ba9db41c631d5b8" category="section-title">衡量指标还是日志监控？</block>
+  <block id="30d058d2916c7c827bc5728654ad1a8d" category="paragraph">选择监控器类型后，将显示监控器配置对话框。配置因要创建的监控器类型而异。</block>
+  <block id="f9014555d08521285ca544350f9dc25a" category="paragraph">此时将显示以下监控组。组名称旁边会显示组中包含的监控器数量。</block>
+  <block id="d9e85911262ba37a5d999e863491d888" category="list-text">* 自定义监控器 * 列出用户创建的所有监控器。</block>
+  <block id="70d96c6a41afb254c16b7b9540d18895" category="list-text">* 已暂停的监控器 * 将列出已被 Cloud Insights 暂停的所有系统监控器。</block>
+  <block id="69a8fd4125eb679015842f32069fd971" category="list-text">Cloud Insights 还将显示许多 * 系统监控组 * ，其中将列出一个或多个组 <block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block>，包括 ONTAP 基础架构和工作负载监控器。</block>
+  <block id="c3c2ba86297c67abf1cd56f0d77e8cac" category="section-title">已暂停的监控器</block>
+  <block id="1f4408604ff975de8817060ea3a7330a" category="paragraph">只有当 Cloud Insights 已暂停一个或多个监控器时，才会显示此组。如果监控器生成的警报过多或持续，则可能会暂停。如果此监控器是自定义监控器，请修改条件以防止持续发出警报，然后恢复此监控器。解决导致暂停的问题描述 后，此监控器将从暂停的监控器组中删除。</block>
+  <block id="5f8a706a9be7411e7b652c8139cb2a37" category="paragraph">只要您的环境包含监控器所需的设备和 / 或日志可用性，这些组就会显示 Cloud Insights 提供的监控器。</block>
+  <block id="fc077d90413e1ab9ea5eb4777a02ade3" category="paragraph">无法修改，移动到另一个组或删除系统定义的监控器。但是，您可以复制系统监控器并修改或移动此副本。</block>
+  <block id="57eed663adf466f4dcd0ba0a3a24dac5" category="paragraph">系统监控器可能包括 ONTAP 基础架构（存储，卷等）或工作负载（例如日志监控器）或其他组的监控器。NetApp 不断评估客户需求和产品功能，并会根据需要更新或添加到系统监控器和组中。</block>
+  <block id="17364dd4c2252b12bb9eb895bd6e949b" category="paragraph">您可以根据需要创建自己的组来包含监控器。例如，您可能需要为所有存储相关监控器配置一个组。</block>
+  <block id="82f4f788b410ddeadb8f7768592f9864" category="list-text">只有当系统已暂停监控器时，才会显示 * 已暂停监控器 * 。</block>
 </blocks>
