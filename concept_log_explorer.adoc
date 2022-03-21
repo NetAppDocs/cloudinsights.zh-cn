@@ -12,9 +12,9 @@ Cloud Insights 日志资源管理器是一个功能强大的工具，可用于�
 
 要开始浏览日志，请单击 * 查询 >+New Log Query* 。
 
-image:LogExplorerMenu.png["日志查询菜单， 640"]
+image:LogExplorerMenu.png["日志查询菜单， 480"]
 
-从列表中选择一个可用日志。此列表可能因您当前的 Cloud Insights 环境配置而异。
+从列表中选择一个可用日志。
 
 image:LogExplorer_ChooseLog.png["选择日志"]
 

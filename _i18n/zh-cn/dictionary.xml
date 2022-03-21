@@ -7965,7 +7965,6 @@
   <block id="534bf0b54b6a2f4706041a3ede410108" category="list-text">必须提供以下命令： curl ， sudo ， openssl ， sha256sum 和 kubectl</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">日志资源管理器</block>
   <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">要开始浏览日志，请单击 * 查询 &gt;+New Log Query* 。</block>
-  <block id="f6ed4a34f2dd3f6ee334d4bce6755dc2" category="paragraph">从列表中选择一个可用日志。此列表可能因您当前的 Cloud Insights 环境配置而异。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">选择日志</block>
   <block id="907f85b0ae170f8312420eb89d567ed5" category="paragraph"><block ref="907f85b0ae170f8312420eb89d567ed5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">您可以设置筛选器以进一步细化查询结果。例如，要查找显示失败的所有日志消息，请为包含单词 "Failed" 的 _MESSAGES 设置一个筛选器。</block>
@@ -8615,7 +8614,8 @@
   <block id="7b1afe899e5efa6ba9f4935be9f98d92" category="list-text">亚太地区： AP-东南部 2</block>
   <block id="a042a0a750858e6060db4dfe64a00752" category="summary">日志资源管理器是一个功能强大的工具，可用于通过不同的系统日志调查问题。</block>
   <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">Cloud Insights 日志资源管理器是一个功能强大的工具，可用于查询系统日志。除了有助于调查之外，您还可以将日志查询保存在 Monitor 中，以便在激活特定日志触发器后发出警报。</block>
-  <block id="d12e6aa737bd25ac8fe55681d55277f3" category="inline-image-macro">日志查询菜单， 640</block>
-  <block id="8a6dd50ddfea8f64b33ecdec002efa14" category="paragraph"><block ref="8a6dd50ddfea8f64b33ecdec002efa14" category="inline-image-macro-rx" type="image"></block></block>
   <block id="20d54bcfce082123adf73a66c93e11f1" category="admonition">根据您的环境，可供查询的日志类型可能会有所不同。随着时间的推移，可能会添加其他日志类型。</block>
+  <block id="5e618eb9ef1c438e7d5d6afda86417f3" category="inline-image-macro">日志查询菜单， 480</block>
+  <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">从列表中选择一个可用日志。</block>
 </blocks>
