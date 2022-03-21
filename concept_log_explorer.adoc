@@ -2,24 +2,24 @@
 sidebar: sidebar 
 permalink: concept_log_explorer.html 
 keywords: logs, monitors, alerts, 
-summary: 日志资源管理器是一个功能强大的工具，可用于调查问题。 
+summary: 日志资源管理器是一个功能强大的工具，可用于通过不同的系统日志调查问题。 
 ---
 = 日志资源管理器
 
 
 [role="lead"]
-Cloud Insights 日志资源管理器是一个功能强大的工具，可用于查询 EMS 和 Kubernetes 日志。除了有助于调查之外，您还可以将日志查询保存在监控器中，以便在日志触发器激活后提供警报。
+Cloud Insights 日志资源管理器是一个功能强大的工具，可用于查询系统日志。除了有助于调查之外，您还可以将日志查询保存在 Monitor 中，以便在激活特定日志触发器后发出警报。
 
 要开始浏览日志，请单击 * 查询 >+New Log Query* 。
 
-image:LogExplorerMenu.png["日志查询菜单"]
+image:LogExplorerMenu.png["日志查询菜单， 640"]
 
 从列表中选择一个可用日志。此列表可能因您当前的 Cloud Insights 环境配置而异。
 
 image:LogExplorer_ChooseLog.png["选择日志"]
 
 
-NOTE: 可通过预览访问一组选定的日志；随着时间的推移，还可以访问其他日志。
+NOTE: 根据您的环境，可供查询的日志类型可能会有所不同。随着时间的推移，可能会添加其他日志类型。
 
 您可以设置筛选器以进一步细化查询结果。例如，要查找显示失败的所有日志消息，请为包含单词 "Failed" 的 _MESSAGES 设置一个筛选器。
 

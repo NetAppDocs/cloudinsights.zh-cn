@@ -7963,16 +7963,11 @@
   <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode</block>
   <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">必须提供以下命令： curl ， sudo ， openssl 和 shasum</block>
   <block id="534bf0b54b6a2f4706041a3ede410108" category="list-text">必须提供以下命令： curl ， sudo ， openssl ， sha256sum 和 kubectl</block>
-  <block id="c6baf991a66b3aacc47987de1641b11e" category="summary">日志资源管理器是一个功能强大的工具，可用于调查问题。</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">日志资源管理器</block>
-  <block id="6f0a85aa190cf61bbcf2d473f4c6c50a" category="paragraph">Cloud Insights 日志资源管理器是一个功能强大的工具，可用于查询 EMS 和 Kubernetes 日志。除了有助于调查之外，您还可以将日志查询保存在监控器中，以便在日志触发器激活后提供警报。</block>
   <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">要开始浏览日志，请单击 * 查询 &gt;+New Log Query* 。</block>
-  <block id="c7175e137df374ab419bd8746e829439" category="inline-image-macro">日志查询菜单</block>
-  <block id="2476c675ea0ab08eb68e77616d8026cf" category="paragraph"><block ref="2476c675ea0ab08eb68e77616d8026cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6ed4a34f2dd3f6ee334d4bce6755dc2" category="paragraph">从列表中选择一个可用日志。此列表可能因您当前的 Cloud Insights 环境配置而异。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">选择日志</block>
   <block id="907f85b0ae170f8312420eb89d567ed5" category="paragraph"><block ref="907f85b0ae170f8312420eb89d567ed5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b7588d3859ad2b6d675ed5520f12a393" category="admonition">可通过预览访问一组选定的日志；随着时间的推移，还可以访问其他日志。</block>
   <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">您可以设置筛选器以进一步细化查询结果。例如，要查找显示失败的所有日志消息，请为包含单词 "Failed" 的 _MESSAGES 设置一个筛选器。</block>
   <block id="e290a1958705f522c7d916c05fcad28c" category="admonition">您可以开始在筛选器字段中键入所需的文本；键入时， Cloud Insights 将提示您创建包含字符串的通配符搜索。</block>
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">结果将显示在一个图形中，其中显示了所示每个时间段内的日志实例数。图下方是日志条目临时文件。图形和条目会根据选定时间范围自动刷新。</block>
@@ -8618,4 +8613,9 @@
   <block id="b4d0aea9805f5f0f557898d9ea7247df" category="list-text">美国：美国东部 1</block>
   <block id="566a4c81478be8a9ccd7d6589cefe57c" category="list-text">欧洲，中东和非洲： EU-central-1.</block>
   <block id="7b1afe899e5efa6ba9f4935be9f98d92" category="list-text">亚太地区： AP-东南部 2</block>
+  <block id="a042a0a750858e6060db4dfe64a00752" category="summary">日志资源管理器是一个功能强大的工具，可用于通过不同的系统日志调查问题。</block>
+  <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">Cloud Insights 日志资源管理器是一个功能强大的工具，可用于查询系统日志。除了有助于调查之外，您还可以将日志查询保存在 Monitor 中，以便在激活特定日志触发器后发出警报。</block>
+  <block id="d12e6aa737bd25ac8fe55681d55277f3" category="inline-image-macro">日志查询菜单， 640</block>
+  <block id="8a6dd50ddfea8f64b33ecdec002efa14" category="paragraph"><block ref="8a6dd50ddfea8f64b33ecdec002efa14" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="20d54bcfce082123adf73a66c93e11f1" category="admonition">根据您的环境，可供查询的日志类型可能会有所不同。随着时间的推移，可能会添加其他日志类型。</block>
 </blocks>
