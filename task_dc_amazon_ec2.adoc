@@ -132,7 +132,7 @@ Cloud Insights 支持在一个 AWS 数据收集器中收集 AWS 的子帐户。�
 * 在 * 跨帐户角色 * 字段的 Cloud Insights AWS 数据收集器 * 高级配置 * 部分中输入此角色名称字符串。
 
 
-最佳实践：强烈建议将 AWS 预定义的 _AmazonEC2ReadOnlyAccess_ 策略分配给 ECS 主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。
+最佳实践：强烈建议将 AWS 预定义的 _AmazonEC2ReadOnlyAccess_ 策略分配给 EC2 主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。
 
 有关配置环境以允许 Cloud Insights 从 AWS 子帐户收集数据的信息，请参见以下内容：
 
