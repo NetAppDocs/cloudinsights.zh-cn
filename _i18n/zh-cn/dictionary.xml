@@ -3055,8 +3055,6 @@
   <block id="0a36ca304e21eb8063b7869dea7a355b" category="paragraph">* 潜在攻击： *</block>
   <block id="b81879140b6197b1eee86a1d325a0a81" category="list-text">检测到潜在攻击的日期和时间</block>
   <block id="5efe06a62d35c2fe7354ce05b69e8db6" category="list-text">警报的 _Status_ ：</block>
-  <block id="17ca445149f5daf4135fa66ee7989d5e" category="list-text">新增（这是新警报的默认设置）</block>
-  <block id="c9413dd7682a45da9ecc9efa8cea47d7" category="list-text">正在进行中</block>
   <block id="f691f042a559b1c1a4f89826c6f75760" category="list-text">已解决</block>
   <block id="e2ccdd369c3ae64bfd036d550bee4d1d" category="list-text">已取消</block>
   <block id="dd67ee05c982c60e1a69e9ad946a2e63" category="paragraph">管理员可以更改警报状态并添加注释以协助调查。</block>
@@ -8618,4 +8616,9 @@
   <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">从列表中选择一个可用日志。</block>
   <block id="d64c94573b121a79214c7bf24c4a546d" category="paragraph">最佳实践：强烈建议将 AWS 预定义的 _AmazonEC2ReadOnlyAccess_ 策略分配给 EC2 主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。</block>
+  <block id="f0617472d6b597b6d93003c4c1003ad6" category="list-text">* 新增 * ：这是新警报的默认设置。</block>
+  <block id="124bb595dee29c483fb214a5dfd6be2a" category="list-text">* 进行中 * ：某个或多个团队成员正在调查此警报。</block>
+  <block id="ac5ce495bc5231774a8d1baa382ee7e1" category="list-text">* 已解决 * ：警报已被团队成员标记为已解决。</block>
+  <block id="10b1c70c9f5425c76de374b73edb3311" category="list-text">* 已取消 * ：警报已被取消且不再处于活动状态。</block>
+  <block id="dc102c5c05c2c1199e156360b71b6081" category="list-text">警报的 _Status_ （新建，正在进行等）</block>
 </blocks>
