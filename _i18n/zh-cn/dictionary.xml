@@ -8623,4 +8623,17 @@
   <block id="bbf3d6c7f63841c53e523ee9bd1f6985" category="list-text">Rancher 2.4 - 2.6 。</block>
   <block id="e2c9709b9d8f51841ea22d5bb63af5db" category="list-text">如果您运行的是 OpenShift 4.6 - 4.8 ，则除了确保满足这些前提条件之外，还必须遵循下面的 * OpenShift 指令 * 。</block>
   <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。</block>
+  <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成数据的代理。</block>
+  <block id="f09825d109ed4681880410bb47684198" category="doc">在 Kubernetes 上配置代理</block>
+  <block id="4b0a31d3afe47e26997b3d6c99c37152" category="inline-link-macro">* 转到此处 *</block>
+  <block id="f043e0e94a86a741ec3cfa80a7184063" category="admonition">此页面当前正在进行中。有关在 Kubernetes 上安装代理的最新说明， <block ref="697dca91101784dbecc7595d7733df90" category="inline-link-macro-rx"></block>。</block>
+  <block id="990b78672b6335498977a301125673d5" category="admonition">如果要在安装代理之前验证安装文件，请阅读关于 <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
+  <block id="ae8396b4c25ba8af80c0396cbac8dbb2" category="paragraph">要在 Kubernetes 上安装代理，必须先执行以下操作：</block>
+  <block id="8270d1410ea5852ae1772fd6e21a5b85" category="list-text">为主机选择 Kubernetes 平台</block>
+  <block id="9be51db2ab39984556571e44a8cd71ff" category="list-text">请按照其余步骤进行操作。</block>
+  <block id="9ac0dd27d420b7b48ca72e463ae95e18" category="inline-link-macro">这些说明</block>
+  <block id="6981ef377139f8296f4ae0aa44bc108d" category="paragraph">要在 Windows ， Linux 或 Mac 上安装代理，请按照 <block ref="bd07fc5e27e6fac57c0afecd246768d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="4399aa6f1f3bf7573a388f265d2ad7ca" category="section-title">在 Kubernetes 上安装代理</block>
+  <block id="f997e79142f159c33823b9deeab809eb" category="cell">在 Kubernetes 上，我的 Telegraf ReplicaSet Pod 报告以下错误： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes ， PKI/etcd/server.crt ： /etc/Kubernetes ， crt/etcd/server.key ：打开 /etc/Kubernetes ， pki/etcd/server.key ： open /etc/Kubernetes ， pki/etcd/server.key ： no 此类文件或目录</block>
+  <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod 应在指定为主节点或 etcd 节点上运行。如果 ReplicaSet Pod 未在其中一个节点上运行，您将收到这些错误。检查您的主 /etcd 节点是否具有此类节点的影响。如果是，请将必要的容错添加到 Telegraf ReplicaSet ，即 Teleaf-RS 中。例如，编辑 ReplicaSet... kubectl edit RS ceaaf-rs ... 并将适当的容错添加到规范中。然后，重新启动 ReplicaSet Pod 。</block>
 </blocks>

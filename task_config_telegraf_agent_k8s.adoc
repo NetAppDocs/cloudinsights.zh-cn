@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task_config_telegraf_agent.html 
-keywords: telegraf, installation, install, agent, telegraf agent 
-summary: Cloud Insights 支持 Telegraf 作为其代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。 
+permalink: task_config_telegraf_agent_k8s.html 
+keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks 
+summary: Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成数据的代理。 
 ---
-= 配置代理以收集数据
+= 在 Kubernetes 上配置代理
 
 
 [role="lead"]
@@ -13,10 +13,13 @@ Cloud Insights 使用 link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf
 Cloud Insights 的当前 Telegraf 版本为 * 。 1.19.3 * 。
 
 
+IMPORTANT: 此页面当前正在进行中。有关在 Kubernetes 上安装代理的最新说明， link:task_config_telegraf_agent.html["* 转到此处 *"]。
+
+
 NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步 Agent 计算机上的时间。
 
 
-NOTE: 如果要在安装代理之前验证安装文件，请参见以下章节 <<Verifying Checksums>>。
+NOTE: 如果要在安装代理之前验证安装文件，请阅读关于 <<Verifying Checksums>>。
 
 
 
@@ -24,23 +27,16 @@ NOTE: 如果要在安装代理之前验证安装文件，请参见以下章节 <
 
 如果您要安装服务数据收集器，但尚未配置代理，则系统会提示您先为相应的操作系统安装代理。本主题介绍如何在以下操作系统上安装 Telegraf 代理：
 
-* <<Windows>>
-* <<RHEL and CentOS>>
-* <<Ubuntu and Debian>>
-* <<macOS>>
-* <<Kubernetes>>
-
-
-要安装代理，无论您使用的是哪个平台，都必须先执行以下操作：
+要在 Kubernetes 上安装代理，必须先执行以下操作：
 
 . 登录到要用于代理的主机。
 . 登录到 Cloud Insights 站点并转到 * 管理员 > 数据收集器 * 。
 . 单击 * + Data Collector* 并选择要安装的数据收集器。
+. 为主机选择 Kubernetes 平台
+. 请按照其余步骤进行操作。
 
 
-. 为您的主机选择合适的平台（ Windows ， Linux ， macOS 等）
-. 对每个平台执行其余步骤。
-
+要在 Windows ， Linux 或 Mac 上安装代理，请按照 link:/task_config_telegraf_agent.html["这些说明"]。
 
 
 NOTE: 在主机上安装代理后，无需在该主机上重新安装代理。
@@ -53,384 +49,7 @@ NOTE: 如果您使用的是代理，请在安装 Telegraf 代理之前阅读适�
 
 
 
-=== Windows
-
-image:AgentInstallWindows.png["Windows 代理安装"]
-
-.前提条件：
-* 必须安装 PowerShell
-* 如果您使用的是代理，请按照 * 为 Windows 配置代理支持 " 一节中的说明进行操作。
-
-
-.在 Windows 上安装代理的步骤：
-. 选择代理访问密钥。
-. 从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。
-. 打开 PowerShell 窗口
-. 将命令粘贴到 PowerShell 窗口中，然后按 Enter 键。
-. 此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。
-. 单击 * 完成 * 或 * 继续 *
-
-
-安装代理后，您可以使用以下命令启动 / 停止此服务：
-
-....
-Start-Service telegraf
-Stop-Service telegraf
-....
-
-
-==== 为 Windows 配置代理支持
-
-
-NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
-
-对于驻留在代理后面的系统，请执行以下操作以设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量 * 先前 * 以安装 Telegraf 代理：
-
- [System.Environment]::SetEnvironmentVariable(“https_proxy”, “<proxy_server>:<proxy_port>”, [System.EnvironmentVariableTarget]::Machine)
-
-
-==== 卸载代理
-
-要在 Windows 上卸载代理，请在 PowerShell 窗口中执行以下操作：
-
-. 停止并删除 Telegraf 服务：
-+
-....
-Stop-Service telegraf
-sc.exe delete telegraf
-....
-. 从存储中删除证书：
-+
-....
-cd Cert:\CurrentUser\Root
-rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
-....
-. 删除 _C ： \Program Files\Ceraf_ 文件夹以删除二进制文件，日志和配置文件
-. 从注册表中删除 _system\CurrentControlSet\Services\EventLog\Application\Ceaf_ 密钥
-
-
-
-
-==== 升级代理
-
-要升级电报代理，请执行以下操作：
-
-. 停止并删除此电报服务：
-+
-....
-Stop-Service telegraf
-sc.exe delete telegraf
-....
-. 从注册表中删除 _system\CurrentControlSet\Services\EventLog\Application\Ceaf_ 密钥
-. 删除 _C ： \Program Files\celaf\celeaf.conf
-. 删除 _C ： \Program Files\caraf\caraf.exe
-. link:#windows["安装新代理"]。
-
-
-
-
-=== RHEL 和 CentOS
-
-image:Agent_Requirements_Rhel.png["RHEL/CentOS 代理安装"]
-
-.前提条件：
-* 必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode
-* 如果您使用的是代理，请按照 * 为 RHEL/CentOS* 配置代理支持 " 一节中的说明进行操作。
-
-
-.在 RHEL/CentOS 上安装代理的步骤：
-. 选择代理访问密钥。
-. 从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。
-. 打开 Bash 窗口
-. 将命令粘贴到 Bash 窗口中，然后按 Enter 键。
-. 此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。
-. 单击 * 完成 * 或 * 继续 *
-
-
-安装代理后，您可以使用以下命令启动 / 停止此服务：
-
-如果您的操作系统使用的是 systemd （ CentOS 7+ 和 RHEL 7+ ）：
-
-....
-sudo systemctl start telegraf
-sudo systemctl stop telegraf
-....
-如果您的操作系统未使用 systemd （ CentOS 7+ 和 RHEL 7+ ）：
-
-....
-sudo service telegraf start
-sudo service telegraf stop
-....
-
-
-==== 为 RHEL/CentOS 配置代理支持
-
-
-NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
-
-对于驻留在代理后面的系统，请执行以下步骤 * 先前 * 以安装 Telegraf 代理：
-
-. 为当前用户设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量：
-+
- export https_proxy=<proxy_server>:<proxy_port>
-. 创建 _/etc/default/tengraf_ ，并插入 _https_proxy_and/or _http_proxy_ 变量的定义：
-+
- https_proxy=<proxy_server>:<proxy_port>
-
-
-
-
-==== 卸载代理
-
-要在 Rhel/CentOS 上卸载代理，请在 Bash 终端中执行以下操作：
-
-. 停止 Telegraf 服务：
-+
-....
-systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ and RHEL 7+)
-/etc/init.d/telegraf stop (for systems without systemd support)
-....
-. 删除 Telegraf 代理：
-+
- yum remove telegraf
-. 删除可能遗留的任何配置或日志文件：
-+
-....
-rm -rf /etc/telegraf*
-rm -rf /var/log/telegraf*
-....
-
-
-
-
-==== 升级代理
-
-要升级电报代理，请执行以下操作：
-
-. 停止电报服务：
-+
-....
-systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ and RHEL 7+)
-/etc/init.d/telegraf stop (for systems without systemd support)
-....
-. 删除先前的电报代理：
-+
- yum remove telegraf
-. link:#rhel-and-centos["安装新代理"]。
-
-
-
-
-=== Ubuntu 和 Debian
-
-image:Agent_Requirements_Ubuntu.png["Ubuntu 或 Debian 代理安装"]
-
-.前提条件：
-* 必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode
-* 如果您使用的是代理，请按照 * 为 Ubuntu 或 Debian 配置代理支持 * 一节中的说明进行操作。
-
-
-.在 Debian 或 Ubuntu 上安装代理的步骤：
-. 选择代理访问密钥。
-. 从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。
-. 打开 Bash 窗口
-. 将命令粘贴到 Bash 窗口中，然后按 Enter 键。
-. 此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。
-. 单击 * 完成 * 或 * 继续 *
-
-
-安装代理后，您可以使用以下命令启动 / 停止此服务：
-
-如果您的操作系统使用的是 systemd ：
-
-....
-sudo systemctl start telegraf
-sudo systemctl stop telegraf
-....
-如果您的操作系统未使用 systemd ：
-
-....
-sudo service telegraf start
-sudo service telegraf stop
-....
-
-
-==== 为 Ubuntu 或 Debian 配置代理支持
-
-
-NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
-
-对于驻留在代理后面的系统，请执行以下步骤 * 先前 * 以安装 Telegraf 代理：
-
-. 为当前用户设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量：
-+
- export https_proxy=<proxy_server>:<proxy_port>
-. 创建 /etc/default/celaff ，并插入 _https_proxy_and/or _http_proxy_ 变量的定义：
-+
- https_proxy=<proxy_server>:<proxy_port>
-
-
-
-
-==== 卸载代理
-
-要在 Ubuntu 或 Debian 上卸载代理，请在 Bash 终端中运行以下命令：
-
-. 停止 Telegraf 服务：
-+
-....
-systemctl stop telegraf (If your operating system is using systemd)
-/etc/init.d/telegraf stop (for systems without systemd support)
-....
-. 删除 Telegraf 代理：
-+
- dpkg -r telegraf
-. 删除可能遗留的任何配置或日志文件：
-+
-....
-rm -rf /etc/telegraf*
-rm -rf /var/log/telegraf*
-....
-
-
-
-
-==== 升级代理
-
-要升级电报代理，请执行以下操作：
-
-. 停止电报服务：
-+
-....
-systemctl stop telegraf (If your operating system is using systemd)
-/etc/init.d/telegraf stop (for systems without systemd support)
-....
-. 删除先前的电报代理：
-+
- dpkg -r telegraf
-. link:#ubuntu-and-debian["安装新代理"]。
-
-
-
-
-=== macOS
-
-image:Agent_Requirements_Macos.png["安装 macOS 代理"]
-
-.前提条件：
-* 必须提供以下命令： curl ， sudo ， openssl 和 shasum
-* 如果您使用的是代理，请按照 * 为 macOS* 配置代理支持 " 一节中的说明进行操作。
-
-
-.在 macOS 上安装代理的步骤：
-. 选择代理访问密钥。
-. 从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。
-. 打开 Bash 窗口
-. 将命令粘贴到 Bash 窗口中，然后按 Enter 键。
-. 此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。
-. 如果您之前使用 Homebrew 安装了 Telegraf 代理，则系统将提示您将其卸载。卸载先前安装的 Telegraf 代理后，重新运行上述步骤 5 中的命令。
-. 单击 * 完成 * 或 * 继续 *
-
-
-安装代理后，您可以使用以下命令启动 / 停止此服务：
-
-....
-sudo launchctl start telegraf
-sudo launchctl stop telegraf
-....
-
-
-==== 为 macOS 配置代理支持
-
-
-NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
-
-对于驻留在代理后面的系统，请执行以下操作，为当前用户 * 先前 * 设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量，以安装 Telegraf 代理：
-
- export https_proxy=<proxy_server>:<proxy_port>
-* 安装 Telegraf 代理之后，在 _/Applications/Telegraf.app/Contents/telegraf.plist_: 中添加并设置适当的 _https_proxy_and/or _http_proxy_ 变量
-
-....
-…
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-   <key>EnvironmentVariables</key>
-   <dict>
-          <key>https_proxy</key>
-          <string><proxy_server>:<proxy_port></string>
-   </dict>
-   <key>Program</key>
-   <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-   <key>Label</key>
-   <string>telegraf</string>
-   <key>ProgramArguments</key>
-   <array>
-     <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-     <string>--config</string>
-     <string>/usr/local/etc/telegraf.conf</string>
-     <string>--config-directory</string>
-     <string>/usr/local/etc/telegraf.d</string>
-   </array>
-   <key>RunAtLoad</key>
-   <true/>
-</dict>
-</plist>
-…
-....
-然后，加载上述更改后重新启动 Telegraf ：
-
-....
-sudo launchctl stop telegraf
-sudo launchctl unload -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl load -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl start telegraf
-....
-
-
-==== 卸载代理
-
-要在 macOS 上卸载代理，请在 Bash 终端中运行以下命令：
-
-. 停止 Telegraf 服务：
-+
- sudo launchctl stop telegraf
-. 卸载此电报代理：
-+
-....
-cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. 删除可能遗留的任何配置或日志文件：
-+
-....
-rm -rf /usr/local/etc/telegraf*
-rm -rf /usr/local/var/log/telegraf.*
-....
-
-
-
-
-==== 升级代理
-
-要升级电报代理，请执行以下操作：
-
-. 停止电报服务：
-+
- sudo launchctl stop telegraf
-. 卸载先前的电报代理：
-+
-....
-cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. link:#macos["安装新代理"]。
-
-
-
-
-=== Kubernetes
+=== 在 Kubernetes 上安装代理
 
 Kubernetes 提供了两种数据收集方式：
 
