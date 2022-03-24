@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
   <head class="at-element-marker">
-  <title>配置代理以收集数据</title>
+  <title>在 Kubernetes 上配置代理</title>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
   <meta http-equiv="language" content="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="配置代理以收集数据" />
+  <meta property="og:title" content="在 Kubernetes 上配置代理" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_agent.html" />
-	<meta property="og:description" content="Cloud Insights 支持 Telegraf 作为其代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_agent_k8s.html" />
+	<meta property="og:description" content="Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成数据的代理。" />
   <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloudinsights/images/logo-tophat-social.png" />
   <meta property="og:image:alt" content="NetApp Logo" />
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="encoding" content="utf-8">
   <meta http-equiv="nss-type" content="Product Documentation"/>
-  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Insights 支持 Telegraf 作为其代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。">
-  <meta name="keywords" content=" telegraf, installation, install, agent, telegraf agent"><!-- Icons -->
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成数据的代理。">
+  <meta name="keywords" content=" telegraf, installation, install, agent, telegraf agent, kubernetes, eks"><!-- Icons -->
   <link rel="icon" href="/zh-cn/cloudinsights/images/favicon.ico" type="image/x-icon">
 
   <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
@@ -148,8 +148,8 @@
   <div class="page-nav-toolbar">
     <div id="version-dropdown"></div>
     <div class="page-nav-contribute"  >
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[配置代理以收集数据](https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_agent.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
-      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/task_config_telegraf_agent.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/issues/new?body=Page%3A%20[在 Kubernetes 上配置代理](https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_agent_k8s.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/task_config_telegraf_agent_k8s.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloudinsights/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
       <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloudinsights/images/article-sm.svg" class="github-icon" />提供者指南</a>
     </div>
     <div class="page-nav-container">
@@ -272,13 +272,13 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_agent.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/task_config_telegraf_agent_k8s.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                  <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/task_config_telegraf_agent.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/task_config_telegraf_agent_k8s.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/task_config_telegraf_agent.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/task_config_telegraf_agent_k8s.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -401,15 +401,6 @@
 
 
 
-    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
-  <a target="_blank" href="/zh-cn/cloudinsights/pdfs/pages/task_config_telegraf_agent.pdf" >
-    <img src="/zh-cn/cloudinsights/images/pdf.png" width="16" height="16"/>
-    PDF of this page
-  </a>
-</li>
-
-</ul>
-  
 
 
 
@@ -1414,7 +1405,7 @@
         采集单元要求
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_configure_acquisition_unit.html">
         配置采集单元
-      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_config_telegraf_agent.html">
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_config_telegraf_agent.html">
         配置代理
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_configure_data_collectors.html">
         配置数据收集器
@@ -1895,7 +1886,7 @@
     </div>
   </span>
 </div><div class="n-doc__component-detail-heading-wrap">
-  <h1 class="n-doc__component-detail-heading">配置代理以收集数据</h1>
+  <h1 class="n-doc__component-detail-heading">在 Kubernetes 上配置代理</h1>
 </div>
 
 
@@ -1917,6 +1908,18 @@
 <div class="paragraph">
 <p>Cloud Insights 的当前 Telegraf 版本为 * 。 1.19.3 * 。</p>
 </div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/important.svg" alt="重要">
+</td>
+<td class="content">
+此页面当前正在进行中。有关在 Kubernetes 上安装代理的最新说明， <a href="task_config_telegraf_agent.html">"* 转到此处 *"</a>。
+</td>
+</tr>
+</table>
+</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1936,7 +1939,7 @@
 <img src="/us-en/cloudinsights/images/note.svg" alt="注">
 </td>
 <td class="content">
-如果要在安装代理之前验证安装文件，请参见以下章节 <a href="#Verifying Checksums">[Verifying Checksums]</a>。
+如果要在安装代理之前验证安装文件，请阅读关于 <a href="#Verifying Checksums">[Verifying Checksums]</a>。
 </td>
 </tr>
 </table>
@@ -1949,27 +1952,8 @@
 <div class="paragraph">
 <p>如果您要安装服务数据收集器，但尚未配置代理，则系统会提示您先为相应的操作系统安装代理。本主题介绍如何在以下操作系统上安装 Telegraf 代理：</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#windows">Windows</a></p>
-</li>
-<li>
-<p><a href="#RHEL and CentOS">[RHEL and CentOS]</a></p>
-</li>
-<li>
-<p><a href="#Ubuntu and Debian">[Ubuntu and Debian]</a></p>
-</li>
-<li>
-<p><a href="#macos">macOS</a></p>
-</li>
-<li>
-<p><a href="#kubernetes">Kubernetes</a></p>
-</li>
-</ul>
-</div>
 <div class="paragraph">
-<p>要安装代理，无论您使用的是哪个平台，都必须先执行以下操作：</p>
+<p>要在 Kubernetes 上安装代理，必须先执行以下操作：</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -1983,12 +1967,15 @@
 <p>单击 * + Data Collector* 并选择要安装的数据收集器。</p>
 </li>
 <li>
-<p>为您的主机选择合适的平台（ Windows ， Linux ， macOS 等）</p>
+<p>为主机选择 Kubernetes 平台</p>
 </li>
 <li>
-<p>对每个平台执行其余步骤。</p>
+<p>请按照其余步骤进行操作。</p>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p>要在 Windows ， Linux 或 Mac 上安装代理，请按照 <a href="/task_config_telegraf_agent.html">"这些说明"</a>。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2027,642 +2014,7 @@
 </table>
 </div>
 <div class="sect2">
-<h3 id="windows">Windows</h3>
-<div class="paragraph">
-<p><span class="image"><img src="AgentInstallWindows.png" alt="Windows 代理安装"></span></p>
-</div>
-<div class="ulist">
-<div class="title">前提条件：</div>
-<ul>
-<li>
-<p>必须安装 PowerShell</p>
-</li>
-<li>
-<p>如果您使用的是代理，请按照 * 为 Windows 配置代理支持 " 一节中的说明进行操作。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">在 Windows 上安装代理的步骤：</div>
-<ol class="arabic">
-<li>
-<p>选择代理访问密钥。</p>
-</li>
-<li>
-<p>从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。</p>
-</li>
-<li>
-<p>打开 PowerShell 窗口</p>
-</li>
-<li>
-<p>将命令粘贴到 PowerShell 窗口中，然后按 Enter 键。</p>
-</li>
-<li>
-<p>此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。</p>
-</li>
-<li>
-<p>单击 * 完成 * 或 * 继续 *</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>安装代理后，您可以使用以下命令启动 / 停止此服务：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>Start-Service telegraf
-Stop-Service telegraf</pre>
-</div>
-</div>
-<div class="sect3">
-<h4 id="为-windows-配置代理支持">为 Windows 配置代理支持</h4>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注">
-</td>
-<td class="content">
-以下步骤概述了设置 <em>http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment</em> 变量。
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>对于驻留在代理后面的系统，请执行以下操作以设置 <em>https_proxy</em> 和 / 或 <em>http_proxy</em> 环境变量 * 先前 * 以安装 Telegraf 代理：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>[System.Environment]::SetEnvironmentVariable(“https_proxy”, “&lt;proxy_server&gt;:&lt;proxy_port&gt;”, [System.EnvironmentVariableTarget]::Machine)</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="卸载代理">卸载代理</h4>
-<div class="paragraph">
-<p>要在 Windows 上卸载代理，请在 PowerShell 窗口中执行以下操作：</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>停止并删除 Telegraf 服务：</p>
-<div class="literalblock">
-<div class="content">
-<pre>Stop-Service telegraf
-sc.exe delete telegraf</pre>
-</div>
-</div>
-</li>
-<li>
-<p>从存储中删除证书：</p>
-<div class="literalblock">
-<div class="content">
-<pre>cd Cert:\CurrentUser\Root
-rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC</pre>
-</div>
-</div>
-</li>
-<li>
-<p>删除 <em>C ： \Program Files\Ceraf</em> 文件夹以删除二进制文件，日志和配置文件</p>
-</li>
-<li>
-<p>从注册表中删除 <em>system\CurrentControlSet\Services\EventLog\Application\Ceaf</em> 密钥</p>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="升级代理">升级代理</h4>
-<div class="paragraph">
-<p>要升级电报代理，请执行以下操作：</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>停止并删除此电报服务：</p>
-<div class="literalblock">
-<div class="content">
-<pre>Stop-Service telegraf
-sc.exe delete telegraf</pre>
-</div>
-</div>
-</li>
-<li>
-<p>从注册表中删除 <em>system\CurrentControlSet\Services\EventLog\Application\Ceaf</em> 密钥</p>
-</li>
-<li>
-<p>删除 _C ： \Program Files\celaf\celeaf.conf</p>
-</li>
-<li>
-<p>删除 _C ： \Program Files\caraf\caraf.exe</p>
-</li>
-<li>
-<p><a href="#windows">"安装新代理"</a>。</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="rhel-和-centos">RHEL 和 CentOS</h3>
-<div class="paragraph">
-<p><span class="image"><img src="Agent_Requirements_Rhel.png" alt="RHEL/CentOS 代理安装"></span></p>
-</div>
-<div class="ulist">
-<div class="title">前提条件：</div>
-<ul>
-<li>
-<p>必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode</p>
-</li>
-<li>
-<p>如果您使用的是代理，请按照 * 为 RHEL/CentOS* 配置代理支持 " 一节中的说明进行操作。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">在 RHEL/CentOS 上安装代理的步骤：</div>
-<ol class="arabic">
-<li>
-<p>选择代理访问密钥。</p>
-</li>
-<li>
-<p>从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。</p>
-</li>
-<li>
-<p>打开 Bash 窗口</p>
-</li>
-<li>
-<p>将命令粘贴到 Bash 窗口中，然后按 Enter 键。</p>
-</li>
-<li>
-<p>此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。</p>
-</li>
-<li>
-<p>单击 * 完成 * 或 * 继续 *</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>安装代理后，您可以使用以下命令启动 / 停止此服务：</p>
-</div>
-<div class="paragraph">
-<p>如果您的操作系统使用的是 systemd （ CentOS 7+ 和 RHEL 7+ ）：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>sudo systemctl start telegraf
-sudo systemctl stop telegraf</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如果您的操作系统未使用 systemd （ CentOS 7+ 和 RHEL 7+ ）：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>sudo service telegraf start
-sudo service telegraf stop</pre>
-</div>
-</div>
-<div class="sect3">
-<h4 id="为-rhelcentos-配置代理支持">为 RHEL/CentOS 配置代理支持</h4>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注">
-</td>
-<td class="content">
-以下步骤概述了设置 <em>http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment</em> 变量。
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>对于驻留在代理后面的系统，请执行以下步骤 * 先前 * 以安装 Telegraf 代理：</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>为当前用户设置 <em>https_proxy</em> 和 / 或 <em>http_proxy</em> 环境变量：</p>
-<div class="literalblock">
-<div class="content">
-<pre> export https_proxy=&lt;proxy_server&gt;:&lt;proxy_port&gt;
-. 创建 _/etc/default/tengraf_ ，并插入 _https_proxy_and/or _http_proxy_ 变量的定义：</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>https_proxy=&lt;proxy_server&gt;:&lt;proxy_port&gt;</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="卸载代理-2">卸载代理</h4>
-<div class="paragraph">
-<p>要在 Rhel/CentOS 上卸载代理，请在 Bash 终端中执行以下操作：</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>停止 Telegraf 服务：</p>
-<div class="literalblock">
-<div class="content">
-<pre>systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ and RHEL 7+)
-/etc/init.d/telegraf stop (for systems without systemd support)</pre>
-</div>
-</div>
-</li>
-<li>
-<p>删除 Telegraf 代理：</p>
-<div class="literalblock">
-<div class="content">
-<pre> yum remove telegraf
-. 删除可能遗留的任何配置或日志文件：</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>rm -rf /etc/telegraf*
-rm -rf /var/log/telegraf*</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="升级代理-2">升级代理</h4>
-<div class="paragraph">
-<p>要升级电报代理，请执行以下操作：</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>停止电报服务：</p>
-<div class="literalblock">
-<div class="content">
-<pre>systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ and RHEL 7+)
-/etc/init.d/telegraf stop (for systems without systemd support)</pre>
-</div>
-</div>
-</li>
-<li>
-<p>删除先前的电报代理：</p>
-<div class="literalblock">
-<div class="content">
-<pre> yum remove telegraf
-. link:#rhel-and-centos["安装新代理"]。</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="ubuntu-和-debian">Ubuntu 和 Debian</h3>
-<div class="paragraph">
-<p><span class="image"><img src="Agent_Requirements_Ubuntu.png" alt="Ubuntu 或 Debian 代理安装"></span></p>
-</div>
-<div class="ulist">
-<div class="title">前提条件：</div>
-<ul>
-<li>
-<p>必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode</p>
-</li>
-<li>
-<p>如果您使用的是代理，请按照 * 为 Ubuntu 或 Debian 配置代理支持 * 一节中的说明进行操作。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">在 Debian 或 Ubuntu 上安装代理的步骤：</div>
-<ol class="arabic">
-<li>
-<p>选择代理访问密钥。</p>
-</li>
-<li>
-<p>从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。</p>
-</li>
-<li>
-<p>打开 Bash 窗口</p>
-</li>
-<li>
-<p>将命令粘贴到 Bash 窗口中，然后按 Enter 键。</p>
-</li>
-<li>
-<p>此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。</p>
-</li>
-<li>
-<p>单击 * 完成 * 或 * 继续 *</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>安装代理后，您可以使用以下命令启动 / 停止此服务：</p>
-</div>
-<div class="paragraph">
-<p>如果您的操作系统使用的是 systemd ：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>sudo systemctl start telegraf
-sudo systemctl stop telegraf</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>如果您的操作系统未使用 systemd ：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>sudo service telegraf start
-sudo service telegraf stop</pre>
-</div>
-</div>
-<div class="sect3">
-<h4 id="为-ubuntu-或-debian-配置代理支持">为 Ubuntu 或 Debian 配置代理支持</h4>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注">
-</td>
-<td class="content">
-以下步骤概述了设置 <em>http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment</em> 变量。
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>对于驻留在代理后面的系统，请执行以下步骤 * 先前 * 以安装 Telegraf 代理：</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>为当前用户设置 <em>https_proxy</em> 和 / 或 <em>http_proxy</em> 环境变量：</p>
-<div class="literalblock">
-<div class="content">
-<pre> export https_proxy=&lt;proxy_server&gt;:&lt;proxy_port&gt;
-. 创建 /etc/default/celaff ，并插入 _https_proxy_and/or _http_proxy_ 变量的定义：</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>https_proxy=&lt;proxy_server&gt;:&lt;proxy_port&gt;</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="卸载代理-3">卸载代理</h4>
-<div class="paragraph">
-<p>要在 Ubuntu 或 Debian 上卸载代理，请在 Bash 终端中运行以下命令：</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>停止 Telegraf 服务：</p>
-<div class="literalblock">
-<div class="content">
-<pre>systemctl stop telegraf (If your operating system is using systemd)
-/etc/init.d/telegraf stop (for systems without systemd support)</pre>
-</div>
-</div>
-</li>
-<li>
-<p>删除 Telegraf 代理：</p>
-<div class="literalblock">
-<div class="content">
-<pre> dpkg -r telegraf
-. 删除可能遗留的任何配置或日志文件：</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>rm -rf /etc/telegraf*
-rm -rf /var/log/telegraf*</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="升级代理-3">升级代理</h4>
-<div class="paragraph">
-<p>要升级电报代理，请执行以下操作：</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>停止电报服务：</p>
-<div class="literalblock">
-<div class="content">
-<pre>systemctl stop telegraf (If your operating system is using systemd)
-/etc/init.d/telegraf stop (for systems without systemd support)</pre>
-</div>
-</div>
-</li>
-<li>
-<p>删除先前的电报代理：</p>
-<div class="literalblock">
-<div class="content">
-<pre> dpkg -r telegraf
-. link:#ubuntu-and-debian["安装新代理"]。</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="macos">macOS</h3>
-<div class="paragraph">
-<p><span class="image"><img src="Agent_Requirements_Macos.png" alt="安装 macOS 代理"></span></p>
-</div>
-<div class="ulist">
-<div class="title">前提条件：</div>
-<ul>
-<li>
-<p>必须提供以下命令： curl ， sudo ， openssl 和 shasum</p>
-</li>
-<li>
-<p>如果您使用的是代理，请按照 * 为 macOS* 配置代理支持 " 一节中的说明进行操作。</p>
-</li>
-</ul>
-</div>
-<div class="olist arabic">
-<div class="title">在 macOS 上安装代理的步骤：</div>
-<ol class="arabic">
-<li>
-<p>选择代理访问密钥。</p>
-</li>
-<li>
-<p>从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。</p>
-</li>
-<li>
-<p>打开 Bash 窗口</p>
-</li>
-<li>
-<p>将命令粘贴到 Bash 窗口中，然后按 Enter 键。</p>
-</li>
-<li>
-<p>此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。</p>
-</li>
-<li>
-<p>如果您之前使用 Homebrew 安装了 Telegraf 代理，则系统将提示您将其卸载。卸载先前安装的 Telegraf 代理后，重新运行上述步骤 5 中的命令。</p>
-</li>
-<li>
-<p>单击 * 完成 * 或 * 继续 *</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>安装代理后，您可以使用以下命令启动 / 停止此服务：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>sudo launchctl start telegraf
-sudo launchctl stop telegraf</pre>
-</div>
-</div>
-<div class="sect3">
-<h4 id="为-macos-配置代理支持">为 macOS 配置代理支持</h4>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注">
-</td>
-<td class="content">
-以下步骤概述了设置 <em>http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment</em> 变量。
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>对于驻留在代理后面的系统，请执行以下操作，为当前用户 * 先前 * 设置 <em>https_proxy</em> 和 / 或 <em>http_proxy</em> 环境变量，以安装 Telegraf 代理：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre> export https_proxy=&lt;proxy_server&gt;:&lt;proxy_port&gt;
-* 安装 Telegraf 代理之后，在 _/Applications/Telegraf.app/Contents/telegraf.plist_: 中添加并设置适当的 _https_proxy_and/or _http_proxy_ 变量</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>…
-&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
-&lt;plist version="1.0"&gt;
-&lt;dict&gt;
-   &lt;key&gt;EnvironmentVariables&lt;/key&gt;
-   &lt;dict&gt;
-          &lt;key&gt;https_proxy&lt;/key&gt;
-          &lt;string&gt;&lt;proxy_server&gt;:&lt;proxy_port&gt;&lt;/string&gt;
-   &lt;/dict&gt;
-   &lt;key&gt;Program&lt;/key&gt;
-   &lt;string&gt;/Applications/telegraf.app/Contents/MacOS/telegraf&lt;/string&gt;
-   &lt;key&gt;Label&lt;/key&gt;
-   &lt;string&gt;telegraf&lt;/string&gt;
-   &lt;key&gt;ProgramArguments&lt;/key&gt;
-   &lt;array&gt;
-     &lt;string&gt;/Applications/telegraf.app/Contents/MacOS/telegraf&lt;/string&gt;
-     &lt;string&gt;--config&lt;/string&gt;
-     &lt;string&gt;/usr/local/etc/telegraf.conf&lt;/string&gt;
-     &lt;string&gt;--config-directory&lt;/string&gt;
-     &lt;string&gt;/usr/local/etc/telegraf.d&lt;/string&gt;
-   &lt;/array&gt;
-   &lt;key&gt;RunAtLoad&lt;/key&gt;
-   &lt;true/&gt;
-&lt;/dict&gt;
-&lt;/plist&gt;
-…</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>然后，加载上述更改后重新启动 Telegraf ：</p>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>sudo launchctl stop telegraf
-sudo launchctl unload -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl load -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl start telegraf</pre>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="卸载代理-4">卸载代理</h4>
-<div class="paragraph">
-<p>要在 macOS 上卸载代理，请在 Bash 终端中运行以下命令：</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>停止 Telegraf 服务：</p>
-<div class="literalblock">
-<div class="content">
-<pre> sudo launchctl stop telegraf
-. 卸载此电报代理：</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall</pre>
-</div>
-</div>
-</li>
-<li>
-<p>删除可能遗留的任何配置或日志文件：</p>
-<div class="literalblock">
-<div class="content">
-<pre>rm -rf /usr/local/etc/telegraf*
-rm -rf /usr/local/var/log/telegraf.*</pre>
-</div>
-</div>
-</li>
-</ol>
-</div>
-</div>
-<div class="sect3">
-<h4 id="升级代理-4">升级代理</h4>
-<div class="paragraph">
-<p>要升级电报代理，请执行以下操作：</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>停止电报服务：</p>
-<div class="literalblock">
-<div class="content">
-<pre> sudo launchctl stop telegraf
-. 卸载先前的电报代理：</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall</pre>
-</div>
-</div>
-</li>
-<li>
-<p><a href="#macos">"安装新代理"</a>。</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="kubernetes">Kubernetes</h3>
+<h3 id="在-kubernetes-上安装代理">在 Kubernetes 上安装代理</h3>
 <div class="paragraph">
 <p>Kubernetes 提供了两种数据收集方式：</p>
 </div>
@@ -3261,7 +2613,7 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="卸载代理-5">卸载代理</h4>
+<h4 id="卸载代理">卸载代理</h4>
 <div class="paragraph">
 <p>请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。</p>
 </div>
@@ -3304,7 +2656,7 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 </div>
 </div>
 <div class="sect3">
-<h4 id="升级代理-5">升级代理</h4>
+<h4 id="升级代理">升级代理</h4>
 <div class="paragraph">
 <p>请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。</p>
 </div>
