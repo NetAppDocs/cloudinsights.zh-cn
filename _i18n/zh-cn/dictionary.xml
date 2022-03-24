@@ -5517,7 +5517,6 @@
   <block id="eb95277827afbd8e2e2e8f76d8b46c1a" category="list-text">卸载先前的电报代理：</block>
   <block id="eaca524ca350c2f4a68505fcd46722dc" category="list-text"><block ref="233c0aad358add3bf73c9fdb84825ed1" category="inline-link-macro-rx"></block>。</block>
   <block id="30136395f01879792198317c11831ea4" category="section-title">Kubernetes</block>
-  <block id="85ec37ca86f40643ef57d677de07ac20" category="paragraph">为获得最佳结果，请将这些命令添加到路径中。</block>
   <block id="80c0723b28b89c49ac0b2c207486cf90" category="list-text">如果您使用的是代理，请按照 * 为 Kubernetes 配置代理支持 * 一节中的说明进行操作。</block>
   <block id="56cb6633aba007c9c91082eb591c6ac6" category="section-title">监控仅安装在 Linux 节点上</block>
   <block id="748fdb05a8ec278d9ce5ea3bde4405f4" category="paragraph">Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查找以下 Kubernetes 标签，支持监控运行 Linux 的 Kubernetes 节点：</block>
@@ -7959,7 +7958,6 @@
   <block id="a60abfe03b8079f9f0eac07879fdf93b" category="paragraph">您可以使用 _Sync_ 或 _Async_ 使用此类按键。</block>
   <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode</block>
   <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">必须提供以下命令： curl ， sudo ， openssl 和 shasum</block>
-  <block id="534bf0b54b6a2f4706041a3ede410108" category="list-text">必须提供以下命令： curl ， sudo ， openssl ， sha256sum 和 kubectl</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">日志资源管理器</block>
   <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">要开始浏览日志，请单击 * 查询 &gt;+New Log Query* 。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">选择日志</block>
@@ -8597,8 +8595,6 @@
   <block id="a8c299f3c69c7a12958c6df554610a93" category="paragraph">在小工具查询中筛选为 _Contextual ；为字段选择筛选器值时，该查询的其他筛选器将显示与该筛选器相关的值。例如，在为特定对象 _Name_ 设置筛选器时，用于筛选 _Model_ 的字段将仅显示与该对象名称相关的值。</block>
   <block id="8be0f44cccc6817c6fffc31d9156d3c0" category="paragraph">上下文筛选还包括适用场景 信息板页面变量（仅限文本类型属性或标注）。为一个变量选择存储器值时，使用相关对象的任何其他变量将仅根据这些相关变量的上下文显示可能的筛选值。</block>
   <block id="efbb3ca459b4e1c502f697d1a65cc3d3" category="paragraph">在变量中筛选为 _Contextual ；为某个变量选择一个或多个筛选值时，页面上的其他变量将仅显示与该筛选器相关的值。例如，将变量筛选器设置为特定的 storage _Model_ 时，设置为 storage _Name_ 筛选的任何变量将仅显示与该型号相关的值。</block>
-  <block id="2c724476d225980fc3efb1e524c8e36a" category="list-text">如果您运行的是 OpenShift 4.6 - 4.8 ，则必须遵循下面的 * OpenShift 指令 * 。</block>
-  <block id="0317b3ef8ec7744a6871d2832b20779b" category="list-text">NetApp Kubernetes 监控操作员安装已通过测试，预计可与 AWS EKS 1.18 - 1.21 ， OpenShift 4.6-4.8 和 Rancher 2.4 - 2.6 配合使用。</block>
   <block id="90e3576ed0e73e03c00705419f3411a3" category="section-title">OpenShift 说明</block>
   <block id="17fe4b51b71c74ed46456e14017c7422" category="paragraph">如果您运行的是 OpenShift 4.6- 4.8 ，则必须更改 " 特权模式 " 设置。运行以下命令以打开代理进行编辑。如果您使用的命名空间不是 "netapp-monitoring" ，请在命令行中指定此命名空间：</block>
   <block id="7413b27c2a74484b9a0ae0a20c26cd28" category="paragraph">在文件中，将 _privileged-mode ： false_ 更改为 _privileged-mode ： tru_</block>
@@ -8621,4 +8617,10 @@
   <block id="ac5ce495bc5231774a8d1baa382ee7e1" category="list-text">* 已解决 * ：警报已被团队成员标记为已解决。</block>
   <block id="10b1c70c9f5425c76de374b73edb3311" category="list-text">* 已取消 * ：警报已被取消且不再处于活动状态。</block>
   <block id="dc102c5c05c2c1199e156360b71b6081" category="list-text">警报的 _Status_ （新建，正在进行等）</block>
+  <block id="2cda05c10c4aa09279fe99d24fc57ae8" category="list-text">NetApp Kubernetes 监控操作员安装已通过测试，应可与以下各项配合使用：</block>
+  <block id="1293dad52aae23a70414cecab911c5c5" category="list-text">AWS EKS 1.18 - 1.21</block>
+  <block id="001571f4a9b36eecb51a7241b4a1de90" category="list-text">OpenShift 4.6 - 4.8</block>
+  <block id="bbf3d6c7f63841c53e523ee9bd1f6985" category="list-text">Rancher 2.4 - 2.6 。</block>
+  <block id="e2c9709b9d8f51841ea22d5bb63af5db" category="list-text">如果您运行的是 OpenShift 4.6 - 4.8 ，则除了确保满足这些前提条件之外，还必须遵循下面的 * OpenShift 指令 * 。</block>
+  <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。</block>
 </blocks>
