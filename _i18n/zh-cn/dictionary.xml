@@ -8615,7 +8615,6 @@
   <block id="f0617472d6b597b6d93003c4c1003ad6" category="list-text">* 新增 * ：这是新警报的默认设置。</block>
   <block id="124bb595dee29c483fb214a5dfd6be2a" category="list-text">* 进行中 * ：某个或多个团队成员正在调查此警报。</block>
   <block id="ac5ce495bc5231774a8d1baa382ee7e1" category="list-text">* 已解决 * ：警报已被团队成员标记为已解决。</block>
-  <block id="10b1c70c9f5425c76de374b73edb3311" category="list-text">* 已取消 * ：警报已被取消且不再处于活动状态。</block>
   <block id="dc102c5c05c2c1199e156360b71b6081" category="list-text">警报的 _Status_ （新建，正在进行等）</block>
   <block id="2cda05c10c4aa09279fe99d24fc57ae8" category="list-text">NetApp Kubernetes 监控操作员安装已通过测试，应可与以下各项配合使用：</block>
   <block id="1293dad52aae23a70414cecab911c5c5" category="list-text">AWS EKS 1.18 - 1.21</block>
@@ -8636,4 +8635,5 @@
   <block id="4399aa6f1f3bf7573a388f265d2ad7ca" category="section-title">在 Kubernetes 上安装代理</block>
   <block id="f997e79142f159c33823b9deeab809eb" category="cell">在 Kubernetes 上，我的 Telegraf ReplicaSet Pod 报告以下错误： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes ， PKI/etcd/server.crt ： /etc/Kubernetes ， crt/etcd/server.key ：打开 /etc/Kubernetes ， pki/etcd/server.key ： open /etc/Kubernetes ， pki/etcd/server.key ： no 此类文件或目录</block>
   <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod 应在指定为主节点或 etcd 节点上运行。如果 ReplicaSet Pod 未在其中一个节点上运行，您将收到这些错误。检查您的主 /etcd 节点是否具有此类节点的影响。如果是，请将必要的容错添加到 Telegraf ReplicaSet ，即 Teleaf-RS 中。例如，编辑 ReplicaSet... kubectl edit RS ceaaf-rs ... 并将适当的容错添加到规范中。然后，重新启动 ReplicaSet Pod 。</block>
+  <block id="08c320e9abdbb73b135ebdf6b73de8ef" category="list-text">* 已取消 * ：已将警报视为误报或预期行为而解除。</block>
 </blocks>
