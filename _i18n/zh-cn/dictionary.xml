@@ -8343,7 +8343,6 @@
   <block id="9209b4ae424c71673a607557c64f7eb8" category="section-title">2022 年 2 月</block>
   <block id="ecf4e9e3c38358de05561be5ed03f5d0" category="section-title">预览功能</block>
   <block id="2240ee7d4e56b8ba7ac49b14311cdeed" category="inline-link-macro">NetApp 销售团队</block>
-  <block id="c8d0b8a6f32511af92bc09ceb0fccb0d" category="paragraph">Cloud Insights 重点介绍了许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="5fa0ef8fc40e60003288942e2da3e300" category="cell">* 功能 *</block>
   <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">限制用户访问自动响应操作</block>
   <block id="decbe415d8accca7c2c16d48a79ee934" category="inline-link-macro">阅读更多内容</block>
@@ -8636,4 +8635,5 @@
   <block id="f997e79142f159c33823b9deeab809eb" category="cell">在 Kubernetes 上，我的 Telegraf ReplicaSet Pod 报告以下错误： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes ， PKI/etcd/server.crt ： /etc/Kubernetes ， crt/etcd/server.key ：打开 /etc/Kubernetes ， pki/etcd/server.key ： open /etc/Kubernetes ， pki/etcd/server.key ： no 此类文件或目录</block>
   <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod 应在指定为主节点或 etcd 节点上运行。如果 ReplicaSet Pod 未在其中一个节点上运行，您将收到这些错误。检查您的主 /etcd 节点是否具有此类节点的影响。如果是，请将必要的容错添加到 Telegraf ReplicaSet ，即 Teleaf-RS 中。例如，编辑 ReplicaSet... kubectl edit RS ceaaf-rs ... 并将适当的容错添加到规范中。然后，重新启动 ReplicaSet Pod 。</block>
   <block id="08c320e9abdbb73b135ebdf6b73de8ef" category="list-text">* 已取消 * ：已将警报视为误报或预期行为而解除。</block>
+  <block id="876a3f6e99a6a623eff957c61ab96f8a" category="paragraph">Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
 </blocks>
