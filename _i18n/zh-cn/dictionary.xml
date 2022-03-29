@@ -351,7 +351,6 @@
   <block id="36422fc03146f715dd2ebf157cb2b018" category="list-text">指定令牌到期日期</block>
   <block id="df7e1abab84c88ca59b75d8179052a13" category="admonition">您的令牌只能在创建过程中复制到剪贴板并进行保存。令牌创建后无法检索，因此强烈建议复制令牌并将其保存在安全位置。系统将提示您单击 * 复制 API 访问令牌 * 按钮，然后才能关闭令牌创建屏幕。</block>
   <block id="ec849ad53569138e8e2a53e16d6fe52a" category="paragraph">您可以禁用，启用和撤消令牌。可以启用已禁用的令牌。</block>
-  <block id="c702f9ec1de747488ae69091e4b44640" category="paragraph">令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以在 Cloud Insights 后端人员不直接参与的情况下授予和撤消这些密钥。</block>
   <block id="d0c8eeb04c89d77560166e2a296d3aef" category="paragraph">在用户成功进行身份验证并授权访问后，应用程序会收到访问令牌，然后在调用目标 API 时将访问令牌作为凭据传递。传递的令牌将通知 API 令牌的持有人已获得访问 API 的授权并执行授权期间授予的范围指定的特定操作。</block>
   <block id="695278b2df4ef830f797b2b85728cd20" category="paragraph">传递访问令牌的 HTTP 标头为 * 。 X-CloudInsights ApiKey ： * 。</block>
   <block id="a3edb14694b58a006156d05e3c4b6d5b" category="paragraph">例如，使用以下命令检索存储资产：</block>
@@ -8636,4 +8635,6 @@
   <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod 应在指定为主节点或 etcd 节点上运行。如果 ReplicaSet Pod 未在其中一个节点上运行，您将收到这些错误。检查您的主 /etcd 节点是否具有此类节点的影响。如果是，请将必要的容错添加到 Telegraf ReplicaSet ，即 Teleaf-RS 中。例如，编辑 ReplicaSet... kubectl edit RS ceaaf-rs ... 并将适当的容错添加到规范中。然后，重新启动 ReplicaSet Pod 。</block>
   <block id="08c320e9abdbb73b135ebdf6b73de8ef" category="list-text">* 已取消 * ：已将警报视为误报或预期行为而解除。</block>
   <block id="876a3f6e99a6a623eff957c61ab96f8a" category="paragraph">Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
+  <block id="0c352b5d8cf5928163a8ab955706157d" category="paragraph">令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以在 Cloud Insights 后端人员不直接参与的情况下授予和撤销这些令牌。</block>
+  <block id="827fb03d4709eeb5398e14962ee560c2" category="paragraph">其中， _&lt;API_Access_Token&gt;_ 是您在创建 API 访问期间保存的令牌。</block>
 </blocks>

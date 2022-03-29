@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: API_Overview.html 
-keywords: API, customer API, premium, JSON, Swagger, Access Token, token 
+keywords: API, customer API, premium, JSON, Swagger, Access Token, token, key 
 summary: Cloud Insights API 支持与监控和报告系统等其他应用程序集成。 
 ---
 = Cloud Insights API
@@ -80,7 +80,7 @@ NOTE: 您的令牌只能在创建过程中复制到剪贴板并进行保存。�
 
 您可以禁用，启用和撤消令牌。可以启用已禁用的令牌。
 
-令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以在 Cloud Insights 后端人员不直接参与的情况下授予和撤消这些密钥。
+令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以在 Cloud Insights 后端人员不直接参与的情况下授予和撤销这些令牌。
 
 在用户成功进行身份验证并授权访问后，应用程序会收到访问令牌，然后在调用目标 API 时将访问令牌作为凭据传递。传递的令牌将通知 API 令牌的持有人已获得访问 API 的授权并执行授权期间授予的范围指定的特定操作。
 
@@ -89,7 +89,7 @@ NOTE: 您的令牌只能在创建过程中复制到剪贴板并进行保存。�
 例如，使用以下命令检索存储资产：
 
  curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
-其中， _<API_Access_Token>_ 是您在创建 API 访问密钥期间保存的令牌。
+其中， _<API_Access_Token>_ 是您在创建 API 访问期间保存的令牌。
 
 
 
