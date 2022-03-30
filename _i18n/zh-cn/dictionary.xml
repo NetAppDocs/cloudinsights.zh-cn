@@ -8637,4 +8637,18 @@
   <block id="827fb03d4709eeb5398e14962ee560c2" category="paragraph">其中， _&lt;API_Access_Token&gt;_ 是您在创建 API 访问期间保存的令牌。</block>
   <block id="cc259063b1a06b482634601b8fc9068b" category="paragraph">。 <block ref="4379d12a92ab7b417b2efd216b13a5b7" category="inline-link-macro-rx"></block> 数据收集器无需安装外部采集单元，从而简化了故障排除，维护和初始部署。</block>
   <block id="d7652c841f9f6f67155b6c416335e932" category="paragraph">生成的角色和用户登录信息如下所示。实际输出可能会有所不同：</block>
+  <block id="aa4fab3c3fde779a8dc99f5269961218" category="section-title">修改现有用户的角色</block>
+  <block id="9b207ebd40869bfc10be14cb4279b22c" category="paragraph">要修改现有用户的角色，包括将其添加为 * 二级帐户所有者 * ，请执行以下步骤。</block>
+  <block id="bb10192e5b1a488b6e0bf0a436918863" category="list-text">单击 * 管理员 &gt; 用户管理 * 。此时，屏幕将显示系统上所有帐户的列表。</block>
+  <block id="27821658abae724fdd49cbd24489bb01" category="list-text">单击要更改的帐户的用户名。</block>
+  <block id="fb00f883d7bba803b24e9d29087a3f05" category="list-text">根据需要修改用户在每个 Cloud Insights 功能集中的角色。</block>
+  <block id="fbf90baf7d2aee8b9e682b8648241121" category="list-text">单击 _Save Changes_ 。</block>
+  <block id="45d8ada80e1217d6ce7177e21f1e6c70" category="section-title">分配二级帐户所有者</block>
+  <block id="77ca2cca3bda5b43a70ba6327d64e565" category="paragraph">您必须以监控和优化的帐户所有者身份登录，才能将帐户所有者角色分配给其他用户。</block>
+  <block id="9ee18dbf71b3091f256475408a6072d3" category="list-text">单击 * 管理员 &gt; 用户管理 * 。</block>
+  <block id="208c98f13e768937bc22bc97791e7bb1" category="list-text">在用户对话框中，单击 * 分配为所有者 * 。</block>
+  <block id="08c4f5aee4f8b6cabdcd558ad1452ad2" category="list-text">保存更改。</block>
+  <block id="a03002bd8dfa882b8d3ff5080f0cba0e" category="inline-image-macro">显示帐户所有者选择的用户更改对话框</block>
+  <block id="577bebfc42387e1ce299416137c6deb6" category="paragraph"><block ref="577bebfc42387e1ce299416137c6deb6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bf8d24acc43906e154b695ab61aa70a4" category="paragraph">您可以根据需要拥有任意数量的帐户所有者，但最佳实践是，将所有者角色限制为仅选择人员。</block>
 </blocks>
