@@ -197,7 +197,7 @@ security login role create -role ci_readonly -access all -cmddirname “cluster 
 如果使用 AD/LDAP 帐户，则命令应为
 
  security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
-生成的角色和用户登录将如下所示：
+生成的角色和用户登录信息如下所示。实际输出可能会有所不同：
 
 ....
 Role Command/ Access
