@@ -8468,7 +8468,6 @@
   <block id="31f2d1341b001f9e4ba9f04b36b9fbd1" category="cell">此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时， 使用 CI 在虚拟机管理程序上报告的 Cloud Insights 模式集群名称— Cloud Insights 会在 vSphere 集群名称前面加上 vSphere 数据中心名称和反斜杠— "DC1\clusterA" 是 Cloud Insights 将在数据中心 DC1 的 clusterA 中报告的集群名称</block>
   <block id="e50e258ecc9eaa88d6c653c3a24cb319" category="section-title">2022 年 3 月</block>
   <block id="6051317bfc603cd4488e0e5a5946f64c" category="inline-link-macro">适用于 ONTAP 9.9+ 的 NetApp 云连接</block>
-  <block id="81b63bcf37c281fa62b348f70cb153a7" category="paragraph">。 <block ref="abed7fb19b7000e31d7e181bcda0de86" category="inline-link-macro-rx"></block> 数据收集器无需安装外部采集单元，从而简化了故障排除，维护和初始部署。</block>
   <block id="2e9faf5215aa3ecfef89358ec3693874" category="section-title">适用于 NetApp ONTAP 的全新 FSX 监控器</block>
   <block id="6dc06af3fe625c90d8b00610f4a3bf8e" category="inline-link-macro">系统定义的监控器</block>
   <block id="bcd1e57acea622ff5f6c7b621a37241c" category="paragraph">借助全新，您可以轻松监控适用于 NetApp ONTAP 环境的 FSX <block ref="870b37862b5d06f18770c24f68255a0a" category="inline-link-macro-rx"></block> 用于基础架构（指标）和工作负载（日志）。</block>
@@ -8637,4 +8636,5 @@
   <block id="876a3f6e99a6a623eff957c61ab96f8a" category="paragraph">Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="0c352b5d8cf5928163a8ab955706157d" category="paragraph">令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以在 Cloud Insights 后端人员不直接参与的情况下授予和撤销这些令牌。</block>
   <block id="827fb03d4709eeb5398e14962ee560c2" category="paragraph">其中， _&lt;API_Access_Token&gt;_ 是您在创建 API 访问期间保存的令牌。</block>
+  <block id="cc259063b1a06b482634601b8fc9068b" category="paragraph">。 <block ref="4379d12a92ab7b417b2efd216b13a5b7" category="inline-link-macro-rx"></block> 数据收集器无需安装外部采集单元，从而简化了故障排除，维护和初始部署。</block>
 </blocks>
