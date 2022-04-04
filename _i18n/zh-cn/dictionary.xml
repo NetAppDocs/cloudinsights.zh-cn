@@ -2602,7 +2602,6 @@
   <block id="b91bb54d5249b7797f071b75dfcc2669" category="cell">1 天（或直到下一 ETL ）</block>
   <block id="2feda95a3fa7c2b2fe1a5823227a38d4" category="summary">配置 Dell EMC RecoverPoint 数据收集器。</block>
   <block id="b7580029151bf8be03d47ebe21aae5d2" category="doc">Dell EMC RecoverPoint 数据收集器</block>
-  <block id="2d0536ed48dc3aedf9eae91c758cc1aa" category="paragraph">EMC RecoverPoint 数据收集器从 EMC RecoverPoint 存储收集清单信息。在配置方面，数据收集器需要存储处理器的 IP 地址以及只读用户名和密码。</block>
   <block id="3846db481899e198743ded5cfb08f1e5" category="paragraph">EMC RecoverPoint 数据收集器收集 RecoverPoint 在其他存储阵列之间协调的卷到卷复制关系。Cloud Insights 会显示每个 RecoverPoint 集群的存储阵列，并收集该集群上节点和存储端口的清单数据。不会收集任何存储池或卷数据。</block>
   <block id="0596b0a970815228ec6e528c4293a9c1" category="list-text">存储处理器的 IP 地址或完全限定域名</block>
   <block id="e19668f1f8c943db0e13c92639c909cc" category="list-text">通过端口 443 进行 REST API 访问</block>
@@ -5165,9 +5164,7 @@
   <block id="f7e484ed281631da8383d690f4eddd80" category="cell">HAProxy 后端</block>
   <block id="97147057d2a68260221e7116c41c9222" category="cell">节点 IP 节点名称代理 ID 上次更改时间上次会话时间模式进程 ID 服务器 ID 会话限制状态权重</block>
   <block id="9a0ea7807c7dd21ed7a14f4f90d3e5ba" category="cell">Active Server 备份服务器字节（以字节为单位）传出缓存命中缓存查找检查下载客户端中止压缩字节绕过压缩字节（以压缩字节为单位）输出压缩响应连接平均时间停机安全问题拒绝的总请求响应安全问题连接错误响应错误响应 1xx 响应 2xx 响应 3xx 响应 4xx 响应 5xx 响应其他服务器选择的总队列当前队列最大队列平均每秒会话时间最大请求总数连接重复使用响应时间平均会话会话最大服务器传输中止会话总数会话总时间平均请求重新发送请求请求请求重试请求 重写</block>
-  <block id="10bcebae483fccb445d5bb08f8e21b57" category="summary">配置 HDS cops Center 数据收集器。</block>
   <block id="edfa0366cb6c25de6aa46576a0e54251" category="doc">Hitachi Ops Center 数据收集器</block>
-  <block id="00a13db56b8dd9cf1ca9ce114eaa262d" category="paragraph">此数据收集器使用 Hitachi Ops Center 的集成应用程序套件来访问多个存储设备的清单和性能数据。</block>
   <block id="5c6ab1284b6b7a5a7102854a969c99be" category="cell">存储系统</block>
   <block id="6fa6e2299a829e04bba19b10e38dc56c" category="cell">奇偶校验组</block>
   <block id="7f47ab518e59deb2aed009c3db49ddbd" category="cell">存储池（ RAID ），磁盘组</block>
@@ -5182,7 +5179,6 @@
   <block id="3d9fdded41d1c4003ba59b29e1faef21" category="list-text">Operations Center 服务器的 IP 地址</block>
   <block id="2d9bdba47e7ef41afea9893477c6c1b1" category="list-text">操作中心软件的只读用户名和密码以及对等权限</block>
   <block id="8f4ab816532074b60c2865f1089b6d38" category="cell">Hitachi Ops Center IP 地址</block>
-  <block id="08ae6fd45d8b805f01549b8a7d5ba93a" category="cell">Operations Center 服务器的 IP 地址或完全限定域名</block>
   <block id="8db0f231405345684c1dab98cc049f52" category="cell">Operations Center 服务器的用户名。</block>
   <block id="18bf6f2c111fb8ac2dbe99d3445cbadd" category="cell">用于 Operations Center 服务器的密码。</block>
   <block id="bc742a3b20c159bc11ea844e4d798e34" category="cell">HTTPS （端口 443 ）为默认值</block>
@@ -8658,4 +8654,9 @@
   <block id="55c82b601deae028c1c5e87fd820923d" category="cell">3.0</block>
   <block id="2b7c53bace6e76127dd80fffa6f4f898" category="cell">11.5</block>
   <block id="bca66716b9ca2d13a4c28be69b276777" category="cell">3.3</block>
+  <block id="8020d56a67ade967a3254ada824b1406" category="summary">配置 HDS 操作中心数据收集器。</block>
+  <block id="317ca49a534ef6dc0317a60fdf058fef" category="paragraph">此数据收集器使用 Hitachi Ops Center 的集成应用程序套件来访问多个存储设备的清单和性能数据。要发现清单和容量，您的运营中心安装必须同时包含 " 通用服务 " 和 " 管理员 " 组件。要收集性能，您还必须部署 " 分析器 " 。</block>
+  <block id="211ba4facc37bc8a85949c753a2fcfbd" category="cell">托管 " 通用服务 " 组件的操作中心服务器的 IP 地址或完全限定域名</block>
+  <block id="8aaf0c3eec33a08ba4aa512a66667baf" category="paragraph">EMC RecoverPoint 数据收集器的主要使用情形是，发现 RecoverPoint 存储设备所促进的卷到卷复制关系。此收集器还会发现 Recoverpoint 设备本身。请注意， Dell/EMC 销售适用于 VM 的 VMware 备份解决方案 — "RecoverPoint for VMs" —此收集器不支持此功能</block>
+  <block id="77b03d5ff356126537320c25f40d3644" category="paragraph">在配置方面，数据收集器需要存储处理器的 IP 地址以及只读用户名和密码。</block>
 </blocks>
