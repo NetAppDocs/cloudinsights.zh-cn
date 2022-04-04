@@ -89,8 +89,8 @@ Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如�
 请参见 NetApp 产品安全建议网站上的以下内容：
 
 link:https://security.netapp.com/advisory/ntap-20211210-0007/["CVE-2021-44228"]
-
-
+link:https://security.netapp.com/advisory/ntap-20211215-0001/["CVE-2021-45046"]
+link:https://security.netapp.com/advisory/ntap-20211218-0001/["CVE-2021-45105"]
 
 有关这些漏洞以及 NetApp 响应的详细信息，请参见 link:https://www.netapp.com/newsroom/netapp-apache-log4j-response/["NetApp 新闻中心"]。
 
@@ -888,7 +888,7 @@ Cloud Insights 增加了一个 * 数据载入 * API 类别，可让您更好地�
 
 ==== 监控和警报
 
-除了当前能够为存储对象， VM ， EC2 和端口设置性能策略之外， Cloud Insights 标准版现在还支持 link:task_create_monitor.html["配置监控器"] 有关 Kubernetes ， ONTAP 高级指标和 Telegraf 插件集成数据的阈值。您只需为要触发警报的每个对象指标创建一个监控器，为警告级别或严重级别阈值设置条件，并为每个级别指定所需的电子邮件收件人即可。然后，您可以  跟踪趋势或对问题进行故障排除。
+除了当前能够为存储对象， VM ， EC2 和端口设置性能策略之外， Cloud Insights 标准版现在还支持 link:task_create_monitor.html["配置监控器"] 有关 Kubernetes ， ONTAP 高级指标和 Telegraf 插件集成数据的阈值。您只需为要触发警报的每个对象指标创建一个监控器，为警告级别或严重级别阈值设置条件，并为每个级别指定所需的电子邮件收件人即可。然后，您可以 link:task_view_and_manage_alerts.html["查看和管理警报"] 跟踪趋势或对问题进行故障排除。
 
 image:define_monitor_conditions_2.png["监控条件"]
 
@@ -1626,7 +1626,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 
 ==== 适用于 Windows 的采集单元
 
-* 您可以在 Windows 服务器 /VM 上配置 Cloud Insights 采集单元。查看 Windows link:concept_acquisition_unit_requirements.html["前提条件"] 安装之前 。
+* 您可以在 Windows 服务器 /VM 上配置 Cloud Insights 采集单元。查看 Windows link:concept_acquisition_unit_requirements.html["前提条件"] 安装之前 link:task_configure_acquisition_unit.html["采集单元软件"]。
 
 
 '''

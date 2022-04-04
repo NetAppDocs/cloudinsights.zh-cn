@@ -77,4 +77,4 @@ image:Webhook_Monitor_Notify.png["Webhook 监控通知"]
 
 == webhook 示例：
 
-网络挂钩 link:task_webhook_example_slack.html["可宽延"]网络挂钩 网络挂钩 网络挂钩 
+网络挂钩 link:task_webhook_example_slack.html["可宽延"]网络挂钩 link:task_webhook_example_pagerduty.html["PagerDty"]网络挂钩 link:task_webhook_example_teams.html["团队"]网络挂钩 link:task_webhook_example_discord.html["不和"]

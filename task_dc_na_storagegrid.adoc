@@ -57,6 +57,26 @@ NOTE: StorageGRID 按不同的原始 TB 到受管单元速率进行计量。每 
 |===
 
 
+== 单点登录（ SSO ）
+
+。 link:https://docs.netapp.com/sgws-112/index.jsp["StorageGRID"] 固件版本具有相应的 API 版本； 3.0 API 及更高版本支持单点登录（ Single Sign-On ， SSO ）登录。
+
+|===
+
+
+| 固件版本 | API 版本 | 支持单点登录（ SSO ） 
+
+
+| 11.1 | 2. | 否 
+
+
+| 11.2. | 3.0 | 是的。 
+
+
+| 11.5 | 3.3 | 是的。 
+|===
+
+
 == 故障排除
 
 可从中找到此数据收集器上的追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
