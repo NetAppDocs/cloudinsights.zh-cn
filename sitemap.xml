@@ -155,7 +155,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/concept_device_resolution_overview.html</loc>
       
-      <lastmod>2021-07-27T03:26:15+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -232,7 +232,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/concept_requesting_support.html</loc>
       
-      <lastmod>2021-07-27T03:26:15+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -246,7 +246,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/concept_subscribing_to_cloud_insights.html</loc>
       
-      <lastmod>2022-03-14T23:41:50+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -274,14 +274,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/concept_user_roles.html</loc>
       
-      <lastmod>2022-03-30T18:46:05+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/concept_whats_new.html</loc>
       
-      <lastmod>2022-03-30T15:50:18+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -386,7 +386,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_getting_started_with_cloud_secure.html</loc>
       
-      <lastmod>2021-07-27T03:26:15+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -400,7 +400,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/</loc>
       
-      <lastmod>2021-07-27T03:26:15+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -512,7 +512,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/reporting_querying_database.html</loc>
       
-      <lastmod>2021-11-17T13:37:32+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -540,7 +540,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights//search.html</loc>
       
-      <lastmod>2022-03-31T17:24:03+00:00</lastmod>
+      <lastmod>2022-04-04T14:53:25+00:00</lastmod>
       
     </url>
   
@@ -827,7 +827,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_config_user_dir_connect_ldap.html</loc>
       
-      <lastmod>2021-08-20T15:53:31+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -869,7 +869,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_create_monitor.html</loc>
       
-      <lastmod>2022-03-15T13:35:56+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -883,7 +883,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_create_webhook.html</loc>
       
-      <lastmod>2021-11-01T18:16:14+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -1254,7 +1254,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_dc_na_astra_data_store.html</loc>
       
-      <lastmod>2022-01-06T21:01:29+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -1317,7 +1317,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_dc_na_storagegrid.html</loc>
       
-      <lastmod>2021-12-11T02:54:53+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -1373,14 +1373,14 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_device_resolution_fibre_channel.html</loc>
       
-      <lastmod>2021-08-07T04:53:42+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_device_resolution_ip.html</loc>
       
-      <lastmod>2021-08-26T19:12:18+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -1394,7 +1394,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_device_resolution_rules.html</loc>
       
-      <lastmod>2021-08-07T04:53:42+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -1471,7 +1471,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_system_monitors.html</loc>
       
-      <lastmod>2022-03-31T17:23:27+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
@@ -1485,7 +1485,7 @@
     <url>
       <loc>https://docs.netapp.com/zh-cn/cloudinsights/task_troubleshooting_general_problems.html</loc>
       
-      <lastmod>2021-07-28T16:11:05+00:00</lastmod>
+      <lastmod>2022-04-04T14:52:54+00:00</lastmod>
       
     </url>
   
