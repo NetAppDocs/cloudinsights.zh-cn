@@ -874,7 +874,6 @@
   <block id="0062c1fbde704d862293af74f9c341ee" category="paragraph">+ 此时将显示添加应用程序对话框。</block>
   <block id="b32a7920a5087ed62d85b129fb5ce33b" category="list-text">输入应用程序的唯一名称。</block>
   <block id="c418529bd36204e932f103b225c97cb8" category="list-text">选择应用程序的优先级。</block>
-  <block id="791e1dfec485a22a41ff378f2bff756c" category="paragraph">定义应用程序后，可以将其分配给资产。</block>
   <block id="9bf2dd1afa4d073358de477920a2956b" category="section-title">将应用程序分配给资产</block>
   <block id="b93ef263c781b779a9342ab97ac1011e" category="paragraph">例如，此操作步骤会将应用程序分配给主机。您可以将主机，虚拟机，卷或内部卷分配给应用程序。</block>
   <block id="11db6ea59a00e33ecd2cdfae80620a9a" category="list-text">找到要分配给应用程序的资产：</block>
@@ -3799,8 +3798,6 @@
   <block id="be79d6e6a44e0a57d37256e5bc2c0909" category="cell">可能的解决方案： * 验证输入的凭据和 IP 地址。* 尝试使用 VMware Infrastructure Client 与虚拟中心进行通信。* 尝试使用受管对象浏览器（例如 MOB ）与虚拟中心进行通信。</block>
   <block id="4715797e850d7872546c22d0a379ca4f" category="summary">使用查询为对象分配多个应用程序或标注，或者从对象中删除多个应用程序或标注。</block>
   <block id="de1cabd167f3864b78d24d3da683bd0c" category="doc">为资产分配多个应用程序或从资产中删除多个应用程序</block>
-  <block id="ddb4e3be26b56b7ae03a903c61fba413" category="paragraph">您可以使用查询为资产分配多个应用程序或从资产中删除多个应用程序，而无需手动分配或删除这些应用程序。</block>
-  <block id="ed447659cd503ecad81ff432937f36db" category="admonition">您可以使用这些步骤以相同方式添加或删除标注。</block>
   <block id="930ebcf0e051fb5a1e36f9ff9248a750" category="paragraph">您必须已创建一个查询，用于查找要编辑的所有资产。</block>
   <block id="4bdc13a05f4739df7fb7100c4c7a4f0a" category="paragraph">此时将显示 "Queries" 页面。</block>
   <block id="4ce096e29e33c848d69cb1b5108fca19" category="list-text">单击用于查找资产的查询的名称。</block>
@@ -8659,4 +8656,10 @@
   <block id="211ba4facc37bc8a85949c753a2fcfbd" category="cell">托管 " 通用服务 " 组件的操作中心服务器的 IP 地址或完全限定域名</block>
   <block id="8aaf0c3eec33a08ba4aa512a66667baf" category="paragraph">EMC RecoverPoint 数据收集器的主要使用情形是，发现 RecoverPoint 存储设备所促进的卷到卷复制关系。此收集器还会发现 Recoverpoint 设备本身。请注意， Dell/EMC 销售适用于 VM 的 VMware 备份解决方案 — "RecoverPoint for VMs" —此收集器不支持此功能</block>
   <block id="77b03d5ff356126537320c25f40d3644" category="paragraph">在配置方面，数据收集器需要存储处理器的 IP 地址以及只读用户名和密码。</block>
+  <block id="71a388d251263451b6a429a35f18c534" category="paragraph">定义应用程序后，可以将其分配给资产。</block>
+  <block id="46152eb4e0d7febe5ed5ec5aa51b068f" category="admonition">对于具有大量相关资产的环境，向这些资产继承应用程序分配可能需要几分钟的时间。如果您拥有许多相关资产，请留出更多时间进行继承。</block>
+  <block id="b5fba9ff24d0045d1377a05a46b32f68" category="inline-link-macro">应用程序</block>
+  <block id="a4dc3c56fe7e26b25b470b6a7c15badc" category="paragraph">您可以分配多个 <block ref="2a4b6454a635dd6d2517e4f81c46cc23" category="inline-link-macro-rx"></block> 使用查询从资产中删除或删除多个应用程序，而无需手动分配或删除它们。</block>
+  <block id="4ab6864fc58ecd8b598ee10dfe2ac311" category="inline-link-macro">标注</block>
+  <block id="9d0068916fee0d45d023af017221e708" category="admonition">您可以使用以下步骤添加或删除 <block ref="5ee10a6642913576d2747e5e8b69f77c" category="inline-link-macro-rx"></block> 相同的方式。</block>
 </blocks>
