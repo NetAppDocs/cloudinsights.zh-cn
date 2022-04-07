@@ -8663,4 +8663,17 @@
   <block id="4ab6864fc58ecd8b598ee10dfe2ac311" category="inline-link-macro">标注</block>
   <block id="9d0068916fee0d45d023af017221e708" category="admonition">您可以使用以下步骤添加或删除 <block ref="5ee10a6642913576d2747e5e8b69f77c" category="inline-link-macro-rx"></block> 相同的方式。</block>
   <block id="76b98091ce8fe8a7a83d21d8c94371fd" category="list-text">开始之前，您必须使用 _Administrator_ 帐户登录到 ONTAP ，并且必须启用 _diagnostic-level commands_。</block>
+  <block id="47d7b551b40becb326c406f74238150a" category="paragraph">API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。</block>
+  <block id="1281391af6f060d6074a70718d4fe3ea" category="paragraph">在使用 Cloud Insights API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌用于指定的 API 类别，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类别下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。</block>
+  <block id="360146f659bd725b350b271d6c503e19" category="list-text">选择 API 类别</block>
+  <block id="c702f9ec1de747488ae69091e4b44640" category="paragraph">令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以在 Cloud Insights 后端人员不直接参与的情况下授予和撤消这些密钥。</block>
+  <block id="98fbc8e7d31cedd912f33ee6a89818dc" category="section-title">API 类别</block>
+  <block id="c7fb26bb2d197a98dd4605353de8b5fd" category="paragraph">Cloud Insights API 基于类别，目前包含以下类别：</block>
+  <block id="2f90612b2de30393cb574a8125f3b83c" category="list-text">资产类别包含资产，查询和搜索 API 。</block>
+  <block id="19d579e8bdc0964ff6c1b98d9f4077d2" category="list-text">数据收集类别用于检索和管理数据收集器。</block>
+  <block id="2e3e1cf2be708126495ee0409de4ffdc" category="list-text">数据载入类别用于检索和管理载入数据和自定义指标，例如从 Telegraf 代理检索和管理</block>
+  <block id="66f4e9202f5d9c4adb625559f7dd6e37" category="paragraph">其他类别和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 <block ref="26737cef142923769504b229d3be204d" category="inline-link-macro-rx"></block>。</block>
+  <block id="d1d72189f00074c010ad5cdaa0e7efe1" category="paragraph">性能指标具有问题描述和类别，并包含一组性能摘要。例如，延迟，流量和速率。</block>
+  <block id="9291545b28f5f21e3694eb57db45da2c" category="paragraph">每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Cloud Insights 支持本文档后面列出的几个性能指标类别。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。</block>
+  <block id="780b9434cb2ebb62e93b92701c3b13b0" category="paragraph">搜索 API 是系统的一个简单入口点。API 的唯一输入参数是自由格式的字符串，生成的 JSON 包含分类结果列表。类别是指与清单不同的资产类型，例如存储，主机，数据存储库等。每个类别都将包含一个与搜索条件匹配的类别类型对象列表。</block>
 </blocks>
