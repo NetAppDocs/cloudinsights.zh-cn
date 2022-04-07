@@ -8662,4 +8662,5 @@
   <block id="a4dc3c56fe7e26b25b470b6a7c15badc" category="paragraph">您可以分配多个 <block ref="2a4b6454a635dd6d2517e4f81c46cc23" category="inline-link-macro-rx"></block> 使用查询从资产中删除或删除多个应用程序，而无需手动分配或删除它们。</block>
   <block id="4ab6864fc58ecd8b598ee10dfe2ac311" category="inline-link-macro">标注</block>
   <block id="9d0068916fee0d45d023af017221e708" category="admonition">您可以使用以下步骤添加或删除 <block ref="5ee10a6642913576d2747e5e8b69f77c" category="inline-link-macro-rx"></block> 相同的方式。</block>
+  <block id="76b98091ce8fe8a7a83d21d8c94371fd" category="list-text">开始之前，您必须使用 _Administrator_ 帐户登录到 ONTAP ，并且必须启用 _diagnostic-level commands_。</block>
 </blocks>

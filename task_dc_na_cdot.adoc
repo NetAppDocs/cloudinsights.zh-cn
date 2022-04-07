@@ -182,6 +182,7 @@ Cloud Insights 从 ONTAP 数据收集器采集清单和性能数据。对于所�
 
 要在集群级别为 Cloud Insights 创建本地帐户，请使用集群管理管理员用户名 / 密码登录到 ONTAP ，然后在 ONTAP 服务器上执行以下命令：
 
+. 开始之前，您必须使用 _Administrator_ 帐户登录到 ONTAP ，并且必须启用 _diagnostic-level commands_。
 . 使用以下命令创建只读角色。
 +
 ....
