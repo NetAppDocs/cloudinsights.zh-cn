@@ -82,14 +82,7 @@
   <block id="7ad3a84f1fcb16f2e949410059075192" category="paragraph">完成 AWS 订阅过程后，您将返回到 Cloud Insights 环境。或者，如果环境不再处于活动状态（例如，您已注销），您将转到 Cloud Central 登录页面。当您再次登录到 Cloud Insights 时，您的订阅将处于活动状态。</block>
   <block id="5d3063371ceaf93b149242b0ae0e859e" category="admonition">在 AWS Marketplace 页面上单击 * 设置您的帐户 * 后，您必须在一小时内完成 AWS 订阅过程。如果您未在一小时内完成此操作，则需要再次单击 * 设置您的帐户 * 才能完成此过程。</block>
   <block id="adeb6d7dca380a78c632dade1cb64bd9" category="paragraph">如果出现问题且订阅过程无法正确完成，则在登录到环境时仍会看到 " 试用版本 " 横幅。在这种情况下，您可以转到 * 管理员 &gt; 订阅 * 并重复订阅过程。</block>
-  <block id="ed5935cc32dade0b2d244107f7aa5fe6" category="section-title">订阅模式</block>
-  <block id="308bc3a6204b284eb17c88c0c26b6a38" category="paragraph">订阅处于活动状态后，您可以在 * 管理 &gt; 订阅 * 页面上查看订阅状态和受管设备使用情况。</block>
-  <block id="2931ce8ce932ee92d44cb8feec0f64e7" category="inline-image-macro">订阅状态</block>
-  <block id="86ddc8a835d6340583cf61eac98ab055" category="paragraph"><block ref="86ddc8a835d6340583cf61eac98ab055" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c08374568b73748e7ca5cdc1ce644f6" category="paragraph">订阅状态页面显示以下内容：</block>
   <block id="6d9a2e2290d3df63014b18bdb7da2212" category="list-text">当前订阅或 Active Edition</block>
-  <block id="bfda71e564df94a83ed197513095a98d" category="list-text">有关订阅的详细信息</block>
-  <block id="7c038313ceaf745a74cf959d5459722f" category="list-text">当前受管单元使用情况，包括主机和容量的细分计数</block>
   <block id="2d5c36fcd4687378b85e14d41941a80f" category="admonition">未格式化的容量受管单元计数反映了环境中总原始容量的总和，并将其向上舍入为最接近的受管单元。</block>
   <block id="cbeff837b5b145559373d2d49dde5efb" category="section-title">如果我超出订阅使用量，会发生什么情况？</block>
   <block id="8014c42068ef58c63a245dfd8cb969f3" category="paragraph">如果您的受管设备使用量超过总订阅量的 80% ， 90% 和 100% ，则会显示警告：</block>
@@ -101,13 +94,6 @@
   <block id="96be5547ac122332a0bde6fd0939dc1a" category="cell">此时将显示警告横幅。您可能需要增加订阅的受管单元数。</block>
   <block id="8bc50a0b28a2cb63377733efc9b75798" category="cell">* 100% *</block>
   <block id="13b6624916681c7d00ae8634971f8cd8" category="cell">此时将显示一个错误横幅，在执行以下操作之一之前，您的功能将受到限制： * 修改订阅以增加订阅的受管单元数 * 删除数据收集器，以使您的受管单元使用量等于或低于您的订阅量</block>
-  <block id="b004ed546334ca156d79ca28948f895f" category="section-title">已安装数据收集器</block>
-  <block id="44dbec7be84a5fd30603c50945d16fe9" category="paragraph">单击 * 查看数据收集器 * 按钮以展开已安装的数据收集器列表。</block>
-  <block id="fc533a9ce62a8d90d1518c1f6483e105" category="inline-image-macro">数据收集器</block>
-  <block id="36c8ca827a0042c6cc4fdd697b9e4556" category="paragraph"><block ref="36c8ca827a0042c6cc4fdd697b9e4556" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5b1d644346a4becd2467f5d6388a0b61" category="paragraph">" 数据收集器 " 部分显示了环境中安装的数据收集器以及每个数据收集器的受管单元细分情况。</block>
-  <block id="284e300b68f9744a057424d324471ec9" category="admonition">受管单元的总和可能与状态部分中的数据收集器计数略有不同。这是因为受管单元计数将向上取整为最接近的受管单元。数据收集器列表中这些数字的总和可能略高于状态部分中的总受管单元数。" 状态 " 部分反映了您的订阅的实际受管单元数。</block>
-  <block id="55c42dee624892077410178265bb666a" category="paragraph">如果使用量接近或超过您的订阅量，您可以单击 " 三个点 " 菜单并选择 * 删除 * 来删除此列表中的数据收集器。</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">直接订阅并跳过试用版</block>
   <block id="ba90132b61afa4afdc494902547c62bf" category="paragraph">您也可以直接从订阅 Cloud Insights <block ref="71bf9afbc646fc95bce99ca169e1cd95" category="inline-link-macro-rx"></block>，而不是先创建试用环境。订阅完成并设置好环境后，您将立即订阅。</block>
   <block id="57e45a1f550d7e2a276b57b6bca05dca" category="summary">netstat 数据收集器配置</block>
@@ -4186,24 +4172,18 @@
   <block id="d7eb8ab1e688454eec9d83c8277b00fe" category="section-title">分组和聚合</block>
   <block id="3d0486264987eff198cb8489a591c919" category="section-title">分组（向上滚动）</block>
   <block id="e251f9ae37a0914ac3ed0861aee9d003" category="paragraph">从采集期间收集的底层数据点对小工具中显示的数据进行分组（有时称为汇总）。例如，如果您有一个折线图小工具显示一段时间内的存储 IOPS ，则您可能希望为每个数据中心显示一条单独的行，以便进行快速比较。您可以选择通过以下几种方式之一对这些数据进行分组：</block>
-  <block id="5feea3e3ac58d9b39ba942eb579a4dc5" category="list-text">* 平均 * ：将每行显示为基础数据的 _average 。</block>
-  <block id="d1433dcb6902e9ac41f53ed861b62f32" category="list-text">* 最大值 * ：将每行显示为基础数据的 _max_ 。</block>
-  <block id="e83206d12cc1b2bd55081384b71f9020" category="list-text">* 最小 * ：将每行显示为基础数据的最小值。</block>
   <block id="1a284984e082a2cc2ceecd12b5c25e50" category="list-text">* 求和 * ：将每行显示为基础数据的 _sum_ 。</block>
   <block id="419981855bdd80d78c67ae74ed237d6c" category="list-text">* 计数 * ：显示在指定时间范围内报告数据的对象的 _count_ 。您可以根据信息板时间范围（或小工具时间范围，如果设置为覆盖信息板时间）或您选择的 _Custom 时间窗口 _ 来选择 _Entire Time window_ 。</block>
   <block id="d186cba97a995601fc12d97defd879c7" category="paragraph">要设置分组方法，请执行以下操作。</block>
   <block id="0886591e8bd637066947802b2c681da8" category="list-text">在小工具的查询中，选择资产类型和指标（例如 _Storage_ ）以及指标（例如 _Performance IOPS Total_ ）。</block>
-  <block id="575c1cd09111ba05a1eb5cc5312dd4e8" category="list-text">对于 * 组 * ，选择一种汇总方法（例如 _Avg_ ），然后选择用于汇总数据的属性或指标（例如 _Data Center_ ）。</block>
   <block id="5545e86f2a092d7eeeeae79320003a7a" category="paragraph">此小工具会自动更新并显示每个数据中心的数据。</block>
   <block id="9b3328ae96bacd8c344b3f781d9113c0" category="paragraph">您也可以选择将底层数据的 _all_ 分组到图表或表中。在这种情况下，小工具中的每个查询都将显示一行，其中将显示所有底层资产的所选指标或指标的平均值，最小值，最大值，总和或计数。</block>
   <block id="28c428ed363d0e9575a830fcfb080fe3" category="paragraph">单击数据按 " 全部 " 分组的任何小工具的图例将打开一个查询页面，其中显示了此小工具中使用的第一个查询的结果。</block>
   <block id="12d9c21e855587068144e1be92c3bc96" category="paragraph">如果为查询设置了筛选器，则会根据筛选的数据对数据进行分组。</block>
   <block id="4bb74590cbf2f4d72c628f06e53c55b9" category="paragraph">请注意，如果您选择按任何字段（例如 _Model_ ）对小工具进行分组，则仍需要按该字段进行筛选，以便在图表或表中正确显示该字段的数据。</block>
   <block id="d86c1c1f96efbca023a6312f2655cdd2" category="section-title">正在聚合数据</block>
-  <block id="1d6802d615bce70ad97c362dcc6d5c40" category="paragraph">您可以通过将数据点聚合为分钟，小时或天分段，然后再按属性（如果已选择）汇总这些数据，进一步对齐时间序列图表（折线图，区域图等）。您可以选择根据数据点的 _Avg ， Max ， Min 或 Sum_ 或按选定间隔内收集的 _last_ 数据点进行聚合。要选择聚合方法，请单击小工具查询部分中的 * 更多选项 * 。</block>
   <block id="a10dce4cf3b20fcc81ffdd73fff68459" category="paragraph">如果间隔较小且时间范围较长，则可能会导致 " 聚合间隔导致数据点太多 " 警告。如果间隔较小，则可能会看到此情况，并将信息板时间范围增加到 7 天。在这种情况下， Insight 将临时增加聚合间隔，直到您选择较短的时间范围为止。</block>
   <block id="6d984d3ac5f53bc70c9ce3bedb56f658" category="paragraph">您还可以在条形图小工具和单值小工具中聚合数据。</block>
-  <block id="161e11bf628a1fd670e3e0b9eedf29cb" category="paragraph">默认情况下，大多数资产计数器聚合到 _Avg_ 。默认情况下，某些计数器聚合到 _Max ， min_ 或 _Sum_ 。例如，默认情况下，端口错误聚合到 _Sum_ ，其中存储 IOPS 聚合到 _Avg_ 。</block>
   <block id="806da624ec9d79eaa05cce82c4860377" category="section-title">显示顶部 / 底部结果</block>
   <block id="30481770dde0dcefc7b5810b7184ac11" category="paragraph">在图表小工具中，您可以显示已汇总数据的 * 前 * 或 * 后 * 结果，并从提供的下拉列表中选择显示的结果数。在表小工具中，您可以按任意列进行排序。</block>
   <block id="bf2502f9bc2110da9954bdce06de9421" category="section-title">顶部 / 底部图表小工具</block>
@@ -4227,7 +4207,6 @@
   <block id="4f185713961f3f486e96a04d3b9dc1a6" category="paragraph">此时，此表将显示总 IOPS 大于或等于 1 的所有虚拟机。请注意，表中没有分组。此时将显示所有 VM 。</block>
   <block id="a1966740b980e92a9d3c265e43f730b5" category="list-text">单击 * 分组依据 +]* 按钮。</block>
   <block id="a782b7666bdf1c1cb7056c8a2638fe4d" category="paragraph">您可以按显示的任何属性或标注进行分组。选择 _all_ 可显示一个组中的所有虚拟机。</block>
-  <block id="b254adcada979c6c2e6c887199085285" category="paragraph">性能指标的任何列标题都会显示一个 " 三个点 " 菜单，其中包含一个 * 汇总 * 选项。默认汇总方法为 _Avg_ 。这意味着，为组显示的数字是为组内每个虚拟机报告的所有总 IOPS 的平均值。您可以选择按 _Avg ， Sum ， Min_ 或 _Max_ 向上滚动此列。您显示的任何包含性能指标的列均可单独汇总。</block>
   <block id="f7a8c2039d39ba896bfa4934788580f5" category="inline-image-macro">汇总</block>
   <block id="2202d4997fd5aa526a219fbba3683a62" category="paragraph"><block ref="2202d4997fd5aa526a219fbba3683a62" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b38d94a5cfd2541af6801a9dc46fd618" category="list-text">单击 _all_ 并选择 _Hypervisor name_ 。</block>
@@ -8260,13 +8239,10 @@
   <block id="ecf4e9e3c38358de05561be5ed03f5d0" category="section-title">预览功能</block>
   <block id="2240ee7d4e56b8ba7ac49b14311cdeed" category="inline-link-macro">NetApp 销售团队</block>
   <block id="5fa0ef8fc40e60003288942e2da3e300" category="cell">* 功能 *</block>
-  <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">限制用户访问自动响应操作</block>
   <block id="decbe415d8accca7c2c16d48a79ee934" category="inline-link-macro">阅读更多内容</block>
-  <block id="f763810a8ec0d5862e0f288795932956" category="cell">检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问（完整块或设置为只读访问）来阻止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="ecd6006dc9161e21cc393e8aee8b161a" category="cell">数据销毁—文件删除攻击检测</block>
   <block id="802e1838a460af6f9b00de358ee4fd50" category="cell">检测异常的大规模文件删除活动，阻止恶意用户访问恶意文件，并使用自动响应策略自动创建快照。</block>
   <block id="f1e906bd3edd784d1978ed7c4566e64c" category="cell">共享资源面临压力</block>
-  <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">通过 " 受压力的共享资源 " 洞察力，您可以确定： - 由于一个或多个工作负载的高需求而面临压力的共享存储资源 - 共享资源上要求苛刻且受影响的工作负载<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="e58aeb679b2b8a9e7a899a6123bac66e" category="section-title">Cloud Insights 可解决 Apache Log4j 漏洞</block>
   <block id="671a3bde6499a097bb904b76a2924a9f" category="paragraph">客户安全是 NetApp 的首要任务。Cloud Insights 对其软件库进行了更新，以解决最新的 Apache Log4j 漏洞。</block>
   <block id="288805c2814f50aec1c5cc8239cd2bd7" category="paragraph">请参见 NetApp 产品安全建议网站上的以下内容：</block>
@@ -8694,4 +8670,51 @@
   <block id="7e07c1b11f24151c7ec5fb952780452c" category="cell">已超过 WAFL 配额 qtree</block>
   <block id="46faf95e309bd2826b383287323b8088" category="cell">如果卷上的树配额已超过，则会发生此事件。此树在一定时间内不会重复此事件，或者在执行 " 配额调整大小 " 之前不会重复此事件。此时间量由 "quota logmsg" 命令指定。</block>
   <block id="ef50e307d2e9be873ea2971a14d5b95b" category="cell">减少此树中的使用量或增加配额并运行 "quota resize" 命令。</block>
+  <block id="7a523464a7ffeacc5aafdfd0de3ab1aa" category="section-title">查看订阅状态</block>
+  <block id="4d71df4f1ca4df08ff676034d4f602c1" category="paragraph">订阅处于活动状态后，您可以从 * 管理 &gt; 订阅 * 页面查看订阅状态和受管设备使用情况。</block>
+  <block id="cf9f7d335ccf63f9afafb03e9bccbb83" category="inline-image-macro">查看订阅 stus</block>
+  <block id="5b5d45532915c043e48d673f375857ab" category="paragraph"><block ref="5b5d45532915c043e48d673f375857ab" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a6d1c39ffb1db427cb7afbe60b68ee43" category="paragraph">订阅详细信息选项卡显示以下内容：</block>
+  <block id="a62d98f1bf3d70795bcdab761b572ade" category="list-text">有关订阅的详细信息</block>
+  <block id="2f40f378178c238fe365dfbf4f50ca13" category="list-text">用于修改订阅或估计成本变化的链接</block>
+  <block id="3252142ff4dd2ca67a9bff6f0a7fd71b" category="section-title">查看使用情况管理</block>
+  <block id="6a69ffe6b718764ce315d48cbbb46266" category="paragraph">" 使用情况管理 " 选项卡简要显示了受管单元的使用情况，环境中安装的数据收集器列表以及每个受管单元的细分情况。</block>
+  <block id="17290f60a5d0cd57f090b90688a390a3" category="admonition">受管单元的总和可能与摘要部分中的数据收集器计数略有不同。这是因为受管单元计数将向上取整为最接近的受管单元。数据收集器列表中这些数字的总和可能略高于状态部分中的总受管单元数。摘要部分反映了您的订阅的实际受管单元数。</block>
+  <block id="844a228971d8fd3d04326401af09bab1" category="paragraph">如果使用量接近或超过您的订阅量，您可以单击 " 三个点 " 菜单并选择 _Delete_ 来删除此列表中的数据收集器。</block>
+  <block id="88ae2467b83e5d292b18e19eaae1852d" category="list-text">Kubernetes 1.17 或更高版本支持安装 NetApp Kubernetes 监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。</block>
+  <block id="36098c0d1c3de71d8727b1543bace633" category="section-title">2022 年 4 月</block>
+  <block id="259a90b9586b985b7c26543c1f883472" category="section-title">分享您的反馈！</block>
+  <block id="42f99e1fd22e64a04ef5b09421665517" category="inline-link-macro">* 立即注册 *</block>
+  <block id="4d9ad51ad70c2642ecea9935d81a1695" category="paragraph">我们希望您的反馈有助于塑造 Cloud Insights 。参加 NetApp 的 * 行动洞察 * 计划，赢取积分和奖励。 <block ref="ab6e19fe26503d1ed4ce099411562a46" category="inline-link-macro-rx"></block>！</block>
+  <block id="52072c34765837d5e6badb6caf288f6a" category="section-title">已更新信息板编辑器</block>
+  <block id="cc7c0620453431e468812aace5e77151" category="paragraph">我们对信息板创建工具进行了全面革新，使您可以更轻松地快速直观地显示数据。导航到 Cloud Insights 的 " 信息板 " 页面可编辑现有信息板，从我们的信息板库中添加一个信息板或创建您自己的新信息板以进行查看。</block>
+  <block id="fa1ab12277f3f7697de9ade37c5612c4" category="inline-image-macro">小工具编辑器改进了布局</block>
+  <block id="5b17f0ef6e1e7f78e5bb8a85dadb4852" category="paragraph"><block ref="5b17f0ef6e1e7f78e5bb8a85dadb4852" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a48efe329568d1e14e89d768038fc44d" category="paragraph">此外，还引入了一种新的计数聚合方法。在将数据分组到条形图，柱形图和饼图小工具中时，您可以快速轻松地显示选定指标的相关对象数量。</block>
+  <block id="b4c3ffa7b1e054afcfeb3eb4b9347c21" category="inline-image-macro">显示计数的聚合下拉列表</block>
+  <block id="fa7034d945953ab347c4367d8fa3a51f" category="paragraph"><block ref="fa7034d945953ab347c4367d8fa3a51f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0d55cb88c50b339df6b23026d70f4851" category="section-title">增强了对 Kubernetes 基础架构的监控功能</block>
+  <block id="6e8d08f021f143c0380bcfda2a0d8e35" category="paragraph">Cloud Insights 可以在创建或删除 Pod ，子集和副本集以及创建新部署时向您发出警报，让您及时了解 Kubernetes 环境中的变化。Kubernetes 会将默认状态监控为 _paused_state ，因此您应仅启用所需的特定状态。</block>
+  <block id="8cadb794eedb13cda455ddab4f27297a" category="section-title">适用于用户管理的新 API</block>
+  <block id="f8592e1ae5377bf3bb9b19a0a5eedfaf" category="paragraph">管理和邀请用户只需通过 API 即可；您可以根据自己喜欢的 Cloud Insights 功能集邀请用户并分配角色：监控和优化， Cloud Secure 或报告。</block>
+  <block id="25e271d2558ae8aca95f77cf3064f9f4" category="cell">内部卷和卷容量全满时间预测</block>
+  <block id="6327e04265ebac4957d88ad9cb76d168" category="cell">Cloud Insights 可以预测每个受监控内部卷和卷的容量用尽前的天数。此值有助于显著降低中断风险。</block>
+  <block id="e90c4ace721cc2fab5257871d711796d" category="cell">Cloud Secure —在受到攻击时限制用户访问</block>
+  <block id="e353c2255e0d23456f0d04e774cc242c" category="cell">可以在检测到攻击时限制用户访问，从而增强对业务关键型数据的保护。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="58114ec5d8ca1494b408777c1a724eef" category="cell">压力洞察力下的共享资源使用 AI/ML 自动确定资源争用在您的环境中导致性能下降的位置，突出显示受其影响的任何工作负载，并提供建议的修复操作，以便您更快地解决性能问题。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
+  <block id="9fc31ce4550c4f68c1ea81f5a37335aa" category="section-title">新的 Data Collector</block>
+  <block id="d0112aff81f4571da224986557628445" category="list-text">* Cohesity Smart Files* —此基于 REST API 的收集器将获取 Cohesity 集群，发现 " 视图 " （作为 CI 内部卷），各个节点以及收集性能指标。</block>
+  <block id="01ec768781d34379b5889a634c19e5cc" category="section-title">其他 Data Collector 更新</block>
+  <block id="cd96347d3d125d14ec06afe0adbac82a" category="paragraph">以下数据收集器改进了性能数据的收集和显示：</block>
+  <block id="03a00cff615471538bae5d9ab8cc669e" category="list-text">Brocade 命令行界面</block>
+  <block id="ff117c121f3e342cdfe3ace24674c883" category="list-text">Dell/EMC VPlex ， PowerStore ， Isilon /PowerScale ， VNX Block/Cariion CLI ， XtremIO ， Unity 或 VNXe</block>
+  <block id="1269dd27efe1530411a746e3f4686a54" category="list-text">Pure FlashArray</block>
+  <block id="68d79c5dc5038c00a5ac6dae9671b5ee" category="paragraph">所有 NetApp 数据收集器以及 VMware 和 Cisco 均已提供这些性能增强功能，并将在未来几个月内推出给所有其他数据收集器。</block>
+  <block id="fec05a93bc2859fa296e20fb09a6d339" category="list-text">* 平均值 * ：将每行显示为基础数据的 _average 。</block>
+  <block id="c4006c924bdf8bc80ddcd09bd46d0666" category="list-text">* 最大值 * ：将每行显示为基础数据的最大值。</block>
+  <block id="fdf509d52d13201cead39e938712c689" category="list-text">* 最小值 * ：将每行显示为基础数据的最小值。</block>
+  <block id="843784684ad8439aa0ddfe813cac8e16" category="list-text">对于 * 组 * ，选择一种汇总方法（例如 _average ），然后选择用于汇总数据的属性或指标（例如 _Data Center_ ）。</block>
+  <block id="757a30a76f00d417fdea69085d4444a4" category="paragraph">您可以通过将数据点聚合为分钟，小时或天分段，然后再按属性（如果已选择）汇总这些数据，进一步对齐时间序列图表（折线图，区域图等）。您可以选择根据数据点的 _average ， maximum ， Minimum ， Sum_ 或 _Count_ 来聚合这些数据点。</block>
+  <block id="abbc6ae3194254cb0a6cd47c50a20631" category="paragraph">默认情况下，大多数资产计数器聚合到 _average 。默认情况下，某些计数器聚合到 _Max ， min_ 或 _Sum_ 。例如，默认情况下，端口错误聚合到 _Sum_ ，其中存储 IOPS 聚合到 _average 。</block>
+  <block id="958e53a8b3265badb6ae993dbe9c447a" category="paragraph">性能指标的任何列标题都会显示一个 " 三个点 " 菜单，其中包含一个 * 汇总 * 选项。默认汇总方法为 _average 。这意味着，为组显示的数字是为组内每个虚拟机报告的所有总 IOPS 的平均值。您可以选择按 _average ， Sum ， Minimum 或 _maximum_ 向上滚动此列。您显示的任何包含性能指标的列均可单独汇总。</block>
 </blocks>

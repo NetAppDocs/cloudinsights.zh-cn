@@ -11,6 +11,81 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+=== 2022 年 4 月
+
+
+
+==== 分享您的反馈！
+
+我们希望您的反馈有助于塑造 Cloud Insights 。参加 NetApp 的 * 行动洞察 * 计划，赢取积分和奖励。 link:https://netapp.co1.qualtrics.com/jfe/form/SV_2aVWcE58J7oIDs1["* 立即注册 *"]！
+
+
+
+==== 已更新信息板编辑器
+
+我们对信息板创建工具进行了全面革新，使您可以更轻松地快速直观地显示数据。导航到 Cloud Insights 的 " 信息板 " 页面可编辑现有信息板，从我们的信息板库中添加一个信息板或创建您自己的新信息板以进行查看。
+
+image:DashboardWidgetEditorScreen.png["小工具编辑器改进了布局"]
+
+此外，还引入了一种新的计数聚合方法。在将数据分组到条形图，柱形图和饼图小工具中时，您可以快速轻松地显示选定指标的相关对象数量。
+
+image:CountAggregationExample1.png["显示计数的聚合下拉列表"]
+
+
+
+==== 增强了对 Kubernetes 基础架构的监控功能
+
+Cloud Insights 可以在创建或删除 Pod ，子集和副本集以及创建新部署时向您发出警报，让您及时了解 Kubernetes 环境中的变化。Kubernetes 会将默认状态监控为 _paused_state ，因此您应仅启用所需的特定状态。
+
+
+
+==== 适用于用户管理的新 API
+
+管理和邀请用户只需通过 API 即可；您可以根据自己喜欢的 Cloud Insights 功能集邀请用户并分配角色：监控和优化， Cloud Secure 或报告。
+
+
+
+==== 预览功能
+
+Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
+
+|===
+
+
+| * 功能 * | * 问题描述 * 
+
+
+| 内部卷和卷容量全满时间预测 | Cloud Insights 可以预测每个受监控内部卷和卷的容量用尽前的天数。此值有助于显著降低中断风险。 
+
+
+| Cloud Secure —在受到攻击时限制用户访问 | 可以在检测到攻击时限制用户访问，从而增强对业务关键型数据的保护。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
+
+
+| 共享资源面临压力 | 压力洞察力下的共享资源使用 AI/ML 自动确定资源争用在您的环境中导致性能下降的位置，突出显示受其影响的任何工作负载，并提供建议的修复操作，以便您更快地解决性能问题。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["阅读更多内容"] 
+|===
+
+
+==== 新的 Data Collector
+
+* * Cohesity Smart Files* —此基于 REST API 的收集器将获取 Cohesity 集群，发现 " 视图 " （作为 CI 内部卷），各个节点以及收集性能指标。
+
+
+
+
+==== 其他 Data Collector 更新
+
+以下数据收集器改进了性能数据的收集和显示：
+
+* Brocade 命令行界面
+* Dell/EMC VPlex ， PowerStore ， Isilon /PowerScale ， VNX Block/Cariion CLI ， XtremIO ， Unity 或 VNXe
+* Pure FlashArray
+
+
+所有 NetApp 数据收集器以及 VMware 和 Cisco 均已提供这些性能增强功能，并将在未来几个月内推出给所有其他数据收集器。
+
+'''
+
+
 === 2022 年 3 月
 
 
@@ -58,23 +133,6 @@ image:FSx_System_Monitors_Workloads.png["FSX 监控工作负载"]
 * Broadcom 光纤通道交换机数据收集器已进行优化，可减少每次清单轮询发出的 CLI 命令数量。
 
 
-
-
-==== 预览功能
-
-Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
-
-|===
-
-
-| * 功能 * | * 问题描述 * 
-
-
-| 限制用户访问自动响应操作 | 检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问（完整块或设置为只读访问）来阻止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
-
-
-| 共享资源面临压力 | 通过 " 受压力的共享资源 " 洞察力，您可以确定： - 由于一个或多个工作负载的高需求而面临压力的共享存储资源 - 共享资源上要求苛刻且受影响的工作负载link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["阅读更多内容"] 
-|===
 '''
 
 
