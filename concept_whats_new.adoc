@@ -39,12 +39,6 @@ Cloud Insights 可以在创建或删除 Pod ，子集和副本集以及创建新
 
 
 
-==== 适用于用户管理的新 API
-
-管理和邀请用户只需通过 API 即可；您可以根据自己喜欢的 Cloud Insights 功能集邀请用户并分配角色：监控和优化， Cloud Secure 或报告。
-
-
-
 ==== 预览功能
 
 Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
