@@ -65,13 +65,7 @@ image:Kubernetes_Operator_Tile_Choices.png["Kubernetes 安装选项"]
 NOTE: NetApp Kubernetes 监控操作员安装被视为 _Preview_ 功能，因此可能会发生更改。
 
 .前提条件：
-* NetApp Kubernetes 监控操作员安装已通过测试，应可与以下各项配合使用：
-+
-** AWS EKS 1.18 - 1.21
-** OpenShift 4.6 - 4.8
-** Rancher 2.4 - 2.6 。
-
-
+* Kubernetes 1.17 或更高版本支持安装 NetApp Kubernetes 监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。
 * 如果您运行的是 OpenShift 4.6 - 4.8 ，则除了确保满足这些前提条件之外，还必须遵循下面的 * OpenShift 指令 * 。
 * 必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。
 * 必须安装 Kube-state-metrics 。有关详细信息，请参见下文。Kube-state-metrics 会随基于操作员的安装自动安装。
