@@ -8459,7 +8459,6 @@
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成数据的代理。</block>
   <block id="f09825d109ed4681880410bb47684198" category="doc">在 Kubernetes 上配置代理</block>
   <block id="4b0a31d3afe47e26997b3d6c99c37152" category="inline-link-macro">* 转到此处 *</block>
-  <block id="ae8396b4c25ba8af80c0396cbac8dbb2" category="paragraph">要在 Kubernetes 上安装代理，必须先执行以下操作：</block>
   <block id="8270d1410ea5852ae1772fd6e21a5b85" category="list-text">为主机选择 Kubernetes 平台</block>
   <block id="9be51db2ab39984556571e44a8cd71ff" category="list-text">请按照其余步骤进行操作。</block>
   <block id="9ac0dd27d420b7b48ca72e463ae95e18" category="inline-link-macro">这些说明</block>
@@ -8728,4 +8727,5 @@
   <block id="737f024effb455f30b04c7091e2d8667" category="section-title">对 Kubernetes Agent 安装进行故障排除</block>
   <block id="64cc432c57095555eeb8d95b2c8523f6" category="sidebar">配置代理（ Windows/Linux/Mac ）</block>
   <block id="4e94322aa6275968b1c9422851fb7f86" category="sidebar">配置代理（ Kubernetes ）</block>
+  <block id="9da0861aa96415448a45043409b3c6a2" category="paragraph">要安装代理，必须先执行以下操作：</block>
 </blocks>
