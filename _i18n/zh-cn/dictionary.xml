@@ -8462,7 +8462,6 @@
   <block id="8270d1410ea5852ae1772fd6e21a5b85" category="list-text">为主机选择 Kubernetes 平台</block>
   <block id="9be51db2ab39984556571e44a8cd71ff" category="list-text">请按照其余步骤进行操作。</block>
   <block id="9ac0dd27d420b7b48ca72e463ae95e18" category="inline-link-macro">这些说明</block>
-  <block id="6981ef377139f8296f4ae0aa44bc108d" category="paragraph">要在 Windows ， Linux 或 Mac 上安装代理，请按照 <block ref="bd07fc5e27e6fac57c0afecd246768d9" category="inline-link-macro-rx"></block>。</block>
   <block id="4399aa6f1f3bf7573a388f265d2ad7ca" category="section-title">在 Kubernetes 上安装代理</block>
   <block id="f997e79142f159c33823b9deeab809eb" category="cell">在 Kubernetes 上，我的 Telegraf ReplicaSet Pod 报告以下错误： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes ， PKI/etcd/server.crt ： /etc/Kubernetes ， crt/etcd/server.key ：打开 /etc/Kubernetes ， pki/etcd/server.key ： open /etc/Kubernetes ， pki/etcd/server.key ： no 此类文件或目录</block>
   <block id="9df12d675c4f61381132e45173ef90d0" category="cell">Telegraf ReplicaSet Pod 应在指定为主节点或 etcd 节点上运行。如果 ReplicaSet Pod 未在其中一个节点上运行，您将收到这些错误。检查您的主 /etcd 节点是否具有此类节点的影响。如果是，请将必要的容错添加到 Telegraf ReplicaSet ，即 Teleaf-RS 中。例如，编辑 ReplicaSet... kubectl edit RS ceaaf-rs ... 并将适当的容错添加到规范中。然后，重新启动 ReplicaSet Pod 。</block>
@@ -8728,4 +8727,5 @@
   <block id="64cc432c57095555eeb8d95b2c8523f6" category="sidebar">配置代理（ Windows/Linux/Mac ）</block>
   <block id="4e94322aa6275968b1c9422851fb7f86" category="sidebar">配置代理（ Kubernetes ）</block>
   <block id="9da0861aa96415448a45043409b3c6a2" category="paragraph">要安装代理，必须先执行以下操作：</block>
+  <block id="a95cbadf1a8e88fa4b87395252563d2d" category="paragraph">要在 Windows ， Linux 或 Mac 上安装代理，请按照 <block ref="f33ea093256a0807c19ae442b3c6fe9a" category="inline-link-macro-rx"></block>。</block>
 </blocks>

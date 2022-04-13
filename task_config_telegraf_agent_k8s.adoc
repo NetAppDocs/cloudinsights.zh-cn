@@ -30,7 +30,7 @@ NOTE: 如果要在安装代理之前验证安装文件，请阅读关于 <<Verif
 . 请按照其余步骤进行操作。
 
 
-要在 Windows ， Linux 或 Mac 上安装代理，请按照 link:/task_config_telegraf_agent.html["这些说明"]。
+要在 Windows ， Linux 或 Mac 上安装代理，请按照 link:task_config_telegraf_agent.html["这些说明"]。
 
 
 NOTE: 在主机上安装代理后，无需在该主机上重新安装代理。
