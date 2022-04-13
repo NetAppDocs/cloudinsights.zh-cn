@@ -5,6 +5,7 @@ summary: Cloud Secure 入门。
 keywords: invite, roles, data collector, agent 
 ---
 = Cloud Secure 入门
+:allow-uri-read: 
 
 
 注册 Cloud Secure 并首次登录到环境后，需要先完成一些配置步骤，然后才能开始收集和分析数据访问信息。

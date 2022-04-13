@@ -5,6 +5,7 @@ keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, ek
 summary: Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成数据的代理。 
 ---
 = 在 Kubernetes 上配置代理
+:allow-uri-read: 
 
 
 [role="lead"]
@@ -13,13 +14,10 @@ Cloud Insights 使用 link:https://docs.influxdata.com/telegraf/v1.19/["Telegraf
 Cloud Insights 的当前 Telegraf 版本为 * 。 1.19.3 * 。
 
 
-IMPORTANT: 此页面当前正在进行中。有关在 Kubernetes 上安装代理的最新说明， link:task_config_telegraf_agent.html["* 转到此处 *"]。
-
-
 NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步 Agent 计算机上的时间。
 
 
-NOTE: 如果要在安装代理之前验证安装文件，请阅读关于 <<Verifying Checksums>>。
+NOTE: 如果要在安装代理之前验证安装文件，请阅读关于 <<Verifying Kubernetes Checksums>>。
 
 
 
@@ -54,18 +52,17 @@ NOTE: 如果您使用的是代理，请在安装 Telegraf 代理之前阅读适�
 Kubernetes 提供了两种数据收集方式：
 
 * NetApp Kubernetes 监控操作员配置。这是为 Kubernetes 建议的安装方法。
-* 基于脚本的传统代理安装
+* 基于脚本的传统代理安装（不建议）
 
 
 安装说明因您选择的不同而异。
 
 image:Kubernetes_Operator_Tile_Choices.png["Kubernetes 安装选项"]
 
-
-NOTE: NetApp Kubernetes 监控操作员安装被视为 _Preview_ 功能，因此可能会发生更改。
-
 .前提条件：
 * Kubernetes 1.17 或更高版本支持安装 NetApp Kubernetes 监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。
+
+
 * 如果您运行的是 OpenShift 4.6 - 4.8 ，则除了确保满足这些前提条件之外，还必须遵循下面的 * OpenShift 指令 * 。
 * 必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。
 * 必须安装 Kube-state-metrics 。有关详细信息，请参见下文。Kube-state-metrics 会随基于操作员的安装自动安装。
@@ -444,7 +441,7 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 
 
 
-== 验证校验和
+== 验证 Kubernetes 校验和
 
 Cloud Insights 代理安装程序会执行完整性检查，但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。要执行仅下载操作（与默认的下载和安装操作相反），这些用户可以编辑从 UI 获取的代理安装命令并删除尾随的 "install" 选项。
 
@@ -465,16 +462,6 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 * 仅下载：
 +
  installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
-
-
-Windows
-
-* Download and install （下载并安装）（默认）：
-+
- !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download -install)
-* 仅下载：
-+
- !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download)
 
 
 仅下载命令会将所有所需的项目从 Cloud Insights 下载到工作目录。这些项目包括但不限于：
@@ -521,7 +508,7 @@ Windows
  .\cloudinsights-windows.ps1 -install
 
 
-== 代理安装故障排除
+== 对 Kubernetes Agent 安装进行故障排除
 
 在设置代理时遇到问题时要尝试的一些操作：
 

@@ -5,6 +5,7 @@ summary: 在免费试用期间，您可以随时订阅 Cloud Insights 。
 keywords: subscribe, trial, subscription, contract, raw capacity, region 
 ---
 = 订阅 Cloud Insights
+:allow-uri-read: 
 
 
 Cloud Insights 入门只需简单的三个步骤即可：

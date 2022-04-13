@@ -5,6 +5,7 @@ keywords: webhook, notification, slack, integration
 summary: 创建监控器，以便针对性能或清单阈值发出警报 
 ---
 = 使用 Webhooks 发送通知
+:allow-uri-read: 
 
 
 [role="lead"]

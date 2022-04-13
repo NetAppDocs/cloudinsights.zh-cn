@@ -5,6 +5,7 @@ summary: 配置 NetApp Astra 数据存储库
 keywords: data collector, queries, create, astra, data, store, 
 ---
 = NetApp Astra 数据存储库数据收集器
+:allow-uri-read: 
 
 
 [role="lead"]

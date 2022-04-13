@@ -4,6 +4,7 @@ permalink: index.html
 summary: 欢迎使用 Cloud Insights 文档门户。 
 ---
 = Cloud Insights 文档
+:allow-uri-read: 
 
 
 [role="lead"]

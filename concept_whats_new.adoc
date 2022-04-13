@@ -5,6 +5,7 @@ summary: Cloud Insights 中提供的新特性和功能。
 keywords: features 
 ---
 = Cloud Insights 的新增功能
+:allow-uri-read: 
 
 
 NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一些最新特性和功能。

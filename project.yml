@@ -34,8 +34,10 @@ sidebar:
         url: "/concept_acquisition_unit_requirements.html"
       - title: 配置采集单元
         url: "/task_configure_acquisition_unit.html"
-      - title: 配置代理
+      - title: 配置代理（ Windows/Linux/Mac ）
         url: "/task_config_telegraf_agent.html"
+      - title: 配置代理（ Kubernetes ）
+        url: "/task_config_telegraf_agent_k8s.html"
       - title: 配置数据收集器
         url: "/task_configure_data_collectors.html"
       - title: 确定 Data Collector 采集状态

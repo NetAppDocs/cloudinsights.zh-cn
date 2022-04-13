@@ -5,6 +5,7 @@ keywords: Automatic, AR, AHR, Host, automatic device resolution, FC, Identify
 summary:  
 ---
 = IP 设备解析
+:allow-uri-read: 
 
 
 [role="lead"]

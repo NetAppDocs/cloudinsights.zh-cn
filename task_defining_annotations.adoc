@@ -5,6 +5,7 @@ keywords: annotations, monitor, notes, tags
 summary: 使用标注跟踪数据。 
 ---
 = 定义标注
+:allow-uri-read: 
 
 
 [role="lead"]
