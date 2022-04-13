@@ -453,6 +453,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -1525,7 +1527,9 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_configure_acquisition_unit.html">
         配置采集单元
       </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_config_telegraf_agent.html">
-        配置代理
+        配置代理（ Windows/Linux/Mac ）
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_config_telegraf_agent_k8s.html">
+        配置代理（ Kubernetes ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_configure_data_collectors.html">
         配置数据收集器
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/concept_determining_data_collector_acq_status.html">
@@ -2013,7 +2017,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-09 02:11:15 +0000">04/09/2022</time>
+    <time datetime="2022-04-13 20:03:58 +0000">04/13/2022</time>
     
   
 
@@ -2774,6 +2778,18 @@ sudo /tmp/uninstall</pre>
 </div>
 <div class="sect2">
 <h3 id="kubernetes">Kubernetes</h3>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="注">
+</td>
+<td class="content">
+此页面上的 Kubernetes 说明正在移至新页面。请 <a href="task_config_telegraf_agent_k8s.html">"* 转到此处 *"</a> 有关最新的 Kubernetes 代理说明。
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p>Kubernetes 提供了两种数据收集方式：</p>
 </div>
@@ -2792,18 +2808,6 @@ sudo /tmp/uninstall</pre>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Operator_Tile_Choices.png" alt="Kubernetes 安装选项"></span></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注">
-</td>
-<td class="content">
-NetApp Kubernetes 监控操作员安装被视为 <em>Preview</em> 功能，因此可能会发生更改。
-</td>
-</tr>
-</table>
 </div>
 <div class="ulist">
 <div class="title">前提条件：</div>
@@ -3618,34 +3622,6 @@ Windows</pre>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">我已安装代理，但未使用 Cloud Insights 安装程序安装代理</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">删除先前的代理并运行 Cloud Insights 代理安装，以确保正确的默认配置文件设置。完成后，单击 * 继续 * 或 * 完成 * 。</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">我未看到 Kubernetes 永久性卷与相应后端存储设备之间的超链接 / 连接。我的 Kubernetes 永久性卷使用存储服务器的主机名进行配置。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。您必须使用 Telegraf 2.0 或更高版本。</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">我在日志中看到类似以下内容的消息： E0901 15 ： 21 ： 39.962145 1 个 trirror.go ： 178] K8s.io/Kube-state-metrics/internal/store/builer.go ： 352 ：无法列出 * 。 MutatingWebhookConfiguration ：服务器找不到请求的资源 E091.IO/Kube-state-metrics ：内部 /8.171.Go ：无法找到服务器</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">如果您运行的是 Kube-state-metrics 版本 2.0.0 或更高版本以及 Kubernetes 版本 1.17 或更低版本，则可能会出现这些消息。要获取 Kubernetes 版本： <em>kubectl version</em> 以获取 Kube-state-metrics 版本： <em>kubectl get deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ '</em> 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用以下租约： <em>mutatingwebconfigurations _webhook</em> ，具体可以使用以下参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ， ingeses ，作业，限制范围，命名空间，网络策略，节点，复制卷，持久性卷， poddis中断 预算， Pod ，证书集，资源控制器，资源等，网络，存储器，卷，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器， 验证 webhookconfigurations ， volumeattachments</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">我在 Kubernetes 上安装或升级了 Telegraf ，但 Telegraf Pod 未启动。Telegraf ReplicaSet 或 DemonSet 报告了类似以下内容的故障：创建时出错： Pod "telaf-RS- " is foreged" ：无法针对任何安全上下文限制进行验证： [spec.volumes_2 ：无效值： "hostPath" ：不允许使用 hostPath 卷 ]</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">如果还不存在安全上下文限制，请创建此限制（请参见上文 " 配置代理以从 Kubernetes 收集数据 " 一节）。确保为安全上下文限制指定的命名空间和服务帐户与 Telegraf ReplicaSet 和 DemonSet 的命名空间和服务帐户匹配。kubectl describe scc talaf-hostaccess</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grep serviceaccount kubectl -n ci-monitoring -describe RS talaf-RS</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grep -i "Namespace" kubectl -n ci-monitoring describe RS tengraaf-RS</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">grep -i "service account" ： kubectl -n ci-monitoring -describe DS ci-ds-ds-ds-ds"</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">我看到来自 Telegraf 的错误消息如下所示，但 Telegraf 确实启动并运行： Oct 11 14 ： 23 ： 41 IP-172-31-39-47 systemd1* ：启动了插件驱动的服务器代理，以便向 InfluxDB 报告指标。Oct 11 14 ： 23 ： 41 IP-172-31-39-47 cailaf[1827] ： time="2021-10-11T14 ： 23 ： 41Z" level=error msg="failed to create cache directory" 。/etc/celaf/.cache/snowvelc ，错误： mkdir /etc/tengraf/.ca ChE ：权限被拒绝。ignored\n" func="gosnowchelf.（ * defaultLogger ） .Errorf" fil="log.go ： 120" Oct 11 14 ： 23 ： 41 IP-172-31 ： 39-47 celaf[1827] ： time="2021-10-11T14 ： 23 ： 41Z" level=error msg="failed to open.已忽略。打开 /etc/celaf/.cache/snowlife/OCSP_response_cache.json ： no such file or directory\n" func="gosnowchlafe.（ * defaultLogger ） .Errorf" fil="log.go ： 120" Oct 11 14 ： 23 ： 41 IP-172-31-39-47 craaf[1827] ： I-41Z-2021 ：启动 Telegraf 1.19.3</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">这是一个已知的问题描述。请参见 <a href="https://github.com/influxdata/telegraf/issues/9407">"此 GitHub 文章"</a> 有关详细信息：只要 Telegraf 启动并运行，用户就可以忽略这些错误消息。</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">在 Kubernetes 上，我的 Telegraf Pod 报告以下错误： " 处理 mountstats 信息时出错：无法打开 mountstats 文件： /hostfs/proc/1/mountstats ，错误： open /hostfs/proc/1/mountstats ：权限被拒绝 "</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">如果启用并强制实施 SELinux ，则可能会阻止 Telegraf Pod 访问 Kubernetes 节点上的 /proc/1/mountstats 文件。要放宽此限制，请执行以下操作之一：•对于基于脚本的安装，编辑 crainf DS （<code>kubectl edit DS crainaf-DS</code> ），并将 "privileged ： false" 更改为 "privileged ： true" •对于基于操作员的安装，编辑代理（<code>kubectl edit agent agent-monitoring-netapp</code> ），然后将 "privileged-mode ： false" 更改为 "privileged-mode ：</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">在 Kubernetes 上，我的 Telegraf ReplicaSet Pod 报告以下错误： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes ， PKI/etcd/server.crt ： /etc/Kubernetes ， crt/etcd/server.key ：打开 /etc/Kubernetes ， pki/etcd/server.key ： open /etc/Kubernetes ， pki/etcd/server.key ： no 此类文件或目录</p></td>
 </tr>
 </tbody>
 </table>

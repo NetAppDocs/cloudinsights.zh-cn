@@ -435,6 +435,17 @@
 
 
 
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-cn/cloudinsights/pdfs/pages/task_config_telegraf_agent_k8s.pdf" >
+    <img src="/zh-cn/cloudinsights/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
 
 
 
@@ -1516,7 +1527,9 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_configure_acquisition_unit.html">
         配置采集单元
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_config_telegraf_agent.html">
-        配置代理
+        配置代理（ Windows/Linux/Mac ）
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_config_telegraf_agent_k8s.html">
+        配置代理（ Kubernetes ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/task_configure_data_collectors.html">
         配置数据收集器
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/concept_determining_data_collector_acq_status.html">
@@ -2004,7 +2017,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-11 15:38:18 +0000">04/11/2022</time>
+    <time datetime="2022-04-13 20:03:58 +0000">04/13/2022</time>
     
   
 
@@ -2018,18 +2031,6 @@
 </div>
 <div class="paragraph">
 <p>Cloud Insights 的当前 Telegraf 版本为 * 。 1.19.3 * 。</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/important.svg" alt="重要">
-</td>
-<td class="content">
-此页面当前正在进行中。有关在 Kubernetes 上安装代理的最新说明， <a href="task_config_telegraf_agent.html">"* 转到此处 *"</a>。
-</td>
-</tr>
-</table>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2050,7 +2051,7 @@
 <img src="/us-en/cloudinsights/images/note.svg" alt="注">
 </td>
 <td class="content">
-如果要在安装代理之前验证安装文件，请阅读关于 <a href="#Verifying Checksums">[Verifying Checksums]</a>。
+如果要在安装代理之前验证安装文件，请阅读关于 <a href="#Verifying Kubernetes Checksums">[Verifying Kubernetes Checksums]</a>。
 </td>
 </tr>
 </table>
@@ -2135,7 +2136,7 @@
 <p>NetApp Kubernetes 监控操作员配置。这是为 Kubernetes 建议的安装方法。</p>
 </li>
 <li>
-<p>基于脚本的传统代理安装</p>
+<p>基于脚本的传统代理安装（不建议）</p>
 </li>
 </ul>
 </div>
@@ -2144,18 +2145,6 @@
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Operator_Tile_Choices.png" alt="Kubernetes 安装选项"></span></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<img src="/us-en/cloudinsights/images/note.svg" alt="注">
-</td>
-<td class="content">
-NetApp Kubernetes 监控操作员安装被视为 <em>Preview</em> 功能，因此可能会发生更改。
-</td>
-</tr>
-</table>
 </div>
 <div class="ulist">
 <div class="title">前提条件：</div>
@@ -2784,7 +2773,7 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 </div>
 </div>
 <div class="sect1">
-<h2 id="验证校验和">验证校验和</h2>
+<h2 id="验证-kubernetes-校验和">验证 Kubernetes 校验和</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Cloud Insights 代理安装程序会执行完整性检查，但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。要执行仅下载操作（与默认的下载和安装操作相反），这些用户可以编辑从 UI 获取的代理安装命令并删除尾随的 "install" 选项。</p>
@@ -2827,27 +2816,6 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 <div class="literalblock">
 <div class="content">
 <pre>installerName=cloudinsights-kubernetes.sh … &amp;&amp; sudo -E -H ./$installerName --download</pre>
-</div>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Windows</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Download and install （下载并安装）（默认）：</p>
-<div class="literalblock">
-<div class="content">
-<pre> !$($installerName=".\cloudinsights-windows.ps1") … -and $(&amp;$installerName -download -install)
-* 仅下载：</pre>
-</div>
-</div>
-<div class="literalblock">
-<div class="content">
-<pre>!$($installerName=".\cloudinsights-windows.ps1") … -and $(&amp;$installerName -download)</pre>
 </div>
 </div>
 </li>
@@ -2946,7 +2914,7 @@ Windows</pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="代理安装故障排除">代理安装故障排除</h2>
+<h2 id="对-kubernetes-agent-安装进行故障排除">对 Kubernetes Agent 安装进行故障排除</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>在设置代理时遇到问题时要尝试的一些操作：</p>
