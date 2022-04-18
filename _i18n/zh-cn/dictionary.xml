@@ -5400,7 +5400,6 @@
   <block id="05894ba2c918dd33592bf1bd21c347f6" category="cell">已缓存内存</block>
   <block id="05345376e590de98cc623cdd4392065e" category="cell">接受连接已处理身份验证请求失败身份验证字节数已用字节数读取（每秒）写入的字节数（每秒） CAS Badval CAS 命中 CAS 未命中刷新 Reqs （每秒）获取 Reqs （每秒）设置 Reqs （每秒）触摸 Reqs （每秒）连接生成率（每秒） 连接结构打开连接当前已存储项数据删除请求命中（每秒）数据删除请求未命中（每秒）删除请求命中（每秒）删除请求未命中（每秒）项目已逐出有效的逐出已过期项目获取命中（每秒）获取未命中（每秒） 已用哈希字节哈希正在扩展哈希功率级别增量请求命中数（每秒）增量请求未命中数（每秒）服务器最大字节侦听已禁用已回收的工作线程数已打开连接总数已存储的项目数触摸未命中服务器正常运行时间</block>
   <block id="bdb9a31f361d8d3be1c6915647e92d4d" category="inline-link-macro">Telegraf</block>
-  <block id="7e25453d6939c3c3ab0bd1656d5fcad2" category="doc">配置代理以收集数据</block>
   <block id="ae2f2b5e87a12f1cd650f0e46b92e4ec" category="admonition">为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步 Agent 计算机上的时间。</block>
   <block id="137bac1c26ca6d0b61bc783c9a2fcbbd" category="section-title">安装代理</block>
   <block id="a4c0f3c4bd8931418c028fb88c45e72f" category="paragraph">如果您要安装服务数据收集器，但尚未配置代理，则系统会提示您先为相应的操作系统安装代理。本主题介绍如何在以下操作系统上安装 Telegraf 代理：</block>
@@ -8728,4 +8727,5 @@
   <block id="4e94322aa6275968b1c9422851fb7f86" category="sidebar">配置代理（ Kubernetes ）</block>
   <block id="9da0861aa96415448a45043409b3c6a2" category="paragraph">要安装代理，必须先执行以下操作：</block>
   <block id="a95cbadf1a8e88fa4b87395252563d2d" category="paragraph">要在 Windows ， Linux 或 Mac 上安装代理，请按照 <block ref="f33ea093256a0807c19ae442b3c6fe9a" category="inline-link-macro-rx"></block>。</block>
+  <block id="1da5ffd366c7914393abacbd5eddb42f" category="doc">配置代理以收集数据（ Windows/Linux/Mac ）</block>
 </blocks>
