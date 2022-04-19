@@ -5617,11 +5617,6 @@
   <block id="b7ca81e2bb67d9106d1a52bdbc5b9f05" category="inline-image-macro">说明了量表编号</block>
   <block id="f05f3d3deaa32d3eb9419009831a83e7" category="paragraph"><block ref="f05f3d3deaa32d3eb9419009831a83e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c87f42b44870bb9fdcbb9ad0386ebd65" category="summary">为 Cloud Secure 警报通知添加电子邮件地址。</block>
-  <block id="8ae97d6bc3533450865148a249850f22" category="doc">配置警报电子邮件通知</block>
-  <block id="36c6e5d5ba399283fbfde553f8a8a235" category="paragraph">警报的电子邮件通知将发送到警报的每个操作的警报收件人列表。</block>
-  <block id="7f1f4ef1548a44e4ce8c4500a1d58b4f" category="paragraph">要配置警报收件人，请单击 * 管理员 &gt; 通知 * 并为每个收件人输入一个电子邮件地址。</block>
-  <block id="00a1fb22fe4440874b766144382bfc18" category="inline-image-macro">警报电子邮件通知收件人列表</block>
-  <block id="eb602d5d2dcc504fbc5daf710f722df2" category="paragraph"><block ref="eb602d5d2dcc504fbc5daf710f722df2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fc5aca4e5185f241f9160502eac0b160" category="doc">配置 NetApp ONTAP 数据收集器</block>
   <block id="bdde9f578348148335a5c86ea6a0eda9" category="paragraph">Cloud Secure 使用数据收集器从设备收集文件和用户访问数据。这些数据将提供给 Cloud Secure 进行分析。</block>
   <block id="3b37597c3ea4000c791420b6b40843f4" category="list-text">必须配置代理才能收集数据</block>
@@ -6955,10 +6950,7 @@
   <block id="5f03374d311512ebf488198233e388a3" category="summary">为通知添加电子邮件地址。</block>
   <block id="ff925bdbda92d2e19d76cbd9fa62fcdd" category="doc">配置电子邮件通知</block>
   <block id="30dadf54a791f6dee7ac5fcc771dfc37" category="paragraph">您可以为订阅相关通知配置电子邮件列表，并为违反性能策略阈值的通知配置全局收件人电子邮件列表。</block>
-  <block id="81259df23a1c293a09657cbc69c1cff7" category="paragraph">要配置通知电子邮件收件人设置，请转到 * 管理员 &gt; 通知 * 页面。</block>
   <block id="caa57653390758dea3d2e7abd7ccf4ac" category="section-title">订阅通知收件人</block>
-  <block id="92c5913b4a67d45ed57b46dfd6cc6f30" category="inline-image-macro">订阅电子邮件通知</block>
-  <block id="a86449ad080b1966ebbab1b2d2673d4d" category="paragraph"><block ref="a86449ad080b1966ebbab1b2d2673d4d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f68d99a74dcf068e71380966b989bf38" category="paragraph">要为订阅相关事件通知的收件人配置收件人，请转到 " 订阅通知收件人 " 部分。您可以选择将订阅相关事件的电子邮件通知发送给以下任一或所有收件人：</block>
   <block id="35fb28a7e719ca2b5efe220007616a15" category="paragraph">以下示例说明了可能发送的通知类型以及可以执行的用户操作。</block>
   <block id="30a3241f096a2fb5cc17d201c4dd0fc8" category="cell">* 通知： *</block>
@@ -6975,15 +6967,7 @@
   <block id="e89ae227607d5f04ef37a542e59758d5" category="cell">联系方式 <block ref="24745b642cc0706e7f0bffb600ab0d70" category="inline-link-macro-rx"></block> 以购买订阅</block>
   <block id="8e93b1e0d1805d8655a5ef72cc4c1f73" category="section-title">警报的全局收件人列表</block>
   <block id="f80a3af59189fad5d417cb3684841b2f" category="paragraph">警报的电子邮件通知将发送到警报的每个操作的警报收件人列表。您可以选择向全局收件人列表发送警报通知。</block>
-  <block id="f3b4c8accf68f8bc1e1ad1a189f380f3" category="paragraph">要配置全局警报收件人，请单击 * 管理员 &gt; 通知 * ，然后在 * 全局监控通知收件人 * 部分中选择所需的收件人。</block>
   <block id="04d99d40563d55904f96d7cf5a364c93" category="paragraph">创建或修改监控器时，您始终可以覆盖单个监控器的全局收件人列表。</block>
-  <block id="11b55fb92388d3f4f22d9b74e20fe8cb" category="section-title">性能策略通知的全局收件人列表</block>
-  <block id="d6f8919f7d41780d165bc46e90d861d9" category="inline-image-macro">性能策略电子邮件通知</block>
-  <block id="504fe2b07eb666ad0da4b0123f533697" category="paragraph"><block ref="504fe2b07eb666ad0da4b0123f533697" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8e8fa76ffeccba446b6ee0c1be7a594c" category="paragraph">要将收件人添加到全局性能策略通知电子邮件列表中，请转到 " 全局性能策略收件人 " 部分并输入以逗号分隔的电子邮件地址。作为性能策略阈值违规警报发送的电子邮件将发送给列表中的所有收件人。</block>
-  <block id="d60bab759d591f556b26484b89016feb" category="paragraph">如果您出错，可以单击 [x" 从列表中删除收件人。</block>
-  <block id="baf1c4abff061768e5a4207182de39ce" category="paragraph">您还可以添加一个可选签名块，该签名块将附加到发送的电子邮件通知中。</block>
-  <block id="3bfddc91dfb0eaa6fec68531dbb32e68" category="admonition">配置特定策略时，您可以覆盖该策略的全局列表。</block>
   <block id="4e2217a1fba6817d301befaa05659074" category="summary">您可以导入建议的信息板，以协助回答业务洞察力问题。</block>
   <block id="cfa4bbfe8fe25421b55d6bc77170da89" category="doc">从信息板库导入</block>
   <block id="75ff2ecca247e32bd11a679fc97fbdab" category="paragraph">Cloud Insights 提供了许多建议的信息板，用于提供有关数据的业务洞察力。每个信息板都包含一些小工具，这些小工具旨在帮助问题解答您解决与环境中当前收集的数据相关的特定问题或特定问题。</block>
@@ -8736,4 +8720,14 @@
   <block id="a9baf64b936acc58c42a7bde7ce7c95b" category="cell">如果 Pod 上的挂载失败，则会出现此警报。</block>
   <block id="69a528dde5c160691621956eda156089" category="cell">对于 _etcd_ 不是 Kubernetes 集群数据存储库的集群，您将在 telraf RS Pod 中看到以下消息： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes /PKI/etcd/server.crt ： /etc/Kubernetes /PKI/etcd/server.key ：打开 /etc/Kubernetes /netcd/server.key</block>
   <block id="89fbe6835a4bc28cf38fd3cdb8337b18" category="cell">Cloud Insights 仅支持将 _etcd_ 作为 K8s 数据存储库进行监控。您可以尝试通过运行以下命令来修改代理： kubectl -n netapp-monitoring edit agent agent-monitoring-netapp 在该文件中，删除以下部分： - name ： Prometheus_etcd run-mode ： - ReplicaSet</block>
+  <block id="f3eebfbf8459da325ae4a16094567ab0" category="paragraph">要配置通知电子邮件收件人设置，请转到 * 管理员 &gt; 通知 * 页面，然后选择 _Email_ 选项卡。</block>
+  <block id="3caac88fd2cfb66b30bf5c3bb963e2ae" category="inline-image-macro">电子邮件通知</block>
+  <block id="d2b2f74d37176e087c596d1a6ace12a4" category="paragraph"><block ref="d2b2f74d37176e087c596d1a6ace12a4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="998b4e1fe06f3059a9390f884ebd2960" category="list-text">所有 _Monitor 和 Optimize 管理员</block>
+  <block id="df43b72d848c482dd610f8178005dbe4" category="paragraph">要配置全局警报收件人，请在 * 全局监控通知收件人 * 部分中选择所需的收件人。</block>
+  <block id="12c5785c0da06ba105803155a192752d" category="doc">为警报，警告和代理 / 数据源收集器运行状况配置电子邮件通知</block>
+  <block id="fb2811eb0d80f0dc871a8e892a828518" category="paragraph">要配置 Cloud Secure 警报收件人，请单击 * 管理员 &gt; 通知 * ，然后在相应部分为每个收件人输入电子邮件地址。</block>
+  <block id="d788a1b203813004b96af5724b63cb70" category="section-title">潜在攻击警报和警告</block>
+  <block id="0913d37e3bac65fbe05c7263d286ef60" category="paragraph">要发送 _potential agres攻击 _ 警报通知，请在 _Send potential Attack Alerts_ 部分输入收件人的电子邮件地址。对于对警报执行的每个操作，系统会将电子邮件通知发送到警报收件人列表。</block>
+  <block id="971a81b1c11c1b1948e93ef28402c3f4" category="paragraph">要发送 _Warning_ 通知，请在 _Send Warning Alerts_ 部分中输入收件人的电子邮件地址。</block>
 </blocks>

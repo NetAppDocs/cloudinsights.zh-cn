@@ -4,14 +4,17 @@ permalink: cs_notifications_email.html
 summary: 为 Cloud Secure 警报通知添加电子邮件地址。 
 keywords: email, notifications, alerts, warnings, attacks 
 ---
-= 配置警报电子邮件通知
+= 为警报，警告和代理 / 数据源收集器运行状况配置电子邮件通知
 :allow-uri-read: 
 
 
 [role="lead"]
-警报的电子邮件通知将发送到警报的每个操作的警报收件人列表。
+要配置 Cloud Secure 警报收件人，请单击 * 管理员 > 通知 * ，然后在相应部分为每个收件人输入电子邮件地址。
 
-要配置警报收件人，请单击 * 管理员 > 通知 * 并为每个收件人输入一个电子邮件地址。
 
-[role="thumb"]
-image:CS-Alert-Notification-List.png["警报电子邮件通知收件人列表"]
+
+=== 潜在攻击警报和警告
+
+要发送 _potential agres攻击 _ 警报通知，请在 _Send potential Attack Alerts_ 部分输入收件人的电子邮件地址。对于对警报执行的每个操作，系统会将电子邮件通知发送到警报收件人列表。
+
+要发送 _Warning_ 通知，请在 _Send Warning Alerts_ 部分中输入收件人的电子邮件地址。
