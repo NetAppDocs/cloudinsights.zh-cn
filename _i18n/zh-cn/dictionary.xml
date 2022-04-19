@@ -8734,4 +8734,6 @@
   <block id="ce3c9855539a0d8d5bd1802dc904eac0" category="cell">如果 PVC 绑定失败，则会出现此警报。</block>
   <block id="b915ed8448b78941f4d6278ccabef90c" category="cell">POD 挂载失败</block>
   <block id="a9baf64b936acc58c42a7bde7ce7c95b" category="cell">如果 Pod 上的挂载失败，则会出现此警报。</block>
+  <block id="69a528dde5c160691621956eda156089" category="cell">对于 _etcd_ 不是 Kubernetes 集群数据存储库的集群，您将在 telraf RS Pod 中看到以下消息： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes /PKI/etcd/server.crt ： /etc/Kubernetes /PKI/etcd/server.key ：打开 /etc/Kubernetes /netcd/server.key</block>
+  <block id="89fbe6835a4bc28cf38fd3cdb8337b18" category="cell">Cloud Insights 仅支持将 _etcd_ 作为 K8s 数据存储库进行监控。您可以尝试通过运行以下命令来修改代理： kubectl -n netapp-monitoring edit agent agent-monitoring-netapp 在该文件中，删除以下部分： - name ： Prometheus_etcd run-mode ： - ReplicaSet</block>
 </blocks>
