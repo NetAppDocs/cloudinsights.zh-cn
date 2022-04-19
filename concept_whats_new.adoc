@@ -32,6 +32,13 @@ image:DashboardWidgetEditorScreen.png["小工具编辑器改进了布局"]
 
 image:CountAggregationExample1.png["显示计数的聚合下拉列表"]
 
+此外，现在，您可以从折线图中选择三个 link:concept_dashboard_features.html#line-chart-interpolation["插值"] 方法：
+
+* 无 - 不执行插值
+* 线性—在现有点之间插值数据点
+* Stair —使用上一个数据点作为插值数据点
+
+
 
 
 ==== 增强了对 Kubernetes 基础架构的监控功能

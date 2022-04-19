@@ -8730,4 +8730,9 @@
   <block id="d788a1b203813004b96af5724b63cb70" category="section-title">潜在攻击警报和警告</block>
   <block id="0913d37e3bac65fbe05c7263d286ef60" category="paragraph">要发送 _potential agres攻击 _ 警报通知，请在 _Send potential Attack Alerts_ 部分输入收件人的电子邮件地址。对于对警报执行的每个操作，系统会将电子邮件通知发送到警报收件人列表。</block>
   <block id="971a81b1c11c1b1948e93ef28402c3f4" category="paragraph">要发送 _Warning_ 通知，请在 _Send Warning Alerts_ 部分中输入收件人的电子邮件地址。</block>
+  <block id="cc801bd8b3e2970a29e5346ff2068dc8" category="inline-link-macro">插值</block>
+  <block id="52e11ba38b41752486ae425f250912e7" category="paragraph">此外，现在，您可以从折线图中选择三个 <block ref="f8a2abff360cff36e1134b6933cea3f7" category="inline-link-macro-rx"></block> 方法：</block>
+  <block id="9cb22571044cfb577ec048458671deab" category="list-text">无 - 不执行插值</block>
+  <block id="b71ed64e04e4fa64be1d827a7f0a608d" category="list-text">线性—在现有点之间插值数据点</block>
+  <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">Stair —使用上一个数据点作为插值数据点</block>
 </blocks>
