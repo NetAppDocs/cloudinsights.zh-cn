@@ -8719,7 +8719,6 @@
   <block id="b915ed8448b78941f4d6278ccabef90c" category="cell">POD 挂载失败</block>
   <block id="a9baf64b936acc58c42a7bde7ce7c95b" category="cell">如果 Pod 上的挂载失败，则会出现此警报。</block>
   <block id="69a528dde5c160691621956eda156089" category="cell">对于 _etcd_ 不是 Kubernetes 集群数据存储库的集群，您将在 telraf RS Pod 中看到以下消息： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes /PKI/etcd/server.crt ： /etc/Kubernetes /PKI/etcd/server.key ：打开 /etc/Kubernetes /netcd/server.key</block>
-  <block id="89fbe6835a4bc28cf38fd3cdb8337b18" category="cell">Cloud Insights 仅支持将 _etcd_ 作为 K8s 数据存储库进行监控。您可以尝试通过运行以下命令来修改代理： kubectl -n netapp-monitoring edit agent agent-monitoring-netapp 在该文件中，删除以下部分： - name ： Prometheus_etcd run-mode ： - ReplicaSet</block>
   <block id="f3eebfbf8459da325ae4a16094567ab0" category="paragraph">要配置通知电子邮件收件人设置，请转到 * 管理员 &gt; 通知 * 页面，然后选择 _Email_ 选项卡。</block>
   <block id="3caac88fd2cfb66b30bf5c3bb963e2ae" category="inline-image-macro">电子邮件通知</block>
   <block id="d2b2f74d37176e087c596d1a6ace12a4" category="paragraph"><block ref="d2b2f74d37176e087c596d1a6ace12a4" category="inline-image-macro-rx" type="image"></block></block>
@@ -8735,4 +8734,5 @@
   <block id="9cb22571044cfb577ec048458671deab" category="list-text">无 - 不执行插值</block>
   <block id="b71ed64e04e4fa64be1d827a7f0a608d" category="list-text">线性—在现有点之间插值数据点</block>
   <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">Stair —使用上一个数据点作为插值数据点</block>
+  <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">Cloud Insights 仅支持将 _etcd_ 作为 K8s 数据存储库进行监控。您可以按照以下说明更改配置来修改代理，以避免收集 etcd 数据： kubectl -n netapp-monitoring edit agent agent-monitoring-netapp 在该文件中，删除以下部分： - name ： Prometheus_etcd run-mode ： - ReplicaSet</block>
 </blocks>
