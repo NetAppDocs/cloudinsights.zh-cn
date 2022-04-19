@@ -2017,7 +2017,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 21:01:28 +0000">04/13/2022</time>
+    <time datetime="2022-04-19 14:08:54 +0000">04/19/2022</time>
     
   
 
@@ -2926,6 +2926,10 @@ Windows</pre>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">对于 <em>etcd</em> 不是 Kubernetes 集群数据存储库的集群，您将在 telraf RS Pod 中看到以下消息： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes /PKI/etcd/server.crt ： /etc/Kubernetes /PKI/etcd/server.key ：打开 /etc/Kubernetes /netcd/server.key</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Insights 仅支持将 <em>etcd</em> 作为 K8s 数据存储库进行监控。您可以尝试通过运行以下命令来修改代理： kubectl -n netapp-monitoring edit agent agent-monitoring-netapp 在该文件中，删除以下部分： - name ： Prometheus_etcd run-mode ： - ReplicaSet</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">我已使用 Cloud Insights 安装代理</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">如果您已在主机 /VM 上安装了代理，则无需重新安装该代理。在这种情况下，只需在 Agent 安装屏幕中选择适当的平台和密钥，然后单击 * 继续 * 或 * 完成 * 。</p></td>
