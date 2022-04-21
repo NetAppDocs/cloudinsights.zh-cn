@@ -451,7 +451,7 @@ image:Kubernetes_Operator_Tile_Choices.png["Kubernetes 安装选项"]
 
 
 * 如果您运行的是 OpenShift 4.6 - 4.8 ，则除了确保满足这些前提条件之外，还必须遵循下面的 * OpenShift 指令 * 。
-* 必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。
+* 必须提供以下命令： _cURL ， _sudo （对于基于脚本的安装不需要）， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。
 * 必须安装 Kube-state-metrics 。有关详细信息，请参见下文。Kube-state-metrics 会随基于操作员的安装自动安装。
 * 如果您使用的是代理，请按照 * 为 Kubernetes 配置代理支持 * 一节中的说明进行操作。
 * 如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。基于操作员的安装可为您安装此软件。

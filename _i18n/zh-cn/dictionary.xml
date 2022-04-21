@@ -8735,4 +8735,5 @@
   <block id="b71ed64e04e4fa64be1d827a7f0a608d" category="list-text">线性—在现有点之间插值数据点</block>
   <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">Stair —使用上一个数据点作为插值数据点</block>
   <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">Cloud Insights 仅支持将 _etcd_ 作为 K8s 数据存储库进行监控。您可以按照以下说明更改配置来修改代理，以避免收集 etcd 数据： kubectl -n netapp-monitoring edit agent agent-monitoring-netapp 在该文件中，删除以下部分： - name ： Prometheus_etcd run-mode ： - ReplicaSet</block>
+  <block id="54a35beb58d95fcc8830c9195faeeb1d" category="list-text">必须提供以下命令： _cURL ， _sudo （对于基于脚本的安装不需要）， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。</block>
 </blocks>
