@@ -76,15 +76,17 @@ NetApp 通过多种方式为 Cloud Insights 提供支持。全天候提供广泛
 
 这些支持选项在试用模式下提供，并且全天候免费提供：
 
-* *link:https://kb.netapp.com["知识库"]*
+* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Suppport_KB&filter=%28content_type%3D%3D%22knowledgebase%22;product%3D%3D%22Cloud%20Insights%22%29["知识库"]*
 +
-单击本节中的链接将转到 NetApp 知识库，您可以在其中搜索文章， link:https://kb.netapp.com/app/browse/a_status/published/channelRecordID/HOW_TO/currentSelectedID/RN_PRODUCT_473/isProductSelected/true/isRecommendationAllowed/true/pageSize/10/productRecordID/RN_PRODUCT_473/sortColumn/publishDate/sortDirection/DESC/truncate/200/type/browse["操作说明"]， link:https://kb.netapp.com/app/browse/a_status/published/channelRecordID/FAQ/currentSelectedID/RN_PRODUCT_473/isProductSelected/true/isRecommendationAllowed/true/pageSize/10/productRecordID/RN_PRODUCT_473/sortColumn/publishDate/sortDirection/DESC/truncate/200/type/browse["常见问题解答"]或 link:https://kb.netapp.com/app/browse/a_status/published/channelRecordID/BREAK_FIX/currentSelectedID/RN_PRODUCT_473/isProductSelected/true/isRecommendationAllowed/true/pageSize/10/productRecordID/RN_PRODUCT_473/sortColumn/publishDate/sortDirection/DESC/truncate/200/type/browse["中断修复"] 与 Cloud Insights 相关的信息。
+单击本节中的链接可转到 NetApp 知识库，您可以在其中搜索相关文章，操作说明等。
+
+
 
 * *link:https://docs.netapp.com/us-en/cloudinsights/["文档。"]*
 +
 单击文档链接可转到此文档中心。
 
-* *link:https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS["社区"]*
+* *link:https://mysupport.netapp.com/site/search?q=cloud%20insights&offset=0&searchType=Manual&autocorrect=true&origin=CI_Support_Community&filter=%28content_type%3D%3D%22community%22;product%3D%3D%22Cloud%20Insights%22%29["社区"]*
 +
 单击社区链接可转到 NetApp Cloud Insights 社区，您可以在其中与同行和专家建立联系。
 

@@ -515,16 +515,10 @@
   <block id="0ead5de583924ac8d48848b85f68e778" category="section-title">自助服务支持：</block>
   <block id="6c0afebc7e7822e3ca22734d7b5d42c0" category="paragraph">这些支持选项在试用模式下提供，并且全天候免费提供：</block>
   <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link-macro">知识库</block>
-  <block id="cd09a6495ed42d82c9d3f8d57b144266" category="list-text">*<block ref="4474f28d411d3c5eec0d1bd98473c8fc" category="inline-link-macro-rx"></block>*</block>
-  <block id="87267948db0ced187f52b4063c923b63" category="inline-link-macro">操作说明</block>
-  <block id="6f906132d3c6b88b57225fdcf76f6e71" category="inline-link-macro">常见问题解答</block>
-  <block id="d11ab61f6f39d4b16da4e01df2d6bb00" category="inline-link-macro">中断修复</block>
-  <block id="22a89bc96f7b30b1c488a365e8246c50" category="paragraph">单击本节中的链接将转到 NetApp 知识库，您可以在其中搜索文章， <block ref="4ac86f858c7e506682bff87dbbc1d94a" category="inline-link-macro-rx"></block>， <block ref="847223fa7e2223062dab8b81f8f7c3d6" category="inline-link-macro-rx"></block>或 <block ref="e340fe8d4753cf568cf82dfadd386faf" category="inline-link-macro-rx"></block> 与 Cloud Insights 相关的信息。</block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="inline-link-macro">文档。</block>
   <block id="7cef246d709d34533b9dea3e15d3f5a2" category="list-text">*<block ref="2ecfa39652ed0f06ca436cc3b19d2bbb" category="inline-link-macro-rx"></block>*</block>
   <block id="15d10c3fd39c9846221b3ea9c93b55e0" category="paragraph">单击文档链接可转到此文档中心。</block>
   <block id="7d61983c34edc2a8cabbea71c4732f62" category="inline-link-macro">社区</block>
-  <block id="148cd4dbb868a5c18d55a8733314b7d2" category="list-text">*<block ref="937b796c76b864f08698962d9f7eb8d8" category="inline-link-macro-rx"></block>*</block>
   <block id="a7a9e9720c642358ce4d75836f0323d7" category="paragraph">单击社区链接可转到 NetApp Cloud Insights 社区，您可以在其中与同行和专家建立联系。</block>
   <block id="c48730cb532534ed8ded87a7e1e63743" category="inline-link-macro">* 反馈 *</block>
   <block id="1ee12c9d2a4f0460caa4b5f609d4b32e" category="paragraph">此外，还提供了一个链接 <block ref="845d40e8369612c1d8dd285f0ebc254e" category="inline-link-macro-rx"></block> 帮助我们改进 Cloud Insights 。</block>
@@ -8736,4 +8730,7 @@
   <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">Stair —使用上一个数据点作为插值数据点</block>
   <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">Cloud Insights 仅支持将 _etcd_ 作为 K8s 数据存储库进行监控。您可以按照以下说明更改配置来修改代理，以避免收集 etcd 数据： kubectl -n netapp-monitoring edit agent agent-monitoring-netapp 在该文件中，删除以下部分： - name ： Prometheus_etcd run-mode ： - ReplicaSet</block>
   <block id="54a35beb58d95fcc8830c9195faeeb1d" category="list-text">必须提供以下命令： _cURL ， _sudo （对于基于脚本的安装不需要）， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。</block>
+  <block id="b68a34f8a928794da0f98d4ee916c271" category="list-text">*<block ref="2fadd2d714be07c05e8b57dea395b60f" category="inline-link-macro-rx"></block>*</block>
+  <block id="0e8f78366da6895d9cdeb4b8ed117539" category="paragraph">单击本节中的链接可转到 NetApp 知识库，您可以在其中搜索相关文章，操作说明等。</block>
+  <block id="f762cf8a3ce13153f8f371a1905bd1ae" category="list-text">*<block ref="70de40644647494a66feddaab5d43f41" category="inline-link-macro-rx"></block>*</block>
 </blocks>
