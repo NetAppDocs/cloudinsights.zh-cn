@@ -146,6 +146,9 @@ Cloud Insights 从 Brocade FC 交换机数据收集器采集以下清单信息�
 | 问题： | 请尝试以下操作： 
 
 
+| Brocade 数据源的清单采集失败，并显示错误： <date> <time> error com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Error 2 out of 2 ： <datasource name>[Internal error] - Unable to generate the model for device <IP> 。检测提示时出错（ [Device name <name> ：无法生成设备 <IP> 的型号。检测提示时出错） | 如果 Brocade 交换机返回提示所需的时间过长，超过默认的 5 秒超时时间，则可能会导致出现问题描述 。在 Cloud Insights 的数据收集器的高级配置设置中，尝试将 _SSH 横幅等待超时（秒） _ 增加到更高的值。 
+
+
 | 错误： Cloud Insights 收到无效机箱角色 | 检查是否已为此数据源中配置的用户授予机箱角色权限。 
 
 

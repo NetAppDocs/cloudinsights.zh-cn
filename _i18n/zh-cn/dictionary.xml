@@ -8741,4 +8741,6 @@
   <block id="30a17963216c2665ef68b2a0cba05de6" category="list-text">如果代理发生故障，将发送一个警报（而不是每个收集器发送一个警报）。此电子邮件将列出所有受影响的 SVM 。</block>
   <block id="6aa9d0b40df0476a0e5d6cba51a44816" category="list-text">Active Directory 收集失败会报告为警告；它不会影响勒索软件检测。</block>
   <block id="1c694b0b295603bad9f0fa0c7f151567" category="list-text">现在， Getting Started 设置列表包括一个新的 _Configure email notifications 阶段。</block>
+  <block id="74913ce7e6f1cf7622d0e237b931c50e" category="cell">Brocade 数据源的清单采集失败，并显示错误： &lt;date&gt; &lt;time&gt; error com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Error 2 out of 2 ： &lt;datasource name&gt;[Internal error] - Unable to generate the model for device &lt;IP&gt; 。检测提示时出错（ [Device name &lt;name&gt; ：无法生成设备 &lt;IP&gt; 的型号。检测提示时出错）</block>
+  <block id="118ca29e0af60dc429c30e9a386e68fa" category="cell">如果 Brocade 交换机返回提示所需的时间过长，超过默认的 5 秒超时时间，则可能会导致出现问题描述 。在 Cloud Insights 的数据收集器的高级配置设置中，尝试将 _SSH 横幅等待超时（秒） _ 增加到更高的值。</block>
 </blocks>
