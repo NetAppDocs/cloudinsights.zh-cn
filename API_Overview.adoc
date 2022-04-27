@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: API_Overview.html 
-keywords: API, customer API, premium, JSON, Swagger, Access Token, token, key 
+keywords: API, customer API, premium, JSON, Swagger, Access Token, token, rotate, expired 
 summary: Cloud Insights API 支持与监控和报告系统等其他应用程序集成。 
 ---
 = Cloud Insights API
@@ -270,3 +270,83 @@ Cloud Insight 的 RESTful API 是一个主要的集成点，支持简单有效�
 要永久删除 API 令牌，请从菜单中选择 " 撤消 " 。您不能重新启用已撤销的令牌；您必须创建新令牌。
 
 image:API_Disable_Token.png["禁用或撤消 API 令牌"]
+
+
+
+== 正在轮换已过期的 API 访问令牌
+
+API 访问令牌具有到期日期。当 API 访问令牌过期时，用户需要生成一个新令牌（类型为 _Data ingestion_ 且具有读 / 写权限），并重新配置 Telegraf 以使用新生成的令牌，而不是过期的令牌。以下步骤详细说明了如何执行此操作。
+
+
+
+==== Kubernetes
+
+请注意，这些命令使用的是默认命名空间 "netapp-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。
+
+* 编辑 Telegraf ConfigMap （ CM ），并将旧 API 令牌的所有实例替换为新 API 令牌。
++
+....
+kubectl -n netapp-monitoring edit cm
+:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
+:wq!
+....
+* 编辑 Telegraf DemonSet （ DS ）和 ReplicaSet （ RS ），并将旧 API 令牌的所有实例替换为新 API 令牌。
++
+....
+kubectl -n netapp-monitoring edit ds telegraf-ds
+:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
+:wq!
+kubectl -n netapp-monitoring edit rs telegraf-rs
+:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
+:wq!
+....
+* Kubernetes 控制器将自动重新启动 Telegraf DS Pod 。
+* 重新启动 Telegraf RS Pod
++
+ kubectl -n netapp-monitoring delete pod <telegraf-rs-pod>
+
+
+
+
+==== RHEL/CentOS 和 Debian /Ubuntu
+
+* 编辑 Telegraf 配置文件，并将旧 API 令牌的所有实例替换为新 API 令牌。
++
+ sudo sed -i.bkup ‘s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g’ /etc/telegraf/telegraf.d/*.conf
+* 重新启动 Telegraf 。
++
+ sudo systemctl restart telegraf
+
+
+
+
+==== macOS
+
+* 编辑 Telegraf 配置文件，并将旧 API 令牌的所有实例替换为新 API 令牌。
++
+ sudo sed -i.bkup ‘s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g’ /usr/local/etc/telegraf.d/*.conf
+* 重新启动 Telegraf 。
++
+....
+sudo launchctl stop telegraf
+sudo launchctl start telegraf
+....
+
+
+
+
+==== Windows
+
+* 对于 _C ： \Program Files\telecraf\telecraf.d_ 中的每个 Telegraf 配置文件，请将旧 API 令牌的所有实例替换为新 API 令牌。
++
+....
+cp <plugin>.conf <plugin>.conf.bkup
+(Get-Content <plugin>.conf).Replace(‘<OLD_API_TOKEN>’, ‘<NEW_API_TOKEN>’) | Set-Content <plugin>.conf
+....
+* 重新启动 Telegraf 。
++
+....
+Stop-Service telegraf
+Start-Service telegraf
+....
+

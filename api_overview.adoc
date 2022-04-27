@@ -11,8 +11,28 @@ summary: Cloud Insights API 支持与监控和报告系统等其他应用程序�
 [role="lead"]
 NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Insights API 将 Cloud Insights 与其他应用程序集成，例如 CMDB 或其他票证系统。
 
+请注意， Cloud Insights API 基于您当前的版本提供：
 
-NOTE: Cloud Insights API 可在 * Cloud Insights 高级版 * 中使用。
+[cols="<,^s,^s,^s"]
+|===
+| API 类别 | 基本 | 标准 | 高级版 
+
+
+| 采集单元 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+
+
+| 数据收集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+
+
+| 警报 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+
+
+| 资产 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+
+
+| 数据载入 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+|===
+此外，您还可以使用 Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。
 
 
 
@@ -88,6 +108,8 @@ Cloud Insights API 基于类别，目前包含以下类别：
 
 
 其他类别和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 link:#api-documentation-swagger["API Swagger 文档"]。
+
+请注意，用户有权访问的 API 类别也取决于 link:concept_user_roles.html["用户角色"] 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。
 
 
 

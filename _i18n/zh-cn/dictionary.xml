@@ -8743,4 +8743,17 @@
   <block id="1c694b0b295603bad9f0fa0c7f151567" category="list-text">现在， Getting Started 设置列表包括一个新的 _Configure email notifications 阶段。</block>
   <block id="74913ce7e6f1cf7622d0e237b931c50e" category="cell">Brocade 数据源的清单采集失败，并显示错误： &lt;date&gt; &lt;time&gt; error com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Error 2 out of 2 ： &lt;datasource name&gt;[Internal error] - Unable to generate the model for device &lt;IP&gt; 。检测提示时出错（ [Device name &lt;name&gt; ：无法生成设备 &lt;IP&gt; 的型号。检测提示时出错）</block>
   <block id="118ca29e0af60dc429c30e9a386e68fa" category="cell">如果 Brocade 交换机返回提示所需的时间过长，超过默认的 5 秒超时时间，则可能会导致出现问题描述 。在 Cloud Insights 的数据收集器的高级配置设置中，尝试将 _SSH 横幅等待超时（秒） _ 增加到更高的值。</block>
+  <block id="c2a82bcbfe1a93fec106af67b6b26f3b" category="section-title">正在轮换已过期的 API 访问令牌</block>
+  <block id="d981e94161c0ab533162bbea9f1d9e89" category="paragraph">API 访问令牌具有到期日期。当 API 访问令牌过期时，用户需要生成一个新令牌（类型为 _Data ingestion_ 且具有读 / 写权限），并重新配置 Telegraf 以使用新生成的令牌，而不是过期的令牌。以下步骤详细说明了如何执行此操作。</block>
+  <block id="719a89b64a07694e338d45825fcd17f0" category="paragraph">请注意，这些命令使用的是默认命名空间 "netapp-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。</block>
+  <block id="85b9da5a8c5c1cce5881111010339cb4" category="list-text">编辑 Telegraf ConfigMap （ CM ），并将旧 API 令牌的所有实例替换为新 API 令牌。</block>
+  <block id="865b7c5a0ecd85e73193b19bcb780a4c" category="list-text">编辑 Telegraf DemonSet （ DS ）和 ReplicaSet （ RS ），并将旧 API 令牌的所有实例替换为新 API 令牌。</block>
+  <block id="b56a0b4a07e1bf181b703d8bdf115a4b" category="list-text">Kubernetes 控制器将自动重新启动 Telegraf DS Pod 。</block>
+  <block id="c12e3974927f7898f893ba8a9965a9a0" category="list-text">重新启动 Telegraf RS Pod</block>
+  <block id="daed7387fa0b0965feb45d4dc3de1704" category="section-title">RHEL/CentOS 和 Debian /Ubuntu</block>
+  <block id="779ce1f6c23a08b510ed7a6c996d255a" category="list-text">编辑 Telegraf 配置文件，并将旧 API 令牌的所有实例替换为新 API 令牌。</block>
+  <block id="e89f4056c39669637fb609320173681a" category="list-text">重新启动 Telegraf 。</block>
+  <block id="0a5b7edb55b772c60bfa8af868b679cf" category="section-title">macOS</block>
+  <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">对于 _C ： \Program Files\telecraf\telecraf.d_ 中的每个 Telegraf 配置文件，请将旧 API 令牌的所有实例替换为新 API 令牌。</block>
+  <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">请注意，用户有权访问的 API 类别也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</block>
 </blocks>
