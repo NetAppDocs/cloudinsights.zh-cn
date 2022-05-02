@@ -30,7 +30,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 | 内存 | 8 GB RAM | 相同 
 
 
-| 可用磁盘空间 | 50 GB 对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 10 GB /var/log/netapp 40 GB | 50 GB 
+| 可用磁盘空间 | 50 GB对于Linux、应按以下方式分配磁盘空间：/opt/netapp 10 GB /var/log/netapp 40 GB /tmp安装期间至少1 GB可用空间 | 50 GB 
 
 
 | 网络 | 100 Mbps/1 Gbps 以太网连接，静态 IP 地址，所有 FC 设备的 IP 连接以及 Cloud Insights 实例所需的端口（ 80 或 443 ）。 | 相同 

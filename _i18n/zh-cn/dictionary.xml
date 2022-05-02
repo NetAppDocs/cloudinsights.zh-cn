@@ -6450,7 +6450,6 @@
   <block id="36b415ace97b614344903d1d039cc60d" category="cell">2 个 CPU 核</block>
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">相同</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8 GB RAM</block>
-  <block id="4745019e22d662797beab173c177361c" category="cell">50 GB 对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 10 GB /var/log/netapp 40 GB</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50 GB</block>
   <block id="47dc5acc8bdc974a72002ca9aa47f325" category="cell">100 Mbps/1 Gbps 以太网连接，静态 IP 地址，所有 FC 设备的 IP 连接以及 Cloud Insights 实例所需的端口（ 80 或 443 ）。</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="cell">权限</block>
@@ -8756,4 +8755,5 @@
   <block id="0a5b7edb55b772c60bfa8af868b679cf" category="section-title">macOS</block>
   <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">对于 _C ： \Program Files\telecraf\telecraf.d_ 中的每个 Telegraf 配置文件，请将旧 API 令牌的所有实例替换为新 API 令牌。</block>
   <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">请注意，用户有权访问的 API 类别也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</block>
+  <block id="474b549bf76599f904f9c951a609a127" category="cell">50 GB对于Linux、应按以下方式分配磁盘空间：/opt/netapp 10 GB /var/log/netapp 40 GB /tmp安装期间至少1 GB可用空间</block>
 </blocks>
