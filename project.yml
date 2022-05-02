@@ -354,6 +354,8 @@ sidebar:
           url: "/task_dc_na_cloud_volumes_ontap.html"
         - title: 适用于 AWS 的 Cloud Volumes Services
           url: "/task_dc_na_cloud_volumes.html"
+        - title: Config Advisor
+          url: "/task_dc_na_ca.html"
         - title: ONTAP 数据管理软件
           url: "/task_dc_na_cdot.html"
         - title: Data ONTAP 7- 模式
