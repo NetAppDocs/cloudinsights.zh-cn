@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-19 18:52:42 +0000">04/19/2022</time>
+    <time datetime="2022-05-05 17:17:20 +0000">05/05/2022</time>
     
   
 
@@ -2175,8 +2175,9 @@
 </li>
 </ul>
 </div>
-<div class="sect3">
-<h4 id="监控仅安装在-linux-节点上">监控仅安装在 Linux 节点上</h4>
+</div>
+<div class="sect2">
+<h3 id="监控仅安装在-linux-节点上">监控仅安装在 Linux 节点上</h3>
 <div class="paragraph">
 <p>Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查找以下 Kubernetes 标签，支持监控运行 Linux 的 Kubernetes 节点：</p>
 </div>
@@ -2203,8 +2204,8 @@
 </tbody>
 </table>
 </div>
-<div class="sect3">
-<h4 id="安装-netapp-kubernetes-监控操作员">安装 NetApp Kubernetes 监控操作员</h4>
+<div class="sect2">
+<h3 id="安装-netapp-kubernetes-监控操作员">安装 NetApp Kubernetes 监控操作员</h3>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Operator_Agent_Instructions.png" alt="基于操作员的安装"></span></p>
 </div>
@@ -2229,8 +2230,8 @@
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="openshift-说明">OpenShift 说明</h4>
+<div class="sect2">
+<h3 id="openshift-说明">OpenShift 说明</h3>
 <div class="paragraph">
 <p>如果您运行的是 OpenShift 4.6- 4.8 ，则必须更改 " 特权模式 " 设置。运行以下命令以打开代理进行编辑。如果您使用的命名空间不是 "netapp-monitoring" ，请在命令行中指定此命名空间：</p>
 </div>
@@ -2241,8 +2242,8 @@
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="为-netapp-kubernetes-监控操作员配置代理支持">为 NetApp Kubernetes 监控操作员配置代理支持</h4>
+<div class="sect2">
+<h3 id="为-netapp-kubernetes-监控操作员配置代理支持">为 NetApp Kubernetes 监控操作员配置代理支持</h3>
 <div class="paragraph">
 <p>要为监控操作员配置代理，请执行以下步骤。</p>
 </div>
@@ -2269,8 +2270,8 @@
     noProxy: &lt;comma separated list of IPs or resolvable hostnames that should bypass a proxy&gt;</pre>
 </div>
 </div>
-<div class="sect4">
-<h5 id="使用自定义-私有-docker-存储库">使用自定义 / 私有 Docker 存储库</h5>
+<div class="sect3">
+<h4 id="使用自定义-私有-docker-存储库">使用自定义 / 私有 Docker 存储库</h4>
 <div class="paragraph">
 <p>如果使用自定义 Docker 存储库，请执行以下操作：</p>
 </div>
@@ -2376,8 +2377,8 @@ dockerRepoSecret: &lt;optional: name of the docker secret of enterprise/corp doc
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="基于脚本的安装">基于脚本的安装</h4>
+<div class="sect2">
+<h3 id="基于脚本的安装">基于脚本的安装</h3>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Install_Agent_screen.png" alt="基于脚本的安装"></span></p>
 </div>
@@ -2438,8 +2439,8 @@ dockerRepoSecret: &lt;optional: name of the docker secret of enterprise/corp doc
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="为-kubernetes-配置代理支持基于脚本">为 Kubernetes 配置代理支持—基于脚本</h4>
+<div class="sect2">
+<h3 id="为-kubernetes-配置代理支持基于脚本">为 Kubernetes 配置代理支持—基于脚本</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2509,8 +2510,8 @@ kubectl delete pod telegraf-rs-*</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="demonset-replicaset-以及停止-启动代理">DemonSet ， ReplicaSet 以及停止 / 启动代理</h4>
+<div class="sect2">
+<h3 id="demonset-replicaset-以及停止-启动代理">DemonSet ， ReplicaSet 以及停止 / 启动代理</h3>
 <div class="paragraph">
 <p>将在 Kubernetes 集群上创建 DemonSet 和 ReplicaSet ，以运行所需的 Telegraf 代理 / Pod 。默认情况下，这些 Telegraf 代理 / Pod 将同时计划在主节点和非主节点上。</p>
 </div>
@@ -2542,8 +2543,8 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="配置代理以从-kubernetes-收集数据">配置代理以从 Kubernetes 收集数据</h4>
+<div class="sect2">
+<h3 id="配置代理以从-kubernetes-收集数据">配置代理以从 Kubernetes 收集数据</h3>
 <div class="paragraph">
 <p>注意：基于脚本的安装的默认命名空间为 _cI-monitoring-.对于基于操作员的安装，默认命名空间为 _netapp-monitoring-.在涉及命名空间的命令中，请务必为您的安装指定正确的命名空间。</p>
 </div>
@@ -2607,8 +2608,8 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="安装-kube-state-metrics-服务器">安装 Kube-state-metrics 服务器</h4>
+<div class="sect2">
+<h3 id="安装-kube-state-metrics-服务器">安装 Kube-state-metrics 服务器</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -2653,8 +2654,8 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="kube-state-metrics-计数器">Kube-state-metrics 计数器</h4>
+<div class="sect2">
+<h3 id="kube-state-metrics-计数器">Kube-state-metrics 计数器</h3>
 <div class="paragraph">
 <p>使用以下链接访问 Kubbe 状态指标计数器的信息：</p>
 </div>
@@ -2702,8 +2703,8 @@ kubectl --namespace ci-monitoring apply -f /tmp/telegraf-rs.yaml</pre>
 </ol>
 </div>
 </div>
-<div class="sect3">
-<h4 id="卸载代理">卸载代理</h4>
+<div class="sect2">
+<h3 id="卸载代理">卸载代理</h3>
 <div class="paragraph">
 <p>请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。</p>
 </div>
@@ -2745,8 +2746,8 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="升级代理">升级代理</h4>
+<div class="sect2">
+<h3 id="升级代理">升级代理</h3>
 <div class="paragraph">
 <p>请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。</p>
 </div>
@@ -2770,7 +2771,6 @@ kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebind
 <p><a href="#kubernetes">"安装新代理"</a>。</p>
 </li>
 </ol>
-</div>
 </div>
 </div>
 <div class="sect1">
