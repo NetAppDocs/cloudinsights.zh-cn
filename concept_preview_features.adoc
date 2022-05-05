@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: concept_preview_features.html 
+summary: 预览功能的可用容量有限、并且突出显示功能尚未准备好在黄金时段使用。 
+keywords: coming soon, preview, 
+---
+= 预览功能和特性
+:allow-uri-read: 
+
+
+[role="lead"]
+Cloud Insights 以_Preview_的方式突出显示了新特性和功能。预览功能可在有限的环境中使用、也可在有限的容量下使用。
+
+如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
+
+以下是预览版中当前的一些功能：
+
+|===
+
+
+| * 功能 * | * 问题描述 * 
+
+
+| 内部卷和卷容量全满时间预测 | Cloud Insights 可以预测每个受监控内部卷和卷的容量用尽前的天数。此值有助于显著降低中断风险。在查询、监控器或信息板中使用_timeToFull.Total_和_timeToFull.ConfidenceInterval_计数器。 
+
+
+| 限制用户访问自动响应操作 | 检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问（完整块或设置为只读访问）来阻止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
+
+
+| 共享资源面临压力 | 通过 " 受压力的共享资源 " 洞察力，您可以确定： - 由于一个或多个工作负载的高需求而面临压力的共享存储资源 - 共享资源上要求苛刻且受影响的工作负载link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["阅读更多内容"] 
+|===

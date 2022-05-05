@@ -8811,4 +8811,13 @@
   <block id="64f069bd95ef26cdc0d665c7b1dfdf15" category="list-text">Ubuntu 12.0及更高版本</block>
   <block id="ca205ac9d896fc87257c36e58f45e6f6" category="paragraph">对于与Config Advisor 相关的问题、请单击"Help"-&gt;"Open Support"(打开支持服务单)、从Config Advisor 工具中打开服务单。</block>
   <block id="f9be17421d77a57baae245776004d9fc" category="sidebar">Config Advisor</block>
+  <block id="68f0f62deae94ea2573e440bd6203542" category="summary">预览功能的可用容量有限、并且突出显示功能尚未准备好在黄金时段使用。</block>
+  <block id="b865b0f0f94674aa0d7878e2253f2c1b" category="doc">预览功能和特性</block>
+  <block id="f06798e708a78e76d30364617ea53340" category="paragraph">Cloud Insights 以_Preview_的方式突出显示了新特性和功能。预览功能可在有限的环境中使用、也可在有限的容量下使用。</block>
+  <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">如果您希望预览其中一个或多个功能，请联系您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
+  <block id="963905e220923605f4c2bdc8e3d98f6d" category="paragraph">以下是预览版中当前的一些功能：</block>
+  <block id="6e1effcb952ada801a257429342ccd39" category="cell">Cloud Insights 可以预测每个受监控内部卷和卷的容量用尽前的天数。此值有助于显著降低中断风险。在查询、监控器或信息板中使用_timeToFull.Total_和_timeToFull.ConfidenceInterval_计数器。</block>
+  <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">限制用户访问自动响应操作</block>
+  <block id="f763810a8ec0d5862e0f288795932956" category="cell">检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问（完整块或设置为只读访问）来阻止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">通过 " 受压力的共享资源 " 洞察力，您可以确定： - 由于一个或多个工作负载的高需求而面临压力的共享存储资源 - 共享资源上要求苛刻且受影响的工作负载<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
 </blocks>
