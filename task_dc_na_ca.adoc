@@ -168,8 +168,24 @@ Config Advisor 可以在以下操作系统上运行。如果收集器安装在�
 
 
 
-== 支持
+== 支持和视频
 
-对于与Config Advisor 相关的问题、请单击"Help"->"Open Support"(打开支持服务单)、从Config Advisor 工具中打开服务单。
+观看以下视频、了解如何安装数据收集器并使用信息板充分利用Cloud Insights 中的Config Advisor ：
+
+
+
+==== 安装和配置数据收集器：
+
+video::Config_Advisor_Collector_Part1.mp4[]
+
+
+==== 创建Config Advisor 信息板：
+
+video::Config_Advisor_Collector_Part2.mp4[]
+
+
+==== 其他支持
+
+有关与Config Advisor 相关的其他问题、请单击"Help"->"Open Support"(打开支持服务单)、从Config Advisor 工具中打开服务单。
 
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。

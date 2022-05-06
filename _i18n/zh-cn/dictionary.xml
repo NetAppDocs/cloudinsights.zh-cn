@@ -8808,7 +8808,6 @@
   <block id="7785a24bb948afb1d1b24ea64d912ee6" category="list-text">Windows 2019 Server (64位)</block>
   <block id="d5955c6525a9a5ef57ea83f30159a996" category="list-text">Red Hat Enterprise Linux (RHEL) 7.7及更高版本(64位)</block>
   <block id="64f069bd95ef26cdc0d665c7b1dfdf15" category="list-text">Ubuntu 12.0及更高版本</block>
-  <block id="ca205ac9d896fc87257c36e58f45e6f6" category="paragraph">对于与Config Advisor 相关的问题、请单击"Help"-&gt;"Open Support"(打开支持服务单)、从Config Advisor 工具中打开服务单。</block>
   <block id="f9be17421d77a57baae245776004d9fc" category="sidebar">Config Advisor</block>
   <block id="68f0f62deae94ea2573e440bd6203542" category="summary">预览功能的可用容量有限、并且突出显示功能尚未准备好在黄金时段使用。</block>
   <block id="b865b0f0f94674aa0d7878e2253f2c1b" category="doc">预览功能和特性</block>
@@ -8820,4 +8819,10 @@
   <block id="f763810a8ec0d5862e0f288795932956" category="cell">检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问（完整块或设置为只读访问）来阻止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">通过 " 受压力的共享资源 " 洞察力，您可以确定： - 由于一个或多个工作负载的高需求而面临压力的共享存储资源 - 共享资源上要求苛刻且受影响的工作负载<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="6e1238d84ff9d81dac586bf262a824f6" category="cell">此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时、 使用CI在虚拟机管理程序上报告的Cloud Insights模式集群名称—Cloud Insights 会在vSphere集群名称前面加上vSphere数据中心名称和正斜杠—"DC1/clusterA"是Cloud Insights 将在数据中心DC1的clusterA中报告的集群名称。</block>
+  <block id="6a9aea5a3e6edbc2fbcfb0b82e833894" category="section-title">支持和视频</block>
+  <block id="d8c4d821533431837ec1b03f5fad4fe4" category="paragraph">观看以下视频、了解如何安装数据收集器并使用信息板充分利用Cloud Insights 中的Config Advisor ：</block>
+  <block id="e66d50cebc6c93b253c97ae0dec229f2" category="section-title">安装和配置数据收集器：</block>
+  <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">创建Config Advisor 信息板：</block>
+  <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">其他支持</block>
+  <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">有关与Config Advisor 相关的其他问题、请单击"Help"-&gt;"Open Support"(打开支持服务单)、从Config Advisor 工具中打开服务单。</block>
 </blocks>
