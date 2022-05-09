@@ -8825,4 +8825,13 @@
   <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">创建Config Advisor 信息板：</block>
   <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">其他支持</block>
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">有关与Config Advisor 相关的其他问题、请单击"Help"-&gt;"Open Support"(打开支持服务单)、从Config Advisor 工具中打开服务单。</block>
+  <block id="65c0485e35d21a3fdc8097d6270482e7" category="section-title">收集器监控</block>
+  <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">采集单元关闭</block>
+  <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">在升级过程中、Cloud Insights 采集单元会定期重新启动以引入新功能。在典型环境中、此情况每月发生一次或更少。在出现采集单元已关闭的警告警报后、应立即解决此问题、指出新重新启动的采集单元已完成Cloud Insights 注册。通常、关闭注册周期需要5到15分钟。</block>
+  <block id="c1e22147316e85ab61d0419eba630d75" category="cell">如果警报频繁出现或持续时间超过15分钟、请检查托管采集单元的系统、网络以及将AU连接到Internet的任何代理的运行情况。</block>
+  <block id="783f60b4168f0ca33c1fed4cff46f1b8" category="cell">收集器失败</block>
+  <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">对数据收集器的轮询遇到意外故障情况。</block>
+  <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">访问Cloud Insights 中的数据收集器页面、了解有关此情况的更多信息。</block>
+  <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">收集器警告</block>
+  <block id="85cbbe353849360cf65793354f09c95b" category="cell">通常、由于数据收集器或目标系统配置不正确、可能会出现此警报。重新访问配置以防止将来出现警报。这也可能是因为数据收集器在检索不完全的数据时收集了所有可能的数据。如果数据收集期间的情况发生变化(例如、在数据收集期间以及在捕获数据之前删除数据收集开始时存在的虚拟机)、则可能会发生这种情况。</block>
 </blocks>
