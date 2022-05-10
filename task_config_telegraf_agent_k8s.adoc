@@ -43,7 +43,7 @@ NOTE: 如果您使用的是代理，请在安装 Telegraf 代理之前阅读适�
 
 
 
-=== 在 Kubernetes 上安装代理
+== 在 Kubernetes 上安装代理
 
 Kubernetes 提供了两种数据收集方式：
 
@@ -84,7 +84,7 @@ Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查�
 |===
 
 
-=== 安装 NetApp Kubernetes 监控操作员
+== 安装 NetApp Kubernetes 监控操作员
 
 image:Kubernetes_Operator_Agent_Instructions.png["基于操作员的安装"]
 
@@ -200,7 +200,7 @@ spec:
 ....
 
 
-=== 基于脚本的安装
+== 基于脚本的安装
 
 image:Kubernetes_Install_Agent_screen.png["基于脚本的安装"]
 
