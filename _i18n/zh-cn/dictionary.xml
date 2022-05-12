@@ -7948,7 +7948,6 @@
   <block id="aaf4db30c94d2b3ecd2df73746b66f60" category="list-text">将 &lt;Kubernetes API 服务器的 IP 地址替换为 &lt;Kubernetes IP&gt; 。</block>
   <block id="37ee78eaea07b1141db2771004cca6c2" category="list-text">将 &lt;Kubernetes 令牌 &gt; 替换为您的 Kubernetes API 令牌。</block>
   <block id="c7e5cc3cd77f2019256afe7266491452" category="list-text">按 Enter 键。</block>
-  <block id="d29c6dec2ac17ff8872c354eb3f62aea" category="paragraph">安装程序脚本将： * 验证是否已安装和配置监控操作员。* 配置流畅位。* 配置 Telegraf 。* 安装采集单元。* 在采集单元运行后安装 Astra 数据存储收集器。</block>
   <block id="167fe4db27b48d4d51e6a9656383dbb8" category="list-text">单击 _complete Setup_ 。</block>
   <block id="96fab0bdb0ff6d498a516ba05e81b851" category="paragraph">如果安装程序脚本因错误而退出，则可以在解决错误后重新运行它。如果您的环境不使用默认设置，则安装程序脚本支持其他参数，例如监控操作员命名空间和 Kubernetes API 服务器端口。下面列出了可用选项的完整列表。</block>
   <block id="b524f24588085b1e0adf31626117f231" category="section-title">安装程序脚本选项：</block>
@@ -7965,7 +7964,6 @@
   <block id="5c8dd5b291686fd09b7f2bd04fa20150" category="cell">验证采集单元是否显示在 Cloud Insights 中。转到 "Admin"&gt;"Data Collectors" ，然后单击 "Acquisition Units" 选项卡。验证 Cloud Insights API 密钥是否具有采集单元的权限。</block>
   <block id="729716cbbc26046a3f2eae7728a60220" category="inline-link-macro">NetApp Astra 数据存储</block>
   <block id="0b29c8b6030261b81886de13d7902820" category="cell"><block ref="0b29c8b6030261b81886de13d7902820" category="inline-link-macro-rx"></block></block>
-  <block id="17d0980f445c2a05e39e2cbcbbb44f10" category="paragraph">此数据收集器可采集单个 Astra Data Store 集群的清单和性能数据。除了数据收集器之外，监控操作员还会配置 _Telegraf_ 来收集高级指标，并配置 _fluent bit_ 来收集日志。</block>
   <block id="9006a134fd1870aca1877d5e1e68dae9" category="inline-link-macro">使用 Cloud Insights 监控指标</block>
   <block id="f0b65328b01ef9e6301a81ee7e9ed23f" category="inline-link-macro">Astra 数据存储快速入门</block>
   <block id="b42189ec86d9beb36690d81d11d4ab47" category="admonition">此外，您还可以在 Astra 数据存储库文档中找到这些安装说明和追加信息：<block ref="e8b9f8414fb0a1622a4d51b962548914" category="inline-link-macro-rx"></block>
@@ -8825,14 +8823,6 @@
   <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">创建Config Advisor 信息板：</block>
   <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">其他支持</block>
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">有关与Config Advisor 相关的其他问题、请单击"Help"-&gt;"Open Support"(打开支持服务单)、从Config Advisor 工具中打开服务单。</block>
-  <block id="65c0485e35d21a3fdc8097d6270482e7" category="section-title">收集器监控</block>
-  <block id="db8d9ccfe5ecea7583ec770b7ba8b68f" category="cell">采集单元关闭</block>
-  <block id="85501b60becab3cb0e73d274bbab94aa" category="cell">在升级过程中、Cloud Insights 采集单元会定期重新启动以引入新功能。在典型环境中、此情况每月发生一次或更少。在出现采集单元已关闭的警告警报后、应立即解决此问题、指出新重新启动的采集单元已完成Cloud Insights 注册。通常、关闭注册周期需要5到15分钟。</block>
-  <block id="c1e22147316e85ab61d0419eba630d75" category="cell">如果警报频繁出现或持续时间超过15分钟、请检查托管采集单元的系统、网络以及将AU连接到Internet的任何代理的运行情况。</block>
-  <block id="783f60b4168f0ca33c1fed4cff46f1b8" category="cell">收集器失败</block>
-  <block id="98f0032b558f695572ee2c60e17e2d6d" category="cell">对数据收集器的轮询遇到意外故障情况。</block>
-  <block id="e8eee7b0a4f287aabb4f4528f8be7038" category="cell">访问Cloud Insights 中的数据收集器页面、了解有关此情况的更多信息。</block>
-  <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">收集器警告</block>
-  <block id="85cbbe353849360cf65793354f09c95b" category="cell">通常、由于数据收集器或目标系统配置不正确、可能会出现此警报。重新访问配置以防止将来出现警报。这也可能是因为数据收集器在检索不完全的数据时收集了所有可能的数据。如果数据收集期间的情况发生变化(例如、在数据收集期间以及在捕获数据之前删除数据收集开始时存在的虚拟机)、则可能会发生这种情况。</block>
-  <block id="7072526e0a10a722b0d6d5f262bcc01f" category="cell">检查数据收集器或目标系统的配置。请注意、此监控器有时发送的警报可能比其他监控器多、因此建议不要在此监控器上设置任何警报收件人、除非您正在进行故障排除。</block>
+  <block id="cf4b2f0af37857c4f536e3caec893f92" category="paragraph">此数据收集器可采集单个 Astra Data Store 集群的清单和性能数据。除了数据收集器之外、监控操作员还会收集高级指标、并配置_fluent bit_来收集日志。</block>
+  <block id="79c4d7a149c6892512f89196ff442c63" category="paragraph">安装程序脚本将： * 验证是否已安装和配置监控操作员。* 配置流畅位。* 安装采集单元。* 在采集单元运行后安装 Astra 数据存储收集器。</block>
 </blocks>
