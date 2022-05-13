@@ -171,9 +171,6 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 
 
 | 设置 ONTAP 发送缓冲区大小 | 设置 ONTAP Fpolicy 发送缓冲区大小。如果使用的是 9.8p7 之前的 ONTAP 版本，并且显示了性能问题描述，则可以更改 ONTAP 发送缓冲区大小以提高 ONTAP 性能。如果您未看到此选项，但希望了解此选项，请联系 NetApp 支持部门。 
-
-
-| 设置 ONTAP 发送缓冲区大小 | 设置 ONTAP Fpolicy 发送缓冲区大小。如果使用的是 9.8p7 之前的 ONTAP 版本且达到 ONTAP 性能问题描述，则可以更改 ONTAP 发送缓冲区大小以提高 ONTAP 性能。这是一项隐藏功能，可根据客户要求启用。 
 |===
 .完成后
 * 在 "Installed Data Collectors" 页面中，使用每个收集器右侧的选项菜单编辑数据收集器。您可以重新启动数据收集器或编辑数据收集器配置属性。
