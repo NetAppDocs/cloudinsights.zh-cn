@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-10 18:32:26 +0000">05/10/2022</time>
+    <time datetime="2022-05-15 23:29:23 +0000">05/15/2022</time>
     
   
 
@@ -2033,10 +2033,7 @@
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph lead">
-<p>Cloud Insights 使用 <a href="https://docs.influxdata.com/telegraf/v1.19/">"Telegraf"</a> 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。</p>
-</div>
-<div class="paragraph">
-<p>Cloud Insights 的当前 Telegraf 版本为 * 。 1.19.3 * 。</p>
+<p>Cloud Insights 使用 <a href="https://docs.influxdata.com/telegraf/">"Telegraf"</a> 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -2062,6 +2059,22 @@
 </tr>
 </table>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="基于操作员的安装还是基于脚本的安装">基于操作员的安装还是基于脚本的安装？</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Insights 构建了一个Kubernetes操作员、用于监控客户的Kubernetes集群。与脚本安装的监控方法相比、NetApp Kubernetes监控操作员(NKMO）有所改进、因为它可以更灵活地配置可从Cloud Insights 进行控制的监控、并减少客户驱动的配置干预、同时还可以增加监控K8s集群中运行的其他软件的机会。</p>
+</div>
+<div class="paragraph">
+<p>NKMO继续 使用底层的电报软件收集数据、转换数据并将其传送到Cloud Insights。自定义资源定义和自定义资源增强了此功能、可为每个K8s集群定制监控。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="安装代理">安装代理</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>如果您要安装服务数据收集器，但尚未配置代理，则系统会提示您先为相应的操作系统安装代理。本主题介绍如何在以下操作系统上安装 Telegraf 代理：</p>
 </div>
@@ -2160,7 +2173,7 @@
 <p>如果您运行的是 OpenShift 4.6 - 4.8 ，则除了确保满足这些前提条件之外，还必须遵循下面的 * OpenShift 指令 * 。</p>
 </li>
 <li>
-<p>必须提供以下命令： <em>cURL ， _sudo ， _openssl</em> ， <em>sha256sum</em> 和 <em>kubectl</em> 。为获得最佳结果，请将这些命令添加到路径中。</p>
+<p>必须提供以下命令： <em>cURL ， _sudo （对于基于脚本的安装不需要）， _openssl</em> ， <em>sha256sum</em> 和 <em>kubectl</em> 。为获得最佳结果，请将这些命令添加到路径中。</p>
 </li>
 <li>
 <p>必须安装 Kube-state-metrics 。有关详细信息，请参见下文。Kube-state-metrics 会随基于操作员的安装自动安装。</p>
@@ -2335,9 +2348,9 @@ password: &lt;password from docker secret step above&gt;</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>docker.io/telegraf:1.19.3
-gcr.io/kubebuilder/kube-rbac-proxy:v0.5.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.1.0</pre>
+<pre>docker.io/telegraf:1.21.4
+gcr.io/kubebuilder/kube-rbac-proxy:v0.8.0
+k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.3.0</pre>
 </div>
 </div>
 <div class="paragraph">
@@ -2345,7 +2358,7 @@ k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.1.0</pre>
 </div>
 <div class="literalblock">
 <div class="content">
-<pre>docker.io/fluent-bit:1.7.8
+<pre>docker.io/fluent-bit:1.8.12
 docker.io/kubernetes-event-exporter:0.10</pre>
 </div>
 </div>
@@ -2379,11 +2392,81 @@ dockerRepoSecret: &lt;optional: name of the docker secret of enterprise/corp doc
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="从基于脚本的k8s监控升级到基于操作员的监控">从基于脚本的K8s监控升级到基于操作员的监控</h3>
+<div class="paragraph">
+<p>如果您已安装基于脚本的Kubernetes监控、请按照以下步骤升级到基于操作员的监控：</p>
+</div>
+<div class="paragraph">
+<p>升级步骤</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>从基于脚本的监控安装中保留ConfigMap：</p>
+<div class="literalblock">
+<div class="content">
+<pre> kubectl --namespace ci-monitoring get cm -o yaml &gt; /tmp/telegraf-configs.yaml
+. 保存K8s集群名称、以便在安装K8s基于操作员的监控解决方案 期间使用、以确保数据连续性。</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果您不记得CI中K8s集群的名称、可以使用以下命令行从已保存的配置中提取此集群：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre> cat /tmp/telegraf-configs.yaml | grep kubernetes_cluster | head -2
+. 删除基于脚本的监控</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>要卸载 Kubernetes 上基于脚本的代理，请执行以下操作：</p>
+</div>
+<div class="paragraph">
+<p>如果监控命名空间仅用于 Telegraf ：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl delete ns ci-monitoring</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>如果除了 Telegraf 之外，监控命名空间还用于其他目的：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="KubernetesOperatorTile.png" alt="适用于Kubernetes操作员的图块"></span></p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="基于脚本的安装">基于脚本的安装</h2>
 <div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="注">
+</td>
+<td class="content">
+已弃用基于脚本的安装。请使用基于Kubernetes操作员的收集功能监控Kubernetes集群。
+</td>
+</tr>
+</table>
+</div>
 <div class="paragraph">
 <p><span class="image"><img src="Kubernetes_Install_Agent_screen.png" alt="基于脚本的安装"></span></p>
 </div>

@@ -2023,7 +2023,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-10 20:48:00 +0000">05/10/2022</time>
+    <time datetime="2022-05-15 23:29:23 +0000">05/15/2022</time>
     
   
 
@@ -2036,12 +2036,13 @@
 <li><a href="#监控器说明">监控器说明</a>
 <ul class="sectlevel2">
 <li><a href="#指标监控器">指标监控器</a></li>
-<li><a href="#日志监控器未解决时间问题">日志监控器（未解决时间问题）</a></li>
-<li><a href="#日志监控器已按时间解析">日志监控器已按时间解析</a></li>
+<li><a href="#日志监控器">日志监控器</a></li>
 <li><a href="#反勒索软件日志监控器">反勒索软件日志监控器</a></li>
 <li><a href="#astra-数据存储-ads-监控器">Astra 数据存储（ ADS ）监控器</a></li>
 <li><a href="#适用于-netapp-ontap-的-fsx-监控器">适用于 NetApp ONTAP 的 FSX 监控器</a></li>
 <li><a href="#k8s-监控器">K8s 监控器</a></li>
+<li><a href="#更改日志监控器">更改日志监控器</a></li>
+<li><a href="#收集器监控">收集器监控</a></li>
 </ul>
 </li>
 <li><a href="#更多信息">更多信息</a></li>
@@ -2265,7 +2266,7 @@
 </table>
 </div>
 <div class="sect2">
-<h3 id="日志监控器未解决时间问题">日志监控器（未解决时间问题）</h3>
+<h3 id="日志监控器">日志监控器</h3>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 25%;">
@@ -2375,25 +2376,6 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">信息</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">系统具有未分配的磁盘 - 正在浪费容量，并且您的系统可能会应用某些配置错误或部分配置更改。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">执行以下更正操作：…使用 disk show -n 命令确定哪些磁盘已取消分配。…使用 disk assign 命令将这些磁盘分配给系统。</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="日志监控器已按时间解析">日志监控器已按时间解析</h3>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-<col style="width: 25%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">监控器名称</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">severity</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">说明</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">更正操作</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">防病毒服务器繁忙</p></td>
@@ -2592,6 +2574,30 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Vscan 服务器已向存储系统报告错误。这通常表示已发现病毒。但是， Vscan 服务器上的其他错误可能会发生原因此事件。…客户端对文件的访问被拒绝。Vscan 服务器可能会根据其设置和配置清理文件，隔离或删除文件。</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">检查 "syslog" 事件中报告的 Vscan 服务器的日志，查看它是否能够成功清理，隔离或删除受感染的文件。如果无法执行此操作，系统管理员可能需要手动删除此文件。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">卷脱机</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">信息</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此消息指示卷已脱机。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使卷重新联机。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">卷受限</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">信息</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此事件指示灵活卷已设置为受限。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使卷重新联机。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Storage VM停止成功</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">信息</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果"vserver stop"操作成功、则会显示此消息。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用"vserver start"命令在Storage VM上启动数据访问。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">节点崩溃</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">发生崩溃时会发出此事件</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">请联系NetApp客户支持。</p></td>
 </tr>
 </tbody>
 </table>
@@ -2823,6 +2829,90 @@
 <td class="tableblock halign-left valign-top"><p class="tableblock">POD 挂载失败</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">警告</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">如果 Pod 上的挂载失败，则会出现此警报。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="更改日志监控器">更改日志监控器</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">监控器名称</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">severity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">监控问题描述</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已发现内部卷</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">信息性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">发现内部卷时会出现此消息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已修改内部卷</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">信息性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">修改内部卷时会出现此消息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已发现存储节点</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">信息性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">发现存储节点时会出现此消息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已删除存储节点</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">信息性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">删除存储节点时会显示此消息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已发现存储池</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">信息性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">发现存储池时会显示此消息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已发现Storage Virtual Machine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">信息性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">发现Storage Virtual Machine后会显示此消息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已修改Storage Virtual Machine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">信息性</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">修改Storage Virtual Machine时会出现此消息。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="收集器监控">收集器监控</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">监控器名称</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">说明</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">更正操作</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">采集单元关闭</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在升级过程中、Cloud Insights 采集单元会定期重新启动以引入新功能。在典型环境中、此情况每月发生一次或更少。在出现采集单元已关闭的警告警报后、应立即解决此问题、指出新重新启动的采集单元已完成Cloud Insights 注册。通常、关闭注册周期需要5到15分钟。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">如果警报频繁出现或持续时间超过15分钟、请检查托管采集单元的系统、网络以及将AU连接到Internet的任何代理的运行情况。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">收集器失败</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">对数据收集器的轮询遇到意外故障情况。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">访问Cloud Insights 中的数据收集器页面、了解有关此情况的更多信息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">收集器警告</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">通常、由于数据收集器或目标系统配置不正确、可能会出现此警报。重新访问配置以防止将来出现警报。这也可能是因为数据收集器在检索不完全的数据时收集了所有可能的数据。如果数据收集期间的情况发生变化(例如、在数据收集期间以及在捕获数据之前删除数据收集开始时存在的虚拟机)、则可能会发生这种情况。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">检查数据收集器或目标系统的配置。请注意、此监控器有时发送的警报可能比其他监控器多、因此建议不要在此监控器上设置任何警报收件人、除非您正在进行故障排除。</p></td>
 </tr>
 </tbody>
 </table>
