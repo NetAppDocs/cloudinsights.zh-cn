@@ -26,7 +26,7 @@ image:ChatIcon.png["聊天\"图标、在微笑上方显示蓝色NetApp \"N"]
 
 ==== Kubernetes操作员
 
-。 link:/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes监控操作员"] (NKMO）适用于运行Kubernetes 1.17或更高版本的所有环境、是安装适用于Cloud Insights 的Kubernetes的首选方法。与脚本安装的监控方法相比、NKMOO是一项改进、因为它可以更灵活地配置可通过Cloud Insights 进行控制的监控、并减少客户驱动的配置干预、同时还可以增加监控K8s集群中运行的其他软件的机会。
+。 link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes监控操作员"] (NKMO）适用于运行Kubernetes 1.17或更高版本的所有环境、是安装适用于Cloud Insights 的Kubernetes的首选方法。与脚本安装的监控方法相比、NKMOO是一项改进、因为它可以更灵活地配置可通过Cloud Insights 进行控制的监控、并减少客户驱动的配置干预、同时还可以增加监控K8s集群中运行的其他软件的机会。
 
 
 
@@ -38,7 +38,7 @@ image:ChatIcon.png["聊天\"图标、在微笑上方显示蓝色NetApp \"N"]
 
 ==== 数据收集警报
 
-现在、您可以接收数据收集警报 link:/task_system_monitors.html#collector-monitors["事件"]：
+现在、您可以接收数据收集警报 link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#collector-monitors["事件"]：
 
 * 采集单元关闭
 * 收集器失败

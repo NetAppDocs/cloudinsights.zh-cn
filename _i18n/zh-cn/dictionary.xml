@@ -8913,13 +8913,11 @@
   <block id="ed9854709bd41d275fb8660c2894a4fc" category="paragraph"><block ref="ed9854709bd41d275fb8660c2894a4fc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="541eba6bad0f6bb8c10bec2af8d0388d" category="section-title">Kubernetes操作员</block>
   <block id="92631a8aee2d30caecb661301eccee48" category="inline-link-macro">NetApp Kubernetes监控操作员</block>
-  <block id="44e205d6b7f670b4484b5c59a0e047a1" category="paragraph">。 <block ref="7bfa97fa7d1d00f6d7f973b03d477760" category="inline-link-macro-rx"></block> (NKMO）适用于运行Kubernetes 1.17或更高版本的所有环境、是安装适用于Cloud Insights 的Kubernetes的首选方法。与脚本安装的监控方法相比、NKMOO是一项改进、因为它可以更灵活地配置可通过Cloud Insights 进行控制的监控、并减少客户驱动的配置干预、同时还可以增加监控K8s集群中运行的其他软件的机会。</block>
   <block id="b309f54e4f5c6e536fce4de1d83c5553" category="section-title">使用API管理用户和邀请</block>
   <block id="ed39f5bc3223c1b01ac77f72f296192a" category="inline-link-macro">API Swagger文档</block>
   <block id="11ac41afd372e3478375bc4334741ded" category="paragraph">现在、您可以使用Cloud Insights 强大的API来管理用户和邀请。在中了解更多信息 <block ref="8b90a2a6f600732ad913a4dda50bc415" category="inline-link-macro-rx"></block>。</block>
   <block id="8f586721df71efca42eda16d08885806" category="section-title">数据收集警报</block>
   <block id="16908b0605f2645dfcb4c3a8d248cef3" category="inline-link-macro">事件</block>
-  <block id="b3a98c480e653bcb96e30bd853fa73d8" category="paragraph">现在、您可以接收数据收集警报 <block ref="cd5c9bc76fe8dcbf686501201e710bd1" category="inline-link-macro-rx"></block>：</block>
   <block id="090cf11f8e59f7e005270bc00a8af56b" category="paragraph">请注意、这些监控器默认为_Paused__、必须先启用(恢复)、然后才能发送警报。</block>
   <block id="43bd31a2d107dc985aca1295fc25dfe1" category="paragraph">另请注意、收集器警告的监控器可以发送比其他监控器类型更多的警报、因此建议不要设置任何警报收件人、除非您正在进行故障排除。</block>
   <block id="81fb83219b34a7b8835cf9be74652d9b" category="section-title">有关存储更改日志事件的警报</block>
@@ -8928,4 +8926,6 @@
   <block id="639cd114dad5880c94752e290d36353a" category="cell">通过运行空间不足的_Kubernetes命名空间_ Insight、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。<block ref="91569d71925d0cb55a46b7a5e8a36cb5" category="inline-link-macro-rx"></block></block>
   <block id="9bfa6f1e81e8e1a4af8a2057b85a0257" category="cell">"受压力的共享资源" Insight使用AI/ML自动确定资源争用在环境中导致性能下降的位置、突出显示受其影响的任何工作负载、并提供建议的修复操作、使您能够更快地解决性能问题。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="fd693ecc46e262de271868b32a2e5366" category="paragraph"><block ref="fd693ecc46e262de271868b32a2e5366" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b90e10e9945ca4933745606f75a304bb" category="paragraph">。 <block ref="59560f912a73dc2f4cdb9ad27b9948a6" category="inline-link-macro-rx"></block> (NKMO）适用于运行Kubernetes 1.17或更高版本的所有环境、是安装适用于Cloud Insights 的Kubernetes的首选方法。与脚本安装的监控方法相比、NKMOO是一项改进、因为它可以更灵活地配置可通过Cloud Insights 进行控制的监控、并减少客户驱动的配置干预、同时还可以增加监控K8s集群中运行的其他软件的机会。</block>
+  <block id="a12dd41aedb5d3e2639e77030a5a0084" category="paragraph">现在、您可以接收数据收集警报 <block ref="ff2275d535241d8d394c16f909063489" category="inline-link-macro-rx"></block>：</block>
 </blocks>
