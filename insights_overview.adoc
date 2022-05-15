@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: insights_overview.html 
+keywords: insight, greedy, degraded, impacted, impacting, impactful, impact, resources, consuming, workload, ttf, time to full, k8s, kubernetes, namespace 
+summary: 通过洞察、您可以了解资源使用情况和趋势。 
+---
+= 洞察力
+:allow-uri-read: 
+
+
+[role="lead"]
+通过洞察、您可以了解资源使用情况及其对其他资源的影响、或者分析时间到全满等因素。
+
+我们提供了许多Insights。导航到*信息板> Insights *开始深入了解。您可以在主选项卡上查看主动洞察(当前正在发生的洞察)、也可以在非活动Insights _选项卡上查看非活动Insights。非活动洞察力是指以前处于活动状态但不再发生的洞察力。
+
+
+
+== Insight类型
+
+
+
+=== 共享资源面临压力
+
+高影响工作负载会降低共享资源中其他工作负载的性能。这会使共享资源承受压力。Cloud Insights 提供的工具可帮助您调查资源饱和情况以及环境中的影响。 link:insights_shared_resources_under_stress.html["了解更多信息。"]
+
+
+NOTE: 这是一项_Preview_功能、可能会随着时间的推移进行更改。 link:/concept_preview_features.html["了解更多信息。"] 关于Cloud Insights 预览功能。
+
+
+
+=== Kubernetes命名空间即将用尽
+
+通过运行空间不足Insight的Kubernetes命名空间、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。 link:insights_k8s_namespaces_running_out_of_space.html["了解更多信息。"]
+
+
+NOTE: 这是一项_Preview_功能、可能会随着时间的推移进行更改。 link:/concept_preview_features.html["了解更多信息。"] 关于Cloud Insights 预览功能。

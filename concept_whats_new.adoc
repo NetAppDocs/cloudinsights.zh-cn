@@ -12,6 +12,84 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+=== 2022年5月
+
+
+
+==== 与NetApp支持部门实时聊天
+
+现在、您可以与NetApp支持人员实时聊天！在帮助>支持页面上、只需单击聊天图标或单击"联系我们"部分中的_Chat_即可启动聊天会话。标准版和高级版用户可在美国工作日获得聊天支持。
+
+image:ChatIcon.png["聊天\"图标、在微笑上方显示蓝色NetApp \"N"]
+
+
+
+==== Kubernetes操作员
+
+。 link:/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes监控操作员"] (NKMO）适用于运行Kubernetes 1.17或更高版本的所有环境、是安装适用于Cloud Insights 的Kubernetes的首选方法。与脚本安装的监控方法相比、NKMOO是一项改进、因为它可以更灵活地配置可通过Cloud Insights 进行控制的监控、并减少客户驱动的配置干预、同时还可以增加监控K8s集群中运行的其他软件的机会。
+
+
+
+==== 使用API管理用户和邀请
+
+现在、您可以使用Cloud Insights 强大的API来管理用户和邀请。在中了解更多信息 link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html["API Swagger文档"]。
+
+
+
+==== 数据收集警报
+
+现在、您可以接收数据收集警报 link:/task_system_monitors.html#collector-monitors["事件"]：
+
+* 采集单元关闭
+* 收集器失败
+* 收集器警告
+
+
+请注意、这些监控器默认为_Paused__、必须先启用(恢复)、然后才能发送警报。
+
+另请注意、收集器警告的监控器可以发送比其他监控器类型更多的警报、因此建议不要设置任何警报收件人、除非您正在进行故障排除。
+
+
+
+==== 有关存储更改日志事件的警报
+
+在为Cloud Insights 生成的存储更改日志事件定义监控器(使用日志源_logs.cloud_insights.change_log.storage_)时、会收到信息警报、并在每次收集后比较存储系统的过去和新状态。对于以下事件、ONTAP 存储可以使用默认监控器：
+
+* 已发现内部卷
+* 已修改内部卷
+* 已发现存储节点
+* 已删除存储节点
+* 已发现存储池
+* 已发现Storage Virtual Machine
+* 已修改Storage Virtual Machine
+
+
+
+
+==== 预览功能
+
+Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
+
+|===
+
+
+| * 功能 * | * 问题描述 * 
+
+
+| Kubernetes命名空间即将用尽 | 通过运行空间不足的_Kubernetes命名空间_ Insight、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["阅读更多内容"] 
+
+
+| 内部卷和卷容量全满时间预测 | Cloud Insights 可以预测每个受监控内部卷和卷的容量用尽前的天数。此值有助于显著降低中断风险。 
+
+
+| Cloud Secure —在受到攻击时限制用户访问 | 可以在检测到攻击时限制用户访问，从而增强对业务关键型数据的保护。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
+
+
+| 共享资源面临压力 | "受压力的共享资源" Insight使用AI/ML自动确定资源争用在环境中导致性能下降的位置、突出显示受其影响的任何工作负载、并提供建议的修复操作、使您能够更快地解决性能问题。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["阅读更多内容"] 
+|===
+'''
+
+
 === 2022 年 4 月
 
 
