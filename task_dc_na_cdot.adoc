@@ -189,7 +189,7 @@ Cloud Insights 从 ONTAP 数据收集器采集清单和性能数据。对于所�
 ....
 security login role create -role ci_readonly -cmddirname DEFAULT -access readonly
 security login role create -role ci_readonly -cmddirname security -access readonly
-security login role create -role ci_readonly -access all -cmddirname “cluster application-record create”
+security login role create -role ci_readonly -access all -cmddirname {cluster application-record create}
 ....
 . 使用以下命令创建只读用户。执行 create 命令后，系统将提示您输入此用户的密码。
 +
