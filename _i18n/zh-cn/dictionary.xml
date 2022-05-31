@@ -7531,7 +7531,6 @@
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">如果要在安装代理之前验证安装文件，请参见以下章节 <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">从存储中删除证书：</block>
   <block id="d836a7075094860f48ae2ac37b8ee84a" category="paragraph">Kubernetes 提供了两种数据收集方式：</block>
-  <block id="7b30b1516f4acc31dd26b0ee7b225209" category="list-text">基于脚本的传统代理安装</block>
   <block id="e973aa335528494c3881ffe9a6be0e81" category="inline-image-macro">Kubernetes 安装选项</block>
   <block id="b81ec4ed4165242831d809ec7e442e82" category="paragraph"><block ref="b81ec4ed4165242831d809ec7e442e82" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c464aab0e1d91c1e20dba1868d499f0e" category="list-text">必须安装 Kube-state-metrics 。有关详细信息，请参见下文。Kube-state-metrics 会随基于操作员的安装自动安装。</block>
@@ -8387,7 +8386,6 @@
   <block id="e1e3817c54607481fd77cff67b3d62bf" category="list-text">* 线性 * ：生成一个点作为连接两个点之间的值。生成一条线，该线看起来类似于连接两个点的线，但具有其他（内插）数据点。</block>
   <block id="ccd695c5d6bdf7e28aefe86c7867a7a9" category="inline-image-macro">显示线性插值的简单直线，每个原始点之间有更多数据点</block>
   <block id="7be18bdce3683fe5cad25aaa844df56d" category="paragraph"><block ref="7be18bdce3683fe5cad25aaa844df56d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="4f34579ac6d99e36b83ddd35d80ebb6d" category="admonition">此页面上的 Kubernetes 说明正在移至新页面。请 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 有关最新的 Kubernetes 代理说明。</block>
   <block id="664a8070ae98149df4b2438dabea2160" category="admonition">如果要在安装代理之前验证安装文件，请阅读关于 <block ref="80fd3363e39e5f2a536c9cf5d81a1f0a" category="inline-xref-macro-rx"></block>。</block>
   <block id="1f7b055a94f5e05d9c08683890d73b5e" category="list-text">基于脚本的传统代理安装（不建议）</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">验证 Kubernetes 校验和</block>
@@ -8930,4 +8928,5 @@
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">当AU安装在SELinux上时、应将SE设置为_permisent_模式。不支持_Enforcerent_模式。将SELinux设置为许可模式后、重新启动AU服务。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">事件速率检查器用于在安装 ONTAP SVM 数据收集器之前检查 SVM 中的 NFS/SMB 组合事件速率，以查看一个代理计算机能够监控的 SVM 数量。一个代理最多可支持50个数据收集器。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a)将此表用作一般规模估算指南：</block>
+  <block id="bebdcbd60f7879de52fcd7bcd57c521c" category="admonition">Kubernetes说明已移至新页面。请 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 有关最新的 Kubernetes 代理说明。</block>
 </blocks>
