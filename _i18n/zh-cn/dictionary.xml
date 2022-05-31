@@ -8928,5 +8928,5 @@
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">当AU安装在SELinux上时、应将SE设置为_permisent_模式。不支持_Enforcerent_模式。将SELinux设置为许可模式后、重新启动AU服务。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">事件速率检查器用于在安装 ONTAP SVM 数据收集器之前检查 SVM 中的 NFS/SMB 组合事件速率，以查看一个代理计算机能够监控的 SVM 数量。一个代理最多可支持50个数据收集器。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a)将此表用作一般规模估算指南：</block>
-  <block id="bebdcbd60f7879de52fcd7bcd57c521c" category="admonition">Kubernetes说明已移至新页面。请 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 有关最新的 Kubernetes 代理说明。</block>
+  <block id="904be52209f404eb1b403eeef2de5817" category="paragraph">Kubernetes Agent说明已移至新页面。请 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 有关最新的 Kubernetes 代理说明。</block>
 </blocks>

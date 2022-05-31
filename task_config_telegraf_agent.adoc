@@ -433,8 +433,7 @@ sudo /tmp/uninstall
 
 === Kubernetes
 
-
-NOTE: Kubernetes说明已移至新页面。请 link:task_config_telegraf_agent_k8s.html["* 转到此处 *"] 有关最新的 Kubernetes 代理说明。
+Kubernetes Agent说明已移至新页面。请 link:task_config_telegraf_agent_k8s.html["* 转到此处 *"] 有关最新的 Kubernetes 代理说明。
 
 
 
