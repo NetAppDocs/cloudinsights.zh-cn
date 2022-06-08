@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloudinsights/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/concept_activeiq.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/concept_activeiq.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/concept_activeiq.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/concept_activeiq.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloudinsights/concept_activeiq.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/cloudinsights/concept_activeiq.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloudinsights/concept_activeiq.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloudinsights/concept_activeiq.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloudinsights/concept_activeiq.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloudinsights/concept_activeiq.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1502,7 +1494,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/index.html">
         Cloud Insights 文档
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/concept_whats_new.html">
@@ -2023,7 +2015,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:03:58 +0000">04/13/2022</time>
+    <time datetime="2022-06-08 14:04:46 +0000">06/08/2022</time>
     
   
 
@@ -2055,8 +2047,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="打开-active-iq-页面">打开 Active IQ 页面</h3>
+<div class="sect1">
+<h2 id="打开-active-iq-页面">打开 Active IQ 页面</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>单击指向 Active IQ 页面的链接时，如果您当前未登录到 Active IQ 帐户，则必须执行以下步骤才能查看存储节点的 Active IQ 页面。</p>
 </div>
@@ -2071,19 +2064,24 @@
 </ol>
 </div>
 </div>
-<div class="sect2">
-<h3 id="正在查询风险">正在查询风险</h3>
+</div>
+<div class="sect1">
+<h2 id="正在查询风险">正在查询风险</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>在 Cloud Insights 中，您可以将 * 对象风险 * 列添加到存储或存储节点查询中。如果返回的结果包括 Active IQ 监控的存储系统，则对象风险列将显示存储系统或节点的风险数。</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="信息板">信息板</h3>
+</div>
+<div class="sect1">
+<h2 id="信息板">信息板</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>您可以构建小工具（例如饼图，表小工具，条形，列，散点图， 和单值小工具），以可视化 Active IQ 监控的 NetApp 集群模式 Data ONTAP 系统中存储和存储节点的对象风险。可以在这些小工具中选择 " 对象风险 " 作为列或指标，其中存储或存储节点是关注对象。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="ObjectRiskWidgets.png" alt="小工具中的对象风险"></span></p>
+</div>
 </div>
 </div>
 
@@ -2232,4 +2230,5 @@
     </script>
     <script src='/zh-cn/cloudinsights/js/www-ntap.js'></script>
     <script src='/zh-cn/cloudinsights/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/cloudinsights/js/sidebar.js'></script>
   </body></html>

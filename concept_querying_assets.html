@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloudinsights/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/cloudinsights/concept_querying_assets.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/cloudinsights/concept_querying_assets.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/cloudinsights/concept_querying_assets.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/cloudinsights/concept_querying_assets.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/cloudinsights/concept_querying_assets.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/cloudinsights/concept_querying_assets.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/cloudinsights/concept_querying_assets.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/cloudinsights/concept_querying_assets.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/cloudinsights/concept_querying_assets.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/cloudinsights/concept_querying_assets.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -1502,7 +1494,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/index.html">
         Cloud Insights 文档
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloudinsights/concept_whats_new.html">
@@ -2023,7 +2015,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:03:58 +0000">04/13/2022</time>
+    <time datetime="2022-06-08 14:04:46 +0000">06/08/2022</time>
     
   
 
@@ -2043,8 +2035,9 @@
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="清单资产">清单资产</h3>
+<div class="sect1">
+<h2 id="清单资产">清单资产</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>以下资产类型可用于查询，信息板小工具和自定义资产登录页面。可用于筛选器，表达式和显示的字段和计数器因资产类型而异。并非所有资产都可以在所有小工具类型中使用。</p>
 </div>
@@ -2128,13 +2121,16 @@
 </ul>
 </div>
 </div>
-<div class="sect2">
-<h3 id="集成度量指标">集成度量指标</h3>
+</div>
+<div class="sect1">
+<h2 id="集成度量指标">集成度量指标</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>除了查询清单资产及其关联的性能指标之外，您还可以查询 * 集成数据 * 指标，例如由 Kubernetes 或 Docker 生成或随 ONTAP 高级指标提供的指标。</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="QueryPageFilter.png" alt="集成查询筛选器示例"></span></p>
+</div>
 </div>
 </div>
 
@@ -2283,4 +2279,5 @@
     </script>
     <script src='/zh-cn/cloudinsights/js/www-ntap.js'></script>
     <script src='/zh-cn/cloudinsights/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/cloudinsights/js/sidebar.js'></script>
   </body></html>
