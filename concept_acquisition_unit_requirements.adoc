@@ -13,7 +13,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 
 
 
-=== 要求
+== 要求
 
 |===
 
@@ -43,14 +43,14 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 |===
 
 
-=== 其他建议
+== 其他建议
 
 * 为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步采集单元计算机上的时间。
 
 
 
 
-=== 关于规模估算
+== 关于规模估算
 
 您可以先使用一个仅包含 8 GB 内存和 50 GB 磁盘空间的 Cloud Insights 采集单元，但是，对于较大的环境，您应该问自己以下问题：
 

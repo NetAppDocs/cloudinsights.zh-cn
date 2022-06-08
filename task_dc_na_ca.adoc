@@ -176,12 +176,12 @@ Config Advisor 可以在以下操作系统上运行。如果收集器安装在�
 
 ==== 安装和配置数据收集器：
 
-video::Config_Advisor_Collector_Part1.mp4[]
+video::Config_Advisor_Collector_Part1.mp4[Installing and Configuring the Config Advisor data collector]
 
 
 ==== 创建Config Advisor 信息板：
 
-video::Config_Advisor_Collector_Part2.mp4[]
+video::Config_Advisor_Collector_Part2.mp4[Using dashboards to view Config Advisor data]
 
 
 ==== 其他支持

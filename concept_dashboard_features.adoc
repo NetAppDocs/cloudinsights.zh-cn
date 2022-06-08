@@ -508,7 +508,7 @@ image::SecondaryAxisExplained.png[二级轴示例]
 
 
 
-==== 变量类型
+=== 变量类型
 
 变量可以是以下类型之一：
 

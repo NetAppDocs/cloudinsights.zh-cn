@@ -42,7 +42,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 |===
 
 
-=== 其他建议
+== 其他建议
 
 * 强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 来同步 ONTAP 系统和代理计算机上的时间。
 

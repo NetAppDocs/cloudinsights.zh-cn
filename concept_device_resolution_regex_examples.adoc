@@ -13,7 +13,7 @@ summary:
 
 
 
-=== 设置正则表达式的格式
+== 设置正则表达式的格式
 
 在为 Cloud Insights 自动解析创建正则表达式时，您可以通过在名为 _format_ 的字段中输入值来配置输出格式。
 
@@ -48,6 +48,10 @@ hostname3-Boston-windows2K
 hostname4-Raleigh-solaris
 ....
 变量之间的连字符提供了一个在格式化输出中插入的常量文本示例。
+
+
+
+== 示例
 
 
 
@@ -218,7 +222,11 @@ MyComputerName123_HBA1_Symm1_FA1
 
 regexp ：（ .* ？） _.*
 
-示例 9 此示例将查找第一个 _ 到第二个 _ 之后的所有内容。
+
+
+=== 示例9
+
+此示例将查找第一个_到第二个_之后的所有内容。
 
 * 分区： * Z_MyComputerName_StorageName
 

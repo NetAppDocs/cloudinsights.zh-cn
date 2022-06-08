@@ -5889,7 +5889,6 @@
   <block id="9a1a396295b55e43a238268cd5378571" category="paragraph">MyComputerName123_HBA1_Symm1_FA1</block>
   <block id="c8d9735981badcae3909dff78f1d657f" category="paragraph">主机名： MyComputerName</block>
   <block id="97b24ca631392b0a444fb266ccf9e85a" category="paragraph">regexp ：（ .* ？） _.*</block>
-  <block id="59c4da5f3e129e4540ab4ed0809c7648" category="paragraph">示例 9 此示例将查找第一个 _ 到第二个 _ 之后的所有内容。</block>
   <block id="5fd386bb34f01c8fea9302b4944c3fc0" category="paragraph">* 分区： * Z_MyComputerName_StorageName</block>
   <block id="f7cca9f0fcd660c02b10b4923524cf00" category="paragraph">* 主机名： * MyComputerName</block>
   <block id="934b65d923d9218256bfdfb8a6204b2f" category="paragraph">* 注册时间： * .* ？ _ （ .* ？） _.* ？</block>
@@ -8929,4 +8928,7 @@
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">事件速率检查器用于在安装 ONTAP SVM 数据收集器之前检查 SVM 中的 NFS/SMB 组合事件速率，以查看一个代理计算机能够监控的 SVM 数量。一个代理最多可支持50个数据收集器。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a)将此表用作一般规模估算指南：</block>
   <block id="904be52209f404eb1b403eeef2de5817" category="paragraph">Kubernetes Agent说明已移至新页面。请 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 有关最新的 Kubernetes 代理说明。</block>
+  <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">示例</block>
+  <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">示例9</block>
+  <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此示例将查找第一个_到第二个_之后的所有内容。</block>
 </blocks>

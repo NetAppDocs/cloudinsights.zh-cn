@@ -28,7 +28,7 @@ image:Support_with_Chat.png["支持页面"]
 
 
 
-==== 选项 1 ：使用已有 NetApp 支持站点（ NSS ） SSO 帐户的用户的步骤
+=== 选项 1 ：使用已有 NetApp 支持站点（ NSS ） SSO 帐户的用户的步骤
 
 .步骤
 . 导航到 NetApp 注册网站 https://register.netapp.com[]
@@ -46,7 +46,7 @@ image:ExistingCustomerRegExample.png["现有客户表单"]
 
 
 
-==== 选项 2 ：适用于没有已有 NetApp 支持站点（ NSS ） SSO 帐户的新 NetApp 客户的步骤
+=== 选项 2 ：适用于没有已有 NetApp 支持站点（ NSS ） SSO 帐户的新 NetApp 客户的步骤
 
 .步骤
 . 导航到 NetApp 注册网站 https://register.netapp.com[]

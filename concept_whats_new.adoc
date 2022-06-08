@@ -12,11 +12,11 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
-=== 2022年5月
+== 2022年5月
 
 
 
-==== 与NetApp支持部门实时聊天
+=== 与NetApp支持部门实时聊天
 
 现在、您可以与NetApp支持人员实时聊天！在帮助>支持页面上、只需单击聊天图标或单击"联系我们"部分中的_Chat_即可启动聊天会话。标准版和高级版用户可在美国工作日获得聊天支持。
 
@@ -24,7 +24,7 @@ image:ChatIcon.png["聊天\"图标、在微笑上方显示蓝色NetApp \"N"]
 
 
 
-==== Kubernetes操作员
+=== Kubernetes操作员
 
 借助Cloud Insights 的高级Kubernetes监控和集群资源管理器、您可以更轻松地启动和运行。
 
@@ -34,13 +34,13 @@ image:ChatIcon.png["聊天\"图标、在微笑上方显示蓝色NetApp \"N"]
 
 
 
-==== 使用API管理用户和邀请
+=== 使用API管理用户和邀请
 
 现在、您可以使用Cloud Insights 强大的API来管理用户和邀请。在中了解更多信息 link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html["API Swagger文档"]。
 
 
 
-==== 数据收集警报
+=== 数据收集警报
 
 请勿因收集器故障而错过关键指标！
 
@@ -48,7 +48,7 @@ image:ChatIcon.png["聊天\"图标、在微笑上方显示蓝色NetApp \"N"]
 
 
 
-==== ONTAP 存储更改时发出警报
+=== ONTAP 存储更改时发出警报
 
 不要让意外的存储更改导致中断！
 
@@ -56,7 +56,7 @@ image:ChatIcon.png["聊天\"图标、在微笑上方显示蓝色NetApp \"N"]
 
 
 
-==== 预览功能
+=== 预览功能
 
 Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
 
@@ -80,17 +80,17 @@ Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如�
 '''
 
 
-=== 2022 年 4 月
+== 2022 年 4 月
 
 
 
-==== 分享您的反馈！
+=== 分享您的反馈！
 
 我们希望您的反馈有助于塑造 Cloud Insights 。参加 NetApp 的 * 行动洞察 * 计划，赢取积分和奖励。 link:https://netapp.co1.qualtrics.com/jfe/form/SV_2aVWcE58J7oIDs1["* 立即注册 *"]！
 
 
 
-==== 已更新信息板编辑器
+=== 已更新信息板编辑器
 
 我们对信息板创建工具进行了全面革新，使您可以更轻松地快速直观地显示数据。导航到 Cloud Insights 的 " 信息板 " 页面可编辑现有信息板，从我们的信息板库中添加一个信息板或创建您自己的新信息板以进行查看。
 
@@ -109,13 +109,13 @@ image:CountAggregationExample1.png["显示计数的聚合下拉列表"]
 
 
 
-==== 增强了对 Kubernetes 基础架构的监控功能
+=== 增强了对 Kubernetes 基础架构的监控功能
 
 Cloud Insights 可以在创建或删除 Pod ，子集和副本集以及创建新部署时向您发出警报，让您及时了解 Kubernetes 环境中的变化。Kubernetes 会将默认状态监控为 _paused_state ，因此您应仅启用所需的特定状态。
 
 
 
-==== 预览功能
+=== 预览功能
 
 Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
 
@@ -135,14 +135,14 @@ Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如�
 |===
 
 
-==== 新的 Data Collector
+=== 新的 Data Collector
 
 * * Cohesity Smart Files* —此基于 REST API 的收集器将获取 Cohesity 集群，发现 " 视图 " （作为 CI 内部卷），各个节点以及收集性能指标。
 
 
 
 
-==== 其他 Data Collector 更新
+=== 其他 Data Collector 更新
 
 以下数据收集器改进了性能数据的收集和显示：
 
@@ -156,17 +156,17 @@ Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如�
 '''
 
 
-=== 2022 年 3 月
+== 2022 年 3 月
 
 
 
-==== 适用于 ONTAP 9.9+ 的云连接
+=== 适用于 ONTAP 9.9+ 的云连接
 
 。 link:task_dc_na_cloud_connection.html["适用于 ONTAP 9.9+ 的 NetApp 云连接"] 数据收集器无需安装外部采集单元，从而简化了故障排除，维护和初始部署。
 
 
 
-==== 适用于 NetApp ONTAP 的全新 FSX 监控器
+=== 适用于 NetApp ONTAP 的全新 FSX 监控器
 
 借助全新，您可以轻松监控适用于 NetApp ONTAP 环境的 FSX link:task_system_monitors.html["系统定义的监控器"] 用于基础架构（指标）和工作负载（日志）。
 
@@ -175,7 +175,7 @@ image:FSx_System_Monitors_Workloads.png["FSX 监控工作负载"]
 
 
 
-==== 所有操作系统均可使用新的 Cloud Secure 功能
+=== 所有操作系统均可使用新的 Cloud Secure 功能
 
 现在，您的环境比以往任何时候都更加安全， Cloud Secure 提供了以下通用功能：
 
@@ -192,13 +192,13 @@ image:FSx_System_Monitors_Workloads.png["FSX 监控工作负载"]
 |===
 
 
-==== 已更新 Telegraf 代理
+=== 已更新 Telegraf 代理
 
 用于载入电报集成数据的代理已更新为版本 * 。 1.2* ，并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 link:task_config_telegraf_agent.html["代理安装"] 文档。先前版本的代理将继续运行，无需用户操作。
 
 
 
-==== Data Collector 更新
+=== Data Collector 更新
 
 * Broadcom 光纤通道交换机数据收集器已进行优化，可减少每次清单轮询发出的 CLI 命令数量。
 
@@ -206,11 +206,11 @@ image:FSx_System_Monitors_Workloads.png["FSX 监控工作负载"]
 '''
 
 
-=== 2022 年 2 月
+== 2022 年 2 月
 
 
 
-==== Cloud Insights 可解决 Apache Log4j 漏洞
+=== Cloud Insights 可解决 Apache Log4j 漏洞
 
 客户安全是 NetApp 的首要任务。Cloud Insights 对其软件库进行了更新，以解决最新的 Apache Log4j 漏洞。
 
@@ -224,7 +224,7 @@ link:https://security.netapp.com/advisory/ntap-20211218-0001/["CVE-2021-45105"]
 
 
 
-==== Kubernetes 命名空间详细信息页面
+=== Kubernetes 命名空间详细信息页面
 
 现在，您可以更好地探索 Kubernetes 环境，并为集群命名空间提供信息丰富的详细信息页面。命名空间详细信息页面提供了命名空间使用的所有资产的摘要，包括所有后端存储资源及其容量利用率。
 
@@ -233,17 +233,17 @@ image:Kubernetes_Namespace_Detail_Example_2.png["Kubernetes 命名空间详细�
 '''
 
 
-=== 2021 年 12 月
+== 2021 年 12 月
 
 
 
-==== 更深入地集成 ONTAP 系统
+=== 更深入地集成 ONTAP 系统
 
 通过与 NetApp 事件管理系统（ EMS ）的全新集成，简化 ONTAP 硬件故障警报等操作。link:task_system_monitors.html["浏览并发出警报"] ONTAP 中的低级别 Cloud Insights 消息，用于通知和改进故障排除工作流，并进一步减少对 ONTAP Element 管理工具的依赖。
 
 
 
-==== 正在查询日志
+=== 正在查询日志
 
 对于 ONTAP 系统， Cloud Insights 查询包含一个功能强大的 link:concept_log_explorer.html["日志资源管理器"]，使您可以轻松地调查 EMS 日志条目并对其进行故障排除。
 
@@ -251,13 +251,13 @@ image:LogQueryExplorer.png["日志查询"]
 
 
 
-==== 数据收集器级别的通知。
+=== 数据收集器级别的通知。
 
 除了系统定义和自定义创建的警报监控器之外，您还可以为 ONTAP 数据收集器设置警报通知，从而可以为收集器级别的警报指定收件人，而不受其他监控器警报的影响。
 
 
 
-==== 提高 Cloud Secure 角色的灵活性
+=== 提高 Cloud Secure 角色的灵活性
 
 可以根据授予用户访问 Cloud Secure 功能的权限 link:concept_user_roles.html#permission-levels["角色"] 由管理员设置：
 
@@ -277,13 +277,13 @@ image:LogQueryExplorer.png["日志查询"]
 |===
 
 
-==== 操作系统支持
+=== 操作系统支持
 
 CentOS 8.x 支持将替换为 * CentOS 8 Stream* 支持。CentOS 8.x 将于 2021 年 12 月 31 日到期。
 
 
 
-==== Data Collector 更新
+=== Data Collector 更新
 
 添加了许多 Cloud Insights 数据收集器名称以反映供应商的更改：
 
@@ -304,11 +304,11 @@ CentOS 8.x 支持将替换为 * CentOS 8 Stream* 支持。CentOS 8.x 将于 2021
 '''
 
 
-=== 2021年11月
+== 2021年11月
 
 
 
-==== 自适应信息板
+=== 自适应信息板
 
 _New variables for attributes and the ability to use variables in widerts_ 。
 
@@ -319,13 +319,13 @@ image:Variables_Attribute_Filtering.png[""]
 
 
 
-==== 通过 API 访问报告数据库
+=== 通过 API 访问报告数据库
 
 增强了与第三方报告， ITSM 和自动化工具集成的功能： Cloud Insights 功能强大 link:API_Overview.html["API"] 允许用户直接查询 Cloud Insights 报告数据库，而无需通过 Cognos 报告环境。
 
 
 
-==== VM 登录页面上的 POD 表
+=== VM 登录页面上的 POD 表
 
 在 VM 和 Kubernetes Pod 之间使用它们进行无缝导航：为了改进故障排除和性能余量管理， VM 登录页面上将显示一个关联的 Kubernetes Pod 表。
 
@@ -333,7 +333,7 @@ image:Kubernetes_Pod_Table_on_VM_Page.png["VM 登录页面上的 Kubernetes Pod 
 
 
 
-==== Data Collector 更新
+=== Data Collector 更新
 
 * 现在， ECS 将报告存储和节点的固件
 * Isilon 改进了提示检测功能
@@ -344,7 +344,7 @@ image:Kubernetes_Pod_Table_on_VM_Page.png["VM 登录页面上的 Kubernetes Pod 
 
 
 
-==== 支持的其他操作系统
+=== 支持的其他操作系统
 
 除了已支持的操作系统之外， Cloud Insights 采集单元还支持以下操作系统：
 
@@ -356,11 +356,11 @@ image:Kubernetes_Pod_Table_on_VM_Page.png["VM 登录页面上的 Kubernetes Pod 
 '''
 
 
-=== 2021年10月
+== 2021年10月
 
 
 
-==== 在 K8S 资源管理器页面上筛选
+=== 在 K8S 资源管理器页面上筛选
 
 link:kubernetes_landing_page.html["Kubernetes 资源管理器"] 通过页面筛选器，您可以集中控制为 Kubernetes 集群，节点和 POD 探索显示的数据。
 
@@ -368,7 +368,7 @@ image:Filter_Kubernetes_Explorer.png["Kubernetes 资源管理器筛选示例"]
 
 
 
-==== 用于报告的 K8s 数据
+=== 用于报告的 K8s 数据
 
 现在， Kubernetes 数据可用于报告，从而可以创建成本分摊或其他报告。要将 Kubernetes 成本分摊数据传递到报告，您必须与 Kubernetes 集群及其后端存储建立活动连接，并且 Cloud Insights 必须从这些集群接收数据。如果未从后端存储收到任何数据，则 Cloud Insights 无法将 Kubernetes 对象数据发送到报告。
 
@@ -376,14 +376,14 @@ image:Kubernetes_ETL_Example.png["Kubernetes 数据显示在成本分摊报告�
 
 
 
-==== 暗主题已出现
+=== 暗主题已出现
 
 你们中的许多人都要求使用非公开主题， Cloud Insights 也回答了这个问题。要在浅色和暗色主题之间切换，请单击用户名旁边的下拉列表。image:DarkModeSwitch.png["用户下拉列表中提供了切换到暗主题"]
 image:DarkModeDashboard.png["以暗主题显示的典型信息板的图像"]
 
 
 
-==== Data Collector 支持
+=== Data Collector 支持
 
 我们对 Cloud Insights 数据收集器进行了一些改进。下面是一些亮点：
 
@@ -393,17 +393,17 @@ image:DarkModeDashboard.png["以暗主题显示的典型信息板的图像"]
 '''
 
 
-=== 2021年9月
+== 2021年9月
 
 
 
-==== 现在，性能策略会进行监控
+=== 现在，性能策略会进行监控
 
 监控和警报已在整个 Cloud Insights 中取代性能策略和违规。 link:task_create_monitor.html["向监控器发出警报"] 提高灵活性，深入了解环境中的潜在问题或趋势。
 
 
 
-==== 监控器中的 AutoComplete 建议，通配符和表达式
+=== 监控器中的 AutoComplete 建议，通配符和表达式
 
 创建用于警报的监控器时，键入筛选器现在可以预测性，便于您轻松搜索和查找监控器的指标或属性。此外，您还可以选择根据键入的文本创建通配符筛选器。
 
@@ -411,13 +411,13 @@ image:Type-Ahead_Monitor_1.png["监控器中的预键入筛选器"]
 
 
 
-==== 已更新 Telegraf 代理
+=== 已更新 Telegraf 代理
 
 用于载入电报集成数据的代理已更新到版本 * 。 1.19.3* ，并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 link:task_config_telegraf_agent.html["代理安装"] 文档。先前版本的代理将继续运行，无需用户操作。
 
 
 
-==== Data Collector 支持
+=== Data Collector 支持
 
 我们对 Cloud Insights 数据收集器进行了一些改进。下面是一些亮点：
 
@@ -442,17 +442,17 @@ image:Type-Ahead_Monitor_1.png["监控器中的预键入筛选器"]
 '''
 
 
-=== 2021年8月
+== 2021年8月
 
 
 
-==== 新的审核页面用户界面
+=== 新的审核页面用户界面
 
 。 link:concept_audit.html["审核页面"] 提供了一个更清晰的界面，现在可以将审核事件导出到 .CSV 文件。
 
 
 
-==== 增强的用户角色管理
+=== 增强的用户角色管理
 
 现在， Cloud Insights 可以更加自由地分配用户角色和访问控制。现在，可以为用户分别分配监控，报告和 Cloud Secure 的粒度权限。
 
@@ -463,11 +463,11 @@ link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html["了解
 '''
 
 
-=== 2021 年 6 月
+== 2021 年 6 月
 
 
 
-==== 筛选器中的 AutoComplete 建议，通配符和表达式
+=== 筛选器中的 AutoComplete 建议，通配符和表达式
 
 在此版本的 Cloud Insights 中，您不再需要了解查询或小工具中要筛选的所有可能名称和值。筛选时，您只需开始键入即可， Cloud Insights 将根据您的文本建议值。不再需要提前查找应用程序名称或 Kubernetes 属性，只需查找要显示在小工具中的应用程序名称或属性即可。
 
@@ -481,7 +481,7 @@ image:Type-Ahead-Example-ingest.png["通配符筛选器"]
 
 
 
-==== API 由版本提供
+=== API 由版本提供
 
 Cloud Insights 功能强大的 API 比以往任何时候都更易于访问，而警报 API 现在可在标准版和高级版中使用。每个版本均可使用以下 API ：
 
@@ -506,7 +506,7 @@ Cloud Insights 功能强大的 API 比以往任何时候都更易于访问，而
 |===
 
 
-==== Kubernetes PV 和 Pod 可见性
+=== Kubernetes PV 和 Pod 可见性
 
 通过 Cloud Insights ，您可以查看 Kubernetes 环境的后端存储，从而深入了解 Kubernetes Pod 和永久性卷（ Persistent Volume ， PV ）。现在，您可以通过 PV 计数器到 PV 并一直跟踪从单个 Pod 使用情况到后端存储设备的 PV 计数器，例如 IOPS ，延迟和吞吐量。
 
@@ -519,7 +519,7 @@ image:Kubernetes_Pod_Table.png["Kubernetes Pod 表"]
 
 
 
-==== Kubernetes 节点到 VM 链路
+=== Kubernetes 节点到 VM 链路
 
 现在，您可以在 Kubernetes Node 页面上单击以打开此节点的 VM 页面。VM 页面还包含一个指向节点本身的链接。
 
@@ -528,19 +528,19 @@ image:Kubernetes_VM_Page_with_Node_Link.png["显示节点链接的 Kubernetes VM
 
 
 
-==== 警报可监控性能策略的替换情况
+=== 警报可监控性能策略的替换情况
 
 为了实现多个阈值，网络连接和电子邮件警报交付以及使用单个界面对所有指标发出警报等额外优势， Cloud Insights 将在 2021 年 7 月和 8 月期间将标准版和高级版客户从 * 性能策略 * 转换为 * 监控 * 。了解更多信息 link:https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html["警报和监控"]，并时刻关注这一激动人心的变化。
 
 
 
-==== Cloud Secure 支持 NFS
+=== Cloud Secure 支持 NFS
 
 现在， Cloud Secure 支持 NFS 进行 ONTAP 数据收集。监控 SMB 和 NFS 用户访问，保护您的数据免受勒索软件攻击。此外， Cloud Secure 还支持使用 Active-Directory 和 LDAP 用户目录来收集 NFS 用户属性。
 
 
 
-==== Cloud Secure 快照清除
+=== Cloud Secure 快照清除
 
 Cloud Secure 会根据 Snapshot 清除设置自动删除快照，以节省存储空间并减少手动删除快照的需求。
 
@@ -548,26 +548,26 @@ image:CloudSecure_SnapshotPurgeSettings.png["清除设置"]
 
 
 
-==== Cloud Secure 数据收集速度
+=== Cloud Secure 数据收集速度
 
 现在，一个数据收集器代理系统每秒最多可以向 Cloud Secure 发布 20 ， 000 个事件。
 
 '''
 
 
-=== 2021 年 5 月
+== 2021 年 5 月
 
 以下是我们在 4 月份所做的一些更改：
 
 
 
-==== 已更新 Telegraf 代理
+=== 已更新 Telegraf 代理
 
 用于载入电报集成数据的代理已更新为 1.17.3 版，并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent.html["代理安装"] 文档。先前版本的代理将继续运行，无需用户操作。
 
 
 
-==== 向警报添加更正操作
+=== 向警报添加更正操作
 
 现在，在创建或修改监控器时，您可以填写 * 添加警报问题描述 * 部分来添加可选的问题描述以及其他见解和 / 或更正操作。问题描述将随警报一起发送。"_insights and corrective Actions_ " 字段可提供处理警报的详细步骤和指导，并将显示在警报登录页面的摘要部分中。
 
@@ -575,7 +575,7 @@ image:Monitors_Alert_Description.png["警报更正操作和问题描述"]
 
 
 
-==== 适用于所有版本的 Cloud Insights API
+=== 适用于所有版本的 Cloud Insights API
 
 API 访问现在可在所有版本的 Cloud Insights 中使用。现在， Basic 版本的用户可以自动执行采集单元和数据收集器的操作，而 Standard Edition 用户可以查询指标并载入自定义指标。高级版仍允许充分利用所有 API 类别。
 
@@ -603,11 +603,11 @@ API 访问现在可在所有版本的 Cloud Insights 中使用。现在， Basic
 '''
 
 
-=== 2021年4月
+== 2021年4月
 
 
 
-==== 更轻松地管理监控器
+=== 更轻松地管理监控器
 
 link:https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html#monitor-grouping["监控分组"] 简化环境中监控器的管理。现在，可以将多个监控器分组在一起并将其作为一个暂停。例如，如果基础架构堆栈发生更新，则只需单击一下，即可暂停所有这些设备发出的警报。
 
@@ -617,7 +617,7 @@ image:Monitors_GroupList.png["监控分组"]
 
 
 
-==== 使用 Webhooks 增强了警报选项
+=== 使用 Webhooks 增强了警报选项
 
 许多商业应用程序都支持 link:task_create_webhook.html["网络挂钩"] 作为标准输入接口。Cloud Insights 现在支持许多此类交付渠道，除了提供可自定义的通用 webhooks 来支持许多其他应用程序之外，还为 Slack ， PagerDty ， Teams 和 Chdiscs 提供了默认模板。
 
@@ -625,13 +625,13 @@ image:Webhooks_Notifications_sm.png["Webhooks 通知"]
 
 
 
-==== 改进了设备标识
+=== 改进了设备标识
 
 为了改进监控和故障排除以及提供准确的报告，了解设备名称而不是其 IP 地址或其他标识符会很有帮助。现在， Cloud Insights 采用了一种基于规则的方法，通过这种方法可以自动识别环境中存储设备和物理主机设备的名称 link:concept_device_resolution_overview.html["* 设备解析 *"]，可从 * 管理 * 菜单中获取。
 
 
 
-==== 您需要更多！
+=== 您需要更多！
 
 客户最常提出的一个问题是，提供更多默认选项来直观显示数据范围，因此我们增加了以下五个新选项，这些选项现在可通过时间范围选取器在整个服务中使用：
 
@@ -644,19 +644,19 @@ image:Webhooks_Notifications_sm.png["Webhooks 通知"]
 
 
 
-==== 一个 Cloud Insights 环境中有多个订阅
+=== 一个 Cloud Insights 环境中有多个订阅
 
 从 4 月 2 日开始， Cloud Insights 支持在一个 Cloud Insights 实例中为客户订阅多个相同版本类型的订阅。这样，客户就可以将其 Cloud Insights 订阅的部分期限与基础架构采购同时进行。请联系 NetApp 销售部门，以获得有关多个订阅的帮助。
 
 
 
-==== 选择您的路径
+=== 选择您的路径
 
 在设置 Cloud Insights 时，您现在可以选择是从监控和警报开始，还是从勒索软件和内部威胁检测开始。Cloud Insights 将根据您选择的路径配置您的启动环境。之后，您可以随时配置另一路径。
 
 
 
-==== 更轻松地加入 Cloud Secure
+=== 更轻松地加入 Cloud Secure
 
 而且，使用新的分步设置检查清单，开始使用 Cloud Secure 比以往任何时候都更容易。
 
@@ -667,17 +667,17 @@ image:CloudSecure_SetupChecklist.png["Cloud Secure 检查清单"]
 '''
 
 
-=== 2021年2月
+== 2021年2月
 
 
 
-==== 已更新 Telegraf 代理
+=== 已更新 Telegraf 代理
 
 用于载入电报集成数据的代理已更新为 1.17.0 版，其中包括漏洞和错误修复。
 
 
 
-==== 云成本分析器
+=== 云成本分析器
 
 利用云成本体验 NetApp Spot 的强大功能，提供详细的信息 link:http://docs.netapp.com/us-en/cloudinsights/task_getting_started_with_cloud_cost.html["成本分析"] 了解过去，现在和估计支出，了解您环境中的云使用情况。云成本信息板可清晰地显示云支出，并深入了解各个工作负载，帐户和服务。
 
@@ -692,7 +692,7 @@ image:CloudSecure_SetupChecklist.png["Cloud Secure 检查清单"]
 
 
 
-==== 使用筛选器查询具有空值的对象
+=== 使用筛选器查询具有空值的对象
 
 现在， Cloud Insights 允许使用筛选器搜索值为空或无的属性和指标。您可以在以下位置对任何属性 / 指标执行此筛选：
 
@@ -708,7 +708,7 @@ image:Filter_Null_Example.png["下拉列表中为空筛选器"]
 
 
 
-==== Multi-Region 支持
+=== Multi-Region 支持
 
 从今天开始，我们在全球不同地区提供 Cloud Insights 服务，这有助于提高美国以外客户的性能并提高安全性。Cloud Insights 或 Cloud Secure 会根据创建环境的区域存储信息。
 
@@ -717,11 +717,11 @@ image:Filter_Null_Example.png["下拉列表中为空筛选器"]
 '''
 
 
-=== 2021年1月
+== 2021年1月
 
 
 
-==== 已重命名其他 ONTAP 指标
+=== 已重命名其他 ONTAP 指标
 
 为了不断提高从 ONTAP 系统收集数据的效率，我们对以下 ONTAP 指标进行了重命名。
 
@@ -862,7 +862,7 @@ image:Filter_Null_Example.png["下拉列表中为空筛选器"]
 |===
 
 
-==== 全新 Kubernetes 资源管理器
+=== 全新 Kubernetes 资源管理器
 
 。 link:kubernetes_landing_page.html["Kubernetes 资源管理器"] 提供一个简单的 Kubernetes 集群拓扑视图，即使是非专家也可以快速确定问题和依赖关系，从集群级别到容器和存储。
 
@@ -873,22 +873,22 @@ image:Kubernetes_Cluster_Detail_Example.png["Kubernetes 资源管理器"]
 '''
 
 
-=== 2020年12月
+== 2020年12月
 
 
 
-==== 更简单的 Kubernetes 安装
+=== 更简单的 Kubernetes 安装
 
 Kubernetes Agent 安装经过简化，只需较少的用户交互即可完成。 link:task_config_telegraf_agent.html#kubernetes["安装 Kubernetes Agent"] 现在包括 Kubernetes 数据收集。
 
 '''
 
 
-=== 2020年11月
+== 2020年11月
 
 
 
-==== 其他信息板
+=== 其他信息板
 
 已向库中添加以下以 ONTAP 为中心的新信息板，可供导入：
 
@@ -909,7 +909,7 @@ Kubernetes Agent 安装经过简化，只需较少的用户交互即可完成。
 
 
 
-==== 表小工具中的列重命名
+=== 表小工具中的列重命名
 
 您可以通过在编辑模式下打开小工具并单击列顶部的菜单来重命名表小工具的 _Metrics and Attributes_部分 中的列。输入新名称并单击 _Save_ ，或者单击 _Reset_ 将列设置回原始名称。
 
@@ -920,34 +920,34 @@ image:Table_Widget_Column_Rename.png["表小工具重命名列"]
 '''
 
 
-=== 2020年10月
+== 2020年10月
 
 
 
-==== 集成数据的默认扩展
+=== 集成数据的默认扩展
 
 现在，表小工具分组允许默认扩展 Kubernetes ， ONTAP 高级数据和代理节点指标。例如，如果将 Kubernetes _Nodes_ 分组为 _Cluster_ ，则表中将显示每个集群的一行。然后，您可以展开每个集群行以查看 Node 对象的列表。
 
 
 
-==== Basic Edition 技术支持
+=== Basic Edition 技术支持
 
 除了标准版和高级版之外， Cloud Insights 基本版的用户现在还可以获得技术支持。此外， Cloud Insights 还简化了创建 NetApp 支持服务单的工作流。
 
 
 
-==== Cloud Secure 公有 API
+=== Cloud Secure 公有 API
 
 Cloud Secure 支持 link:concept_cs_api.html["REST API"] 用于访问活动和警报信息。这是通过使用 API 访问令牌来实现的，该令牌通过 Cloud Secure 管理 UI 创建，然后用于访问 REST API 。这些 REST API 的 Swagger 文档已与 Cloud Secure 集成在一起。
 
 '''
 
 
-=== 2020 年 9 月
+== 2020 年 9 月
 
 
 
-==== 包含集成数据的查询页面
+=== 包含集成数据的查询页面
 
 Cloud Insights 查询页面支持集成数据（例如，来自 Kubernetes ， ONTAP 高级指标等）。使用集成数据时，查询结果表将显示一个 " 拆分屏幕 " 视图，对象 / 分组位于左侧，对象数据（属性 / 指标）位于右侧。您还可以选择多个属性对集成数据进行分组。
 
@@ -955,7 +955,7 @@ image:QueryPageIntegrationData.png["显示集成数据的查询"]
 
 
 
-==== 表小工具中的单位显示格式
+=== 表小工具中的单位显示格式
 
 现在，可在表小工具中为显示度量指标 / 计数器数据（例如 GB ， MB/ 秒等）的列提供单位显示格式。要更改指标的显示单位，请单击列标题中的 " 三个点 " 菜单，然后选择 " 单元显示 " 。您可以从任何可用单元中进行选择。可用单位因显示列中的度量数据类型而异。
 
@@ -963,19 +963,19 @@ image:TableWidgetUnitManagement1.png["表小工具单元管理"]
 
 
 
-==== 采集单元详细信息页面
+=== 采集单元详细信息页面
 
 采集单元现在具有自己的登录页面，可为每个 AU 提供有用的详细信息以及有助于进行故障排除的信息。。 link:task_configure_acquisition_unit.html#viewing-au-details["AU 详细信息页面"] 提供指向 AU 数据收集器的链接以及有用的状态信息。
 
 
 
-==== 已删除 Cloud Secure Docker 依赖关系
+=== 已删除 Cloud Secure Docker 依赖关系
 
 Cloud Secure 不再依赖 Docker 。安装 Cloud Secure 代理不再需要 Docker 。
 
 
 
-==== 报告用户角色
+=== 报告用户角色
 
 如果您拥有具有报告功能的 Cloud Insights 高级版，则环境中的每个 Cloud Insights 用户还可以通过单点登录（ Single Sign-On ， SSO ）登录到报告应用程序（即 Cognos ）；单击菜单中的 * 报告 * 链接，它们将自动登录到报告。
 
@@ -1003,18 +1003,18 @@ IMPORTANT: 如果您是最新的 Premium Edition 客户，并且希望保留您�
 
 
 
-==== 用于数据载入的新 API 类别
+=== 用于数据载入的新 API 类别
 
 Cloud Insights 增加了一个 * 数据载入 * API 类别，可让您更好地控制自定义数据和代理。有关此 API 类别和其他 API 类别的详细文档，请导航到 * 管理员 > API 访问 * 并单击 _API 文档 _ 链接，在 Cloud Insights 中找到。您还可以在注释字段中为 AU 附加注释，该注释显示在 AU 详细信息页面以及 AU 列表页面上。
 
 '''
 
 
-=== 2020 年 8 月
+== 2020 年 8 月
 
 
 
-==== 监控和警报
+=== 监控和警报
 
 除了当前能够为存储对象， VM ， EC2 和端口设置性能策略之外， Cloud Insights 标准版现在还支持 link:task_create_monitor.html["配置监控器"] 有关 Kubernetes ， ONTAP 高级指标和 Telegraf 插件集成数据的阈值。您只需为要触发警报的每个对象指标创建一个监控器，为警告级别或严重级别阈值设置条件，并为每个级别指定所需的电子邮件收件人即可。然后，您可以 link:task_view_and_manage_alerts.html["查看和管理警报"] 跟踪趋势或对问题进行故障排除。
 
@@ -1023,11 +1023,11 @@ image:define_monitor_conditions_2.png["监控条件"]
 '''
 
 
-=== 2020 年 7 月
+== 2020 年 7 月
 
 
 
-==== Cloud Secure 执行 Snapshot 操作
+=== Cloud Secure 执行 Snapshot 操作
 
 Cloud Secure 可在检测到恶意活动时自动创建快照以保护您的数据，并确保安全地备份您的数据。
 
@@ -1039,7 +1039,7 @@ Cloud Secure 可在检测到恶意活动时自动创建快照以保护您的数�
 
 
 
-==== 指标 / 计数器更新
+=== 指标 / 计数器更新
 
 以下容量计数器可在 Cloud Insights UI 和 REST API 中使用。以前，这些计数器仅可用于数据仓库 / 报告。
 
@@ -1058,7 +1058,7 @@ Cloud Secure 可在检测到恶意活动时自动创建快照以保护您的数�
 |===
 
 
-==== Cloud Secure 潜在攻击检测
+=== Cloud Secure 潜在攻击检测
 
 Cloud Secure 现在可以检测到勒索软件等潜在攻击。单击警报列表页面中的警报以打开一个详细信息页面，其中显示以下内容：
 
@@ -1074,13 +1074,13 @@ Cloud Secure 现在可以检测到勒索软件等潜在攻击。单击警报列�
 
 
 
-==== 通过 AWS 订阅高级版
+=== 通过 AWS 订阅高级版
 
 在试用 Cloud Insights 期间，您可以 link:concept_subscribing_to_cloud_insights.html["自行订阅"] 通过 AWS Marketplace 升级到 Cloud Insights 标准版或高级版。以前，您只能通过 AWS Marketplace 自行订阅到标准版。
 
 
 
-==== 增强型表小工具
+=== 增强型表小工具
 
 信息板 / 资产页面表小工具包括以下增强功能：
 
@@ -1100,7 +1100,7 @@ image:TableWidgetLeftRightPanes.png["显示左右窗格的表小工具"]
 
 
 
-==== 指标筛选
+=== 指标筛选
 
 除了在小工具中筛选对象属性之外，您现在还可以筛选指标。
 
@@ -1112,7 +1112,7 @@ image:IntegrationMetricFilterExample.png["集成度量筛选"]
 
 
 
-==== ONTAP 高级计数器数据
+=== ONTAP 高级计数器数据
 
 Cloud Insights 利用 NetApp 的 ONTAP 专用 * 高级计数器数据 * ，该数据提供了从 ONTAP 设备收集的大量计数器和指标。所有 NetApp ONTAP 客户均可使用 ONTAP 高级计数器数据。通过这些指标，可以在 Cloud Insights 小工具和信息板中进行自定义和广泛的可视化。
 
@@ -1139,13 +1139,13 @@ image:ONTAP_Widget_Example1.png["ONTAP 小工具示例— CP 读取"]
 
 
 
-===== 高级计数器信息板
+=== 高级计数器信息板
 
 Cloud Insights 提供了各种预先设计的信息板，可帮助您开始为 _aggregate Performance_ ， _Volume workload_ ， _Processor Activity" 等主题可视化 ONTAP 高级计数器。如果至少配置了一个 ONTAP 数据收集器，则可以从任何信息板列表页面上的信息板库导入这些数据收集器。
 
 
 
-===== 了解更多信息。
+=== 了解更多信息。
 
 有关 ONTAP 高级数据的详细信息，请访问以下链接：
 
@@ -1155,7 +1155,7 @@ Cloud Insights 提供了各种预先设计的信息板，可帮助您开始为 _
 
 
 
-==== 策略和违规菜单
+=== 策略和违规菜单
 
 现在，性能策略和违规可在 * 警报 * 菜单下找到。策略和违规功能保持不变。
 
@@ -1163,7 +1163,7 @@ image:PoliciesMenuChange.png["策略和违规菜单"]
 
 
 
-==== 已更新 Telegraf 代理
+=== 已更新 Telegraf 代理
 
 用于载入电报集成数据的代理已更新为 link:https://docs.influxdata.com/telegraf/v1.14/["版本 1.14"]，其中包括错误修复，安全修复和新插件。
 
@@ -1195,11 +1195,11 @@ rules:
 '''
 
 
-=== 2020 年 6 月
+== 2020 年 6 月
 
 
 
-==== 简化了 Data Collector 错误报告
+=== 简化了 Data Collector 错误报告
 
 使用数据收集器页面上的 _Send Error Report_ 按钮可以更轻松地报告数据收集器错误。单击此按钮可将有关此错误的基本信息发送给 NetApp ，并提示您对此问题进行调查。按下后， Cloud Insights 将确认已通知 NetApp ，并禁用错误报告按钮以指示已发送该数据收集器的错误报告。此按钮将一直处于禁用状态，直到刷新浏览器页面为止。
 
@@ -1207,7 +1207,7 @@ image:DCErrorReportButton.png["错误报告按钮"]
 
 
 
-==== 小工具改进
+=== 小工具改进
 
 信息板小工具进行了以下改进。这些改进被视为预览功能，可能并不适用于所有 Cloud Insights 环境。
 
@@ -1224,11 +1224,11 @@ image:MultipleGroupsIntegrationLineChart.png["显示集成数据时进行多个�
 '''
 
 
-=== 2020 年 5 月
+== 2020 年 5 月
 
 
 
-==== 报告用户角色
+=== 报告用户角色
 
 已为报告添加以下角色：
 
@@ -1239,7 +1239,7 @@ image:MultipleGroupsIntegrationLineChart.png["显示集成数据时进行多个�
 
 
 
-==== Cloud Secure 更新
+=== Cloud Secure 更新
 
 Cloud Insights 包括以下最新的 Cloud Secure 更改。
 
@@ -1255,7 +1255,7 @@ image:CSActivityForensicsExample.png["实体页面示例"]
 
 
 
-==== 信息板分组
+=== 信息板分组
 
 信息板分组可以更好地实现 link:concept_dashboard_features.html#dashboard-groups["管理信息板"] 与您相关的信息。您可以将相关信息板添加到组中，以便对存储或虚拟机等进行 " 一站式 " 管理。
 
@@ -1265,7 +1265,7 @@ image:DashboardGroupNoPin.png["信息板组"]
 
 
 
-==== 信息板分页
+=== 信息板分页
 
 您可以固定信息板，使收藏夹始终显示在列表顶部。
 
@@ -1273,7 +1273,7 @@ image:DashboardPin.png["信息板锁定"]
 
 
 
-==== TV 模式和自动刷新
+=== TV 模式和自动刷新
 
 link:concept_dashboard_features.html#tv-mode-and-auto-refresh["TV 模式和自动刷新"] 允许在信息板或资产页面上近乎实时地显示数据：
 
@@ -1286,17 +1286,17 @@ link:concept_dashboard_features.html#tv-mode-and-auto-refresh["TV 模式和自�
 '''
 
 
-=== 2020年4月
+== 2020年4月
 
 
 
-==== 新的信息板时间范围选项
+=== 新的信息板时间范围选项
 
 现在，信息板和其他 Cloud Insights 页面的时间范围选项包括 _last 1 hour_ 和 _last 15 minute_ 。
 
 
 
-==== Cloud Secure 更新
+=== Cloud Secure 更新
 
 Cloud Insights 包括以下最新的 Cloud Secure 更改。
 
@@ -1308,13 +1308,13 @@ Cloud Secure 监控和审核文件和文件夹上的所有用户访问操作。�
 
 
 
-==== 默认信息板时间
+=== 默认信息板时间
 
 信息板的默认时间范围现在为 3 小时，而不是 24 小时。
 
 
 
-==== 优化的聚合时间
+=== 优化的聚合时间
 
 已优化 link:concept_dashboard_features.html#aggregating-data["时间聚合"] 在 3 小时和 24 小时信息板 / 小工具时间范围内，时间序列小工具（折线图，样条图，面积图和堆积面积图）的间隔更频繁，从而可以更快地绘制数据图表。
 
@@ -1326,7 +1326,7 @@ Cloud Secure 监控和审核文件和文件夹上的所有用户访问操作。�
 
 
 
-==== 显示单元自动格式化
+=== 显示单元自动格式化
 
 在大多数小工具中， Cloud Insights 知道要显示值的基本单位，例如 _migums_ ， _migents_ ， _percentage _ ， _mms （ ms ） _ ， 等，现在 link:concept_dashboard_features.html#choosing-the-unit-for-displaying-data["自动格式化"] 可读性最高的单元的小工具。例如， 1 ， 234 ， 567 ， 890 字节的数据值将自动格式化为 1.23 吉字节。在许多情况下， Cloud Insights 知道所采集数据的最佳格式。如果不知道最佳格式，或者在要覆盖自动格式的小工具中，您可以选择所需的格式。
 
@@ -1334,7 +1334,7 @@ image:used_memory_in_bytes_gb.png["Widgets 中的自动格式化， width=480"]
 
 
 
-==== 使用 API 导入标注
+=== 使用 API 导入标注
 
 借助 Cloud Insights 高级版功能强大的 API ，您现在就可以了 link:task_annotation_import.html["导入标注"] 并将其分配给使用 .CSV 文件的对象。您还可以以相同的方式导入应用程序并分配业务实体。
 
@@ -1342,7 +1342,7 @@ image:api_assets_import.png["导入标注"]
 
 
 
-==== 更简单的小工具选择器
+=== 更简单的小工具选择器
 
 通过一个新的小工具选择器，可以在一个一次性视图中显示所有小工具类型，从而可以更轻松地向信息板和资产登录页面添加小工具，因此用户无需再滚动浏览小工具类型列表来查找要添加的小工具类型。相关小工具采用颜色协调，并在新选择器中按邻近度分组。
 
@@ -1351,11 +1351,11 @@ image:NewWidgetPicker.png["新的小工具选择器"]
 '''
 
 
-=== 2020年2月
+== 2020年2月
 
 
 
-==== 高级版 API
+=== 高级版 API
 
 Cloud Insights 高级版附带了 link:API_Overview.html["强大的 API"] 可用于将 Cloud Insights 与其他应用程序集成，例如 CMDB 或其他票证系统。
 
@@ -1367,7 +1367,7 @@ image:API_Documentation.png["API 文档"]
 
 
 
-==== 添加数据收集器后的初始轮询
+=== 添加数据收集器后的初始轮询
 
 以前，在配置新的数据收集器后， Cloud Insights 会立即轮询数据收集器以收集 _inventorY_data ，但会等待配置的性能轮询间隔（通常为 15 分钟）以收集初始 _performation_data 。然后，它会等待另一个时间间隔，然后再启动第二次性能轮询，这意味着从新的数据收集器获取有意义的数据需要长达 _30 分钟的时间。
 
@@ -1377,7 +1377,7 @@ image:API_Documentation.png["API 文档"]
 
 
 
-==== 更轻松地复制小工具
+=== 更轻松地复制小工具
 
 在信息板或登录页面上创建小工具副本比以往更简单。在信息板编辑模式下，单击小工具上的菜单并选择 * 重复 * 。此时将启动小工具编辑器，并预先填充原始小工具的配置，并在小工具名称中添加一个 " 副本 " 后缀。您可以轻松进行任何必要的更改并保存新小工具。小工具将放置在信息板底部，您可以根据需要进行定位。完成所有更改后，请记得保存信息板。
 
@@ -1385,7 +1385,7 @@ image:DuplicateWidget.png["复制小工具"]
 
 
 
-==== 单点登录（ SSO ）
+=== 单点登录（ SSO ）
 
 借助 Cloud Insights 高级版，管理员可以启用 *link:concept_user_roles.html#single-sign-on-sso-accounts["单个 Sign-On"]* （ SSO ）企业域中所有用户对 Cloud Insights 的访问，而无需单独邀请他们。启用 SSO 后，具有相同域电子邮件地址的任何用户均可使用其公司凭据登录到 Cloud Insights 。
 
@@ -1395,17 +1395,17 @@ NOTE: SSO 仅在 Cloud Insights 高级版中可用，必须先进行配置，然
 '''
 
 
-=== 2020年1月
+== 2020年1月
 
 
 
-==== 用于 REST API 的 Swagger 文档
+=== 用于 REST API 的 Swagger 文档
 
 Swagger 介绍了 Cloud Insights 中的每个可用 REST API 及其用法和语法。有关 Cloud Insights API 的信息，请参见 link:http://docs.netapp.com/us-en/cloudinsights/API_Overview.html["文档。"]。
 
 
 
-==== 功能教程进度条
+=== 功能教程进度条
 
 功能教程检查清单已移至顶部横幅，现在具有一个进度指示器。在取消之前，每个用户都可以使用教程，并且始终可以在 Cloud Insights 中使用这些教程 link:concept_feature_tutorials.html["文档。"]。
 
@@ -1413,19 +1413,19 @@ image:TutorialProgress.png["教程检查清单进度"]
 
 
 
-==== 采集单元更改
+=== 采集单元更改
 
 在与已安装的 AU 名称相同的主机或 VM 上安装采集单元（ Acquisition Unit ， AU ）时， Cloud Insights 会通过在 AU 名称后附加 "_1" ， "_2" 来确保名称唯一。 等。在从同一虚拟机卸载并重新安装 AU 而不先将其从 Cloud Insights 中删除时，也会出现这种情况。是否需要一个完全不同的 AU 名称？没问题；安装后可以重命名 AU 。
 
 
 
-==== 小工具中的优化时间聚合
+=== 小工具中的优化时间聚合
 
 在小工具中，您可以在 _Optimized__ 时间聚合间隔或您设置的 _Custom_ 间隔之间进行选择。优化的聚合会根据选定的信息板时间范围自动选择正确的时间间隔（如果覆盖信息板时间，则会自动选择小工具时间范围）。随着信息板或小工具时间范围的更改，此间隔会动态更改。
 
 
 
-==== 简化了 " 开始使用 Cloud Insights " 流程
+=== 简化了 " 开始使用 Cloud Insights " 流程
 
 Cloud Insights 的入门流程已得到简化，首次设置更顺畅，更轻松。只需选择一个初始数据收集器并按照说明进行操作即可。Cloud Insights 将指导您完成数据收集器以及所需的任何代理或采集单元的配置。在大多数情况下，它甚至会导入一个或多个初始信息板，以便您可以快速开始深入了解您的环境（但请留出长达 30 分钟的时间让 Cloud Insights 收集有意义的数据）。
 
@@ -1444,29 +1444,29 @@ image:Onboarding_Progress.png["进度条"]
 '''
 
 
-=== 2019年12月
+== 2019年12月
 
 
 
-==== 业务实体可以在筛选器中使用
+=== 业务实体可以在筛选器中使用
 
 业务实体标注可在查询，小工具，性能策略和登录页面的筛选器中使用。
 
 
 
-==== 可对单值小工具和量表小工具以及由 " 全部 " 滚动到的任何小工具进行深入分析
+=== 可对单值小工具和量表小工具以及由 " 全部 " 滚动到的任何小工具进行深入分析
 
 单击单值或量表小工具中的值将打开一个查询页面，其中显示了此小工具中使用的第一个查询的结果。此外，如果单击任何小工具的图例，并且其数据由 "all" 汇总，则还会打开一个查询页面，其中显示了此小工具中使用的第一个查询的结果。
 
 
 
-==== 试用期延长
+=== 试用期延长
 
 注册免费试用 Cloud Insights 的新用户现在有 30 天的时间对产品进行评估。这比上一个 14 天试用期有所增加。
 
 
 
-==== 受管单元计算
+=== 受管单元计算
 
 Cloud Insights 中的受管单元（ MTU ）计算已更改为以下值：
 
@@ -1479,22 +1479,22 @@ Cloud Insights 中的受管单元（ MTU ）计算已更改为以下值：
 '''
 
 
-=== 2019年11月
+== 2019年11月
 
 
 
-==== 版本功能比较表
+=== 版本功能比较表
 
 "* 管理 ">" 订阅 * " 页面 link:concept_subscribing_to_cloud_insights.html#key-features["比较表"] 已进行更新，以列出 Cloud Insights 基本版，标准版和高级版中提供的功能集。NetApp 不断改进其云服务，因此请经常查看此页面，找到适合您不断变化的业务需求的版本。
 
 '''
 
 
-=== 2019年10月
+== 2019年10月
 
 
 
-==== 报告
+=== 报告
 
 link:reporting_overview.html["* Cloud Insights 报告 *"] 是一种业务智能工具，可用于查看预定义报告或创建自定义报告。通过报告，您可以执行以下任务：
 
@@ -1521,18 +1521,18 @@ Cloud Insights * 高级版 * 提供报告功能。
 
 
 
-==== Active IQ 增强功能
+=== Active IQ 增强功能
 
 link:concept_activeiq.html["Active IQ 风险"] 现在可用作对象，可在信息板表小工具中查询和使用。其中包括以下风险对象属性： * 类别 * 缓解类别 * 潜在影响 * 风险详细信息 * 严重性 * 源 * 存储 * 存储节点 * UI 类别
 
 '''
 
 
-=== 2019 年 9 月
+== 2019 年 9 月
 
 
 
-==== 新的 Gauge 小工具
+=== 新的 Gauge 小工具
 
 我们提供了两个新的小工具，用于根据您指定的阈值在信息板上以醒目的颜色显示单值数据。您可以使用 * 实心量表 * 或 * 项目符号量表 * 显示值。位于警告范围内的值将显示为橙色。严重范围内的值以红色显示。低于警告阈值的值将显示为绿色。
 
@@ -1541,7 +1541,7 @@ image:Gauge-Bullet.png["项目符号量表"]
 
 
 
-==== 单值小工具的条件颜色格式
+=== 单值小工具的条件颜色格式
 
 现在，您可以根据设置的阈值以彩色背景显示单值小工具。
 
@@ -1549,41 +1549,41 @@ image:Single-Value Widgets - Formatted.png["具有格式的单值小工具"]
 
 
 
-==== 在入职期间邀请用户
+=== 在入职期间邀请用户
 
 在入职过程中的任何时候，您都可以单击 " 管理员 ">" 用户管理 ">" + 用户 " 邀请其他用户加入您的 Cloud Insights 环境。请注意，一旦完成入职并收集数据，具有 _Guest_ 或 _User_ 角色的用户将获得更大的优势。
 
 
 
-==== 改进了 Data Collector 详细信息页面
+=== 改进了 Data Collector 详细信息页面
 
 数据收集器详细信息页面已进行改进，可以更易读的格式显示错误。现在，错误会显示在页面上的单独表中，如果数据收集器出现多个错误，则每个错误都会显示在单独的行中。
 
 '''
 
 
-=== 2019 年 8 月
+== 2019 年 8 月
 
 
 
-==== 全部与可用的数据收集器
+=== 全部与可用的数据收集器
 
 在将数据收集器添加到环境中时，您可以设置一个筛选器，以便根据订阅级别仅显示可供您使用的数据收集器，或者仅显示所有数据收集器。
 
 
 
-==== Active IQ 集成
+=== Active IQ 集成
 
 Cloud Insights 从 NetApp ActiveIQ 收集数据，该 Active IQ 可为 NetApp 客户及其硬件 / 软件系统提供一系列可视化，分析和其他支持相关服务。Cloud Insights 可与 ONTAP 数据管理系统集成。请参见 link:concept_activeiq.html["Active IQ"] 有关详细信息 ...
 
 '''
 
 
-=== 2019 年 7 月
+== 2019 年 7 月
 
 
 
-==== 信息板改进
+=== 信息板改进
 
 信息板和小工具已通过以下更改进行了改进：
 
@@ -1595,30 +1595,30 @@ Cloud Insights 从 NetApp ActiveIQ 收集数据，该 Active IQ 可为 NetApp �
 
 
 
-==== 降级到 Basic Edition
+=== 降级到 Basic Edition
 
 如果未配置在过去 7 天内成功完成轮询的可用 NetApp 设备，则降级到 Basic Edition 将失败并显示错误消息。
 
 
 
-==== 正在收集 Kube-State-Metrics
+=== 正在收集 Kube-State-Metrics
 
 。 link:task_config_telegraf_kubernetes.html["Kubernetes Data Collector"] 现在，可从 Kube-state-metrics 插件收集对象和计数器，从而大大扩展了可在 Cloud Insights 中监控的指标的数量和范围。
 
 '''
 
 
-=== 2019 年 6 月
+== 2019 年 6 月
 
 
 
-==== Cloud Insights 版本
+=== Cloud Insights 版本
 
 Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥有有效 NetApp 支持帐户的现有 NetApp 客户可以使用免费 * 基本版 * 享受 7 天的数据保留和对 NetApp 数据收集器的访问，或者通过 * 标准版 * 更多地保留数据，访问所有受支持的数据收集器，获得专家技术支持等。有关可用功能的详细信息，请参见 NetApp 的 link:https://cloud.netapp.com/cloud-insights["Cloud Insights"] 站点
 
 
 
-==== 新的基础架构数据收集器： NetApp HCI
+=== 新的基础架构数据收集器： NetApp HCI
 
 * link:task_dc_na_hci.html["NetApp HCI 虚拟中心"] 已添加为基础架构数据收集器。HCI 虚拟中心数据收集器收集 NetApp HCI 主机信息，并要求对虚拟中心内的所有对象具有只读权限。
 
@@ -1628,18 +1628,18 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 '''
 
 
-=== 2019 年 5 月
+== 2019 年 5 月
 
 
 
-==== 新的服务数据收集器： Kapacitor
+=== 新的服务数据收集器： Kapacitor
 
 * link:task_config_telegraf_kapacitor.html["Kapacitor"] 已添加为服务的数据收集器。
 
 
 
 
-==== 通过 Telegraf 与服务集成
+=== 通过 Telegraf 与服务集成
 
 除了从交换机和存储等基础架构设备采集数据之外， Cloud Insights 现在还可以使用从各种操作系统和服务收集数据 link:task_config_telegraf_agent.html["Telegraf 作为其代理"] 用于收集集成数据。Telegraf 是一种插件驱动的代理，可用于收集和报告指标。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流将所需信息收集到代理中。
 
@@ -1647,14 +1647,14 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 
 
 
-==== Storage Virtual Machine 资产
+=== Storage Virtual Machine 资产
 
 * Storage Virtual Machine （ SVM ）可作为 Cloud Insights 中的资产使用。SVM 具有自己的资产登录页面，可以在搜索，查询和筛选器中显示和使用。SVM 也可以在信息板小工具中使用，并与标注关联。
 
 
 
 
-==== 降低了采集单元系统要求
+=== 降低了采集单元系统要求
 
 * 采集单元（ Acquisition Unit ， AU ）软件的系统 CPU 和内存要求已降低。新要求包括：
 
@@ -1672,7 +1672,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 |===
 
 
-==== 支持的其他平台
+=== 支持的其他平台
 
 * 目前已在这些平台中添加以下平台 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["支持 Cloud Insights"]：
 
@@ -1688,11 +1688,11 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 '''
 
 
-=== 2019年4月
+== 2019年4月
 
 
 
-==== 按标记筛选虚拟机
+=== 按标记筛选虚拟机
 
 在配置以下数据收集器时，您可以根据虚拟机的标记或标签进行筛选，以便在数据收集中包括或排除虚拟机。
 
@@ -1704,11 +1704,11 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 '''
 
 
-=== 2019 年 3 月
+== 2019 年 3 月
 
 
 
-==== 订阅相关事件的电子邮件通知
+=== 订阅相关事件的电子邮件通知
 
 * 您可以选择电子邮件的收件人 link:concept_notifications_email.html["通知"] 发生订阅相关事件时，例如即将到期的试用或订阅的帐户更改。您可以从以下选项中为这些通知选择收件人：
 +
@@ -1721,7 +1721,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 
 
 
-==== 其他信息板
+=== 其他信息板
 
 * 以下新推出的以 AWS 为中心的功能 link:concept_import_from_dashboard_gallery.html["信息板"] 已添加到库中并可导入：
 +
@@ -1734,25 +1734,25 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 '''
 
 
-=== 2019年2月
+== 2019年2月
 
 
 
-==== 从 AWS 子帐户收集
+=== 从 AWS 子帐户收集
 
 * Cloud Insights 支持 link:task_dc_amazon_ec2.html#collecting_from_aws_child_accounts["从 AWS 子帐户收集"] 在一个数据收集器中。您必须将 AWS 环境配置为允许 Cloud Insights 从子帐户收集数据。
 
 
 
 
-==== 数据收集器命名
+=== 数据收集器命名
 
 * 现在，除了字母，数字和下划线之外， Data Collector 名称还可以包括句点（ . ），连字符（ - ）和空格（）。名称不能以空格，句点或连字符开头或结尾。
 
 
 
 
-==== 适用于 Windows 的采集单元
+=== 适用于 Windows 的采集单元
 
 * 您可以在 Windows 服务器 /VM 上配置 Cloud Insights 采集单元。查看 Windows link:concept_acquisition_unit_requirements.html["前提条件"] 安装之前 link:task_configure_acquisition_unit.html["采集单元软件"]。
 
@@ -1760,18 +1760,18 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 '''
 
 
-=== 2019年1月
+== 2019年1月
 
 
 
-==== " 所有者 " 字段更易读
+=== " 所有者 " 字段更易读
 
 * 在信息板和查询列表中， " 所有者 " 字段的数据以前是授权 ID 字符串，而不是用户友好的所有者名称。现在， " 所有者 " 字段将显示一个更简单，更易读的所有者名称。
 
 
 
 
-==== 订阅页面上的受管单元细分
+=== 订阅页面上的受管单元细分
 
 * 对于 * 管理 > 订阅 * 页面上列出的每个数据收集器，您现在可以查看主机和存储的受管单元（ Managed Unit ， MU ）计数以及总数的细分。
 
@@ -1779,18 +1779,18 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 '''
 
 
-=== 2018年12月
+== 2018年12月
 
 
 
-==== 改进了 UI 加载时间
+=== 改进了 UI 加载时间
 
 * Cloud Insights 用户界面（ UI ）的初始加载时间已显著缩短。在加载元数据的情况下， UI 的刷新时间也会因这种改进而受益。
 
 
 
 
-==== 批量编辑数据收集器
+=== 批量编辑数据收集器
 
 * 您可以同时编辑多个数据收集器的信息。在 * 管理 > 数据收集器 * 页面上，选中每个收集器左侧的框并单击 * 批量操作 * 按钮，以选择要修改的数据收集器。选择 * 编辑 * 并修改必要的字段。
 +
@@ -1800,7 +1800,7 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 
 
 
-==== 支持和订阅页面可在入职期间使用
+=== 支持和订阅页面可在入职期间使用
 
 * 在入职工作流期间，您可以导航到 * 帮助 > 支持 * 和 * 管理员 > 订阅 * 页面。如果您尚未关闭浏览器选项卡，则从这些页面返回将返回到入职工作流。
 
@@ -1808,46 +1808,46 @@ Cloud Insights 提供不同版本，可满足您的预算和业务需求。拥�
 '''
 
 
-=== 2018年11月
+== 2018年11月
 
 
 
-==== 通过 NetApp 销售部门或 AWS Marketplace 订阅
+=== 通过 NetApp 销售部门或 AWS Marketplace 订阅
 
 * 现在，您可以直接通过 NetApp 订阅和计费 Cloud Insights 。这是对 AWS Marketplace 提供的自助订阅的补充。"* 管理员 ">" 订阅 * " 页面上显示了一个新的 * 联系销售人员 * 链接。如果客户的环境具有或预期具有 1 ， 000 个或更多受管单元（ MTU ），建议通过 " 联系销售人员 " 链接联系 NetApp 销售人员。
 
 
 
 
-==== 文本标注超链接
+=== 文本标注超链接
 
 * 文本类型的标注现在可以包含超链接。
 
 
 
 
-==== 入职演练
+=== 入职演练
 
 * 现在， Cloud Insights 提供了一个入职演练，供第一个用户（管理员或帐户所有者）登录到新环境。演练将指导您完成安装采集单元，配置初始数据收集器以及选择一个或多个有用的信息板的过程。
 
 
 
 
-==== 从图库导入信息板
+=== 从图库导入信息板
 
 * 除了在入职期间选择信息板之外，您还可以通过 * 信息板 > 显示所有信息板 * 导入信息板，然后单击 * + 从图库 * 导入信息板。
 
 
 
 
-==== 复制信息板
+=== 复制信息板
 
 * 已将复制信息板的功能添加到信息板列表页面中，并可在每个信息板的选项菜单中进行选择，也可从 _Save_ 菜单中选择复制信息板的主页面本身。
 
 
 
 
-==== Cloud Central 产品菜单
+=== Cloud Central 产品菜单
 
 * 用于切换到其他 NetApp Cloud Central 产品的菜单已移至屏幕右上角。
 

@@ -72,7 +72,7 @@ B + C 应小于 A ，否则 Agent 计算机将无法监控。
  Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
 
 
-=== 示例
+== 示例
 
 假设我们有三个 SVMS ，每秒生成的事件速率分别为 100 ， 200 和 300 个。
 
