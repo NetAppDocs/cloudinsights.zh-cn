@@ -7415,7 +7415,6 @@
   <block id="1928ab7a05e24c9e7bde67fb9a528d0d" category="paragraph">资产页面的摘要部分显示有关资产的常规信息，包括任何指标或性能策略是否为相关的发生原因。潜在问题区域用红色圆圈表示。</block>
   <block id="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="paragraph"><block ref="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="abfbd1f823b5763f9a41683ebc883036" category="list-text">* 警报表 * ：最多显示最后 1 ， 000 个警报。</block>
-  <block id="863fe9f23689919336be1a2467bf51a4" category="paragraph">Cloud Insights 使用 <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。</block>
   <block id="ea5b5a50c17a9a63f35695787f45c3e6" category="paragraph">Cloud Insights 的当前 Telegraf 版本为 * 。 1.19.3 * 。</block>
   <block id="0a41ae2c369ec6839d428c359a9fa6c3" category="cell">警报 * ：创建 / 修改 / 删除</block>
   <block id="856a71f1e469ce4d8cf0d9305027ea82" category="cell">警报 * ：查看</block>
@@ -8931,4 +8930,5 @@
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">示例</block>
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">示例9</block>
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此示例将查找第一个_到第二个_之后的所有内容。</block>
+  <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">Cloud Insights 使用 <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。</block>
 </blocks>
