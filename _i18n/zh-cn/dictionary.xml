@@ -7730,7 +7730,6 @@
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">日志资源管理器</block>
   <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">要开始浏览日志，请单击 * 查询 &gt;+New Log Query* 。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">选择日志</block>
-  <block id="907f85b0ae170f8312420eb89d567ed5" category="paragraph"><block ref="907f85b0ae170f8312420eb89d567ed5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">您可以设置筛选器以进一步细化查询结果。例如，要查找显示失败的所有日志消息，请为包含单词 "Failed" 的 _MESSAGES 设置一个筛选器。</block>
   <block id="e290a1958705f522c7d916c05fcad28c" category="admonition">您可以开始在筛选器字段中键入所需的文本；键入时， Cloud Insights 将提示您创建包含字符串的通配符搜索。</block>
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">结果将显示在一个图形中，其中显示了所示每个时间段内的日志实例数。图下方是日志条目临时文件。图形和条目会根据选定时间范围自动刷新。</block>
@@ -8931,4 +8930,5 @@
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">示例9</block>
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此示例将查找第一个_到第二个_之后的所有内容。</block>
   <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">Cloud Insights 使用 <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。</block>
+  <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

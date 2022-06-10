@@ -17,7 +17,7 @@ image:LogExplorerMenu.png["日志查询菜单， 480"]
 
 从列表中选择一个可用日志。
 
-image:LogExplorer_ChooseLog.png["选择日志"]
+image:LogExplorer_2022.png["选择日志"]
 
 
 NOTE: 根据您的环境，可供查询的日志类型可能会有所不同。随着时间的推移，可能会添加其他日志类型。
