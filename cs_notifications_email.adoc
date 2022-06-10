@@ -13,7 +13,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 
-=== 潜在攻击警报和警告
+== 潜在攻击警报和警告
 
 要发送 _potential agres攻击 _ 警报通知，请在 _Send potential Attack Alerts_ 部分输入收件人的电子邮件地址。对于对警报执行的每个操作，系统会将电子邮件通知发送到警报收件人列表。
 
@@ -21,7 +21,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 
-=== 代理和数据收集器运行状况监控
+== 代理和数据收集器运行状况监控
 
 您可以通过通知监控代理和数据源的运行状况。
 

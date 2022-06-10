@@ -16,7 +16,7 @@ NOTE: Cloud Insights API 可在 * Cloud Insights 高级版 * 中使用。
 
 
 
-=== 正在导入
+== 正在导入
 
 * 管理 > API 访问 * 链接包含 link:API_Overview.html["文档。"] 用于 * 资产 /Import* API 。本文档包含有关 .CSV 文件格式的信息。
 
@@ -24,7 +24,7 @@ image:api_assets_import.png["导入 API"]
 
 
 
-=== .CSV 文件格式
+== .CSV 文件格式
 
 CSV 文件的常规格式如下。文件的第一行定义了导入字段并指定了字段的顺序。之后为每个标注或应用程序添加单独的行。您无需定义每个字段。但是，后续标注行必须遵循与定义行相同的顺序。
 
@@ -37,7 +37,7 @@ image:api_assets_import_assign.png["导入并分配"]
 
 
 
-=== 导入行为
+== 导入行为
 
 在导入操作期间，系统会根据要导入的对象和对象类型添加，合并或替换数据。导入时，请记住以下行为。
 

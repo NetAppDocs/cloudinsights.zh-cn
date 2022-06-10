@@ -20,7 +20,7 @@ image:Kubernetes_Cluster_Overview_Page.png["Kubernetes 概述"]
 
 
 
-=== 集群使用情况概述
+== 集群使用情况概述
 
 image:Kubernetes_Cluster_List.png["集群列表概述"]
 
@@ -46,13 +46,13 @@ image:Kubernetes_Cluster_List.png["集群列表概述"]
 
 
 
-=== 节点和 Pod 状态
+== 节点和 Pod 状态
 
 image:Kubernetes_Node_Pod_Status.png["节点和 Pod 状态"]
 
 
 
-=== 命名空间
+== 命名空间
 
 屏幕右侧列出了每个集群中使用的前三个命名空间。单击 * 全部 * 链接可查看集群的所有命名空间。
 
@@ -62,7 +62,7 @@ image:Kubernetes_Namespaces.png["命名空间"]
 
 
 
-=== 细化筛选器
+== 细化筛选器
 
 筛选时，在开始键入时，系统会根据当前文本显示一个 * 通配符筛选器 * 。选择此选项将返回与通配符表达式匹配的所有结果。您也可以使用 NOT 或 AND 创建 * 表达式 * ，也可以选择 " 无 " 选项来筛选字段中的空值。
 

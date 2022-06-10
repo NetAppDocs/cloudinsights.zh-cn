@@ -16,7 +16,7 @@ NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_ins
 
 
 
-=== 自定义报告的输出格式和交付
+== 自定义报告的输出格式和交付
 
 您可以自定义报告的格式和交付方法。
 
@@ -43,7 +43,7 @@ image:ReportSchedule.png["计划报告"]
 
 
 
-=== 将报告复制到剪贴板
+== 将报告复制到剪贴板
 
 使用此过程将报告复制到剪贴板。
 
@@ -56,7 +56,7 @@ image:ReportSchedule.png["计划报告"]
 
 
 
-=== 从剪贴板打开报告（ xml ）
+== 从剪贴板打开报告（ xml ）
 
 您可以打开先前复制到剪贴板的报告规范。
 

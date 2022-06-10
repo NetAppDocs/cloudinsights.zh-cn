@@ -33,7 +33,7 @@ NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_ins
 
 
 
-=== 报告创建过程
+== 报告创建过程
 
 创建自定义（也称为 " 临时 " ）报告的过程涉及多项任务：
 
@@ -46,7 +46,7 @@ NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_ins
 
 
 
-==== 规划自定义报告的结果
+=== 规划自定义报告的结果
 
 在打开报告创作工具之前，您可能需要规划希望从报告中获得的结果。借助报告创作工具，您可以轻松创建报告，并且可能不需要进行大量规划；但是，最好从报告请求者那里了解报告要求。
 
@@ -71,7 +71,7 @@ NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_ins
 
 
 
-==== 有关设计报告的提示
+=== 有关设计报告的提示
 
 在设计报告时，有几个提示可能会很有用。
 
