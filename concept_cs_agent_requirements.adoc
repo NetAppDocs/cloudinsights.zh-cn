@@ -99,7 +99,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | TCP | 389 （ LDAP ） 636 （ LDAPS / START-TLS ） | LDAP 服务器 URL | 出站 | 连接到 LDAP 
 
 
-| TCP | 443. | SVM 管理 IP 地址 | 出站 | 与 ONTAP 的 API 通信 
+| TCP | 443. | 集群或SVM管理IP地址(取决于SVM收集器配置) | 出站 | 与 ONTAP 的 API 通信 
 
 
 | TCP | 35000 - 55000 | SVM 数据 LIF IP 地址 | 入站 / 出站 | 与 ONTAP 通信以处理 Fpolicy 事件 

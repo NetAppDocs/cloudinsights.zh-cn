@@ -6424,7 +6424,6 @@
   <block id="1b09a58921479be87f9dae639915150f" category="cell">389 （ LDAP ） 636 （ LDAPS / START-TLS ）</block>
   <block id="84caee864977bc98db0b0df24853f63c" category="cell">LDAP 服务器 URL</block>
   <block id="b272c206ad7d80ebc1e17385c8d4450c" category="cell">连接到 LDAP</block>
-  <block id="5b44c7f90aeca08b8030b7c60d1e78ed" category="cell">SVM 管理 IP 地址</block>
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">与 ONTAP 的 API 通信</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM 数据 LIF IP 地址</block>
@@ -8931,4 +8930,5 @@
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此示例将查找第一个_到第二个_之后的所有内容。</block>
   <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">Cloud Insights 使用 <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。</block>
   <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c1f82bcb121a82434f4244621860e18e" category="cell">集群或SVM管理IP地址(取决于SVM收集器配置)</block>
 </blocks>
