@@ -2015,7 +2015,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-06-08 14:04:46 +0000">06/08/2022</time>
+    <time datetime="2022-06-18 02:03:58 +0000">06/18/2022</time>
     
   
 
@@ -2028,6 +2028,112 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一些最新特性和功能。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="2022年6月">2022年6月</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="kubernetes集群饱和及其他详细信息">Kubernetes集群饱和及其他详细信息</h3>
+<div class="paragraph">
+<p>Cloud Insights 通过改进的集群详细信息页面、提供饱和详细信息以及更清晰的命名空间和工作负载视图、让您比以往任何时候都更轻松地探索Kubernetes环境。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Kubernetes_Detail_Page_new.png" alt="集群详细信息页面"></span></p>
+</div>
+<div class="paragraph">
+<p>除了节点、Pod、命名空间和工作负载计数之外、您还可以通过集群列表页面快速查看饱和情况：</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Kubernetes_List_Page_new.png" alt="显示饱和数的集群列表页面"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="您的kubernetes集群有多旧">您的Kubernetes集群有多旧？</h3>
+<div class="paragraph">
+<p>您的集群是刚刚起步、还是经历了漫长的数字化生活？已将_age_添加为为Kubernetes节点收集的时间指标。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Kubernetes_Table_Showing_Age.png" alt="显示期限的Kubernetes节点表(以天为单位)"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="容量全满时间预测">容量全满时间预测</h3>
+<div class="paragraph">
+<p>Cloud Insights 提供了一个信息板、用于预测每个受监控内部卷的容量用尽前的天数。这些值有助于显著降低中断风险。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="Internal%20Volume%20-%20Time%20to%20Full%20dashboard%20example.png" alt="内部卷TTF预测信息板"></span></p>
+</div>
+<div class="paragraph">
+<p>存储、存储池和卷也可以使用TTF计数器。请始终关注此空间、以获取这些对象的其他信息板。</p>
+</div>
+<div class="paragraph">
+<p>请注意、"达到全时预测"正在从_Preview_开始、并将推广到所有客户。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="我的环境发生了哪些变化">我的环境发生了哪些变化？</h3>
+<div class="paragraph">
+<p>可以在日志资源管理器中查看ONTAP 更改日志条目。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="ChangeLogEntries.png" alt="此图显示了更改日志条目示例"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="操作系统支持">操作系统支持</h3>
+<div class="paragraph">
+<p>除了这些操作系统之外、Cloud Insights 采集单元还支持以下操作系统 <a href="https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html">"已支持"</a>：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>CentOS流9</p>
+</li>
+<li>
+<p>Windows 2022</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="已更新-telegraf-代理">已更新 Telegraf 代理</h3>
+<div class="paragraph">
+<p>用于载入电报集成数据的代理已更新到版本*。1.22.3*、并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 <a href="task_config_telegraf_agent.html">"代理安装"</a> 文档。先前版本的代理将继续运行，无需用户操作。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="预览功能">预览功能</h3>
+<div class="paragraph">
+<p>Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 <a href="https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx">"NetApp 销售团队"</a> 有关详细信息 &#8230;&#8203;</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 功能 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 问题描述 *</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kubernetes命名空间即将用尽</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">通过运行空间不足的_Kubernetes命名空间_ Insight、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。<a href="https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html">"阅读更多内容"</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cloud Secure —在受到攻击时限制用户访问</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">可以在检测到攻击时限制用户访问，从而增强对业务关键型数据的保护。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。<a href="https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html">"阅读更多内容"</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">共享资源面临压力</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"受压力的共享资源" Insight使用AI/ML自动确定资源争用在环境中导致性能下降的位置、突出显示受其影响的任何工作负载、并提供建议的修复操作、使您能够更快地解决性能问题。<a href="https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html">"阅读更多内容"</a></p></td>
+</tr>
+</tbody>
+</table>
+<hr>
 </div>
 </div>
 </div>
@@ -2080,7 +2186,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="预览功能">预览功能</h3>
+<h3 id="预览功能-2">预览功能</h3>
 <div class="paragraph">
 <p>Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 <a href="https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx">"NetApp 销售团队"</a> 有关详细信息 &#8230;&#8203;</p>
 </div>
@@ -2163,7 +2269,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="预览功能-2">预览功能</h3>
+<h3 id="预览功能-3">预览功能</h3>
 <div class="paragraph">
 <p>Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 <a href="https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx">"NetApp 销售团队"</a> 有关详细信息 &#8230;&#8203;</p>
 </div>
@@ -2273,7 +2379,7 @@
 </table>
 </div>
 <div class="sect2">
-<h3 id="已更新-telegraf-代理">已更新 Telegraf 代理</h3>
+<h3 id="已更新-telegraf-代理-2">已更新 Telegraf 代理</h3>
 <div class="paragraph">
 <p>用于载入电报集成数据的代理已更新为版本 * 。 1.2* ，并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 <a href="task_config_telegraf_agent.html">"代理安装"</a> 文档。先前版本的代理将继续运行，无需用户操作。</p>
 </div>
@@ -2378,7 +2484,7 @@
 </table>
 </div>
 <div class="sect2">
-<h3 id="操作系统支持">操作系统支持</h3>
+<h3 id="操作系统支持-2">操作系统支持</h3>
 <div class="paragraph">
 <p>CentOS 8.x 支持将替换为 * CentOS 8 Stream* 支持。CentOS 8.x 将于 2021 年 12 月 31 日到期。</p>
 </div>
@@ -2554,7 +2660,7 @@
 </div>
 </div>
 <div class="sect2">
-<h3 id="已更新-telegraf-代理-2">已更新 Telegraf 代理</h3>
+<h3 id="已更新-telegraf-代理-3">已更新 Telegraf 代理</h3>
 <div class="paragraph">
 <p>用于载入电报集成数据的代理已更新到版本 * 。 1.19.3* ，并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 <a href="task_config_telegraf_agent.html">"代理安装"</a> 文档。先前版本的代理将继续运行，无需用户操作。</p>
 </div>
@@ -2777,7 +2883,7 @@
 <p>以下是我们在 4 月份所做的一些更改：</p>
 </div>
 <div class="sect2">
-<h3 id="已更新-telegraf-代理-3">已更新 Telegraf 代理</h3>
+<h3 id="已更新-telegraf-代理-4">已更新 Telegraf 代理</h3>
 <div class="paragraph">
 <p>用于载入电报集成数据的代理已更新为 1.17.3 版，并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 <a href="https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent.html">"代理安装"</a> 文档。先前版本的代理将继续运行，无需用户操作。</p>
 </div>
@@ -2937,7 +3043,7 @@
 <h2 id="2021年2月">2021年2月</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="已更新-telegraf-代理-4">已更新 Telegraf 代理</h3>
+<h3 id="已更新-telegraf-代理-5">已更新 Telegraf 代理</h3>
 <div class="paragraph">
 <p>用于载入电报集成数据的代理已更新为 1.17.0 版，其中包括漏洞和错误修复。</p>
 </div>
@@ -3649,7 +3755,7 @@ Cloud Insights 报告适用于 500 个或更多 MTU 的环境。
 </div>
 </div>
 <div class="sect2">
-<h3 id="已更新-telegraf-代理-5">已更新 Telegraf 代理</h3>
+<h3 id="已更新-telegraf-代理-6">已更新 Telegraf 代理</h3>
 <div class="paragraph">
 <p>用于载入电报集成数据的代理已更新为 <a href="https://docs.influxdata.com/telegraf/v1.14/">"版本 1.14"</a>，其中包括错误修复，安全修复和新插件。</p>
 </div>
