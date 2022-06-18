@@ -12,6 +12,87 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+== 2022年6月
+
+
+
+=== Kubernetes集群饱和及其他详细信息
+
+Cloud Insights 通过改进的集群详细信息页面、提供饱和详细信息以及更清晰的命名空间和工作负载视图、让您比以往任何时候都更轻松地探索Kubernetes环境。
+
+image:Kubernetes_Detail_Page_new.png["集群详细信息页面"]
+
+除了节点、Pod、命名空间和工作负载计数之外、您还可以通过集群列表页面快速查看饱和情况：
+
+image:Kubernetes_List_Page_new.png["显示饱和数的集群列表页面"]
+
+
+
+=== 您的Kubernetes集群有多旧？
+
+您的集群是刚刚起步、还是经历了漫长的数字化生活？已将_age_添加为为Kubernetes节点收集的时间指标。
+
+image:Kubernetes_Table_Showing_Age.png["显示期限的Kubernetes节点表(以天为单位)"]
+
+
+
+=== 容量全满时间预测
+
+Cloud Insights 提供了一个信息板、用于预测每个受监控内部卷的容量用尽前的天数。这些值有助于显著降低中断风险。
+
+image:Internal Volume - Time to Full dashboard example.png["内部卷TTF预测信息板"]
+
+存储、存储池和卷也可以使用TTF计数器。请始终关注此空间、以获取这些对象的其他信息板。
+
+请注意、"达到全时预测"正在从_Preview_开始、并将推广到所有客户。
+
+
+
+=== 我的环境发生了哪些变化？
+
+可以在日志资源管理器中查看ONTAP 更改日志条目。
+
+image:ChangeLogEntries.png["此图显示了更改日志条目示例"]
+
+
+
+=== 操作系统支持
+
+除了这些操作系统之外、Cloud Insights 采集单元还支持以下操作系统 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支持"]：
+
+* CentOS流9
+* Windows 2022
+
+
+
+
+=== 已更新 Telegraf 代理
+
+用于载入电报集成数据的代理已更新到版本*。1.22.3*、并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 link:task_config_telegraf_agent.html["代理安装"] 文档。先前版本的代理将继续运行，无需用户操作。
+
+
+
+=== 预览功能
+
+Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
+
+|===
+
+
+| * 功能 * | * 问题描述 * 
+
+
+| Kubernetes命名空间即将用尽 | 通过运行空间不足的_Kubernetes命名空间_ Insight、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["阅读更多内容"] 
+
+
+| Cloud Secure —在受到攻击时限制用户访问 | 可以在检测到攻击时限制用户访问，从而增强对业务关键型数据的保护。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
+
+
+| 共享资源面临压力 | "受压力的共享资源" Insight使用AI/ML自动确定资源争用在环境中导致性能下降的位置、突出显示受其影响的任何工作负载、并提供建议的修复操作、使您能够更快地解决性能问题。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["阅读更多内容"] 
+|===
+'''
+
+
 == 2022年5月
 
 

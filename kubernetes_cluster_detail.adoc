@@ -9,34 +9,45 @@ summary: Kubernetes 详细信息页面提供了有助于进行故障排除和规
 
 
 [role="lead"]
-Kubernetes 集群详细信息页面显示了有关 Kubernetes 集群的详细信息。
+Kubernetes集群详细信息页面显示了Kubernetes集群的详细概述。
 
-详细信息页面由三个不同但链接在一起的登录页面组成，这些页面显示集群，节点和 POD 信息。此时， " 资源使用量 " 部分将发生更改，以显示选定项（集群，节点或 POD ）的详细信息。您可以在屏幕顶部看到当前页面类型和名称。当前页面显示在以下结构中： _Site Name / Kubernetes / Cluster / Node / Pod_ 。您可以单击此 " 痕迹 " 跟踪的任何部分直接转到该特定页面。
-
-image:Kubernetes_Breadcrumb.png["页面痕迹"]
+image:Kubernetes_Detail_Page_new.png["集群详细信息页面"]
 
 
 
-== 集群概述
+== 命名空间、节点和Pod计数
 
-集群概述页面可提供有用的信息概览：
-
-image:Kubernetes_Cluster_View_Annotated.png["带标注的集群视图"]
+页面顶部的计数显示了集群中的命名空间、节点和Pod总数、以及当前正在发出警报且处于待定状态的弹出消息数。
 
 
 
-=== 节点和 Pod 计数
+== 共享资源和饱和
 
-页面顶部的节点 /Pod 计数可显示集群中的节点和 Pod 总数，以及当前正在发出警报或待定的 Pod 数量的细分。
+详细信息页面右上角是您的集群饱和当前百分比以及显示一段时间内的最新趋势的图形。集群饱和是指每个时间点的最高CPU、内存或存储饱和。
 
-image:Kubernetes_Pod_Counts.png["节点和 Pod 计数"]
+在此下方、页面默认显示*共享资源*使用情况、并提供CPU、内存和存储选项卡。每个选项卡都会显示一段时间内的饱和百分比和趋势、以及其他使用情况详细信息。对于存储、显示的值是后端和文件系统饱和的较大值、而这两个值是单独计算的。
 
-
-NOTE: 三个 POD 子计数（运行状况良好，警报，待定）的总和可能超过显示的 Pod 总数。发生这种情况的原因是， _pendent_ 计数包括 _all_ pending Pod ，包括未计划和已计划的 Pod （换言之，未附加和已附加到节点）。
-
+使用率最高的设备显示在底部的表中。单击任何链接以浏览这些设备。
 
 
-=== 集群 " 车轮 "
+
+== 命名空间
+
+命名空间选项卡显示Kubernetes环境中所有命名空间的列表、其中显示了CPU和内存使用情况以及每个命名空间中的工作负载计数。单击名称链接以浏览每个命名空间。
+
+image:Kubernetes_Namespace_tab_new.png["K8s环境中的当前命名空间列表"]
+
+
+
+== 工作负载
+
+同样、工作负载选项卡会显示每个命名空间中的工作负载列表、再次显示CPU和内存使用情况。单击命名空间链接可深入了解每个。
+
+image:Kubernetes_Workloads_tab_new.png["K8s环境中的当前命名空间列表"]
+
+
+
+== 集群 " 车轮 "
 
 image:Kubernetes_Wheel_Section.png["集群车轮"]
 
@@ -62,26 +73,6 @@ image:Kubernetes_Capacity_Info.png["节点容量和分配"]
 
 
 
-=== 详细信息部分
+== 有关仪表的说明
 
-Kubernetes 资源管理器的每个页面都会显示一组使用情况图，其中可能包括 CPU ，内存和存储。下图显示了每个类别中的顶级对象的摘要和列表，并提供了指向底层详细信息的链接。例如， _Node_ 显示 Pod 和容器， _Pod_ 显示 PVC 以及相关对象和容器等。下图显示了 _Node_ 页面上的详细信息示例：
-
-image:Kubernetes_Node_Resource_Usage.png["资源使用情况示例"]
-
-出现警报的资源将显示在列表顶部。单击受影响的资源以深入了解更多详细信息。
-
-
-
-==== 有关仪表的说明
-
-内存和 CPU 量表显示三种颜色，因为它们显示的 _used_关系 到 _allocatable capacity_ 和 _total capacity_ 。存储仪表仅显示两种颜色，因为它们仅显示一对值： _used_in relation to _total_ 。
-
-读取仪表时，请记住以下几点。
-
-深蓝色带显示已用容量。
-
-* 在 _light blue band_ 下查看时，深蓝色显示 Used 作为可分配量的百分比。此值与所示的 "% of allocatable" 值匹配（以下示例中为 81 ）。
-* 在 _white background_ 下查看时，深蓝色显示已用容量占总容量的百分比。此值与所示的 "% of capacity" 值匹配（在此示例中为 63 ）。
-
-
-image:Kubernetes_Gauge_Explained.png["说明了量表编号"]
+内存和 CPU 量表显示三种颜色，因为它们显示的 _used_关系 到 _allocatable capacity_ 和 _total capacity_ 。

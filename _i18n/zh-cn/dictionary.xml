@@ -5563,18 +5563,6 @@
   <block id="4e4315d948ef3fd3aad9be88a442863d" category="paragraph"><block ref="4e4315d948ef3fd3aad9be88a442863d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f2b31bafb888e1e6aa37602d2dd9751" category="summary">Kubernetes 详细信息页面提供了有助于进行故障排除和规划的信息和详细信息。</block>
   <block id="e3971bbebca9b2f849e520ba01a2f593" category="doc">Kubernetes 集群详细信息页面</block>
-  <block id="4269bb6c19a94f9018fc8b2391d389d6" category="paragraph">Kubernetes 集群详细信息页面显示了有关 Kubernetes 集群的详细信息。</block>
-  <block id="45839520c79817b3544ea7278498444f" category="paragraph">详细信息页面由三个不同但链接在一起的登录页面组成，这些页面显示集群，节点和 POD 信息。此时， " 资源使用量 " 部分将发生更改，以显示选定项（集群，节点或 POD ）的详细信息。您可以在屏幕顶部看到当前页面类型和名称。当前页面显示在以下结构中： _Site Name / Kubernetes / Cluster / Node / Pod_ 。您可以单击此 " 痕迹 " 跟踪的任何部分直接转到该特定页面。</block>
-  <block id="826429035a8a9edc1a04760f1ec377e7" category="inline-image-macro">页面痕迹</block>
-  <block id="4e853d77c8a0f1da8dabbad1a932d14f" category="paragraph"><block ref="4e853d77c8a0f1da8dabbad1a932d14f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="16719f4f1118dc7f0bc249c43c4df67c" category="section-title">集群概述</block>
-  <block id="14282b9f7f0312a2fa708795fe78363f" category="paragraph">集群概述页面可提供有用的信息概览：</block>
-  <block id="99719263f96092fedfd6f2402532e320" category="inline-image-macro">带标注的集群视图</block>
-  <block id="8438aaf79bf17894116d917e847fe2ab" category="paragraph"><block ref="8438aaf79bf17894116d917e847fe2ab" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="313e6b13bbf296445e97ffbff720fc88" category="section-title">节点和 Pod 计数</block>
-  <block id="973d0070d42f76d3bcc7400eac12db71" category="paragraph">页面顶部的节点 /Pod 计数可显示集群中的节点和 Pod 总数，以及当前正在发出警报或待定的 Pod 数量的细分。</block>
-  <block id="7b2679f5857ae1f0cc402ba89c63ebfd" category="paragraph"><block ref="7b2679f5857ae1f0cc402ba89c63ebfd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="795ff789c4877d24d232de2509542198" category="admonition">三个 POD 子计数（运行状况良好，警报，待定）的总和可能超过显示的 Pod 总数。发生这种情况的原因是， _pendent_ 计数包括 _all_ pending Pod ，包括未计划和已计划的 Pod （换言之，未附加和已附加到节点）。</block>
   <block id="5817293ec6fb52e169e7a825ab42de81" category="section-title">集群 " 车轮 "</block>
   <block id="a7f1dfb8c02fbef30a0e54df62d243f8" category="inline-image-macro">集群车轮</block>
   <block id="b853a854b0614b4da3e776995dee109f" category="paragraph"><block ref="b853a854b0614b4da3e776995dee109f" category="inline-image-macro-rx" type="image"></block></block>
@@ -5592,19 +5580,7 @@
   <block id="0770df85581c38c14cc5a29c2ac0ee05" category="paragraph">您可以将鼠标悬停在 Node 元素上方来查看文件系统，内存和 CPU 信息。</block>
   <block id="aeba0ba92e92fa550526462ee7f15f49" category="inline-image-macro">节点容量和分配</block>
   <block id="505a160b62bc31c8ffa7c7dd25cbf213" category="paragraph"><block ref="505a160b62bc31c8ffa7c7dd25cbf213" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b62f28268f24460a0f4b9910b578af0a" category="section-title">详细信息部分</block>
-  <block id="cde36533718db4476aa09a4e047344d6" category="paragraph">Kubernetes 资源管理器的每个页面都会显示一组使用情况图，其中可能包括 CPU ，内存和存储。下图显示了每个类别中的顶级对象的摘要和列表，并提供了指向底层详细信息的链接。例如， _Node_ 显示 Pod 和容器， _Pod_ 显示 PVC 以及相关对象和容器等。下图显示了 _Node_ 页面上的详细信息示例：</block>
-  <block id="b3c17e50efb1c9edd02adcbdb514b3ca" category="inline-image-macro">资源使用情况示例</block>
-  <block id="ef00d34afdcf8b03d5a2e1e4d3af0d5a" category="paragraph"><block ref="ef00d34afdcf8b03d5a2e1e4d3af0d5a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="99320250e7bccded117faab7b4abbe23" category="paragraph">出现警报的资源将显示在列表顶部。单击受影响的资源以深入了解更多详细信息。</block>
   <block id="ed5c4f798b6d55f2a89cb97884f0d548" category="section-title">有关仪表的说明</block>
-  <block id="6f757fa99d4ba48eb37bf099f6ce0c94" category="paragraph">内存和 CPU 量表显示三种颜色，因为它们显示的 _used_关系 到 _allocatable capacity_ 和 _total capacity_ 。存储仪表仅显示两种颜色，因为它们仅显示一对值： _used_in relation to _total_ 。</block>
-  <block id="421a44fa6eeb7e044d9e2dfc48ec3cbb" category="paragraph">读取仪表时，请记住以下几点。</block>
-  <block id="e95563e1f436a54be789dca93730ae2c" category="paragraph">深蓝色带显示已用容量。</block>
-  <block id="e01e69dafe6eb339618289cc9c9bc266" category="list-text">在 _light blue band_ 下查看时，深蓝色显示 Used 作为可分配量的百分比。此值与所示的 "% of allocatable" 值匹配（以下示例中为 81 ）。</block>
-  <block id="1c72c592b8a1e5080b0f1ef0bf3ba3b1" category="list-text">在 _white background_ 下查看时，深蓝色显示已用容量占总容量的百分比。此值与所示的 "% of capacity" 值匹配（在此示例中为 63 ）。</block>
-  <block id="b7ca81e2bb67d9106d1a52bdbc5b9f05" category="inline-image-macro">说明了量表编号</block>
-  <block id="f05f3d3deaa32d3eb9419009831a83e7" category="paragraph"><block ref="f05f3d3deaa32d3eb9419009831a83e7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c87f42b44870bb9fdcbb9ad0386ebd65" category="summary">为 Cloud Secure 警报通知添加电子邮件地址。</block>
   <block id="fc5aca4e5185f241f9160502eac0b160" category="doc">配置 NetApp ONTAP 数据收集器</block>
   <block id="bdde9f578348148335a5c86ea6a0eda9" category="paragraph">Cloud Secure 使用数据收集器从设备收集文件和用户访问数据。这些数据将提供给 Cloud Secure 进行分析。</block>
@@ -5626,32 +5602,8 @@
   <block id="5865d512ef44ce9af5c898e3838da358" category="summary">介绍了 Kubernetes 登录页面</block>
   <block id="e069a872dd6153588f1350dd2d1c2289" category="doc">Kubernetes 集群概述</block>
   <block id="d9ade118c1e64b59921edda821b7e351" category="paragraph">Cloud Insights Kubernetes 资源管理器是一款功能强大的工具，可用于显示 Kubernetes 集群的整体运行状况和使用情况，并可用于轻松深入了解调查领域。</block>
-  <block id="0ea12a27609fed8542336693697baa24" category="paragraph">单击 * 信息板 &gt; Kubernetes Explorer* 将打开 Kubernetes Cluster 概述页面。此概述页面包含各种概览信息。</block>
-  <block id="215baded9b6fa25efea9f80435bbd2c5" category="admonition">在此以及后续的 Kubernetes 资源管理器页面的各个部分中以蓝色显示的数字（例如，节点 /Pod 状态，命名空间计数等）是指向相关查询页面的链接，这些页面显示了这些数字背后的详细信息。</block>
-  <block id="f45d7f4b198d8518dee2fc076b30504b" category="inline-image-macro">Kubernetes 概述</block>
-  <block id="8d6e8c083b564c8aa17abf5c3fa47c4e" category="paragraph"><block ref="8d6e8c083b564c8aa17abf5c3fa47c4e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="496c303b21014573b96d315479efd37c" category="section-title">集群使用情况概述</block>
-  <block id="34ab9dcbffff4563653d7b920816a0b1" category="inline-image-macro">集群列表概述</block>
-  <block id="b86614ff44352dfd7c68b08040ccd30f" category="paragraph"><block ref="b86614ff44352dfd7c68b08040ccd30f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="805da12f17bb46c8370f35e1ec563d4c" category="paragraph">集群列表显示环境中每个集群的以下使用情况信息：</block>
-  <block id="07a57e9f5f30f1ff7e51e1e60c37ef3c" category="list-text">CPU ：使用中的总 CPU 容量百分比</block>
-  <block id="e7accbf7e404528eb22dd30b6c7dd0eb" category="list-text">Memory ：已用总内存的百分比</block>
-  <block id="8edffe2b242a5dc12970506737375d6e" category="list-text">storage ：使用中的总存储百分比</block>
-  <block id="c111d3787dd9237c96846985db0fbaf5" category="paragraph">您可以按以下任一因素对集群列表进行排序：</block>
-  <block id="715487e39938fd9522fbd2960e4e22e4" category="list-text">节点和 Pod 警报级别（默认）</block>
-  <block id="d6ed36bb2b00046e0edf3d24b526b7ad" category="list-text">集群名称</block>
-  <block id="68fa81b998d67f9c69a5d3c1b3d00cb2" category="list-text">节点数</block>
-  <block id="d9f8b756206a8b48892cbc933b59f7fd" category="list-text">计算利用率最高</block>
-  <block id="d7d604a3c988095c222ce26bd96c0bf1" category="list-text">计算利用率最低</block>
-  <block id="d1d54ae931174baedccda327f31b7de6" category="list-text">存储利用率最高</block>
-  <block id="a24487b554578f150522f68d8802c1cb" category="list-text">存储利用率最低</block>
   <block id="84a93a66c16a4163eea2b414b601e0ce" category="inline-link-macro">* 详细信息页面 *</block>
-  <block id="ac61d4df22f68d8ea1cc552d5ee1ab60" category="paragraph">单击集群名称将打开 <block ref="e6b61b13689c2840b60619df8bfe4051" category="inline-link-macro-rx"></block> 。</block>
-  <block id="20bb5856046b51fcd3f95a3130f443ac" category="section-title">节点和 Pod 状态</block>
-  <block id="6e793abe2db0b3a1a45549355f350f2d" category="paragraph"><block ref="6e793abe2db0b3a1a45549355f350f2d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13d28e8dfc702e3456e0767dff9a128a" category="section-title">命名空间</block>
-  <block id="fffac5e3e2269fa69215f1167f0dcb2f" category="paragraph">屏幕右侧列出了每个集群中使用的前三个命名空间。单击 * 全部 * 链接可查看集群的所有命名空间。</block>
-  <block id="e0d38e0eb9e189bb1ccae25e8b344c8e" category="paragraph"><block ref="e0d38e0eb9e189bb1ccae25e8b344c8e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7eb410d92e2a18ab21dc72d9c0d990b0" category="summary">查看已创建的查询</block>
   <block id="0a1aca0ce8e56ded0adb600f66ec2de7" category="doc">查看查询</block>
   <block id="1fc205cf7c624c62075df4662909d53d" category="paragraph">您可以查看查询以监控资产并更改查询显示资产相关数据的方式。</block>
@@ -6639,10 +6591,6 @@
   <block id="93a8152ce7cb1841a4bf2c531cae0884" category="paragraph">显示与基本资产的一个或多个性能指标相关性（百分比）较高的资产。</block>
   <block id="52e73b46b8c614c95e2d0e115e5ee54c" category="list-text">主要贡献者</block>
   <block id="9d5e6443d723a60535db4b6e588cd979" category="paragraph">显示对基本资产贡献（百分比）的资产。</block>
-  <block id="bb6c5ecbef13e567544e5a0068237b25" category="list-text">贪婪</block>
-  <block id="6c3bac24c8ca8af7b4c02e9947ae939b" category="paragraph">显示了通过共享主机，网络和存储等相同资源从资产中占用系统资源的资产。</block>
-  <block id="aa95669cd5732a57e8f6467705f06642" category="list-text">已降级</block>
-  <block id="f67699c23f776601fce199281a6e1781" category="paragraph">显示了由于此资产而耗尽系统资源的资产。</block>
   <block id="558ecf4e5cd54e65b8ebf521239fee01" category="section-title">专家视图指标定义</block>
   <block id="aeb25214a69e6c2dfeaae7a7033ddfe3" category="paragraph">资产页面的 "Expert View" 部分会根据为资产选择的时间段显示多个指标。每个指标都会显示在自己的性能图表中。您可以根据要查看的数据在图表中添加或删除指标和相关资产。您可以选择的指标因资产类型而异。</block>
   <block id="4dde0eee92994c516dd72b5548203582" category="cell">* 度量值 *</block>
@@ -7414,7 +7362,6 @@
   <block id="1928ab7a05e24c9e7bde67fb9a528d0d" category="paragraph">资产页面的摘要部分显示有关资产的常规信息，包括任何指标或性能策略是否为相关的发生原因。潜在问题区域用红色圆圈表示。</block>
   <block id="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="paragraph"><block ref="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="abfbd1f823b5763f9a41683ebc883036" category="list-text">* 警报表 * ：最多显示最后 1 ， 000 个警报。</block>
-  <block id="ea5b5a50c17a9a63f35695787f45c3e6" category="paragraph">Cloud Insights 的当前 Telegraf 版本为 * 。 1.19.3 * 。</block>
   <block id="0a41ae2c369ec6839d428c359a9fa6c3" category="cell">警报 * ：创建 / 修改 / 删除</block>
   <block id="856a71f1e469ce4d8cf0d9305027ea82" category="cell">警报 * ：查看</block>
   <block id="bd7396064bde19099b129313d4e4960b" category="paragraph">如果适用，您可以单击警报链接以查看与资产关联的警报和监控。</block>
@@ -7606,8 +7553,6 @@
   <block id="4cdcdb149afd3a4dfdaaf3ff86277a6b" category="list-text">* 已采取更正操作 * ：警报已建议更正操作。打开警报页面以查看这些内容。</block>
   <block id="9de47b26bb491f5ab145336bb77b8aa0" category="paragraph">如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。</block>
   <block id="c18e9bacb0ed35f6b26e407a261491be" category="paragraph">在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。</block>
-  <block id="763e7c73a838930a9b9e74b5d349cbd6" category="cell">运行以下任一许可版本的计算机： * CentOS （ 64 位）： 7.2 到 7.9 ， 8.1 到 8.4 * Debian （ 64 位）： 9 和 10 * Oracle Enterprise Linux （ 64 位）： 7.5 到 7.9 ， 8.1 到 8.4 * Red Hat Enterprise Linux （ 64 位）： 7.2 到 7.9 ， 8.1 到 8.4 * Ubuntu 服务器： 18.04 和 20.04 LTS 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
-  <block id="35d156c90b71a0fab57ae717b06aecd8" category="cell">运行以下许可版本之一的计算机： * Microsoft Windows 10 64 位 * Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="39785ac77a465811e3584e33640cbff4" category="paragraph">在信息板中，任何时间序列小工具（线，样条曲线，区域，堆积区），单值， 或 Gauge Widget 可用于根据您选择的指标构建表达式，并在一个图形中显示这些表达式的结果。以下示例使用表达式解决特定问题。在第一个示例中，我们希望将环境中所有存储资产的读取 IOPS 显示为总 IOPS 的百分比。第二个示例显示了环境中发生的 " 系统 " 或 " 开销 " IOPS ，即不直接从读取或写入数据中获取的 IOPS 。</block>
   <block id="295ae6b0d3f79982844cbe49616552f4" category="paragraph">您可以在表达式中使用变量（例如： _$VAR1 * 100_ ）</block>
   <block id="0f17f6019d7d24f40bc97f9856c0ef14" category="paragraph">要在表达式中使用变量，只需键入变量名称即可，例如 _$var1 * 100_ 。表达式只能使用数字变量。</block>
@@ -8071,7 +8016,6 @@
   <block id="ec9cf927d91c3ad7664fabdee6472d03" category="section-title">Kubernetes 命名空间详细信息页面</block>
   <block id="92093ab9ea8254ffd952bd6e9cfaff5f" category="paragraph">现在，您可以更好地探索 Kubernetes 环境，并为集群命名空间提供信息丰富的详细信息页面。命名空间详细信息页面提供了命名空间使用的所有资产的摘要，包括所有后端存储资源及其容量利用率。</block>
   <block id="393ec8728d04ca4c0c87b2259965e9be" category="paragraph"><block ref="393ec8728d04ca4c0c87b2259965e9be" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3de80a4099f2865b8078177e221120f1" category="paragraph">单击命名空间将打开命名空间详细信息页面。</block>
   <block id="e8488ef49f6dab9af961495fc93e60c3" category="summary">介绍了 Kubernetes 命名空间登录页面</block>
   <block id="096b06ed37fdb2ba92846987f8f7a8ed" category="paragraph">Kubernetes 命名空间详细信息页面汇总了命名空间使用的所有资产，包括所有后端存储资源及其容量利用率。</block>
   <block id="314f5a139733e879b0d731d8fdad57ee" category="paragraph">单击任何 Kubernetes Explorer 页面上的命名空间链接将打开该命名空间的详细信息页面。</block>
@@ -8796,7 +8740,6 @@
   <block id="f06798e708a78e76d30364617ea53340" category="paragraph">Cloud Insights 以_Preview_的方式突出显示了新特性和功能。预览功能可在有限的环境中使用、也可在有限的容量下使用。</block>
   <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">如果您希望预览其中一个或多个功能，请联系您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="963905e220923605f4c2bdc8e3d98f6d" category="paragraph">以下是预览版中当前的一些功能：</block>
-  <block id="6e1effcb952ada801a257429342ccd39" category="cell">Cloud Insights 可以预测每个受监控内部卷和卷的容量用尽前的天数。此值有助于显著降低中断风险。在查询、监控器或信息板中使用_timeToFull.Total_和_timeToFull.ConfidenceInterval_计数器。</block>
   <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">限制用户访问自动响应操作</block>
   <block id="f763810a8ec0d5862e0f288795932956" category="cell">检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问（完整块或设置为只读访问）来阻止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">通过 " 受压力的共享资源 " 洞察力，您可以确定： - 由于一个或多个工作负载的高需求而面临压力的共享存储资源 - 共享资源上要求苛刻且受影响的工作负载<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
@@ -8931,4 +8874,63 @@
   <block id="23da8c24c0f52acdf7f6f9c4a08997c8" category="paragraph">Cloud Insights 使用 <block ref="eed175bcf32f20f81ea47b9c982c2797" category="inline-link-macro-rx"></block> 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。</block>
   <block id="dc2dd49825ec74e1ca580d41456c912b" category="paragraph"><block ref="dc2dd49825ec74e1ca580d41456c912b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c1f82bcb121a82434f4244621860e18e" category="cell">集群或SVM管理IP地址(取决于SVM收集器配置)</block>
+  <block id="a1801a3f5b06f28912e5d6d300bf2760" category="paragraph">单击*信息板&gt; Kubernetes Explorer*将打开Kubernetes集群列表页面。此概述页面包含您环境中的Kubernetes集群表。</block>
+  <block id="33e8a05c91ebabc5e5949786e43cd0d4" category="inline-image-macro">Kubernetes列表页面</block>
+  <block id="c05ca31df34e47f888e486bfaeb3d6a2" category="paragraph"><block ref="c05ca31df34e47f888e486bfaeb3d6a2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3bce0c8bf7435d97c12abc9e1e001859" category="section-title">集群列表</block>
+  <block id="4057c9e17c94439b3336385760492522" category="paragraph">集群列表显示环境中每个集群的以下信息：</block>
+  <block id="df50bf9661097ebc97fcef0583f22715" category="list-text">集群*名称*。单击集群名称将打开 <block ref="e6b61b13689c2840b60619df8bfe4051" category="inline-link-macro-rx"></block> 。</block>
+  <block id="8c225c4c4401845b3bd94174e08f0e42" category="list-text">*饱和*百分比。整体饱和是CPU、内存或存储饱和的最高值。</block>
+  <block id="d451db04e9e40d35803034e07a276657" category="list-text">集群中的*节点*数量。单击此编号将打开节点列表页面。</block>
+  <block id="82803c7a526739de20fc24c17e739d7c" category="list-text">集群中的* Pod *数量。单击此编号将打开Pod列表页面。</block>
+  <block id="bed3b3102569672060faa59f92fbb130" category="list-text">集群中的*命名空间*数量。单击此数字将打开"命名空间"列表页面。</block>
+  <block id="12a38026906d3d3a51a3538b98e0d002" category="list-text">集群中的*工作负载*数量。单击此数字将打开工作负载列表页面。</block>
+  <block id="abd68946270bbe5e8dd65bc248dfb347" category="cell">预测达到全满时间</block>
+  <block id="9b42a670fcbdc4d8fa72c247b7af5785" category="cell">Cloud Insights 可以预测以下对象的容量用尽前的天数：内部卷存储存储存储池卷这些预测值有助于显著降低中断风险。在查询、监控器或信息板中使用_timeToFull.Total_和_timeToFull.ConfidenceInterval_计数器。</block>
+  <block id="dfeced9105a52cdc4ad66bf5d6ef9e5f" category="cell">运行以下任一许可版本的计算机：* CentOS (64位)：7.2到7.9、Stream 8、Stream 9 * Debian (64位)：9和10 * Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4 * Red Hat Enterprise Linux (64位)： 7.2到7.9、8.1到8.4 * Ubuntu服务器：18.04和20.04 LTS此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
+  <block id="52fe0ed84edd736c538f6ab44e4a643f" category="cell">运行以下许可版本之一的计算机： * Microsoft Windows 10 64位* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
+  <block id="5878d8d726a0f6915f98c3ad70765e41" category="paragraph">Cloud Insights 的当前Telegraf版本为*。1.22.3*。</block>
+  <block id="64643b4abc81cdc6d03a96846188e46e" category="list-text">工作负载争论</block>
+  <block id="8160f36882be54ea94b2656ab98ca110" category="paragraph">显示影响或受主机、网络和存储等其他共享资源影响的资产。这些资源有时称为_greedys_和_degraded_resources。</block>
+  <block id="95eafe7994082a98ef565bc49b0bd0bc" category="section-title">2022年6月</block>
+  <block id="f1a19c84617286ffae10ff6a1d32f2bc" category="section-title">Kubernetes集群饱和及其他详细信息</block>
+  <block id="18c416489bffa32183ac9b677247149e" category="paragraph">Cloud Insights 通过改进的集群详细信息页面、提供饱和详细信息以及更清晰的命名空间和工作负载视图、让您比以往任何时候都更轻松地探索Kubernetes环境。</block>
+  <block id="656b8508960318c503979ad7495d9568" category="inline-image-macro">集群详细信息页面</block>
+  <block id="4ff7187de1db51fb0f4fde4076072ee1" category="paragraph"><block ref="4ff7187de1db51fb0f4fde4076072ee1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0765caa0af74f32ba608b509fa33a627" category="paragraph">除了节点、Pod、命名空间和工作负载计数之外、您还可以通过集群列表页面快速查看饱和情况：</block>
+  <block id="0348dea23766cd47c2feb3b0d9d034e0" category="inline-image-macro">显示饱和数的集群列表页面</block>
+  <block id="6461362766d8aaa5c0248617322c4dd1" category="paragraph"><block ref="6461362766d8aaa5c0248617322c4dd1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f387a81f25d0852180214e3532cd69b7" category="section-title">您的Kubernetes集群有多旧？</block>
+  <block id="457e2716710d35dcf5c797476aec4453" category="paragraph">您的集群是刚刚起步、还是经历了漫长的数字化生活？已将_age_添加为为Kubernetes节点收集的时间指标。</block>
+  <block id="6b7be3d731a7fe9ca970c889034e1dfb" category="inline-image-macro">显示期限的Kubernetes节点表(以天为单位)</block>
+  <block id="d50b69722bf7ada9440fb1892ac9282e" category="paragraph"><block ref="d50b69722bf7ada9440fb1892ac9282e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f81641a704754589795fe3a4d4130ea9" category="section-title">容量全满时间预测</block>
+  <block id="8e6160832d0b0d367dcc2b7cc6e3f821" category="paragraph">Cloud Insights 提供了一个信息板、用于预测每个受监控内部卷的容量用尽前的天数。这些值有助于显著降低中断风险。</block>
+  <block id="5a1ff4999319d15d3b329a148ce830e2" category="inline-image-macro">内部卷TTF预测信息板</block>
+  <block id="2b8d5e66c38238b579c8a7f9a4f0deb8" category="paragraph"><block ref="2b8d5e66c38238b579c8a7f9a4f0deb8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d0288e56a716095eb8a98c5c3943c54" category="paragraph">存储、存储池和卷也可以使用TTF计数器。请始终关注此空间、以获取这些对象的其他信息板。</block>
+  <block id="70bda96e0227797cb8002e9bb8d9880d" category="paragraph">请注意、"达到全时预测"正在从_Preview_开始、并将推广到所有客户。</block>
+  <block id="c734c78a6282b21c743d2e94a2fbba82" category="section-title">我的环境发生了哪些变化？</block>
+  <block id="c126f3a900297855b1ec4bc88198f155" category="paragraph">可以在日志资源管理器中查看ONTAP 更改日志条目。</block>
+  <block id="4c6ad175a17ca3e0294c095f93eefebe" category="inline-image-macro">此图显示了更改日志条目示例</block>
+  <block id="71f092ae4722c5826712794003f7d4b8" category="paragraph"><block ref="71f092ae4722c5826712794003f7d4b8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="47c2df3ac4f5eccb5b1440d704677b4d" category="inline-link-macro">已支持</block>
+  <block id="9d6192c5f44176e1b049c0d24bde96db" category="paragraph">除了这些操作系统之外、Cloud Insights 采集单元还支持以下操作系统 <block ref="e27610920cf83f6a88b088882e8c727e" category="inline-link-macro-rx"></block>：</block>
+  <block id="8ff4902cc9377035eb3a8dc9fc480e10" category="list-text">CentOS流9</block>
+  <block id="3ffd22c07b48a1c76b76f941ad1cad96" category="list-text">Windows 2022</block>
+  <block id="c41fe2272c9ff38bed21d6e67f9945cc" category="paragraph">用于载入电报集成数据的代理已更新到版本*。1.22.3*、并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 <block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block> 文档。先前版本的代理将继续运行，无需用户操作。</block>
+  <block id="3398e3f6b2ecd1ae749962d864235c59" category="paragraph">Kubernetes集群详细信息页面显示了Kubernetes集群的详细概述。</block>
+  <block id="91babced605f49db75040cb5feaa6082" category="section-title">命名空间、节点和Pod计数</block>
+  <block id="91fa5656598f458704b9e697bf298dfd" category="paragraph">页面顶部的计数显示了集群中的命名空间、节点和Pod总数、以及当前正在发出警报且处于待定状态的弹出消息数。</block>
+  <block id="bbda26214d851fa5314ad7efb7b80f2f" category="section-title">共享资源和饱和</block>
+  <block id="84bd7a2a103c477b4fe611cea9b09adf" category="paragraph">详细信息页面右上角是您的集群饱和当前百分比以及显示一段时间内的最新趋势的图形。集群饱和是指每个时间点的最高CPU、内存或存储饱和。</block>
+  <block id="ef3c2a7ac487c69bf023b0a642949390" category="paragraph">在此下方、页面默认显示*共享资源*使用情况、并提供CPU、内存和存储选项卡。每个选项卡都会显示一段时间内的饱和百分比和趋势、以及其他使用情况详细信息。对于存储、显示的值是后端和文件系统饱和的较大值、而这两个值是单独计算的。</block>
+  <block id="66a1f02be46b4ca30febbe3c115a1dc1" category="paragraph">使用率最高的设备显示在底部的表中。单击任何链接以浏览这些设备。</block>
+  <block id="15cf649caaa7ee8626f6c90fd74178ac" category="paragraph">命名空间选项卡显示Kubernetes环境中所有命名空间的列表、其中显示了CPU和内存使用情况以及每个命名空间中的工作负载计数。单击名称链接以浏览每个命名空间。</block>
+  <block id="4bbafa72b08fc9d20496406c7fa9ba65" category="inline-image-macro">K8s环境中的当前命名空间列表</block>
+  <block id="07d556c0f49399176a2bae14f135c098" category="paragraph"><block ref="07d556c0f49399176a2bae14f135c098" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="35084d885dea7b061e6894c1cf3036d9" category="section-title">工作负载</block>
+  <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同样、工作负载选项卡会显示每个命名空间中的工作负载列表、再次显示CPU和内存使用情况。单击命名空间链接可深入了解每个。</block>
+  <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">内存和 CPU 量表显示三种颜色，因为它们显示的 _used_关系 到 _allocatable capacity_ 和 _total capacity_ 。</block>
 </blocks>
