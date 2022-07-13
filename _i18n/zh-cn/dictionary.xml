@@ -7857,7 +7857,6 @@
   <block id="f4cc1c9a55de42a2dbb9d5aa67b0ad18" category="paragraph">此时将在当前文件夹中创建 1000 个文件。</block>
   <block id="f9c38f6218e4bf4132fd48e2dd8413c2" category="list-text">重新启用数据收集器</block>
   <block id="123d317d6377a1184be4f3542b76e7fc" category="paragraph">如果您在步骤 1 中禁用了数据收集器，请编辑该数据收集器，输入正确的密码并保存。确保数据收集器重新处于运行状态。</block>
-  <block id="9de07b55b73b4474c7f2f607db372035" category="cell">运行以下任一许可版本的计算机： Red Hat Enterprise Linux 7.x ， 8.x 64 位 CentOS 7.x 64 位 CentOS 8 流此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="d867bfc5a8d8ee48bd2e10f3615136cf" category="cell">设置 ONTAP 发送缓冲区大小</block>
   <block id="b473afd1a1a7f9aa85950e270c33864e" category="cell">设置 ONTAP Fpolicy 发送缓冲区大小。如果使用的是 9.8p7 之前的 ONTAP 版本，并且显示了性能问题描述，则可以更改 ONTAP 发送缓冲区大小以提高 ONTAP 性能。如果您未看到此选项，但希望了解此选项，请联系 NetApp 支持部门。</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">ONTAP 9.4 及更高版本支持 FlexGroup</block>
@@ -8933,4 +8932,5 @@
   <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同样、工作负载选项卡会显示每个命名空间中的工作负载列表、再次显示CPU和内存使用情况。单击命名空间链接可深入了解每个。</block>
   <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">内存和 CPU 量表显示三种颜色，因为它们显示的 _used_关系 到 _allocatable capacity_ 和 _total capacity_ 。</block>
+  <block id="5543c4e9358604e03ae0e327a62bb03f" category="cell">运行以下任一许可版本的计算机：Red Hat Enterprise Linux 7.x、8.x 64位CentOS 7.x 64位CentOS 8 Stream Ubuntu 20和22 64位此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
 </blocks>
