@@ -8278,7 +8278,6 @@
   <block id="6a69ffe6b718764ce315d48cbbb46266" category="paragraph">" 使用情况管理 " 选项卡简要显示了受管单元的使用情况，环境中安装的数据收集器列表以及每个受管单元的细分情况。</block>
   <block id="17290f60a5d0cd57f090b90688a390a3" category="admonition">受管单元的总和可能与摘要部分中的数据收集器计数略有不同。这是因为受管单元计数将向上取整为最接近的受管单元。数据收集器列表中这些数字的总和可能略高于状态部分中的总受管单元数。摘要部分反映了您的订阅的实际受管单元数。</block>
   <block id="844a228971d8fd3d04326401af09bab1" category="paragraph">如果使用量接近或超过您的订阅量，您可以单击 " 三个点 " 菜单并选择 _Delete_ 来删除此列表中的数据收集器。</block>
-  <block id="88ae2467b83e5d292b18e19eaae1852d" category="list-text">Kubernetes 1.17 或更高版本支持安装 NetApp Kubernetes 监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。</block>
   <block id="36098c0d1c3de71d8727b1543bace633" category="section-title">2022 年 4 月</block>
   <block id="259a90b9586b985b7c26543c1f883472" category="section-title">分享您的反馈！</block>
   <block id="42f99e1fd22e64a04ef5b09421665517" category="inline-link-macro">* 立即注册 *</block>
@@ -8932,5 +8931,6 @@
   <block id="fa506eba51d8632b3b598d5694c75a76" category="paragraph">同样、工作负载选项卡会显示每个命名空间中的工作负载列表、再次显示CPU和内存使用情况。单击命名空间链接可深入了解每个。</block>
   <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">内存和 CPU 量表显示三种颜色，因为它们显示的 _used_关系 到 _allocatable capacity_ 和 _total capacity_ 。</block>
-  <block id="5543c4e9358604e03ae0e327a62bb03f" category="cell">运行以下任一许可版本的计算机：Red Hat Enterprise Linux 7.x、8.x 64位CentOS 7.x 64位CentOS 8 Stream Ubuntu 20和22 64位此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
+  <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">运行以下许可版本之一的计算机：Red Hat Enterprise Linux 7.x、8.x 64位CentOS 7.x 64位CentOS 8 Stream Ubuntu 20到22 64位此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
+  <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">Kubernetes 1.19或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。</block>
 </blocks>

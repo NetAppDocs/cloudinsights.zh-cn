@@ -68,7 +68,7 @@ Kubernetes 提供了两种数据收集方式：
 image:Kubernetes_Operator_Tile_Choices.png["Kubernetes 安装选项"]
 
 .前提条件：
-* Kubernetes 1.17 或更高版本支持安装 NetApp Kubernetes 监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。
+* Kubernetes 1.19或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。
 
 
 * 如果您运行的是 OpenShift 4.6 - 4.8 ，则除了确保满足这些前提条件之外，还必须遵循下面的 * OpenShift 指令 * 。
