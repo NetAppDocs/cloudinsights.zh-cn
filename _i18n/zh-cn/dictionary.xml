@@ -8933,4 +8933,5 @@
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">内存和 CPU 量表显示三种颜色，因为它们显示的 _used_关系 到 _allocatable capacity_ 和 _total capacity_ 。</block>
   <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">运行以下许可版本之一的计算机：Red Hat Enterprise Linux 7.x、8.x 64位CentOS 7.x 64位CentOS 8 Stream Ubuntu 20到22 64位此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
   <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">Kubernetes 1.19或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。</block>
+  <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">运行ARM64架构的节点不支持NetApp Kubernetes监控操作员及其依赖项(电报、Kube-state-metrics、fluentbit等)。</block>
 </blocks>
