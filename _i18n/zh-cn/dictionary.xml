@@ -8934,21 +8934,16 @@
   <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">Kubernetes 1.19或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。</block>
   <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">运行ARM64架构的节点不支持NetApp Kubernetes监控操作员及其依赖项(电报、Kube-state-metrics、fluentbit等)。</block>
   <block id="99449a8a20c724ea6cd587ff41d0672f" category="list-text">* Cohesity SmartFiles*—此基于REST API的收集器将获取Cohesity集群、发现"视图"(作为CI内部卷)、各个节点以及收集性能指标。</block>
-  <block id="f4801fbbe359436f17e47ed8fb32d603" category="paragraph">边栏：边栏perMalink：task_dc_cohesity_smartfiles.html</block>
-  <block id="8616d2c04fe61253f00cfdb24f24a2ad" category="paragraph">关键字：数据收集器、数据不稳定性</block>
-  <block id="14603cff16307cd8ca97c19ecdee7b3d" category="paragraph">摘要：配置Cohesity SmartFiles数据收集器。——</block>
-  <block id="02e9f49555c20d5a8f3ca8fb679dc061" category="paragraph">= Cohesity SmartFiles数据收集器</block>
   <block id="41039a4248a1480d7c02c60628a3dcf5" category="paragraph">此基于REST API的收集器将获取一个Cohesity集群、发现"视图"(即Cloud Insights 内部卷)、各种节点以及收集性能指标。</block>
-  <block id="408d476befad17be036c6ad223d61bf7" category="paragraph">=配置</block>
   <block id="b64d455dbfeeda0e192f63a2223b3cc0" category="cell">Cohesity集群IP</block>
   <block id="20d32ea251aaa415b54e00ff841f25dc" category="cell">Cohesity集群的IP地址</block>
   <block id="55e588d1f72745ccdd93d782b1efdea0" category="cell">Cohesity集群的用户名</block>
   <block id="28068b4914fd700011975ba0b1b872b8" category="cell">用于Cohesity集群的密码</block>
-  <block id="491c67c11aa49801e2c84f994169a0c0" category="paragraph">=高级配置</block>
   <block id="1d5447258f93b47e09976cc68c7f86d9" category="cell">用于与Cohesity集群进行TCP通信的端口</block>
   <block id="0896c34e1c20bc67d7328f53f406276d" category="cell">性能轮询之间的时间间隔。默认值为900秒。</block>
-  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=故障排除</block>
   <block id="fed2b89570c5c27f515afdba0f485a51" category="inline-link-macro">Cohesity SmartFiles</block>
   <block id="114e1ad704707526c811f7952ae68dac" category="cell"><block ref="114e1ad704707526c811f7952ae68dac" category="inline-link-macro-rx"></block></block>
   <block id="dc9945292fe1d6a701729e7b128ed51c" category="sidebar">Cohesity SmartfFiles</block>
+  <block id="879c5e9016d012ef4ef799fcd3d67e77" category="summary">配置Cohesity SmartFiles数据收集器。</block>
+  <block id="0bf422dd8c3b545a1629a88c7196ec4f" category="doc">Cohesity SmartFiles数据收集器</block>
 </blocks>
