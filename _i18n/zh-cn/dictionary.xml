@@ -8948,4 +8948,7 @@
   <block id="1d5447258f93b47e09976cc68c7f86d9" category="cell">用于与Cohesity集群进行TCP通信的端口</block>
   <block id="0896c34e1c20bc67d7328f53f406276d" category="cell">性能轮询之间的时间间隔。默认值为900秒。</block>
   <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=故障排除</block>
+  <block id="fed2b89570c5c27f515afdba0f485a51" category="inline-link-macro">Cohesity SmartFiles</block>
+  <block id="114e1ad704707526c811f7952ae68dac" category="cell"><block ref="114e1ad704707526c811f7952ae68dac" category="inline-link-macro-rx"></block></block>
+  <block id="dc9945292fe1d6a701729e7b128ed51c" category="sidebar">Cohesity SmartfFiles</block>
 </blocks>
