@@ -218,7 +218,7 @@ Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如�
 
 === 新的 Data Collector
 
-* * Cohesity Smart Files* —此基于 REST API 的收集器将获取 Cohesity 集群，发现 " 视图 " （作为 CI 内部卷），各个节点以及收集性能指标。
+* * Cohesity SmartFiles*—此基于REST API的收集器将获取Cohesity集群、发现"视图"(作为CI内部卷)、各个节点以及收集性能指标。
 
 
 
