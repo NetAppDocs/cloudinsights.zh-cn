@@ -35,17 +35,17 @@ image:DockerDCConfigLinux.png["Docker 配置"]
 
 
 
-==== 兼容性
+=== 兼容性
 
 配置是根据 Docker 1.12.6 版开发的。
 
 
 
-==== 设置
+=== 设置
 
 
 
-===== 通过 UNIX 套接字访问 Docker
+=== 通过 UNIX 套接字访问 Docker
 
 如果 Telegraf 代理正在 BareMetal 上运行，请运行以下命令将此 Telegraf Unix 用户添加到 Docker Unix 组：
 
@@ -74,7 +74,7 @@ mountPath: /var/run/docker.sock
 
 
 
-===== 通过 TCP 端点访问 Docker
+=== 通过 TCP 端点访问 Docker
 
 默认情况下， Docker 使用端口 2375 进行未加密访问，而使用端口 2376 进行加密访问。
 

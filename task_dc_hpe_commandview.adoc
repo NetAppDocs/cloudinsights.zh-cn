@@ -157,7 +157,7 @@ Cloud Insights 从 HP Enterprise Command View 数据收集器采集以下清单�
 
 
 
-==== 清单
+=== 清单
 
 [cols="2*"]
 |===
@@ -174,7 +174,7 @@ Cloud Insights 从 HP Enterprise Command View 数据收集器采集以下清单�
 |===
 
 
-==== 性能
+=== 性能
 
 [cols="2*"]
 |===

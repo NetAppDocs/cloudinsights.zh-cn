@@ -15,7 +15,7 @@ image:Device_Resolution_IP.png["IP 设备解析"]
 
 
 
-==== 手动添加 IP 设备
+== 手动添加 IP 设备
 
 您可以使用 "IP Identify" 屏幕中提供的手动添加功能将 IP 设备手动添加到 Cloud Insights 。
 
@@ -34,7 +34,7 @@ image:Device_Resolution_IP.png["IP 设备解析"]
 
 
 
-==== 从 .CSV 文件导入 IP 设备标识
+== 从 .CSV 文件导入 IP 设备标识
 
 您可以使用 .CSV 文件中的设备标识列表将 IP 设备标识手动导入到设备解析功能中。
 
@@ -61,7 +61,7 @@ NOTE: 作为最佳实践，建议先将 IP Address Identify 信息导出到 .CSV
 
 
 
-==== 将 IP 设备标识导出到 .CSV 文件
+== 将 IP 设备标识导出到 .CSV 文件
 
 您可以通过 Cloud Insights 设备解析功能将现有 IP 设备标识导出到 .CSV 文件。您可能希望导出设备标识，以便对其进行修改，然后将其导回 Cloud Insights ，在此可以使用它来标识与导出标识最初匹配的设备类似的设备。
 

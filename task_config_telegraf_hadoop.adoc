@@ -45,17 +45,17 @@ Hadoop 插件基于此电报的 JOLokia 插件。例如，需要从所有 Hadoop
 
 
 
-==== 兼容性
+=== 兼容性
 
 此配置是根据 Hadoop 2.9.2 版开发的。
 
 
 
-==== 设置
+=== 设置
 
 
 
-===== JOLokia Agent Jar
+==== JOLokia Agent Jar
 
 对于所有单个组件，必须下载一个版本的 jarokia 代理 JAR 文件。测试的版本为 link:https://jolokia.org/download.html["JOLokia 代理 1.6.0"]。
 
@@ -63,7 +63,7 @@ Hadoop 插件基于此电报的 JOLokia 插件。例如，需要从所有 Hadoop
 
 
 
-===== NameNode
+==== NameNode
 
 要配置 NameNode 以公开此 JOLokia API ，您可以在 <Hadoot_home>/etc/Hadoop/Hadoop-env.sh 中设置以下内容：
 
@@ -74,7 +74,7 @@ You can choose a different port for JMX (8000 above) and Jolokia (7800). If you 
 ----
 
 
-===== 二级 NameNode
+==== 二级 NameNode
 
 要配置二级 NameNode 以公开此 JOLokia API ，您可以在 <Hadoot_home>/etc/Hadoop/Hadoop-env.sh 中设置以下内容：
 
@@ -85,7 +85,7 @@ You can choose a different port for JMX (8002 above) and Jolokia (7802). If you 
 ----
 
 
-===== DataNode
+==== DataNode
 
 要将 DataNode 配置为公开此 Jolokia API ，您可以在 <Hadoot_home>/etc/Hadoop/Hadoop-env.sh 中设置以下内容：
 
@@ -96,7 +96,7 @@ You can choose a different port for JMX (8001 above) and Jolokia (7801). If you 
 ----
 
 
-===== ResourceManager
+==== ResourceManager
 
 要将 ResourceManager 配置为公开此 Jolokia API ，您可以在 <Hadoot_home>/etc/Hadoop/Hadoop-env.sh 中设置以下内容：
 
@@ -107,7 +107,7 @@ You can choose a different port for JMX (8003 above) and Jolokia (7803). If you 
 ----
 
 
-===== NodeManager
+==== NodeManager
 
 要配置 NodeManager 以公开此 JOLokia API ，您可以在 <Hadoot_home>/etc/Hadoop/Hadoop-env.sh 中设置以下内容：
 
@@ -118,7 +118,7 @@ You can choose a different port for JMX (8004 above) and Jolokia (7804). If you 
 ----
 
 
-===== JobHistoryServer
+==== JobHistoryServer
 
 要将 JobHistoryServer 配置为公开 Joyokia API ，您可以在 <Hadoot_home>/etc/Hadoop/Hadoop-env.sh 中设置以下内容：
 

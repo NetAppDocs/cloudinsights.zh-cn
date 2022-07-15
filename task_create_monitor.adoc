@@ -5,17 +5,7 @@ keywords: monitors, alerts, log, metric, system-defined, system, metric,
 summary: 创建监控器，以便针对性能或清单阈值以及指标或日志条件发出警报。 
 ---
 = 向监控器发出警报
-:toc: macro
-:hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -76,7 +66,7 @@ TIP: 要创建多条件监控器（例如， IOPS > X 和延迟 > Y ），请将
 
 
 
-===== 定义监控器的条件。
+==== 定义监控器的条件。
 
 . 选择要监控的对象和指标后，设置警告级别和 / 或严重级别阈值。
 . 对于 _Warning_ 级别，为我们的示例输入 200 。指示此警告级别的虚线显示在示例图中。
@@ -253,13 +243,6 @@ NOTE: 从组中删除监控器不会从 Cloud Insights 中删除该监控器。�
 使用同一菜单重命名或删除组。删除组不会从 Cloud Insights 中删除这些监控器；它们在 _all monitors_中 仍然可用。
 
 image:Monitors_PauseGroup.png["暂停组"]
-
-默认情况下会显示两个组：
-
-* 所有显示器 * 列出所有显示器。
-* * 自定义监控 * 仅列出用户创建的监控器。
-* 只有当系统已暂停监控器时，才会显示 * 已暂停监控器 * 。
-
 
 
 

@@ -36,17 +36,17 @@ JobManager ： Flink 主系统。协调一系列 TaskManager 。在高可用性�
 
 
 
-==== 兼容性
+=== 兼容性
 
 此配置是根据 Flink 1.0.0 版开发的。
 
 
 
-==== 设置
+=== 设置
 
 
 
-===== JOLokia Agent Jar
+==== JOLokia Agent Jar
 
 对于所有单个组件，必须下载一个版本的 jarokia 代理 JAR 文件。测试的版本为 link:https://jolokia.org/download.html["JOLokia 代理 1.6.0"]。
 
@@ -54,7 +54,7 @@ JobManager ： Flink 主系统。协调一系列 TaskManager 。在高可用性�
 
 
 
-===== JobManager
+==== JobManager
 
 要将 JobManager 配置为公开此 Jobokia API ，您可以在节点上设置以下环境变量，然后重新启动 JobManager ：
 
@@ -63,7 +63,7 @@ JobManager ： Flink 主系统。协调一系列 TaskManager 。在高可用性�
 
 
 
-===== TaskManager
+==== TaskManager
 
 要配置 TaskManager 以公开此 JOLokia API ，您可以在节点上设置以下环境变量，然后重新启动 TaskManager ：
 

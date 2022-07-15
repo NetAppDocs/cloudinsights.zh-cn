@@ -86,7 +86,7 @@ Cloud Insights 从 Fujitsu Eternus 存储获取以下清单信息。对于 Cloud
 
 
 
-==== 清单
+=== 清单
 
 [cols="2*"]
 |===

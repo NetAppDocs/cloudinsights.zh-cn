@@ -95,7 +95,7 @@ Cloud Insights 使用 Pure Storage FlashArray 数据收集器收集清单和性�
 
 
 
-==== 清单
+=== 清单
 
 [cols="2*"]
 |===

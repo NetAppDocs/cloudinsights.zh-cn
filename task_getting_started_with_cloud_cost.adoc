@@ -27,7 +27,7 @@ NOTE: 云成本仅适用于美国地区 Cloud Insights 环境，并且只能为�
 
 
 
-==== 设置云成本
+== 设置云成本
 
 当您登录到 Cloud Insights 并首次单击 * 云成本 * 菜单项时，系统将显示欢迎屏幕并提示您开始设置云成本。
 
@@ -53,13 +53,13 @@ image:Cloud_Cost_Example_Dashboard.png["云成本示例信息板"]
 
 
 
-=== 有关云成本的更多信息
+== 有关云成本的更多信息
 
 云成本可将您的 Cloud Insights 环境与的 Cloud Analyzer 功能连接起来 link:https://docs.spot.io/cloud-analyzer/["NetApp 的专有解决方案"]，可为 Cloud Insights 提供与您的云成本数据最相关的视图。通过单击云成本信息板右上角的 _Get Full Analysis_ 链接，您可以在 Spot 中打开完整的 Cloud Analyzer 信息板。全面分析可能会提供更多数据和深入分析，以便进一步了解您的云支出。
 
 
 
-=== 故障排除
+== 故障排除
 
 遇到问题时要尝试的一些操作：
 
