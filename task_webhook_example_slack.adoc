@@ -16,7 +16,7 @@ NOTE: 此页面引用第三方说明，可能会有所更改。请参见 link:ht
 
 
 
-=== 可宽延时间示例：
+== 可宽延时间示例：
 
 * 转至 https://api.slack.com/apps[] 并创建新应用程序为其指定一个有意义的名称，然后选择 Slack Workspace 。
 +
@@ -31,7 +31,7 @@ image:Webhook_Slack_Config.jpg["Slack Webhook URL"]
 
 
 
-=== 创建 Cloud Insights Webhook ：
+== 创建 Cloud Insights Webhook ：
 
 . 在 Cloud Insights 中，导航到 * 管理员 > 通知 * ，然后选择 * Webhook* 选项卡。单击 * + Webhook* 以创建新的 webhook 。
 . 为 webhook 指定一个有意义的名称，例如 "slack Webhook" 。
@@ -43,7 +43,7 @@ image:Webhooks-Slack_example.png["Slack webhook 模板"]
 
 
 
-=== 通过 Webhook 发送通知
+== 通过 Webhook 发送通知
 
 要通过 webhook 通知事件，请在 Cloud Insights 中导航到 * 警报 > 监控 * ，然后单击 * + 监控 * 以创建新的 link:task_create_monitor.html["监控"]。
 

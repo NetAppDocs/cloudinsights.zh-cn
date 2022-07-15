@@ -54,7 +54,7 @@ keywords: AU, acquisition unit, trioubleshooting
 |===
 
 
-=== 有关 Proxies 和防火墙的注意事项
+== 有关 Proxies 和防火墙的注意事项
 
 如果您的组织需要使用代理来访问 Internet ，则您可能需要了解您的组织的代理行为并寻求某些例外情况， Cloud Insights 才能正常工作。请记住以下几点：
 
@@ -76,7 +76,7 @@ keywords: AU, acquisition unit, trioubleshooting
 
 
 
-==== 查看代理端点
+=== 查看代理端点
 
 在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 > 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。
 
@@ -84,7 +84,7 @@ image:ProxyEndpoints_NewTable.png["代理端点表"]
 
 
 
-=== 资源
+== 资源
 
 有关其他故障排除提示，请参见 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights["NetApp 知识库"] （需要支持部门登录）。
 

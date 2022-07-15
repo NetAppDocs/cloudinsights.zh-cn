@@ -16,7 +16,7 @@ NOTE: 此页面引用第三方说明，可能会有所更改。请参见 link:ht
 
 
 
-=== 不和设置：
+== 不和设置：
 
 * 在不和的情况下，选择服务器，在文本通道下，选择编辑通道（齿轮图标）
 * 选择 * 集成 > 查看 Webhook* ，然后单击 * 新建 Webhook*
@@ -25,7 +25,7 @@ NOTE: 此页面引用第三方说明，可能会有所更改。请参见 link:ht
 
 
 
-=== 创建 Cloud Insights Webhook ：
+== 创建 Cloud Insights Webhook ：
 
 . 在 Cloud Insights 中，导航到 * 管理员 > 通知 * ，然后选择 * Webhook* 选项卡。单击 * + Webhook* 以创建新的 webhook 。
 . 为网络挂钩指定一个有意义的名称，例如 " 不和 " 。
@@ -40,7 +40,7 @@ NOTE: 要测试 webhook ，请临时将消息正文中的 URL 值替换为任何
 
 
 
-=== 通过 Webhook 发送通知
+== 通过 Webhook 发送通知
 
 要通过 webhook 通知事件，请在 Cloud Insights 中导航到 * 警报 > 监控 * ，然后单击 * + 监控 * 以创建新的 link:task_create_monitor.html["监控"]。
 

@@ -16,7 +16,7 @@ NOTE: 此页面引用第三方说明，可能会有所更改。请参见 link:ht
 
 
 
-=== PagerDty 设置：
+== PagerDty 设置：
 
 . 在 PagerDty 中，导航到 * 服务 > 服务目录 * ，然后单击 * + 新服务 * button​
 . 在 _Name_ 中输入，然后选择 _Use our API directli_ 。单击 _Add Service_ 。
@@ -34,7 +34,7 @@ image:Webhooks_PagerDutyScreen2.png["页面加载屏幕"]
 
 
 
-=== 创建 Cloud Insights Webhook ：
+== 创建 Cloud Insights Webhook ：
 
 . 在 Cloud Insights 中，导航到 * 管理员 > 通知 * ，然后选择 * Webhook* 选项卡。单击 * + Webhook* 以创建新的 webhook 。
 . 为 webhook 指定一个有意义的名称，例如 "PagerDty Trigger" 。您将使用此网络钩来处理严重级别和警告级别的事件。
@@ -51,7 +51,7 @@ image:Webhooks_Custom_Secret_Routing_Key.png["设置路由密钥"]
 
 
 
-=== PagerDty 到 Cloud Insights 字段映射
+== PagerDty 到 Cloud Insights 字段映射
 
 下表和图显示了 PagerDty 和 Cloud Insights 之间的字段映射：
 
@@ -78,7 +78,7 @@ image:Webhooks-PagerDuty_Fields.png["CI 中的 PagerDty 字段"]
 
 
 
-=== 通过 Webhook 发送通知
+== 通过 Webhook 发送通知
 
 要通过 webhook 通知事件，请在 Cloud Insights 中导航到 * 警报 > 监控 * ，然后单击 * + 监控 * 以创建新的 link:task_create_monitor.html["监控"]。
 
