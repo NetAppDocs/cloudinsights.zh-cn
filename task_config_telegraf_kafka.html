@@ -1955,7 +1955,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:03:58 +0000">04/13/2022</time>
+    <time datetime="2022-07-15 16:54:14 +0000">07/15/2022</time>
     
   
 
@@ -2002,17 +2002,16 @@
 <div class="paragraph">
 <p>Kafka 插件基于此电报的 JOLokia 插件。例如，需要从所有 Kafka 代理收集信息，因此需要在所有组件上通过 Jallokia 配置和公开 JMX 。</p>
 </div>
-<div class="sect3">
-<h4 id="兼容性">兼容性</h4>
+<div class="sect2">
+<h3 id="兼容性">兼容性</h3>
 <div class="paragraph">
 <p>此配置是根据 Kafka 0.11.0.2 版开发的。</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="设置-2">设置</h4>
+<div class="sect2">
+<h3 id="设置-2">设置</h3>
 <div class="paragraph">
 <p>以下所有说明均假定您的 Kafka 安装位置为 "/opt/Kafka" 。您可以根据安装位置调整以下说明。</p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="jolokia-agent-jar">JOLokia Agent Jar</h4>
@@ -2040,6 +2039,7 @@ export KAFKA_JMX_OPTS="-javaagent:/opt/kafka/libs/jolokia-jvm-1.6.0-agent.jar=po
 </div>
 <div class="paragraph">
 <p>您可以为 JMX （上面为 9999 ）和朱洛基亚（ 8778 ）选择其他端口。如果您有一个内部 IP 来锁定 Jallokia ，则可以将 "catch all" 0.0.0.0 替换为您自己的 IP 。请注意，此 IP 需要可从电报插件访问。如果您不想进行身份验证，可以使用选项 -Dcom.sun.management.jmxremote.authenticate=false' 。使用风险自行承担。</p>
+</div>
 </div>
 </div>
 </div>

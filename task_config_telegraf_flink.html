@@ -1955,7 +1955,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:03:58 +0000">04/13/2022</time>
+    <time datetime="2022-07-15 16:54:14 +0000">07/15/2022</time>
     
   
 
@@ -2005,16 +2005,16 @@
 <div class="paragraph">
 <p>JobManager ： Flink 主系统。协调一系列 TaskManager 。在高可用性设置中，系统将具有多个 JobManager 。TaskManager ：执行 Flink 运算符的位置。Flink 插件基于此电报的 JOLokia 插件。例如，需要从所有 Flink 组件收集信息，因此需要在所有组件上通过 Jallokia 配置并公开 JMX 。</p>
 </div>
-<div class="sect3">
-<h4 id="兼容性">兼容性</h4>
+<div class="sect2">
+<h3 id="兼容性">兼容性</h3>
 <div class="paragraph">
 <p>此配置是根据 Flink 1.0.0 版开发的。</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="设置-2">设置</h3>
 <div class="sect3">
-<h4 id="设置-2">设置</h4>
-<div class="sect4">
-<h5 id="jolokia-agent-jar">JOLokia Agent Jar</h5>
+<h4 id="jolokia-agent-jar">JOLokia Agent Jar</h4>
 <div class="paragraph">
 <p>对于所有单个组件，必须下载一个版本的 jarokia 代理 JAR 文件。测试的版本为 <a href="https://jolokia.org/download.html">"JOLokia 代理 1.6.0"</a>。</p>
 </div>
@@ -2022,8 +2022,8 @@
 <p>以下说明假定已下载的 JAR 文件（ jolokia-jvm-1.6.0-agent.jar ）位于位置 "/opt/Flink/lib/" 下。</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="jobmanager">JobManager</h5>
+<div class="sect3">
+<h4 id="jobmanager">JobManager</h4>
 <div class="paragraph">
 <p>要将 JobManager 配置为公开此 Jobokia API ，您可以在节点上设置以下环境变量，然后重新启动 JobManager ：</p>
 </div>
@@ -2034,8 +2034,8 @@
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="taskmanager">TaskManager</h5>
+<div class="sect3">
+<h4 id="taskmanager">TaskManager</h4>
 <div class="paragraph">
 <p>要配置 TaskManager 以公开此 JOLokia API ，您可以在节点上设置以下环境变量，然后重新启动 TaskManager ：</p>
 </div>

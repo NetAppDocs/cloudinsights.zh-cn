@@ -1955,7 +1955,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:03:58 +0000">04/13/2022</time>
+    <time datetime="2022-07-15 16:54:14 +0000">07/15/2022</time>
     
   
 
@@ -2016,14 +2016,14 @@
 <div class="paragraph">
 <p>Telegraf 用于 Apache HTTP 服务器的插件依赖于 "mod_status" 模块的启用。启用此选项后， Apache 的 HTTP 服务器将显示一个 HTML 端点，您可以在浏览器上查看此端点，也可以对其进行擦除，以便提取所有 Apache 的 HTTP 服务器配置的状态。</p>
 </div>
-<div class="sect3">
-<h4 id="兼容性">兼容性：</h4>
+<div class="sect2">
+<h3 id="兼容性">兼容性：</h3>
 <div class="paragraph">
 <p>此配置是根据 Apache 的 HTTP 服务器版本 2.4.38 开发的。</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="正在启用-mod_status">正在启用 mod_status ：</h4>
+<div class="sect2">
+<h3 id="正在启用-mod_status">正在启用 mod_status ：</h3>
 <div class="paragraph">
 <p>启用和公开 "mod_status" 模块涉及两个步骤：</p>
 </div>
@@ -2038,8 +2038,8 @@
 </ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="启用模块">启用模块：</h4>
+<div class="sect2">
+<h3 id="启用模块">启用模块：</h3>
 <div class="paragraph">
 <p>模块的加载由 "/usr/local/apache/conf/httpd.conf " 下的配置文件控制。编辑此配置文件并取消注释以下行：</p>
 </div>
@@ -2050,8 +2050,8 @@ Include conf/extra/httpd-info.conf</pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="从模块公开统计信息">从模块公开统计信息：</h4>
+<div class="sect2">
+<h3 id="从模块公开统计信息">从模块公开统计信息：</h3>
 <div class="paragraph">
 <p>"od_status" 的公开由 "/usr/local/apache2/conf/ext/httpd-info.conf " 下的配置文件控制。请确保此配置文件中包含以下内容（至少还有其他指令）：</p>
 </div>

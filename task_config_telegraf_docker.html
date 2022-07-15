@@ -1955,7 +1955,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-13 20:03:58 +0000">04/13/2022</time>
+    <time datetime="2022-07-15 16:54:14 +0000">07/15/2022</time>
     
   
 
@@ -1999,16 +1999,18 @@
 <div class="paragraph">
 <p>适用于 Docker 的 Telegraf 输入插件通过指定的 UNIX 套接字或 TCP 端点收集指标。</p>
 </div>
-<div class="sect3">
-<h4 id="兼容性">兼容性</h4>
+<div class="sect2">
+<h3 id="兼容性">兼容性</h3>
 <div class="paragraph">
 <p>配置是根据 Docker 1.12.6 版开发的。</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="设置-2">设置</h4>
-<div class="sect4">
-<h5 id="通过-unix-套接字访问-docker">通过 UNIX 套接字访问 Docker</h5>
+<div class="sect2">
+<h3 id="设置-2">设置</h3>
+
+</div>
+<div class="sect2">
+<h3 id="通过-unix-套接字访问-docker">通过 UNIX 套接字访问 Docker</h3>
 <div class="paragraph">
 <p>如果 Telegraf 代理正在 BareMetal 上运行，请运行以下命令将此 Telegraf Unix 用户添加到 Docker Unix 组：</p>
 </div>
@@ -2043,11 +2045,10 @@ mountPath: /var/run/docker.sock</pre>
 <p>请注意，为 Kubernetes 平台提供的 Cloud Insights 安装程序会自动执行此映射。</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="通过-tcp-端点访问-docker">通过 TCP 端点访问 Docker</h5>
+<div class="sect2">
+<h3 id="通过-tcp-端点访问-docker">通过 TCP 端点访问 Docker</h3>
 <div class="paragraph">
 <p>默认情况下， Docker 使用端口 2375 进行未加密访问，而使用端口 2376 进行加密访问。</p>
-</div>
 </div>
 </div>
 </div>
