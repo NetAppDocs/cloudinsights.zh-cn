@@ -230,6 +230,6 @@ image:CS_Data_Collector_Error.png[""]
 | 数据收集器出错，显示此错误消息。" 错误：连接器处于错误状态。服务名称： audit 。失败原因：无法在 SVM SVM_test 上配置策略。原因： ZAPI 字段： Events 缺少值。" | 从仅配置 NFS 服务的新 SVM 开始。在 Cloud Secure 中添加 ONTAP SVM 数据收集器。在 Cloud Secure 中添加 ONTAP SVM 数据收集器时， CIFS 会配置为 SVM 的允许协议。请稍候，直到 Cloud Secure 中的数据收集器显示错误为止。由于未在 SVM 上配置 CIFS 服务器，因此 Cloud Secure 将显示左侧所示的此错误。编辑 ONTAP SVM 数据收集器并取消选中 CIFS 作为允许的协议。保存数据收集器。它将在仅启用 NFS 协议的情况下开始运行。 
 
 
-| Data Collector 显示错误消息：错误：无法在 2 次重试内确定收集器的运行状况，请重新尝试重新启动收集器（错误代码： AGENT008 ）。 | 在数据收集器页面上，滚动到出现错误的数据收集器右侧，然后单击 3 点菜单。选择 _Edit_ 。再次输入数据收集器的密码。按 _Save_ 按钮保存数据收集器。Data Collector 将重新启动，并应解决此错误。 
+| Data Collector 显示错误消息：错误：无法在 2 次重试内确定收集器的运行状况，请重新尝试重新启动收集器（错误代码： AGENT008 ）。 | 1.在数据收集器页面上、滚动到出现错误的数据收集器右侧、然后单击3点菜单。选择 _Edit_ 。再次输入数据收集器的密码。按 _Save_ 按钮保存数据收集器。Data Collector 将重新启动，并应解决此错误。2. Agent计算机可能没有足够的CPU或RAM余量、这就是DSC出现故障的原因。请检查添加到计算机中代理的数据收集器的数量。如果超过20、请增加Agent计算机的CPU和RAM容量。增加CPU和RAM后、DSCS将自动进入Initializing状态、然后自动进入Running状态。请查看上的规模估算指南 link:https://docs.netapp.com/us-en/cloudinsights/concept_cs_event_rate_checker.html["此页面"]。 
 |===
 如果您仍遇到问题，请访问 * 帮助 > 支持 * 页面中提到的支持链接。

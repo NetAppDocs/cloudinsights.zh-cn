@@ -859,64 +859,12 @@
   <block id="c0dc322f2a04394a685f21ff1d2ef559" category="list-text">单击 * 批量操作 &gt; 添加应用程序 * 。</block>
   <block id="ee55ce21e29b3e7f2b2034ca09d6b8b2" category="list-text">选择要将资产分配到的应用程序。</block>
   <block id="f64880272c45a077dc9152ab7dd2f24a" category="paragraph">将主机分配给应用程序后，您可以将其余资产分配给应用程序。要访问应用程序的登录页面，请单击 * 管理 &gt; 应用程序 * 并选择您创建的应用程序。</block>
-  <block id="7d48a0a5ed3c85848832ea7422284955" category="summary">取证概述</block>
-  <block id="3c9a5933dbcf52b832c3bc29602f533e" category="doc">取证信息</block>
-  <block id="c6b06f9d94d6e3d9271189551e74cea0" category="paragraph">通过取证视图，您可以访问用户，实体，社区和用户活动信息。</block>
-  <block id="44a46c2660280d286db386102080a441" category="section-title">检查用户信息</block>
-  <block id="28de16ab3be9929caaeaa80b9bcb8cae" category="paragraph">单击 * 取证 &gt; 用户 * 以访问用户视图。</block>
-  <block id="6ca7bae39d7693f1928b8ed958ec3031" category="paragraph">此视图显示常规用户信息：</block>
-  <block id="6b37c53b00de653309ddd77e14f6fcb2" category="list-text">用户的名称，其中包含指向用户详细信息的链接。</block>
-  <block id="6c9726cf0882d3e1a7a7afe4783da264" category="list-text">用户活动引发的警报</block>
-  <block id="445522ee576a12cf827fa43589a58259" category="list-text">用户所属社区的数量，其中包含指向 "communites" 页面的链接</block>
   <block id="ccbd604baf2f1984132ebb1bbeb588fc" category="list-text">用户的位置</block>
-  <block id="195c405e622fd0e8a5261128ab24f646" category="list-text">用户访问的最后一个实体</block>
-  <block id="b74597a63b1b4a0fcc6fc3dbf1e6c537" category="inline-link-macro">用户概述</block>
-  <block id="a7c9a128617298eaa5ad1cbc07b0fa95" category="paragraph">单击用户名可在中访问更多详细信息 <block ref="3d59fda9ee439a9c317c1e3620febd81" category="inline-link-macro-rx"></block></block>
   <block id="6156c31e2cc5625d769ef3adb7a3ec3c" category="section-title">检查实体信息</block>
-  <block id="6ac59d127729a2df605b8a529582fd94" category="paragraph">单击 * 取证 &gt; 实体 * 以访问实体视图。</block>
-  <block id="315b80eaca275df566989ef64b720983" category="paragraph">此页面显示了用户正在访问的实体的常规信息：</block>
   <block id="4a4a73d66611aace8d92f097448ce81b" category="paragraph">介绍详细信息，包括：</block>
-  <block id="694d77664575fb0b446ef89342fbc71d" category="list-text">实体名称</block>
-  <block id="51c3943e8749968c80b7744cc55309ca" category="list-text">实体类型</block>
-  <block id="1739f3571edb57fdab0fea8740bab304" category="list-text">与实体的社区关系</block>
-  <block id="95c38092c77409aa34ca740575e3d8a3" category="list-text">实体路径</block>
-  <block id="85d5603a6e68c4c44680e10abf168fa3" category="list-text">上次访问时间</block>
-  <block id="93fa92f9e5767fd30bf1640775eaafb8" category="list-text">实体大小</block>
-  <block id="04cf453ee7a9d96ce1163b2e7eb391fb" category="inline-link-macro">实体概述</block>
-  <block id="e5e48bf4aad9fe1b29f3d7debbfab46d" category="paragraph">单击实体名称可在中访问更多详细信息 <block ref="41d4646ac17a8d86637f2c102393f3d2" category="inline-link-macro-rx"></block></block>
-  <block id="0ba8a1b83ab5f740c25d1a34945740ec" category="paragraph">单击 Community count 以显示包含此实体的社区。</block>
-  <block id="0ac8ab4c4aa30fdb262dd2eba9a4cee9" category="section-title">检查社区信息</block>
-  <block id="60033bcd0fb7bbabdbf0102bddefef4b" category="paragraph">单击 * 取证 &gt; 社区 * 以访问社区页面。</block>
-  <block id="e83880b4a1aefd4a24ca942c518a3e31" category="paragraph">此视图可提供：</block>
-  <block id="1d4fe32a02507cbee05a22e2163b19ef" category="list-text">社区名称</block>
-  <block id="20063e46ae559ca8c5317550e142db11" category="list-text">与社区相关的警报</block>
-  <block id="f7336e7753dc66e0f7a70cdc32419e67" category="list-text">社区的用户计数</block>
-  <block id="33b77eed26e588d09b61fad390717116" category="list-text">实体计入社区</block>
-  <block id="5526aa3f240fd8aa78b875a31bbd0240" category="paragraph">单击或搜索社区名称以访问社区详细信息页面。</block>
-  <block id="213b4a1ab7b919c2b3dc7350a6e507d1" category="list-text">社区概况</block>
-  <block id="f81602367bd918e87be49cc7333aad9d" category="list-text">列出社区用户位置以及其他最接近的社区。</block>
-  <block id="25ec77a3cb61c007c81903e91a83e827" category="list-text">社区行为</block>
-  <block id="37c16075756789b73bbb047b6ec3236e" category="list-text">显示访问的实体数量，并显示读取，写入和元数据访问操作。</block>
-  <block id="cc63aa0e41b641e62f5826480be1c9a9" category="list-text">用户和实体</block>
-  <block id="2e9ec39a8903cee2b8bd7e4921a0da67" category="list-text">标识社区中的用户总数和实体总数。</block>
-  <block id="54fff1a991ed8c2a8759bc6d55fd23c1" category="list-text">社区分析</block>
-  <block id="ddf0527a86cec7703cce5c33abbb5c34" category="list-text">社区用户趋势</block>
-  <block id="0c77da7f9ef578c73bcc2abfaa5e17d2" category="list-text">对实体执行的操作</block>
-  <block id="d8e4fa79860720ab4de7678dd1551a7e" category="list-text">警报趋势</block>
-  <block id="3ba0f712de472ad27e352eda11f7ca9c" category="inline-link-macro">社区详细信息</block>
-  <block id="128b0e056d6e9e44e8d5619f67f41be1" category="paragraph">单击社区名称可在中访问更多详细信息 <block ref="35be0d791cd3b8bb67fe5dda3b8336a2" category="inline-link-macro-rx"></block></block>
-  <block id="51a06ae1e81a8fa844ac04e18fb5a8c2" category="section-title">检查用户活动信息</block>
-  <block id="a59c3446cb001170a67fc660476e7122" category="paragraph">单击 * 取证 &gt; 用户活动 * 以访问用户活动视图。</block>
-  <block id="dbbd1a08e400cb6dbbb25944d19aeda7" category="paragraph">对于要监控的每个用户，此视图介绍：</block>
-  <block id="4e29a3c62ae31255758baa02ac804d1a" category="list-text">实体访问时间</block>
-  <block id="dd146dad600a7b7548fafddb2f136c7b" category="list-text">通过用户概述链接访问实体的用户</block>
-  <block id="bf3b9394ae4ebc8ad6fc34bb746e7ff7" category="list-text">执行的活动：</block>
   <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="list-text">读取</block>
   <block id="1129c0e4d43f2d121652a7302712cff6" category="list-text">写入</block>
   <block id="686e697538050e4664636337cc3b834f" category="list-text">创建</block>
-  <block id="904a8304056d77e4547744781b7ceb50" category="list-text">重命名</block>
-  <block id="35f626d440dca3958f80815ba211e28f" category="inline-link-macro">实体详细信息</block>
-  <block id="4f7a48a0c11b5b3ef72155cd3f928c11" category="list-text">访问位置单击用户名可在中访问更多详细信息 <block ref="43cf20fcbc1ba77da8a65316f0eebb78" category="inline-link-macro-rx"></block></block>
   <block id="65e6065f91f7e03659d071a3c7789f6e" category="summary">配置 Cisco MDS 光纤交换机数据收集器。</block>
   <block id="e2a42170f4db6fe18f3ec45ba9ed2b5a" category="doc">Cisco MDS Fabric Switches 数据收集器</block>
   <block id="72562f98faa459e1834696da2a3bc9b3" category="paragraph">Cloud Insights 使用 Cisco MDS Fabric Switches 数据收集器来发现 Cisco MDS Fabric Switches 以及启用了 FC 服务的各种 Cisco Nexus FCoE 交换机的清单。</block>
@@ -1370,36 +1318,10 @@
   <block id="8e6eb3c8ff00ab06bab7e82986c7e1e5" category="cell">默认值为 300 。</block>
   <block id="755b12aafe5dc12ab98be034e0bc593a" category="cell">登录凭据无效，并显示错误消息 " 策略不允许 " 或 " 您未获得授权 "</block>
   <block id="e3023c7402b94962861565244cb9f3d0" category="cell">通过 Pure http 界面验证 Pure 用户帐户和密码</block>
-  <block id="a3a8ab6593662bf5af921765f1941855" category="summary">取证用户数据</block>
-  <block id="7ca293d65417ae9cf489be8751021320" category="doc">取证用户数据</block>
-  <block id="408845a3dd634fb6974267e5a603424a" category="paragraph">" 用户 " 页面用于标识 Cloud Secure 监控的用户。</block>
-  <block id="947ebb461659f7a73d27f2a7a8c4d6bb" category="paragraph">此页面中提供的数据包括：</block>
   <block id="90b1f6651953fcf8b43ddc0da6760aaf" category="inline-link-macro">用户配置文件</block>
-  <block id="96d09f2dc2b887e3b423d1b79cd62599" category="list-text">由 Cloud Secure 监控的每个用户，并具有指向的链接 <block ref="55f5b6b5fddb3d46d73361cc24392e6f" category="inline-link-macro-rx"></block>。</block>
-  <block id="7eed1af6d5e60a7781d911d100ae52ca" category="list-text">由用户执行的活动引发的警报。警报严重性标识如下： image ：： critical.png[ 严重 ] + \ image ：： warning.png[ 警告 ] + \ image ：： low.png[ 低 ] + \</block>
-  <block id="aa442e207a8d7e963a0aa5d7442d8f47" category="list-text">用户上次执行的活动。</block>
-  <block id="a6ba690d9231e6ecc5bd081b0e06dd20" category="list-text">用户的位置—国家 / 地区和省 / 自治区 / 直辖市。</block>
-  <block id="c736c85a4c864cc9b572640abb256b92" category="list-text">用户所属的社区数量。</block>
-  <block id="64ffc8d19d49546980dfd40d46804fb9" category="section-title">筛选取证用户数据</block>
-  <block id="6efc6ed7a55278a9b930ab341ab7a976" category="paragraph">您可以按以下内容筛选取证活动历史记录数据：</block>
   <block id="6adf97f83acf6453d4a6a4b1070f3754" category="list-text">无</block>
-  <block id="28d0edd045e05cf5af64e35ae0c4c6ef" category="list-text">低</block>
-  <block id="0eaadb4fcb48a0a0ed7bc9868be9fbaa" category="list-text">警告</block>
-  <block id="278d01e5af56273bae1bb99a98b370cd" category="list-text">严重</block>
-  <block id="dc96f42b62a6e61a0f49a6f5ccdfbf8d" category="list-text">关联社区</block>
   <block id="d4908b1e39cc61772e5d74e5fb77d241" category="list-text">待定</block>
-  <block id="9bc012ef5084b7ef0b32dcf80fa43a9f" category="list-text">社区计数</block>
-  <block id="89c76c28a62b7c221f9bd4d820491faa" category="list-text">一个数值或范围</block>
-  <block id="6307dd2f57d3f7f949eca03a2a54f6e0" category="list-text">上次活动</block>
-  <block id="e0669ff2bbd8b9e25b0b355beeb65fc0" category="list-text">时间或时间范围</block>
   <block id="ce5bf551379459c1c61d2a204061c455" category="list-text">位置</block>
-  <block id="db60443137b65a2f198625b3db4cfd04" category="list-text">执行活动所用的 IP 地址</block>
-  <block id="a790e175bcd4355b797477dbddb71196" category="list-text">执行活动所用的 IP 地址 *</block>
-  <block id="1edcdad89b3a2245d759a169da1bf5a3" category="list-text">用户 ID</block>
-  <block id="a0f444d64169fdc0ad0a86c8e7e5ec6d" category="list-text">访问实体的位置</block>
-  <block id="da77770aeded479ed467590ba6712188" category="list-text">实体的路径</block>
-  <block id="46c3b6b9a12fcd2685c9d6ab083d4074" category="list-text">活动发生的时间</block>
-  <block id="8e1c0aa55e2a24015a4aa31b1525e7ed" category="list-text">执行活动的用户</block>
   <block id="2d511a0af71415c4b6b394d9a1964225" category="summary">可以为大多数对象类型显示资产页面。</block>
   <block id="033cb70e428cff3c1584d7206da08f9c" category="doc">资产页面概述</block>
   <block id="ab24a36f89b07d59e5cf53d5754754b1" category="paragraph">资产页面汇总了资产的当前状态，并包含指向有关资产及其相关资产的追加信息的链接。</block>
@@ -5069,7 +4991,6 @@
   <block id="b9c3d80571e6dec0ee60a84ebd740366" category="paragraph"><block ref="b9c3d80571e6dec0ee60a84ebd740366" category="inline-link-macro-rx"></block></block>
   <block id="4fdfa131eb647830bbc47974555ed2c8" category="inline-link-macro">创建角色以将权限委派给 IAM 用户</block>
   <block id="d24c76fc9ba135863e7f58d98905e8a3" category="paragraph"><block ref="d24c76fc9ba135863e7f58d98905e8a3" category="inline-link-macro-rx"></block></block>
-  <block id="e61f983bca84adaf2e9ee840ad6c3d52" category="summary">您可以使用 Cloud Insights API 导入烦恼和应用程序。</block>
   <block id="436baafe5ba2d1f2ddce9721d2d3cc11" category="paragraph">Cloud Insights 提供了一个 API ，用于从 CSV 文件导入标注或应用程序并将其分配给您指定的对象。</block>
   <block id="6ea19b77fdbbe887a195870f5398f21f" category="admonition">Cloud Insights API 可在 * Cloud Insights 高级版 * 中使用。</block>
   <block id="cd804333d16ac675a7605cf03f787ec6" category="section-title">正在导入</block>
@@ -5295,9 +5216,6 @@
   <block id="fb2b11979470312e91d52daf018ca991" category="paragraph">单击链接以打开。右键单击并选择 _Save as..._ 以下载副本。</block>
   <block id="e8a0ae6a975a5b0b5682da12aecbad5d" category="inline-link-macro">* 数据收集器支持列表 *</block>
   <block id="2c7946be5550b6b9eea9fc71634c0a3a" category="paragraph"><block ref="2c7946be5550b6b9eea9fc71634c0a3a" category="inline-link-macro-rx"></block></block>
-  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">使用 NetApp ONTAP 流遥测功能配置 Cloud Insights</block>
-  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP 流遥测</block>
-  <block id="f1417ae8cdc394cf3e1b04ec57f52d55" category="paragraph">感谢您关注 Cloud Insights ONTAP 流式遥测。此功能当前处于私有预览状态。请联系 ng-ci-preview@netapp.com 以获取更多信息或访问权限。</block>
   <block id="83fbc11c171008ea835730f7922a6417" category="summary">OpenZFS 数据收集器配置</block>
   <block id="280698a257edec445fc9d2a3c41f9089" category="doc">OpenZFS 数据收集器</block>
   <block id="9109116c1e875f98e978783a131e4466" category="paragraph">Cloud Insights 使用此数据收集器从 OpenZFS 收集指标。</block>
@@ -6396,7 +6314,6 @@
   <block id="c90a13d8ec8fe53c6bb33fe10af6f2fe" category="cell">相同</block>
   <block id="83626eda7582435cdf0eb139d5cc8972" category="cell">8 GB RAM</block>
   <block id="6aaa2ffc817cac34a806a149bee36350" category="cell">50 GB</block>
-  <block id="47dc5acc8bdc974a72002ca9aa47f325" category="cell">100 Mbps/1 Gbps 以太网连接，静态 IP 地址，所有 FC 设备的 IP 连接以及 Cloud Insights 实例所需的端口（ 80 或 443 ）。</block>
   <block id="d08ccf52b4cdd08e41cfb99ec42e0b29" category="cell">权限</block>
   <block id="b121d11a2c041b51e1c63a940169fc95" category="cell">对采集单元服务器具有 sudo 权限。必须使用 exec 功能挂载 /tmp 。</block>
   <block id="f2675114c7e961125e58746739ce868e" category="cell">对采集单元服务器具有管理员权限</block>
@@ -7156,7 +7073,6 @@
   <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">登录问题：</block>
   <block id="9b08a379d02da9e64bce4ee2389fc783" category="admonition">以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">NetApp 支持</block>
-  <block id="a1e1a390bdf9bd8ec2847b6827bb051b" category="cell">请联系 saas.support@netapp.com 。这专门针对 Cloud Central 问题或问题。对于所有其他 Cloud Insights 问题，请联系 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">请尝试在 Chrome 中使用匿名模式，或者清除浏览器历史记录， Cookie 和缓存。请尝试使用其他浏览器配置文件（例如 Chrome - 添加人员）。</block>
   <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">有关详细信息，请参见<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
   <block id="fc1a24cc0d6d7c3e25a51a3d66a9d033" category="inline-link-macro">单点登录（ SSO ）授权</block>
@@ -7286,7 +7202,6 @@
   <block id="4654b0becf9d1cd6185abd5644dddf77" category="list-text">在 Audit 页面上，设置所需的时间范围以及所需的任何筛选器。Cloud Insights 将仅导出与您设置的筛选和时间范围匹配的审核条目。</block>
   <block id="81e9e10a5416438d2549dae075160792" category="list-text">单击 _Export_ 按钮 <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> 在表的右上角。</block>
   <block id="7201440e51225680b60dccf28366c73d" category="paragraph">显示的审核事件将导出到 .CSV 文件，最多 10 ， 000 行。</block>
-  <block id="75cd5bf9b1dea198b36ca9987682e874" category="cell">应按以下方式分配磁盘空间： /opt/netapp 25-30 GB</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 25-30 GB /var/log/netapp 25 GB</block>
   <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户，则只需登录即可访问其 Cloud Insights 环境。</block>
   <block id="e0d7a90b12ef3cae3c8429a34b69736a" category="inline-image-macro">RHEL/CentOS 代理安装</block>
@@ -7667,7 +7582,6 @@
   <block id="fd8c1b3795a29b1a89e13a4dc20a65d0" category="list-text">Oracle Enterprise Linux （ 64 位） 8.4</block>
   <block id="8a87577cfcf75b4a6027782bc64ac3ac" category="list-text">Red Hat Enterprise Linux （ 64 位） 8.4</block>
   <block id="1b852bd0522bb1e9abdc5b85f45b2eff" category="cell">Data Collector 显示错误消息：错误：无法在 2 次重试内确定收集器的运行状况，请重新尝试重新启动收集器（错误代码： AGENT008 ）。</block>
-  <block id="f2e1c8f11a6d114e56889c093ddb4738" category="cell">在数据收集器页面上，滚动到出现错误的数据收集器右侧，然后单击 3 点菜单。选择 _Edit_ 。再次输入数据收集器的密码。按 _Save_ 按钮保存数据收集器。Data Collector 将重新启动，并应解决此错误。</block>
   <block id="a60abfe03b8079f9f0eac07879fdf93b" category="paragraph">您可以使用 _Sync_ 或 _Async_ 使用此类按键。</block>
   <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode</block>
   <block id="73d058b6883230b436ffe932ef8b753d" category="list-text">必须提供以下命令： curl ， sudo ， openssl 和 shasum</block>
@@ -7922,7 +7836,6 @@
   <block id="38e47adb6ecfe4df7c79a3a31541dc49" category="inline-link-macro">限制用户访问</block>
   <block id="221dc2418a55893a5e042c9e03adccdf" category="paragraph">请参见 <block ref="0db6a779247705464ce31126448b6e46" category="inline-link-macro-rx"></block> 第页，了解有关通过 IP 限制用户访问的更多详细信息。</block>
   <block id="812d24264002531aa5c33dcfea09ae4f" category="summary">借助 Cloud Secure ，您可以在发生可疑破坏时限制用户访问</block>
-  <block id="34f9ae45ea998f4feb8ed8b837da35ce" category="doc">限制用户访问</block>
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">如何启用此功能？</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">创建新的攻击策略或编辑现有攻击策略。</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">选择应监控攻击策略的 SVM 。</block>
@@ -8072,7 +7985,6 @@
   <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">您可以通过单击显示器右侧的菜单并选择 * 暂停 * 来选择临时暂停对某个对象类型的监控。准备好恢复监控后，单击 * 恢复 * 。</block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">所有显示器 * 列出所有显示器。</block>
-  <block id="48fa35194daf9f1bd37c243905808afa" category="list-text">* 自定义监控 * 仅列出用户创建的监控器。</block>
   <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">查看 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 第页，介绍 Cloud Insights 随附的监控器。</block>
   <block id="b94799ea1a34279467ca857a3bdb03d8" category="list-text">* 降噪 * 用于筛选用户新建的文件（即过去 2 小时内）。它还用于筛选用户访问的临时文件（例如 .tmp 文件）。</block>
   <block id="22c7df611bbc787fa84ac34fdd9613e0" category="paragraph">对于具有集群凭据的 CSUser ，请从 ONTAP 命令行执行以下操作：</block>
@@ -8140,7 +8052,6 @@
   <block id="fc077d90413e1ab9ea5eb4777a02ade3" category="paragraph">无法修改，移动到另一个组或删除系统定义的监控器。但是，您可以复制系统监控器并修改或移动此副本。</block>
   <block id="57eed663adf466f4dcd0ba0a3a24dac5" category="paragraph">系统监控器可能包括 ONTAP 基础架构（存储，卷等）或工作负载（例如日志监控器）或其他组的监控器。NetApp 不断评估客户需求和产品功能，并会根据需要更新或添加到系统监控器和组中。</block>
   <block id="17364dd4c2252b12bb9eb895bd6e949b" category="paragraph">您可以根据需要创建自己的组来包含监控器。例如，您可能需要为所有存储相关监控器配置一个组。</block>
-  <block id="82f4f788b410ddeadb8f7768592f9864" category="list-text">只有当系统已暂停监控器时，才会显示 * 已暂停监控器 * 。</block>
   <block id="a43e9f5999fa1ed59d407736252e625d" category="section-title">具有上下文预键入建议的高级文本筛选</block>
   <block id="a8c299f3c69c7a12958c6df554610a93" category="paragraph">在小工具查询中筛选为 _Contextual ；为字段选择筛选器值时，该查询的其他筛选器将显示与该筛选器相关的值。例如，在为特定对象 _Name_ 设置筛选器时，用于筛选 _Model_ 的字段将仅显示与该对象名称相关的值。</block>
   <block id="8be0f44cccc6817c6fffc31d9156d3c0" category="paragraph">上下文筛选还包括适用场景 信息板页面变量（仅限文本类型属性或标注）。为一个变量选择存储器值时，使用相关对象的任何其他变量将仅根据这些相关变量的上下文显示可能的筛选值。</block>
@@ -8940,4 +8851,11 @@
   <block id="3aba5c3b5ec94e17ca4afc1a38905dbe" category="list-text">确保已删除Cloud Secure 规则(可选的确认步骤)。</block>
   <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">无法修改策略。原因：未获得该命令的授权。</block>
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">检查是否使用CsUser、是否已按上述方式为用户授予权限。</block>
+  <block id="a9a216fbb1fb9d774e7cedfcf74c00cf" category="cell">从打开服务单<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。选择类别" cloud.netapp.com &gt;帐户/登录问题"或" cloud.netapp.com &gt;联合问题"。这专门针对 Cloud Central 问题或问题。对于所有其他Cloud Insights 技术支持问题、请联系 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
+  <block id="0f0836a5cbb198e5071126d330de3a88" category="cell">应按以下方式分配磁盘空间：/opt/netapp 35 GB (最小)</block>
+  <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">双向</block>
+  <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">此页面</block>
+  <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.在数据收集器页面上、滚动到出现错误的数据收集器右侧、然后单击3点菜单。选择 _Edit_ 。再次输入数据收集器的密码。按 _Save_ 按钮保存数据收集器。Data Collector 将重新启动，并应解决此错误。2. Agent计算机可能没有足够的CPU或RAM余量、这就是DSC出现故障的原因。请检查添加到计算机中代理的数据收集器的数量。如果超过20、请增加Agent计算机的CPU和RAM容量。增加CPU和RAM后、DSCS将自动进入Initializing状态、然后自动进入Running状态。请查看上的规模估算指南 <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
+  <block id="e2bb2679868c6a4cb2113cadeba2c17b" category="summary">您可以使用Cloud Insights API导入标注和应用程序。</block>
+  <block id="dc32103fc28ea11a068c096412ef6787" category="cell">100 Mbps/1 Gbps以太网连接、静态IP地址以及从采集单元到*.cloudinsights.netapp.com或您的Cloud Insights 环境(即 .c01.cloudinsights.netapp.com)为必填项。有关采集单元与每个数据收集器之间的要求、请参见的说明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。</block>
 </blocks>

@@ -28,7 +28,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | 内存 | 16 GB RAM 
 
 
-| 可用磁盘空间 | 应按以下方式分配磁盘空间： /opt/netapp 25-30 GB 
+| 可用磁盘空间 | 应按以下方式分配磁盘空间：/opt/netapp 35 GB (最小) 
 
 
 | 网络 | 100 Mbps 到 1 Gbps 以太网连接，静态 IP 地址，与所有设备的 IP 连接以及与 Cloud Secure 实例的所需端口（ 80 或 443 ）。 
@@ -105,7 +105,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | TCP | 35000 - 55000 | SVM 数据 LIF IP 地址 | 入站 / 出站 | 与 ONTAP 通信以处理 Fpolicy 事件 
 
 
-| TCP | 7. | SVM 数据 LIF IP 地址 | 出站 | 在 ONTAP 和 Cloud Secure 之间实现双向。代理对 SVM LIF 执行 Ping 操作。 
+| TCP | 7. | SVM 数据 LIF IP 地址 | 双向 | 在 ONTAP 和 Cloud Secure 之间实现双向。代理对 SVM LIF 执行 Ping 操作。 
 |===
 
 

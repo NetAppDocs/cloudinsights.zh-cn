@@ -33,7 +33,7 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 | 可用磁盘空间 | 50 GB对于Linux、应按以下方式分配磁盘空间：/opt/netapp 10 GB /var/log/netapp 40 GB /tmp安装期间至少1 GB可用空间 | 50 GB 
 
 
-| 网络 | 100 Mbps/1 Gbps 以太网连接，静态 IP 地址，所有 FC 设备的 IP 连接以及 Cloud Insights 实例所需的端口（ 80 或 443 ）。 | 相同 
+| 网络 | 100 Mbps/1 Gbps以太网连接、静态IP地址以及从采集单元到*.cloudinsights.netapp.com或您的Cloud Insights 环境(即 .c01.cloudinsights.netapp.com)为必填项。有关采集单元与每个数据收集器之间的要求、请参见的说明 link:data_collector_list.html["数据收集器"]。 | 相同 
 
 
 | 权限 | 对采集单元服务器具有 sudo 权限。必须使用 exec 功能挂载 /tmp 。 | 对采集单元服务器具有管理员权限 
