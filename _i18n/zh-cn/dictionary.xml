@@ -8857,5 +8857,11 @@
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">此页面</block>
   <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.在数据收集器页面上、滚动到出现错误的数据收集器右侧、然后单击3点菜单。选择 _Edit_ 。再次输入数据收集器的密码。按 _Save_ 按钮保存数据收集器。Data Collector 将重新启动，并应解决此错误。2. Agent计算机可能没有足够的CPU或RAM余量、这就是DSC出现故障的原因。请检查添加到计算机中代理的数据收集器的数量。如果超过20、请增加Agent计算机的CPU和RAM容量。增加CPU和RAM后、DSCS将自动进入Initializing状态、然后自动进入Running状态。请查看上的规模估算指南 <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
   <block id="e2bb2679868c6a4cb2113cadeba2c17b" category="summary">您可以使用Cloud Insights API导入标注和应用程序。</block>
-  <block id="dc32103fc28ea11a068c096412ef6787" category="cell">100 Mbps/1 Gbps以太网连接、静态IP地址以及从采集单元到*.cloudinsights.netapp.com或您的Cloud Insights 环境(即 .c01.cloudinsights.netapp.com)为必填项。有关采集单元与每个数据收集器之间的要求、请参见的说明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。</block>
+  <block id="0dc88092036f29d0c951123c9b9f932e" category="section-title">缺少数据时发出警报</block>
+  <block id="525a57ad5c1f150ce2c13c4797278523" category="paragraph">在Cloud Insights 等实时系统中、为了触发对监控器的分析以确定是否应生成警报、我们需要考虑以下两个因素之一：</block>
+  <block id="9f76cab36d38af05dce74499497c7b3b" category="list-text">要到达的下一个数据点</block>
+  <block id="7b007d3b8d88462a6ae312862d2e1a99" category="list-text">当没有数据点且您等待的时间足够长时、将触发计时器</block>
+  <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">与数据到达缓慢或数据未到达一样、由于数据到达率不足以"实时"触发警报、因此需要接管计时器机制。 因此、问题通常会变成"在关闭分析窗口并查看我拥有的内容之前、我需要等待多长时间？" 如果等待时间过长、则生成警报的速度将不够快、无法发挥作用。</block>
+  <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">如果您的监控器有一个30分钟的窗口、其中指出、在发生长期数据丢失之前、最后一个数据点违反了某种条件、 此时将生成警报、因为监控器未收到任何其他信息来确认指标的恢复、或者注意到此情况持续存在。</block>
+  <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100 Mbps/1 Gbps以太网连接、静态IP地址以及从采集单元到*.cloudinsights.netapp.com或您的Cloud Insights 环境(即 \https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com)为必填项。有关采集单元与每个数据收集器之间的要求、请参见的说明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的组织需要使用代理来访问 Internet ，则您可能需要了解您的组织的代理行为并寻求某些例外情况， Cloud Insights 才能正常工作。例如、您的组织是否默认阻止访问、并且例外情况下仅允许访问特定网站/域？如果是、您需要将以下域添加到异常列表中：*.cloudinsights.netapp.com有关详细信息、请准备好Proxies <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> 或 <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
 </blocks>
