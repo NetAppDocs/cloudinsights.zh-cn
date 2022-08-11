@@ -180,7 +180,7 @@ password: <password from docker secret step above>
  kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
 根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。
 
-将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像：
+将所有开源依赖项下载到您的私有 Docker 注册表中。使用与公有 存储库相同的目录结构。需要下载以下开源映像：
 
 ....
 docker.io/telegraf:1.21.4
@@ -211,6 +211,9 @@ spec:
         - key: k8s.gcr.io
           value: <same as "docker-repo" field above>
 ....
+编辑监控操作员部署以反映新的Docker repo-location：
+
+ kubectl -n netapp-monitoring edit deploy monitoring-operator
 
 
 === 从基于脚本的K8s监控升级到基于操作员的监控
@@ -591,5 +594,8 @@ Windows
 
 
 | 在 Kubernetes 上，我的 Telegraf ReplicaSet Pod 报告以下错误： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes ， PKI/etcd/server.crt ： /etc/Kubernetes ， crt/etcd/server.key ：打开 /etc/Kubernetes ， pki/etcd/server.key ： open /etc/Kubernetes ， pki/etcd/server.key ： no 此类文件或目录 | Telegraf ReplicaSet Pod 应在指定为主节点或 etcd 节点上运行。如果 ReplicaSet Pod 未在其中一个节点上运行，您将收到这些错误。检查您的主 /etcd 节点是否具有此类节点的影响。如果是，请将必要的容错添加到 Telegraf ReplicaSet ，即 Teleaf-RS 中。例如，编辑 ReplicaSet... kubectl edit RS ceaaf-rs ... 并将适当的容错添加到规范中。然后，重新启动 ReplicaSet Pod 。 
+
+
+| 安装NetApp Kubernetes监控操作员后、我会立即在日志中看到以下内容：inputs.prometheus]插件错误：向\http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics: GET \http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:发出HTTP请求时出错拨打TCP：LOOKUP Kube-state-metrics.<namespace>.svc.cluster.local：无此类主机 | 通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。

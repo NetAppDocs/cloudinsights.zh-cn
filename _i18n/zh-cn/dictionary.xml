@@ -7867,7 +7867,6 @@
   <block id="e5d1e0154409d9aa2d79f4ab1f1793c2" category="paragraph">从 Cloud Insights 中提取操作员 Docker 映像：</block>
   <block id="d13bf380d46699b66e5b82e0786c76e3" category="paragraph">使用以下命令查找 &lt;version&gt; 字段：</block>
   <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。</block>
-  <block id="5ff1fb7ee9a98601079d4ace975dfb0a" category="paragraph">将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像：</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">如果启用了 flual-bit ，请同时下载：</block>
   <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">在 _spec__ 部分中，进行以下更改：</block>
@@ -8864,4 +8863,8 @@
   <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">与数据到达缓慢或数据未到达一样、由于数据到达率不足以"实时"触发警报、因此需要接管计时器机制。 因此、问题通常会变成"在关闭分析窗口并查看我拥有的内容之前、我需要等待多长时间？" 如果等待时间过长、则生成警报的速度将不够快、无法发挥作用。</block>
   <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">如果您的监控器有一个30分钟的窗口、其中指出、在发生长期数据丢失之前、最后一个数据点违反了某种条件、 此时将生成警报、因为监控器未收到任何其他信息来确认指标的恢复、或者注意到此情况持续存在。</block>
   <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100 Mbps/1 Gbps以太网连接、静态IP地址以及从采集单元到*.cloudinsights.netapp.com或您的Cloud Insights 环境(即 \https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com)为必填项。有关采集单元与每个数据收集器之间的要求、请参见的说明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的组织需要使用代理来访问 Internet ，则您可能需要了解您的组织的代理行为并寻求某些例外情况， Cloud Insights 才能正常工作。例如、您的组织是否默认阻止访问、并且例外情况下仅允许访问特定网站/域？如果是、您需要将以下域添加到异常列表中：*.cloudinsights.netapp.com有关详细信息、请准备好Proxies <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> 或 <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
+  <block id="47400a8b7ae7e165f8d5326d32ebcc02" category="paragraph">将所有开源依赖项下载到您的私有 Docker 注册表中。使用与公有 存储库相同的目录结构。需要下载以下开源映像：</block>
+  <block id="b20c54eff3214bd1aab22457c1401f00" category="paragraph">编辑监控操作员部署以反映新的Docker repo-location：</block>
+  <block id="99d5862cd7f8e60656b7d84aaaf12ce9" category="cell">安装NetApp Kubernetes监控操作员后、我会立即在日志中看到以下内容：inputs.prometheus]插件错误：向\http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics: GET \http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics:发出HTTP请求时出错拨打TCP：LOOKUP Kube-state-metrics.&lt;namespace&gt;.svc.cluster.local：无此类主机</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。</block>
 </blocks>
