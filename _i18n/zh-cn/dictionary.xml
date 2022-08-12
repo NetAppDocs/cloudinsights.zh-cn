@@ -8867,4 +8867,8 @@
   <block id="b20c54eff3214bd1aab22457c1401f00" category="paragraph">编辑监控操作员部署以反映新的Docker repo-location：</block>
   <block id="99d5862cd7f8e60656b7d84aaaf12ce9" category="cell">安装NetApp Kubernetes监控操作员后、我会立即在日志中看到以下内容：inputs.prometheus]插件错误：向\http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics: GET \http://kube-state-metrics.&lt;namespace&gt;.svc.cluster.local:8080/metrics:发出HTTP请求时出错拨打TCP：LOOKUP Kube-state-metrics.&lt;namespace&gt;.svc.cluster.local：无此类主机</block>
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。</block>
+  <block id="911594325eba1fcc8e53e4e78b63f2e9" category="paragraph">替换以下行...</block>
+  <block id="75f51e3422147035b765a5e488f935ab" category="paragraph">使用：</block>
+  <block id="708a43ca283ea273fda53a8850915ef8" category="cell">我运行命令安装一个CI代理以收集Kubernetes信息、但在UI中看不到任何Kubernetes信息。</block>
+  <block id="18d024045f482dbcfe27667c416ea5eb" category="cell">运行以下命令、收集输出并联系NetApp支持部门。请注意、这些命令使用的是默认命名空间。如果您已设置自己的命名空间、请在这些命令以及后续所有命令中替换此命名空间。kubectl -n netapp-monitoring describe deploy、agent、RS、ds、pods kubectl -n netapp-monitoring logs &lt;monitoring-operator pod&gt;-c manager kubectl -n netapp-monitoring logs &lt;caaf-ds pods&gt;kubectl -n netapp-monitoring logs &lt;reaaf-rs kubectl-s -n netapp-monitoring logs &lt;cairetaf-rs&gt; kubectls -n.netapp-monitoring logs</block>
 </blocks>
