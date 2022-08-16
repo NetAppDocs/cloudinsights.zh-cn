@@ -44,7 +44,6 @@
   <block id="372735448eedd531647388e4231b11e5" category="cell">Cloud Secure 用户数据访问审核</block>
   <block id="296767e345f23610f06a21d1f03e36c6" category="cell">采用 AI/ML 的 Cloud Secure 内部威胁检测</block>
   <block id="4fe19c14796d667021bad4a9a083aefc" category="cell">业务智能和报告 *</block>
-  <block id="5cf75d903844ed65019951bc09f6c832" category="paragraph">&amp;#42 ；适用于 500 个或更多受管单元的环境</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">挂锁</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">使用 Cloud Insights 时，如果您看到挂锁图标 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>，表示此功能在您的当前版本中不可用，或者形式有限。升级以完全访问此功能。</block>
   <block id="3a7e4ed6e4843b57080572f28622d665" category="section-title">试用版</block>
@@ -8871,4 +8870,7 @@
   <block id="75f51e3422147035b765a5e488f935ab" category="paragraph">使用：</block>
   <block id="708a43ca283ea273fda53a8850915ef8" category="cell">我运行命令安装一个CI代理以收集Kubernetes信息、但在UI中看不到任何Kubernetes信息。</block>
   <block id="18d024045f482dbcfe27667c416ea5eb" category="cell">运行以下命令、收集输出并联系NetApp支持部门。请注意、这些命令使用的是默认命名空间。如果您已设置自己的命名空间、请在这些命令以及后续所有命令中替换此命名空间。kubectl -n netapp-monitoring describe deploy、agent、RS、ds、pods kubectl -n netapp-monitoring logs &lt;monitoring-operator pod&gt;-c manager kubectl -n netapp-monitoring logs &lt;caaf-ds pods&gt;kubectl -n netapp-monitoring logs &lt;reaaf-rs kubectl-s -n netapp-monitoring logs &lt;cairetaf-rs&gt; kubectls -n.netapp-monitoring logs</block>
+  <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
+  <block id="514faf5a71b4f0f67374c388f37aa0d7" category="cell">*</block>
+  <block id="54701d7c6ef5529abe15ceab8c8612cd" category="paragraph">&amp;#42；适用于500个或更大受管单元的环境\*一次仅限5个活动自定义监控器\*可用的API有限</block>
 </blocks>
