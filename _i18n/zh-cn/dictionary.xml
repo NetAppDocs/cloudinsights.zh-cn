@@ -8826,7 +8826,6 @@
   <block id="09ea31b2f879daa3575f90741cc1d791" category="section-title">阻止用户访问的前提条件</block>
   <block id="4c03839c4d4987ac81496c7f17d6f092" category="paragraph">要使此功能正常运行、需要集群级别的凭据。</block>
   <block id="9a517e6700abab3e080100846703ab51" category="paragraph">如果您使用的是集群管理凭据、则不需要任何新权限。</block>
-  <block id="4563a2ec099bb3f18ab52f261f6897e8" category="paragraph">如果您使用的自定义用户(如CsUser)具有为该用户授予的权限、请按照以下步骤为CloudSecure授予阻止用户的权限。</block>
   <block id="075530afc57aa5ff8851fb139e2fbbae" category="list-text">在Cloud Secure 中、导航到*管理员&gt;自动响应策略&gt;响应策略设置&gt;阻止用户访问*。</block>
   <block id="d024f8c400c18ed25e7c797f6b13a110" category="list-text">将"启用块用户访问"设置为_enabled"。</block>
   <block id="8bdb8cb044f5c9cc0cc87ec310782e1a" category="section-title">如何设置自动用户访问阻止？</block>
@@ -8872,4 +8871,17 @@
   <block id="e056d3391fc09511bb4b998310f69c58" category="cell">API访问和加；</block>
   <block id="d54591f265027d735d3be71d57199e4a" category="cell">业务智能和报告(&amp;ast)；</block>
   <block id="1331ebfce7b11a352f3117229f7a9f42" category="paragraph">仅限5个活动的自定义监控器(仅限)加号；API访问因版本和版本而异；(仅限500个或更多受管单元的环境)</block>
+  <block id="e8a2076095c01bcdd41cd90191e01972" category="admonition">使用Amazon FSX数据收集器时、SMB的用户阻止无法终止当前用户会话。请参见 <block ref="330552a095a13e513ece685118db1083" category="inline-xref-macro-rx"></block> 部分、了解更多信息。</block>
+  <block id="4c599f70e51d65668c4ce4bd1c33bb95" category="paragraph">如果您使用的自定义用户(例如_CSUser_)具有为该用户授予的权限、请按照以下步骤为Cloud Secure 授予权限以阻止用户。</block>
+  <block id="a8ebeed3ca8bbd5dcb31700e343f161c" category="paragraph">如果您的Cloud Secure 试用版到期或代理/收集器已关闭、请按照以下步骤手动从ONTAP 还原任何用户。</block>
+  <block id="f95989b518510dd543fddfe641a0760e" category="paragraph">您可以从用户列表页面获取Cloud Secure 中阻止的用户列表。</block>
+  <block id="d429655e140835b91db45b4324358975" category="list-text">使用cluster _admin_凭据登录到ONTAP 集群(要解除对用户的阻止)。(对于Amazon FSX、使用FSX凭据登录)。</block>
+  <block id="a450d857f06b830531fe0de70552762d" category="list-text">运行以下命令以列出所有SVM中被Cloud Secure for SMB阻止的所有用户：</block>
+  <block id="8eb6e3d15a14daab42fbb2f986622059" category="paragraph">在上述输出中、域CSL阻止了2个用户(US030、US040)。</block>
+  <block id="22ee7904617969fe778ac3e28eded28c" category="list-text">从上述输出中确定位置后、运行以下命令以解除对用户的阻止：</block>
+  <block id="1f8fcb155f2b517c2c9ae95f65ae3623" category="list-text">运行命令以确认用户未被阻止：</block>
+  <block id="a3b2696b55f3cdfe22afc4ee21f40ac8" category="paragraph">对于先前已阻止的用户、不应显示任何条目。</block>
+  <block id="ccfcbf1e5d2c0e260b83b0caf47be9db" category="cell">我看到错误：svm1：用户域\\user01的现有CIFS会话未关闭。此错误会显示在警报详细信息页面上的"Action take"部分以及"Alert &amp; User List"页面下的"Access Limtion History"下。如果出现此错误、则不会关闭用户当前会话、但是、在存储期限到期之前、系统会阻止用户进行任何新会话。</block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-xref">前提条件</block>
+  <block id="41bcd606fd956d57d1d3104d5f2d27fc" category="cell">这是Amazon FSX中的已知问题描述。Cloud Secure 将无法关闭现有SMB会话。当前没有可用于阻止Amazon FSX的现有SMB会话的临时解决策。如果收集器类型为CVO或ONTAP 、请确保中所述的权限正确 <block ref="6c7a156ba37a843e01c9100eb2f3a3a7" category="inline-xref-macro-rx"></block> 部分。</block>
 </blocks>
