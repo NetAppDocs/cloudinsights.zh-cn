@@ -43,7 +43,6 @@
   <block id="b42c726529f30f475409276e435fe377" category="cell">单点登录（ SSO ）</block>
   <block id="372735448eedd531647388e4231b11e5" category="cell">Cloud Secure 用户数据访问审核</block>
   <block id="296767e345f23610f06a21d1f03e36c6" category="cell">采用 AI/ML 的 Cloud Secure 内部威胁检测</block>
-  <block id="4fe19c14796d667021bad4a9a083aefc" category="cell">业务智能和报告 *</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">挂锁</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">使用 Cloud Insights 时，如果您看到挂锁图标 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>，表示此功能在您的当前版本中不可用，或者形式有限。升级以完全访问此功能。</block>
   <block id="3a7e4ed6e4843b57080572f28622d665" category="section-title">试用版</block>
@@ -8872,5 +8871,6 @@
   <block id="18d024045f482dbcfe27667c416ea5eb" category="cell">运行以下命令、收集输出并联系NetApp支持部门。请注意、这些命令使用的是默认命名空间。如果您已设置自己的命名空间、请在这些命令以及后续所有命令中替换此命名空间。kubectl -n netapp-monitoring describe deploy、agent、RS、ds、pods kubectl -n netapp-monitoring logs &lt;monitoring-operator pod&gt;-c manager kubectl -n netapp-monitoring logs &lt;caaf-ds pods&gt;kubectl -n netapp-monitoring logs &lt;reaaf-rs kubectl-s -n netapp-monitoring logs &lt;cairetaf-rs&gt; kubectls -n.netapp-monitoring logs</block>
   <block id="c17f94825893615b23fe642f01528d0f" category="cell">上一个(&amp;A)；</block>
   <block id="cfd5ebf75a4f06628eea1779798f08d5" category="cell">上一个(&amp;A)；</block>
-  <block id="a093ee1a6db03c2791705cf10c177d07" category="paragraph">&amp;#42；适用于包含500个受管单元以及更大的主机和主机的环境；一次仅限5个活动的自定义监控器；&amp;ast；可用的API有限</block>
+  <block id="fbcbad09f25603c31425bdbe7347ab04" category="cell">业务智能和报告(&amp;ast)；&amp; ast；&amp; ast；</block>
+  <block id="78899749f4f598d5c1c70ec3895887bd" category="paragraph">仅限5个活动的自定义监控器一次和每次&amp;ast；和ast；有限的API可用性和ast；和ast；和ast；适用于500个或更多受管单元的环境</block>
 </blocks>
