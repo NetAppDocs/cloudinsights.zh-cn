@@ -8884,4 +8884,5 @@
   <block id="ccfcbf1e5d2c0e260b83b0caf47be9db" category="cell">我看到错误：svm1：用户域\\user01的现有CIFS会话未关闭。此错误会显示在警报详细信息页面上的"Action take"部分以及"Alert &amp; User List"页面下的"Access Limtion History"下。如果出现此错误、则不会关闭用户当前会话、但是、在存储期限到期之前、系统会阻止用户进行任何新会话。</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-xref">前提条件</block>
   <block id="41bcd606fd956d57d1d3104d5f2d27fc" category="cell">这是Amazon FSX中的已知问题描述。Cloud Secure 将无法关闭现有SMB会话。当前没有可用于阻止Amazon FSX的现有SMB会话的临时解决策。如果收集器类型为CVO或ONTAP 、请确保中所述的权限正确 <block ref="6c7a156ba37a843e01c9100eb2f3a3a7" category="inline-xref-macro-rx"></block> 部分。</block>
+  <block id="dfb65f9e847424acb7569e9d1d256de5" category="section-title">手动还原SMB用户</block>
 </blocks>

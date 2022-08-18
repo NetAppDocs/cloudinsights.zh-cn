@@ -139,9 +139,11 @@ svm2         test            3       cifs,    0.0.0.0/0             any
                                     flexcache
 2 entries were displayed.
 ....
-+
- == Manually Restore Users for SMB
 
+
+
+
+== 手动还原SMB用户
 
 如果您的Cloud Secure 试用版到期或代理/收集器已关闭、请按照以下步骤手动从ONTAP 还原任何用户。
 
