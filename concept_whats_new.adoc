@@ -12,6 +12,115 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+== 2022年8月
+
+
+
+=== Cloud Insights 全新外观！
+
+从本月开始、"监控和优化"已重命名为*可观察性*。您可以在此处找到所有最喜欢的功能、例如信息板、查询、警报和报告。此外、在新的*安全性*菜单下查找Cloud Secure。请注意、只有菜单发生了更改；功能保持不变。
+
+[role="thumb"]
+image:New_CI_Menu_2022.png["新建CI菜单"]
+
+正在查找*帮助*菜单？
+
+帮助现在位于屏幕右上角。
+
+image:New_Help_Menu_2022.png["帮助菜单位于右上角"]
+
+
+
+=== 不确定从何处开始？查看ONTAP 基础知识！
+
+link:concept_ontap_essentials.html["* ONTAP 基础知识*"] 是一组信息板和工作流、可提供有关NetApp ONTAP 清单、工作负载和数据保护的详细视图、包括存储容量和性能的天到全满预测。您甚至可以查看是否有任何控制器以高利用率运行。ONTAP 基础知识是您满足所有NetApp ONTAP 监控需求的理想之选！
+
+所有版本均提供ONTAP 基础知识、旨在让现有ONTAP 操作员和管理员直观地使用这些基础知识、从而轻松地从ActiveIQ Unified Manager过渡到基于服务的管理工具。
+
+image:ONTAP_Essentials_Menu_and_screen.png["ONTAP 基础知识概述信息板"]
+
+
+
+=== 存储数据系列将合并
+
+您需要它、现在您已准备好了。现在、存储基础2和基础10数据单元可组合成一个系列、从位和字节到tebibits和TB、使您可以更轻松地在信息板上显示您所需的数据。数据速率现在也是他们自己的一个大系列。
+
+image:DataFamilyMerged.png["下拉列表显示了base-2和base-10数据系列的合并"]
+
+
+
+=== 我的存储使用了多少电力？
+
+使用NetApp_ontap.storage_shelf、netapp_ontap.system_node和netapp_ontap.cluster (仅限功耗)指标显示和监控ONTAP 存储架和节点的功耗、温度和风扇速度。
+
+image:ONTAP_Power_Metrics_1.png["存储功耗指标"]
+
+
+
+=== 功能已从预览版升级
+
+以下功能已从预览版中移出、现在可供所有客户使用：
+
+|===
+
+
+| * 功能 * | * 问题描述 * 
+
+
+| Kubernetes命名空间即将用尽 | 通过运行空间不足的_Kubernetes命名空间_ Insight、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["阅读更多内容"] 
+
+
+| 共享资源面临压力 | "受压力的共享资源" Insight使用AI/ML自动确定资源争用在环境中导致性能下降的位置、突出显示受其影响的任何工作负载、并提供建议的修复操作、使您能够更快地解决性能问题。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["阅读更多内容"] 
+
+
+| Cloud Secure —在受到攻击时阻止用户访问 | 可以在检测到攻击时阻止用户访问、从而增强对业务关键型数据的保护。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
+|===
+
+
+=== 我的数据收集运行状况如何？
+
+Cloud Insights 为采集单元提供了两个新的检测信号监控器、并提供了两个监控器、用于在数据收集器出现故障时向您发出警报。这些功能可用于快速向您发出数据收集问题的警报。
+
+现在、_Data Collection_监控组中提供了以下监控器：
+
+* 采集单元检测信号严重
+* 采集单元检测信号警告
+* 收集器失败
+* 收集器警告
+
+
+请注意、默认情况下、这些监控器处于_Paused_state。激活这些用户、使其收到有关数据收集问题的警报。
+
+
+
+=== 自动续订API令牌
+
+现在、可以为自动续订设置API访问令牌。启用此功能后、将自动为即将过期的令牌生成新的/刷新的API访问令牌。使用过期令牌的Cloud Insights 代理将自动更新、以使用相应的新API访问令牌/已刷新API访问令牌、从而可以继续无缝运行。创建令牌时、只需选中"自动续订令牌"框即可。目前、在具有最新NetApp Kubernetes监控操作员的Kubernetes平台上运行的Cloud Insights 代理支持此功能。
+
+
+
+=== Basic Edition为您提供了比以往更多的功能
+
+您的试用即将结束、但您还不确定订阅是否适合您？Basic Edition始终为您提供了继续将Cloud Insights 与当前ONTAP 数据收集器结合使用的机会、但现在您也可以继续捕获VMware版本、拓扑和IOPS/吞吐量/延迟数据。在存储系统上获得高级支持的NetApp客户也有权获得Cloud Insights 支持。
+
+
+
+=== 是否已准备好了解更多信息？
+
+请查看帮助>支持页面的*学习中心*部分、获取NetApp大学Cloud Insights 课程内容的链接！
+
+
+
+=== 操作系统支持
+
+除了这些操作系统之外、Cloud Insights 采集单元还支持以下操作系统 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支持"]：
+
+* Windows 11
+
+
+'''
+
+
 == 2022年6月
 
 
@@ -85,7 +194,7 @@ Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如�
 | Kubernetes命名空间即将用尽 | 通过运行空间不足的_Kubernetes命名空间_ Insight、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。link:https://docs.netapp.com/us-en/cloudinsights/insights_k8s_namespaces_running_out_of_space.html["阅读更多内容"] 
 
 
-| Cloud Secure —在受到攻击时限制用户访问 | 可以在检测到攻击时限制用户访问，从而增强对业务关键型数据的保护。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
+| Cloud Secure —在受到攻击时阻止用户访问 | 可以在检测到攻击时阻止用户访问、从而增强对业务关键型数据的保护。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
 
 
 | 共享资源面临压力 | "受压力的共享资源" Insight使用AI/ML自动确定资源争用在环境中导致性能下降的位置、突出显示受其影响的任何工作负载、并提供建议的修复操作、使您能够更快地解决性能问题。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["阅读更多内容"] 
@@ -153,7 +262,7 @@ Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如�
 | 内部卷和卷容量全满时间预测 | Cloud Insights 可以预测每个受监控内部卷和卷的容量用尽前的天数。此值有助于显著降低中断风险。 
 
 
-| Cloud Secure —在受到攻击时限制用户访问 | 可以在检测到攻击时限制用户访问，从而增强对业务关键型数据的保护。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
+| Cloud Secure —在受到攻击时阻止用户访问 | 可以在检测到攻击时阻止用户访问、从而增强对业务关键型数据的保护。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
 
 
 | 共享资源面临压力 | "受压力的共享资源" Insight使用AI/ML自动确定资源争用在环境中导致性能下降的位置、突出显示受其影响的任何工作负载、并提供建议的修复操作、使您能够更快地解决性能问题。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["阅读更多内容"] 
@@ -209,7 +318,7 @@ Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如�
 | 内部卷和卷容量全满时间预测 | Cloud Insights 可以预测每个受监控内部卷和卷的容量用尽前的天数。此值有助于显著降低中断风险。 
 
 
-| Cloud Secure —在受到攻击时限制用户访问 | 可以在检测到攻击时限制用户访问，从而增强对业务关键型数据的保护。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
+| Cloud Secure —在受到攻击时阻止用户访问 | 可以在检测到攻击时阻止用户访问、从而增强对业务关键型数据的保护。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。link:https://docs.netapp.com/us-en/cloudinsights/cs_automated_response_policies.html["阅读更多内容"] 
 
 
 | 共享资源面临压力 | 压力洞察力下的共享资源使用 AI/ML 自动确定资源争用在您的环境中导致性能下降的位置，突出显示受其影响的任何工作负载，并提供建议的修复操作，以便您更快地解决性能问题。link:https://docs.netapp.com/us-en/cloudinsights/insights_shared_resources_under_stress.html["阅读更多内容"] 
@@ -351,10 +460,10 @@ image:LogQueryExplorer.png["日志查询"]
 | 管理员 | 可以执行所有 Cloud Secure 功能，包括警报，取证，数据收集器，自动响应策略和 Cloud Secure API 等功能。管理员还可以邀请其他用户，但只能分配 Cloud Secure 角色。 
 
 
-| 用户 | 可以查看和管理警报以及查看取证。用户角色可以更改警报状态，添加注释，手动创建快照以及限制用户访问。 
+| 用户 | 可以查看和管理警报以及查看取证。用户角色可以更改警报状态、添加注释、手动创建快照以及阻止用户访问。 
 
 
-| 来宾 | 可以查看警报和取证。来宾角色不能更改警报状态，添加备注，手动创建快照或限制用户访问。 
+| 来宾 | 可以查看警报和取证。来宾角色不能更改警报状态、添加备注、手动创建快照或阻止用户访问。 
 |===
 
 

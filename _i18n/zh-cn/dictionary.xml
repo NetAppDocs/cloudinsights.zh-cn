@@ -8119,8 +8119,6 @@
   <block id="6e8d08f021f143c0380bcfda2a0d8e35" category="paragraph">Cloud Insights 可以在创建或删除 Pod ，子集和副本集以及创建新部署时向您发出警报，让您及时了解 Kubernetes 环境中的变化。Kubernetes 会将默认状态监控为 _paused_state ，因此您应仅启用所需的特定状态。</block>
   <block id="25e271d2558ae8aca95f77cf3064f9f4" category="cell">内部卷和卷容量全满时间预测</block>
   <block id="6327e04265ebac4957d88ad9cb76d168" category="cell">Cloud Insights 可以预测每个受监控内部卷和卷的容量用尽前的天数。此值有助于显著降低中断风险。</block>
-  <block id="e90c4ace721cc2fab5257871d711796d" category="cell">Cloud Secure —在受到攻击时限制用户访问</block>
-  <block id="e353c2255e0d23456f0d04e774cc242c" category="cell">可以在检测到攻击时限制用户访问，从而增强对业务关键型数据的保护。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="58114ec5d8ca1494b408777c1a724eef" category="cell">压力洞察力下的共享资源使用 AI/ML 自动确定资源争用在您的环境中导致性能下降的位置，突出显示受其影响的任何工作负载，并提供建议的修复操作，以便您更快地解决性能问题。<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="9fc31ce4550c4f68c1ea81f5a37335aa" category="section-title">新的 Data Collector</block>
   <block id="01ec768781d34379b5889a634c19e5cc" category="section-title">其他 Data Collector 更新</block>
@@ -8896,4 +8894,47 @@
   <block id="641244a546c89759b8e5c60efd75767d" category="paragraph">此外，您还可以使用 Cloud Insights <block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block> 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如、如果您在"可观察性"中具有管理员角色、而在"报告"中具有用户角色、则您可以管理除数据仓库之外的所有API类型。</block>
   <block id="0661e5cc01fe7da17bc8e2d8e2e34221" category="paragraph">请注意，用户有权访问的 API 类别也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个Cloud Insights 功能集中都有(可观察性、安全性、报告)。</block>
   <block id="98d8ebff3e8aa04aa14171f6564f1ec7" category="paragraph">所有当前Cloud Insights 功能均可用。请观看此空间、了解未来的预览。</block>
+  <block id="8bab215794a736f6f876eac0eeb23923" category="section-title">2022年8月</block>
+  <block id="d705154352cfbafc58dfc6d7437fb527" category="section-title">Cloud Insights 全新外观！</block>
+  <block id="d3d93d4a561aa9307d47023701a0c283" category="paragraph">从本月开始、"监控和优化"已重命名为*可观察性*。您可以在此处找到所有最喜欢的功能、例如信息板、查询、警报和报告。此外、在新的*安全性*菜单下查找Cloud Secure。请注意、只有菜单发生了更改；功能保持不变。</block>
+  <block id="f3f29af86c9b9c4db0c68765dfa7f051" category="inline-image-macro">新建CI菜单</block>
+  <block id="87f2cc206fb1e47d7441af559046dd86" category="paragraph"><block ref="87f2cc206fb1e47d7441af559046dd86" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7b93edf0748e59f362dfa4896c478b93" category="paragraph">正在查找*帮助*菜单？</block>
+  <block id="5c0bfda83c5d90521dd05955a44b1fc7" category="paragraph">帮助现在位于屏幕右上角。</block>
+  <block id="e50f2f4f823dfcb7955ac73ed07dfb02" category="inline-image-macro">帮助菜单位于右上角</block>
+  <block id="1ee9fcbb5f9692177c85538fe0554fc5" category="paragraph"><block ref="1ee9fcbb5f9692177c85538fe0554fc5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="db7ffbe90af5c64ff2e1d0b1a42439dc" category="section-title">不确定从何处开始？查看ONTAP 基础知识！</block>
+  <block id="89cb10d77085cf41a426f6c7d7025df0" category="inline-link-macro">* ONTAP 基础知识*</block>
+  <block id="2e414b94b1201a3f3cce93eac0021751" category="paragraph"><block ref="223512fb854e2c6568b12f6404a6d95e" category="inline-link-macro-rx"></block> 是一组信息板和工作流、可提供有关NetApp ONTAP 清单、工作负载和数据保护的详细视图、包括存储容量和性能的天到全满预测。您甚至可以查看是否有任何控制器以高利用率运行。ONTAP 基础知识是您满足所有NetApp ONTAP 监控需求的理想之选！</block>
+  <block id="318810ea99242f63913a4d0569f6a3e1" category="paragraph">所有版本均提供ONTAP 基础知识、旨在让现有ONTAP 操作员和管理员直观地使用这些基础知识、从而轻松地从ActiveIQ Unified Manager过渡到基于服务的管理工具。</block>
+  <block id="f41594e15ab03658906c309b3fa344fb" category="section-title">存储数据系列将合并</block>
+  <block id="4506719f01b92a3f00a232b1f130938b" category="paragraph">您需要它、现在您已准备好了。现在、存储基础2和基础10数据单元可组合成一个系列、从位和字节到tebibits和TB、使您可以更轻松地在信息板上显示您所需的数据。数据速率现在也是他们自己的一个大系列。</block>
+  <block id="b69c1b6f0730aa5a7c71579ff7cdf146" category="inline-image-macro">下拉列表显示了base-2和base-10数据系列的合并</block>
+  <block id="6a2b2c80a567a29026c0efe569422fc7" category="paragraph"><block ref="6a2b2c80a567a29026c0efe569422fc7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="62775367d0be8fb85879a7417d1c5f27" category="section-title">我的存储使用了多少电力？</block>
+  <block id="c460230a0d71f4c2e49713913fd0a01c" category="paragraph">使用NetApp_ontap.storage_shelf、netapp_ontap.system_node和netapp_ontap.cluster (仅限功耗)指标显示和监控ONTAP 存储架和节点的功耗、温度和风扇速度。</block>
+  <block id="c0545994150347fb8590eb6dfe1934ab" category="inline-image-macro">存储功耗指标</block>
+  <block id="1b7dea988e626ae19b6022dad8fcffae" category="paragraph"><block ref="1b7dea988e626ae19b6022dad8fcffae" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3280f3cc88209e72bdf5878afe5afec2" category="section-title">功能已从预览版升级</block>
+  <block id="b15e043f2e8db0aa222ae7311e987712" category="paragraph">以下功能已从预览版中移出、现在可供所有客户使用：</block>
+  <block id="64f0171311f2657dbd0578fca9fb2fa5" category="cell">Cloud Secure —在受到攻击时阻止用户访问</block>
+  <block id="6ad1deaea422210384bf8c46adb4027a" category="cell">可以在检测到攻击时阻止用户访问、从而增强对业务关键型数据的保护。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="2d6bee64b9e0e23f822f86b9ef8e0060" category="section-title">我的数据收集运行状况如何？</block>
+  <block id="62eb208f255de6653342ec37c0ec229b" category="paragraph">Cloud Insights 为采集单元提供了两个新的检测信号监控器、并提供了两个监控器、用于在数据收集器出现故障时向您发出警报。这些功能可用于快速向您发出数据收集问题的警报。</block>
+  <block id="b355ccf4f7e6c9eb6dbdec86e748dbf6" category="paragraph">现在、_Data Collection_监控组中提供了以下监控器：</block>
+  <block id="f080c7e2db3c941a50244332dcd5aa78" category="list-text">采集单元检测信号严重</block>
+  <block id="0fdd65b6d5fd4a7a8433446830711e1c" category="list-text">采集单元检测信号警告</block>
+  <block id="a211304a1293c2bf5a11a69b7b8c27be" category="paragraph">请注意、默认情况下、这些监控器处于_Paused_state。激活这些用户、使其收到有关数据收集问题的警报。</block>
+  <block id="12f80d401d5ff4d4547512db4d3b2c6c" category="section-title">自动续订API令牌</block>
+  <block id="27ba6c06585f4077b49dfa97c8d3628b" category="paragraph">现在、可以为自动续订设置API访问令牌。启用此功能后、将自动为即将过期的令牌生成新的/刷新的API访问令牌。使用过期令牌的Cloud Insights 代理将自动更新、以使用相应的新API访问令牌/已刷新API访问令牌、从而可以继续无缝运行。创建令牌时、只需选中"自动续订令牌"框即可。目前、在具有最新NetApp Kubernetes监控操作员的Kubernetes平台上运行的Cloud Insights 代理支持此功能。</block>
+  <block id="8f10a9bc5a8ba504bde35cb40a25605d" category="section-title">Basic Edition为您提供了比以往更多的功能</block>
+  <block id="8186bdac49bf2abfc340f91e81ee77e3" category="paragraph">您的试用即将结束、但您还不确定订阅是否适合您？Basic Edition始终为您提供了继续将Cloud Insights 与当前ONTAP 数据收集器结合使用的机会、但现在您也可以继续捕获VMware版本、拓扑和IOPS/吞吐量/延迟数据。在存储系统上获得高级支持的NetApp客户也有权获得Cloud Insights 支持。</block>
+  <block id="332f3415df49d49dabe51fb2d7f62e40" category="section-title">是否已准备好了解更多信息？</block>
+  <block id="f68b94c43b4b7f0dcab25235f8af5de9" category="paragraph">请查看帮助&gt;支持页面的*学习中心*部分、获取NetApp大学Cloud Insights 课程内容的链接！</block>
+  <block id="1092735d9c4841e6e9b1620161763b75" category="paragraph">除了这些操作系统之外、Cloud Insights 采集单元还支持以下操作系统 <block ref="e27610920cf83f6a88b088882e8c727e" category="inline-link-macro-rx"></block>：</block>
+  <block id="8c4731f1a5288444bb2510ff8d967cc3" category="list-text">Windows 11</block>
+  <block id="2ad48475868a5acf715f48e45c20d2d1" category="cell">Cloud Secure —在受到攻击时阻止用户访问</block>
+  <block id="4e28671aa760c1ba504510846bdf520c" category="cell">可以在检测到攻击时阻止用户访问、从而增强对业务关键型数据的保护。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
+  <block id="a78d7cf3a7b4f6fe8edcca9384e823a8" category="cell">可以查看和管理警报以及查看取证。用户角色可以更改警报状态、添加注释、手动创建快照以及阻止用户访问。</block>
+  <block id="f9e6fd444a4fd0ec2399b552c8145545" category="cell">可以查看警报和取证。来宾角色不能更改警报状态、添加备注、手动创建快照或阻止用户访问。</block>
 </blocks>
