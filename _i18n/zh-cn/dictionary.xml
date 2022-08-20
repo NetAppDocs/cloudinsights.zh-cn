@@ -787,7 +787,6 @@
   <block id="bcc3225d741abe003ad8a9f0472f8e0f" category="cell">资产页面：查看</block>
   <block id="e1e6805adf2b0c232077411d5b3c6f84" category="cell">Audit ：查看</block>
   <block id="3ad3b94ea7e29fe0f9f1f0a0f4b95640" category="cell">云成本</block>
-  <block id="83f121ee28583626410ec235e4c3a84a" category="cell">Cloud Secure</block>
   <block id="d92b97b5bd045f3cc0dd423eb7aad931" category="cell">信息板：创建 / 修改 / 删除</block>
   <block id="cbffc03121243a64702f719493c2ece0" category="cell">信息板：查看</block>
   <block id="01cbff12e5be125caf82ae0d33bfcd0a" category="cell">数据收集器：添加 / 修改 / 轮询 / 删除</block>
@@ -5398,20 +5397,6 @@
   <block id="f1f45371fb9bb18dae05a3bbc8c3fbc0" category="cell">Kubernetes 。 io/OS = Linux</block>
   <block id="9e2a330d57e085e593849abad3159d54" category="cell">Rancher + catt.io 作为流程编排 /Kubernetes 平台</block>
   <block id="210d6dd076b2d2e1dd1645c99d185fbd" category="cell">catt.io/OS = Linux</block>
-  <block id="3c3ac08f88c7317ac9d41d3b669cbc27" category="list-text">单击安装对话框中的 * 复制代理安装程序 Snippet* 按钮。如果要查看命令块，您可以选择单击 _+reveal Agent Installer Snippet_ 按钮。</block>
-  <block id="c3e7ae0efafea510710a12fe0f0d609a" category="list-text">或者，您也可以在 install 命令中覆盖命名空间或提供集群名称，方法是修改命令块，在最终的 _./$installerName_ 之前添加以下一项或两项</block>
-  <block id="e1a5dab3e4ad3574b29d38315af67877" category="list-text">cluster_name=&lt; 集群名称 &gt;</block>
-  <block id="8d452c9dd71946426462bb948da29ba1" category="list-text">namespace=&lt; 命名空间 &gt;</block>
-  <block id="a16c56e9bf65ad3b7b874edee04a172d" category="admonition">_cluster_name_ 是 Cloud Insights 收集指标的 Kubernetes 集群的名称，而 _namespace_是 要将 Telegraf 代理部署到的命名空间。如果指定的命名空间尚不存在，则会创建该命名空间。</block>
-  <block id="a49846985b439fe0226db69fec5a37b3" category="list-text">准备好后，执行命令块。</block>
-  <block id="f8dad256798b9f55db0111e9f6fa89aa" category="list-text">此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。如果尚未明确设置 _namespaces_ ，系统将提示您输入此名称。完成后，此脚本将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。</block>
-  <block id="4982b7b8dc760f43a8412361a66b103f" category="list-text">完成后，单击 * 完成设置 * 。</block>
-  <block id="b48de51edae08102b98dd048f7903a05" category="paragraph">将在 Kubernetes 集群上创建 DemonSet 和 ReplicaSet ，以运行所需的 Telegraf 代理 / Pod 。默认情况下，这些 Telegraf 代理 / Pod 将同时计划在主节点和非主节点上。</block>
-  <block id="4d38edd7b7c9375065c0ea7fde2002ce" category="paragraph">为了便于停止和重新启动代理，请使用以下命令生成 Telegraf DemonSet YAML 和 ReplicaSet YAML 。请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：</block>
-  <block id="925b82fe7b7df059708510a3af94e2d0" category="paragraph">如果您已设置自己的命名空间，请在以下命令和所有后续命令和文件中替换此命名空间：</block>
-  <block id="27632d6c587ce664ee73ab41cf584c2d" category="paragraph">然后，您可以使用以下命令停止和启动 Telegraf 服务：</block>
-  <block id="d3f2095232996254a1ce9d2dd9efc5b0" category="paragraph">* 安装 Telegraf 代理之后，将适当的 _https_proxy_ 和 / 或 _http_proxy_ 环境变量添加并设置为 _telecraf-DS_ emonset 和 _telecraf-RS_ replicaset 。</block>
-  <block id="fc8f446a9ea6e6bdd7e365563b8c3851" category="paragraph">然后，重新启动 Telegraf ：</block>
   <block id="1a2ec26374f8d36de076929c5ff28aa8" category="section-title">配置代理以从 Kubernetes 收集数据</block>
   <block id="f1e81401ee0afe2275193298ef588120" category="list-text">HostPath</block>
   <block id="5eeadeea1e2bd82727f9a220408a5f2a" category="list-text">配置映射</block>
@@ -5452,8 +5437,6 @@
   <block id="71342d32523395c97fae80cc75bd023d" category="paragraph">如果监控命名空间仅用于 Telegraf ：</block>
   <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">如果除了 Telegraf 之外，监控命名空间还用于其他目的：</block>
   <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">备份现有配置：</block>
-  <block id="2dae4ebf3cd52678b8e5d2465189428c" category="list-text">卸载代理（有关说明，请参见上文）</block>
-  <block id="74f5c6d32f2296f5957491bc1daf425c" category="list-text"><block ref="46fff369b4d49c060bdfe983d9141e8d" category="inline-link-macro-rx"></block>。</block>
   <block id="e7d024454be5ad9e8d0f6defe29e154f" category="section-title">代理安装故障排除</block>
   <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">在设置代理时遇到问题时要尝试的一些操作：</block>
   <block id="fb0132b157c251ea47224310ff68ee9b" category="cell">我已使用 Cloud Insights 安装代理</block>
@@ -7073,11 +7056,8 @@
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">请尝试在 Chrome 中使用匿名模式，或者清除浏览器历史记录， Cookie 和缓存。请尝试使用其他浏览器配置文件（例如 Chrome - 添加人员）。</block>
   <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">有关详细信息，请参见<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
   <block id="fc1a24cc0d6d7c3e25a51a3d66a9d033" category="inline-link-macro">单点登录（ SSO ）授权</block>
-  <block id="ebbdc244249c4bebdb539839ef825e95" category="paragraph">Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管理员，用户和来宾。为每个帐户分配特定的权限级别，如下表所示。（请注意， _User_ 和 _Guest_ 角色在 Cloud Secure 功能中不可用。）用户可以是其中之一 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> Cloud Insights 并分配了特定角色，或者可以通过登录 <block ref="5714c3cacaaaa4fdc97a235dfa644756" category="inline-link-macro-rx"></block> 具有默认角色。Cloud Insights 高级版提供了 SSO 授权功能。</block>
   <block id="9e81fe47cff9df70ea875a449221eb62" category="paragraph">您可以使用具有管理员权限的帐户来创建或修改用户帐户。每个用户帐户都会从以下权限级别为每个 Cloud Insights 功能分配一个角色。</block>
-  <block id="423e555c5ec3885f2bb5d9d2d6627f63" category="cell">监控</block>
   <block id="305de530147912d72a50568ee4d65d26" category="cell">帐户所有者</block>
-  <block id="b754159e4e957eec4566aef2214ed483" category="cell">可以修改订阅，查看计费和使用情况信息，并执行监控和优化， Cloud Secure 和报告的所有管理员功能。所有者还可以邀请和管理用户，以及管理 SSO 身份验证和身份联合设置。注册 Cloud Insights 时会创建第一个帐户所有者。强烈建议每个 Cloud Insights 环境至少有两个帐户所有者。 </block>
   <block id="3ef783c8ab0b0ca9f4834b6aa0f8fdf6" category="cell">可以执行所有 Cloud Secure 功能，包括警报，取证，数据收集器，自动响应策略和 Cloud Secure API 等功能。管理员还可以邀请其他用户，但只能分配 Cloud Secure 角色。</block>
   <block id="9912eb0cfbb27a071ceaf89334fe4dbc" category="cell">可以查看和修改信息板，查询，警报，标注，标注规则， 和应用程序，并管理设备解析。</block>
   <block id="70fb52e38580a301b191eb366ac4d029" category="cell">可以执行所有来宾 / 使用者功能以及创建和管理报告和信息板。</block>
@@ -7085,7 +7065,6 @@
   <block id="024adade9cb0061af998b7d3f3e85f0a" category="cell">可以查看，计划和运行报告并设置个人首选项，例如语言和时区的首选项。来宾 / 使用者无法创建报告或执行管理任务。</block>
   <block id="ec0921e40c81a97ba64c076f0ada5cc3" category="section-title">按用户角色划分的 Cloud Insights 权限</block>
   <block id="83182dfe9652d91a9dff49ae5051115e" category="list-text">为 Cloud Insights 的每个功能选择用户的角色。</block>
-  <block id="6e8526c3709a72705e37b6942beed39a" category="admonition">您可以选择的功能和角色取决于您以特定管理员角色访问的功能。例如，如果您只具有报告管理员角色，则可以将用户分配给报告中的任何角色，但不能为监控和优化或 Cloud Secure 分配角色。</block>
   <block id="0e37aaee59fd92b0c2231a3435ccb705" category="inline-image-macro">用户角色选择</block>
   <block id="be79de8824d9bc14fde4037b481d09cf" category="paragraph"><block ref="be79de8824d9bc14fde4037b481d09cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="248f830b158797f9c038ea35ea266b89" category="section-title">2021年8月</block>
@@ -7148,7 +7127,6 @@
   <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">您可以通过以下方式查看代理端点 URL ：在入职期间选择数据收集器时单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接。此时将显示如下表。</block>
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">代理端点表</block>
   <block id="dc7ddc4ec72db050f82b66a7738d6ce6" category="paragraph"><block ref="dc7ddc4ec72db050f82b66a7738d6ce6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9bdb1d7869cec3eaa75aaa48b414845" category="inline-link-macro">Kube-state-metrics 文档</block>
   <block id="8bdbfb2fbcb4d30bcb7f3456068bf952" category="section-title">查看代理端点</block>
   <block id="a6f1dcc9d358c0cdb54ec05673906e45" category="section-title">新的审核页面用户界面</block>
   <block id="50c786c9efcadf10b6b80a91b4bb98cf" category="inline-link-macro">审核页面</block>
@@ -7222,7 +7200,6 @@
   <block id="36e498f46668dc7b2127a0e5f83abd6c" category="section-title">删除用户</block>
   <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">具有管理员角色的用户可以通过单击用户的名称并单击对话框中的 _Delete User_ 来删除用户（例如，不再与公司合作的用户）。此用户将从 Cloud Insights 环境中删除。</block>
   <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">请注意，即使删除用户，用户创建的任何信息板，查询等也将在 Cloud Insights 环境中保持可用。</block>
-  <block id="f15a3c589417e8499878c4798162a622" category="admonition">强烈建议使用 Kube-state-metrics 2.0 或更高版本，以利用完整的功能集，包括将 Kubernetes 永久性卷（永久性卷）链接到后端存储设备的功能。另请注意，对于 Kube-state-metrics 2.0 及更高版本，默认情况下不会导出 Kubernetes 对象标签。要配置 Kube-state-metrics 以导出 Kubernetes 对象标签，必须指定指标标签 "allow" 列表。请参见中的 _-metric-labks-allowlist_ 选项 <block ref="c9e67904a9f79d0939703fb8530b31c4" category="inline-link-macro-rx"></block>。</block>
   <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">此问题描述</block>
   <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">Data ONTAP 9.2 及更高版本要获得最佳性能，请使用 Data ONTAP 版本，其中 <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> 已修复。</block>
   <block id="4d9921582b3bc6dc32845b40e4b4c522" category="cell">启用 Cloud Secure 后， ONTAP 性能将受到影响：延迟偶尔会高， IOPS 偶尔会低。</block>
@@ -7386,11 +7363,6 @@
   <block id="34e5045f115b5836d80d9776d1d13dc9" category="admonition">某些屏幕区域（例如某些小工具图表）仍会显示浅色背景，即使在以暗主题查看时也是如此。</block>
   <block id="f97f94f0ff0c35a96686e2fd00940ac8" category="admonition">如果要在安装代理之前验证安装文件，请参见以下章节 <block ref="1d9f3d6343939e76574c60762a7f2fae" category="inline-xref-macro-rx"></block>。</block>
   <block id="b5de2c13f95171f5dc8fed7123f4fd51" category="list-text">从存储中删除证书：</block>
-  <block id="d836a7075094860f48ae2ac37b8ee84a" category="paragraph">Kubernetes 提供了两种数据收集方式：</block>
-  <block id="e973aa335528494c3881ffe9a6be0e81" category="inline-image-macro">Kubernetes 安装选项</block>
-  <block id="b81ec4ed4165242831d809ec7e442e82" category="paragraph"><block ref="b81ec4ed4165242831d809ec7e442e82" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c464aab0e1d91c1e20dba1868d499f0e" category="list-text">必须安装 Kube-state-metrics 。有关详细信息，请参见下文。Kube-state-metrics 会随基于操作员的安装自动安装。</block>
-  <block id="37c93461ccb3b9d32a460c02b4fc8ce6" category="list-text">如果您运行的 Kubernetes 变体需要安全上下文约束，请按照 * 配置代理以从 Kubernetes 收集数据 * 一节中的说明进行操作。基于操作员的安装可为您安装此软件。</block>
   <block id="4e7860768ab50263cd322fefea021fdc" category="list-text">您必须具有创建 Kubernetes 集群角色和角色绑定的权限。</block>
   <block id="640dbe189d66fa73b9cedb44a9424843" category="inline-image-macro">基于操作员的安装</block>
   <block id="4a64a7036f6051830b5665f656513166" category="paragraph"><block ref="4a64a7036f6051830b5665f656513166" category="inline-image-macro-rx" type="image"></block></block>
@@ -7399,13 +7371,6 @@
   <block id="69fe7b86f073ff27417a8bb4f40bf251" category="list-text">单击按钮将此片段复制到剪贴板。</block>
   <block id="60359575c1541888619045ed924fc983" category="list-text">将此代码片段粘贴到 _bash_ 窗口中并执行。</block>
   <block id="ecf5918b75414ec8e1874242a839d017" category="list-text">安装将自动进行。完成后，单击 _complete Setup_ 按钮。</block>
-  <block id="54afcf6213f1a3b61770613a9ebc68df" category="section-title">基于脚本的安装</block>
-  <block id="2c221df7e5c48bd54511af38bd07dbad" category="inline-image-macro">基于脚本的安装</block>
-  <block id="ac80a29f37fb946121c0253c4976bde6" category="paragraph"><block ref="ac80a29f37fb946121c0253c4976bde6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b64f662cc5cf3d2e1684d86487aea6f6" category="list-title">在 Kubernetes 上安装基于脚本的代理的步骤：</block>
-  <block id="f5371c459cefaaee7b5b7685e956ff88" category="list-text">将命令粘贴到 _bash_ 窗口中。</block>
-  <block id="d3eca57feea30c8725375ed32c9285fd" category="section-title">DemonSet ， ReplicaSet 以及停止 / 启动代理</block>
-  <block id="8c357155c34910d917ac705e248f3417" category="paragraph">注意：基于脚本的安装的默认命名空间为 _cI-monitoring-.对于基于操作员的安装，默认命名空间为 _netapp-monitoring-.在涉及命名空间的命令中，请务必为您的安装指定正确的命名空间。</block>
   <block id="d101f99762aa933eab885ac5a54fb726" category="paragraph">运行代理的 Pod 需要能够访问以下内容：</block>
   <block id="e4f58bd0ebfcc73f188eead8e62fdd51" category="admonition">基于操作员的安装可处理 Kube-state-metrics 的安装。如果要执行基于操作员的安装，请跳过此部分。</block>
   <block id="85d9e7fafd4cca5a1545c9cbf16d8e80" category="paragraph">按照以下步骤安装 Kube-state-metrics 服务器（如果正在执行基于脚本的安装，则需要此服务器）：</block>
@@ -7456,7 +7421,6 @@
   <block id="0ffffb06548ffa1c8997d13d2b9f5839" category="paragraph">示例输出：</block>
   <block id="df8efe1c37f513ed79defb9aa3eafe5d" category="paragraph">* CentOS 8.x / RHEL 8.x * ：</block>
   <block id="b0ce4b6c932ff5bff57734c112bda53e" category="list-text">`sUdo firewall-cmd -zone=public -list-ports | grep 35000` （适用于 CentOS 8 ）</block>
-  <block id="2b88b6e768b59c582a319ed7678901c8" category="paragraph">命令块中已安装此命令：</block>
   <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">非 Windows （这些示例适用于 Kubernetes ；实际脚本名称可能有所不同）：</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">此数据收集器可创建云连接，以支持从 ONTAP 9.9+ CVO ， AFF 和 FAS 系统收集数据。</block>
   <block id="72c287aa31792e43cc71160178046540" category="paragraph">此数据收集器支持 ONTAP 9.9+ CVO ， AFF 和 FAS 系统。</block>
@@ -7684,7 +7648,6 @@
   <block id="137130f586fe8fbaec289a38be336008" category="summary">通过洞察，您可以了解资源如何影响环境中的其他资源。</block>
   <block id="2d78443087bc495d923e93521efb0c1d" category="doc">洞察力：共享资源面临压力</block>
   <block id="a8ec16373cb24bc082189b278c4cb448" category="paragraph">高影响工作负载会降低共享资源中其他工作负载的性能。这会使共享资源承受压力。Cloud Insights 提供的工具可帮助您调查资源饱和情况以及环境中的影响。</block>
-  <block id="f537dec4993300ffaa9674ac2db71a97" category="admonition">Stres_Insight 下的 _shared 资源被视为 _Preview_ 功能，因此可能会更改。</block>
   <block id="7f595b1ef82026007f2533413106e7d8" category="paragraph">在讨论工作负载或资源影响时，以下定义非常有用。</block>
   <block id="cd038a3c036812737c2ee89b0152ce75" category="paragraph">要求苛刻的 * 或具有影响的 * 资源会对其他资源造成负面影响。例如， IOPS 极高的卷可能会导致其他卷（例如 _ 受影响 _ 或 _ 已降级 _ 资源）。要求苛刻的资源和受影响的资源是使用相同共享资源的 " 对等方 " ，例如存储池或卷。要求苛刻的资源有时称为 _greedy" 资源。</block>
   <block id="aea124b45b62324984b67a059ea0da7f" category="paragraph">要求苛刻的工作负载 * 是指当前已确定影响共享存储池中其他资源的工作负载。这些工作负载可提高 IOPS （例如），从而降低受影响工作负载的 IOPS 。要求苛刻的工作负载有时称为 " 高耗工作负载 " 。</block>
@@ -7845,9 +7808,6 @@
   <block id="2ab997129d2c5216ff0d477e12280e8a" category="cell">尽管存在攻击，但某些用户并未受到限制。</block>
   <block id="e90c2e3184d693395feccdf9a3d863a1" category="cell">1. 确保 SVM 的数据收集器和代理处于 _running 状态。如果停止了数据收集器和代理， Cloud Secure 将无法发送命令。2. 这是因为用户可能已使用以前未使用的新 IP 从计算机访问存储。限制通过用户访问存储的主机的 IP 地址进行。在 UI （ "Alert Details" （警报详细信息） &gt;"Access Limtion History" （此用户的访问限制历史记录） &gt;"Affected IPs" （受影响的 IP ））中检查受限 IP 地址列表。如果用户要从 IP 与受限 IP 不同的主机访问存储，则用户仍可通过非受限 IP 访问存储。如果用户尝试从 IP 受限的主机访问，则无法访问存储。</block>
   <block id="9d9d839297abd5b6559ef681c302109c" category="cell">要限制的 IP 已被其他用户限制。</block>
-  <block id="c17822d3ce9eb04fef37fc6f007b859e" category="list-text">NetApp Kubernetes 监控操作员配置。这是为 Kubernetes 建议的安装方法。</block>
-  <block id="90997e8d0c35126fbf3794f175f2f0f3" category="paragraph">安装说明因您选择的不同而异。</block>
-  <block id="fcbb3d16fd787d5bff5935ba723121de" category="cell">Kubernetes v1.17 及更高版本</block>
   <block id="fd72cd4499dbb53af23386bef5341358" category="section-title">安装 NetApp Kubernetes 监控操作员</block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：</block>
   <block id="41433653d03e1d9f51b22f2b34a34907" category="section-title">为 NetApp Kubernetes 监控操作员配置代理支持</block>
@@ -7867,7 +7827,6 @@
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">如果启用了 flual-bit ，请同时下载：</block>
   <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">在 _spec__ 部分中，进行以下更改：</block>
-  <block id="44041917404886ef4df8802ca1493c79" category="section-title">为 Kubernetes 配置代理支持—基于脚本</block>
   <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights 的新增功能</block>
   <block id="e229d51ca45046e23340982a0d911a30" category="section-title">保留审核数据</block>
   <block id="c5ba523259d5f0a8abbc98e09089879a" category="paragraph">Cloud Insights 保留审核数据的时间量取决于您的版本：</block>
@@ -7933,7 +7892,6 @@
   <block id="65524feb61d50c77bb7ba2638a763f8e" category="cell">UI 中未显示某些 NFS 事件。</block>
   <block id="57312d53719f5635163cdff04dd88136" category="cell">检查以下内容： 1.运行设置了 POSIX 属性的 AD 服务器的用户目录收集器时，应通过 UI 启用 unixid 属性。2. 在 UI 3 的用户页面中搜索时，应看到执行 NFS 访问的任何用户。NFS 4 不支持原始事件（尚未发现用户的事件）。不会监控对 NFS 导出的匿名访问。5. 确保使用的 NFS 版本低于 NFS4.1 。</block>
   <block id="37cfac15ae1ab98b21f905d72c337d9e" category="summary">Cloud Insights 支持 Telegraf 作为其代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。</block>
-  <block id="73f1df4b50034876b992ea5afa05d7c8" category="cell">如果启用并强制实施 SELinux ，则可能会阻止 Telegraf Pod 访问 Kubernetes 节点上的 /proc/1/mountstats 文件。要放宽此限制，请执行以下操作之一：•对于基于脚本的安装，编辑 crainf DS （`kubectl edit DS crainaf-DS` ），并将 "privileged ： false" 更改为 "privileged ： true" •对于基于操作员的安装，编辑代理（`kubectl edit agent agent-monitoring-netapp` ），然后将 "privileged-mode ： false" 更改为 "privileged-mode ：</block>
   <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">如果先前为基于脚本的 Telegraf 安装手动创建了安全上下文限制：</block>
   <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">只读用户名和密码，除非使用 volume_groups ，否则在这种情况下，需要管理员用户名和密码</block>
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">为 ONTAP 9.9+ 数据收集器配置 NetApp 云连接</block>
@@ -8001,8 +7959,6 @@
   <block id="2ca57dbd75b94a950c199a1c12cf85b9" category="cell">可以将警告和警报通知发送给不同的收件人，以确保合适的团队随时了解最新信息</block>
   <block id="222414ee53d0c57a1870d9446ce7b005" category="paragraph">用于载入电报集成数据的代理已更新为版本 * 。 1.2* ，并提高了性能和安全性。要更新的用户可以参阅的相应升级部分 <block ref="7eca75c9707898b05c3a8b3fe84d7968" category="inline-link-macro-rx"></block> 文档。先前版本的代理将继续运行，无需用户操作。</block>
   <block id="3d64508ab84203107071583e56c26993" category="list-text">Broadcom 光纤通道交换机数据收集器已进行优化，可减少每次清单轮询发出的 CLI 命令数量。</block>
-  <block id="4199b6880b46eaef66e8d25adefc1ac2" category="cell">可以执行所有监控和优化功能，所有用户功能，以及管理数据收集器，监控和优化 API 令牌和通知。管理员还可以邀请其他用户，但只能分配 " 监控 " 和 " 优化 " 角色。</block>
-  <block id="6d02b22d35efda9cc53c8bd1d5c2d8c5" category="cell">可以执行所有 Cloud Secure 功能，包括针对 Cloud Secure 的警报，取证，数据收集器，自动响应策略和 API 令牌的功能。管理员还可以邀请其他用户，但只能分配 Cloud Secure 角色。</block>
   <block id="ceecc9f892b56b1081be5d007d545aab" category="cell">可以执行所有用户 / 作者功能，包括管理报告 API 令牌以及所有管理任务，例如配置报告以及关闭和重新启动报告任务。管理员还可以邀请其他用户，但只能分配报告角色。</block>
   <block id="45268bdcc9ffe3a5807e75085e768efb" category="cell">API 类型</block>
   <block id="c73695e7529146d82731a287d36e3f1d" category="cell">日志载入</block>
@@ -8096,7 +8052,6 @@
   <block id="fb00f883d7bba803b24e9d29087a3f05" category="list-text">根据需要修改用户在每个 Cloud Insights 功能集中的角色。</block>
   <block id="fbf90baf7d2aee8b9e682b8648241121" category="list-text">单击 _Save Changes_ 。</block>
   <block id="45d8ada80e1217d6ce7177e21f1e6c70" category="section-title">分配二级帐户所有者</block>
-  <block id="77ca2cca3bda5b43a70ba6327d64e565" category="paragraph">您必须以监控和优化的帐户所有者身份登录，才能将帐户所有者角色分配给其他用户。</block>
   <block id="9ee18dbf71b3091f256475408a6072d3" category="list-text">单击 * 管理员 &gt; 用户管理 * 。</block>
   <block id="208c98f13e768937bc22bc97791e7bb1" category="list-text">在用户对话框中，单击 * 分配为所有者 * 。</block>
   <block id="08c4f5aee4f8b6cabdcd558ad1452ad2" category="list-text">保存更改。</block>
@@ -8195,7 +8150,6 @@
   <block id="ccd695c5d6bdf7e28aefe86c7867a7a9" category="inline-image-macro">显示线性插值的简单直线，每个原始点之间有更多数据点</block>
   <block id="7be18bdce3683fe5cad25aaa844df56d" category="paragraph"><block ref="7be18bdce3683fe5cad25aaa844df56d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="664a8070ae98149df4b2438dabea2160" category="admonition">如果要在安装代理之前验证安装文件，请阅读关于 <block ref="80fd3363e39e5f2a536c9cf5d81a1f0a" category="inline-xref-macro-rx"></block>。</block>
-  <block id="1f7b055a94f5e05d9c08683890d73b5e" category="list-text">基于脚本的传统代理安装（不建议）</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">验证 Kubernetes 校验和</block>
   <block id="737f024effb455f30b04c7091e2d8667" category="section-title">对 Kubernetes Agent 安装进行故障排除</block>
   <block id="64cc432c57095555eeb8d95b2c8523f6" category="sidebar">配置代理（ Windows/Linux/Mac ）</block>
@@ -8521,7 +8475,6 @@
   <block id="b71ed64e04e4fa64be1d827a7f0a608d" category="list-text">线性—在现有点之间插值数据点</block>
   <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">Stair —使用上一个数据点作为插值数据点</block>
   <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">Cloud Insights 仅支持将 _etcd_ 作为 K8s 数据存储库进行监控。您可以按照以下说明更改配置来修改代理，以避免收集 etcd 数据： kubectl -n netapp-monitoring edit agent agent-monitoring-netapp 在该文件中，删除以下部分： - name ： Prometheus_etcd run-mode ： - ReplicaSet</block>
-  <block id="54a35beb58d95fcc8830c9195faeeb1d" category="list-text">必须提供以下命令： _cURL ， _sudo （对于基于脚本的安装不需要）， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。</block>
   <block id="b68a34f8a928794da0f98d4ee916c271" category="list-text">*<block ref="2fadd2d714be07c05e8b57dea395b60f" category="inline-link-macro-rx"></block>*</block>
   <block id="0e8f78366da6895d9cdeb4b8ed117539" category="paragraph">单击本节中的链接可转到 NetApp 知识库，您可以在其中搜索相关文章，操作说明等。</block>
   <block id="f762cf8a3ce13153f8f371a1905bd1ae" category="list-text">*<block ref="70de40644647494a66feddaab5d43f41" category="inline-link-macro-rx"></block>*</block>
@@ -8547,7 +8500,6 @@
   <block id="e89f4056c39669637fb609320173681a" category="list-text">重新启动 Telegraf 。</block>
   <block id="0a5b7edb55b772c60bfa8af868b679cf" category="section-title">macOS</block>
   <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">对于 _C ： \Program Files\telecraf\telecraf.d_ 中的每个 Telegraf 配置文件，请将旧 API 令牌的所有实例替换为新 API 令牌。</block>
-  <block id="8c4783224d2aaf78624ed6e1d1bc6bc1" category="paragraph">请注意，用户有权访问的 API 类别也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</block>
   <block id="474b549bf76599f904f9c951a609a127" category="cell">50 GB对于Linux、应按以下方式分配磁盘空间：/opt/netapp 10 GB /var/log/netapp 40 GB /tmp安装期间至少1 GB可用空间</block>
   <block id="e7e11e47420c10995bd13aa4ca018d9d" category="inline-link-macro">NetApp Config Advisor</block>
   <block id="b0dfae0e334f78eb272eea393c0dbe9c" category="cell"><block ref="b0dfae0e334f78eb272eea393c0dbe9c" category="inline-link-macro-rx"></block></block>
@@ -8607,10 +8559,6 @@
   <block id="b865b0f0f94674aa0d7878e2253f2c1b" category="doc">预览功能和特性</block>
   <block id="f06798e708a78e76d30364617ea53340" category="paragraph">Cloud Insights 以_Preview_的方式突出显示了新特性和功能。预览功能可在有限的环境中使用、也可在有限的容量下使用。</block>
   <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">如果您希望预览其中一个或多个功能，请联系您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
-  <block id="963905e220923605f4c2bdc8e3d98f6d" category="paragraph">以下是预览版中当前的一些功能：</block>
-  <block id="aeaf81dc6547412bdc24df519c65a5ba" category="cell">限制用户访问自动响应操作</block>
-  <block id="f763810a8ec0d5862e0f288795932956" category="cell">检测到攻击后， Cloud Secure 可以通过限制用户对文件系统的访问（完整块或设置为只读访问）来阻止攻击。可以使用自动响应策略自动限制访问，也可以从警报或用户详细信息页面手动限制访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
-  <block id="9f854307bc74ec4b140a63a4e38f1e83" category="cell">通过 " 受压力的共享资源 " 洞察力，您可以确定： - 由于一个或多个工作负载的高需求而面临压力的共享存储资源 - 共享资源上要求苛刻且受影响的工作负载<block ref="b97265367ad52c02d31fa7522e26571d" category="inline-link-macro-rx"></block></block>
   <block id="6e1238d84ff9d81dac586bf262a824f6" category="cell">此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时、 使用CI在虚拟机管理程序上报告的Cloud Insights模式集群名称—Cloud Insights 会在vSphere集群名称前面加上vSphere数据中心名称和正斜杠—"DC1/clusterA"是Cloud Insights 将在数据中心DC1的clusterA中报告的集群名称。</block>
   <block id="6a9aea5a3e6edbc2fbcfb0b82e833894" category="section-title">支持和视频</block>
   <block id="d8c4d821533431837ec1b03f5fad4fe4" category="paragraph">观看以下视频、了解如何安装数据收集器并使用信息板充分利用Cloud Insights 中的Config Advisor ：</block>
@@ -8657,12 +8605,6 @@
   <block id="3e9d81929de3e4d569ffbafc70d57da5" category="cell">收集器警告</block>
   <block id="85cbbe353849360cf65793354f09c95b" category="cell">通常、由于数据收集器或目标系统配置不正确、可能会出现此警报。重新访问配置以防止将来出现警报。这也可能是因为数据收集器在检索不完全的数据时收集了所有可能的数据。如果数据收集期间的情况发生变化(例如、在数据收集期间以及在捕获数据之前删除数据收集开始时存在的虚拟机)、则可能会发生这种情况。</block>
   <block id="1879fc114cb19058a792b71aac95cb61" category="paragraph">Cloud Insights 使用 <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block> 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。</block>
-  <block id="938845c86bf6439f2bf6f4fc86fee5cf" category="section-title">基于操作员的安装还是基于脚本的安装？</block>
-  <block id="da90f5dd76c952cff43625f8bc75e982" category="paragraph">Cloud Insights 构建了一个Kubernetes操作员、用于监控客户的Kubernetes集群。与脚本安装的监控方法相比、NetApp Kubernetes监控操作员(NKMO）有所改进、因为它可以更灵活地配置可从Cloud Insights 进行控制的监控、并减少客户驱动的配置干预、同时还可以增加监控K8s集群中运行的其他软件的机会。</block>
-  <block id="8270372556d5c0c95f3132ca3526b498" category="paragraph">NKMO继续 使用底层的电报软件收集数据、转换数据并将其传送到Cloud Insights。自定义资源定义和自定义资源增强了此功能、可为每个K8s集群定制监控。</block>
-  <block id="59c020eb3b2fac7b9a29161528b3da48" category="section-title">安装代理</block>
-  <block id="51192dad58dd7321468a8557d0452699" category="section-title">从基于脚本的K8s监控升级到基于操作员的监控</block>
-  <block id="0266610cf3fcbb5ba3b10477aecfe4e1" category="paragraph">如果您已安装基于脚本的Kubernetes监控、请按照以下步骤升级到基于操作员的监控：</block>
   <block id="a24b05a1dbfc11d6e8c8bae6db339730" category="paragraph">升级步骤</block>
   <block id="38c37951a474215e996d1e567cc4b4d5" category="list-text">从基于脚本的监控安装中保留ConfigMap：</block>
   <block id="66cdbaeec188ae82c518cbff0c526e02" category="list-text">保存K8s集群名称、以便在安装K8s基于操作员的监控解决方案 期间使用、以确保数据连续性。</block>
@@ -8670,7 +8612,6 @@
   <block id="ec3a7e104a572b3d15bab71acde3edfb" category="list-text">删除基于脚本的监控</block>
   <block id="8f0f3f28d66cb57de112b327612b48d4" category="inline-image-macro">适用于Kubernetes操作员的图块</block>
   <block id="099085e6f245bdfee8ce5ed73ba25890" category="paragraph"><block ref="099085e6f245bdfee8ce5ed73ba25890" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="28fa7dedfef6e24a05f2efea53818499" category="admonition">已弃用基于脚本的安装。请使用基于Kubernetes操作员的收集功能监控Kubernetes集群。</block>
   <block id="6d35f83ec0df4672769520e5d6df1cd5" category="summary">通过洞察、您可以了解资源使用情况和趋势。</block>
   <block id="f1c9e9af80bb533618f5bdefe333747d" category="doc">洞察力</block>
   <block id="4e97535a9ad440d2d327ab364bb7a0ec" category="paragraph">通过洞察、您可以了解资源使用情况及其对其他资源的影响、或者分析时间到全满等因素。</block>
@@ -8679,10 +8620,8 @@
   <block id="9e9013279f80acdb151d7cad5bc3f7d8" category="section-title">共享资源面临压力</block>
   <block id="5f002a5fdb5afaacfc165c3a324751d5" category="paragraph">高影响工作负载会降低共享资源中其他工作负载的性能。这会使共享资源承受压力。Cloud Insights 提供的工具可帮助您调查资源饱和情况以及环境中的影响。 <block ref="de4400096db30b5f709799778e050e2c" category="inline-link-macro-rx"></block></block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">了解更多信息。</block>
-  <block id="3a4ab80b2583f296b4bc5d2e0c2c4b5d" category="admonition">这是一项_Preview_功能、可能会随着时间的推移进行更改。 <block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> 关于Cloud Insights 预览功能。</block>
   <block id="c1c7efc58c7b64cc21f3ae15934e8271" category="section-title">Kubernetes命名空间即将用尽</block>
   <block id="806f6dbcc954f0a88489885f517d1d1d" category="paragraph">通过运行空间不足Insight的Kubernetes命名空间、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。 <block ref="604196d3b206e62dba15152db76beddc" category="inline-link-macro-rx"></block></block>
-  <block id="5153ae996beb76439018cf032b394d21" category="paragraph"><block ref="5153ae996beb76439018cf032b394d21" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9e7ded308e600f5c72a32aac82868158" category="list-text">*聊天*—您将与NetApp支持人员联系以获得帮助(仅限工作日)。单击*帮助&gt;支持*页面右下角的气泡。</block>
   <block id="f9696d5ebb5a2bc3b4e557d0f479e831" category="paragraph">查看* ONTAP 数据收集器*登录页面时、您可以单击数据收集器摘要部分"通知"字段中的铅笔图标来修改通知。</block>
   <block id="851540d32e033a0c14b63879881da871" category="summary">洞察力可以帮助您预测Kubernetes空间何时可能会全满。</block>
@@ -8753,10 +8692,7 @@
   <block id="82803c7a526739de20fc24c17e739d7c" category="list-text">集群中的* Pod *数量。单击此编号将打开Pod列表页面。</block>
   <block id="bed3b3102569672060faa59f92fbb130" category="list-text">集群中的*命名空间*数量。单击此数字将打开"命名空间"列表页面。</block>
   <block id="12a38026906d3d3a51a3538b98e0d002" category="list-text">集群中的*工作负载*数量。单击此数字将打开工作负载列表页面。</block>
-  <block id="abd68946270bbe5e8dd65bc248dfb347" category="cell">预测达到全满时间</block>
-  <block id="9b42a670fcbdc4d8fa72c247b7af5785" category="cell">Cloud Insights 可以预测以下对象的容量用尽前的天数：内部卷存储存储存储池卷这些预测值有助于显著降低中断风险。在查询、监控器或信息板中使用_timeToFull.Total_和_timeToFull.ConfidenceInterval_计数器。</block>
   <block id="dfeced9105a52cdc4ad66bf5d6ef9e5f" category="cell">运行以下任一许可版本的计算机：* CentOS (64位)：7.2到7.9、Stream 8、Stream 9 * Debian (64位)：9和10 * Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4 * Red Hat Enterprise Linux (64位)： 7.2到7.9、8.1到8.4 * Ubuntu服务器：18.04和20.04 LTS此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
-  <block id="52fe0ed84edd736c538f6ab44e4a643f" category="cell">运行以下许可版本之一的计算机： * Microsoft Windows 10 64位* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="5878d8d726a0f6915f98c3ad70765e41" category="paragraph">Cloud Insights 的当前Telegraf版本为*。1.22.3*。</block>
   <block id="64643b4abc81cdc6d03a96846188e46e" category="list-text">工作负载争论</block>
   <block id="8160f36882be54ea94b2656ab98ca110" category="paragraph">显示影响或受主机、网络和存储等其他共享资源影响的资产。这些资源有时称为_greedys_和_degraded_resources。</block>
@@ -8802,7 +8738,6 @@
   <block id="9fa110aa288235e533bb7fb8e74e2d54" category="paragraph"><block ref="9fa110aa288235e533bb7fb8e74e2d54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="82cd1d20c4551d025cf4cf7661fecb69" category="paragraph">内存和 CPU 量表显示三种颜色，因为它们显示的 _used_关系 到 _allocatable capacity_ 和 _total capacity_ 。</block>
   <block id="86a12d532c7d028d9b551dea3a2ccd99" category="cell">运行以下许可版本之一的计算机：Red Hat Enterprise Linux 7.x、8.x 64位CentOS 7.x 64位CentOS 8 Stream Ubuntu 20到22 64位此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
-  <block id="8a3fedbdc9bb9fd90a3104834207e38e" category="list-text">Kubernetes 1.19或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。</block>
   <block id="665d63bd09ee670a485ee7ffa3b8a595" category="list-text">运行ARM64架构的节点不支持NetApp Kubernetes监控操作员及其依赖项(电报、Kube-state-metrics、fluentbit等)。</block>
   <block id="99449a8a20c724ea6cd587ff41d0672f" category="list-text">* Cohesity SmartFiles*—此基于REST API的收集器将获取Cohesity集群、发现"视图"(作为CI内部卷)、各个节点以及收集性能指标。</block>
   <block id="41039a4248a1480d7c02c60628a3dcf5" category="paragraph">此基于REST API的收集器将获取一个Cohesity集群、发现"视图"(即Cloud Insights 内部卷)、各种节点以及收集性能指标。</block>
@@ -8885,4 +8820,80 @@
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-xref">前提条件</block>
   <block id="41bcd606fd956d57d1d3104d5f2d27fc" category="cell">这是Amazon FSX中的已知问题描述。Cloud Secure 将无法关闭现有SMB会话。当前没有可用于阻止Amazon FSX的现有SMB会话的临时解决策。如果收集器类型为CVO或ONTAP 、请确保中所述的权限正确 <block ref="6c7a156ba37a843e01c9100eb2f3a3a7" category="inline-xref-macro-rx"></block> 部分。</block>
   <block id="dfb65f9e847424acb7569e9d1d256de5" category="section-title">手动还原SMB用户</block>
+  <block id="2a0a63dd16c8b87a179a933b2e9eb92e" category="paragraph"><block ref="2a0a63dd16c8b87a179a933b2e9eb92e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ab7edf5d95e4001229e2908ae791460a" category="section-title">学习中心</block>
+  <block id="b81816f08eee3d7d65d91572590180d0" category="paragraph">无论您的订阅如何、*帮助&gt;支持*均可链接到多项NetApp大学课程、帮助您充分利用Cloud Insights。请查看！</block>
+  <block id="87d26f2a744f5c5f07151656de6a1390" category="summary">ONTAP 基础知识是一组信息板和工作流、用于详细概述您的环境。</block>
+  <block id="f7e8a669ab2a5aca497e3123c1f3935b" category="doc">ONTAP 基础知识</block>
+  <block id="7aaa3b04c62b1d6b52635ad40e8ff0a2" category="paragraph">ONTAP 基础知识是一组信息板和工作流、用于详细概述ONTAP 清单和工作负载。在ONTAP 基础知识中使用时、您可能会看到以下术语：</block>
+  <block id="70de8b0d424cdb2d65787ccde2449a8d" category="list-text">基础架构/清单：为用户数据提供存储/网络服务的对象的列表视图</block>
+  <block id="3d46ac68e417d922e47209568ce8e07b" category="list-text">工作负载：为用户提供读/写数据接口的对象的列表视图。</block>
+  <block id="0b91449983387e2b661cde46c2928572" category="list-text">数据保护：可使用NetApp数据保护技术保护的各种对象的列表视图</block>
+  <block id="de2952ddd95b7a20bbb88abe0c97e2a6" category="paragraph">ONTAP 基础知识要求至少有一个运行正常的ONTAP 数据收集器、其中包含上周收集的数据。</block>
+  <block id="a13907a785102ea69b2891d9e6233f6f" category="paragraph">要开始探索、请从Cloud Insights 主菜单中选择* ONTAP Essentials *。</block>
+  <block id="da61c5d249c3bbc25d9cee2d6d64b53a" category="inline-image-macro">ONTAP 基础知识概述信息板</block>
+  <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88c28e828c24faa9cbd8f5219c054d7e" category="paragraph">*概述*信息板可显示有用的信息、例如环境中的集群数量及其整体容量和性能百分比。您还将看到有关存储容量或性能容量用尽之前的预计天数的预测数据。如果基础架构中的任何控制器都在高温度下运行、ONTAP 基础知识将向您展示这些功能。</block>
+  <block id="39ef60f7b3d6d0c88b10d90a3775807a" category="paragraph">信息性图形可帮助您了解一段时间内的性能以及容量使用情况的细分。</block>
+  <block id="192d723a70e1a973bee8e50c84ffa947" category="paragraph">这些图形或数据点中的每一个都可以用作探索或调查的起点。</block>
+  <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">注意："Days to Full"数字为"0"(零)表示预计达到全满的天数超过90天。换言之、您的系统很快就不会面临空间用尽的风险。</block>
+  <block id="21a1e68164f738b8be1dae11d5a694b3" category="section-title">数据保护</block>
+  <block id="9aeef14e262ec111d94c3cac69cb1847" category="paragraph">选择*数据保护*页面以查看SnapMirror关系。单击至以获取源卷或目标卷信息、或者单击齿轮图标为要查看的数据添加列。</block>
+  <block id="0b0af87f68e61a9b2546cb02922b8109" category="inline-image-macro">SnapMirror关系列表页面</block>
+  <block id="ee2e5f4e15830a46863dde8ab0a741a9" category="paragraph"><block ref="ee2e5f4e15830a46863dde8ab0a741a9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e90044aab3d37986ef7b7d7557264d05" category="paragraph">ONTAP 基础知识*基础架构*页面可通过对所有基本ONTAP 对象进行预构建(但可进一步自定义)查询来提供集群运行状况和性能的视图。选择要浏览的对象类型(集群、存储池等)、然后选择是查看运行状况信息还是性能信息。设置筛选器以深入了解各个系统。</block>
+  <block id="4d4ca49abac813e247a4e4e53274fe27" category="inline-image-macro">存储池的基础架构选择</block>
+  <block id="a2ab7b415e4b437cd221a7275ed38839" category="paragraph"><block ref="a2ab7b415e4b437cd221a7275ed38839" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4643f417b694b85fa8cf7cbd0572c5cd" category="inline-image-macro">要探索的基础架构对象</block>
+  <block id="3e60a504c4f09f36de3a060d1761d279" category="paragraph">显示集群运行状况的基础架构页面：<block ref="4510f66edf4997b6dc6197eeda5a382e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb2693590d2fee42898b89121aea43bb" category="paragraph">查看和浏览环境中LUN/卷或qtree上的工作负载。</block>
+  <block id="9b487ae015c8109487f87177d5d90403" category="inline-image-macro">工作负载菜单</block>
+  <block id="b17cca1084b467c0c42cf2095a7e921b" category="paragraph"><block ref="b17cca1084b467c0c42cf2095a7e921b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="66afae6b95d602c69251c81851ce13af" category="inline-image-macro">工作负载列表页面</block>
+  <block id="34ac3c3d3b008137a073199be9255e04" category="paragraph"><block ref="34ac3c3d3b008137a073199be9255e04" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc551a8dcf48d42b6ea5cf411242afd9" category="cell">运行以下许可版本之一的计算机： * Microsoft Windows 10 64位* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
+  <block id="8d72d221ef2d41a0b7eb14afef955069" category="paragraph">Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管理员，用户和来宾。为每个帐户分配特定的权限级别，如下表所示。(请注意、_User_和_Guest_角色在安全功能集中不可用。)用户可以是其中之一 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> Cloud Insights 并分配了特定角色，或者可以通过登录 <block ref="5714c3cacaaaa4fdc97a235dfa644756" category="inline-link-macro-rx"></block> 具有默认角色。Cloud Insights 高级版提供了 SSO 授权功能。</block>
+  <block id="31fd0c2c8d388a4cd2c6459234743476" category="cell">可观察性</block>
+  <block id="3285ea5e06d78f941361e69f7ae3e762" category="cell">可以修改订阅、查看计费和使用情况信息、并执行所有可观察性、安全性和报告管理员功能。所有者还可以邀请和管理用户，以及管理 SSO 身份验证和身份联合设置。注册 Cloud Insights 时会创建第一个帐户所有者。强烈建议每个 Cloud Insights 环境至少有两个帐户所有者。 </block>
+  <block id="84e7e19408ca9cadd7d1a9781e8afe16" category="cell">可以执行所有可观察性功能、所有用户功能、以及管理数据收集器、可观察性API令牌和通知。管理员还可以邀请其他用户、但只能分配可观察性角色。</block>
+  <block id="364b5d76e543eea85436eecd771ddf9b" category="cell">可以执行所有安全功能、包括警报、取证、数据收集器、自动化响应策略以及安全API令牌等功能。管理员还可以邀请其他用户、但只能分配安全角色。</block>
+  <block id="f69b71669c103a70c3bed015d16ff368" category="admonition">您可以选择的功能和角色取决于您以特定管理员角色访问的功能。例如、如果您只有报告管理员角色、则可以将用户分配给报告中的任何角色、但不能为可观察性或安全性分配角色。</block>
+  <block id="fb2292451138606a292cb0cc5fcdeede" category="paragraph">您必须以可观察性的帐户所有者身份登录、才能将帐户所有者角色分配给其他用户。</block>
+  <block id="91d6346301930db6ac6ad38d593c51ac" category="section-title">安装代理</block>
+  <block id="3ee07d3d3ada1695cfb57786400b0616" category="paragraph">Cloud Insights 为Kubernetes收集提供了* NetApp Kubernetes监控操作员*。添加数据收集器时、只需选择"Kubernetes "图块即可。</block>
+  <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">升级</block>
+  <block id="5bf9f6c5de2d20f82bc6c9fdb01e712d" category="list-text">Kubernetes 1.19或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <block ref="34dd1093a03c958dd7f0e776cfc6867f" category="inline-xref-macro-rx"></block> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。</block>
+  <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。</block>
+  <block id="97ec45388dee131bfffb282394db6fd4" category="list-text">Kube-state-metrics至关重要、它会随NetApp Kubernetes监控操作员安装自动安装。</block>
+  <block id="2314c02816fff0392a5024832e6b446a" category="cell">Kubernetes v1.19及更高版本</block>
+  <block id="ca32f00a9cb47dc2f19e4412ba43b7b9" category="section-title">从基于脚本的K8s监控升级到NetApp Kubernetes监控操作员</block>
+  <block id="3fd1f3a27386367248e3113008da8829" category="paragraph">如果要从先前安装的基于脚本的Kubernetes代理升级到NetApp Kubernetes监控操作员、请执行以下步骤：</block>
+  <block id="447ede71efbff97ddd4418212a6b52c9" category="section-title">停止和启动NetApp Kubernetes监控操作员</block>
+  <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">要停止NetApp Kubernetes监控操作员、请执行以下操作：</block>
+  <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">要启动NetApp Kubernetes监控操作员、请执行以下操作：</block>
+  <block id="3b28dd6c17fea6dd6467fc05ce0cfbd3" category="paragraph">注意：NetApp Kubernetes Monitoring Operator-based安装的默认命名空间为_netapp-monitoring_。在涉及命名空间的命令中，请务必为您的安装指定正确的命名空间。</block>
+  <block id="a945216a5c61e628c867b8948c797454" category="section-title">关于Kube-state-metrics</block>
+  <block id="3eec57a6a8de996cf634aac9735ace39" category="paragraph">NetApp Kubernetes监控操作员会自动安装Kube-state-metrics；无需用户交互、文档的本节可能会跳过。此处提供的信息用于为好奇心提供参考信息：</block>
+  <block id="8afa6952ba928d1f4365c371ab8232bb" category="paragraph">如果您运行的是先前安装的基于脚本的Kubernetes代理、则必须执行此操作 <block ref="34dd1093a03c958dd7f0e776cfc6867f" category="inline-xref-macro-rx"></block> NetApp Kubernetes监控操作员。</block>
+  <block id="981b5f5c29e0fd86523b31dc51c96b3e" category="section-title">删除基于脚本的代理</block>
+  <block id="0b17bce222385cebd477477b188e6434" category="paragraph">要卸载Kubernetes上基于脚本的代理(例如、升级到NetApp Kubernetes监控操作员时)、请执行以下操作：</block>
+  <block id="98e7ede570d702984a8e51f5e4f2020c" category="section-title">删除NetApp Kubernetes监控操作员</block>
+  <block id="221999955f33800aac7697d68c8a2970" category="admonition">如果您先前已安装基于脚本的代理、则必须升级到NetApp Kubernetes监控操作员。</block>
+  <block id="ef4dfc875301d9f830ec745c939d757b" category="section-title">从基于脚本的代理升级到NetApp Kubernetes监控操作员</block>
+  <block id="05d624845433696752479b6389c8e408" category="list-text">记下集群名称。您可以通过运行以下对数之一来查看集群名称：</block>
+  <block id="eadd7c5194983b4056ca7437aabe6ce5" category="paragraph">对于运算符：</block>
+  <block id="30abd2203b50ff6e095851497e7951fa" category="paragraph">对于基于脚本的：</block>
+  <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">卸载</block>
+  <block id="4e62b8009bb6659f307f322060b87aca" category="list-text"><block ref="7dbbf8ef971711bc54bd144496bfdb76" category="inline-xref-macro-rx"></block> 现有代理</block>
+  <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">安装</block>
+  <block id="5d570b91fb793e6d7f0e8a1dc96abf37" category="list-text"><block ref="a2dc51b4aefd7c9119674679c63ec4a9" category="inline-xref-macro-rx"></block> 新代理]。</block>
+  <block id="1c57a8ea17dbb1aebe9f54fccc625688" category="section-title">升级NetApp Kubernetes监控操作员</block>
+  <block id="01824df579f6f3ad64522dc8298f0c41" category="cell">如果启用并强制实施 SELinux ，则可能会阻止 Telegraf Pod 访问 Kubernetes 节点上的 /proc/1/mountstats 文件。要放宽此限制、请执行以下操作之一：•编辑代理(`kubectl edit agent agent-monitoring-netapp`)、并将"privileged-mode：false"更改为"privileged-mode：true"</block>
+  <block id="d4f4168ee4529f65ee54ba8b223d6b1e" category="cell">我有一个PSP环境。这是否会影响我的监控操作员？</block>
+  <block id="d11a7a694c023537b8fd43857dd651f7" category="cell">如果您的Kubernetes集群运行时已设置Pod安全策略(PSP)、则必须升级到最新的NetApp Kubernetes监控操作员。按照以下步骤升级到支持PSP的当前NKMO：1.卸载先前的监控运算符：kubectl delete agent agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-rolebinding agent-manager-rolebinding agent-roleadmin-cluster。部署最新版本的监控操作员。</block>
+  <block id="2eb2fe69b25b42c01f1dd6ed820e4ef3" category="cell">我在尝试部署NKMOO时遇到问题、并且正在使用PSP。</block>
+  <block id="ffc85f5eab15bc118cab588bb4b4d3eb" category="cell">1.使用以下命令编辑代理：kubectl -n &lt;name-space&gt; edit agent 2.将"securtion-policy-enabled"标记为"false"。这将禁用Pos安全策略并允许NKMO.使用以下命令进行确认：kubectl get PSP (应显示Pod Security Policy Removed) kubectl get all -n &lt;name-space&gt;</block>
+  <block id="641244a546c89759b8e5c60efd75767d" category="paragraph">此外，您还可以使用 Cloud Insights <block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block> 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如、如果您在"可观察性"中具有管理员角色、而在"报告"中具有用户角色、则您可以管理除数据仓库之外的所有API类型。</block>
+  <block id="0661e5cc01fe7da17bc8e2d8e2e34221" category="paragraph">请注意，用户有权访问的 API 类别也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个Cloud Insights 功能集中都有(可观察性、安全性、报告)。</block>
+  <block id="98d8ebff3e8aa04aa14171f6564f1ec7" category="paragraph">所有当前Cloud Insights 功能均可用。请观看此空间、了解未来的预览。</block>
 </blocks>

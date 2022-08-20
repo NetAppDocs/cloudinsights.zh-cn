@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_user_roles.html 
-keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure 
+keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observabilityu 
 summary: Cloud Insights 提供了多个具有不同权限级别的用户帐户。 
 ---
 = 用户帐户和角色
@@ -9,7 +9,7 @@ summary: Cloud Insights 提供了多个具有不同权限级别的用户帐户�
 
 
 [role="lead"]
-Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管理员，用户和来宾。为每个帐户分配特定的权限级别，如下表所示。（请注意， _User_ 和 _Guest_ 角色在 Cloud Secure 功能中不可用。）用户可以是其中之一 link:#creating-accounts-by-inviting-users["已邀请"] Cloud Insights 并分配了特定角色，或者可以通过登录 link:#single-sign-on-sso-accounts["单点登录（ SSO ）授权"] 具有默认角色。Cloud Insights 高级版提供了 SSO 授权功能。
+Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管理员，用户和来宾。为每个帐户分配特定的权限级别，如下表所示。(请注意、_User_和_Guest_角色在安全功能集中不可用。)用户可以是其中之一 link:#creating-accounts-by-inviting-users["已邀请"] Cloud Insights 并分配了特定角色，或者可以通过登录 link:#single-sign-on-sso-accounts["单点登录（ SSO ）授权"] 具有默认角色。Cloud Insights 高级版提供了 SSO 授权功能。
 
 
 
@@ -18,13 +18,13 @@ Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管�
 您可以使用具有管理员权限的帐户来创建或修改用户帐户。每个用户帐户都会从以下权限级别为每个 Cloud Insights 功能分配一个角色。
 
 |===
-| 角色 | 监控 | Cloud Secure | 报告 
+| 角色 | 可观察性 | 安全性 | 报告 
 
 
-| 帐户所有者 3+| 可以修改订阅，查看计费和使用情况信息，并执行监控和优化， Cloud Secure 和报告的所有管理员功能。所有者还可以邀请和管理用户，以及管理 SSO 身份验证和身份联合设置。注册 Cloud Insights 时会创建第一个帐户所有者。强烈建议每个 Cloud Insights 环境至少有两个帐户所有者。  
+| 帐户所有者 3+| 可以修改订阅、查看计费和使用情况信息、并执行所有可观察性、安全性和报告管理员功能。所有者还可以邀请和管理用户，以及管理 SSO 身份验证和身份联合设置。注册 Cloud Insights 时会创建第一个帐户所有者。强烈建议每个 Cloud Insights 环境至少有两个帐户所有者。  
 
 
-| 管理员 | 可以执行所有监控和优化功能，所有用户功能，以及管理数据收集器，监控和优化 API 令牌和通知。管理员还可以邀请其他用户，但只能分配 " 监控 " 和 " 优化 " 角色。 | 可以执行所有 Cloud Secure 功能，包括针对 Cloud Secure 的警报，取证，数据收集器，自动响应策略和 API 令牌的功能。管理员还可以邀请其他用户，但只能分配 Cloud Secure 角色。 | 可以执行所有用户 / 作者功能，包括管理报告 API 令牌以及所有管理任务，例如配置报告以及关闭和重新启动报告任务。管理员还可以邀请其他用户，但只能分配报告角色。 
+| 管理员 | 可以执行所有可观察性功能、所有用户功能、以及管理数据收集器、可观察性API令牌和通知。管理员还可以邀请其他用户、但只能分配可观察性角色。 | 可以执行所有安全功能、包括警报、取证、数据收集器、自动化响应策略以及安全API令牌等功能。管理员还可以邀请其他用户、但只能分配安全角色。 | 可以执行所有用户 / 作者功能，包括管理报告 API 令牌以及所有管理任务，例如配置报告以及关闭和重新启动报告任务。管理员还可以邀请其他用户，但只能分配报告角色。 
 
 
 | 用户 | 可以查看和修改信息板，查询，警报，标注，标注规则， 和应用程序，并管理设备解析。 | 可以查看和管理警报以及查看取证。用户角色可以更改警报状态，添加注释，手动创建快照以及管理限制用户访问。 | 可以执行所有来宾 / 使用者功能以及创建和管理报告和信息板。 
@@ -79,7 +79,7 @@ Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管�
 | 云成本 | Y | 不包括 | 不包括 
 
 
-| Cloud Secure | Y | 不包括 | 不包括 
+| 安全性 | Y | 不包括 | 不包括 
 
 
 | 信息板：创建 / 修改 / 删除 | Y | Y | 不包括 
@@ -147,7 +147,7 @@ Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管�
 . 为 Cloud Insights 的每个功能选择用户的角色。
 +
 
-NOTE: 您可以选择的功能和角色取决于您以特定管理员角色访问的功能。例如，如果您只具有报告管理员角色，则可以将用户分配给报告中的任何角色，但不能为监控和优化或 Cloud Secure 分配角色。
+NOTE: 您可以选择的功能和角色取决于您以特定管理员角色访问的功能。例如、如果您只有报告管理员角色、则可以将用户分配给报告中的任何角色、但不能为可观察性或安全性分配角色。
 
 +
 image:UserRoleChoices.png["用户角色选择"]
@@ -174,7 +174,7 @@ image:UserRoleChoices.png["用户角色选择"]
 
 === 分配二级帐户所有者
 
-您必须以监控和优化的帐户所有者身份登录，才能将帐户所有者角色分配给其他用户。
+您必须以可观察性的帐户所有者身份登录、才能将帐户所有者角色分配给其他用户。
 
 . 单击 * 管理员 > 用户管理 * 。
 . 单击要更改的帐户的用户名。

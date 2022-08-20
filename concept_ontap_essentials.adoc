@@ -1,0 +1,63 @@
+---
+sidebar: sidebar 
+permalink: concept_ontap_essentials.html 
+summary: ONTAP 基础知识是一组信息板和工作流、用于详细概述您的环境。 
+keywords: dashboard, widget, ontap, overview, insight 
+---
+= ONTAP 基础知识
+:allow-uri-read: 
+
+
+[role="lead"]
+ONTAP 基础知识是一组信息板和工作流、用于详细概述ONTAP 清单和工作负载。在ONTAP 基础知识中使用时、您可能会看到以下术语：
+
+* 基础架构/清单：为用户数据提供存储/网络服务的对象的列表视图
+* 工作负载：为用户提供读/写数据接口的对象的列表视图。
+* 数据保护：可使用NetApp数据保护技术保护的各种对象的列表视图
+
+
+ONTAP 基础知识要求至少有一个运行正常的ONTAP 数据收集器、其中包含上周收集的数据。
+
+
+
+== 概述
+
+要开始探索、请从Cloud Insights 主菜单中选择* ONTAP Essentials *。
+
+image:ONTAP_Essentials_Menu_and_screen.png["ONTAP 基础知识概述信息板"]
+
+*概述*信息板可显示有用的信息、例如环境中的集群数量及其整体容量和性能百分比。您还将看到有关存储容量或性能容量用尽之前的预计天数的预测数据。如果基础架构中的任何控制器都在高温度下运行、ONTAP 基础知识将向您展示这些功能。
+
+信息性图形可帮助您了解一段时间内的性能以及容量使用情况的细分。
+
+这些图形或数据点中的每一个都可以用作探索或调查的起点。
+
+注意："Days to Full"数字为"0"(零)表示预计达到全满的天数超过90天。换言之、您的系统很快就不会面临空间用尽的风险。
+
+
+
+== 数据保护
+
+选择*数据保护*页面以查看SnapMirror关系。单击至以获取源卷或目标卷信息、或者单击齿轮图标为要查看的数据添加列。
+
+image:ONTAP_Essentials_data_protection.png["SnapMirror关系列表页面"]
+
+
+
+== 基础架构
+
+ONTAP 基础知识*基础架构*页面可通过对所有基本ONTAP 对象进行预构建(但可进一步自定义)查询来提供集群运行状况和性能的视图。选择要浏览的对象类型(集群、存储池等)、然后选择是查看运行状况信息还是性能信息。设置筛选器以深入了解各个系统。
+
+image:ONTAP_Essentials_Health_Performance.png["存储池的基础架构选择"]
+
+显示集群运行状况的基础架构页面：image:ONTAP_Essentials_Infrastructure_A.png["要探索的基础架构对象"]
+
+
+
+== 工作负载
+
+查看和浏览环境中LUN/卷或qtree上的工作负载。
+
+image:ONTAP_Essentials_Workloads_Menu.png["工作负载菜单"]
+
+image:ONTAP_Essentials_Workloads_Page.png["工作负载列表页面"]

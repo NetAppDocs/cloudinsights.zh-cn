@@ -38,7 +38,7 @@ NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Insights API 
 
 | 日志载入 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
 |===
-此外，您还可以使用 Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。
+此外，您还可以使用 Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如、如果您在"可观察性"中具有管理员角色、而在"报告"中具有用户角色、则您可以管理除数据仓库之外的所有API类型。
 
 
 
@@ -115,7 +115,7 @@ Cloud Insights API 基于类别，目前包含以下类别：
 
 其他类别和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 link:#api-documentation-swagger["API Swagger 文档"]。
 
-请注意，用户有权访问的 API 类别也取决于 link:concept_user_roles.html["用户角色"] 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。
+请注意，用户有权访问的 API 类别也取决于 link:concept_user_roles.html["用户角色"] 它们在每个Cloud Insights 功能集中都有(可观察性、安全性、报告)。
 
 
 

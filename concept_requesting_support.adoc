@@ -12,7 +12,7 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 toc::[]
 您可以通过单击 * 帮助 > 支持 * 来访问 Cloud Insights 中的支持选项。您可以使用的支持选项取决于您是处于试用模式还是订阅模式。
 
-image:Support_with_Chat.png["支持页面"]
+image:SupportPageWithLearningCenter.png["支持页面"]
 
 
 
@@ -127,3 +127,9 @@ image:Support_View_SN.png["查看支持序列号"]
 == Cloud Insights 数据收集器支持列表
 
 您可以在中查看或下载有关受支持的数据收集器的信息和详细信息 link:CloudInsightsDataCollectorSupportMatrix.pdf["* Cloud Insights 数据收集器支持表 * ， role="external""]。
+
+
+
+=== 学习中心
+
+无论您的订阅如何、*帮助>支持*均可链接到多项NetApp大学课程、帮助您充分利用Cloud Insights。请查看！

@@ -11,9 +11,6 @@ summary: 洞察力可以帮助您预测Kubernetes空间何时可能会全满。
 [role="lead"]
 环境中的空间不足永远不是一种好情况。Cloud Insights 可帮助您预测Kubernetes永久性卷达到全满前的时间。
 
-
-NOTE: 这是一项_Preview_功能、可能会随着时间的推移进行更改。 link:/concept_preview_features.html["了解更多信息。"] 关于Cloud Insights 预览功能。
-
 通过运行空间不足的_Kubernetes命名空间_ Insight、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个永久性卷达到全满前的剩余天数。
 
 您可以通过导航到*信息板> Insightions*来查看此Insight。
