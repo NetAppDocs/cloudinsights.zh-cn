@@ -115,4 +115,7 @@ image::new-agent-detect.png[新代理检测]
 
 
 | 如果工程师仍无法连接到 SaaS ，请向 NetApp 支持部门创建案例。提供 Cloud Insights 序列号以创建案例，并按照说明将日志附加到案例。 | 将日志附加到案例： 1.使用 root 权限执行以下脚本并共享输出文件（ cloudsure-agent-symps.zip ）。答/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh 2.在 root 权限下逐个执行以下命令，并共享输出。答ID cssys b.组 cssys c.cat /etc/os-release 
+
+
+| 代理安装失败、并显示useradd：无法创建目录/home/cssys | 如果由于缺少权限而无法在/home下创建用户的登录目录、则可能会发生此错误。临时解决策 将使用以下命令创建cssys用户并手动添加其登录目录：_sudo useradd user_name -m -d home_DIR_-m：如果用户的主目录不存在、请创建该用户的主目录。-d：使用home_DIR作为用户登录目录的值创建新用户。例如、_sudo useradd cssys -m -d /cssys_会添加一个用户_cssys_并在root下创建其登录目录。 
 |===

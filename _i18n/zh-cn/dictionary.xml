@@ -8937,4 +8937,6 @@
   <block id="4e28671aa760c1ba504510846bdf520c" category="cell">可以在检测到攻击时阻止用户访问、从而增强对业务关键型数据的保护。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
   <block id="a78d7cf3a7b4f6fe8edcca9384e823a8" category="cell">可以查看和管理警报以及查看取证。用户角色可以更改警报状态、添加注释、手动创建快照以及阻止用户访问。</block>
   <block id="f9e6fd444a4fd0ec2399b552c8145545" category="cell">可以查看警报和取证。来宾角色不能更改警报状态、添加备注、手动创建快照或阻止用户访问。</block>
+  <block id="1262546f0be80170bbf2b78b6352533d" category="cell">代理安装失败、并显示useradd：无法创建目录/home/cssys</block>
+  <block id="5e430377cda5012c485a4d981bce9d1e" category="cell">如果由于缺少权限而无法在/home下创建用户的登录目录、则可能会发生此错误。临时解决策 将使用以下命令创建cssys用户并手动添加其登录目录：_sudo useradd user_name -m -d home_DIR_-m：如果用户的主目录不存在、请创建该用户的主目录。-d：使用home_DIR作为用户登录目录的值创建新用户。例如、_sudo useradd cssys -m -d /cssys_会添加一个用户_cssys_并在root下创建其登录目录。</block>
 </blocks>
