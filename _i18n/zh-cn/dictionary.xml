@@ -8939,4 +8939,10 @@
   <block id="f9e6fd444a4fd0ec2399b552c8145545" category="cell">可以查看警报和取证。来宾角色不能更改警报状态、添加备注、手动创建快照或阻止用户访问。</block>
   <block id="1262546f0be80170bbf2b78b6352533d" category="cell">代理安装失败、并显示useradd：无法创建目录/home/cssys</block>
   <block id="5e430377cda5012c485a4d981bce9d1e" category="cell">如果由于缺少权限而无法在/home下创建用户的登录目录、则可能会发生此错误。临时解决策 将使用以下命令创建cssys用户并手动添加其登录目录：_sudo useradd user_name -m -d home_DIR_-m：如果用户的主目录不存在、请创建该用户的主目录。-d：使用home_DIR作为用户登录目录的值创建新用户。例如、_sudo useradd cssys -m -d /cssys_会添加一个用户_cssys_并在root下创建其登录目录。</block>
+  <block id="2af0e245903886ddf353247e04d67d49" category="cell">cloudsecure-agent-symptom-collector.sh脚本失败、并显示以下错误。根@计算机tmp]#/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh收集服务日志收集应用程序日志收集代理配置获取服务状态快照获取代理目录结构快照………………… 。………………… 。/opt/netapp/cloudsecurity/agent/bin/cloudsure-agent-smp-collector.sh：行52：zip：command not found error：failed to create /tmp/cloudsecure-agent-symptoms.zip</block>
+  <block id="bdd09e38c2003d07eeb6a433d15b266a" category="cell">未安装zip工具。运行命令"yum install zip "来安装zip工具。然后再次运行cloudsecure-agent-symptom-collector.sh。</block>
+  <block id="d157607d4f3b74d5627170cf0c710ee9" category="admonition">Dell EMC ECS按不同的原始TB到受管单元速率进行计量。未格式化的ECS容量每40 TB计费为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
+  <block id="719cb8a818a4675afed135a249f933cf" category="admonition">Hitachi内容平台按不同的原始TB到受管单元速率进行计量。每40 TB未格式化的HCP容量计费为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
+  <block id="c5718388c9ba089c3e079c5b8598c2f1" category="paragraph">Cloud Insights 从NetApp StorageGRID 收集器获取以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="75538d7973020af3db4059fd4aefea12" category="admonition">IBM Cleversafe按不同的原始TB到受管单元速率进行计量。每40 TB未格式化的IBM Cleverssafe容量计为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
 </blocks>

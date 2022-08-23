@@ -12,6 +12,9 @@ summary: 配置 ECS 数据收集器。
 此数据收集器从 EMC ECS 存储系统采集清单和性能数据。在配置方面，数据收集器需要 ECS 服务器的 IP 地址和管理级别域帐户。
 
 
+NOTE: Dell EMC ECS按不同的原始TB到受管单元速率进行计量。未格式化的ECS容量每40 TB计费为1 link:concept_subscribing_to_cloud_insights.html#pricing["受管单元（ MU ）"]。
+
+
 
 == 术语
 
