@@ -4468,7 +4468,6 @@
   <block id="d137e11c6c77aa671e4c6d21140e86fc" category="doc">配置 ONTAP SVM 数据收集器</block>
   <block id="f9a73a77fb0b80bd2a6dc48518a3907d" category="paragraph">Cloud Secure 使用数据收集器从设备收集文件和用户访问数据。</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">此数据收集器支持以下功能：</block>
-  <block id="e0f5635cfc022e85fc412c023e2e7759" category="list-text">SMB 协议 3.1 及更早版本</block>
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS 协议 4.0 及更早版本</block>
   <block id="2c9e0cc2b7277b5bc05ddf23a6ef1d1c" category="list-text">SVM 有多个子类型。其中，仅支持 _default_and _sync_source_。</block>
   <block id="3f1a7a2048c619e7b3997ddc8b02ae5e" category="inline-link-macro">必须进行配置</block>
@@ -8945,4 +8944,5 @@
   <block id="719cb8a818a4675afed135a249f933cf" category="admonition">Hitachi内容平台按不同的原始TB到受管单元速率进行计量。每40 TB未格式化的HCP容量计费为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="c5718388c9ba089c3e079c5b8598c2f1" category="paragraph">Cloud Insights 从NetApp StorageGRID 收集器获取以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="75538d7973020af3db4059fd4aefea12" category="admonition">IBM Cleversafe按不同的原始TB到受管单元速率进行计量。每40 TB未格式化的IBM Cleverssafe容量计为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
+  <block id="8dd7ee5e6653f76a82e4dafafcb16a8f" category="list-text">SMB协议3.1及更早版本。请注意、Cloud Secure 不适用于使用FlexCache 的SMB配置。从ONTAP9.7开始、Fpolicy仅在NFS环境中受支持。</block>
 </blocks>
