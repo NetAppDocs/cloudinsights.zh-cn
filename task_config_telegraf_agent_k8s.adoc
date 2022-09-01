@@ -52,7 +52,7 @@ NOTE: 如果您使用的是代理，请在安装 Telegraf 代理之前阅读适�
 Cloud Insights 为Kubernetes收集提供了* NetApp Kubernetes监控操作员*。添加数据收集器时、只需选择"Kubernetes "图块即可。
 
 .前提条件：
-* Kubernetes 1.19或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <<upgrading-the-agent,升级>> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。
+* Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <<upgrading-the-agent,升级>> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。
 
 
 * 如果您运行的是 OpenShift 4.6 - 4.8 ，则除了确保满足这些前提条件之外，还必须遵循下面的 * OpenShift 指令 * 。
@@ -75,7 +75,7 @@ Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查�
 | 平台 | 标签 
 
 
-| Kubernetes v1.19及更高版本 | Kubernetes 。 io/OS = Linux 
+| Kubernetes v1.20及更高版本 | Kubernetes 。 io/OS = Linux 
 
 
 | Rancher + catt.io 作为流程编排 /Kubernetes 平台 | catt.io/OS = Linux 

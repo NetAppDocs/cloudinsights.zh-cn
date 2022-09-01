@@ -8859,10 +8859,8 @@
   <block id="91d6346301930db6ac6ad38d593c51ac" category="section-title">安装代理</block>
   <block id="3ee07d3d3ada1695cfb57786400b0616" category="paragraph">Cloud Insights 为Kubernetes收集提供了* NetApp Kubernetes监控操作员*。添加数据收集器时、只需选择"Kubernetes "图块即可。</block>
   <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">升级</block>
-  <block id="5bf9f6c5de2d20f82bc6c9fdb01e712d" category="list-text">Kubernetes 1.19或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <block ref="34dd1093a03c958dd7f0e776cfc6867f" category="inline-xref-macro-rx"></block> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。</block>
   <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。</block>
   <block id="97ec45388dee131bfffb282394db6fd4" category="list-text">Kube-state-metrics至关重要、它会随NetApp Kubernetes监控操作员安装自动安装。</block>
-  <block id="2314c02816fff0392a5024832e6b446a" category="cell">Kubernetes v1.19及更高版本</block>
   <block id="ca32f00a9cb47dc2f19e4412ba43b7b9" category="section-title">从基于脚本的K8s监控升级到NetApp Kubernetes监控操作员</block>
   <block id="3fd1f3a27386367248e3113008da8829" category="paragraph">如果要从先前安装的基于脚本的Kubernetes代理升级到NetApp Kubernetes监控操作员、请执行以下步骤：</block>
   <block id="447ede71efbff97ddd4418212a6b52c9" category="section-title">停止和启动NetApp Kubernetes监控操作员</block>
@@ -8945,4 +8943,6 @@
   <block id="c5718388c9ba089c3e079c5b8598c2f1" category="paragraph">Cloud Insights 从NetApp StorageGRID 收集器获取以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="75538d7973020af3db4059fd4aefea12" category="admonition">IBM Cleversafe按不同的原始TB到受管单元速率进行计量。每40 TB未格式化的IBM Cleverssafe容量计为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="8dd7ee5e6653f76a82e4dafafcb16a8f" category="list-text">SMB协议3.1及更早版本。请注意、Cloud Secure 不适用于使用FlexCache 的SMB配置。从ONTAP9.7开始、Fpolicy仅在NFS环境中受支持。</block>
+  <block id="08433787a666ff495df242ff3e1d3c5c" category="list-text">Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <block ref="34dd1093a03c958dd7f0e776cfc6867f" category="inline-xref-macro-rx"></block> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。</block>
+  <block id="95be99c1e2046a974fa1680ffa1b83ed" category="cell">Kubernetes v1.20及更高版本</block>
 </blocks>
