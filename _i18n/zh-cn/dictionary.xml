@@ -8945,4 +8945,40 @@
   <block id="8dd7ee5e6653f76a82e4dafafcb16a8f" category="list-text">SMB协议3.1及更早版本。请注意、Cloud Secure 不适用于使用FlexCache 的SMB配置。从ONTAP9.7开始、Fpolicy仅在NFS环境中受支持。</block>
   <block id="08433787a666ff495df242ff3e1d3c5c" category="list-text">Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <block ref="34dd1093a03c958dd7f0e776cfc6867f" category="inline-xref-macro-rx"></block> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。</block>
   <block id="95be99c1e2046a974fa1680ffa1b83ed" category="cell">Kubernetes v1.20及更高版本</block>
+  <block id="8c69796d33d9c95e7caf8015cf31ccbe" category="cell">安装后代理未运行。_systemctl status cloudsecure-agent.service_显示以下内容：[root@demo ~]# systemctl status cloudsecure-agent.service agent.service–Cloud Secure 代理守护进程服务已加载：已加载(/usr/lib/systemd/system/cloudsecure-agent.service;已启用；供应商预设：已禁用) Active：激活(自动重新启动)(结果：退出代码)自Tcloud2021-08-03 21：12：26；已退出Ago进程：cloudbin/netapp=25bin/dcc=82/pdpdpdpdpdpt/s=bash)： 25889 (code=exited、status=126)、Aug 03 21：12：26 demo systemd1]：cloudsecure-agent.service: main process exited、code=exited、status=126/n/a Aug 03 21：12：26 demo systemd1]：unit cloudsecure-agent.service entered.Aug 03 21：12：26 demo systemd1]：cloudsecure-agent.service失败。</block>
+  <block id="ff6c70aa7cb1a86bff741b99889b8d0b" category="cell">此操作可能会失败、因为_cssys_用户可能没有安装权限。如果/opt/netapp是NFS挂载、而_cssys_用户无权访问此文件夹、则安装将失败。_cssys_是由Cloud Secure 安装程序创建的本地用户、该用户可能无权访问挂载的共享。要检查此问题、您可以尝试使用_cssys_用户访问/opt/netapp/cloudsecurity/agent/bin/cloudsure-agent。如果返回"permission denies"、则安装权限不存在。安装在计算机本地的目录上、而不是挂载的文件夹。</block>
+  <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">取证页面中的筛选器适用性</block>
+  <block id="33b1e192582408583865dca3abd0c740" category="cell">适用于哪些筛选器？</block>
+  <block id="8c553135b1cf58374ff9e4c775f2f164" category="cell">不适用于哪些筛选器</block>
+  <block id="eaaa45bccc15257d9f55e54b64c70aba" category="cell">* （星号）</block>
+  <block id="df292297b638e12c44f52c855ad511fb" category="cell">Auto* 03172022</block>
+  <block id="b95e1188e58582673c69e6683b36a626" category="cell">用户、路径、实体类型、设备类型、卷、 原始路径</block>
+  <block id="de49d77f1ec8a76ce0ab6d070d1a883c" category="cell">返回以"Auto"开头、以"03172022 "结尾的所有资源</block>
+  <block id="3518217f55c95e834c4ea7984f8aa0cd" category="cell">AutoSabotageUser1_03172022？</block>
+  <block id="4e264b37a7e8d68a4e163769aad53d58" category="cell">用户、实体类型、设备、卷</block>
+  <block id="d3d8e64d1f98a044ea17ac6dc3edc1da" category="cell">返回AutoSabotageUser1_03172022A、AutoSabotageUser1_03172022AB、AutoSabotageUser1_031720225等</block>
+  <block id="3adefd54fc738f8196af6304ed8929ac" category="cell">AutoSabotageUser1_03172022或AutoRansomUser4_03162022</block>
+  <block id="815a68f09aeea81a589436dc96205729" category="cell">用户、域、用户名、路径、实体类型、 设备、原始路径</block>
+  <block id="0a01700b4705c6c47c24699ad7d4a4cb" category="cell">返回任意AutoSabotageUser1_03172022或AutoRansomUser4_03162022</block>
+  <block id="0ca071eb91357e8d4685daee24bd3360" category="cell">非AutoRansomUser4_03162022</block>
+  <block id="323be35d43a1b0a294bddc8533167538" category="cell">用户、域、用户名、路径、实体类型、 原始路径、卷</block>
+  <block id="e0c965c954b5a9fdc33c5b0516799f7d" category="cell">返回不以"AutoRansomUser4_03162022 "开头的所有内容</block>
+  <block id="eae639a70006feff484a39363c977e24" category="cell">domain</block>
+  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">路径/原始路径搜索</block>
+  <block id="64048c881c93933680d02730e9d9ce63" category="paragraph">使用和不使用/的搜索结果将有所不同</block>
+  <block id="cc2d816075324608acf344b23cf3e6bb" category="cell">/AutoDir1/AutoFile</block>
+  <block id="7b8af977b90a67e053ff2667a26828fe" category="cell">工作正常</block>
+  <block id="d8c67b8ac649f41c2a92277fb6c013ce" category="cell">AutoDir1/AutoFile</block>
+  <block id="53ca5edb3205aa3468395e1789114a60" category="cell">不起作用</block>
+  <block id="5ccae7957209ff321acad5f697fee3fb" category="cell">/AutoDir1/AutoFile (Dir1)</block>
+  <block id="63f523ece51ecefa957ca39c100af8cb" category="cell">dir1部分子字符串不起作用</block>
+  <block id="1d7531d059e4088a0878ea4eb94d32b6" category="cell">"/AutoDir1/AutoFile03242022"</block>
+  <block id="a38f318e70e36e7cc00c72afcc7e5fc0" category="cell">精确搜索有效</block>
+  <block id="7cce9e39c248f665a5808932eb5899ed" category="cell">Auto* 03242022</block>
+  <block id="888f8ecf6256a9875ff5de4f10099453" category="cell">/AutoDir1/AutoFile03242022或/AutoDir1/AutoFile03242022</block>
+  <block id="d87dd477d16107bb862f99dedbcacce4" category="cell">非/AutoDir1/AutoFile03242022</block>
+  <block id="867d74d5a7cefddb9c7bc445d7c5b7e1" category="cell">非/AutoDir1</block>
+  <block id="137812c306b0ede761fedbc1e1b88824" category="cell">非/AutoFile03242022</block>
+  <block id="3389dae361af79b04c9c8e7057f60cc6" category="cell">*</block>
+  <block id="8bc6542329adc040b119d4b8973c0d7f" category="cell">显示所有条目</block>
 </blocks>

@@ -135,6 +135,71 @@ image:CloudSecure_ActivitySelection.png["活动选择器，宽度 = 30%"]
 
 
 
+== 取证页面中的筛选器适用性
+
+|===
+
+
+| 筛选器 | 功能 | 示例 | 适用于哪些筛选器？ | 不适用于哪些筛选器 | 结果 
+
+
+| * （星号） | 用于搜索所有内容 | Auto* 03172022 | 用户、路径、实体类型、设备类型、卷、 原始路径 |  | 返回以"Auto"开头、以"03172022 "结尾的所有资源 
+
+
+| ？（问号） | 用于搜索特定数量的字符 | AutoSabotageUser1_03172022？ | 用户、实体类型、设备、卷 |  | 返回AutoSabotageUser1_03172022A、AutoSabotageUser1_03172022AB、AutoSabotageUser1_031720225等 
+
+
+| 或 | 用于指定多个实体 | AutoSabotageUser1_03172022或AutoRansomUser4_03162022 | 用户、域、用户名、路径、实体类型、 设备、原始路径 |  | 返回任意AutoSabotageUser1_03172022或AutoRansomUser4_03162022 
+
+
+| 不是 | 用于从搜索结果中排除文本 | 非AutoRansomUser4_03162022 | 用户、域、用户名、路径、实体类型、 原始路径、卷 | 设备 | 返回不以"AutoRansomUser4_03162022 "开头的所有内容 
+
+
+| 无 | 在所有字段中搜索空值 | 无 | domain |  | 返回目标字段为空的结果 
+|===
+
+
+== 路径/原始路径搜索
+
+使用和不使用/的搜索结果将有所不同
+
+|===
+
+
+| /AutoDir1/AutoFile | 工作正常 
+
+
+| AutoDir1/AutoFile | 不起作用 
+
+
+| /AutoDir1/AutoFile (Dir1) | dir1部分子字符串不起作用 
+
+
+| "/AutoDir1/AutoFile03242022" | 精确搜索有效 
+
+
+| Auto* 03242022 | 不起作用 
+
+
+| AutoSabotageUser1_03172022？ | 不起作用 
+
+
+| /AutoDir1/AutoFile03242022或/AutoDir1/AutoFile03242022 | 工作正常 
+
+
+| 非/AutoDir1/AutoFile03242022 | 工作正常 
+
+
+| 非/AutoDir1 | 工作正常 
+
+
+| 非/AutoFile03242022 | 不起作用 
+
+
+| * | 显示所有条目 
+|===
+
+
 == 故障排除
 
 |===
