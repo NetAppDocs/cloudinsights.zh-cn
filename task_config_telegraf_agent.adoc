@@ -56,12 +56,32 @@ NOTE: 如果您使用的是代理，请在安装 Telegraf 代理之前阅读适�
 
 === Windows
 
-image:AgentInstallWindows.png["Windows 代理安装"]
 
-.前提条件：
+
+==== 前提条件：
+
 * 必须安装 PowerShell
-* 如果您使用的是代理，请按照 * 为 Windows 配置代理支持 " 一节中的说明进行操作。
+* 如果您使用的是代理、则必须按照*为Windows配置代理支持"一节中的说明进行操作。
 
+
+
+
+==== 为 Windows 配置代理支持
+
+
+NOTE: 如果您的环境使用代理、请在安装之前阅读本节。
+
+
+NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
+
+对于驻留在代理后面的系统，请执行以下操作以设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量 * 先前 * 以安装 Telegraf 代理：
+
+ [System.Environment]::SetEnvironmentVariable(“https_proxy”, “<proxy_server>:<proxy_port>”, [System.EnvironmentVariableTarget]::Machine)
+
+
+==== 安装代理
+
+image:AgentInstallWindows.png["Windows 代理安装"]
 
 .在 Windows 上安装代理的步骤：
 . 选择代理访问密钥。
@@ -78,16 +98,6 @@ image:AgentInstallWindows.png["Windows 代理安装"]
 Start-Service telegraf
 Stop-Service telegraf
 ....
-
-
-==== 为 Windows 配置代理支持
-
-
-NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
-
-对于驻留在代理后面的系统，请执行以下操作以设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量 * 先前 * 以安装 Telegraf 代理：
-
- [System.Environment]::SetEnvironmentVariable(“https_proxy”, “<proxy_server>:<proxy_port>”, [System.EnvironmentVariableTarget]::Machine)
 
 
 ==== 卸载代理
@@ -132,12 +142,39 @@ sc.exe delete telegraf
 
 === RHEL 和 CentOS
 
-image:Agent_Requirements_Rhel.png["RHEL/CentOS 代理安装"]
 
-.前提条件：
+
+==== 前提条件：
+
 * 必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode
-* 如果您使用的是代理，请按照 * 为 RHEL/CentOS* 配置代理支持 " 一节中的说明进行操作。
+* 如果您使用的是代理、则必须按照*为RHEL/CentOS*配置代理支持"一节中的说明进行操作。
 
+
+
+
+==== 为 RHEL/CentOS 配置代理支持
+
+
+NOTE: 如果您的环境使用代理、请在安装之前阅读本节。
+
+
+NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
+
+对于驻留在代理后面的系统，请执行以下步骤 * 先前 * 以安装 Telegraf 代理：
+
+. 为当前用户设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量：
++
+ export https_proxy=<proxy_server>:<proxy_port>
+. 创建 _/etc/default/tengraf_ ，并插入 _https_proxy_and/or _http_proxy_ 变量的定义：
++
+ https_proxy=<proxy_server>:<proxy_port>
+
+
+
+
+==== 安装代理
+
+image:Agent_Requirements_Rhel.png["RHEL/CentOS 代理安装"]
 
 .在 RHEL/CentOS 上安装代理的步骤：
 . 选择代理访问密钥。
@@ -162,23 +199,6 @@ sudo systemctl stop telegraf
 sudo service telegraf start
 sudo service telegraf stop
 ....
-
-
-==== 为 RHEL/CentOS 配置代理支持
-
-
-NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
-
-对于驻留在代理后面的系统，请执行以下步骤 * 先前 * 以安装 Telegraf 代理：
-
-. 为当前用户设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量：
-+
- export https_proxy=<proxy_server>:<proxy_port>
-. 创建 _/etc/default/tengraf_ ，并插入 _https_proxy_and/or _http_proxy_ 变量的定义：
-+
- https_proxy=<proxy_server>:<proxy_port>
-
-
 
 
 ==== 卸载代理
@@ -224,12 +244,39 @@ systemctl stop telegraf (If your operating system is using systemd (CentOS 7+ an
 
 === Ubuntu 和 Debian
 
-image:Agent_Requirements_Ubuntu.png["Ubuntu 或 Debian 代理安装"]
 
-.前提条件：
+
+==== 前提条件：
+
 * 必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode
-* 如果您使用的是代理，请按照 * 为 Ubuntu 或 Debian 配置代理支持 * 一节中的说明进行操作。
+* 如果您使用的是代理、则必须按照*为Ubuntu或Debian配置代理支持*一节中的说明进行操作。
 
+
+
+
+==== 为 Ubuntu 或 Debian 配置代理支持
+
+
+NOTE: 如果您的环境使用代理、请在安装之前阅读本节。
+
+
+NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
+
+对于驻留在代理后面的系统，请执行以下步骤 * 先前 * 以安装 Telegraf 代理：
+
+. 为当前用户设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量：
++
+ export https_proxy=<proxy_server>:<proxy_port>
+. 创建 /etc/default/celaff ，并插入 _https_proxy_and/or _http_proxy_ 变量的定义：
++
+ https_proxy=<proxy_server>:<proxy_port>
+
+
+
+
+==== 安装代理
+
+image:Agent_Requirements_Ubuntu.png["Ubuntu 或 Debian 代理安装"]
 
 .在 Debian 或 Ubuntu 上安装代理的步骤：
 . 选择代理访问密钥。
@@ -254,23 +301,6 @@ sudo systemctl stop telegraf
 sudo service telegraf start
 sudo service telegraf stop
 ....
-
-
-==== 为 Ubuntu 或 Debian 配置代理支持
-
-
-NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
-
-对于驻留在代理后面的系统，请执行以下步骤 * 先前 * 以安装 Telegraf 代理：
-
-. 为当前用户设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量：
-+
- export https_proxy=<proxy_server>:<proxy_port>
-. 创建 /etc/default/celaff ，并插入 _https_proxy_and/or _http_proxy_ 变量的定义：
-+
- https_proxy=<proxy_server>:<proxy_port>
-
-
 
 
 ==== 卸载代理
@@ -316,32 +346,20 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 === macOS
 
-image:Agent_Requirements_Macos.png["安装 macOS 代理"]
 
-.前提条件：
+
+==== 前提条件：
+
 * 必须提供以下命令： curl ， sudo ， openssl 和 shasum
-* 如果您使用的是代理，请按照 * 为 macOS* 配置代理支持 " 一节中的说明进行操作。
+* 如果您使用的是代理、则必须按照*为macOS*配置代理支持"一节中的说明进行操作。
 
 
-.在 macOS 上安装代理的步骤：
-. 选择代理访问密钥。
-. 从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。
-. 打开 Bash 窗口
-. 将命令粘贴到 Bash 窗口中，然后按 Enter 键。
-. 此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。
-. 如果您之前使用 Homebrew 安装了 Telegraf 代理，则系统将提示您将其卸载。卸载先前安装的 Telegraf 代理后，重新运行上述步骤 5 中的命令。
-. 单击 * 完成 * 或 * 继续 *
-
-
-安装代理后，您可以使用以下命令启动 / 停止此服务：
-
-....
-sudo launchctl start telegraf
-sudo launchctl stop telegraf
-....
 
 
 ==== 为 macOS 配置代理支持
+
+
+NOTE: 如果您的环境使用代理、请在安装之前阅读本节。
 
 
 NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
@@ -387,6 +405,28 @@ sudo launchctl stop telegraf
 sudo launchctl unload -w /Library/LaunchDaemons/telegraf.plist
 sudo launchctl load -w /Library/LaunchDaemons/telegraf.plist
 sudo launchctl start telegraf
+....
+
+
+==== 安装代理
+
+image:Agent_Requirements_Macos.png["安装 macOS 代理"]
+
+.在 macOS 上安装代理的步骤：
+. 选择代理访问密钥。
+. 从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。
+. 打开 Bash 窗口
+. 将命令粘贴到 Bash 窗口中，然后按 Enter 键。
+. 此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。
+. 如果您之前使用 Homebrew 安装了 Telegraf 代理，则系统将提示您将其卸载。卸载先前安装的 Telegraf 代理后，重新运行上述步骤 5 中的命令。
+. 单击 * 完成 * 或 * 继续 *
+
+
+安装代理后，您可以使用以下命令启动 / 停止此服务：
+
+....
+sudo launchctl start telegraf
+sudo launchctl stop telegraf
 ....
 
 
