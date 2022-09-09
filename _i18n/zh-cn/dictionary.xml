@@ -8666,7 +8666,6 @@
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">当AU安装在SELinux上时、应将SE设置为_permisent_模式。不支持_Enforcerent_模式。将SELinux设置为许可模式后、重新启动AU服务。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
   <block id="eff09a47f0894badbc59afef03e773cb" category="paragraph">事件速率检查器用于在安装 ONTAP SVM 数据收集器之前检查 SVM 中的 NFS/SMB 组合事件速率，以查看一个代理计算机能够监控的 SVM 数量。一个代理最多可支持50个数据收集器。</block>
   <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a)将此表用作一般规模估算指南：</block>
-  <block id="904be52209f404eb1b403eeef2de5817" category="paragraph">Kubernetes Agent说明已移至新页面。请 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 有关最新的 Kubernetes 代理说明。</block>
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">示例</block>
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">示例9</block>
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此示例将查找第一个_到第二个_之后的所有内容。</block>
@@ -8983,4 +8982,6 @@
   <block id="5c45aaf7999f2a6de4e86ca7726bce2b" category="list-text">如果您使用的是代理、则必须按照*为Ubuntu或Debian配置代理支持*一节中的说明进行操作。</block>
   <block id="7cd8046a2d88273b39f65bc570022462" category="list-text">如果您使用的是代理、则必须按照*为macOS*配置代理支持"一节中的说明进行操作。</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。</block>
+  <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">NetApp Kubernetes监控操作员(NKMO）是安装适用于Cloud Insights Insights的Kubernetes的首选方法、可以更灵活地配置监控、只需更少的步骤即可完成、同时还可以增加监控K8s集群中运行的其他软件的机会。</block>
+  <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">请 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 有关NetApp Kubernetes监控操作员的信息和安装说明、请参见。</block>
 </blocks>
