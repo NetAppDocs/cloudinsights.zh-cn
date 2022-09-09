@@ -473,12 +473,10 @@ sudo /tmp/uninstall
 
 == Kubernetes
 
-====
 NetApp Kubernetes监控操作员(NKMO）是安装适用于Cloud Insights Insights的Kubernetes的首选方法、可以更灵活地配置监控、只需更少的步骤即可完成、同时还可以增加监控K8s集群中运行的其他软件的机会。
 
 请 link:task_config_telegraf_agent_k8s.html["* 转到此处 *"] 有关NetApp Kubernetes监控操作员的信息和安装说明、请参见。
 
-====
 
 
 == 验证校验和
