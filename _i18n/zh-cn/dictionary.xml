@@ -8984,4 +8984,5 @@
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。</block>
   <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">NetApp Kubernetes监控操作员(NKMO）是安装适用于Cloud Insights Insights的Kubernetes的首选方法、可以更灵活地配置监控、只需更少的步骤即可完成、同时还可以增加监控K8s集群中运行的其他软件的机会。</block>
   <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">请 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 有关NetApp Kubernetes监控操作员的信息和安装说明、请参见。</block>
+  <block id="1a8d1392fe9d8d744ef544d30bbaff86" category="paragraph">｛empty｝｛empty｝｛empty｝｛empty｝｛empty｝ ｛empty｝</block>
 </blocks>
