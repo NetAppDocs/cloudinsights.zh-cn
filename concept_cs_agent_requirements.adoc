@@ -28,7 +28,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | 内存 | 16 GB RAM 
 
 
-| 可用磁盘空间 | 应按以下方式分配磁盘空间：/opt/netapp 35 GB (最小) 
+| 可用磁盘空间 | 应按以下方式分配磁盘空间：/opt/netapp 35 GB (最小)如果/opt是NAS存储中的挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 link:task_cs_add_agent.html#troubleshooting-agent-errors["故障排除"] 部分、了解更多详细信息。 
 
 
 | 网络 | 100 Mbps 到 1 Gbps 以太网连接，静态 IP 地址，与所有设备的 IP 连接以及与 Cloud Secure 实例的所需端口（ 80 或 443 ）。 

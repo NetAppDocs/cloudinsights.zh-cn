@@ -5535,12 +5535,10 @@
   <block id="ba6a231cc4fc57afa76b3f2a42f71f11" category="list-text">单击 * 管理 &gt; 数据收集器 &gt; 代理 &gt; +Agent*</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">系统将显示 "Add an Agent" 页面：</block>
   <block id="0e9fa577800a5653127fdb5f3d4400aa" category="image-alt">添加代理 1</block>
-  <block id="fa851401541c7d95144ca33b604668b7" category="list-text">选择要安装代理的操作系统。</block>
   <block id="212db90a8b360d05f82119713ca87853" category="list-text">验证代理服务器是否满足最低系统要求。</block>
   <block id="3214e3b147ee224c2ddc92c7445e5bd4" category="list-text">要验证代理服务器是否正在运行受支持的 Linux 版本，请单击 _versions supported （ i ） _ 。</block>
   <block id="8bb9382589d54088894314b485b4650a" category="list-text">如果您的网络使用代理服务器，请按照代理部分中的说明设置代理服务器详细信息。</block>
   <block id="f828f889a93c9ae560b6227f2cc5d7fb" category="inline-image-macro">代理安装与代理注意事项</block>
-  <block id="74cb98f58c3a23767424d0d09e83571e" category="paragraph"><block ref="74cb98f58c3a23767424d0d09e83571e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a10e2f227e4fcc6978cfba86486a764" category="list-text">单击复制到剪贴板图标以复制安装命令。</block>
   <block id="635c6559744a9cbe13ef48ca6179175e" category="list-text">在终端窗口中运行安装命令。</block>
   <block id="80f1bbe9e042c14f0ea154b144e49635" category="list-text">安装成功完成后，系统将显示以下消息：</block>
@@ -5557,7 +5555,6 @@
   <block id="e71794867788b5cf67da8f5fae629c4c" category="cell">代理安装无法创建 /opt/netapp/cloudsecurity/agent/logs/agent.log 文件夹，并且 install.log 文件不提供任何相关信息。</block>
   <block id="1d46e6c358fd06d5a1f7a440acc48347" category="cell">在启动代理期间发生此错误。此错误不会记录在日志文件中，因为它会在日志程序初始化之前发生。此错误将重定向到标准输出，并可使用 `jlogalctl -u cloudsecure-agent.service` 命令在服务日志中看到。此命令可用于进一步对问题描述进行故障排除。</block>
   <block id="0a21e5a6656a19032e65faf86ec69c83" category="cell">代理安装失败，并显示 ‘不支持此 Linux 版本。正在退出安装。</block>
-  <block id="6a4df434fb58ac1c6e9e4f8dd1694643" category="cell">Cloud Secure 1.0.0 支持的平台为 RHEL 7.x / CentOS 7.x确保您不在 RHEL 6.x 或 CentOS 6.x 系统上安装代理。</block>
   <block id="3a7e14f279ad4988e72d190c932c04e4" category="cell">代理安装失败，并显示错误： "-bash ： unzip ： command not found"</block>
   <block id="6ffa35eb057e4e4c2feada5be42e5766" category="cell">安装 unzip ，然后再次运行安装命令。如果计算机上安装了 Yum ，请尝试 " yum install unzip " 以安装解压缩软件。然后，从代理安装 UI 中重新复制此命令并将其粘贴到命令行界面中以重新执行安装。</block>
   <block id="a387ff3584e009519afcccd4187aa537" category="cell">代理已安装并正在运行。但是，代理已突然停止。</block>
@@ -8773,7 +8770,6 @@
   <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">无法修改策略。原因：未获得该命令的授权。</block>
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">检查是否使用CsUser、是否已按上述方式为用户授予权限。</block>
   <block id="a9a216fbb1fb9d774e7cedfcf74c00cf" category="cell">从打开服务单<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。选择类别" cloud.netapp.com &gt;帐户/登录问题"或" cloud.netapp.com &gt;联合问题"。这专门针对 Cloud Central 问题或问题。对于所有其他Cloud Insights 技术支持问题、请联系 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
-  <block id="0f0836a5cbb198e5071126d330de3a88" category="cell">应按以下方式分配磁盘空间：/opt/netapp 35 GB (最小)</block>
   <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">双向</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">此页面</block>
   <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.在数据收集器页面上、滚动到出现错误的数据收集器右侧、然后单击3点菜单。选择 _Edit_ 。再次输入数据收集器的密码。按 _Save_ 按钮保存数据收集器。Data Collector 将重新启动，并应解决此错误。2. Agent计算机可能没有足够的CPU或RAM余量、这就是DSC出现故障的原因。请检查添加到计算机中代理的数据收集器的数量。如果超过20、请增加Agent计算机的CPU和RAM容量。增加CPU和RAM后、DSCS将自动进入Initializing状态、然后自动进入Running状态。请查看上的规模估算指南 <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
@@ -8985,4 +8981,9 @@
   <block id="c531b87929a34b77f73b3b8aa968a1dd" category="paragraph">NetApp Kubernetes监控操作员(NKMO）是安装适用于Cloud Insights Insights的Kubernetes的首选方法、可以更灵活地配置监控、只需更少的步骤即可完成、同时还可以增加监控K8s集群中运行的其他软件的机会。</block>
   <block id="9c6fa8cdb190f5469cb38f0c5dfb9689" category="paragraph">请 <block ref="6efc317b80350dcbc0248481605e2f47" category="inline-link-macro-rx"></block> 有关NetApp Kubernetes监控操作员的信息和安装说明、请参见。</block>
   <block id="1a8d1392fe9d8d744ef544d30bbaff86" category="paragraph">｛empty｝｛empty｝｛empty｝｛empty｝｛empty｝ ｛empty｝</block>
+  <block id="1b1cd01c54254af639999400741a0b75" category="list-text">支持ONTAP Select</block>
+  <block id="a1667a4627338ab4bba192e79668af02" category="paragraph"><block ref="a1667a4627338ab4bba192e79668af02" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d37e34400d307dbed8b2907c8c7e8964" category="cell">如果您尝试在不受支持的系统上安装代理、则会出现此错误。请参见 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block>。</block>
+  <block id="e09245effc62059e51f926fad603e413" category="inline-link-macro">故障排除</block>
+  <block id="64ecfa2ee741849d8a5def32fdb1eef6" category="cell">应按以下方式分配磁盘空间：/opt/netapp 35 GB (最小)如果/opt是NAS存储中的挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 部分、了解更多详细信息。</block>
 </blocks>
