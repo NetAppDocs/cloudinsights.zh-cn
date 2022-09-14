@@ -16,7 +16,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | 组件 | Linux 要求 
 
 
-| 操作系统 | 运行以下许可版本之一的计算机：Red Hat Enterprise Linux 7.x、8.x 64位CentOS 7.x 64位CentOS 8 Stream Ubuntu 20到22 64位此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。 
+| 操作系统 | 运行以下许可版本之一的计算机：Red Hat Enterprise Linux 7.x、8.x 64位CentOS 7.x 64位CentOS 8 Stream Ubuntu 20到22 64位此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。不支持SE (增强安全性) Linux。 
 
 
 | 命令 | 要安装，运行脚本和卸载，需要使用 "sudo su – " 命令。 
