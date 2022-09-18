@@ -17,7 +17,7 @@ Cloud Insights 的当前Telegraf版本为*。1.22.3*。
 NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步 Agent 计算机上的时间。
 
 
-NOTE: 如果要在安装代理之前验证安装文件，请阅读关于 <<Verifying Kubernetes Checksums>>。
+NOTE: 如果要在安装代理之前验证安装文件，请阅读关于  Kubernetes Checksums。
 
 
 toc::[]
@@ -52,7 +52,7 @@ NOTE: 如果您使用的是代理，请在安装 Telegraf 代理之前阅读适�
 Cloud Insights 为Kubernetes收集提供了* NetApp Kubernetes监控操作员*。添加数据收集器时、只需选择"Kubernetes "图块即可。
 
 .前提条件：
-* Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <<upgrading-the-agent,升级>> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。
+* Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。与 Docker 容器运行时结合使用时， Cloud Insights 可以显示 NFS 和 iSCSI 的 POD 到 PV 到存储映射；其他运行时仅显示 iSCSI 。从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 ,升级 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。
 
 
 * 如果您运行的是 OpenShift 4.6 - 4.8 ，则除了确保满足这些前提条件之外，还必须遵循下面的 * OpenShift 指令 * 。
@@ -353,7 +353,7 @@ NOTE: 基于操作员的安装可处理 Kube-state-metrics 的安装。如果要
 
 == 卸载代理
 
-如果您运行的是先前安装的基于脚本的Kubernetes代理、则必须执行此操作 <<upgrading-the-agent,升级>> NetApp Kubernetes监控操作员。
+如果您运行的是先前安装的基于脚本的Kubernetes代理、则必须执行此操作 ,升级 NetApp Kubernetes监控操作员。
 
 
 
@@ -415,8 +415,8 @@ NOTE: 如果您先前已安装基于脚本的代理、则必须升级到NetApp K
  kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 
 
-* <<uninstalling-the-agent,卸载>> 现有代理
-* <<installing-the-agent,安装>> 新代理]。
+* ,卸载 现有代理
+* ,安装 新代理]。
 
 
 

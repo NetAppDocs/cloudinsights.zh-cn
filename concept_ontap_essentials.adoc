@@ -11,12 +11,12 @@ keywords: dashboard, widget, ontap, overview, insight
 [role="lead"]
 ONTAP 基础知识是一组信息板和工作流、用于详细概述ONTAP 清单和工作负载。在ONTAP 基础知识中使用时、您可能会看到以下术语：
 
-* 基础架构/清单：为用户数据提供存储/网络服务的对象的列表视图
-* 工作负载：为用户提供读/写数据接口的对象的列表视图。
-* 数据保护：可使用NetApp数据保护技术保护的各种对象的列表视图
+* 基础架构/清单：为用户数据提供存储/网络服务的对象
+* 工作负载：为用户提供读/写数据接口的对象。
+* 数据保护：可使用NetApp数据保护技术进行保护的对象
 
 
-ONTAP 基础知识要求至少有一个运行正常的ONTAP 数据收集器、其中包含上周收集的数据。
+ONTAP 基础知识要求至少一个运行正常的ONTAP 数据收集器、其中包含过去七天内收集的数据。
 
 
 
@@ -24,7 +24,7 @@ ONTAP 基础知识要求至少有一个运行正常的ONTAP 数据收集器、�
 
 要开始探索、请从Cloud Insights 主菜单中选择* ONTAP Essentials *。
 
-image:ONTAP_Essentials_Menu_and_screen.png["ONTAP 基础知识概述信息板"]
+image:ONTAP_Essentials_Overview_Sept.png["ONTAP 基础知识概述信息板"]
 
 *概述*信息板可显示有用的信息、例如环境中的集群数量及其整体容量和性能百分比。您还将看到有关存储容量或性能容量用尽之前的预计天数的预测数据。如果基础架构中的任何控制器都在高温度下运行、ONTAP 基础知识将向您展示这些功能。
 
@@ -44,6 +44,15 @@ image:ONTAP_Essentials_data_protection.png["SnapMirror关系列表页面"]
 
 
 
+== 警报
+
+您可以在此查看环境中的活动警报、并快速深入了解潜在问题。选择_resolved_选项卡可查看已解决的警报。
+
+image:ONTAP_Essentials_Alerts_Menu.png["ONTAP 警报菜单"]
+image:ONTAP_Essentials_Alerts_Page.png["显示活动警报的ONTAP 警报页面示例"]
+
+
+
 == 基础架构
 
 ONTAP 基础知识*基础架构*页面可通过对所有基本ONTAP 对象进行预构建(但可进一步自定义)查询来提供集群运行状况和性能的视图。选择要浏览的对象类型(集群、存储池等)、然后选择是查看运行状况信息还是性能信息。设置筛选器以深入了解各个系统。
@@ -54,9 +63,18 @@ image:ONTAP_Essentials_Health_Performance.png["存储池的基础架构选择"]
 
 
 
+== 网络
+
+通过ONTAP 基础知识网络、您可以查看FC、NVMe FC、以太网和iSCSI基础架构。在这些页面上、您可以浏览集群及其节点中的端口等内容。
+
+image:ONTAP_Essentials_Alerts_Menu.png["ONTAP 基础知识网络连接菜单"]
+image:ONTAP_Essentials_Alerts_Page.png["ONTAP 基础知识网络FC页面、显示集群节点中的端口"]
+
+
+
 == 工作负载
 
-查看和浏览环境中LUN/卷或qtree上的工作负载。
+查看和浏览环境中LUN/卷、NFS或SMB共享或qtree上的工作负载。
 
 image:ONTAP_Essentials_Workloads_Menu.png["工作负载菜单"]
 

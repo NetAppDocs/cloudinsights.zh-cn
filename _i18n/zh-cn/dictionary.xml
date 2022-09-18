@@ -8596,7 +8596,6 @@
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">了解更多信息。</block>
   <block id="c1c7efc58c7b64cc21f3ae15934e8271" category="section-title">Kubernetes命名空间即将用尽</block>
   <block id="806f6dbcc954f0a88489885f517d1d1d" category="paragraph">通过运行空间不足Insight的Kubernetes命名空间、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。 <block ref="604196d3b206e62dba15152db76beddc" category="inline-link-macro-rx"></block></block>
-  <block id="9e7ded308e600f5c72a32aac82868158" category="list-text">*聊天*—您将与NetApp支持人员联系以获得帮助(仅限工作日)。单击*帮助&gt;支持*页面右下角的气泡。</block>
   <block id="f9696d5ebb5a2bc3b4e557d0f479e831" category="paragraph">查看* ONTAP 数据收集器*登录页面时、您可以单击数据收集器摘要部分"通知"字段中的铅笔图标来修改通知。</block>
   <block id="851540d32e033a0c14b63879881da871" category="summary">洞察力可以帮助您预测Kubernetes空间何时可能会全满。</block>
   <block id="4fef891481b95674ba195bcf5ebf7efb" category="doc">洞察力：Kubernetes命名空间即将用尽</block>
@@ -8665,7 +8664,6 @@
   <block id="82803c7a526739de20fc24c17e739d7c" category="list-text">集群中的* Pod *数量。单击此编号将打开Pod列表页面。</block>
   <block id="bed3b3102569672060faa59f92fbb130" category="list-text">集群中的*命名空间*数量。单击此数字将打开"命名空间"列表页面。</block>
   <block id="12a38026906d3d3a51a3538b98e0d002" category="list-text">集群中的*工作负载*数量。单击此数字将打开工作负载列表页面。</block>
-  <block id="dfeced9105a52cdc4ad66bf5d6ef9e5f" category="cell">运行以下任一许可版本的计算机：* CentOS (64位)：7.2到7.9、Stream 8、Stream 9 * Debian (64位)：9和10 * Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4 * Red Hat Enterprise Linux (64位)： 7.2到7.9、8.1到8.4 * Ubuntu服务器：18.04和20.04 LTS此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="5878d8d726a0f6915f98c3ad70765e41" category="paragraph">Cloud Insights 的当前Telegraf版本为*。1.22.3*。</block>
   <block id="64643b4abc81cdc6d03a96846188e46e" category="list-text">工作负载争论</block>
   <block id="8160f36882be54ea94b2656ab98ca110" category="paragraph">显示影响或受主机、网络和存储等其他共享资源影响的资产。这些资源有时称为_greedys_和_degraded_resources。</block>
@@ -8797,10 +8795,6 @@
   <block id="87d26f2a744f5c5f07151656de6a1390" category="summary">ONTAP 基础知识是一组信息板和工作流、用于详细概述您的环境。</block>
   <block id="f7e8a669ab2a5aca497e3123c1f3935b" category="doc">ONTAP 基础知识</block>
   <block id="7aaa3b04c62b1d6b52635ad40e8ff0a2" category="paragraph">ONTAP 基础知识是一组信息板和工作流、用于详细概述ONTAP 清单和工作负载。在ONTAP 基础知识中使用时、您可能会看到以下术语：</block>
-  <block id="70de8b0d424cdb2d65787ccde2449a8d" category="list-text">基础架构/清单：为用户数据提供存储/网络服务的对象的列表视图</block>
-  <block id="3d46ac68e417d922e47209568ce8e07b" category="list-text">工作负载：为用户提供读/写数据接口的对象的列表视图。</block>
-  <block id="0b91449983387e2b661cde46c2928572" category="list-text">数据保护：可使用NetApp数据保护技术保护的各种对象的列表视图</block>
-  <block id="de2952ddd95b7a20bbb88abe0c97e2a6" category="paragraph">ONTAP 基础知识要求至少有一个运行正常的ONTAP 数据收集器、其中包含上周收集的数据。</block>
   <block id="a13907a785102ea69b2891d9e6233f6f" category="paragraph">要开始探索、请从Cloud Insights 主菜单中选择* ONTAP Essentials *。</block>
   <block id="da61c5d249c3bbc25d9cee2d6d64b53a" category="inline-image-macro">ONTAP 基础知识概述信息板</block>
   <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
@@ -8817,7 +8811,6 @@
   <block id="a2ab7b415e4b437cd221a7275ed38839" category="paragraph"><block ref="a2ab7b415e4b437cd221a7275ed38839" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4643f417b694b85fa8cf7cbd0572c5cd" category="inline-image-macro">要探索的基础架构对象</block>
   <block id="3e60a504c4f09f36de3a060d1761d279" category="paragraph">显示集群运行状况的基础架构页面：<block ref="4510f66edf4997b6dc6197eeda5a382e" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cb2693590d2fee42898b89121aea43bb" category="paragraph">查看和浏览环境中LUN/卷或qtree上的工作负载。</block>
   <block id="9b487ae015c8109487f87177d5d90403" category="inline-image-macro">工作负载菜单</block>
   <block id="b17cca1084b467c0c42cf2095a7e921b" category="paragraph"><block ref="b17cca1084b467c0c42cf2095a7e921b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="66afae6b95d602c69251c81851ce13af" category="inline-image-macro">工作负载列表页面</block>
@@ -8978,4 +8971,29 @@
   <block id="0dec2b903302bbd14d95abf2e3a6eb78" category="paragraph">必须在云服务提供商的相应子网中配置代理计算机。请在"代理要求"中阅读有关网络访问的更多信息。</block>
   <block id="608efa70bff9cd8ba64ac8f581eee545" category="paragraph">以下是在AWS中安装Agent的步骤。在Azure或Google Cloud中、可以按照适用于云服务提供商的等效步骤进行安装。</block>
   <block id="dacbc7c2a597126f4cb9dec110f0684b" category="paragraph">在AWS中、按照以下步骤配置要用作Cloud Secure 代理的计算机：</block>
+  <block id="e92d16963e5b72f89982fb54b922794a" category="list-text">*聊天*—您将与NetApp支持人员联系以获得帮助(仅限工作日)。任何Cloud Insights 屏幕右上角的*帮助&gt;实时聊天*菜单选项均提供聊天功能。</block>
+  <block id="abc39e61f48aa5adbf3a9de149e1a87a" category="list-text">基础架构/清单：为用户数据提供存储/网络服务的对象</block>
+  <block id="f66a68b2ce406b961d0175d123132ef1" category="list-text">工作负载：为用户提供读/写数据接口的对象。</block>
+  <block id="85d3998a83e328d8facfa5fc0ffc5c7a" category="list-text">数据保护：可使用NetApp数据保护技术进行保护的对象</block>
+  <block id="a66819116f0ea13d8c7d391f072a94b3" category="paragraph">ONTAP 基础知识要求至少一个运行正常的ONTAP 数据收集器、其中包含过去七天内收集的数据。</block>
+  <block id="704d895c2fdd387baf82cbd889ec2ac4" category="paragraph"><block ref="704d895c2fdd387baf82cbd889ec2ac4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d69c939c03cf5ed0d694b88094ca8309" category="paragraph">您可以在此查看环境中的活动警报、并快速深入了解潜在问题。选择_resolved_选项卡可查看已解决的警报。</block>
+  <block id="a8a9422431d959b78b009edf9ca8e97c" category="inline-image-macro">ONTAP 警报菜单</block>
+  <block id="a81771e75cfd0a261680be2fa844a7c3" category="inline-image-macro">显示活动警报的ONTAP 警报页面示例</block>
+  <block id="769427409530f58e4dace412d2741b71" category="paragraph"><block ref="34c43bd5ee99f9bff20a286878764efa" category="inline-image-macro-rx" type="image"></block>
+<block ref="83c2acb3e0809ee6fd30a80bed9be19c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">网络</block>
+  <block id="4915558345cda00734062a8065ae320d" category="paragraph">通过ONTAP 基础知识网络、您可以查看FC、NVMe FC、以太网和iSCSI基础架构。在这些页面上、您可以浏览集群及其节点中的端口等内容。</block>
+  <block id="d6d29c8ac434b329501477631622c73a" category="inline-image-macro">ONTAP 基础知识网络连接菜单</block>
+  <block id="406f5ee7ba342eddfdb1feaa3554c5f3" category="inline-image-macro">ONTAP 基础知识网络FC页面、显示集群节点中的端口</block>
+  <block id="fb77a4c2cf8caf6167399eeb455fcddd" category="paragraph"><block ref="97fb6465b58fb1e2d5c970a3c00e4b1d" category="inline-image-macro-rx" type="image"></block>
+<block ref="c4c78d209c3177884a81b717b96ec1a2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2a3cd3c9afd68e2531df6b8a3ad4536c" category="paragraph">查看和浏览环境中LUN/卷、NFS或SMB共享或qtree上的工作负载。</block>
+  <block id="9eaf347efd9d5225664dc4c414a82eb2" category="cell">运行以下任一许可版本的计算机：* CentOS (64位)：7.2到7.9、Stream 8、Stream 9 * Debian (64位)：9和10 * Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4 * Red Hat Enterprise Linux (64位)： 7.2到7.9、8.1到8.6 * Ubuntu服务器：18.04和20.04 LTS此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
+  <block id="15a43b8a93156e727b3b81dc25fd6d32" category="section-title">安全监控器</block>
+  <block id="2db1857ce4841fcb4871ca570d9f1e9e" category="cell">监控器名称</block>
+  <block id="38eb03d447ddc98ff3687aa8f4aeaa70" category="cell">已禁用FIPS模式</block>
+  <block id="5218eaef8a5f3f66d2720b5e8156469d" category="cell">启用FIPS 140-2合规性后、TLSv1和SSLv3将被禁用、只有TLSv1.1和TLSv1.2保持启用状态。启用FIPS 140-2合规性后、ONTAP 会阻止您启用TLSv1和SSLv3。</block>
+  <block id="f41a65442a444212a9242b353da02fa7" category="cell">要在集群上启用FIPS 140-2合规性、请在高级权限模式下运行以下ONTAP 命令：security config modify -interface ssl -is-fips-enabled true</block>
+  <block id="1b50ba1d52ac1b744151cf1bb8262d8c" category="admonition">所有Cloud Insights 版本均提供监控和警报功能、但Basic版本需遵循以下条件：*一次最多只能有五个自定义监控器处于活动状态。超过五个的任何监控器将在_Paused_state中创建或移至_Paused_state。*不支持VMDK、虚拟机、主机和数据存储库指标监控器。如果为这些指标创建了监控器、则在降级到Basic Edition时、这些监控器将暂停、无法恢复。</block>
 </blocks>

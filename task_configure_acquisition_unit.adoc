@@ -21,7 +21,7 @@ NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络�
 == 添加 Linux 采集单元
 
 .开始之前
-* 如果您的系统使用的是代理，则必须在安装采集单元之前设置代理环境变量。有关详细信息，请参见 <<Setting proxy environment variables>>。
+* 如果您的系统使用的是代理，则必须在安装采集单元之前设置代理环境变量。有关详细信息，请参见  proxy environment variables。
 
 
 .Linux 采集单元安装步骤

@@ -465,6 +465,18 @@ toc::[]
 |===
 
 
+=== 安全监控器
+
+|===
+
+
+| 监控器名称 | 说明 | 更正操作 
+
+
+| 已禁用FIPS模式 | 启用FIPS 140-2合规性后、TLSv1和SSLv3将被禁用、只有TLSv1.1和TLSv1.2保持启用状态。启用FIPS 140-2合规性后、ONTAP 会阻止您启用TLSv1和SSLv3。 | 要在集群上启用FIPS 140-2合规性、请在高级权限模式下运行以下ONTAP 命令：security config modify -interface ssl -is-fips-enabled true 
+|===
+
+
 == 更多信息
 
 * link:task_view_and_manage_alerts.html["查看和忽略警报"]
