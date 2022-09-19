@@ -9016,4 +9016,20 @@
   <block id="5959863675c12bd7e50191f64156c0d0" category="paragraph">如果您的环境遇到 <block ref="fa362768d673aca77d85a6a4c5ca3f07" category="inline-link-macro-rx"></block> 例如_shared resources under stres_or _Kubernetes Namesspaces running out of Space_、受影响资源的资产登录页面现在包含指向Insight本身的链接、从而加快了探索和故障排除的速度。</block>
   <block id="6d8c78320751d43d12d045de22da858c" category="list-text">Red Hat Enterprise Linux 8.5、8.6</block>
   <block id="fed2af1f5d5480293bbe43fadf0e9470" category="paragraph">请注意、如果Cloud Insights 尚未发现领先的计算工作负载、则卷或内部卷本身将被视为工作负载。此适用场景 既适用于要求苛刻的工作负载、也适用于受影响的工作负载。</block>
+  <block id="cda933c18fbb578a3f0d2e4907aaa572" category="summary">将AWS S3配置为存储数据收集器。</block>
+  <block id="77420e0a789b610e7581918e246f925d" category="doc">将AWS S3配置为存储数据收集器</block>
+  <block id="2401a330264ccc83db4e7dcb1d2a3800" category="paragraph">Cloud Insights 使用AWS S3作为存储数据收集器、从AWS S3实例采集清单和性能数据。</block>
+  <block id="7e4af3fb09f891d46f65e6fe7eaf79b4" category="paragraph">要从AWS S3作为存储设备收集数据、您必须具有以下信息：</block>
+  <block id="1a0aac3e93287fcee8ae7a207036c825" category="list-text">AWS云帐户的* IAM角色*(如果使用IAM角色身份验证)。仅当采集单元安装在 AWS 实例上时， IAM 角色才适用。</block>
+  <block id="51222d9334f8421be01a4c67bba211f0" category="list-text">如果使用IAM访问密钥身份验证、则为您的AWS云帐户提供* IAM访问密钥* ID和机密访问密钥。</block>
+  <block id="059cecdb406ea318583165dbd87ae76a" category="list-text">AWS S3实例可以报告为虚拟机、也可以报告为主机(不太自然)。EBS 卷既可以报告为虚拟机使用的虚拟磁盘，也可以报告为虚拟磁盘提供容量的数据存储库。</block>
+  <block id="eabf633dc74f78f079f74efeb11ba4c2" category="paragraph">访问密钥由一个访问密钥 ID （例如， AKIIOSFODNN7EXAMPLE ）和一个机密访问密钥（例如， wJALRXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY ）组成。如果使用AWS SDK、REST或查询API操作、则可以使用访问密钥对向AWS发出的编程请求进行签名。这些密钥随 Amazon 的合同一起提供。</block>
+  <block id="c556d79cf119c0275f5a7e5ffe17e25e" category="cell">仅在 AWS 中的 AU 上采集时使用。有关的详细信息，请参见下文 <block ref="abcc3869ca9e9148fb25f0d23e298b7f" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a9798702903d4f5ee46de22467eb3ccd" category="paragraph">例如、如果您创建了一个名为_InstanceS3ReadOnly"的IAM角色、则必须设置此策略以为此IAM角色向所有S3资源授予S3只读列表访问权限。此外，您还必须授予 STS （安全令牌服务）访问权限，以便允许此角色跨帐户承担角色。</block>
+  <block id="56fbeb9e954ace68d534e66e58b364a1" category="paragraph">创建IAM角色后、您可以在创建新S3实例或任何现有S3实例时附加此角色。</block>
+  <block id="ddaf3f263ed6f7d926e96caad7b5d807" category="paragraph">将IAM角色_InstanceS3ReadOnly"附加到S3实例后、您将能够按IAM角色名称通过实例元数据检索临时凭据、并使用它通过此S3实例上运行的任何应用程序访问AWS资源。</block>
+  <block id="182377d3b5aa85736490d0c1d8daae51" category="paragraph">作为存储数据收集器的AWS S3提供了一个选项、可用于使用S3上配置的标记填充Cloud Insights 标注。标注的名称必须与AWS标记完全相同。Cloud Insights 将始终填充同名文本类型的标注，并 " 尽力 " 填充其他类型（数字，布尔值等）的标注。如果您的标注类型不同，而数据收集器无法填充，则可能需要删除此标注并将其重新创建为文本类型。</block>
+  <block id="c0e8766f47222b9a1596583017a6d2c7" category="paragraph">请注意， AWS 区分大小写，而 Cloud Insights 不区分大小写。因此、如果您在Cloud Insights 中创建了一个名为"owner"的标注、在S3中创建了名为"owner"、"owner"和"owner"的标记、则所有S3变体"owner"都将映射到Cloud Insight的"owner"标注。</block>
+  <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">您必须将每个子帐户配置为具有一个AWS角色、此角色允许主帐户ID从子帐户访问S3详细信息。</block>
+  <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">最佳实践：强烈建议将AWS预定义的_AmazonS3ReadOnlyAccess_策略分配给S3主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。</block>
 </blocks>
