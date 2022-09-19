@@ -7625,7 +7625,6 @@
   <block id="2d78443087bc495d923e93521efb0c1d" category="doc">洞察力：共享资源面临压力</block>
   <block id="a8ec16373cb24bc082189b278c4cb448" category="paragraph">高影响工作负载会降低共享资源中其他工作负载的性能。这会使共享资源承受压力。Cloud Insights 提供的工具可帮助您调查资源饱和情况以及环境中的影响。</block>
   <block id="7f595b1ef82026007f2533413106e7d8" category="paragraph">在讨论工作负载或资源影响时，以下定义非常有用。</block>
-  <block id="cd038a3c036812737c2ee89b0152ce75" category="paragraph">要求苛刻的 * 或具有影响的 * 资源会对其他资源造成负面影响。例如， IOPS 极高的卷可能会导致其他卷（例如 _ 受影响 _ 或 _ 已降级 _ 资源）。要求苛刻的资源和受影响的资源是使用相同共享资源的 " 对等方 " ，例如存储池或卷。要求苛刻的资源有时称为 _greedy" 资源。</block>
   <block id="aea124b45b62324984b67a059ea0da7f" category="paragraph">要求苛刻的工作负载 * 是指当前已确定影响共享存储池中其他资源的工作负载。这些工作负载可提高 IOPS （例如），从而降低受影响工作负载的 IOPS 。要求苛刻的工作负载有时称为 " 高耗工作负载 " 。</block>
   <block id="7bddab02c6c096040f0edf52e1623868" category="paragraph">* 受影响的工作负载 * 是受共享存储池中耗用大量工作负载影响的工作负载。由于工作负载要求苛刻，这些工作负载的 IOPS 降低和 / 或延迟增加。</block>
   <block id="cb9530c6d6791a5adae9a607513f9fe2" category="paragraph">* 共享资源饱和 * 是影响 IOPS 与基线的比率。</block>
@@ -9015,10 +9014,6 @@
   <block id="4eecf9894a35e5b8b6c8f2cd8456dc16" category="section-title">更明显的洞察力</block>
   <block id="9e1c9c294ec3f4b96a8a0cc0df13f98e" category="inline-link-macro">洞察力</block>
   <block id="5959863675c12bd7e50191f64156c0d0" category="paragraph">如果您的环境遇到 <block ref="fa362768d673aca77d85a6a4c5ca3f07" category="inline-link-macro-rx"></block> 例如_shared resources under stres_or _Kubernetes Namesspaces running out of Space_、受影响资源的资产登录页面现在包含指向Insight本身的链接、从而加快了探索和故障排除的速度。</block>
-  <block id="b3a4cb8b1cc794671c98b17aac5ba206" category="section-title">新的数据收集器</block>
-  <block id="b8cf9f003c21d314dc33ec400eddec24" category="list-text">Amazon S3 (在预览版中提供)</block>
-  <block id="337813588cd1360f633725a1a1d06b02" category="list-text">Brocade FOS 9.0.x</block>
-  <block id="5fcd1a145d1221f71e25605161e3258e" category="list-text">Dell/EMC PowerStore 3.0.0.0</block>
-  <block id="aa6bf00e4b89737b431c0d0ffdd1b855" category="paragraph">现在、所有数据源都经过优化、可在采集单元更新和/或修补之后恢复性能轮询。</block>
   <block id="6d8c78320751d43d12d045de22da858c" category="list-text">Red Hat Enterprise Linux 8.5、8.6</block>
+  <block id="fed2af1f5d5480293bbe43fadf0e9470" category="paragraph">请注意、如果Cloud Insights 尚未发现领先的计算工作负载、则卷或内部卷本身将被视为工作负载。此适用场景 既适用于要求苛刻的工作负载、也适用于受影响的工作负载。</block>
 </blocks>
