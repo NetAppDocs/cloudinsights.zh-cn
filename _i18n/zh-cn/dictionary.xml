@@ -9032,4 +9032,5 @@
   <block id="c0e8766f47222b9a1596583017a6d2c7" category="paragraph">请注意， AWS 区分大小写，而 Cloud Insights 不区分大小写。因此、如果您在Cloud Insights 中创建了一个名为"owner"的标注、在S3中创建了名为"owner"、"owner"和"owner"的标记、则所有S3变体"owner"都将映射到Cloud Insight的"owner"标注。</block>
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">您必须将每个子帐户配置为具有一个AWS角色、此角色允许主帐户ID从子帐户访问S3详细信息。</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">最佳实践：强烈建议将AWS预定义的_AmazonS3ReadOnlyAccess_策略分配给S3主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。</block>
+  <block id="78e40aa33e3f28ee2530a71dbf46a884" category="sidebar">/Amazon FSX for NetApp ONTAP</block>
 </blocks>
