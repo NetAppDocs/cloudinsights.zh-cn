@@ -18,12 +18,10 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 == 登录问题：
 
 |===
-
-
 | * 问题： * | * 请尝试此操作： * 
 
 
-| Cloud Insights 每 5 分钟注销一次 | 在浏览器设置中从 _[* 。 ]auth0.com 启用第三方 Cookie 接受。例如，在 Chrome 的匿名模式下，默认浏览器设置会阻止第三方 Cookie 。请尝试以下操作：在浏览器 URL 中输入 "chrome ： //settings/cookies" 。选择 " 允许所有 Cookie " 选项。 
+| Cloud Insights 每 5 分钟注销一次 | 允许第三方接受所需的NetApp和auth0 cookie。示例：在Chrome中、在浏览器URL中输入"chrome：//settings/cookies"。选择"允许所有Cookie "选项。*或*选择"阻止第三方Cookie "并为"*。]auth0.com和"*。]netapp.com添加例外情况。注意：创建异常时、请务必选择"在此站点上包含第三方Cookie "选项。 
 
 
 | 我有一个 Cloud Central 帐户，但无法登录到 Cloud Central 。 | 从打开服务单 https://mysupport.netapp.com/site/help[]。选择类别" cloud.netapp.com >帐户/登录问题"或" cloud.netapp.com >联合问题"。这专门针对 Cloud Central 问题或问题。对于所有其他Cloud Insights 技术支持问题、请联系 link:concept_requesting_support.html["NetApp 支持"]。 

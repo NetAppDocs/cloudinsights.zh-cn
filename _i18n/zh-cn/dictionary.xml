@@ -4650,7 +4650,6 @@
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">对 Windows 采集单元问题进行故障排除</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">另请参见 <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> 和 <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>。</block>
   <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights 每 5 分钟注销一次</block>
-  <block id="8f65024231687a39efcddb86a1e9debb" category="cell">在浏览器设置中从 _[* 。 ]auth0.com 启用第三方 Cookie 接受。例如，在 Chrome 的匿名模式下，默认浏览器设置会阻止第三方 Cookie 。请尝试以下操作：在浏览器 URL 中输入 "chrome ： //settings/cookies" 。选择 " 允许所有 Cookie " 选项。</block>
   <block id="e4ff2e59dd571d2bbd5a906b6fad2546" category="cell">我有一个 Cloud Central 帐户，但无法登录到 Cloud Central 。</block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">我受邀访问 Cloud Insights ，但收到 " 未授权 " 消息。</block>
   <block id="199017f1d912993f091b6b969d3442ad" category="cell">确认您已注册 Cloud Central 帐户，或者您的组织使用 Cloud Central 的 SSO 登录。验证您的 Cloud Central 个人资料电子邮件地址是否与 Cloud Insights 欢迎电子邮件中显示的电子邮件地址匹配。如果此电子邮件不匹配，请使用正确的电子邮件地址请求新的邀请。</block>
@@ -9033,4 +9032,5 @@
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">您必须将每个子帐户配置为具有一个AWS角色、此角色允许主帐户ID从子帐户访问S3详细信息。</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">最佳实践：强烈建议将AWS预定义的_AmazonS3ReadOnlyAccess_策略分配给S3主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。</block>
   <block id="78e40aa33e3f28ee2530a71dbf46a884" category="sidebar">/Amazon FSX for NetApp ONTAP</block>
+  <block id="396149d67edd166e53b49c38f4b707ba" category="cell">允许第三方接受所需的NetApp和auth0 cookie。示例：在Chrome中、在浏览器URL中输入"chrome：//settings/cookies"。选择"允许所有Cookie "选项。*或*选择"阻止第三方Cookie "并为"*。]auth0.com和"*。]netapp.com添加例外情况。注意：创建异常时、请务必选择"在此站点上包含第三方Cookie "选项。</block>
 </blocks>
