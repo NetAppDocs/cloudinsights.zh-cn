@@ -56,15 +56,6 @@ image:Help_LiveChat.png["突出显示了实时聊天的帮助菜单"]
 
 
 
-=== 新的数据收集器
-
-* Amazon S3 (在预览版中提供)
-* Brocade FOS 9.0.x
-* Dell/EMC PowerStore 3.0.0.0
-
-
-
-
 === 其他 Data Collector 更新
 
 现在、所有数据源都经过优化、可在采集单元更新和/或修补之后恢复性能轮询。
