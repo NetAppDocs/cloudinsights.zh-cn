@@ -184,8 +184,6 @@ sidebar:
       url: "/reporting_schema_diagrams.html"
     - title: 模式表
       url: "/reference_schemas.html"
-  - title: ONTAP 基础知识
-    url: "/concept_ontap_essentials.html"
   - title: Cloud Secure
     entries:
     - title: 关于 Cloud Secure
