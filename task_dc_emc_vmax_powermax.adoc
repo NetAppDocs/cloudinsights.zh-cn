@@ -23,14 +23,8 @@ Cloud Insights 可通过将 Solutions Enabler SYMCLI 命令与环境中的现有
 * 管理解决方案启用程序服务器的 IP 地址
 * Solutions Enabler （ SE ）服务器上的管理员权限
 * SE 软件的只读用户名和密码
-* Solutions Enabler Server 6.5X 要求：
-+
-** 安装了适用于 SMIS-S V1.2 的 MI-S Provider 3.3.1
-** 安装后，运行 \Program Files\EMC\SYMCLI\bin>stordaemon start storsrvd
-
-
 * 适用于 VMAX 的 Unisphere 应用程序必须正在运行并收集由 SMI-S Provider 安装管理的 EMC VMAX 和 PowerMax sstorage 阵列的统计信息
-* 访问验证：验证 SMI-S 提供程序是否正在运行： Telnet <se_server> 5988
+* 性能访问验证：在采集单元上的Web浏览器中、转至 https://<SMI-S[] 主机名或IP>：5989/ecomconfig、其中"SMI-S主机名或IP"是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。
 
 
 

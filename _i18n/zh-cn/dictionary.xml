@@ -1395,11 +1395,7 @@
   <block id="0749de0bb66e7b739d9bb3368f6c3de1" category="list-text">管理解决方案启用程序服务器的 IP 地址</block>
   <block id="b381cf1608514a7b06634cd7ead7dce2" category="list-text">Solutions Enabler （ SE ）服务器上的管理员权限</block>
   <block id="133702dafbca190738aab49522eb7344" category="list-text">SE 软件的只读用户名和密码</block>
-  <block id="8b8837e7c2e4835916adaca415ac7ea5" category="list-text">Solutions Enabler Server 6.5X 要求：</block>
-  <block id="4b07bc21a7224915423b6043ffd0f27f" category="list-text">安装了适用于 SMIS-S V1.2 的 MI-S Provider 3.3.1</block>
-  <block id="7bb957acf5c9bb14a306ef82b79e96a7" category="list-text">安装后，运行 \Program Files\EMC\SYMCLI\bin&gt;stordaemon start storsrvd</block>
   <block id="cf3dc9a48663d5659883d6343aa48779" category="list-text">适用于 VMAX 的 Unisphere 应用程序必须正在运行并收集由 SMI-S Provider 安装管理的 EMC VMAX 和 PowerMax sstorage 阵列的统计信息</block>
-  <block id="3a6b139d8309d859f87248363cb1badd" category="list-text">访问验证：验证 SMI-S 提供程序是否正在运行： Telnet &lt;se_server&gt; 5988</block>
   <block id="e77420e037c75e1c5a9ef5611f13d0d1" category="paragraph">Cloud Insights 从 EMC VMAX/PowerMax 数据源采集以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="c1ebc925cf4e0a09ee827da58d2b58c5" category="cell">磁盘组</block>
   <block id="1b5aa0d469fbc243656ad5838af455a7" category="cell">阵列存储</block>
@@ -9033,4 +9029,5 @@
   <block id="78e40aa33e3f28ee2530a71dbf46a884" category="sidebar">/Amazon FSX for NetApp ONTAP</block>
   <block id="396149d67edd166e53b49c38f4b707ba" category="cell">允许第三方接受所需的NetApp和auth0 cookie。示例：在Chrome中、在浏览器URL中输入"chrome：//settings/cookies"。选择"允许所有Cookie "选项。*或*选择"阻止第三方Cookie "并为"*。]auth0.com和"*。]netapp.com添加例外情况。注意：创建异常时、请务必选择"在此站点上包含第三方Cookie "选项。</block>
   <block id="3e58ddc58d5563a5027058f56555ea62" category="paragraph">请注意、如果Cloud Insights 未发现领先的计算工作负载、则卷或内部卷本身将被识别为工作负载。此适用场景 既适用于要求苛刻的工作负载、也适用于受影响的工作负载。</block>
+  <block id="d1abcb872114cdbdf06bbc991083bed3" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至<block ref="25b9476534a152fb44ed4e9f3aa05000" category="inline-link-rx"></block> 主机名或IP&gt;：5989/ecomconfig、其中"SMI-S主机名或IP"是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
 </blocks>
