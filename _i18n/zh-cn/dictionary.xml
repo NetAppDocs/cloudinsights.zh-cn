@@ -4470,7 +4470,6 @@
   <block id="3db922049dfe42d0844cfa65ca213434" category="list-text">请确保已正确配置 User Directory Connector ，否则事件将在 " 活动取证 " 页面中显示编码的用户名，而不是实际用户名（存储在 Active Directory 中）。</block>
   <block id="1c0d6e11904414aa4c18ec80cc712c68" category="list-text">为了获得最佳性能，您应将 FPolicy 服务器配置为与存储系统位于同一子网中。</block>
   <block id="94a83cc87aa6db24b6f7e05b3ab3031d" category="list-text">您必须使用以下两种方法之一添加 SVM ：</block>
-  <block id="6e04cacc7a600236021f263318871100" category="list-text">使用集群 IP ， SVM 名称以及集群管理用户名和密码。_this 是建议的方法。 _</block>
   <block id="b0fa17525d310a01406e22a6a3792d8b" category="list-text">SVM 名称必须与 ONTAP 中显示的名称完全相同，并且区分大小写。</block>
   <block id="988cfc885910cb57855c7d1e3055000a" category="list-text">使用 SVM SVM 管理 IP ，用户名和密码</block>
   <block id="4f063ab303b475997c571fed2a4d2d7e" category="inline-link-macro">" 关于权限的注释 "</block>
@@ -9036,4 +9035,7 @@
   <block id="0e20349a2bc2936c3b69b3b301f4c04e" category="list-text">NFS4-1.ops[共享]</block>
   <block id="56df349714d6415bc904268245667da3" category="paragraph">如果控制器无法捕获任何或所有这些内容、则可能会导致Cloud Insights 在"内部卷"上没有工作负载或工作负载报告不足。</block>
   <block id="136f9047a3903eacf983489b3eeec92a" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至\https://&lt;SMI-S主机名或IP&gt;：5989/ecomconfig、其中"SMI-S主机名或IP"是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
+  <block id="f27bbbf5360c428e454f91df4646ca7c" category="list-text">使用集群 IP ， SVM 名称以及集群管理用户名和密码。*。这是建议的方法。_*</block>
+  <block id="41e19b5574e2f91f38fdc0cf4372c9b5" category="cell">代理最初是通过代理服务器连接的、代理是在安装期间设置的。现在、代理服务器已更改。如何更改代理的代理配置？</block>
+  <block id="a807d45c8af5b7a8d1abadf767a17bde" category="cell">您可以编辑agent.properties以添加代理详细信息。请按照以下步骤操作：1.更改为包含属性文件的文件夹：cd /opt/netapp/cloudsecurity/conf 2。使用您喜爱的文本编辑器、打开_agent.properties_文件进行编辑。3.添加或修改以下行：agent_proxy_host=scspa1950329001.vm.netapp.com agent_proxy_port=80 agent_proxy_user=pxuser agent_proxy_password=pass1234 4.保存文件。5.重新启动代理：sudo systemctl restart cloudsecure-agent.service</block>
 </blocks>

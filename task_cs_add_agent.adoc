@@ -123,4 +123,7 @@ image::new-agent-detect.png[新代理检测]
 
 
 | 安装后代理未运行。_systemctl status cloudsecure-agent.service_显示以下内容：[root@demo ~]# systemctl status cloudsecure-agent.service agent.service–Cloud Secure 代理守护进程服务已加载：已加载(/usr/lib/systemd/system/cloudsecure-agent.service;已启用；供应商预设：已禁用) Active：激活(自动重新启动)(结果：退出代码)自Tcloud2021-08-03 21：12：26；已退出Ago进程：cloudbin/netapp=25bin/dcc=82/pdpdpdpdpdpt/s=bash)： 25889 (code=exited、status=126)、Aug 03 21：12：26 demo systemd1]：cloudsecure-agent.service: main process exited、code=exited、status=126/n/a Aug 03 21：12：26 demo systemd1]：unit cloudsecure-agent.service entered.Aug 03 21：12：26 demo systemd1]：cloudsecure-agent.service失败。 | 此操作可能会失败、因为_cssys_用户可能没有安装权限。如果/opt/netapp是NFS挂载、而_cssys_用户无权访问此文件夹、则安装将失败。_cssys_是由Cloud Secure 安装程序创建的本地用户、该用户可能无权访问挂载的共享。要检查此问题、您可以尝试使用_cssys_用户访问/opt/netapp/cloudsecurity/agent/bin/cloudsure-agent。如果返回"permission denies"、则安装权限不存在。安装在计算机本地的目录上、而不是挂载的文件夹。 
+
+
+| 代理最初是通过代理服务器连接的、代理是在安装期间设置的。现在、代理服务器已更改。如何更改代理的代理配置？ | 您可以编辑agent.properties以添加代理详细信息。请按照以下步骤操作：1.更改为包含属性文件的文件夹：cd /opt/netapp/cloudsecurity/conf 2。使用您喜爱的文本编辑器、打开_agent.properties_文件进行编辑。3.添加或修改以下行：agent_proxy_host=scspa1950329001.vm.netapp.com agent_proxy_port=80 agent_proxy_user=pxuser agent_proxy_password=pass1234 4.保存文件。5.重新启动代理：sudo systemctl restart cloudsecure-agent.service 
 |===

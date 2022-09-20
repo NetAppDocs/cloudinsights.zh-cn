@@ -33,7 +33,7 @@ Cloud Secure 使用数据收集器从设备收集文件和用户访问数据。
 
 * 您必须使用以下两种方法之一添加 SVM ：
 +
-** 使用集群 IP ， SVM 名称以及集群管理用户名和密码。_this 是建议的方法。 _
+** 使用集群 IP ， SVM 名称以及集群管理用户名和密码。*。这是建议的方法。_*
 +
 *** SVM 名称必须与 ONTAP 中显示的名称完全相同，并且区分大小写。
 
@@ -94,7 +94,6 @@ security login role create -role csrole -cmddirname "event notification" -access
 security login role create -role csrole -cmddirname "security certificate" -access all
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
-security login role create -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecure_*"
 ....
 
 
@@ -113,7 +112,6 @@ security login role create -vserver <vservername> -role csrole -cmddirname vserv
 security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
-security login role create -vserver <vservername> -role csrole -cmddirname "vserver export-policy rule" -access all -query "-policyname cloudsecure_*"
 ....
 
 
