@@ -9026,10 +9026,8 @@
   <block id="c0e8766f47222b9a1596583017a6d2c7" category="paragraph">请注意， AWS 区分大小写，而 Cloud Insights 不区分大小写。因此、如果您在Cloud Insights 中创建了一个名为"owner"的标注、在S3中创建了名为"owner"、"owner"和"owner"的标记、则所有S3变体"owner"都将映射到Cloud Insight的"owner"标注。</block>
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">您必须将每个子帐户配置为具有一个AWS角色、此角色允许主帐户ID从子帐户访问S3详细信息。</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">最佳实践：强烈建议将AWS预定义的_AmazonS3ReadOnlyAccess_策略分配给S3主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。</block>
-  <block id="78e40aa33e3f28ee2530a71dbf46a884" category="sidebar">/Amazon FSX for NetApp ONTAP</block>
   <block id="396149d67edd166e53b49c38f4b707ba" category="cell">允许第三方接受所需的NetApp和auth0 cookie。示例：在Chrome中、在浏览器URL中输入"chrome：//settings/cookies"。选择"允许所有Cookie "选项。*或*选择"阻止第三方Cookie "并为"*。]auth0.com和"*。]netapp.com添加例外情况。注意：创建异常时、请务必选择"在此站点上包含第三方Cookie "选项。</block>
   <block id="3e58ddc58d5563a5027058f56555ea62" category="paragraph">请注意、如果Cloud Insights 未发现领先的计算工作负载、则卷或内部卷本身将被识别为工作负载。此适用场景 既适用于要求苛刻的工作负载、也适用于受影响的工作负载。</block>
-  <block id="d1abcb872114cdbdf06bbc991083bed3" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至<block ref="25b9476534a152fb44ed4e9f3aa05000" category="inline-link-rx"></block> 主机名或IP&gt;：5989/ecomconfig、其中"SMI-S主机名或IP"是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
   <block id="b6679962f8c42c1ba1776113605353b7" category="section-title">所需性能指标</block>
   <block id="024e28f9b56c22af28ebfa120fdb57f0" category="paragraph">Oracle ZFS设备使存储管理员可以灵活地捕获性能统计信息。Cloud Insights 希望您在高可用性对中配置_each控制器、以捕获以下指标：</block>
   <block id="20d28687278d151933891014ac36ae04" category="list-text">SMB2.ops[共享]</block>
@@ -9037,4 +9035,5 @@
   <block id="2ba1eaa3efea8566de516f83331d1ca0" category="list-text">NFS4.ops[共享]</block>
   <block id="0e20349a2bc2936c3b69b3b301f4c04e" category="list-text">NFS4-1.ops[共享]</block>
   <block id="56df349714d6415bc904268245667da3" category="paragraph">如果控制器无法捕获任何或所有这些内容、则可能会导致Cloud Insights 在"内部卷"上没有工作负载或工作负载报告不足。</block>
+  <block id="136f9047a3903eacf983489b3eeec92a" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至\https://&lt;SMI-S主机名或IP&gt;：5989/ecomconfig、其中"SMI-S主机名或IP"是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
 </blocks>
