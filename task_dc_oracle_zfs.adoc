@@ -55,6 +55,20 @@ Cloud Insights 通过 Oracle ZFS 数据收集器获取清单信息。对于 Clou
 
 
 
+== 所需性能指标
+
+Oracle ZFS设备使存储管理员可以灵活地捕获性能统计信息。Cloud Insights 希望您在高可用性对中配置_each控制器、以捕获以下指标：
+
+* SMB2.ops[共享]
+* nfs3.ops[共享]
+* NFS4.ops[共享]
+* NFS4-1.ops[共享]
+
+
+如果控制器无法捕获任何或所有这些内容、则可能会导致Cloud Insights 在"内部卷"上没有工作负载或工作负载报告不足。
+
+
+
 == 配置
 
 [cols="2*"]
