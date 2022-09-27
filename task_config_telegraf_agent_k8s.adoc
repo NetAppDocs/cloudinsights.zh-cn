@@ -500,7 +500,7 @@ Windows
  .\cloudinsights-windows.ps1 -install
 
 
-== 对 Kubernetes Agent 安装进行故障排除
+== 故障排除
 
 在设置代理时遇到问题时要尝试的一些操作：
 
