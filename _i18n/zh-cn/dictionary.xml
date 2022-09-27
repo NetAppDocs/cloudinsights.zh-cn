@@ -7280,7 +7280,6 @@
   <block id="8e389fb3ac7d81dc69e2faaa1a45f7df" category="list-text">Serial Number —阵列序列号。</block>
   <block id="d0dbaa8b32b0761ae3d382c5f69eec7e" category="inline-link-macro">适用于 NetApp ONTAP 的 Amazon FSX</block>
   <block id="29528f054166735f3e8a10f7fc97f3dd" category="cell"><block ref="29528f054166735f3e8a10f7fc97f3dd" category="inline-link-macro-rx"></block></block>
-  <block id="87e8a04e229031e564067b38ae8a72c8" category="sidebar">配置适用于 NetApp ONTAP 收集器的 Amazon FSX</block>
   <block id="d3dc1fc44d23379b3a3e3c6e5eaed716" category="list-text">在此采集单元上发现 2500 多个虚拟机或 10 个大型（大于 2 节点） ONTAP 集群， Symmetrix 或 HDS/HPE VSP/XP 阵列？</block>
   <block id="159904c45b61bfdda4989e18bf9891e8" category="paragraph">对于上述每个 " 是 " 问题解答，建议向 AU 添加 8 GB 内存和 50 GB 磁盘空间。因此，例如，如果您对这两者都回答 " 是 " ，则应部署一个具有 150 GB 或以上磁盘空间的 24 GB 内存系统。在 Linux 上，要添加到日志位置的磁盘空间。</block>
   <block id="21d6683e9fb00a0e8c451185a0fefc00" category="summary">配置 NetApp Astra 数据存储库</block>
@@ -7779,7 +7778,6 @@
   <block id="9d9d839297abd5b6559ef681c302109c" category="cell">要限制的 IP 已被其他用户限制。</block>
   <block id="fd72cd4499dbb53af23386bef5341358" category="section-title">安装 NetApp Kubernetes 监控操作员</block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：</block>
-  <block id="41433653d03e1d9f51b22f2b34a34907" category="section-title">为 NetApp Kubernetes 监控操作员配置代理支持</block>
   <block id="d19324560c8bbab552153762aa6318fa" category="paragraph">要为监控操作员配置代理，请执行以下步骤。</block>
   <block id="c0c113f7f05cafdbe990d465db2be0e5" category="paragraph">首先，打开 _agent-monitoring-netapp_ 文件进行编辑：</block>
   <block id="0414c00192a7623b809e536f36865665" category="paragraph">在此文件的 _spec： _ 部分中，添加以下代码块：</block>
@@ -9038,4 +9036,13 @@
   <block id="f27bbbf5360c428e454f91df4646ca7c" category="list-text">使用集群 IP ， SVM 名称以及集群管理用户名和密码。*。这是建议的方法。_*</block>
   <block id="41e19b5574e2f91f38fdc0cf4372c9b5" category="cell">代理最初是通过代理服务器连接的、代理是在安装期间设置的。现在、代理服务器已更改。如何更改代理的代理配置？</block>
   <block id="a807d45c8af5b7a8d1abadf767a17bde" category="cell">您可以编辑agent.properties以添加代理详细信息。请按照以下步骤操作：1.更改为包含属性文件的文件夹：cd /opt/netapp/cloudsecurity/conf 2。使用您喜爱的文本编辑器、打开_agent.properties_文件进行编辑。3.添加或修改以下行：agent_proxy_host=scspa1950329001.vm.netapp.com agent_proxy_port=80 agent_proxy_user=pxuser agent_proxy_password=pass1234 4.保存文件。5.重新启动代理：sudo systemctl restart cloudsecure-agent.service</block>
+  <block id="b3a4cb8b1cc794671c98b17aac5ba206" category="section-title">新的数据收集器</block>
+  <block id="b8cf9f003c21d314dc33ec400eddec24" category="list-text">Amazon S3 (在预览版中提供)</block>
+  <block id="337813588cd1360f633725a1a1d06b02" category="list-text">Brocade FOS 9.0.x</block>
+  <block id="5fcd1a145d1221f71e25605161e3258e" category="list-text">Dell/EMC PowerStore 3.0.0.0</block>
+  <block id="aa6bf00e4b89737b431c0d0ffdd1b855" category="paragraph">现在、所有数据源都经过优化、可在采集单元更新和/或修补之后恢复性能轮询。</block>
+  <block id="8b78c6511ddbdc615cb6b5e3ee8d8488" category="inline-link-macro">AWS S3作为存储</block>
+  <block id="d083a25eaaef06276bb90fa3eb228bb6" category="cell"><block ref="d083a25eaaef06276bb90fa3eb228bb6" category="inline-link-macro-rx"></block></block>
+  <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">基础架构</block>
+  <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">配置代理支持</block>
 </blocks>

@@ -30,6 +30,9 @@ Cloud Insights 支持的数据收集器的按字母顺序列表：
 | link:task_dc_amazon_ec2.html["Amazon EC2 和 EBS"] | 基础架构 
 
 
+| link:task_dc_aws_s3.html["AWS S3作为存储"] | 基础架构 
+
+
 | link:task_dc_na_amazon_fsx.html["适用于 NetApp ONTAP 的 Amazon FSX"] | 基础架构 
 
 
