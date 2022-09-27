@@ -8116,7 +8116,6 @@
   <block id="7be18bdce3683fe5cad25aaa844df56d" category="paragraph"><block ref="7be18bdce3683fe5cad25aaa844df56d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="664a8070ae98149df4b2438dabea2160" category="admonition">如果要在安装代理之前验证安装文件，请阅读关于 <block ref="80fd3363e39e5f2a536c9cf5d81a1f0a" category="inline-xref-macro-rx"></block>。</block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">验证 Kubernetes 校验和</block>
-  <block id="737f024effb455f30b04c7091e2d8667" category="section-title">对 Kubernetes Agent 安装进行故障排除</block>
   <block id="64cc432c57095555eeb8d95b2c8523f6" category="sidebar">配置代理（ Windows/Linux/Mac ）</block>
   <block id="4e94322aa6275968b1c9422851fb7f86" category="sidebar">配置代理（ Kubernetes ）</block>
   <block id="9da0861aa96415448a45043409b3c6a2" category="paragraph">要安装代理，必须先执行以下操作：</block>
@@ -9045,4 +9044,5 @@
   <block id="d083a25eaaef06276bb90fa3eb228bb6" category="cell"><block ref="d083a25eaaef06276bb90fa3eb228bb6" category="inline-link-macro-rx"></block></block>
   <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">基础架构</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">配置代理支持</block>
+  <block id="b24ba42b8fcbdf9b49ead5a4fa365998" category="section-title">对Kubernetes安装进行故障排除</block>
 </blocks>
