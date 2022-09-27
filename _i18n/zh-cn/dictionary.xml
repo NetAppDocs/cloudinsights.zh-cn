@@ -6787,7 +6787,6 @@
   <block id="cfa4bbfe8fe25421b55d6bc77170da89" category="doc">从信息板库导入</block>
   <block id="75ff2ecca247e32bd11a679fc97fbdab" category="paragraph">Cloud Insights 提供了许多建议的信息板，用于提供有关数据的业务洞察力。每个信息板都包含一些小工具，这些小工具旨在帮助问题解答您解决与环境中当前收集的数据相关的特定问题或特定问题。</block>
   <block id="62a23650084673f5c844edf6588b4cbc" category="paragraph">要从库导入信息板，请执行以下操作：</block>
-  <block id="ca57fe1968fa78c8b5b54613e08987a2" category="list-text">选择 * 信息板 &gt; 显示所有信息板 *</block>
   <block id="bb6ec7619f5b7d24eeed488d054902d5" category="list-text">单击 * + 从图库 *</block>
   <block id="58e1b019dfb18a656bddd772932b2be5" category="paragraph">此时将显示 * 建议的信息板 * 列表。每个信息板的名称都包含一个特定问题，信息板可以帮助您解决这些问题。可通过信息板帮助您了解有关不同类型对象的问题解答问题，包括 AWS ， NetApp ，存储， VMware ， 和其他</block>
   <block id="4915483ae3205b553b3e977503ffdcc5" category="list-text">从列表中选择一个或多个信息板，然后单击 * 添加信息板 * 。这些信息板现在显示在您的信息板列表中。</block>
@@ -9044,4 +9043,6 @@
   <block id="8b71307bde3e4b16765dbb61a626d4d2" category="cell">基础架构</block>
   <block id="b33361bde0bcb58125ffdc8fc36d8b99" category="section-title">配置代理支持</block>
   <block id="860cea525f63406af55925d01de59c97" category="paragraph">如果您拥有与 Cloud Insights 捆绑的有效 NetApp 产品，则可以将该产品序列号添加到现有的 Cloud Insights 订阅中。例如、如果您已购买NetApp Astra控制中心、则可以使用Astra控制中心许可证序列号在Cloud Insights 中标识订阅。Cloud Insights 是指一个 _Entitlement ID_ 。</block>
+  <block id="5c42bfffed923b7136ae5aee981826dd" category="list-text">选择*信息板&gt;信息板*</block>
+  <block id="486f30ea223e9ebeeba1fe336355cc78" category="paragraph">具有管理员或帐户所有者角色的用户可以从信息板库导入。</block>
 </blocks>
