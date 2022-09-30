@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: API_Overview.html 
-keywords: API, customer API, premium, JSON, Swagger, Access Token, token 
+keywords: API, customer API, premium, JSON, Swagger, Access Token, token, rotate, expired 
 summary: Cloud Insights API 支持与监控和报告系统等其他应用程序集成。 
 ---
 = Cloud Insights API
@@ -15,16 +15,13 @@ NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Insights API 
 
 [cols="<,^s,^s,^s"]
 |===
-| API 类别 | 基本 | 标准 | 高级版 
+| API 类型 | 基本 | 标准 | 高级版 
 
 
 | 采集单元 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
 
 
 | 数据收集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
-
-
-| 用户管理 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
 
 
 | 警报 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
@@ -38,7 +35,7 @@ NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Insights API 
 
 | 日志载入 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
 |===
-此外，您还可以使用 Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如、如果您在"可观察性"中具有管理员角色、而在"报告"中具有用户角色、则您可以管理除数据仓库之外的所有API类型。
+此外，您还可以使用 Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。
 
 
 
@@ -54,9 +51,9 @@ NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Insights API 
 
 登录到 Cloud Insights 并导航到 * 管理 > API 访问 * 可查看最新的 API 信息。单击 * API Documentation" 链接。
 
-image:APICategoriesApril2022.png["API 类别"]
+image:API_Swagger_Types.png["API 类型"]
 
-API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。
+API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。根据您的用户角色和 / 或 Cloud Insights 版本，您可以使用的 API 类型可能会有所不同。
 
 image:API_Swagger_Example.png["API Swagger 示例"]
 
@@ -64,7 +61,7 @@ image:API_Swagger_Example.png["API Swagger 示例"]
 
 == API 访问令牌
 
-在使用 Cloud Insights API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌用于指定的 API 类别，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类别下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。
+在使用 Cloud Insights API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌用于指定的 API 类型，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类型下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。
 
 创建访问令牌：
 
@@ -72,7 +69,7 @@ image:API_Swagger_Example.png["API Swagger 示例"]
 * 单击 * + API 访问令牌 *
 +
 ** 输入令牌名称
-** 选择 API 类别
+** 选择 API 类型
 ** 指定为此 API 访问授予的权限
 ** 指定令牌到期日期
 
@@ -84,7 +81,7 @@ NOTE: 您的令牌只能在创建过程中复制到剪贴板并进行保存。�
 
 您可以禁用，启用和撤消令牌。可以启用已禁用的令牌。
 
-令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以在 Cloud Insights 后端人员不直接参与的情况下授予和撤消这些密钥。
+令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以在 Cloud Insights 后端人员不直接参与的情况下授予和撤销这些令牌。
 
 在用户成功进行身份验证并授权访问后，应用程序会收到访问令牌，然后在调用目标 API 时将访问令牌作为凭据传递。传递的令牌将通知 API 令牌的持有人已获得访问 API 的授权并执行授权期间授予的范围指定的特定操作。
 
@@ -93,15 +90,15 @@ NOTE: 您的令牌只能在创建过程中复制到剪贴板并进行保存。�
 例如，使用以下命令检索存储资产：
 
  curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
-其中， _<API_Access_Token>_ 是您在创建 API 访问密钥期间保存的令牌。
+其中， _<API_Access_Token>_ 是您在创建 API 访问期间保存的令牌。
 
 
 
-== API 类别
+== API 类型
 
-Cloud Insights API 基于类别，目前包含以下类别：
+Cloud Insights API 基于类别，目前包含以下类型：
 
-* 资产类别包含资产，查询和搜索 API 。
+* Assets type 包含 asset ， query 和 search API 。
 +
 ** 资产：枚举顶级对象并检索特定对象或对象层次结构。
 ** 查询：检索和管理 Cloud Insights 查询。
@@ -109,13 +106,14 @@ Cloud Insights API 基于类别，目前包含以下类别：
 ** 搜索：在不知道对象的唯一 ID 或全名的情况下找到特定对象。
 
 
-* 数据收集类别用于检索和管理数据收集器。
-* 数据载入类别用于检索和管理载入数据和自定义指标，例如从 Telegraf 代理检索和管理
+* 数据收集类型用于检索和管理数据收集器。
+* 数据载入类型用于检索和管理载入数据和自定义指标，例如从 Telegraf 代理检索和管理
+* 日志载入用于检索和管理日志数据
 
 
-其他类别和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 link:#api-documentation-swagger["API Swagger 文档"]。
+其他类型和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 link:#api-documentation-swagger["API Swagger 文档"]。
 
-请注意，用户有权访问的 API 类别也取决于 link:concept_user_roles.html["用户角色"] 它们在每个Cloud Insights 功能集中都有(可观察性、安全性、报告)。
+请注意，用户有权访问的 API 类型也取决于 link:concept_user_roles.html["用户角色"] 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。
 
 
 
@@ -131,7 +129,7 @@ Cloud Insights API 基于类别，目前包含以下类别：
 
 API URL 的常规格式为：
 
- https://<tenant>/rest/v1/<category>/<object>
+ https://<tenant>/rest/v1/<type>/<object>
 例如，要从名为 _mysite.c01.cloudinsights.netapp.com_ 的租户检索所有存储，请求 URL 为：
 
  https://mysite.c01.cloudinsights.netapp.com/rest/v1/assets/storages
@@ -180,7 +178,7 @@ image:expands.gif["展开示例"]
 * 磁盘性能
 
 
-性能指标具有问题描述和类别，并包含一组性能摘要。例如，延迟，流量和速率。
+性能指标具有问题描述 和类型，并包含一组性能摘要。例如，延迟，流量和速率。
 
 性能摘要包含一个问题描述，单元，样本开始时间，样本结束时间以及一组汇总值（当前值，最小值，最大值，平均值等），这些值是从一个时间范围（ 1 小时， 24 小时， 3 天等）内的单个性能计数器计算得出的。
 
@@ -193,7 +191,7 @@ image:API_Performance.png["API 性能示例"]
 * 其他每个词典密钥（ "diskThroughput " 等）都是性能指标的名称。
 
 
-每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Cloud Insights 支持本文档后面列出的几个性能指标类别。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。
+每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Cloud Insights 支持本文档后面列出的多种性能指标类型。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。
 
 性能摘要计数器是性能计数器的汇总。它会显示计数器的典型聚合值，例如最小值，最大值和平均值，以及最新观察到的值，汇总数据的时间范围，计数器的单位类型以及数据的阈值。只有阈值是可选的；其余属性是必需的。
 
@@ -257,8 +255,98 @@ image:StoragePoolCapacity.png["存储池容量示例"]
 
 == 使用搜索查找对象
 
-搜索 API 是系统的一个简单入口点。API 的唯一输入参数是自由格式的字符串，生成的 JSON 包含分类结果列表。类别是指与清单不同的资产类型，例如存储，主机，数据存储库等。每个类别都将包含一个与搜索条件匹配的类别类型对象列表。
+搜索 API 是系统的一个简单入口点。API 的唯一输入参数是自由格式的字符串，生成的 JSON 包含分类结果列表。类型与清单不同，例如存储，主机，数据存储库等。每种类型都将包含一个与搜索条件匹配的对象列表。
 
 Cloud Insights 是一种可扩展（广泛开放）的解决方案，可与第三方流程编排，业务管理，变更控制和服务单系统以及自定义 CMDB 集成进行集成。
 
 Cloud Insight 的 RESTful API 是一个主要的集成点，支持简单有效地移动数据，并允许用户无缝访问其数据。
+
+
+
+== 禁用或撤消 API 令牌
+
+要临时禁用 API 令牌，请在 API 令牌列表页面上单击此 API 的 " 三点 " 菜单，然后选择 _Disable_ 。您可以随时使用同一菜单并选择 _Enable_ 来重新启用令牌。
+
+要永久删除 API 令牌，请从菜单中选择 " 撤消 " 。您不能重新启用已撤销的令牌；您必须创建新令牌。
+
+image:API_Disable_Token.png["禁用或撤消 API 令牌"]
+
+
+
+== 正在轮换已过期的 API 访问令牌
+
+API 访问令牌具有到期日期。当 API 访问令牌过期时，用户需要生成一个新令牌（类型为 _Data ingestion_ 且具有读 / 写权限），并重新配置 Telegraf 以使用新生成的令牌，而不是过期的令牌。以下步骤详细说明了如何执行此操作。
+
+
+
+==== Kubernetes
+
+请注意，这些命令使用的是默认命名空间 "netapp-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。
+
+* 编辑 Telegraf ConfigMap （ CM ），并将旧 API 令牌的所有实例替换为新 API 令牌。
++
+....
+kubectl -n netapp-monitoring edit cm
+:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
+:wq!
+....
+* 编辑 Telegraf DemonSet （ DS ）和 ReplicaSet （ RS ），并将旧 API 令牌的所有实例替换为新 API 令牌。
++
+....
+kubectl -n netapp-monitoring edit ds telegraf-ds
+:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
+:wq!
+kubectl -n netapp-monitoring edit rs telegraf-rs
+:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
+:wq!
+....
+* Kubernetes 控制器将自动重新启动 Telegraf DS Pod 。
+* 重新启动 Telegraf RS Pod
++
+ kubectl -n netapp-monitoring delete pod <telegraf-rs-pod>
+
+
+
+
+==== RHEL/CentOS 和 Debian /Ubuntu
+
+* 编辑 Telegraf 配置文件，并将旧 API 令牌的所有实例替换为新 API 令牌。
++
+ sudo sed -i.bkup ‘s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g’ /etc/telegraf/telegraf.d/*.conf
+* 重新启动 Telegraf 。
++
+ sudo systemctl restart telegraf
+
+
+
+
+==== macOS
+
+* 编辑 Telegraf 配置文件，并将旧 API 令牌的所有实例替换为新 API 令牌。
++
+ sudo sed -i.bkup ‘s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g’ /usr/local/etc/telegraf.d/*.conf
+* 重新启动 Telegraf 。
++
+....
+sudo launchctl stop telegraf
+sudo launchctl start telegraf
+....
+
+
+
+
+==== Windows
+
+* 对于 _C ： \Program Files\telecraf\telecraf.d_ 中的每个 Telegraf 配置文件，请将旧 API 令牌的所有实例替换为新 API 令牌。
++
+....
+cp <plugin>.conf <plugin>.conf.bkup
+(Get-Content <plugin>.conf).Replace(‘<OLD_API_TOKEN>’, ‘<NEW_API_TOKEN>’) | Set-Content <plugin>.conf
+....
+* 重新启动 Telegraf 。
++
+....
+Stop-Service telegraf
+Start-Service telegraf
+....
+
