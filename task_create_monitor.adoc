@@ -24,6 +24,12 @@ Cloud Insights 提供了许多 link:task_system_monitors.html["系统定义的�
 
 
 
+== 安全最佳实践
+
+Cloud Insights 警报旨在突出显示环境中的数据点和趋势、而Cloud Insights 允许您以警报收件人的身份输入任何有效的电子邮件地址。如果您在安全环境中工作、请特别注意谁在接收通知或以其他方式有权访问警报。
+
+
+
 == 衡量指标还是日志监控？
 
 . 从 Cloud Insights 菜单中，单击 * 警报 > 管理监控器 *
