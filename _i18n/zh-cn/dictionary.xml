@@ -9031,4 +9031,5 @@
   <block id="486f30ea223e9ebeeba1fe336355cc78" category="paragraph">具有管理员或帐户所有者角色的用户可以从信息板库导入。</block>
   <block id="dea63246826e0f6304016e25a14623cf" category="section-title">安全最佳实践</block>
   <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">Cloud Insights 警报旨在突出显示环境中的数据点和趋势、而Cloud Insights 允许您以警报收件人的身份输入任何有效的电子邮件地址。如果您在安全环境中工作、请特别注意谁在接收通知或以其他方式有权访问警报。</block>
+  <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">签名校验和文件(以SHA256.signed或SHA256.ps1结尾)</block>
 </blocks>

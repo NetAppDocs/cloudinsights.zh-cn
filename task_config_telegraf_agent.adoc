@@ -521,7 +521,7 @@ Windows
 * 安装脚本
 * 环境文件
 * YAML 文件
-* 签名校验和文件（ SHA256.signed ）
+* 签名校验和文件(以SHA256.signed或SHA256.ps1结尾)
 * 用于签名验证的 PEM 文件（ netapp_cert.pem ）
 
 
@@ -543,13 +543,13 @@ Windows
 可以使用 PEM 文件验证签名校验和文件：
 
 * 非 Windows ：
-+
- openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
+
+
+ openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any
 * Windows （通过上述 Import-Certificate 安装证书后）：
-+
- Get-AuthenticodeSignature -FilePath .\sha256.ps1 $result = Get-AuthenticodeSignature -FilePath .\sha256.ps1 $signer = $result.SignerCertificate Add-Type -Assembly System.Security [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
 
 
+ Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1 $result = Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1 $signer = $result.SignerCertificate Add-Type -Assembly System.Security [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
 在对所有项目进行满意的验证后，可以通过运行以下命令启动代理安装：
 
 非 Windows ：
