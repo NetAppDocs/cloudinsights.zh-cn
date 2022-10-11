@@ -16,6 +16,7 @@ Cloud Secure 使用一个或多个代理收集用户活动数据。代理连接�
 == 开始之前
 
 * 安装，运行脚本和卸载需要 sudo 权限。
+* 安装代理时、会在计算机上创建一个本地用户_cssys_和一个本地组_cssys_。如果权限设置不允许创建本地用户、而需要Active Directory、则必须在Active Directory服务器中创建用户名为_cssys_的用户。
 
 
 
