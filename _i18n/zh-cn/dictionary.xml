@@ -2408,15 +2408,11 @@
   <block id="9f5698d8ff9580fb0292b0180a70711f" category="list-text">确切值应在引号内：示例： "searchText"</block>
   <block id="ae908dd27651e4f543cd1488054f03ce" category="list-text">通配符字符串不能包含任何引号：例如： searchText ， \* searchText* 将筛选包含 ‘searchtext ' 的任何字符串。</block>
   <block id="6de2a99ab7d1b49c0d30165b7f923bde" category="list-text">带有前缀的字符串示例： searchText* 将搜索以 ‘searchtext ' 开头的任何字符串。</block>
-  <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">对取证活动历史记录数据进行排序</block>
   <block id="2cd547acae3ea849dabf33eb81807e43" category="paragraph">您可以按 _time ，用户，源 IP ，活动，路径 _ 和 _Entity Type_ 对活动历史记录数据进行排序。默认情况下，此表按降序 _time_ 顺序排序，这意味着将首先显示最新数据。已对 _Device_ 和 _Protocol_ 字段禁用排序。</block>
-  <block id="530784dc2e1fded20e31ab140fb699c9" category="section-title">导出所有活动</block>
   <block id="32d755a54c35928d05977d875451dc4b" category="paragraph">您可以单击 "Activity History" 表上方的 _Export_ 按钮将活动历史记录导出到 .CSV 文件。请注意，仅导出排名前 10 ， 000 位的记录。</block>
-  <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">为所有活动选择列</block>
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">默认情况下， _all activity_ 表会显示 SELECT 列。要添加，删除或更改列，请单击表右侧的齿轮图标，然后从可用列列表中进行选择。</block>
   <block id="c6eae53556b2ad3b578a3cf2907baf44" category="inline-image-macro">活动选择器，宽度 = 30%</block>
   <block id="590dd2dc5bca645aeb542ed0a125bd23" category="paragraph"><block ref="590dd2dc5bca645aeb542ed0a125bd23" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">活动历史记录保留</block>
   <block id="105063dce8eb13075f451e0ddc3ac046" category="paragraph">对于活动 Cloud Secure 环境，活动历史记录保留 13 个月。</block>
   <block id="df0f20d62dc4ba9c471fdeef6751ec5f" category="cell">问题</block>
   <block id="5fad6c174e90a6bce3c3685434f27610" category="cell">请尝试此操作</block>
@@ -8886,7 +8882,6 @@
   <block id="95be99c1e2046a974fa1680ffa1b83ed" category="cell">Kubernetes v1.20及更高版本</block>
   <block id="8c69796d33d9c95e7caf8015cf31ccbe" category="cell">安装后代理未运行。_systemctl status cloudsecure-agent.service_显示以下内容：[root@demo ~]# systemctl status cloudsecure-agent.service agent.service–Cloud Secure 代理守护进程服务已加载：已加载(/usr/lib/systemd/system/cloudsecure-agent.service;已启用；供应商预设：已禁用) Active：激活(自动重新启动)(结果：退出代码)自Tcloud2021-08-03 21：12：26；已退出Ago进程：cloudbin/netapp=25bin/dcc=82/pdpdpdpdpdpt/s=bash)： 25889 (code=exited、status=126)、Aug 03 21：12：26 demo systemd1]：cloudsecure-agent.service: main process exited、code=exited、status=126/n/a Aug 03 21：12：26 demo systemd1]：unit cloudsecure-agent.service entered.Aug 03 21：12：26 demo systemd1]：cloudsecure-agent.service失败。</block>
   <block id="ff6c70aa7cb1a86bff741b99889b8d0b" category="cell">此操作可能会失败、因为_cssys_用户可能没有安装权限。如果/opt/netapp是NFS挂载、而_cssys_用户无权访问此文件夹、则安装将失败。_cssys_是由Cloud Secure 安装程序创建的本地用户、该用户可能无权访问挂载的共享。要检查此问题、您可以尝试使用_cssys_用户访问/opt/netapp/cloudsecurity/agent/bin/cloudsure-agent。如果返回"permission denies"、则安装权限不存在。安装在计算机本地的目录上、而不是挂载的文件夹。</block>
-  <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">取证页面中的筛选器适用性</block>
   <block id="33b1e192582408583865dca3abd0c740" category="cell">适用于哪些筛选器？</block>
   <block id="8c553135b1cf58374ff9e4c775f2f164" category="cell">不适用于哪些筛选器</block>
   <block id="eaaa45bccc15257d9f55e54b64c70aba" category="cell">* （星号）</block>
@@ -8903,7 +8898,6 @@
   <block id="323be35d43a1b0a294bddc8533167538" category="cell">用户、域、用户名、路径、实体类型、 原始路径、卷</block>
   <block id="e0c965c954b5a9fdc33c5b0516799f7d" category="cell">返回不以"AutoRansomUser4_03162022 "开头的所有内容</block>
   <block id="eae639a70006feff484a39363c977e24" category="cell">domain</block>
-  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">路径/原始路径搜索</block>
   <block id="64048c881c93933680d02730e9d9ce63" category="paragraph">使用和不使用/的搜索结果将有所不同</block>
   <block id="cc2d816075324608acf344b23cf3e6bb" category="cell">/AutoDir1/AutoFile</block>
   <block id="7b8af977b90a67e053ff2667a26828fe" category="cell">工作正常</block>
@@ -9033,4 +9027,16 @@
   <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">Cloud Insights 警报旨在突出显示环境中的数据点和趋势、而Cloud Insights 允许您以警报收件人的身份输入任何有效的电子邮件地址。如果您在安全环境中工作、请特别注意谁在接收通知或以其他方式有权访问警报。</block>
   <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">签名校验和文件(以SHA256.signed或SHA256.ps1结尾)</block>
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">安装代理时、会在计算机上创建一个本地用户_cssys_和一个本地组_cssys_。如果权限设置不允许创建本地用户、而需要Active Directory、则必须在Active Directory服务器中创建用户名为_cssys_的用户。</block>
+  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">使用 NetApp ONTAP 流遥测功能配置 Cloud Insights</block>
+  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP 流遥测</block>
+  <block id="458a37db2666885e234720ccdea58253" category="paragraph">有关最新信息、请参见 <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> 数据收集器页面。</block>
+  <block id="2ed02be74d1c6359a8a97896ed3b4a32" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ***降噪*用于筛选用户在过去2小时内创建的文件。它还用于筛选用户访问的临时文件（例如 .tmp 文件）。</block>
+  <block id="4cd72c98e3da3ec398bfae4fc7350ab7" category="paragraph">&gt;&gt;&gt;&gt;&gt; 574e310d1e2d0707d9dba0ce1435f338b16fca2</block>
+  <block id="deba7a55b29f409804e844ea69bf2200" category="paragraph">=对取证活动历史记录数据进行排序</block>
+  <block id="24e4de2ead8899ff8575060a5a9966f2" category="paragraph">=导出所有活动</block>
+  <block id="826c09171b70f2e164f286be2dc13a35" category="paragraph">=为所有活动选择列</block>
+  <block id="c17261dcd735774185a2a324362cc66e" category="paragraph">=活动历史记录保留</block>
+  <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">=取证页面中筛选器的适用性</block>
+  <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">=路径/原始路径搜索</block>
+  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=故障排除</block>
 </blocks>
