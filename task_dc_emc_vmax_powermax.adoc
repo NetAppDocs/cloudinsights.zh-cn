@@ -24,7 +24,7 @@ Cloud Insights 可通过将 Solutions Enabler SYMCLI 命令与环境中的现有
 * Solutions Enabler （ SE ）服务器上的管理员权限
 * SE 软件的只读用户名和密码
 * 适用于 VMAX 的 Unisphere 应用程序必须正在运行并收集由 SMI-S Provider 安装管理的 EMC VMAX 和 PowerMax sstorage 阵列的统计信息
-* 性能访问验证：在采集单元上的Web浏览器中、转至_https：//SMI-S主机名或IP、其中<SMI-S Hostname or IP> ：5989/ecomconfig_是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。
+* 性能访问验证：在采集单元上的Web浏览器中、转至：//SMI-S主机名或IP、其中<SMI-S Hostname or IP> ：5989/ecomconfig_是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。
 
 
 

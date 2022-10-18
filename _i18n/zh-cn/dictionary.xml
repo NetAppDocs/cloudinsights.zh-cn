@@ -9038,5 +9038,7 @@
   <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">=取证页面中筛选器的适用性</block>
   <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">=路径/原始路径搜索</block>
   <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=故障排除</block>
-  <block id="9472f5553652a76fc53e58f1b861b32e" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至_https：//SMI-S主机名或IP、其中&lt;SMI-S Hostname or IP&gt; ：5989/ecomconfig_是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
+  <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">请参见本指南</block>
+  <block id="f06397ccd924d99fcb3214efdc25d940" category="paragraph">Cloud Secure 还可以与其他工具集成。例如： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 与Splunk集成。</block>
+  <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至：//SMI-S主机名或IP、其中&lt;SMI-S Hostname or IP&gt; ：5989/ecomconfig_是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
 </blocks>
