@@ -9069,4 +9069,6 @@
   <block id="6ae223e6c671cefaa47a470a8e528da8" category="list-text">实施自动响应策略以阻止攻击、</block>
   <block id="095506f42fe9e3d89f7eef6c19556f4c" category="list-text">确定受影响的文件、有助于加快恢复速度并执行数据违规调查。</block>
   <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">ONTAP 自主勒索软件保护集成</block>
+  <block id="0ed16a106cacc7c64648558f5ce3f2fc" category="section-title">测试Webhook</block>
+  <block id="0da0da408a0ca0569c73b8f7674069a4" category="paragraph">单击"Test Webhook"按钮以测试连接。请注意、此操作将根据选定的"方法"将"消息正文"(不含替代项)发送到定义的"URL"。另请注意、在"Parameters：What are they and how do I use them？" 部分、单击Test Webhook按钮时会执行_not_替换。</block>
 </blocks>

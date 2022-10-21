@@ -56,6 +56,12 @@ image:Webhook_Default_Parameters.png["Cloud Insights 默认 Webhook 参数"]
 
 
 
+=== 测试Webhook
+
+单击"Test Webhook"按钮以测试连接。请注意、此操作将根据选定的"方法"将"消息正文"(不含替代项)发送到定义的"URL"。另请注意、在"Parameters：What are they and how do I use them？" 部分、单击Test Webhook按钮时会执行_not_替换。
+
+
+
 === 参数：它们是什么？如何使用它们？
 
 警报参数是为每个警报填充的动态值。例如， _%%TrigeredOn%_ 参数将替换为触发警报的对象。
