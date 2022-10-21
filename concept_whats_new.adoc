@@ -12,6 +12,24 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+== 2022年10月
+
+
+
+=== 通过ONTAP 自主勒索软件保护集成、可以更好、更准确地检测勒索软件
+
+Cloud Secure 通过与ONTAP 集成来改进勒索软件检测 link:concept_cs_integration_with_ontap_arp.html["自主勒索软件保护"] (ARP)。
+
+Cloud Secure 接收有关潜在卷文件加密活动和的ONTAP ARP事件
+
+* 将卷加密事件与用户活动关联起来、以确定导致损坏的人员、
+* 实施自动响应策略以阻止攻击、
+* 确定受影响的文件、有助于加快恢复速度并执行数据违规调查。
+
+
+'''
+
+
 == 2022年9月
 
 

@@ -9059,4 +9059,14 @@
   <block id="333fa709635d0e011dd99c908e02bd40" category="paragraph">高度可信的横幅表示此攻击已显示勒索软件行为以及文件加密活动。加密文件图形指示ARP解决方案 检测到卷加密活动的时间戳。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="7a64568c4010a39c6620146ba9511682" category="paragraph">如果Cloud Secure 未监控SVM、但ONTAP 生成了ARP事件、则Cloud Secure 仍会接收和显示这些事件。但是、不会捕获或显示与警报相关的取证信息以及用户映射。</block>
+  <block id="500021752029d6f358d3f431decf2194" category="summary">Cloud Secure 与ONTAP 自主勒索软件保护相集成、可提高勒索软件检测能力。</block>
+  <block id="4c4518d4c20175eb4082a6b33eb4badb" category="section-title">2022年10月</block>
+  <block id="d9ed23066a8423b647abeae97c6e8d89" category="section-title">通过ONTAP 自主勒索软件保护集成、可以更好、更准确地检测勒索软件</block>
+  <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link-macro">自主勒索软件保护</block>
+  <block id="ed7f4a0571f6c21909209a2c991883eb" category="paragraph">Cloud Secure 通过与ONTAP 集成来改进勒索软件检测 <block ref="592611ec20f061ec3c5a97f7d83bfebc" category="inline-link-macro-rx"></block> (ARP)。</block>
+  <block id="be2a9c6be9b8c3dee7de8e445589e2ee" category="paragraph">Cloud Secure 接收有关潜在卷文件加密活动和的ONTAP ARP事件</block>
+  <block id="abc85a341cbf25c2d9f1f3a47072b87d" category="list-text">将卷加密事件与用户活动关联起来、以确定导致损坏的人员、</block>
+  <block id="6ae223e6c671cefaa47a470a8e528da8" category="list-text">实施自动响应策略以阻止攻击、</block>
+  <block id="095506f42fe9e3d89f7eef6c19556f4c" category="list-text">确定受影响的文件、有助于加快恢复速度并执行数据违规调查。</block>
+  <block id="9b5911ec569b49f0ae81ecb2c9067806" category="sidebar">ONTAP 自主勒索软件保护集成</block>
 </blocks>

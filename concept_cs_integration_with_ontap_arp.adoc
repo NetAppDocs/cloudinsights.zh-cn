@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept_cs_integration_with_ontap_arp.html 
-summary: 在安装 ONTAP SVM DSC 之前，可以运行此脚本来检查 SVM 中的事件速率 
-keywords: event, checker, rate, sizing 
+summary: Cloud Secure 与ONTAP 自主勒索软件保护相集成、可提高勒索软件检测能力。 
+keywords: ransomware, ARP, Protection, Security 
 ---
 = 与ONTAP 自主勒索软件保护相集成
 :allow-uri-read: 

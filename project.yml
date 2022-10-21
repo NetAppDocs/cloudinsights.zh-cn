@@ -222,6 +222,8 @@ sidebar:
         url: "/forensic_user_overview.html"
     - title: 自动响应策略
       url: "/cs_automated_response_policies.html"
+    - title: ONTAP 自主勒索软件保护集成
+      url: "/concept_cs_integration_with_ontap_arp.html"
     - title: 正在阻止用户访问
       url: "/cs_restrict_user_access.html"
     - title: 模拟勒索软件攻击
