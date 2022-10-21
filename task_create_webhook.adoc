@@ -52,7 +52,7 @@ image:Webhook_Example_Slack.png["webhook 示例"]
 
 为每个字段输入适当的信息、完成后单击"保存"。
 
-您也可以单击"Test Webhook"按钮来测试连接。请注意、此操作将根据选定方法将"消息正文"(不含替换项)发送到定义的URL。另请注意、在"Parameters：What are they and how do I use them？" 部分、单击"Test Webhook"按钮时会执行_not_替换；该按钮会发送一个有效负载、其中显示了_%_替换项、但不会将其替换为数据。
+您也可以单击"Test Webhook"按钮来测试连接。请注意、此操作将根据选定方法将"消息正文"(不含替换项)发送到定义的URL。
 
 Cloud Insights webhooks 包含许多默认参数。此外，您还可以创建自己的自定义参数或密码。
 
@@ -63,6 +63,8 @@ image:Webhook_Default_Parameters.png["Cloud Insights 默认 Webhook 参数"]
 === 参数：它们是什么？如何使用它们？
 
 警报参数是为每个警报填充的动态值。例如， _%%TrigeredOn%_ 参数将替换为触发警报的对象。
+
+请注意、在本节中、单击"Test Webhook"按钮时会执行_not_替换；该按钮会发送一个有效负载、其中显示了_%_替换项、但不会将其替换为数据。
 
 
 
