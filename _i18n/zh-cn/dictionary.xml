@@ -6439,12 +6439,6 @@
   <block id="016ed0e49b011ec69d8599631c4570d3" category="paragraph">您可以使用以下任一方法选择要设置为环境 * 主页 * 的信息板：</block>
   <block id="a35bc916a1e75254232ca54369197a02" category="list-text">请转到 * 信息板 &gt; 显示所有信息板 * 以显示环境中的信息板列表。单击所需信息板右侧的选项菜单，然后选择 * 设置为主页 * 。</block>
   <block id="21383d1a6375f071dadd8d05e3e6f6ba" category="list-text">单击列表中的信息板以打开信息板。单击上角的下拉菜单并选择 * 设置为主页 * 。</block>
-  <block id="7d30769516b52d1445b1bf2d7d9557f4" category="summary">您可以从 Cloud Insights 轻松切换到其他 NetApp Cloud Central 产品。</block>
-  <block id="24f46fe1d8ee8559ee63a33de2543943" category="doc">正在切换到其他 Cloud Central 产品</block>
-  <block id="fccd52d76913d4b183b163d6e5172239" category="paragraph">您可以通过单击 * 云中心 * 菜单并从列出的 NetApp 云产品中进行选择来切换到其他 NetApp 云产品。您也可以选择转到 Cloud Central 门户本身。</block>
-  <block id="dcfb05bdbd07b63ad902c550de53ea03" category="inline-image-macro">其他云产品</block>
-  <block id="7d43cb32851afdb4974a9d3020552cb2" category="paragraph"><block ref="7d43cb32851afdb4974a9d3020552cb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="dc4ab3739b0ab1192c8e357f6d629754" category="paragraph">您将自动通过身份验证并登录到选定的云产品。</block>
   <block id="689738a624a7f72a8b98c8ed8f1ab58b" category="summary">Apache Zookeeper 数据收集器配置</block>
   <block id="b640a79fa52794aecc8878f82be8c28e" category="doc">Zookeeper Data Collector</block>
   <block id="7c19206117ce83d65989db0a25c382ee" category="paragraph">Cloud Insights 使用此数据收集器从 Apache Zookeeper 收集指标。</block>
@@ -9041,4 +9035,28 @@
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">请参见本指南</block>
   <block id="f06397ccd924d99fcb3214efdc25d940" category="paragraph">Cloud Secure 还可以与其他工具集成。例如： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 与Splunk集成。</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至：//SMI-S主机名或IP、其中&lt;SMI-S Hostname or IP&gt; ：5989/ecomconfig_是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
+  <block id="c296d8324f9fa4f890b4ead0f69bfac3" category="doc">与ONTAP 自主勒索软件保护相集成</block>
+  <block id="d444ab62db0a690e837242dfd8b87acc" category="paragraph">ONTAP 自主勒索软件保护(ARP)功能可利用NAS (NFS和SMB)环境中的工作负载分析功能主动检测并警告可能指示勒索软件攻击的异常文件活动。</block>
+  <block id="383c3a61ab1ee0baf884d10441d965bd" category="paragraph">有关ARP的其他详细信息和许可证要求、请参见 <block ref="aaf4977c10e4402f9516d11af3df8368" category="inline-link-macro-rx"></block>。</block>
+  <block id="4a90b843204a7e572f3f003b57df0e34" category="paragraph">Cloud Secure 可与ONTAP 集成以接收ARP事件、并提供额外的分析和自动响应层。</block>
+  <block id="7f296999dd5a19bdac141d3c5458bf09" category="paragraph">Cloud Secure 从ONTAP 接收ARP事件并执行以下操作：</block>
+  <block id="934b109c1d19ab46820aa2d388697f4e" category="list-text">将卷加密事件与用户活动关联起来、以确定导致损坏的人员。</block>
+  <block id="bb7256da73d87b6336cf1dc5342a8692" category="list-text">实施自动响应策略(如果已定义)</block>
+  <block id="ac3108149bf9197801e00b41c3c7cb34" category="list-text">提供取证功能：</block>
+  <block id="c5c2c046e5a8aeae7862975fda61f862" category="list-text">允许客户执行数据泄露调查。</block>
+  <block id="7355572f8cd61d6b84bd549a6b19d75b" category="list-text">确定哪些文件受到影响、有助于加快恢复速度并执行数据违规调查。</block>
+  <block id="3c6aa4f4d8c4e33eefaec63c43ad62bb" category="list-text">最低ONTAP 版本：9.11.1</block>
+  <block id="f97f5685fc902a89d150e9c654602c43" category="list-text">已启用ARP的卷。有关启用ARP的详细信息、请参见 <block ref="9e499af99dc8d0d5835de8f33e6a6797" category="inline-link-macro-rx"></block>。必须通过OnCommand 系统管理器启用ARP。Cloud Secure 无法启用ARP。</block>
+  <block id="b33ce104a861da9844f5dfaeb51c79eb" category="list-text">应通过集群IP添加Cloud Secure 收集器。</block>
+  <block id="77daf866423aa56487a2f9b637628664" category="list-text">要使此功能正常运行、需要集群级别的凭据。换言之、添加SVM时必须使用集群级别的凭据。</block>
+  <block id="d3967f941a1672db445a1da6ef843e2e" category="section-title">需要用户权限</block>
+  <block id="76b59b81477976d5b5bed701e6ff22b9" category="paragraph">如果您使用的自定义用户(例如_CSUser_)具有为该用户授予的权限、请按照以下步骤授予Cloud Secure 从ONTAP 收集ARP相关信息的权限。</block>
+  <block id="ba95389dce56e78ab6a308128620b033" category="paragraph">对于具有集群凭据的_CSUser_、请从ONTAP 命令行执行以下操作：</block>
+  <block id="20cdc94cc7059da994e4c0a98a544c8f" category="section-title">警报示例</block>
+  <block id="e0e1895e03a77da5552db43fbdeaeea6" category="paragraph">下面显示了因ARP事件生成的警报示例：</block>
+  <block id="ba022000977a1c06f95377443d9b2500" category="inline-image-macro">ONTAP ARP示例屏幕</block>
+  <block id="d12fcb220971d8d0a7e1d474102c977e" category="paragraph"><block ref="d12fcb220971d8d0a7e1d474102c977e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="333fa709635d0e011dd99c908e02bd40" category="paragraph">高度可信的横幅表示此攻击已显示勒索软件行为以及文件加密活动。加密文件图形指示ARP解决方案 检测到卷加密活动的时间戳。</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
+  <block id="7a64568c4010a39c6620146ba9511682" category="paragraph">如果Cloud Secure 未监控SVM、但ONTAP 生成了ARP事件、则Cloud Secure 仍会接收和显示这些事件。但是、不会捕获或显示与警报相关的取证信息以及用户映射。</block>
 </blocks>
