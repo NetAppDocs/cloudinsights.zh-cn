@@ -88,6 +88,8 @@ sidebar:
       url: "/kubernetes_landing_page.html"
     - title: Kubernetes 集群页面
       url: "/kubernetes_cluster_detail.html"
+    - title: ONTAP 基础知识
+      url: "/concept_ontap_essentials.html"
   - title: 使用查询
     entries:
     - title: 正在查询资产
