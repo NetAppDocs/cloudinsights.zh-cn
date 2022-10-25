@@ -16,6 +16,8 @@ ONTAP 基础知识是一组信息板和工作流、用于详细概述ONTAP 清�
 * 数据保护：可使用NetApp数据保护技术进行保护的对象
 
 
+您可以在上找到更多定义 link:task_dc_na_cdot.html#ontap-data-management-terminology["ONTAP 数据收集器"] 页面。
+
 ONTAP 基础知识要求至少一个运行正常的ONTAP 数据收集器、其中包含过去七天内收集的数据。
 
 
