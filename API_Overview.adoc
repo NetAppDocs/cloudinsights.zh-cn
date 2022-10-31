@@ -283,27 +283,19 @@ API 访问令牌具有到期日期。当 API 访问令牌过期时，用户需�
 
 请注意，这些命令使用的是默认命名空间 "netapp-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。
 
-* 编辑 Telegraf ConfigMap （ CM ），并将旧 API 令牌的所有实例替换为新 API 令牌。
+注意：如果您安装了最新的NetApp Kubernetes监控操作员并使用可续订的API访问令牌、则过期的令牌将自动替换为新的/刷新的API访问令牌。无需执行下面列出的手动步骤。
+
+* 编辑NetApp Kubernetes监控操作员。
++
+ kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
+* 修改_spec.output-sink.api-key_值、将旧API令牌替换为新API令牌。
 +
 ....
-kubectl -n netapp-monitoring edit cm
-:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
-:wq!
+spec:
+…
+  output-sink:
+  - api-key: <NEW_API_TOKEN>
 ....
-* 编辑 Telegraf DemonSet （ DS ）和 ReplicaSet （ RS ），并将旧 API 令牌的所有实例替换为新 API 令牌。
-+
-....
-kubectl -n netapp-monitoring edit ds telegraf-ds
-:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
-:wq!
-kubectl -n netapp-monitoring edit rs telegraf-rs
-:%s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g
-:wq!
-....
-* Kubernetes 控制器将自动重新启动 Telegraf DS Pod 。
-* 重新启动 Telegraf RS Pod
-+
- kubectl -n netapp-monitoring delete pod <telegraf-rs-pod>
 
 
 
