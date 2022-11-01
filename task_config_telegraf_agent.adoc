@@ -549,7 +549,13 @@ Windows
 * Windows （通过上述 Import-Certificate 安装证书后）：
 
 
- Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1 $result = Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1 $signer = $result.SignerCertificate Add-Type -Assembly System.Security [Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
+....
+Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1
+$result = Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1
+$signer = $result.SignerCertificate
+Add-Type -Assembly System.Security
+[Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
+....
 在对所有项目进行满意的验证后，可以通过运行以下命令启动代理安装：
 
 非 Windows ：
