@@ -98,7 +98,7 @@ NOTE: Cloud Insights 基本版中收集的功能，数据保留时间以及对�
 
 == 试用版
 
-注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。
+注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。Cloud Insights 的所有功能 ,标准版 在此试用期间可用。
 
 在试用期间，您可以随时订阅 Cloud Insights 。订阅 Cloud Insights 可确保无中断地访问您的数据以及进行扩展 link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["* 产品支持 *"] 选项
 
@@ -106,6 +106,16 @@ NOTE: Cloud Insights 基本版中收集的功能，数据保留时间以及对�
 
 
 NOTE: 如果您需要更多时间来评估 Cloud Insights ，并且您的试用设置为在 4 天或更短时间内过期，则可以将试用期限再延长 30 天。您只能延长试用一次。如果您的试用已过期，则无法延长。
+
+
+
+== 通过AWS Marketplace试用
+
+您也可以通过AWS Marketplace注册免费试用。AWS Marketplace免费试用版支持您访问Cloud Insights ,高级版 试用33天、最多可支持499个 ,受管单元 (MUS)。
+
+注意：如果配置的MTU超过499个、则会进入"已违反"状态。当您的试用处于"已违反"状态时、您将无法访问某些Cloud Insights 功能、直到解决违规问题为止、方法是减少配置的MTU数量或订阅Cloud Insights。
+
+AWS Marketplace免费试用不能延长。在试用期间、您可以随时访问*管理员->订阅*页面降级到Cloud Insights 基本版订阅或更改为付费的Cloud Insights 标准版或高级版订阅。
 
 
 
