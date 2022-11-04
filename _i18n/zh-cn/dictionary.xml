@@ -967,7 +967,6 @@
   <block id="b994d75c0a79a39d9acb5a498320c41e" category="paragraph">第三方平台和供应商技术的标准化程度，通用性和命名方式各不相同。Cloud Insights 会尝试将容量和性能信息规范化为一个一致的框架。某些容量和性能指标是通过设备的计数器本机提供的，例如 IOPS ，延迟和原始容量。如果未提供计数器， Cloud Insights 可以尝试汇总这些值（例如，通过汇总底层卷的 IOPS 或容量），如果两者均不可用，则 Cloud Insights 将尝试通过各种计算算法派生度量值。Cloud Insights 提供了一种通用 SNMP 集成功能，可将当前 Cloud Insights 未收集的其他指标纳入其中。</block>
   <block id="e885abb4ab92f6610661428455d3f5e7" category="section-title">Cloud Insights 是否支持光纤通道交换机？</block>
   <block id="425ecea49bf7aad828d3bf87e9318ea2" category="paragraph">可以，除了从存储资产中收集数据之外， Cloud Insights 还会从环境中的 Cisco ， Brocade 和 QLogic 交换机采集清单和性能数据。</block>
-  <block id="f73369b2e30a54fde6f17bcd1578eff0" category="paragraph">== 整个基础架构的拓扑视图是否可用？Cloud Insights 是否显示 " 端到端可见性 " ？</block>
   <block id="82976cdea05b7eb7fbe896786a79f35b" category="paragraph">可以， Cloud Insights 可以动态发现和映射逻辑和物理结构，从而提供计算，网络结构，虚拟化器和后端存储的交互式端到端拓扑视图。通过拓扑图标，可以快速启动对受影响资源的导航，并有助于识别共享存储环境中的工作负载和违规。</block>
   <block id="f23d43a2f8827bf71755047f9233d1d7" category="summary">Flink 数据收集器配置</block>
   <block id="760f80f90fb384d40bb66a9f0b4823fd" category="doc">Flink 数据收集器</block>
@@ -8373,7 +8372,6 @@
   <block id="9cb22571044cfb577ec048458671deab" category="list-text">无 - 不执行插值</block>
   <block id="b71ed64e04e4fa64be1d827a7f0a608d" category="list-text">线性—在现有点之间插值数据点</block>
   <block id="d8afe893977b1761d465e261f7f0645c" category="list-text">Stair —使用上一个数据点作为插值数据点</block>
-  <block id="f893ea896ad5f8fd6438a1f100e2334e" category="cell">Cloud Insights 仅支持将 _etcd_ 作为 K8s 数据存储库进行监控。您可以按照以下说明更改配置来修改代理，以避免收集 etcd 数据： kubectl -n netapp-monitoring edit agent agent-monitoring-netapp 在该文件中，删除以下部分： - name ： Prometheus_etcd run-mode ： - ReplicaSet</block>
   <block id="b68a34f8a928794da0f98d4ee916c271" category="list-text">*<block ref="2fadd2d714be07c05e8b57dea395b60f" category="inline-link-macro-rx"></block>*</block>
   <block id="0e8f78366da6895d9cdeb4b8ed117539" category="paragraph">单击本节中的链接可转到 NetApp 知识库，您可以在其中搜索相关文章，操作说明等。</block>
   <block id="f762cf8a3ce13153f8f371a1905bd1ae" category="list-text">*<block ref="70de40644647494a66feddaab5d43f41" category="inline-link-macro-rx"></block>*</block>
@@ -8390,10 +8388,6 @@
   <block id="c2a82bcbfe1a93fec106af67b6b26f3b" category="section-title">正在轮换已过期的 API 访问令牌</block>
   <block id="d981e94161c0ab533162bbea9f1d9e89" category="paragraph">API 访问令牌具有到期日期。当 API 访问令牌过期时，用户需要生成一个新令牌（类型为 _Data ingestion_ 且具有读 / 写权限），并重新配置 Telegraf 以使用新生成的令牌，而不是过期的令牌。以下步骤详细说明了如何执行此操作。</block>
   <block id="719a89b64a07694e338d45825fcd17f0" category="paragraph">请注意，这些命令使用的是默认命名空间 "netapp-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。</block>
-  <block id="85b9da5a8c5c1cce5881111010339cb4" category="list-text">编辑 Telegraf ConfigMap （ CM ），并将旧 API 令牌的所有实例替换为新 API 令牌。</block>
-  <block id="865b7c5a0ecd85e73193b19bcb780a4c" category="list-text">编辑 Telegraf DemonSet （ DS ）和 ReplicaSet （ RS ），并将旧 API 令牌的所有实例替换为新 API 令牌。</block>
-  <block id="b56a0b4a07e1bf181b703d8bdf115a4b" category="list-text">Kubernetes 控制器将自动重新启动 Telegraf DS Pod 。</block>
-  <block id="c12e3974927f7898f893ba8a9965a9a0" category="list-text">重新启动 Telegraf RS Pod</block>
   <block id="daed7387fa0b0965feb45d4dc3de1704" category="section-title">RHEL/CentOS 和 Debian /Ubuntu</block>
   <block id="779ce1f6c23a08b510ed7a6c996d255a" category="list-text">编辑 Telegraf 配置文件，并将旧 API 令牌的所有实例替换为新 API 令牌。</block>
   <block id="e89f4056c39669637fb609320173681a" category="list-text">重新启动 Telegraf 。</block>
@@ -9076,7 +9070,6 @@
   <block id="bacf6d7427784a1658e1d5fb278300f8" category="paragraph">NetApp Kubernetes监控操作员会自动安装Kube-state-metrics；无需用户交互。</block>
   <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">使用以下链接访问这些Kubbe状态指标计数器的信息：</block>
   <block id="72e6fd543a67010efd03f7fdc1a1e1bc" category="paragraph">如果在设置NetApp Kubernetes监控操作员时遇到问题、请尝试执行以下操作：</block>
-  <block id="3b3ca1220dd8c3e25db4764df1e68cbe" category="cell">对于_etcd_不是Kubernetes集群数据存储库的集群、您将在telraf RS Pod中看到以下消息：inputs.prometheus]插件错误：无法加载密钥类型/etc/Kubernetes /PKI/etcd/server.crt：/etc/Kubernetes /PKI/etcd/server.key：打开/etc/Kubernetes /netcd/server.key</block>
   <block id="31374f026fd34f38c1768e8bcae58183" category="cell">按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。您必须使用Telegraf 2.0或更高版本、并且Cloud Insights 必须主动监控您的Kubernetes集群存储。</block>
   <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">如果您运行的是Kube-state-metrics版本2.0.0或更高版本、而Kubernetes版本低于1.20、则可能会出现这些消息。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubectl get deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ '_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用以下租约： _mutatingwebconfigurations _webhook_ ，具体可以使用以下参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ， ingeses ，作业，限制范围，命名空间，网络策略，节点，复制卷，持久性卷， poddis中断 预算， Pod ，证书集，资源控制器，资源等，网络，存储器，卷，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器， 验证 webhookconfigurations ， volumeattachments</block>
   <block id="0b7a53ced1b85b8681621616e37366c7" category="cell">我在 Kubernetes 上安装或升级了 Telegraf ，但 Telegraf Pod 未启动。Telegraf ReplicaSet或DemonSet报告了类似以下内容的故障：Error creating：Pod "telaf-RS- is foreged"：Unable to validate against any security context restriction：要放宽此限制、请编辑代理 <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>)、并将"privileged-mode：false"更改为"privileged-mode：true"(特权模式：true)[spec.volumes_2：无效值："hostPath"：不允许使用hostPath卷)</block>
@@ -9087,4 +9080,6 @@
   <block id="59e3026f71d01a624108642cdb778ebd" category="cell">出现"ImagePullBackoff"错误</block>
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">阅读更多内容</block>
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 关于为自定义/私有repo.</block>
+  <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">注意：如果您安装了最新的NetApp Kubernetes监控操作员并使用可续订的API访问令牌、则过期的令牌将自动替换为新的/刷新的API访问令牌。无需为此处列出的Kubernetes API令牌续订执行手动步骤。</block>
+  <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整个基础架构的拓扑视图是否可用？Cloud Insights 是否显示 " 端到端可见性 " ？</block>
 </blocks>
