@@ -396,9 +396,6 @@ NetApp Kubernetes监控操作员会自动安装Kube-state-metrics；无需用户
 | 问题： | 请尝试以下操作： 
 
 
-| 对于_etcd_不是Kubernetes集群数据存储库的集群、您将在telraf RS Pod中看到以下消息：inputs.prometheus]插件错误：无法加载密钥类型/etc/Kubernetes /PKI/etcd/server.crt：/etc/Kubernetes /PKI/etcd/server.key：打开/etc/Kubernetes /netcd/server.key | Cloud Insights 仅支持将 _etcd_ 作为 K8s 数据存储库进行监控。您可以按照以下说明更改配置来修改代理，以避免收集 etcd 数据： kubectl -n netapp-monitoring edit agent agent-monitoring-netapp 在该文件中，删除以下部分： - name ： Prometheus_etcd run-mode ： - ReplicaSet 
-
-
 | 我未看到 Kubernetes 永久性卷与相应后端存储设备之间的超链接 / 连接。我的 Kubernetes 永久性卷使用存储服务器的主机名进行配置。 | 按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。您必须使用Telegraf 2.0或更高版本、并且Cloud Insights 必须主动监控您的Kubernetes集群存储。 
 
 
