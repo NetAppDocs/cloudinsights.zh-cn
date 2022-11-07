@@ -9025,7 +9025,6 @@
   <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">如果您使用运行 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>、具有 <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>或正在使用 <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>、请仔细阅读以下各节。</block>
   <block id="edcc6d64ff09289fd7b549c0265f3ea6" category="inline-xref">升级</block>
   <block id="794e8cb207d48ed4b3325b391e777251" category="paragraph">如果要从先前安装升级、另请阅读 <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 信息。</block>
-  <block id="023670044a04c30707541cd9ad44a499" category="paragraph">如果要在安装代理之前验证安装文件，请阅读关于 <block ref="2261a5ecaa517b1e6b1ea9c3c9c6c74a" category="inline-xref-macro-rx"></block>。</block>
   <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">要安装NetApp Kubernetes监控操作员、您可以在环境中的两个位置使用代理。这些代理系统可以是相同的、也可以是单独的：</block>
   <block id="b30dfc4554e987d8435414f85e0afc5c" category="list-text">在执行安装代码片段(使用"curt")期间需要使用代理将执行该片段的系统连接到Cloud Insights 环境</block>
   <block id="58b692b7f72614bb3545960fa7db5fde" category="list-text">目标Kubernetes集群与Cloud Insights 环境通信所需的代理</block>
@@ -9082,4 +9081,5 @@
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 关于为自定义/私有repo.</block>
   <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">注意：如果您安装了最新的NetApp Kubernetes监控操作员并使用可续订的API访问令牌、则过期的令牌将自动替换为新的/刷新的API访问令牌。无需为此处列出的Kubernetes API令牌续订执行手动步骤。</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整个基础架构的拓扑视图是否可用？Cloud Insights 是否显示 " 端到端可见性 " ？</block>
+  <block id="d0924ee26918b7c9acc0ec062a178e01" category="paragraph">如果要在安装代理之前验证安装文件，请阅读关于 <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。</block>
 </blocks>
