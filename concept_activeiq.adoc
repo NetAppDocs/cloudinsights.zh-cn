@@ -37,7 +37,7 @@ image:AIQ_Summary_Example.png["存储页面摘要"]
 
 == 正在查询风险
 
-在 Cloud Insights 中，您可以将 * 对象风险 * 列添加到存储或存储节点查询中。如果返回的结果包括 Active IQ 监控的存储系统，则对象风险列将显示存储系统或节点的风险数。
+在Cloud Insights 中、您可以将*监控.count*列添加到存储或存储节点查询中。如果返回的结果包括Active IQ监控的存储系统、则monitor.count列将显示存储系统或节点的风险数。
 
 
 
