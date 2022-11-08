@@ -9080,4 +9080,6 @@
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整个基础架构的拓扑视图是否可用？Cloud Insights 是否显示 " 端到端可见性 " ？</block>
   <block id="d0924ee26918b7c9acc0ec062a178e01" category="paragraph">如果要在安装代理之前验证安装文件，请阅读关于 <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。</block>
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">在Cloud Insights 中、您可以将*监控.count*列添加到存储或存储节点查询中。如果返回的结果包括Active IQ监控的存储系统、则monitor.count列将显示存储系统或节点的风险数。</block>
+  <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">从命令中删除后缀"-install"。</block>
+  <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">签名校验和文件（ SHA256.signed ）</block>
 </blocks>
