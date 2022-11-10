@@ -8575,7 +8575,6 @@
   <block id="82803c7a526739de20fc24c17e739d7c" category="list-text">集群中的* Pod *数量。单击此编号将打开Pod列表页面。</block>
   <block id="bed3b3102569672060faa59f92fbb130" category="list-text">集群中的*命名空间*数量。单击此数字将打开"命名空间"列表页面。</block>
   <block id="12a38026906d3d3a51a3538b98e0d002" category="list-text">集群中的*工作负载*数量。单击此数字将打开工作负载列表页面。</block>
-  <block id="5878d8d726a0f6915f98c3ad70765e41" category="paragraph">Cloud Insights 的当前Telegraf版本为*。1.22.3*。</block>
   <block id="64643b4abc81cdc6d03a96846188e46e" category="list-text">工作负载争论</block>
   <block id="8160f36882be54ea94b2656ab98ca110" category="paragraph">显示影响或受主机、网络和存储等其他共享资源影响的资产。这些资源有时称为_greedys_和_degraded_resources。</block>
   <block id="95eafe7994082a98ef565bc49b0bd0bc" category="section-title">2022年6月</block>
@@ -9082,4 +9081,5 @@
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">从命令中删除后缀"-install"。</block>
   <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">签名校验和文件（ SHA256.signed ）</block>
   <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">安装需要"unzip "。此外、安装、运行脚本和卸载都需要使用"sudo su–"命令。</block>
+  <block id="5186b139e52f7a5447ce73de13e4e524" category="paragraph">Cloud Insights 的当前Telegraf版本为*。1.24.0*。</block>
 </blocks>
