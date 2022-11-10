@@ -6215,7 +6215,6 @@
   <block id="129f8880167531920bb3396830948e86" category="cell">Linux 要求</block>
   <block id="696c660ff8d9323e55146a6dbd4e4088" category="cell">操作系统</block>
   <block id="c441ee50c88f6e5e3a7c69fc69dad8b8" category="cell">命令</block>
-  <block id="6068dbca35f237e6b23584f701dc4aa1" category="cell">要安装，运行脚本和卸载，需要使用 "sudo su – " 命令。</block>
   <block id="805053e0ff5abb1e01f2d2ce7d07ad96" category="cell">4 个 CPU 核</block>
   <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB RAM</block>
   <block id="da65b8cea76748b286bd905feef4a5fa" category="cell">可用磁盘空间</block>
@@ -9082,4 +9081,5 @@
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">在Cloud Insights 中、您可以将*监控.count*列添加到存储或存储节点查询中。如果返回的结果包括Active IQ监控的存储系统、则monitor.count列将显示存储系统或节点的风险数。</block>
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">从命令中删除后缀"-install"。</block>
   <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">签名校验和文件（ SHA256.signed ）</block>
+  <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">安装需要"unzip "。此外、安装、运行脚本和卸载都需要使用"sudo su–"命令。</block>
 </blocks>
