@@ -218,6 +218,26 @@ OpenShift可以实施更高的安全级别、从而可能阻止对某些Kubernet
 
 
 
+== 安装NetApp Kubernetes监控操作员
+
+image:NKMO_Install_Instructions.png["基于操作员的安装"]
+
+.在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：
+. 输入唯一的集群名称和命名空间。如果您是 ,升级 在基于脚本的代理或先前的Kubernetes操作员中、使用相同的集群名称和命名空间。
+. 输入这些内容后，您可以复制 Agent 安装程序代码片段
+. 单击按钮将此片段复制到剪贴板。
+. 将此代码片段粘贴到 _bash_ 窗口中并执行。请注意、此代码片段具有唯一的密钥、有效期为24小时。
+. 安装将自动进行。完成后，单击 _complete Setup_ 按钮。
+
+
+
+NOTE: 直到您完成设置 ,配置代理。
+
+
+NOTE: 如果您有自定义存储库、则必须按照的说明进行操作 ,使用自定义 / 私有 Docker 存储库。
+
+
+
 == 升级
 
 
@@ -277,26 +297,6 @@ NOTE: 如果您先前安装了基于脚本的代理、则必须升级到NetApp K
 ,卸载 当前运算符。
 
 ,安装 最新的运算符。使用相同的集群名称、并确保在设置了自定义repo.
-
-
-
-== 安装NetApp Kubernetes监控操作员
-
-image:NKMO_Install_Instructions.png["基于操作员的安装"]
-
-.在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：
-. 输入唯一的集群名称和命名空间。如果您是 ,升级 在基于脚本的代理或先前的Kubernetes操作员中、使用相同的集群名称和命名空间。
-. 输入这些内容后，您可以复制 Agent 安装程序代码片段
-. 单击按钮将此片段复制到剪贴板。
-. 将此代码片段粘贴到 _bash_ 窗口中并执行。请注意、此代码片段具有唯一的密钥、有效期为24小时。
-. 安装将自动进行。完成后，单击 _complete Setup_ 按钮。
-
-
-
-NOTE: 直到您完成设置 ,配置代理。
-
-
-NOTE: 如果您有自定义存储库、则必须按照的说明进行操作 ,使用自定义 / 私有 Docker 存储库。
 
 
 
@@ -458,10 +458,10 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 | 在 Kubernetes 上，我的 Telegraf ReplicaSet Pod 报告以下错误： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes ， PKI/etcd/server.crt ： /etc/Kubernetes ， crt/etcd/server.key ：打开 /etc/Kubernetes ， pki/etcd/server.key ： open /etc/Kubernetes ， pki/etcd/server.key ： no 此类文件或目录 | Telegraf ReplicaSet Pod 应在指定为主节点或 etcd 节点上运行。如果 ReplicaSet Pod 未在其中一个节点上运行，您将收到这些错误。检查您的主 /etcd 节点是否具有此类节点的影响。如果是，请将必要的容错添加到 Telegraf ReplicaSet ，即 Teleaf-RS 中。例如，编辑 ReplicaSet... kubectl edit RS ceaaf-rs ... 并将适当的容错添加到规范中。然后，重新启动 ReplicaSet Pod 。 
 
 
-| 我有一个PSP环境。这是否会影响我的监控操作员？ | 如果您的Kubernetes集群运行时已设置Pod安全策略(PSP)、则必须升级到最新的NetApp Kubernetes监控操作员。按照以下步骤升级到支持PSP的当前NKMO：1. ,卸载 先前的监控运算符：kubectl delete agent agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-roxy-role agent-metrics-reader kubectl delete clusterrolebinding agent-manager-rolebinding rolebinding agent-rolebind-rolebind-rolebind-2-admin-cluster-rolebinding.name。 ,安装 监控运算符的最新版本。 
+| 我使用的是PSP/PSA环境。这是否会影响我的监控操作员？ | 如果您的Kubernetes集群运行时已设置Pod安全策略(PSP)或Pod安全准入(PSA)、则必须升级到最新的NetApp Kubernetes监控操作员。按照以下步骤升级到支持PSP/PSA的当前NKMO：1. ,卸载 先前的监控运算符：kubectl delete agent agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-roxy-role agent-metrics-reader kubectl delete clusterrolebinding agent-manager-rolebinding rolebinding agent-rolebind-rolebind-rolebind-2-admin-cluster-rolebinding.name。 ,安装 监控运算符的最新版本。 
 
 
-| 我在尝试部署NKMOO时遇到问题、并且正在使用PSP。 | 1.使用以下命令编辑代理：kubectl -n <name-space> edit agent 2.将"securtion-policy-enabled"标记为"false"。此操作将禁用Pod安全策略并允许NKMO.使用以下命令进行确认：kubectl get PSP (应显示Pod Security Policy Removed) kubectl get all -n <namespace> grep -i PSP (应显示未找到任何内容) 
+| 我在尝试部署NKMOO时遇到问题、并且正在使用PSP/PSA。 | 1.使用以下命令编辑代理：kubectl -n <name-space> edit agent 2.将"securtion-policy-enabled"标记为"false"。此操作将禁用Pod安全策略和Pod安全准入、并允许NKMO.使用以下命令进行确认：kubectl get PSP (应显示Pod Security Policy Removed) kubectl get all -n <namespace> grep -i PSP (应显示未找到任何内容) 
 
 
 | 出现"ImagePullBackoff"错误 | 如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 ,阅读更多内容 关于为自定义/私有repo. 

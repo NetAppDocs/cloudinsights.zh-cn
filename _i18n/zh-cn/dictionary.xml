@@ -8733,8 +8733,6 @@
   <block id="ef4dfc875301d9f830ec745c939d757b" category="section-title">从基于脚本的代理升级到NetApp Kubernetes监控操作员</block>
   <block id="a27dfe771799a09fd55fea73286eb6ab" category="inline-xref">卸载</block>
   <block id="349838fb1d851d3e2014b9fe39203275" category="inline-xref">安装</block>
-  <block id="d4f4168ee4529f65ee54ba8b223d6b1e" category="cell">我有一个PSP环境。这是否会影响我的监控操作员？</block>
-  <block id="2eb2fe69b25b42c01f1dd6ed820e4ef3" category="cell">我在尝试部署NKMOO时遇到问题、并且正在使用PSP。</block>
   <block id="8bab215794a736f6f876eac0eeb23923" category="section-title">2022年8月</block>
   <block id="d705154352cfbafc58dfc6d7437fb527" category="section-title">Cloud Insights 全新外观！</block>
   <block id="d3d93d4a561aa9307d47023701a0c283" category="paragraph">从本月开始、"监控和优化"已重命名为*可观察性*。您可以在此处找到所有最喜欢的功能、例如信息板、查询、警报和报告。此外、在新的*安全性*菜单下查找Cloud Secure。请注意、只有菜单发生了更改；功能保持不变。</block>
@@ -9069,8 +9067,6 @@
   <block id="31374f026fd34f38c1768e8bcae58183" category="cell">按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。您必须使用Telegraf 2.0或更高版本、并且Cloud Insights 必须主动监控您的Kubernetes集群存储。</block>
   <block id="0428b79968fc5aa0a5b6d427e6815d82" category="cell">如果您运行的是Kube-state-metrics版本2.0.0或更高版本、而Kubernetes版本低于1.20、则可能会出现这些消息。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubectl get deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ '_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用以下租约： _mutatingwebconfigurations _webhook_ ，具体可以使用以下参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ， ingeses ，作业，限制范围，命名空间，网络策略，节点，复制卷，持久性卷， poddis中断 预算， Pod ，证书集，资源控制器，资源等，网络，存储器，卷，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器， 验证 webhookconfigurations ， volumeattachments</block>
   <block id="6b429c610cd6e569edf0723797324d8a" category="cell">如果启用并强制实施 SELinux ，则可能会阻止 Telegraf Pod 访问 Kubernetes 节点上的 /proc/1/mountstats 文件。要放松此限制、请编辑代理 <block ref="c88092eecdee9515a8e2c90ff653f94f" prefix="(" category="inline-code"></block>)、并将"privileged-mode：false"更改为"privileged-mode：true"</block>
-  <block id="7e49233f5f6e064e0c44052e4d0c8886" category="cell">如果您的Kubernetes集群运行时已设置Pod安全策略(PSP)、则必须升级到最新的NetApp Kubernetes监控操作员。按照以下步骤升级到支持PSP的当前NKMO：1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的监控运算符：kubectl delete agent agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-roxy-role agent-metrics-reader kubectl delete clusterrolebinding agent-manager-rolebinding rolebinding agent-rolebind-rolebind-rolebind-2-admin-cluster-rolebinding.name。 <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 监控运算符的最新版本。</block>
-  <block id="33387459111b663b6a9840aad6070097" category="cell">1.使用以下命令编辑代理：kubectl -n &lt;name-space&gt; edit agent 2.将"securtion-policy-enabled"标记为"false"。此操作将禁用Pod安全策略并允许NKMO.使用以下命令进行确认：kubectl get PSP (应显示Pod Security Policy Removed) kubectl get all -n &lt;namespace&gt; grep -i PSP (应显示未找到任何内容)</block>
   <block id="59e3026f71d01a624108642cdb778ebd" category="cell">出现"ImagePullBackoff"错误</block>
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">阅读更多内容</block>
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 关于为自定义/私有repo.</block>
@@ -9082,4 +9078,8 @@
   <block id="700459827d4941a6a127bc7de7938d5d" category="list-text">签名校验和文件（ SHA256.signed ）</block>
   <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">安装需要"unzip "。此外、安装、运行脚本和卸载都需要使用"sudo su–"命令。</block>
   <block id="5186b139e52f7a5447ce73de13e4e524" category="paragraph">Cloud Insights 的当前Telegraf版本为*。1.24.0*。</block>
+  <block id="7f213685ee85ff84e10c6c9b9c633789" category="cell">我使用的是PSP/PSA环境。这是否会影响我的监控操作员？</block>
+  <block id="180998c51dd0da936f3ebbeb1b922f6b" category="cell">如果您的Kubernetes集群运行时已设置Pod安全策略(PSP)或Pod安全准入(PSA)、则必须升级到最新的NetApp Kubernetes监控操作员。按照以下步骤升级到支持PSP/PSA的当前NKMO：1. <block ref="a7177598d8f3c4f7d3503ecefe58c480" category="inline-xref-macro-rx"></block> 先前的监控运算符：kubectl delete agent agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-roxy-role agent-metrics-reader kubectl delete clusterrolebinding agent-manager-rolebinding rolebinding agent-rolebind-rolebind-rolebind-2-admin-cluster-rolebinding.name。 <block ref="8e5c51a62ab45f504ec71f39c03c1633" category="inline-xref-macro-rx"></block> 监控运算符的最新版本。</block>
+  <block id="6ae137903bc328659928ed818d9ee78a" category="cell">我在尝试部署NKMOO时遇到问题、并且正在使用PSP/PSA。</block>
+  <block id="63c5c26973f4cb2983185abedde31f4b" category="cell">1.使用以下命令编辑代理：kubectl -n &lt;name-space&gt; edit agent 2.将"securtion-policy-enabled"标记为"false"。此操作将禁用Pod安全策略和Pod安全准入、并允许NKMO.使用以下命令进行确认：kubectl get PSP (应显示Pod Security Policy Removed) kubectl get all -n &lt;namespace&gt; grep -i PSP (应显示未找到任何内容)</block>
 </blocks>
