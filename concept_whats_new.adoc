@@ -12,6 +12,16 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+== 2022年11月
+
+
+
+=== 40多个新的安全性、数据收集和CVO监控器！
+
+我们新增了几十个系统定义的新监控器、用于提醒您有关Cloud Volumes、Security和Data Protection的潜在问题。阅读有关这些监控器的更多信息 link:task_system_monitors.html#security-monitors["此处"]。
+
+
+
 == 2022年10月
 
 
