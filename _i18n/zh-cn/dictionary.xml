@@ -8973,7 +8973,6 @@
   <block id="5068217c7c23b1eac12eac1be6831460" category="paragraph">为每个字段输入适当的信息、完成后单击"保存"。</block>
   <block id="b65784e2633601efca2f9bfad2d590c1" category="paragraph">您也可以单击"Test Webhook"按钮来测试连接。请注意、此操作将根据选定方法将"消息正文"(不含替换项)发送到定义的URL。</block>
   <block id="4ca1433d0af40616a4796463cd229d73" category="paragraph">请注意、在本节中、单击"Test Webhook"按钮时会执行_not_替换；该按钮会发送一个有效负载、其中显示了_%_替换项、但不会将其替换为数据。</block>
-  <block id="cf2146b9e920671969e606b44d0743f6" category="paragraph">您可以在上找到更多定义 <block ref="b7f404f6b2e5258b20a8d7e7801ccdd1" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注意：如果您安装了最新的NetApp Kubernetes监控操作员并使用可续订的API访问令牌、则过期的令牌将自动替换为新的/刷新的API访问令牌。无需执行下面列出的手动步骤。</block>
   <block id="d894fe24a5654169420a98540a56b302" category="list-text">编辑NetApp Kubernetes监控操作员。</block>
   <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">修改_spec.output-sink.api-key_值、将旧API令牌替换为新API令牌。</block>
@@ -9172,4 +9171,5 @@
   <block id="01a314c1b9df8a1e936aee8eb0691f89" category="section-title">2022年11月</block>
   <block id="1213554c7911deac461074eac67a0744" category="section-title">40多个新的安全性、数据收集和CVO监控器！</block>
   <block id="fb53e2def13b7a7a62b2d11a8d4d178a" category="paragraph">我们新增了几十个系统定义的新监控器、用于提醒您有关Cloud Volumes、Security和Data Protection的潜在问题。阅读有关这些监控器的更多信息 <block ref="0551979c3c2b30d30e179ad1ef30b8f8" category="inline-link-macro-rx"></block>。</block>
+  <block id="94bf1c9b14123c3874cb9d8257cedc3c" category="paragraph">有关与ONTAP 相关的其他术语和定义、请参见 <block ref="59db06bd3283cfbb592d6ec7e170773c" category="inline-link-macro-rx"></block> 文档。</block>
 </blocks>
