@@ -178,5 +178,8 @@ image:cs_ADExample.png["AD 连接"]
 | 未在用户配置文件页面中填充电话号码。 | 这很可能是由于 Active Directory 存在属性映射问题。1. 编辑从 Active Directory 提取用户信息的特定 Active Directory 收集器。请注意，在可选属性下，字段名称 " 电话号码 " 映射到 Active Directory 属性 ‘电话号码 ' 。4. 现在，请使用上述 Active Directory 资源管理器工具浏览 Active Directory 并查看正确的属性名称。3. 确保在 Active Directory 中有一个名为 ‘telphonenumber ' 的属性，该属性确实包含用户的电话号码。5. 我们可以说，在 Active Directory 中，它已修改为 ‘phonenumber ' 。6. 然后编辑 CloudSecure 用户目录收集器。在可选属性部分中，将 ‘telphonenumber ' 替换为 ‘phonenumber ' 。7. 保存 Active Directory 收集器后，收集器将重新启动并获取用户的电话号码，并在用户配置文件页面中显示相同的电话号码。 
 
 
-| 如果在 Active Directory （ AD ）服务器上启用了加密证书（ SSL ），则 Cloud Secure 用户目录收集器无法连接到 AD 服务器。 | 在配置用户目录收集器之前禁用 AD 服务器加密。提取用户详细信息后，该详细信息将在 13 个月内显示。如果在提取用户详细信息后 AD 服务器断开连接，则不会提取 AD 中新添加的用户。要重新提取，需要将用户目录收集器连接到 AD 。 
+| 如果在 Active Directory （ AD ）服务器上启用了加密证书（ SSL ），则 Cloud Secure 用户目录收集器无法连接到 AD 服务器。 | 在配置用户目录收集器之前禁用 AD 服务器加密。提取用户详细信息后，该详细信息将在 13 个月内显示。如果在提取用户详细信息后 AD 服务器断开连接，则不会提取 AD 中新添加的用户。要重新提取、需要将用户目录收集器连接到AD。 
+
+
+| 来自Active Directory的数据存在于CloudInsights Security中。希望从CloudInsights中删除所有用户信息。 | 不能只从CloudInsights Security中删除Active Directory用户信息。要删除此用户、需要删除整个租户。 
 |===
