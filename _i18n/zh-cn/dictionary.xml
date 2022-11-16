@@ -5044,8 +5044,6 @@
   <block id="5b52c3da7acdc6837b619fa0e7beb98b" category="cell">卷映射和屏蔽</block>
   <block id="b4a20e3a6be7e6cd6f8e3dcdd45cb2a8" category="cell">卷对</block>
   <block id="8b3c70513a58b842e1a5c555df1feda7" category="cell">存储同步</block>
-  <block id="3d9fdded41d1c4003ba59b29e1faef21" category="list-text">Operations Center 服务器的 IP 地址</block>
-  <block id="2d9bdba47e7ef41afea9893477c6c1b1" category="list-text">操作中心软件的只读用户名和密码以及对等权限</block>
   <block id="8f4ab816532074b60c2865f1089b6d38" category="cell">Hitachi Ops Center IP 地址</block>
   <block id="8db0f231405345684c1dab98cc049f52" category="cell">Operations Center 服务器的用户名。</block>
   <block id="18bf6f2c111fb8ac2dbe99d3445cbadd" category="cell">用于 Operations Center 服务器的密码。</block>
@@ -9183,4 +9181,6 @@
   <block id="dc77d098f1840a6fa69f5b878fac260d" category="list-text">请确保对50个以上的文件进行加密。少量文件将被忽略。</block>
   <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">请勿多次使用同一用户进行攻击。几次后、CS将了解此用户行为并假定这是用户的正常行为。</block>
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">不要对同一用户刚刚创建的文件进行加密。更改用户刚刚创建的文件不会被视为一项风险活动。而是使用另一用户创建的文件、或者在创建文件和对其进行加密之间等待几个小时。</block>
+  <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">托管"通用服务"组件的操作中心服务器的IP地址或主机名</block>
+  <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">托管Operations Center组件的所有服务器上存在的root/sysadmin用户帐户和密码。在Operations Center 10.8+之前、HDS未实施REST API支持以供LDAP/SSO用户使用</block>
 </blocks>
