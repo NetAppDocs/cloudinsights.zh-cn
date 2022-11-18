@@ -7861,7 +7861,6 @@
   <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">您可以通过单击显示器右侧的菜单并选择 * 暂停 * 来选择临时暂停对某个对象类型的监控。准备好恢复监控后，单击 * 恢复 * 。</block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">所有显示器 * 列出所有显示器。</block>
   <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">查看 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 第页，介绍 Cloud Insights 随附的监控器。</block>
-  <block id="b94799ea1a34279467ca857a3bdb03d8" category="list-text">* 降噪 * 用于筛选用户新建的文件（即过去 2 小时内）。它还用于筛选用户访问的临时文件（例如 .tmp 文件）。</block>
   <block id="22c7df611bbc787fa84ac34fdd9613e0" category="paragraph">对于具有集群凭据的 CSUser ，请从 ONTAP 命令行执行以下操作：</block>
   <block id="b3d5b2b9a23a5d11e154dd02b6d8f1d0" category="doc">配置 Dell EMC VNX 统一数据收集器</block>
   <block id="3b4918cfceb6d22dc06a39882714f272" category="paragraph">在配置方面， Dell EMC VNX Unified （ SSH ）数据收集器需要控制站的 IP 地址以及只读用户名和密码。</block>
@@ -8922,15 +8921,6 @@
   <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">使用 NetApp ONTAP 流遥测功能配置 Cloud Insights</block>
   <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP 流遥测</block>
   <block id="458a37db2666885e234720ccdea58253" category="paragraph">有关最新信息、请参见 <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> 数据收集器页面。</block>
-  <block id="2ed02be74d1c6359a8a97896ed3b4a32" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ***降噪*用于筛选用户在过去2小时内创建的文件。它还用于筛选用户访问的临时文件（例如 .tmp 文件）。</block>
-  <block id="4cd72c98e3da3ec398bfae4fc7350ab7" category="paragraph">&gt;&gt;&gt;&gt;&gt; 574e310d1e2d0707d9dba0ce1435f338b16fca2</block>
-  <block id="deba7a55b29f409804e844ea69bf2200" category="paragraph">=对取证活动历史记录数据进行排序</block>
-  <block id="24e4de2ead8899ff8575060a5a9966f2" category="paragraph">=导出所有活动</block>
-  <block id="826c09171b70f2e164f286be2dc13a35" category="paragraph">=为所有活动选择列</block>
-  <block id="c17261dcd735774185a2a324362cc66e" category="paragraph">=活动历史记录保留</block>
-  <block id="71dfcd631e4e19b5065870ce065fb560" category="paragraph">=取证页面中筛选器的适用性</block>
-  <block id="a8ed44b10f226c3693725707fe220366" category="paragraph">=路径/原始路径搜索</block>
-  <block id="ed71ade6f4efcaba20f75ab4e1d40313" category="paragraph">=故障排除</block>
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">请参见本指南</block>
   <block id="f06397ccd924d99fcb3214efdc25d940" category="paragraph">Cloud Secure 还可以与其他工具集成。例如： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 与Splunk集成。</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至：//SMI-S主机名或IP、其中&lt;SMI-S Hostname or IP&gt; ：5989/ecomconfig_是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
@@ -9184,4 +9174,11 @@
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">托管"通用服务"组件的操作中心服务器的IP地址或主机名</block>
   <block id="0b8a7ff32a839074e91de4c146e7c7bb" category="list-text">托管Operations Center组件的所有服务器上存在的root/sysadmin用户帐户和密码。在Operations Center 10.8+之前、HDS未实施REST API支持以供LDAP/SSO用户使用</block>
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">请注意、如果运行多个规则来更新资产上的相同标注、则第一个规则(从上至下运行)将应用标注并更新资产、然后第二个规则将适用、但不会更改先前规则已设置的任何标注。</block>
+  <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">* 降噪 * 用于筛选用户在过去 2 小时内创建的文件。它还用于筛选用户访问的临时文件（例如 .tmp 文件）。</block>
+  <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">对取证活动历史记录数据进行排序</block>
+  <block id="530784dc2e1fded20e31ab140fb699c9" category="section-title">导出所有活动</block>
+  <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">为所有活动选择列</block>
+  <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">活动历史记录保留</block>
+  <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">取证页面中的筛选器适用性</block>
+  <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">路径/原始路径搜索</block>
 </blocks>
