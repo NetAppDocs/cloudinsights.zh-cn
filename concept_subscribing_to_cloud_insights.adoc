@@ -98,7 +98,7 @@ NOTE: Cloud Insights 基本版中收集的功能，数据保留时间以及对�
 
 == 试用版
 
-注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。Cloud Insights 的所有功能 ,标准版 在此试用期间可用。
+注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。Cloud Insights 的所有功能 <<editions,标准版>> 在此试用期间可用。
 
 在试用期间，您可以随时订阅 Cloud Insights 。订阅 Cloud Insights 可确保无中断地访问您的数据以及进行扩展 link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["* 产品支持 *"] 选项
 
@@ -111,7 +111,7 @@ NOTE: 如果您需要更多时间来评估 Cloud Insights ，并且您的试用�
 
 == 通过AWS Marketplace试用
 
-您也可以通过AWS Marketplace注册免费试用。AWS Marketplace免费试用版支持您访问Cloud Insights ,高级版 试用33天、最多可支持499个 ,受管单元 (MUS)。
+您也可以通过AWS Marketplace注册免费试用。AWS Marketplace免费试用版支持您访问Cloud Insights <<editions,高级版>> 试用33天、最多可支持499个 <<pricing,受管单元>> (MUS)。
 
 注意：如果配置的MTU超过499个、则会进入"已违反"状态。当您的试用处于"已违反"状态时、您将无法访问某些Cloud Insights 功能、直到解决违规问题为止、方法是减少配置的MTU数量或订阅Cloud Insights。
 
@@ -149,7 +149,7 @@ Cloud Insights 按 * 受管单元 * 定价。受管单元的使用量是根据�
 * NetApp StorageGRID
 
 
-如果您的环境包含或预期包含 1 ， 000 个或更多受管单元，则您有资格获得 * 批量定价 * ，系统将提示您联系 NetApp 销售部门进行订阅。请参见 ,。 有关详细信息：
+如果您的环境包含或预期包含 1 ， 000 个或更多受管单元，则您有资格获得 * 批量定价 * ，系统将提示您联系 NetApp 销售部门进行订阅。请参见 <<how-do-i-subscribe,。>> 有关详细信息：
 
 
 
@@ -166,7 +166,7 @@ NOTE: 此计算器仅用于估算。订阅时将设置您的确切定价。
 
 == 如何订阅？
 
-如果您的受管单元数少于 1 ， 000 ，则可以通过 NetApp 销售部门或订阅 ,自行订阅 通过 AWS Marketplace 。
+如果您的受管单元数少于 1 ， 000 ，则可以通过 NetApp 销售部门或订阅 <<self-subscribe-via-aws-marketplace,自行订阅>> 通过 AWS Marketplace 。
 
 
 

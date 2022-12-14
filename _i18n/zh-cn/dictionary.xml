@@ -957,7 +957,6 @@
   <block id="b74af5a9ece7cdf67ec6e4e272d7c116" category="paragraph">在大多数情况下，如果设备支持只读访问，则只需进行只读访问即可。某些解决方案不允许只读访问，因此需要适当的提升权限。</block>
   <block id="b6e4757a4fed24ae14490ad102cfc2d8" category="section-title">Cloud Insights 收集信息的频率如何？</block>
   <block id="ff6f4b330e92d1228f84fcb98d25274c" category="paragraph">Cloud Insights 通常每 5 分钟收集一次性能数据，每 ½ 小时发现一次逻辑和物理构造。Cloud Insights 会根据建议的最佳实践和可扩展性设置默认轮询间隔，但允许用户完全控制这些间隔。</block>
-  <block id="33b5ea3829d10119391340b99e723dca" category="section-title">Cloud Insights 对我的环境有何影响？</block>
   <block id="c21b8a2a80e57ca923413b1aa8daa2d0" category="paragraph">Cloud Insights 的无代理，带外和被动 IP 通信有助于最大限度地减少设置，维护以及对数据中心生态系统的影响。Cloud Insights 的性能开发团队采取了一些重要措施，可以最大限度地减少对数据中心性能监控活动本身的任何影响。在正常操作环境中，影响可忽略不计，在高利用率或性能低下的技术平台中，影响可以宽松或收紧。有关详细信息，请参见《 Cloud Insights 安装指南》。</block>
   <block id="cf1e9c3fd6c6dda4ce691bf7e1cfbaef" category="section-title">如何列出 Cloud Insights 中的所有主机 /VM ？</block>
   <block id="c63925f7ddebcf8bf216776c93dc34ab" category="paragraph">Cloud Insights 对小工具和查询列表功能的补充，可用于为数据中心资产提供清单模式列表。虚拟机列表直至磁盘轴，以及之间的大量构造均可用于查询，小工具，信息板和数据仓库报告，并可通过 RESTful API 进行访问。</block>
@@ -1241,7 +1240,6 @@
   <block id="23a0a69ba2da60844941129c97d32149" category="summary">通过 Kubernetes 节点详细信息页面，您可以深入了解后端 PV 和 Pod 存储。</block>
   <block id="47e3b127c663c8b9509f25ef96d3c6be" category="doc">Kubernetes Node 详细信息页面</block>
   <block id="e767946157d182cf237f259a3b6478c4" category="paragraph">在 Kubernetes 资源管理器中，您可以单击节点图标以打开该节点的详细信息页面。在此页面上，您可以查看有关节点的信息，并浏览 VM ， Pod 和容器信息。</block>
-  <block id="088972153fa4b405527a2376c07113eb" category="section-title">了解节点的 Pod 和永久性卷</block>
   <block id="3e38ab0c0d78abbf789ae718cc2c8707" category="paragraph">通过 Cloud Insights ，您可以查看 Kubernetes 环境的后端存储，从而深入了解 Kubernetes Pod 和永久性卷（ Persistent Volume ， PV ）。您可以跟踪从单个 Pod 的使用情况到 PV 以及一直到后端存储设备的 PV 计数器，例如 IOPS ，延迟和吞吐量。</block>
   <block id="4f199152407556f59fa94af499f084e0" category="paragraph">在 PV 级别， Cloud Insights 会收集后端（内部卷或卷，具体取决于 PV 类型）容量信息（总容量，已用容量，已用容量百分比）以及内部卷快照计数。在 Pod 到存储级别，它会收集后端容量和内部卷快照计数。</block>
   <block id="aae3edef1483f0838d4754d553d09e68" category="paragraph">在卷或内部卷登录页面上，将显示两个表：</block>
@@ -1781,7 +1779,6 @@
   <block id="dd97078b1fded41ab7f0a8081708a7b4" category="inline-image-macro">监控条件</block>
   <block id="927629cba26acb892b3c2398129ca22e" category="paragraph"><block ref="927629cba26acb892b3c2398129ca22e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca82c7bf0a12e1bd7623c916688916ff" category="section-title">2020 年 7 月</block>
-  <block id="6891d5aadc78ac62ff88e77318810010" category="section-title">Cloud Secure 执行 Snapshot 操作</block>
   <block id="19b247a947fc686391faebd949689a52" category="paragraph">Cloud Secure 可在检测到恶意活动时自动创建快照以保护您的数据，并确保安全地备份您的数据。</block>
   <block id="a4749fac6233635e6370a9c15d3b1bf4" category="paragraph">您可以定义自动响应策略，以便在检测到勒索软件攻击或其他异常用户活动时创建快照。您也可以从警报页面手动创建快照。</block>
   <block id="a7ee696c849e2610f7efdc26f935de50" category="inline-image-macro">警报操作屏幕， 1000</block>
@@ -2176,7 +2173,6 @@
   <block id="ef484ddf1fa70f0f7e6e12c5ec398fd0" category="paragraph">根据您选择配置的初始数据收集器类型（存储，交换机等），将导入一个或多个相关信息板。例如，如果您配置了存储数据收集器，则会导入一组与存储相关的信息板，其中一个信息板将设置为您的 Cloud Insights 主页。您可以从 * 信息板 &gt; 显示所有信息板 * 列表更改主页。</block>
   <block id="884c68aa76be99399251cf49057f5089" category="inline-link-macro">创建您自己的</block>
   <block id="30ac9f66beb1edda1ef095e871e96e65" category="paragraph">您可以稍后导入其他信息板，或 <block ref="d9f1bed19a893c2599f38f8ee38e7f25" category="inline-link-macro-rx"></block>。</block>
-  <block id="d26ece7a14868ffcc86bc3dfce18345c" category="section-title">这就是它的全部内容</block>
   <block id="dced233464479bab905d4f3c73af377e" category="paragraph">完成初始设置过程后，您的环境将开始收集数据。</block>
   <block id="53bc5b0eaf13535f4b602a5830ef8ad6" category="paragraph">如果初始设置过程中断（例如，关闭浏览器窗口），则需要手动执行以下步骤：</block>
   <block id="3109cfeae79b76c71475be9bfd3c2938" category="list-text">选择一个 Data Collector</block>
@@ -2966,7 +2962,6 @@
   <block id="98d65924ba5e4c9e08f01233aceb15b8" category="list-text">显示攻击期间文件活动的图形</block>
   <block id="150371e71cf9ac0249f420076a2e5358" category="section-title">相关用户部分：</block>
   <block id="db67b2fbfe663dec3bafb30754f82043" category="paragraph">此部分显示有关参与潜在攻击的用户的详细信息，包括用户的 "Top Activity" 图形。</block>
-  <block id="3187f3dcb05b639d87ff0ef7bcdc3e02" category="section-title">执行 Snapshot 操作</block>
   <block id="7683f342a6f18a36645f19f6332de56e" category="inline-link-macro">自动响应策略</block>
   <block id="d27b2fb629cc2c24086da7257eb32814" category="paragraph">您可以定义 <block ref="5def0187ac3a4d928905bc1e2b8dece3" category="inline-link-macro-rx"></block> 在检测到勒索软件攻击或其他异常用户活动时创建快照。您也可以从警报页面手动创建快照。</block>
   <block id="bf69429297f9f42186bf9ad016e6efd6" category="section-title">警报通知</block>
@@ -3773,7 +3768,6 @@
   <block id="96cfad9bf45103ee0ef58fa25c0cfa6b" category="summary">自定义报告输出和交付，将报告复制到剪贴板，打开报告（ XML ）。</block>
   <block id="e1039935b082dfd38ef43eb7fef4b452" category="doc">管理报告</block>
   <block id="ce2ce538c48e429c8dc98553649f3bbd" category="paragraph">您可以自定义报告的输出格式和传送，设置报告属性或计划以及通过电子邮件发送报告。</block>
-  <block id="5df8ec67e66b1b70f4dd477eeabe20c2" category="section-title">自定义报告的输出格式和交付</block>
   <block id="8bee38bef7beb0158135e68890b6cc17" category="paragraph">您可以自定义报告的格式和交付方法。</block>
   <block id="c64e7d8f225e7e8875d2446a3b30bd34" category="list-text">在 Cloud Insights 报告门户中，将鼠标悬停在要自定义的报告上，然后单击 * 。</block>
   <block id="58cae8bb2701afa19011bf0042646c9d" category="inline-image-macro">报告自定义菜单</block>
@@ -4482,10 +4476,8 @@
   <block id="d47350de0cb738713602fc081af217e9" category="paragraph">请参见 <block ref="66b24601b32ea1e28a736b303c9dda16" category="inline-link-macro-rx"></block> 有关配置信息，请参见。此适用场景内部部署代理和代理安装在云中。</block>
   <block id="0deb145e97d2a45a78872c8c8eb51e12" category="list-text">在 AWS EC2 实例中安装代理以监控 Cloud ONTAP SVM 时，代理和存储必须位于同一个 VPC 中。如果它们位于不同的 VPC 中，则 VPC 之间必须有有效的路由。</block>
   <block id="0cd400e3d93cd7ed179f95d57d744891" category="section-title">有关权限的注释</block>
-  <block id="d6dbed5bc250d74498fd43915882d37c" category="section-title">通过集群管理 IP 添加时的权限：</block>
   <block id="bf3bb5d17ba89dbbd6cbc400e1c6e125" category="paragraph">如果您无法使用集群管理管理员用户允许 Cloud Secure 访问 ONTAP SVM 数据收集器，则可以创建一个名为 "CSUser" 的新用户，其角色如下命令所示。将 Cloud Secure 数据收集器配置为使用集群管理 IP 时，请使用 "CSUser" 的用户名和密码。</block>
   <block id="10414897d078dba7d0d6c5111c2af072" category="paragraph">要创建新用户，请使用集群管理管理员用户名 / 密码登录到 ONTAP ，然后在 ONTAP 服务器上执行以下命令：</block>
-  <block id="8891dc1e6e4e5ac8add48653bb6e58e7" category="section-title">通过 Vserver 管理 IP 添加时的权限：</block>
   <block id="cb5fee403d15816a05d17c1eb2ba3cb4" category="paragraph">如果您无法使用集群管理管理员用户允许 Cloud Secure 访问 ONTAP SVM 数据收集器，则可以创建一个名为 "CSUser" 的新用户，其角色如下命令所示。将 Cloud Secure 数据收集器配置为使用 Vserver 管理 IP 时，请使用 "CSUser" 的用户名和 "CSUser" 的密码。</block>
   <block id="a2eff2103f669c457b93354a8c3f5dce" category="paragraph">要创建新用户，请使用集群管理管理员用户名 / 密码登录到 ONTAP ，然后在 ONTAP 服务器上执行以下命令。为了方便，请将这些命令复制到文本编辑器中，并将 &lt;vservername&gt; 替换为您的 Vserver 名称，然后在 ONTAP 上执行这些命令：</block>
   <block id="e96ded369b9e59a3e1b17c09ebacf307" category="section-title">配置数据收集器</block>
@@ -6245,7 +6237,6 @@
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM 数据 LIF IP 地址</block>
   <block id="610c4c7f3524467ba601e165dfb7b27c" category="cell">入站 / 出站</block>
   <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">与 ONTAP 通信以处理 Fpolicy 事件</block>
-  <block id="8adc06985cc11866dd25119eb70226ab" category="section-title">相关：</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">事件速率检查器</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">请参见 <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> 有关规模估算的信息的文档。</block>
   <block id="ce090ea7bc89bd5ec37a141c636c69de" category="summary">此主题尚未准备就绪。</block>
@@ -7217,16 +7208,6 @@
 <block ref="e6669e87e16244b0fccfa5ac76c749db" category="inline-link-macro-rx"></block>
 <block ref="e09dedd8fbac179aa2311a644e5eafb9" category="inline-link-macro-rx"></block>
 <block ref="39b7554632d390d66b016193758df46c" category="inline-link-macro-rx"></block></block>
-  <block id="30849cb98e37d0646fe727a1092f47dd" category="cell">AstraDSVolume</block>
-  <block id="4da6d4792b95d2d99cc3e0f5d7ef90d2" category="cell">AstraNodeInfo.status.drives</block>
-  <block id="df94c295a2794c1c2ccdaa129403f929" category="cell">AstraNodeInfo</block>
-  <block id="d1f334283c677818d712ba42cb98bff0" category="cell">AstraDSExportPolicy</block>
-  <block id="1720f1876e19d7a553b6a4f1df02a70c" category="cell">共享 / 共享启动程序</block>
-  <block id="bc84b80d565099f26b1c5343ee7bf019" category="cell">AstraDSCluster</block>
-  <block id="711f972f5e82f211f310ac06c2f8e036" category="cell">您会看到一条 " 未授权 " 消息</block>
-  <block id="90b86e404196295299e2aa0d840dad62" category="cell">检查 Kubernetes API 令牌是否有权调用 _astrads.netapp.io_ apiGroup 中的 API</block>
-  <block id="5a5e7c0a4322b31225a6be9038fc8501" category="cell">" 未知主机： astrads-metrics-service.astrads-system.svc.cluster.local ：名称或服务未知 "</block>
-  <block id="045f84b2e6e4af9113106c8c9ce287f4" category="cell">验证收集器是否安装在 ADS Kubernetes 集群内运行的采集单元 POD 中。验证 astrads-metrics-service 是否正在运行 astrads-system 命名空间。</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器</block>
   <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights 使用 * 云连接 * 从 ONTAP 9.9+ 收集数据，无需安装外部采集单元，从而简化了故障排除，维护和初始部署。要为 ONTAP 9.9+ 数据收集器配置云连接，您需要将 * 配对代码 * 复制到 ONTAP 系统管理器，然后该管理器将与 Cloud Insights 环境建立连接。建立连接后，收集的数据与通过采集单元收集的数据相同。</block>
   <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector 配置</block>
@@ -7256,8 +7237,6 @@
   <block id="29528f054166735f3e8a10f7fc97f3dd" category="cell"><block ref="29528f054166735f3e8a10f7fc97f3dd" category="inline-link-macro-rx"></block></block>
   <block id="d3dc1fc44d23379b3a3e3c6e5eaed716" category="list-text">在此采集单元上发现 2500 多个虚拟机或 10 个大型（大于 2 节点） ONTAP 集群， Symmetrix 或 HDS/HPE VSP/XP 阵列？</block>
   <block id="159904c45b61bfdda4989e18bf9891e8" category="paragraph">对于上述每个 " 是 " 问题解答，建议向 AU 添加 8 GB 内存和 50 GB 磁盘空间。因此，例如，如果您对这两者都回答 " 是 " ，则应部署一个具有 150 GB 或以上磁盘空间的 24 GB 内存系统。在 Linux 上，要添加到日志位置的磁盘空间。</block>
-  <block id="21d6683e9fb00a0e8c451185a0fefc00" category="summary">配置 NetApp Astra 数据存储库</block>
-  <block id="66857f3f017c56c7d6bc365ead0549cc" category="doc">NetApp Astra 数据存储库数据收集器</block>
   <block id="0ccd64b2e6202fbb544d22cd48a872b2" category="inline-link-macro">此 GitHub 文章</block>
   <block id="8f176f657f418586c2a4828045ab0c37" category="cell">这是一个已知的问题描述。请参见 <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> 有关详细信息：只要 Telegraf 启动并运行，用户就可以忽略这些错误消息。</block>
   <block id="b8ce784188c470b3c8ff0c7cc1a403e1" category="cell">我看到来自 Telegraf 的错误消息如下所示，但 Telegraf 确实启动并运行： Oct 11 14 ： 23 ： 41 IP-172-31-39-47 systemd1* ：启动了插件驱动的服务器代理，以便向 InfluxDB 报告指标。Oct 11 14 ： 23 ： 41 IP-172-31-39-47 cailaf[1827] ： time="2021-10-11T14 ： 23 ： 41Z" level=error msg="failed to create cache directory" 。/etc/celaf/.cache/snowvelc ，错误： mkdir /etc/tengraf/.ca ChE ：权限被拒绝。ignored\n" func="gosnowchelf.（ * defaultLogger ） .Errorf" fil="log.go ： 120" Oct 11 14 ： 23 ： 41 IP-172-31 ： 39-47 celaf[1827] ： time="2021-10-11T14 ： 23 ： 41Z" level=error msg="failed to open.已忽略。打开 /etc/celaf/.cache/snowlife/OCSP_response_cache.json ： no such file or directory\n" func="gosnowchlafe.（ * defaultLogger ） .Errorf" fil="log.go ： 120" Oct 11 14 ： 23 ： 41 IP-172-31-39-47 craaf[1827] ： I-41Z-2021 ：启动 Telegraf 1.19.3</block>
@@ -7365,7 +7344,6 @@
   <block id="0f17f6019d7d24f40bc97f9856c0ef14" category="paragraph">要在表达式中使用变量，只需键入变量名称即可，例如 _$var1 * 100_ 。表达式只能使用数字变量。</block>
   <block id="1634ed475d7378ae8b2f149b1a4c43e3" category="list-text">* 属性 * ：使用对象的属性或指标进行筛选</block>
   <block id="a33e4b0669b0dcd6c6727f25e8e1c46b" category="list-text">* 日期 * ：日期值。根据小工具的配置，使用作为 " 从 " 或 " 到 " 值。</block>
-  <block id="75514bc8f4a0fcfa4d6e233cf6293d4f" category="section-title">属性变量</block>
   <block id="cdd0539c5f9ee15c61a20d8600fe7ca5" category="paragraph">通过选择属性类型变量，您可以筛选包含指定属性值或值的小工具数据。以下示例显示了一个折线小工具，其中显示了代理节点的可用内存趋势。我们为代理节点 IP 创建了一个变量，当前设置为显示所有 IP ：</block>
   <block id="e3f9b576b0f66601c43decf70ddc3a40" category="inline-image-macro">可变筛选器之前的代理节点</block>
   <block id="8e1962312d6932465c5534f5b70114c0" category="paragraph"><block ref="8e1962312d6932465c5534f5b70114c0" category="inline-image-macro-rx" type="image"></block></block>
@@ -7667,42 +7645,6 @@
   <block id="0e3ba895596ae6b82a28fc759871c813" category="paragraph">Cloud Insights 提供了四个用户帐户级别：帐户所有者，管理员，用户和来宾。系统会为每个帐户分配特定的权限级别。具有管理员权限的用户帐户可以创建或修改用户，并为每个用户分配以下 Cloud Secure 角色之一：</block>
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">为每个用户选择所需的角色。</block>
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">添加新用户时，只需选择所需角色（通常为用户或来宾）即可。</block>
-  <block id="a589a4753ac4130f5ad58a40d1aa11f3" category="paragraph">Cloud Insights 从此数据收集器采集清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
-  <block id="c5ecce90295639a685470629720aeea5" category="list-text">必须在具有 Astra 数据存储的 Kubernetes 集群中安装 NetApp 监控操作员。如果在安装 Astra Data Store 期间未安装此操作系统，请按照 Astra Data Store 安装说明安装监控操作员。</block>
-  <block id="c9ff350f66cd300384d6bb9ee56d679b" category="list-text">必须安装 _kubectl-astrads_kubectl 插件。如果未安装，请按照 Astra Data Store 安装说明安装 _kubectl-astrads_binary 。</block>
-  <block id="55cf41c81d8f2fa848c3a33fd73120b5" category="list-text">必须提供以下命令： _jk ， cURL ， grep 和 JQ_ 。</block>
-  <block id="af27e8481fc7ef90e7ed57735aa486a7" category="paragraph">安装脚本将指导您完成 Astra Data Store 数据收集器的安装。按照屏幕上的说明进行操作。完成安装需要几分钟时间。完成后，可能需要几分钟才能在 Cloud Insights 中显示数据。</block>
-  <block id="d679078549b407f8255ce4a95eb4ccad" category="paragraph">此脚本将指导您完成以下步骤：</block>
-  <block id="73abd6a4d58ac58a260c391fe56f1a57" category="list-text">选择 API 访问令牌。</block>
-  <block id="d81b7ed35f0d2bef601ad8d74fdeb35c" category="list-text">从安装对话框中复制安装程序脚本，并将其另存为名为 _cloudinsets-ads-monitoring.sh_ 的文件。您可以单击剪贴板图标将脚本快速复制到剪贴板。</block>
-  <block id="e62192a6aee08bda18b9aa476e12ac7c" category="list-text">打开 Bash 窗口，将目录更改为 _cloudinsors-ads-monitoring.sh_ 脚本的位置。</block>
-  <block id="fa36e0d10ffde2aefefc27bd0369f2f1" category="list-text">从安装对话框复制权限命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。</block>
-  <block id="0df60a234fa438383cbe9b557bc6ac86" category="list-text">将权限命令粘贴到 Bash 窗口中，然后按 Enter 键。</block>
-  <block id="37ed094e95b1aafa9f96e9189d257a88" category="list-text">从安装对话框中复制 install 命令。您可以单击剪贴板图标将命令快速复制到剪贴板。</block>
-  <block id="8c8c329f90a58cb7d77dde8ca933b56d" category="list-text">将 install 命令粘贴到 Bash 窗口中。</block>
-  <block id="aaf4db30c94d2b3ecd2df73746b66f60" category="list-text">将 &lt;Kubernetes API 服务器的 IP 地址替换为 &lt;Kubernetes IP&gt; 。</block>
-  <block id="37ee78eaea07b1141db2771004cca6c2" category="list-text">将 &lt;Kubernetes 令牌 &gt; 替换为您的 Kubernetes API 令牌。</block>
-  <block id="c7e5cc3cd77f2019256afe7266491452" category="list-text">按 Enter 键。</block>
-  <block id="167fe4db27b48d4d51e6a9656383dbb8" category="list-text">单击 _complete Setup_ 。</block>
-  <block id="96fab0bdb0ff6d498a516ba05e81b851" category="paragraph">如果安装程序脚本因错误而退出，则可以在解决错误后重新运行它。如果您的环境不使用默认设置，则安装程序脚本支持其他参数，例如监控操作员命名空间和 Kubernetes API 服务器端口。下面列出了可用选项的完整列表。</block>
-  <block id="b524f24588085b1e0adf31626117f231" category="section-title">安装程序脚本选项：</block>
-  <block id="df5b5c690ed2b1756bcbac0e24081d89" category="paragraph">请注意， Cloud Insights 域名和选定 API 访问密钥将在下载时嵌入到安装程序脚本中。</block>
-  <block id="5b3edf747d66543d15b01f48fb0a354e" category="section-title">Astra 数据存储数据收集器</block>
-  <block id="81e081c4fe35feb390583edb77bf277e" category="section-title">安装脚本</block>
-  <block id="5afe69e2069028149a518ef6de1e10c5" category="cell">监控运算符未在 &lt; 命名空间 &gt; 命名空间中运行。</block>
-  <block id="6f062aede7e681e4af5f68add3fd7fd7" category="cell">按照 Astra Data Store 安装说明进行安装</block>
-  <block id="4c43e40f1d743a69fcdef8d2b47d0b14" category="cell">采集单元 POD &lt;pod &gt; 在 300 秒后未成功启动。</block>
-  <block id="9434c645e8cc0f2a0d4f6cce62e5542d" category="cell">获取采集单元 POD 的名称： kubectl get pod -namespace netapp-monitoring | grep "au-po" Check the pod events for errors ： kubectl describe pod -namespace netapp-monitoring &lt;pod_name&gt;</block>
-  <block id="900774bd5956acd411393b65417a827b" category="cell">采集单元安装未在 900 秒后完成</block>
-  <block id="f130f336cdc88ab3756994fbfee8af30" category="cell">获取采集单元 POD 的名称： kubectl get pods -namespace netapp-monitoring | grep "au-po" Check the pod logs for errors ： kubectl logs - 命名空间 netapp-monitoring &lt;pod_name&gt; 如果没有错误，并且日志以消息 "Main - Acquisition is up and running ！ " 结尾，则安装成功，但安装时间超出预期。重新运行安装脚本。</block>
-  <block id="4dedbdfa903139111848c20c418cf8b9" category="cell">无法从 Cloud Insights 检索采集单元 ID</block>
-  <block id="5c8dd5b291686fd09b7f2bd04fa20150" category="cell">验证采集单元是否显示在 Cloud Insights 中。转到 "Admin"&gt;"Data Collectors" ，然后单击 "Acquisition Units" 选项卡。验证 Cloud Insights API 密钥是否具有采集单元的权限。</block>
-  <block id="729716cbbc26046a3f2eae7728a60220" category="inline-link-macro">NetApp Astra 数据存储</block>
-  <block id="0b29c8b6030261b81886de13d7902820" category="cell"><block ref="0b29c8b6030261b81886de13d7902820" category="inline-link-macro-rx"></block></block>
-  <block id="9006a134fd1870aca1877d5e1e68dae9" category="inline-link-macro">使用 Cloud Insights 监控指标</block>
-  <block id="f0b65328b01ef9e6301a81ee7e9ed23f" category="inline-link-macro">Astra 数据存储快速入门</block>
-  <block id="b42189ec86d9beb36690d81d11d4ab47" category="admonition">此外，您还可以在 Astra 数据存储库文档中找到这些安装说明和追加信息：<block ref="e8b9f8414fb0a1622a4d51b962548914" category="inline-link-macro-rx"></block>
-<block ref="9e8952bf2d49abc5b376cb6c4ac1dd52" category="inline-link-macro-rx"></block></block>
   <block id="8035d5d39b2b48f6ec1a3133b688513c" category="sidebar">Astra 数据存储</block>
   <block id="8a684cc8084b02b93384f0bfc436d63c" category="list-text">潜在攻击类型（例如勒索软件或破坏）</block>
   <block id="f30c6485c3c21678c5177709acd318b0" category="list-text">攻击类型（勒索软件，破坏）和警报 ID （由 Cloud Secure 分配）</block>
@@ -7958,7 +7900,6 @@
   <block id="827fb03d4709eeb5398e14962ee560c2" category="paragraph">其中， _&lt;API_Access_Token&gt;_ 是您在创建 API 访问期间保存的令牌。</block>
   <block id="cc259063b1a06b482634601b8fc9068b" category="paragraph">。 <block ref="4379d12a92ab7b417b2efd216b13a5b7" category="inline-link-macro-rx"></block> 数据收集器无需安装外部采集单元，从而简化了故障排除，维护和初始部署。</block>
   <block id="d7652c841f9f6f67155b6c416335e932" category="paragraph">生成的角色和用户登录信息如下所示。实际输出可能会有所不同：</block>
-  <block id="aa4fab3c3fde779a8dc99f5269961218" category="section-title">修改现有用户的角色</block>
   <block id="9b207ebd40869bfc10be14cb4279b22c" category="paragraph">要修改现有用户的角色，包括将其添加为 * 二级帐户所有者 * ，请执行以下步骤。</block>
   <block id="bb10192e5b1a488b6e0bf0a436918863" category="list-text">单击 * 管理员 &gt; 用户管理 * 。此时，屏幕将显示系统上所有帐户的列表。</block>
   <block id="27821658abae724fdd49cbd24489bb01" category="list-text">单击要更改的帐户的用户名。</block>
@@ -8446,8 +8387,6 @@
   <block id="cff2fb2b5c25be825b4648d0960cad38" category="section-title">创建Config Advisor 信息板：</block>
   <block id="ffdc0a4c20353f02a36d86c39af145b7" category="section-title">其他支持</block>
   <block id="fa53b8785b0f7af8203d347d9f3e6edb" category="paragraph">有关与Config Advisor 相关的其他问题、请单击"Help"-&gt;"Open Support"(打开支持服务单)、从Config Advisor 工具中打开服务单。</block>
-  <block id="cf4b2f0af37857c4f536e3caec893f92" category="paragraph">此数据收集器可采集单个 Astra Data Store 集群的清单和性能数据。除了数据收集器之外、监控操作员还会收集高级指标、并配置_fluent bit_来收集日志。</block>
-  <block id="79c4d7a149c6892512f89196ff442c63" category="paragraph">安装程序脚本将： * 验证是否已安装和配置监控操作员。* 配置流畅位。* 安装采集单元。* 在采集单元运行后安装 Astra 数据存储收集器。</block>
   <block id="d07e55df7f133c0213955a67c979d808" category="admonition">ONTAP 数据收集器通知优先于与集群/数据收集器相关的任何特定监控器通知。您为Data Collector本身设置的收件人列表将接收数据收集器警报。如果没有活动的数据收集器警报、则监控器生成的警报将发送到特定的监控器收件人。</block>
   <block id="9e3717c8a856a8fff78d3ed35be3524a" category="section-title">日志监控器</block>
   <block id="0031016ba9d6e28ef548d4a2f95332e3" category="cell">卷脱机</block>
@@ -8513,7 +8452,6 @@
   <block id="95458ffe03f081fb38d0e5630d7836c6" category="list-text">后端存储资源受到影响、当前容量已用不包括在总容量中。单击此链接将打开后端卷的详细登录页面。</block>
   <block id="9b6de7d57253456e4f416bcef90b76e5" category="inline-image-macro">显示详细信息的工作负载表</block>
   <block id="e589c155ffae6696761533f45ef69b7c" category="paragraph"><block ref="e589c155ffae6696761533f45ef69b7c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6f8f8bf593c85a6ac1a3a0cc2103aa21" category="section-title">如果空间即将用尽、我该怎么办？</block>
   <block id="d6fe83f2685cfec3bef24ac55c5aa793" category="paragraph">在Insight页面上、单击*+显示建议*以查看可能的解决方案。空间不足时、最简单的选择是始终添加更多容量、Cloud Insights 会向您显示要添加的最佳容量、以将达到60天目标预测的时间延长到达到最大值。此外、还会显示其他建议。</block>
   <block id="501f2f9df98b83cc872cd59f0493d08d" category="inline-image-macro">要添加的容量以返回到60天TTF</block>
   <block id="1349caff32af26b4b92540943cbbecc2" category="paragraph"><block ref="1349caff32af26b4b92540943cbbecc2" category="inline-image-macro-rx" type="image"></block></block>
@@ -8584,7 +8522,6 @@
   <block id="2b8d5e66c38238b579c8a7f9a4f0deb8" category="paragraph"><block ref="2b8d5e66c38238b579c8a7f9a4f0deb8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5d0288e56a716095eb8a98c5c3943c54" category="paragraph">存储、存储池和卷也可以使用TTF计数器。请始终关注此空间、以获取这些对象的其他信息板。</block>
   <block id="70bda96e0227797cb8002e9bb8d9880d" category="paragraph">请注意、"达到全时预测"正在从_Preview_开始、并将推广到所有客户。</block>
-  <block id="c734c78a6282b21c743d2e94a2fbba82" category="section-title">我的环境发生了哪些变化？</block>
   <block id="c126f3a900297855b1ec4bc88198f155" category="paragraph">可以在日志资源管理器中查看ONTAP 更改日志条目。</block>
   <block id="4c6ad175a17ca3e0294c095f93eefebe" category="inline-image-macro">此图显示了更改日志条目示例</block>
   <block id="71f092ae4722c5826712794003f7d4b8" category="paragraph"><block ref="71f092ae4722c5826712794003f7d4b8" category="inline-image-macro-rx" type="image"></block></block>
@@ -8747,7 +8684,6 @@
   <block id="b15e043f2e8db0aa222ae7311e987712" category="paragraph">以下功能已从预览版中移出、现在可供所有客户使用：</block>
   <block id="64f0171311f2657dbd0578fca9fb2fa5" category="cell">Cloud Secure —在受到攻击时阻止用户访问</block>
   <block id="6ad1deaea422210384bf8c46adb4027a" category="cell">可以在检测到攻击时阻止用户访问、从而增强对业务关键型数据的保护。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。<block ref="e8dc9c29c76388404a63bbf729dac2fd" category="inline-link-macro-rx"></block></block>
-  <block id="2d6bee64b9e0e23f822f86b9ef8e0060" category="section-title">我的数据收集运行状况如何？</block>
   <block id="62eb208f255de6653342ec37c0ec229b" category="paragraph">Cloud Insights 为采集单元提供了两个新的检测信号监控器、并提供了两个监控器、用于在数据收集器出现故障时向您发出警报。这些功能可用于快速向您发出数据收集问题的警报。</block>
   <block id="b355ccf4f7e6c9eb6dbdec86e748dbf6" category="paragraph">现在、_Data Collection_监控组中提供了以下监控器：</block>
   <block id="f080c7e2db3c941a50244332dcd5aa78" category="list-text">采集单元检测信号严重</block>
@@ -9182,4 +9118,22 @@
   <block id="012f3ec70fcf8eccc1fce56e4a0b94b6" category="section-title">路径/原始路径搜索</block>
   <block id="8281bdee16e3d690812d635a332bd2cf" category="list-text">托管Operations Center组件的所有服务器上存在的root/sysadmin用户帐户和密码。在Operations Center 10.8+之前、HDS未实施REST API支持以供LDAP/SSO用户使用</block>
   <block id="893bef15b5b419d5da72c3e89288069f" category="paragraph">必须安装HDS操作中心"分析器"模块存储阵列必须向操作中心"分析器"模块馈送数据</block>
+  <block id="5c658c709f3241ce7e2e2db76e849621" category="paragraph">请参见 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block> 第页、了解其他前提条件和要求。</block>
+  <block id="b4c2efa32144f8c7f6fa5513ac1c7e55" category="section-title">自定义报告的输出格式和交付</block>
+  <block id="7f3fae8bcffd39410a8caca4210f5f21" category="section-title">Cloud Insights对我的环境有何影响？</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="paragraph-title">关于此任务</block>
+  <block id="c4902856573b47497259fa66ba244535" category="section-title">属性变量</block>
+  <block id="2c8315992b66ae0480f26fe69cea1579" category="section-title">这就是它的全部内容</block>
+  <block id="d1e4cf4e509b74019a6ec3d98c6300da" category="section-title">我的数据收集运行状况如何？</block>
+  <block id="53e92bcfb6eee482c86ea61784ea9a60" category="section-title">我的环境发生了哪些变化？</block>
+  <block id="0990561b323eccdee60c16a1ced0a306" category="section-title">Cloud Secure 执行Snapshot_操作</block>
+  <block id="e80e3d8646e24f6d7661808de9274648" category="paragraph-title">滚动列表：</block>
+  <block id="b39c055166e1e8cfc2de8f74b7b76640" category="paragraph-title">类型搜索：</block>
+  <block id="be62e4fb0ce75ae1c87237e1a5947368" category="section-title">修改现有用户的角色</block>
+  <block id="04f239d51d6f6978df84a2372f6abdb2" category="section-title">通过*集群管理IP*添加时的权限：</block>
+  <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">通过* Vserver Management IP*添加时的权限：</block>
+  <block id="cc327506f222e6ab4e0ec6a024dcbe7b" category="section-title">如果空间不足、我该怎么办？</block>
+  <block id="6baf1e00d599761ac0cdbee221c4569c" category="section-title">执行Snapshot_操作</block>
+  <block id="46a1d0dbde96d466dadd916b9b7a7d65" category="section-title">系统规模估算</block>
+  <block id="e9a8035e121122e74ece696f921ab7d6" category="section-title">了解节点的Pod和永久性卷</block>
 </blocks>

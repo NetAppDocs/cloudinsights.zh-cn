@@ -11,7 +11,9 @@ keywords: event, checker, rate, sizing
 [role="lead"]
 事件速率检查器用于在安装 ONTAP SVM 数据收集器之前检查 SVM 中的 NFS/SMB 组合事件速率，以查看一个代理计算机能够监控的 SVM 数量。一个代理最多可支持50个数据收集器。
 
-要求
+
+
+== 要求
 
 * 集群 IP
 * 集群管理员用户名和密码
@@ -70,6 +72,8 @@ B + C 应小于 A ，否则 Agent 计算机将无法监控。
 换言之，可添加到单个代理计算机的数据收集器数量应遵循以下公式：
 
  Sum of all Event rate of all Data Source Collectors + Buffer Event rate of 30% < 20000 events/second
+请参见 link:concept_cs_agent_requirements.html["代理要求"] 第页、了解其他前提条件和要求。
+
 
 
 == 示例

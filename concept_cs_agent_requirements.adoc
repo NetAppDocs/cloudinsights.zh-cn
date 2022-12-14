@@ -109,6 +109,6 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 |===
 
 
-==== 相关：
+== 系统规模估算
 
 请参见 link:concept_cs_event_rate_checker.html["事件速率检查器"] 有关规模估算的信息的文档。

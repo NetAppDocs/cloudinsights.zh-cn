@@ -34,7 +34,7 @@ image:kubernetes_tile.png["Kubernetes Data Collector Tile"]
 
 * Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。
 * 当Cloud Insights 监控后端存储且Kubernetes与Docker容器运行时结合使用时、Cloud Insights 可以显示NFS和iSCSI的POD到PV到存储映射；其他运行时仅显示iSCSI。
-* 从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 ,升级 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。
+* 从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <<升级,升级>> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。
 * 如果您运行的是OpenShift 4.6或更高版本、则除了确保满足这些前提条件之外、还必须遵循下面的* OpenShift Instructions*。
 * 监控仅安装在 Linux 节点上
 +
@@ -54,9 +54,9 @@ Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查�
 |===
 * 运行ARM64架构的节点不支持NetApp Kubernetes监控操作员及其依赖项(电报、Kube-state-metrics、fluentbit等)。
 * 必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。
-* 要用于安装NetApp Kubernetes监控操作员的主机必须已配置_kubectl_、以便与目标K8s集群进行通信、并可通过Internet连接到您的Cloud Insights 环境。如果此主机需要代理才能访问Cloud Insights 、请按照中的说明进行操作 ,配置代理支持 部分。
+* 要用于安装NetApp Kubernetes监控操作员的主机必须已配置_kubectl_、以便与目标K8s集群进行通信、并可通过Internet连接到您的Cloud Insights 环境。如果此主机需要代理才能访问Cloud Insights 、请按照中的说明进行操作 <<configuring-proxy-support,配置代理支持>> 部分。
 * NetApp Kubernetes监控操作员会安装自己的Kube-state-metrics、以避免与任何其他实例发生冲突。
-* 如果您在安装期间或在运行要监控的K8s集群时使用代理、请按照中的说明进行操作 ,配置代理支持 部分。
+* 如果您在安装期间或在运行要监控的K8s集群时使用代理、请按照中的说明进行操作 <<configuring-proxy-support,配置代理支持>> 部分。
 * 您必须具有创建 Kubernetes 集群角色和角色绑定的权限。
 
 
@@ -66,11 +66,11 @@ Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查�
 
 == 请在开始之前记下这些内容
 
-如果您使用运行 ,代理、具有 ,自定义存储库或正在使用 ,OpenShift、请仔细阅读以下各节。
+如果您使用运行 <<configuring-proxy-support,代理>>、具有 <<using-a-custom-or-private-docker-repository,自定义存储库>>或正在使用 <<openshift-instructions,OpenShift>>、请仔细阅读以下各节。
 
-如果要从先前安装升级、另请阅读 ,升级 信息。
+如果要从先前安装升级、另请阅读 <<升级,升级>> 信息。
 
-如果要在安装代理之前验证安装文件，请阅读关于 ,验证 Kubernetes 校验和。
+如果要在安装代理之前验证安装文件，请阅读关于 <<verifying-kubernetes-checksums,验证 Kubernetes 校验和>>。
 
 
 
@@ -223,7 +223,7 @@ OpenShift可以实施更高的安全级别、从而可能阻止对某些Kubernet
 image:NKMO_Install_Instructions.png["基于操作员的安装"]
 
 .在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：
-. 输入唯一的集群名称和命名空间。如果您是 ,升级 在基于脚本的代理或先前的Kubernetes操作员中、使用相同的集群名称和命名空间。
+. 输入唯一的集群名称和命名空间。如果您是 <<升级,升级>> 在基于脚本的代理或先前的Kubernetes操作员中、使用相同的集群名称和命名空间。
 . 输入这些内容后，您可以复制 Agent 安装程序代码片段
 . 单击按钮将此片段复制到剪贴板。
 . 将此代码片段粘贴到 _bash_ 窗口中并执行。请注意、此代码片段具有唯一的密钥、有效期为24小时。
@@ -231,10 +231,10 @@ image:NKMO_Install_Instructions.png["基于操作员的安装"]
 
 
 
-NOTE: 直到您完成设置 ,配置代理。
+NOTE: 直到您完成设置 <<configuring-proxy-support,配置代理>>。
 
 
-NOTE: 如果您有自定义存储库、则必须按照的说明进行操作 ,使用自定义 / 私有 Docker 存储库。
+NOTE: 如果您有自定义存储库、则必须按照的说明进行操作 <<using-a-custom-or-private-docker-repository,使用自定义 / 私有 Docker 存储库>>。
 
 
 
@@ -277,7 +277,7 @@ NOTE: 如果您先前安装了基于脚本的代理、则必须升级到NetApp K
 
 +
  kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
-. ,安装 当前运算符。请务必使用上述步骤1中记下的相同集群名称。
+. <<installing-the-netapp-kubernetes-monitoring-operator,安装>> 当前运算符。请务必使用上述步骤1中记下的相同集群名称。
 
 
 
@@ -294,9 +294,9 @@ NOTE: 如果您先前安装了基于脚本的代理、则必须升级到NetApp K
  kubectl --namespace netapp-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 
 
-,卸载 当前运算符。
+<<to-remove-the-netapp-kubernetes-monitoring-operator,卸载>> 当前运算符。
 
-,安装 最新的运算符。使用相同的集群名称、并确保在设置了自定义repo.
+<<installing-the-netapp-kubernetes-monitoring-operator,安装>> 最新的运算符。使用相同的集群名称、并确保在设置了自定义repo.
 
 
 
@@ -313,7 +313,7 @@ NOTE: 如果您先前安装了基于脚本的代理、则必须升级到NetApp K
 == 正在卸载
 
 
-NOTE: 如果您运行的是先前安装的基于脚本的Kubernetes代理、则必须执行此操作 ,升级 NetApp Kubernetes监控操作员。
+NOTE: 如果您运行的是先前安装的基于脚本的Kubernetes代理、则必须执行此操作 <<升级,升级>> NetApp Kubernetes监控操作员。
 
 
 
@@ -458,12 +458,12 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 | 在 Kubernetes 上，我的 Telegraf ReplicaSet Pod 报告以下错误： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes ， PKI/etcd/server.crt ： /etc/Kubernetes ， crt/etcd/server.key ：打开 /etc/Kubernetes ， pki/etcd/server.key ： open /etc/Kubernetes ， pki/etcd/server.key ： no 此类文件或目录 | Telegraf ReplicaSet Pod 应在指定为主节点或 etcd 节点上运行。如果 ReplicaSet Pod 未在其中一个节点上运行，您将收到这些错误。检查您的主 /etcd 节点是否具有此类节点的影响。如果是，请将必要的容错添加到 Telegraf ReplicaSet ，即 Teleaf-RS 中。例如，编辑 ReplicaSet... kubectl edit RS ceaaf-rs ... 并将适当的容错添加到规范中。然后，重新启动 ReplicaSet Pod 。 
 
 
-| 我使用的是PSP/PSA环境。这是否会影响我的监控操作员？ | 如果您的Kubernetes集群运行时已设置Pod安全策略(PSP)或Pod安全准入(PSA)、则必须升级到最新的NetApp Kubernetes监控操作员。按照以下步骤升级到支持PSP/PSA的当前NKMO：1. ,卸载 先前的监控运算符：kubectl delete agent agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-roxy-role agent-metrics-reader kubectl delete clusterrolebinding agent-manager-rolebinding rolebinding agent-rolebind-rolebind-rolebind-2-admin-cluster-rolebinding.name。 ,安装 监控运算符的最新版本。 
+| 我使用的是PSP/PSA环境。这是否会影响我的监控操作员？ | 如果您的Kubernetes集群运行时已设置Pod安全策略(PSP)或Pod安全准入(PSA)、则必须升级到最新的NetApp Kubernetes监控操作员。按照以下步骤升级到支持PSP/PSA的当前NKMO：1. <<uninstalling,卸载>> 先前的监控运算符：kubectl delete agent agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-roxy-role agent-metrics-reader kubectl delete clusterrolebinding agent-manager-rolebinding rolebinding agent-rolebind-rolebind-rolebind-2-admin-cluster-rolebinding.name。 <<installing-the-netapp-kubernetes-monitoring-operator,安装>> 监控运算符的最新版本。 
 
 
 | 我在尝试部署NKMOO时遇到问题、并且正在使用PSP/PSA。 | 1.使用以下命令编辑代理：kubectl -n <name-space> edit agent 2.将"securtion-policy-enabled"标记为"false"。此操作将禁用Pod安全策略和Pod安全准入、并允许NKMO.使用以下命令进行确认：kubectl get PSP (应显示Pod Security Policy Removed) kubectl get all -n <namespace> grep -i PSP (应显示未找到任何内容) 
 
 
-| 出现"ImagePullBackoff"错误 | 如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 ,阅读更多内容 关于为自定义/私有repo. 
+| 出现"ImagePullBackoff"错误 | 如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 <<using-a-custom-or-private-docker-repository,阅读更多内容>> 关于为自定义/私有repo. 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
