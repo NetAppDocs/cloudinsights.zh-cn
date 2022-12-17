@@ -12,6 +12,61 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 
 
+== 2022年12月
+
+
+
+=== 在Cloud Insights 试用期间了解勒索软件保护和其他安全功能
+
+从今天开始、注册新的Cloud Insights 试用版可让您探索各种安全功能、例如勒索软件检测和自动阻止用户响应策略。如果您尚未注册试用版、请立即注册！
+
+
+
+=== Kubernetes工作负载具有自己的登录页面
+
+工作负载是Kubernetes环境的关键组成部分、因此Cloud Insights 现在可为这些工作负载提供登录页面。在此、您可以查看、探索和解决影响Kubernetes工作负载的问题。
+
+image:Kubernetes_Workload_LP.png["Kubernetes工作负载登录页面示例"]
+
+
+
+=== 检查校验和
+
+您要求我们在安装适用于Windows、Linux和MacOS的代理期间为您提供校验和值、我们认为这是一个很好的想法。因此、它们是：
+
+image:Agent_Checksum_Instructions.png["安装期间显示的代理校验和值"]
+
+
+
+=== 日志警报改进
+
+
+
+==== 分组依据
+
+现在、在创建或编辑日志监控器时、您可以设置"分组依据"属性、以使警报更有针对性。在您的监控器定义中、查找"filter"设置下的"Group by"属性。
+
+image:Monitor_Group_By_Example.png["在监控器定义中按示例分组"]
+
+此更改通过规范化监控器定义的"分组依据"方面、将指标监控器和日志监控器置于功能奇偶校验状态。此奇偶校验允许客户克隆/复制*所有*系统定义的默认监控器、以供进一步自定义。
+
+
+
+==== 复制
+
+现在、您可以克隆(复制)更改日志、Kubernetes日志和Data Collector日志监控器。这样将创建一个新的自定义日志监控器、您可以根据特定定义进行修改。
+
+image:Log_Monitor_Duplicate.png["复制日志监控器"]
+
+
+
+=== 11个新的默认ONTAP 监控器、涵盖SnapMirror for Business Continuity
+
+我们为SnapMirror for Business Continuity (SMBC)添加了近十几个新的系统监控器、用于在SMBC证书和ONTAP 调解器发生更改时发出警报。
+
+'''
+
+
 == 2022年11月
 
 

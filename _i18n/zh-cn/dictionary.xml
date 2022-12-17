@@ -8897,7 +8897,6 @@
   <block id="5068217c7c23b1eac12eac1be6831460" category="paragraph">为每个字段输入适当的信息、完成后单击"保存"。</block>
   <block id="b65784e2633601efca2f9bfad2d590c1" category="paragraph">您也可以单击"Test Webhook"按钮来测试连接。请注意、此操作将根据选定方法将"消息正文"(不含替换项)发送到定义的URL。</block>
   <block id="4ca1433d0af40616a4796463cd229d73" category="paragraph">请注意、在本节中、单击"Test Webhook"按钮时会执行_not_替换；该按钮会发送一个有效负载、其中显示了_%_替换项、但不会将其替换为数据。</block>
-  <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注意：如果您安装了最新的NetApp Kubernetes监控操作员并使用可续订的API访问令牌、则过期的令牌将自动替换为新的/刷新的API访问令牌。无需执行下面列出的手动步骤。</block>
   <block id="d894fe24a5654169420a98540a56b302" category="list-text">编辑NetApp Kubernetes监控操作员。</block>
   <block id="a27d1e518922e9050e6e54ae8c965164" category="list-text">修改_spec.output-sink.api-key_值、将旧API令牌替换为新API令牌。</block>
   <block id="0a8446aea76ea046e4a350b7fcb33809" category="paragraph">注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。Cloud Insights 的所有功能 <block ref="0238d81be08586a15b3db75855b659b7" category="inline-xref-macro-rx"></block> 在此试用期间可用。</block>
@@ -9136,4 +9135,109 @@
   <block id="6baf1e00d599761ac0cdbee221c4569c" category="section-title">执行Snapshot_操作</block>
   <block id="46a1d0dbde96d466dadd916b9b7a7d65" category="section-title">系统规模估算</block>
   <block id="e9a8035e121122e74ece696f921ab7d6" category="section-title">了解节点的Pod和永久性卷</block>
+  <block id="f5616c23f020b3f984cbcd5f9a053ecc" category="section-title">2022年12月</block>
+  <block id="7750dc4a80b8e64c09792175ba7ab620" category="section-title">在Cloud Insights 试用期间了解勒索软件保护和其他安全功能</block>
+  <block id="d70c47c1302c357989571cd8038a7e1f" category="paragraph">从今天开始、注册新的Cloud Insights 试用版可让您探索各种安全功能、例如勒索软件检测和自动阻止用户响应策略。如果您尚未注册试用版、请立即注册！</block>
+  <block id="defdf2522119d2b648997f6b2aaf2248" category="section-title">Kubernetes工作负载具有自己的登录页面</block>
+  <block id="c25bdc959ecb8d2fddde4b75f9e6d3fa" category="paragraph">工作负载是Kubernetes环境的关键组成部分、因此Cloud Insights 现在可为这些工作负载提供登录页面。在此、您可以查看、探索和解决影响Kubernetes工作负载的问题。</block>
+  <block id="2eb1ff7eeb74bcccfbd52597702cefd2" category="inline-image-macro">Kubernetes工作负载登录页面示例</block>
+  <block id="b5983a6439977ea97f606ef9b22473da" category="paragraph"><block ref="b5983a6439977ea97f606ef9b22473da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="848145ac45f138034b0f73e33d01087d" category="section-title">检查校验和</block>
+  <block id="07d37618bb7cd1ed696f2a65da638c56" category="paragraph">您要求我们在安装适用于Windows、Linux和MacOS的代理期间为您提供校验和值、我们认为这是一个很好的想法。因此、它们是：</block>
+  <block id="b205fe7e473302e0bfbfc761b5ff494f" category="inline-image-macro">安装期间显示的代理校验和值</block>
+  <block id="f9e15fb7ce69e61fac90a652cc378b31" category="paragraph"><block ref="f9e15fb7ce69e61fac90a652cc378b31" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="86f7f75f0c9c85cf5db67a84570aecd1" category="section-title">日志警报改进</block>
+  <block id="0abdc68d3e86586f3421ff4c2dcc3514" category="section-title">分组依据</block>
+  <block id="671ac16ce94bc40aba1b6bd768b30284" category="paragraph">现在、在创建或编辑日志监控器时、您可以设置"分组依据"属性、以使警报更有针对性。在您的监控器定义中、查找"filter"设置下的"Group by"属性。</block>
+  <block id="9775102a6e845dd56e162f55795edf9a" category="inline-image-macro">在监控器定义中按示例分组</block>
+  <block id="8360ed7b9b1f3424add41edf5164874f" category="paragraph"><block ref="8360ed7b9b1f3424add41edf5164874f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b61804e2c21a1de91179c27cc1ce62e8" category="paragraph">此更改通过规范化监控器定义的"分组依据"方面、将指标监控器和日志监控器置于功能奇偶校验状态。此奇偶校验允许客户克隆/复制*所有*系统定义的默认监控器、以供进一步自定义。</block>
+  <block id="7cf6bc0403bb3b600dd91bdabf4d0792" category="section-title">复制</block>
+  <block id="cce75f1693c82e558e45e9766c20916d" category="paragraph">现在、您可以克隆(复制)更改日志、Kubernetes日志和Data Collector日志监控器。这样将创建一个新的自定义日志监控器、您可以根据特定定义进行修改。</block>
+  <block id="68bcc67f734c4d92ccfcbf87c7520280" category="inline-image-macro">复制日志监控器</block>
+  <block id="3ced589e562d46b29e694b31e9c7fca0" category="paragraph"><block ref="3ced589e562d46b29e694b31e9c7fca0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="96c34d1f7d481501b76770e1cf0aad24" category="section-title">11个新的默认ONTAP 监控器、涵盖SnapMirror for Business Continuity</block>
+  <block id="58884a5363d19bcb025a7a0fd15d3801" category="paragraph">我们为SnapMirror for Business Continuity (SMBC)添加了近十几个新的系统监控器、用于在SMBC证书和ONTAP 调解器发生更改时发出警报。</block>
+  <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">调整操作员</block>
+  <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">您可以通过微调自定义资源的某些变量来调整NetApp Kubernetes监控操作员以获得最佳性能。有关可设置的变量、请参见下表。</block>
+  <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">与资源相关的变量</block>
+  <block id="48ae4cc2516c0c1c61d11b3c15b76e31" category="paragraph">请参见<block ref="19549dd2acef25ebc56164759e0da3e4" category="inline-link-rx"></block> 有关Kubernetes资源的信息。</block>
+  <block id="68753d36ec0c4d7768b20993268d68d1" category="cell">占位符</block>
+  <block id="ea53661974db2e8f508ebaa82ccd2186" category="cell">插件名称</block>
+  <block id="2bcec99e49575ad7495a1f67c1de4959" category="cell">包含在默认CR中</block>
+  <block id="b4706783c74b583b849dec44244e0769" category="cell">ds_cpu_limits_placeholder</block>
+  <block id="b33aed8f3134996703dc39f9a7c95783" category="cell">代理</block>
+  <block id="a6105c0a611b41b08f1209506350279e" category="cell">是的。</block>
+  <block id="0a57cc70e7770be281f9f3ce922b12d1" category="cell">Kubernetes的电报CPU限制</block>
+  <block id="1a787d14f3feb6b75ce78f6ba8c6a6ad" category="cell">DS_MEM_limits_placeholder</block>
+  <block id="9a9cf23499b5ffe058c266e2557594ed" category="cell">有关电报的Kubernetes Mem限制</block>
+  <block id="6787619d810a62301cfe3986961a1d04" category="cell">ds_cpu_request_placeholder</block>
+  <block id="dc0f3fe777e76630e42220f636fc7d1b" category="cell">Kubernetes对电报的CPU请求</block>
+  <block id="a136b52a334f06bfed5d34605efc0c81" category="cell">DS_MEM_request_placeholder</block>
+  <block id="01d0f0ddea62ac91a518098feb187a76" category="cell">Kubernetes对电报的内存请求</block>
+  <block id="47d9f5d0f8345e77baa49d703d1e9d5c" category="cell">rs_cpu_limits_placeholder</block>
+  <block id="b2099247c65bb590909309709da41854" category="cell">Kubernetes的电报RS CPU限制。</block>
+  <block id="908e0027b0ea0b83ac192fd20985b34d" category="cell">RS_MEM_limits_placeholder</block>
+  <block id="12b80e3c2015d911b0eab1e322d926f7" category="cell">适用于电报RS的Kubernetes Mem限制</block>
+  <block id="d4f7b3571528f35166f994786bee2cb2" category="cell">rs_cpu_request_placeholder</block>
+  <block id="e03accbf3b5bcddce610e5ff05d09a29" category="cell">Kubernetes针对电报RS的CPU请求</block>
+  <block id="adc9a0a4cdda5bbbe46704a9751971a7" category="cell">rs_mem_request_placeholder</block>
+  <block id="79e16b40b1419f42c36ef18f76783ff9" category="cell">Kubernetes对电报RS的内存请求</block>
+  <block id="0d52b63b9d6858d70f27067dd2a1b91a" category="cell">KSM_CPU_request_placeholder：</block>
+  <block id="2e242b44ce0ebe39f93a9d810adfadca" category="cell">KSM</block>
+  <block id="e94acefe296bba41a2d295c8684c0b14" category="cell">Kubernetes CPU请求Kube-state-metrics Deploy</block>
+  <block id="4943c86156886c7cfbb190fe01c59ca7" category="cell">KSM_MEM_request_placeholder：</block>
+  <block id="0b5850489d8ea1e260d1203468d09e7c" category="section-title">与Telegraf相关的变量</block>
+  <block id="eded4b0b40be66bb81af506bf533ea6d" category="paragraph">请参见<block ref="a57af3030212cc232882badf869b6fb2" category="inline-link-rx"></block> 有关电报变量的信息。</block>
+  <block id="17e862e0d627631d3770ee2cc3255858" category="cell">collection_interval_placeholder</block>
+  <block id="7fa3b767c460b54a2be4d49030b349c7" category="cell">否</block>
+  <block id="38f25ed2ee1b45d388cc5af584c70545" category="cell">(设置电报间隔、类型间隔)：在所有插件的输入之间等待的默认时间。有效时间单位为ns、us (或 µs)、ms、s、m、高</block>
+  <block id="0c5cc8876422312d89004cb1f600b851" category="cell">round_interval_placeholder</block>
+  <block id="1f2d0c385cfe5c1a729bb9e7f8f13713" category="cell">(设置craeaf round_interval、类型为布尔值)按间隔倍数收集指标</block>
+  <block id="f5e4f1bcff9a2d39aeb108c652c23205" category="cell">metric_batch_size_placeholder</block>
+  <block id="8bcb41818f3497bb61361ced4a104aa8" category="cell">(设置crainf metric_batch_size、type int)一个输出电报将在一个批处理中写入的最大记录数</block>
+  <block id="06b90ee01cbb3baeb861030079f77ecf" category="cell">metric_buffer_limit_placeholder</block>
+  <block id="ecb435ec5f91c74ad6ca1fdf7414a729" category="cell">(设置crafff metric_buffer_limit、键入int)输出电报将缓存的最大记录数、以等待成功写入</block>
+  <block id="1b61ee31d3240912a6cafe1ae9258a94" category="cell">COLLECTION_抖动 占位符</block>
+  <block id="1d8b9fc83e1b2df342c83db4875a8e55" category="cell">(设置craf collection_j抖动、类型间隔)：每个插件将在计划的收集时间与该时间+ collection_j抖动 之间随机等待一段时间、然后再收集输入</block>
+  <block id="650fddf6ef6836da5a5aa99d82b646a4" category="cell">precy_placeholder</block>
+  <block id="e80918a0f864d9a4edb4b4e130c25b8a" category="cell">(设置电报精度、类型间隔)：收集的指标将舍入为指定的精度、如果设置为"0"、则精度将按间隔指定的单位进行设置</block>
+  <block id="a0d693a0a6903c7999674981d46e18e3" category="cell">flush_interval_placeholder</block>
+  <block id="9a0c7ed26262fd92d386749f837f4417" category="cell">(设置crait flush_interval、type interval)：在两次写入输出之间的默认时间。</block>
+  <block id="edbddddcb9b46587aa5372e83e30128b" category="cell">flush_jit_placeholder</block>
+  <block id="80e03f34f54617c08347cbb1c11f1f16" category="cell">(设置craf flush_jits抖动、类型间隔)：在写入输出之前、每个输出将随机等待计划写入时间与该时间+ flush_jits抖动 之间的一段时间</block>
+  <block id="82ae7df2222778ee2748567434e1d911" category="section-title">其他变量</block>
+  <block id="327fbef93ac997add024577e1fdbe932" category="cell">cURL CMD_placeholder</block>
+  <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">用于下载各种资源的cURL命令。例如、"ccur"或"cURL -k"</block>
+  <block id="eab883150545736105e8c88087257995" category="section-title">SnapMirror for Business Continuity (SMBC)调解器日志监控器</block>
+  <block id="e0828fd72232d137dafad759271fe0fb" category="cell">已添加ONTAP 调解器</block>
+  <block id="46f05e41dafc7ca3fdb415dafaeadb9f" category="cell">在集群上成功添加ONTAP 调解器时、会显示此消息。</block>
+  <block id="8b6077b5a63dbcdbc2395f7346b42cd9" category="cell">无法访问ONTAP 调解器</block>
+  <block id="84abdf125e29886920f1abe486364d24" category="cell">如果调整了ONTAP 调解器的用途或调解器服务器上不再安装调解器软件包、则会显示此消息。因此、无法执行SnapMirror故障转移。</block>
+  <block id="bd11ea16762377ea55ab6e9fe4f71842" category="cell">使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。</block>
+  <block id="b4c68af730c085e0d63311da606c9201" category="cell">已删除ONTAP 调解器</block>
+  <block id="c2d007271506f8733c7a26e8598bb0ef" category="cell">从集群中成功删除ONTAP 调解器时、会显示此消息。</block>
+  <block id="36d508341b861f30a27163272e8baf15" category="cell">无法访问ONTAP 调解器</block>
+  <block id="a4f969049ce5cae62984e31f259029fb" category="cell">如果集群上无法访问ONTAP 调解器、则会显示此消息。因此、无法执行SnapMirror故障转移。</block>
+  <block id="828b0f1ea47371036223858e1309941d" category="cell">使用"network ping"和"network traceroute "命令检查与ONTAP 调解器的网络连接。如果问题描述 仍然存在、请使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。</block>
+  <block id="28892779eb4e805dd082d40c5420bc6a" category="cell">SMBC CA证书已过期</block>
+  <block id="62d5adf11f3682aff0384608f321b252" category="cell">如果ONTAP 调解器证书颁发机构(CA)证书已过期、则会显示此消息。因此、无法再与ONTAP 调解器进行任何通信。</block>
+  <block id="d85d122b487f541999c41486061b2bc5" category="cell">使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。更新ONTAP 调解器服务器上的新CA证书。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。</block>
+  <block id="d0c1dd7578f55d35be079347703d22d1" category="cell">SMBC CA证书即将过期</block>
+  <block id="f0085f65793f343e330e412a00fd8cbe" category="cell">如果ONTAP 调解器证书颁发机构(CA)证书将在未来30天内过期、则会显示此消息。</block>
+  <block id="3f6ab8f648ce6e6f42aac3de08286811" category="cell">在此证书过期之前、请使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。更新ONTAP 调解器服务器上的新CA证书。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。</block>
+  <block id="86e9db31dcdf840ed902a8a2bb588cd5" category="cell">SMBC客户端证书已过期</block>
+  <block id="89b2feff457c827be309fc8e743937a6" category="cell">当ONTAP 调解器客户端证书已过期时、会显示此消息。因此、无法再与ONTAP 调解器进行任何通信。</block>
+  <block id="cf2ea69073d2f370d0f8a7a207031e78" category="cell">SMBC客户端证书即将过期</block>
+  <block id="dfb807a8d5af3d164bb1d9b45833d72c" category="cell">如果ONTAP 调解器客户端证书将在未来30天内过期、则会显示此消息。</block>
+  <block id="7ec44a7636f8a929271fed93b096701f" category="cell">在此证书过期之前、请使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。</block>
+  <block id="b8910b8dc5e2d34819de910f6393b7be" category="cell">SMBC关系不同步注意：UM没有此关系</block>
+  <block id="65314e3eb0f76bd7621e99fd2dddd5e0" category="cell">如果SnapMirror for Business Continuity (SMBC)关系的状态从"in-sync"更改为"out-of-sync"、则会显示此消息。由于此RPO=0、数据保护将中断。</block>
+  <block id="1b27ccdce1d73f8946f33cad5e33340d" category="cell">检查源卷和目标卷之间的网络连接。在目标上使用"snapmirror show"命令、在源上使用"snapmirror list-destinations"命令、以监控SMBC关系状态。自动重新同步将尝试将关系恢复为"同步"状态。如果重新同步失败、请验证集群中的所有节点是否都处于仲裁状态且运行状况良好。</block>
+  <block id="c1310da7f9951d1d26f65e60cc12ccef" category="cell">SMBC服务器证书已过期</block>
+  <block id="27612c17e71a5e438bf222d52cb28459" category="cell">如果ONTAP 调解器服务器证书已过期、则会显示此消息。因此、无法再与ONTAP 调解器进行任何通信。</block>
+  <block id="67f4d6ec5d1a64b75674d9efeb7eeff7" category="cell">使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。更新ONTAP 调解器服务器上的新服务器证书。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。</block>
+  <block id="66a60fbd4168a1ac76bf8fa7d2650519" category="cell">SMBC服务器证书即将过期</block>
+  <block id="13d0e81b911774edf84b28bd0b95b58f" category="cell">如果ONTAP 调解器服务器证书将在未来30天内过期、则会显示此消息。</block>
+  <block id="d6df4b6af26c85fbe2505c03c739c084" category="cell">在此证书过期之前、请使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。更新ONTAP 调解器服务器上的新服务器证书。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。</block>
 </blocks>

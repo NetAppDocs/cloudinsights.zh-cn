@@ -434,6 +434,100 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
  sudo -E -H ./<installation_script_name> --install
 
 
+== 调整操作员
+
+您可以通过微调自定义资源的某些变量来调整NetApp Kubernetes监控操作员以获得最佳性能。有关可设置的变量、请参见下表。
+
+
+
+=== 与资源相关的变量
+
+请参见 https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/[] 有关Kubernetes资源的信息。
+
+|===
+
+
+| 占位符 | 插件名称 | 包含在默认CR中 | 说明 
+
+
+| ds_cpu_limits_placeholder | 代理 | 是的。 | Kubernetes的电报CPU限制 
+
+
+| DS_MEM_limits_placeholder | 代理 | 是的。 | 有关电报的Kubernetes Mem限制 
+
+
+| ds_cpu_request_placeholder | 代理 | 是的。 | Kubernetes对电报的CPU请求 
+
+
+| DS_MEM_request_placeholder | 代理 | 是的。 | Kubernetes对电报的内存请求 
+
+
+| rs_cpu_limits_placeholder | 代理 | 是的。 | Kubernetes的电报RS CPU限制。 
+
+
+| RS_MEM_limits_placeholder | 代理 | 是的。 | 适用于电报RS的Kubernetes Mem限制 
+
+
+| rs_cpu_request_placeholder | 代理 | 是的。 | Kubernetes针对电报RS的CPU请求 
+
+
+| rs_mem_request_placeholder | 代理 | 是的。 | Kubernetes对电报RS的内存请求 
+
+
+| KSM_CPU_request_placeholder： | KSM | 是的。 | Kubernetes CPU请求Kube-state-metrics Deploy 
+
+
+| KSM_MEM_request_placeholder： | KSM | 是的。 | Kubernetes CPU请求Kube-state-metrics Deploy 
+|===
+
+
+=== 与Telegraf相关的变量
+
+请参见 https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent[] 有关电报变量的信息。
+
+|===
+
+
+| 占位符 | 插件名称 | 包含在默认CR中 | 说明 
+
+
+| collection_interval_placeholder | 代理 | 否 | (设置电报间隔、类型间隔)：在所有插件的输入之间等待的默认时间。有效时间单位为ns、us (或 µs)、ms、s、m、高 
+
+
+| round_interval_placeholder | 代理 | 否 | (设置craeaf round_interval、类型为布尔值)按间隔倍数收集指标 
+
+
+| metric_batch_size_placeholder | 代理 | 否 | (设置crainf metric_batch_size、type int)一个输出电报将在一个批处理中写入的最大记录数 
+
+
+| metric_buffer_limit_placeholder | 代理 | 否 | (设置crafff metric_buffer_limit、键入int)输出电报将缓存的最大记录数、以等待成功写入 
+
+
+| COLLECTION_抖动 占位符 | 代理 | 否 | (设置craf collection_j抖动、类型间隔)：每个插件将在计划的收集时间与该时间+ collection_j抖动 之间随机等待一段时间、然后再收集输入 
+
+
+| precy_placeholder | 代理 | 否 | (设置电报精度、类型间隔)：收集的指标将舍入为指定的精度、如果设置为"0"、则精度将按间隔指定的单位进行设置 
+
+
+| flush_interval_placeholder | 代理 | 否 | (设置crait flush_interval、type interval)：在两次写入输出之间的默认时间。 
+
+
+| flush_jit_placeholder | 代理 | 否 | (设置craf flush_jits抖动、类型间隔)：在写入输出之前、每个输出将随机等待计划写入时间与该时间+ flush_jits抖动 之间的一段时间 
+|===
+
+
+=== 其他变量
+
+|===
+
+
+| 占位符 | 插件名称 | 包含在默认CR中 | 说明 
+
+
+| cURL CMD_placeholder | 代理 | 是的。 | 用于下载各种资源的cURL命令。例如、"ccur"或"cURL -k" 
+|===
+
+
 == 故障排除
 
 如果在设置NetApp Kubernetes监控操作员时遇到问题、请尝试执行以下操作：

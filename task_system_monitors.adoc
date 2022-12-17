@@ -617,6 +617,50 @@ toc::[]
 
 
 
+=== SnapMirror for Business Continuity (SMBC)调解器日志监控器
+
+|===
+
+
+| 监控器名称 | severity | 监控问题描述 | 更正操作 
+
+
+| 已添加ONTAP 调解器 | 信息 | 在集群上成功添加ONTAP 调解器时、会显示此消息。 | 无 
+
+
+| 无法访问ONTAP 调解器 | 严重 | 如果调整了ONTAP 调解器的用途或调解器服务器上不再安装调解器软件包、则会显示此消息。因此、无法执行SnapMirror故障转移。 | 使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。 
+
+
+| 已删除ONTAP 调解器 | 信息 | 从集群中成功删除ONTAP 调解器时、会显示此消息。 | 无 
+
+
+| 无法访问ONTAP 调解器 | 警告 | 如果集群上无法访问ONTAP 调解器、则会显示此消息。因此、无法执行SnapMirror故障转移。 | 使用"network ping"和"network traceroute "命令检查与ONTAP 调解器的网络连接。如果问题描述 仍然存在、请使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。 
+
+
+| SMBC CA证书已过期 | 严重 | 如果ONTAP 调解器证书颁发机构(CA)证书已过期、则会显示此消息。因此、无法再与ONTAP 调解器进行任何通信。 | 使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。更新ONTAP 调解器服务器上的新CA证书。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。 
+
+
+| SMBC CA证书即将过期 | 警告 | 如果ONTAP 调解器证书颁发机构(CA)证书将在未来30天内过期、则会显示此消息。 | 在此证书过期之前、请使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。更新ONTAP 调解器服务器上的新CA证书。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。 
+
+
+| SMBC客户端证书已过期 | 严重 | 当ONTAP 调解器客户端证书已过期时、会显示此消息。因此、无法再与ONTAP 调解器进行任何通信。 | 使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。 
+
+
+| SMBC客户端证书即将过期 | 警告 | 如果ONTAP 调解器客户端证书将在未来30天内过期、则会显示此消息。 | 在此证书过期之前、请使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。 
+
+
+| SMBC关系不同步注意：UM没有此关系 | 严重 | 如果SnapMirror for Business Continuity (SMBC)关系的状态从"in-sync"更改为"out-of-sync"、则会显示此消息。由于此RPO=0、数据保护将中断。 | 检查源卷和目标卷之间的网络连接。在目标上使用"snapmirror show"命令、在源上使用"snapmirror list-destinations"命令、以监控SMBC关系状态。自动重新同步将尝试将关系恢复为"同步"状态。如果重新同步失败、请验证集群中的所有节点是否都处于仲裁状态且运行状况良好。 
+
+
+| SMBC服务器证书已过期 | 严重 | 如果ONTAP 调解器服务器证书已过期、则会显示此消息。因此、无法再与ONTAP 调解器进行任何通信。 | 使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。更新ONTAP 调解器服务器上的新服务器证书。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。 
+
+
+| SMBC服务器证书即将过期 | 警告 | 如果ONTAP 调解器服务器证书将在未来30天内过期、则会显示此消息。 | 在此证书过期之前、请使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。更新ONTAP 调解器服务器上的新服务器证书。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。 
+|===
+<<top,返回顶部>>
+
+
+
 == 更多信息
 
 * link:task_view_and_manage_alerts.html["查看和忽略警报"]
