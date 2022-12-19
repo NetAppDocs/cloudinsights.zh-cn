@@ -62,7 +62,7 @@ image:Log_Monitor_Duplicate.png["复制日志监控器"]
 
 === 11个新的默认ONTAP 监控器、涵盖SnapMirror for Business Continuity
 
-我们为SnapMirror for Business Continuity (SMBC)添加了近十几个新的系统监控器、用于在SMBC证书和ONTAP 调解器发生更改时发出警报。
+我们增加了近十几个新功能 link:task_system_monitors.html#snapmirror-for-business-continuity-smbc-mediator-log-monitors["系统监控器"] 对于SnapMirror for Business Continuity (SMBC)、此功能会在SMBC证书和ONTAP 调解器发生更改时发出警报。
 
 '''
 

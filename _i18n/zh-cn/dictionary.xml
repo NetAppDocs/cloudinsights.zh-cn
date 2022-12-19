@@ -9157,7 +9157,6 @@
   <block id="68bcc67f734c4d92ccfcbf87c7520280" category="inline-image-macro">复制日志监控器</block>
   <block id="3ced589e562d46b29e694b31e9c7fca0" category="paragraph"><block ref="3ced589e562d46b29e694b31e9c7fca0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="96c34d1f7d481501b76770e1cf0aad24" category="section-title">11个新的默认ONTAP 监控器、涵盖SnapMirror for Business Continuity</block>
-  <block id="58884a5363d19bcb025a7a0fd15d3801" category="paragraph">我们为SnapMirror for Business Continuity (SMBC)添加了近十几个新的系统监控器、用于在SMBC证书和ONTAP 调解器发生更改时发出警报。</block>
   <block id="951faa2232d4e162c12ecfe8efc935f7" category="section-title">调整操作员</block>
   <block id="a1b1659beda08b73f97de0ea7bc13015" category="paragraph">您可以通过微调自定义资源的某些变量来调整NetApp Kubernetes监控操作员以获得最佳性能。有关可设置的变量、请参见下表。</block>
   <block id="96048bda0887b5a0f48d8c883520b7e4" category="section-title">与资源相关的变量</block>
@@ -9240,4 +9239,6 @@
   <block id="66a60fbd4168a1ac76bf8fa7d2650519" category="cell">SMBC服务器证书即将过期</block>
   <block id="13d0e81b911774edf84b28bd0b95b58f" category="cell">如果ONTAP 调解器服务器证书将在未来30天内过期、则会显示此消息。</block>
   <block id="d6df4b6af26c85fbe2505c03c739c084" category="cell">在此证书过期之前、请使用"snapmirror mediator remove"命令删除当前ONTAP 调解器的配置。更新ONTAP 调解器服务器上的新服务器证书。使用"snapmirror mediator add"命令重新配置对ONTAP 调解器的访问。</block>
+  <block id="0800f817875b07895ac4004bbc1c7e5b" category="inline-link-macro">系统监控器</block>
+  <block id="e85f7d6ee39ea454f691893ec01b6a2e" category="paragraph">我们增加了近十几个新功能 <block ref="0524dcf44332373ed9afa3dd2bb38b12" category="inline-link-macro-rx"></block> 对于SnapMirror for Business Continuity (SMBC)、此功能会在SMBC证书和ONTAP 调解器发生更改时发出警报。</block>
 </blocks>
