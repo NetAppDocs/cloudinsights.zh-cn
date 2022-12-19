@@ -7071,7 +7071,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">Cloud Insights 注意事项</block>
-  <block id="5b6169d0d5d664ce4f07f6328cd547c6" category="list-text"><block ref="5b6169d0d5d664ce4f07f6328cd547c6" category="inline-link-macro-rx"></block></block>
   <block id="042f2a856726ac957ea57dbbe84766ca" category="section-title">查看代理 URL</block>
   <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">您可以通过以下方式查看代理端点 URL ：在入职期间选择数据收集器时单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接。此时将显示如下表。</block>
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">代理端点表</block>
@@ -9244,4 +9243,7 @@
   <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">以下是具有适当cisys权限的示例文件。</block>
   <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">我看到数据收集错误并显示消息："unknown code"</block>
   <block id="dc58289d0fee8bd8c729121c6c769072" category="cell">如果未在Solutions Enabler服务器的守护进程配置文件中声明权限、您可能会看到此消息(请参见 <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> )假定您的SE客户端版本与您的SE服务器版本匹配。</block>
+  <block id="7df6d4e2df67f79f8df5aab759ba8d32" category="inline-link-macro">Cloud Secure 注意事项</block>
+  <block id="71bafd8c49729a3f6053d054365d3754" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
+<block ref="4a03dbf5caf94bf047e98fd16e83ff34" category="inline-link-macro-rx"></block></block>
 </blocks>

@@ -50,5 +50,5 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。
 
-* link:media/Notice_Cloud_Insights-2021.05.18.pdf["Cloud Insights 注意事项"]
-
+link:media/Notice_Cloud_Insights-2022-12-14.pdf["Cloud Insights 注意事项"]
+link:media/Notice_Cloud_Secure-2022-12-14.pdf["Cloud Secure 注意事项"]
