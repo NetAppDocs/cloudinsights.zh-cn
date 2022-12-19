@@ -25,6 +25,23 @@ Cloud Insights 可通过将 Solutions Enabler SYMCLI 命令与环境中的现有
 * SE 软件的只读用户名和密码
 * 适用于 VMAX 的 Unisphere 应用程序必须正在运行并收集由 SMI-S Provider 安装管理的 EMC VMAX 和 PowerMax sstorage 阵列的统计信息
 * 性能访问验证：在采集单元上的Web浏览器中、转至：//SMI-S主机名或IP、其中<SMI-S Hostname or IP> ：5989/ecomconfig_是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。
+* 必须在Solutions Enabler服务器的守护进程配置文件中声明权限、通常位于：_/var/symapi/config/daem_users_
++
+以下是具有适当cisys权限的示例文件。
+
++
+....
+root@cernciaukc101:/root
+14:11:25 # tail /var/symapi/config/daemon_users
+###
+###     Refer to the storrdfd(3) man page for additional details.
+###
+###     As noted above, only authorized users can perform stordaemon control
+###     operations (e.g., shutdown).
+################################################################################
+# smith         storrdfd
+cisys storapid <all>
+....
 
 
 
@@ -123,10 +140,6 @@ Cloud Insights 从 EMC VMAX/PowerMax 数据源采集以下清单信息。对于�
 
 如果此数据收集器出现问题，请尝试执行以下操作：
 
-
-
-=== 清单
-
 [cols="2*"]
 |===
 | 问题： | 请尝试以下操作： 
@@ -154,5 +167,8 @@ Cloud Insights 从 EMC VMAX/PowerMax 数据源采集以下清单信息。对于�
 
 
 | 错误：•使用 Solutions Enabler 7.x 从 Solutions Enabler 服务器 8.x 收集数据时， "symcfg list -tdev" 命令行界面命令可能会返回不正确的数据•使用 Solutions Enabler 8.1.0 或更早版本从 Solutions Enabler 服务器 8.3 或更高版本收集数据时， "symcfg list -SRP-CLI 命令可能会返回不正确的数据。 | 请确保您使用的是相同的 Solutions Enabler 主要版本 
+
+
+| 我看到数据收集错误并显示消息："unknown code" | 如果未在Solutions Enabler服务器的守护进程配置文件中声明权限、您可能会看到此消息(请参见 <<要求,要求>> )假定您的SE客户端版本与您的SE服务器版本匹配。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
