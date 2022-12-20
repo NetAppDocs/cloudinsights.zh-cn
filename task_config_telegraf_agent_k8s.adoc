@@ -438,6 +438,22 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 您可以通过微调自定义资源的某些变量来调整NetApp Kubernetes监控操作员以获得最佳性能。有关可设置的变量、请参见下表。
 
+要修改这些值、请使用以下命令编辑代理CR (将<namespace> 替换为命名空间)：
+
+ kubectl edit agent agent-monitoring-netapp -n <namespace>
+CR规范采用以下格式：
+
+[listing]
+----
+ - name: <plugin-name>
+   ...
+   substitutions:
+   - key: <variable-name>
+     value: <desired-value>
+     ...
+----
+标记为"included in default CR"的项将已存在于代理CR中、并可在其相应插件下找到。必须按照包含的默认替换项提供的示例手动添加标记为"no"的项。
+
 
 
 === 与资源相关的变量
@@ -447,7 +463,7 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 |===
 
 
-| 占位符 | 插件名称 | 包含在默认CR中 | 说明 
+| 变量名称 | 插件名称 | 包含在默认CR中 | 说明 
 
 
 | ds_cpu_limits_placeholder | 代理 | 是的。 | Kubernetes的电报CPU限制 

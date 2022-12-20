@@ -9257,4 +9257,8 @@
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">如果要使用ONTAP 9.1.1版中的服务策略连接到数据源收集器、则需要_data-fpolicy-client_服务以及数据服务_data-nfs_和/或_data-cifs_。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">在9.1.1之前的ONTAP 版本中、不需要设置_data-fpolicy-client_。</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注意：如果您安装了最新的NetApp Kubernetes监控操作员并使用可续订的API访问令牌、则过期的令牌将自动替换为新的/刷新的API访问令牌。无需执行下面列出的手动步骤。</block>
+  <block id="af86c3e377ed087766345c6ec320cf2f" category="paragraph">要修改这些值、请使用以下命令编辑代理CR (将&lt;namespace&gt; 替换为命名空间)：</block>
+  <block id="6800e2e34dd968ad7e050c54fdac00b9" category="paragraph">CR规范采用以下格式：</block>
+  <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">标记为"included in default CR"的项将已存在于代理CR中、并可在其相应插件下找到。必须按照包含的默认替换项提供的示例手动添加标记为"no"的项。</block>
+  <block id="3f60b096843929b02e1a070f57e27584" category="cell">变量名称</block>
 </blocks>
