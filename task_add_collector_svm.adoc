@@ -25,7 +25,7 @@ Cloud Secure 使用数据收集器从设备收集文件和用户访问数据。
 
 
 * 仅支持数据类型 SVM 。不支持具有无限卷的 SVM 。
-* SVM 有多个子类型。其中，仅支持 _default_and _sync_source_。
+* SVM 有多个子类型。其中、仅支持_default__sync_source__sync_destination_.
 * 代理 link:task_cs_add_agent.html["必须进行配置"] 然后才能配置数据收集器。
 * 请确保已正确配置 User Directory Connector ，否则事件将在 " 活动取证 " 页面中显示编码的用户名，而不是实际用户名（存储在 Active Directory 中）。
 * 为了获得最佳性能，您应将 FPolicy 服务器配置为与存储系统位于同一子网中。
@@ -174,6 +174,37 @@ security login create -user-or-group-name csuser -application ontapi -authmethod
 .完成后
 * 在 "Installed Data Collectors" 页面中，使用每个收集器右侧的选项菜单编辑数据收集器。您可以重新启动数据收集器或编辑数据收集器配置属性。
 
+
+
+
+== 建议的Metro Cluster配置
+
+对于Metro Cluster、建议使用以下配置：
+
+. 将两个数据收集器连接起来、一个连接到源SVM、另一个连接到目标SVM。
+. 数据收集器应通过_Cluster IP_进行连接。
+. 在任何时刻、一个数据收集器应正在运行、另一个数据收集器将出现错误。
++
+当前的‘Running ' SVM的数据收集器将显示为_running。当前‘s的SVM数据收集器将显示为_Error_。
+
+. 只要发生切换、数据收集器的状态就会从‘running '更改为‘error '、反之亦然。
+. 数据收集器需要长达两分钟的时间才能从"错误"状态变为"正在运行"状态。
+
+
+
+
+== 服务策略
+
+如果要使用ONTAP 9.1.1版中的服务策略连接到数据源收集器、则需要_data-fpolicy-client_服务以及数据服务_data-nfs_和/或_data-cifs_。
+
+示例
+
+....
+Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allowed-addresses 0.0.0.0/0 -vserver aniket_svm
+-services data-cifs,data-nfs,data,-core,data-fpolicy-client
+(network interface service-policy create)
+....
+在9.1.1之前的ONTAP 版本中、不需要设置_data-fpolicy-client_。
 
 
 
