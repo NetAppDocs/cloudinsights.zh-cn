@@ -8976,7 +8976,6 @@
   <block id="59e3026f71d01a624108642cdb778ebd" category="cell">出现"ImagePullBackoff"错误</block>
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">阅读更多内容</block>
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 关于为自定义/私有repo.</block>
-  <block id="67b526ab935bc291862045f0c263bee3" category="paragraph">注意：如果您安装了最新的NetApp Kubernetes监控操作员并使用可续订的API访问令牌、则过期的令牌将自动替换为新的/刷新的API访问令牌。无需为此处列出的Kubernetes API令牌续订执行手动步骤。</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整个基础架构的拓扑视图是否可用？Cloud Insights 是否显示 " 端到端可见性 " ？</block>
   <block id="d0924ee26918b7c9acc0ec062a178e01" category="paragraph">如果要在安装代理之前验证安装文件，请阅读关于 <block ref="9d4b9ffd1c99cd0a179d48ad3a10cebe" category="inline-xref-macro-rx"></block>。</block>
   <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">在Cloud Insights 中、您可以将*监控.count*列添加到存储或存储节点查询中。如果返回的结果包括Active IQ监控的存储系统、则monitor.count列将显示存储系统或节点的风险数。</block>
@@ -9257,4 +9256,5 @@
   <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">服务策略</block>
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">如果要使用ONTAP 9.1.1版中的服务策略连接到数据源收集器、则需要_data-fpolicy-client_服务以及数据服务_data-nfs_和/或_data-cifs_。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">在9.1.1之前的ONTAP 版本中、不需要设置_data-fpolicy-client_。</block>
+  <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注意：如果您安装了最新的NetApp Kubernetes监控操作员并使用可续订的API访问令牌、则过期的令牌将自动替换为新的/刷新的API访问令牌。无需执行下面列出的手动步骤。</block>
 </blocks>
