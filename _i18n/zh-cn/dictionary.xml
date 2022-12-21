@@ -9262,5 +9262,5 @@
   <block id="18236218f34d8d7222ddf98e7ce4511c" category="paragraph">标记为"included in default CR"的项将已存在于代理CR中、并可在其相应插件下找到。必须按照包含的默认替换项提供的示例手动添加标记为"no"的项。</block>
   <block id="3f60b096843929b02e1a070f57e27584" category="cell">变量名称</block>
   <block id="44ba65ef8e60d1727d77c9b3244b6b01" category="inline-xref">CSUser</block>
-  <block id="76ce4e2b9af0d8561c4d9aba287c2dfd" category="paragraph">请注意、如果您添加_<block ref="2bdf335a2ab8366b3ec70180da0d134c" category="inline-xref-macro-rx"></block>_、该用户需要对ONTAP 进行SSH访问。</block>
+  <block id="9a4d2e5dc3e76c3437292c8797a2f443" category="paragraph">请注意、如果您添加_<block ref="2bdf335a2ab8366b3ec70180da0d134c" category="inline-xref-macro-rx"></block>_、该用户需要对ONTAP 管理LIF进行SSH访问。</block>
 </blocks>
