@@ -91,7 +91,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 
 == 网络内规则
 
-请注意、如果您添加_<</task_add_collector_svm.html#permissions-when-adding-via-cluster-management-ip,CSUser>>_、该用户需要对ONTAP 管理LIF进行SSH访问。
+请注意、在添加_时link:task_add_collector_svm.html#permissions-when-adding-via-cluster-management-ip["CSUser"]_、该用户需要对ONTAP 管理LIF进行SSH访问。
 
 [cols="5*"]
 |===
