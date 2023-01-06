@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: task_dc_emc_unisphere_rest.html 
+keywords: data collector, Unisphere, EMC 
+summary: 配置Dell EMC Unisphere REST数据收集器。 
+---
+= 配置Dell EMC Unisphere REST数据收集器
+:allow-uri-read: 
+
+
+[role="lead"]
+此数据收集器从Dell EMC Unisphere RESTstorage系统采集清单和性能数据。在配置方面、数据收集器需要Unisphere服务器的IP地址和管理级别域帐户。
+
+
+
+== 要求
+
+* Unisphere服务器的IP地址
+* Unisphere服务器的管理级别域帐户
+* 端口8443。
+
+
+
+
+== 配置
+
+[cols="2*"]
+|===
+| 字段 | 说明 
+
+
+| Unisphere服务器的IP地址 | Unisphere服务器的IP地址或完全限定域名 
+
+
+| Unisphere端口 | 默认值为8443 
+
+
+| 用户名 | Unisphere服务器的用户名 
+
+
+| 密码 | 用于Unisphere服务器的密码 
+|===
+
+
+== 高级配置
+
+[cols="2*"]
+|===
+| 字段 | 说明 
+
+
+| 清单轮询间隔（分钟） | 默认值为 40 分钟。 
+
+
+| 性能轮询间隔（秒） | 性能轮询之间的时间间隔。默认值为 600 秒。 
+
+
+| 选择 " 排除 " 或 " 包括 " 以指定列表 | 指定是包含还是排除 VM 
+
+
+| 清单筛选器设备列表 | 要筛选的VM列表(如果值中使用了逗号、则以逗号分隔或以分号分隔) 
+
+
+| Unisphere性能轮询间隔(秒) | 默认值为300秒 
+|===
+
+
+== 故障排除
+
+如果此数据收集器出现问题，请尝试执行以下操作：
+
+
+
+=== 清单
+
+[cols="2*"]
+|===
+| 问题： | 请尝试以下操作： 
+
+
+| 错误：用户身份验证失败。 | 确保此设备的凭据正确无误。 
+|===
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。

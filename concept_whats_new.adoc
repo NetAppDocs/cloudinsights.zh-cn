@@ -75,6 +75,7 @@ image:Log_Monitor_Duplicate.png["复制日志监控器"]
 
 我们新增了几十个系统定义的新监控器、用于提醒您有关Cloud Volumes、Security和Data Protection的潜在问题。阅读有关这些监控器的更多信息 link:task_system_monitors.html#security-monitors["此处"]。
 
+'''
 
 
 == 2022年10月
