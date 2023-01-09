@@ -10675,4 +10675,11 @@
   <block id="24b9d8ba3ac9389d8f4a72d27707e6df" category="cell">1.使用以下命令编辑代理：kubectl -n &lt;name-space&gt; 编辑代理&lt;&lt;&lt;&lt;&lt;&lt;&lt;总目2。将"securtion-policy-enabled"标记为"false"。此操作将禁用Pod安全策略并允许NKMO.使用以下命令进行确认：kubectl get PSP (应显示Pod安全策略已删除) kubectl get all -n &lt;namespace&gt;</block>
   <block id="92e1a63940cff8448da6b16df73f8839" category="cell">grep -i PSP (应显示未找到任何内容)========2.将"securtion-policy-enabled"标记为"false"。此操作将禁用Pod安全策略和Pod安全准入、并允许NKMO.使用以下命令进行确认：kubectl get PSP (应显示Pod Security Policy Removed) kubectl get all -n &lt;namespace&gt; | grep -i PSP (应显示未找到任何内容)&gt;&gt;&gt;&gt;&gt;3df6fa94316c710c5e3709e6c4bd493fa37256</block>
   <block id="1bdab929b5a195b946c68d496ce65060" category="paragraph">可以从找到追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 标题</block>
+  <block id="6b290024189e0c4e1b4dfcdf7383e010" category="section-title">有用的定义</block>
+  <block id="684e976accba59790f5593505086fd7a" category="paragraph">在讨论Cloud Insights 数据收集器或功能时、以下定义可能会很有用：</block>
+  <block id="5e4f18167064639e23a7d876eabb697a" category="inline-link-macro">预览功能</block>
+  <block id="d9501a665dbf4f495431fcca37973166" category="list-text">*预览*：以有限容量或有限受众提供。 <block ref="1e732bee0ba13f7cae2a07a19dd93ab4" category="inline-link-macro-rx"></block> 数据收集器预计会在预览期之后成为GA。预览时段因受众或功能而异。</block>
+  <block id="dd94823438f14366dcf7fca1f9e36942" category="list-text">* GA：一种功能或数据收集器、根据版本或功能集、所有客户通常都可以使用该功能或数据收集器。</block>
+  <block id="cd0d8ade9c16e03b7c1dd37589a88960" category="list-text">*已弃用*：功能上不再可持续的适用场景 数据收集器或预期将不再可持续的数据收集器。弃用的数据收集器通常会替换为功能更新的新数据收集器。</block>
+  <block id="14af2cecff51d4bd977845145cc871e8" category="list-text">*已删除*：已删除且不再可用的数据收集器。</block>
 </blocks>
