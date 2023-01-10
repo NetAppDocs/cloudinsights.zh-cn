@@ -10682,4 +10682,9 @@
   <block id="dd94823438f14366dcf7fca1f9e36942" category="list-text">* GA：一种功能或数据收集器、根据版本或功能集、所有客户通常都可以使用该功能或数据收集器。</block>
   <block id="cd0d8ade9c16e03b7c1dd37589a88960" category="list-text">*已弃用*：功能上不再可持续的适用场景 数据收集器或预期将不再可持续的数据收集器。弃用的数据收集器通常会替换为功能更新的新数据收集器。</block>
   <block id="14af2cecff51d4bd977845145cc871e8" category="list-text">*已删除*：已删除且不再可用的数据收集器。</block>
+  <block id="8a09aa1c7ea03c3f00c40e8568951198" category="paragraph">《数据收集器支持列表》为 Cloud Insights 支持的数据收集器提供了参考，其中包括供应商和型号信息。</block>
+  <block id="ca0b4506c2206cd2c862ff1d61765a6a" category="paragraph">此列表以 .PDF 格式提供。</block>
+  <block id="fb2b11979470312e91d52daf018ca991" category="paragraph">单击链接以打开。右键单击并选择 _Save as..._ 以下载副本。</block>
+  <block id="e8a0ae6a975a5b0b5682da12aecbad5d" category="inline-link-macro">* 数据收集器支持列表 *</block>
+  <block id="2c7946be5550b6b9eea9fc71634c0a3a" category="paragraph"><block ref="2c7946be5550b6b9eea9fc71634c0a3a" category="inline-link-macro-rx"></block></block>
 </blocks>
