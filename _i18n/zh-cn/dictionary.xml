@@ -2137,13 +2137,9 @@
   <block id="5f519de4ae11d5d3a6674c85a3029a81" category="doc">开始收集数据</block>
   <block id="059cc7c7dfcad8104bd312a68d9e0c4d" category="paragraph">注册 Cloud Insights 并首次登录到您的环境后，系统将引导您完成以下步骤，以便开始收集和管理数据。</block>
   <block id="b6070479612983d59fa5a6e72f7051b4" category="paragraph">数据收集器可从存储设备，网络交换机和虚拟机等数据源发现信息。收集的信息用于分析，验证，监控和故障排除。</block>
-  <block id="b5f2fea2d793f913cb7c4b9dfa513a70" category="paragraph">Cloud Insights 利用三种类型的数据收集器：</block>
-  <block id="aab338915e32b60e92c8de3a23aa5c5d" category="list-text">操作系统</block>
-  <block id="992a0f0542384f1ee5ef51b7cf4ae6c4" category="list-text">服务</block>
   <block id="cba4f4cee5c6a3e6d8be8da68fa1234e" category="list-text">基础架构</block>
   <block id="06795a6787cf0dba942c7227d6c27d2d" category="paragraph">从支持的供应商和型号中选择您的第一个数据收集器。您可以稍后轻松添加其他数据收集器。</block>
   <block id="5774c882dad1ebd6e046b3a9fdfae618" category="section-title">安装采集单元</block>
-  <block id="3d20927f7c908a7a2ee90f44904645f5" category="paragraph">如果选择了 _Infrastructure_ 数据收集器，则需要使用采集单元将数据注入 Cloud Insights 。您需要在服务器或虚拟机上下载并安装采集单元软件，以便为 Cloud Insights 收集数据。一个采集单元可用于多个数据收集器。</block>
   <block id="cbde2df6a7c89370edc449dc5705d30c" category="inline-link-macro">说明</block>
   <block id="5164bcd4b175f3541675577a43e705ac" category="list-text">按照 <block ref="91c4038739417223c03a4418149dce71" category="inline-link-macro-rx"></block> 显示以安装采集单元。安装采集单元软件后，将显示 Continue 按钮，您可以继续执行下一步。</block>
   <block id="c8b66b344a2f791c2386a2b7df4b44b6" category="inline-image-macro">检测到新 AU</block>
@@ -2152,9 +2148,7 @@
   <block id="baee16e4b3a1b3fe47528552911a7c7e" category="section-title">配置 Data Collector - 基础架构</block>
   <block id="6918922f4abf98b7477512994ea4e792" category="paragraph">对于 _Infrastructure_ 数据收集器，系统将要求您填写显示的数据收集器字段：</block>
   <block id="dc2e196543e7339d5e7c4357419d8138" category="list-text">为数据收集器指定一个唯一且有意义的名称。</block>
-  <block id="770f54be00afd49ebd86f74c98ee2ea8" category="list-text">根据需要输入用于连接到设备的用户名和密码。</block>
   <block id="3d0887c0ea1d0002152545df86215116" category="list-text">填写 _Configuration_ 和 _Advanced Configuration_ 部分中的任何其他必填字段。</block>
-  <block id="e9faa52e66f1c8ec7a8e8aec128121b7" category="list-text">单击 * 测试连接 * 以测试与设备的连接。</block>
   <block id="61bc4386328384706c437ee0e6b35182" category="list-text">单击 * 添加收集器 * 以保存数据收集器。</block>
   <block id="c8d85f57956f127cf15ceb0dd0f01a67" category="paragraph">您可以稍后配置其他数据收集器。</block>
   <block id="38842479851f6bd610129b076a042485" category="section-title">配置 Data Collector —操作系统和服务</block>
@@ -10675,4 +10669,15 @@
   <block id="63c5c26973f4cb2983185abedde31f4b" category="cell">1.使用以下命令编辑代理：kubectl -n &lt;name-space&gt; edit agent 2.将"securtion-policy-enabled"标记为"false"。此操作将禁用Pod安全策略和Pod安全准入、并允许NKMO.使用以下命令进行确认：kubectl get PSP (应显示Pod Security Policy Removed) kubectl get all -n &lt;namespace&gt; grep -i PSP (应显示未找到任何内容)</block>
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">阅读更多内容</block>
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 关于为自定义/私有repo.</block>
+  <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">已弃用</block>
+  <block id="6afca2df57e91c9479bb6e541df1bbe2" category="admonition">此数据收集器为 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。</block>
+  <block id="924501eebf901f2348c9e37f56b7f6f0" category="paragraph">Cloud Insights 提供了三种类型的数据收集器：</block>
+  <block id="d877172ec451e194a086d0d40021e8b8" category="list-text">基础架构(存储设备、网络交换机、计算基础架构)</block>
+  <block id="31b29af38563f95fcd16900aef967adf" category="list-text">操作系统(例如VMware或Windows)</block>
+  <block id="ab9f8384afda29296f5ceaa4ff77f3b8" category="list-text">服务(例如Kafka)</block>
+  <block id="3e3d1f4256fe73b88a0ea758b3951eb9" category="paragraph">如果选择了 _Infrastructure_ 数据收集器，则需要使用采集单元将数据注入 Cloud Insights 。您需要在要从中收集数据的数据中心的服务器或虚拟机上下载并安装采集单元软件。一个采集单元可用于多个数据收集器。</block>
+  <block id="344ab1c74a04a4daec201f19f0c5e693" category="list-text">根据需要输入用于连接到设备的凭据(用户名和密码)。</block>
+  <block id="39253d149e0a3d154ca9e84c14787cf2" category="list-text">收集器生命周期：收集器在其生命周期中属于以下状态之一：</block>
+  <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">采集单元：专用于托管数据收集器的计算机、通常为虚拟机。此计算机通常与受监控项目位于同一数据中心/VPC中。</block>
+  <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">数据源：用于与硬件或软件堆栈通信的模块。它由一个配置和在AU计算机上运行的代码组成、用于与设备进行通信。</block>
 </blocks>

@@ -12,6 +12,9 @@ keywords: data collector, NetApp, Cloud agent, ONTAP
 此数据收集器可创建云连接，以支持从 ONTAP 9.9+ CVO ， AFF 和 FAS 系统收集数据。
 
 
+NOTE: 此数据收集器为 link:task_getting_started_with_cloud_insights.html#useful-definitions["已弃用"] 截至2023年1月1日。
+
+
 
 == 配置
 
