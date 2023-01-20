@@ -21,10 +21,10 @@ image:kubernetes_tile.png["Kubernetes Data Collector Tile"]
 
 == 安装NetApp Kubernetes监控操作员之前
 
-.前提条件：
-* 请注意以下组件版本。以下是NetApp Kubernetes监控操作员随附的最新版本：
-+
 [[nkmoversion]]
+.前提条件：
+* 请注意以下组件版本。这些是NetApp Kubernetes监控操作员随附的最新版本。如果是、您尤其需要注意这些版本 <<using-a-custom-or-private-docker-repository,使用自定义或专用Docker存储库>>：
++
 ** Telegraf：1.24.0
 ** Kube-RBAC代理：v1.13.0
 ** Kube-state-metrics：v2.0.0
@@ -174,18 +174,18 @@ password: <password from docker secret step above>
  kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
 根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。
 
-将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像：
+将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像。请参见 <<before-installing-the-netapp-kubernetes-monitoring-operator,前提条件>> 上一节介绍了这些组件的最新版本：
 
 ....
-docker.io/telegraf: 1.24.0
-gcr.io/kubebuilder/kube-rbac-proxy: v10.13.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.6.0
+docker.io/telegraf
+gcr.io/kubebuilder/kube-rbac-proxy
+k8s.gcr.io/kube-state-metrics/kube-state-metrics
 ....
 如果启用了 flual-bit ，请同时下载：
 
 ....
-docker.io/fluent-bit:1.9.8
-docker.io/kubernetes-event-exporter:0.10
+docker.io/fluent-bit
+docker.io/kubernetes-event-exporter
 ....
 编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）。
 

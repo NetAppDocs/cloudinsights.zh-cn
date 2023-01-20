@@ -8889,7 +8889,6 @@
   <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes Data Collector Tile</block>
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">安装NetApp Kubernetes监控操作员之前</block>
-  <block id="1cc45b2c590399b95fbbc08c12a16b3e" category="list-text">请注意以下组件版本。以下是NetApp Kubernetes监控操作员随附的最新版本：</block>
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf：1.24.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">Kube-state-metrics：v2.0.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fluent-bit：1.9.8</block>
@@ -8922,7 +8921,6 @@
   <block id="77cc6d4eb48f196cb4ec9933aeef1586" category="paragraph">此命令的输出格式如下：</block>
   <block id="db14bf839f053975690a0aa27f23e573" category="paragraph">从Cloud Insights 中提取操作员Docker映像。确保_netapp-monitoring-version number为最新版本：</block>
   <block id="231509eaa9ac837e90f55a78ed5a859e" category="paragraph">使用以下命令查找_netapp-monitoring_&lt;version&gt;字段：</block>
-  <block id="5ff1fb7ee9a98601079d4ace975dfb0a" category="paragraph">将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像：</block>
   <block id="725add584c7b017b758ee4ca5893c90a" category="paragraph">如果您运行的是OpenShift 4.6或更高版本、则必须更改"特权模式"设置。运行以下命令以打开代理进行编辑。如果您使用的命名空间不是 "netapp-monitoring" ，请在命令行中指定此命名空间：</block>
   <block id="493c4ff608e06cc5a02d0561f6bb02a3" category="paragraph">OpenShift可以实施更高的安全级别、从而可能阻止对某些Kubernetes组件的访问。</block>
   <block id="dd9d67c4c74337838e56e1e3e14ceb18" category="admonition">如果您先前安装了基于脚本的代理、则必须升级到NetApp Kubernetes监控操作员。</block>
@@ -10680,4 +10678,7 @@
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">采集单元：专用于托管数据收集器的计算机、通常为虚拟机。此计算机通常与受监控项目位于同一数据中心/VPC中。</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">数据源：用于与硬件或软件堆栈通信的模块。它由一个配置和在AU计算机上运行的代码组成、用于与设备进行通信。</block>
   <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">Kube-RBAC代理：v1.13.0</block>
+  <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">使用自定义或专用Docker存储库</block>
+  <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">请注意以下组件版本。这些是NetApp Kubernetes监控操作员随附的最新版本。如果是、您尤其需要注意这些版本 <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
+  <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像。请参见 <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> 上一节介绍了这些组件的最新版本：</block>
 </blocks>
