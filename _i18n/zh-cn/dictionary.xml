@@ -10667,7 +10667,6 @@
   <block id="43340e6cc4e88197d57f8d6d5ea50a46" category="inline-xref">阅读更多内容</block>
   <block id="d18743173cd6691e1637fd7bb6299057" category="cell">如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 <block ref="64c2e35c96e92fc99426098fae703fff" category="inline-xref-macro-rx"></block> 关于为自定义/私有repo.</block>
   <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">已弃用</block>
-  <block id="6afca2df57e91c9479bb6e541df1bbe2" category="admonition">此数据收集器为 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。</block>
   <block id="924501eebf901f2348c9e37f56b7f6f0" category="paragraph">Cloud Insights 提供了三种类型的数据收集器：</block>
   <block id="d877172ec451e194a086d0d40021e8b8" category="list-text">基础架构(存储设备、网络交换机、计算基础架构)</block>
   <block id="31b29af38563f95fcd16900aef967adf" category="list-text">操作系统(例如VMware或Windows)</block>
@@ -10681,4 +10680,5 @@
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">使用自定义或专用Docker存储库</block>
   <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">请注意以下组件版本。这些是NetApp Kubernetes监控操作员随附的最新版本。如果是、您尤其需要注意这些版本 <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像。请参见 <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> 上一节介绍了这些组件的最新版本：</block>
+  <block id="9a792c4a7d9a1e15c6a95f98fe5b6491" category="admonition">此数据收集器为 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。有关过渡到基于AU的数据收集的信息、请参见 <block ref="df6681cbd934aebfa279b5a883862ef0" category="inline-link-macro-rx"></block>。</block>
 </blocks>
