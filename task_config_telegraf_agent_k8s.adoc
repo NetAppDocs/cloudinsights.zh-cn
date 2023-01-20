@@ -26,7 +26,7 @@ image:kubernetes_tile.png["Kubernetes Data Collector Tile"]
 +
 [[nkmoversion]]
 ** Telegraf：1.24.0
-** Kube-RBAC代理：v0.13.0
+** Kube-RBAC代理：v1.13.0
 ** Kube-state-metrics：v2.0.0
 ** Fluent-bit：1.9.8
 ** Kubernetes事件导出程序：0.10
@@ -177,14 +177,14 @@ password: <password from docker secret step above>
 将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像：
 
 ....
-docker.io/telegraf: 1.22.3
-gcr.io/kubebuilder/kube-rbac-proxy: v0.11.0
-k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.4.2
+docker.io/telegraf: 1.24.0
+gcr.io/kubebuilder/kube-rbac-proxy: v10.13.0
+k8s.gcr.io/kube-state-metrics/kube-state-metrics: v2.6.0
 ....
 如果启用了 flual-bit ，请同时下载：
 
 ....
-docker.io/fluent-bit:1.9.3
+docker.io/fluent-bit:1.9.8
 docker.io/kubernetes-event-exporter:0.10
 ....
 编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）。

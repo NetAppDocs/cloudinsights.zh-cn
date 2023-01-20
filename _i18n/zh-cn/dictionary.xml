@@ -8891,7 +8891,6 @@
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">安装NetApp Kubernetes监控操作员之前</block>
   <block id="1cc45b2c590399b95fbbc08c12a16b3e" category="list-text">请注意以下组件版本。以下是NetApp Kubernetes监控操作员随附的最新版本：</block>
   <block id="47cd86500d3fa5dbb08c20995b256c69" category="list-text">Telegraf：1.24.0</block>
-  <block id="6c7ca580ed97b823c501ac9c614a22e3" category="list-text">Kube-RBAC代理：v0.13.0</block>
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">Kube-state-metrics：v2.0.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fluent-bit：1.9.8</block>
   <block id="91a4eb349c44870597460ac8e58becf0" category="list-text">Kubernetes事件导出程序：0.10</block>
@@ -10680,4 +10679,5 @@
   <block id="39253d149e0a3d154ca9e84c14787cf2" category="list-text">收集器生命周期：收集器在其生命周期中属于以下状态之一：</block>
   <block id="b92e6e167ffd0f1968a046d49559d1cd" category="list-text">采集单元：专用于托管数据收集器的计算机、通常为虚拟机。此计算机通常与受监控项目位于同一数据中心/VPC中。</block>
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">数据源：用于与硬件或软件堆栈通信的模块。它由一个配置和在AU计算机上运行的代码组成、用于与设备进行通信。</block>
+  <block id="a9ebd75df07545c9605b7773e7c21558" category="list-text">Kube-RBAC代理：v1.13.0</block>
 </blocks>
