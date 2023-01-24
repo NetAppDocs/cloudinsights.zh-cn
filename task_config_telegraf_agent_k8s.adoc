@@ -23,13 +23,13 @@ image:kubernetes_tile.png["Kubernetes Data Collector Tile"]
 
 [[nkmoversion]]
 .前提条件：
-* 请注意以下组件版本。这些是NetApp Kubernetes监控操作员随附的最新版本。如果是、您尤其需要注意这些版本 <<using-a-custom-or-private-docker-repository,使用自定义或专用Docker存储库>>：
+* 请注意以下组件版本。这些是NetApp Kubernetes监控操作员随附的最新_required_版本。如果是、您尤其需要注意这些版本 <<using-a-custom-or-private-docker-repository,使用自定义或专用Docker存储库>>：
 +
 ** Telegraf：1.24.0
-** Kube-RBAC代理：v1.13.0
+** Kube-RBAC代理：v0.13.0
 ** Kube-state-metrics：v2.0.0
 ** Fluent-bit：1.9.8
-** Kubernetes事件导出程序：0.10
+** Kubernetes事件导出程序：v0.10
 
 
 * Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。

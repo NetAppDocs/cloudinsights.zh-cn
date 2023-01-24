@@ -597,13 +597,16 @@ Windows
  .\cloudinsights-windows.ps1 -install
 
 
-== 代理安装故障排除
+== 故障排除
 
 在设置代理时遇到问题时要尝试的一些操作：
 
 [cols="2*"]
 |===
 | 问题： | 请尝试以下操作： 
+
+
+| 配置新插件并重新启动Telegraf后、Telegraf无法启动。这些日志指示出现类似以下内容的错误："[caelaf] Error running agent：error loading config file /etc/caelaf/tengraf.d/cloudinsots-default.conf：plugin outputs.http：line 88：configuration specified the fields ["use_system_proxy"]、but they were unused" | 安装的Telegraf版本已过时。按照此页面上的步骤*为您的相应平台升级代理*。 
 
 
 | 我已使用 Cloud Insights 安装代理 | 如果您已在主机 /VM 上安装了代理，则无需重新安装该代理。在这种情况下，只需在 Agent 安装屏幕中选择适当的平台和密钥，然后单击 * 继续 * 或 * 完成 * 。 
