@@ -51,11 +51,11 @@ toc::[]
 
 == 登录并继续
 
-创建租户后，您可以随时登录到 NetApp 云门户并单击 * 转到 Cloud Insights * 。您将直接转到 Cloud Insights 环境。
+创建环境后、您可以随时登录到NetApp云门户并单击*转到Cloud Insights *。您将直接转到 Cloud Insights 环境。
 
 您也可以直接打开浏览器访问 Cloud Insights 环境 URL ，例如：
 
- https://<environment-name>.c01.cloudinsights.netapp.com/
+ https://<environment-prefix>.c01.cloudinsights.netapp.com/
 每个用户的邀请函电子邮件中也会包含此 URL ，以便于访问和添加书签。如果用户尚未登录到 Cloud Central ，系统将提示他们登录。
 
 
