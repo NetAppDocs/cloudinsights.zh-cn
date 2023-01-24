@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: task_dc_emc_isilon_rest.html 
 keywords: data collector, isilon, EMC, DELL, PowerScale 
-summary: 配置Dell EMC Isilon REST数据收集器。 
+summary: 配置Dell EMC Isilon / PowerScale REST数据收集器。 
 ---
 = Dell Dell EMC Isilon REST数据收集器
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Insights 使用Dell EMC Isilon REST SSH数据收集器从Dell EMC Isilon存储获取清单和性能数据。
+Cloud Insights 使用Dell EMC Isilon / PowerScale REST数据收集器从Dell EMC Isilon或PowerScale存储获取清单和性能数据。
 
 
 
@@ -31,7 +31,13 @@ Cloud Insights 从此数据收集器获取以下清单信息。对于 Cloud Insi
 | 节点 | 存储节点 
 
 
-| 文件系统 | 内部卷 
+| OneFS文件系统 | 内部卷 
+
+
+| OneFS文件系统 | 存储池 
+
+
+| qtree | qtree 
 |===
 注意：这些只是常见的术语映射，可能并不代表此数据收集器的所有情形。
 
@@ -41,11 +47,66 @@ Cloud Insights 从此数据收集器获取以下清单信息。对于 Cloud Insi
 
 要配置此数据收集器，您需要以下信息：
 
-* 对Dell EMC Isilon REST存储的管理员权限
-* Dell EMC Isilon REST集群的IP地址
+* 用户帐户和密码。此帐户不需要为admin/root、但您必须为您的服务帐户授予大量只读权限-请参见下表
+* Dell EMC Isilon / PowerScale集群的IP地址/完全限定域名
 * 对端口8080的HTTPS访问
 
 
+[cols="3*"]
+|===
+| 权限名称 | 说明 | R (读取)或RW (读写) 
+
+
+| ISI_PRIV_LOGIN_PAPI | 平台API | r 
+
+
+| ISI_PRIV_SYS_TIME | 时间 | r 
+
+
+| ISI_PRIV_AUTH | 身份验证 | r 
+
+
+| ISI_PRIV_role | 权限 | r 
+
+
+| ISI_PRIV_devices | 设备 | r 
+
+
+| ISI_PRIV_event | 事件 | r 
+
+
+| ISI_PRIV_HDFS | HDFS | r 
+
+
+| ISI_PRIV_NDMP | NDMP | r 
+
+
+| ISI_PRIV_NETWORK | 网络 | r 
+
+
+| ISI_PRIV_NFS | NFS | r 
+
+
+| ISI_PRIV_PAPI_CONFIG | 配置平台API | r 
+
+
+| ISI_PRIV_QUota | 配额 | r 
+
+
+| ISI_PRIV_SMARTPOLS | 智能池 | r 
+
+
+| ISI_PRIV_SMB | SMB | r 
+
+
+| ISI_PRIV_statistics | 统计信息 | r 
+
+
+| ISI_PRIV_SWIFT | Swift | r 
+
+
+| ISI_PRIV_job_engine | 作业引擎 | r 
+|===
 
 
 == 配置

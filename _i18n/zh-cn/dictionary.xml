@@ -9978,11 +9978,7 @@
   <block id="0df3afc7b3c290bc4820d50b2bee11b4" category="cell">CPU总等待时间(以百分比表示)</block>
   <block id="2c4465560ecae928ff0585737c3acf45" category="cell">VMware API</block>
   <block id="2c10282d2a9ce8be1576d7af8091d09e" category="cell">Web 服务</block>
-  <block id="0753e08d2099f6fb56f0191df767e0ba" category="summary">配置Dell EMC Isilon REST数据收集器。</block>
   <block id="831b6c031c23b2fb141faacc1a32e259" category="doc">Dell Dell EMC Isilon REST数据收集器</block>
-  <block id="217490c15d5d6327064ed967c723d781" category="paragraph">Cloud Insights 使用Dell EMC Isilon REST SSH数据收集器从Dell EMC Isilon存储获取清单和性能数据。</block>
-  <block id="cb26c1838104b42002ba287ea3e3752c" category="list-text">对Dell EMC Isilon REST存储的管理员权限</block>
-  <block id="e5683ef2f0e1f3f72d1ef304f0454234" category="list-text">Dell EMC Isilon REST集群的IP地址</block>
   <block id="6d06382ef6c5abdd0a682226c6351821" category="list-text">对端口8080的HTTPS访问</block>
   <block id="f7ef35e4c0665f97997b1078e76e42c4" category="cell">Isilon IP地址</block>
   <block id="ed705ee9e97ca31274136726da061128" category="cell">Isilon存储的IP地址或完全限定域名</block>
@@ -10667,4 +10663,43 @@
   <block id="cec4dc8de5b452ea8fc272799bc79fd2" category="list-text">请注意以下组件版本。这些是NetApp Kubernetes监控操作员随附的最新版本。如果是、您尤其需要注意这些版本 <block ref="ad7958052a58410baa9b486d50045d2a" category="inline-xref-macro-rx"></block>：</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像。请参见 <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> 上一节介绍了这些组件的最新版本：</block>
   <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">此数据收集器为 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。有关过渡到基于AU的数据收集的信息、请参见 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
+  <block id="9d8dde207423e16514f1a132221a65a3" category="summary">配置Dell EMC Isilon / PowerScale REST数据收集器。</block>
+  <block id="9b7f99f4d867484d5fc5fad6f84567ba" category="paragraph">Cloud Insights 使用Dell EMC Isilon / PowerScale REST数据收集器从Dell EMC Isilon或PowerScale存储获取清单和性能数据。</block>
+  <block id="c40dff11b6ddb88303480bb455edaf14" category="cell">OneFS文件系统</block>
+  <block id="c593547a39a4d7895f41492d41fd6fa3" category="list-text">用户帐户和密码。此帐户不需要为admin/root、但您必须为您的服务帐户授予大量只读权限-请参见下表</block>
+  <block id="af44c06ccccd08beeff0d7957f243408" category="list-text">Dell EMC Isilon / PowerScale集群的IP地址/完全限定域名</block>
+  <block id="15d376ae9e5a3799316180bf3070ad88" category="cell">权限名称</block>
+  <block id="9019fb7f7c068bc6edb9c4340b55c1c5" category="cell">R (读取)或RW (读写)</block>
+  <block id="963857a2ad2add510a3c8e8e92a423f3" category="cell">ISI_PRIV_LOGIN_PAPI</block>
+  <block id="def2f9f4aa2617140f4dd5c5a3f24b5b" category="cell">平台API</block>
+  <block id="4b43b0aee35624cd95b910189b3dc231" category="cell">r</block>
+  <block id="5e85a82da12cfca2cad28aa9508fdc15" category="cell">ISI_PRIV_SYS_TIME</block>
+  <block id="0a3a4d748a122b035682208bd5e84787" category="cell">ISI_PRIV_AUTH</block>
+  <block id="632c9594449737188c71ee1c8534f893" category="cell">身份验证</block>
+  <block id="cca04218e3b6ca898379e198a4b59aa7" category="cell">ISI_PRIV_role</block>
+  <block id="144edebc7d680a1f3b7e7ae1c2fff7e8" category="cell">权限</block>
+  <block id="9282327bbff35c097faac8bdf5b9891a" category="cell">ISI_PRIV_devices</block>
+  <block id="c03ca67dda321195d74c951097f240c6" category="cell">设备</block>
+  <block id="d1e0b6b8453f4eb3909c60afa51b566d" category="cell">ISI_PRIV_event</block>
+  <block id="a4ecfc70574394990cf17bd83df499f7" category="cell">事件</block>
+  <block id="0b0274a3c0093308144eae82def207d4" category="cell">ISI_PRIV_HDFS</block>
+  <block id="99c35850ff7cf7e436b03acedd4c59b3" category="cell">HDFS</block>
+  <block id="4ff6187fe5e41829d108176083b21772" category="cell">ISI_PRIV_NDMP</block>
+  <block id="aae155889087fca42368d9fab8b54ee6" category="cell">NDMP</block>
+  <block id="aa4fed61beff5eb8acd840edbf5d7d85" category="cell">ISI_PRIV_NETWORK</block>
+  <block id="9be6d026725b28c5643df1ba4d3f2aaa" category="cell">ISI_PRIV_NFS</block>
+  <block id="1d1a594959ec615f56516f5d0f5e8ddb" category="cell">NFS</block>
+  <block id="1bdc01efdf38c567830396ed11e1c193" category="cell">ISI_PRIV_PAPI_CONFIG</block>
+  <block id="20fd145128d82c8b05b30bbc8967cfde" category="cell">配置平台API</block>
+  <block id="47b804cea51bbf8f2daf858f04eb96a1" category="cell">ISI_PRIV_QUota</block>
+  <block id="01ec84c1cb4dcaa246e1b37cd19538e2" category="cell">ISI_PRIV_SMARTPOLS</block>
+  <block id="a2164456aeafaa51594bf1de5db0185d" category="cell">智能池</block>
+  <block id="ab28ab57fc135cc30bdc67d53989fada" category="cell">ISI_PRIV_SMB</block>
+  <block id="b4fdd997b1f33e0d4c6964444c2bf399" category="cell">SMB</block>
+  <block id="ea5436e53483185a1e2acf0a16f7569f" category="cell">ISI_PRIV_statistics</block>
+  <block id="c33e404a441c6ba9648f88af3c68a1ca" category="cell">统计信息</block>
+  <block id="8bc28094efd6fecee0c858baa4c0c1d7" category="cell">ISI_PRIV_SWIFT</block>
+  <block id="ae832e9b5bda2699db45f3fa6aa8c556" category="cell">Swift</block>
+  <block id="7793f7416a4d38be57956421d8dd181c" category="cell">ISI_PRIV_job_engine</block>
+  <block id="aa6591610b53847bfb4e19e53c0b4a05" category="cell">作业引擎</block>
 </blocks>
