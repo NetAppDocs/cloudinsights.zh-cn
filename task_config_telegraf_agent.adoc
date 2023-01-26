@@ -606,7 +606,10 @@ Windows
 | 问题： | 请尝试以下操作： 
 
 
-| 配置新插件并重新启动Telegraf后、Telegraf无法启动。这些日志指示出现类似以下内容的错误："[caelaf] Error running agent：error loading config file /etc/caelaf/tengraf.d/cloudinsots-default.conf：plugin outputs.http：line 88：configuration specified the fields ["use_system_proxy"]、but they were unused" | 安装的Telegraf版本已过时。按照此页面上的步骤*为您的相应平台升级代理*。 
+| 配置新插件并重新启动Telegraf后、Telegraf无法启动。这些日志指示出现类似以下内容的错误："[caelaf] Error running agent：error loading config file /etc/caelaf/tengraf.d/cloudinsots-default.conf：plugin outputs.http：line <linenumber> ：configuration specified the fields ["use_system_proxy"]、but they were n't used" | 安装的Telegraf版本已过时。按照此页面上的步骤*为您的相应平台升级代理*。 
+
+
+| 我在旧安装上运行了安装程序脚本、现在代理不发送数据 | 卸载此电报代理、然后重新运行安装脚本。请按照此页面上适用于您的相应平台的*升级代理*步骤进行操作。 
 
 
 | 我已使用 Cloud Insights 安装代理 | 如果您已在主机 /VM 上安装了代理，则无需重新安装该代理。在这种情况下，只需在 Agent 安装屏幕中选择适当的平台和密钥，然后单击 * 继续 * 或 * 完成 * 。 
