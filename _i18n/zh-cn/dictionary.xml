@@ -10709,4 +10709,6 @@
   <block id="3a0f609bf65bf53f905fdcfae464bcae" category="cell">配置新插件并重新启动Telegraf后、Telegraf无法启动。这些日志指示出现类似以下内容的错误："[caelaf] Error running agent：error loading config file /etc/caelaf/tengraf.d/cloudinsots-default.conf：plugin outputs.http：line &lt;linenumber&gt; ：configuration specified the fields ["use_system_proxy"]、but they were n't used"</block>
   <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">我在旧安装上运行了安装程序脚本、现在代理不发送数据</block>
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">卸载此电报代理、然后重新运行安装脚本。请按照此页面上适用于您的相应平台的*升级代理*步骤进行操作。</block>
+  <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">检测到攻击后24小时收到电子邮件警报。在UI中、当Cloud Insights 工作负载安全收到电子邮件时、警报会在24小时之前显示。</block>
+  <block id="c5b841da6fee0eba42d21333b80aa983" category="cell">当ONTAP 将_勒索 软件检测到_事件发送到Cloud Insights 工作负载安全(例如Cloud Secure)时、系统会发送电子邮件。事件包含一系列攻击及其时间戳。工作负载安全UI会显示第一个受攻击文件的警报时间戳。对特定数量的文件进行编码后、ONTAP 会将_勒索 软件检测到_事件发送到Cloud Insights。因此、在UI中显示警报的时间与发送电子邮件的时间可能会有所不同。</block>
 </blocks>
