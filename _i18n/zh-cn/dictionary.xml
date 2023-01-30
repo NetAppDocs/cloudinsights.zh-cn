@@ -5487,7 +5487,6 @@
   <block id="1f64a3a5204a18c96d39e18121d1251f" category="paragraph">Cloud Secure 使用一个或多个代理收集用户活动数据。代理连接到环境中的设备并收集发送到 Cloud Secure SaaS 层进行分析的数据。请参见 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block> 配置代理虚拟机。</block>
   <block id="2ccb9ffac0ed017ddb6e68683bb0b7d5" category="list-text">安装，运行脚本和卸载需要 sudo 权限。</block>
   <block id="19b6dd145ff77b5b97341237076cba16" category="section-title">安装代理的步骤</block>
-  <block id="ba6a231cc4fc57afa76b3f2a42f71f11" category="list-text">单击 * 管理 &gt; 数据收集器 &gt; 代理 &gt; +Agent*</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">系统将显示 "Add an Agent" 页面：</block>
   <block id="0e9fa577800a5653127fdb5f3d4400aa" category="image-alt">添加代理 1</block>
   <block id="212db90a8b360d05f82119713ca87853" category="list-text">验证代理服务器是否满足最低系统要求。</block>
@@ -10711,4 +10710,5 @@
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">卸载此电报代理、然后重新运行安装脚本。请按照此页面上适用于您的相应平台的*升级代理*步骤进行操作。</block>
   <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">检测到攻击后24小时收到电子邮件警报。在UI中、当Cloud Insights 工作负载安全收到电子邮件时、警报会在24小时之前显示。</block>
   <block id="c5b841da6fee0eba42d21333b80aa983" category="cell">当ONTAP 将_勒索 软件检测到_事件发送到Cloud Insights 工作负载安全(例如Cloud Secure)时、系统会发送电子邮件。事件包含一系列攻击及其时间戳。工作负载安全UI会显示第一个受攻击文件的警报时间戳。对特定数量的文件进行编码后、ONTAP 会将_勒索 软件检测到_事件发送到Cloud Insights。因此、在UI中显示警报的时间与发送电子邮件的时间可能会有所不同。</block>
+  <block id="41515808c69d7153bb45ebb8e41a4426" category="list-text">在*安全性*菜单下、选择*管理&gt;数据收集器&gt;代理&gt;+Agent*</block>
 </blocks>
