@@ -53,7 +53,6 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 * 创建新的攻击策略或编辑现有攻击策略。
 * 选择应监控攻击策略的 SVM 。
 * 单击"阻止用户文件访问"复选框。选择此选项后，此功能将启用。
-* 在 " 限制用户访问 " 下，选择应应用的限制模式。
 * 在"时间段"下、选择应用阻止的截止时间。
 * 要测试自动用户阻止、您可以通过模拟攻击 link:concept_cs_attack_simulator.html["模拟脚本"]。
 

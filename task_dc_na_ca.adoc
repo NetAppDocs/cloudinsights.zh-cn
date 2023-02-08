@@ -12,7 +12,7 @@ summary: NetApp Config Advisor 数据收集器
 此数据收集器使用只读调用从运行ONTAP 的存储系统以及连接的交换机获取配置数据。此数据收集器还会对整个ONTAP 集群配置堆栈运行配置验证和运行状况检查、以确定布线、配置、故障恢复能力、可用性和安全问题。
 
 
-NOTE: Config Advisor 被视为_Preview_功能、因此可能会更改。在预览期间、不会产生MU成本。
+NOTE: 此数据收集器为 link:task_getting_started_with_cloud_insights.html#useful-definitions["已弃用"]。
 
 
 

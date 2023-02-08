@@ -7628,7 +7628,6 @@
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">如何启用此功能？</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">创建新的攻击策略或编辑现有攻击策略。</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">选择应监控攻击策略的 SVM 。</block>
-  <block id="d08b030c0ac309193f01c8251798645c" category="list-text">在 " 限制用户访问 " 下，选择应应用的限制模式。</block>
   <block id="48247bb102471f1d0e096ff11dc3ce84" category="inline-link-macro">模拟脚本</block>
   <block id="40184bc9041969d58ad379b9b3e319cd" category="section-title">手动限制和管理用户访问</block>
   <block id="b9a6eedc929b25f1d8a4be77ee9da64b" category="section-title">如何禁用此功能？</block>
@@ -8279,7 +8278,6 @@
   <block id="fbf36f3c6d60eb5668138c4d75d88089" category="summary">NetApp Config Advisor 数据收集器</block>
   <block id="88e2274e499f8ed26ef4781524c0c669" category="doc">NetApp Config Advisor 数据收集器</block>
   <block id="6046ad7e81a04054b1054dd18be646fc" category="paragraph">此数据收集器使用只读调用从运行ONTAP 的存储系统以及连接的交换机获取配置数据。此数据收集器还会对整个ONTAP 集群配置堆栈运行配置验证和运行状况检查、以确定布线、配置、故障恢复能力、可用性和安全问题。</block>
-  <block id="6db4c00428e1d05aeb71deccf277b6e0" category="admonition">Config Advisor 被视为_Preview_功能、因此可能会更改。在预览期间、不会产生MU成本。</block>
   <block id="ad1fa18840d24ed6975856dc6929d1ca" category="paragraph">Cloud Insights 使用Config Advisor 数据收集器从ONTAP 和交换机采集配置数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="29caeecf8c2860ef16376efde64f566c" category="inline-image-macro">下拉列表显示了configAdvisor指标标记</block>
   <block id="e9adec50c1719bc25df0c99f074f2d62" category="paragraph">此外、请注意、信息板以及其他带有_NetApp_ontap.configadvisor_标记的查询将提供Config Advisor 指标。<block ref="3cb2c1d441e158e4834a77dea830d323" category="inline-image-macro-rx" type="image"></block></block>
@@ -10804,4 +10802,6 @@
   <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">登录到 Cloud Insights 。</block>
   <block id="09e37f1ff0e476ebcf643d237fbafa6c" category="admonition">此外、还可以在信息板表小工具中的"三点"菜单以及大多数登录页面表中导出到.CSV。</block>
   <block id="8cc71ef7dc274562927b7d0e2e19c749" category="paragraph">导出的数据将反映当前显示的筛选、列和列名称。</block>
+  <block id="2a4088a8e32ec82a0eddec8da7e8c7ce" category="inline-link-macro">*本页*</block>
+  <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">此页面为存根。有关最新的Unisphere文档、请参见 <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>。</block>
 </blocks>
