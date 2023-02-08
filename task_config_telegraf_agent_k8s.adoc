@@ -436,7 +436,10 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 == 调整操作员
 
-您可以通过微调自定义资源的某些变量来调整NetApp Kubernetes监控操作员以获得最佳性能。有关可设置的变量、请参见下表。
+您可以通过微调自定义资源的某些变量来调整NetApp Kubernetes监控操作员以获得最佳性能。有关可调整的变量的说明和列表、请参见安装软件包附带的README文件。安装操作员后、请使用以下命令查看自述文件：
+
+ kubectl exec -c manager -it <operator-pod-name> -n <namespace> -- cat configs/substitution-vars/README.txt
+///-开始调整部分您可以通过微调自定义资源的某些变量来调整NetApp Kubernetes监控操作员以获得最佳性能。有关可设置的变量、请参见下表。
 
 要修改这些值、请使用以下命令编辑代理CR (将<namespace> 替换为命名空间)：
 
@@ -542,6 +545,8 @@ CR规范采用以下格式：
 
 | cURL CMD_placeholder | 代理 | 是的。 | 用于下载各种资源的cURL命令。例如、"ccur"或"cURL -k" 
 |===
+///-结束调整部分
+
 
 
 == 故障排除
