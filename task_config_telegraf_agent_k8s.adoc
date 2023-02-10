@@ -171,26 +171,31 @@ password: <password from docker secret step above>
  docker pull docker.<cluster>.cloudinsights.netapp.com/netapp-monitoring:<version>
 使用以下命令查找_netapp-monitoring_<version>字段：
 
- kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image:"
+ kubectl -n netapp-monitoring describe deployment monitoring-operator | grep -i "image:" |grep netapp-monitoring
 根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。
 
 将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像。请参见 <<before-installing-the-netapp-kubernetes-monitoring-operator,前提条件>> 上一节介绍了这些组件的最新版本：
 
 ....
-docker.io/telegraf
-gcr.io/kubebuilder/kube-rbac-proxy
-k8s.gcr.io/kube-state-metrics/kube-state-metrics
+docker pull docker.<cluster>.cloudinsights.netapp.com/telegraf:<telegraf version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/kube-rbac-proxy:<kube-rbac-proxy version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/kube-state-metrics:<kube-state-metrics version>
 ....
 如果启用了 flual-bit ，请同时下载：
 
 ....
-docker.io/fluent-bit
-docker.io/kubernetes-event-exporter
+docker pull docker.<cluster>.cloudinsights.netapp.com/fluent-bit:<fluent-bit version>
+docker pull docker.<cluster>.cloudinsights.netapp.com/kubernetes-event-exporter:<kubernetes-event-exporter version>
 ....
-编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）。
+编辑监控操作员部署、并修改所有映像引用以使用新的Docker repo-location：
+
+....
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
+....
+编辑代理CR以反映新的Docker repo位置。
 
  kubectl -n netapp-monitoring edit agent agent-monitoring-netapp
- enableAutoUpgrade: false
 ....
 docker-repo: <docker repo of the enterprise/corp docker repo>
 dockerRepoSecret: <optional: name of the docker secret of enterprise/corp docker repo, this secret should be already created on the k8s cluster in the same namespace>

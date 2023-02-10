@@ -7645,7 +7645,6 @@
   <block id="e46ad1cf454a36b0aa27d5cb43692c6b" category="paragraph">登录到 Docker 存储库：</block>
   <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">如果启用了 flual-bit ，请同时下载：</block>
-  <block id="a8de879a7d09bdde6281eb2eb648ad0f" category="paragraph">编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）。</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">在 _spec__ 部分中，进行以下更改：</block>
   <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights 的新增功能</block>
   <block id="e229d51ca45046e23340982a0d911a30" category="section-title">保留审核数据</block>
@@ -10751,4 +10750,6 @@
   <block id="7826a8ff3c18c0f0f97a0002dc3d32e8" category="paragraph">此页面为存根。有关最新的Unisphere文档、请参见 <block ref="1318defb47cf6fd1af8008e47e16552f" category="inline-link-macro-rx"></block>。</block>
   <block id="64a4677d63e0753d438e5ff1996b08dd" category="paragraph">您可以通过微调自定义资源的某些变量来调整NetApp Kubernetes监控操作员以获得最佳性能。有关可调整的变量的说明和列表、请参见安装软件包附带的README文件。安装操作员后、请使用以下命令查看自述文件：</block>
   <block id="f9d83bcd2ea0c04a50e5e1cd5bc469ac" category="section-title">删除NetApp Kubernetes监控操作员</block>
+  <block id="0ee913a9f3f55f5a7505703cd1663976" category="paragraph">编辑监控操作员部署、并修改所有映像引用以使用新的Docker repo-location：</block>
+  <block id="5c19ae7a43d3f48864d792ef857eb222" category="paragraph">编辑代理CR以反映新的Docker repo位置。</block>
 </blocks>
