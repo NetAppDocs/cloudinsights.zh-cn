@@ -153,13 +153,19 @@ image:ProxyEndpoints_NewTable.png["代理端点表"]
 
 要卸载采集单元软件，请执行以下操作：
 
+'''
 * Windows ： *
+
+如果要卸载* Windows *采集单元：
 
 . 在采集单元服务器 /VM 上，打开控制面板并选择 * 卸载程序 * 。选择要删除的 Cloud Insights 采集单元程序。
 . 单击卸载并按照提示进行操作。
 
 
+'''
 * Linux ： *
+
+如果要卸载* Linux *采集单元：
 
 . 在采集单元服务器 /VM 上，运行以下命令：
 +
@@ -169,14 +175,18 @@ image:ProxyEndpoints_NewTable.png["代理端点表"]
  sudo cloudinsights-uninstall.sh --help
 
 
-* 两者： *
+'''
+* Windows和Linux：*
 
-. 卸载 AU 软件后，转到 * 管理 > 数据收集器 * 并选择 * 采集单元 * 选项卡。
+*卸载AU后*：
+
+. 在Cloud Insights 中、转到*管理>数据收集器*、然后选择*采集单元*选项卡。
 . 单击要卸载的采集单元右侧的选项按钮，然后选择 _Delete_ 。只有在未分配任何数据收集器的情况下，才能删除采集单元。
 
 
 注意：您不能删除默认采集单元。在删除旧 AU 之前，请选择另一个 AU 作为默认值。
 
+'''
 
 
 == 重新安装采集单元
