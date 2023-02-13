@@ -10752,7 +10752,6 @@
   <block id="8358341ae527ee11b5b1dc8e8f22edea" category="paragraph">此时将显示添加应用程序对话框。</block>
   <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">如果要卸载* Windows *采集单元：</block>
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">如果要卸载* Linux *采集单元：</block>
-  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* Windows和Linux：*</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*卸载AU后*：</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">在Cloud Insights 中、转到*管理&gt;数据收集器*、然后选择*采集单元*选项卡。</block>
 </blocks>
