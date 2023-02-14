@@ -257,9 +257,8 @@ NOTE: 如果您先前安装了基于脚本的代理、则必须升级到NetApp K
 . 记下Cloud Insights 可识别的集群名称。您可以运行以下命令来查看集群名称。如果您的命名空间不是默认命名空间(_CI-monitoring_）、请替换相应的命名空间：
 +
  kubectl -n ci-monitoring get cm telegraf-conf -o jsonpath='{.data}' |grep "kubernetes_cluster ="
-. 备份现有配置：
-+
- kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
+
+
 . 保存K8s集群名称、以便在安装K8s基于操作员的监控解决方案 期间使用、以确保数据连续性。
 +
 如果您不记得CI中K8s集群的名称、可以使用以下命令行从已保存的配置中提取此集群：
@@ -294,9 +293,6 @@ NOTE: 如果您先前安装了基于脚本的代理、则必须升级到NetApp K
 * 记下Cloud Insights 可识别的集群名称。您可以运行以下命令来查看集群名称。如果您的命名空间不是默认命名空间(_netapp-monitoring_）、请替换相应的命名空间：
 +
  kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
-* 备份现有配置：
-+
- kubectl --namespace netapp-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 
 
 <<to-remove-the-netapp-kubernetes-monitoring-operator,卸载>> 当前运算符。

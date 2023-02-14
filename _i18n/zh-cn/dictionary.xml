@@ -5365,7 +5365,6 @@
   <block id="307dff894f6575c33c4a314d918feab1" category="paragraph">请注意，这些命令使用的是默认命名空间 "CI-monitoring" 。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。</block>
   <block id="71342d32523395c97fae80cc75bd023d" category="paragraph">如果监控命名空间仅用于 Telegraf ：</block>
   <block id="e940152e87eec8b40c6335f4aac3e4b7" category="paragraph">如果除了 Telegraf 之外，监控命名空间还用于其他目的：</block>
-  <block id="37fa33c86fdccdaa2b45e4dbf0cc8be1" category="list-text">备份现有配置：</block>
   <block id="19032097e8464bc9b326d59737b0bdbc" category="paragraph">在设置代理时遇到问题时要尝试的一些操作：</block>
   <block id="fb0132b157c251ea47224310ff68ee9b" category="cell">我已使用 Cloud Insights 安装代理</block>
   <block id="1fed0141939f301599f8ba56fcb40b18" category="cell">如果您已在主机 /VM 上安装了代理，则无需重新安装该代理。在这种情况下，只需在 Agent 安装屏幕中选择适当的平台和密钥，然后单击 * 继续 * 或 * 完成 * 。</block>
@@ -10754,4 +10753,5 @@
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">如果要卸载* Linux *采集单元：</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*卸载AU后*：</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">在Cloud Insights 中、转到*管理&gt;数据收集器*、然后选择*采集单元*选项卡。</block>
+  <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* Windows和Linux：*</block>
 </blocks>

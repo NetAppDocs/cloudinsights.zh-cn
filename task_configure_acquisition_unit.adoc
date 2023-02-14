@@ -176,7 +176,7 @@ image:ProxyEndpoints_NewTable.png["代理端点表"]
 
 
 '''
-ec62359e3a6ba69aa52f3e51f45e7418
+* Windows和Linux：*
 
 *卸载AU后*：
 
