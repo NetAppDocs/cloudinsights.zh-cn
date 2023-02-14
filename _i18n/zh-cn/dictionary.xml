@@ -10754,4 +10754,5 @@
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*卸载AU后*：</block>
   <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">在Cloud Insights 中、转到*管理&gt;数据收集器*、然后选择*采集单元*选项卡。</block>
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* Windows和Linux：*</block>
+  <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">GET /｛schema｝/**-从报告数据库检索数据。</block>
 </blocks>

@@ -62,7 +62,7 @@ Cloud Insights 报告 API 遵循 link:https://www.odata.org/["OData v4"] （开�
 
 所有调用的 URL 为： _\https://<Cloud Insights URL>/rest/v1/dwh-management/OData_ 。
 
-* GET / ｛ schema ｝ /** - 从报告数据库检索数据，至少需要 _Guest_ 角色。
+* GET /｛schema｝/**-从报告数据库检索数据。
 
 
 格式： _\https://<Cloud Insights URL>/rest/v1/dwh-management/OData/<schema_name>/<query>_
