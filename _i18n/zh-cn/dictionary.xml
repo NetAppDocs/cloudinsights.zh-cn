@@ -10753,4 +10753,7 @@
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* Windows和Linux：*</block>
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">GET /｛schema｝/**-从报告数据库检索数据。</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">在安装 ONTAP SVM DSC 之前，可以运行此脚本来检查 SVM 中的事件速率</block>
+  <block id="190dd3a6d5f6ca42267f12b57190351c" category="doc">SVM事件速率检查程序(规模估算指南)</block>
+  <block id="0a2bd44573247d8e7748ce7d2d2a4b8f" category="paragraph">事件速率检查器用于在安装 ONTAP SVM 数据收集器之前检查 SVM 中的 NFS/SMB 组合事件速率，以查看一个代理计算机能够监控的 SVM 数量。使用事件速率检查器作为规模估算指南、帮助您规划安全环境。</block>
+  <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">一个代理最多可支持50个数据收集器。</block>
 </blocks>
