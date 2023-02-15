@@ -10757,4 +10757,7 @@
   <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">一个代理最多可支持50个数据收集器。</block>
   <block id="2723c4d559ff96bb42870d86c109708e" category="doc">SVM事件速率检查程序(代理规模估算指南)</block>
   <block id="abc492c54ab99cf963d50d67acb42565" category="sidebar">Event Rate Checker (代理规模估算指南)</block>
+  <block id="344b15b7319e7ac5af178bf86f71332e" category="cell">我收到一个类似此错误的错误："无法执行请求：连接到&lt;AWS region endpoint&gt; ：8080 [AWS/AWS &lt;AWS region endpoint&gt; 区域端点IP&gt;&gt;失败：连接超时：GET<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 区域端点FQDN&gt;：8080/v1/Storage/IPRanges HTTP/1.1</block>
+  <block id="ef756d1229bc6f51e983884d984a03f3" category="inline-link-macro">NetApp知识库文章</block>
+  <block id="59ac6af58fe53beeb9262552cb4288e4" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> Cloud Insights 用于与采集单元通信的不会在Cloud Insights 与数据收集器本身之间进行通信。您可以尝试以下几项操作：确保采集单元能够解析FQDN并访问所需的端口。在错误消息中确认不需要代理即可访问指定端点。可以使用curl测试采集单元与端点之间的通信。确保您*不*使用代理进行此测试。示例：root@acquisitionunit# cURL -s -H accept：application/json -H "Content-type：application/json"-H api-key：&lt;api key used in the data collector credentials -H secret-key:&lt;secret key used in the data collector credentials&gt; -X get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 区域端点&gt;：8080/v1/Storage/IPRanges请参见此内容 <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
 </blocks>
