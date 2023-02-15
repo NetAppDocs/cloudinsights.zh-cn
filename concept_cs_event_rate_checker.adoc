@@ -4,7 +4,7 @@ permalink: concept_cs_event_rate_checker.html
 summary: 在安装 ONTAP SVM DSC 之前，可以运行此脚本来检查 SVM 中的事件速率 
 keywords: event, checker, rate, sizing, size, guide, 
 ---
-= SVM事件速率检查程序(规模估算指南)
+= SVM事件速率检查程序(代理规模估算指南)
 :allow-uri-read: 
 
 
