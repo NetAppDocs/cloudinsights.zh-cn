@@ -98,7 +98,7 @@ NOTE: Cloud Insights 基本版中收集的功能，数据保留时间以及对�
 
 == 试用版
 
-注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。Cloud Insights 的所有功能 <<editions,标准版>> 在此试用期间可用。
+注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。
 
 在试用期间，您可以随时订阅 Cloud Insights 。订阅 Cloud Insights 可确保无中断地访问您的数据以及进行扩展 link:https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["* 产品支持 *"] 选项
 
