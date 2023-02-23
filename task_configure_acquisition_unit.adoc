@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_configure_acquisition_unit.html 
 keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving 
-summary:  
+summary: 采集单元在Windows和Linux上安装、卸载、配置代理支持等。 
 ---
 = 配置采集单元
 :allow-uri-read: 
