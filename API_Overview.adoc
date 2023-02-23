@@ -113,7 +113,7 @@ Cloud Insights API 基于类别，目前包含以下类型：
 
 其他类型和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 link:#api-documentation-swagger["API Swagger 文档"]。
 
-请注意，用户有权访问的 API 类型也取决于 link:concept_user_roles.html["用户角色"] 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。
+请注意，用户有权访问的 API 类型也取决于 link:concept_user_roles.html["用户角色"] 它们包含在每个Cloud Insights 功能集中(监控、工作负载安全性、报告)。
 
 
 

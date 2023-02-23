@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: cs_notifications_email.html 
-summary: 为 Cloud Secure 警报通知添加电子邮件地址。 
+summary: 为工作负载安全警报通知添加电子邮件地址。 
 keywords: email, notifications, alerts, warnings, attacks 
 ---
 = 为警报，警告和代理 / 数据源收集器运行状况配置电子邮件通知
@@ -9,7 +9,7 @@ keywords: email, notifications, alerts, warnings, attacks
 
 
 [role="lead"]
-要配置 Cloud Secure 警报收件人，请单击 * 管理员 > 通知 * ，然后在相应部分为每个收件人输入电子邮件地址。
+要配置工作负载安全警报收件人、请单击*管理员>通知*、然后在相应的部分中为每个收件人输入电子邮件地址。
 
 
 

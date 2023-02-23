@@ -187,19 +187,19 @@ sidebar:
       url: "/reporting_schema_diagrams.html"
     - title: 模式表
       url: "/reference_schemas.html"
-  - title: Cloud Secure
+  - title: 存储工作负载安全性
     entries:
-    - title: 关于 Cloud Secure
+    - title: 关于工作负载安全性
       url: "/cs_intro.html"
     - title: 入门
       entries:
-      - title: Cloud Secure 入门
+      - title: 工作负载安全性入门
         url: "/task_cs_getting_started.html"
-      - title: Cloud Secure 代理要求
+      - title: 工作负载安全代理要求
         url: "/concept_cs_agent_requirements.html"
-      - title: 配置 Cloud Secure 代理
+      - title: 配置工作负载安全代理
         url: "/task_cs_add_agent.html"
-      - title: 删除 Cloud Secure 代理
+      - title: 删除工作负载安全代理
         url: "/task_cs_delete_agent.html"
       - title: 配置 AD 目录收集器
         url: "/task_config_user_dir_connect.html"
@@ -209,7 +209,7 @@ sidebar:
         url: "/task_add_collector_svm.html"
       - title: 配置 Cloud ONTAP 数据收集器
         url: "/task_config_cs_incloud.html"
-      - title: Cloud Secure 用户管理
+      - title: 工作负载安全性用户管理
         url: "/task_cs_user_management.html"
       - title: Event Rate Checker (代理规模估算指南)
         url: "/concept_cs_event_rate_checker.html"
@@ -233,7 +233,7 @@ sidebar:
       url: "/concept_cs_attack_simulator.html"
     - title: 通知
       url: "/cs_notifications_email.html"
-    - title: Cloud Secure API
+    - title: 工作负载安全API
       url: "/concept_cs_api.html"
   - title: Active IQ
     url: "/concept_activeiq.html"

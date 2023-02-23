@@ -25,6 +25,6 @@ image:AutomatedAttackPolicy.png["创建攻击策略"]
 
 您可以通过在策略的下拉菜单中选择相应选项来修改或暂停自动响应策略。
 
-Cloud Secure 将根据 Snapshot 清除设置每天自动删除一次快照。
+工作负载安全性将根据Snapshot清除设置每天自动删除一次快照。
 
 image:CloudSecure_SnapshotPurgeSettings.png["Snapshot 清除设置"]

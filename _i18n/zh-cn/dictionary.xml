@@ -16,7 +16,6 @@
   <block id="1dd24ddc8bdc4a8ad7940369b2db779f" category="list-text">* 基本版 * 是免费的，可供具有有效 NetApp 支持帐户的现有 NetApp 客户使用。</block>
   <block id="ffec407b7dac5bde197f9fa34cee89d5" category="admonition">Cloud Insights 基本版中收集的功能，数据保留时间以及对象或指标可能会发生更改，恕不另行通知。</block>
   <block id="b0bb53aca4f0808da1b4e8c638bf67a0" category="list-text">* 标准版 * 可通过订阅获得，并提供基本版的所有功能及更多功能。</block>
-  <block id="ad7d493af34fa73fe95bf075712a5ec3" category="list-text">* 高级版 * 提供了其他优势，例如业务智能和报告以及 Cloud Secure 审核和威胁检测。</block>
   <block id="219927b224df858b634f5817e92a43c9" category="section-title">主要功能：</block>
   <block id="156cab06046ee0bb08bbcf2279656592" category="paragraph">以下是 Basic ， Standard 和 Premium Edition 中的主要功能：</block>
   <block id="0ad6a6d28761ee1aea9142218e951165" category="cell">主要功能</block>
@@ -40,8 +39,6 @@
   <block id="c804187aad1ac0e05bfe9734492a853f" category="cell">服务指标</block>
   <block id="3e61ac3c29f7cbd9ed1cd4606d9a50e6" category="cell">监控和警报</block>
   <block id="b42c726529f30f475409276e435fe377" category="cell">单点登录（ SSO ）</block>
-  <block id="372735448eedd531647388e4231b11e5" category="cell">Cloud Secure 用户数据访问审核</block>
-  <block id="296767e345f23610f06a21d1f03e36c6" category="cell">采用 AI/ML 的 Cloud Secure 内部威胁检测</block>
   <block id="d618d9be50e37adf260935938e49af96" category="inline-image-macro">挂锁</block>
   <block id="b6dea3b24cc18d2214ac0d7ea31d17ec" category="paragraph">使用 Cloud Insights 时，如果您看到挂锁图标 <block ref="3d68554889a6297f572b65a3534d0ef0" category="inline-image-macro-rx" type="image"></block>，表示此功能在您的当前版本中不可用，或者形式有限。升级以完全访问此功能。</block>
   <block id="3a7e4ed6e4843b57080572f28622d665" category="section-title">试用版</block>
@@ -154,8 +151,6 @@
   <block id="7040b350f10440ae0d8da871848e4a81" category="list-text">如果已存在具有相同名称，序列号等的 fpolicy ，则会出现错误。</block>
   <block id="92848109d677425a3581b7e70806e998" category="list-text">脚本在运行时会突然停止。</block>
   <block id="f03d806bb84581d824fc78103e668b12" category="paragraph">下面显示了一个脚本运行示例：</block>
-  <block id="b2cc220d2215b187ab8d4c56ae265409" category="cell">问题：如果我在已配置 Cloud Secure 的 SVM 上运行此脚本，它是仅使用 SVM 上的现有 fpolicy 配置还是设置一个临时脚本并运行此过程？</block>
-  <block id="ff1517eec20e306b3a46ef7159191e31" category="cell">问题解答：即使已为 Cloud Secure 配置 SVM ，事件速率检查程序也可以正常运行。不应产生任何影响。</block>
   <block id="414578a6fb051cf762571b6abc3062a7" category="cell">问题：是否可以增加可运行此脚本的 SVM 数量？</block>
   <block id="4c39b760a2129c8773ade4e38c7ee8a1" category="cell">问题解答：可以。只需编辑脚本并将 SVM 的最大数量从 5 更改为任何所需数量即可。</block>
   <block id="70fd916f11013b88f353d7c4cc8288b0" category="cell">问：如果增加 SVM 的数量，是否会增加运行脚本的时间？</block>
@@ -632,11 +627,8 @@
   <block id="2d6d04c4d20bee58922505cce875cd62" category="cell">节点名称位置节点 IP 版本配置字符串版本 Puppet</block>
   <block id="61bb9c3d200381413da5b615c1c8f827" category="cell">更改总数事件失败事件成功事件总资源更改资源失败资源无法重新启动资源异步资源重新启动资源已计划资源已跳过资源总时间锁定时间配置检索时间 Cron Time Exec 时间文件分段时间 lastrun 时间包时间计划时间服务时间 Sshaucorizedkey 时间总计 时间用户</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="summary">概述</block>
-  <block id="3313b924cfec321d134fd3d3da02982c" category="doc">关于 Cloud Secure</block>
-  <block id="8fe6f63ab7e9419453175ab1ba853a8a" category="paragraph">Cloud Secure 通过针对内部威胁提供可操作的情报来帮助保护您的数据。它可以集中查看和控制混合云环境中的所有企业数据访问，以确保实现安全性和合规性目标。</block>
   <block id="1729a56cfc89021478498fe0c89a843a" category="section-title">可见性</block>
   <block id="72afd90b781c569f0442e6e45c9f3193" category="paragraph">集中查看和控制用户对存储在内部或云中的关键企业数据的访问。</block>
-  <block id="3fe5b133975ca706df837f62aab8660d" category="paragraph">更换无法及时准确地查看数据访问和控制情况的工具和手动流程。Cloud Secure 在云和内部存储系统上都是唯一的，可为您提供有关恶意用户行为的实时警报。</block>
   <block id="83f1d9ca1a0c4c2fc51a371c0d773f76" category="section-title">保护</block>
   <block id="54d04d44eb04ed0d85509c90e074b8f6" category="paragraph">通过高级机器学习和异常检测功能，防止组织数据被恶意用户或被入侵用户滥用。</block>
   <block id="b979e86b9a609c9d9015d0b66fb3475b" category="paragraph">通过高级机器学习和用户行为异常检测，提醒您任何异常数据访问。</block>
@@ -1139,14 +1131,11 @@
   <block id="31be054ef32957d0b09e260052ca7194" category="paragraph"><block ref="31be054ef32957d0b09e260052ca7194" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a16ab7a0e2729553abea3c5bef941286" category="paragraph">对于每个数据收集器，您可以单击 " 三点 " 菜单来克隆，编辑，轮询或删除数据收集器。您也可以在此列表中选择多个数据收集器来对其执行批量操作。</block>
   <block id="ea88145436c3d93ffad8cb3aaa3f29d2" category="paragraph">要重新启动采集单元，请单击页面顶部的 * 重新启动 * 按钮。下拉此按钮可在出现连接问题时尝试 * 还原连接 * 到 AU 。</block>
-  <block id="0c988482a6ce018da7ef3957b3203859" category="summary">配置 Cloud Secure Active Directory 用户目录收集器</block>
   <block id="0352c19ca21d40072aea36bf372abc1d" category="doc">配置 Active Directory （ AD ）用户目录收集器</block>
-  <block id="fa9b26040d7c58d713bdcb2d7f3a30dd" category="paragraph">可以将 Cloud Secure 配置为从 Active Directory 服务器收集用户属性。</block>
   <block id="0fc244ec65c5541551b1c439ffac1ee7" category="list-text">要执行此任务，您必须是 Cloud Insights 管理员或帐户所有者。</block>
   <block id="ae955d02a07f9a58ed0029e3854c3705" category="list-text">您必须具有托管 Active Directory 服务器的服务器的 IP 地址。</block>
   <block id="9893d16b892001ac527b5dd093663300" category="list-text">在配置用户目录连接器之前，必须先配置代理。</block>
   <block id="b9674de27144ea13a735da22fe1380a9" category="list-title">配置用户目录收集器的步骤</block>
-  <block id="8bb363c919428891afa86212f956bd84" category="list-text">在 Cloud Secure 菜单中，单击： * 管理 &gt; 数据收集器 &gt; 用户目录收集器 &gt; + 用户目录收集器 * ，然后选择 * Active Directory*</block>
   <block id="7e1bdfeb6430dc8b47d034e49450b45e" category="paragraph">系统将显示添加用户目录屏幕。</block>
   <block id="b3adf2b0cc34c854cee763c3c6e16900" category="paragraph">通过在下表中输入所需数据来配置用户目录收集器：</block>
   <block id="94f4ea60967e5c80043d994ddf4d12fe" category="cell">用户目录的唯一名称。例如 _GlobalADCollector_</block>
@@ -1193,7 +1182,6 @@
   <block id="3912a3e7d51685eb46e7c7e9951aa300" category="cell">成员</block>
   <block id="f7ed7dd654407dc7a2b702d77c53762d" category="section-title">测试用户目录收集器配置</block>
   <block id="b0afde75fa64dcb6bdcec6d936adf351" category="paragraph">您可以使用以下过程验证 LDAP 用户权限和属性定义：</block>
-  <block id="93f53d95d91b168dee4bfacb26c44811" category="list-text">使用以下命令验证 Cloud Secure LDAP 用户权限：</block>
   <block id="439f35a04f48954f1398b05b4528da03" category="paragraph">`ldapsearch -o ldif-wrap=no -ll -x -b "dc=netapp ， dc=com" -h 10.235.40.29 -p 389 -D \Administrator@netapp.com -W`</block>
   <block id="aac773f1cd4073730a664dac98707850" category="list-text">使用 AD 资源管理器导航 AD 数据库，查看对象属性和属性，查看权限，查看对象架构，执行复杂的搜索，您可以保存这些搜索并重新执行这些搜索。</block>
   <block id="6c873deac87ef7970f8c83eb57337060" category="inline-link-macro">AD 资源管理器</block>
@@ -1208,7 +1196,6 @@
   <block id="c2d7b7e464a73b11c5c0b7bb2afa3125" category="cell">提供的用户名或密码不正确。编辑并提供正确的用户名和密码。</block>
   <block id="0f0977afe479def37dd7decd83ff28bd" category="cell">添加用户目录连接器会导致 ‘Error ' 状态。错误显示： " 无法获取作为林名称提供的 DN=DC=HQ ， DC=DOMAINNAME ， DC=com 对应的对象。 "</block>
   <block id="ed3875062a5dc193616c9c10130066f6" category="cell">提供的林名称不正确。编辑并提供正确的林名称。</block>
-  <block id="df12b85ca7c2eddab13f785c855d3221" category="cell">域用户的可选属性未显示在 Cloud Secure 用户配置文件页面中。</block>
   <block id="cd44db0a5dbf5e27845826e6d2e39976" category="cell">这可能是因为在 CloudSecure 中添加的可选属性名称与 Active Directory 中的实际属性名称不匹配。编辑并提供正确的可选属性名称。</block>
   <block id="f770c239762078a2cbf3492bf0bee15b" category="cell">数据收集器处于错误状态，并显示 "Failed to retrieve LDAP users.失败原因：无法在服务器上连接，连接为空 "</block>
   <block id="ee7ea87bada3e2049d3c7f6778157ab6" category="cell">单击 _Restart_ 按钮重新启动收集器。</block>
@@ -1229,7 +1216,6 @@
   <block id="c20f8510c77498f54857050e3a15df20" category="cell">提供的林名称不正确。请参见上文，了解如何提供正确的林名称。</block>
   <block id="5f2e23c8ce3ea6b51ceff23b5d8ac409" category="cell">未在用户配置文件页面中填充电话号码。</block>
   <block id="2d701fb03765a16a337855076299c890" category="cell">这很可能是由于 Active Directory 存在属性映射问题。1. 编辑从 Active Directory 提取用户信息的特定 Active Directory 收集器。请注意，在可选属性下，字段名称 " 电话号码 " 映射到 Active Directory 属性 ‘电话号码 ' 。4. 现在，请使用上述 Active Directory 资源管理器工具浏览 Active Directory 并查看正确的属性名称。3. 确保在 Active Directory 中有一个名为 ‘telphonenumber ' 的属性，该属性确实包含用户的电话号码。5. 我们可以说，在 Active Directory 中，它已修改为 ‘phonenumber ' 。6. 然后编辑 CloudSecure 用户目录收集器。在可选属性部分中，将 ‘telphonenumber ' 替换为 ‘phonenumber ' 。7. 保存 Active Directory 收集器后，收集器将重新启动并获取用户的电话号码，并在用户配置文件页面中显示相同的电话号码。</block>
-  <block id="8da3f7dc1971bd0c7ad358f666119f32" category="cell">如果在 Active Directory （ AD ）服务器上启用了加密证书（ SSL ），则 Cloud Secure 用户目录收集器无法连接到 AD 服务器。</block>
   <block id="307d85ae67db3542c6f899d7bc164528" category="cell">在配置用户目录收集器之前禁用 AD 服务器加密。提取用户详细信息后，该详细信息将在 13 个月内显示。如果在提取用户详细信息后 AD 服务器断开连接，则不会提取 AD 中新添加的用户。要重新提取，需要将用户目录收集器连接到 AD 。</block>
   <block id="23a0a69ba2da60844941129c97d32149" category="summary">通过 Kubernetes 节点详细信息页面，您可以深入了解后端 PV 和 Pod 存储。</block>
   <block id="47e3b127c663c8b9509f25ef96d3c6be" category="doc">Kubernetes Node 详细信息页面</block>
@@ -2256,18 +2242,7 @@
   <block id="ed5c4b12d92f20d8019eeff5f0fd66c6" category="inline-image-macro">网络挂机通知</block>
   <block id="acc9247412fe4c62f067be02a9f171df" category="paragraph"><block ref="acc9247412fe4c62f067be02a9f171df" category="inline-image-macro-rx" type="image"></block></block>
   <block id="84b68087d318e36771c271d014eb495c" category="admonition">最佳做法是为触发事件与已解决事件设置单独的通知，因为 PagerDty 处理触发事件的方式与已解决事件不同。</block>
-  <block id="fca95e64694fd3e528daa45b8878157b" category="summary">Cloud Secure 入门。</block>
-  <block id="bf397a1cd364bdcd66de802549df4b4d" category="doc">Cloud Secure 入门</block>
-  <block id="5dd6d497d4dc29fa334a72996cf3152e" category="paragraph">注册 Cloud Secure 并首次登录到环境后，需要先完成一些配置步骤，然后才能开始收集和分析数据访问信息。</block>
-  <block id="b0b63af3885e53fea9bb7ea027bf7274" category="section-title">安装代理</block>
-  <block id="5676e364227d864406542e6765a30496" category="paragraph">代理需要收集数据以供 Cloud Secure 分析。您可以在环境中的服务器或虚拟机上安装 Agent 软件。一个代理可用于多个数据收集器。</block>
   <block id="9024e92a6f8463167babdd2f09099395" category="inline-link-macro">代理要求</block>
-  <block id="ad202c6777ce78d484899441c34ab050" category="list-text">请参见 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block> 和 <block ref="7902d0521fa6bd726229418f042a3bdf" category="inline-link-macro-rx"></block> 以安装代理。</block>
-  <block id="995baaed007a33dba572505ffd6d726b" category="section-title">配置数据收集器</block>
-  <block id="e2003230c28715e54580be950cc64269" category="paragraph">Cloud Secure 从用户目录收集器收集用户信息数据，并从存储系统收集数据。Cloud Secure 使用这些数据分析用户对存储系统中实体的访问权限。</block>
-  <block id="bb0d3a900916bde690905e9e160afba5" category="inline-link-macro">用户目录收集器配置</block>
-  <block id="934c6a90ad595cf24fe1eae5c9e24230" category="list-text">要配置 User Directory Connector ，请参见： <block ref="089da67fe26f0fe233c1970ce127a533" category="inline-link-macro-rx"></block></block>
-  <block id="95fd6915d9e35ba27fa3d98e5299b2a2" category="list-text">要配置 Data Collector ，请参见左侧菜单中每个特定 Data Collector 的文档。</block>
   <block id="b11938f62b1381c70d7c54a31443f412" category="summary">配置 Brocade FC 交换机数据收集器。</block>
   <block id="dd95e4c7a837d3b569bf8739a342756b" category="doc">Brocade FC 交换机数据收集器</block>
   <block id="371bcf524307344dd6166c1f092ba8ee" category="paragraph">Cloud Insights 使用 Brocade FC 交换机（ SSH ）数据源发现运行 Factored Operating System （ FOS ）固件 4.2 及更高版本的 Brocade 或更名交换机设备的清单。支持 FC 交换机和访问网关模式下的设备。</block>
@@ -2333,7 +2308,6 @@
   <block id="1ca8bb723c638279d7c5ddb2b353ea54" category="paragraph">显示图例时，如果图例指示的资产登录页面可以导航到，则该图例将显示为指向该资产页面的链接。</block>
   <block id="8dc4e28c9ab949997514364957b2aa39" category="summary">取证活动历史记录数据</block>
   <block id="4bf5863c996526f74970c19dc17d7167" category="doc">取证—所有活动</block>
-  <block id="dcb127253471d77a3599979de252b724" category="paragraph">所有活动页面可帮助您了解对 Cloud Secure 环境中的实体执行的操作。</block>
   <block id="33a203d3623a54e6d264ebf5af5db210" category="section-title">检查所有活动数据</block>
   <block id="00908ac1050b3951784c917e44dfc116" category="paragraph">单击 * 取证 &gt; 活动取证 * ，然后单击 * 所有活动 * 选项卡以访问所有活动页面。此页面概述了您环境中的活动，并重点介绍了以下信息：</block>
   <block id="c86905ef58808f0a9e9e433a9f0ef22e" category="list-text">显示 _Activity History_ （根据选定全局时间范围，每分钟 / 每 5 分钟 / 每 10 分钟访问一次）的图形</block>
@@ -2396,7 +2370,6 @@
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">默认情况下， _all activity_ 表会显示 SELECT 列。要添加，删除或更改列，请单击表右侧的齿轮图标，然后从可用列列表中进行选择。</block>
   <block id="c6eae53556b2ad3b578a3cf2907baf44" category="inline-image-macro">活动选择器，宽度 = 30%</block>
   <block id="590dd2dc5bca645aeb542ed0a125bd23" category="paragraph"><block ref="590dd2dc5bca645aeb542ed0a125bd23" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="105063dce8eb13075f451e0ddc3ac046" category="paragraph">对于活动 Cloud Secure 环境，活动历史记录保留 13 个月。</block>
   <block id="df0f20d62dc4ba9c471fdeef6751ec5f" category="cell">问题</block>
   <block id="5fad6c174e90a6bce3c3685434f27610" category="cell">请尝试此操作</block>
   <block id="92232e830756517d2e51d25331f14f25" category="cell">在 "All actives" 表的 ‘User ' 列下，用户名显示为： "ldap ： HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817” 或 "ldap ： default ： 80038003"</block>
@@ -2909,8 +2882,6 @@
   <block id="988def7e9ecdc3ce4afd14c8ab0318e2" category="list-text">使用 " 复制到 " 或 " 移动到 " 按钮将报告粘贴到新创建的文件夹中</block>
   <block id="dd8a0eed4294a931eb1aea4dbf2d479d" category="list-text">为 Cognos 启用 SSO 后，使用用于创建帐户的电子邮件地址登录到 Cloud Insights 。</block>
   <block id="e67b4314bdf84e8fa0c01d2a41ab7449" category="list-text">导航到 Cognos 中的 _Team Content_ 文件夹，然后将先前保存的报告复制或移动回 _My Content_ 。</block>
-  <block id="3b8543e370dc52f9a7d19f7a35516bc7" category="summary">如果用户活动异常或可能受到攻击， Cloud Secure 会创建警报。" 警报 " 页面列出了这些活动，便于快速轻松地进行调查。</block>
-  <block id="5c6ef06bc46e43ffa2753295047c49ad" category="paragraph">Cloud Secure 警报页面显示最近攻击和 / 或警告的时间线，并可用于查看每个问题描述的详细信息。</block>
   <block id="ec463f286fdd66eb02ef994e465aa5ef" category="inline-image-macro">警报列表</block>
   <block id="710f7e812945643ee105a9bd2d01a01f" category="paragraph"><block ref="710f7e812945643ee105a9bd2d01a01f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b92071d61c88498171928745ca53078b" category="section-title">警报</block>
@@ -2955,22 +2926,14 @@
   <block id="bf69429297f9f42186bf9ad016e6efd6" category="section-title">警报通知</block>
   <block id="8c8959fb2c9aef71d75a9af4ab87c3ee" category="paragraph">警报的电子邮件通知会发送到警报的每个操作的警报收件人列表。要配置警报收件人，请单击 * 管理员 &gt; 通知 * 并为每个收件人输入一个电子邮件地址。</block>
   <block id="2c4a65782f3fcd193e8e3aab503fa515" category="section-title">保留策略</block>
-  <block id="cbae874c6c1869f464787967b7675be5" category="paragraph">警报和警告保留 13 个月。超过 13 个月的警报和警告将被删除。如果删除了 Cloud Secure 环境，则与该环境关联的所有数据也将被删除。</block>
   <block id="77422aee0786be7f7c1880b7b0954687" category="cell">请尝试以下操作：</block>
-  <block id="2ade59eb770748c9b4f1ec3bf11d2785" category="cell">对于 Cloud Secure （ CS ）创建的快照， CS 快照是否有清除 / 归档期限？</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link-macro">ONTAP 文档</block>
   <block id="5aec7bee9bf7098941b7fab790f89ec8" category="cell">否没有为 CS 快照设置清除 / 归档期限。用户需要为 CS 快照定义清除策略。请参见 <block ref="e3477019d6e8e26c6e36a5c10c372344" category="inline-link-macro-rx"></block> 有关如何设置策略的信息。</block>
-  <block id="737c035e56f1291d351198cd40129bca" category="cell">有时， ONTAP 每天每小时创建一次快照。Cloud Secure （ CS ）快照是否会影响它？CS 快照是否会采用每小时快照位置？默认每小时快照是否会停止？</block>
-  <block id="78f2d13ea1a156e915b8f9f276e10a75" category="cell">Cloud Secure 快照不会影响每小时快照。CS 快照不会占用每小时快照空间，应像以前一样继续使用。默认的每小时快照不会停止。</block>
   <block id="97142806b6f8ba5285f1650e6822a478" category="cell">如果在 ONTAP 中达到最大快照数，会发生什么情况？</block>
   <block id="c718437c95f9699cf92562f47fc2c706" category="inline-link-macro">正在设置 Snapshot 删除策略</block>
-  <block id="826637d93efeeed5e8cd8bf8191a39f3" category="cell">如果达到最大 Snapshot 计数，则后续 Snapshot 生成将失败， Cloud Secure 将显示一条错误消息，指出 Snapshot 已满。用户需要定义 Snapshot 策略以删除最早的快照，否则不会创建快照。在 ONTAP 9.3 及更早版本中，一个卷最多可包含 255 个 Snapshot 副本。在 ONTAP 9.4 及更高版本中，一个卷最多可以包含 1023 个 Snapshot 副本。有关的信息，请参见 ONTAP 文档 <block ref="be93a0e4b8c5168a6ec2dc10f7f34d59" category="inline-link-macro-rx"></block>。</block>
-  <block id="c759b4b59725629e086b7d2b70d7f534" category="cell">Cloud Secure 根本无法创建快照。</block>
   <block id="a2649cdb2384d3388d38543a8ba844c7" category="cell">确保用于创建快照的角色具有链接：已分配 https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html#a-note-about-permissions[proper 权限 ] 。确保为 _csrole_ 创建了用于创建快照的正确访问权限： security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "volume snapshot" -access all</block>
-  <block id="a720f8f98793420bc884a9d8009ec3ae" category="cell">对于 SVM 上较早的警报，快照失败，这些警报已从 Cloud Secure 中删除并随后重新添加。对于在重新添加 SVM 后出现的新警报，将创建快照。</block>
   <block id="1e325041509ea982dbf0cb285dc1f84d" category="cell">这种情况极少。如果您遇到这种情况，请登录到 ONTAP 并为较早的警报手动创建快照。</block>
   <block id="7490716e612a9644196d7f0a4d26b1fe" category="cell">在 _Alert Details_ 页面中，在 _Take Snapshot_ 按钮下方会显示消息 "Last Attempt Failed" 错误。将鼠标悬停在错误上会显示 "invoke API command has timed out for the data collector with id" 。</block>
-  <block id="1156fd7eccf8e785d477f6cf58127ae1" category="cell">如果通过 SVM 管理 IP 将数据收集器添加到 Cloud Secure 中，并且 ONTAP 中 SVM 的 LIF 处于 _disabled" 状态，则可能会发生这种情况。在 ONTAP 中启用特定 LIF 并从 Cloud Secure 触发 _Take Snapshot Manually _ 。然后， Snapshot 操作将成功。</block>
   <block id="a1770d973aec18b95787a6a193643282" category="summary">配置 Azure NetApp Files 数据收集器。</block>
   <block id="f916f0f3d901660a692bf9508ad90bed" category="doc">配置 Azure NetApp Files 数据收集器</block>
   <block id="fe8f2e9e4cd36409606f05db8e7ab83b" category="paragraph">Cloud Insights 使用 Azure NetApp Files 数据收集器获取清单和性能数据。</block>
@@ -2993,10 +2956,6 @@
   <block id="b25c7ff97a0a94fa5ed94d55f3bf7a28" category="cell">默认值为 60 。</block>
   <block id="2ba0bf6c3054dbad944b3c324f8dd4f6" category="list-text">ANF 数据收集器使用的凭据不得访问包含 ANF 卷的任何 Azure 订阅。</block>
   <block id="5813234f9a5bd764a03739c8b7797a1b" category="list-text">如果读取器访问导致性能收集失败，请尝试在资源组级别授予贡献者访问权限。</block>
-  <block id="45c19131072f07948d1770f1ec03afa7" category="summary">只需几个简单的步骤，即可开始使用 Cloud Secure</block>
-  <block id="b2812cddd5b031e5dc088cd8e43c739c" category="doc">Cloud Secure 入门</block>
-  <block id="87886b90d5dab8bf02873ef435989ce1" category="paragraph">在开始使用 Cloud Secure 监控用户活动之前，需要完成一些配置任务。</block>
-  <block id="4e63618c118db9ffd5d83e06a01690ce" category="paragraph">Cloud Secure 系统使用代理从存储系统收集访问数据，并从目录服务服务器收集用户信息。</block>
   <block id="b69df43565e372517a8522587f62a492" category="paragraph">在开始收集数据之前，您需要配置以下内容：</block>
   <block id="eaeb30f9f18e0c50b178676f3eaef45f" category="cell">任务</block>
   <block id="30f60d67f457bb040dffde52197a54da" category="cell">相关信息</block>
@@ -3679,13 +3638,7 @@
   <block id="c7ddb198b304e6105825a061afe57109" category="list-text">选择要删除的一个或多个应用程序。</block>
   <block id="874db297b2254479eeb702a2d7fa8dab" category="list-text">单击 * 删除 * 。</block>
   <block id="f15a825eae4d7211f1b9f849387b4133" category="paragraph">您分配的任何新应用程序将覆盖资产上从其他资产派生的任何应用程序。例如，卷会继承主机中的应用程序，而在将新应用程序分配给卷时，新应用程序会优先于派生应用程序。</block>
-  <block id="95c716f3d25385f1420d35626494f3d4" category="summary">Cloud Secure 包含一个功能强大的 API ，可与 CMDB 等其他应用程序集成。</block>
-  <block id="a65788d0d0c270911ef11d94cd4f7b3c" category="doc">Cloud Secure API</block>
-  <block id="9ccb848aeaa7cf6cebdd2e037ed2cd64" category="paragraph">NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Secure API 将 Cloud Secure 与其他应用程序集成，例如 CMDB 或其他票证系统。</block>
   <block id="1a152a606ca16a6eef5f2e9ac9b4c824" category="paragraph">API 访问要求：</block>
-  <block id="1d0837743eda51c99d756ba8828c2a16" category="list-text">API 令牌管理由具有管理员角色的 Cloud Secure 用户执行。</block>
-  <block id="c5f583f44b5b530cb4eb591f4ba7667b" category="paragraph">登录到 Cloud Secure 并导航到 * 管理 &gt; API 访问 * 可查看最新的 API 信息。单击 * API Documentation" 链接。API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。</block>
-  <block id="0eb72a6dca80b5e41750cbf9bdb0bf44" category="paragraph">在使用 Cloud Secure API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌授予读取权限。您还可以为每个访问令牌设置到期时间。</block>
   <block id="7cb3b9529a400efab93813f966aa77a3" category="list-text">输入 * 令牌名称 *</block>
   <block id="4139ce9120525156a7967ed1ee26ee83" category="list-text">指定 * 令牌到期 *</block>
   <block id="c346aec8c5c8cd10c853a9dc4560f5cd" category="admonition">您的令牌只能在创建过程中复制到剪贴板并进行保存。令牌创建后无法检索，因此强烈建议复制令牌并将其保存在安全位置。系统将提示您单击复制 API 访问令牌按钮，然后才能关闭令牌创建屏幕。</block>
@@ -3910,7 +3863,6 @@
   <block id="cc412c40172e597623d127ac815cf90b" category="list-text">性能数据</block>
   <block id="876a4a5d23ad526321e4de9c6ad565bf" category="paragraph">性能数据是指提供有关受监控设备 / 源性能的信息的时间序列数据。例如，这包括存储系统提供的 IOS 数量， FibreChannel 端口的吞吐量， Web 服务器提供的页面数量，数据库的响应时间等。</block>
   <block id="2a637012b3100d14854e0c88958048e6" category="list-text">清单数据</block>
-  <block id="cdb94270b2d379a6692775fe62d913f8" category="paragraph">清单数据由描述受监控设备 / 源及其配置方式的元数据组成。例如，这包括安装的硬件和软件版本，存储系统中的磁盘和 LUN ，虚拟机的 CPU 核心， RAM 和磁盘，数据库的表空间， SAN 交换机上的端口数量和类型，目录 / 文件名称（如果启用了 Cloud Secure ）等</block>
   <block id="cbbe9ca36f7a864171d70f736ed408bd" category="list-text">配置数据</block>
   <block id="b38208d6c0caf426b9ce527a7f6fa072" category="paragraph">此表汇总了客户提供的用于管理客户清单和操作的配置数据，例如受监控设备的主机名或 IP 地址，轮询间隔，超时值等</block>
   <block id="ffb85bfe93f1d2f1654a7048b87f0403" category="list-text">机密</block>
@@ -3919,11 +3871,7 @@
   <block id="acc33fbeb51f2c273dbbbe898cd55111" category="paragraph">这是由于 NetApp 提供云数据服务而生成的数据，该服务在云数据服务的开发，部署，操作，维护和安全方面向 NetApp 提供信息。功能数据不包含客户信息或个人信息。</block>
   <block id="8a0aeae003bb44ce51746437118cac5d" category="list-text">用户访问数据</block>
   <block id="a020ee54398cbdbb6220eb6dbbb2eea3" category="paragraph">允许 NetApp Cloud Central 与区域 Cloud Insights 站点进行通信的身份验证和访问信息，包括与用户授权相关的数据。</block>
-  <block id="0d424da9052dd1da185b833f80c57615" category="list-text">Cloud Secure 用户目录数据</block>
-  <block id="f1e2d81d897819d1cddfa2fa9568daf0" category="paragraph">如果启用了 Cloud Secure 功能且客户选择启用用户目录收集器，则系统将存储用户显示名称，公司电子邮件地址以及从 Active Directory 收集的其他信息。</block>
-  <block id="4c919f42fe478044c9519ad49ac6f0e0" category="admonition">用户目录数据是指由 Cloud Secure 用户目录数据收集器收集的用户目录信息，而不是有关 Cloud Insights 或 Cloud Secure 用户自身的数据。</block>
   <block id="56843f14a5fd059011e157622d7a2db2" category="paragraph">* 不从基础架构和服务资源收集任何明确的个人数据 * 。收集的信息仅包含性能指标，配置信息和基础架构元数据，与许多供应商的电话住宅非常相似，包括 NetApp 自动支持和 ActiveIQ 。但是，根据客户的命名约定，共享，卷， VM ， qtree 的数据， 应用程序等可能包含个人身份信息。</block>
-  <block id="3a6ee6e63ced3eff283ba4d8c391dcee" category="paragraph">如果启用了 Cloud Secure ，则系统还会查看 SMB 或其他共享上的文件和目录名称，这些共享可能包含个人身份信息。如果客户启用了 Cloud Secure 用户目录收集器（该收集器从本质上通过 Active Directory 将 Windows SID 映射到用户名），则 Cloud Insights 将收集并存储显示名称，公司电子邮件地址以及所选的任何其他属性。</block>
   <block id="0848bc91e44ee86e5df6e2c72cf1fe7a" category="paragraph">此外，还会维护对 Cloud Insights 的访问日志，并包含用于登录到服务的用户 IP 和电子邮件地址。</block>
   <block id="eda5bd9f930c539c1e3a13adfdf11fcb" category="section-title">我的信息存储在哪里？</block>
   <block id="1138dd8c1c5f38256d8698b98f56acf3" category="paragraph">Cloud Insights 会根据创建环境的区域存储信息。</block>
@@ -3932,8 +3880,6 @@
   <block id="2da07cba696cad1cf4956db4b9460e37" category="list-text">采集单元信息</block>
   <block id="def7ec89175f257cd08b3939e05ba8a6" category="list-text">功能数据</block>
   <block id="18a0eda54a9f6bb830d8c84899c0ac27" category="list-text">有关 Cloud Insights 中用户活动的审核信息</block>
-  <block id="a244df137383e426ed0e31d92223fa34" category="list-text">Cloud Secure Active Directory 信息</block>
-  <block id="b78a107c3fd619df98f3c42154cef9dc" category="list-text">Cloud Secure 审核信息</block>
   <block id="1a8b073d683b352fc06cc3bc800bc823" category="paragraph">无论托管 Cloud Insights 环境的地区如何，以下信息都驻留在美国：</block>
   <block id="2a56580b4f73dbbdeb1ee18d500fa3e8" category="list-text">环境站点（有时称为 " 租户 " ）信息，例如站点 / 帐户所有者。</block>
   <block id="477495be48e10387478849fdda012566" category="list-text">允许 NetApp Cloud Central 与区域 Cloud Insights 站点进行通信的信息，包括与用户授权相关的任何操作。</block>
@@ -4330,12 +4276,9 @@
   <block id="74ce3011edbe24d23741ab64757e01b3" category="cell">* 验证输入的凭据和 IP 地址。* 尝试通过 Web 管理控制台与阵列进行通信<block ref="05cc9b0aa4749686afc5de5ae5526f25" category="inline-link-rx"></block>。将 $ ｛ IP ｝ 替换为数据收集器配置的 IP 。</block>
   <block id="b18a21f855b9b4e7ca0fae5355812eb5" category="cell">错误： * 无法运行程序 * 执行命令时出错</block>
   <block id="d3fb13aa93c07b18952569ac666e58a4" category="cell">* 从 Cloud Insights 采集单元打开 CMD * 在命令行界面的主目录 /lib 中打开 CLI.CFG 文件并检查属性 java_install ，编辑该值以匹配您的环境 * 显示此计算机上安装的 Java 版本，键入： "java -version" * 对在发出的命令行界面命令中指定的 IBM 存储设备的 IP 地址执行 Ping 操作。* 如果以上所有操作均正常，请手动运行命令行界面命令</block>
-  <block id="5edc9ae57e01d5e824288e699faa3851" category="summary">配置 Cloud Secure LDAP 用户目录收集器</block>
   <block id="591d64253ebae6d71d70584704dad38d" category="doc">配置 LDAP 目录服务器收集器</block>
-  <block id="77c339f5c65dbc712df6794ffaf6aba2" category="paragraph">您可以将 Cloud Secure 配置为从 LDAP 目录服务器收集用户属性。</block>
   <block id="547676b7a40f4e24015e9cd282e24aa1" category="list-text">您必须具有托管 LDAP 目录服务器的服务器的 IP 地址。</block>
   <block id="3c35a2e7fd03ecf1d70e3ccbb970491a" category="list-text">在配置 LDAP 目录连接器之前，必须先配置代理。</block>
-  <block id="0ab9729b52eb80652dc6653c24e50c97" category="list-text">在 Cloud Secure 菜单中，单击： * 管理 &gt; 数据收集器 &gt; 用户目录收集器 &gt; + 用户目录收集器 * ，然后选择 * LDAP 目录服务器 *</block>
   <block id="fdfd3f6ec0fabb33e24fecb52aedd7f0" category="cell">用户目录的唯一名称。例如 _GlobalLDAPCollector_</block>
   <block id="3a45b9c0ea3e4236bedf33e3ba87dde6" category="cell">托管 LDAP 目录服务器的服务器的 IP 地址或完全限定域名（ FQDN ）</block>
   <block id="22b0d82bacfa42a3f2ef45adff5b3a07" category="cell">搜索库</block>
@@ -4432,7 +4375,6 @@
   <block id="905bf4f9d8189256f8247dcef263d5cb" category="cell">检查 Telegraf 代理日志，查看它是否报告以下错误： e ！插件 [inputs.docker] 中的错误：尝试连接到 Docker 守护进程套接字时被拒绝获得权限如果确实如此，请按照上述说明执行必要的步骤为 Telegraf 代理提供对 Docker Unix 套接字的访问权限。</block>
   <block id="aca759ec023e2e4c6156b1c2ced1b16b" category="summary">正在添加数据收集器</block>
   <block id="d137e11c6c77aa671e4c6d21140e86fc" category="doc">配置 ONTAP SVM 数据收集器</block>
-  <block id="f9a73a77fb0b80bd2a6dc48518a3907d" category="paragraph">Cloud Secure 使用数据收集器从设备收集文件和用户访问数据。</block>
   <block id="6b6a5e540baae01020db6abcb69752a2" category="list-text">此数据收集器支持以下功能：</block>
   <block id="a65bf0155aa66d72adb09356ef35ba5b" category="list-text">NFS 协议 4.0 及更早版本</block>
   <block id="3f1a7a2048c619e7b3997ddc8b02ae5e" category="inline-link-macro">必须进行配置</block>
@@ -4458,9 +4400,7 @@
   <block id="d47350de0cb738713602fc081af217e9" category="paragraph">请参见 <block ref="66b24601b32ea1e28a736b303c9dda16" category="inline-link-macro-rx"></block> 有关配置信息，请参见。此适用场景内部部署代理和代理安装在云中。</block>
   <block id="0deb145e97d2a45a78872c8c8eb51e12" category="list-text">在 AWS EC2 实例中安装代理以监控 Cloud ONTAP SVM 时，代理和存储必须位于同一个 VPC 中。如果它们位于不同的 VPC 中，则 VPC 之间必须有有效的路由。</block>
   <block id="0cd400e3d93cd7ed179f95d57d744891" category="section-title">有关权限的注释</block>
-  <block id="bf3bb5d17ba89dbbd6cbc400e1c6e125" category="paragraph">如果您无法使用集群管理管理员用户允许 Cloud Secure 访问 ONTAP SVM 数据收集器，则可以创建一个名为 "CSUser" 的新用户，其角色如下命令所示。将 Cloud Secure 数据收集器配置为使用集群管理 IP 时，请使用 "CSUser" 的用户名和密码。</block>
   <block id="10414897d078dba7d0d6c5111c2af072" category="paragraph">要创建新用户，请使用集群管理管理员用户名 / 密码登录到 ONTAP ，然后在 ONTAP 服务器上执行以下命令：</block>
-  <block id="cb5fee403d15816a05d17c1eb2ba3cb4" category="paragraph">如果您无法使用集群管理管理员用户允许 Cloud Secure 访问 ONTAP SVM 数据收集器，则可以创建一个名为 "CSUser" 的新用户，其角色如下命令所示。将 Cloud Secure 数据收集器配置为使用 Vserver 管理 IP 时，请使用 "CSUser" 的用户名和 "CSUser" 的密码。</block>
   <block id="a2eff2103f669c457b93354a8c3f5dce" category="paragraph">要创建新用户，请使用集群管理管理员用户名 / 密码登录到 ONTAP ，然后在 ONTAP 服务器上执行以下命令。为了方便，请将这些命令复制到文本编辑器中，并将 &lt;vservername&gt; 替换为您的 Vserver 名称，然后在 ONTAP 上执行这些命令：</block>
   <block id="e96ded369b9e59a3e1b17c09ebacf307" category="section-title">配置数据收集器</block>
   <block id="51bdd5739ec46025074c8dd62983fe18" category="list-title">配置步骤</block>
@@ -4528,7 +4468,6 @@
   <block id="bbbdcef88f86b6d9b2497ff3c9e77a10" category="list-text">操作数</block>
   <block id="5d93bc1be513a1f40ff446ce49a21f6a" category="section-title">刷新间隔</block>
   <block id="89564cc55e47ab6ad46f40d872e5acbb" category="paragraph">用户列表每 12 小时刷新一次。</block>
-  <block id="9dcdc3a7dcbd8a48d7d3624c1c97018e" category="paragraph">如果未再次刷新，则用户列表将保留 13 个月。13 个月后，数据将被删除。如果删除了 Cloud Secure 环境，则会删除与该环境关联的所有数据。</block>
   <block id="2afb7f9e9ab32f5802e520ebeefb1006" category="summary">欢迎使用 Cloud Insights 文档门户。</block>
   <block id="5858ee4031acd7b896faa2d3d2c1a299" category="doc">Cloud Insights 文档</block>
   <block id="b6569b5a5429e43ea4e566ae989fd3e6" category="paragraph">NetApp Cloud Insights 是一款云基础架构监控工具，可让您深入了解整个基础架构。借助 Cloud Insights ，您可以监控，排除故障并优化所有资源，包括公有云和私有数据中心。</block>
@@ -5404,14 +5343,11 @@
   <block id="aeba0ba92e92fa550526462ee7f15f49" category="inline-image-macro">节点容量和分配</block>
   <block id="505a160b62bc31c8ffa7c7dd25cbf213" category="paragraph"><block ref="505a160b62bc31c8ffa7c7dd25cbf213" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed5c4f798b6d55f2a89cb97884f0d548" category="section-title">有关仪表的说明</block>
-  <block id="c87f42b44870bb9fdcbb9ad0386ebd65" category="summary">为 Cloud Secure 警报通知添加电子邮件地址。</block>
   <block id="fc5aca4e5185f241f9160502eac0b160" category="doc">配置 NetApp ONTAP 数据收集器</block>
-  <block id="bdde9f578348148335a5c86ea6a0eda9" category="paragraph">Cloud Secure 使用数据收集器从设备收集文件和用户访问数据。这些数据将提供给 Cloud Secure 进行分析。</block>
   <block id="3b37597c3ea4000c791420b6b40843f4" category="list-text">必须配置代理才能收集数据</block>
   <block id="c73abc9bef194ae04f5fb7bed1f729ed" category="list-text">SVM 管理 IP 地址</block>
   <block id="00fa3e5a484b1b1da6f6139633ec0a86" category="list-text">用于访问 SVM 的用户名</block>
   <block id="0550286b2cf3ee1e3b5142a9567ceef1" category="list-text">用于访问 SVM 的密码</block>
-  <block id="fc62cd9124318118e4abaac940b4a091" category="list-text">以管理员或帐户所有者身份登录到您的 Cloud Secure 环境。</block>
   <block id="f67440b26bd0738244e7a688c63f36f7" category="list-text">单击 NetApp ONTAP 磁贴中的 * + 监控 * 。</block>
   <block id="c1d4ad5f417d351212d4fdea1c59cc7f" category="paragraph">系统将显示添加数据收集器： ONTAP SVM 配置页面。</block>
   <block id="c2314182d7948ad96182cb9eaae84fbd" category="list-text">输入收集器的唯一名称</block>
@@ -5458,9 +5394,6 @@
   <block id="d5e6634ae4019ea4993c5fee3a276807" category="list-text">单击查询并选择 Cloud Insights 应用标注规则时应使用的查询： * 聚合 0*</block>
   <block id="a8297ead7d4d1f0590bf46a98e70b494" category="list-text">单击标注并选择： * 根 AGG 排除 *</block>
   <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">单击 * 值 * 并输入 * 正确 *</block>
-  <block id="63e6bc3f499d2ef5baf4de4a454c7215" category="summary">正在添加 Cloud Secure 代理</block>
-  <block id="0283b90d804164e010fd44655d542c93" category="doc">Cloud Secure 代理安装</block>
-  <block id="1f64a3a5204a18c96d39e18121d1251f" category="paragraph">Cloud Secure 使用一个或多个代理收集用户活动数据。代理连接到环境中的设备并收集发送到 Cloud Secure SaaS 层进行分析的数据。请参见 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block> 配置代理虚拟机。</block>
   <block id="2ccb9ffac0ed017ddb6e68683bb0b7d5" category="list-text">安装，运行脚本和卸载需要 sudo 权限。</block>
   <block id="19b6dd145ff77b5b97341237076cba16" category="section-title">安装代理的步骤</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">系统将显示 "Add an Agent" 页面：</block>
@@ -5488,10 +5421,8 @@
   <block id="3a7e14f279ad4988e72d190c932c04e4" category="cell">代理安装失败，并显示错误： "-bash ： unzip ： command not found"</block>
   <block id="6ffa35eb057e4e4c2feada5be42e5766" category="cell">安装 unzip ，然后再次运行安装命令。如果计算机上安装了 Yum ，请尝试 " yum install unzip " 以安装解压缩软件。然后，从代理安装 UI 中重新复制此命令并将其粘贴到命令行界面中以重新执行安装。</block>
   <block id="a387ff3584e009519afcccd4187aa537" category="cell">代理已安装并正在运行。但是，代理已突然停止。</block>
-  <block id="7fa0d72b0760b32930f653609b88d5ea" category="cell">通过 SSH 连接到代理计算机。通过 `sUdo systemctl status cloudsecure-agent.service` 检查代理服务的状态。1. 检查日志是否显示消息 " 无法启动 Cloud Secure 守护进程服务 " 。2. 检查 Agent 计算机中是否存在 cssys 用户。使用 root 权限逐个执行以下命令，并检查 cssys 用户和组是否存在。`sUdo id cssys` `sUdo groups cssys` 3.如果不存在，则集中式监控策略可能已删除 cssys 用户。4. 执行以下命令手动创建 cssys 用户和组。`sUdo useradd cssys` `sUdo groupadd cssys` 5.然后，执行以下命令重新启动代理服务： `sudo systemctl restart cloudsecure-agent.service` 6 。如果仍未运行，请检查其他故障排除选项。</block>
   <block id="29b7d313eba062e750ba2589739662d4" category="cell">UI 显示 Agent 处于 not_connected 状态。</block>
   <block id="231ea4a17f0b46cee074d79ff9eb3089" category="cell">重新启动代理的步骤。1. 通过 SSH 连接到代理计算机。2. 执行以下命令重新启动代理服务： `sudo systemctl restart cloudsecure-agent.service` 3.通过 `sUdo systemctl status cloudsecure-agent.service` 检查代理服务的状态。4. 代理应处于已连接状态。</block>
-  <block id="a2934bc245ba02e7c806a5703fdd3fd5" category="cell">代理 VM 位于 Zscaler 代理之后，代理安装失败。由于 Zscaler 代理的 SSL 检查， Cloud Secure 证书会在 Zscaler CA 签名时呈现，因此代理不会信任通信。</block>
   <block id="05c6355a22bafa15e2cab398ecfbf462" category="doc">设置首选项选项卡中的选项</block>
   <block id="917d188111877c49b60bd4365f643222" category="paragraph">通过设备解析首选项选项卡，您可以创建自动解析计划，指定要在标识中包含或排除的存储和磁带供应商，以及设置 DNS 查找选项。</block>
   <block id="7dbe7ad385c14ce22a1918469059c6b6" category="section-title">自动解析计划</block>
@@ -5787,10 +5718,7 @@
   <block id="55d00560611b7ac6ad1fbc07da675be3" category="inline-link-macro">NetApp 知识库</block>
   <block id="b4bfb3ce4e8b9e9d62106cb32011d02d" category="paragraph">有关其他故障排除提示，请参见 <block ref="15447e468ec3e05469147de69518b15c" category="inline-link-macro-rx"></block> （需要支持部门登录）。</block>
   <block id="aae5f077ba03e56d1d16eaba111b41fa" category="paragraph">有关其他支持信息，请参见 Cloud Insights <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面。</block>
-  <block id="d2e8205fb26924fd3acaa79522f1f940" category="summary">Cloud Secure 用户帐户通过 Cloud Insights 用户管理进行管理</block>
   <block id="92726ab5faeb2cb9208eaac9af0346bd" category="doc">用户管理</block>
-  <block id="07f2370fb126193bda2c25e90787a779" category="paragraph">Cloud Secure 用户帐户通过 Cloud Insights 进行管理。</block>
-  <block id="762b279a9c8f6d6af8e0ab1138de94ff" category="list-text">登录到 Cloud Secure</block>
   <block id="6ebd484a6c09e27c3b5f9d6a61ad9a6a" category="paragraph">您将被转发到 Cloud Insights 的用户管理页面。</block>
   <block id="7bc31a95e4a1ee6f8948af20440df0c6" category="inline-link-macro">用户角色</block>
   <block id="faac345f3f122d78da73c0bf89c5d9f3" category="paragraph">有关用户帐户和角色的详细信息，请参见 Cloud Insights <block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block> 文档。</block>
@@ -5939,12 +5867,8 @@
   <block id="c8e05aea5e9d3735dfc4d0eb433a959e" category="paragraph">单击列表中的某个实体将打开该实体的概述页面，其中显示了该实体的配置文件，其中包含名称，类型，设备名称，最常访问的位置 IP 和路径等详细信息，以及用户， IP ， 和上次访问实体的时间。</block>
   <block id="4e65544840cf1a76b8d7ff99e3d3c032" category="inline-image-macro">实体概述页面</block>
   <block id="b7919853e15168e340641df87996f534" category="paragraph"><block ref="b7919853e15168e340641df87996f534" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1bd846829b377f755ea209739813cab5" category="summary">删除 Cloud Secure 代理</block>
-  <block id="3a9f0449dad849591172197b155093d9" category="doc">删除 Cloud Secure 代理</block>
-  <block id="d3b77b3dbc3cf86a35c40602095a562c" category="paragraph">删除 Cloud Secure 代理时，必须先删除与该代理关联的所有数据收集器。</block>
   <block id="ab8efa06dd0a715813bb7f2f966f8416" category="section-title">删除代理</block>
   <block id="bd98e76dea3cb70b874e1abcc40bd2a0" category="admonition">删除代理将删除与该代理关联的所有数据收集器。如果您计划使用其他代理配置数据收集器，则应在删除此代理之前为 Data Collector 配置创建备份。</block>
-  <block id="0979d909df522605166ca443a96bca6e" category="list-text">确保从 Cloud Secure 门户中删除与代理关联的所有数据收集器。</block>
   <block id="16bcb6504859efb370124aaf61c89fb1" category="paragraph">注意：如果所有关联的收集器都处于 stopped 状态，请忽略此步骤。</block>
   <block id="ab71eb10a75782a66759f743954f1bf4" category="list-title">删除代理的步骤：</block>
   <block id="4011c5dae5360156cb9edb8b312334ab" category="list-text">通过 SSH 连接到代理 VM 并执行以下命令。出现提示时，输入 "y" 以继续。</block>
@@ -6170,11 +6094,9 @@
   <block id="e706090ac76b3e56523819912497e0f6" category="cell">16 GB RAM</block>
   <block id="da65b8cea76748b286bd905feef4a5fa" category="cell">可用磁盘空间</block>
   <block id="eec89088ee408b80387155272b113256" category="cell">网络</block>
-  <block id="a4c9f60f11d808285b05aa24c83f213b" category="cell">100 Mbps 到 1 Gbps 以太网连接，静态 IP 地址，与所有设备的 IP 连接以及与 Cloud Secure 实例的所需端口（ 80 或 443 ）。</block>
   <block id="7049e466c3c4a154b7cc62cffe2ca36b" category="section-title">其他建议</block>
   <block id="d35391dc3c80304f928b511837b6f6a5" category="list-text">强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 来同步 ONTAP 系统和代理计算机上的时间。</block>
   <block id="2209fa650bb8459f4028b704176e2a4b" category="section-title">云网络访问规则</block>
-  <block id="16b65d90429d786b49a42388752c9adf" category="paragraph">对于 * 基于美国 * 的 Cloud Secure 环境：</block>
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">目标</block>
   <block id="02674a4ef33e11c879283629996c8ff8" category="cell">方向</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
@@ -6183,10 +6105,8 @@
   <block id="800d899720a1567094af6346ee35787a" category="cell">访问 Cloud Insights</block>
   <block id="4ce4e8664144d2ca2f89818a65da41cc" category="cell">gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com</block>
   <block id="d4fedc7f035f96436f1598f9626876e2" category="cell">访问身份验证服务</block>
-  <block id="b3b7f3a80b3e4119eadd4b30e81a281d" category="paragraph">对于 * 基于欧洲 * 的 Cloud Secure 环境：</block>
   <block id="c4bd63902a8959d209469ec987ed87db" category="cell">&lt;site_name&gt;.cs01-eu-1.cloudinsights.netapp.com &lt;site_name&gt;.c01-eu-1.cloudinsights.netapp.com &lt;site_name&gt;.c02-eu-1.cloudinsights.netapp.com</block>
   <block id="71459f50e034484f40116ee14f3856f9" category="cell">gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com</block>
-  <block id="ec0d22879ae7126b3969e0b82bbd9a91" category="paragraph">对于 * 基于亚太地区 * 的 Cloud Secure 环境：</block>
   <block id="2a7a1c69f19a2dce7c6cd235a0426527" category="cell">&lt;site_name&gt;.cs01-ap-1.cloudinsights.netapp.com &lt;site_name&gt;.c01-ap-1.cloudinsights.netapp.com &lt;site_name&gt;.c02-ap-1.cloudinsights.netapp.com</block>
   <block id="ccc64c65f1e8c75ec95b9e7045b1e7da" category="cell">gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com</block>
   <block id="0cd58d8585970b5311e84ca2c34ba5ef" category="section-title">网络内规则</block>
@@ -6250,7 +6170,6 @@
   <block id="344d982f50f03dc86d09f356f5f05441" category="cell">副本管理器 Fetcher 最大滞后 Zookeeper 客户端连接 Zookeeper 客户端连接（速率为 15 米） Zookeeper 客户端连接（速率为 5 米） Zookeeper 客户端连接（平均速率） Zookeeper 客户端连接（速率为 1 米） 副本管理器分区数线程数守护进程线程数峰值线程数当前线程数已启动总线程数脱机分区生成请求总时间（ 50 百分位）生成请求总时间（ 75 百分位）生成请求总时间（ 95 百分位）生成请求总时间（ 98 百分位）生成请求总时间（ 999 百分位） 生成请求总时间（第 99 百分位值）生成请求总时间生成请求总时间最大生成请求总时间平均生成请求总时间最小生成请求总时间 Stddev Replica Manager ISR 缩减副本管理器 ISR 缩减（ 15m 速率）副本管理器 ISR 缩减（ 5 米速率）副本管理器 ISR 缩减 （平均速率）副本管理器 ISR 缩减（ 1 米速率）请求处理程序平均空闲请求处理程序平均空闲时间（ 15 米速率）请求处理程序平均空闲时间（ 5 米速率）请求处理程序平均空闲时间（平均速率）请求处理程序平均空闲时间（ 1 米速率） 垃圾收集 G1 旧一代垃圾收集 G1 旧一代垃圾收集 G1 年轻一代垃圾收集 G1 年轻一代垃圾收集 G1 年轻一代时间 Zookeeper 只读连接 Zookeeper 只读连接（ 15 米速率） Zookeeper 只读连接（ 5 米速率） Zookeeper 只读连接（平均速率） Zookeeper 只读连接 （ 100 万个比率）网络处理器平均空闲请求提取跟进总时间（ 50 百分位）请求提取跟进总时间（ 75 百分位）请求提取跟进总时间（ 95 百分位）请求提取跟进总时间（ 98 百分位）请求提取跟进总时间（ 999 百分位）请求提取跟进总时间（ 999 百分位）请求提取跟进总时间（ 99 百分位） 请求提取跟踪器总时间请求提取跟踪器总时间最大请求提取跟踪器总时间平均请求提取跟踪器总时间最小请求提取跟踪器总时间跟踪器总时间在生成中等待的 Stddev 请求提取用户网络请求提取使用者（ 5 米速率）网络请求提取使用者（ 15 米速率） 网络请求提取消费者（平均比率）网络请求提取消费者（ 1 米比率）不干净的领导者选举不干净的领导者选举（ 15 米比率）不干净的领导者选举（ 5 米比率）不干净的领导者选举（平均比率）不干净的领导者选举（ 1 米比率） 活动控制器堆内存已提交堆内存堆内存已使用的最大堆内存 Zookeeper 会话到期 Zookeeper 会话到期（ 15m 速率） Zookeeper 会话到期（ 5m 速率） Zookeeper 会话到期（平均速率） Zookeeper 身份验证失败（ 1 m 速率） Zookeeper 身份验证失败（ 15m 速率） Zookeeper 身份验证失败（ 5m 速率） Zookeeper 身份验证失败（平均比率） Zookeeper 身份验证失败（ 1 米比率）领导者选举时间（ 50 百分位）领导者选举时间（ 75 百分位）领导者选举时间（ 95 百分位）领导者选举时间（ 98 百分位）领导者选举时间（ 999 百分位）领导者选举时间（ 99 百分位）领导者选举时间（ 15 分） 主管选举时间（ 5 米比率）领导者选举时间最大领导者选举时间平均领导者选举时间（平均比率）领导者选举时间最小领导者选举时间（ 1 米比率）领导者选举时间（ stddev ）网络请求提取跟踪者网络请求提取跟踪者网络请求提取跟踪者（ 15 米比率）网络请求提取跟踪者（ 5 米比率） 网络请求提取跟踪器（平均速率）网络请求提取跟踪器（ 1 米速率）代理主题消息代理主题消息（ 15 米速率）代理主题消息（ 5 米速率）代理主题消息（平均速率）代理主题消息（ 1 米速率）代理主题字节（ 15 米速率）中的代理主题字节 （ 5 米速率）代理主题字节数（平均速率）代理主题字节数（ 1 米速率） Zookeeper Disconnects Count Zookeeper Disconnects （ 15 米速率） Zookeeper Disconnects （ 5 米速率） Zookeeper Disconnects （平均速率） Zookeeper Disconnects （ 1 米速率） Network Requests Fetch Consumer Total Time （ 50 百分位） Network Requests Fetch Consumer Total Time （ 75 百分位） 网络请求提取使用者总时间（第 95 百分位）网络请求提取使用者总时间（第 98 百分位）网络请求提取使用者总时间（第 999 百分位）网络请求提取使用者总时间（第 99 百分位） 网络请求提取使用者总时间网络请求提取使用者总时间最大网络请求提取使用者总时间平均网络请求提取使用者总时间最小网络请求提取使用者总时间提取使用者总时间在提取代管代理主题字节数代理主题字节数（ 15m 速率） 代理主题字节输出（ 5 米速率）代理主题字节输出（平均速率）代理主题字节输出（ 1 米速率） Zookeeper 身份验证 Zookeeper 身份验证（ 15 米速率） Zookeeper 身份验证（ 5 米速率） Zookeeper 身份验证（平均速率） Zookeeper 身份验证（ 1 米速率）请求生成计数请求生成（ 15 米速率）请求生成 5 米速率）请求生成请求 （平均速率）生成请求（ 1 米速率）副本管理器 ISR 扩展副本管理器 ISR 扩展（ 15 米速率）副本管理器 ISR 扩展（ 5 米速率）副本管理器 ISR 扩展（平均速率）副本管理器 ISR 扩展（ 1 米速率）副本管理器扩展（复制分区下）</block>
   <block id="c45671a9389f697917f0b33d12822c51" category="section-title">Cloud Volumes ONTAP 存储配置</block>
   <block id="60b02ea35fab7476f0f0cf2d8cfc680d" category="paragraph">配置完成后，按照以下步骤设置 SVM ：<block ref="91221d0756e81d23329189ffc4e6701a" category="inline-link-rx"></block></block>
-  <block id="d4ed0ce3ae770f112754ea5fdeb0e838" category="paragraph">按照以下步骤配置要用作 Cloud Secure 代理的计算机：</block>
   <block id="05abd2814c8e2afbecb8ce23a813ae1e" category="list-text">登录到 AWS 控制台并导航到 EC2-Instances 页面，然后选择 _Launch Instance_ 。</block>
   <block id="ebd9fe3d2d05d2d59edd81d254e15f43" category="list-text">选择具有此页面中所述的相应版本的 RHEL 或 CentOS AMI ：<block ref="88c5ea1bab9ebb4c4d613c4f534b0ff9" category="inline-link-rx"></block></block>
   <block id="a9ba623dd18eacf6695a989de608739a" category="list-text">选择 Cloud ONTAP 实例所在的 VPC 和子网。</block>
@@ -6258,12 +6177,9 @@
   <block id="efb10f5a307574138e00f348ca720e50" category="list-text">创建 EC2 实例。</block>
   <block id="e24a1d497706260167f8a13cf71db79a" category="list-text">使用 YUM 软件包管理器安装所需的 Linux 软件包：</block>
   <block id="76857222b6ed7c427dc152c9014fa1db" category="list-text">安装 _wget_ 和 _unzip _ 原生 Linux 软件包。</block>
-  <block id="1b1575d608c5ac25242b7040b6f4fbf8" category="section-title">安装 Cloud Secure 代理</block>
-  <block id="423eac979a3e0d4bf196c8f1739436dc" category="list-text">导航到 Cloud Secure * 管理 &gt; 数据收集器 * ，然后单击 * 代理 * 选项卡。</block>
   <block id="154f1ab497a09601cd1fb9b781495c52" category="list-text">单击 * + 代理 * 并指定 RHEL 作为目标平台。</block>
   <block id="1958a7c94a832d37f7a96957c47d39f9" category="list-text">复制代理安装命令。</block>
   <block id="6b40ad8e187509b794c6e9b5ead388c5" category="inline-link-macro">代理前提条件</block>
-  <block id="1db3e70d5316bd8541b386c1c20c91a1" category="list-text">将代理安装命令粘贴到您已登录的 RHEL EC2 实例中。此时将安装 Cloud Secure 代理，并提供所有 <block ref="f5706ef9ce891542a2a7f34eef5c175e" category="inline-link-macro-rx"></block> 已满足。</block>
   <block id="fd84015eccd5cc523eb5eb1352f68be3" category="paragraph">有关详细步骤，请参见以下链接： https://docs.netapp.com/us-en/cloudinsights/task_cs_add_agent.html#steps-to-install-agent</block>
   <block id="73a9192b6872be0497b0ba9032e8a3ad" category="summary">预定义报告概述</block>
   <block id="3a0db2fa371f31d3fdf2d89981a1afcb" category="doc">预定义报告变得轻松</block>
@@ -6872,14 +6788,9 @@
   <block id="9b9af2e951f8ea63b057fa97c0b4ec3c" category="sidebar">数据模型</block>
   <block id="44b5660e842b773ac9a2a0afa118094a" category="sidebar">架构图</block>
   <block id="7689c3521d4273b6901f98796399f5b0" category="sidebar">模式表</block>
-  <block id="725fa6cc31a68ca7f439fce948043027" category="sidebar">Cloud Secure</block>
-  <block id="a58d130edeec9506633ca8e77d6751ff" category="sidebar">Cloud Secure 入门</block>
-  <block id="fd79a91f039f71b5fddff23f55ce0e33" category="sidebar">Cloud Secure 代理要求</block>
-  <block id="e5aec51ee52943fae3ccabf016387e6b" category="sidebar">配置 Cloud Secure 代理</block>
   <block id="c9163c5931581c0d00cc0540ed90e5c7" category="sidebar">配置 AD 目录收集器</block>
   <block id="5394915bbb6bf88a0b09d49535e6f706" category="sidebar">配置 LDAP 目录收集器</block>
   <block id="237cff5be9a99f30dc9585e6e705dc2b" category="sidebar">配置 Cloud ONTAP 数据收集器</block>
-  <block id="866ace7cbd74c56db66eff042dc08fd4" category="sidebar">Cloud Secure 用户管理</block>
   <block id="9759d20db6b94132676173d6d2302ff4" category="sidebar">取证</block>
   <block id="a8df87f53c1b831dfc886e69dec19144" category="sidebar">活动取证—所有活动</block>
   <block id="e5ac43b15443b9248d0df9b88a442cf9" category="sidebar">活动取证—实体</block>
@@ -7013,10 +6924,7 @@
   <block id="69b24ac806086d8120c6941f51bea8c7" category="inline-image-macro">使用联合进行用户管理</block>
   <block id="141cee4c6d3099b12c6927aace6bf538" category="paragraph"><block ref="141cee4c6d3099b12c6927aace6bf538" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7d29f1962bf2529a2067967e962ee3dd" category="cell">目录结构的林级别。林名称支持以下两种格式： _x.y.z_ =&gt; SVM 上的直接域名。例如： hq.companyname.com] _dc=x ， DC=y ， DC=z_ =&gt; 相对可分辨名称（例如： DC=HQ ， DC= CompanyName ， DC=com ），或者您可以指定为以下内容： _OU=engineering ， DC=HQ ， DC= CompanyName ， DC=com_ 【按特定 OU engineering 进行筛选】 _CN=username ， OU=engineering ， DC=CompanyName ， DC=NetApp ， DC=com_ 【仅从 OU &lt;engineering&gt;] 中获取具有 &lt;username&gt; 的特定用户， compcn=Acrobat 用户， CN=Users ， DC=HQ ， DC=com ， DC=All Users ，</block>
-  <block id="425a4c2b768b8a7766aa252d2e184e55" category="cell">集群中存在未使用的现有 fpolicies 。在安装 Cloud Secure 之前，应如何处理这些问题？</block>
-  <block id="60fae6823cc6f53b586dd9ae60ecf6aa" category="cell">建议删除所有现有未使用的 fpolicy 设置，即使它们处于已断开连接状态也是如此。Cloud Secure 将创建前缀为 "cloudsure_" 的 fpolicy 。可以删除所有其他未使用的 fpolicy 配置。用于显示 fpolicy list 的 CLI 命令： _fpolicy show-steps to delete fpolicy configurations ： _fpolicy disable -vserver &lt;svmname&gt; -policy-name &lt;policy_name&gt;_ _fpolicy policy policy scope delete -vserver &lt;svmname&gt; -policy-name &lt;policy_name&gt;_fpolicy policy policy policy policy delete -vserver &lt;svmname&gt; -policy -policy -engine -&lt;policy_name&gt; -policy -&lt;vmname&gt; -node -engine -&lt;policy_name&gt; -policy_name&gt; -vserver -vserver -policy&gt; &lt;policy_name&gt; -vpolicy -policy -engine -&lt;vm&gt; &lt;policy_name&gt; -node -policy_name&gt; -vpolicy -engine -vpolicy -&lt;policy_name&gt; -vpolicy</block>
   <block id="8f14e45fceea167a5a36dedd4bea2543" category="cell">7.</block>
-  <block id="7d8046677a1b263499357d1834d49ee6" category="cell">在 ONTAP 和 Cloud Secure 之间实现双向。代理对 SVM LIF 执行 Ping 操作。</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
@@ -7110,8 +7018,6 @@
   <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">请注意，即使删除用户，用户创建的任何信息板，查询等也将在 Cloud Insights 环境中保持可用。</block>
   <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">此问题描述</block>
   <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">Data ONTAP 9.2 及更高版本要获得最佳性能，请使用 Data ONTAP 版本，其中 <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> 已修复。</block>
-  <block id="4d9921582b3bc6dc32845b40e4b4c522" category="cell">启用 Cloud Secure 后， ONTAP 性能将受到影响：延迟偶尔会高， IOPS 偶尔会低。</block>
-  <block id="941f6670886082a432b8033949c34311" category="cell">在 Zscaler 代理中禁用 * 。 .cloudinsights.netapp.com URL 的 SSL 检查。如果 Zscaleer 执行 SSL 检查并替换证书，则 Cloud Secure 将不起作用。</block>
   <block id="664eaf7f7371b5bb01b58dd1401a3f24" category="cell">安装代理时，安装将在解压缩后挂起。</block>
   <block id="af5d24d9bf0b86e25aac0207e1738aa7" category="cell">"chmod 755 -rf " 命令失败。如果代理安装命令由非 root sudo 用户运行，而该用户的文件位于工作目录中，属于另一个用户，并且无法更改这些文件的权限，则此命令将失败。由于 chmod 命令失败，其余安装不会执行。1. 创建一个名为 cloudsecure 的新目录。2. 转到该目录。3. 复制并粘贴完整的 "token=…… … ./cloudsure-agent-install.sh" 安装命令并按 Enter 键。4. 安装应能继续进行。</block>
   <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">以下是配置此数据源的要求：</block>
@@ -7276,8 +7182,6 @@
   <block id="8482b7a1c15e20c8eab0296778760d7a" category="doc">Dell EMC XC 系列数据收集器</block>
   <block id="08b341cebd72c11ab08d59bd6ceda0b6" category="paragraph">Cloud Insights 使用此数据收集器来发现 Dell EMC XC 系列存储阵列的清单和性能信息。</block>
   <block id="723f73d5b4ee441851ae64cbfe823522" category="cell">数据收集器出错，显示此错误消息。" 错误：连接器处于错误状态。服务名称： audit 。失败原因：无法在 SVM SVM_test 上配置策略。原因： ZAPI 字段： Events 缺少值。"</block>
-  <block id="db45b764838c9131ffbab7063103f890" category="cell">从仅配置 NFS 服务的新 SVM 开始。在 Cloud Secure 中添加 ONTAP SVM 数据收集器。在 Cloud Secure 中添加 ONTAP SVM 数据收集器时， CIFS 会配置为 SVM 的允许协议。请稍候，直到 Cloud Secure 中的数据收集器显示错误为止。由于未在 SVM 上配置 CIFS 服务器，因此 Cloud Secure 将显示左侧所示的此错误。编辑 ONTAP SVM 数据收集器并取消选中 CIFS 作为允许的协议。保存数据收集器。它将在仅启用 NFS 协议的情况下开始运行。</block>
-  <block id="419692fe9178bca2f0f252349995b13c" category="paragraph">在本地系统上运行以下命令，以打开 Cloud Secure 要使用的端口。如果对端口范围存在安全问题，可以使用较小的端口范围，例如 _35000 ： 35100_ 。每个 SVM 使用两个端口。</block>
   <block id="cd97e5515b0cad32cadf2b0e90813f6d" category="paragraph">根据您的平台执行以下步骤：</block>
   <block id="504510de5d7df6b369756702c8c3a365" category="paragraph">* CentOS 7.x / RHEL 7.x * ：</block>
   <block id="0ffffb06548ffa1c8997d13d2b9f5839" category="paragraph">示例输出：</block>
@@ -7289,8 +7193,6 @@
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">创建监控器，以便针对性能或清单阈值以及指标或日志条件发出警报。</block>
   <block id="7d5581330314d1ed3096701515939e9d" category="doc">系统监控器</block>
   <block id="4cdcdb149afd3a4dfdaaf3ff86277a6b" category="list-text">* 已采取更正操作 * ：警报已建议更正操作。打开警报页面以查看这些内容。</block>
-  <block id="9de47b26bb491f5ab145336bb77b8aa0" category="paragraph">如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。</block>
-  <block id="c18e9bacb0ed35f6b26e407a261491be" category="paragraph">在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。如果您的环境中有 Cloud Secure ，则已配置的端点 URL 也会显示在此列表中。</block>
   <block id="39785ac77a465811e3584e33640cbff4" category="paragraph">在信息板中，任何时间序列小工具（线，样条曲线，区域，堆积区），单值， 或 Gauge Widget 可用于根据您选择的指标构建表达式，并在一个图形中显示这些表达式的结果。以下示例使用表达式解决特定问题。在第一个示例中，我们希望将环境中所有存储资产的读取 IOPS 显示为总 IOPS 的百分比。第二个示例显示了环境中发生的 " 系统 " 或 " 开销 " IOPS ，即不直接从读取或写入数据中获取的 IOPS 。</block>
   <block id="295ae6b0d3f79982844cbe49616552f4" category="paragraph">您可以在表达式中使用变量（例如： _$VAR1 * 100_ ）</block>
   <block id="0f17f6019d7d24f40bc97f9856c0ef14" category="paragraph">要在表达式中使用变量，只需键入变量名称即可，例如 _$var1 * 100_ 。表达式只能使用数字变量。</block>
@@ -7463,7 +7365,6 @@
   <block id="dc20128ad51d4736f32ce4774255be05" category="sidebar">HP Alletra 9000 和 Primera</block>
   <block id="2e8fa3456cfe892de65ae2fa6f7e0d87" category="sidebar">HPE Alletra 6000</block>
   <block id="90d5d1e94c91c6793bac228b60b84214" category="list-text">* 订阅 * Cloud Insights ，以便通过持续，无中断地访问您的数据 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直销或 AWS Marketplace （<block ref="385ff46fea47482c153cac05528a513d" category="inline-link-macro-rx"></block> 或 <block ref="adc6c636f1805dd93bb683e7ba795d58" category="inline-link-macro-rx"></block>）。</block>
-  <block id="9b90ea901c2599518f8cdf3fc6d14a42" category="paragraph">请注意： Cloud Secure 代理可以与 Cloud Insights 采集单元和 / 或代理安装在同一台计算机上。但是，最佳做法是在不同的计算机上安装这些软件。如果这些磁盘安装在同一台计算机上，请按如下所示分配磁盘空间：</block>
   <block id="37f8c5eb442d46d5ec5da0275366c9c8" category="list-text">仅支持数据类型 SVM 。不支持具有无限卷的 SVM 。</block>
   <block id="65ac9349c49d4dc9ceeb30daad295f0f" category="inline-image-macro">为 ONTAP 启用高级计数器和 EMS 日志收集</block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">在 Kubernetes 上，我的 Telegraf Pod 报告以下错误： " 处理 mountstats 信息时出错：无法打开 mountstats 文件： /hostfs/proc/1/mountstats ，错误： open /hostfs/proc/1/mountstats ：权限被拒绝 "</block>
@@ -7547,15 +7448,9 @@
   <block id="1823a3293796ab04adae38227fa9a422" category="cell">如果要限制将哪些项目的资源引入 Cloud Insights 。</block>
   <block id="4fae97854a6cef2a7c02f3b22e8df69c" category="cell">项目 ID</block>
   <block id="23e7025720ca26f786e85bf276a90711" category="cell">要筛选或筛选发现结果的项目 ID 列表，具体取决于 " 选择 " 排除 "..." 值的值。默认列表为空</block>
-  <block id="77ec532867a94121758e72c95815d1e9" category="summary">您可以使用脚本模拟勒索软件攻击，以测试或演示 Cloud Secure</block>
-  <block id="c91ccdaf7d2d0a73b8c6789c610e9a36" category="doc">Cloud Secure ：模拟攻击</block>
-  <block id="f1767a0d238fd0fa03d86dfe344b7da9" category="paragraph">您可以使用此页面上的说明，使用随附的 Cloud Secure 勒索软件模拟脚本模拟用于测试或演示 Cloud Secure 的攻击。</block>
   <block id="c8722d0a5f0f718756806afb0f63faf3" category="section-title">开始之前需要注意的事项</block>
   <block id="228b6b559614ae017988e0b66c4ab82c" category="list-text">勒索软件模拟脚本仅适用于 Linux 。</block>
-  <block id="4b4977f144a612cb5dcc69751db61974" category="list-text">此脚本随 Cloud Secure 代理安装文件一起提供。它可在安装了 Cloud Secure 代理的任何计算机上使用。</block>
-  <block id="5ca377457f233d1116a1177d3c9b8e67" category="list-text">您可以在 Cloud Secure 代理计算机本身上运行此脚本；无需准备其他 Linux 计算机。但是，如果您希望在其他系统上运行此脚本，只需复制此脚本并在其中运行即可。</block>
   <block id="7507a6fc6500d36cd4c727aec7187901" category="section-title">至少具有 1 ， 000 个示例文件</block>
-  <block id="b67a48562c5c72c2dd1f1ce618e93263" category="paragraph">此脚本应在包含要加密的文件的文件夹的 SVM 上运行。建议在该文件夹和任何子文件夹中至少有 1 ， 000 个文件。这些文件不能为空。请勿使用同一用户创建文件并对其进行加密。Cloud Secure 将此视为低风险活动，因此不会生成警报（即同一用户修改其刚刚创建的文件）。</block>
   <block id="497ca441ba939bb60a530a6e3409b407" category="inline-link-macro">以编程方式创建非空文件</block>
   <block id="af64720caca21622d75cb553bfdb8bd9" category="paragraph">有关说明，请参见下面的 <block ref="e4fffc8648374f8ac4aafa6cb656ffb6" category="inline-link-macro-rx"></block>。</block>
   <block id="3eee06b6e6c02b14b6bf0a76a8e1ee71" category="section-title">准备系统</block>
@@ -7564,10 +7459,8 @@
   <block id="dd94533008fec4ee5889a56fd78e2a26" category="paragraph">请勿挂载 NFS 4.1 ； Fpolicy 不支持此版本。</block>
   <block id="6006ea3f9ae2b497be9e9bce2d0ead62" category="paragraph">要在 Linux 中挂载 CIFS ，请执行以下操作：</block>
   <block id="a22c6eb3597528c16b0d46880ae4b1ae" category="paragraph">接下来，设置数据收集器：</block>
-  <block id="047f09d337fa7e61d37a18cdc64b32e2" category="list-text">如果尚未配置 Cloud Secure 代理，请进行配置。</block>
   <block id="173dfa4be4da90a7d5d1ced4c9f85a25" category="list-text">如果尚未配置 SVM 数据收集器，请进行配置。</block>
   <block id="79e81469dc70b00e14fd266807fa2813" category="section-title">运行勒索软件模拟器脚本</block>
-  <block id="026dcf0af13659deef26baefcf6ad0c6" category="list-text">登录（ ssh ）到 Cloud Secure 代理计算机。</block>
   <block id="785c0d55edba879bb891f6155bc195ee" category="list-text">导航到： _/opt/netapp/cloudsecure /agent/install_</block>
   <block id="430319bb139c1067cd6f898a565a8e7f" category="list-text">调用不带参数的模拟器脚本以查看用法：</block>
   <block id="873038227b1d58f9be9ac08fa093fdc8" category="section-title">对测试文件进行加密</block>
@@ -7575,7 +7468,6 @@
   <block id="76b9b68624d8f14bfe2d4fa26a74327e" category="section-title">还原文件</block>
   <block id="05b9537d4d6b18cde99b176600c5b6cb" category="paragraph">要解密，请运行以下命令：</block>
   <block id="508c80147534839c8ece65596b3e23ca" category="section-title">多次运行此脚本</block>
-  <block id="3556b7794d88ffd4262465058367fd7f" category="paragraph">在为用户生成勒索软件攻击后，切换到另一个用户以生成额外的攻击。Cloud Secure 可了解用户行为，不会在短时间内对同一用户的重复勒索软件攻击发出警报。</block>
   <block id="3c00df162167ecfa7cae1012f21e271a" category="section-title">以编程方式创建文件</block>
   <block id="b7013d500ab0d5c0a0a5ed66e230d702" category="paragraph">在创建文件之前，必须先停止数据收集器处理。在将数据收集器添加到代理之前，请执行以下步骤。如果您已添加数据收集器，只需编辑数据收集器，输入无效密码并保存即可。此操作将暂时使数据收集器处于错误状态。注意：请务必记下原始密码！</block>
   <block id="7fb4f29b2fbada5675e1ca18652cf155" category="paragraph">在运行模拟之前，您必须先添加要加密的文件。您可以手动将要加密的文件复制到目标文件夹中，也可以使用脚本（请参见以下示例）以编程方式创建文件。无论使用哪种方法，至少复制 1 ， 000 个文件。</block>
@@ -7594,11 +7486,9 @@
   <block id="b473afd1a1a7f9aa85950e270c33864e" category="cell">设置 ONTAP Fpolicy 发送缓冲区大小。如果使用的是 9.8p7 之前的 ONTAP 版本，并且显示了性能问题描述，则可以更改 ONTAP 发送缓冲区大小以提高 ONTAP 性能。如果您未看到此选项，但希望了解此选项，请联系 NetApp 支持部门。</block>
   <block id="ca25fd447f71b95ab21d53b012fa1ddc" category="list-text">ONTAP 9.4 及更高版本支持 FlexGroup</block>
   <block id="5ba6c86df3ea77e978bb9c685d6bec25" category="cell">确保您使用的是 Data ONTAP 版本，其中 <block ref="d09f6391dd7b77f4533e98569b4c1494" category="inline-link-macro-rx"></block> 已修复。建议的 ONTAP 最低版本为 9.8P7 。如果使用的是 9.8p7 之前的 ONTAP 版本，并且显示了此性能问题描述，则可以更改 ONTAP 发送缓冲区大小以提高 ONTAP 性能。如果您希望浏览此选项，但在添加新数据收集器或编辑现有数据收集器时看不到此设置，请联系 NetApp 支持部门。</block>
-  <block id="0e3ba895596ae6b82a28fc759871c813" category="paragraph">Cloud Insights 提供了四个用户帐户级别：帐户所有者，管理员，用户和来宾。系统会为每个帐户分配特定的权限级别。具有管理员权限的用户帐户可以创建或修改用户，并为每个用户分配以下 Cloud Secure 角色之一：</block>
   <block id="65e164b1fa429ad3c8da14d927b960f7" category="list-text">为每个用户选择所需的角色。</block>
   <block id="811b5ad1e386d9637dbe52f536822854" category="paragraph">添加新用户时，只需选择所需角色（通常为用户或来宾）即可。</block>
   <block id="8a684cc8084b02b93384f0bfc436d63c" category="list-text">潜在攻击类型（例如勒索软件或破坏）</block>
-  <block id="f30c6485c3c21678c5177709acd318b0" category="list-text">攻击类型（勒索软件，破坏）和警报 ID （由 Cloud Secure 分配）</block>
   <block id="7cbf4ba3df1c84539924c37da16db19b" category="paragraph">警报页面（此示例显示了潜在的勒索软件攻击）：<block ref="5ff4dcf9689ef64057d8e82508557b5f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c9d686a827f50aa2feb7087b665c481" category="paragraph">详细信息页面（此示例显示了潜在的勒索软件攻击）：<block ref="9d19bd7639e249113839e28d2fea9963" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c52c39354f4ad29d5eea2036eb6bf8a9" category="sidebar">模拟勒索软件攻击</block>
@@ -7612,12 +7502,10 @@
   <block id="3218ac0e5f26253bd8724ab98d8f5e02" category="inline-link-macro">警报详细信息页面</block>
   <block id="657cde821ca6ec1fead20aff3f183568" category="paragraph">当针对指定设备（或所有设备，如果已选择）触发警报时，自动响应策略将为您的数据创建快照。您可以在上查看快照状态 <block ref="a2af663b6945ecc2ca4cdaa8eaef2f70" category="inline-link-macro-rx"></block>。</block>
   <block id="89f1c60e7b4a80e9cdf68af3aa225ef8" category="paragraph">您可以通过在策略的下拉菜单中选择相应选项来修改或暂停自动响应策略。</block>
-  <block id="9d74b91cb5611a18b74d4ea2428c3b2c" category="paragraph">Cloud Secure 将根据 Snapshot 清除设置每天自动删除一次快照。</block>
   <block id="ef64e7e27fcc41880602820204326750" category="inline-image-macro">Snapshot 清除设置</block>
   <block id="58e92099c75821827b7a665f2931deb2" category="paragraph"><block ref="58e92099c75821827b7a665f2931deb2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38e47adb6ecfe4df7c79a3a31541dc49" category="inline-link-macro">限制用户访问</block>
   <block id="221dc2418a55893a5e042c9e03adccdf" category="paragraph">请参见 <block ref="0db6a779247705464ce31126448b6e46" category="inline-link-macro-rx"></block> 第页，了解有关通过 IP 限制用户访问的更多详细信息。</block>
-  <block id="812d24264002531aa5c33dcfea09ae4f" category="summary">借助 Cloud Secure ，您可以在发生可疑破坏时限制用户访问</block>
   <block id="5a648726ddefbfa82103a1d9ad7f888d" category="section-title">如何启用此功能？</block>
   <block id="9e228488a6769acafe8dbd4abaaa23ff" category="list-text">创建新的攻击策略或编辑现有攻击策略。</block>
   <block id="0791b390bcb1883a8ca3239cf8c8deed" category="list-text">选择应监控攻击策略的 SVM 。</block>
@@ -7627,7 +7515,6 @@
   <block id="6efa4058becdd76841666397b456b8bc" category="paragraph">您可以随时禁用此功能。如果系统中存在受限用户，则必须先还原其访问权限。</block>
   <block id="d62cebbd54827b8db7ecf72f7e55fa9a" category="paragraph">此功能将在所有页面中隐藏。</block>
   <block id="2ab997129d2c5216ff0d477e12280e8a" category="cell">尽管存在攻击，但某些用户并未受到限制。</block>
-  <block id="e90c2e3184d693395feccdf9a3d863a1" category="cell">1. 确保 SVM 的数据收集器和代理处于 _running 状态。如果停止了数据收集器和代理， Cloud Secure 将无法发送命令。2. 这是因为用户可能已使用以前未使用的新 IP 从计算机访问存储。限制通过用户访问存储的主机的 IP 地址进行。在 UI （ "Alert Details" （警报详细信息） &gt;"Access Limtion History" （此用户的访问限制历史记录） &gt;"Affected IPs" （受影响的 IP ））中检查受限 IP 地址列表。如果用户要从 IP 与受限 IP 不同的主机访问存储，则用户仍可通过非受限 IP 访问存储。如果用户尝试从 IP 受限的主机访问，则无法访问存储。</block>
   <block id="9d9d839297abd5b6559ef681c302109c" category="cell">要限制的 IP 已被其他用户限制。</block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：</block>
   <block id="c0c113f7f05cafdbe990d465db2be0e5" category="paragraph">首先，打开 _agent-monitoring-netapp_ 文件进行编辑：</block>
@@ -7685,7 +7572,6 @@
   <block id="c1f58328aeef13bbe14c188aa6c895ea" category="paragraph">您可以在此处找到有关报告问题故障排除的建议。</block>
   <block id="f6742e49587a771a1225e7c6e472c682" category="cell">在计划通过电子邮件发送报告时，已登录用户的名称会预先填充到电子邮件的 " 收件人 " 字段中。但是，此名称的形式为 "firstname lastname" （名字，空格，姓氏）。由于此地址不是有效的电子邮件地址，因此在运行计划的报告时，此电子邮件将无法发送。</block>
   <block id="155db2ed9995e9882b3be492b37935dc" category="cell">在计划通过电子邮件发送报告时，请清除预先填充的名称，然后在 " 收件人 " 字段中输入格式正确的有效电子邮件地址。</block>
-  <block id="9a77156daa8e3ba32694334a614ff511" category="paragraph">如果您的 Cloud Secure 试用版到期或代理 / 收集器已关闭，请按照以下步骤手动从 ONTAP 还原任何 IP 。</block>
   <block id="6dbbd623c3a6977270c54a9833844b28" category="list-text">列出 SVM 上的所有导出策略。</block>
   <block id="316d81dde3628e46f8db6067cc55e287" category="cell">手动单击限制访问会显示 " 此用户的 IP 地址已受限制 " 。</block>
   <block id="bef090ff3d523fedde21921ae6a366fd" category="paragraph">在批量添加操作上单击 _Save_ 或批量删除操作上单击 _Remove_ 后， Cloud Insights 会通知您此操作将需要一段时间。您可以取消此消息；此操作将在后台继续。</block>
@@ -7781,7 +7667,6 @@
   <block id="c13a40ffc26f5f762f6de126cf232cf5" category="list-text">数据载入类型用于检索和管理载入数据和自定义指标，例如从 Telegraf 代理检索和管理</block>
   <block id="e2838ba9f29d27f412035bd037388732" category="list-text">日志载入用于检索和管理日志数据</block>
   <block id="133f61531451649a036c6c806600058c" category="paragraph">其他类型和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 <block ref="26737cef142923769504b229d3be204d" category="inline-link-macro-rx"></block>。</block>
-  <block id="5288b4109c2d4a86ed612074d0baed37" category="paragraph">请注意，用户有权访问的 API 类型也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们在每个 Cloud Insights 功能集（监控， Cloud Secure ，报告）中都有。</block>
   <block id="8811c3ab0c7b0cc46d2ac67e164d0fc9" category="paragraph">性能指标具有问题描述 和类型，并包含一组性能摘要。例如，延迟，流量和速率。</block>
   <block id="2bf7ed4a0e334f4b972f700945f47a56" category="paragraph">每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Cloud Insights 支持本文档后面列出的多种性能指标类型。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。</block>
   <block id="9d31f56324b0322ffe68df1873845bca" category="paragraph">搜索 API 是系统的一个简单入口点。API 的唯一输入参数是自由格式的字符串，生成的 JSON 包含分类结果列表。类型与清单不同，例如存储，主机，数据存储库等。每种类型都将包含一个与搜索条件匹配的对象列表。</block>
@@ -8234,7 +8119,6 @@
   <block id="998b4e1fe06f3059a9390f884ebd2960" category="list-text">所有 _Monitor 和 Optimize 管理员</block>
   <block id="df43b72d848c482dd610f8178005dbe4" category="paragraph">要配置全局警报收件人，请在 * 全局监控通知收件人 * 部分中选择所需的收件人。</block>
   <block id="12c5785c0da06ba105803155a192752d" category="doc">为警报，警告和代理 / 数据源收集器运行状况配置电子邮件通知</block>
-  <block id="fb2811eb0d80f0dc871a8e892a828518" category="paragraph">要配置 Cloud Secure 警报收件人，请单击 * 管理员 &gt; 通知 * ，然后在相应部分为每个收件人输入电子邮件地址。</block>
   <block id="d788a1b203813004b96af5724b63cb70" category="section-title">潜在攻击警报和警告</block>
   <block id="0913d37e3bac65fbe05c7263d286ef60" category="paragraph">要发送 _potential agres攻击 _ 警报通知，请在 _Send potential Attack Alerts_ 部分输入收件人的电子邮件地址。对于对警报执行的每个操作，系统会将电子邮件通知发送到警报收件人列表。</block>
   <block id="971a81b1c11c1b1948e93ef28402c3f4" category="paragraph">要发送 _Warning_ 通知，请在 _Send Warning Alerts_ 部分中输入收件人的电子邮件地址。</block>
@@ -8500,15 +8384,11 @@
   <block id="879c5e9016d012ef4ef799fcd3d67e77" category="summary">配置Cohesity SmartFiles数据收集器。</block>
   <block id="0bf422dd8c3b545a1629a88c7196ec4f" category="doc">Cohesity SmartFiles数据收集器</block>
   <block id="680aba4527b5f65899e6a3d8b5ef2457" category="doc">正在阻止用户访问</block>
-  <block id="309db5d77408f61da8eb2be2f90ace37" category="paragraph">检测到攻击后、Cloud Secure 可以通过阻止用户访问文件系统来阻止攻击。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。</block>
   <block id="7aedbe09972610c1d6a6d90587580682" category="paragraph">在阻止用户访问时、您应定义一个阻止时间段。选定时间段结束后，系统将自动还原用户访问权限。SMB和NFS协议均支持访问阻止。</block>
-  <block id="75e34f78366a0711ad3da9bfc46eba71" category="paragraph">SMB会直接阻止用户访问、NFS会阻止导致攻击的主机的IP地址。这些计算机 IP 地址将被阻止访问 Cloud Secure 监控的任何 Storage Virtual Machine （ SVM ）。</block>
-  <block id="cb955e8b752fc732ba5a7f0c6f8fd22b" category="paragraph">例如、假设Cloud Secure 管理10个SVM、并为其中4个SVM配置了自动响应策略。如果攻击源自四个SVM中的一个、则用户的访问将在所有10个SVM中被阻止。仍会在源 SVM 上创建 Snapshot 。</block>
   <block id="7dd607950e587603a00a1a965723c7c1" category="paragraph">如果有四个SVM、其中一个SVM配置为SMB、一个配置为NFS、其余两个SVM配置为NFS和SMB、则如果攻击源自四个SVM中的任何一个、则所有SVM都将被阻止。</block>
   <block id="09ea31b2f879daa3575f90741cc1d791" category="section-title">阻止用户访问的前提条件</block>
   <block id="4c03839c4d4987ac81496c7f17d6f092" category="paragraph">要使此功能正常运行、需要集群级别的凭据。</block>
   <block id="9a517e6700abab3e080100846703ab51" category="paragraph">如果您使用的是集群管理凭据、则不需要任何新权限。</block>
-  <block id="075530afc57aa5ff8851fb139e2fbbae" category="list-text">在Cloud Secure 中、导航到*管理员&gt;自动响应策略&gt;响应策略设置&gt;阻止用户访问*。</block>
   <block id="d024f8c400c18ed25e7c797f6b13a110" category="list-text">将"启用块用户访问"设置为_enabled"。</block>
   <block id="8bdb8cb044f5c9cc0cc87ec310782e1a" category="section-title">如何设置自动用户访问阻止？</block>
   <block id="83fce3228306e4223f72e5a98ed7923e" category="list-text">单击"阻止用户文件访问"复选框。选择此选项后，此功能将启用。</block>
@@ -8521,11 +8401,8 @@
   <block id="f169ac98d63faf28e5387c7068cdc42d" category="list-text">您可以转到警报详细信息或用户详细信息屏幕、然后从这些屏幕手动阻止或还原用户。</block>
   <block id="f21a59e38c0c86324abe189f2666efd8" category="section-title">用户访问限制历史记录</block>
   <block id="b030dc666e324798ee9403442dd23eb1" category="paragraph">在警报详细信息和用户详细信息页面的用户面板中、您可以查看对用户访问限制历史记录的审核：时间、操作(阻止、取消阻止)、持续时间、采取的操作、 NFS的手动/自动IP以及受影响的IP。</block>
-  <block id="80ecf7ab5a45356379b3eb7762ec7c38" category="list-text">在Cloud Secure 中、导航到*管理员&gt;自动响应策略&gt;响应策略设置&gt;阻止用户访问*</block>
   <block id="01aa451dc1421e1b9d5fe5148ef31be7" category="list-text">取消选择"启用块用户访问"以禁用。</block>
   <block id="fdf597bf8083a921059736ff839ffae8" category="section-title">手动还原NFS的IP</block>
-  <block id="d23f1b27ded70721476d7b5a6ff99f76" category="list-text">通过指定相应的RuleIndex、删除SVM上所有策略中的规则、这些策略将"cloudsure_rule"设置为客户端匹配。Cloud Secure 规则通常为1。</block>
-  <block id="3aba5c3b5ec94e17ca4afc1a38905dbe" category="list-text">确保已删除Cloud Secure 规则(可选的确认步骤)。</block>
   <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">无法修改策略。原因：未获得该命令的授权。</block>
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">检查是否使用CsUser、是否已按上述方式为用户授予权限。</block>
   <block id="a9a216fbb1fb9d774e7cedfcf74c00cf" category="cell">从打开服务单<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。选择类别" cloud.netapp.com &gt;帐户/登录问题"或" cloud.netapp.com &gt;联合问题"。这专门针对 Cloud Central 问题或问题。对于所有其他Cloud Insights 技术支持问题、请联系 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
@@ -8544,11 +8421,7 @@
   <block id="e056d3391fc09511bb4b998310f69c58" category="cell">API访问和加；</block>
   <block id="d54591f265027d735d3be71d57199e4a" category="cell">业务智能和报告(&amp;ast)；</block>
   <block id="1331ebfce7b11a352f3117229f7a9f42" category="paragraph">仅限5个活动的自定义监控器(仅限)加号；API访问因版本和版本而异；(仅限500个或更多受管单元的环境)</block>
-  <block id="4c599f70e51d65668c4ce4bd1c33bb95" category="paragraph">如果您使用的自定义用户(例如_CSUser_)具有为该用户授予的权限、请按照以下步骤为Cloud Secure 授予权限以阻止用户。</block>
-  <block id="a8ebeed3ca8bbd5dcb31700e343f161c" category="paragraph">如果您的Cloud Secure 试用版到期或代理/收集器已关闭、请按照以下步骤手动从ONTAP 还原任何用户。</block>
-  <block id="f95989b518510dd543fddfe641a0760e" category="paragraph">您可以从用户列表页面获取Cloud Secure 中阻止的用户列表。</block>
   <block id="d429655e140835b91db45b4324358975" category="list-text">使用cluster _admin_凭据登录到ONTAP 集群(要解除对用户的阻止)。(对于Amazon FSX、使用FSX凭据登录)。</block>
-  <block id="a450d857f06b830531fe0de70552762d" category="list-text">运行以下命令以列出所有SVM中被Cloud Secure for SMB阻止的所有用户：</block>
   <block id="8eb6e3d15a14daab42fbb2f986622059" category="paragraph">在上述输出中、域CSL阻止了2个用户(US030、US040)。</block>
   <block id="22ee7904617969fe778ac3e28eded28c" category="list-text">从上述输出中确定位置后、运行以下命令以解除对用户的阻止：</block>
   <block id="1f8fcb155f2b517c2c9ae95f65ae3623" category="list-text">运行命令以确认用户未被阻止：</block>
@@ -8648,10 +8521,7 @@
   <block id="719cb8a818a4675afed135a249f933cf" category="admonition">Hitachi内容平台按不同的原始TB到受管单元速率进行计量。每40 TB未格式化的HCP容量计费为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="c5718388c9ba089c3e079c5b8598c2f1" category="paragraph">Cloud Insights 从NetApp StorageGRID 收集器获取以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="75538d7973020af3db4059fd4aefea12" category="admonition">IBM Cleversafe按不同的原始TB到受管单元速率进行计量。每40 TB未格式化的IBM Cleverssafe容量计为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
-  <block id="8dd7ee5e6653f76a82e4dafafcb16a8f" category="list-text">SMB协议3.1及更早版本。请注意、Cloud Secure 不适用于使用FlexCache 的SMB配置。从ONTAP9.7开始、Fpolicy仅在NFS环境中受支持。</block>
   <block id="95be99c1e2046a974fa1680ffa1b83ed" category="cell">Kubernetes v1.20及更高版本</block>
-  <block id="8c69796d33d9c95e7caf8015cf31ccbe" category="cell">安装后代理未运行。_systemctl status cloudsecure-agent.service_显示以下内容：[root@demo ~]# systemctl status cloudsecure-agent.service agent.service–Cloud Secure 代理守护进程服务已加载：已加载(/usr/lib/systemd/system/cloudsecure-agent.service;已启用；供应商预设：已禁用) Active：激活(自动重新启动)(结果：退出代码)自Tcloud2021-08-03 21：12：26；已退出Ago进程：cloudbin/netapp=25bin/dcc=82/pdpdpdpdpdpt/s=bash)： 25889 (code=exited、status=126)、Aug 03 21：12：26 demo systemd1]：cloudsecure-agent.service: main process exited、code=exited、status=126/n/a Aug 03 21：12：26 demo systemd1]：unit cloudsecure-agent.service entered.Aug 03 21：12：26 demo systemd1]：cloudsecure-agent.service失败。</block>
-  <block id="ff6c70aa7cb1a86bff741b99889b8d0b" category="cell">此操作可能会失败、因为_cssys_用户可能没有安装权限。如果/opt/netapp是NFS挂载、而_cssys_用户无权访问此文件夹、则安装将失败。_cssys_是由Cloud Secure 安装程序创建的本地用户、该用户可能无权访问挂载的共享。要检查此问题、您可以尝试使用_cssys_用户访问/opt/netapp/cloudsecurity/agent/bin/cloudsure-agent。如果返回"permission denies"、则安装权限不存在。安装在计算机本地的目录上、而不是挂载的文件夹。</block>
   <block id="33b1e192582408583865dca3abd0c740" category="cell">适用于哪些筛选器？</block>
   <block id="8c553135b1cf58374ff9e4c775f2f164" category="cell">不适用于哪些筛选器</block>
   <block id="eaaa45bccc15257d9f55e54b64c70aba" category="cell">* （星号）</block>
@@ -8705,7 +8575,6 @@
   <block id="37d67556425a480bd771d25cccb64deb" category="list-text">ONTAP Amazon FSX</block>
   <block id="0dec2b903302bbd14d95abf2e3a6eb78" category="paragraph">必须在云服务提供商的相应子网中配置代理计算机。请在"代理要求"中阅读有关网络访问的更多信息。</block>
   <block id="608efa70bff9cd8ba64ac8f581eee545" category="paragraph">以下是在AWS中安装Agent的步骤。在Azure或Google Cloud中、可以按照适用于云服务提供商的等效步骤进行安装。</block>
-  <block id="dacbc7c2a597126f4cb9dec110f0684b" category="paragraph">在AWS中、按照以下步骤配置要用作Cloud Secure 代理的计算机：</block>
   <block id="e92d16963e5b72f89982fb54b922794a" category="list-text">*聊天*—您将与NetApp支持人员联系以获得帮助(仅限工作日)。任何Cloud Insights 屏幕右上角的*帮助&gt;实时聊天*菜单选项均提供聊天功能。</block>
   <block id="abc39e61f48aa5adbf3a9de149e1a87a" category="list-text">基础架构/清单：为用户数据提供存储/网络服务的对象</block>
   <block id="f66a68b2ce406b961d0175d123132ef1" category="list-text">工作负载：为用户提供读/写数据接口的对象。</block>
@@ -8797,24 +8666,18 @@
   <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP 流遥测</block>
   <block id="458a37db2666885e234720ccdea58253" category="paragraph">有关最新信息、请参见 <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> 数据收集器页面。</block>
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">请参见本指南</block>
-  <block id="f06397ccd924d99fcb3214efdc25d940" category="paragraph">Cloud Secure 还可以与其他工具集成。例如： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 与Splunk集成。</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至：//SMI-S主机名或IP、其中&lt;SMI-S Hostname or IP&gt; ：5989/ecomconfig_是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
   <block id="c296d8324f9fa4f890b4ead0f69bfac3" category="doc">与ONTAP 自主勒索软件保护相集成</block>
   <block id="d444ab62db0a690e837242dfd8b87acc" category="paragraph">ONTAP 自主勒索软件保护(ARP)功能可利用NAS (NFS和SMB)环境中的工作负载分析功能主动检测并警告可能指示勒索软件攻击的异常文件活动。</block>
   <block id="383c3a61ab1ee0baf884d10441d965bd" category="paragraph">有关ARP的其他详细信息和许可证要求、请参见 <block ref="aaf4977c10e4402f9516d11af3df8368" category="inline-link-macro-rx"></block>。</block>
-  <block id="4a90b843204a7e572f3f003b57df0e34" category="paragraph">Cloud Secure 可与ONTAP 集成以接收ARP事件、并提供额外的分析和自动响应层。</block>
-  <block id="7f296999dd5a19bdac141d3c5458bf09" category="paragraph">Cloud Secure 从ONTAP 接收ARP事件并执行以下操作：</block>
   <block id="934b109c1d19ab46820aa2d388697f4e" category="list-text">将卷加密事件与用户活动关联起来、以确定导致损坏的人员。</block>
   <block id="bb7256da73d87b6336cf1dc5342a8692" category="list-text">实施自动响应策略(如果已定义)</block>
   <block id="ac3108149bf9197801e00b41c3c7cb34" category="list-text">提供取证功能：</block>
   <block id="c5c2c046e5a8aeae7862975fda61f862" category="list-text">允许客户执行数据泄露调查。</block>
   <block id="7355572f8cd61d6b84bd549a6b19d75b" category="list-text">确定哪些文件受到影响、有助于加快恢复速度并执行数据违规调查。</block>
   <block id="3c6aa4f4d8c4e33eefaec63c43ad62bb" category="list-text">最低ONTAP 版本：9.11.1</block>
-  <block id="f97f5685fc902a89d150e9c654602c43" category="list-text">已启用ARP的卷。有关启用ARP的详细信息、请参见 <block ref="9e499af99dc8d0d5835de8f33e6a6797" category="inline-link-macro-rx"></block>。必须通过OnCommand 系统管理器启用ARP。Cloud Secure 无法启用ARP。</block>
-  <block id="b33ce104a861da9844f5dfaeb51c79eb" category="list-text">应通过集群IP添加Cloud Secure 收集器。</block>
   <block id="77daf866423aa56487a2f9b637628664" category="list-text">要使此功能正常运行、需要集群级别的凭据。换言之、添加SVM时必须使用集群级别的凭据。</block>
   <block id="d3967f941a1672db445a1da6ef843e2e" category="section-title">需要用户权限</block>
-  <block id="76b59b81477976d5b5bed701e6ff22b9" category="paragraph">如果您使用的自定义用户(例如_CSUser_)具有为该用户授予的权限、请按照以下步骤授予Cloud Secure 从ONTAP 收集ARP相关信息的权限。</block>
   <block id="ba95389dce56e78ab6a308128620b033" category="paragraph">对于具有集群凭据的_CSUser_、请从ONTAP 命令行执行以下操作：</block>
   <block id="20cdc94cc7059da994e4c0a98a544c8f" category="section-title">警报示例</block>
   <block id="e0e1895e03a77da5552db43fbdeaeea6" category="paragraph">下面显示了因ARP事件生成的警报示例：</block>
@@ -8822,8 +8685,6 @@
   <block id="d12fcb220971d8d0a7e1d474102c977e" category="paragraph"><block ref="d12fcb220971d8d0a7e1d474102c977e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="333fa709635d0e011dd99c908e02bd40" category="paragraph">高度可信的横幅表示此攻击已显示勒索软件行为以及文件加密活动。加密文件图形指示ARP解决方案 检测到卷加密活动的时间戳。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
-  <block id="7a64568c4010a39c6620146ba9511682" category="paragraph">如果Cloud Secure 未监控SVM、但ONTAP 生成了ARP事件、则Cloud Secure 仍会接收和显示这些事件。但是、不会捕获或显示与警报相关的取证信息以及用户映射。</block>
-  <block id="500021752029d6f358d3f431decf2194" category="summary">Cloud Secure 与ONTAP 自主勒索软件保护相集成、可提高勒索软件检测能力。</block>
   <block id="4c4518d4c20175eb4082a6b33eb4badb" category="section-title">2022年10月</block>
   <block id="d9ed23066a8423b647abeae97c6e8d89" category="section-title">通过ONTAP 自主勒索软件保护集成、可以更好、更准确地检测勒索软件</block>
   <block id="533c17bbfdfb297420db9af0908070d6" category="inline-link-macro">自主勒索软件保护</block>
@@ -8856,7 +8717,6 @@
   <block id="f555190cc628f345214d8d00c587f506" category="list-text">当Cloud Insights 监控后端存储且Kubernetes与Docker容器运行时结合使用时、Cloud Insights 可以显示NFS和iSCSI的POD到PV到存储映射；其他运行时仅显示iSCSI。</block>
   <block id="1d71a30c3f76311c39e7b21e9d36041f" category="list-text">从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。</block>
   <block id="ceb4fea071151ab6bb0ff80a20993744" category="list-text">如果您运行的是OpenShift 4.6或更高版本、则除了确保满足这些前提条件之外、还必须遵循下面的* OpenShift Instructions*。</block>
-  <block id="82f6a763fe60e4e576dfec4afd406d65" category="list-text">要用于安装NetApp Kubernetes监控操作员的主机必须已配置_kubectl_、以便与目标K8s集群进行通信、并可通过Internet连接到您的Cloud Insights 环境。如果此主机需要代理才能访问Cloud Insights 、请按照中的说明进行操作 <block ref="209b83f4fc550a98dd7cd4c1d0704793" category="inline-xref-macro-rx"></block> 部分。</block>
   <block id="951a50d1b55837ddb5ff4cb5af4ebc8a" category="list-text">NetApp Kubernetes监控操作员会安装自己的Kube-state-metrics、以避免与任何其他实例发生冲突。</block>
   <block id="abd3f7869ce900c36e8cd1dc95b25a52" category="list-text">如果您在安装期间或在运行要监控的K8s集群时使用代理、请按照中的说明进行操作 <block ref="209b83f4fc550a98dd7cd4c1d0704793" category="inline-xref-macro-rx"></block> 部分。</block>
   <block id="431387eb7262e1cfc79b125eb8a67c60" category="inline-xref">代理</block>
@@ -9022,7 +8882,6 @@
   <block id="ddae1da9e7e7b7bc5250e69e20396758" category="cell">来自Active Directory的数据存在于CloudInsights Security中。希望从CloudInsights中删除所有用户信息。</block>
   <block id="cda875edf30beb4d722b276eaf998869" category="cell">不能只从CloudInsights Security中删除Active Directory用户信息。要删除此用户、需要删除整个租户。</block>
   <block id="b5a4b64b2aa505bd7c11f79b8a9f458d" category="cell">解决方法：</block>
-  <block id="f261294412af441f0164f608fbed7960" category="cell">数据收集器显示Cloud Secure ：Failed to determine ONTAP type for Amazon FxSN data collector错误。客户无法将新的Amazon FSxN数据收集器添加到Cloud Secure 中。从代理通过端口443连接到FSxN集群时超时。防火墙和AWS安全组启用了允许通信所需的规则。代理已部署且位于同一AWS帐户中。同一代理用于连接和监控其余NetApp设备(并且所有设备均正常运行)。</block>
   <block id="b4006ae0366e7ed3c70d23f64ed418c8" category="cell">通过将fsxadmin LIF网段添加到代理的安全规则来解决此问题描述。如果不确定端口、则允许使用所有端口。</block>
   <block id="2855135907eef979db329ca6aebe0464" category="section-title">运行模拟器之前的准则：</block>
   <block id="d786b68b9cf5f686784afa64b69b3bce" category="list-text">确保加密文件不为空。</block>
@@ -9121,9 +8980,6 @@
   <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">以下是具有适当cisys权限的示例文件。</block>
   <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">我看到数据收集错误并显示消息："unknown code"</block>
   <block id="dc58289d0fee8bd8c729121c6c769072" category="cell">如果未在Solutions Enabler服务器的守护进程配置文件中声明权限、您可能会看到此消息(请参见 <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> )假定您的SE客户端版本与您的SE服务器版本匹配。</block>
-  <block id="7df6d4e2df67f79f8df5aab759ba8d32" category="inline-link-macro">Cloud Secure 注意事项</block>
-  <block id="71bafd8c49729a3f6053d054365d3754" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
-<block ref="4a03dbf5caf94bf047e98fd16e83ff34" category="inline-link-macro-rx"></block></block>
   <block id="e2079cb79abadfe109c02ddf1f9e67eb" category="list-text">SVM 有多个子类型。其中、仅支持_default__sync_source__sync_destination_.</block>
   <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">建议的Metro Cluster配置</block>
   <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">对于Metro Cluster、建议使用以下配置：</block>
@@ -10614,12 +10470,10 @@
   <block id="6c7ca580ed97b823c501ac9c614a22e3" category="list-text">Kube-RBAC代理：v0.13.0</block>
   <block id="09fac59df2e8bc91f55d933bf9d5c4b9" category="list-text">Kubernetes事件导出程序：v0.10</block>
   <block id="39930ddf87d2960ef2f5a8ff06e4993e" category="cell">安装的Telegraf版本已过时。按照此页面上的步骤*为您的相应平台升级代理*。</block>
-  <block id="3bcb28b2cc6deee61cca4e9a0d0080f8" category="cell">1. 防火墙很可能会阻止代理计算机中的必要端口。验证是否已为代理计算机打开端口范围 35000-55000/TCP ，以便从 SVM 进行连接。此外，请确保 ONTAP 端未启用防火墙，从而无法与代理计算机进行通信。2. 在代理框中键入以下命令，并确保端口范围处于打开状态。_sudo iptables-save | grep 3500* _ 示例输出应如下所示： _A in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctstate new -j accept_ 3.登录到 SVM ，输入以下命令并检查是否未设置防火墙以阻止与 ONTAP 的通信。_system services firewall show_ _system services firewall policy show_<block ref="c2f863dc8aacfc5c321b626bd2f4e2b3" category="inline-link-macro-rx"></block> 在 ONTAP 端。4. 通过 SSH 连接到要监控的 SVM/ 集群。从 SVM 数据 LIF 对 Agent 框执行 Ping 操作（支持 CIFS ， NFS 协议），并确保 ping 操作正常： _network ping -vserver &lt;vserver name&gt; -destination &lt;Agent IP&gt; -lif &lt;Lif Name&gt;-show-detail_ 如果无法执行 Ping 操作，请确保 ONTAP 中的网络设置正确，以便代理计算机可以执行 Ping 操作。如果通过 2 个数据收集器将一个 SVM 添加到租户中两次，则会显示此错误。通过用户界面删除其中一个数据收集器。然后，通过 UI 重新启动另一个数据收集器。然后，数据收集器将显示 " 正在运行 " 状态，并开始从 SVM 接收事件。基本上，在租户中， 1 个 SVM 只能通过 1 个数据收集器添加一次。1 个 SVM 不应通过 2 个数据收集器添加两次。6. 如果在两个不同的 Cloud Secure 环境（租户）中添加了相同的 SVM ，则最后一个 SVM 将始终成功。第二个收集器将使用自己的 IP 地址配置 fpolicy ，并启动第一个收集器。因此，第一个收集器将停止接收事件，其 " 审核 " 服务将进入错误状态。要防止这种情况发生，请在一个环境中配置每个 SVM 。7.如果服务策略配置不正确、也可能发生此错误。对于ONTAP 9.8或更高版本、要连接到数据源收集器、需要提供data-fpolicy-client服务以及数据服务data-nfs和/或data-cifs。此外、data-fpolicy-client服务必须与受监控SVM的数据LIF关联。</block>
   <block id="3a0f609bf65bf53f905fdcfae464bcae" category="cell">配置新插件并重新启动Telegraf后、Telegraf无法启动。这些日志指示出现类似以下内容的错误："[caelaf] Error running agent：error loading config file /etc/caelaf/tengraf.d/cloudinsots-default.conf：plugin outputs.http：line &lt;linenumber&gt; ：configuration specified the fields ["use_system_proxy"]、but they were n't used"</block>
   <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">我在旧安装上运行了安装程序脚本、现在代理不发送数据</block>
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">卸载此电报代理、然后重新运行安装脚本。请按照此页面上适用于您的相应平台的*升级代理*步骤进行操作。</block>
   <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">检测到攻击后24小时收到电子邮件警报。在UI中、当Cloud Insights 工作负载安全收到电子邮件时、警报会在24小时之前显示。</block>
-  <block id="c5b841da6fee0eba42d21333b80aa983" category="cell">当ONTAP 将_勒索 软件检测到_事件发送到Cloud Insights 工作负载安全(例如Cloud Secure)时、系统会发送电子邮件。事件包含一系列攻击及其时间戳。工作负载安全UI会显示第一个受攻击文件的警报时间戳。对特定数量的文件进行编码后、ONTAP 会将_勒索 软件检测到_事件发送到Cloud Insights。因此、在UI中显示警报的时间与发送电子邮件的时间可能会有所不同。</block>
   <block id="41515808c69d7153bb45ebb8e41a4426" category="list-text">在*安全性*菜单下、选择*管理&gt;数据收集器&gt;代理&gt;+Agent*</block>
   <block id="9608ad0a6050ac9fa535a95a22aa7db4" category="list-text">原始容量—分配给FSX文件系统的所有SSD存储的基数为2的总和。</block>
   <block id="dc17e2eb752d75a670b36698bc346864" category="list-text">IOPS—此存储池上分配的所有卷的IOPS之和。</block>
@@ -10635,7 +10489,6 @@
   <block id="6fb7bed0df7f6e9e4f06d0f0caeafead" category="list-text">NFSv4：节点</block>
   <block id="dc3586fd8e7ef27b39459d19e3935fa6" category="list-text">policy_group</block>
   <block id="e6d9fd6d6edf829b4a80664e36d20387" category="list-text">workload_volume</block>
-  <block id="eb7df28f88bc327c30fcc0b6ef2648ff" category="paragraph">要配置单节点/HA AWS实例以托管Cloud Secure 代理、请参见OnCommand Cloud Volumes ONTAP 文档：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
   <block id="3878e180796265243705a46f1494ad55" category="section-title">Cloud Insights 可以为我做什么？</block>
   <block id="8e2f0fac2486fb4c82d056c8b3107326" category="paragraph">Cloud Insights 提供混合多云监控功能、可为您提供对基础架构和工作负载的全堆栈可观察性。</block>
   <block id="256e0247d88a2ebcaeb434e937f6934d" category="list-text">用于异构基础架构和工作负载的数据收集器、包括Kubernetes</block>
@@ -10760,4 +10613,176 @@
   <block id="ef756d1229bc6f51e983884d984a03f3" category="inline-link-macro">NetApp知识库文章</block>
   <block id="59ac6af58fe53beeb9262552cb4288e4" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> Cloud Insights 用于与采集单元通信的不会在Cloud Insights 与数据收集器本身之间进行通信。您可以尝试以下几项操作：确保采集单元能够解析FQDN并访问所需的端口。在错误消息中确认不需要代理即可访问指定端点。可以使用curl测试采集单元与端点之间的通信。确保您*不*使用代理进行此测试。示例：root@acquisitionunit# cURL -s -H accept：application/json -H "Content-type：application/json"-H api-key：&lt;api key used in the data collector credentials -H secret-key:&lt;secret key used in the data collector credentials&gt; -X get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 区域端点&gt;：8080/v1/Storage/IPRanges请参见此内容 <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。</block>
+  <block id="fca4fedbe53af4420a279beead573bdf" category="doc">工作负载安全性：模拟攻击</block>
+  <block id="373799975bf9df78f2b7e58b488fdb43" category="paragraph">代码——边栏：边栏恶意链接：concept_cs_attack_simulator.html关键字：勒索软件、模拟、模拟、限制、攻击摘要：使用脚本、您可以模拟勒索软件攻击以测试或演示工作负载安全性—</block>
+  <block id="85bec7dd725b26542ae7c0d1c759836a" category="paragraph">您可以使用此页面上的说明来模拟攻击、以便使用随附的勒索软件模拟脚本测试或演示工作负载安全性。</block>
+  <block id="16fa78539f96944e79f64b961036e74d" category="list-text">此脚本随工作负载安全代理安装文件一起提供。它可在安装了工作负载安全代理的任何计算机上使用。</block>
+  <block id="749376c343309b5abf1f8bc2f1e6e9f7" category="list-text">您可以在工作负载安全代理计算机本身上运行此脚本；无需准备其他Linux计算机。但是，如果您希望在其他系统上运行此脚本，只需复制此脚本并在其中运行即可。</block>
+  <block id="0b2c7f99606e39c9dac8c555454ca6a7" category="paragraph">此脚本应在包含要加密的文件的文件夹的 SVM 上运行。建议在该文件夹和任何子文件夹中至少有 1 ， 000 个文件。这些文件不能为空。请勿使用同一用户创建文件并对其进行加密。工作负载安全性会将此视为低风险活动、因此不会生成警报(即同一用户修改其刚刚创建的文件)。</block>
+  <block id="5e7fe8c41f8a34a29dc01b5eced565e8" category="list-text">如果尚未配置工作负载安全代理、请进行配置。</block>
+  <block id="f133c978b541b977d0cbc025827ccf6d" category="list-text">登录(ssh)到工作负载安全代理计算机。</block>
+  <block id="dd844f5768b1b38bb3eaa8aad66cc28d" category="paragraph">在为用户生成勒索软件攻击后，切换到另一个用户以生成额外的攻击。工作负载安全性可了解用户行为、不会在短时间内对同一用户的重复勒索软件攻击发出警报。</block>
+  <block id="bfaa8eb7a00a21e139538a78c0f52e22" category="summary">正在删除工作负载安全代理</block>
+  <block id="e3caad3663e2ffec233e35fce39beff9" category="doc">删除工作负载安全代理</block>
+  <block id="0a67d5ce146e92cf018b50cdea594684" category="paragraph">删除工作负载安全代理时、必须先删除与该代理关联的所有数据收集器。</block>
+  <block id="5af324e937b678c276d0547d5da2e942" category="list-text">确保从工作负载安全门户中删除与代理关联的所有数据收集器。</block>
+  <block id="3e68378ba1d3b7f2245578e342bed0be" category="summary">您可以通过几个简单的步骤开始使用工作负载安全性</block>
+  <block id="bba50a707846a3806736dc01f6354532" category="doc">工作负载安全性入门</block>
+  <block id="0506b86e6f0cdfab05c9570568f031d8" category="paragraph">在开始使用工作负载安全性监控用户活动之前、需要完成一些配置任务。</block>
+  <block id="f827ca5aa861a4bddcbc872872858f88" category="paragraph">工作负载安全系统使用代理从存储系统收集访问数据、并从目录服务服务器收集用户信息。</block>
+  <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">工作负载安全性也可以与其他工具集成。例如： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 与Splunk集成。</block>
+  <block id="18a729837a70beac3395cfe79bcc30f2" category="list-text">*高级版*提供了其他优势、例如业务智能和报告以及工作负载安全审核和威胁检测。</block>
+  <block id="ff6174f06964486c8970783d9abd7b54" category="cell">工作负载安全性用户数据访问审核</block>
+  <block id="1b3681a6af892931e035b5a955f26be0" category="cell">使用AI/ML进行工作负载安全内部威胁检测</block>
+  <block id="67db66af222a8d458fedb178121497e4" category="summary">配置工作负载安全性LDAP用户目录收集器</block>
+  <block id="773b00ecd31fcc8e604b5759c8df2d1e" category="paragraph">您可以将工作负载安全性配置为从LDAP目录服务器收集用户属性。</block>
+  <block id="0769cb17506298e1a0fd45ed42ba3e8d" category="list-text">在工作负载安全性菜单中、单击：*管理员&gt;数据收集器&gt;用户目录收集器&gt;+用户目录收集器*、然后选择* LDAP目录服务器*</block>
+  <block id="d449caeff5b9c80604d3878de0500478" category="list-text">使用以下命令验证工作负载安全性LDAP用户权限：</block>
+  <block id="65c4f6bc3272e61ec3bacf8385c9aca1" category="cell">域用户的可选属性未显示在工作负载安全用户配置文件页面中。</block>
+  <block id="44f9e39b6d01a9bb96134d1fa664c4a9" category="cell">如果在Active Directory (AD)服务器上启用了加密证书(SSL)、则工作负载安全用户目录收集器无法连接到AD服务器。</block>
+  <block id="f765e14da4a389313572532a2db01804" category="summary">工作负载安全性会在用户活动异常或潜在攻击时创建警报。" 警报 " 页面列出了这些活动，便于快速轻松地进行调查。</block>
+  <block id="42dbd44948498b2c6399cada3f8bce3c" category="paragraph">"工作负载安全警报"页面显示了近期攻击和/或警告的时间线、并可用于查看每个问题描述 的详细信息。</block>
+  <block id="8771316aacd1c4b06854e0e9f30a545c" category="list-text">攻击类型(勒索软件、破坏)和警报ID (由工作负载安全性分配)</block>
+  <block id="37fa3057780441193fd46b687aef4974" category="paragraph">工作负载安全性可通过在检测到恶意活动时自动创建快照来保护您的数据、并确保安全地备份您的数据。</block>
+  <block id="106f889ad7fb5a787f85bc5d8d8471ec" category="paragraph">警报和警告保留 13 个月。超过 13 个月的警报和警告将被删除。如果删除了工作负载安全环境、则与该环境关联的所有数据也将被删除。</block>
+  <block id="431fef516df90830b5c1c21b6ce07235" category="cell">对于工作负载安全性(CS)创建的快照、CS快照是否有清除/归档期限？</block>
+  <block id="e6fb05f0da5acc86f543947f4c4e697e" category="cell">有时， ONTAP 每天每小时创建一次快照。工作负载安全(CS)快照是否会影响它？CS 快照是否会采用每小时快照位置？默认每小时快照是否会停止？</block>
+  <block id="726c7f3f596062ccd907feb3815a05e0" category="cell">工作负载安全快照不会影响每小时快照。CS 快照不会占用每小时快照空间，应像以前一样继续使用。默认的每小时快照不会停止。</block>
+  <block id="dbc12ef69e34122bf8f4ac6b397d0011" category="cell">如果达到最大Snapshot计数、则后续的Snapshot生成将失败、而工作负载安全性将显示一条错误消息、指出Snapshot已满。用户需要定义 Snapshot 策略以删除最早的快照，否则不会创建快照。在 ONTAP 9.3 及更早版本中，一个卷最多可包含 255 个 Snapshot 副本。在 ONTAP 9.4 及更高版本中，一个卷最多可以包含 1023 个 Snapshot 副本。有关的信息，请参见 ONTAP 文档 <block ref="be93a0e4b8c5168a6ec2dc10f7f34d59" category="inline-link-macro-rx"></block>。</block>
+  <block id="58eb0692e2d7399b3579ee5ce166cc58" category="cell">工作负载安全性根本无法创建快照。</block>
+  <block id="06319d1baa3128a2dcdf122c600b751e" category="cell">对于SVM上较早的警报、快照失败、这些警报已从工作负载安全性中删除并随后重新添加。对于在重新添加 SVM 后出现的新警报，将创建快照。</block>
+  <block id="f538ceb4d07ca88305f431846ed6973f" category="cell">如果通过SVM管理IP将数据收集器添加到工作负载安全性中、则在ONTAP 中SVM的LIF处于_disabled_状态时、可能会发生这种情况。在ONTAP 中启用特定LIF并从工作负载安全性中触发_Take Snapshot Manually _。然后， Snapshot 操作将成功。</block>
+  <block id="dda85f45002252de774eae20d8d3bb21" category="summary">工作负载安全性包括一个功能强大的API、可与CMDB等其他应用程序集成。</block>
+  <block id="0865b3ed9f5211e6fe35eddac5b1aaa3" category="doc">工作负载安全API</block>
+  <block id="1b1fb3360bd2eea985279f6fcc2ef45f" category="paragraph">通过工作负载安全API、NetApp客户和独立软件供应商(ISV)可以将工作负载安全与其他应用程序(例如CMDB或其他票证系统)集成在一起。</block>
+  <block id="c32ef84ff5ca99a73e37c8f28fa25ae5" category="list-text">API令牌管理由具有管理员角色的工作负载安全用户执行。</block>
+  <block id="bc5cef6ada9e1373dcac2816c65daf30" category="paragraph">要查看最新的API信息、请登录到工作负载安全性并导航到*管理&gt; API访问*。单击 * API Documentation" 链接。API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。</block>
+  <block id="4c1e9eb9cb456263b74abf8c594c5fcf" category="paragraph">在使用工作负载安全API之前、必须创建一个或多个* API访问令牌*。访问令牌授予读取权限。您还可以为每个访问令牌设置到期时间。</block>
+  <block id="0280e5619ae48b4e379ebb140a49e816" category="paragraph">工作负载安全性使用数据收集器从设备收集文件和用户访问数据。这些数据将提供给工作负载安全性部门进行分析。</block>
+  <block id="6ec29be216010237b0dae370d44d5633" category="list-text">以管理员或帐户所有者身份登录到工作负载安全环境。</block>
+  <block id="2cdbeeb863ed7a8522ac9190b6294a61" category="paragraph">在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。如果您的环境中具有工作负载安全性、则已配置的端点URL也会显示在此列表中。</block>
+  <block id="a7ef8f0bed1d94220b7abd3877b10643" category="doc">工作负载安全代理要求</block>
+  <block id="78280ee4e050e617aae8c514d1f4d00a" category="cell">100 Mbps到1 Gbps以太网连接、静态IP地址、与所有设备的IP连接以及与工作负载安全实例(80或443)的所需端口。</block>
+  <block id="380053981c7042c95864932736052cac" category="paragraph">请注意：工作负载安全代理可以与Cloud Insights 采集单元和/或代理安装在同一台计算机上。但是，最佳做法是在不同的计算机上安装这些软件。如果这些磁盘安装在同一台计算机上，请按如下所示分配磁盘空间：</block>
+  <block id="2d69c680da957bdb43dc65f6b48df46d" category="paragraph">对于*基于美国*的工作负载安全环境：</block>
+  <block id="cd901a4d0c763788558340776fd2cdb5" category="paragraph">对于*基于欧洲*的工作负载安全环境：</block>
+  <block id="fa226e3679ae6b7dab2869292b192728" category="paragraph">对于基于*亚太地区*的工作负载安全环境：</block>
+  <block id="c62621daddc9bbedf66f077464765078" category="cell">在ONTAP 和工作负载安全性之间实现双向。代理对 SVM LIF 执行 Ping 操作。</block>
+  <block id="2c5dab3d48c104492de8592e45b7fe9f" category="paragraph">如果您的环境中具有工作负载安全性、则已配置的端点URL也会显示在此列表中。</block>
+  <block id="5711e9cabb01e59f7ce2f48ba56a6e96" category="paragraph">请注意，用户有权访问的 API 类型也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们包含在每个Cloud Insights 功能集中(监控、工作负载安全性、报告)。</block>
+  <block id="db2b463a10fb6295be04f3c3bae06fde" category="paragraph">工作负载安全性将根据Snapshot清除设置每天自动删除一次快照。</block>
+  <block id="1e66f3ea1e335e37bed1a50e1a8bb94c" category="summary">工作负载安全用户帐户通过Cloud Insights 用户管理进行管理</block>
+  <block id="b6ddb5866df8e3256ac245cbce10a9a2" category="paragraph">工作负载安全性用户帐户通过Cloud Insights 进行管理。</block>
+  <block id="c407c269e51ab79aa3aca330eca9d8ee" category="paragraph">Cloud Insights 提供了四个用户帐户级别：帐户所有者，管理员，用户和来宾。系统会为每个帐户分配特定的权限级别。具有管理员权限的用户帐户可以创建或修改用户、并为每个用户分配以下工作负载安全角色之一：</block>
+  <block id="b77a904f25ddc84b77fcb809d8f2f86b" category="cell">工作负载安全访问</block>
+  <block id="e234e3c5cb64670391b843b3fc72500e" category="cell">可以执行所有工作负载安全功能、包括警报、取证、数据收集器、自动化响应策略以及工作负载安全API等功能。管理员还可以邀请其他用户、但只能分配工作负载安全角色。</block>
+  <block id="5a26acadc0fa5b833d36974bd6536459" category="list-text">登录到工作负载安全性</block>
+  <block id="b3c49e9fcbf460e36de8ec12777f14b8" category="paragraph">如果未再次刷新，则用户列表将保留 13 个月。13 个月后，数据将被删除。如果删除了工作负载安全环境、则会删除与该环境关联的所有数据。</block>
+  <block id="cf10c2b301ad472a4aba146a0e505098" category="summary">为工作负载安全警报通知添加电子邮件地址。</block>
+  <block id="9491cdf060c59bf0f883c94db8cfe73d" category="paragraph">要配置工作负载安全警报收件人、请单击*管理员&gt;通知*、然后在相应的部分中为每个收件人输入电子邮件地址。</block>
+  <block id="dee5cfb5319806eabd9b28296b26207a" category="summary">配置工作负载安全性Active Directory用户目录收集器</block>
+  <block id="8dccebe9a8725eed9d49bcce51664895" category="paragraph">可以将工作负载安全性配置为从Active Directory服务器收集用户属性。</block>
+  <block id="68c7fae76dd5832ab65259eca0632822" category="list-text">在工作负载安全性菜单中、单击：*管理员&gt;数据收集器&gt;用户目录收集器&gt;+用户目录收集器*、然后选择* Active Directory*</block>
+  <block id="392b73413f817556c91d974c59c48d26" category="summary">借助工作负载安全性、您可以在发生可疑破坏时限制用户访问</block>
+  <block id="54fc3d93cd49948e1764882084d106cc" category="paragraph">检测到攻击后、工作负载安全性可以通过阻止用户访问文件系统来阻止攻击。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。</block>
+  <block id="036ce35e40fa3fbcc9c9e500c29c6bf9" category="paragraph">SMB会直接阻止用户访问、NFS会阻止导致攻击的主机的IP地址。这些计算机IP地址将被阻止访问工作负载安全性监控的任何Storage Virtual Machine (SVM)。</block>
+  <block id="f19379ce165a902f81548ae9d7b2e07c" category="paragraph">例如、假设工作负载安全性管理10个SVM、并且为其中4个SVM配置了自动响应策略。如果攻击源自四个SVM中的一个、则用户的访问将在所有10个SVM中被阻止。仍会在源 SVM 上创建 Snapshot 。</block>
+  <block id="4965f6590d5121fa73cf823f64ef219b" category="paragraph">如果您使用的自定义用户(例如_CSUser_)具有为该用户授予的权限、请按照以下步骤为工作负载安全性授予权限以阻止用户。</block>
+  <block id="8e0c9f34f42be5c07c87ecae239a8823" category="list-text">在工作负载安全性中、导航到*管理员&gt;自动响应策略&gt;响应策略设置&gt;阻止用户访问*。</block>
+  <block id="d9c1a964d322cb7ed68da85eaa8a06b0" category="list-text">在工作负载安全性中、导航到*管理员&gt;自动响应策略&gt;响应策略设置&gt;阻止用户访问*</block>
+  <block id="ef3c0a55c240483a8b3ffe2b395d514d" category="paragraph">如果您的工作负载安全试用版已过期或代理/收集器已关闭、请按照以下步骤手动从ONTAP 还原任何IP。</block>
+  <block id="1b0bdf15231b05a92c86cf44b6c5280e" category="list-text">通过指定相应的RuleIndex、删除SVM上所有策略中的规则、这些策略将"cloudsure_rule"设置为客户端匹配。工作负载安全规则通常为1。</block>
+  <block id="a117ae2a490977bedd4a55878386b06c" category="list-text">确保已删除工作负载安全规则(确认的可选步骤)。</block>
+  <block id="7e18d2db3500fc5d55a3cb1da5ebd420" category="paragraph">如果您的工作负载安全试用版已过期或代理/收集器已关闭、请按照以下步骤手动从ONTAP 还原任何用户。</block>
+  <block id="649d0babb9f1c7d99ac2b8adcdfc9d3f" category="paragraph">您可以从"用户"列表页面获取"工作负载安全性"中阻止的用户列表。</block>
+  <block id="8d5b1a4cd44d4fa6a7468df8116a5c8e" category="list-text">运行以下命令以列出所有SVM中受SMB工作负载安全性阻止的所有用户：</block>
+  <block id="a5e7d7eaf4f5565c582f27acfe410abc" category="cell">1. 确保 SVM 的数据收集器和代理处于 _running 状态。如果停止了Data Collector和代理、则工作负载安全性将无法发送命令。2. 这是因为用户可能已使用以前未使用的新 IP 从计算机访问存储。限制通过用户访问存储的主机的 IP 地址进行。在 UI （ "Alert Details" （警报详细信息） &gt;"Access Limtion History" （此用户的访问限制历史记录） &gt;"Affected IPs" （受影响的 IP ））中检查受限 IP 地址列表。如果用户要从 IP 与受限 IP 不同的主机访问存储，则用户仍可通过非受限 IP 访问存储。如果用户尝试从 IP 受限的主机访问，则无法访问存储。</block>
+  <block id="5fb65c6bf0f26bedf403903048b93640" category="paragraph">清单数据由描述受监控设备 / 源及其配置方式的元数据组成。例如、这包括安装的硬件和软件版本、存储系统中的磁盘和LUN、虚拟机的CPU核心、RAM和磁盘、数据库的表空间、SAN交换机上的端口数量和类型、目录/文件名称(如果启用了存储工作负载安全性)等</block>
+  <block id="1dd36ea366f8218507b500da92bb6c48" category="list-text">存储工作负载安全性用户目录数据</block>
+  <block id="e587cf6b5b26fd5aa0090c89ebb05008" category="paragraph">如果启用了工作负载安全性功能、并且客户选择启用用户目录收集器、则系统将存储用户显示名称、公司电子邮件地址以及从Active Directory收集的其他信息。</block>
+  <block id="60ff49feb33b4b07c5add7023c265e08" category="admonition">用户目录数据是指工作负载安全用户目录数据收集器收集的用户目录信息、而不是有关Cloud Insights用户/工作负载安全用户自身的数据。</block>
+  <block id="67879bbb5bc82645af5e2a7fd16c361a" category="paragraph">如果启用了工作负载安全性、则系统还会查看SMB或其他共享上的文件和目录名称、这些共享可能包含个人身份信息。如果客户启用了工作负载安全用户目录收集器(该收集器从本质上通过Active Directory将Windows SID映射到用户名)、则Cloud Insights 将收集并存储显示名称、公司电子邮件地址以及所选的任何其他属性。</block>
+  <block id="ff5a85e2b87be9de6155ebf8d299d4f3" category="list-text">工作负载安全性Active Directory信息</block>
+  <block id="206942a675cab8dd706f1c5d66ae53a4" category="list-text">工作负载安全审核信息</block>
+  <block id="a70d68072b5d5451925d557ed5fc3b10" category="summary">正在添加工作负载安全代理</block>
+  <block id="b68323a5af32b2326c99a99a76c02d39" category="doc">安装工作负载安全代理</block>
+  <block id="c5e6328a22d9b02f4b44ea5270252b38" category="paragraph">工作负载安全性(以前称为Cloud Secure)使用一个或多个代理收集用户活动数据。代理连接到环境中的设备并收集发送到工作负载安全SaaS层进行分析的数据。请参见 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block> 配置代理虚拟机。</block>
+  <block id="d9af7953857557ba2c8f41227ea635b0" category="paragraph">在本地系统上运行以下命令、以打开将由工作负载安全性使用的端口。如果对端口范围存在安全问题，可以使用较小的端口范围，例如 _35000 ： 35100_ 。每个 SVM 使用两个端口。</block>
+  <block id="20e78d9e0c1d75929debdb22e2bf21d8" category="cell">通过 SSH 连接到代理计算机。通过检查代理服务的状态<block ref="de0bfd4520e6fec9f1a67c5c65dc2b8c" prefix=" " category="inline-code"></block>。1.检查日志是否显示消息"无法启动工作负载安全守护进程服务"。2. 检查 Agent 计算机中是否存在 cssys 用户。使用 root 权限逐个执行以下命令，并检查 cssys 用户和组是否存在。<block ref="3fbe5fb69735e2e03c1033b5d770f987" prefix=" " category="inline-code"></block><block ref="90fbe621dbd81400f16a0b008b94bf8e" prefix=" " category="inline-code"></block>3.如果不存在、则集中式监控策略可能已删除cssys用户。4. 执行以下命令手动创建 cssys 用户和组。<block ref="8937b77ac48c04b1a59db03ac67cc0ab" prefix=" " category="inline-code"></block><block ref="52c7bef22d9584c015612923423826d7" prefix=" " category="inline-code"></block>5.执行以下命令、然后重新启动代理服务：<block ref="93ef545658eafd48b45fa315628953ae" prefix=" " category="inline-code"></block>6.如果它仍未运行、请检查其他故障排除选项。</block>
+  <block id="757ba459e097e3712e7cdd1f0412190e" category="cell">代理 VM 位于 Zscaler 代理之后，代理安装失败。由于Zscaler代理的SSL检查、工作负载安全证书会在Zscaler CA签名时显示出来、因此代理不会信任通信。</block>
+  <block id="1ad76fb1556aaa56ef0e0e31380d4a8c" category="cell">在 Zscaler 代理中禁用 * 。 .cloudinsights.netapp.com URL 的 SSL 检查。如果Zscaleer执行SSL检查并替换证书、则工作负载安全性将不起作用。</block>
+  <block id="97efa5392bc730fafe52d515ad2394c8" category="cell">安装后代理未运行。_systemctl status cloudsecure-agent.service_显示以下内容：[root@demo ~]# systemctl status cloudsecure-agent.service agent.service—工作负载安全代理守护进程服务已加载：已加载(/usr/lib/systemd/system/cloudsecure-agent.service;已启用；供应商预设：已禁用) Active：激活(自动重新启动)(结果：退出代码)自Cloudue 2021-08-03 21：12：26 PDT起；退出前代理进程：dbash /dbash /netapp=25bash /bash /bash：/dcc=bash： 25889 (code=exited、status=126)、Aug 03 21：12：26 demo systemd1]：cloudsecure-agent.service: main process exited、code=exited、status=126/n/a Aug 03 21：12：26 demo systemd1]：unit cloudsecure-agent.service entered.Aug 03 21：12：26 demo systemd1]：cloudsecure-agent.service失败。</block>
+  <block id="49b8c9f7b839426b3e3b7c10efbe2cd5" category="cell">此操作可能会失败、因为_cssys_用户可能没有安装权限。如果/opt/netapp是NFS挂载、而_cssys_用户无权访问此文件夹、则安装将失败。_cssys_是工作负载安全安装程序创建的本地用户、该用户可能无权访问挂载的共享。要检查此问题、您可以尝试使用_cssys_用户访问/opt/netapp/cloudsecurity/agent/bin/cloudsure-agent。如果返回"permission denies"、则安装权限不存在。安装在计算机本地的目录上、而不是挂载的文件夹。</block>
+  <block id="71cc43074524e4e15cf908ac2e7cc689" category="paragraph">&gt;&gt;&gt;&gt;&gt; e64b5299cf9e0451417037778f9d37b84b9d9e6b *要用于安装NetApp Kubernetes监控操作员的主机必须配置_kubectl_、以便与目标K8s集群通信、并可通过Internet连接到您的Cloud Insights 环境。如果此主机需要代理才能访问Cloud Insights 、请按照中的说明进行操作 <block ref="209b83f4fc550a98dd7cd4c1d0704793" category="inline-xref-macro-rx"></block> 部分。</block>
+  <block id="1bbfd833c09ec409acb6953c794c8762" category="cell">工作负载安全性</block>
+  <block id="06e93fcb3c37a2437f4b2d3bc4750cf3" category="doc">securityadmin工具</block>
+  <block id="815fe1d70f30132e76d3bc2971db1fb3" category="paragraph">CI提供了一些安全功能、可使Insight环境在增强安全性的情况下运行。这些功能包括对加密、密码哈希以及更改内部用户密码和用于对密码进行加密和解密的密钥对的功能进行了改进。</block>
+  <block id="02d87df4424a2b955208f7a9ac42561a" category="paragraph">为了保护敏感数据、NetApp建议您在安装或升级后更改默认密钥和采集用户密码。</block>
+  <block id="a336c713c619d4139db57a48ae8cf1ff" category="paragraph">数据源加密密码存储在Cloud Insights 中、当用户在数据收集器配置页面中输入密码时、会使用公共密钥对密码进行加密。Cloud Insights 没有对数据收集器密码进行解密所需的专用密钥；只有采集单元才具有对数据收集器密码进行解密所需的数据收集器专用密钥。</block>
+  <block id="f24e839c52e7d6d17545ee4e29f7db51" category="section-title">升级和安装注意事项</block>
+  <block id="d2def24e2994d3733490e736e70820ee" category="paragraph">如果您的Insight系统包含非默认安全配置(即您已重新设置密码密钥)、则必须备份安全配置。安装新软件或在某些情况下升级软件会将系统还原为默认安全配置。当您的系统还原到默认配置时、您必须还原非默认配置、系统才能正常运行。</block>
+  <block id="148c84721cc133725e943138cb351958" category="section-title">管理采集单元上的安全性</block>
+  <block id="d042a62979a8ab0c6d5e5d21ad8ca728" category="paragraph">使用SecurityAdmin工具可以管理Cloud Insights 的安全选项、该工具可在采集单元系统上运行。安全管理包括管理密钥和密码、保存和还原您创建的安全配置或将配置还原为默认设置。</block>
+  <block id="9aaac90b83b82599059476993f4df8fd" category="paragraph">要执行安全配置任务、您必须对AU系统具有管理员权限。</block>
+  <block id="1d7077d3e3f6962aaa789849c34c3bf9" category="paragraph">关于此任务、可以在采集单元系统的以下任一位置找到SecurityAdmin工具：</block>
+  <block id="5e96508962acc4c78cc42add9c1c6571" category="list-text">* Windows - C：\Program Files\SANscreen\securityadmin\bin\securityadmin.bat</block>
+  <block id="f23a1e539f589bb225b9464a0cf5849d" category="list-text">* Linux -/bin/oci-securityadmin.sh</block>
+  <block id="153b0db04ba6bf11cb9e745deb47e48c" category="list-text">*以交互模式启动SecurityAdmin工具(-I)。</block>
+  <block id="3efa8859202eff1b280ec70c247e9ef0" category="paragraph">此时将显示以下选项：</block>
+  <block id="3500ba09d0538297440ca620c9dd46bf" category="list-text">备份</block>
+  <block id="55ef7bc8b50b24453b764be4b80da043" category="paragraph">为包含所有密码和密钥的存储创建一个备份zip文件、并将该文件放置在用户指定的位置或以下默认位置：</block>
+  <block id="2bd339d85ee3b33e513359ce781b60cc" category="list-text">还原</block>
+  <block id="0de47ee5de6bc6440821ee27a42c53ee" category="paragraph">还原已创建的存储的zip备份。还原后、所有密码和密钥将还原为创建备份时的现有值。</block>
+  <block id="d23690b7e16a11d2c6f9c38abb33baff" category="paragraph">还原可用于同步多个服务器上的密码和密钥、例如：-更改AU上的加密密钥-创建存储备份-将存储备份还原到每个AU</block>
+  <block id="e57784805c5218c8990e6502d4490908" category="list-text">更改加密密钥</block>
+  <block id="58fad370faf96d43acd14616d579f6ec" category="paragraph">更改用于对设备密码进行加密或解密的AU加密密钥。</block>
+  <block id="cf2ae7d819ca294e4484987de713c80d" category="paragraph">更改加密密钥时、您应备份新的安全配置、以便在升级或安装后还原它。</block>
+  <block id="bb78dd7992509064b8044b7afe6ec9ed" category="list-text">更新密码</block>
+  <block id="5eb23cf8af1fa4acc187083ab93c9427" category="paragraph">更改"采集"用户帐户的密码。</block>
+  <block id="49647b0b7a42606d01f9ecb74faa768f" category="paragraph">更改密码时、您应备份新的安全配置、以便在必要时还原它。</block>
+  <block id="6795975d2a3ee08c25bd74c360132342" category="list-text">重置为默认值</block>
+  <block id="2df04d24bac801c2f370c45144ff5275" category="paragraph">将采集用户密码和采集用户加密密钥重置为默认值、默认值是在安装期间提供的值。</block>
+  <block id="fef46e5063ce3dc78b8ae64fa474241d" category="list-text">退出</block>
+  <block id="f19dacbcbb6fe89fdcc7c3e384b66c96" category="paragraph">退出SecurityAdmin工具。</block>
+  <block id="8f025d17785cae128cd5fa24614cdf37" category="paragraph">选择要配置的选项、然后按照提示进行操作。</block>
+  <block id="16d7c89b47f259f2ff68b2ae7532fad6" category="summary">添加工作负载安全性数据收集器</block>
+  <block id="5b5f6636f455e00151ff6c4d5e1be19c" category="paragraph">工作负载安全性使用数据收集器从设备收集文件和用户访问数据。</block>
+  <block id="e6624b1e82461272ada2be584f22a093" category="list-text">SMB协议3.1及更早版本。请注意、工作负载安全性不适用于使用FlexCache 的SMB配置。从ONTAP9.7开始、Fpolicy仅在NFS环境中受支持。</block>
+  <block id="e535de2e280b2b41b1a9d22720f0270c" category="paragraph">如果您无法使用集群管理管理员用户允许工作负载安全性访问ONTAP SVM数据收集器、则可以创建一个名为"CSUser"的新用户、其角色如下命令所示。将工作负载安全数据收集器配置为使用集群管理IP时、请使用"CSUser"的用户名和"CSUser"的密码。</block>
+  <block id="c1b7d24fc9ee9c43d2bc97ab81dbedb3" category="paragraph">如果您无法使用集群管理管理员用户允许工作负载安全性访问ONTAP SVM数据收集器、则可以创建一个名为"CSUser"的新用户、其角色如下命令所示。将工作负载安全数据收集器配置为使用Vserver管理IP时、请使用"CSUser"的用户名和"CSUser"的密码。</block>
+  <block id="94748ec62c100ce45c97bda6d69f9969" category="cell">1. 防火墙很可能会阻止代理计算机中的必要端口。验证是否已为代理计算机打开端口范围 35000-55000/TCP ，以便从 SVM 进行连接。此外，请确保 ONTAP 端未启用防火墙，从而无法与代理计算机进行通信。2. 在代理框中键入以下命令，并确保端口范围处于打开状态。_sudo iptables-save | grep 3500* _ 示例输出应如下所示： _A in_public_allow -p tcp -m tcp -dport 35000 -m conntrack -ctstate new -j accept_ 3.登录到 SVM ，输入以下命令并检查是否未设置防火墙以阻止与 ONTAP 的通信。_system services firewall show_ _system services firewall policy show_<block ref="c2f863dc8aacfc5c321b626bd2f4e2b3" category="inline-link-macro-rx"></block> 在 ONTAP 端。4. 通过 SSH 连接到要监控的 SVM/ 集群。从 SVM 数据 LIF 对 Agent 框执行 Ping 操作（支持 CIFS ， NFS 协议），并确保 ping 操作正常： _network ping -vserver &lt;vserver name&gt; -destination &lt;Agent IP&gt; -lif &lt;Lif Name&gt;-show-detail_ 如果无法执行 Ping 操作，请确保 ONTAP 中的网络设置正确，以便代理计算机可以执行 Ping 操作。如果通过 2 个数据收集器将一个 SVM 添加到租户中两次，则会显示此错误。通过用户界面删除其中一个数据收集器。然后，通过 UI 重新启动另一个数据收集器。然后，数据收集器将显示 " 正在运行 " 状态，并开始从 SVM 接收事件。基本上，在租户中， 1 个 SVM 只能通过 1 个数据收集器添加一次。1 个 SVM 不应通过 2 个数据收集器添加两次。6.如果在两个不同的工作负载安全环境(租户)中添加了相同的SVM、则最后一个SVM将始终成功。第二个收集器将使用自己的 IP 地址配置 fpolicy ，并启动第一个收集器。因此，第一个收集器将停止接收事件，其 " 审核 " 服务将进入错误状态。要防止这种情况发生，请在一个环境中配置每个 SVM 。7.如果服务策略配置不正确、也可能发生此错误。对于ONTAP 9.8或更高版本、要连接到数据源收集器、需要提供data-fpolicy-client服务以及数据服务data-nfs和/或data-cifs。此外、data-fpolicy-client服务必须与受监控SVM的数据LIF关联。</block>
+  <block id="195474d2c18505993c684349168eca84" category="cell">集群中存在未使用的现有 fpolicies 。在安装工作负载安全性之前、应如何处理这些问题？</block>
+  <block id="a991a3dd31c71b0054aa7140c8d25b9a" category="cell">建议删除所有现有未使用的 fpolicy 设置，即使它们处于已断开连接状态也是如此。工作负载安全性将创建前缀为"cloudsure_"的fpolicy。可以删除所有其他未使用的 fpolicy 配置。用于显示 fpolicy list 的 CLI 命令： _fpolicy show-steps to delete fpolicy configurations ： _fpolicy disable -vserver &lt;svmname&gt; -policy-name &lt;policy_name&gt;_ _fpolicy policy policy scope delete -vserver &lt;svmname&gt; -policy-name &lt;policy_name&gt;_fpolicy policy policy policy policy delete -vserver &lt;svmname&gt; -policy -policy -engine -&lt;policy_name&gt; -policy -&lt;vmname&gt; -node -engine -&lt;policy_name&gt; -policy_name&gt; -vserver -vserver -policy&gt; &lt;policy_name&gt; -vpolicy -policy -engine -&lt;vm&gt; &lt;policy_name&gt; -node -policy_name&gt; -vpolicy -engine -vpolicy -&lt;policy_name&gt; -vpolicy</block>
+  <block id="63deecc7a53992db1697a520a67af0bd" category="cell">启用工作负载安全性后、ONTAP 性能将受到影响：延迟偶尔会高、IOPS偶尔会低。</block>
+  <block id="0631a8aa5414db88c4ba11ffa8ff89e8" category="cell">从仅配置 NFS 服务的新 SVM 开始。在工作负载安全性中添加ONTAP SVM数据收集器。在工作负载安全性中添加ONTAP SVM数据收集器时、CIFS会配置为SVM的允许协议。请等待、直到工作负载安全性中的数据收集器显示错误。由于未在SVM上配置CIFS服务器、因此Workload Security将显示左侧所示的此错误。编辑 ONTAP SVM 数据收集器并取消选中 CIFS 作为允许的协议。保存数据收集器。它将在仅启用 NFS 协议的情况下开始运行。</block>
+  <block id="b451cdd4206327fd0afecbb2df7b2bec" category="doc">关于存储工作负载安全性</block>
+  <block id="7d29e14ab81a7f2d743b14063e512bf7" category="paragraph">Cloud Insights 存储工作负载安全性(以前称为Cloud Secure)可通过针对内部威胁的可操作智能来帮助保护您的数据。它可以集中查看和控制混合云环境中的所有企业数据访问，以确保实现安全性和合规性目标。</block>
+  <block id="6bb784bfbef2792b99ae322d0ce648b6" category="paragraph">更换无法及时准确地查看数据访问和控制情况的工具和手动流程。工作负载安全性在云和内部存储系统上都是唯一的、可为您提供有关恶意用户行为的实时警报。</block>
+  <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">工作负载安全注意事项(原Cloud Secure)</block>
+  <block id="a2e7ba2dd94ada0070912463ec6803b4" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
+<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
+  <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">所有活动页面可帮助您了解对工作负载安全环境中的实体执行的操作。</block>
+  <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">对于活动工作负载安全环境、活动历史记录保留13个月。</block>
+  <block id="48d308d5944f69b2199664d16fb4ef02" category="cell">问题：如果我在已配置工作负载安全性的SVM上运行此脚本、它是仅使用SVM上的现有fpolicy配置还是设置一个临时脚本并运行此过程？</block>
+  <block id="6dc6e27b054fdfb47ea4834bce442633" category="cell">问题解答 ：事件速率检查器即使已为工作负载安全性配置SVM、也可以正常运行。不应产生任何影响。</block>
+  <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">要配置单节点/HA AWS实例以托管工作负载安全代理、请参见OnCommand Cloud Volumes ONTAP 文档：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
+  <block id="830d10f97264e90663c5e3935c2d632d" category="paragraph">在AWS中、按照以下步骤配置要用作工作负载安全代理的计算机：</block>
+  <block id="1c670cb717b4140f57366cd8d3f7073b" category="paragraph">按照以下步骤配置要用作工作负载安全代理的计算机：</block>
+  <block id="9661d643a1d7bcdfae7260083848fe7c" category="section-title">安装工作负载安全代理</block>
+  <block id="24e9816bffbf8174c3d54d3085dfdebb" category="list-text">导航到工作负载安全性*管理&gt;数据收集器*、然后单击*代理*选项卡。</block>
+  <block id="e6827eaa9bdbd78ae7e7018263f370fb" category="list-text">将代理安装命令粘贴到您已登录的 RHEL EC2 实例中。此时将安装工作负载安全代理、并提供所有 <block ref="f5706ef9ce891542a2a7f34eef5c175e" category="inline-link-macro-rx"></block> 已满足。</block>
+  <block id="27bdcc1bb00d03f954143a84da9b6cce" category="cell">数据收集器显示"工作负载安全性：无法确定Amazon FxSN数据收集器的ONTAP 类型"错误。客户无法将新的Amazon FSxN数据收集器添加到工作负载安全性中。从代理通过端口443连接到FSxN集群时超时。防火墙和AWS安全组启用了允许通信所需的规则。代理已部署且位于同一AWS帐户中。同一代理用于连接和监控其余NetApp设备(并且所有设备均正常运行)。</block>
+  <block id="e885f70b36e77978775e5bda02528ac9" category="summary">工作负载安全性与ONTAP 自主勒索软件保护相集成、可提高勒索软件检测能力。</block>
+  <block id="ff6fdbfb37dfe403ad9c574855ccdb01" category="paragraph">工作负载安全性可与ONTAP 集成以接收ARP事件、并提供额外的分析和自动响应层。</block>
+  <block id="e093347e60d8e47631898ecfad3f31bc" category="paragraph">工作负载安全性从ONTAP 接收ARP事件并执行以下操作：</block>
+  <block id="fb9db0b7014615260b5928021d0dd3ba" category="list-text">已启用ARP的卷。有关启用ARP的详细信息、请参见 <block ref="9e499af99dc8d0d5835de8f33e6a6797" category="inline-link-macro-rx"></block>。必须通过OnCommand 系统管理器启用ARP。工作负载安全性无法启用ARP。</block>
+  <block id="03d2c7455bd90d94b2c2a27995cee3a6" category="list-text">应通过集群IP添加工作负载安全收集器。</block>
+  <block id="8d490c030112e962535224e18e452ee2" category="paragraph">如果您使用的自定义用户(例如_CSUser_)具有为该用户授予的权限、请按照以下步骤为工作负载安全性授予权限、以便从ONTAP 收集与ARP相关的信息。</block>
+  <block id="56684562f1f82eb99e69650845acd6ad" category="paragraph">如果SVM不受工作负载安全性监控、但ONTAP 生成了ARP事件、则工作负载安全性仍会接收和显示这些事件。但是、不会捕获或显示与警报相关的取证信息以及用户映射。</block>
+  <block id="bd8fcf14aeb2fa880d8470e2c4fee0a5" category="cell">当ONTAP 将_勒索 软件检测到_事件发送到Cloud Insights 工作负载安全(即工作负载安全)时、系统会发送电子邮件。事件包含一系列攻击及其时间戳。工作负载安全UI会显示第一个受攻击文件的警报时间戳。对特定数量的文件进行编码后、ONTAP 会将_勒索 软件检测到_事件发送到Cloud Insights。因此、在UI中显示警报的时间与发送电子邮件的时间可能会有所不同。</block>
+  <block id="8d480c386a79b0bc67bd88ac44cd794f" category="sidebar">存储工作负载安全性</block>
+  <block id="9655cd831b69781db448703e74b15bf4" category="sidebar">关于工作负载安全性</block>
+  <block id="db6129c16869ab28d6476f3e30e7d24e" category="sidebar">工作负载安全性入门</block>
+  <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">配置工作负载安全代理</block>
+  <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">工作负载安全性用户管理</block>
 </blocks>

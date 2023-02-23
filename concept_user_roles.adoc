@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_user_roles.html 
-keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observabilityu 
+keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observability 
 summary: Cloud Insights 提供了多个具有不同权限级别的用户帐户。 
 ---
 = 用户帐户和角色
@@ -18,7 +18,7 @@ Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管�
 您可以使用具有管理员权限的帐户来创建或修改用户帐户。每个用户帐户都会从以下权限级别为每个 Cloud Insights 功能分配一个角色。
 
 |===
-| 角色 | 可观察性 | 安全性 | 报告 
+| 角色 | 可观察性 | 工作负载安全性 | 报告 
 
 
 | 帐户所有者 3+| 可以修改订阅、查看计费和使用情况信息、并执行所有可观察性、安全性和报告管理员功能。所有者还可以邀请和管理用户，以及管理 SSO 身份验证和身份联合设置。注册 Cloud Insights 时会创建第一个帐户所有者。强烈建议每个 Cloud Insights 环境至少有两个帐户所有者。  

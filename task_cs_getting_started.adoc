@@ -1,16 +1,17 @@
 ---
 sidebar: sidebar 
 permalink: task_cs_getting_started.html 
-keywords: collectors, data collectors, configure, introduction, browsers 
-summary: 只需几个简单的步骤，即可开始使用 Cloud Secure 
+keywords: collectors, data collectors, configure, introduction, browsers , Cloud Secure 
+summary: 您可以通过几个简单的步骤开始使用工作负载安全性 
 ---
-= Cloud Secure 入门
+= 工作负载安全性入门
 :allow-uri-read: 
 
 
-在开始使用 Cloud Secure 监控用户活动之前，需要完成一些配置任务。
+[role="lead"]
+在开始使用工作负载安全性监控用户活动之前、需要完成一些配置任务。
 
-Cloud Secure 系统使用代理从存储系统收集访问数据，并从目录服务服务器收集用户信息。
+工作负载安全系统使用代理从存储系统收集访问数据、并从目录服务服务器收集用户信息。
 
 在开始收集数据之前，您需要配置以下内容：
 
@@ -43,4 +44,4 @@ link:https://netapp.hubs.vidyard.com/watch/NEmbmYrFjCHvPps7QMy8me?["* 视频 * �
 
 | 故障排除 | link:https://netapp.hubs.vidyard.com/watch/Fs8N2w9wBtsFGrhRH9X85U?["* 视频 * ：故障排除"] 
 |===
-Cloud Secure 还可以与其他工具集成。例如： link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["请参见本指南"] 与Splunk集成。
+工作负载安全性也可以与其他工具集成。例如： link:http://docs.netapp.com/us-en/cloudinsights/CloudInsights_CloudSecure_Splunk_integration_guide.pdf["请参见本指南"] 与Splunk集成。

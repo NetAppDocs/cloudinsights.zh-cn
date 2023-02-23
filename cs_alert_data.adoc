@@ -2,14 +2,14 @@
 sidebar: sidebar 
 permalink: cs_alert_data.html 
 keywords: alert, attack, ransomware, activity, security, abnormal 
-summary: '如果用户活动异常或可能受到攻击， Cloud Secure 会创建警报。" 警报 " 页面列出了这些活动，便于快速轻松地进行调查。' 
+summary: '工作负载安全性会在用户活动异常或潜在攻击时创建警报。" 警报 " 页面列出了这些活动，便于快速轻松地进行调查。' 
 ---
 = 警报
 :allow-uri-read: 
 
 
 [role="lead"]
-Cloud Secure 警报页面显示最近攻击和 / 或警告的时间线，并可用于查看每个问题描述的详细信息。
+"工作负载安全警报"页面显示了近期攻击和/或警告的时间线、并可用于查看每个问题描述 的详细信息。
 
 image:CloudSecureAlertsListPage.png["警报列表"]
 
@@ -76,7 +76,7 @@ image:CloudSecureChangeAlertStatus.png["更改警报状态"]
 
 === 摘要部分：
 
-* 攻击类型（勒索软件，破坏）和警报 ID （由 Cloud Secure 分配）
+* 攻击类型(勒索软件、破坏)和警报ID (由工作负载安全性分配)
 * 检测到攻击的日期和时间
 * 已执行操作（例如，已创建自动快照。Snapshot 时间显示在摘要部分的正下方）
 * 状态（新增，正在进行等）
@@ -105,7 +105,7 @@ image:CloudSecureChangeAlertStatus.png["更改警报状态"]
 
 == 执行Snapshot_操作
 
-Cloud Secure 可在检测到恶意活动时自动创建快照以保护您的数据，并确保安全地备份您的数据。
+工作负载安全性可通过在检测到恶意活动时自动创建快照来保护您的数据、并确保安全地备份您的数据。
 
 您可以定义 link:cs_automated_response_policies.html["自动响应策略"] 在检测到勒索软件攻击或其他异常用户活动时创建快照。您也可以从警报页面手动创建快照。
 
@@ -123,7 +123,7 @@ Cloud Secure 可在检测到恶意活动时自动创建快照以保护您的数�
 
 == 保留策略
 
-警报和警告保留 13 个月。超过 13 个月的警报和警告将被删除。如果删除了 Cloud Secure 环境，则与该环境关联的所有数据也将被删除。
+警报和警告保留 13 个月。超过 13 个月的警报和警告将被删除。如果删除了工作负载安全环境、则与该环境关联的所有数据也将被删除。
 
 
 
@@ -133,20 +133,20 @@ Cloud Secure 可在检测到恶意活动时自动创建快照以保护您的数�
 | 问题： | 请尝试以下操作： 
 
 
-| 对于 Cloud Secure （ CS ）创建的快照， CS 快照是否有清除 / 归档期限？ | 否没有为 CS 快照设置清除 / 归档期限。用户需要为 CS 快照定义清除策略。请参见 link:https://library.netapp.com/ecmdocs/ECMP1196819/html/GUID-27D0E37F-5AF1-4AF9-BDEB-9A4B7AF3B4A9.html["ONTAP 文档"] 有关如何设置策略的信息。 
+| 对于工作负载安全性(CS)创建的快照、CS快照是否有清除/归档期限？ | 否没有为 CS 快照设置清除 / 归档期限。用户需要为 CS 快照定义清除策略。请参见 link:https://library.netapp.com/ecmdocs/ECMP1196819/html/GUID-27D0E37F-5AF1-4AF9-BDEB-9A4B7AF3B4A9.html["ONTAP 文档"] 有关如何设置策略的信息。 
 
 
-| 有时， ONTAP 每天每小时创建一次快照。Cloud Secure （ CS ）快照是否会影响它？CS 快照是否会采用每小时快照位置？默认每小时快照是否会停止？ | Cloud Secure 快照不会影响每小时快照。CS 快照不会占用每小时快照空间，应像以前一样继续使用。默认的每小时快照不会停止。 
+| 有时， ONTAP 每天每小时创建一次快照。工作负载安全(CS)快照是否会影响它？CS 快照是否会采用每小时快照位置？默认每小时快照是否会停止？ | 工作负载安全快照不会影响每小时快照。CS 快照不会占用每小时快照空间，应像以前一样继续使用。默认的每小时快照不会停止。 
 
 
-| 如果在 ONTAP 中达到最大快照数，会发生什么情况？ | 如果达到最大 Snapshot 计数，则后续 Snapshot 生成将失败， Cloud Secure 将显示一条错误消息，指出 Snapshot 已满。用户需要定义 Snapshot 策略以删除最早的快照，否则不会创建快照。在 ONTAP 9.3 及更早版本中，一个卷最多可包含 255 个 Snapshot 副本。在 ONTAP 9.4 及更高版本中，一个卷最多可以包含 1023 个 Snapshot 副本。有关的信息，请参见 ONTAP 文档 link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-960%2Fvolume__snapshot__autodelete__modify.html["正在设置 Snapshot 删除策略"]。 
+| 如果在 ONTAP 中达到最大快照数，会发生什么情况？ | 如果达到最大Snapshot计数、则后续的Snapshot生成将失败、而工作负载安全性将显示一条错误消息、指出Snapshot已满。用户需要定义 Snapshot 策略以删除最早的快照，否则不会创建快照。在 ONTAP 9.3 及更早版本中，一个卷最多可包含 255 个 Snapshot 副本。在 ONTAP 9.4 及更高版本中，一个卷最多可以包含 1023 个 Snapshot 副本。有关的信息，请参见 ONTAP 文档 link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-960%2Fvolume__snapshot__autodelete__modify.html["正在设置 Snapshot 删除策略"]。 
 
 
-| Cloud Secure 根本无法创建快照。 | 确保用于创建快照的角色具有链接：已分配 https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html#a-note-about-permissions[proper 权限 ] 。确保为 _csrole_ 创建了用于创建快照的正确访问权限： security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all 
+| 工作负载安全性根本无法创建快照。 | 确保用于创建快照的角色具有链接：已分配 https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html#a-note-about-permissions[proper 权限 ] 。确保为 _csrole_ 创建了用于创建快照的正确访问权限： security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all 
 
 
-| 对于 SVM 上较早的警报，快照失败，这些警报已从 Cloud Secure 中删除并随后重新添加。对于在重新添加 SVM 后出现的新警报，将创建快照。 | 这种情况极少。如果您遇到这种情况，请登录到 ONTAP 并为较早的警报手动创建快照。 
+| 对于SVM上较早的警报、快照失败、这些警报已从工作负载安全性中删除并随后重新添加。对于在重新添加 SVM 后出现的新警报，将创建快照。 | 这种情况极少。如果您遇到这种情况，请登录到 ONTAP 并为较早的警报手动创建快照。 
 
 
-| 在 _Alert Details_ 页面中，在 _Take Snapshot_ 按钮下方会显示消息 "Last Attempt Failed" 错误。将鼠标悬停在错误上会显示 "invoke API command has timed out for the data collector with id" 。 | 如果通过 SVM 管理 IP 将数据收集器添加到 Cloud Secure 中，并且 ONTAP 中 SVM 的 LIF 处于 _disabled" 状态，则可能会发生这种情况。在 ONTAP 中启用特定 LIF 并从 Cloud Secure 触发 _Take Snapshot Manually _ 。然后， Snapshot 操作将成功。 
+| 在 _Alert Details_ 页面中，在 _Take Snapshot_ 按钮下方会显示消息 "Last Attempt Failed" 错误。将鼠标悬停在错误上会显示 "invoke API command has timed out for the data collector with id" 。 | 如果通过SVM管理IP将数据收集器添加到工作负载安全性中、则在ONTAP 中SVM的LIF处于_disabled_状态时、可能会发生这种情况。在ONTAP 中启用特定LIF并从工作负载安全性中触发_Take Snapshot Manually _。然后， Snapshot 操作将成功。 
 |===

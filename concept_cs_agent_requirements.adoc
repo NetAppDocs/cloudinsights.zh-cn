@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept_cs_agent_requirements.html 
 summary: 用作代理的服务器或 VM 必须满足最低要求 
-keywords: agent, Linux, requirements, docker, browsers, permissions, Network 
+keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cloud Secure 
 ---
-= 代理要求
+= 工作负载安全代理要求
 :allow-uri-read: 
 
 
@@ -31,9 +31,9 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | 可用磁盘空间 | 应按以下方式分配磁盘空间：/opt/netapp 35 GB (最小)如果/opt是NAS存储中的挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 link:task_cs_add_agent.html#troubleshooting-agent-errors["故障排除"] 部分、了解更多详细信息。 
 
 
-| 网络 | 100 Mbps 到 1 Gbps 以太网连接，静态 IP 地址，与所有设备的 IP 连接以及与 Cloud Secure 实例的所需端口（ 80 或 443 ）。 
+| 网络 | 100 Mbps到1 Gbps以太网连接、静态IP地址、与所有设备的IP连接以及与工作负载安全实例(80或443)的所需端口。 
 |===
-请注意： Cloud Secure 代理可以与 Cloud Insights 采集单元和 / 或代理安装在同一台计算机上。但是，最佳做法是在不同的计算机上安装这些软件。如果这些磁盘安装在同一台计算机上，请按如下所示分配磁盘空间：
+请注意：工作负载安全代理可以与Cloud Insights 采集单元和/或代理安装在同一台计算机上。但是，最佳做法是在不同的计算机上安装这些软件。如果这些磁盘安装在同一台计算机上，请按如下所示分配磁盘空间：
 
 |===
 
@@ -51,7 +51,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 
 == 云网络访问规则
 
-对于 * 基于美国 * 的 Cloud Secure 环境：
+对于*基于美国*的工作负载安全环境：
 
 [cols="5*"]
 |===
@@ -63,7 +63,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 
 | TCP | 443. | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | 出站 | 访问身份验证服务 
 |===
-对于 * 基于欧洲 * 的 Cloud Secure 环境：
+对于*基于欧洲*的工作负载安全环境：
 
 [cols="5*"]
 |===
@@ -75,7 +75,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 
 | TCP | 443. | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | 出站 | 访问身份验证服务 
 |===
-对于 * 基于亚太地区 * 的 Cloud Secure 环境：
+对于基于*亚太地区*的工作负载安全环境：
 
 [cols="5*"]
 |===
@@ -107,7 +107,7 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network
 | TCP | 35000 - 55000 | SVM 数据 LIF IP 地址 | 入站 / 出站 | 与 ONTAP 通信以处理 Fpolicy 事件 
 
 
-| TCP | 7. | SVM 数据 LIF IP 地址 | 双向 | 在 ONTAP 和 Cloud Secure 之间实现双向。代理对 SVM LIF 执行 Ping 操作。 
+| TCP | 7. | SVM 数据 LIF IP 地址 | 双向 | 在ONTAP 和工作负载安全性之间实现双向。代理对 SVM LIF 执行 Ping 操作。 
 |===
 
 

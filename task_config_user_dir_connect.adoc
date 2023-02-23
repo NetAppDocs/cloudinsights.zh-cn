@@ -1,15 +1,15 @@
 ---
 sidebar: sidebar 
 permalink: task_config_user_dir_connect.html 
-keywords: collector, configure, LDAP, Active Directory 
-summary: 配置 Cloud Secure Active Directory 用户目录收集器 
+keywords: collector, configure, LDAP, Active Directory, cloud secure 
+summary: 配置工作负载安全性Active Directory用户目录收集器 
 ---
 = 配置 Active Directory （ AD ）用户目录收集器
 :allow-uri-read: 
 
 
 [role="lead"]
-可以将 Cloud Secure 配置为从 Active Directory 服务器收集用户属性。
+可以将工作负载安全性配置为从Active Directory服务器收集用户属性。
 
 .开始之前
 * 要执行此任务，您必须是 Cloud Insights 管理员或帐户所有者。
@@ -18,7 +18,7 @@ summary: 配置 Cloud Secure Active Directory 用户目录收集器
 
 
 .配置用户目录收集器的步骤
-. 在 Cloud Secure 菜单中，单击： * 管理 > 数据收集器 > 用户目录收集器 > + 用户目录收集器 * ，然后选择 * Active Directory*
+. 在工作负载安全性菜单中、单击：*管理员>数据收集器>用户目录收集器>+用户目录收集器*、然后选择* Active Directory*
 +
 系统将显示添加用户目录屏幕。
 
@@ -114,7 +114,7 @@ summary: 配置 Cloud Secure Active Directory 用户目录收集器
 
 您可以使用以下过程验证 LDAP 用户权限和属性定义：
 
-* 使用以下命令验证 Cloud Secure LDAP 用户权限：
+* 使用以下命令验证工作负载安全性LDAP用户权限：
 +
 `ldapsearch -o ldif-wrap=no -ll -x -b "dc=netapp ， dc=com" -h 10.235.40.29 -p 389 -D \Administrator@netapp.com -W`
 
@@ -145,7 +145,7 @@ image:cs_ADExample.png["AD 连接"]
 | 添加用户目录连接器会导致 ‘Error ' 状态。错误显示： " 无法获取作为林名称提供的 DN=DC=HQ ， DC=DOMAINNAME ， DC=com 对应的对象。 " | 提供的林名称不正确。编辑并提供正确的林名称。 
 
 
-| 域用户的可选属性未显示在 Cloud Secure 用户配置文件页面中。 | 这可能是因为在 CloudSecure 中添加的可选属性名称与 Active Directory 中的实际属性名称不匹配。编辑并提供正确的可选属性名称。 
+| 域用户的可选属性未显示在工作负载安全用户配置文件页面中。 | 这可能是因为在 CloudSecure 中添加的可选属性名称与 Active Directory 中的实际属性名称不匹配。编辑并提供正确的可选属性名称。 
 
 
 | 数据收集器处于错误状态，并显示 "Failed to retrieve LDAP users.失败原因：无法在服务器上连接，连接为空 " | 单击 _Restart_ 按钮重新启动收集器。 
@@ -178,7 +178,7 @@ image:cs_ADExample.png["AD 连接"]
 | 未在用户配置文件页面中填充电话号码。 | 这很可能是由于 Active Directory 存在属性映射问题。1. 编辑从 Active Directory 提取用户信息的特定 Active Directory 收集器。请注意，在可选属性下，字段名称 " 电话号码 " 映射到 Active Directory 属性 ‘电话号码 ' 。4. 现在，请使用上述 Active Directory 资源管理器工具浏览 Active Directory 并查看正确的属性名称。3. 确保在 Active Directory 中有一个名为 ‘telphonenumber ' 的属性，该属性确实包含用户的电话号码。5. 我们可以说，在 Active Directory 中，它已修改为 ‘phonenumber ' 。6. 然后编辑 CloudSecure 用户目录收集器。在可选属性部分中，将 ‘telphonenumber ' 替换为 ‘phonenumber ' 。7. 保存 Active Directory 收集器后，收集器将重新启动并获取用户的电话号码，并在用户配置文件页面中显示相同的电话号码。 
 
 
-| 如果在 Active Directory （ AD ）服务器上启用了加密证书（ SSL ），则 Cloud Secure 用户目录收集器无法连接到 AD 服务器。 | 在配置用户目录收集器之前禁用 AD 服务器加密。提取用户详细信息后，该详细信息将在 13 个月内显示。如果在提取用户详细信息后 AD 服务器断开连接，则不会提取 AD 中新添加的用户。要重新提取、需要将用户目录收集器连接到AD。 
+| 如果在Active Directory (AD)服务器上启用了加密证书(SSL)、则工作负载安全用户目录收集器无法连接到AD服务器。 | 在配置用户目录收集器之前禁用 AD 服务器加密。提取用户详细信息后，该详细信息将在 13 个月内显示。如果在提取用户详细信息后 AD 服务器断开连接，则不会提取 AD 中新添加的用户。要重新提取、需要将用户目录收集器连接到AD。 
 
 
 | 来自Active Directory的数据存在于CloudInsights Security中。希望从CloudInsights中删除所有用户信息。 | 不能只从CloudInsights Security中删除Active Directory用户信息。要删除此用户、需要删除整个租户。 

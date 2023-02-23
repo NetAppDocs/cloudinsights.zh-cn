@@ -2,32 +2,32 @@
 sidebar: sidebar 
 permalink: concept_cs_api.html 
 keywords: api, access, token, swagger 
-summary: Cloud Secure 包含一个功能强大的 API ，可与 CMDB 等其他应用程序集成。 
+summary: 工作负载安全性包括一个功能强大的API、可与CMDB等其他应用程序集成。 
 ---
-= Cloud Secure API
+= 工作负载安全API
 :allow-uri-read: 
 
 
 [role="lead"]
-NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Secure API 将 Cloud Secure 与其他应用程序集成，例如 CMDB 或其他票证系统。
+通过工作负载安全API、NetApp客户和独立软件供应商(ISV)可以将工作负载安全与其他应用程序(例如CMDB或其他票证系统)集成在一起。
 
 API 访问要求：
 
 * API 访问令牌模型用于授予访问权限。
-* API 令牌管理由具有管理员角色的 Cloud Secure 用户执行。
+* API令牌管理由具有管理员角色的工作负载安全用户执行。
 
 
 
 
 == API 文档（ Swagger ）
 
-登录到 Cloud Secure 并导航到 * 管理 > API 访问 * 可查看最新的 API 信息。单击 * API Documentation" 链接。API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。
+要查看最新的API信息、请登录到工作负载安全性并导航到*管理> API访问*。单击 * API Documentation" 链接。API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。
 
 
 
 == API 访问令牌
 
-在使用 Cloud Secure API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌授予读取权限。您还可以为每个访问令牌设置到期时间。
+在使用工作负载安全API之前、必须创建一个或多个* API访问令牌*。访问令牌授予读取权限。您还可以为每个访问令牌设置到期时间。
 
 创建访问令牌：
 

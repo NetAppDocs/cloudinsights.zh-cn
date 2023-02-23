@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_cs_event_rate_checker.html 
 summary: 在安装 ONTAP SVM DSC 之前，可以运行此脚本来检查 SVM 中的事件速率 
-keywords: event, checker, rate, sizing, size, guide, 
+keywords: event, checker, rate, sizing, cloud secure 
 ---
 = SVM事件速率检查程序(代理规模估算指南)
 :allow-uri-read: 
@@ -47,8 +47,7 @@ NOTE: 运行此脚本时，不应为要确定事件速率的 SVM 运行任何 ON
  “Svm svm_rate is generating 100 events/sec”.
 
 
-. 每个 ONTAP SVM 数据收集器都可以与一个 SVM 相关联，这意味着每个数据收集器都能够接收单个 SVM 生成的事件数量。
-
+每个 ONTAP SVM 数据收集器都可以与一个 SVM 相关联，这意味着每个数据收集器都能够接收单个 SVM 生成的事件数量。
 
 请记住以下几点：
 
@@ -144,10 +143,10 @@ Overall svm audit_svm is generating 300 events/sec
 |===
 
 
-| 问题：如果我在已配置 Cloud Secure 的 SVM 上运行此脚本，它是仅使用 SVM 上的现有 fpolicy 配置还是设置一个临时脚本并运行此过程？ 
+| 问题：如果我在已配置工作负载安全性的SVM上运行此脚本、它是仅使用SVM上的现有fpolicy配置还是设置一个临时脚本并运行此过程？ 
 
 
-| 问题解答：即使已为 Cloud Secure 配置 SVM ，事件速率检查程序也可以正常运行。不应产生任何影响。 
+| 问题解答 ：事件速率检查器即使已为工作负载安全性配置SVM、也可以正常运行。不应产生任何影响。 
 
 
 | 问题：是否可以增加可运行此脚本的 SVM 数量？ 
