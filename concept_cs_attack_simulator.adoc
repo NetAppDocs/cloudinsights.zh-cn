@@ -1,12 +1,12 @@
+---
+sidebar: sidebar 
+permalink: concept_cs_attack_simulator.html 
+keywords: ransomware, simulation, simulator, restrict, attack 
+summary: 您可以使用脚本模拟勒索软件攻击、以测试或演示工作负载安全性 
+---
 = 工作负载安全性：模拟攻击
 :allow-uri-read: 
 
-
-代码——边栏：边栏恶意链接：concept_cs_attack_simulator.html关键字：勒索软件、模拟、模拟、限制、攻击摘要：使用脚本、您可以模拟勒索软件攻击以测试或演示工作负载安全性—
-
-
-
-= 工作负载安全性：模拟攻击
 
 [role="lead"]
 您可以使用此页面上的说明来模拟攻击、以便使用随附的勒索软件模拟脚本测试或演示工作负载安全性。

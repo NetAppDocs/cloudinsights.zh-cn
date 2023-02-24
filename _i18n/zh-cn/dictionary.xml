@@ -10609,7 +10609,6 @@
   <block id="59ac6af58fe53beeb9262552cb4288e4" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> Cloud Insights 用于与采集单元通信的不会在Cloud Insights 与数据收集器本身之间进行通信。您可以尝试以下几项操作：确保采集单元能够解析FQDN并访问所需的端口。在错误消息中确认不需要代理即可访问指定端点。可以使用curl测试采集单元与端点之间的通信。确保您*不*使用代理进行此测试。示例：root@acquisitionunit# cURL -s -H accept：application/json -H "Content-type：application/json"-H api-key：&lt;api key used in the data collector credentials -H secret-key:&lt;secret key used in the data collector credentials&gt; -X get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 区域端点&gt;：8080/v1/Storage/IPRanges请参见此内容 <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。</block>
   <block id="fca4fedbe53af4420a279beead573bdf" category="doc">工作负载安全性：模拟攻击</block>
-  <block id="373799975bf9df78f2b7e58b488fdb43" category="paragraph">代码——边栏：边栏恶意链接：concept_cs_attack_simulator.html关键字：勒索软件、模拟、模拟、限制、攻击摘要：使用脚本、您可以模拟勒索软件攻击以测试或演示工作负载安全性—</block>
   <block id="85bec7dd725b26542ae7c0d1c759836a" category="paragraph">您可以使用此页面上的说明来模拟攻击、以便使用随附的勒索软件模拟脚本测试或演示工作负载安全性。</block>
   <block id="16fa78539f96944e79f64b961036e74d" category="list-text">此脚本随工作负载安全代理安装文件一起提供。它可在安装了工作负载安全代理的任何计算机上使用。</block>
   <block id="749376c343309b5abf1f8bc2f1e6e9f7" category="list-text">您可以在工作负载安全代理计算机本身上运行此脚本；无需准备其他Linux计算机。但是，如果您希望在其他系统上运行此脚本，只需复制此脚本并在其中运行即可。</block>
@@ -10781,4 +10780,5 @@
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">配置工作负载安全代理</block>
   <block id="8b323f07a8614b39412ac6f03ce45d0e" category="sidebar">工作负载安全性用户管理</block>
   <block id="d38e6d2b2a7ab4eab18cf40e7c0ae800" category="summary">采集单元在Windows和Linux上安装、卸载、配置代理支持等。</block>
+  <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">您可以使用脚本模拟勒索软件攻击、以测试或演示工作负载安全性</block>
 </blocks>
