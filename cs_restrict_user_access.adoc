@@ -189,4 +189,10 @@ Position Hostname         IP Address/Mask
 
 
 | 无法修改策略。原因：未获得该命令的授权。 | 检查是否使用CsUser、是否已按上述方式为用户授予权限。 
+
+
+| NFS的用户(IP地址)阻止正常工作、但对于SMB/CIFS、我看到错误消息："SID到DomainName转换失败。原因超时：未建立套接字" | 如果_CSUser_无权执行ssh、则可能会发生这种情况。(确保在集群级别连接、然后确保用户可以执行ssh)。_CSUser_角色需要这些权限。 https://docs.netapp.com/us-en/cloudinsights/cs_restrict_user_access.html#prerequisites-for-user-access-blocking[]对于具有集群凭据的_CSUser_、请从ONTAP 命令行执行以下操作： security login role create -role csrole -cmddirname "vserver export-policy rule"-access all security login role create -role csrole -cmddirname set -access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole -cmddirname "Vserver services access-check authentication translate"-all security login logine. role create -role csrole -cmddirname "vserver name-maping"-access all如果未使用_csUser_、并且使用了集群级别的管理员用户、请确保管理员用户对ONTAP 具有ssh权限。 
+
+
+|  |  
 |===
