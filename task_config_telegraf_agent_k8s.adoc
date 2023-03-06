@@ -33,7 +33,7 @@ image:kubernetes_tile.png["Kubernetes Data Collector Tile"]
 
 
 * Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。
-* 当Cloud Insights 监控后端存储且Kubernetes与Docker容器运行时结合使用时、Cloud Insights 可以显示NFS和iSCSI的POD到PV到存储映射；其他运行时仅显示NFS。
+* 当Cloud Insights 监控后端存储且Kubernetes与Docker容器运行时结合使用时、Cloud Insights 可以显示NFS和iSCSI的POD到PV到存储映射和指标；其他运行时仅显示NFS。
 * 从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <<升级,升级>> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。
 * 如果您运行的是OpenShift 4.6或更高版本、则除了确保满足这些前提条件之外、还必须遵循下面的* OpenShift Instructions*。
 * 监控仅安装在 Linux 节点上
