@@ -8712,7 +8712,6 @@
   <block id="479cd5be40ccd07011d75823574c7b07" category="list-text">Kube-state-metrics：v2.0.0</block>
   <block id="a36b7ead4d7f7dfbc23cbc2511314f24" category="list-text">Fluent-bit：1.9.8</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。</block>
-  <block id="f555190cc628f345214d8d00c587f506" category="list-text">当Cloud Insights 监控后端存储且Kubernetes与Docker容器运行时结合使用时、Cloud Insights 可以显示NFS和iSCSI的POD到PV到存储映射；其他运行时仅显示iSCSI。</block>
   <block id="1d71a30c3f76311c39e7b21e9d36041f" category="list-text">从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。您必须 <block ref="7ef2e8367766700cf003a7bef00d93ae" category="inline-xref-macro-rx"></block> 最新的NetApp Kubernetes监控操作员(如果您的环境使用PSP)。</block>
   <block id="ceb4fea071151ab6bb0ff80a20993744" category="list-text">如果您运行的是OpenShift 4.6或更高版本、则除了确保满足这些前提条件之外、还必须遵循下面的* OpenShift Instructions*。</block>
   <block id="951a50d1b55837ddb5ff4cb5af4ebc8a" category="list-text">NetApp Kubernetes监控操作员会安装自己的Kube-state-metrics、以避免与任何其他实例发生冲突。</block>
@@ -10782,4 +10781,5 @@
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">您可以使用脚本模拟勒索软件攻击、以测试或演示工作负载安全性</block>
   <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">NFS的用户(IP地址)阻止正常工作、但对于SMB/CIFS、我看到错误消息："SID到DomainName转换失败。原因超时：未建立套接字"</block>
   <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">如果_CSUser_无权执行ssh、则可能会发生这种情况。(确保在集群级别连接、然后确保用户可以执行ssh)。_CSUser_角色需要这些权限。<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>对于具有集群凭据的_CSUser_、请从ONTAP 命令行执行以下操作： security login role create -role csrole -cmddirname "vserver export-policy rule"-access all security login role create -role csrole -cmddirname set -access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole -cmddirname "Vserver services access-check authentication translate"-all security login logine. role create -role csrole -cmddirname "vserver name-maping"-access all如果未使用_csUser_、并且使用了集群级别的管理员用户、请确保管理员用户对ONTAP 具有ssh权限。</block>
+  <block id="d511cfcda3973a3a336e284a48df103e" category="list-text">当Cloud Insights 监控后端存储且Kubernetes与Docker容器运行时结合使用时、Cloud Insights 可以显示NFS和iSCSI的POD到PV到存储映射；其他运行时仅显示NFS。</block>
 </blocks>
