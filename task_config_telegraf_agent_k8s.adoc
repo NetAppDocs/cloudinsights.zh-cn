@@ -54,10 +54,7 @@ Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查�
 |===
 * 运行ARM64架构的节点不支持NetApp Kubernetes监控操作员及其依赖项(电报、Kube-state-metrics、fluentbit等)。
 * 必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。
-
-
->>>>> e64b5299cf9e0451417037778f9d37b84b9d9e6b *要用于安装NetApp Kubernetes监控操作员的主机必须配置_kubectl_、以便与目标K8s集群通信、并可通过Internet连接到您的Cloud Insights 环境。如果此主机需要代理才能访问Cloud Insights 、请按照中的说明进行操作 <<configuring-proxy-support,配置代理支持>> 部分。
-
+* 要用于安装NetApp Kubernetes监控操作员的主机必须已配置_kubectl_、以便与目标K8s集群进行通信、并可通过Internet连接到您的Cloud Insights 环境。如果此主机需要代理才能访问Cloud Insights 、请按照中的说明进行操作 <<configuring-proxy-support,配置代理支持>> 部分。
 * NetApp Kubernetes监控操作员会安装自己的Kube-state-metrics、以避免与任何其他实例发生冲突。
 * 如果您在安装期间或在运行要监控的K8s集群时使用代理、请按照中的说明进行操作 <<configuring-proxy-support,配置代理支持>> 部分。
 * 您必须具有创建 Kubernetes 集群角色和角色绑定的权限。
@@ -426,7 +423,7 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 可以通过确认 PEM 文件的指纹为以下内容来验证 PEM 文件：
 
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
 更具体地说，
 
  openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem

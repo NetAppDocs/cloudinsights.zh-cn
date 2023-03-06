@@ -114,7 +114,8 @@ sc.exe delete telegraf
 +
 ....
 cd Cert:\CurrentUser\Root
-rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
+//rm E5FB7B68C08B1CA902708584C274F8EFC7BE8ABC
+rm 1A918038E8E127BB5C87A202DF173B97A05B4996
 ....
 . 删除 _C ： \Program Files\Ceraf_ 文件夹以删除二进制文件，日志和配置文件
 . 从注册表中删除 _system\CurrentControlSet\Services\EventLog\Application\Ceaf_ 密钥
@@ -535,7 +536,7 @@ Windows
 
 可以通过确认 PEM 文件的指纹为以下内容来验证 PEM 文件：
 
- E5:FB:7B:68:C0:8B:1C:A9:02:70:85:84:C2:74:F8:EF:C7:BE:8A:BC
+ 1A918038E8E127BB5C87A202DF173B97A05B4996
 更具体地说，
 
 * 非 Windows ：
