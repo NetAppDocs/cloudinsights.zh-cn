@@ -10782,4 +10782,8 @@
   <block id="c41953836f0cf08f49697db26ddf6a47" category="cell">运行以下许可版本之一的计算机：Red Hat Enterprise Linux 7.x、8.x 64位CentOS 7.x 64位CentOS 8 Stream Ubuntu 20到22 64位Rocky 8.x 64位、Rocky 9.x 64位此计算机不应运行其他应用程序级别软件。建议使用专用服务器。不支持SE (增强安全性) Linux。</block>
   <block id="39331dcf20cdc1eb4f9f6846be32417f" category="list-text">当Cloud Insights 监控后端存储且Kubernetes与Docker容器运行时结合使用时、Cloud Insights 可以显示NFS和iSCSI的POD到PV到存储映射和指标；其他运行时仅显示NFS。</block>
   <block id="82f6a763fe60e4e576dfec4afd406d65" category="list-text">要用于安装NetApp Kubernetes监控操作员的主机必须已配置_kubectl_、以便与目标K8s集群进行通信、并可通过Internet连接到您的Cloud Insights 环境。如果此主机需要代理才能访问Cloud Insights 、请按照中的说明进行操作 <block ref="209b83f4fc550a98dd7cd4c1d0704793" category="inline-xref-macro-rx"></block> 部分。</block>
+  <block id="fb4d860c1938626a4cb9b8f66c6eb6f2" category="section-title">2023年3月</block>
+  <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">适用于ONTAP 9.9+的云连接已弃用</block>
+  <block id="2589e2b6868c0dfc4223608ad37b1ecf" category="paragraph">适用于ONTAP 9.9+的云连接数据收集器已弃用。从2023年4月4日开始、您环境中的Cloud Connection数据收集器将不再收集数据、而是在轮询时显示错误。在后续更新中、Cloud Connection数据收集器将从Cloud Insights 中彻底删除。</block>
+  <block id="8ae386dae67728714e42ae37acbde665" category="paragraph">在2023年4月4日之前、必须为当前由Cloud Connection收集的任何ONTAP 系统配置一个新的NetApp ONTAP 数据管理软件数据收集器。 <block ref="61bbaeff08609910a4a5c1401ada9f16" category="inline-link-macro-rx"></block>。</block>
 </blocks>
