@@ -9739,7 +9739,6 @@
   <block id="0df3afc7b3c290bc4820d50b2bee11b4" category="cell">CPU总等待时间(以百分比表示)</block>
   <block id="2c4465560ecae928ff0585737c3acf45" category="cell">VMware API</block>
   <block id="2c10282d2a9ce8be1576d7af8091d09e" category="cell">Web 服务</block>
-  <block id="831b6c031c23b2fb141faacc1a32e259" category="doc">Dell Dell EMC Isilon REST数据收集器</block>
   <block id="6d06382ef6c5abdd0a682226c6351821" category="list-text">对端口8080的HTTPS访问</block>
   <block id="f7ef35e4c0665f97997b1078e76e42c4" category="cell">Isilon IP地址</block>
   <block id="ed705ee9e97ca31274136726da061128" category="cell">Isilon存储的IP地址或完全限定域名</block>
@@ -10298,8 +10297,6 @@
   <block id="37b9c8ac0158a9b9c57a6fd39c09112a" category="cell">cpuIdleTimePercent.Total</block>
   <block id="82e45cbb75d74071b021fa2fb638e1da" category="cell">cpuTotalWaitTimePercent.Total</block>
   <block id="6d26c12f389d527e1ebe5f28f0ca597b" category="cell">UsedCapacityForReportingMB</block>
-  <block id="3fb9d15e7ce5e74d2d3cbbd4d6d1eeb7" category="inline-link-macro">Dell EMC Isilon REST</block>
-  <block id="debcc72094a806a749160def821d5dcf" category="cell"><block ref="debcc72094a806a749160def821d5dcf" category="inline-link-macro-rx"></block></block>
   <block id="0cf39fe422a1bfd5d8bce06d5ce1b64f" category="inline-link-macro">Dell EMC Unisphere REST</block>
   <block id="7bb1c93f44835a04f1a5d46dd4f4b400" category="cell"><block ref="7bb1c93f44835a04f1a5d46dd4f4b400" category="inline-link-macro-rx"></block></block>
   <block id="39fdcbcd2a4c753babbc68973712e367" category="summary">从一个控制平台构建、保护和管理混合多云数据资产。</block>
@@ -10786,4 +10783,8 @@
   <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">适用于ONTAP 9.9+的云连接已弃用</block>
   <block id="2589e2b6868c0dfc4223608ad37b1ecf" category="paragraph">适用于ONTAP 9.9+的云连接数据收集器已弃用。从2023年4月4日开始、您环境中的Cloud Connection数据收集器将不再收集数据、而是在轮询时显示错误。在后续更新中、Cloud Connection数据收集器将从Cloud Insights 中彻底删除。</block>
   <block id="8ae386dae67728714e42ae37acbde665" category="paragraph">在2023年4月4日之前、必须为当前由Cloud Connection收集的任何ONTAP 系统配置一个新的NetApp ONTAP 数据管理软件数据收集器。 <block ref="61bbaeff08609910a4a5c1401ada9f16" category="inline-link-macro-rx"></block>。</block>
+  <block id="3d535cce2c7c7b6ca074afafcd02ca81" category="inline-link-macro">Dell EMC Isilon / PowerScale REST</block>
+  <block id="0f68b3cd7cc981b302e5fc48409617ab" category="cell"><block ref="0f68b3cd7cc981b302e5fc48409617ab" category="inline-link-macro-rx"></block></block>
+  <block id="e23a1eab258608c673f841550477728b" category="doc">Dell EMC Isilon / PowerScale REST数据收集器</block>
+  <block id="9406d81673e1646c43299c62b0289100" category="sidebar">Isilon / PowerScale REST</block>
 </blocks>
