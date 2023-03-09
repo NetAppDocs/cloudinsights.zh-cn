@@ -8676,8 +8676,6 @@
   <block id="ba95389dce56e78ab6a308128620b033" category="paragraph">对于具有集群凭据的_CSUser_、请从ONTAP 命令行执行以下操作：</block>
   <block id="20cdc94cc7059da994e4c0a98a544c8f" category="section-title">警报示例</block>
   <block id="e0e1895e03a77da5552db43fbdeaeea6" category="paragraph">下面显示了因ARP事件生成的警报示例：</block>
-  <block id="ba022000977a1c06f95377443d9b2500" category="inline-image-macro">ONTAP ARP示例屏幕</block>
-  <block id="d12fcb220971d8d0a7e1d474102c977e" category="paragraph"><block ref="d12fcb220971d8d0a7e1d474102c977e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="333fa709635d0e011dd99c908e02bd40" category="paragraph">高度可信的横幅表示此攻击已显示勒索软件行为以及文件加密活动。加密文件图形指示ARP解决方案 检测到卷加密活动的时间戳。</block>
   <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
   <block id="4c4518d4c20175eb4082a6b33eb4badb" category="section-title">2022年10月</block>
@@ -10792,4 +10790,8 @@
   <block id="347129195bfdcce2fcf0d362a84ed033" category="inline-link-macro">知识库</block>
   <block id="6ad0fb78b8821fe632ae6653b56991b5" category="paragraph">有关代理配置的详细信息、请参见NetApp <block ref="9ee959d13eb0fcadf2047adb8fe84539" category="inline-link-macro-rx"></block>。</block>
   <block id="21495a8ea3304b589e7d69a7ec0ce1cc" category="paragraph">Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管理员，用户和来宾。为每个帐户分配特定的权限级别，如下表所示。用户可以是其中之一 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> Cloud Insights 并分配了特定角色，或者可以通过登录 <block ref="5714c3cacaaaa4fdc97a235dfa644756" category="inline-link-macro-rx"></block> 具有默认角色。Cloud Insights 高级版提供了 SSO 授权功能。</block>
+  <block id="b83a60c5de546ea3d085bb1ce6636d9a" category="inline-image-macro">勒索软件警报顶部部分</block>
+  <block id="ed862f710faf8808be6c0eb3e9619e30" category="paragraph"><block ref="4f633f9ad87e78d3d93ed9f152d5549a" category="inline-image-macro-rx" type="image"></block>
+<block ref="45e1a131f383b4a3d591b6b7f4008d87" category="inline-image-macro-rx" type="image"></block>
+<block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

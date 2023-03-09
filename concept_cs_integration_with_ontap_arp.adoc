@@ -58,7 +58,9 @@ security login create -user-or-group-name csuser -application http -authmethod p
 
 下面显示了因ARP事件生成的警报示例：
 
-image:CS_ONTAP_ARP_EXAMPLE.png["ONTAP ARP示例屏幕"]
+image:CS_Ransomware_Example_1.png["勒索软件警报顶部部分"]
+image:CS_Ransomware_Example_2.png["勒索软件警报顶部部分"]
+image:CS_Ransomware_Example_3.png["勒索软件警报顶部部分"]
 
 高度可信的横幅表示此攻击已显示勒索软件行为以及文件加密活动。加密文件图形指示ARP解决方案 检测到卷加密活动的时间戳。
 
