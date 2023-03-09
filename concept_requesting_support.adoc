@@ -68,7 +68,9 @@ image:SupportPage_SN_Section-NA.png["SN_screen"]
 
 == 获取支持信息
 
-NetApp 通过多种方式为 Cloud Insights 提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。对于订阅了任何 Cloud Insights 版本（基本版，标准版，高级版）的用户，可通过电话或 Web 服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点（ NSS ） SSO 帐户。
+NetApp 通过多种方式为 Cloud Insights 提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。对于订阅了任何Cloud Insights 版本(基础版*、标准版、高级版)的用户、可以通过电话或Web服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点 (NSS) SSO 帐户。
+
+*只要您的所有NetApp存储系统都至少在高级支持级别提供支持、即可在Basic Edition中获得支持。
 
 
 

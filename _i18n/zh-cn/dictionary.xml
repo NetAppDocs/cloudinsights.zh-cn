@@ -497,7 +497,6 @@
   <block id="563ab1cab19237118c0d565ded4f7493" category="list-text">作为 NetApp 的新客户，您还需要创建一个 NetApp 支持站点（ NSS ）用户帐户，以便将来进行注册，并访问支持门户以获取技术支持聊天和 Web 服务单。此链接位于<block ref="4b0df7f6652ef877e322a199d6b6edce" category="inline-link-rx"></block>。您可以提供新注册的 Cloud Insights 序列号以加快此过程。</block>
   <block id="0e458a16f853c4e326f689913acf2dfe" category="list-text">这是 Cloud Insights NetApp 序列号的一次性注册。</block>
   <block id="bc4afdcc32d9a7d1bc03c2d8ad5b1828" category="section-title">获取支持信息</block>
-  <block id="7c59aac37a994b7c8de5ecb669c6e209" category="paragraph">NetApp 通过多种方式为 Cloud Insights 提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。对于订阅了任何 Cloud Insights 版本（基本版，标准版，高级版）的用户，可通过电话或 Web 服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点（ NSS ） SSO 帐户。</block>
   <block id="0ead5de583924ac8d48848b85f68e778" category="section-title">自助服务支持：</block>
   <block id="6c0afebc7e7822e3ca22734d7b5d42c0" category="paragraph">这些支持选项在试用模式下提供，并且全天候免费提供：</block>
   <block id="35799672184c185a5b76dc14b0e32aa7" category="inline-link-macro">知识库</block>
@@ -10789,4 +10788,6 @@
   <block id="9406d81673e1646c43299c62b0289100" category="sidebar">Isilon / PowerScale REST</block>
   <block id="601e2f4bdb8c8d256c0862eb39ab26dd" category="list-text">如果要设置的代理没有身份验证(用户名/密码)、请运行以下命令：</block>
   <block id="aec78dde754edc4769d775d718da8408" category="list-text">如果要设置的代理具有身份验证(用户名/密码)、请运行以下命令：</block>
+  <block id="79c7ccf004cab46d7dd6a51e885aae3f" category="paragraph">NetApp 通过多种方式为 Cloud Insights 提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。对于订阅了任何Cloud Insights 版本(基础版*、标准版、高级版)的用户、可以通过电话或Web服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点 (NSS) SSO 帐户。</block>
+  <block id="54b9dfbc2f7a4721e38bff7e643a574c" category="paragraph">*只要您的所有NetApp存储系统都至少在高级支持级别提供支持、即可在Basic Edition中获得支持。</block>
 </blocks>
