@@ -10790,4 +10790,6 @@
   <block id="79c7ccf004cab46d7dd6a51e885aae3f" category="paragraph">NetApp 通过多种方式为 Cloud Insights 提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。对于订阅了任何Cloud Insights 版本(基础版*、标准版、高级版)的用户、可以通过电话或Web服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点 (NSS) SSO 帐户。</block>
   <block id="54b9dfbc2f7a4721e38bff7e643a574c" category="paragraph">*只要您的所有NetApp存储系统都至少在高级支持级别提供支持、即可在Basic Edition中获得支持。</block>
   <block id="575b95a19de7e191bf400580ceab0b27" category="cell">如果未在Solutions Enabler服务器的守护进程配置文件中声明权限、您可能会看到此消息(请参见 <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> )假定您的SE客户端版本与您的SE服务器版本匹配。如果未在/var/symapi/config/daemon用户配置文件中为_cisys_用户(用于执行Solutions Enabler命令)配置所需的守护进程权限、也可能会发生此错误。要修复此问题、请编辑/var/symapi/config/daemon用户文件、并确保cisys用户具有为storapid守护进程指定的&lt;all&gt; 权限。示例：14：11：25 # tail /var/symapi/config/daem_users ... Cisys storapid &lt;all&gt;</block>
+  <block id="347129195bfdcce2fcf0d362a84ed033" category="inline-link-macro">知识库</block>
+  <block id="6ad0fb78b8821fe632ae6653b56991b5" category="paragraph">有关代理配置的详细信息、请参见NetApp <block ref="9ee959d13eb0fcadf2047adb8fe84539" category="inline-link-macro-rx"></block>。</block>
 </blocks>

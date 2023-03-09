@@ -83,6 +83,8 @@ image:NewLinuxAUInstall.png["《 Linux AU 说明》"]
 
 NOTE: 通配符通常使用星号（ * ），但代理 / 防火墙配置可能使用不同的格式。请查阅代理文档，以确保环境中的通配符规范正确无误。
 
+有关代理配置的详细信息、请参见NetApp link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["知识库"]。
+
 
 
 ==== 查看代理 URL
@@ -136,6 +138,8 @@ image::NewWindowsAUInstall.png[Windows AU 安装]
  *.cloudinsights.netapp.com
 
 NOTE: 通配符通常使用星号（ * ），但代理 / 防火墙配置可能使用不同的格式。请查阅代理文档，以确保环境中的通配符规范正确无误。
+
+有关代理配置的详细信息、请参见NetApp link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/Where_is_the_proxy_information_saved_to_in_the_Cloud_Insights_Acquisition_Unit["知识库"]。
 
 
 
