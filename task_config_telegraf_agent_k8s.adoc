@@ -453,7 +453,7 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 如果在设置NetApp Kubernetes监控操作员时遇到问题、请尝试执行以下操作：
 
-[cols="2*"]
+[cols="stretch"]
 |===
 | 问题： | 请尝试以下操作： 
 
@@ -480,5 +480,17 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 
 | 出现"ImagePullBackoff"错误 | 如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 <<using-a-custom-or-private-docker-repository,阅读更多内容>> 关于为自定义/私有repo. 
+
+
+| 我正在部署监控操作员问题描述 、而当前文档对我的解决没有帮助。  a| 
+捕获或记下以下命令的输出、然后联系技术支持团队。
+
+[listing]
+----
+ kubectl -n netapp-monitoring get all
+ kubectl -n netapp-monitoring describe all
+ kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
+ kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
+----
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
