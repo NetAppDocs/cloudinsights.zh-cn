@@ -143,6 +143,7 @@ Cloud Insights 按 * 受管单元 * 定价。受管单元的使用量是根据�
 
 请注意，以下数据收集器会按不同的原始 TiB 到受管单元速率进行计量。这些数据收集器上每 40 TiB 的未格式化容量计费为 1 个受管单元（ MU ）：
 
+* AWS S3
 * Dell EMC ECS
 * Hitachi 内容平台
 * IBM Cleversafe
