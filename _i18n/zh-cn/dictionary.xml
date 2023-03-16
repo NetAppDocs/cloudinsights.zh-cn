@@ -151,12 +151,6 @@
   <block id="7040b350f10440ae0d8da871848e4a81" category="list-text">如果已存在具有相同名称，序列号等的 fpolicy ，则会出现错误。</block>
   <block id="92848109d677425a3581b7e70806e998" category="list-text">脚本在运行时会突然停止。</block>
   <block id="f03d806bb84581d824fc78103e668b12" category="paragraph">下面显示了一个脚本运行示例：</block>
-  <block id="414578a6fb051cf762571b6abc3062a7" category="cell">问题：是否可以增加可运行此脚本的 SVM 数量？</block>
-  <block id="4c39b760a2129c8773ade4e38c7ee8a1" category="cell">问题解答：可以。只需编辑脚本并将 SVM 的最大数量从 5 更改为任何所需数量即可。</block>
-  <block id="70fd916f11013b88f353d7c4cc8288b0" category="cell">问：如果增加 SVM 的数量，是否会增加运行脚本的时间？</block>
-  <block id="f64044d833e646b68fe903a7d7204ce9" category="cell">问题解答：不可以即使 SVM 数量增加，该脚本也将最多运行 5 分钟。</block>
-  <block id="aeb20f65fbd8c09dda397cfc3a4d6120" category="cell">问题解答：可以。您需要编辑脚本并将 SVM 的最大数量从 5 更改为任何所需的数量。</block>
-  <block id="e90fb31b8ec18f1817a08fecf70d9418" category="cell">问题解答：不可以即使 SVM 数量增加，该脚本也将最多运行 5 分钟。</block>
   <block id="b25c993d3776230a665bf577a045a77c" category="summary">配置 Brocade 数据收集器。</block>
   <block id="5dd0750dbeaff9eef9c017100d1e10be" category="doc">配置 Brocade Enterprise Fabric Connectivity Manager 数据收集器</block>
   <block id="30e633574a47b4dcb4c8ecde882af403" category="paragraph">Cloud Insights 使用 Brocade Enterprise Fabric Connectivity Manager （ EFCM ）数据收集器发现 Brocade EFCM 交换机的清单。Cloud Insights 支持 EFCM 9.5 ， 9.6 和 9.7 版。</block>
@@ -10744,8 +10738,6 @@
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">所有活动页面可帮助您了解对工作负载安全环境中的实体执行的操作。</block>
   <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">对于活动工作负载安全环境、活动历史记录保留13个月。</block>
-  <block id="48d308d5944f69b2199664d16fb4ef02" category="cell">问题：如果我在已配置工作负载安全性的SVM上运行此脚本、它是仅使用SVM上的现有fpolicy配置还是设置一个临时脚本并运行此过程？</block>
-  <block id="6dc6e27b054fdfb47ea4834bce442633" category="cell">问题解答 ：事件速率检查器即使已为工作负载安全性配置SVM、也可以正常运行。不应产生任何影响。</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">要配置单节点/HA AWS实例以托管工作负载安全代理、请参见OnCommand Cloud Volumes ONTAP 文档：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
   <block id="830d10f97264e90663c5e3935c2d632d" category="paragraph">在AWS中、按照以下步骤配置要用作工作负载安全代理的计算机：</block>
   <block id="1c670cb717b4140f57366cd8d3f7073b" category="paragraph">按照以下步骤配置要用作工作负载安全代理的计算机：</block>
@@ -10797,4 +10789,16 @@
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">捕获或记下以下命令的输出、然后联系技术支持团队。</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">*概述*信息板可显示有用的信息、例如环境中的集群数量及其整体容量和性能百分比。您还将看到有关存储容量或性能容量用尽之前的预计天数的预测数据。此外、如果基础架构中的任何控制器的CPU运行速度超过65%、在发生故障转移时可能会使集群面临风险、则ONTAP Essentials会将这些控制器显示为"热"控制器。</block>
+  <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">问题</block>
+  <block id="3751695c17afed4055a7a5ad5d46f6f5" category="cell">问题解答</block>
+  <block id="d0361ec8dd55377b979879d46798dd21" category="cell">如果我在已配置工作负载安全性的SVM上运行此脚本、它是仅使用SVM上的现有fpolicy配置还是设置一个临时脚本并运行此过程？</block>
+  <block id="dd6c1727e8619e941f226765e3ee28ed" category="cell">即使已为工作负载安全性配置SVM、事件速率检查器也可以正常运行。不应产生任何影响。</block>
+  <block id="865bc2d6c9cc50637b3abc05118e4574" category="cell">是否可以增加可运行此脚本的SVM数量？</block>
+  <block id="d2a27dbe2bebb82fe8bccf11a4f69d9b" category="cell">是的。只需编辑脚本并将 SVM 的最大数量从 5 更改为任何所需数量即可。</block>
+  <block id="e94aec426eb2ace8240d7abaeefa8597" category="cell">如果增加SVM的数量、是否会增加脚本的运行时间？</block>
+  <block id="3367c7848384adc0d8f9445dcca8b87e" category="cell">否即使 SVM 数量增加，该脚本也将最多运行 5 分钟。</block>
+  <block id="49eeed91da2974d7d682c9398b2adbd0" category="cell">是的。您需要编辑脚本并将 SVM 的最大数量从 5 更改为任何所需的数量。</block>
+  <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">否即使 SVM 数量增加，该脚本也将最多运行 5 分钟。</block>
+  <block id="ce3d712deda180dd445bfed60562d712" category="cell">如果我使用现有代理运行事件速率检查程序、会发生什么情况？</block>
+  <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">对现有代理运行事件速率检查发生原因 程序可能会增加SVM上的延迟。这种增加在事件速率检查程序运行期间是临时的。</block>
 </blocks>
