@@ -8434,7 +8434,6 @@
   <block id="a13907a785102ea69b2891d9e6233f6f" category="paragraph">要开始探索、请从Cloud Insights 主菜单中选择* ONTAP Essentials *。</block>
   <block id="da61c5d249c3bbc25d9cee2d6d64b53a" category="inline-image-macro">ONTAP 基础知识概述信息板</block>
   <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="88c28e828c24faa9cbd8f5219c054d7e" category="paragraph">*概述*信息板可显示有用的信息、例如环境中的集群数量及其整体容量和性能百分比。您还将看到有关存储容量或性能容量用尽之前的预计天数的预测数据。如果基础架构中的任何控制器都在高温度下运行、ONTAP 基础知识将向您展示这些功能。</block>
   <block id="39ef60f7b3d6d0c88b10d90a3775807a" category="paragraph">信息性图形可帮助您了解一段时间内的性能以及容量使用情况的细分。</block>
   <block id="192d723a70e1a973bee8e50c84ffa947" category="paragraph">这些图形或数据点中的每一个都可以用作探索或调查的起点。</block>
   <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">注意："Days to Full"数字为"0"(零)表示预计达到全满的天数超过90天。换言之、您的系统很快就不会面临空间用尽的风险。</block>
@@ -10797,4 +10796,5 @@
   <block id="6da3e5f4ef4407262c741e8325a8249d" category="cell">我正在部署监控操作员问题描述 、而当前文档对我的解决没有帮助。</block>
   <block id="368fbe1d48012e8e4f24249e2b27a8dd" category="paragraph">捕获或记下以下命令的输出、然后联系技术支持团队。</block>
   <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
+  <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">*概述*信息板可显示有用的信息、例如环境中的集群数量及其整体容量和性能百分比。您还将看到有关存储容量或性能容量用尽之前的预计天数的预测数据。此外、如果基础架构中的任何控制器的CPU运行速度超过65%、在发生故障转移时可能会使集群面临风险、则ONTAP Essentials会将这些控制器显示为"热"控制器。</block>
 </blocks>
