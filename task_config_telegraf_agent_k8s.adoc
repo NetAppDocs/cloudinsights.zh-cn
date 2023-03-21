@@ -17,6 +17,12 @@ Cloud Insights 为Kubernetes收集提供了* NetApp Kubernetes监控操作员*(N
 
 image:kubernetes_tile.png["Kubernetes Data Collector Tile"]
 
+下面是一个概括性图、显示了操作员在您的环境中的位置。根据您的环境、_Proxy Server_可能需要、也可能不需要。
+
+image:CI_Diagram_with_NKMO.png["显示驻留在Kubernetes集群中的NKMO\"的高级映射、其中的箭头显示了数据如何从主机、代理服务器传输到集群、所有这些数据都是从Cloud Insights 传输到集群的"]
+
+操作员(NKMO）和数据收集器可从Cloud Insights Docker注册表下载。安装后、NKMOO将管理部署在Kubernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。
+
 
 
 == 安装NetApp Kubernetes监控操作员之前

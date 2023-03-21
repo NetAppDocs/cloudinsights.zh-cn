@@ -10801,4 +10801,8 @@
   <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">否即使 SVM 数量增加，该脚本也将最多运行 5 分钟。</block>
   <block id="ce3d712deda180dd445bfed60562d712" category="cell">如果我使用现有代理运行事件速率检查程序、会发生什么情况？</block>
   <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">对现有代理运行事件速率检查发生原因 程序可能会增加SVM上的延迟。这种增加在事件速率检查程序运行期间是临时的。</block>
+  <block id="bca1503414d74a046e28b7530006b1be" category="paragraph">下面是一个概括性图、显示了操作员在您的环境中的位置。根据您的环境、_Proxy Server_可能需要、也可能不需要。</block>
+  <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">显示驻留在Kubernetes集群中的NKMO"的高级映射、其中的箭头显示了数据如何从主机、代理服务器传输到集群、所有这些数据都是从Cloud Insights 传输到集群的</block>
+  <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">操作员(NKMO）和数据收集器可从Cloud Insights Docker注册表下载。安装后、NKMOO将管理部署在Kubernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。</block>
 </blocks>
