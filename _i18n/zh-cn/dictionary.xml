@@ -7514,7 +7514,6 @@
   <block id="3910d1d80274049b67c375b0000311fb" category="paragraph">复制 / 粘贴上述命令输出中的值 _.dockerconfigjson ： _ 。</block>
   <block id="683b8010d170fc689e256c2461d9ed7e" category="paragraph">对 Docker 密钥进行解码：</block>
   <block id="e46ad1cf454a36b0aa27d5cb43692c6b" category="paragraph">登录到 Docker 存储库：</block>
-  <block id="2ab991b456a7fa9b1f3d4ecbbe41e44d" category="paragraph">根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。</block>
   <block id="cb43d6ddfc5892dafbf435fffd06e735" category="paragraph">如果启用了 flual-bit ，请同时下载：</block>
   <block id="2f467f6ec28d4dda9efc2d651f82d1b6" category="paragraph">在 _spec__ 部分中，进行以下更改：</block>
   <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights 的新增功能</block>
@@ -10805,4 +10804,5 @@
   <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">显示驻留在Kubernetes集群中的NKMO"的高级映射、其中的箭头显示了数据如何从主机、代理服务器传输到集群、所有这些数据都是从Cloud Insights 传输到集群的</block>
   <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">操作员(NKMO）和数据收集器可从Cloud Insights Docker注册表下载。安装后、NKMOO将管理部署在Kubernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。</block>
+  <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。确保存储库中这些映像的目录路径与Docker &lt;cluster&gt;.cloudinsights.netapp.com中的路径一致。</block>
 </blocks>
