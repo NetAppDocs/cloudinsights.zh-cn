@@ -102,14 +102,6 @@ image:Monitor_Group_By_Example.png["选择要监控的日志、设置筛选器�
 
 
 
-==== 定义警报行为
-
-选择在触发日志警报时要发出警报的方式。您可以根据上述筛选条件将监控器设置为具有 _Warning_ ， _critical_ 或 _Informational_ 严重性的警报。
-
-image:Monitor_log_alert_behavior.png["定义要监控的日志行为"]
-
-
-
 ==== 定义警报解析行为
 
 您可以选择如何解决日志监控警报。您可以选择三种方式：
