@@ -7609,10 +7609,6 @@
   <block id="be0ee88944c0674ffaad4c460224553f" category="paragraph"><block ref="be0ee88944c0674ffaad4c460224553f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">日志监控器</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">日志监控器筛选器不能为空。</block>
-  <block id="454176c970e70022beb38f8813bea495" category="section-title">定义警报行为</block>
-  <block id="cce8c43ff15076e2a47a1be2c1993164" category="paragraph">选择在触发日志警报时要发出警报的方式。您可以根据上述筛选条件将监控器设置为具有 _Warning_ ， _critical_ 或 _Informational_ 严重性的警报。</block>
-  <block id="842f9b92217e385fb4514d9f0467d53e" category="inline-image-macro">定义要监控的日志行为</block>
-  <block id="1b1f71445d1920c9625e6c1f2018a229" category="paragraph"><block ref="1b1f71445d1920c9625e6c1f2018a229" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">定义警报解析行为</block>
   <block id="5e5c54ebd8c197b5e4372aff434134f5" category="paragraph">您可以选择如何解决日志监控警报。您可以选择三种方式：</block>
   <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">* 立即解决 * ：立即解决警报，无需采取进一步操作</block>
@@ -10810,4 +10806,7 @@
   <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">Cloud Insights 使用Rubrik CDM数据收集器收集清单和性能数据。</block>
   <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">此信息被视为_Preview_收集器、此信息随时可能更改。</block>
   <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">此页面即将推出。</block>
+  <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Rubrik CDM存储</block>
+  <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
+  <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDM</block>
 </blocks>
