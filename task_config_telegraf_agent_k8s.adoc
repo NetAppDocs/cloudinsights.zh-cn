@@ -59,7 +59,7 @@ Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查�
 | Rancher + catt.io 作为流程编排 /Kubernetes 平台 | catt.io/OS = Linux 
 |===
 * 运行ARM64架构的节点不支持NetApp Kubernetes监控操作员及其依赖项(电报、Kube-state-metrics、fluentbit等)。
-* 必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。
+* 必须提供以下命令：_curl、sudo、openssl、sha256sum、_和_kubectl_。为获得最佳结果，请将这些命令添加到路径中。请注意、至少需要为_kubectl_配置对以下Kubernetes对象的访问权限：_agents、clusterroles、clusterrolebindings、customresourcesdefiniments、deployments、 命名空间、角色、轮绑定、机密、服务帐户、_和_services_。请参见 link:nkmo_clusterrole_yaml.html["此处"] 具有这些最低clusterrole特权的.yaml文件示例。
 * 要用于安装NetApp Kubernetes监控操作员的主机必须已配置_kubectl_、以便与目标K8s集群进行通信、并可通过Internet连接到您的Cloud Insights 环境。如果此主机需要代理才能访问Cloud Insights 、请按照中的说明进行操作 <<configuring-proxy-support,配置代理支持>> 部分。
 * NetApp Kubernetes监控操作员会安装自己的Kube-state-metrics、以避免与任何其他实例发生冲突。
 * 如果您在安装期间或在运行要监控的K8s集群时使用代理、请按照中的说明进行操作 <<configuring-proxy-support,配置代理支持>> 部分。

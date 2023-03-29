@@ -8446,7 +8446,6 @@
   <block id="f69b71669c103a70c3bed015d16ff368" category="admonition">您可以选择的功能和角色取决于您以特定管理员角色访问的功能。例如、如果您只有报告管理员角色、则可以将用户分配给报告中的任何角色、但不能为可观察性或安全性分配角色。</block>
   <block id="fb2292451138606a292cb0cc5fcdeede" category="paragraph">您必须以可观察性的帐户所有者身份登录、才能将帐户所有者角色分配给其他用户。</block>
   <block id="ae26b3d8e556703291282149e3ae894f" category="inline-xref">升级</block>
-  <block id="51749c7a45a2b7fcc4461d9a50cc9b22" category="list-text">必须提供以下命令： _cURL ， _sudo ， _openssl_ ， _sha256sum_ 和 _kubectl_ 。为获得最佳结果，请将这些命令添加到路径中。</block>
   <block id="450670e2626f71fbb9a492373158ed02" category="paragraph">要停止NetApp Kubernetes监控操作员、请执行以下操作：</block>
   <block id="c1bdaebddc4968d3e08193cf297db84b" category="paragraph">要启动NetApp Kubernetes监控操作员、请执行以下操作：</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">关于Kube-state-metrics</block>
@@ -10811,4 +10810,8 @@
   <block id="95347c78f9b32647a267d1b7bad05732" category="section-title">定义警报行为</block>
   <block id="de6aa397f5d731cb90b688abf776c138" category="paragraph">您可以创建监控器、以便在发生上述条件一次(即立即发生)时以_critical_、_Warning_或_Informational_的严重性级别发出警报、或者等待发出警报、直到条件出现2次或更多次。</block>
   <block id="395204e03c9e6835fee3d859f3a52f45" category="paragraph">您可以选择如何解决日志监控警报。您可以选择三种方式：</block>
+  <block id="af943d1d81f743ab6e7c9bcbe3a8c6e9" category="summary">NKMOO集群角色的YAML文件示例</block>
+  <block id="94e0aa0f534273005cdbd647f8f4eab8" category="doc">NKMO"集群角色YAML"示例</block>
+  <block id="38836a8a56831bc3569901f9b16d3eaf" category="paragraph">需要至少为NetApp Kubernetes监控操作员(NKMO）的_kubectl_组件配置对以下Kubernetes对象的访问权限：代理、集群角色、集群绑定、自定义资源定义、部署、 命名空间、角色、轮绑定、密码、服务帐户、 和服务。以下是具有这些最低权限的clusterrole示例。</block>
+  <block id="fcb70ec2b5ff14dcc062955ceca887b6" category="list-text">必须提供以下命令：_curl、sudo、openssl、sha256sum、_和_kubectl_。为获得最佳结果，请将这些命令添加到路径中。请注意、至少需要为_kubectl_配置对以下Kubernetes对象的访问权限：_agents、clusterroles、clusterrolebindings、customresourcesdefiniments、deployments、 命名空间、角色、轮绑定、机密、服务帐户、_和_services_。请参见 <block ref="2322ad97d10659602a6f09125f69eba0" category="inline-link-macro-rx"></block> 具有这些最低clusterrole特权的.yaml文件示例。</block>
 </blocks>
