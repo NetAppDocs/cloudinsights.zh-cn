@@ -10801,9 +10801,6 @@
   <block id="5fdef5014971511d708c48ee3a739357" category="paragraph">根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。确保存储库中这些映像的目录路径与Docker &lt;cluster&gt;.cloudinsights.netapp.com中的路径一致。</block>
   <block id="560b3269d8d097187c911ee417754210" category="summary">配置Rubrik CDM数据收集器。</block>
   <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Rubrik CDM数据收集器</block>
-  <block id="9d8f41573ef4839d0be28a08053b14eb" category="paragraph">Cloud Insights 使用Rubrik CDM数据收集器收集清单和性能数据。</block>
-  <block id="ff1f57ccd65dd781b0a6758d9e036ad4" category="admonition">此信息被视为_Preview_收集器、此信息随时可能更改。</block>
-  <block id="846d77217eb2a05bd5ff4c3a5f932421" category="paragraph">此页面即将推出。</block>
   <block id="d270a242787fdce58a1a0b666e5deafd" category="inline-link-macro">Rubrik CDM存储</block>
   <block id="8f59429f2f39c71254ce2fdcfe65bbc2" category="cell"><block ref="8f59429f2f39c71254ce2fdcfe65bbc2" category="inline-link-macro-rx"></block></block>
   <block id="38d38399d4a7514463d665125ae50a4a" category="sidebar">Rubrik CDM</block>
@@ -10814,4 +10811,17 @@
   <block id="94e0aa0f534273005cdbd647f8f4eab8" category="doc">NKMO"集群角色YAML"示例</block>
   <block id="38836a8a56831bc3569901f9b16d3eaf" category="paragraph">需要至少为NetApp Kubernetes监控操作员(NKMO）的_kubectl_组件配置对以下Kubernetes对象的访问权限：代理、集群角色、集群绑定、自定义资源定义、部署、 命名空间、角色、轮绑定、密码、服务帐户、 和服务。以下是具有这些最低权限的clusterrole示例。</block>
   <block id="fcb70ec2b5ff14dcc062955ceca887b6" category="list-text">必须提供以下命令：_curl、sudo、openssl、sha256sum、_和_kubectl_。为获得最佳结果，请将这些命令添加到路径中。请注意、至少需要为_kubectl_配置对以下Kubernetes对象的访问权限：_agents、clusterroles、clusterrolebindings、customresourcesdefiniments、deployments、 命名空间、角色、轮绑定、机密、服务帐户、_和_services_。请参见 <block ref="2322ad97d10659602a6f09125f69eba0" category="inline-link-macro-rx"></block> 具有这些最低clusterrole特权的.yaml文件示例。</block>
+  <block id="179f74ad6aecb22f37252502d5f39223" category="paragraph">Cloud Insights 使用Rubrik数据收集器从Rubrik存储设备采集清单和性能数据。</block>
+  <block id="33a86d81c4ea09bf20b800c1ec8450bc" category="paragraph">Cloud Insights 从Rubrik数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="8f8baa884fbda77b562cc514c3b81d0c" category="cell">存储、存储池</block>
+  <block id="4789f5469e7862776edfb6738109575f" category="list-text">Cloud Insights 采集单元将启动与Rubrik集群的TCP端口443的连接。每个集群一个收集器。</block>
+  <block id="ba1537545eae7c49c014e94db43517c8" category="list-text">Rubrik集群IP地址。</block>
+  <block id="662de008b2f10a99c71484e7e9c3ed75" category="list-text">集群的用户名和密码。</block>
+  <block id="93264baac0728f5daa6ac1609e5b5fdc" category="cell">Rubrik集群的IP地址</block>
+  <block id="417cc983ef27be035f66210ac6213b46" category="cell">集群的用户名</block>
+  <block id="e41f6efeb9a8c29ac8077a1348b68078" category="cell">集群的密码</block>
+  <block id="444301801d58f01b1fb488fe224bb8c5" category="cell">我收到一条消息、指出已创建多个存储。</block>
+  <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">检查集群配置是否正确、以及收集器是否指向单个集群。</block>
+  <block id="fc971fc699329bc531b4d65ff180a629" category="cell">我收到一条警告、指出磁盘API返回了更多数据</block>
+  <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">请咨询支持部门以获取其他数据。</block>
 </blocks>
