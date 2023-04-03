@@ -7610,11 +7610,7 @@
   <block id="fb5c635cd1a9c18981a7fac060c1aa9a" category="section-title">日志监控器</block>
   <block id="aca15d8fd21dcf5be785b4d359f6563d" category="admonition">日志监控器筛选器不能为空。</block>
   <block id="0625f5fb5e60f291ab595c8261238b23" category="section-title">定义警报解析行为</block>
-  <block id="5b9f5e9161724c93f9ca0032b82722d5" category="list-text">* 立即解决 * ：立即解决警报，无需采取进一步操作</block>
-  <block id="0eab361e279540d56cc831a9ffb6892c" category="list-text">* 基于时间解决 * ：在指定时间过后，警报将得到解决</block>
-  <block id="f7cb011afb94ace20c314d609b593ced" category="list-text">* 基于日志条目解决 * ：在发生后续日志活动时解决警报。例如，当对象记录为 " 可用 " 时。</block>
   <block id="8728ea9412d646983052607068b25d61" category="inline-image-macro">警报解决</block>
-  <block id="0267d15c881fe01be2ed5e9baa605285" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4c98e9aaa4cbb7fc1c457ed76c2a0f21" category="paragraph">您可以通过单击显示器右侧的菜单并选择 * 暂停 * 来选择临时暂停对某个对象类型的监控。准备好恢复监控后，单击 * 恢复 * 。</block>
   <block id="a73980f5bc00482a343096d1a40143fb" category="list-text">所有显示器 * 列出所有显示器。</block>
   <block id="f78abd66dd2da46aaad72238500300b7" category="paragraph">查看 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 第页，介绍 Cloud Insights 随附的监控器。</block>
@@ -10824,4 +10820,11 @@
   <block id="7de7475f4bb973126434d7c3f9801f08" category="cell">检查集群配置是否正确、以及收集器是否指向单个集群。</block>
   <block id="fc971fc699329bc531b4d65ff180a629" category="cell">我收到一条警告、指出磁盘API返回了更多数据</block>
   <block id="3cd62817285774be5e17bfa3b11a6309" category="cell">请咨询支持部门以获取其他数据。</block>
+  <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">立即解决</block>
+  <block id="17b8d34f8d949597a55a6101ce83364d" category="list-text">在数据保留期限之后清除(有关详细信息、请参见版本页面)。请注意、根据定义、此监控器没有解析条件、因此警报将保持_活动状态并禁止此监控器生成的所有后续警报、直到数据保留期限结束为止。</block>
+  <block id="befadb349d88b7326b91ea95e095647d" category="list-text">根据日志条目解决：按照以下定义中所述发现日志行时解决警报、或者在数据保留期限过后清除警报</block>
+  <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">警报解决选项</block>
+  <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dfab0f82f494a8fd5d9bb100e34504b" category="paragraph">//**立即解决*：立即解决警报、无需采取进一步操作***基于时间解决*：在指定时间过后解决警报**基于日志条目解决*：在发生后续日志活动时解决警报。例如，当对象记录为 " 可用 " 时。</block>
+  <block id="e0155eef58f15e0fa7e34b03a853acaa" category="paragraph"><block ref="0267d15c881fe01be2ed5e9baa605285" category="inline-image-macro-rx" type="image"></block>///</block>
 </blocks>
