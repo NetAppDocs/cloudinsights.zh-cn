@@ -108,6 +108,9 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 
 
 | TCP | 7. | SVM 数据 LIF IP 地址 | 双向 | 在ONTAP 和工作负载安全性之间实现双向。代理对 SVM LIF 执行 Ping 操作。 
+
+
+| SSH | 22. | 集群管理 | 双向 | CIFS/SMB用户阻止所需。 
 |===
 
 
