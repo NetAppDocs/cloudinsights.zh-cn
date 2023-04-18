@@ -7582,8 +7582,6 @@
   <block id="e2284f166fb986bff4a211a1598659c8" category="cell">如果网络中断导致采集单元与 Cloud Insights 环境之间的通信中断一分钟以上，则可能会发生此错误。验证 AU 和 Cloud Insights 之间的连接是否稳定且处于活动状态。</block>
   <block id="f06aba11198bdba5f39e2cabfd82871d" category="cell">CloudWatch 代理指标命名空间</block>
   <block id="4a508608b5d5c22a19b0ff3e12d1bc61" category="cell">EC2/EBS 中用于收集数据的命名空间。请注意，如果更改了此命名空间中默认指标的名称，则 Cloud Insights 可能无法收集已重命名的数据。建议保留默认指标名称。</block>
-  <block id="92d3290a1afbd21d7ba484ec66073bda" category="cell">在尝试连接到 Azure CVO 时，我看到以下错误： "The certificate signing request to broker/manager CA service was not completed. "</block>
-  <block id="53d0d22fc59191f4037e101562c4dae2" category="cell">验证 Cloud Manager 代理设置是否已设置为 Cloud Manager 专用 IP 。Cloud Manager 安装可能会设置其他代理。将代理设置为正确的 IP 并在 "Cloud Connector" 对话框中引用此代理后，与 Cloud Insights 的连接将成功连接。</block>
   <block id="bbd58b68ee3e3e9c95c32ae30a226786" category="admonition">Cloud Insights 从 V丛 集群收集性能数据要求性能归档服务正常运行，以便填充 Cloud Insights 通过基于 SCP 的文件副本检索到的 .CSV 文件和日志。NetApp 发现，许多 V丛 固件升级 / 管理工作站更新都会使此功能无法运行。计划进行此类升级的客户可能希望主动询问 Dell/EMC ，他们计划进行的升级是否会使此功能无法运行，如果是，他们如何重新启用此功能，以最大限度地减少性能可见性方面的差距？Cloud Insight 的 Vplex 性能代码将在每次轮询时评估所有预期文件是否存在以及是否正在正确更新；如果这些文件缺失或陈旧， Cloud Insights 将记录性能收集失败。</block>
   <block id="c11e8aa2beadf4aa3a198eadf152646e" category="admonition">自定义监控器可以暂停，恢复，删除或移动到其他组。系统定义的监控器可以暂停和恢复，但不能删除或移动。</block>
   <block id="a2eb48cf8052d219817c9aad3b08ee2a" category="section-title">自定义监控组</block>
@@ -10377,7 +10375,6 @@
   <block id="c5b4625b23c5673b268b9b686102faa0" category="list-text">数据源：用于与硬件或软件堆栈通信的模块。它由一个配置和在AU计算机上运行的代码组成、用于与设备进行通信。</block>
   <block id="8fb0051ea6a7b111ebe0cc9dc3e71e2a" category="inline-xref">使用自定义或专用Docker存储库</block>
   <block id="6c427ef0d84924952ea57287d5c12a55" category="paragraph">将所有开源依赖项下载到您的私有 Docker 注册表中。需要下载以下开源映像。请参见 <block ref="972589b8633c88ae3dbc8b66dfee3076" category="inline-xref-macro-rx"></block> 上一节介绍了这些组件的最新版本：</block>
-  <block id="29668e5fb5605cd58bd9225b6fba6375" category="admonition">此数据收集器为 <block ref="88ca6a9abe9d198dfefab0128680ed01" category="inline-link-macro-rx"></block> 截至2023年1月1日。有关过渡到基于AU的数据收集的信息、请参见 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="9d8dde207423e16514f1a132221a65a3" category="summary">配置Dell EMC Isilon / PowerScale REST数据收集器。</block>
   <block id="9b7f99f4d867484d5fc5fad6f84567ba" category="paragraph">Cloud Insights 使用Dell EMC Isilon / PowerScale REST数据收集器从Dell EMC Isilon或PowerScale存储获取清单和性能数据。</block>
   <block id="c40dff11b6ddb88303480bb455edaf14" category="cell">OneFS文件系统</block>
@@ -10834,4 +10831,5 @@
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">环境创建完成后，您可以使用 Cloud Central 凭据登录并开始免费试用 Cloud Insights 30 天。在此试用期间、您可以了解Cloud Insights 必须提供的功能。</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">集群管理</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS/SMB用户阻止所需。</block>
+  <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">自2023年4月4日起、此数据收集器在Cloud Insights 中不再可用。有关过渡到基于AU的数据收集的信息、请参见 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>
