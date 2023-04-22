@@ -28,3 +28,12 @@ summary: 通过洞察、您可以了解资源使用情况和趋势。
 === Kubernetes命名空间即将用尽
 
 通过运行空间不足Insight的Kubernetes命名空间、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。 link:insights_k8s_namespaces_running_out_of_space.html["了解更多信息。"]
+
+
+
+=== 回收ONTAP 冷存储
+
+回收ONTAP 冷存储Insight可提供有关ONTAP 系统上卷的冷容量、潜在成本/电耗节省和建议操作项的数据。 link:insights_reclaim_ontap_cold_storage.html["了解更多信息。"]
+
+
+NOTE: 这是一项_Preview_功能、可能会随着时间的推移进行更改。 link:/concept_preview_features.html["了解更多信息。"] 关于Cloud Insights 预览功能。

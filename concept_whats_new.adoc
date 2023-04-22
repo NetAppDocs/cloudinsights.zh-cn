@@ -8,8 +8,83 @@ keywords: features
 :allow-uri-read: 
 
 
-NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一些最新特性和功能。
+NetApp 不断改进和完善其产品和服务。下面是Cloud Insights 商业版中提供的一些最新特性和功能。
 
+
+NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可能随功能缩减而提供。在可能的情况下、这些差异会在文档中予以说明。
+
+
+
+== 2023年4月
+
+
+
+=== Kubnetes性能监控和映射
+
+。 link:concept_kubernetes_performance_monitoring_and_map.html["_Kubbernetes网络性能和映射_"] 功能可通过映射Kubernetes工作负载之间的依赖关系来简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。
+
+主要功能：•工作负载图显示了Kubernetes工作负载的依赖关系和流、并重点显示了网络和性能问题。•监控Kubnetes Pod、工作负载和节点之间的网络流量；确定流量来源和延迟问题。•通过分析传入、传出、跨区域和跨区域网络流量来降低整体成本。
+
+显示"分出"详细信息的工作负载映射：
+
+image:Workload Map Example_withSlideout.png["工作负载映射示例显示了\"详细信息\"面板"]
+
+Kubnetes性能监控和映射以形式提供 link:concept_preview_features.html["预览"] 功能。
+
+
+
+=== ONTAP Essentials安全信息板
+
+。 link:concept_ontap_essentials.html#security["安全信息板"] 即时查看您当前的安全状况、并显示硬件和软件卷加密、反勒索软件状态和集群身份验证方法的图表。"安全信息板"以形式提供 link:concept_preview_features.html["预览"] 功能。
+
+image:OE_SecurityDashboard.png["ONTAP Essentials安全信息板"]
+
+
+
+=== 回收ONTAP 冷存储
+
+回收ONTAP 冷存储Insight可提供有关ONTAP 系统上卷的冷容量、潜在成本/电耗节省以及建议操作项的数据。
+
+image:Cold_Data_Example_1.png["Cold Data Insight示例建议"]
+
+借助此Insight、您可以问题解答 以下问题：
+
+* 存储集群上有多少冷数据位于(a)高成本SSD磁盘、(b) HDD磁盘和(c)虚拟磁盘上？
+* 对于非优化存储、哪些工作负载的贡献最大？
+* 给定工作负载上的数据处于冷状态的持续时间(以天为单位)是多少？
+
+
+回收ONTAP 冷存储_被视为 link:concept_preview_features.html["_Preview_"] 功能、因此可能会更改。
+
+
+
+=== 订阅通知还控制横幅消息
+
+现在、设置订阅通知的收件人("管理">"通知")还可以控制谁将查看与订阅相关的产品横幅通知。
+
+image:Subscription_Expiring_Banner.png["订阅将在2天后过期横幅示例"]
+
+
+
+=== 报告具有全新的外观
+
+您会注意到Cloud Insights 报告屏幕的外观有所改变、某些菜单导航方式也发生了变化。这些屏幕和导航更改已在当前中更新 link:reporting_overview.html["报告文档"]。
+
+image:Reporting_Menu.png["新建报告菜单外观"]
+
+
+
+=== 默认暂停显示器
+
+对于新的Cloud Insights 环境、请注意 link:task_system_monitors.html["系统定义的监控器"] 默认情况下不发送警报通知。您需要为要向您发出警报的任何显示器添加一种或多种传送方式、从而为该显示器启用通知。对于现有Cloud Insights 环境、当前处于_Paused"状态的任何系统定义的监控器、已删除默认的_globan_通知收件人列表。用户定义的通知保持不变、当前活动的系统定义监控器的通知设置也保持不变。
+
+
+
+=== 正在查找"API正在执行"选项卡？
+
+API系统已从“订阅”页面移至“*管理> API访问*”页面。
+
+'''
 
 
 == 2023年3月
@@ -22,6 +97,7 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 在2023年4月4日之前、必须为当前由Cloud Connection收集的任何ONTAP 系统配置一个新的NetApp ONTAP 数据管理软件数据收集器。 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights/How_to_transition_from_NetApp_Cloud_Connection_to_AU_based_data_collector["了解更多信息。"]。
 
+'''
 
 
 == 2023年1月
@@ -42,6 +118,7 @@ NetApp 不断改进和完善其产品和服务。以下是 Cloud Insights 的一
 
 现在、新的导出功能还包括列选择、重命名列和单元转换等数据自定义功能。
 
+'''
 
 
 == 2022年12月

@@ -12,3 +12,12 @@ keywords: coming soon, preview,
 Cloud Insights 以_Preview_的方式突出显示了新特性和功能。预览功能可在有限的环境中使用、也可在有限的容量下使用。
 
 如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
+
+|===
+
+
+| * 功能 * | * 问题描述 * 
+
+
+| 回收ONTAP 冷存储 | 提供有关ONTAP 卷工作负载的冷容量以及其他相关指标的可视化信息。 
+|===

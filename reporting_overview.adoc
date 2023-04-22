@@ -41,7 +41,7 @@ Cloud Insights 报告可以为成本分摊，消费分析和预测等领域生�
 
 您可以通过单击菜单中的 * 报告 * 链接来访问 Cloud Insights 报告。
 
-此时将转到报告界面。Cloud Insights 使用 IBM Cognos 分析作为其报告引擎。使用报告凭据登录。
+此时将转到报告界面。Cloud Insights 使用 IBM Cognos 分析作为其报告引擎。
 
 
 

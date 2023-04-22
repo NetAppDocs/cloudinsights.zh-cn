@@ -11,6 +11,9 @@ summary: 工作负载安全性包括一个功能强大的API、可与CMDB等其�
 [role="lead"]
 通过工作负载安全API、NetApp客户和独立软件供应商(ISV)可以将工作负载安全与其他应用程序(例如CMDB或其他票证系统)集成在一起。
 
+
+NOTE: Cloud Insights 联邦版不提供工作负载安全性。
+
 API 访问要求：
 
 * API 访问令牌模型用于授予访问权限。

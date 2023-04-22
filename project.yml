@@ -23,6 +23,8 @@ sidebar:
       url: "/security_overview.html"
     - title: 我们的存储内容以及存储位置
       url: "/security_information_and_region.html"
+    - title: securityadmin工具
+      url: "/security_admin_tool.html"
   - title: 入门
     entries:
     - title: 功能教程

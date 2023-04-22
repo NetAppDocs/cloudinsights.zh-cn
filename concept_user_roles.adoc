@@ -12,6 +12,9 @@ summary: Cloud Insights 提供了多个具有不同权限级别的用户帐户�
 Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管理员，用户和来宾。为每个帐户分配特定的权限级别，如下表所示。用户可以是其中之一 link:#creating-accounts-by-inviting-users["已邀请"] Cloud Insights 并分配了特定角色，或者可以通过登录 link:#single-sign-on-sso-accounts["单点登录（ SSO ）授权"] 具有默认角色。Cloud Insights 高级版提供了 SSO 授权功能。
 
 
+NOTE: Cloud Insights 联邦版中的用户登录仅限于已配置的身份提供程序(及其指定的电子邮件域)。邀请新用户加入Cloud Insights 联邦环境时、其电子邮件地址必须与为该环境配置的域匹配。
+
+
 
 == 权限级别
 

@@ -11,6 +11,9 @@ keywords: agent, Linux, requirements, docker, browsers, permissions, Network, Cl
 [role="lead"]
 您必须 link:task_cs_add_agent.html["安装代理"] 以便从数据收集器获取信息。在安装 Agent 之前，您应确保环境满足操作系统， CPU ，内存和磁盘空间要求。
 
+
+NOTE: Cloud Insights 联邦版不支持存储工作负载安全性。
+
 [cols="36,60"]
 |===
 | 组件 | Linux 要求 

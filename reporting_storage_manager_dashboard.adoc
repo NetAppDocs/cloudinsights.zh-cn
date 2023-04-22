@@ -14,11 +14,15 @@ Storage Manager 信息板为您提供了一个集中式可视化视图，可用�
 
 NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_insights.html["高级版"]。
 
-信息板包含七个组件，其中包含有关存储环境某些方面的上下文信息。您可以深入了解存储服务的各个方面，对您最感兴趣的部分进行深入分析。
-
 
 
 == 摘要
+
+从“团队内容”中选择*Storage Manager信息板*可提供多个报告，这些报告提供有关流量和存储的信息。
+
+image:Reporting_Storage_Manager_Dashboard_Choices.png["Storage Manager信息板选项"]
+
+为了一目了然，*Storage Manager Report*包含七个组件，其中包含有关存储环境许多方面的上下文信息。您可以深入了解存储服务的各个方面，对您最感兴趣的部分进行深入分析。
 
 image:Reporting-SMD.png["Storage Manager 信息板"]
 

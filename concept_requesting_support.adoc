@@ -10,7 +10,10 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 
 
 toc::[]
-您可以通过单击 * 帮助 > 支持 * 来访问 Cloud Insights 中的支持选项。您可以使用的支持选项取决于您是处于试用模式还是订阅模式。
+您可以通过单击 * 帮助 > 支持 * 来访问 Cloud Insights 中的支持选项。您可以使用的支持选项取决于您的Cloud Insights 版本。
+
+
+NOTE: Cloud Insights 联邦版不提供实时聊天支持选项。
 
 image:SupportPageWithLearningCenter.png["支持页面"]
 

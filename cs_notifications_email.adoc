@@ -12,6 +12,9 @@ keywords: email, notifications, alerts, warnings, attacks
 要配置工作负载安全警报收件人、请单击*管理员>通知*、然后在相应的部分中为每个收件人输入电子邮件地址。
 
 
+NOTE: Cloud Insights 联邦版不提供工作负载安全性。
+
+
 
 == 潜在攻击警报和警告
 

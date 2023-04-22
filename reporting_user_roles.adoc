@@ -60,6 +60,18 @@ keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles
 
 
 | 执行管理任务 | 否 | 否 | 是的。 
+
+
+| 添加/编辑HTML项目 | 否 | 否 | 是的。 
+
+
+| 使用HTML项目运行报告 | 是的。 | 是的。 | 是的。 
+
+
+| 添加/编辑自定义SQL | 否 | 否 | 是的。 
+
+
+| 使用自定义SQL运行报告 | 是的。 | 是的。 | 是的。 
 |===
 
 
@@ -82,7 +94,12 @@ NOTE: 如果您在 Cloud Insights 报告中更改了用户电子邮件首选项�
 
 要确保您的报告得以保留，请使用以下步骤将所有报告从 _My Content_ 迁移到 _Team Content_ 。在您的环境中启用 SSO 之前，您必须先执行此操作：
 
-. 在 _Team Content_ 中创建新文件夹
+. 导航到*菜单>内容*
+
+
+image:Reporting_Menu.png["Cognos左上角菜单"]
+
+. 在*_Team Content_*中创建新文件夹
 +
 .. 如果已创建多个用户，请为每个用户创建一个单独的文件夹，以避免覆盖名称重复的报告
 
