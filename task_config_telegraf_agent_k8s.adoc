@@ -501,5 +501,17 @@ NOTE: Cloud Insights 联邦版不提供操作员调整功能
  kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
  kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
 ----
+
+
+| 在KMO命名空间中、Net-Observer (Workload Map) Pod位于CrashLoopBackOff中 | 这些Pod对应于用于网络可观察性的工作负载映射数据收集器。请尝试以下操作：•检查其中一个Pod的日志以确认最低内核版本。例如：---｛"ci租户id"："Your -en租 户id"、"cCollector cluster-cluster-"："Your -K8s-cluster-name"、"뮷 뺳"："prod"、"level "："error"、"msg"："验证失败。原因：内核版本3.10.0低于最低内核版本4.18.0"、"time"："2022-11-09T08：23：08Z"｝---•Net-observer Pod要求Linux内核版本至少为4.18.0。使用命令"uname -r "检查内核版本、并确保它们>= 4.18.0 
+
+
+| NKMO命名空间中的Net-Observer Pod位于OpenShift 4环境中的CrashLoopBackOff中 | 目前不支持此功能。请留意将来更新中要添加的支持。 
+
+
+| Pod正在KMO命名空间中运行(默认值：netapo-monitoring)、但在查询中、UI中不会显示工作负载映射数据或Kubornetes指标数据 | 检查K8S集群节点上的时间设置。为了准确地进行审核和数据报告、强烈建议使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。 
+
+
+| 在新工单命名空间中、某些Net-observer Pod处于Pending状态 | Net-observer是一个DemonSet、在K8s集群的每个节点上运行一个POD。•记下处于“待定”状态的POD，并检查它是否遇到了CPU或内存的资源问题描述。确保节点中具有所需的内存和CPU。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。

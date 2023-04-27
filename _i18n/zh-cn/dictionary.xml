@@ -11036,4 +11036,12 @@
   <block id="8ed7b905a59e5488e500fdbff4d3cf32" category="inline-image-macro">选择报告输出</block>
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 联邦版不支持存储工作负载安全性。</block>
+  <block id="0538684ab7c9197cd8966c3859e59c6a" category="cell">在KMO命名空间中、Net-Observer (Workload Map) Pod位于CrashLoopBackOff中</block>
+  <block id="b1dd812a8bc65d5769e88b945f591999" category="cell">这些Pod对应于用于网络可观察性的工作负载映射数据收集器。请尝试以下操作：•检查其中一个Pod的日志以确认最低内核版本。例如：---｛"ci租户id"："Your -en租 户id"、"cCollector cluster-cluster-"："Your -K8s-cluster-name"、"뮷 뺳"："prod"、"level "："error"、"msg"："验证失败。原因：内核版本3.10.0低于最低内核版本4.18.0"、"time"："2022-11-09T08：23：08Z"｝---•Net-observer Pod要求Linux内核版本至少为4.18.0。使用命令"uname -r "检查内核版本、并确保它们&gt;= 4.18.0</block>
+  <block id="43eb2ebe757bb3f2957ebacdbe1e409c" category="cell">NKMO命名空间中的Net-Observer Pod位于OpenShift 4环境中的CrashLoopBackOff中</block>
+  <block id="c16b414538506d32ed8a234fa2331767" category="cell">目前不支持此功能。请留意将来更新中要添加的支持。</block>
+  <block id="c37dcb848a7244594adc1af67cc44fb5" category="cell">Pod正在KMO命名空间中运行(默认值：netapo-monitoring)、但在查询中、UI中不会显示工作负载映射数据或Kubornetes指标数据</block>
+  <block id="b301a7b156c241fb466de1bca776811c" category="cell">检查K8S集群节点上的时间设置。为了准确地进行审核和数据报告、强烈建议使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。</block>
+  <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">在新工单命名空间中、某些Net-observer Pod处于Pending状态</block>
+  <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-observer是一个DemonSet、在K8s集群的每个节点上运行一个POD。•记下处于“待定”状态的POD，并检查它是否遇到了CPU或内存的资源问题描述。确保节点中具有所需的内存和CPU。</block>
 </blocks>
