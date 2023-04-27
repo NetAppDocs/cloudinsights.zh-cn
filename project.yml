@@ -89,6 +89,16 @@ sidebar:
       url: "/kubernetes_landing_page.html"
     - title: Kubernetes 集群页面
       url: "/kubernetes_cluster_detail.html"
+  - title: 洞察力
+    entries:
+    - title: 概述
+      url: "/insights_overview.html"
+    - title: 共享资源面临压力
+      url: "/insights_shared_resources_under_stress.html"
+    - title: Kubernetes命名空间即将用尽
+      url: "/insights_k8s_namespaces_running_out_of_space.html"
+    - title: 回收ONTAP 冷存储
+      url: "/insights_reclaim_ontap_cold_storage.html"
   - title: ONTAP 基础知识
     url: "/concept_ontap_essentials.html"
   - title: 使用查询
