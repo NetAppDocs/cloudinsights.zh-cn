@@ -22,7 +22,7 @@ summary: 创建监控器，以便针对性能或清单阈值以及指标或日�
 Cloud Insights 包括许多系统定义的指标和日志监控器。可用的系统监控器取决于您环境中的数据收集器。因此，随着数据收集器的添加或配置的更改， Cloud Insights 中可用的监控器可能会发生更改。
 
 
-NOTE: 默认情况下，大多数系统监控器均处于 _Paused_state 。在恢复监控之前，您必须确保已在数据收集器中启用 _Advanced 计数器数据收集 _ 和 _Enable ONTAP EMS log collection_ 。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：image:Enable_Log_Monitor_Collection.png["为 ONTAP 启用高级计数器和 EMS 日志收集"]
+NOTE: 默认情况下、许多系统监控器处于_Paused.状态。您可以通过为系统监视器选择_Resume_选项来启用该监视器。确保在数据收集器中启用了_Advanced Counter Data Collection _和_Enable ONTAP EMS log Collection _。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：image:Enable_Log_Monitor_Collection.png["为 ONTAP 启用高级计数器和 EMS 日志收集"]
 
 
 toc::[]

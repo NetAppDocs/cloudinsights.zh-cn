@@ -7905,7 +7905,6 @@
   <block id="e22f96f4c78ae5a5a73fa7bb9bb9e606" category="cell">卷是指通常由性能敏感型应用程序（包括 DevOps 应用程序，主目录和数据库）驱动的 I/O 流量提供服务的对象。高卷延迟意味着应用程序本身可能会受到影响，无法完成其任务。监控卷延迟对于保持应用程序一致的性能至关重要。以下是基于介质类型的预期延迟 - SSD 最长 1-2 毫秒； SAS 最长 8-10 毫秒； SATA HDD 17 至 20 毫秒</block>
   <block id="6a330cc3d1dd1f4ba2997354a3f21845" category="cell">卷 qtree 配额过量提交</block>
   <block id="fb7354d1ae8b5435bfa69884ef47da15" category="cell">卷 qtree 配额过量使用指定 qtree 配额将卷视为过量使用时的百分比。已达到为卷设置的 qtree 配额阈值。监控卷 qtree 配额过量提交可确保用户接收到无中断的数据服务。</block>
-  <block id="46df155a798a257bfbc43b89badd64d1" category="admonition">默认情况下，大多数系统监控器均处于 _Paused_state 。在恢复监控之前，您必须确保已在数据收集器中启用 _Advanced 计数器数据收集 _ 和 _Enable ONTAP EMS log collection_ 。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a126bfb1fdb6bbbe10997dfc35ed2144" category="section-title">监控器说明</block>
   <block id="aeb92e8c5a120fcbb9dbeee4d880039d" category="paragraph">系统定义的监控器由预定义的指标和条件以及默认说明和更正操作组成，这些内容无法修改。您可以修改系统定义的监控器的通知收件人列表。要查看指标，条件，问题描述和更正操作，或者修改收件人列表，请打开系统定义的监控组，然后单击列表中的监控器名称。</block>
   <block id="81b15c5404e04e7a0285a18e2c702d75" category="paragraph">无法修改或删除系统定义的监控组。</block>
@@ -11044,4 +11043,5 @@
   <block id="b301a7b156c241fb466de1bca776811c" category="cell">检查K8S集群节点上的时间设置。为了准确地进行审核和数据报告、强烈建议使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。</block>
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">在新工单命名空间中、某些Net-observer Pod处于Pending状态</block>
   <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-observer是一个DemonSet、在K8s集群的每个节点上运行一个POD。•记下处于“待定”状态的POD，并检查它是否遇到了CPU或内存的资源问题描述。确保节点中具有所需的内存和CPU。</block>
+  <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">默认情况下、许多系统监控器处于_Paused.状态。您可以通过为系统监视器选择_Resume_选项来启用该监视器。确保在数据收集器中启用了_Advanced Counter Data Collection _和_Enable ONTAP EMS log Collection _。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
