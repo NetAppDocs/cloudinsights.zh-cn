@@ -107,13 +107,13 @@ NOTE: Cloud Insights 联邦版不支持存储工作负载安全性。
 | TCP | 443. | 集群或SVM管理IP地址(取决于SVM收集器配置) | 出站 | 与 ONTAP 的 API 通信 
 
 
-| TCP | 35000 - 55000 | SVM 数据 LIF IP 地址 | 入站 / 出站 | 与 ONTAP 通信以处理 Fpolicy 事件 
+| TCP | 35000 - 55000 | SVM 数据 LIF IP 地址 | 入站 | 与 ONTAP 通信以处理 Fpolicy 事件 
 
 
-| TCP | 7. | SVM 数据 LIF IP 地址 | 双向 | 在ONTAP 和工作负载安全性之间实现双向。代理对 SVM LIF 执行 Ping 操作。 
+| TCP | 7. | SVM 数据 LIF IP 地址 | 出站 | 在ONTAP 和工作负载安全性之间实现单向。代理对 SVM LIF 执行 Ping 操作。 
 
 
-| SSH | 22. | 集群管理 | 双向 | CIFS/SMB用户阻止所需。 
+| SSH | 22. | 集群管理 | 出站 | CIFS/SMB用户阻止所需。 
 |===
 
 

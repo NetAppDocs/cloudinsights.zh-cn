@@ -6065,7 +6065,6 @@
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">与 ONTAP 的 API 通信</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM 数据 LIF IP 地址</block>
-  <block id="610c4c7f3524467ba601e165dfb7b27c" category="cell">入站 / 出站</block>
   <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">与 ONTAP 通信以处理 Fpolicy 事件</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">事件速率检查器</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">请参见 <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> 有关规模估算的信息的文档。</block>
@@ -10568,7 +10567,6 @@
   <block id="2d69c680da957bdb43dc65f6b48df46d" category="paragraph">对于*基于美国*的工作负载安全环境：</block>
   <block id="cd901a4d0c763788558340776fd2cdb5" category="paragraph">对于*基于欧洲*的工作负载安全环境：</block>
   <block id="fa226e3679ae6b7dab2869292b192728" category="paragraph">对于基于*亚太地区*的工作负载安全环境：</block>
-  <block id="c62621daddc9bbedf66f077464765078" category="cell">在ONTAP 和工作负载安全性之间实现双向。代理对 SVM LIF 执行 Ping 操作。</block>
   <block id="2c5dab3d48c104492de8592e45b7fe9f" category="paragraph">如果您的环境中具有工作负载安全性、则已配置的端点URL也会显示在此列表中。</block>
   <block id="5711e9cabb01e59f7ce2f48ba56a6e96" category="paragraph">请注意，用户有权访问的 API 类型也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们包含在每个Cloud Insights 功能集中(监控、工作负载安全性、报告)。</block>
   <block id="db2b463a10fb6295be04f3c3bae06fde" category="paragraph">工作负载安全性将根据Snapshot清除设置每天自动删除一次快照。</block>
@@ -11044,4 +11042,6 @@
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">在新工单命名空间中、某些Net-observer Pod处于Pending状态</block>
   <block id="c55a7a21faf06d9f162882100bc46e42" category="cell">Net-observer是一个DemonSet、在K8s集群的每个节点上运行一个POD。•记下处于“待定”状态的POD，并检查它是否遇到了CPU或内存的资源问题描述。确保节点中具有所需的内存和CPU。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">默认情况下、许多系统监控器处于_Paused.状态。您可以通过为系统监视器选择_Resume_选项来启用该监视器。确保在数据收集器中启用了_Advanced Counter Data Collection _和_Enable ONTAP EMS log Collection _。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">入站</block>
+  <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">在ONTAP 和工作负载安全性之间实现单向。代理对 SVM LIF 执行 Ping 操作。</block>
 </blocks>
