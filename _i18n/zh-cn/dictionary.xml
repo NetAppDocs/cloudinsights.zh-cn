@@ -10639,8 +10639,6 @@
   <block id="7d29e14ab81a7f2d743b14063e512bf7" category="paragraph">Cloud Insights 存储工作负载安全性(以前称为Cloud Secure)可通过针对内部威胁的可操作智能来帮助保护您的数据。它可以集中查看和控制混合云环境中的所有企业数据访问，以确保实现安全性和合规性目标。</block>
   <block id="6bb784bfbef2792b99ae322d0ce648b6" category="paragraph">更换无法及时准确地查看数据访问和控制情况的工具和手动流程。工作负载安全性在云和内部存储系统上都是唯一的、可为您提供有关恶意用户行为的实时警报。</block>
   <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">工作负载安全注意事项(原Cloud Secure)</block>
-  <block id="a2e7ba2dd94ada0070912463ec6803b4" category="paragraph"><block ref="fb357983cf2ab6e1d0ee3d96cfba559e" category="inline-link-macro-rx"></block>
-<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">所有活动页面可帮助您了解对工作负载安全环境中的实体执行的操作。</block>
   <block id="0ab830109b4f56f33fe1f751ed17ca85" category="paragraph">对于活动工作负载安全环境、活动历史记录保留13个月。</block>
   <block id="2ffc6472f9d6abaf761bbe2e6a0385ce" category="paragraph">要配置单节点/HA AWS实例以托管工作负载安全代理、请参见OnCommand Cloud Volumes ONTAP 文档：<block ref="caca64b8e9927e0ea8e8b0158b9e47cd" category="inline-link-rx"></block></block>
@@ -11044,4 +11042,6 @@
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">默认情况下、许多系统监控器处于_Paused.状态。您可以通过为系统监视器选择_Resume_选项来启用该监视器。确保在数据收集器中启用了_Advanced Counter Data Collection _和_Enable ONTAP EMS log Collection _。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">入站</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">在ONTAP 和工作负载安全性之间实现单向。代理对 SVM LIF 执行 Ping 操作。</block>
+  <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
+<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
 </blocks>
