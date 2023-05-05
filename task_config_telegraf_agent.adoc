@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, installation, install, agent, telegraf agent 
-summary: Cloud Insights 支持 Telegraf 作为其代理收集集成数据，并且可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。 
+summary: Cloud Insights 支持Telegraf作为其收集集成数据的代理、并可在Windows或Linux上进行配置。 
 ---
-= 配置代理以收集数据（ Windows/Linux/Mac ）
+= 配置代理以收集数据(Windows/Linux)
 :allow-uri-read: 
 
 
@@ -28,8 +28,6 @@ NOTE: 如果要在安装代理之前验证安装文件，请参见以下章节 <
 * <<Windows>>
 * <<RHEL 和 CentOS>>
 * <<Ubuntu 和 Debian>>
-* <<macOS>>
-* <<Kubernetes>>
 
 
 要安装代理，无论您使用的是哪个平台，都必须先执行以下操作：
@@ -37,9 +35,7 @@ NOTE: 如果要在安装代理之前验证安装文件，请参见以下章节 <
 . 登录到要用于代理的主机。
 . 登录到 Cloud Insights 站点并转到 * 管理员 > 数据收集器 * 。
 . 单击 * + Data Collector* 并选择要安装的数据收集器。
-
-
-. 为您的主机选择合适的平台（ Windows ， Linux ， macOS 等）
+. 为您的主机选择合适的平台(Windows、Linux)
 . 对每个平台执行其余步骤。
 
 
@@ -345,145 +341,6 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 
 
-=== macOS
-
-
-
-==== 前提条件：
-
-* 必须提供以下命令： curl ， sudo ， openssl 和 shasum
-* 如果您使用的是代理、则必须按照*为macOS*配置代理支持"一节中的说明进行操作。
-
-
-
-
-==== 为 macOS 配置代理支持
-
-
-NOTE: 如果您的环境使用代理、请在安装之前阅读本节。
-
-
-NOTE: 以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。
-
-对于驻留在代理后面的系统，请执行以下操作，为当前用户 * 先前 * 设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量，以安装 Telegraf 代理：
-
- export https_proxy=<proxy_server>:<proxy_port>
-* 安装 Telegraf 代理之后，在 _/Applications/Telegraf.app/Contents/telegraf.plist_: 中添加并设置适当的 _https_proxy_and/or _http_proxy_ 变量
-
-....
-…
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-   <key>EnvironmentVariables</key>
-   <dict>
-          <key>https_proxy</key>
-          <string><proxy_server>:<proxy_port></string>
-   </dict>
-   <key>Program</key>
-   <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-   <key>Label</key>
-   <string>telegraf</string>
-   <key>ProgramArguments</key>
-   <array>
-     <string>/Applications/telegraf.app/Contents/MacOS/telegraf</string>
-     <string>--config</string>
-     <string>/usr/local/etc/telegraf.conf</string>
-     <string>--config-directory</string>
-     <string>/usr/local/etc/telegraf.d</string>
-   </array>
-   <key>RunAtLoad</key>
-   <true/>
-</dict>
-</plist>
-…
-....
-然后，加载上述更改后重新启动 Telegraf ：
-
-....
-sudo launchctl stop telegraf
-sudo launchctl unload -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl load -w /Library/LaunchDaemons/telegraf.plist
-sudo launchctl start telegraf
-....
-
-
-==== 安装代理
-
-image:Agent_Requirements_Macos.png["安装 macOS 代理"]
-
-.在 macOS 上安装代理的步骤：
-. 选择代理访问密钥。
-. 从代理安装对话框复制命令块。您可以单击剪贴板图标将命令快速复制到剪贴板。
-. 打开 Bash 窗口
-. 将命令粘贴到 Bash 窗口中，然后按 Enter 键。
-. 此命令将下载相应的代理安装程序并进行安装，然后设置默认配置。完成后，它将重新启动代理服务。此命令具有唯一的密钥，有效期为 24 小时。
-. 如果您之前使用 Homebrew 安装了 Telegraf 代理，则系统将提示您将其卸载。卸载先前安装的 Telegraf 代理后，重新运行上述步骤 5 中的命令。
-. 单击 * 完成 * 或 * 继续 *
-
-
-安装代理后，您可以使用以下命令启动 / 停止此服务：
-
-....
-sudo launchctl start telegraf
-sudo launchctl stop telegraf
-....
-
-
-==== 卸载代理
-
-要在 macOS 上卸载代理，请在 Bash 终端中运行以下命令：
-
-. 停止 Telegraf 服务：
-+
- sudo launchctl stop telegraf
-. 卸载此电报代理：
-+
-....
-sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. 删除可能遗留的任何配置或日志文件：
-+
-....
-sudo rm -rf /usr/local/etc/telegraf*
-sudo rm -rf /usr/local/var/log/telegraf.*
-....
-
-
-
-
-==== 升级代理
-
-要升级电报代理，请执行以下操作：
-
-. 停止电报服务：
-+
- sudo launchctl stop telegraf
-. 卸载先前的电报代理：
-+
-....
-sudo cp /Applications/telegraf.app/scripts/uninstall /tmp
-sudo /tmp/uninstall
-....
-. link:#macos["安装新代理"]。
-
-
-｛empty｝｛empty｝｛empty｝｛empty｝｛empty｝ ｛empty｝
-
-
-
-== Kubernetes
-
-NetApp Kubernetes监控操作员(NKMO）是安装适用于Cloud Insights Insights的Kubernetes的首选方法、可以更灵活地配置监控、只需更少的步骤即可完成、同时还可以增加监控K8s集群中运行的其他软件的机会。
-
-请 link:task_config_telegraf_agent_k8s.html["* 转到此处 *"] 有关NetApp Kubernetes监控操作员的信息和安装说明、请参见。
-
-｛empty｝｛empty｝｛empty｝｛empty｝｛empty｝ ｛empty｝
-
-
-
 == 验证校验和
 
 Cloud Insights 代理安装程序会执行完整性检查，但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。为此、可以下载安装程序并为下载的软件包生成校验和、然后将校验和与安装说明中显示的值进行比较。
@@ -498,7 +355,7 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 . 按照说明复制 Agent 安装程序代码片段。
 . 请将代码片段粘贴到文本编辑器中，而不是将其粘贴到命令窗口中。
-. 从命令中删除尾随的 "-install" （ Linux/Mac ）或 "-install" （ Windows ）。
+. 从命令中删除末尾的“--install”(Linux)或“-install”(Windows)。
 . 从文本编辑器复制整个命令。
 . 现在，将其粘贴到命令窗口（在工作目录中）并运行。
 
@@ -556,9 +413,6 @@ Windows
 * RHEL/Ubuntu：
 +
  sha256sum <package_name>
-* macOS：
-+
- shasum -a 256 telegraf.pkg
 * Windows
 +
  Get-FileHash telegraf.zip -Algorithm SHA256 | Format-List

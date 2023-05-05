@@ -312,21 +312,6 @@ spec:
 
 
 
-==== macOS
-
-* 编辑 Telegraf 配置文件，并将旧 API 令牌的所有实例替换为新 API 令牌。
-+
- sudo sed -i.bkup ‘s/<OLD_API_TOKEN>/<NEW_API_TOKEN>/g’ /usr/local/etc/telegraf.d/*.conf
-* 重新启动 Telegraf 。
-+
-....
-sudo launchctl stop telegraf
-sudo launchctl start telegraf
-....
-
-
-
-
 ==== Windows
 
 * 对于 _C ： \Program Files\telecraf\telecraf.d_ 中的每个 Telegraf 配置文件，请将旧 API 令牌的所有实例替换为新 API 令牌。

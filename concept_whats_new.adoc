@@ -141,7 +141,7 @@ image:Kubernetes_Workload_LP.png["Kubernetes工作负载登录页面示例"]
 
 === 检查校验和
 
-您要求我们在安装适用于Windows、Linux和MacOS的代理期间为您提供校验和值、我们认为这是一个很好的想法。因此、它们是：
+您要求我们在安装适用于Windows和Linux的代理时提供校验和值、我们认为这是一个很好的主意。因此、它们是：
 
 image:Agent_Checksum_Instructions.png["安装期间显示的代理校验和值"]
 

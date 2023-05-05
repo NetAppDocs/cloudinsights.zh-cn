@@ -58,7 +58,7 @@ image:NewAUDetected.png["检测到新 AU"]
 
 === 操作系统
 
-对于 _Operating System_ 数据收集器，请选择一个平台（ MacOS ， Linux ， Windows ）来安装 Cloud Insights 代理。您必须至少有一个代理才能从服务收集数据。代理还会从主机本身收集数据，以便在 Cloud Insights 中使用。此数据在小工具等中归类为 " 节点 " 数据
+对于_Operating System_数据收集器、请选择一个平台(Linux、Windows)来安装Cloud Insights 代理。您必须至少有一个代理才能从服务收集数据。代理还会从主机本身收集数据，以便在 Cloud Insights 中使用。此数据在小工具等中归类为 " 节点 " 数据
 
 * 在代理主机或 VM 上打开一个终端或命令窗口，然后粘贴显示的命令以安装代理。
 * 安装完成后，单击 * 完成设置 * 。
