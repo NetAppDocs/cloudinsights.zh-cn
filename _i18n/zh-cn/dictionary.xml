@@ -10196,25 +10196,6 @@
   <block id="e683c12dcf92dc441c52b41d48fae3bd" category="cell">要筛选的VM列表(如果值中使用了逗号、则以逗号分隔或以分号分隔)</block>
   <block id="8d9973d4d778ded1eba118da9ff38733" category="cell">Unisphere性能轮询间隔(秒)</block>
   <block id="f1ef5b6a9704d8b164ef33c20e11ce70" category="cell">默认值为300秒</block>
-  <block id="7890c65c9613f0296dda2849907ff360" category="summary">Cloud Insights 支持 <block ref="3ac325f799d62e3e7cf39c0bf919731c" category="inline-link-macro-rx"></block> 作为收集集成数据的代理，可以在 Windows ， Linux ， macOS 和 Kubernetes 上进行配置。</block>
-  <block id="7e25453d6939c3c3ab0bd1656d5fcad2" category="doc">配置代理以收集数据</block>
-  <block id="e43d6e3ee8366674f4d3bc6eb87427a7" category="paragraph">使用自定义 / 私有 Docker 存储库设置代理可以从 2021 年 12 月 10 日投入使用的 CI 部署开始，在 CR 中为监控操作员配置代理</block>
-  <block id="1d3227ede43efb9f227fa30469358de3" category="paragraph">kubectl -n netapp-monitoring edit agent agent-monitoring-netapp</block>
-  <block id="f41621a6649a18209de8ab1311719bde" category="paragraph">在此文件的规范：部分中，添加以下代码块</block>
-  <block id="b0c450654b5e94522d011a58967a41c8" category="paragraph">规范：代理： isAuProxyEnabled ： &lt;true 或 false&gt; isTelegrafProxyEnabled ： &lt;true 或 false&gt; isFluentBitProxyEnabled ： &lt;true 或 false&gt; 密码： &lt; 代理密码，可选 &gt; 端口： &lt; 代理端口 &gt; 服务器： &lt; 代理服务器 &gt; 用户名： &lt; 代理用户名，可选 &gt; noProxy ： 使用自定义 / 专用 Docker 存储库获取 Docker 密钥。 &lt; 应绕过代理的 IP 或可解析主机名列表以逗号分隔 &gt;</block>
-  <block id="eb7f0fe8e02a65d56982f5a74f6583c0" category="paragraph">kubectl -n netapp-monitoring get secret docker -o yaml</block>
-  <block id="58e1e7f30cb0fd80bcb9aa7b716cb724" category="paragraph">（复制粘贴上述命令输出中的 .dockerconfigjson ：值）将对 Docker 密钥进行解码</block>
-  <block id="ac785eabe0073fe1171505c99a3724ee" category="paragraph">echo &lt;ste粘贴 自上述步骤 1 &gt; | base64 -d 此命令的输出格式如下： ｛ "auths" ： ｛ "docker" 。 &lt;cluster&gt;.cloudinsights.netapp.com" ： ｛ "username" ： "&lt; 租户 ID&gt;" ， "password" ： "&lt; CI API 密钥的密码 &gt;" ， "auth" ： "&lt; 编码的用户名： auth 基本密码密钥。这是 Docker &gt;" ｝ ｝ 登录到 Docker 存储库的内部组件</block>
-  <block id="c97b0dfe1c937e6a975eddccb95973ef" category="paragraph">Docker 登录 Docker 。 &lt;cluster&gt;.cloudinsights.netapp.com （第 2 步） -u &lt; 第 2 步中的用户名 &gt; 密码： &lt; 第 2 步中的密码 &gt; 从 Cloud Insights 中提取操作员 Docker 映像</block>
-  <block id="3ec8cafe630fb58c78079faf4adeb00a" category="paragraph">Docker 会拉取 Docker 。 &lt; 集群 &gt; .cloudinsights.netapp.com/netapp-monitoring:&lt;version&gt;</block>
-  <block id="d13bf380d46699b66e5b82e0786c76e3" category="paragraph">使用以下命令查找 &lt;version&gt; 字段：</block>
-  <block id="f422cefb0886961455efb67de7e26231" category="paragraph">kubectl -n netapp-monitoring get deployment monitoring-operator | grep "image" ：将操作员 Docker 映像推送到您的专用 / 企业 Docker 注册表</block>
-  <block id="43d80889a5a41546c856cf06328616cd" category="paragraph">根据您的企业策略将代码推送到您的私有 / 本地 / 企业 Docker 存储库将所有开源依赖项下载到您的私有 Docker 注册表中</block>
-  <block id="9b7a2fdb4de8c1f948c779a8031bce3a" category="paragraph">需要下载以下开源映像： docker.io/eraf ： 1.19.3 gcr.io/kubebuilder/Kube-RBAC 代理： v0.5.0 k8s.gcr.io/Kube-state-metrics/Kube-state-metrics ： v2.1.0</block>
-  <block id="582e00a87af2a3a98b1dc04e62419ae2" category="paragraph">如果启用了 fluid-bit ： docker.io/fluid-bit ： 1.7.8 docker.io/Kubernetes 事件导出程序： 0.10 编辑代理 CR 以反映新的 Docker repo 位置，禁用自动升级（如果已启用）</block>
-  <block id="e1b7025ee96a4c8d9b2e85049c8d7375" category="paragraph">enableAutoUpgrade ： false docker-repo ： &lt;Docker repo of the enterprise/corp docker repo&gt; dockerRepoSecret ： &lt;optional ： name of the Docker secret of enterprise/corp docker repo ， this secret should be already created on the K8s cluster in the same namespacy&gt;</block>
-  <block id="304245a5035eb4597234a1b8827c9213" category="paragraph">在规范：部分中，进行以下更改：</block>
-  <block id="44adec27317574513bdc470781ccacb6" category="paragraph">规格： Telegraf ： - 名称： KSM 替换项： - 密钥： K8s.GCR.IO 值： &lt; 与上面的 "docker-repo" 字段相同 &gt;</block>
   <block id="25334cc3e68d534ebb5ad59907c70159" category="paragraph">Cloud Insights 代理安装程序会执行完整性检查，但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。为此、可以下载安装程序并为下载的软件包生成校验和、然后将校验和与安装说明中显示的值进行比较。</block>
   <block id="1078df24543dad61e1b5b51f611f5b0f" category="section-title">下载安装程序包而不安装</block>
   <block id="48feb91430f93bd8ac9740e9cdc40c75" category="paragraph">要执行仅下载操作(与默认的下载和安装操作相反)、用户可以编辑从UI获取的代理安装命令并删除尾随的"install"选项。</block>
@@ -11011,4 +10992,7 @@
   <block id="10310c2f9936e3622da4cb3582e077c6" category="paragraph">对于_Operating System_数据收集器、请选择一个平台(Linux、Windows)来安装Cloud Insights 代理。您必须至少有一个代理才能从服务收集数据。代理还会从主机本身收集数据，以便在 Cloud Insights 中使用。此数据在小工具等中归类为 " 节点 " 数据</block>
   <block id="8e20cbcdc4c35f7bead37d56391dbe9e" category="sidebar">在Windows/Linux上配置代理</block>
   <block id="77206fd030aaac8141e97d837c255109" category="sidebar">配置Kubnetes Operator</block>
+  <block id="e16c8047fba82583090b96bf5e42b694" category="section-title">2023年5月</block>
+  <block id="675daaee26cb7a668008d96ba0afd8e2" category="section-title">改进了工作负载安全性屏幕加载</block>
+  <block id="394791778bc8c7c505ff97a4408cada8" category="paragraph">Cloud Insights 通过更高效地显示可观察性和工作负载安全性屏幕、缩短在这些功能之间导航时的加载时间、改善了用户体验。请注意、工作负载安全性页面URL已更改。以前的URL将自动重定向到新的URL。</block>
 </blocks>
