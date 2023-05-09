@@ -40,7 +40,8 @@ image:OE_Overview.png["ONTAP 基础知识概述信息板"]
 
 选择*数据保护*页面以查看SnapMirror关系。单击至以获取源卷或目标卷信息、或者单击齿轮图标为要查看的数据添加列。
 
-image:OE_DataProtection.png["SnapMirror关系列表页面"]
+image:DataProtectionDashboard_OverviewWidgets.png["显示\"本地\"和\"远程\"概述的\"数据保护信息板\"小工具"]
+image:DataProtectionDashboard_ClusterList.png["数据保护集群列表"]
 
 
 
