@@ -83,12 +83,16 @@ sidebar:
         url: "/task_dashboard_example_VM_performance.html"
     - title: 信息板最佳实践
       url: "/concept_dashboard_best_practices.html"
-  - title: Kubernetes 资源管理器
+  - title: Kubernetes
     entries:
     - title: Kubernetes 概述页面
       url: "/kubernetes_landing_page.html"
+    - title: 开始使用Monitoring Operator
+      url: "/task_config_telegraf_agent_k8s.html"
     - title: Kubernetes 集群页面
       url: "/kubernetes_cluster_detail.html"
+    - title: Kubnetes监控和映射
+      url: "/concept_kubernetes_performance_monitoring_and_map.html"
   - title: 洞察力
     entries:
     - title: 概述

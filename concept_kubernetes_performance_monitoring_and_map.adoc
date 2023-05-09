@@ -16,7 +16,7 @@ NOTE: Kubnetes网络性能和映射为 link:concept_preview_features.html["预�
 
 主要功能：•工作负载图显示了Kubernetes工作负载的依赖关系和流、并重点显示了网络和性能问题。•监控Kubnetes Pod、工作负载和节点之间的网络流量；确定流量来源和延迟问题。•通过分析传入、传出、跨区域和跨区域网络流量来降低整体成本。
 
-image:Workload Map Example_withSlideout.png["工作负载映射示例显示了\"详细信息\"面板"]
+image:workload-map-animated.gif["工作负载映射示例"]
 
 
 
