@@ -29,48 +29,10 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
-=== 改进了Kubnetes Monitoring Operator安装
+=== 675daaee26cb7a668008d96ba0afd8e2
 
-的安装和配置 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes监控操作员"] 通过以下改进、比以往任何时候都更轻松：
+394791778bc8c7c505ff97a4408cada8
 
-* environment link:telegraf_agent_k8s_config_options.html["配置设置"] 保存在一个自行记录的配置文件中。
-* 有关将Kubnetes Monitoring Operator映像上传到私有存储库的分步说明。
-* 只需使用一个命令即可升级Kubnetes监控、同时保留自定义配置、升级起来非常简单。
-* 更安全：API密钥可以安全地管理机密。
-* 使用CI/CD自动化工具轻松集成和部署。
-
-
-
-
-=== 存储虚拟化
-
-Cloud Insights 可以区分具有本地存储的存储阵列或虚拟化其他存储阵列的存储阵列。这样、您就可以将成本和性能从前端一直与基础架构的后端关联起来。
-
-image:StorageVirtualization_StorageSummary.png["显示虚拟和备份存储信息的存储登录页面"]
-
-
-
-=== 新的Webhook参数
-
-创建时 link:task_create_webhook.html["网络钩"] 通知、您现在可以在webhook定义中包括以下参数：
-
-* %%触发OnKeys%%
-* %%触发OnValues %%
-
-
-
-
-=== 报告Kubbernetes PV数据
-
-现在、Cloud Insights 收集的Kubernetes永久性卷(PV)信息可用于报告、从而实现成本分摊、趋势分析、预测、TTF计算、 以及其他业务报告有关Kubbernetes集群、卷、工作负载等指标的信息。
-
-
-
-=== 为新客户启用了默认ONTAP 系统监控器
-
-在新的Cloud Insights 环境中、许多ONTAP 系统监控器默认处于启用状态(即_REORENSE_)。以前、大多数显示器默认为_Paused _状态。由于各公司的业务需求各不相同、因此我们始终建议您查看 link:task_system_monitors.html["系统监控器"] 并根据警报需求暂停或恢复每个。
-
-'''
 
 
 == 2023年4月
@@ -79,7 +41,7 @@ image:StorageVirtualization_StorageSummary.png["显示虚拟和备份存储信�
 
 === Kubnetes性能监控和映射
 
-。 link:concept_kubernetes_network_monitoring_and_map.html["_Kubbernetes网络性能和映射_"] 功能可通过映射Kubernetes工作负载之间的依赖关系来简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。
+5d6a6764c313767cd859950497830f19
 
 主要功能：•工作负载图显示了Kubernetes工作负载的依赖关系和流、并重点显示了网络和性能问题。•监控Kubnetes Pod、工作负载和节点之间的网络流量；确定流量来源和延迟问题。•通过分析传入、传出、跨区域和跨区域网络流量来降低整体成本。
 
