@@ -5,7 +5,17 @@ summary: Cloud Insights 中提供的新特性和功能。
 keywords: features 
 ---
 = Cloud Insights 的新增功能
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 NetApp 不断改进和完善其产品和服务。下面是Cloud Insights 商业版中提供的一些最新特性和功能。
