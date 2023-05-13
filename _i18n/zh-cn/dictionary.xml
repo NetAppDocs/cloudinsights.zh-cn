@@ -11093,7 +11093,6 @@
   <block id="a33c53884818c3fc88ab0531e515addb" category="section-title">改进了Kubnetes Monitoring Operator安装</block>
   <block id="3e1d445ca1169cb6a1128270df9b6d0f" category="paragraph">的安装和配置 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 通过以下改进、比以往任何时候都更轻松：</block>
   <block id="581978383d3baa213002e5bc8a0db701" category="inline-link-macro">配置设置</block>
-  <block id="ea06c8a4bc5e070206dea22d4c09ea4a" category="list-text">environment <block ref="9d0f209eaf780338551d5fb55073783e" category="inline-link-macro-rx"></block> 保存在一个自行记录的配置文件中。</block>
   <block id="dbb10094b7027f43a7c8cc544cbee30f" category="list-text">有关将Kubnetes Monitoring Operator映像上传到私有存储库的分步说明。</block>
   <block id="7d172723653a9d40e99e5040fd8757e7" category="list-text">只需使用一个命令即可升级Kubnetes监控、同时保留自定义配置、升级起来非常简单。</block>
   <block id="c770d409be90cb086358d4b4119ab823" category="list-text">更安全：API密钥可以安全地管理机密。</block>
@@ -11111,23 +11110,6 @@
   <block id="64c33d04c497ade8947e8eadc210caf4" category="paragraph">现在、Cloud Insights 收集的Kubernetes永久性卷(PV)信息可用于报告、从而实现成本分摊、趋势分析、预测、TTF计算、 以及其他业务报告有关Kubbernetes集群、卷、工作负载等指标的信息。</block>
   <block id="98f382d1962b023b2f9625686af82de9" category="section-title">为新客户启用了默认ONTAP 系统监控器</block>
   <block id="31330c4ff7fe349e530327f3c9b8295a" category="paragraph">在新的Cloud Insights 环境中、许多ONTAP 系统监控器默认处于启用状态(即_REORENSE_)。以前、大多数显示器默认为_Paused _状态。由于各公司的业务需求各不相同、因此我们始终建议您查看 <block ref="6e23d996007e5a9ae1533f26f739ed3d" category="inline-link-macro-rx"></block> 并根据警报需求暂停或恢复每个。</block>
-  <block id="4626ec11333b1630cfeee22687c063f2" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> 功能可通过映射Kubernetes工作负载之间的依赖关系来简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
-  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">运行以下许可版本之一的计算机：* CentOS (64位)：7.2到7.9、Stream 8、Stream 9 * Debian (64位)：9和10 * Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4 * Red Hat Enterprise Linux (64位)： 7.2至7.9、8.1至9.1 * Rocky 9.0、9.1 * Ubuntu Server：18.04和20.04 LTS此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
-  <block id="4b051b13595634958e002ebbf8d92506" category="summary">Cloud Insights 可以提供前端和后端虚拟化存储的视图。</block>
-  <block id="f489c820bd49075e9fac81860fe93688" category="section-title">表小工具中的虚拟化</block>
-  <block id="b54537489c4ac4c2d2a2fc686c6b85a7" category="paragraph">开始了解存储虚拟化的最简单方法之一是创建一个显示虚拟化类型的信息板表小工具。在为小工具构建查询时、只需将"虚拟 类型"添加到您的分组或筛选器中即可。</block>
-  <block id="faffd9673a91f79b7697893831a280c9" category="inline-image-macro">用于显示存储虚拟化的T型 的基本查询</block>
-  <block id="fd9a8824e3f247a75b5869b6cdc4f926" category="paragraph"><block ref="fd9a8824e3f247a75b5869b6cdc4f926" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1e4c896e1dca588b00da9556c4dcf4b6" category="paragraph">生成的表小工具将显示您环境中的_Standard"、"Backend"和"_Virtual_"存储。</block>
-  <block id="5850ea600e38d6358cb902425e89a83b" category="inline-image-macro">显示虚拟化类型的表</block>
-  <block id="ae2aba5ebd1778b2721cbaa556c1254f" category="paragraph"><block ref="ae2aba5ebd1778b2721cbaa556c1254f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ec66a493587eeadf86c85660036b0556" category="section-title">登录页面显示了虚拟化信息</block>
-  <block id="32c3437b5141aa71adae8b70b3e0ba56" category="paragraph">在存储、卷、内部卷或磁盘登录页面上、您可以看到相关的虚拟化信息。例如、通过查看下面的存储登录页面、您可以看到这是一个虚拟存储、以及适用的后端存储系统。登录页面上的任何相关表也将显示适用的虚拟化信息。</block>
-  <block id="53b6e64625bada99ba54be923fda44fa" category="section-title">现有登录页面和信息板</block>
-  <block id="a00a374ac04c1276bcdf9526692575de" category="paragraph">请注意、如果您的环境中当前已有自定义登录页面或信息板、则默认情况下、这些页面或信息板不会自动显示所有虚拟化信息。但是、您可以还原为默认值_任何自定义信息板或登录页面(您必须重新实施自定义设置)、也可以修改相关小工具以包含所需的虚拟化属性或指标。</block>
-  <block id="3242b3c34922ab4d5cbff714ffb3f35b" category="paragraph">可在自定义信息板或登录页面屏幕的右上角使用_RERT to Default_。</block>
-  <block id="22d3924d22161b1ae53430a86affea68" category="inline-image-macro">还原为默认值按钮</block>
-  <block id="bf5be9dc856a4d42607ac85b1e6ff046" category="paragraph"><block ref="bf5be9dc856a4d42607ac85b1e6ff046" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb59b991a8859e32315f0c110063a18c" category="section-title">Kubnetes指标</block>
   <block id="889b2b6891b247cb3f1629028a6a72ad" category="section-title">Kubbernetes集群指标数据</block>
   <block id="4b8c184a61895e613e3b38aaa98e8328" category="paragraph"><block ref="4b8c184a61895e613e3b38aaa98e8328" category="inline-image-macro-rx" type="image"></block></block>
@@ -11155,4 +11137,5 @@
   <block id="9991a60e97186adeafc44a72e57d42e2" category="paragraph"><block ref="9991a60e97186adeafc44a72e57d42e2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="535b57910bffdb58114895274ea04a06" category="paragraph"><block ref="535b57910bffdb58114895274ea04a06" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8751e6fe513ddc3a20be944c6caece45" category="paragraph"><block ref="8751e6fe513ddc3a20be944c6caece45" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="772b26c2dddf15bcb2dd46c1a70847a2" category="list-text">environment <block ref="40400682c2e24aafbbb302365217c756" category="inline-link-macro-rx"></block> 保存在一个自行记录的配置文件中。</block>
 </blocks>
