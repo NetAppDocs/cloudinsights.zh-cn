@@ -11077,13 +11077,6 @@
   <block id="98dc8e0a1ca4088c0cc75feb9c6a5560" category="list-text"><block ref="1fa08d04c08db5225793f360e12d623f" category="inline-xref-macro-rx"></block> 最新的运算符。</block>
   <block id="4c42e83b5a46ef16402aa2bea7ab525e" category="list-text">请使用相同的集群名称。</block>
   <block id="9e274d61eab1c1a3b088854ed50639ff" category="list-text">下载最新的Operator YAML文件后、在部署之前、将在agent_backup.yaml中找到的所有自定义设置移植到下载的operator-config.yaml。</block>
-  <block id="bd8a3856de3da0db088a741e7cd81e16" category="section-title">编辑ONTAP 通知</block>
-  <block id="82ade85625dc6ecdc6fabebd2e345d19" category="paragraph">您可以通过从存储登录页面的右上角下拉列表中选择_Edit通知_来修改ONTAP 集群的通知。</block>
-  <block id="8328b360704f8cf7f0beb073b0b83137" category="inline-image-macro">ONTAP 编辑通知</block>
-  <block id="4b7465a88d7e0bbf7cc001f3780775bb" category="paragraph"><block ref="4b7465a88d7e0bbf7cc001f3780775bb" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c77ddc9f57c017ba637124d4722446a7" category="paragraph">您可以从此处设置严重、警告、信息和/或已解决警报的通知。每个方案都可以通知全局收件人列表或您选择的其他收件人。</block>
-  <block id="80501d323e4be5227482cd3a9ab61d4f" category="inline-image-macro">适用于不同场景的ONTAP 通知</block>
-  <block id="a2792f9c8cd4eac5285b213778bf54bd" category="paragraph"><block ref="a2792f9c8cd4eac5285b213778bf54bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a33c53884818c3fc88ab0531e515addb" category="section-title">改进了Kubnetes Monitoring Operator安装</block>
   <block id="3e1d445ca1169cb6a1128270df9b6d0f" category="paragraph">的安装和配置 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 通过以下改进、比以往任何时候都更轻松：</block>
   <block id="581978383d3baa213002e5bc8a0db701" category="inline-link-macro">配置设置</block>
@@ -11106,7 +11099,6 @@
   <block id="98f382d1962b023b2f9625686af82de9" category="section-title">为新客户启用了默认ONTAP 系统监控器</block>
   <block id="31330c4ff7fe349e530327f3c9b8295a" category="paragraph">在新的Cloud Insights 环境中、许多ONTAP 系统监控器默认处于启用状态(即_REORENSE_)。以前、大多数显示器默认为_Paused _状态。由于各公司的业务需求各不相同、因此我们始终建议您查看 <block ref="6e23d996007e5a9ae1533f26f739ed3d" category="inline-link-macro-rx"></block> 并根据警报需求暂停或恢复每个。</block>
   <block id="4626ec11333b1630cfeee22687c063f2" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> 功能可通过映射Kubernetes工作负载之间的依赖关系来简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
-  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">运行以下许可版本之一的计算机：* CentOS (64位)：7.2到7.9、Stream 8、Stream 9 * Debian (64位)：9和10 * Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4 * Red Hat Enterprise Linux (64位)： 7.2至7.9、8.1至9.1 * Rocky 9.0、9.1 * Ubuntu Server：18.04和20.04 LTS此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="4b051b13595634958e002ebbf8d92506" category="summary">Cloud Insights 可以提供前端和后端虚拟化存储的视图。</block>
   <block id="f489c820bd49075e9fac81860fe93688" category="section-title">表小工具中的虚拟化</block>
   <block id="b54537489c4ac4c2d2a2fc686c6b85a7" category="paragraph">开始了解存储虚拟化的最简单方法之一是创建一个显示虚拟化类型的信息板表小工具。在为小工具构建查询时、只需将"虚拟 类型"添加到您的分组或筛选器中即可。</block>
