@@ -1,18 +1,28 @@
 ---
 sidebar: sidebar 
-permalink: concept_kubernetes_performance_monitoring_and_map.html 
+permalink: concept_kubernetes_network_monitoring_and_map.html 
 keywords: service map, workloads, Kubernetes, 
 summary: 显示Kubernetes工作负载的依赖关系和流、并突出显示网络和性能问题 
 ---
-= Kubnetes性能监控和映射
+= Kubnetes网络性能监控和映射
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
-Kubernetes网络性能和映射功能通过映射Kubernetes工作负载之间的依赖关系来简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。
+Kubernetes网络性能监控和映射功能通过映射Kubernetes工作负载之间的依赖关系来简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。
 
 
-NOTE: Kubnetes网络性能和映射为 link:concept_preview_features.html["预览"] 功能、可能会更改。
+NOTE: Kubnetes网络性能监控和映射为 link:concept_preview_features.html["预览"] 功能、可能会更改。
 
 主要功能：•工作负载图显示了Kubernetes工作负载的依赖关系和流、并重点显示了网络和性能问题。•监控Kubnetes Pod、工作负载和节点之间的网络流量；确定流量来源和延迟问题。•通过分析传入、传出、跨区域和跨区域网络流量来降低整体成本。
 
@@ -22,7 +32,7 @@ image:workload-map-animated.gif["工作负载映射示例"]
 
 == 前提条件
 
-在使用Kubbernetes网络性能和映射之前、必须先配置 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes监控操作员"] 以启用此选项。在操作员部署期间、选中"Network Performance and Map"(网络性能和映射)复选框以启用。您也可以通过导航到Kubbernetes登录页面并选择"修改部署"来启用此选项。
+在使用Kubbernetes网络性能监控和映射之前、必须先配置 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes监控操作员"] 以启用此选项。在操作员部署期间、选中"Network Performance and Map"(网络性能和映射)复选框以启用。您也可以通过导航到Kubbernetes登录页面并选择"修改部署"来启用此选项。
 
 image:ServiceMap_NKMO_Deployment_Options.png["在新购运动状态期间选择映射选项"]
 
@@ -77,7 +87,7 @@ image:Workload_Map_Filtering.png["工作负载映射筛选"]
 +
 ** 源自POD的工作负载标签
 ** 工作负载上的预期标签：app.Kubernetes.io/component
-** 标签名称引用： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
+** 标签名称引用： https://[]
 ** 建议标签：
 +
 *** 前端

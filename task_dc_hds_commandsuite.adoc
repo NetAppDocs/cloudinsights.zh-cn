@@ -101,7 +101,7 @@ Cloud Insights 采取强有力的立场，避免在任何成本下重复计算�
 * HiCommand Device Manager 软件的只读用户名和密码以及对等权限
 * 端口要求： 2001 （ http ）或 2443 （ https ）
 * 使用用户名和密码登录到 HiCommand Device Manager 软件
-* 验证是否可以访问 HiCommand Device Manager http://<HiCommand_Device_Manager_IP>:2001/service/StorageManager[]
+* 验证是否可以访问 HiCommand Device Manager http://[]
 
 
 

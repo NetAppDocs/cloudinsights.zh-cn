@@ -34,7 +34,7 @@ image:SupportPageWithLearningCenter.png["支持页面"]
 === 选项 1 ：使用已有 NetApp 支持站点（ NSS ） SSO 帐户的用户的步骤
 
 .步骤
-. 导航到 NetApp 注册网站 https://register.netapp.com[]
+. 导航到 NetApp 注册网站 https://[]
 . 选择 " 我已注册为 NetApp 客户 " ，然后选择 _NetApp_ Cloud Insights 作为产品线。选择您的计费提供商（ NetApp 或 AWS ），并参考 Cloud Insights 用户界面中的 " 帮助 ">" 支持 " 菜单，提供您的序列号和 NetApp 订阅名称或 AWS 客户 ID ：
 +
 image:SupportPage_SN_Section-NA.png["SN_screen"]
@@ -52,7 +52,7 @@ image:ExistingCustomerRegExample.png["现有客户表单"]
 === 选项 2 ：适用于没有已有 NetApp 支持站点（ NSS ） SSO 帐户的新 NetApp 客户的步骤
 
 .步骤
-. 导航到 NetApp 注册网站 https://register.netapp.com[]
+. 导航到 NetApp 注册网站 https://[]
 . 选择 " 我不是 NetApp 的注册客户 " ，并以下面的示例形式填写所需信息：
 
 
@@ -63,7 +63,7 @@ image:NewCustomerRegExample.png["新的客户表单"]
 image:SupportPage_SN_Section-NA.png["SN_screen"]
 
 . 如果未发生错误，系统会将用户定向到 " 已成功提交注册 " 页面。与用于注册的 NSS SSO 用户名关联的电子邮件地址将在几小时内收到一封电子邮件，指出 " 您的产品现在有资格获得支持 " 。
-. 作为 NetApp 的新客户，您还需要创建一个 NetApp 支持站点（ NSS ）用户帐户，以便将来进行注册，并访问支持门户以获取技术支持聊天和 Web 服务单。此链接位于 https://mysupport.netapp.com/eservice/public/now.do[]。您可以提供新注册的 Cloud Insights 序列号以加快此过程。
+. 作为 NetApp 的新客户，您还需要创建一个 NetApp 支持站点（ NSS ）用户帐户，以便将来进行注册，并访问支持门户以获取技术支持聊天和 Web 服务单。此链接位于 https://[]。您可以提供新注册的 Cloud Insights 序列号以加快此过程。
 . 这是 Cloud Insights NetApp 序列号的一次性注册。
 
 

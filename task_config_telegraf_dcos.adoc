@@ -29,7 +29,7 @@ Cloud Insights 使用此数据收集器从数据中心 / 操作系统收集指�
 
 == 设置
 
-有关设置信息，请参见 https://docs.mesosphere.com["DC/OS 文档"]。
+有关设置信息，请参见 https://["DC/OS 文档"]。
 
 
 

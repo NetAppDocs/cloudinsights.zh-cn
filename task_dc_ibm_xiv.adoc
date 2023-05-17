@@ -53,7 +53,7 @@ IBM XIV 和 A9000 （ CLI ）数据收集器使用 XIV 命令行界面收集清�
 * 必须为 CIMServer 提供用户登录名。登录必须对阵列配置和属性具有完全读取访问权限。
 * SMI-S 命名空间。默认值为 root/IBM 。可以在 CIMServer 中配置此功能。
 * 端口要求： 5988 表示 HTTP ， 5989 表示 HTTPS 。
-* 有关如何为 SMI-S 性能收集创建帐户的信息，请参见以下链接： http://publib.boulder.ibm.com/infocenter/tivihelp/v4r1/index.jsp?topic=%2Fcom.ibm.tpc_V41.doc%2Ffqz0_t_adding_cim_agent.html[]
+* 有关如何为 SMI-S 性能收集创建帐户的信息，请参见以下链接： http://[]
 
 
 

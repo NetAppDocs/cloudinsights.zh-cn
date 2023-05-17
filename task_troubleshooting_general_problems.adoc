@@ -24,7 +24,7 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 | Cloud Insights 每 5 分钟注销一次 | 允许第三方接受所需的NetApp和auth0 cookie。示例：在Chrome中、在浏览器URL中输入"chrome：//settings/cookies"。选择"允许所有Cookie "选项。*或*选择"阻止第三方Cookie "并为"*。]auth0.com和"*。]netapp.com添加例外情况。注意：创建异常时、请务必选择"在此站点上包含第三方Cookie "选项。 
 
 
-| 我有一个 Cloud Central 帐户，但无法登录到 Cloud Central 。 | 从打开服务单 https://mysupport.netapp.com/site/help[]。选择类别" cloud.netapp.com >帐户/登录问题"或" cloud.netapp.com >联合问题"。这专门针对 Cloud Central 问题或问题。对于所有其他Cloud Insights 技术支持问题、请联系 link:concept_requesting_support.html["NetApp 支持"]。 
+| 我有一个 Cloud Central 帐户，但无法登录到 Cloud Central 。 | 从打开服务单 https://[]。选择类别" cloud.netapp.com >帐户/登录问题"或" cloud.netapp.com >联合问题"。这专门针对 Cloud Central 问题或问题。对于所有其他Cloud Insights 技术支持问题、请联系 link:concept_requesting_support.html["NetApp 支持"]。 
 
 
 | 我受邀访问 Cloud Insights ，但收到 " 未授权 " 消息。 | 确认您已注册 Cloud Central 帐户，或者您的组织使用 Cloud Central 的 SSO 登录。验证您的 Cloud Central 个人资料电子邮件地址是否与 Cloud Insights 欢迎电子邮件中显示的电子邮件地址匹配。如果此电子邮件不匹配，请使用正确的电子邮件地址请求新的邀请。 
@@ -46,4 +46,4 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 link:https://www.netapp.com/us/contact-us/support.aspx["电话"]
 link:https://mysupport.netapp.com/site/cases/mine/create?serialNumber=95001014387268156333["支持服务单"]
 
-有关详细信息，请参见 https://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["Cloud Insights 支持文档"]。
+有关详细信息，请参见 https://["Cloud Insights 支持文档"]。

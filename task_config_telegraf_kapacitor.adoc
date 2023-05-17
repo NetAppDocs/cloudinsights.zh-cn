@@ -30,7 +30,7 @@ image:KapacitorDCConfigWindows.png["Kapacitor 配置"]
 
 == 设置
 
-有关设置信息，请参见 https://docs.influxdata.com/kapacitor/v1.5/["Kapacitor 文档"]
+有关设置信息，请参见 https://["Kapacitor 文档"]
 
 
 

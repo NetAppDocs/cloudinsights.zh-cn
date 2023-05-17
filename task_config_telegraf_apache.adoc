@@ -14,7 +14,7 @@ summary: Apache 数据收集器配置
 .前提条件
 * 您必须已设置 Apache HTTP 服务器并正确运行
 * 您必须对代理主机 /VM 具有 sudo 或管理员权限
-* 通常， Apache _mod_status_ 模块会配置为在 Apache 服务器的 /server-status ？ auto 位置公开页面。要收集所有可用字段，必须启用 _ExtendedStatus_ 选项。有关如何配置服务器的信息，请参见 Apache 模块文档： https://httpd.apache.org/docs/2.4/mod/mod_status.html#enable[]
+* 通常， Apache _mod_status_ 模块会配置为在 Apache 服务器的 /server-status ？ auto 位置公开页面。要收集所有可用字段，必须启用 _ExtendedStatus_ 选项。有关如何配置服务器的信息，请参见 Apache 模块文档： https://[]
 
 
 

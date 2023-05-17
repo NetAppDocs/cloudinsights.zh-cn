@@ -30,7 +30,7 @@ image:PuppetDCConfigWindows.png["Puppet 配置"]
 
 == 设置
 
-有关信息，请参见 https://puppet.com/docs["Puppet 文档"]
+有关信息，请参见 https://["Puppet 文档"]
 
 
 

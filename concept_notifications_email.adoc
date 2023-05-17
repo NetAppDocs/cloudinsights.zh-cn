@@ -54,8 +54,19 @@ image:Notifications_email_list.png["电子邮件通知"]
 
 要配置全局警报收件人，请在 * 全局监控通知收件人 * 部分中选择所需的收件人。
 
-[role="thumb"]
 创建或修改监控器时，您始终可以覆盖单个监控器的全局收件人列表。
 
 
 NOTE: ONTAP 数据收集器通知优先于与集群/数据收集器相关的任何特定监控器通知。您为Data Collector本身设置的收件人列表将接收数据收集器警报。如果没有活动的数据收集器警报、则监控器生成的警报将发送到特定的监控器收件人。
+
+
+
+== 编辑ONTAP 通知
+
+您可以通过从存储登录页面的右上角下拉列表中选择_Edit通知_来修改ONTAP 集群的通知。
+
+image:EditONTAPNotifications.png["ONTAP 编辑通知"]
+
+您可以从此处设置严重、警告、信息和/或已解决警报的通知。每个方案都可以通知全局收件人列表或您选择的其他收件人。
+
+image:EditONTAPNotifications_MultipleScenarios.png["适用于不同场景的ONTAP 通知"]

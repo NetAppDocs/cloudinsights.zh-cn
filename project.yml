@@ -92,7 +92,7 @@ sidebar:
     - title: Kubernetes 集群页面
       url: "/kubernetes_cluster_detail.html"
     - title: Kubnetes监控和映射
-      url: "/concept_kubernetes_performance_monitoring_and_map.html"
+      url: "/concept_kubernetes_network_monitoring_and_map.html"
   - title: 洞察力
     entries:
     - title: 概述
@@ -173,6 +173,8 @@ sidebar:
       url: "/concept_asset_user_data_section.html"
     - title: 相关警报部分
       url: "/concept_asset_alerts_section.html"
+    - title: 存储虚拟化
+      url: "/concept_storage_virtualization.html"
     - title: 搜索资产的提示和提示
       url: "/concept_searching_assets.html"
   - title: 报告
