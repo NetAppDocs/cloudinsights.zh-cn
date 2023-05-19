@@ -11157,9 +11157,6 @@
   <block id="3242b3c34922ab4d5cbff714ffb3f35b" category="paragraph">可在自定义信息板或登录页面屏幕的右上角使用_RERT to Default_。</block>
   <block id="22d3924d22161b1ae53430a86affea68" category="inline-image-macro">还原为默认值按钮</block>
   <block id="bf5be9dc856a4d42607ac85b1e6ff046" category="paragraph"><block ref="bf5be9dc856a4d42607ac85b1e6ff046" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2499dbd8754ba0ea2e48f7f26299df85" category="paragraph">请记住：</block>
-  <block id="aba1e07f8a596005af956e7d0d072235" category="list-text">不会显示30天以内的冷数据。</block>
-  <block id="caacdebad7604a39622c94eec31be40b" category="list-text">FlexGroup 中的成分卷不包括在冷数据计算中(因为无法在成分卷上设置层策略)。</block>
   <block id="c2022a18b75555c824458ee568cfdfca" category="inline-image-macro">冷数据电源信息</block>
   <block id="6a79fd430dc36a8f17aaf2f28988d6e6" category="paragraph"><block ref="6a79fd430dc36a8f17aaf2f28988d6e6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5259ae4afb5996ff48788b2fa720114c" category="section-title">建议</block>
@@ -11172,4 +11169,5 @@
   <block id="907a69f25ca7c9e8619e2c59a67ab607" category="inline-image-macro">冷数据工作负载表</block>
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">请注意、系统不会显示30天以内的冷数据。</block>
 </blocks>

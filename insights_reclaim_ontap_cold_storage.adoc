@@ -16,11 +16,7 @@ NOTE: 回收ONTAP 冷存储Insight被视为 link:concept_preview_features.html["
 
 要查看这些洞察、请导航到*信息板>洞察力*、然后查看_RecaLate ONTAP Cold Storage_ Insight。请注意、只有在Cloud Insights 检测到冷存储时、此Insight才会列出受影响的存储、否则您将看到"全部清除"消息。
 
-请记住：
-
-* 不会显示30天以内的冷数据。
-* FlexGroup 中的成分卷不包括在冷数据计算中(因为无法在成分卷上设置层策略)。
-
+请注意、系统不会显示30天以内的冷数据。
 
 image:Cold_Data_Insight_List.png["Insight列表显示了3个包含冷数据的存储"]
 
