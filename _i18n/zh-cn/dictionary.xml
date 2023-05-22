@@ -6967,19 +6967,6 @@
   <block id="bd7396064bde19099b129313d4e4960b" category="paragraph">如果适用，您可以单击警报链接以查看与资产关联的警报和监控。</block>
   <block id="2d762a3bbc5cce9178bdcae87b203e7c" category="inline-link-macro">监控和警报</block>
   <block id="34727dd01aaa3e0d53fd68d429bbff53" category="doc">适用于 ONTAP 9.9+ 的 NetApp 云连接数据收集器</block>
-  <block id="99135d7be2a5fb615612c7da87e284f9" category="paragraph">Cloud Insights 使用 * 云连接 * 从 ONTAP 9.9+ 收集数据，无需安装外部采集单元，从而简化了故障排除，维护和初始部署。要为 ONTAP 9.9+ 数据收集器配置云连接，您需要将 * 配对代码 * 复制到 ONTAP 系统管理器，然后该管理器将与 Cloud Insights 环境建立连接。建立连接后，收集的数据与通过采集单元收集的数据相同。</block>
-  <block id="2a631e19719818429fd1edf9045b1163" category="inline-image-macro">Cloud Agent Data Collector 配置</block>
-  <block id="686b6f246c6d71648125bb6df261eda5" category="paragraph"><block ref="686b6f246c6d71648125bb6df261eda5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b3f4b400496b1f1be79ceb4e94a91c9a" category="paragraph">按照以下步骤配置连接：</block>
-  <block id="3e71c2acb888e5c54e107a6e20c6d734" category="list-text">生成一个唯一令牌，用于与 ONTAP 系统建立连接。</block>
-  <block id="5aa319f21d7d467c78e0900ae3ce4fe7" category="list-text">复制配对代码，其中包括令牌。您可以单击 _[+] 显示代码片段 _ 来查看配对代码。</block>
-  <block id="92d743a425aee6a9d199011e37f4a7a4" category="paragraph">复制配对代码后，数据收集器配置屏幕将显示步骤 6 ，提示您等待建立连接。在建立连接之前，无需在此屏幕上执行任何其他操作。</block>
-  <block id="91984937f546d43518e93c72ed5b7c0f" category="inline-image-macro">正在等待连接</block>
-  <block id="5e9af3de724d92d3056b1b1acbe5c289" category="paragraph"><block ref="5e9af3de724d92d3056b1b1acbe5c289" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="017330578692e5d7e9299cce45d52f9a" category="list-text">在新的浏览器选项卡中，登录到 ONTAP 系统管理器并导航到 _Cluster&gt; 设置 &gt; 云连接 _ 。</block>
-  <block id="5e1ab5a21ba64b40d2b3a2b6b18b1d7d" category="list-text">单击 _Add Cloud Connection_ 并粘贴配对代码。</block>
-  <block id="da7eaf2bcf79794e261e4a33bfc75902" category="list-text">返回到 Cloud Insights 浏览器选项卡并等待建立连接。建立后，将显示一个 _complete_ 按钮。</block>
-  <block id="e01ce4b74a8ea3e86d2c3af5c67d14e0" category="list-text">单击 _complete_ 。</block>
   <block id="acb242e4a47b7f1537825e1c4eacc87a" category="inline-link-macro">适用于 ONTAP 9.9+ 的 NetApp 云连接</block>
   <block id="9af59f8630623af6e68c2c7648957031" category="sidebar">适用于 ONTAP 9.9+ 的云连接</block>
   <block id="04cfeb854c88891dec7c9991ca350912" category="summary">适用于 NetApp ONTAP 数据收集器的 Amazon FSX</block>
@@ -7081,7 +7068,6 @@
   <block id="b0ce4b6c932ff5bff57734c112bda53e" category="list-text">`sUdo firewall-cmd -zone=public -list-ports | grep 35000` （适用于 CentOS 8 ）</block>
   <block id="02761a47fb2c7ca60e3b94426c0516d2" category="paragraph">非 Windows （这些示例适用于 Kubernetes ；实际脚本名称可能有所不同）：</block>
   <block id="0803ffc49bb5d009027ad578d29858b8" category="paragraph">此数据收集器可创建云连接，以支持从 ONTAP 9.9+ CVO ， AFF 和 FAS 系统收集数据。</block>
-  <block id="72c287aa31792e43cc71160178046540" category="paragraph">此数据收集器支持 ONTAP 9.9+ CVO ， AFF 和 FAS 系统。</block>
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">创建监控器，以便针对性能或清单阈值以及指标或日志条件发出警报。</block>
   <block id="7d5581330314d1ed3096701515939e9d" category="doc">系统监控器</block>
   <block id="4cdcdb149afd3a4dfdaaf3ff86277a6b" category="list-text">* 已采取更正操作 * ：警报已建议更正操作。打开警报页面以查看这些内容。</block>
@@ -7472,9 +7458,7 @@
   <block id="4a0bdf868a5617c0d6fdd80292b7ffbc" category="paragraph">如果先前为基于脚本的 Telegraf 安装手动创建了安全上下文限制：</block>
   <block id="5b02fb8f86f33e62862c6886dbbe655e" category="list-text">只读用户名和密码，除非使用 volume_groups ，否则在这种情况下，需要管理员用户名和密码</block>
   <block id="a9d11491cdc145dca25e537c123d978b" category="summary">为 ONTAP 9.9+ 数据收集器配置 NetApp 云连接</block>
-  <block id="bca1a19f88eb685d9344ee1f28f51dd2" category="inline-link-macro">而是此页面</block>
   <block id="32b322f0c18e116c5d878598d8fedae2" category="cell"><block ref="32b322f0c18e116c5d878598d8fedae2" category="inline-link-macro-rx"></block></block>
-  <block id="f57612bca660c9f1bc786c2d822f16a1" category="paragraph">此页面已废弃，不会更新。请转到 <block ref="c5c1ccfedff026e54c070cb8b94b3e05" category="inline-link-macro-rx"></block>。</block>
   <block id="77b2881850cae0e5dc1c7b60af0bc9b6" category="cell">我看到一条 " 检测信号错误：消息</block>
   <block id="e2284f166fb986bff4a211a1598659c8" category="cell">如果网络中断导致采集单元与 Cloud Insights 环境之间的通信中断一分钟以上，则可能会发生此错误。验证 AU 和 Cloud Insights 之间的连接是否稳定且处于活动状态。</block>
   <block id="f06aba11198bdba5f39e2cabfd82871d" category="cell">CloudWatch 代理指标命名空间</block>
@@ -10623,7 +10607,6 @@
   <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">环境创建完成后，您可以使用 Cloud Central 凭据登录并开始免费试用 Cloud Insights 30 天。在此试用期间、您可以了解Cloud Insights 必须提供的功能。</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">集群管理</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS/SMB用户阻止所需。</block>
-  <block id="bcef352854994ddcd8d20e92b3fdd116" category="admonition">自2023年4月4日起、此数据收集器在Cloud Insights 中不再可用。有关过渡到基于AU的数据收集的信息、请参见 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">从“团队内容”中选择*Storage Manager信息板*可提供多个报告，这些报告提供有关流量和存储的信息。</block>
   <block id="bfc0aa4d9884a38d2f3079aa329eef54" category="inline-image-macro">Storage Manager信息板选项</block>
   <block id="8f6a27e4a5050011d91bc9e27e37e101" category="paragraph"><block ref="8f6a27e4a5050011d91bc9e27e37e101" category="inline-image-macro-rx" type="image"></block></block>
@@ -11170,4 +11153,5 @@
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">请注意、系统不会显示30天以内的冷数据。</block>
+  <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">自2023年4月4日起、此数据收集器不再可安装在Cloud Insights 中、并将于2023年5月25日从所有Cloud Insights 安装中删除。有关过渡到基于AU的数据收集的信息、请参见 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>
