@@ -38,9 +38,33 @@ image:OE_Overview.png["ONTAP 基础知识概述信息板"]
 
 == 数据保护
 
-选择*数据保护*页面以查看SnapMirror关系。单击至以获取源卷或目标卷信息、或者单击齿轮图标为要查看的数据添加列。
+"*数据保护*"页面显示受*Snapshot副本*或*SnapMirror策略*保护的卷的状态。
 
-image:DataProtectionDashboard_OverviewWidgets.png["显示\"本地\"和\"远程\"概述的\"数据保护信息板\"小工具"]
+在_Local Protection Overview_部分中、图表提供了受Snapshot副本保护的卷的以下信息：
+
+* 受Snapshot副本保护以及未受保护的卷的数量。
+* 正在使用或超出Snapshot副本预留空间的卷数量。
+* 特定Snapshot副本计数范围内的卷数量(即、少于10个副本、10到200个副本等)。
+
+
+在_Remote Protection Overview_部分中、图表提供了与受SnapMirror策略保护的卷相关的信息：
+
+* 运行状况良好和运行状况不正常的SnapMirror关系的数量。
+* 根据滞后状态、发生恢复点目标(RPO)滞后的SnapMirror关系数量。
+* 受SnapMirror卷保护类型(例如卷SnapMirror、SVMDR关系、FlexGroup SnapMirror关系、SnapMirror业务连续性(SMBC)一致性组关系以及未受保护的卷)保护的关系数量。
+* 受异步镜像、异步存储、异步镜像存储、StrictSync和Sync等SnapMirror关系类型保护的关系数量。
+
+
+image:DataProtectionDashboard_OverviewWidgets_.png["显示\"本地\"和\"远程\"概述的\"数据保护信息板\"小工具"]
+
+页面底部的_Clusters _网格提供了与以下内容相关的详细信息：
+
+* 卷不受Snapshot保护。
+* 卷违反Snapshot预留空间。
+* 不受SnapMirror策略保护的卷以及存在滞后的SnapMirror关系。
+* SnapMirror关系运行状况不正常。
+
+
 image:DataProtectionDashboard_ClusterList.png["数据保护集群列表"]
 
 
