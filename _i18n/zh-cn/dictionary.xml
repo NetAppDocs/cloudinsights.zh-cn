@@ -11150,7 +11150,6 @@
   <block id="e185f5cf502ca7079fb5eb3b60a77e41" category="paragraph"><block ref="e9ec82200521512971fafc4c0e21c2af" category="inline-image-macro-rx" type="image"></block>
 <block ref="d2dfbff86c21669b3c15073a169ec8ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d752ee7de9162d5e0fa475e8a383ea29" category="paragraph">请注意、系统不会显示30天以内的冷数据。</block>
-  <block id="27f435bf6cee52f54cff928bd45b8ee0" category="admonition">自2023年4月4日起、此数据收集器不再可安装在Cloud Insights 中、并将于2023年5月25日从所有Cloud Insights 安装中删除。有关过渡到基于AU的数据收集的信息、请参见 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
   <block id="10964dcc7a2aec7bc47f94cb30287867" category="paragraph">"*数据保护*"页面显示受*Snapshot副本*或*SnapMirror策略*保护的卷的状态。</block>
   <block id="fc590ffc8717abc249ee0ebf7181b12d" category="paragraph">在_Local Protection Overview_部分中、图表提供了受Snapshot副本保护的卷的以下信息：</block>
   <block id="165584d5362c27cc80f1824d69f24c27" category="list-text">受Snapshot副本保护以及未受保护的卷的数量。</block>
@@ -11168,4 +11167,5 @@
   <block id="cde42b0739b83754f74a7bee8cf35c96" category="list-text">不受SnapMirror策略保护的卷以及存在滞后的SnapMirror关系。</block>
   <block id="9354fc9fde4206bac6177054249907e9" category="list-text">SnapMirror关系运行状况不正常。</block>
   <block id="53a0194fe3f870afed16b77d60056dfb" category="paragraph"><block ref="53a0194fe3f870afed16b77d60056dfb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e4b936a4866074908ad57fac7de40e48" category="admonition">自2023年4月4日起、此数据收集器不再可安装在Cloud Insights 中、并将于2023年5月25日从所有Cloud Insights 安装中删除。有关过渡到基于AU的数据收集的信息、请参见 <block ref="334c0315e59c6351d5f9bac4d495b3ee" category="inline-link-macro-rx"></block>。</block>
 </blocks>
