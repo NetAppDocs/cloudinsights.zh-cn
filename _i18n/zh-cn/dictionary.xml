@@ -11175,4 +11175,6 @@
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">我在同一个qtree中同时手动设置了软配额和硬配额、但显示的总容量是硬配额；是否正确？</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">是、如果指定了硬配额、则显示为总容量。</block>
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">登录问题</block>
+  <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">安装NetApp Kubenetes Monitoring Operator后、我的日志中立即显示以下内容：[HTTP inputs.prometheus] Error in plugin: Error m制作HTTP请求时出错<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 获取<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 拨号&lt;namespace&gt; ：LOOKUP KUbe状态指标.tcp.svc.cluster-local：无此主机</block>
+  <block id="d232f49a9877a99204dde54474c23ce6" category="cell">通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。</block>
 </blocks>

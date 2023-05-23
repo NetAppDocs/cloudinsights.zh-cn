@@ -490,5 +490,8 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 
 | 在新工单命名空间中、某些Net-observer Pod处于Pending状态 | Net-observer是一个DemonSet、在K8s集群的每个节点上运行一个POD。•记下处于“待定”状态的POD，并检查它是否遇到了CPU或内存的资源问题描述。确保节点中具有所需的内存和CPU。 
+
+
+| 安装NetApp Kubenetes Monitoring Operator后、我的日志中立即显示以下内容：[HTTP inputs.prometheus] Error in plugin: Error m制作HTTP请求时出错 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 获取 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 拨号<namespace> ：LOOKUP KUbe状态指标.tcp.svc.cluster-local：无此主机 | 通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
