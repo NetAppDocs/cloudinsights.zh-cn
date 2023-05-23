@@ -6769,7 +6769,6 @@
   <block id="399bd1ee587245ecac6f39beaa99886f" category="sidebar">PostgreSQL</block>
   <block id="14590850b4107a6f92feb1af739b82eb" category="sidebar">Puppet</block>
   <block id="15ec8934d96530d4c5f4a3b0f701f745" category="sidebar">RethinkDB</block>
-  <block id="b22cca9a93dc0eb73fc0c386fc686eb3" category="section-title">登录问题：</block>
   <block id="9b08a379d02da9e64bce4ee2389fc783" category="admonition">以下步骤概述了设置 _http_proxy/https_proxy_environment 变量所需的操作。对于某些代理环境，用户可能还需要设置 _no_proxy environment_ 变量。</block>
   <block id="0659d428df833a806e29e65e632d380a" category="inline-link-macro">NetApp 支持</block>
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">请尝试在 Chrome 中使用匿名模式，或者清除浏览器历史记录， Cookie 和缓存。请尝试使用其他浏览器配置文件（例如 Chrome - 添加人员）。</block>
@@ -11175,4 +11174,5 @@
   <block id="5a68833b2f8ecb97cbb14d60c5b420a8" category="cell">只有硬配额(无论是手动设置还是通过三叉设计来设置)才会显示为设置的配额；如果未指定硬配额、则qtree容量将是内部卷容量。</block>
   <block id="1b6ed64bac10ec68f4d03a8505f91c8d" category="cell">我在同一个qtree中同时手动设置了软配额和硬配额、但显示的总容量是硬配额；是否正确？</block>
   <block id="9c93ad73825174675cbb17fb678b3a8c" category="cell">是、如果指定了硬配额、则显示为总容量。</block>
+  <block id="37b418c8c2b422040e90081e18556979" category="section-title">登录问题</block>
 </blocks>
