@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_troubleshooting_overview.html 
 summary: 在本节中，您将找到一些提示和技巧，可帮助您解决 Cloud Insights 环境中的问题。 
-keywords: troubleshootin 
+keywords:  
 ---
 = 对 Cloud Insights 问题进行故障排除
 :allow-uri-read: 

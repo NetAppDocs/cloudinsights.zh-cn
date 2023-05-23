@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_troubleshooting_general_problems.html 
 summary: 常规 Cloud Insights 故障排除提示。 
-keywords: troubleshooting, problems, browser, login, log in, accessing, access to 
+keywords: troubleshooting, problems, browser, login, log in, accessing, access to, Trident, qtree, quota 
 ---
 = 对常规 Cloud Insights 问题进行故障排除
 :allow-uri-read: 
@@ -41,6 +41,29 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 
 | 其他登录错误 | 请尝试在 Chrome 中使用匿名模式，或者清除浏览器历史记录， Cookie 和缓存。请尝试使用其他浏览器配置文件（例如 Chrome - 添加人员）。 
 |===
+
+
+== 其他问题
+
+|===
+
+
+| *问题:* | *问题解答 ：* 
+
+
+| 我的qtree硬配额在查询中显示正确、但软配额显示为卷的总容量。是否正确？ | 只有硬配额(无论是手动设置还是通过三叉设计来设置)才会显示为设置的配额；如果未指定硬配额、则qtree容量将是内部卷容量。 
+
+
+| 我在同一个qtree中同时手动设置了软配额和硬配额、但显示的总容量是硬配额；是否正确？ | 是、如果指定了硬配额、则显示为总容量。 
+|===
+
+
+== 资源
+
+有关其他故障排除提示，请参见 link:https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services/Cloud_Insights["NetApp 知识库"] （需要支持部门登录）。
+
+有关其他支持信息，请参见 Cloud Insights link:concept_requesting_support.html["支持"] 页面。
+
 如果您拥有有效的 Cloud Insights 订阅，则可以使用以下支持选项：
 
 link:https://www.netapp.com/us/contact-us/support.aspx["电话"]
