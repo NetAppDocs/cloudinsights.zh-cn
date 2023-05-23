@@ -87,7 +87,7 @@ image:Workload_Map_Filtering.png["工作负载映射筛选"]
 +
 ** 源自POD的工作负载标签
 ** 工作负载上的预期标签：app.Kubernetes.io/component
-** 标签名称引用： https://[]
+** 标签名称引用： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
 ** 建议标签：
 +
 *** 前端

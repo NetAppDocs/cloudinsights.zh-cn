@@ -371,19 +371,19 @@ NetApp Kubernetes监控操作员会自动安装Kube-state-metrics；无需用户
 
 使用以下链接访问这些Kubbe状态指标计数器的信息：
 
-. https://["ConfigMap 指标"]
-. https://["DemonSet 指标"]
-. https://["部署指标"]
-. https://["传入指标"]
-. https://["命名空间指标"]
-. https://["节点指标"]
-. https://["永久性卷指标"]
-. https://["持久性卷声明指标"]
-. https://["POD 指标"]
-. https://["ReplicaSet 指标"]
-. https://["机密指标"]
-. https://["服务指标"]
-. https://["StatusSet 指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["ConfigMap 指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet 指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["部署指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["传入指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["命名空间指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["节点指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["永久性卷指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["持久性卷声明指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["POD 指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["ReplicaSet 指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["机密指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["服务指标"]
+. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["StatusSet 指标"]
 
 
 

@@ -27,7 +27,7 @@ Cloud Insights 使用 Azure NetApp Files 数据收集器获取清单和性能数
 
 
 
-https://[]
+https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal[]
 
 
 

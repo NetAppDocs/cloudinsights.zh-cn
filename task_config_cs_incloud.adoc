@@ -15,9 +15,9 @@ summary: 工作负载安全性使用数据收集器从设备收集文件和用�
 
 == Cloud Volumes ONTAP 存储配置
 
-要配置单节点/HA AWS实例以托管工作负载安全代理、请参见OnCommand Cloud Volumes ONTAP 文档：https://[]
+要配置单节点/HA AWS实例以托管工作负载安全代理、请参见OnCommand Cloud Volumes ONTAP 文档：https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html[]
 
-配置完成后，按照以下步骤设置 SVM ：https://[]
+配置完成后，按照以下步骤设置 SVM ：https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html[]
 
 
 
@@ -41,7 +41,7 @@ summary: 工作负载安全性使用数据收集器从设备收集文件和用�
 
 .步骤
 . 登录到 AWS 控制台并导航到 EC2-Instances 页面，然后选择 _Launch Instance_ 。
-. 选择具有此页面中所述的相应版本的 RHEL 或 CentOS AMI ：https://[]
+. 选择具有此页面中所述的相应版本的 RHEL 或 CentOS AMI ：https://docs.netapp.com/us-en/cloudinsights/concept_cs_agent_requirements.html[]
 . 选择 Cloud ONTAP 实例所在的 VPC 和子网。
 . 选择 _t2.xlarge_ （ 4 个 vCPU 和 16 GB RAM ）作为已分配的资源。
 +

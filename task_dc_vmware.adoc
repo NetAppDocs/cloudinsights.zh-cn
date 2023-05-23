@@ -145,6 +145,6 @@ Cloud Insights 从 VMware vSphere 数据收集器获取以下清单信息。对�
 | 错误：无法通过 IP 实例化与 VirtualCenter 的连接 | 可能的解决方案： * 验证输入的凭据和 IP 地址。* 尝试使用 VMware Infrastructure Client 与虚拟中心进行通信。* 尝试使用受管对象浏览器（例如 MOB ）与虚拟中心进行通信。 
 
 
-| 错误： VirtualCenter AT IP 具有 JVM 所需的不符合证书 | 可能的解决方案： * 建议：使用更强的（例如 1024 位） RSA 密钥。* 不建议使用：修改 JVM java.security 配置以利用约束 JDK.certpath.disableAlgorithms 允许使用 512 位 RSA 密钥。请参见中的 JDK 7 update 40 发行说明 "http://[] 
+| 错误： VirtualCenter AT IP 具有 JVM 所需的不符合证书 | 可能的解决方案： * 建议：使用更强的（例如 1024 位） RSA 密钥。* 不建议使用：修改 JVM java.security 配置以利用约束 JDK.certpath.disableAlgorithms 允许使用 512 位 RSA 密钥。请参见中的 JDK 7 update 40 发行说明 "http://www.oracle.com/technetwork/java/javase/7u40-relnotes-2004172.html"[] 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。

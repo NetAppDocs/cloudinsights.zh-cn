@@ -1659,8 +1659,8 @@ Cloud Insights 提供了各种预先设计的信息板，可帮助您开始为 _
 
 有关 ONTAP 高级数据的详细信息，请访问以下链接：
 
-* https://[] （注意：您需要登录到 NetApp 支持部门）
-* https://[]
+* https://mysupport.netapp.com/site/tools/tool-eula/netapp-harvest[] （注意：您需要登录到 NetApp 支持部门）
+* https://nabox.org/faq/[]
 
 
 

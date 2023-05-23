@@ -16,7 +16,7 @@ toc::[]
 
 == 创建 NetApp Cloud Central 帐户
 
-要开始使用NetApp的云服务、请访问 https://["* NetApp BlueXP*"^] 然后单击*开始使用*。
+要开始使用NetApp的云服务、请访问 https://cloud.netapp.com["* NetApp BlueXP*"^] 然后单击*开始使用*。
 
 * 如果尚未注册、请选择*注册*
 * 输入有效的业务电子邮件地址并选择密码。
@@ -29,7 +29,7 @@ toc::[]
 
 === 如果我已经拥有 NetApp Cloud 登录帐户，该怎么办？
 
-拥有NetApp BlueXP帐户后、只需在上选择*登录*即可 https://["* NetApp BlueXPl*"^] 门户页面。
+拥有NetApp BlueXP帐户后、只需在上选择*登录*即可 https://cloud.netapp.com["* NetApp BlueXPl*"^] 门户页面。
 
 输入您的电子邮件地址和密码。然后，您将转到 NetApp 的云产品页面。
 

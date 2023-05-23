@@ -18,7 +18,7 @@ NOTE: 此页面引用第三方说明，可能会有所更改。请参见 link:ht
 
 == 可宽延时间示例：
 
-* 转至 https://[] 并创建新应用程序为其指定一个有意义的名称，然后选择 Slack Workspace 。
+* 转至 https://api.slack.com/apps[] 并创建新应用程序为其指定一个有意义的名称，然后选择 Slack Workspace 。
 +
 image:Webhooks_Slack_Create_Webhook.png["创建 Slack Webhook"]
 
@@ -59,6 +59,6 @@ image:Webhooks_Slack_Notifications.png["网络挂机通知"]
 
 ==== 更多信息
 
-* 要修改消息格式和布局，请参见 https://[]
-* 错误处理： https://[]
+* 要修改消息格式和布局，请参见 https://api.slack.com/messaging/composing[]
+* 错误处理： https://api.slack.com/messaging/webhooks#handling_errors[]
 
