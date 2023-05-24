@@ -10709,7 +10709,6 @@
   <block id="4cbba110d06cbe92766e7957041807de" category="inline-link-macro">监控器</block>
   <block id="398ef11564cb3ebb8d3480da183b89bb" category="paragraph">Workload Map使用 <block ref="8c1e0925f4a3d217ad73e0845030a6c1" category="inline-link-macro-rx"></block> 派生信息。Cloud Insights 提供了许多默认的Kubbernetes监控器(请注意、默认情况下、这些监控器可能为_Pauses_。您可以_Resume_(即启用)所需的监控器)、也可以为Kubornetes对象创建自定义监控器、工作负载映射也将使用这些监控器。</block>
   <block id="cfd443d1fe6acb5a33edeb19eee876d8" category="section-title">地图</block>
-  <block id="15e3eddd185c05a5fb388c2cd109a194" category="paragraph">此映射显示了服务(也称为工作负载)及其彼此之间的关系。箭头显示交通方向。将鼠标悬停在某个工作负载上可显示该工作负载的摘要信息、如以下示例所示：</block>
   <block id="7e31e16b7e4d0bdec82f97e29845098b" category="inline-image-macro">工作负载映射工作负载示例</block>
   <block id="05790ee528b0026e6b4e1c22baf014ea" category="paragraph"><block ref="05790ee528b0026e6b4e1c22baf014ea" category="inline-image-macro-rx" type="image"></block></block>
   <block id="42cecfeff00cc916fef4f64e7b921079" category="inline-xref">labels</block>
@@ -10731,7 +10730,6 @@
   <block id="deb0475feb493ff82c79e1e3ae6d77ea" category="paragraph">如果希望映射标识显示的工作负载类型(即圆圈图标)、则需要使用工作负载标签。标签派生如下：</block>
   <block id="7bdbd3fbfd646718abde6244c5ef84ca" category="list-text">以通用术语运行的服务/应用程序的名称</block>
   <block id="8079e3a427e5574a8e11aee165eaa34a" category="list-text">如果源为POD：</block>
-  <block id="f5617cd916f968d6f57576092e33e68c" category="list-text">源自POD的工作负载标签</block>
   <block id="1cf01db723421f728c6d1ec366bc1525" category="list-text">工作负载上的预期标签：app.Kubernetes.io/component</block>
   <block id="f7a8098a415987972c499ac42c4b95f9" category="list-text">标签名称引用：<block ref="625495fb7d70df26441db849ce9bb393" category="inline-link-rx"></block></block>
   <block id="1dbb5d26447acfe771d67c1e833d6d5a" category="list-text">建议标签：</block>
@@ -10741,10 +10739,6 @@
   <block id="0fea6a13c52b4d4725368f24b045ca84" category="list-text">缓存</block>
   <block id="a9d1cbf71942327e98b40cf5ef38a960" category="list-text">队列</block>
   <block id="541661622185851c248b41bf0cea7ad0" category="list-text">Kafka</block>
-  <block id="30231f87db181989dc6b48606b359f57" category="list-text">如果K8s集群外部的源：</block>
-  <block id="2aa36d2124c1619305f749c6418c781f" category="list-text">尝试解析DNS解析名称并提取服务类型</block>
-  <block id="1c145c21f55cfe3b796f2a421f92f818" category="paragraph">示例：s3.eu-north-1.amazonaws.com</block>
-  <block id="bf0940aef56e172d86f9f25d77945341" category="paragraph">已解析名称以获取S3</block>
   <block id="d487fd41764429863b69436bcc72483a" category="paragraph">NetApp 不断改进和完善其产品和服务。下面是Cloud Insights 商业版中提供的一些最新特性和功能。</block>
   <block id="a67cb8d242ecba5601e34e5b2dbdff12" category="admonition">其中某些功能可能在Cloud Insights 联邦版中不可用、也可能随功能缩减而提供。在可能的情况下、这些差异会在文档中予以说明。</block>
   <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">2023年4月</block>
@@ -10905,7 +10899,6 @@
   <block id="b8adad41e88791514af597358506f749" category="cell">DNS域后缀</block>
   <block id="3b15ddcf76b613b05aa53ea7cf06a953" category="cell">与简单主机名结合使用以呈现虚拟机管理程序的FQDN的主机名后缀</block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Kubnetes网络性能监控和映射</block>
-  <block id="30d4cb002f857650eba9633e4a50ff2a" category="paragraph">Kubernetes网络性能监控和映射功能通过映射Kubernetes工作负载之间的依赖关系来简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
   <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Kubnetes网络性能监控和映射为 <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 功能、可能会更改。</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">在使用Kubbernetes网络性能监控和映射之前、必须先配置 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 以启用此选项。在操作员部署期间、选中"Network Performance and Map"(网络性能和映射)复选框以启用。您也可以通过导航到Kubbernetes登录页面并选择"修改部署"来启用此选项。</block>
   <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。</block>
@@ -11180,4 +11173,30 @@
   <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">同样、在_find_字段中键入字符串将突出显示匹配的工作负载。</block>
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">在"查找"框中键入将突出显示工作负载</block>
   <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="642d357bd708eba3d8ac3744a27588a3" category="paragraph">Kubernetes网络性能监控和映射功能可映射Kubernetes服务(也称为工作负载)之间的依赖关系、从而简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
+  <block id="2e4063447ef8819aa5df170524b0bc11" category="paragraph">您可以在以下任意对象类型上创建Cloud Insights 指标警报。确保对象按id分组。</block>
+  <block id="98f8d8a203eae9b3f98baf54dc4901f5" category="list-text">Kubernetes.Workload</block>
+  <block id="d725c339f86ba7e7be92e93dcf7902bc" category="list-text">Kubernetes.daemonset</block>
+  <block id="caefb2c0b47809252c440b0c84abc26e" category="list-text">kubernetes.deployment</block>
+  <block id="da08d7cb113a582345e1c87537667bfd" category="list-text">Kubernetes.cronJob</block>
+  <block id="e8eeaeeace97ddc1d8d3fd0e2d727de6" category="list-text">Kubernetes.job</block>
+  <block id="2dd2185af8e18909d0c1f96b139ff088" category="list-text">Kubernetes.replicaset</block>
+  <block id="b11992f8220e27ed38a528aa3279ca6c" category="list-text">Kubernetes.statefulset</block>
+  <block id="959158aaf864560f2a6da1c5111a2488" category="list-text">Kubernetes.Pod</block>
+  <block id="e5dd88b41415ccc9b96130968a48a25c" category="list-text">kubernetes.network_traffic_l4</block>
+  <block id="5b5c93dfe04a64ec52da6b4603542b2d" category="paragraph">该映射显示了服务/工作负载及其相互关系。箭头显示交通方向。将鼠标悬停在某个工作负载上可显示该工作负载的摘要信息、如以下示例所示：</block>
+  <block id="85adf3862ca2037a273ff3441c2be5f9" category="list-text">标签源自POD的工作负载标签</block>
+  <block id="cf568df890526e57bf700e2dc4b65a7c" category="list-text">如果源位于Kubnetes集群外部：</block>
+  <block id="87ff7926a3611a5c9e94e85db4fa5bea" category="list-text">Cloud Insights 将尝试解析DNS解析名称以提取服务类型。</block>
+  <block id="bd1a60f90cea9c1c50d2670c398e61e4" category="paragraph">例如、如果DNS解析名称为_s3.eu-north-1.amazonaws.com、则解析后的名称将获取_S3_作为服务类型。</block>
+  <block id="500b3306f51ddde04e4c6da822f4a0e1" category="section-title">深入剖析</block>
+  <block id="85b2e2afff81bc570758ed245f94e0ab" category="paragraph">右键单击工作负载可提供更多选项供您进一步了解。例如、您可以从此处放大查看该工作负载的连接。</block>
+  <block id="382fe39fadd269cb6f5709f01bcb97f3" category="inline-image-macro">工作负载映射右键单击缩放以显示工作负载的连接</block>
+  <block id="11cf13816a69e8f7513d902d787c018f" category="paragraph"><block ref="11cf13816a69e8f7513d902d787c018f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="08a268f9324eb2fedb3f30f6aed68c83" category="paragraph">或者、您也可以打开详细信息分出面板、直接查看_Summary _、_Network_或_Pod &amp; Storage_选项卡。</block>
+  <block id="c878025155cecb2c39acd2fc019a750c" category="inline-image-macro">详细信息"卸载网络"选项卡示例</block>
+  <block id="e1ad379a2729c042c49570a56d16450f" category="paragraph"><block ref="e1ad379a2729c042c49570a56d16450f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bc73b2df84aeadcf404198608adc15f8" category="paragraph">最后、选择_Go to Asset Page_将打开工作负载的详细资产登录页面。</block>
+  <block id="1f77b1ef877148b891f2cb01d5adad8a" category="inline-image-macro">工作负载资产页面</block>
+  <block id="208df78ccb496daba189129b4e1d9439" category="paragraph"><block ref="208df78ccb496daba189129b4e1d9439" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

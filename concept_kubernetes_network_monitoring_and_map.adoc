@@ -19,7 +19,7 @@ summary: 显示Kubernetes工作负载的依赖关系和流、并突出显示网�
 
 
 [role="lead"]
-Kubernetes网络性能监控和映射功能通过映射Kubernetes工作负载之间的依赖关系来简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。
+Kubernetes网络性能监控和映射功能可映射Kubernetes服务(也称为工作负载)之间的依赖关系、从而简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。
 
 
 NOTE: Kubnetes网络性能监控和映射为 link:concept_preview_features.html["预览"] 功能、可能会更改。
@@ -42,11 +42,24 @@ image:ServiceMap_NKMO_Deployment_Options.png["在新购运动状态期间选择�
 
 Workload Map使用 link:task_create_monitor.html["监控器"] 派生信息。Cloud Insights 提供了许多默认的Kubbernetes监控器(请注意、默认情况下、这些监控器可能为_Pauses_。您可以_Resume_(即启用)所需的监控器)、也可以为Kubornetes对象创建自定义监控器、工作负载映射也将使用这些监控器。
 
+您可以在以下任意对象类型上创建Cloud Insights 指标警报。确保对象按id分组。
+
+* Kubernetes.Workload
+* Kubernetes.daemonset
+* kubernetes.deployment
+* Kubernetes.cronJob
+* Kubernetes.job
+* Kubernetes.replicaset
+* Kubernetes.statefulset
+* Kubernetes.Pod
+* kubernetes.network_traffic_l4
+
+
 
 
 == 地图
 
-此映射显示了服务(也称为工作负载)及其彼此之间的关系。箭头显示交通方向。将鼠标悬停在某个工作负载上可显示该工作负载的摘要信息、如以下示例所示：
+该映射显示了服务/工作负载及其相互关系。箭头显示交通方向。将鼠标悬停在某个工作负载上可显示该工作负载的摘要信息、如以下示例所示：
 
 image:ServiceMap_Simple_Example.png["工作负载映射工作负载示例"]
 
@@ -89,7 +102,7 @@ image:Workload_Map_Find_Highlighting.png["在\"查找\"框中键入将突出显�
 * 以通用术语运行的服务/应用程序的名称
 * 如果源为POD：
 +
-** 源自POD的工作负载标签
+** 标签源自POD的工作负载标签
 ** 工作负载上的预期标签：app.Kubernetes.io/component
 ** 标签名称引用： https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/[]
 ** 建议标签：
@@ -104,15 +117,28 @@ image:Workload_Map_Find_Highlighting.png["在\"查找\"框中键入将突出显�
 
 
 
-* 如果K8s集群外部的源：
+* 如果源位于Kubnetes集群外部：
 +
-** 尝试解析DNS解析名称并提取服务类型
+** Cloud Insights 将尝试解析DNS解析名称以提取服务类型。
 +
-示例：s3.eu-north-1.amazonaws.com
-
-+
-已解析名称以获取S3
+例如、如果DNS解析名称为_s3.eu-north-1.amazonaws.com、则解析后的名称将获取_S3_作为服务类型。
 
 
 
 
+
+
+
+== 深入剖析
+
+右键单击工作负载可提供更多选项供您进一步了解。例如、您可以从此处放大查看该工作负载的连接。
+
+image:Workload_Map_Zoom_Into_Connections.png["工作负载映射右键单击缩放以显示工作负载的连接"]
+
+或者、您也可以打开详细信息分出面板、直接查看_Summary _、_Network_或_Pod & Storage_选项卡。
+
+image:Workload_Map_Detail_Network_Slideout.png["详细信息\"卸载网络\"选项卡示例"]
+
+最后、选择_Go to Asset Page_将打开工作负载的详细资产登录页面。
+
+image:Workload_Map_Asset_Page.png["工作负载资产页面"]
