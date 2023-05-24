@@ -10724,7 +10724,6 @@
   <block id="ab65509e81982c2ab448e5662c4ee09d" category="paragraph">以颜色显示的圆圈表示工作负载的警告或严重级别警报。将鼠标悬停在圆圈上可查看问题描述 摘要、或者单击圆圈可打开包含更多详细信息的滑出面板。</block>
   <block id="1c33583ae1317aec595232a0f94991fd" category="inline-image-macro">工作负载详细信息和警报</block>
   <block id="219e34cfe0519a78647d5d9fbcaf4c78" category="paragraph"><block ref="219e34cfe0519a78647d5d9fbcaf4c78" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">筛选</block>
   <block id="a3b909b3fe9805c43492b38e32cc76dd" category="paragraph">与其他Cloud Insights 功能一样、您可以轻松地设置筛选器、以关注所需的特定对象或工作负载属性。</block>
   <block id="e4fe29302896c288d2a9ee7fe931c67b" category="inline-image-macro">工作负载映射筛选</block>
   <block id="45a01cb04b2dc86e6def6376c184f9a1" category="paragraph"><block ref="45a01cb04b2dc86e6def6376c184f9a1" category="inline-image-macro-rx" type="image"></block></block>
@@ -11177,4 +11176,8 @@
   <block id="37b418c8c2b422040e90081e18556979" category="section-title">登录问题</block>
   <block id="04e7b6395fd3a2be3a25869ea1196f3d" category="cell">安装NetApp Kubenetes Monitoring Operator后、我的日志中立即显示以下内容：[HTTP inputs.prometheus] Error in plugin: Error m制作HTTP请求时出错<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 获取<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 拨号&lt;namespace&gt; ：LOOKUP KUbe状态指标.tcp.svc.cluster-local：无此主机</block>
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。</block>
+  <block id="8ec4bb0d2cdd89c1777e072a7f038e51" category="section-title">查找和筛选</block>
+  <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">同样、在_find_字段中键入字符串将突出显示匹配的工作负载。</block>
+  <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">在"查找"框中键入将突出显示工作负载</block>
+  <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

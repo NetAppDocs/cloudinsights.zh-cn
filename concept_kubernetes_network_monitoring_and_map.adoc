@@ -70,11 +70,15 @@ image:Workload_Map_Slideout_with_Alert.png["工作负载详细信息和警报"]
 
 
 
-== 筛选
+== 查找和筛选
 
 与其他Cloud Insights 功能一样、您可以轻松地设置筛选器、以关注所需的特定对象或工作负载属性。
 
 image:Workload_Map_Filtering.png["工作负载映射筛选"]
+
+同样、在_find_字段中键入字符串将突出显示匹配的工作负载。
+
+image:Workload_Map_Find_Highlighting.png["在\"查找\"框中键入将突出显示工作负载"]
 
 
 
