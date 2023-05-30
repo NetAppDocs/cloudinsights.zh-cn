@@ -62,8 +62,6 @@ image:StorageVirtualization_StorageSummary.png["显示虚拟和备份存储信�
 
 === 报告Kubbernetes数据
 
-Cloud Insights现在可以报告所有Kub联网 数据、包括PV、PVC、工作负载、集群和命名空间。
-
 Cloud Insight收集的Kubernetes数据(包括永久性卷(PV)、PVC、工作负载、集群和命名区)现在可用于报告、支持成本分摊、趋势分析、预测、TTF计算、 和其他业务报告有关Kubbernetes指标的信息。
 
 
