@@ -38,3 +38,23 @@ NOTE: Cloud Insights 联邦版不提供工作负载安全性。
 * Active Directory 收集失败会报告为警告；它不会影响勒索软件检测。
 * 现在， Getting Started 设置列表包括一个新的 _Configure email notifications 阶段。
 
+
+
+
+== 正在接收代理和Data Collector升级通知
+
+* 在"Data Collection Health Alerts"(数据收集运行状况警报)中输入电子邮件ID。
+* 此时、"Enable upgrade通知"复选框将变为启用状态。
+* 代理和Data Collector升级电子邮件通知会在计划升级的前一天发送到电子邮件ID。
+
+
+
+
+== 故障排除
+
+|===
+| * 问题： * | * 请尝试此操作： * 
+
+
+| "Data Collector运行状况警报"中存在电子邮件ID、但我未收到通知。 | 通知电子邮件从NetApp Cloud Insights域发送、即从_accounts@service.cloudinsights.netapp.com_发送。某些公司会阻止来自外部域的传入电子邮件。确保来自NetApp Cloud Insights域的外部通知已列入白名单。 
+|===
