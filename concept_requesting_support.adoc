@@ -114,7 +114,7 @@ NOTE: 您必须注册才能 <<Activating support entitlement and accessing suppo
 
 * link:https://www.netapp.com/us/contact-us/support.aspx["* 电话 *"]
 * link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["* 支持服务单 *"]
-* *聊天*—您将与NetApp支持人员联系以获得帮助(仅限工作日)。任何Cloud Insights 屏幕右上角的*帮助>实时聊天*菜单选项均提供聊天功能。
+* *Chat*-您将与NetApp支持人员联系以获得帮助(仅限工作日)。任何Cloud Insights 屏幕右上角的*帮助>实时聊天*菜单选项均提供聊天功能。
 
 
 您也可以通过单击来申请销售支持 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["* 联系销售人员 *"] 链接。
