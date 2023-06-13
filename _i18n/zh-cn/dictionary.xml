@@ -11206,4 +11206,9 @@
 使用基于前缀的搜索以递归方式查看给定文件夹下的所有活动(分层搜索)。例如、_/path1/path2/path3_或_"/path1/path2/path3"_将以递归方式列出_/path1/path2/path3_下的所有活动。
 或者、使用所有活动选项卡下的"Add to Filter"(添加到筛选器)选项。</block>
   <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">*Chat*-您将与NetApp支持人员联系以获得帮助(仅限工作日)。任何Cloud Insights 屏幕右上角的*帮助&gt;实时聊天*菜单选项均提供聊天功能。</block>
+  <block id="b2997605f7b826343b475f71837415f4" category="section-title">日志位置</block>
+  <block id="21872dffda230726cb93a6dddff7dd00" category="paragraph">Telegraf日志消息会从stdout重定向到以下日志文件(默认为)：</block>
+  <block id="176f2e3b515143c4119028872457ab70" category="list-text">rell/CentOS：/var/log/centraf/telegraf.log</block>
+  <block id="dba98037ac90ffd514afa8ae59edc426" category="list-text">Ubuntu或Debian：/var/log/unnellagaf/telegraf.log</block>
+  <block id="e6c0bd06ad9776dae0a5cf43e60b0ff4" category="list-text">Windows：C：\Program Files\tringaf\telegraf.log</block>
 </blocks>

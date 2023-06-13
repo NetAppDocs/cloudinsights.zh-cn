@@ -50,6 +50,17 @@ NOTE: 如果您使用的是代理，请在安装 Telegraf 代理之前阅读适�
 
 
 
+=== 日志位置
+
+Telegraf日志消息会从stdout重定向到以下日志文件(默认为)：
+
+* rell/CentOS：/var/log/centraf/telegraf.log
+* Ubuntu或Debian：/var/log/unnellagaf/telegraf.log
+* Windows：C：\Program Files\tringaf\telegraf.log
+
+
+
+
 === Windows
 
 
