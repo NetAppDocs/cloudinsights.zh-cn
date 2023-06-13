@@ -39,7 +39,7 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 | 电报 |  | 配置选项、可自定义操作员的安装 
 
 
-|  | secionInterval | 指标收集间隔(以秒为单位) 
+|  | secionInterval | 指标收集间隔(以秒为单位)(最大= 60秒) 
 
 
 |  | dsCpuLimit | 用于数据终端的CPU限制 
