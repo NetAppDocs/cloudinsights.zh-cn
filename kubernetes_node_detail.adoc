@@ -5,7 +5,17 @@ keywords: kubernetes, pods, clusters, nodes. troubleshooting, planning
 summary: 通过 Kubernetes 节点详细信息页面，您可以深入了解后端 PV 和 Pod 存储。 
 ---
 = Kubernetes Node 详细信息页面
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

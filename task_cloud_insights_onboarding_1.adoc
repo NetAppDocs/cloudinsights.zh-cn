@@ -4,7 +4,18 @@ permalink: task_cloud_insights_onboarding_1.html
 summary: 注册 Cloud Insights 并创建环境。 
 ---
 = Cloud Insights 入职
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:keywords: Cloud Insights, documentation, help, onboarding, getting started,
+:toc-position: content
 
 
 [role="lead"]

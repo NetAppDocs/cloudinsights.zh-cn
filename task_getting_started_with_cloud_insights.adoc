@@ -5,9 +5,20 @@ summary: Cloud Insights 入门。
 keywords: invite, roles, data collector, acquisition unit, AU 
 ---
 = 开始收集数据
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
+[role="lead"]
 注册 Cloud Insights 并首次登录到您的环境后，系统将引导您完成以下步骤，以便开始收集和管理数据。
 
 数据收集器可从存储设备，网络交换机和虚拟机等数据源发现信息。收集的信息用于分析，验证，监控和故障排除。

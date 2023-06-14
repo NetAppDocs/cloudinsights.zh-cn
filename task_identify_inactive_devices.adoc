@@ -5,7 +5,17 @@ keywords: inactive, device,
 summary: 通过确定非活动设备，您可以选择将其删除或将其分配给活动角色。 
 ---
 = 确定非活动设备
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

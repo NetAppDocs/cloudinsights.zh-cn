@@ -5,7 +5,17 @@ summary: 说明了生存时间（ TTL ）和缩减采样
 keywords: time-to-live, TTL, downsampling, downsample, 
 ---
 = 生存时间（ TTL ）和缩减采样数据
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

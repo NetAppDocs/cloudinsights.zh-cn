@@ -5,7 +5,17 @@ keywords: audit, users, activities
 summary: Audit 可提供 Cloud Insights 系统中系统和用户活动的视图。 
 ---
 = 审核
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

@@ -5,12 +5,15 @@ keywords: Forensic, entity, entity overview, entity behavior, entities
 summary: 取证实体页面 
 ---
 = 取证实体页面
+:toc: macro
 :hardbreaks:
 :allow-uri-read: 
+:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 " 取证实体 " 页面提供了有关环境中实体活动的详细信息。

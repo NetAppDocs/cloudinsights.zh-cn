@@ -5,7 +5,17 @@ summary: 在本节中，您将找到一些提示和技巧，可帮助您解决 C
 keywords:  
 ---
 = 对 Cloud Insights 问题进行故障排除
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

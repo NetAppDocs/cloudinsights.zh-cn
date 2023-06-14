@@ -5,7 +5,17 @@ summary: 从一个控制平台构建、保护和管理混合多云数据资产�
 keywords: bluexp, cloud manager, cm, storage, data, services, integrated 
 ---
 = Cloud Insights 是BlueXP的一部分
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

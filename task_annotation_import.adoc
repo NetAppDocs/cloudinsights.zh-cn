@@ -5,7 +5,17 @@ keywords: annotations, import, api
 summary: 您可以使用Cloud Insights API导入标注和应用程序。 
 ---
 = 导入标注
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

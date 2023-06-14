@@ -5,7 +5,17 @@ summary: 查看已创建的查询
 keywords: query, queries, viewing 
 ---
 = 查看查询
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

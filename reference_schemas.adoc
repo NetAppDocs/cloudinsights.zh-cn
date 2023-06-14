@@ -5,7 +5,17 @@ summary: 用于报告的数据仓库架构图和表
 keywords: dwh, data warehouse, schema, reporting 
 ---
 = 用于报告的 Cloud Insights 架构
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

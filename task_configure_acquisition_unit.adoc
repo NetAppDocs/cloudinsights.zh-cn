@@ -5,7 +5,17 @@ keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstal
 summary: 采集单元在Windows和Linux上安装、卸载、配置代理支持等。 
 ---
 = 配置采集单元
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

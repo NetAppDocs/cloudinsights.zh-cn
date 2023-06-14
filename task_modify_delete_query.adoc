@@ -5,14 +5,25 @@ summary: 修改或删除查询
 keywords: query, queries, modify, edit, delete, remove 
 ---
 = 修改或删除查询
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
+
+[role="lead]"]
+如果要更改要查询的资产的搜索条件，可以更改与查询关联的条件。
 
 
 
 == 修改查询
-
-如果要更改要查询的资产的搜索条件，可以更改与查询关联的条件。
 
 .步骤
 . 单击 * 查询 * 并选择 * 显示所有查询 * 。

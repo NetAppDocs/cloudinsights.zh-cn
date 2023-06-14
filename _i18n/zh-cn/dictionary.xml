@@ -4997,7 +4997,6 @@
   <block id="5f9f2125ea94bc8ee63a894e33ebaf33" category="paragraph">可以在中找到追加信息 <block ref="0ee1b5ccb1dd9edb24ef60d421e0c18a" category="inline-link-macro-rx"></block>。</block>
   <block id="de2080ec5e0e147976f00793ebd67db1" category="summary">取证实体详细信息</block>
   <block id="ab440e736c2d9e3403efa72117388494" category="doc">取证实体详细信息</block>
-  <block id="d2386b3d08b7b3147c97ac77153b47f4" category="paragraph">目录：宏： hardbress ：：切换： 1 ：页脚：：：图标：字体： linkattrs ：：： imagesdir ： ./media/</block>
   <block id="0759459fd7984031945fba78588c75bb" category="paragraph">使用实体详细信息页面可访问有关实体的详细信息。</block>
   <block id="f8db4b534ba055c3a01a896220cf7409" category="paragraph">您可以访问</block>
   <block id="153bbbe3830b008df288fad38c0b3a83" category="list-text">实体配置文件</block>
@@ -5623,7 +5622,6 @@
   <block id="21648aceb436779ee1938a15ced12e7e" category="admonition">注销 Cloud Insights 将使您从 Cloud Central 注销。您还将从使用 Cloud Central 登录的其他 NetApp 云服务中注销。</block>
   <block id="d5d5b9f170a27fd5f88756592b939a58" category="summary">了解公司环境中使用的应用程序有助于您跟踪资产使用情况和成本。</block>
   <block id="66eb03874fd60842ce2afb5ab2f59e21" category="doc">按应用程序跟踪资产使用情况</block>
-  <block id="fcef7a70b7e9119c20e30e9ab1556015" category="paragraph">了解公司环境中使用的应用程序有助于跟踪资产使用情况和成本。</block>
   <block id="49376b02066c48dc7163dd18c3a35c8e" category="paragraph">在跟踪与环境中运行的应用程序关联的数据之前，您必须先定义这些应用程序并将其与相应的资产相关联。您可以将应用程序与以下资产相关联：主机，虚拟机，卷，内部卷， qtree ， 共享和虚拟机管理程序。</block>
   <block id="7a5c742197c3513b7a70556975974799" category="paragraph">本主题提供了一个示例，用于跟踪营销团队用于其 Exchange 电子邮件的虚拟机使用情况。</block>
   <block id="122304f18fc1f52e984e99abf836f513" category="paragraph">您可能需要创建一个类似于以下内容的表，以确定环境中使用的应用程序，并记下使用每个应用程序的组或业务单位。</block>
@@ -6015,7 +6013,6 @@
   <block id="11bb1da5c9cf0248245ce5b24119d183" category="paragraph">有关其他规模估算问题，请联系 NetApp 支持部门。</block>
   <block id="c5c601f0f7513cb66c54f7740aebd769" category="summary">IBM TotalStorage DS4000 数据收集器</block>
   <block id="bb368e45192fd41360b40a61c441bbf7" category="paragraph">此数据收集器从 IBM DS4000 存储系统采集清单和性能信息。有两种可能的配置（固件 6.x 和固件 7.x+ ），它们的值相同。</block>
-  <block id="18d3625d121f112f86fd37791d1bf10d" category="paragraph">Cloud Insightst 从 IBM DS4000 数据收集器采集以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="d9dc66c5dd0daf41b61af8de89a60066" category="list-text">每个 DS5 或 FAStT 阵列的 IP 地址</block>
   <block id="90708586f8afae2670c5e389c5b3df37" category="list-text">通过对阵列上两个控制器的 IP 地址执行 Ping 操作来验证访问权限</block>
   <block id="d0ad61d8d4e1d5d38bb6b0cb90a5d934" category="list-text">端口要求： 2463</block>
@@ -11211,4 +11208,59 @@
   <block id="e6c0bd06ad9776dae0a5cf43e60b0ff4" category="list-text">Windows：C：\Program Files\tringaf\telegraf.log</block>
   <block id="43087b2e6dfc2a4eecd03be4305fb0cb" category="cell">指标收集间隔(以秒为单位)(最大= 60秒)</block>
   <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">如果启用并强制实施SELinux、则可能会阻止Telegraf Pod访问Kubelnetes节点上的/proc/1/mountstats文件。要克服此限制、请编辑代理配置并启用run特权 设置。有关详细信息、请参见：<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>。</block>
+  <block id="3407e6f55320fe223ef04230620a7680" category="paragraph">Cloud Insights从IBM DS4000数据收集器采集以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="c65b3d448a7cc9416a433ee0c45038b9" category="summary">您可以为Cloud Insights配置手动更新AU软件、以便更好地控制环境中安装的软件。</block>
+  <block id="a7c522a068ca75556dee476101135cc4" category="doc">手动安装采集单元软件</block>
+  <block id="8b01a0d5e9fc950e10c5789185b76fab" category="paragraph">默认情况下、Cloud Insights会在部署更新时自动更新采集单元(AU)软件。但是、在安全受控环境中、可能无法或不需要自动更新。  在这种情况下、可以为Cloud Insights配置手动更新AU软件、以便更好地控制环境中安装的软件。</block>
+  <block id="7fa388dd2c2240646539be23019e8d18" category="paragraph">要手动下载和安装AU软件、请执行以下步骤。Cloud Insights提供了一个有用的Swagger文档页面、您可以使用该页面执行其中许多步骤、也可以使用自己的API脚本/命令。转至Admin &gt; API Access、然后单击"API Documentation"(API文档)链接。</block>
+  <block id="39d5d5a9880f1ad19fe6d2c1a8b95da4" category="paragraph">Linux和Windows的过程类似。</block>
+  <block id="f7c4249be54645abe9d6bbb85ffd95e3" category="section-title">在Linux上执行新的AU安装：</block>
+  <block id="f472c9f862f3493f5a8208582f693c5f" category="list-text">在Cloud Insights中、创建API令牌。</block>
+  <block id="a2bab409e871524b831f0d1ac1686378" category="list-text">导航到*Admin &gt; API Access*并选择*+API Access Token。</block>
+  <block id="c3a742ff169c1de23c1c540f84b7ba61" category="list-text">设置易于问题描述识别的*Name*和*Name*</block>
+  <block id="095edbf2eeed607f4203d4060d6bebab" category="list-text">类型：*采集单元*</block>
+  <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">权限：*读/写*</block>
+  <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">选择所需的*Expiry*和*Auto-Renew*值</block>
+  <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">复制生成的API访问令牌。必须先执行此步骤、然后才能关闭窗口。</block>
+  <block id="c53a7287de20acd49117a565baa3a38a" category="paragraph"><block ref="c53a7287de20acd49117a565baa3a38a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8321e64cb676f0708bf32c3a30cf0852" category="list-text">在Swagger ("Admin"&gt;"API Access"&gt;"API Documentation")中、使用令牌对Cloud Insights API进行授权</block>
+  <block id="0814188098e52dbb583fd206d0c62a95" category="list-text">单击Swagger屏幕右上角的_Authorize__</block>
+  <block id="636c77a99766c0f85a6b8365fd48a45f" category="list-text">将上面复制的令牌粘贴到Customer APIKey字段中</block>
+  <block id="a639e40f92af65b8c27156e43b7faa89" category="list-text">单击*Authorize*</block>
+  <block id="e90cef1e648cb27fd619c6f8c92f8f4d" category="list-text">关闭窗口</block>
+  <block id="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="paragraph"><block ref="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2cae2725952c883826876920381ecb59" category="list-text">使用以下API下载AU安装程序：//au/Installers/｛sp台｝/later_或//au/Installers/｛sp平台｝/｛version｝_ API：</block>
+  <block id="88eb9a112ead77fb26b1599f4f223fc1" category="list-text">平台：*Linux*</block>
+  <block id="52205a46ef276687ee5647ea8fe6eb0b" category="list-text">版本：*&lt;version&gt;*(最新或指定)</block>
+  <block id="8441f82f2a5dd29ac44e118b98df995c" category="inline-image-macro">用于检索最新AU版本的API</block>
+  <block id="ae6ea5b2f32189b7018c970fbb10e3bb" category="paragraph"><block ref="ae6ea5b2f32189b7018c970fbb10e3bb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6c827b541aa6a7d60d4a0c16c12d4ebc" category="admonition">如果您不下载最新版本、请与NetApp确认要指定下载的AU版本。</block>
+  <block id="d1720e1ae1c7ec3cfaaf2b6708405d4f" category="list-text">单击*下载文件*。如果在AU系统以外的系统上执行这些步骤、请将下载的文件复制到AU系统。</block>
+  <block id="07b7a71211b83fdb6affc9516bd8c884" category="list-text">或者、也可以在AU系统上运行生成的curl命令：</block>
+  <block id="1786f7c932f739c573815e056569419d" category="list-text">此时、安装程序文件应位于AU系统上。</block>
+  <block id="b6061fe0bcd58a5454c927579e898ab2" category="admonition">接下来的步骤需要使用临时令牌。请勿使用上面创建的API访问令牌。</block>
+  <block id="7c6a0e297c6fc179417eb79844b91920" category="list-text">在Cloud Insights API交换器中、使用_/au/oneTimeToken _ API创建一次性令牌。</block>
+  <block id="93a482f754d03c8395a72b120e6d0448" category="list-text">复制生成的一次性令牌。</block>
+  <block id="c7a15bab2443e9ad4efdb034095ab235" category="paragraph"><block ref="100d1787d5f8172a57c3e18a398e0c17" category="inline-image-macro-rx" type="image"></block>
+<block ref="0b1cbf7e91a826bb9e4ce0091ddf900c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5b2b856bd044010d0c003bdc6a5adebb" category="list-text">在要安装AU的计算机上、导航到包含已下载安装程序文件的文件夹。以下命令要求用户具有root权限。</block>
+  <block id="cc2e35144dbcb21079393a1ee5e98b11" category="list-text">解压缩安装程序文件</block>
+  <block id="f0aa130be42df30dfb32287298a294dc" category="list-text">将目录更改为生成的安装程序文件夹</block>
+  <block id="b03ba9c0b65f3d61c05a13e6e0556f6e" category="list-text">执行以下操作、将一次性令牌和安装程序版本导出到环境变量：</block>
+  <block id="f355abfc0309011b2480d033a0bd5a7c" category="list-text">运行以下命令，使用自定义用户和组安装CI：</block>
+  <block id="c2edf0fde07151d96c99ce933b5db7fc" category="paragraph">注意：如果您不想使用自定义用户和组、则可以使用默认的"cisys"用户和组。  在这种情况下、请运行上述安装命令、但不要指定用户和组。</block>
+  <block id="442acde7a27750391de6a8358d813ebf" category="paragraph">此时、AU软件将安装在系统上、并可由自定义用户和组访问。但是、您无法添加数据收集器。要手动执行此操作、必须将databources.war文件复制到正确的位置。</block>
+  <block id="aa65691c6297c950fcee712307bb1a91" category="list-text">导航到datsources.war的源位置、并在此验证zip文件：</block>
+  <block id="a97626ad22c898bbe0080f7f7799f0e0" category="list-text">记下默认datesources.war文件夹上的权限：</block>
+  <block id="43b4370cb1861295e2cf1d82e2cf71ce" category="list-text">要执行后续步骤、您必须切换到自定义用户(或注销root用户并使用登录用户)。</block>
+  <block id="c228e145e9e61000d0f54dd253874651" category="list-text">注意：如果您使用的是默认的"cisys"用户和组、则无需执行此步骤。</block>
+  <block id="579e7c70138d11bebf2d5787d6df5c96" category="list-text">注意：自定义用户可以是您在AU安装期间向cloudinsights-install.sh提供的自定义组的任何成员用户、也可以与您在AU安装期间提供的自定义用户相同或不同。</block>
+  <block id="802dfb282c205a5ce3de537f88b12f68" category="list-text">创建一个工作文件夹并调整为对其具有相同权限：</block>
+  <block id="93fb085f87c8ff2c36aa100fa213c9c8" category="list-text">注意：如果使用"cisys"用户和组、则这些用户和组将显示在上面的输出中。</block>
+  <block id="1c4e1e0caf2fa69be4c90526b51f5f8e" category="list-text">将_datesource-war-data-zip_复制&lt;version&gt;到工作文件夹。例如：</block>
+  <block id="bf52ab28c85a4589393e5d683a2d027e" category="list-text">更改为下载文件夹并解压缩文件：</block>
+  <block id="0fcc45fcd734d4323f5a5d9ea3360815" category="list-text">确保所有文件的用户、组和权限均正确无误：</block>
+  <block id="a0698382f5e68c4355ea29e32842015d" category="list-text">注意：如果您计划使用不同的自定义用户管理AU、请确保将所有者和组的组权限设置为读写(_chmod 660…_)</block>
+  <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">重新启动AU。</block>
+  <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">在Cloud Insights中、导航到*管理&gt;数据收集器*并选择*采集单元*选项卡。从AU右侧的“三个点”菜单中选择_Restart。</block>
 </blocks>

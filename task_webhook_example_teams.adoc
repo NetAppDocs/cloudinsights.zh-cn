@@ -5,10 +5,20 @@ keywords: webhook, notification, Microsoft, Teams, integration
 summary: 创建一个网络挂钩，以便针对 Microsoft 团队的性能或清单阈值发出警报 
 ---
 = 适用于 Microsoft 团队的 webhook 示例
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
-[role="lead lead"]
+[role="lead"]
 网络挂机允许用户使用自定义的网络挂机通道向各种应用程序发送警报通知。此页面提供了为团队设置 webhooks 的示例。
 
 

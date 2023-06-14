@@ -5,7 +5,17 @@ keywords: telegraf, installation, install, agent, telegraf agent
 summary: Cloud Insights 支持Telegraf作为其收集集成数据的代理、并可在Windows或Linux上进行配置。 
 ---
 = 配置代理以收集数据(Windows/Linux)
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

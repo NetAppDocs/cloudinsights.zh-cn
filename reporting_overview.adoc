@@ -5,7 +5,17 @@ summary: 使用 Cloud Insights 对数据进行预定义和自定义报告。
 keywords: reporting, cognos, data warehouse, dwh 
 ---
 = Cloud Insights 报告概述
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

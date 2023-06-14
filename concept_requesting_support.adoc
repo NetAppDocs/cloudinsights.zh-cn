@@ -5,7 +5,17 @@ summary: 您可以查看知识库文章，与 NetApp 社区联系，查看视频
 keywords: support, knowledgebase, documentation, community, chat, videos, help, contact, intercom 
 ---
 = 请求支持
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 

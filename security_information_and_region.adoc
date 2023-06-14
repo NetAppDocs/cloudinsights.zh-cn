@@ -5,7 +5,17 @@ summary: Cloud Insights 会在整个发布生命周期遵循安全最佳实践�
 keywords: security, risk, protection 
 ---
 = 信息和区域
+:toc: macro
+:hardbreaks:
+:toclevels: 2
 :allow-uri-read: 
+:toc: 
+:toclevels: 2
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

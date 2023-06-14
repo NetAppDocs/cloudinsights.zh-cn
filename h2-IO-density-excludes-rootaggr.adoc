@@ -5,7 +5,17 @@ keywords: notifications, annotations, queries, applications,
 summary: IO 密度 
 ---
 = 确保 IO 密度数据仅描述内部数据卷
+:toc: macro
+:hardbreaks:
+:toclevels: 1
 :allow-uri-read: 
+:toc: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]
