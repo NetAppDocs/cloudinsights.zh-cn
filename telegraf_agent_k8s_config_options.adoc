@@ -19,7 +19,7 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 
 
 [role="lead"]
-可以自定义NetApp Kubnetes Monitoring Operator的安装和配置。
+。 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes监控操作员"] 可以自定义安装和配置。
 
 下表列出了AgentConfiguration文件的可能选项：
 
@@ -41,9 +41,6 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 
 
 |  | 代理格式：代理：服务器：端口：用户名：密码：noProxy：isTelegrafProxyEnabled：isAuProxyEnabled：isFluentbitProxyEnabled：isCollectorProxyEnabled： | 客户可选择设置代理。这通常是客户的公司代理。 
-
-
-|  | 代理UUID | 所有Cloud Insights 操作员安装中唯一标识的字符串。这通常由Cloud Insights 自动设置。 
 
 
 | 电报 |  | 配置选项、可自定义操作员的安装 
