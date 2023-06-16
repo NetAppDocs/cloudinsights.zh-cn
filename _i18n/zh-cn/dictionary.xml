@@ -11261,4 +11261,5 @@
   <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">重新启动AU。</block>
   <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">在Cloud Insights中、导航到*管理&gt;数据收集器*并选择*采集单元*选项卡。从AU右侧的“三个点”菜单中选择_Restart。</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 可以自定义安装和配置。</block>
+  <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">监视操作员选项</block>
 </blocks>
