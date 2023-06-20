@@ -10462,7 +10462,6 @@
   <block id="d26ec9bd59920d141e6767082f0524dc" category="summary">您可以使用脚本模拟勒索软件攻击、以测试或演示工作负载安全性</block>
   <block id="5dfe08a6b6855a1ebeedad2a282e5824" category="cell">NFS的用户(IP地址)阻止正常工作、但对于SMB/CIFS、我看到错误消息："SID到DomainName转换失败。原因超时：未建立套接字"</block>
   <block id="e8aaaf728a906b8e9d531bb2447c9cf2" category="cell">如果_CSUser_无权执行ssh、则可能会发生这种情况。(确保在集群级别连接、然后确保用户可以执行ssh)。_CSUser_角色需要这些权限。<block ref="3066b8235934d1594e54f7b043a73648" category="inline-link-rx"></block>对于具有集群凭据的_CSUser_、请从ONTAP 命令行执行以下操作： security login role create -role csrole -cmddirname "vserver export-policy rule"-access all security login role create -role csrole -cmddirname set -access all security login role create -role csrole -cmddirname "vserver cifs session"-access all security login role create -role csrole -cmddirname "Vserver services access-check authentication translate"-all security login logine. role create -role csrole -cmddirname "vserver name-maping"-access all如果未使用_csUser_、并且使用了集群级别的管理员用户、请确保管理员用户对ONTAP 具有ssh权限。</block>
-  <block id="c41953836f0cf08f49697db26ddf6a47" category="cell">运行以下许可版本之一的计算机：Red Hat Enterprise Linux 7.x、8.x 64位CentOS 7.x 64位CentOS 8 Stream Ubuntu 20到22 64位Rocky 8.x 64位、Rocky 9.x 64位此计算机不应运行其他应用程序级别软件。建议使用专用服务器。不支持SE (增强安全性) Linux。</block>
   <block id="39331dcf20cdc1eb4f9f6846be32417f" category="list-text">当Cloud Insights 监控后端存储且Kubernetes与Docker容器运行时结合使用时、Cloud Insights 可以显示NFS和iSCSI的POD到PV到存储映射和指标；其他运行时仅显示NFS。</block>
   <block id="fb4d860c1938626a4cb9b8f66c6eb6f2" category="section-title">2023年3月</block>
   <block id="eefa6cd78e40f4194cf842026e05a215" category="section-title">适用于ONTAP 9.9+的云连接已弃用</block>
@@ -11264,4 +11263,16 @@
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">监视操作员选项</block>
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">我没有看到为集群中的Kubnetes CronJobs收集任何指标。</block>
   <block id="81467098050f12a1f4ece9dea82405f0" category="cell">验证您的Kubbernetes版本(即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是v1.20.x或更低版本、则这是预期的限制。  随NetApp Kubernetes监控操作员部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。</block>
+  <block id="9f0b6346113de87bff4b194abaf599f1" category="cell">运行以下许可版本之一的计算机：
+
+Red Hat Enterprise Linux 7.x、8.x 64位
+CentOS 7.x 64位
+CentOS 8流
+Ubuntu 20至22 64位
+Rocky 8.x 64位、Rocky 9.x 64位
+SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4
+
+此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
+
+不支持SE (增强安全性) Linux。</block>
 </blocks>
