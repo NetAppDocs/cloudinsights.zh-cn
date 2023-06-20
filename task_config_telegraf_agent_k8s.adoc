@@ -509,5 +509,8 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 
 | 安装NetApp Kubenetes Monitoring Operator后、我的日志中立即显示以下内容：[HTTP inputs.prometheus] Error in plugin: Error m制作HTTP请求时出错 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 获取 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 拨号<namespace> ：LOOKUP KUbe状态指标.tcp.svc.cluster-local：无此主机 | 通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。 
+
+
+| 我没有看到为集群中的Kubnetes CronJobs收集任何指标。 | 验证您的Kubbernetes版本(即 `kubectl version`）。  如果是v1.20.x或更低版本、则这是预期的限制。  随NetApp Kubernetes监控操作员部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。

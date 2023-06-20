@@ -11262,4 +11262,6 @@
   <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">在Cloud Insights中、导航到*管理&gt;数据收集器*并选择*采集单元*选项卡。从AU右侧的“三个点”菜单中选择_Restart。</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 可以自定义安装和配置。</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">监视操作员选项</block>
+  <block id="02230bab9788e4843408e124331bb1ca" category="cell">我没有看到为集群中的Kubnetes CronJobs收集任何指标。</block>
+  <block id="81467098050f12a1f4ece9dea82405f0" category="cell">验证您的Kubbernetes版本(即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是v1.20.x或更低版本、则这是预期的限制。  随NetApp Kubernetes监控操作员部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。</block>
 </blocks>
