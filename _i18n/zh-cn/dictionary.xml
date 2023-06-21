@@ -11275,4 +11275,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4
 此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
 
 不支持SE (增强安全性) Linux。</block>
+  <block id="8b673d5f702e58efd947465ead5c9647" category="cell">Kube-state-metrics部署的CPU限制</block>
+  <block id="e49ddab01d68c08aeef7fdff59e6def6" category="cell">Kube-state-metrics部署的MEM限制</block>
 </blocks>
