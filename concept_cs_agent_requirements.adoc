@@ -31,12 +31,12 @@ NOTE: Cloud Insights 联邦版不支持存储工作负载安全性。
 
 | 操作系统 | 运行以下许可版本之一的计算机：
 
-Red Hat Enterprise Linux 7.x、8.x 64位
-CentOS 7.x 64位
-CentOS 8流
+Red Hat Enterprise Linux 7.x、8.x 64位、SELinux
+CentOS 7.x 64位、SELinux
+CentOS 8 Stream、SELinux
 Ubuntu 20至22 64位
-Rocky 8.x 64位、Rocky 9.x 64位
-SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4
+Rocky 8.x 64位、Rocky 9.x 64位、SELinux
+SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE 15 SP3上的SELinux
 
 此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
 
