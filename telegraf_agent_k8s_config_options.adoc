@@ -112,6 +112,12 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 | Kube-state-metrics |  | 可自定义操作员的KUbe状态指标安装的配置选项 
 
 
+|  | cpuLimit | Kube-state-metrics部署的CPU限制 
+
+
+|  | memLimit | Kube-state-metrics部署的MEM限制 
+
+
 |  | cpuQuest | KU状态指标部署的CPU请求 
 
 
@@ -122,12 +128,6 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 
 
 |  | labels | Kube-state-metrics应捕获+++的资源列表(以英文逗号分隔)示例：复制作业=[*]、守护程序=[*]、部署=[*]、ingress=[*]、作业=[*]、名称空间=[*]、节点=[*]、持久性卷=[*]、属性[*]、服务[*][=*] 
-
-
-|  | cpuLimit | Kube-state-metrics部署的CPU限制 
-
-
-|  | memLimit | Kube-state-metrics部署的MEM限制 
 
 
 | 日志 |  | 可自定义操作员日志收集和安装的配置选项 
@@ -211,13 +211,14 @@ spec:
   telegraf:
     # use these settings to fine tune data collection
     collectionInterval: 20s
-    #batchSize:
-    #bufferLimit:
-    #roundInterval:
-    #collectionJitter:
-    #precision:
-    #flushInterval:
-    #flushJitter:
+
+    # batchSize:
+    # bufferLimit:
+    # roundInterval:
+    # collectionJitter:
+    # precision:
+    # flushInterval:
+    # flushJitter:
 
     # Collect kubernetes.system_container metrics and objects in the kube-system|cattle-system namespaces for managed kubernetes clusters
     # (EKS, AKS, GKE, managed Rancher). Set this to true if you want collect these metrics.
@@ -242,6 +243,8 @@ spec:
     # rsMemRequest:
 
   kube-state-metrics:
+    # cpuLimit:
+    # memLimit:
     # cpuRequest:
     # memRequest:
 
