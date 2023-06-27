@@ -11284,4 +11284,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
 
 不支持SE (增强安全性) Linux。</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。</block>
+  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">编辑NetApp-monitoring配置代理配置、并将_dockerMetricCollectionEnabled"设置为false。  有关详细信息、请参见操作员的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">已启用dockerMetricCollection</block>
+  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集Docker指标。默认情况下、此值设置为true、系统将为基于Docker的内部部署K8s收集Docker指标。要禁用Docker指标收集、请将此选项设置为false。</block>
 </blocks>
