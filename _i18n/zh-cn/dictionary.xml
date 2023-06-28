@@ -11145,7 +11145,6 @@
   <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">要订阅，请转到*管理-&gt;订阅*。除了 * 订阅 * 按钮之外，您还可以查看已安装的数据收集器并计算估计定价。对于典型环境、您可以单击自助式AWS Marketplace按钮。如果您的环境包含或预期包含 1 ， 000 个或更多受管单元，则您有资格获得卷定价。</block>
   <block id="260d3a5336ca87727913d1aaec8359f7" category="list-text">Cohesity SmartFiles</block>
   <block id="a1a04ea3436c6b700db87f125d4f2daa" category="list-text">Dell EMC数据域</block>
-  <block id="125896ecc7af5f5e57ffa0aa99abe89e" category="paragraph">订阅计算器根据您估计需要的托管单元数量为您提供估计的每月Cloud Insights成本。当前值已预先填充、您可以调整这些值、以帮助您规划未来的预计增长。您可以调整基础架构和/或Kubornetes的值。</block>
   <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">您的预计标价成本将根据您的订阅条款而变化。
 注意：计算器仅用于估计。订阅时将设置您的确切定价。</block>
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">显示基础架构和Kubnetes成本估算计算器的订阅页面</block>
@@ -11281,4 +11280,7 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">在数据保留期限之后清除(有关详细信息、请参见版本页面)。请注意、根据定义、监控器没有解决问题的条件、因此警报将保持_active__状态、并禁止所有后续的警报、这些警报与此监控器生成的_group_by_匹配、直到数据保留期限结束为止。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根据日志条目解决：在发现日志行时按照以下定义中所述解决警报、或者在数据保留期限过后清除。</block>
   <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMB协议3.1及更早版本。  请注意、工作负载安全性不适用于使用FlexCache 的SMB配置。从ONTAP 9.7开始、在使用FlexCache的系统中、Fpolicy仅在NFS环境中受支持。</block>
+  <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1个受管单元= 4个库贝特斯vCPU</block>
+  <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">订阅计算器可帮助您根据所需的托管单元数量估算Cloud Insights订阅成本。当前值已预先填充、您可以调整这些值、以帮助您规划未来的预计增长。您可以调整基础架构和/或Kubornetes的值。</block>
+  <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">托管单元使用情况视图</block>
 </blocks>
