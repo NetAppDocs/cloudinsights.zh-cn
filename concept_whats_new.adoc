@@ -43,12 +43,6 @@ image:Metering_Usage.png["计量使用情况明细"]
 
 
 
-=== 报告
-
-Cloud Insights的报告组件已重新命名为" Cloud Insights分析"。不过不用担心；功能保持不变。
-
-
-
 === 收集器/采集更改：
 
 已进行以下数据收集器/采集单元更改：
