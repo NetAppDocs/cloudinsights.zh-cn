@@ -23,7 +23,7 @@ summary: 配置Dell EMC Unisphere REST数据收集器。
 
 请注意、在Unisphere 10.0之前、Dell/EMC不会引入每个卷的统计信息—此数据收集器支持9.2.0+、但无法收集卷统计信息、因为它们不存在。
 
-一个适用于VmaX/PowerMax的Unisphere实例可能正在管理一个或多个Symmetrix 3或更高版本的存储阵列-此收集器将默认尝试发现所有这些阵列。
+一个Unisphere for Vmax/PowerMax实例可能正在管理一个或多个Symmetrix Vmax 3或更高版本的存储阵列-此收集器将默认尝试发现该Unisphere实例的"本地"所有存储阵列。如果Unisphere实例看到"远程"阵列(即通过SRDF复制连接的阵列)、则会忽略这些阵列、要发现这些阵列、您应在Cloud Insights中创建一个额外的Unisphere收集器、该站点中的任何Unisphere实例都会将其视为本地阵列。
 
 在配置方面、数据收集器需要Unisphere服务器的IP地址/FQDN、与端口8443的TCP连接以及用户名和密码。
 

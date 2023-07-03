@@ -10165,7 +10165,6 @@
   <block id="aa6591610b53847bfb4e19e53c0b4a05" category="cell">作业引擎</block>
   <block id="c0accd1360dce3944f0726ef704217c0" category="paragraph">此数据收集器从适用于PowerMax / Vmax 3管理系统的Dell EMC Unisphere采集清单和性能数据。</block>
   <block id="7e8e4c2fd39cb301da1af7afb93e8962" category="paragraph">请注意、在Unisphere 10.0之前、Dell/EMC不会引入每个卷的统计信息—此数据收集器支持9.2.0+、但无法收集卷统计信息、因为它们不存在。</block>
-  <block id="e3a699248ac2af0be8e4036425dd0b04" category="paragraph">一个适用于VmaX/PowerMax的Unisphere实例可能正在管理一个或多个Symmetrix 3或更高版本的存储阵列-此收集器将默认尝试发现所有这些阵列。</block>
   <block id="da3865d5e1a7d870e4707356b907f643" category="paragraph">在配置方面、数据收集器需要Unisphere服务器的IP地址/FQDN、与端口8443的TCP连接以及用户名和密码。</block>
   <block id="bd4968db059d70adcf0b67815d5ba188" category="list-text">Unisphere服务器的IP地址/完全限定域名</block>
   <block id="d81b3ffd1c59a02baf7dbf4e905471a5" category="list-text">用户名和密码</block>
@@ -11284,4 +11283,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">编辑现有报告</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">请注意、在默认位置编辑文件会面临在下次刷新报告目录时覆盖这些报告的风险。建议使用新名称保存已编辑的报告、或者将其存储在非默认位置。</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">在Forsics_All Activity_或_indices_页面的筛选器中键入包含通配符(如星号(*))的某些字母后、页面加载速度非常慢。</block>
+  <block id="1099e56ef7a6e4b5d3d41443b52d83aa" category="paragraph">一个Unisphere for Vmax/PowerMax实例可能正在管理一个或多个Symmetrix Vmax 3或更高版本的存储阵列-此收集器将默认尝试发现该Unisphere实例的"本地"所有存储阵列。如果Unisphere实例看到"远程"阵列(即通过SRDF复制连接的阵列)、则会忽略这些阵列、要发现这些阵列、您应在Cloud Insights中创建一个额外的Unisphere收集器、该站点中的任何Unisphere实例都会将其视为本地阵列。</block>
 </blocks>
