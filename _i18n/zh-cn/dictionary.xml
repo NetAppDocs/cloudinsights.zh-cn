@@ -11168,7 +11168,6 @@
   <block id="2d6f8cb777e4d6f5a232c7cc211f17a7" category="paragraph"><block ref="2d6f8cb777e4d6f5a232c7cc211f17a7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6300dcea0c6867921931afe8fd5ccb4b" category="section-title">Kubnetes网络监控和映射适用于所有</block>
   <block id="00f8e358a2df2f5a1f3b0492b0d11763" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> 通过映射Kubernetes工作负载之间的依赖关系来简化故障排除、从而实时了解Kubernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。许多客户发现它在预览期间很有用、现在每个人都可以使用它。</block>
-  <block id="cc833fa398edd8b5e8c8888354dea479" category="paragraph">Cloud Insights的报告组件已重新命名为" Cloud Insights分析"。不过不用担心；功能保持不变。</block>
   <block id="05a035fa9dd41dc72ca47e19017a5669" category="section-title">收集器/采集更改：</block>
   <block id="fce2019180d27d21008b37f6d8133ab8" category="paragraph">已进行以下数据收集器/采集单元更改：</block>
   <block id="799e9d9ce6893191f44a0124794ae43a" category="list-text">数据域和延迟MU的计量值为40 TiB：1 MU。</block>
@@ -11283,4 +11282,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1个受管单元= 4个库贝特斯vCPU</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">订阅计算器可帮助您根据所需的托管单元数量估算Cloud Insights订阅成本。当前值已预先填充、您可以调整这些值、以帮助您规划未来的预计增长。您可以调整基础架构和/或Kubornetes的值。</block>
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">托管单元使用情况视图</block>
+  <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">编辑现有报告</block>
+  <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">请注意、在默认位置编辑文件会面临在下次刷新报告目录时覆盖这些报告的风险。建议使用新名称保存已编辑的报告、或者将其存储在非默认位置。</block>
 </blocks>
