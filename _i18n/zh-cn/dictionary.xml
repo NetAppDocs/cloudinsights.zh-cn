@@ -11179,7 +11179,6 @@
   <block id="62a0cfde3778aefa78f4b178eaa97a76" category="paragraph">Cloud Insights附带了以下系统监视器：</block>
   <block id="ba58cfebfc4230ab4f6ab822a49aa1fe" category="list-text">Storage VM FCP服务不可用</block>
   <block id="99f7dcb5d0bc844ef56cc6cd317f2555" category="list-text">Storage VM iSCSI服务不可用</block>
-  <block id="2c20388998fe9dc758bf7fb123ac7a32" category="cell">在Forsics_All Activity_或_indices_页面的筛选器中键入包含通配符(如星号(\*))的某些字母后、页面加载速度会非常慢。</block>
   <block id="2fdbb1db4127b83dadc134e367935c11" category="cell">搜索字符串中的星号(\*)将搜索所有内容。但是，诸如_*&lt;searchTerm&gt;_或_*&lt;searchTerm&gt;*_之类的前导通配符字符串会导致查询速度较慢。
 要获得更好的性能，请改用前缀字符串，格式为_&lt;searchTerm&gt;*_(换言之，请附加星号(*)_after_搜索词)。
 示例：使用字符串_testvolume*_，而不是_*testvolume_或_*test*volume_。
@@ -11284,4 +11283,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">托管单元使用情况视图</block>
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">编辑现有报告</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">请注意、在默认位置编辑文件会面临在下次刷新报告目录时覆盖这些报告的风险。建议使用新名称保存已编辑的报告、或者将其存储在非默认位置。</block>
+  <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">在Forsics_All Activity_或_indices_页面的筛选器中键入包含通配符(如星号(*))的某些字母后、页面加载速度非常慢。</block>
 </blocks>
