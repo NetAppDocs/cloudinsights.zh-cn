@@ -19,7 +19,7 @@ summary: 配置Dell EMC Isilon / PowerScale REST数据收集器。
 
 
 [role="lead"]
-Cloud Insights 使用Dell EMC Isilon / PowerScale REST数据收集器从Dell EMC Isilon或PowerScale存储获取清单和性能数据。
+Cloud Insights 使用Dell EMC Isilon / PowerScale REST数据收集器从Dell EMC Isilon或PowerScale存储获取清单和性能数据。此收集器支持运行OneFS 8.0.0及更高版本的阵列。
 
 
 
@@ -60,6 +60,7 @@ Cloud Insights 从此数据收集器获取以下清单信息。对于 Cloud Insi
 * 用户帐户和密码。此帐户不需要为admin/root、但您必须为您的服务帐户授予大量只读权限-请参见下表
 * Dell EMC Isilon / PowerScale集群的IP地址/完全限定域名
 * 对端口8080的HTTPS访问
+* 运行OneFS 8.0.0或更高版本的Isila/PowerScale集群
 
 
 [cols="3*"]
