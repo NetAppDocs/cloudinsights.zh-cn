@@ -3773,7 +3773,6 @@
   <block id="cbbe9ca36f7a864171d70f736ed408bd" category="list-text">配置数据</block>
   <block id="b38208d6c0caf426b9ce527a7f6fa072" category="paragraph">此表汇总了客户提供的用于管理客户清单和操作的配置数据，例如受监控设备的主机名或 IP 地址，轮询间隔，超时值等</block>
   <block id="ffb85bfe93f1d2f1654a7048b87f0403" category="list-text">机密</block>
-  <block id="d21b579e2da249b92e4bd86e3e8811ca" category="paragraph">机密信息由 Cloud Insights 采集单元用于访问客户设备和服务的凭据组成。这些凭据使用 AES-256 进行加密，私钥仅存储在采集单元上，不会离开客户环境。由于这种设计，即使有特权的 Cloud Insights SRE 也无法以纯文本形式访问客户机密。</block>
   <block id="6bf565eb0af1d9c4319c14b7f1ed3b40" category="list-text">功能数据</block>
   <block id="acc33fbeb51f2c273dbbbe898cd55111" category="paragraph">这是由于 NetApp 提供云数据服务而生成的数据，该服务在云数据服务的开发，部署，操作，维护和安全方面向 NetApp 提供信息。功能数据不包含客户信息或个人信息。</block>
   <block id="8a0aeae003bb44ce51746437118cac5d" category="list-text">用户访问数据</block>
@@ -11288,4 +11287,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 <block ref="abda75af4f4de4a9d5c96cfad5c94c77" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ba538d1194e2af4196c883d4ad4d8417" category="paragraph">Cloud Insights 使用Dell EMC Isilon / PowerScale REST数据收集器从Dell EMC Isilon或PowerScale存储获取清单和性能数据。此收集器支持运行OneFS 8.0.0及更高版本的阵列。</block>
   <block id="6776f941038bab0f04ff47368b5bef54" category="list-text">运行OneFS 8.0.0或更高版本的Isila/PowerScale集群</block>
+  <block id="ffa95e8fd7e458c2481c8a1213dd74e9" category="paragraph">机密信息由 Cloud Insights 采集单元用于访问客户设备和服务的凭据组成。这些凭据使用强非对称加密进行加密、私钥仅存储在采集单元上、绝不会离开客户环境。由于这种设计，即使有特权的 Cloud Insights SRE 也无法以纯文本形式访问客户机密。</block>
 </blocks>
