@@ -10752,7 +10752,6 @@
   <block id="2ed6d0911bda563375b8a7f38ece8cba" category="paragraph">要更新代理、请使用命令</block>
   <block id="9d6898c9d6fff2bd62d85b66643bb3d1" category="doc">洞察：回收ONTAP 冷存储</block>
   <block id="0d76fbb36f181c92649274af9d5b537e" category="paragraph">回收ONTAP 冷存储Insight可提供有关ONTAP 系统上卷的冷容量、潜在成本/电耗节省和建议操作项的数据。</block>
-  <block id="dc258ad625dfe61afe78bdd8eaced72a" category="admonition">回收ONTAP 冷存储Insight被视为 <block ref="27c8300c0999ba5a7834ba70e02e86cc" category="inline-link-macro-rx"></block> 功能、因此可能会更改。</block>
   <block id="62cbec5499f7528b78b111c904e78b71" category="paragraph">要查看这些洞察、请导航到*信息板&gt;洞察力*、然后查看_RecaLate ONTAP Cold Storage_ Insight。请注意、只有在Cloud Insights 检测到冷存储时、此Insight才会列出受影响的存储、否则您将看到"全部清除"消息。</block>
   <block id="da69b960f5bb93c02fdd4886868836f6" category="inline-image-macro">Insight列表显示了3个包含冷数据的存储</block>
   <block id="7718245a70dcc6279bf8af86a72c2e35" category="paragraph"><block ref="7718245a70dcc6279bf8af86a72c2e35" category="inline-image-macro-rx" type="image"></block></block>
@@ -10882,7 +10881,6 @@
   <block id="03dd8511b379b0b92595299b980d36e4" category="cell">MEM请求部署KIBEstate metrics</block>
   <block id="55b558c7ef820e6e00e5993b9e55d93b" category="cell">资源</block>
   <block id="3b720d9649ae501d73e8f8c4a7a15348" category="cell">要捕获的资源的逗号分隔列表。示例：cronjobs、守护程序集、部署、服务器、作业、名称空间、节点、persistentvolumeclaims、persistentvolumes、Pod、复制集、资源集合、服务、状态集</block>
-  <block id="d250be49afad7b894de05a3b7ae8bbae" category="cell">Kube-state-metrics应捕获+++的资源列表(以英文逗号分隔)示例：复制作业=[*]、守护程序=[*]、部署=[*]、ingress=[*]、作业=[*]、名称空间=[*]、节点=[*]、持久性卷=[*]、属性[*]、服务[*][=*]</block>
   <block id="2165e4fa5bddb65a31f6a0c495c2fa37" category="cell">日志</block>
   <block id="d795ec2d0a164433572a8d5d91b8fae0" category="cell">可自定义操作员日志收集和安装的配置选项</block>
   <block id="031104420a282e1bdb63e280c40a4938" category="cell">readFromHead</block>
@@ -11288,4 +11286,77 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="ba538d1194e2af4196c883d4ad4d8417" category="paragraph">Cloud Insights 使用Dell EMC Isilon / PowerScale REST数据收集器从Dell EMC Isilon或PowerScale存储获取清单和性能数据。此收集器支持运行OneFS 8.0.0及更高版本的阵列。</block>
   <block id="6776f941038bab0f04ff47368b5bef54" category="list-text">运行OneFS 8.0.0或更高版本的Isila/PowerScale集群</block>
   <block id="ffa95e8fd7e458c2481c8a1213dd74e9" category="paragraph">机密信息由 Cloud Insights 采集单元用于访问客户设备和服务的凭据组成。这些凭据使用强非对称加密进行加密、私钥仅存储在采集单元上、绝不会离开客户环境。由于这种设计，即使有特权的 Cloud Insights SRE 也无法以纯文本形式访问客户机密。</block>
+  <block id="16601c709d6f082c4421fe1d28974834" category="section-title">选择聚合、单位、环境格式</block>
+  <block id="0a9f1c237356720961c024fce3f78a12" category="section-title">聚合和单元</block>
+  <block id="c4d2b1e614724dc8838bf027b78d7fe8" category="paragraph">对于"值"列、您可以通过选择显示值的汇总方式以及选择显示这些值的单位来进一步细化查询结果。通过选择列顶角的"三个点"菜单可以找到这些选项。</block>
+  <block id="4d5e2bd7c10a04613e320165a2aef636" category="inline-image-macro">显示聚合、条件格式、单位显示和列重命名的查询页结果</block>
+  <block id="6359b5d0dddbd864f91ddfec03e1db49" category="paragraph"><block ref="6359b5d0dddbd864f91ddfec03e1db49" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e5771a362d88a71a657bfcd21ca54b3f" category="section-title">单位</block>
+  <block id="ae2ad730f8b9e34404a53be6603eb8e4" category="paragraph">您可以选择显示值的单位。例如、如果选定列显示原始容量、而这些值以GiB为单位显示、但您希望将其显示为TiB、则只需从单位显示下拉列表中选择TiB即可。</block>
+  <block id="d9ceca6b3a280ab6926157d124ea15d7" category="section-title">聚合</block>
+  <block id="e108aa85577531fd71feda784d41caf3" category="paragraph">使用同一令牌时、如果显示的值从基础数据汇总为"平均值"、 但是、如果您希望显示所有值的总和、请从_Group by _下拉列表(如果您希望任何分组值显示总和)或_Time聚合方式_下拉列表(如果您希望行值显示基础数据的总和)中选择"Sum (总和)"。</block>
+  <block id="4a0aedb71a2047b4501702b3bbc92002" category="paragraph">您可以选择按_Avg, Max, Min或SSum_汇总分组数据点。</block>
+  <block id="93ad26b5f738a3399877d18e809c4ffe" category="paragraph">您可以按_average、上次采集的数据点、最大值、最小值或SSum_汇总各个行的数据。</block>
+  <block id="d07a67a9bf91a7e251537433f822107d" category="section-title">条件格式</block>
+  <block id="b286203207ee36be1b0daa6eb3a4e2f8" category="paragraph">通过条件格式、您可以在查询结果列表中突出显示警告级别和关键级别阈值、从而即时显示异常值和异常数据点。</block>
+  <block id="4c941a5536be07eee34fa9b29bd005c9" category="inline-image-macro">查询页上的条件格式</block>
+  <block id="077eb3e55847ad3494e20a7b4b22abfd" category="paragraph"><block ref="077eb3e55847ad3494e20a7b4b22abfd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a83a3620bfc4182656b8b3bba751d85b" category="paragraph">每列的条件格式设置是单独的。例如、您可以为容量列选择一组阈值、为吞吐量列选择另一组阈值。</block>
+  <block id="b416aba7067608c1cc6b8c37ef3753a2" category="section-title">重命名列</block>
+  <block id="c478709a4fc402ef4317c5de6580c96f" category="paragraph">重命名列会更改查询结果列表上显示的名称。如果将查询列表导出到.CSV、则新列名称也会显示在生成的文件中。</block>
+  <block id="c9cc8cce247e49bae79f15173ce97354" category="section-title">保存</block>
+  <block id="fb5978407d362c06c4a1c8ab72f464f1" category="section-title">2023年7月</block>
+  <block id="8d6bad49c4eea7a9cf27fd507f44022c" category="section-title">显示最近的更改</block>
+  <block id="210e83cd3251fb18d6b85fcfa343be97" category="paragraph">现在、Data Collector登录页面包含一个最近更改的列表。只需单击任何数据收集器登录页面底部的"Recent changes"按钮、即可显示数据收集器的最新更改。</block>
+  <block id="f7796a8f8185c8c1d264bce4bad25eee" category="inline-image-macro">最近更改示例</block>
+  <block id="57c43929c060c6b6731a95fee2e6ac4b" category="paragraph"><block ref="57c43929c060c6b6731a95fee2e6ac4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7106bac801506d89011c164f7281f183" category="section-title">操作员改进</block>
+  <block id="c6d80de9d1332fa033db27b32896a7ca" category="paragraph">对进行了以下改进 <block ref="89b3ece041fc6e3eaf91d1f18cb70562" category="inline-link-macro-rx"></block> 部署：</block>
+  <block id="2a81267b1c9c4611addccc58ffea4ce5" category="list-text">可选择绕过Docker指标收集</block>
+  <block id="62643d895d41437dc1854e6321bbca7d" category="list-text">能够向分电图和副本添加和自定义容差</block>
+  <block id="4157bbc9478996de33c632d1be8b4617" category="section-title">Insight：回收冷存储</block>
+  <block id="82f32ca1972e78989f469529f9e93e21" category="inline-link-macro">回收ONTAP冷存储Insight</block>
+  <block id="2703e92da2def9a17ac70dcd90bd8ab5" category="paragraph">。 <block ref="a08e2a6a27f9f88fce91a86a2a4aaa0e" category="inline-link-macro-rx"></block> 现在支持FlexGroup、现在可供所有客户使用。</block>
+  <block id="ffd94c31fd478610bae8a28f858f4967" category="section-title">操作员图像签名</block>
+  <block id="b58a6be98adebdc6de5cd79aa5cf7223" category="paragraph">对于使用私有存储库作为NetApp Kubernetes监控操作员的客户、您现在可以在操作员安装期间复制图像签名公共密钥、从而使您能够确认下载软件的真实性。在可选步骤中选择_复制图像签名公共密钥_按钮以将操作员图像上传至您的私有存储库_。</block>
+  <block id="b48c3957268aba1d2cb9774cdfb76b1a" category="inline-image-macro">下载公共密钥</block>
+  <block id="241e648e3eaa9f9b228db06a6cf403f7" category="paragraph"><block ref="241e648e3eaa9f9b228db06a6cf403f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="659e26ba67b278fd61383664fb1ed670" category="section-title">适用于查询的聚合、"环境格式"等</block>
+  <block id="7d7ce3fd83ffcf864f9c0285f8d8b6ab" category="paragraph">聚合、单元选择、条件格式和列重命名是信息板表小工具中最有用的功能、现在这些功能可用于 <block ref="f011edc734cda8dc5136e8e133afbd9b" category="inline-link-macro-rx"></block>。</block>
+  <block id="2b88de4b6bcbafe41a9b2e66846672ee" category="paragraph">这些功能现在可用于集成类型的数据(Kubnetes、ONTAP高级指标等)、不久将用于基础架构对象(存储、卷、交换机等)。</block>
+  <block id="2b4c43183ba48840a9a245b4b11ed0f1" category="section-title">用于审核的API</block>
+  <block id="8b0aa17c3cd1f148c8d84b8d9eade119" category="paragraph">现在、您可以使用API查询或导出已审核事件。转到"Admin"&gt;"API Access"、然后选择_API Documentation_链接以获取信息。</block>
+  <block id="f0d8b3eaae91d14b5849226503f1f130" category="inline-image-macro">用于审计的API交换器、宽度=400</block>
+  <block id="08eebc22528b6ae269764bbbfbd37d98" category="paragraph"><block ref="08eebc22528b6ae269764bbbfbd37d98" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9d9cc2d70ab2dbd66579e01f859b8da3" category="section-title">数据收集器：经济实惠</block>
+  <block id="3b9a2bab6a97ecd5c040555f8147b32b" category="paragraph">Cloud Insights现在支持三端经济型驱动程序、实现了以下优势：</block>
+  <block id="5b51c0421974fa9b23cfbe623de43e2e" category="list-text">了解POD到ONTAP qtree的映射和性能指标。</block>
+  <block id="0e6dfce910a8488d971baa1019611d0e" category="list-text">提供无缝故障排除、并轻松地从Kubbernetes Pod导航到后端存储</block>
+  <block id="d43e029b6a4626717198326d15889721" category="list-text">使用监控器主动检测后端性能问题</block>
+  <block id="ae233b4bee0ed9f611ffe211f5804e00" category="section-title">容差和污物</block>
+  <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">在_AgentConfiguration_中</block>
+  <block id="896815f9ea37359e86504cac9ab58b31" category="paragraph">要正确收集所有节点上的数据、_tendentaf_、_fluent-bit_和_net-oborder-demonSets必须在集群中的每个节点上计划一个POD。操作器已配置为允许某些众所周知的*污染*。如果您在节点上配置了任何自定义污染、从而阻止Pod在每个节点上运行、则可以为这些污染创建一个*容错* <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果已将自定义污染应用于集群中的所有节点、则还必须向操作员部署添加必要的容错值、以便可以计划和执行操作员POD。</block>
+  <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">损害和公差</block>
+  <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">详细了解Kubbernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
+  <block id="45698e13b1c2f7241751839133834506" category="cell">安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。</block>
+  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">编辑NetApp-monitoring配置代理配置、并将_dockerMetricCollectionEnabled"设置为false。  有关详细信息、请参见操作员的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">已启用dockerMetricCollection</block>
+  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集Docker指标。默认情况下、此值设置为true、系统将为基于Docker的内部部署K8s收集Docker指标。要禁用Docker指标收集、请将此选项设置为false。</block>
+  <block id="bb0a12c3834207119851374142a76ac0" category="cell">ds.公差</block>
+  <block id="77e9ea38d66b01840eaf712dab598ce0" category="cell">Telegraf-DS的额外耐受性。</block>
+  <block id="569d3e422e1e57a8d8f17b102bb10bfc" category="cell">Rs公差</block>
+  <block id="0a1cb9f6e7c89d89c765fdd1efa6183b" category="cell">Telegraf-RS额外的耐受性。</block>
+  <block id="d6c26478ca41a23cc9741a4e92576269" category="cell">公差</block>
+  <block id="c511c601aee805f46f3767063104cdd8" category="cell">Kube-state-metrics的其他容错性。</block>
+  <block id="cea61529c4fbcfd86c0a3459bc229a87" category="cell">应捕获的Kube-state-metrics资源的逗号分隔列表
+
+++++
+示例：cronjobs=[*]、守护程序sets=[*]、部署=[*]、ingresses=[*]、Jobs=[*]、名称空间=[*]、节点=[*]、
+persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，资源公平otas=[*]，services =[*]，状态集=[*]
+++++</block>
+  <block id="7e7b391c65060e4613a7fb96bfd2ef31" category="cell">流畅的位容差</block>
+  <block id="035bf5f67349238f72eae5d508efac99" category="cell">Fluent-Bit-DS的额外容差。</block>
+  <block id="8776d1f0ee4232b1c2ff5bc38e4b2603" category="cell">事件-导出器-容错</block>
+  <block id="bac5ce71f32beb834c27a988cad33543" category="cell">事件导出器附加容错。</block>
+  <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">L4-公 差</block>
 </blocks>

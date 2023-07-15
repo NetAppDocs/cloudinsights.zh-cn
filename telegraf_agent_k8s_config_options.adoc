@@ -109,6 +109,15 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 |  | 输出超时 | 请参见 link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf配置文档"] 
 
 
+|  | 已启用dockerMetricCollection | 收集Docker指标。默认情况下、此值设置为true、系统将为基于Docker的内部部署K8s收集Docker指标。要禁用Docker指标收集、请将此选项设置为false。 
+
+
+|  | ds.公差 | Telegraf-DS的额外耐受性。 
+
+
+|  | Rs公差 | Telegraf-RS额外的耐受性。 
+
+
 | Kube-state-metrics |  | 可自定义操作员的KUbe状态指标安装的配置选项 
 
 
@@ -127,7 +136,15 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 |  | 资源 | 要捕获的资源的逗号分隔列表。示例：cronjobs、守护程序集、部署、服务器、作业、名称空间、节点、persistentvolumeclaims、persistentvolumes、Pod、复制集、资源集合、服务、状态集 
 
 
-|  | labels | Kube-state-metrics应捕获+++的资源列表(以英文逗号分隔)示例：复制作业=[*]、守护程序=[*]、部署=[*]、ingress=[*]、作业=[*]、名称空间=[*]、节点=[*]、持久性卷=[*]、属性[*]、服务[*][=*] 
+|  | 公差 | Kube-state-metrics的其他容错性。 
+
+
+|  | labels | 应捕获的Kube-state-metrics资源的逗号分隔列表
+
+++++
+示例：cronjobs=[*]、守护程序sets=[*]、部署=[*]、ingresses=[*]、Jobs=[*]、名称空间=[*]、节点=[*]、
+persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，资源公平otas=[*]，services =[*]，状态集=[*]
+++++ 
 
 
 | 日志 |  | 可自定义操作员日志收集和安装的配置选项 
@@ -164,6 +181,15 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 
 
 |  | 启用DNSLook.e. | 是非题、启用DNS查找 
+
+
+|  | 流畅的位容差 | Fluent-Bit-DS的额外容差。 
+
+
+|  | 事件-导出器-容错 | 事件导出器附加容错。 
+
+
+| 工作负载映射 |  | L4-公 差 
 |===
 
 
@@ -229,6 +255,10 @@ spec:
 
     # Declare Rancher cluster as managed. Set this to true if your Rancher cluster is managed as opposed to on-premise.
     #isManagedRancher: true|false
+
+    # By default, docker metrics will be collected for on-premise, docker-based k8s deployments. To disable docker metric collection, set this to false.
+    # dockerMetricCollectionEnabled: true|false
+
 
     # Deamonset CPU/Mem limits and requests
     # dsCpuLimit:

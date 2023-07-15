@@ -25,6 +25,72 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
+== 2023年7月
+
+
+
+=== 显示最近的更改
+
+现在、Data Collector登录页面包含一个最近更改的列表。只需单击任何数据收集器登录页面底部的"Recent changes"按钮、即可显示数据收集器的最新更改。
+
+image:Recent_Changes_Example.png["最近更改示例"]
+
+
+
+=== 操作员改进
+
+对进行了以下改进 link:/telegraf_agent_k8s_config_options.html["Kubernetes操作员"] 部署：
+
+* 可选择绕过Docker指标收集
+* 能够向分电图和副本添加和自定义容差
+
+
+
+
+=== Insight：回收冷存储
+
+。 link:insights_reclaim_ontap_cold_storage.html["回收ONTAP冷存储Insight"] 现在支持FlexGroup、现在可供所有客户使用。
+
+
+
+=== 操作员图像签名
+
+对于使用私有存储库作为NetApp Kubernetes监控操作员的客户、您现在可以在操作员安装期间复制图像签名公共密钥、从而使您能够确认下载软件的真实性。在可选步骤中选择_复制图像签名公共密钥_按钮以将操作员图像上传至您的私有存储库_。
+
+image:Operator_Public_Image_Key.png["下载公共密钥"]
+
+
+
+=== 适用于查询的聚合、"环境格式"等
+
+聚合、单元选择、条件格式和列重命名是信息板表小工具中最有用的功能、现在这些功能可用于 link:/task_create_query.html["查询"]。
+
+image:Query_Page_Aggregation_etc.png["显示聚合、条件格式、单位显示和列重命名的查询页结果"]
+
+这些功能现在可用于集成类型的数据(Kubnetes、ONTAP高级指标等)、不久将用于基础架构对象(存储、卷、交换机等)。
+
+
+
+=== 用于审核的API
+
+现在、您可以使用API查询或导出已审核事件。转到"Admin">"API Access"、然后选择_API Documentation_链接以获取信息。
+
+image:Audit_API_Swagger.png["用于审计的API交换器、宽度=400"]
+
+
+
+=== 数据收集器：经济实惠
+
+Cloud Insights现在支持三端经济型驱动程序、实现了以下优势：
+
+* 了解POD到ONTAP qtree的映射和性能指标。
+* 提供无缝故障排除、并轻松地从Kubbernetes Pod导航到后端存储
+* 使用监控器主动检测后端性能问题
+
+
+'''
+
+
 == 2023年6月
 
 

@@ -204,6 +204,14 @@ OpenShift可以实施更高的安全级别、从而可能阻止对某些Kubernet
 
 
 
+=== 容差和污物
+
+要正确收集所有节点上的数据、_tendentaf_、_fluent-bit_和_net-oborder-demonSets必须在集群中的每个节点上计划一个POD。操作器已配置为允许某些众所周知的*污染*。如果您在节点上配置了任何自定义污染、从而阻止Pod在每个节点上运行、则可以为这些污染创建一个*容错* link:telegraf_agent_k8s_config_options.html["在_AgentConfiguration_中"]。如果已将自定义污染应用于集群中的所有节点、则还必须向操作员部署添加必要的容错值、以便可以计划和执行操作员POD。
+
+详细了解Kubbernetes link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["损害和公差"]。
+
+
+
 == 安装NetApp Kubernetes监控操作员
 
 image:NKMO-Instructions-1.png[""]
@@ -512,5 +520,8 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 
 | 我没有看到为集群中的Kubnetes CronJobs收集任何指标。 | 验证您的Kubbernetes版本(即 `kubectl version`）。  如果是v1.20.x或更低版本、则这是预期的限制。  随NetApp Kubernetes监控操作员部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。 
+
+
+| 安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。 | 编辑NetApp-monitoring配置代理配置、并将_dockerMetricCollectionEnabled"设置为false。  有关详细信息、请参见操作员的 link:telegraf_agent_k8s_config_options.html["配置选项"]。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
