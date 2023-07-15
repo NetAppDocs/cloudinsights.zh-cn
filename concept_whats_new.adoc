@@ -39,7 +39,7 @@ image:Recent_Changes_Example.png["最近更改示例"]
 
 === 操作员改进
 
-对进行了以下改进 link:/telegraf_agent_k8s_config_options.html["Kubernetes操作员"] 部署：
+对进行了以下改进 link:telegraf_agent_k8s_config_options.html["Kubernetes操作员"] 部署：
 
 * 可选择绕过Docker指标收集
 * 能够向分电图和副本添加和自定义容差
@@ -63,7 +63,7 @@ image:Operator_Public_Image_Key.png["下载公共密钥"]
 
 === 适用于查询的聚合、"环境格式"等
 
-聚合、单元选择、条件格式和列重命名是信息板表小工具中最有用的功能、现在这些功能可用于 link:/task_create_query.html["查询"]。
+聚合、单元选择、条件格式和列重命名是信息板表小工具中最有用的功能、现在这些功能可用于 link:task_create_query.html["查询"]。
 
 image:Query_Page_Aggregation_etc.png["显示聚合、条件格式、单位显示和列重命名的查询页结果"]
 

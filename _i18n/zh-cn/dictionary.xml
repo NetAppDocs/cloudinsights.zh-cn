@@ -11311,7 +11311,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="f7796a8f8185c8c1d264bce4bad25eee" category="inline-image-macro">最近更改示例</block>
   <block id="57c43929c060c6b6731a95fee2e6ac4b" category="paragraph"><block ref="57c43929c060c6b6731a95fee2e6ac4b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7106bac801506d89011c164f7281f183" category="section-title">操作员改进</block>
-  <block id="c6d80de9d1332fa033db27b32896a7ca" category="paragraph">对进行了以下改进 <block ref="89b3ece041fc6e3eaf91d1f18cb70562" category="inline-link-macro-rx"></block> 部署：</block>
   <block id="2a81267b1c9c4611addccc58ffea4ce5" category="list-text">可选择绕过Docker指标收集</block>
   <block id="62643d895d41437dc1854e6321bbca7d" category="list-text">能够向分电图和副本添加和自定义容差</block>
   <block id="4157bbc9478996de33c632d1be8b4617" category="section-title">Insight：回收冷存储</block>
@@ -11322,7 +11321,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b48c3957268aba1d2cb9774cdfb76b1a" category="inline-image-macro">下载公共密钥</block>
   <block id="241e648e3eaa9f9b228db06a6cf403f7" category="paragraph"><block ref="241e648e3eaa9f9b228db06a6cf403f7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="659e26ba67b278fd61383664fb1ed670" category="section-title">适用于查询的聚合、"环境格式"等</block>
-  <block id="7d7ce3fd83ffcf864f9c0285f8d8b6ab" category="paragraph">聚合、单元选择、条件格式和列重命名是信息板表小工具中最有用的功能、现在这些功能可用于 <block ref="f011edc734cda8dc5136e8e133afbd9b" category="inline-link-macro-rx"></block>。</block>
   <block id="2b88de4b6bcbafe41a9b2e66846672ee" category="paragraph">这些功能现在可用于集成类型的数据(Kubnetes、ONTAP高级指标等)、不久将用于基础架构对象(存储、卷、交换机等)。</block>
   <block id="2b4c43183ba48840a9a245b4b11ed0f1" category="section-title">用于审核的API</block>
   <block id="8b0aa17c3cd1f148c8d84b8d9eade119" category="paragraph">现在、您可以使用API查询或导出已审核事件。转到"Admin"&gt;"API Access"、然后选择_API Documentation_链接以获取信息。</block>
@@ -11359,4 +11357,6 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
   <block id="8776d1f0ee4232b1c2ff5bc38e4b2603" category="cell">事件-导出器-容错</block>
   <block id="bac5ce71f32beb834c27a988cad33543" category="cell">事件导出器附加容错。</block>
   <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">L4-公 差</block>
+  <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">对进行了以下改进 <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> 部署：</block>
+  <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">聚合、单元选择、条件格式和列重命名是信息板表小工具中最有用的功能、现在这些功能可用于 <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
 </blocks>
