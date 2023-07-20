@@ -10934,7 +10934,6 @@
   <block id="e081b29a739e8831bbe1f8ad1c2a2859" category="paragraph">网络性能和映射</block>
   <block id="a050c9f3e338616510e46bf6d9714f64" category="list-text">CI-net-observer</block>
   <block id="a3cdf80b89a5235481aa9bc21b5857e9" category="paragraph">根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。确保存储库中这些映像的映像标记和目录路径与Cloud Insights 存储库中的映像一致。</block>
-  <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">在operator-DEPLOYAML中编辑monitor-operator部署、并修改所有映像引用以使用私有Docker存储库。</block>
   <block id="49174c164a8c6cc17236236504f05c4e" category="paragraph">编辑operator-config.yaml中的AgentConfiguration以反映新的Docker repo位置。为私有存储库创建新的imagePullSecret,有关更多详细信息，请参见_https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_</block>
   <block id="ed8127bf6d6013cbef18d300d151a78a" category="paragraph">如果您运行的是OpenShift 4.6或更高版本、则必须在_operator-config.yaml中编辑AgentConfiguration以启用_run特权_设置：</block>
   <block id="e6955fda6db57ce036906d2f15519731" category="paragraph"><block ref="0ac387629bcb7a9ba3f6f8e72a2f2cd7" category="inline-image-macro-rx" type="image"></block>
@@ -11359,4 +11358,5 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
   <block id="287ab13fa00dc2700e0567bc50f5a663" category="cell">L4-公 差</block>
   <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">对进行了以下改进 <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> 部署：</block>
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">聚合、单元选择、条件格式和列重命名是信息板表小工具中最有用的功能、现在这些功能可用于 <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
+  <block id="e8b13bb5980b04b84716acf64b3b0abb" category="paragraph">在operator-config.yaml中编辑monitor-operator部署、并修改所有映像引用以使用私有Docker存储库。</block>
 </blocks>
