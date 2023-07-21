@@ -11378,4 +11378,5 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
 ...
 
 然后、重新启动Telegraf。</block>
+  <block id="302f46075983be9c47bafd103c8fbf36" category="paragraph">有关特定于要使用的API的示例、请参见Swagger页面。</block>
 </blocks>

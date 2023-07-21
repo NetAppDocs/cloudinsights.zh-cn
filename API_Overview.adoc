@@ -99,8 +99,10 @@ NOTE: 您的令牌只能在创建过程中复制到剪贴板并进行保存。�
 
 例如，使用以下命令检索存储资产：
 
- curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey: <API_Access_Token>'
+ curl https://<tenant_host_name>/rest/v1/assets/storages -H 'X-CloudInsights-ApiKey:<API_Access_Token>'
 其中， _<API_Access_Token>_ 是您在创建 API 访问期间保存的令牌。
+
+有关特定于要使用的API的示例、请参见Swagger页面。
 
 
 
@@ -304,7 +306,7 @@ API 访问令牌具有到期日期。当 API 访问令牌过期时，用户需�
 spec:
 …
   output-sink:
-  - api-key: <NEW_API_TOKEN>
+  - api-key:<NEW_API_TOKEN>
 ....
 
 
