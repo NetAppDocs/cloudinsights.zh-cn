@@ -8482,7 +8482,6 @@
   <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">要安装NetApp Kubernetes监控操作员、您可以在环境中的两个位置使用代理。这些代理系统可以是相同的、也可以是单独的：</block>
   <block id="b30dfc4554e987d8435414f85e0afc5c" category="list-text">在执行安装代码片段(使用"curt")期间需要使用代理将执行该片段的系统连接到Cloud Insights 环境</block>
   <block id="58b692b7f72614bb3545960fa7db5fde" category="list-text">目标Kubernetes集群与Cloud Insights 环境通信所需的代理</block>
-  <block id="7a9065c97476c0400d1ffaaa20c4bbe5" category="paragraph">如果您对其中一项或两项操作使用代理、则要安装NetApp Kubernetes操作监控器、必须先确保您的代理已配置为可以与Cloud Insights 环境进行良好的通信。如果您有一个代理、并且可以从要安装此操作员的服务器/VM访问Cloud Insights 、则您的代理可能已正确配置。</block>
   <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">对于用于安装NetApp Kubernetes操作监控器的代理、在安装操作员之前、请设置_http_proxy/https_proxy_environment变量。对于某些代理环境、您可能还需要设置_no_proxy environment_变量。</block>
   <block id="05de88b1f0962d418af51426b2e42b5c" category="paragraph">要设置变量、请在您的系统上*在*安装NetApp Kubernetes监控操作员之前*执行以下步骤：</block>
   <block id="a4e1e6009cd02048a3c4c625810efdde" category="paragraph">要使Kubernetes集群与Cloud Insights 环境通信所使用的代理、请在阅读完所有这些说明后安装NetApp Kubernetes监控操作员。</block>
@@ -11359,4 +11358,5 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
   <block id="259addbbe43276d62a91ef44d4dd55a8" category="paragraph">对进行了以下改进 <block ref="b13d2921c99b8ae4a991204f54e7f54b" category="inline-link-macro-rx"></block> 部署：</block>
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">聚合、单元选择、条件格式和列重命名是信息板表小工具中最有用的功能、现在这些功能可用于 <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
   <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">在operator-DEPLOYAML中编辑monitor-operator部署、并修改所有映像引用以使用私有Docker存储库。</block>
+  <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">如果您对其中一个或两个使用代理、则要安装NetApp Kubornetes操作监控器、必须先确保将代理配置为可以与Cloud Insights环境进行良好的通信。例如、从要安装Operator的服务器/VM中、您需要能够访问Cloud Insights并能够从Cloud Insights下载二进制文件。</block>
 </blocks>
