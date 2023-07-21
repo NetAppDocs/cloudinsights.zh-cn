@@ -11359,4 +11359,23 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
   <block id="e69cca83cc71ef5f7c5439d8944e108d" category="paragraph">聚合、单元选择、条件格式和列重命名是信息板表小工具中最有用的功能、现在这些功能可用于 <block ref="2b0568ca01fc8a058b93978c376cc13e" category="inline-link-macro-rx"></block>。</block>
   <block id="8b4599b5810466dc4e8956fc5bc3c54c" category="paragraph">在operator-DEPLOYAML中编辑monitor-operator部署、并修改所有映像引用以使用私有Docker存储库。</block>
   <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">如果您对其中一个或两个使用代理、则要安装NetApp Kubornetes操作监控器、必须先确保将代理配置为可以与Cloud Insights环境进行良好的通信。例如、从要安装Operator的服务器/VM中、您需要能够访问Cloud Insights并能够从Cloud Insights下载二进制文件。</block>
+  <block id="9de497f607f8a73311408d3d7b337399" category="cell">我在Telegraf日志中看到重复出现以下错误消息：
+
+ E！[agent]写入Outputs.http：POST时出错 <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> 超过上下文期限(等待标头时超出客户端超时)</block>
+  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">编辑每个Telegraf配置文件(即/etc/telegraf/Telegraf.d/*.conf)，并增加Telegraf输出插件的超时。  例如、在每个.conf文件中、替换所有实例...
+
+[[Outputs.http]]
+...
+超时="5s"
+...
+
+
+以下内容：
+
+[[Outputs.http]]
+...
+超时="10s"
+...
+
+然后、重新启动Telegraf。</block>
 </blocks>

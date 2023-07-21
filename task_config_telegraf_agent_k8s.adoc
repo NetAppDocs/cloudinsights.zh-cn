@@ -523,5 +523,25 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 
 | 安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。 | 编辑NetApp-monitoring配置代理配置、并将_dockerMetricCollectionEnabled"设置为false。  有关详细信息、请参见操作员的 link:telegraf_agent_k8s_config_options.html["配置选项"]。 
+
+
+| 我在Telegraf日志中看到重复出现以下错误消息：
+
+ E！[agent]写入Outputs.http：POST时出错 "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] 超过上下文期限(等待标头时超出客户端超时) | 编辑每个Telegraf配置文件(即/etc/telegraf/Telegraf.d/*.conf)，并增加Telegraf输出插件的超时。  例如、在每个.conf文件中、替换所有实例...
+
+[[Outputs.http]]
+...
+超时="5s"
+...
+
+
+以下内容：
+
+[[Outputs.http]]
+...
+超时="10s"
+...
+
+然后、重新启动Telegraf。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
