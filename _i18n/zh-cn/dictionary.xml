@@ -11379,4 +11379,37 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
 
 然后、重新启动Telegraf。</block>
   <block id="302f46075983be9c47bafd103c8fbf36" category="paragraph">有关特定于要使用的API的示例、请参见Swagger页面。</block>
+  <block id="ad8f9b24701da9364290a4c2eee40c64" category="section-title">ONTAP功率指标</block>
+  <block id="b665630963f971c488f8e065e0c06fa9" category="paragraph">多种ONTAP型号提供了Cloud Insights的电源指标、可用于监控或发出警报。下面列出的受支持和不受支持的型号并不全面、但应提供一些指导；一般来说、如果型号与列表中的型号属于同一系列、则支持应相同。</block>
+  <block id="4331e7abe05d195d44f5ad7553810841" category="paragraph">支持的型号：</block>
+  <block id="1c7aba313bcd844b750939db18c6ba3f" category="paragraph">A200
+A220
+A250
+A300
+A320
+A400
+a700
+A700s
+A800
+A900
+C190
+FAS2240-4
+FAS2552
+FAS2650
+FAS2720
+FAS2750
+FAS8200
+FAS8300
+FAS8700
+FAS9000</block>
+  <block id="f9e69d73975332449ef353ece92feba1" category="paragraph">不支持的型号：</block>
+  <block id="6b9e2344af026f5b0bd0790abba3451c" category="paragraph">FAS2620
+FAS3250
+FAS3270
+FAS500f
+FAS6280
+FAS/AF8020
+FAS/AF8040
+FAS/AF8060
+FAS/AF8080</block>
 </blocks>
