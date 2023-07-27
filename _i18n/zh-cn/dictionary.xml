@@ -10809,7 +10809,6 @@
   <block id="1cd9ce57b7c44af6c8a130743e74dd52" category="inline-image-macro">工作负载映射示例</block>
   <block id="7af846b3cedb6c2658e0a5a0470d77f4" category="paragraph"><block ref="7af846b3cedb6c2658e0a5a0470d77f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5f87ab561452069f2b8a72e3e1d6b9c5" category="sidebar">开始使用Monitoring Operator</block>
-  <block id="d443a554afc0274206e1dc6ca6c51767" category="sidebar">Kubnetes监控和映射</block>
   <block id="07771c0af5efde2b4fbae3151b85a7ae" category="paragraph">Microsoft Hyper-V 数据收集器从虚拟化服务器计算环境中采集清单和性能数据。此数据收集器可以发现独立的Hyper-V主机或整个集群—为每个独立主机或集群创建一个收集器。</block>
   <block id="8c7e59a5cdb49e2a8cab80c42a4342af" category="list-text">集群或独立虚拟机管理程序的IP地址或FQDN。与仅将收集器指向集群中的一个特定节点相比、使用浮动集群主机名或IP可能是最可靠的方法。</block>
   <block id="5a8e7ab77aee94008b9126631260c5f7" category="list-text">在集群中的所有虚拟机管理程序上使用的管理级别用户帐户。</block>
@@ -11412,4 +11411,5 @@ FAS/AF8020
 FAS/AF8040
 FAS/AF8060
 FAS/AF8080</block>
+  <block id="be7979b5db831ae076c107584fa4f37c" category="sidebar">网络监控和映射</block>
 </blocks>
