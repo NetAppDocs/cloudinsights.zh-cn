@@ -141,9 +141,6 @@ image:CloudSecureChangeAlertStatus.png["更改警报状态"]
 | 问题： | 请尝试以下操作： 
 
 
-| 对于工作负载安全性(CS)创建的快照、CS快照是否有清除/归档期限？ | 否没有为 CS 快照设置清除 / 归档期限。用户需要为 CS 快照定义清除策略。请参见 link:https://library.netapp.com/ecmdocs/ECMP1196819/html/GUID-27D0E37F-5AF1-4AF9-BDEB-9A4B7AF3B4A9.html["ONTAP 文档"] 有关如何设置策略的信息。 
-
-
 | 有时， ONTAP 每天每小时创建一次快照。工作负载安全(CS)快照是否会影响它？CS 快照是否会采用每小时快照位置？默认每小时快照是否会停止？ | 工作负载安全快照不会影响每小时快照。CS 快照不会占用每小时快照空间，应像以前一样继续使用。默认的每小时快照不会停止。 
 
 
