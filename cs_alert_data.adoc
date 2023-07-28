@@ -141,7 +141,7 @@ image:CloudSecureChangeAlertStatus.png["更改警报状态"]
 | 问题： | 请尝试以下操作： 
 
 
-| 有时， ONTAP 每天每小时创建一次快照。工作负载安全(CS)快照是否会影响它？CS 快照是否会采用每小时快照位置？默认每小时快照是否会停止？ | 工作负载安全快照不会影响每小时快照。CS 快照不会占用每小时快照空间，应像以前一样继续使用。默认的每小时快照不会停止。 
+| 有时， ONTAP 每天每小时创建一次快照。工作负载安全(WS)快照是否会影响它？WS快照是否采用每小时快照的位置？默认每小时快照是否会停止？ | 工作负载安全快照不会影响每小时快照。WS快照不会占用每小时的快照空间、应像以前一样继续。默认的每小时快照不会停止。 
 
 
 | 如果在 ONTAP 中达到最大快照数，会发生什么情况？ | 如果达到最大Snapshot计数、则后续的Snapshot生成将失败、而工作负载安全性将显示一条错误消息、指出Snapshot已满。用户需要定义 Snapshot 策略以删除最早的快照，否则不会创建快照。在 ONTAP 9.3 及更早版本中，一个卷最多可包含 255 个 Snapshot 副本。在 ONTAP 9.4 及更高版本中，一个卷最多可以包含 1023 个 Snapshot 副本。有关的信息，请参见 ONTAP 文档 link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.dot-cm-cmpr-960%2Fvolume__snapshot__autodelete__modify.html["正在设置 Snapshot 删除策略"]。 

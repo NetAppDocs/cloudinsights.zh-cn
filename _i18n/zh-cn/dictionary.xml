@@ -2859,7 +2859,6 @@
   <block id="2c4a65782f3fcd193e8e3aab503fa515" category="section-title">保留策略</block>
   <block id="77422aee0786be7f7c1880b7b0954687" category="cell">请尝试以下操作：</block>
   <block id="eb75aeb3b4b2b9734ba3e52f5483f0b2" category="inline-link-macro">ONTAP 文档</block>
-  <block id="5aec7bee9bf7098941b7fab790f89ec8" category="cell">否没有为 CS 快照设置清除 / 归档期限。用户需要为 CS 快照定义清除策略。请参见 <block ref="e3477019d6e8e26c6e36a5c10c372344" category="inline-link-macro-rx"></block> 有关如何设置策略的信息。</block>
   <block id="97142806b6f8ba5285f1650e6822a478" category="cell">如果在 ONTAP 中达到最大快照数，会发生什么情况？</block>
   <block id="c718437c95f9699cf92562f47fc2c706" category="inline-link-macro">正在设置 Snapshot 删除策略</block>
   <block id="a2649cdb2384d3388d38543a8ba844c7" category="cell">确保用于创建快照的角色具有链接：已分配 https://docs.netapp.com/us-en/cloudinsights/task_add_collector_svm.html#a-note-about-permissions[proper 权限 ] 。确保为 _csrole_ 创建了用于创建快照的正确访问权限： security login role create -vserver &lt;vservername&gt; -role csrole -cmddirname "volume snapshot" -access all</block>
@@ -8621,7 +8620,6 @@
   <block id="2855135907eef979db329ca6aebe0464" category="section-title">运行模拟器之前的准则：</block>
   <block id="d786b68b9cf5f686784afa64b69b3bce" category="list-text">确保加密文件不为空。</block>
   <block id="dc77d098f1840a6fa69f5b878fac260d" category="list-text">请确保对50个以上的文件进行加密。少量文件将被忽略。</block>
-  <block id="dfabdab4d722d2b248490b96ddf9add5" category="list-text">请勿多次使用同一用户进行攻击。几次后、CS将了解此用户行为并假定这是用户的正常行为。</block>
   <block id="7a5e4b833809f504d9c40568ed0a5cec" category="list-text">不要对同一用户刚刚创建的文件进行加密。更改用户刚刚创建的文件不会被视为一项风险活动。而是使用另一用户创建的文件、或者在创建文件和对其进行加密之间等待几个小时。</block>
   <block id="d96f025cc7db5db06dd47e78c55d8f1e" category="list-text">托管"通用服务"组件的操作中心服务器的IP地址或主机名</block>
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">请注意、如果运行多个规则来更新资产上的相同标注、则第一个规则(从上至下运行)将应用标注并更新资产、然后第二个规则将适用、但不会更改先前规则已设置的任何标注。</block>
@@ -10331,9 +10329,6 @@
   <block id="8771316aacd1c4b06854e0e9f30a545c" category="list-text">攻击类型(勒索软件、破坏)和警报ID (由工作负载安全性分配)</block>
   <block id="37fa3057780441193fd46b687aef4974" category="paragraph">工作负载安全性可通过在检测到恶意活动时自动创建快照来保护您的数据、并确保安全地备份您的数据。</block>
   <block id="106f889ad7fb5a787f85bc5d8d8471ec" category="paragraph">警报和警告保留 13 个月。超过 13 个月的警报和警告将被删除。如果删除了工作负载安全环境、则与该环境关联的所有数据也将被删除。</block>
-  <block id="431fef516df90830b5c1c21b6ce07235" category="cell">对于工作负载安全性(CS)创建的快照、CS快照是否有清除/归档期限？</block>
-  <block id="e6fb05f0da5acc86f543947f4c4e697e" category="cell">有时， ONTAP 每天每小时创建一次快照。工作负载安全(CS)快照是否会影响它？CS 快照是否会采用每小时快照位置？默认每小时快照是否会停止？</block>
-  <block id="726c7f3f596062ccd907feb3815a05e0" category="cell">工作负载安全快照不会影响每小时快照。CS 快照不会占用每小时快照空间，应像以前一样继续使用。默认的每小时快照不会停止。</block>
   <block id="dbc12ef69e34122bf8f4ac6b397d0011" category="cell">如果达到最大Snapshot计数、则后续的Snapshot生成将失败、而工作负载安全性将显示一条错误消息、指出Snapshot已满。用户需要定义 Snapshot 策略以删除最早的快照，否则不会创建快照。在 ONTAP 9.3 及更早版本中，一个卷最多可包含 255 个 Snapshot 副本。在 ONTAP 9.4 及更高版本中，一个卷最多可以包含 1023 个 Snapshot 副本。有关的信息，请参见 ONTAP 文档 <block ref="be93a0e4b8c5168a6ec2dc10f7f34d59" category="inline-link-macro-rx"></block>。</block>
   <block id="58eb0692e2d7399b3579ee5ce166cc58" category="cell">工作负载安全性根本无法创建快照。</block>
   <block id="06319d1baa3128a2dcdf122c600b751e" category="cell">对于SVM上较早的警报、快照失败、这些警报已从工作负载安全性中删除并随后重新添加。对于在重新添加 SVM 后出现的新警报，将创建快照。</block>
@@ -11412,4 +11407,7 @@ FAS/AF8040
 FAS/AF8060
 FAS/AF8080</block>
   <block id="be7979b5db831ae076c107584fa4f37c" category="sidebar">网络监控和映射</block>
+  <block id="8d41e3bd6529669109fc47034b6cec4c" category="cell">有时， ONTAP 每天每小时创建一次快照。工作负载安全(WS)快照是否会影响它？WS快照是否采用每小时快照的位置？默认每小时快照是否会停止？</block>
+  <block id="9abb3d91142b5821f0ea7a72b15b21d3" category="cell">工作负载安全快照不会影响每小时快照。WS快照不会占用每小时的快照空间、应像以前一样继续。默认的每小时快照不会停止。</block>
+  <block id="9cdd30f36b5b67d9fc64c9bd48e9fac8" category="list-text">请勿多次使用同一用户进行攻击。几次后、Workload Security将了解此用户行为并假设这是用户的正常行为。</block>
 </blocks>
