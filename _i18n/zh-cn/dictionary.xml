@@ -11025,4 +11025,30 @@ FAS/AF8080</block>
   <block id="9453f63a9e7f74d7e4aba2db7d3e1d70" category="cell">VMware vCenter Server 6.7.0内部版本-10244857、VMware vCenter Server 6.7.0内部版本-14368073、VMware vCenter Server 7.0.3内部版本-19234570、VMware vCenter Server 7.0.3内部版本-20150588、VMware vCenter Server 7.0.3内部版本-20395099、VMware vCenter Server 7.0.3内部版本-20990077、VMware vCenter Server 7.0.3内部版本-2147736、VMware vCenter Server 7.7068.215080.3内部版本-21793893</block>
   <block id="56cae3e29c9acf0337232282d32c85c1" category="cell">VMware vCenter Server 8.0.0内部版本21709157、VMware vCenter Server 7.0.3内部版本20870699、VMware vCenter Server 7.0.3内部版本20532039</block>
   <block id="c2c46e278a3a0cfb21101adab5aed33b" category="cell">VMware ESXi 6.0.0内部版本10719132、VMware ESXi 6.0.0内部版本2494585、VMware ESXi 6.0.0内部版本5572656、VMware ESXi 6.0.0内部版本9313334、VMware ESXi 6.5.0内部版本14990892、VMware ESXi 6.5.0内部版本5969303、VMware ESXi 7.0.0内部版本-158443807、VMware ESXi 7.0.3内部版本-2003889、VMware 内部版本1750787、VMware vCenter Server 5.5.0内部版本2442329、VMware vCenter Server 5.5.0内部版本-3000241、VMware vCenter Server 5.5.0内部版本-3252642、VMware vCenter Server 5.5.0内部版本-3721164、VMware vCenter Server 5.5.0内部版本-4180647、VMware vCenter Server 5.5.0内部版本-6516310、VMware vCenter Server 服务器6.0.0内部版本-5960847, VMware vCenter Server 6.0.0内部版本-7924803, VMware vCenter Server 6.0.0内部版本-8803875, VMware vCenter Server 6.0.0内部版本-9313458, VMware vCenter Server 6.5.0内部版本-10964411, VMware vCenter Server 6.5.0内部版本-15679215,VMware vCenter Server 6.5.0内部版本-17590285,VMware vCenter Server 6.5.0内部版本-1799494927, VMware vCenter Server 5.0内部版本-196.5837, VMware vCenter Server 5.0内部版本-196.80, VMware vCenter Server 5.0内部版本-196.837, VMware vCenter Server 5.0 内部版本-7119157、VMware vCenter Server 6.7.0内部版本-10244857、VMware vCenter Server 6.7.0内部版本-11727113、VMware vCenter Server 6.7.0内部版本-1300、VMware vCenter Server 6.7.0内部版本-13639324、VMware vCenter Server 6.7.0内部版本-14368073、VMware vCenter Server 6.7.0内部版本-15129973、VMware vCenter Server 6.7.0内部版本-15679289、VMware vCenter Server内部版本-176.859-176599、VMware vCenter Server内部版本-176.18707.0、VMware vCenter Server内部版本-18707.0.18707.0、VMware vCenter Server内部版本-18707.0-10859-7.0、VMware vCenter Server内部版本、VMware vCenter Server内部版本 服务器6.7.0内部版本-19832247、VMware vCenter Server 6.7.0内部版本-1983280、VMware vCenter Server 6.7.0内部版本-20504301、VMware vCenter Server 6.7.0内部版本-20504362、VMware vCenter Server 6.7.0内部版本-8170161、VMware vCenter Server 6.7.0内部版本-9433931、VMware vCenter Server 7.0.0内部版本-16620013、VMware vCenter Server 7.0.0内部版本-1674960.1、VMware vCenter Server内部版本-177.17471-177.471-VMware vCenter Server内部版本、VMware vCenter Server内部版本、VMware vCenter Server内部版本-177.63177.170.2-1770、VMware vCenter Server内部版本 内部版本18455184、VMware vCenter Server 7.0.3内部版本18700403、VMware vCenter Server 7.0.3内部版本18778458、VMware vCenter Server 7.0.3内部版本-19234570、VMware vCenter Server 7.0.3内部版本-19480866、VMware vCenter Server 7.0.3内部版本-19717403、VMware vCenter Server 7.0.3内部版本-20051473、VMware vCenter Server 7.0.3内部版本-20150588 服务器7.0.3内部版本21784236、VMware vCenter Server 7.0.3内部版本21958406、VMware vCenter Server 8.0.0内部版本-20920323、VMware vCenter Server 8.0.0内部版本-21216066、VMware vCenter Server 8.0.0内部版本-21457384、VMware vCenter Server 8.0.1内部版本-21560480、VMware vCenter Server 8.0.1内部版本-21815093、VMware vCenter Server 8.0.1内部版本-21860503</block>
+  <block id="6d6bbe0ff14c220c87649b72d24ad927" category="section-title">2023年8月</block>
+  <block id="2ddfcdc31d5e5de8a48fe5187b0f4eb7" category="section-title">改进了菜单</block>
+  <block id="770b665998f011b1710d778c94d090f6" category="paragraph">我们更新了左侧导航菜单、以更好地支持客户的工作流。通过_Kubernetes_等新的顶级项目、可以加快访问客户所需内容的速度、而整合的管理员控制台则支持租户所有者角色。</block>
+  <block id="57480340f42116feeb42f981543cebf6" category="paragraph">下面是一些其他变更示例：</block>
+  <block id="060ffbae771393c5fa58e497eae200df" category="list-text">顶层_Observability _菜单显示了数据发现、警报和日志查询</block>
+  <block id="a80be63428550b536ba9127edf7efe52" category="list-text">可观察性和工作负载安全性的‘API Access’功能位于一个菜单下</block>
+  <block id="1679e9c88d912350a1ef152cb4c30b3c" category="list-text">同样、对于可观察性和工作负载安全性‘通知’功能、现在也在一个菜单下</block>
+  <block id="20575a36219e26edf0e8eff4cdfd93ca" category="inline-image-macro">更新了左侧导航菜单</block>
+  <block id="16b9fc89bf7ba3d8ae2c869378bbf565" category="paragraph"><block ref="16b9fc89bf7ba3d8ae2c869378bbf565" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c25b376d4ad18aade7fe74ca4996ee38" category="paragraph">下面简要列出了您可以在每个菜单下找到的功能：</block>
+  <block id="b4263a85713fbbc93aec389b541571a9" category="paragraph">可观察性：</block>
+  <block id="ab767b7872cc3ea9c0cdd122da02c02b" category="list-text">浏览(信息板、指标查询、基础架构洞察)</block>
+  <block id="65f016c7729d8f39ac07154f40a6cc20" category="list-text">警报(监控和警报)</block>
+  <block id="24bc8c583ee815ab0b0fb5674f1f1ae2" category="list-text">收集器(数据收集器和采集单元)</block>
+  <block id="5bcea4e0bbd8a619bf12b3aa1d579b02" category="list-text">丰富(标注和标注规则、应用程序、设备解析)</block>
+  <block id="bc5611c731b034c5f323419d0258aa44" category="paragraph">Kubernetes：</block>
+  <block id="e8c0a21a42b471e499e206f09618332b" category="list-text">集群探索和网络映射</block>
+  <block id="d9a678c96702146a2eb5a60f101e495c" category="paragraph">工作负载安全性：</block>
+  <block id="843d2730071ec91250d8f85419275d56" category="list-text">收集器</block>
+  <block id="9e476387322a5c250893cf9c5c4ce78c" category="list-text">策略</block>
+  <block id="45e6c5ebb3c3cf63a5c792a668b7c38d" category="paragraph">ONTAP基础知识：</block>
+  <block id="8566fdf95f40ad545423b5340c581b8e" category="list-text">工作负载
+*VMware</block>
+  <block id="bca37b041da64be838599cd43784ed63" category="paragraph">管理员：</block>
+  <block id="bbe1851a4bf6476f10ba4c77ec78d11d" category="list-text">API 访问</block>
+  <block id="4620823d389a7467f91084ea88f4f104" category="list-text">订阅信息</block>
 </blocks>
