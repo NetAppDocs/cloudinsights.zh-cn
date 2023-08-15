@@ -4339,7 +4339,6 @@
   <block id="6b6d7f0bb3be3abde199877bf4398807" category="cell">ONTAP 中的事件速率远远高于 Agent Box 可以处理的事件速率。因此，此连接已终止。检查断开连接时 CloudSecure 中的峰值流量。您可以从 * CloudSecure &gt; 活动取证 &gt; 所有活动 * 页面查看此信息。如果聚合流量峰值高于 Agent Box 可以处理的流量，请参阅 Event Rate Checker 页面，了解如何在 Agent Box 中估算收集器部署的规模。如果此代理安装在 2021 年 3 月 4 日之前的 Agent 框中，请在 Agent 框中运行以下命令： echo 'net.core.rmem_max_8388608' &gt;&gt; /etc/sysctl.conf echo 'net.IPv4.tcp_rmem = 4096 2097152 8388608 &gt;&gt; /etc/sysctl.conf 在调整收集器大小后重新启动系统。</block>
   <block id="7dc1f3b50a6e66da2ae31d89467342c4" category="cell">收集器报告错误消息： " 在可访问 SVM 数据接口的连接器上未找到本地 IP 地址 " 。</block>
   <block id="dfb48a2f78b82c90165015b0e73f7e58" category="inline-link-macro">NetApp 支持</block>
-  <block id="6cba87228a06e136ec0afee777c57387" category="cell">这很可能是由于 ONTAP 端存在网络问题描述。请按照以下步骤操作： 1.确保 SVM 数据 LIF 或管理 LIF 上没有防火墙阻止与 SVM 的连接。2. 在通过集群管理 IP 添加 SVM 时，请确保 SVM 的数据 LIF 和管理 LIF 可从 Agent VM 执行 Ping 操作。如果出现问题，请检查网关，网络掩码和 LIF 路由。您也可以尝试使用集群管理 IP 通过 ssh 登录到集群，并对代理 IP 执行 ping 操作。确保代理 IP 可执行 pingable ： _network ping -vserver &lt;vserver name&gt; -destination &lt;Agent IP&gt; -lif &lt;Lif name&gt; -show-detail_ 如果不可执行 ping、 请确保 ONTAP 中的网络设置正确，以便代理计算机可执行 pingable 。3. 如果您尝试通过集群 IP 进行连接，但此连接无法正常工作，请尝试直接通过 SVM IP 进行连接。有关通过 SVM IP 进行连接的步骤，请参见上文。4. 通过 SVM IP 和 vsadmin 凭据添加收集器时，请检查 SVM LIF 是否已启用数据加管理角色。在这种情况下，对 SVM LIF 执行 ping 操作将有效，但对 SVM LIF 执行 SSH 将不起作用。如果是，请创建一个仅 SVM 管理 LIF ，并尝试通过此仅 SVM 管理 LIF 进行连接。5. 如果此 LIF 仍不起作用，请创建一个新的 SVM LIF 并尝试通过此 LIF 进行连接。确保子网掩码设置正确。6. 高级调试： A ）在 ONTAP 中启动数据包跟踪。b ）尝试从 CloudSecure UI 将数据收集器连接到 SVM 。c ）等待错误出现。停止 ONTAP 中的数据包跟踪。d ）从 ONTAP 打开数据包跟踪。可从以下位置获取： _\https://&lt;cluster_mgmt_ip&gt;/spi/&lt;clustername&gt;/etc/log/packet_traces/_ e ）确保从 ONTAP 到代理框有一个 SYN 。f ）如果 ONTAP 未提供任何 SYN ，则它是 ONTAP 中具有防火墙的问题描述。g ）在 ONTAP 中打开防火墙，以便 ONTAP 能够连接代理箱。7. 如果此功能仍不起作用，请咨询网络团队，以确保没有外部防火墙阻止从 ONTAP 到代理框的连接。8. 如果上述任何一项都无法解决问题描述，请使用创建案例 <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> 以获得进一步帮助。</block>
   <block id="17f836aa8a8fb1af2d3360f0ff3cda15" category="cell">消息： "Failed to determine ONTAP type for [hostname ： &lt;IP Address&gt; 。原因：与存储系统 &lt;IP 地址 &gt; 的连接错误：主机不可访问（主机不可访问） "</block>
   <block id="e5f53b94e30dcc1b62ef059336b700c9" category="cell">1. 验证是否提供了正确的 SVM IP 管理地址或集群管理 IP 。2. 通过 SSH 连接到要连接的 SVM 或集群。连接后，请确保 SVM 或集群名称正确无误。</block>
   <block id="17a99211f689747ad8a030b9a5329d3f" category="cell">错误消息： "Connector is in error state.service.name ：审核。失败原因：外部 fpolicy 服务器已终止。 "</block>
@@ -11051,4 +11050,40 @@ FAS/AF8080</block>
   <block id="bca37b041da64be838599cd43784ed63" category="paragraph">管理员：</block>
   <block id="bbe1851a4bf6476f10ba4c77ec78d11d" category="list-text">API 访问</block>
   <block id="4620823d389a7467f91084ea88f4f104" category="list-text">订阅信息</block>
+  <block id="384d2b3681715a5efe4a0e8ae256591a" category="cell">这很可能是由于 ONTAP 端存在网络问题描述。请按照以下步骤操作：
+
+1.确保SVM数据lf或管理lf上没有阻止与SVM连接的防火墙。
+
+2. 在通过集群管理 IP 添加 SVM 时，请确保 SVM 的数据 LIF 和管理 LIF 可从 Agent VM 执行 Ping 操作。如果出现问题，请检查网关，网络掩码和 LIF 路由。
+
+您也可以尝试使用集群管理 IP 通过 ssh 登录到集群，并对代理 IP 执行 ping 操作。确保代理IP可执行pingable：
+
+_network ping -vserver &lt;vserver name&gt;-Destination &lt;Agent IP&gt;-lf &lt;Lif Name&gt;-show-DEBIL_
+
+如果无法执行pingable，请确保ONTAP中的网络设置正确，以便Agent计算机可以执行pingable。
+
+3. 如果您尝试通过集群 IP 进行连接，但此连接无法正常工作，请尝试直接通过 SVM IP 进行连接。有关通过 SVM IP 进行连接的步骤，请参见上文。
+
+4. 通过 SVM IP 和 vsadmin 凭据添加收集器时，请检查 SVM LIF 是否已启用数据加管理角色。在这种情况下，对 SVM LIF 执行 ping 操作将有效，但对 SVM LIF 执行 SSH 将不起作用。
+如果是，请创建一个仅 SVM 管理 LIF ，并尝试通过此仅 SVM 管理 LIF 进行连接。
+
+5. 如果此 LIF 仍不起作用，请创建一个新的 SVM LIF 并尝试通过此 LIF 进行连接。确保子网掩码设置正确。
+
+6.高级调试：
+A)在ONTAP中启动数据包跟踪。
+b)尝试从CloudSecure UI将数据收集器连接到SVM。
+c)等待直至出现错误。停止 ONTAP 中的数据包跟踪。
+D)从ONTAP打开数据包跟踪。可从该位置获取
+
+ _\https：&lt;cluster_mgmt_ip&gt;：//SPI/SPI/packet/etc/log/packet_traces/_&lt;clustername&gt;
+
+e)确保有一个从ONTAP到代理框的“SNT”。
+F)如果没有来自ONTAP的问题描述，则它是中带有防火墙的ONTAP。
+g)在ONTAP中打开防火墙，以便ONTAP能够连接代理盒。
+
+7. 如果此功能仍不起作用，请咨询网络团队，以确保没有外部防火墙阻止从 ONTAP 到代理框的连接。
+
+8.确认端口7已打开。
+
+9.如果上述方法均无法解决问题描述问题、请使用创建案例 <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> 以获得进一步帮助。</block>
 </blocks>
