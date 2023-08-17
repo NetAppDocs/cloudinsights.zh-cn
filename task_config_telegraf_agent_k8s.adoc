@@ -522,7 +522,23 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 | 我没有看到为集群中的Kubnetes CronJobs收集任何指标。 | 验证您的Kubbernetes版本(即 `kubectl version`）。  如果是v1.20.x或更低版本、则这是预期的限制。  随NetApp Kubernetes监控操作员部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。 
 
 
-| 安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。 | 编辑NetApp-monitoring配置代理配置、并将_dockerMetricCollectionEnabled"设置为false。  有关详细信息、请参见操作员的 link:telegraf_agent_k8s_config_options.html["配置选项"]。 
+| 安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。 | 编辑_AgentConfiguration_中的NetApp-monitoring配置部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息、请参见操作员的 link:telegraf_agent_k8s_config_options.html["配置选项"]。
+
+注意： 如果您使用的是Cloud Insights联邦版、则对_su_的使用有限制的用户将无法收集Docker指标、因为要访问Docker套接字、需要以root用户身份运行预制数据容器或使用_su_将预制数据用户添加到Docker组。默认情况下、Docker指标收集和_su_的使用处于启用状态；要同时禁用这两者、请删除_AgentConfiguration_文件中的_tenderaf.Docker条目：
+
+...
+规格：
+...
+电报：
+    ...
+     -名称：Docker
+            运行模式：
+              - DemonSet
+            可进行的其他操作：
+              -关键字：Docker _UNIS_sdoc_PLATORY
+                值：UNIX：//run/Docker。sk
+    ...
+... 
 
 
 | 我在Telegraf日志中看到重复出现以下错误消息：

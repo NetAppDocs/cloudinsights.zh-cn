@@ -10665,7 +10665,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">损害和公差</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">详细了解Kubbernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。</block>
-  <block id="61f9b982e510e8aa9a5efaee7290eb4a" category="cell">编辑NetApp-monitoring配置代理配置、并将_dockerMetricCollectionEnabled"设置为false。  有关详细信息、请参见操作员的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
   <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">已启用dockerMetricCollection</block>
   <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集Docker指标。默认情况下、此值设置为true、系统将为基于Docker的内部部署K8s收集Docker指标。要禁用Docker指标收集、请将此选项设置为false。</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">ds.公差</block>
@@ -11086,4 +11085,21 @@ g)在ONTAP中打开防火墙，以便ONTAP能够连接代理盒。
 8.确认端口7已打开。
 
 9.如果上述方法均无法解决问题描述问题、请使用创建案例 <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> 以获得进一步帮助。</block>
+  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">编辑_AgentConfiguration_中的NetApp-monitoring配置部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息、请参见操作员的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
+
+注意： 如果您使用的是Cloud Insights联邦版、则对_su_的使用有限制的用户将无法收集Docker指标、因为要访问Docker套接字、需要以root用户身份运行预制数据容器或使用_su_将预制数据用户添加到Docker组。默认情况下、Docker指标收集和_su_的使用处于启用状态；要同时禁用这两者、请删除_AgentConfiguration_文件中的_tenderaf.Docker条目：
+
+...
+规格：
+...
+电报：
+    ...
+     -名称：Docker
+            运行模式：
+              - DemonSet
+            可进行的其他操作：
+              -关键字：Docker _UNIS_sdoc_PLATORY
+                值：UNIX：//run/Docker。sk
+    ...
+...</block>
 </blocks>
