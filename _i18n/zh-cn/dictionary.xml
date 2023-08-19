@@ -12912,4 +12912,25 @@ VMware vCenter Server 8.0.0内部版本21457384
 VMware vCenter Server 8.0.1内部版本21560480
 VMware vCenter Server 8.0.1内部版本21815093
 VMware vCenter Server 8.0.1内部版本21860503</block>
+  <block id="88abed0a9fa0fc7ed8be52f2de6d7f8d" category="section-title">收集Isilon/PowerScale日志和高级分析数据</block>
+  <block id="93fa5fa7b7ca64e0109bdf3bfcc7c80d" category="paragraph">Isilan REST和PowerScale REST收集器具有以下改进功能：</block>
+  <block id="6bfe1d5f79aa2a34935e35f4ad9f09c4" category="list-text">Isilan日志事件可用于查询和警报</block>
+  <block id="c5922f5c7421c7ae70b97241261d79fa" category="list-text">Isilan Advanced理事会属性可用于查询、信息板和警报：</block>
+  <block id="055ffc0f204dd9571932f105cc192d97" category="list-text">EMC_Isila.cluster</block>
+  <block id="cc6fab0cd00772a7953b679fc832724f" category="list-text">emc_isilon.node</block>
+  <block id="30c0414214be11c59b1aa207a90a8b3d" category="list-text">emc_isilon.node_disk</block>
+  <block id="2f6871a6b3a926d4a14c71d0a97a5c03" category="list-text">emc_isilon.net_iface</block>
+  <block id="89dff3ed7503a715bcf83455f5951412" category="paragraph">默认情况下、Isilar REST和/或PowerScale REST收集器的用户会启用这些功能。NetApp强烈建议使用Isilan基于命令行界面的收集器的用户迁移到新的基于REST API的收集器、以获得上述增强功能。</block>
+  <block id="f1c89ccf6bd41e321d0a5a4570ccbd41" category="section-title">改进的工作负载图</block>
+  <block id="406a6589551ad505a8c76df3da8e6d33" category="paragraph">工作负载映射的可用性更高、噪音更少；如果所有相似的外部服务与相同的工作负载通信、则会将这些服务分组到一个节点中、从而降低图形的复杂性、并更容易了解服务的互连方式。</block>
+  <block id="f2f7479271c7e3bd1526b7c962cfd1b6" category="paragraph">选择一个分组节点将显示一个详细表、其中包含与该节点相关的每个外部服务的网络流量指标。</block>
+  <block id="ec9c27a1c2d5a1d4769d15b48868bdaf" category="section-title">Kubnetes托管单元使用调整</block>
+  <block id="5e232fe3a0e64ea5b8742398f66c956c" category="paragraph">如果NetApp Kubennetes监控操作员和底层基础架构数据收集器(例如VMware)都计算了Kubennetes集群环境中的某个计算资源、则系统将调整这些资源的使用情况、以确保最高效地计算受管单元。您可以在"管理"&gt;"订阅"页面的"摘要"和"使用量"选项卡中查看Kubenetes MU调整。</block>
+  <block id="16cc34ec25ef5292c49b7fcf27d01385" category="inline-image-macro">K8s MU调整显示在估计计算器上</block>
+  <block id="9740da1fe13081b9e8603e12c24f457b" category="paragraph">摘要选项卡：
+<block ref="f2ff1c7008221f157f7e2a4df38ba4f1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="465299d39a69339fb8fc976919bdf64f" category="inline-image-macro">K8s MU调整显示在Usage (用量)选项卡上</block>
+  <block id="6eaf2b51f37d7f4d356ffe2a342af267" category="paragraph">使用情况选项卡：
+<block ref="09c99a3559c7afea569b832bd175894f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f4e0f73d094f0d65c6a05d5a032c2723" category="list-text">采集单元现在支持RHEL 8.7。</block>
 </blocks>

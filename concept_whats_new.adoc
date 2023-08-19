@@ -29,6 +29,54 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
+=== 收集Isilon/PowerScale日志和高级分析数据
+
+Isilan REST和PowerScale REST收集器具有以下改进功能：
+
+* Isilan日志事件可用于查询和警报
+* Isilan Advanced理事会属性可用于查询、信息板和警报：
++
+** EMC_Isila.cluster
+** emc_isilon.node
+** emc_isilon.node_disk
+** emc_isilon.net_iface
+
+
+
+
+默认情况下、Isilar REST和/或PowerScale REST收集器的用户会启用这些功能。NetApp强烈建议使用Isilan基于命令行界面的收集器的用户迁移到新的基于REST API的收集器、以获得上述增强功能。
+
+
+
+=== 改进的工作负载图
+
+工作负载映射的可用性更高、噪音更少；如果所有相似的外部服务与相同的工作负载通信、则会将这些服务分组到一个节点中、从而降低图形的复杂性、并更容易了解服务的互连方式。
+
+选择一个分组节点将显示一个详细表、其中包含与该节点相关的每个外部服务的网络流量指标。
+
+
+
+=== Kubnetes托管单元使用调整
+
+如果NetApp Kubennetes监控操作员和底层基础架构数据收集器(例如VMware)都计算了Kubennetes集群环境中的某个计算资源、则系统将调整这些资源的使用情况、以确保最高效地计算受管单元。您可以在"管理">"订阅"页面的"摘要"和"使用量"选项卡中查看Kubenetes MU调整。
+
+摘要选项卡：
+image:MU_Adjustments_K8s.png["K8s MU调整显示在估计计算器上"]
+
+使用情况选项卡：
+image:MU_Adjustments_K8s_Usage_Tab.png["K8s MU调整显示在Usage (用量)选项卡上"]
+
+
+
+=== 收集器/采集更改：
+
+已进行以下数据收集器/采集单元更改：
+
+* 采集单元现在支持RHEL 8.7。
+
+
+
+
 === 改进了菜单
 
 我们更新了左侧导航菜单、以更好地支持客户的工作流。通过_Kubernetes_等新的顶级项目、可以加快访问客户所需内容的速度、而整合的管理员控制台则支持租户所有者角色。
