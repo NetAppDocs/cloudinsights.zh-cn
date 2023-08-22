@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_expert_view_section.html 
 summary: '资产页面的 "Expert View" 部分是一个功能强大的故障排除或监控工具。' 
-keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, 
+keywords: asset page, expert view, metrics, greedy, degraded, correlated, contributors, chart, refresh 
 ---
 = 专家视图
 :toc: macro
@@ -19,7 +19,7 @@ keywords: asset page, expert view, metrics, greedy, degraded, correlated, contri
 
 
 [role="lead"]
-通过资产页面的 "Expert View" 部分，您可以根据任意数量的适用指标查看基础资产的性能样本，并查看性能图表中选定的时间段以及与此时间段相关的任何资产。
+通过资产页面的 "Expert View" 部分，您可以根据任意数量的适用指标查看基础资产的性能样本，并查看性能图表中选定的时间段以及与此时间段相关的任何资产。  在数据收集器轮询和获取更新后的数据时、图表中的数据会自动刷新。
 
 
 

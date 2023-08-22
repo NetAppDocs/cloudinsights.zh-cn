@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_asset_page_overview.html 
 summary: 可以为大多数对象类型显示资产页面。 
-keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtual Machine, SVM, Volume, Internal volume, Host, Hypervisor, pool, Storage, Datastore, Application, node, Qtree, Disk, VMDK, Port, Switch, Fabric 
+keywords: asset page, objects, landing page, Virtual machine, VM, Storage Virtual Machine, SVM, Volume, Internal volume, Host, Hypervisor, pool, Storage, Datastore, Application, node, Qtree, Disk, VMDK, Port, Switch, Fabric, refresh 
 ---
 = 资产页面概述
 :toc: macro
@@ -69,6 +69,8 @@ Cloud Insights 提供了以下资产的资产页面：
 
 
 自定义时间范围允许您最多选择 31 个连续日期。您还可以为此范围设置开始时间和一天中的结束时间。默认开始时间为选定第一天的中午 12 ： 00 ，默认结束时间为选定最后一天的晚上 11 ： 59 。单击应用将对资产页面应用自定义时间范围。
+
+资产页面摘要部分以及页面上的任何表或自定义小工具中的信息会根据选定时间范围自动刷新。当前刷新率显示在摘要部分的右上角以及页面上的任何相关表或小工具中。
 
 
 
