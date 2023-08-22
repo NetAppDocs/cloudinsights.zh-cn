@@ -7343,7 +7343,6 @@
   <block id="2ab997129d2c5216ff0d477e12280e8a" category="cell">尽管存在攻击，但某些用户并未受到限制。</block>
   <block id="9d9d839297abd5b6559ef681c302109c" category="cell">要限制的 IP 已被其他用户限制。</block>
   <block id="7591998776b8f5daf9acfbbe7be1312b" category="list-title">在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：</block>
-  <block id="92589af47923f82dcbca7ca5709f1005" category="doc">Cloud Insights 的新增功能</block>
   <block id="e229d51ca45046e23340982a0d911a30" category="section-title">保留审核数据</block>
   <block id="c5ba523259d5f0a8abbc98e09089879a" category="paragraph">Cloud Insights 保留审核数据的时间量取决于您的版本：</block>
   <block id="6140d54709a2f0707aaa20367fd479a2" category="list-text">基本版本：审核数据保留 30 天</block>
@@ -12935,4 +12934,5 @@ VMware vCenter Server 8.0.1内部版本21860503</block>
   <block id="01149343ed19ae68ec1c689ec3722a5c" category="paragraph">通过资产页面的 "Expert View" 部分，您可以根据任意数量的适用指标查看基础资产的性能样本，并查看性能图表中选定的时间段以及与此时间段相关的任何资产。  在数据收集器轮询和获取更新后的数据时、图表中的数据会自动刷新。</block>
   <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">摘要部分以及资产页面上的任何表或自定义小工具中的信息会根据选定时间范围自动刷新。您可以在"Summary (摘要)"部分的右上角、表以及任何自定义小工具中查看当前刷新率。</block>
   <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">资产页面摘要部分以及页面上的任何表或自定义小工具中的信息会根据选定时间范围自动刷新。当前刷新率显示在"Summary (摘要)"部分的右上角以及页面上的任何相关表或小工具上。</block>
+  <block id="820c5f3d48103a56a44610787108dad5" category="doc">Cloud Insights的新增功能</block>
 </blocks>

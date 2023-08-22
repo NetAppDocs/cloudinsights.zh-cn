@@ -4,7 +4,7 @@ permalink: concept_whats_new.html
 summary: Cloud Insights 中提供的新特性和功能。 
 keywords: features 
 ---
-= Cloud Insights 的新增功能
+= Cloud Insights的新增功能
 :toc: macro
 :hardbreaks:
 :toclevels: 2
