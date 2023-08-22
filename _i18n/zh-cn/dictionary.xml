@@ -12933,6 +12933,6 @@ VMware vCenter Server 8.0.1内部版本21860503</block>
 <block ref="09c99a3559c7afea569b832bd175894f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f4e0f73d094f0d65c6a05d5a032c2723" category="list-text">采集单元现在支持RHEL 8.7。</block>
   <block id="01149343ed19ae68ec1c689ec3722a5c" category="paragraph">通过资产页面的 "Expert View" 部分，您可以根据任意数量的适用指标查看基础资产的性能样本，并查看性能图表中选定的时间段以及与此时间段相关的任何资产。  在数据收集器轮询和获取更新后的数据时、图表中的数据会自动刷新。</block>
-  <block id="05c3e307f6dc616e1f39e3e2b33522d0" category="paragraph">资产页面摘要部分以及页面上的任何表或自定义小工具中的信息会根据选定时间范围自动刷新。当前刷新率显示在摘要部分的右上角以及页面上的任何相关表或小工具中。</block>
   <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">摘要部分以及资产页面上的任何表或自定义小工具中的信息会根据选定时间范围自动刷新。您可以在"Summary (摘要)"部分的右上角、表以及任何自定义小工具中查看当前刷新率。</block>
+  <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">资产页面摘要部分以及页面上的任何表或自定义小工具中的信息会根据选定时间范围自动刷新。当前刷新率显示在"Summary (摘要)"部分的右上角以及页面上的任何相关表或小工具上。</block>
 </blocks>
