@@ -12935,4 +12935,5 @@ VMware vCenter Server 8.0.1内部版本21860503</block>
   <block id="a529577c999092a8f244f1064ee16c6e" category="paragraph">摘要部分以及资产页面上的任何表或自定义小工具中的信息会根据选定时间范围自动刷新。您可以在"Summary (摘要)"部分的右上角、表以及任何自定义小工具中查看当前刷新率。</block>
   <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">资产页面摘要部分以及页面上的任何表或自定义小工具中的信息会根据选定时间范围自动刷新。当前刷新率显示在"Summary (摘要)"部分的右上角以及页面上的任何相关表或小工具上。</block>
   <block id="820c5f3d48103a56a44610787108dad5" category="doc">Cloud Insights的新增功能</block>
+  <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">可从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
 </blocks>
