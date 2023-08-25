@@ -126,4 +126,4 @@ OpenStack （ REST API/KVM ）数据收集器可采集所有 OpenStack 实例的
 
 | " 配置错误 " 以及以 " 策略不允许 " 或 " 您未获得授权 " 开头的错误消息 | * 检查 IP 地址 * 检查用户名和密码 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

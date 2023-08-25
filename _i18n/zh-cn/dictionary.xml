@@ -5701,7 +5701,6 @@
   <block id="f9cba995b86ac6c96d9d30c9ced7c828" category="cell">阵列控制器的 IP 地址和 / 或完全限定域名</block>
   <block id="123823c1c5909eba4c00c4d8585c250f" category="cell">默认值为 30 分钟</block>
   <block id="28d14a9ee241f7011a6670c176790bf0" category="cell">性能轮询间隔最长为 3600 秒</block>
-  <block id="aec2bde654bf8419f40a1a37b865d3df" category="paragraph">可以从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
   <block id="9fa4e650cd8691fa4e931e43145e4dfd" category="summary">配置 Fujitsu Eternus 数据收集器。</block>
   <block id="76bbf6e63b5bbafbef5f94b1231bc156" category="doc">Fujitsu Eternus 数据收集器</block>
   <block id="27baee321a480862e914c0713eed63ca" category="paragraph">Fujitsu Eternus 数据收集器通过对存储系统的管理级访问来获取清单数据。</block>
@@ -12936,4 +12935,6 @@ VMware vCenter Server 8.0.1内部版本21860503</block>
   <block id="ffe8a4f426307f8dd53338d7bc39db00" category="paragraph">资产页面摘要部分以及页面上的任何表或自定义小工具中的信息会根据选定时间范围自动刷新。当前刷新率显示在"Summary (摘要)"部分的右上角以及页面上的任何相关表或小工具上。</block>
   <block id="820c5f3d48103a56a44610787108dad5" category="doc">Cloud Insights的新增功能</block>
   <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">可从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
+  <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">可以从找到追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
+  <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">可以从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
 </blocks>

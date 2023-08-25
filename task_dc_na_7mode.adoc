@@ -216,4 +216,4 @@ NOTE: 此数据收集器为 link:task_getting_started_with_cloud_insights.html#u
 
 | 出现 " 无法连接到 vFiler " 错误 | 至少检查获取用户功能是否包括以下内容： api-* security-api-vFiler login-http-admin 确认存储器正在运行最低 ONTAPI 1.7 版。 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

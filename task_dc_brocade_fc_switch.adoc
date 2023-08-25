@@ -167,4 +167,4 @@ Cloud Insights 从 Brocade FC 交换机数据收集器采集以下清单信息�
 
 | 收到一条消息，指出有多个节点已登录到访问网关端口 | 检查 NPV 设备是否正常运行，以及所有已连接的 WWN 是否均为预期值。请勿直接获取 NPV 设备。而是采集核心网络结构交换机将收集 NPV 设备数据。 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

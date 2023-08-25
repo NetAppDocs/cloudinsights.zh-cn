@@ -188,4 +188,4 @@ Cloud Insights 从 Cisco FC 交换机数据收集器采集以下清单信息。�
 
 | 错误： SNMP v1 不支持性能采集 | •编辑数据源并禁用交换机性能•修改数据源和交换机配置以使用 SNMP v2 或更高版本 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

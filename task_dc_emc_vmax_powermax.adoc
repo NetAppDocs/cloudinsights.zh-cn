@@ -181,4 +181,4 @@ Cloud Insights 从 EMC VMAX/PowerMax 数据源采集以下清单信息。对于�
 
 | 我看到数据收集错误并显示消息："unknown code" | 如果未在Solutions Enabler服务器的守护进程配置文件中声明权限、您可能会看到此消息(请参见 <<要求,要求>> )假定您的SE客户端版本与您的SE服务器版本匹配。如果未在/var/symapi/config/daemon用户配置文件中为_cisys_用户(用于执行Solutions Enabler命令)配置所需的守护进程权限、也可能会发生此错误。要修复此问题、请编辑/var/symapi/config/daemon用户文件、并确保cisys用户具有为storapid守护进程指定的<all> 权限。示例：14：11：25 # tail /var/symapi/config/daem_users ... Cisys storapid <all> 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

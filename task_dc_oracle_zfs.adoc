@@ -140,4 +140,4 @@ Oracle ZFS设备使存储管理员可以灵活地捕获性能统计信息。Clou
 
 | " 配置错误 " ，并显示错误消息 " 用户未授权命令 " | 可能是由于某些角色（例如， "advanced_Analytics " ）未包含在配置的用户 <username> 中。可能的解决方案： * 更正具有只读角色的用户 $ ｛ user ｝ 的分析（统计信息）范围： - 从 " 配置 "->" 用户 " 屏幕中，将鼠标置于该角色上方并双击以允许编辑 - 从 " 范围 " 下拉菜单中选择 " 分析 " 。此时将显示可能属性的列表。—单击 Top most 复选框，它将选择所有三个属性。—单击右侧的添加按钮。—单击弹出窗口右上角的应用按钮。此时将关闭弹出窗口。 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

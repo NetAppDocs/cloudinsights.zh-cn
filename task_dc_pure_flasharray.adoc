@@ -114,4 +114,4 @@ Cloud Insights 使用 Pure Storage FlashArray 数据收集器收集清单和性�
 
 | 登录凭据无效，并显示错误消息 " 策略不允许 " 或 " 您未获得授权 " | 通过 Pure http 界面验证 Pure 用户帐户和密码 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

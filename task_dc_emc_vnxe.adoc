@@ -121,4 +121,4 @@ Cloud Insights 从 VNXe 数据收集器采集以下清单信息。对于 Cloud I
 
 | " 无法执行外部实用程序 " ，并显示错误消息 " 找不到 Unisphere 可执行文件 uemcli " | * 验证正确的 IP 地址，用户名和密码 * 确认 Cloud Insights 采集单元上已安装 Unisphere 命令行界面 * 确认数据源配置中的 Unisphere 命令行界面安装目录正确 * 确认 VNXe 的 IP 在数据源配置中正确无误。从 Cloud Insights 采集单元中，打开一个 CMD 并更改为配置的安装目录： $ ｛ INSTALLDIR 。尝试通过键入以下命令与 VNXe 设备建立连接： uemcli -d <your IP> -u <your ID>/sys/general show 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

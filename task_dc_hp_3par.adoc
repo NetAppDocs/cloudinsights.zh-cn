@@ -138,4 +138,4 @@ Cloud Insights 从此数据收集器获取以下清单信息。对于 Cloud Insi
 
 | Cloud Insights 表示无法连接 / 登录到 SMI-S 服务。 | 确认 CI AU 与阵列之间没有防火墙可阻止 CI AU 与 5988 或 5989 建立 TCP 连接。完成此操作后，如果您确认没有防火墙，则应通过 SSH 连接到阵列，然后使用 "showcim" 命令进行确认。确认： * 服务已启用 * HTTPS 已启用 * HTTPS 端口应为 5989 如果已启用，则可以尝试先执行 "stopcim" ，然后再执行 "startcim" 以重新启动 CIM （即 SMI-S 服务）。 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

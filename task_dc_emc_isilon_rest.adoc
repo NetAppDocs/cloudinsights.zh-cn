@@ -172,4 +172,4 @@ Cloud Insights 从此数据收集器获取以下清单信息。对于 Cloud Insi
 
 | "Internal Error" ，并显示错误消息 "Command <your command> run failed with permission ： < 您的当前权限 > 。sudo command run permission 问题描述 | 验证用户是否具有在设备上运行以下命令的 sudo 权限 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

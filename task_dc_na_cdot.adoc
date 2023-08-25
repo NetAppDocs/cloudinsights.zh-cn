@@ -316,4 +316,4 @@ ci_user     ontapi      password    ci_readonly   no
 
 | " 无法从 ZAPI 收集性能 " 错误 | 这通常是因为性能统计未运行。在每个节点上尝试以下命令： >_system node systemshell -node * -command "spmctl -h cmd – stop ； spmctl -h cmd – exec 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

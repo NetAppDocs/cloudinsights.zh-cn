@@ -129,4 +129,4 @@ Cloud Insights 从 IBM DS 数据收集器获取以下清单信息。对于 Cloud
 
 | 错误： * 无法运行程序 * 执行命令时出错 | * 从 Cloud Insights 采集单元打开 CMD * 在命令行界面的主目录 /lib 中打开 CLI.CFG 文件并检查属性 java_install ，编辑该值以匹配您的环境 * 显示此计算机上安装的 Java 版本，键入： "java -version" * 对在发出的命令行界面命令中指定的 IBM 存储设备的 IP 地址执行 Ping 操作。* 如果以上所有操作均正常，请手动运行命令行界面命令 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

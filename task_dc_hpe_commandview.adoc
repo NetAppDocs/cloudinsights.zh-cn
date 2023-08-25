@@ -214,4 +214,4 @@ Cloud Insights 从 HP Enterprise Command View 数据收集器采集以下清单�
 
 | 错误： * 未向 Storage Navigator 模块化 2 命令行界面注册阵列 * 未向 Storage Navigator 模块化 2 命令行界面注册阵列 * 配置错误：未向 StorageNavigator 模块化命令行界面注册存储阵列 | * 打开命令提示符并将目录更改为已配置的路径 * 运行命令 "set=STONAVM_HOME= " 。 * 运行命令 "auunitref" * 确认命令输出包含 IP 阵列的详细信息 * 如果输出不包含阵列详细信息，请向 Storage Navigator CLI 注册该阵列： —打开命令提示符并将目录更改为已配置的路径—运行命令 "set=STONAVM_HOME= " 。 —运行命令 "auunitaddauto -IP $ ｛ ip ｝ " 。将 $ ｛ IP ｝ 替换为实际 IP 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

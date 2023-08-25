@@ -138,4 +138,4 @@ naviseccli.exe -h <IP address> -user <user> -password <password> -scope <scope �
 
 | 错误：不支持的配置 - 无光纤通道端口 | 此设备未配置任何光纤通道端口。目前，仅支持 FC 配置。验证是否支持此版本 / 固件。 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。
