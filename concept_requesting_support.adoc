@@ -141,7 +141,7 @@ image:Support_View_SN.png["查看支持序列号"]
 
 == Cloud Insights 数据收集器支持列表
 
-您可以在中查看或下载有关受支持的数据收集器的信息和详细信息 link:CloudInsightsDataCollectorSupportMatrix.pdf["* Cloud Insights 数据收集器支持表 * ， role="external""]。
+您可以在中查看或下载有关受支持的数据收集器的信息和详细信息 link:reference_data_collector_support_matrix.html["* Cloud Insights 数据收集器支持表 * ， role="external""]。
 
 
 

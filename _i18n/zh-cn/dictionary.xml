@@ -392,7 +392,6 @@
   <block id="346064a64c9c2c3d709b40108b1b13ec" category="cell">错误：在执行 DART 更新时无法继续</block>
   <block id="439a42becfa04393106d447776fadfe0" category="cell">可能的解决方案：暂停数据收集器并等待 DART 升级完成，然后再尝试其他采集请求。</block>
   <block id="5ea8c0bc0f3ff2ad5a8ecd87179c69f1" category="inline-link-macro">数据收集器支持列表</block>
-  <block id="b13fdf15118fa90916588b42c9eab20f" category="paragraph">可以从找到追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
   <block id="36188b71a27eabbba08e545a83d62055" category="summary">配置 Dell EMC Data Domain 数据收集器。</block>
   <block id="ffcfe5fed071732290c9355893581d7d" category="doc">Dell EMC Data Domain 数据收集器</block>
   <block id="bdc3274e97745e1635f0d41c124ddb66" category="paragraph">此数据收集器从 Dell EMC Data Domain 重复数据删除存储系统收集清单和性能信息。要配置此数据收集器，必须遵循特定的配置说明和使用建议。</block>
@@ -417,7 +416,6 @@
   <block id="46fa23378796f63a46314bfec6013e9c" category="cell">两次清单轮询的间隔。默认值为 20. 。</block>
   <block id="9f956bf45dbca135e64b6aca59d593be" category="cell">SSH 端口</block>
   <block id="7f9b6bd4c92112ebcffd9e849212b05a" category="cell">SSH 服务端口</block>
-  <block id="38e5a763fdbf601806f64af07cf45787" category="paragraph">可从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="6bcd41b5488d3cd417d31b80921f5af9" category="inline-link-macro-rx"></block>。</block>
   <block id="14f8a78e828f1a5ed0a16f4eb166171e" category="summary">通过确定非活动设备，您可以选择将其删除或将其分配给活动角色。</block>
   <block id="ee5c6c936b3e5e6b3191a941d5161f88" category="doc">确定非活动设备</block>
   <block id="dedb4128ca8f8589aeee2da1198fdc45" category="paragraph">确定您拥有的资产以及使用这些资产的人员对于 " 合理调整规模 " 和释放未使用的基础架构至关重要。您可以轻松地重新分配或停用未充分利用的资源，并避免不必要的购买。</block>
@@ -484,7 +482,6 @@
   <block id="533e65443960283ff24073ad80db0e3d" category="paragraph"><block ref="533e65443960283ff24073ad80db0e3d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1c52cf8dba7f709e8910813b93418d94" category="section-title">Cloud Insights 数据收集器支持列表</block>
   <block id="d59e2e05079f7c9c24f5bbba7c6e3547" category="inline-link-macro">* Cloud Insights 数据收集器支持表 * ， role="external"</block>
-  <block id="34a28f543ea4981287965bd3ea1448ef" category="paragraph">您可以在中查看或下载有关受支持的数据收集器的信息和详细信息 <block ref="4928518ab1eaba703f07b7f823f64b48" category="inline-link-macro-rx"></block>。</block>
   <block id="3871fa64d8d00271e0576dbb10e625f8" category="summary">创建监控器，以便针对性能或清单阈值发出警报</block>
   <block id="25c90ccdccf440be40d0382cdd38edf8" category="doc">使用 Webhooks 发送通知</block>
   <block id="9c4196469ee8f7193233b70aa5a0dc44" category="paragraph">网络挂机允许用户使用自定义的网络挂机通道向各种应用程序发送警报通知。</block>
@@ -12937,4 +12934,5 @@ VMware vCenter Server 8.0.1内部版本21860503</block>
   <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">可从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">可以从找到追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">可以从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
+  <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">您可以在中查看或下载有关受支持的数据收集器的信息和详细信息 <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
 </blocks>

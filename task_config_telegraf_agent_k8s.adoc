@@ -560,4 +560,4 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 然后、重新启动Telegraf。 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:https://docs.netapp.com/us-en/cloudinsights/CloudInsightsDataCollectorSupportMatrix.pdf["数据收集器支持列表"]。
+可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。
