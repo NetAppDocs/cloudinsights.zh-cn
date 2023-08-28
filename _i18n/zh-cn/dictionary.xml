@@ -8419,9 +8419,6 @@
   <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">Cloud Insights 警报旨在突出显示环境中的数据点和趋势、而Cloud Insights 允许您以警报收件人的身份输入任何有效的电子邮件地址。如果您在安全环境中工作、请特别注意谁在接收通知或以其他方式有权访问警报。</block>
   <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">签名校验和文件(以SHA256.signed或SHA256.ps1结尾)</block>
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">安装代理时、会在计算机上创建一个本地用户_cssys_和一个本地组_cssys_。如果权限设置不允许创建本地用户、而需要Active Directory、则必须在Active Directory服务器中创建用户名为_cssys_的用户。</block>
-  <block id="8c8b20c16b839b518d90f5b38558a3cb" category="summary">使用 NetApp ONTAP 流遥测功能配置 Cloud Insights</block>
-  <block id="93254a992ce8a5bbebb5d43f09f243d7" category="doc">NetApp ONTAP 流遥测</block>
-  <block id="458a37db2666885e234720ccdea58253" category="paragraph">有关最新信息、请参见 <block ref="16021e77167161423bb6653c8cf910d8" category="inline-link-macro-rx"></block> 数据收集器页面。</block>
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">请参见本指南</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至：//SMI-S主机名或IP、其中&lt;SMI-S Hostname or IP&gt; ：5989/ecomconfig_是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
   <block id="c296d8324f9fa4f890b4ead0f69bfac3" category="doc">与ONTAP 自主勒索软件保护相集成</block>
@@ -12935,4 +12932,11 @@ VMware vCenter Server 8.0.1内部版本21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">可以从找到追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">可以从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">您可以在中查看或下载有关受支持的数据收集器的信息和详细信息 <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">要查看的聚合</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">如果您正在监控的集群包含自定义资源、而这些资源没有集群资源 <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>，则需要手动授予操作员对这些资源的访问权限，才能使用事件日志对其进行监控。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安装之前或安装之后编辑_operator-additional－permissions．yaml．编辑资源_ClusterRole．&lt;namespace&gt;－additional－permissions</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用动词["GET、"Watch、"list"]为所需的每个组和资源创建一个新规则。参见\https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">将所做的更改应用于集群</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">我缺少一些事件日志的_volvedobject_数据。</block>
+  <block id="2420d7dae924d9613e0f888211903abc" category="cell">确保已按照中的步骤进行操作 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block> 第节。</block>
 </blocks>
