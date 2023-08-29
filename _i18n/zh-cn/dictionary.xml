@@ -12932,11 +12932,24 @@ VMware vCenter Server 8.0.1内部版本21860503</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">可以从找到追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">可以从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">您可以在中查看或下载有关受支持的数据收集器的信息和详细信息 <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
-  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">要查看的聚合</block>
-  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">如果您正在监控的集群包含自定义资源、而这些资源没有集群资源 <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>，则需要手动授予操作员对这些资源的访问权限，才能使用事件日志对其进行监控。</block>
-  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安装之前或安装之后编辑_operator-additional－permissions．yaml．编辑资源_ClusterRole．&lt;namespace&gt;－additional－permissions</block>
-  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用动词["GET、"Watch、"list"]为所需的每个组和资源创建一个新规则。参见\https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
-  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">将所做的更改应用于集群</block>
-  <block id="4f05106cca363b0f3c492314ab777534" category="cell">我缺少一些事件日志的_volvedobject_数据。</block>
-  <block id="2420d7dae924d9613e0f888211903abc" category="cell">确保已按照中的步骤进行操作 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block> 第节。</block>
+  <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">工作负载安全性可与ONTAP集成、以接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
+  <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">与ONTAP集成访问被拒绝</block>
+  <block id="c1aef2a1ae85a8f2d2f2972297da3d60" category="paragraph">ONTAP访问被拒绝功能可在NAS (NFS和SMB)环境中使用工作负载分析来主动检测文件操作失败(例如、尝试执行其无权限操作的用户)并发出警告。这些文件操作失败通知、尤其是在出现安全相关故障的情况下、将进一步有助于在早期阶段阻止内部攻击。</block>
+  <block id="b849ca242cbc590016b269c1ee91cc29" category="paragraph">工作负载安全性与ONTAP集成、可接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
+  <block id="5b3261ec26222327253513a1f5b85ba6" category="list-text">最低ONTAP版本：9.13.0</block>
+  <block id="7238e9f6faa9a8bf2a1c0b55cb039588" category="list-text">默认情况下、"拒绝访问"功能处于禁用状态。工作负载安全管理员可以在添加新收集器或编辑现有收集器时启用此功能。要启用、请在"工作负载安全性"&gt;"收集器"中添加或编辑所需收集器、然后选中"高级配置"下的_监控访问被拒绝事件_复选框。</block>
+  <block id="a808fab09e2c9ae5a63f5e049dab0688" category="inline-image-macro">正在启用拒绝访问</block>
+  <block id="6dbaec8d589ae936fddaa5da8e4136bc" category="paragraph"><block ref="6dbaec8d589ae936fddaa5da8e4136bc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ccce4bc08fadbf62adda903ef18b3a71" category="paragraph">如果使用集群管理凭据添加收集器、则无需新权限。</block>
+  <block id="7e94086884e2780e5b6c9f81ac89dc5b" category="paragraph">如果使用自定义用户(例如、-CsUser_)添加收集器并为该用户授予权限，请按照以下步骤为工作负载安全性授予权限，以便向ONTAP注册“拒绝访问”事件。</block>
+  <block id="fe6df009bfa9d725b811d49cdb8b4e7c" category="paragraph">对于具有集群凭据的-CsUser_、请从ONTAP命令行执行以下命令：</block>
+  <block id="02efd7604209ddbbd8e84d4f61b73a6e" category="paragraph">对于具有SVM凭据的-CsUser_、从ONTAP命令行执行以下命令：</block>
+  <block id="18eb08209dff281929039b467a472f31" category="paragraph">注意：在上述命令中、_csRole_是自定义角色、而-CsUser_是ONTAP自定义用户。</block>
+  <block id="d0aae2eaa03ecabb8c086f9955d726c7" category="section-title">示例访问被拒绝事件</block>
+  <block id="428ed0ed1c01699e6322b706684fdb11" category="paragraph">此时将显示一个"拒绝访问"事件示例、如下图所示。您还可以在_Desired Activity_列下查看用户在特定操作中缺少的所需权限列表、您可以选择显示该列表。</block>
+  <block id="d41ccaf6090623996b7a77e9f74f06bf" category="inline-image-macro">拒绝访问样例事件</block>
+  <block id="66dcd3eccaf1048a46b7727780eeb9cd" category="inline-image-macro">显示“拒绝活动”列的“拒绝访问”示例事件</block>
+  <block id="143f93c0a250d7b4c81e78e2cb154211" category="paragraph"><block ref="ee0b481ebed31d6775d42686b376f648" category="inline-image-macro-rx" type="image"></block>
+<block ref="f913a701b0e25c9f7bd9dfbc47afd16c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAP访问被拒绝集成</block>
 </blocks>
