@@ -265,12 +265,12 @@ sidebar:
       url: "/task_troubleshooting_windows_acquisition_unit_problems.html"
     - title: 调查数据收集器错误
       url: "/task_research_failed_collector.html"
+  - title: 数据收集器支持列表
+    url: "/reference_data_collector_support_matrix.html"
   - title: 参考支持
     entries:
     - title: 请求支持
       url: "/concept_requesting_support.html"
-    - title: 数据收集器支持列表
-      url: "/reference_data_collector_support_matrix.html"
     - title: "《数据收集器参考—基础架构》"
       entries:
       - title: 供应商参考概述
