@@ -7138,23 +7138,12 @@
   <block id="a60abfe03b8079f9f0eac07879fdf93b" category="paragraph">您可以使用 _Sync_ 或 _Async_ 使用此类按键。</block>
   <block id="267bedda4c5c4a640bb527d89667582d" category="list-text">必须提供以下命令： curl ， sudo ， ping ， sha256sum ， openssl ， 和 dmidecode</block>
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">日志资源管理器</block>
-  <block id="72ab1611127dabda382ded8d35eabd5f" category="paragraph">要开始浏览日志，请单击 * 查询 &gt;+New Log Query* 。</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">选择日志</block>
   <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">您可以设置筛选器以进一步细化查询结果。例如，要查找显示失败的所有日志消息，请为包含单词 "Failed" 的 _MESSAGES 设置一个筛选器。</block>
   <block id="e290a1958705f522c7d916c05fcad28c" category="admonition">您可以开始在筛选器字段中键入所需的文本；键入时， Cloud Insights 将提示您创建包含字符串的通配符搜索。</block>
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">结果将显示在一个图形中，其中显示了所示每个时间段内的日志实例数。图下方是日志条目临时文件。图形和条目会根据选定时间范围自动刷新。</block>
   <block id="8ef03d84e3fb3a5e09cc1a40b1e60f8d" category="inline-image-macro">显示筛选器的查询示例</block>
   <block id="a5841d3432662ae9190489b4bf13e03c" category="paragraph"><block ref="a5841d3432662ae9190489b4bf13e03c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6525698622e5d4dd87d39bc69750d2e3" category="section-title">日志图形</block>
-  <block id="5ca1a83f7b7763185645c408d9237058" category="paragraph">此图显示了根据选定信息板时间范围分组到 _bages_ 中的日志条目数。每个时间范围的分段如下所示：</block>
-  <block id="1a07cd9ad36405911f4a827c02141cb5" category="cell">存储分段大小</block>
-  <block id="06cdf20b6eaa0ae9f8c50b0f6158589f" category="cell">30 分钟</block>
-  <block id="90085ccde7a8c066e1f3a5b7580ef07d" category="cell">45 分钟</block>
-  <block id="0d730df753ae6a369323fe6dc1641eb2" category="cell">1 天</block>
-  <block id="0aa0ba82527e49e5c56d1dfce41fc246" category="paragraph">要放大图形，只需从任意一侧拖动滑块即可。要对缩放区域进行水平移动，请单击并按住白色区域，然后向左或向右移动。单击 _Reset Zoom_ 可重置缩放级别。</block>
-  <block id="51e0a539e27933abd9022ece5ebb9dc0" category="inline-image-macro">通过在图形的两侧拖动来放大</block>
-  <block id="03bbd7f405795c5f2f9e6b2aa10a9485" category="paragraph"><block ref="03bbd7f405795c5f2f9e6b2aa10a9485" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9861da4e593f0d876c27ae2472947ec7" category="paragraph">请注意，在缩放图形或滚动表时，信息板自动刷新将暂停，时间范围将显示冻结时间。要恢复刷新，请单击 _Resume_ 按钮 <block ref="aba9fdfd6cc8b6ea17b1ffd7798083ed" category="inline-image-macro-rx" type="image"></block>。此操作还会重置缩放级别。</block>
   <block id="d376c886c5ff2fc65131f62ba9752f91" category="paragraph">您可以随时单击 _Create a Log Monitor_ 根据当前筛选器创建新的监控器。</block>
   <block id="5498a5f4896f117c2848f41304cec816" category="section-title">日志详细信息</block>
   <block id="359af7e1e51e6ea2bf3b35d99ff965eb" category="paragraph">单击列表中日志条目中的任意位置将打开该条目的详细信息窗格。您可以在此处了解有关此活动的更多信息。</block>
@@ -7505,8 +7494,6 @@
   <block id="a042a0a750858e6060db4dfe64a00752" category="summary">日志资源管理器是一个功能强大的工具，可用于通过不同的系统日志调查问题。</block>
   <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">Cloud Insights 日志资源管理器是一个功能强大的工具，可用于查询系统日志。除了有助于调查之外，您还可以将日志查询保存在 Monitor 中，以便在激活特定日志触发器后发出警报。</block>
   <block id="20d54bcfce082123adf73a66c93e11f1" category="admonition">根据您的环境，可供查询的日志类型可能会有所不同。随着时间的推移，可能会添加其他日志类型。</block>
-  <block id="5e618eb9ef1c438e7d5d6afda86417f3" category="inline-image-macro">日志查询菜单， 480</block>
-  <block id="d93346d5cd40cfc415b92ee8b9831053" category="paragraph"><block ref="d93346d5cd40cfc415b92ee8b9831053" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">从列表中选择一个可用日志。</block>
   <block id="d64c94573b121a79214c7bf24c4a546d" category="paragraph">最佳实践：强烈建议将 AWS 预定义的 _AmazonEC2ReadOnlyAccess_ 策略分配给 EC2 主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。</block>
   <block id="f0617472d6b597b6d93003c4c1003ad6" category="list-text">* 新增 * ：这是新警报的默认设置。</block>
@@ -12464,4 +12451,30 @@ v9.2.4.2</block>
 9.9.1 P8.
 9.9.1 P9.</block>
   <block id="c33b15606594c79bf9d409ec6f7e05b0" category="admonition">非活动 Cloud Insights 基本版环境将被删除，其资源将被回收。如果连续 30 天没有用户活动，或者连续 7 天未载入数据，则环境将被视为非活动环境。Cloud Insights 将发送通知，并在删除环境之前提供四天的宽限期。</block>
+  <block id="12a4857a4dbeb827f3ccc062e3e95447" category="paragraph">要开始浏览日志，请单击*日志查询&gt;+New Log Query*。</block>
+  <block id="9a588db8471730dbfebac65cd5467ad8" category="section-title">筛选</block>
+  <block id="c372ce68f746709e625ff6a439caabb9" category="section-title">包括/排除</block>
+  <block id="2787899688f12e7489007de8b12213d5" category="paragraph">在过滤日志时，您可以选择*include*(即“Filter to”)或*exinclude*您键入的字符串。排除的字符串在已完成的筛选器中显示为"Nt &lt;string&gt;(不是字符串)"。</block>
+  <block id="1734ff7c4f75b54c961ad7d4359787e1" category="inline-image-macro">显示排除选项的日志筛选器</block>
+  <block id="405c7a3556714c3c384503dcad4e730a" category="paragraph"><block ref="405c7a3556714c3c384503dcad4e730a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53fe9d76b1ba589991576c0208798009" category="section-title">高级筛选</block>
+  <block id="110b3aa692108cdd731e2a20e7fab59a" category="paragraph">在查询或信息板小工具中筛选文本或列表值时，在开始键入时，系统会显示一个选项，用于根据当前文本创建 * 通配符筛选器 * 。选择此选项将返回与通配符表达式匹配的所有结果。您也可以使用NOT、AND、OR或创建表达式、或者选择"无"选项以筛选空值。</block>
+  <block id="ca6fcfb5b3944c9f5e1fc9d91e8b5fc9" category="admonition">构建筛选时、请务必尽早并经常保存查询。高级查询是"自由格式"字符串条目、构建时可能会出现解析错误。</block>
+  <block id="6682349270b7766210b24eb769ff2f4b" category="paragraph">查看此屏幕图像、其中显示了_logs.Kubernetes.event_日志高级查询的筛选结果。此页面中有许多内容、图片下方对此进行了说明：</block>
+  <block id="1e7fa24e8c554b3ada8b33899f9054fb" category="inline-image-macro">高级查询屏幕说明</block>
+  <block id="67e358a5c19a682585f241c67623688b" category="paragraph"><block ref="67e358a5c19a682585f241c67623688b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="46a8b17ae4f06cb7ca1032e9fd81030d" category="list-text">此高级查询字符串用于筛选以下内容：</block>
+  <block id="8cc6fe8efec4a3d6fc5ed7b779e8c094" category="list-text">筛选带有_reason_且包含单词"Failed"的日志条目、但不包含任何特定原因"FailedMount"的日志条目。</block>
+  <block id="0d08e6b786ad26cf3562710d1355fea7" category="list-text">请包括也包含_metadata.namespace_(包含单词"monitoring")的任何条目、但不包括"cm-monitoring"或"eg-monitoring"的特定名空间。</block>
+  <block id="2b54fd64a2706073e8bc271891bd6d2d" category="paragraph">请注意、在上述情况下、由于"cm-monitoring"和"eg-monitoring"都包含短划线("-")、因此必须将这些字符串包含在双引号中、否则会显示解析错误。不包含短划线、空格等的字符串不需要用引号括起来。如果有疑问、请尝试将字符串放在引号中。</block>
+  <block id="af949190b79fd7ebdb106c82bad91ccd" category="list-text">当前筛选器的结果、包括任何"筛选依据"值和高级查询筛选器。此列表可以按任何显示的列进行排序。要显示其他列、请选择"齿轮"图标。</block>
+  <block id="b61d5955be1f96c1051d023bbbb0885a" category="list-text">图形已放大、仅显示特定时间范围内发生的日志结果。此处显示的时间范围反映了当前的缩放级别。选择_重置缩放_按钮可将缩放级别设置回当前Cloud Insights时间范围。</block>
+  <block id="e9c3a605437c1d21260249137747effc" category="list-text">图表结果已按_sSource_字段进行分组。图表将在分组为颜色的每列中显示结果。将鼠标悬停在图表中的一列上将显示有关特定条目的一些详细信息。</block>
+  <block id="ddebec2cff3de7b17694a2b5c55254a5" category="inline-image-macro">分组的Hover详细信息</block>
+  <block id="540bd2dacf8012f1036c7cbb4c950e57" category="paragraph"><block ref="540bd2dacf8012f1036c7cbb4c950e57" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1c9bb5a9e84c262c583c25b07c1af190" category="paragraph">您可以将简单筛选器与高级查询筛选器结合使用；生成的筛选器是这两者中的"and"。</block>
+  <block id="b761d7a9aa49f18da68cf21ea910b857" category="section-title">图表图例</block>
+  <block id="772a480c61e419a52923d1da92b228e7" category="paragraph">图表下方的_Legend_也有一些惊喜。对于图例中显示的每个结果(基于当前筛选器)、您可以选择仅显示该行的结果(添加筛选器)、或者显示不属于该行的任何结果(添加排除筛选器)。图表和日志条目列表将更新、以根据您的选择显示结果。  要删除此筛选、请再次打开图例、然后选择[X]以清除基于图例的筛选器。</block>
+  <block id="d14acaf1ab19304c31907532625c28a1" category="inline-image-macro">为第一个结果显示"添加筛选器"的高级查询图例</block>
+  <block id="342c7491dc2f013cbb7933ea5b7db958" category="paragraph"><block ref="342c7491dc2f013cbb7933ea5b7db958" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
