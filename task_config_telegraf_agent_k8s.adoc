@@ -218,7 +218,7 @@ image:NKMO-Instructions-1.png[""]
 image:NKMO-Instructions-2.png[""]
 
 .在 Kubernetes 上安装 NetApp Kubernetes 监控操作员代理的步骤：
-. 输入唯一的集群名称和命名空间。如果您是 <<升级,升级>> 在基于脚本的代理或先前的Kubernetes操作员中、使用相同的集群名称和命名空间。
+. 输入唯一的集群名称和命名空间。如果您是 <<升级,升级>> 在先前的Kubnetes Operator中、请使用相同的集群名称和命名空间。
 . 输入这些代码后、您可以将Download Command代码录复制到剪贴板。
 . 将此代码片段粘贴到 _bash_ 窗口中并执行。此时将下载Operator安装文件。请注意、此代码片段具有唯一的密钥、有效期为24小时。
 . 如果您有自定义或私有存储库、请复制可选的映像提取代码段、将其粘贴到_bash_ shell中并执行该代码段。提取映像后、将其复制到您的私有存储库。请务必保持相同的标记和文件夹结构。更新_operator-DEPRAYAML_中的路径以及_operator-config.yaml_中的Docker存储库设置。
@@ -250,20 +250,9 @@ image:K8s_Modify_Deployment_Screen.png["显示\"日志收集\"复选框的\"修�
 
 == 升级
 
-
-NOTE: 如果您先前安装了基于脚本的代理、则必须升级到NetApp Kubernetes监控操作员。
-
-
-
-=== 从基于脚本的代理升级到NetApp Kubernetes监控操作员
-
-要升级电报代理，请执行以下操作：
-
-. 记下Cloud Insights 可识别的集群名称。您可以运行以下命令来查看集群名称。如果您的命名空间不是默认命名空间(_CI-monitoring_）、请替换相应的命名空间：
+. 备份现有配置：
 +
- kubectl -n ci-monitoring get cm telegraf-conf -o jsonpath='{.data}' |grep "kubernetes_cluster ="
-
-
+ kubectl --namespace ci-monitoring get cm -o yaml > /tmp/telegraf-configs.yaml
 . 保存K8s集群名称、以便在安装K8s基于操作员的监控解决方案 期间使用、以确保数据连续性。
 +
 如果您不记得CI中K8s集群的名称、可以使用以下命令行从已保存的配置中提取此集群：
@@ -290,54 +279,6 @@ NOTE: 如果您先前安装了基于脚本的代理、则必须升级到NetApp K
 
 
 
-
-=== 升级到最新的NetApp Kubernetes监控操作员
-
-确定现有Operator是否存在AgentConfiguration (如果您的命名空间不是默认的_NetApp-monitoring _、请替换相应的命名空间)：
-
- kubectl -n netapp-monitoring get agentconfiguration netapp-monitoring-configuration
-如果存在AgentConfiguration：
-
-* <<installing-the-netapp-kubernetes-monitoring-operator,安装>> 现有运算符上的最新运算符。
-+
-** 确保您的状态 <<using-a-custom-or-private-docker-repository,提取最新的容器映像>> 如果使用的是自定义存储库。
-
-
-
-
-如果AgentConfiguration不存在：
-
-* 记下Cloud Insights 可识别的集群名称(如果您的命名空间不是默认的NetApp监控、请替换相应的命名空间)：
-+
- kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
-* 为现有Operator创建备份(如果您的命名空间不是默认的NetApp监控、请替换相应的命名空间)：
-+
- kubectl -n netapp-monitoring get agent -o yaml > agent_backup.yaml
-* <<to-remove-the-netapp-kubernetes-monitoring-operator,卸载>> 现有操作员。
-* <<installing-the-netapp-kubernetes-monitoring-operator,安装>> 最新的运算符。
-+
-** 请使用相同的集群名称。
-** 下载最新的Operator YAML文件后、在部署之前、将在agent_backup.yaml中找到的所有自定义设置移植到下载的operator-config.yaml。
-** 确保您的状态 <<using-a-custom-or-private-docker-repository,提取最新的容器映像>> 如果使用的是自定义存储库。
-
-
-
-
-
-
-== 停止和启动NetApp Kubernetes监控操作员
-
-要停止NetApp Kubernetes监控操作员、请执行以下操作：
-
- kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=0
-要启动NetApp Kubernetes监控操作员、请执行以下操作：
-
- kubectl -n netapp-monitoring scale deploy monitoring-operator --replicas=1
-
-
-== 正在卸载
-
-
 NOTE: 如果您运行的是先前安装的基于脚本的Kubernetes代理、则必须执行此操作 <<升级,升级>> NetApp Kubernetes监控操作员。
 
 
@@ -357,207 +298,117 @@ NOTE: 如果您运行的是先前安装的基于脚本的Kubernetes代理、则�
  kubectl --namespace ci-monitoring delete ds,rs,cm,sa,clusterrole,clusterrolebinding -l app=ci-telegraf
 
 
-=== 删除NetApp Kubernetes监控操作员
+== 调整操作员
 
-请注意、NetApp Kubernetes监控操作员的默认命名空间为"netapp-monitoring"。如果您已设置自己的命名空间，请在这些命令和所有后续命令和文件中替换该命名空间。
-
-可以使用以下命令卸载较新版本的监控操作员：
-
-....
-kubectl delete agent -A -l installed-by=nkmo-<name-space>
-kubectl delete ns,clusterrole,clusterrolebinding,crd -l installed-by=nkmo-<name-space>
-....
-如果第一个命令返回"未找到资源"、请按照以下说明卸载旧版本的监控操作员。
-
-按顺序执行以下每个命令。根据您当前的安装情况、其中某些命令可能会返回‘object not found '消息。可以安全地忽略这些消息。
-
-....
-kubectl -n <NAMESPACE> delete agent agent-monitoring-netapp
-kubectl delete crd agents.monitoring.netapp.com
-kubectl -n <NAMESPACE> delete role agent-leader-election-role
-kubectl delete clusterrole agent-manager-role agent-proxy-role agent-metrics-reader <NAMESPACE>-agent-manager-role <NAMESPACE>-agent-proxy-role <NAMESPACE>-cluster-role-privileged
-kubectl delete clusterrolebinding agent-manager-rolebinding agent-proxy-rolebinding agent-cluster-admin-rolebinding <NAMESPACE>-agent-manager-rolebinding <NAMESPACE>-agent-proxy-rolebinding <NAMESPACE>-cluster-role-binding-privileged
-kubectl delete <NAMESPACE>-psp-nkmo
-kubectl delete ns <NAMESPACE>
-....
-如果先前为基于脚本的 Telegraf 安装手动创建了安全上下文限制：
-
- kubectl delete scc telegraf-hostaccess
-
-
-== 关于Kube-state-metrics
-
-NetApp Kubernetes监控操作员会自动安装Kube-state-metrics；无需用户交互。
-
-
-
-=== Kube-state-metrics 计数器
-
-使用以下链接访问这些Kubbe状态指标计数器的信息：
-
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/configmap-metrics.md["ConfigMap 指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/daemonset-metrics.md["DemonSet 指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/deployment-metrics.md["部署指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/ingress-metrics.md["传入指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/namespace-metrics.md["命名空间指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/node-metrics.md["节点指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolume-metrics.md["永久性卷指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/persistentvolumeclaim-metrics.md["持久性卷声明指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/pod-metrics.md["POD 指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/replicaset-metrics.md["ReplicaSet 指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/secret-metrics.md["机密指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/service-metrics.md["服务指标"]
-. https://github.com/kubernetes/kube-state-metrics/blob/master/docs/statefulset-metrics.md["StatusSet 指标"]
-
-
-
-
-== 验证 Kubernetes 校验和
-
-Cloud Insights 代理安装程序会执行完整性检查，但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。要执行仅下载操作（与默认的下载和安装操作相反），这些用户可以编辑从 UI 获取的代理安装命令并删除尾随的 "install" 选项。
-
-请按照以下步骤操作：
-
-. 按照说明复制 Agent 安装程序代码片段。
-. 请将代码片段粘贴到文本编辑器中，而不是将其粘贴到命令窗口中。
-. 从命令中删除后缀"-install"。
-. 从文本编辑器复制整个命令。
-. 现在，将其粘贴到命令窗口（在工作目录中）并运行。
-+
-** Download and install （下载并安装）（默认）：
-+
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download –-install
-** 仅下载：
-+
- installerName=cloudinsights-kubernetes.sh … && sudo -E -H ./$installerName --download
-
-
-
-
-仅下载命令会将所有所需的项目从 Cloud Insights 下载到工作目录。这些项目包括但不限于：
-
-* 安装脚本
-* 环境文件
-* YAML 文件
-* 签名校验和文件（ SHA256.signed ）
-* 用于签名验证的 PEM 文件（ netapp_cert.pem ）
-
-
-安装脚本，环境文件和 YAML 文件可以通过目视检查进行验证。
-
-可以通过确认 PEM 文件的指纹为以下内容来验证 PEM 文件：
-
- 1A918038E8E127BB5C87A202DF173B97A05B4996
-更具体地说，
-
- openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
-可以使用 PEM 文件验证签名校验和文件：
-
- openssl smime -verify -in sha256.signed -CAfile netapp_cert.pem -purpose any
-在对所有项目进行满意的验证后，可以通过运行以下命令启动代理安装：
+您可以通过微调自定义资源的某些变量来调整NetApp Kubernetes监控操作员以获得最佳性能。有关可调整的变量的说明和列表、请参见安装软件包附带的README文件。安装操作员后、请使用以下命令查看自述文件：
 
  sudo -E -H ./<installation_script_name> --install
 
+NOTE: Cloud Insights 联邦版不提供操作员调整功能
 
-== 故障排除
+您可以通过微调自定义资源的某些变量来调整NetApp Kubernetes监控操作员以获得最佳性能。  有关可设置的变量、请参见下表。
 
-如果在设置NetApp Kubernetes监控操作员时遇到问题、请尝试执行以下操作：
+要修改这些值、请使用以下命令编辑代理CR (将<namespace> 替换为命名空间)：
 
-[cols="stretch"]
-|===
-| 问题： | 请尝试以下操作： 
-
-
-| 我未看到 Kubernetes 永久性卷与相应后端存储设备之间的超链接 / 连接。我的 Kubernetes 永久性卷使用存储服务器的主机名进行配置。 | 按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。您必须使用Telegraf 2.0或更高版本、并且Cloud Insights 必须主动监控您的Kubernetes集群存储。 
-
-
-| 我在日志中看到类似以下内容的消息： E0901 15 ： 21 ： 39.962145 1 个 trirror.go ： 178] K8s.io/Kube-state-metrics/internal/store/builer.go ： 352 ：无法列出 * 。 MutatingWebhookConfiguration ：服务器找不到请求的资源 E091.IO/Kube-state-metrics ：内部 /8.171.Go ：无法找到服务器 | 如果您运行的是Kube-state-metrics版本2.0.0或更高版本、而Kubernetes版本低于1.20、则可能会出现这些消息。要获取 Kubernetes 版本： _kubectl version_ 以获取 Kube-state-metrics 版本： _kubectl get deploy/Kube-state-metrics -o jsonpath="" ｛ ..image ｝ '_ 要防止发生这些消息，用户可以修改其 Kube-state-metrics 部署以禁用以下租约： _mutatingwebconfigurations _webhook_ ，具体可以使用以下参数： resources=certificatesigningrequests ， configmaps ， cronjobs ， demonsets ，部署，端点，水平 podautoscalers ， ingeses ，作业，限制范围，命名空间，网络策略，节点，复制卷，持久性卷， poddis中断 预算， Pod ，证书集，资源控制器，资源等，网络，存储器，卷，存储器，卷，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，存储器，卷，存储器，存储器，存储器，存储器，存储器，存储器， 验证 webhookconfigurations ， volumeattachments 
-
-
-| 我看到来自 Telegraf 的错误消息如下所示，但 Telegraf 确实启动并运行： Oct 11 14 ： 23 ： 41 IP-172-31-39-47 systemd1* ：启动了插件驱动的服务器代理，以便向 InfluxDB 报告指标。Oct 11 14 ： 23 ： 41 IP-172-31-39-47 cailaf[1827] ： time="2021-10-11T14 ： 23 ： 41Z" level=error msg="failed to create cache directory" 。/etc/celaf/.cache/snowvelc ，错误： mkdir /etc/tengraf/.ca ChE ：权限被拒绝。ignored\n" func="gosnowchelf.（ * defaultLogger ） .Errorf" fil="log.go ： 120" Oct 11 14 ： 23 ： 41 IP-172-31 ： 39-47 celaf[1827] ： time="2021-10-11T14 ： 23 ： 41Z" level=error msg="failed to open.已忽略。打开 /etc/celaf/.cache/snowlife/OCSP_response_cache.json ： no such file or directory\n" func="gosnowchlafe.（ * defaultLogger ） .Errorf" fil="log.go ： 120" Oct 11 14 ： 23 ： 41 IP-172-31-39-47 craaf[1827] ： I-41Z-2021 ：启动 Telegraf 1.19.3 | 这是一个已知的问题描述。请参见 link:https://github.com/influxdata/telegraf/issues/9407["此 GitHub 文章"] 有关详细信息：只要 Telegraf 启动并运行，用户就可以忽略这些错误消息。 
-
-
-| 在 Kubernetes 上，我的 Telegraf Pod 报告以下错误： " 处理 mountstats 信息时出错：无法打开 mountstats 文件： /hostfs/proc/1/mountstats ，错误： open /hostfs/proc/1/mountstats ：权限被拒绝 " | 如果启用并强制实施SELinux、则可能会阻止Telegraf Pod访问Kubelnetes节点上的/proc/1/mountstats文件。要克服此限制、请编辑代理配置并启用run特权 设置。有关详细信息、请参见： https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions[]。 
-
-
-| 在 Kubernetes 上，我的 Telegraf ReplicaSet Pod 报告以下错误： inputs.prometheus] 插件错误：无法加载密钥类型 /etc/Kubernetes ， PKI/etcd/server.crt ： /etc/Kubernetes ， crt/etcd/server.key ：打开 /etc/Kubernetes ， pki/etcd/server.key ： open /etc/Kubernetes ， pki/etcd/server.key ： no 此类文件或目录 | Telegraf ReplicaSet Pod 应在指定为主节点或 etcd 节点上运行。如果 ReplicaSet Pod 未在其中一个节点上运行，您将收到这些错误。检查您的主 /etcd 节点是否具有此类节点的影响。如果是，请将必要的容错添加到 Telegraf ReplicaSet ，即 Teleaf-RS 中。例如，编辑 ReplicaSet... kubectl edit RS ceaaf-rs ... 并将适当的容错添加到规范中。然后，重新启动 ReplicaSet Pod 。 
-
-
-| 我使用的是PSP/PSA环境。这是否会影响我的监控操作员？ | 如果您的Kubernetes集群运行时已设置Pod安全策略(PSP)或Pod安全准入(PSA)、则必须升级到最新的NetApp Kubernetes监控操作员。按照以下步骤升级到支持PSP/PSA的当前NKMO：1. <<uninstalling,卸载>> 先前的监控运算符：kubectl delete agent agent-monitoring-netapp -n netapp-monitoring kubectl delete ns netapp-monitoring kubectl delete crd agents.monitoring.netapp.com kubectl delete clusterrole agent-manager-role agent-roxy-role agent-metrics-reader kubectl delete clusterrolebinding agent-manager-rolebinding rolebinding agent-rolebind-rolebind-rolebind-2-admin-cluster-rolebinding.name。 <<installing-the-netapp-kubernetes-monitoring-operator,安装>> 监控运算符的最新版本。 
-
-
-| 我在尝试部署NKMOO时遇到问题、并且正在使用PSP/PSA。 | 1.使用以下命令编辑代理：kubectl -n <name-space> edit agent 2.将"securtion-policy-enabled"标记为"false"。此操作将禁用Pod安全策略和Pod安全准入、并允许NKMO.使用以下命令进行确认：kubectl get PSP (应显示Pod Security Policy Removed) kubectl get all -n <namespace> grep -i PSP (应显示未找到任何内容) 
-
-
-| 出现"ImagePullBackoff"错误 | 如果您拥有自定义或专用Docker存储库、但尚未将NetApp Kubernetes监控操作员配置为正确识别该存储库、则可能会出现这些错误。 <<using-a-custom-or-private-docker-repository,阅读更多内容>> 关于为自定义/私有repo. 
-
-
-| 我正在部署监控操作员问题描述 、而当前文档对我的解决没有帮助。  a| 
-捕获或记下以下命令的输出、然后联系技术支持团队。
+ kubectl edit agent agent-monitoring-netapp -n <namespace>
+CR规范采用以下格式：
 
 [listing]
 ----
- kubectl -n netapp-monitoring get all
- kubectl -n netapp-monitoring describe all
- kubectl -n netapp-monitoring logs <monitoring-operator-pod> --all-containers=true
- kubectl -n netapp-monitoring logs <telegraf-pod> --all-containers=true
+ - name: <plugin-name>
+   ...
+   substitutions:
+   - key: <variable-name>
+     value: <desired-value>
+     ...
 ----
+标记为"included in default CR"的项将已存在于代理CR中、并可在其相应插件下找到。必须按照包含的默认替换项提供的示例手动添加标记为"no"的项。
 
 
-| 在KMO命名空间中、Net-Observer (Workload Map) Pod位于CrashLoopBackOff中 | 这些Pod对应于用于网络可观察性的工作负载映射数据收集器。请尝试以下操作：•检查其中一个Pod的日志以确认最低内核版本。例如：---｛"ci租户id"："Your -en租 户id"、"cCollector cluster-cluster-"："Your -K8s-cluster-name"、"뮷 뺳"："prod"、"level "："error"、"msg"："验证失败。原因：内核版本3.10.0低于最低内核版本4.18.0"、"time"："2022-11-09T08：23：08Z"｝---•Net-observer Pod要求Linux内核版本至少为4.18.0。使用命令"uname -r "检查内核版本、并确保它们>= 4.18.0 
 
+=== 与资源相关的变量
 
-| NKMO命名空间中的Net-Observer Pod位于OpenShift 4环境中的CrashLoopBackOff中 | 目前不支持此功能。请留意将来更新中要添加的支持。 
+请参见 https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/[]	有关Kubernetes资源的信息。
 
-
-| Pod正在KMO命名空间中运行(默认值：netapo-monitoring)、但在查询中、UI中不会显示工作负载映射数据或Kubornetes指标数据 | 检查K8S集群节点上的时间设置。为了准确地进行审核和数据报告、强烈建议使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。 
-
-
-| 在新工单命名空间中、某些Net-observer Pod处于Pending状态 | Net-observer是一个DemonSet、在K8s集群的每个节点上运行一个POD。•记下处于“待定”状态的POD，并检查它是否遇到了CPU或内存的资源问题描述。确保节点中具有所需的内存和CPU。 
-
-
-| 安装NetApp Kubenetes Monitoring Operator后、我的日志中立即显示以下内容：[HTTP inputs.prometheus] Error in plugin: Error m制作HTTP请求时出错 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 获取 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 拨号<namespace> ：LOOKUP KUbe状态指标.tcp.svc.cluster-local：无此主机 | 通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。 
-
-
-| 我没有看到为集群中的Kubnetes CronJobs收集任何指标。 | 验证您的Kubbernetes版本(即 `kubectl version`）。  如果是v1.20.x或更低版本、则这是预期的限制。  随NetApp Kubernetes监控操作员部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。 
-
-
-| 安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。 | 编辑_AgentConfiguration_中的NetApp-monitoring配置部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息、请参见操作员的 link:telegraf_agent_k8s_config_options.html["配置选项"]。
-
-注意： 如果您使用的是Cloud Insights联邦版、则对_su_的使用有限制的用户将无法收集Docker指标、因为要访问Docker套接字、需要以root用户身份运行预制数据容器或使用_su_将预制数据用户添加到Docker组。默认情况下、Docker指标收集和_su_的使用处于启用状态；要同时禁用这两者、请删除_AgentConfiguration_文件中的_tenderaf.Docker条目：
-
-...
-规格：
-...
-电报：
-    ...
-     -名称：Docker
-            运行模式：
-              - DemonSet
-            可进行的其他操作：
-              -关键字：Docker _UNIS_sdoc_PLATORY
-                值：UNIX：//run/Docker。sk
-    ...
-... 
-
-
-| 我在Telegraf日志中看到重复出现以下错误消息：
-
- E！[agent]写入Outputs.http：POST时出错 "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] 超过上下文期限(等待标头时超出客户端超时) | 编辑每个Telegraf配置文件(即/etc/telegraf/Telegraf.d/*.conf)，并增加Telegraf输出插件的超时。  例如、在每个.conf文件中、替换所有实例...
-
-[[Outputs.http]]
-...
-超时="5s"
-...
-
-
-以下内容：
-
-[[Outputs.http]]
-...
-超时="10s"
-...
-
-然后、重新启动Telegraf。 
 |===
-可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。
+
+
+| 变量名称 | 插件名称 | 包含在默认CR中 | 说明 
+
+
+| ds_cpu_limits_placeholder | 代理 | 是的。 | Kubernetes的电报CPU限制 
+
+
+| DS_MEM_limits_placeholder | 代理 | 是的。 | 有关电报的Kubernetes Mem限制 
+
+
+| ds_cpu_request_placeholder | 代理 | 是的。 | Kubernetes对电报的CPU请求 
+
+
+| DS_MEM_request_placeholder | 代理 | 是的。 | Kubernetes对电报的内存请求 
+
+
+| rs_cpu_limits_placeholder | 代理 | 是的。 | Kubernetes的电报RS CPU限制。 
+
+
+| RS_MEM_limits_placeholder | 代理 | 是的。 | 适用于电报RS的Kubernetes Mem限制 
+
+
+| rs_cpu_request_placeholder | 代理 | 是的。 | Kubernetes针对电报RS的CPU请求 
+
+
+| rs_mem_request_placeholder | 代理 | 是的。 | Kubernetes对电报RS的内存请求 
+
+
+| KSM_CPU_request_placeholder： | KSM | 是的。 | Kubernetes CPU请求Kube-state-metrics Deploy 
+
+
+| KSM_MEM_request_placeholder： | KSM | 是的。 | Kubernetes CPU请求Kube-state-metrics Deploy 
+|===
+
+
+=== 与Telegraf相关的变量
+
+请参见 https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent[] 有关电报变量的信息。
+
+|===
+
+
+| 占位符 | 插件名称 | 包含在默认CR中 | 说明 
+
+
+| collection_interval_placeholder | 代理 | 否 | (设置电报间隔、类型间隔)：在所有插件的输入之间等待的默认时间。有效时间单位为ns、us (或 µs)、ms、s、m、高 
+
+
+| round_interval_placeholder | 代理 | 否 | (设置craeaf round_interval、类型为布尔值)按间隔倍数收集指标 
+
+
+| metric_batch_size_placeholder | 代理 | 否 | (设置crainf metric_batch_size、type int)一个输出电报将在一个批处理中写入的最大记录数 
+
+
+| metric_buffer_limit_placeholder | 代理 | 否 | (设置crafff metric_buffer_limit、键入int)输出电报将缓存的最大记录数、以等待成功写入 
+
+
+| COLLECTION_抖动 占位符 | 代理 | 否 | (设置craf collection_j抖动、类型间隔)：每个插件将在计划的收集时间与该时间+ collection_j抖动 之间随机等待一段时间、然后再收集输入 
+
+
+| precy_placeholder | 代理 | 否 | (设置电报精度、类型间隔)：收集的指标将舍入为指定的精度、如果设置为"0"、则精度将按间隔指定的单位进行设置 
+
+
+| flush_interval_placeholder | 代理 | 否 | (设置crait flush_interval、type interval)：在两次写入输出之间的默认时间。 
+
+
+| flush_jit_placeholder | 代理 | 否 | (设置craf flush_jits抖动、类型间隔)：在写入输出之前、每个输出将随机等待计划写入时间与该时间+ flush_jits抖动 之间的一段时间 
+|===
+
+
+=== 其他变量
+
+|===
+
+
+| 占位符 | 插件名称 | 包含在默认CR中 | 说明 
+
+
+| cURL CMD_placeholder | 代理 | 是的。 | 用于下载各种资源的cURL命令。例如、"ccur"或"cURL -k" 
+|===
