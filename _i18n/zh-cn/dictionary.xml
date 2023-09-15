@@ -12394,6 +12394,8 @@ v9.2.4.2</block>
   <block id="82ae7df2222778ee2748567434e1d911" category="section-title">其他变量</block>
   <block id="327fbef93ac997add024577e1fdbe932" category="cell">cURL CMD_placeholder</block>
   <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">用于下载各种资源的cURL命令。例如、"ccur"或"cURL -k"</block>
-  <block id="ce657060a1d97a0550e523e90be61acd" category="admonition">您不能删除已连接数据收集器的采集单元(AU)。在删除原始AU之前、请将所有AU的数据收集器移至另一个AU (编辑此收集器并仅选择其他AU)。
-''</block>
+  <block id="1f0e93b0a15bd60e04388c6d5ff59fdc" category="admonition">您不能删除已连接数据收集器的采集单元(AU)。在删除原始AU之前、请将所有AU的数据收集器移至另一个AU (编辑此收集器并仅选择其他AU)。</block>
+  <block id="6ca3f10b5393d86f93fd0734db3cecd7" category="paragraph">正在使用旁边带有星号的采集单元进行设备解析。删除此AU之前、您必须选择另一个AU以用于设备解析。将鼠标悬停在其他AU上、然后打开"三点"菜单、选择"用于设备分辨率"。</block>
+  <block id="c5e5e7a28ba316db52d09e89bd288fc9" category="inline-image-macro">au用于设备解析</block>
+  <block id="793f9fde8e6064cae75d4cbfd2efe0fb" category="paragraph"><block ref="793f9fde8e6064cae75d4cbfd2efe0fb" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
