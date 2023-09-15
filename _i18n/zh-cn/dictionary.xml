@@ -12404,4 +12404,33 @@ v9.2.4.2</block>
   <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用动词["GET、"Watch、"list"]为所需的每个组和资源创建一个新规则。参见\https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
   <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">将所做的更改应用于集群</block>
   <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">注意：如果要删除先前添加的权限、则在重新启动_event-exporter之后、所做的更改才会生效。</block>
+  <block id="4ae43ffefdaf3c2343be08c2c231978f" category="section-title">2023年9月</block>
+  <block id="34e28a7e0863af99d5c1703dc6cda717" category="section-title">在日志中轻松找到所需内容</block>
+  <block id="fcf6af69900c1559042fbe3fe72c94a1" category="inline-link-macro">增强功能</block>
+  <block id="d79e17684f1a24c58bb32d08bef3a3ff" category="paragraph">日志查询(*Observability &gt;日志查询&gt;+New Log Query*)包括许多 <block ref="86ca1f2cb3e438ee4c22e212690c972d" category="inline-link-macro-rx"></block> 以便更轻松地进行日志探索、并提供更多信息。</block>
+  <block id="848fb0e63e13a4434909fdea6458ed6d" category="section-title">包括/排除</block>
+  <block id="e60e1b57ed4e38e138695033de1e9d1e" category="paragraph">在筛选某个值时，您可以轻松地选择是*include*还是*exult*与筛选器匹配的结果。选择"ex懦"将创建"NNOT &lt;value&gt;(非DNS)"筛选器。您可以在一个筛选器中组合包含值和排除值。</block>
+  <block id="0792509c03d281def53e2cbb6d7f07df" category="inline-image-macro">显示排除单选按钮的筛选器</block>
+  <block id="ba1b079c59ef8c16f8f957aa0df9c4de" category="paragraph"><block ref="ba1b079c59ef8c16f8f957aa0df9c4de" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b45c0ca13c55b7f66782e958a84142d4" category="section-title">高级查询</block>
+  <block id="95f02ff52db65fe00fc8634318fba90e" category="paragraph">*高级查询*让您有机会创建"自由格式"筛选器，使用AND、NOT、OR、通配符等组合或排除值</block>
+  <block id="b0afc67d027a88643736219f858d2596" category="inline-image-macro">说明AND、NOT AND和OR函数的日志查询示例</block>
+  <block id="c6d89674714a140b24e4a9d11d190824" category="paragraph"><block ref="c6d89674714a140b24e4a9d11d190824" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="190febc1a687d2e28053104a1cffd7c7" category="paragraph">"筛选依据"和"高级查询"将一起"和"形成一个查询。结果将显示在结果列表和图表中。</block>
+  <block id="82b7b893771cf0e9f3adb5b42ae6ee7e" category="section-title">在图表中分组</block>
+  <block id="496613147f6975d1aa2dac2ceaa46634" category="paragraph">当您为*分组依据*选择日志属性时，列表和图表将显示当前筛选器的结果。在图表中、按颜色分组的列。将鼠标悬停在图表中的一列上将显示有关特定条目的详细信息、类似于展开图表图例时显示的整体信息。  在图例中、您还可以选择为特定分组设置包含或排除筛选器。</block>
+  <block id="44f9aec87f1c51a61aeca11ad9786542" category="inline-image-macro">以日志查询为依据的分组示例、显示图表中的堆叠列</block>
+  <block id="e9523ec897a9823fb02ccbd1944b7f3f" category="paragraph"><block ref="e9523ec897a9823fb02ccbd1944b7f3f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0a80f4dd9b1327eb6d1bd68998aa54c3" category="section-title">"浮动"日志详细信息面板</block>
+  <block id="91d94db59fc7134cda265c7016d2dd86" category="paragraph">使用日志查询浏览日志时、选择列表中的一个条目将打开该条目的详细信息面板。现在、您可以选择显示该分出面板"浮动"(即显示在屏幕的其余部分上)或"页面中"(即显示为页面中的自己的框架)。要在这些视图之间切换、请选择面板右上角的"页面/浮动"按钮。</block>
+  <block id="fb8b0b641df922f8eab6bd7c3c4a1131" category="inline-image-macro">"页面内"的突出显示面板、突出显示按钮</block>
+  <block id="e8d14fa9be7f94fb8271ac286e2294a8" category="paragraph"><block ref="e8d14fa9be7f94fb8271ac286e2294a8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d5f3e5dd25b324aa763247302dd4e5ba" category="section-title">折叠菜单</block>
+  <block id="21425fa36b8a56c29ff0c7d71c2109fa" category="paragraph">您可以通过选择菜单下方的"最小化"按钮折叠左侧Cloud Insights导航菜单。最小化菜单时、将鼠标悬停在图标上以查看其打开的部分；选择图标将打开菜单并直接转到该部分。</block>
+  <block id="063ac5c87e9ce20ce0f904d0551f0a18" category="inline-image-macro">最小化菜单</block>
+  <block id="a42f1d09ea5508165ffbb74fd0d019d7" category="paragraph"><block ref="a42f1d09ea5508165ffbb74fd0d019d7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36ffaf16e7982bb87a23ee56b05db6df" category="section-title">改进了Data Collector</block>
+  <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">通过Cloud Insights、可以更轻松地显示和查找数据收集器信息：</block>
+  <block id="203714762dd5efde1be30c09220249eb" category="list-text">*数据收集器列表*的处理效率更高，这意味着显示和导航这些列表所需的时间大大减少。如果您的大型环境包含许多数据收集器、则在列出数据收集器时会有显著的改进。</block>
+  <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">数据收集器支持表*已从.PDF文件移至基于.HTML的页面，导航速度更快，维护更方便。在此处查看新矩阵：<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
 </blocks>
