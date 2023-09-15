@@ -12398,4 +12398,10 @@ v9.2.4.2</block>
   <block id="6ca3f10b5393d86f93fd0734db3cecd7" category="paragraph">正在使用旁边带有星号的采集单元进行设备解析。删除此AU之前、您必须选择另一个AU以用于设备解析。将鼠标悬停在其他AU上、然后打开"三点"菜单、选择"用于设备分辨率"。</block>
   <block id="c5e5e7a28ba316db52d09e89bd288fc9" category="inline-image-macro">au用于设备解析</block>
   <block id="793f9fde8e6064cae75d4cbfd2efe0fb" category="paragraph"><block ref="793f9fde8e6064cae75d4cbfd2efe0fb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">要查看的聚合</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">如果您正在监控的集群包含自定义资源、而这些资源没有集群资源 <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>，则需要手动授予操作员对这些资源的访问权限，才能使用事件日志对其进行监控。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安装之前或安装之后编辑_operator-additional－permissions．yaml．编辑资源_ClusterRole．&lt;namespace&gt;－additional－permissions</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用动词["GET、"Watch、"list"]为所需的每个组和资源创建一个新规则。参见\https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">将所做的更改应用于集群</block>
+  <block id="4973faad22ed5aa285bded803704fa6f" category="paragraph">注意：如果要删除先前添加的权限、则在重新启动_event-exporter之后、所做的更改才会生效。</block>
 </blocks>

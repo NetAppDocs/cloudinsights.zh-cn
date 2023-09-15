@@ -204,6 +204,19 @@ OpenShift可以实施更高的安全级别、从而可能阻止对某些Kubernet
 
 
 
+=== 权限
+
+如果您正在监控的集群包含自定义资源、而这些资源没有集群资源 link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["要查看的聚合"]，则需要手动授予操作员对这些资源的访问权限，才能使用事件日志对其进行监控。
+
+. 在安装之前或安装之后编辑_operator-additional－permissions．yaml．编辑资源_ClusterRole．<namespace>－additional－permissions
+. 使用动词["GET、"Watch、"list"]为所需的每个组和资源创建一个新规则。参见\https://kubernetes.io/docs/reference/access-authn-authz/rbac/
+. 将所做的更改应用于集群
+
+
+注意：如果要删除先前添加的权限、则在重新启动_event-exporter之后、所做的更改才会生效。
+
+
+
 == 安装NetApp Kubernetes监控操作员
 
 image:NKMO-Instructions-1.png[""]
