@@ -6829,7 +6829,6 @@
   <block id="ab9ecb106589bb37422c33e81b2e5e08" category="paragraph">相关：<block ref="280bfa8feb63e3ce80ec4f66b259f852" category="inline-link-macro-rx"></block>
 <block ref="03d103531f94c82411117d01aa2e8036" category="inline-link-macro-rx"></block>
 <block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
-  <block id="4262a364178344226a6201df72deaa22" category="paragraph">注意：您不能删除默认采集单元。在删除旧 AU 之前，请选择另一个 AU 作为默认值。</block>
   <block id="943873dd443de1bb107661fec0ffddf6" category="section-title">在信息板小工具查询中筛选</block>
   <block id="910ba96085a400a51981e26de1f1777c" category="section-title">" 永久活动 " 警报</block>
   <block id="61e3c9516f5f3d6a1d770780589866f5" category="paragraph">可以对监控器进行配置，使其状态为 "* 始终 * " 存在于受监控对象上，例如， IOPS &gt; 1 或延迟 &gt; 0 。它们通常创建为 " 测试 " 监控器，然后被遗忘。此类监控器会创建在成分卷对象上永久处于打开状态的警报，这些警报可能会随着时间的推移出现发生原因系统压力和稳定性问题。</block>
@@ -8401,11 +8400,7 @@
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">受管单元</block>
   <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">注意：如果配置的MTU超过499个、则会进入"已违反"状态。当您的试用处于"已违反"状态时、您将无法访问某些Cloud Insights 功能、直到解决违规问题为止、方法是减少配置的MTU数量或订阅Cloud Insights。</block>
   <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">配置NetApp Kubernetes监控操作员</block>
-  <block id="5da82ececca61ed15fcd7ca2e6f43b59" category="inline-link-macro">流畅的位</block>
-  <block id="21b0eec92dd9a89050827e1eb2801ea8" category="paragraph">Cloud Insights 使用多种组件、包括 <block ref="5dd2dd4557ccd99c6f8d2bb01747a70d" category="inline-link-macro-rx"></block> 和 <block ref="603b55048bd80ae5555b5b03845c58cc" category="inline-link-macro-rx"></block>、用于收集Kubernetes数据。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。</block>
   <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">Cloud Insights 为Kubernetes收集提供了* NetApp Kubernetes监控操作员*(NKMO）。添加数据收集器时、只需选择"Kubernetes "图块即可。</block>
-  <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes Data Collector Tile</block>
-  <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">安装NetApp Kubernetes监控操作员之前</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。</block>
   <block id="431387eb7262e1cfc79b125eb8a67c60" category="inline-xref">代理</block>
@@ -9677,9 +9672,6 @@
   <block id="ecb5fa18c7cd0623faea3969f936f4c3" category="cell">否即使 SVM 数量增加，该脚本也将最多运行 5 分钟。</block>
   <block id="ce3d712deda180dd445bfed60562d712" category="cell">如果我使用现有代理运行事件速率检查程序、会发生什么情况？</block>
   <block id="697ee668360d1c19e858e5fdd25062e6" category="cell">对现有代理运行事件速率检查发生原因 程序可能会增加SVM上的延迟。这种增加在事件速率检查程序运行期间是临时的。</block>
-  <block id="bca1503414d74a046e28b7530006b1be" category="paragraph">下面是一个概括性图、显示了操作员在您的环境中的位置。根据您的环境、_Proxy Server_可能需要、也可能不需要。</block>
-  <block id="ba242d5a39d9f558e864fb59273d1683" category="inline-image-macro">显示驻留在Kubernetes集群中的NKMO"的高级映射、其中的箭头显示了数据如何从主机、代理服务器传输到集群、所有这些数据都是从Cloud Insights 传输到集群的</block>
-  <block id="40071b38a2f52894172d224dcc8c0caa" category="paragraph"><block ref="40071b38a2f52894172d224dcc8c0caa" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fe5c84e62a55503753fc6f02fa98fbd5" category="paragraph">操作员(NKMO）和数据收集器可从Cloud Insights Docker注册表下载。安装后、NKMOO将管理部署在Kubernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。</block>
   <block id="560b3269d8d097187c911ee417754210" category="summary">配置Rubrik CDM数据收集器。</block>
   <block id="58d5d56dba192f09d08e6175eb1db050" category="doc">Rubrik CDM数据收集器</block>
@@ -12402,4 +12394,6 @@ v9.2.4.2</block>
   <block id="82ae7df2222778ee2748567434e1d911" category="section-title">其他变量</block>
   <block id="327fbef93ac997add024577e1fdbe932" category="cell">cURL CMD_placeholder</block>
   <block id="e26f9e15502407e5b6563d355fe4ae2c" category="cell">用于下载各种资源的cURL命令。例如、"ccur"或"cURL -k"</block>
+  <block id="ce657060a1d97a0550e523e90be61acd" category="admonition">您不能删除已连接数据收集器的采集单元(AU)。在删除原始AU之前、请将所有AU的数据收集器移至另一个AU (编辑此收集器并仅选择其他AU)。
+''</block>
 </blocks>
