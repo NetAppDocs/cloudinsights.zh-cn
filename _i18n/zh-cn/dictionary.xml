@@ -10184,7 +10184,6 @@
   <block id="a2792f9c8cd4eac5285b213778bf54bd" category="paragraph"><block ref="a2792f9c8cd4eac5285b213778bf54bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ea06c8a4bc5e070206dea22d4c09ea4a" category="list-text">environment <block ref="9d0f209eaf780338551d5fb55073783e" category="inline-link-macro-rx"></block> 保存在一个自行记录的配置文件中。</block>
   <block id="4626ec11333b1630cfeee22687c063f2" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> 功能可通过映射Kubernetes工作负载之间的依赖关系来简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
-  <block id="17cf4a6ff78f85ddfaf7692d70368ade" category="cell">运行以下许可版本之一的计算机：* CentOS (64位)：7.2到7.9、Stream 8、Stream 9 * Debian (64位)：9和10 * Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4 * Red Hat Enterprise Linux (64位)： 7.2至7.9、8.1至9.1 * Rocky 9.0、9.1 * Ubuntu Server：18.04和20.04 LTS此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">联邦版的其他要求</block>
   <block id="dff4dc08edcbd6b7929f7f987fa14f17" category="list-text">对于Cloud Insights 联邦版集群中的采集单元安装、底层操作系统必须具有良好的熵源。在Linux系统上、通常通过安装_rng-tools_或使用硬件随机数生成(RNG)来完成此操作。客户有责任确保采集单元机器满足此要求。</block>
   <block id="4b051b13595634958e002ebbf8d92506" category="summary">Cloud Insights 可以提供前端和后端虚拟化存储的视图。</block>
@@ -12433,4 +12432,14 @@ v9.2.4.2</block>
   <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">通过Cloud Insights、可以更轻松地显示和查找数据收集器信息：</block>
   <block id="203714762dd5efde1be30c09220249eb" category="list-text">*数据收集器列表*的处理效率更高，这意味着显示和导航这些列表所需的时间大大减少。如果您的大型环境包含许多数据收集器、则在列出数据收集器时会有显著的改进。</block>
   <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">数据收集器支持表*已从.PDF文件移至基于.HTML的页面，导航速度更快，维护更方便。在此处查看新矩阵：<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
+  <block id="76bcb8d1f49c96aae75d78c035df4a9b" category="cell">运行以下许可版本之一的计算机：
+
+* CentOS (64位)：7.2到7.9、Stream 8、Stream 9
+* Debian (64位)：9和10
+* Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4
+* Red Hat Enterprise Linux (64位)：7.2到7.9、8.1到8.7、9.1
+*洛基9.0、9.1
+* Ubuntu服务器：18.04和20.04 LTS
+
+此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
 </blocks>
