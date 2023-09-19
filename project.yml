@@ -87,7 +87,9 @@ sidebar:
     entries:
     - title: Kubernetes 概述页面
       url: "/kubernetes_landing_page.html"
-    - title: 开始使用Monitoring Operator
+    - title: 安装或升级操作员之前
+      url: "/pre-requisites_for_k8s_operator.html"
+    - title: 安装Monitoring Operator
       url: "/task_config_telegraf_agent_k8s.html"
     - title: 监视操作员选项
       url: "/telegraf_agent_k8s_config_options.html"
