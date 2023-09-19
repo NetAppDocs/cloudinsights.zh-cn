@@ -12442,4 +12442,5 @@ v9.2.4.2</block>
 * Ubuntu服务器：18.04和20.04 LTS
 
 此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
+  <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">Net-obler-L4-DS附加容错。</block>
 </blocks>

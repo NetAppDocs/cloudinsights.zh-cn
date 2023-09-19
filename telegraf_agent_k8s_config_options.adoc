@@ -159,6 +159,12 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
 |  | dnsMode | TCP/UDP、DNS的模式 
 
 
+|  | 流畅的位容差 | Fluent-Bit-DS的额外容差。 
+
+
+|  | 事件-导出器-容错 | 事件导出器附加容错。 
+
+
 | 工作负载映射 |  | 可自定义Operator的工作负载映射收集和安装的配置选项 
 
 
@@ -183,13 +189,7 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
 |  | 启用DNSLook.e. | 是非题、启用DNS查找 
 
 
-|  | 流畅的位容差 | Fluent-Bit-DS的额外容差。 
-
-
-|  | 事件-导出器-容错 | 事件导出器附加容错。 
-
-
-| 工作负载映射 |  | L4-公 差 
+|  | L4-公 差 | Net-obler-L4-DS附加容错。 
 |===
 
 
