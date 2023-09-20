@@ -180,7 +180,7 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
 |  | MemQuest | MEM请求提供Net observer DS 
 
 
-|  | metricAgreegationInterval | 指标聚合间隔(以秒为单位) 
+|  | metricRegationInterval | 指标聚合间隔(以秒为单位) 
 
 
 |  | bpfPolollInterval | BPF轮询间隔(以秒为单位) 
