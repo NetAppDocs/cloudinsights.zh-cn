@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: concept_ttl_and_downsampling.html 
-summary: 说明了生存时间（ TTL ）和缩减采样 
-keywords: time-to-live, TTL, downsampling, downsample, 
+summary: '生存时间(TTL)—即数据保留和缩减采样说明' 
+keywords: time-to-live, TTL, downsampling, downsample, retention 
 ---
-= 生存时间（ TTL ）和缩减采样数据
+= 数据保留和缩减采样数据
 :toc: macro
 :hardbreaks:
 :toclevels: 1
@@ -23,23 +23,20 @@ keywords: time-to-live, TTL, downsampling, downsample,
 
 
 
-== 数据保留（生存时间）
+== 数据保留(也称为生存时间)
 
 Cloud Insights 会保留数据一段时间，具体时间由活动订阅版本决定。数据保留也称为生存时间或 TTL 。
 
 |===
-| 版本 | TTL 
+| 版本 | 数据保留 
 
 
 | 基本 | 7 天 
 
 
-| 标准 | 90 天 
-
-
-| 高级版 | 13 个月 
+| 高级版 | 90天 
 |===
-至少包含 500 个受管单元（ MTU ）的高级版订阅还会保留 13 个月内的业务智能和报告数据。
+至少拥有500个托管单元(Managed Unit、MU)的Premium Edition订阅会将业务智能和报告数据保留13个月。
 
 
 
