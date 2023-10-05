@@ -10367,18 +10367,6 @@
   <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubnetes网络性能监控和映射图标：</block>
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes网络性能监控和映射、宽度=640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="c21ecdc3b22488b71dfec9e5360e46ce" category="cell">运行以下许可版本之一的计算机：
-
-Red Hat Enterprise Linux 7.x、8.x 64位、SELinux
-CentOS 7.x 64位、SELinux
-CentOS 8 Stream、SELinux
-Ubuntu 20至22 64位
-Rocky 8.x 64位、Rocky 9.x 64位、SELinux
-SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE 15 SP3上的SELinux
-
-此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
-
-不支持SE (增强安全性) Linux。</block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">在数据保留期限之后清除(有关详细信息、请参见版本页面)。请注意、根据定义、监控器没有解决问题的条件、因此警报将保持_active__状态、并禁止所有后续的警报、这些警报与此监控器生成的_group_by_匹配、直到数据保留期限结束为止。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根据日志条目解决：在发现日志行时按照以下定义中所述解决警报、或者在数据保留期限过后清除。</block>
   <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMB协议3.1及更早版本。  请注意、工作负载安全性不适用于使用FlexCache 的SMB配置。从ONTAP 9.7开始、在使用FlexCache的系统中、Fpolicy仅在NFS环境中受支持。</block>
@@ -12728,4 +12716,14 @@ kubect get all -n &lt;namespace&gt;| grep -i psp (应显示未找到任何内容
   <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">数据保留(也称为生存时间)</block>
   <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90天</block>
   <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">至少拥有500个托管单元(Managed Unit、MU)的Premium Edition订阅会将业务智能和报告数据保留13个月。</block>
+  <block id="fc053bcc2bca8112838f33be578f7479" category="cell">运行以下许可版本之一的计算机：
+
+Red Hat Enterprise Linux 7.x、8.x 64位、SELinux
+CentOS 7.x 64位、SELinux
+CentOS 8 Stream、SELinux
+Ubuntu 20至22 64位
+Rocky 8.x 64位、Rocky 9.x 64位、SELinux
+SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE 15 SP3上的SELinux
+
+此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
 </blocks>
