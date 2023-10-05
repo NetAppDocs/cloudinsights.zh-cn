@@ -32,7 +32,7 @@ toc::[]
 == 安装NetApp Kubernetes监控操作员之前
 
 
-IMPORTANT: 阅读 link:/pre-requisites_for_k8s_operator.html["*安装或升级前*"] 安装或升级NetApp Kubornetes监控操作员之前的文档。
+IMPORTANT: 阅读 link:pre-requisites_for_k8s_operator.html["*安装或升级前*"] 安装或升级NetApp Kubornetes监控操作员之前的文档。
 
 
 
@@ -523,5 +523,8 @@ kubect get all -n <namespace>| grep -i psp (应显示未找到任何内容)
 ...
 
 然后、重新启动Telegraf。 
+
+
+| 我缺少一些事件日志的_volvedobject_数据。 | 确保已按照中的步骤进行操作 link:pre-requisites_for_k8s_operator.html["权限"] 第节。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

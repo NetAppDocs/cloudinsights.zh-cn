@@ -12507,7 +12507,6 @@ v9.2.4.2</block>
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eaee203e2e728070e3c454936f257fdf" category="paragraph">操作员和数据收集器将从Cloud Insights Docker注册表中下载。安装后、NKMOO将管理部署在Kubernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。</block>
   <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">*安装或升级前*</block>
-  <block id="f8d86927776a602d23bcf32f5dc5ea76" category="admonition">阅读 <block ref="0b7fc724dd1c400c20e2b859e6c06230" category="inline-link-macro-rx"></block> 安装或升级NetApp Kubornetes监控操作员之前的文档。</block>
   <block id="20e38ff1d741d05cb351043049612af2" category="section-title">升级到最新的NetApp Kubernetes监控操作员</block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">确定现有Operator是否存在AgentConfiguration (如果您的命名空间不是默认的_NetApp-monitoring _、请替换相应的命名空间)：</block>
   <block id="bb5c0afa0b80550de02b1ac19c1226b4" category="paragraph">如果存在AgentConfiguration：</block>
@@ -12726,4 +12725,12 @@ Rocky 8.x 64位、Rocky 9.x 64位、SELinux
 SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE 15 SP3上的SELinux
 
 此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">要查看的聚合</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">如果您正在监控的集群包含自定义资源、而这些资源没有集群资源 <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>，则需要手动授予操作员对这些资源的访问权限，才能使用事件日志对其进行监控。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安装之前或安装之后编辑_operator-additional－permissions．yaml．编辑资源_ClusterRole．&lt;namespace&gt;－additional－permissions</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用动词["GET、"Watch、"list"]为所需的每个组和资源创建一个新规则。参见\https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">将所做的更改应用于集群</block>
+  <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">阅读 <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> 安装或升级NetApp Kubornetes监控操作员之前的文档。</block>
+  <block id="4f05106cca363b0f3c492314ab777534" category="cell">我缺少一些事件日志的_volvedobject_数据。</block>
+  <block id="67ee92e19812baa7cedb346320ca0182" category="cell">确保已按照中的步骤进行操作 <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> 第节。</block>
 </blocks>
