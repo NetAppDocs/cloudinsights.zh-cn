@@ -263,3 +263,20 @@ image:Roles_federation_Banner.png["使用联合进行用户管理"]
 * 您的组织具有多个 Cloud Insights 租户
 * 您的组织不希望联合域中的任何 / 每个用户对 Cloud Insights 租户具有一定程度的自动访问权限。_at this point in time ， we do not have the ability to use groups to control role access with this op选项 _ 。
 
+
+
+
+== 按域限制访问
+
+Cloud Insights可以将用户访问限制为仅限您指定的域。在*Admin > User Management*页上，选择“限制域”。
+
+image:Restrict_Domains_Modal.png["将域限制为仅限默认域、默认域以及您指定的其他域、或者没有限制"]
+
+您将看到以下选项：
+
+* 无限制：用户无论在哪个域、都可以访问Cloud Insights。
+* 限制对默认域的访问：默认域是Cloud Insights环境帐户所有者使用的域。这些域始终可访问。
+* 限制对指定默认值和域的访问。列出除了默认域之外、您还希望有权访问Cloud Insights环境的任何域。
+
+
+image:Restrict_Domains_Tooltip.png[""]
