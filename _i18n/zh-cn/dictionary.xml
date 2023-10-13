@@ -7413,11 +7413,8 @@
   <block id="794a9d57da2bd5b4b16e0d11525d4f16" category="paragraph">要永久删除 API 令牌，请从菜单中选择 " 撤消 " 。您不能重新启用已撤销的令牌；您必须创建新令牌。</block>
   <block id="57d4e87edd35e992f8e4d3c6326ac8d8" category="inline-image-macro">禁用或撤消 API 令牌</block>
   <block id="209d3712889d6411bf67708e93ef6c63" category="paragraph"><block ref="209d3712889d6411bf67708e93ef6c63" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5c478d648857e82323360d2328b3dc12" category="paragraph">请注意，以下数据收集器会按不同的原始 TiB 到受管单元速率进行计量。这些数据收集器上每 40 TiB 的未格式化容量计费为 1 个受管单元（ MU ）：</block>
-  <block id="e7289067e05f71335c1c33ab4cb274b5" category="list-text">Dell EMC ECS</block>
   <block id="de9af54682ac41397db654efb63c031a" category="list-text">Hitachi 内容平台</block>
   <block id="3228838520c4e897de47c1133cf36394" category="list-text">IBM Cleversafe</block>
-  <block id="7f0f78f6c5c0c1767395318a59e0e62a" category="list-text">NetApp StorageGRID</block>
   <block id="3f5fb2a45a144339f9591a104342f79b" category="paragraph">通过监控，您可以为存储， VM ， EC2 和端口等 " 基础架构 " 对象生成的指标以及为 Kubernetes ， ONTAP 高级指标和 Telegraf 插件收集的 " 集成 " 数据设置阈值。当超过警告级别或严重级别阈值时，这些 _metric_ 监控器会向您发出警报。</block>
   <block id="e730b9c349889018dc9deaccaa5a438b" category="paragraph">您还可以创建监控器，以便在检测到指定的 _log events_之后 触发警告，严重或信息级别的警报。</block>
   <block id="9fbe6c7c1c16d6c2079f167ca8001516" category="paragraph">Cloud Insights 提供了许多 <block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block> 也可以根据您的环境进行选择。</block>
@@ -9621,7 +9618,6 @@
   <block id="ed862f710faf8808be6c0eb3e9619e30" category="paragraph"><block ref="4f633f9ad87e78d3d93ed9f152d5549a" category="inline-image-macro-rx" type="image"></block>
 <block ref="45e1a131f383b4a3d591b6b7f4008d87" category="inline-image-macro-rx" type="image"></block>
 <block ref="1fc0e7df8bd287d2b4b5569c861bc29d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="128edc3ff8c2d69c9c76b866643314ec" category="list-text">AWS S3</block>
   <block id="239169e06fcc5c8354859b561ff0a0b6" category="paragraph">*概述*信息板可显示有用的信息、例如环境中的集群数量及其整体容量和性能百分比。您还将看到有关存储容量或性能容量用尽之前的预计天数的预测数据。此外、如果基础架构中的任何控制器的CPU运行速度超过65%、在发生故障转移时可能会使集群面临风险、则ONTAP Essentials会将这些控制器显示为"热"控制器。</block>
   <block id="a97ea56b0e00b2379736ae60869ff66a" category="cell">问题</block>
   <block id="3751695c17afed4055a7a5ad5d46f6f5" category="cell">问题解答</block>
@@ -10250,8 +10246,6 @@
   <block id="e33adffcdf8ab2922b108932f9937051" category="paragraph">您也可以通过AWS Marketplace注册免费试用。AWS Marketplace免费试用版允许您访问Cloud Insights、试用期为33天、最多允许499天 <block ref="0dffd7fe70b4d03069ea72db3faf598d" category="inline-xref-macro-rx"></block> (MUS)。</block>
   <block id="8d36d0a28768ec9f4de7566b028eb00b" category="paragraph">AWS Marketplace免费试用不能延长。试用期间，您可以随时访问*管理-&gt;订阅*页面，降级到Cloud Insights基本版订阅或更改为付费Cloud Insights订阅。</block>
   <block id="e26a4046c7e3fdd09a0a0aa9204017f9" category="paragraph">要订阅，请转到*管理-&gt;订阅*。除了 * 订阅 * 按钮之外，您还可以查看已安装的数据收集器并计算估计定价。对于典型环境、您可以单击自助式AWS Marketplace按钮。如果您的环境包含或预期包含 1 ， 000 个或更多受管单元，则您有资格获得卷定价。</block>
-  <block id="260d3a5336ca87727913d1aaec8359f7" category="list-text">Cohesity SmartFiles</block>
-  <block id="a1a04ea3436c6b700db87f125d4f2daa" category="list-text">Dell EMC数据域</block>
   <block id="840c1d56416cb9ee31be4cf00ea5851b" category="paragraph">您的预计标价成本将根据您的订阅条款而变化。
 注意：计算器仅用于估计。订阅时将设置您的确切定价。</block>
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">显示基础架构和Kubnetes成本估算计算器的订阅页面</block>
@@ -12756,4 +12750,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">限制对默认域的访问：默认域是Cloud Insights环境帐户所有者使用的域。这些域始终可访问。</block>
   <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">限制对指定默认值和域的访问。列出除了默认域之外、您还希望有权访问Cloud Insights环境的任何域。</block>
   <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a67db23e86df970f58242b726cddbe4" category="list-text">1个受管单元=选定二级存储的40 TiB未格式化容量：AWS S3、CoHesity SmartFiles、Dell EMC Data Domain、Dell EMC ECS、Hitachi内容平台、IBM Cleversafe、NetApp StorageGRID。</block>
 </blocks>
