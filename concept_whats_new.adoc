@@ -25,6 +25,35 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
+== 2023年10月
+
+
+
+=== 单元试用
+
+除了Cloud Insights的初始试用之外、您还可以利用 link:/concept_subscribing_to_cloud_insights.html#module-trials["单元试用"]。例如、如果您已订阅基础架构可观察性、但要将Kubennetes添加到您的环境中、则您将自动进入30天的Kubennetes可观察性试用版。只有在试用期结束时、您才会因使用Kubbernetes Observability管理的单元而付费。
+
+
+
+=== 限制对指定域的访问
+
+管理员和帐户所有者现在可以执行此操作 link:/concept_user_roles.html#restricting-access-by-domain["限制Cloud Insights访问"] 以通过电子邮件发送指定的域。进入*管理>用户管理*并选择_限制域_按钮。
+
+image:Restrict_Domains_Modal.png["限制域模式"]
+
+
+
+=== Data Collector 更新
+
+已进行以下数据收集器/采集单元更改：
+
+* *Isila/PowerScale Rest*：Cloud Insights增强型分析功能添加了各种新属性和指标(以_emc_isilon.node_pool.*_的名称命名)。这些计数器和属性将使用户能够构建信息板并监控_ne_pool_容量消耗情况；使用基于不同硬件节点型号构建的Isilan集群的用户将拥有多个节点池、了解节点池级别的HDD/SSD/总容量消耗情况对于监控和规划都很有用。
+* *Rubirk*“服务帐户”身份验证支持：Cloud Insights的Rubirk收集器现在既支持传统的HTTP基本身份验证(用户名和密码)，也支持Rubirk的服务帐户方法，这种方法需要用户名+机密+组织ID。
+
+
+'''
+
+
 == 2023年9月
 
 
