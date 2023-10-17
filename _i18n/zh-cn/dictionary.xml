@@ -87,7 +87,6 @@
   <block id="98349559eceadcec0dc76cadc5fbcc36" category="list-text">按照 CloudSecure 中的说明安装代理。</block>
   <block id="2ec48fb989cd0668ab2b0f0b34915834" category="list-text">安装代理后，以 sudo 用户身份运行 _server_data_rate_checker.sh_ 脚本：</block>
   <block id="7ad6363059d1736f3a11960eab53e364" category="list-text">此脚本要求在 Linux 计算机中安装 _sshpass_ 。可通过两种方式安装它：</block>
-  <block id="6cf31abcd39b8549a7f488c6aa8b2fef" category="list-text">运行 fiolling 命令：</block>
   <block id="de60349d54fe34d614b0fb4793843635" category="list-text">如果不起作用，请从 Web 将 _sshpass_ 下载到 Linux 计算机并运行以下命令：</block>
   <block id="22716ce17ab9464ee020ed67252afe9c" category="list-text">出现提示时，请提供正确的值。请参见以下示例。</block>
   <block id="cd0c9650e0d2fb93465de9f54297b6d5" category="list-text">运行此脚本大约需要 5 分钟。</block>
@@ -8007,7 +8006,6 @@
   <block id="7b4027634c44a41ce42886c7383adeb4" category="paragraph">现在、您可以将Cloud Insights 配置为在ONTAP 系统上检测到修改或删除FlexVol、节点和SVM时发出警报。</block>
   <block id="ba5ed4798f807b143761ea5211f06ea2" category="cell">启动采集单元服务器服务时权限被拒绝</block>
   <block id="abb32e1da1ad856744ba53e096ef4ba3" category="cell">当AU安装在SELinux上时、应将SE设置为_permisent_模式。不支持_Enforcerent_模式。将SELinux设置为许可模式后、重新启动AU服务。 <block ref="a82c78a8c8abe174de58c3bb493cbdd3" category="inline-link-macro-rx"></block>。</block>
-  <block id="81b0a686a7f070f4718258f6f1c90eea" category="paragraph">a)将此表用作一般规模估算指南：</block>
   <block id="ff7c0fcd6a31e735a61c001f75426961" category="section-title">示例</block>
   <block id="f2803148b76b5b63f68b31927cb35d83" category="section-title">示例9</block>
   <block id="2c9ef91324ec8d07844a54c6151dc4cb" category="paragraph">此示例将查找第一个_到第二个_之后的所有内容。</block>
@@ -9447,7 +9445,6 @@
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">GET /｛schema｝/**-从报告数据库检索数据。</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">在安装 ONTAP SVM DSC 之前，可以运行此脚本来检查 SVM 中的事件速率</block>
   <block id="0a2bd44573247d8e7748ce7d2d2a4b8f" category="paragraph">事件速率检查器用于在安装 ONTAP SVM 数据收集器之前检查 SVM 中的 NFS/SMB 组合事件速率，以查看一个代理计算机能够监控的 SVM 数量。使用事件速率检查器作为规模估算指南、帮助您规划安全环境。</block>
-  <block id="ee884395b0c6bb018cd831452f073916" category="paragraph">一个代理最多可支持50个数据收集器。</block>
   <block id="2723c4d559ff96bb42870d86c109708e" category="doc">SVM事件速率检查程序(代理规模估算指南)</block>
   <block id="abc492c54ab99cf963d50d67acb42565" category="sidebar">Event Rate Checker (代理规模估算指南)</block>
   <block id="344b15b7319e7ac5af178bf86f71332e" category="cell">我收到一个类似此错误的错误："无法执行请求：连接到&lt;AWS region endpoint&gt; ：8080 [AWS/AWS &lt;AWS region endpoint&gt; 区域端点IP&gt;&gt;失败：连接超时：GET<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 区域端点FQDN&gt;：8080/v1/Storage/IPRanges HTTP/1.1</block>
@@ -12764,4 +12761,7 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="1c1bebc9155c93bfe8263d7dd59e4d97" category="inline-xref">删除旧运算符</block>
   <block id="3aadd91c93bca2d335851fd692f310be" category="inline-xref">安装新的</block>
   <block id="e7d6cf6485500824df0535ac307eb301" category="cell">自2023年10月12日起、Cloud Insights已对运营商进行重构、以更好地为用户服务；要全面采用这些更改、您必须执行 <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> 和 <block ref="d0e6f11bd593aa32efc140a3c31c51b6" category="inline-xref-macro-rx"></block>。</block>
+  <block id="40202f910a40e1ff8a02506c288b507e" category="paragraph">一个代理最多可支持50个数据收集器。</block>
+  <block id="337d79852891a37d41285c9101c3fff4" category="list-text">运行以下命令：</block>
+  <block id="94870525f3ad4e44c2a59a8a8c218033" category="paragraph">a)使用此表作为一般规模估算指南。您可以增加核心和/或内存的数量来增加支持的数据收集器数量、最多可增加50个数据收集器：</block>
 </blocks>

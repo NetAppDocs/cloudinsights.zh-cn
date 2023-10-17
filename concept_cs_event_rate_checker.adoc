@@ -42,7 +42,7 @@ NOTE: 运行此脚本时，不应为要确定事件速率的 SVM 运行任何 ON
  /opt/netapp/cloudsecure/agent/install/svm_event_rate_checker.sh
 . 此脚本要求在 Linux 计算机中安装 _sshpass_ 。可通过两种方式安装它：
 +
-.. 运行 fiolling 命令：
+.. 运行以下命令：
 +
  linux_prompt> yum install sshpass
 .. 如果不起作用，请从 Web 将 _sshpass_ 下载到 Linux 计算机并运行以下命令：
@@ -61,7 +61,7 @@ NOTE: 运行此脚本时，不应为要确定事件速率的 SVM 运行任何 ON
 
 请记住以下几点：
 
-a)将此表用作一般规模估算指南：
+a)使用此表作为一般规模估算指南。您可以增加核心和/或内存的数量来增加支持的数据收集器数量、最多可增加50个数据收集器：
 
 |===
 
