@@ -5704,7 +5704,6 @@
   <block id="e08b25c0c2d46e96d0ac5d6faca80bbf" category="paragraph">系统将显示 * 删除代理 * 页面。</block>
   <block id="bd69c8c7685e8cb8cbe42da9c5c9d5e0" category="list-text">单击 * 删除 * 确认删除。</block>
   <block id="6ced38f7d8372fb9ae8761297e3a7cee" category="paragraph">由于 Cloud Insights 会将数据保留一段时间（按版本），因此可能会处理数千个数据点。因此，数据可能会先进行缩减采样，然后再显示在图表和表中。</block>
-  <block id="997ee7d33c8902a31e71ef5f06a181ea" category="paragraph">Cloud Insights 会保留数据一段时间，具体时间由活动订阅版本决定。数据保留也称为生存时间或 TTL 。</block>
   <block id="226c03c443192cffffa4a924b4ccffde" category="cell">版本</block>
   <block id="876f04f443f4acb1176812eb95c5206c" category="section-title">数据缩减采样</block>
   <block id="832befb5fcd1bf513bc9413c7b9a2e13" category="paragraph">* 下采样 * 可提供图表中数据的统计近似值，让您可以高效地查看数据，而无需显示每个数据点，同时还可以准确地查看收集的数据。</block>
@@ -12701,11 +12700,6 @@ kubect get all -n &lt;namespace&gt;| grep -i psp (应显示未找到任何内容
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">安装或升级操作员之前</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">安装Monitoring Operator</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">metricRegationInterval</block>
-  <block id="fb16f782ec011ac7ae93ce05210079df" category="summary">生存时间(TTL)—即数据保留和缩减采样说明</block>
-  <block id="782b9b68a916b155b0332eb5fb675b34" category="doc">数据保留和缩减采样数据</block>
-  <block id="8ba5588aa6038b7e374c4f0c61705cf9" category="section-title">数据保留(也称为生存时间)</block>
-  <block id="ed0c9b5fb2f44a77915d0ce45d0c501c" category="cell">90天</block>
-  <block id="33d8f1359dfc1ccc57d04578cc9e1907" category="paragraph">至少拥有500个托管单元(Managed Unit、MU)的Premium Edition订阅会将业务智能和报告数据保留13个月。</block>
   <block id="fc053bcc2bca8112838f33be578f7479" category="cell">运行以下许可版本之一的计算机：
 
 Red Hat Enterprise Linux 7.x、8.x 64位、SELinux
@@ -12766,4 +12760,10 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">管理员和帐户所有者现在可以执行此操作 <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> 以通过电子邮件发送指定的域。进入*管理&gt;用户管理*并选择_限制域_按钮。</block>
   <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">角色和规则</block>
   <block id="020c152c55787ea0a64eb78645d75f3e" category="admonition">此Cloud Insights收集器需要一个具有_Fileseme-Scoped_角色的ONTAP用户。请查看AWS <block ref="800e02d33bb8784b1a5d31d79acfd455" category="inline-link-macro-rx"></block> 有关可用选项的文档。目前、AWS仅支持文件系统范围的一种用户角色、即_fsxadmin_。这是Cloud Insights收集器要使用的适当角色。</block>
+  <block id="7f6383a46fdc2ac52c791c8ea4cf03b6" category="summary">介绍了数据保留时间和缩减采样</block>
+  <block id="2acd8b96cc968efd569f0e0169390b9b" category="doc">数据保留和缩减采样数据</block>
+  <block id="8221571bdb4085e5cf8534456c5e5750" category="paragraph">Cloud Insights 会保留数据一段时间，具体时间由活动订阅版本决定。</block>
+  <block id="025025548582d3777fd0b072c16e2656" category="cell">13 个月</block>
+  <block id="a4d110a0ddc628e94b4e9223300af49b" category="inline-link-macro">版本和定价</block>
+  <block id="8a5a5004d445ce710c5fb829b859257b" category="paragraph">Cloud Insights上提供了每个版本中可用功能的完整列表 <block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block> 页面。</block>
 </blocks>
