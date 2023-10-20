@@ -417,11 +417,6 @@
   <block id="ee5c6c936b3e5e6b3191a941d5161f88" category="doc">确定非活动设备</block>
   <block id="dedb4128ca8f8589aeee2da1198fdc45" category="paragraph">确定您拥有的资产以及使用这些资产的人员对于 " 合理调整规模 " 和释放未使用的基础架构至关重要。您可以轻松地重新分配或停用未充分利用的资源，并避免不必要的购买。</block>
   <block id="89335488274d94cea3defd958dbbabbe" category="paragraph">按照以下步骤确定非活动资产。</block>
-  <block id="74f2d5af3d35830fbffe4e065b028732" category="list-text">在 Cloud Insights 菜单中，单击 * 查询 &gt; 新建查询 *</block>
-  <block id="355d0fe6f460ad7e9e4be906a083f7e4" category="list-text">在 `SSearch for` 菜单中，选择要查询的资产类型</block>
-  <block id="08b0a890022d521dd17d275bcefd82ef" category="list-text">单击 * + &gt; Is Active*</block>
-  <block id="cc1d1782b616d7d5b18a8e83247f82c9" category="list-text">单击 * 任何 * 并将其更改为 * 否 *</block>
-  <block id="d6badef7150cd45268b7ee1f29045a26" category="paragraph">系统将显示选定设备类型的非活动资产列表。</block>
   <block id="79bac41a8e857539d5a75dc7e93e17d8" category="summary">您可以查看知识库文章，与 NetApp 社区联系，查看视频或打开请求支持的服务单。</block>
   <block id="69ac5d78c7ecb4ab9a461a7400773ec3" category="doc">请求支持</block>
   <block id="b9bfbe11ded79fa1b72b327d0497f9dd" category="inline-image-macro">支持页面</block>
@@ -12766,4 +12761,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="025025548582d3777fd0b072c16e2656" category="cell">13 个月</block>
   <block id="a4d110a0ddc628e94b4e9223300af49b" category="inline-link-macro">版本和定价</block>
   <block id="8a5a5004d445ce710c5fb829b859257b" category="paragraph">Cloud Insights上提供了每个版本中可用功能的完整列表 <block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block> 页面。</block>
+  <block id="62a2ac40719f6cb31d5e1ad43d9d8a19" category="list-text">导航到*浏览-&gt;+New Metric Query*。</block>
+  <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">从下拉列表中选择_Storage_。</block>
+  <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">单击齿轮并添加_isActive_as列。</block>
+  <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">显示“检查”的行处于活动状态。"X"表示非活动设备。</block>
 </blocks>
