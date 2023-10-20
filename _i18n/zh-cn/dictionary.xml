@@ -12764,4 +12764,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="94870525f3ad4e44c2a59a8a8c218033" category="paragraph">a)使用此表作为一般规模估算指南。您可以增加核心和/或内存的数量来增加支持的数据收集器数量、最多可增加50个数据收集器：</block>
   <block id="1735ce1061c1858dd6651e91b4e18f24" category="paragraph">除了Cloud Insights的初始试用之外、您还可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您已订阅基础架构可观察性、但要将Kubennetes添加到您的环境中、则您将自动进入30天的Kubennetes可观察性试用版。只有在试用期结束时、您才会因使用Kubbernetes Observability管理的单元而付费。</block>
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">管理员和帐户所有者现在可以执行此操作 <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> 以通过电子邮件发送指定的域。进入*管理&gt;用户管理*并选择_限制域_按钮。</block>
+  <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">角色和规则</block>
+  <block id="020c152c55787ea0a64eb78645d75f3e" category="admonition">此Cloud Insights收集器需要一个具有_Fileseme-Scoped_角色的ONTAP用户。请查看AWS <block ref="800e02d33bb8784b1a5d31d79acfd455" category="inline-link-macro-rx"></block> 有关可用选项的文档。目前、AWS仅支持文件系统范围的一种用户角色、即_fsxadmin_。这是Cloud Insights收集器要使用的适当角色。</block>
 </blocks>
