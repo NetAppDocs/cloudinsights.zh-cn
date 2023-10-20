@@ -12765,4 +12765,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">从下拉列表中选择_Storage_。</block>
   <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">单击齿轮并添加_isActive_as列。</block>
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">显示“检查”的行处于活动状态。"X"表示非活动设备。</block>
+  <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">Inventory Recent status：unreached data unreached -Array reported 0 volume</block>
+  <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">通常表示授权(而非身份验证)问题描述。请确保您的凭据正确无误、并且用户名有权列出所有卷并查看其属性。</block>
 </blocks>

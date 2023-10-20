@@ -95,5 +95,8 @@ summary: 配置Dell EMC Unisphere REST数据收集器。
 
 
 | 错误：用户身份验证失败。 | 确保此设备的凭据正确无误。 
+
+
+| Inventory Recent status：unreached data unreached -Array reported 0 volume | 通常表示授权(而非身份验证)问题描述。请确保您的凭据正确无误、并且用户名有权列出所有卷并查看其属性。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。
