@@ -43,7 +43,7 @@ NOTE: 如果要在安装代理之前验证安装文件，请参见以下章节 <
 要安装代理，无论您使用的是哪个平台，都必须先执行以下操作：
 
 . 登录到要用于代理的主机。
-. 登录到 Cloud Insights 站点并转到 * 管理员 > 数据收集器 * 。
+. 登录到Cloud Insights环境并导航到*Observability > Collectors *。
 . 单击 * + Data Collector* 并选择要安装的数据收集器。
 . 为您的主机选择合适的平台(Windows、Linux)
 . 对每个平台执行其余步骤。

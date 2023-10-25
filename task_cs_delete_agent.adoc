@@ -42,7 +42,7 @@ IMPORTANT: 删除代理将删除与该代理关联的所有数据收集器。如
 sudo /opt/netapp/cloudsecure/agent/install/cloudsecure-agent-uninstall.sh
 Uninstall CloudSecure Agent? [y|N]:
 ....
-. 单击 * 管理 > 数据收集器 > 代理 *
+. 单击*工作负载安全性>收集器>代理*
 +
 系统将显示已配置代理的列表。
 

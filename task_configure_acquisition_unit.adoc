@@ -36,7 +36,7 @@ NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络�
 
 .Linux 采集单元安装步骤
 . 以管理员或帐户所有者身份登录到您的 Cloud Insights 环境。
-. 单击 * 管理 > 数据收集器 > 采集单元 > + 采集单元 *
+. 单击*AObservability > Collectors > Acquisition Unit >+Acquisition Unit*
 +
 系统将显示 _Install Acquisition Unit" 对话框。选择 Linux 。
 
@@ -52,7 +52,7 @@ image:NewLinuxAUInstall.png["《 Linux AU 说明》"]
 
 
 .完成后
-* 单击 * 管理 > 数据收集器 > 采集单元 * 以检查采集单元的状态。
+* 单击*可观察性>收集器>采集单元*以检查采集单元的状态。
 * 您可以访问 /var/log/netapp/cloudinsooks/acq/acq.log 上的采集单元日志
 * 使用以下脚本控制采集单元：
 +
@@ -112,7 +112,7 @@ image:ProxyEndpoints_NewTable.png["代理端点表"]
 .Windows 采集单元安装步骤
 . 以具有管理员权限的用户身份登录到采集单元服务器 /VM 。
 . 在该服务器上，打开浏览器窗口并以管理员或帐户所有者身份登录到 Cloud Insights 环境。
-. 单击 * 管理 > 数据收集器 > 采集单元 > + 采集单元 * 。
+. 单击*Observability > Collectors > Acquisition Unit >+Acquisition Unit*。
 +
 系统将显示 _Install Acquisition Unit" 对话框。选择 Windows 。
 
@@ -130,7 +130,7 @@ image::NewWindowsAUInstall.png[Windows AU 安装]
 
 
 .完成后
-* 单击 * 管理 > 数据收集器 > 采集单元 * 以检查采集单元的状态。
+* 单击*>可观察性>收集器>采集单元*以检查采集单元的状态。
 * 您可以在 <install dir>\Cloud Insights \Acquisition Unity\log\acq.log 中访问采集单元日志
 * 使用以下脚本停止，启动，重新启动或检查采集单元的状态：
 +
@@ -194,7 +194,7 @@ image:ProxyEndpoints_NewTable.png["代理端点表"]
 
 *卸载AU后*：
 
-. 在Cloud Insights 中、转到*管理>数据收集器*、然后选择*采集单元*选项卡。
+. 在Cloud Insights中，转至*Observability > Collectors并选择*Acquisition Unit*选项卡。
 . 单击要卸载的采集单元右侧的选项按钮，然后选择 _Delete_ 。只有在未分配任何数据收集器的情况下，才能删除采集单元。
 
 
@@ -216,12 +216,12 @@ image:AU_for_Device_Resolution.png["au用于设备解析"]
 
 .步骤
 . 登录到采集单元服务器 /VM 并卸载 AU 软件。
-. 登录到 Cloud Insights 环境，然后转到 * 管理 > 数据收集器 * 。
+. 登录到Cloud Insights环境并转到*Observability > Collectors *。
 . 对于每个数据收集器，单击右侧的选项菜单，然后选择 _Edit_ 。将数据收集器分配给临时采集单元，然后单击 * 保存 * 。
 +
 您还可以选择多个相同类型的数据收集器，然后单击 * 批量操作 * 按钮。选择 _Edit_ 并将数据收集器分配给临时采集单元。
 
-. 将所有数据收集器移至临时采集单元后，转到 * 管理 > 数据收集器 * 并选择 * 采集单元 * 选项卡。
+. 将所有数据收集器移至临时采集单元后、转到*可观察性>收集器*并选择*采集单元*选项卡。
 . 单击要重新安装的采集单元右侧的选项按钮，然后选择 _Delete_ 。只有在未分配任何数据收集器的情况下，才能删除采集单元。
 . 现在，您可以在原始服务器 /VM 上重新安装采集单元软件。单击 * + 采集单元 * ，然后按照上述说明安装采集单元。
 . 重新安装采集单元后，将数据收集器重新分配给采集单元。

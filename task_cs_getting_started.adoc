@@ -49,7 +49,13 @@ link:https://netapp.hubs.vidyard.com/watch/Lce7EaGg7NZfvCUw4Jwy5P?["* 视频 * �
 link:https://netapp.hubs.vidyard.com/watch/NEmbmYrFjCHvPps7QMy8me?["* 视频 * ： Active Directory 连接"] 
 
 
-| 配置数据收集器 | 单击 * 管理 > 数据收集器 * 单击要配置的数据收集器。请参见文档中的《 Data Collector Vendor Reference 》一节。link:https://netapp.hubs.vidyard.com/watch/YSQrcYA7DKXbj1UGeLYnSF?["* 视频 * ： ONTAP SVM 连接"] 
+| 配置数据收集器 | 单击*工作负载安全性>收集器*
+
+单击要配置的数据收集器。
+
+请参见文档中的《 Data Collector Vendor Reference 》一节。
+
+link:https://netapp.hubs.vidyard.com/watch/YSQrcYA7DKXbj1UGeLYnSF?["* 视频 * ： ONTAP SVM 连接"] 
 
 
 | 创建用户帐户 | link:concept_user_roles.html["管理用户帐户"] 

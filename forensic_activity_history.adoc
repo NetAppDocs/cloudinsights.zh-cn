@@ -216,7 +216,11 @@ image:CloudSecure_ActivitySelection.png["活动选择器，宽度 = 30%"]
 | 问题 | 请尝试此操作 
 
 
-| 在 "All actives" 表的 ‘User ' 列下，用户名显示为： "ldap ： HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817” 或 "ldap ： default ： 80038003" | 可能的原因可能是： 1.尚未配置任何用户目录收集器。要添加一个，请转到 * 管理 > 数据收集器 > 用户目录收集器 * ，然后单击 * + 用户目录收集器 * 。选择 _Active Directory_ 或 _LDAP Directory Server_ 。2. 已配置用户目录收集器，但它已停止或处于错误状态。请转到 * 管理 > 数据收集器 > 用户目录收集器 * 并检查状态。请参见 link:http://docs.netapp.com/us-en/cloudinsights/task_config_user_dir_connect.html#troubleshooting-user-directory-collector-configuration-errors["用户目录收集器故障排除"] 文档中有关故障排除提示的章节。正确配置后，此名称将在 24 小时内自动解析。如果仍无法解决此问题，请检查您是否添加了正确的用户数据收集器。确保用户确实属于添加的 Active Directory/LDAP 目录服务器。 
+| 在 "All actives" 表的 ‘User ' 列下，用户名显示为： "ldap ： HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817” 或 "ldap ： default ： 80038003" | 可能的原因包括：
+1.尚未配置任何用户目录收集器。要添加一个，请转到*工作负载安全性>收集器>用户目录收集器*，然后单击*+用户目录收集器*。选择 _Active Directory_ 或 _LDAP Directory Server_ 。
+2. 已配置用户目录收集器，但它已停止或处于错误状态。请进入*收集器>用户目录收集器*并检查状态。请参见 link:http://docs.netapp.com/us-en/cloudinsights/task_config_user_dir_connect.html#troubleshooting-user-directory-collector-configuration-errors["用户目录收集器故障排除"] 文档中有关故障排除提示的章节。
+正确配置后，此名称将在 24 小时内自动解析。
+如果仍无法解决此问题，请检查您是否添加了正确的用户数据收集器。确保用户确实属于添加的 Active Directory/LDAP 目录服务器。 
 
 
 | UI 中未显示某些 NFS 事件。 | 检查以下内容： 1.运行设置了 POSIX 属性的 AD 服务器的用户目录收集器时，应通过 UI 启用 unixid 属性。2. 在 UI 3 的用户页面中搜索时，应看到执行 NFS 访问的任何用户。NFS 4 不支持原始事件（尚未发现用户的事件）。不会监控对 NFS 导出的匿名访问。5. 确保使用的 NFS 版本低于 NFS4.1 。 

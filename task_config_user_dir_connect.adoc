@@ -28,7 +28,8 @@ summary: 配置工作负载安全性Active Directory用户目录收集器
 
 
 .配置用户目录收集器的步骤
-. 在工作负载安全性菜单中、单击：*管理员>数据收集器>用户目录收集器>+用户目录收集器*、然后选择* Active Directory*
+. 在Workload Security菜单中、单击：
+*收集器>用户目录收集器>+用户目录收集器*并选择*Active Directory*
 +
 系统将显示添加用户目录屏幕。
 

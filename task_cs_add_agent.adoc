@@ -37,7 +37,7 @@ NOTE: Cloud Insights 联邦版不提供工作负载安全性。
 == 安装代理的步骤
 
 . 以管理员或帐户所有者身份登录到工作负载安全环境。
-. 在*安全性*菜单下、选择*管理>数据收集器>代理>+Agent*
+. 选择*Collectors > Agents>+Agent*
 +
 系统将显示 "Add an Agent" 页面：
 

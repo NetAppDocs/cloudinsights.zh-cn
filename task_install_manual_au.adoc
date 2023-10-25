@@ -167,10 +167,10 @@ ls -al /var/lib/netapp/cloudinsights/acq/datasources.war
  -rw-rw---- 1 test-user2 test-group1  3420067 Mar 10 17:20 netapp_ontap.jar
 
 
-. 注意：如果您计划使用不同的自定义用户管理AU、请确保将所有者和组的组权限设置为读写(_chmod 660…_)
+. 注意：如果您计划使用不同的自定义用户注册AU、请确保将所有者和组的组权限设置为读写(_chmod 660…_)
 . 重新启动AU。
 +
-.. 在Cloud Insights中、导航到*管理>数据收集器*并选择*采集单元*选项卡。从AU右侧的“三个点”菜单中选择_Restart。
+.. 在Cloud Insights中、导航到*可观察性>收集器*并选择*采集单元*选项卡。从AU右侧的“三个点”菜单中选择_Restart。
 
 
 

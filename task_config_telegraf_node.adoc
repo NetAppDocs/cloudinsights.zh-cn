@@ -25,7 +25,7 @@ Cloud Insights 从安装代理的节点收集指标。
 
 == 安装
 
-. 从 * 管理 > 数据收集器 * 中，选择操作系统 / 平台。请注意，安装任何集成数据收集器（ Kubernetes ， Docker ， Apache 等）也会配置节点数据收集。
+. 从*Observability > Collectors*中，选择操作系统/平台。请注意，安装任何集成数据收集器（ Kubernetes ， Docker ， Apache 等）也会配置节点数据收集。
 . 按照说明配置代理。这些说明因用于收集数据的操作系统或平台的类型而异。
 
 

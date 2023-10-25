@@ -25,7 +25,7 @@ Cloud Insights 使用此数据收集器从 RethinkDB 收集指标。
 
 == 安装
 
-. 在 * 管理 > 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 RethinkDB 。
+. 从*Observability > Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 RethinkDB 。
 +
 选择安装了 Telegraf 代理的操作系统或平台。
 

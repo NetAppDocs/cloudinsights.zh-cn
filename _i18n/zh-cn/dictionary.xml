@@ -57,7 +57,6 @@
   <block id="38fe3e3fc1af1752c621d2c58ca1d537" category="doc">Netstat 数据收集器</block>
   <block id="1d90778793975e863bbd8302e8bebf4f" category="paragraph">Cloud Insights 使用此数据收集器收集 Netstat 指标。</block>
   <block id="7cd8fb6e31cc946c078d2740c76a9899" category="section-title">安装</block>
-  <block id="96b82a89fa745c35ca3fc3dc50892a3e" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Netstat 。</block>
   <block id="577ef588d3f183c37ef82368a6ff589c" category="paragraph">选择安装了 Telegraf 代理的操作系统或平台。</block>
   <block id="1be0a2da8f4fd3b263e749ccf7b51da7" category="inline-link-macro">代理安装</block>
   <block id="16a55be69114dba2ac674b708e441474" category="list-text">如果您尚未安装要收集的代理，或者您希望为其他操作系统或平台安装代理，请单击 _Show Instructions_展开 <block ref="f5c63eced10ddc346253829eec79c562" category="inline-link-macro-rx"></block> 说明。</block>
@@ -517,7 +516,6 @@
   <block id="f675ac1ea34754aba3279d7f93746721" category="summary">Kibana 数据收集器配置</block>
   <block id="d6678652208f4e26109690d4ab6151e5" category="doc">Kibana 数据收集器</block>
   <block id="75ac4fff844290c8b306aced90a6ad0d" category="paragraph">Cloud Insights 使用此数据收集器从 Kibana 收集指标。</block>
-  <block id="87366a70a6d77eeafc26fed79b827515" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Kibana 。</block>
   <block id="ed9f8d76b0ccacc02aa67a13d6c1e9a8" category="inline-image-macro">Kibana 配置</block>
   <block id="18785da9c6be5397773e5c495dcc23f4" category="paragraph"><block ref="18785da9c6be5397773e5c495dcc23f4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3c84e442bbf213b7d0e5047d09d7aef4" category="inline-link-macro">Kibana 文档</block>
@@ -563,7 +561,6 @@
   <block id="4bfbaf73f806e0f2e37658d94bd02b1d" category="summary">Puppet 数据收集器配置</block>
   <block id="4f3343312b305965c29f8f14046d895c" category="doc">Puppet Agent 数据收集器</block>
   <block id="3fb67cc5cc9f9143457c24db7b7dd502" category="paragraph">Cloud Insights 使用此数据收集器从 Puppet Agent 收集指标。</block>
-  <block id="1a8476f5506eed4a9be62f6fb0426b2a" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Puppet 。</block>
   <block id="f28ce6829aadfe8650a22f9c6a697a20" category="inline-image-macro">Puppet 配置</block>
   <block id="f02b842ccd15155934dc65921239d4f0" category="paragraph"><block ref="f02b842ccd15155934dc65921239d4f0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4c6265f8b688769e31b9b757f9e54749" category="inline-link">Puppet 文档</block>
@@ -613,7 +610,6 @@
   <block id="09d6123310780f93d8f4d27e5bea4c38" category="summary">摘要。</block>
   <block id="d094b5589a83ff9dbfcc2d0e99295078" category="doc">管理已配置的数据收集器</block>
   <block id="53b9802b3b72e00a64f054ac84f78c11" category="paragraph">通过 "Installed Data Collectors" 页面，您可以访问为 Cloud Insights 配置的数据收集器。您可以使用此页面修改现有数据收集器。</block>
-  <block id="697135789f3382f6b269c2eff2c84cef" category="list-text">在 Cloud Insights 菜单中，单击 * 管理 &gt; 数据收集器 *</block>
   <block id="b931042a6d27500a3c3952e7af9907a5" category="paragraph">此时将显示 Available Data Collector 屏幕。</block>
   <block id="e57a6ec1c32ee71fdeae09f16bf7524f" category="list-text">单击 * 已安装的数据收集器 *</block>
   <block id="25d0acec025a9863386eb668b19dff06" category="paragraph">此时将显示所有已安装的数据收集器的列表。此列表提供了收集器名称，状态，收集器正在访问的 IP 地址以及上次从 A 设备采集数据的时间。可在此屏幕上执行的操作包括：</block>
@@ -628,7 +624,6 @@
   <block id="2501b8babb695bdec64e66eb11334512" category="section-title">编辑数据收集器信息</block>
   <block id="0560feeeae310b75cae9ba26f91d59a8" category="paragraph">您可以编辑现有数据收集器设置信息。</block>
   <block id="831f0c2e9b0e7c5099cb9031c5dc0385" category="list-title">要编辑单个数据收集器，请执行以下操作：</block>
-  <block id="0ffa9affe1709cdb1b9adec1380e1915" category="list-text">在 Cloud Insights 菜单中，单击 * 管理 &gt; 数据收集器 * 以打开已安装的数据收集器列表。</block>
   <block id="77d808925da6d415697912a926fa941f" category="list-text">在要修改的数据收集器右侧的选项菜单中，单击 * 编辑 * 。</block>
   <block id="9792f388566911dc57896cf92d02b576" category="paragraph">此时将打开编辑收集器对话框。</block>
   <block id="40b6e8c1a1d818be1bbc1cdb378f09df" category="list-text">输入所做的更改并单击 * 测试配置 * 以测试新配置，或者单击 * 保存 * 以保存配置。</block>
@@ -641,7 +636,6 @@
   <block id="a282dcc95e28cd045551ecaf5f98025c" category="paragraph">编辑多个数据收集器时， * 测试配置 * 按钮不可用。</block>
   <block id="c282617210ff18a52337d5334bd08aed" category="section-title">克隆数据收集器</block>
   <block id="63a478f4e24d6d80d303e7f6b683ff3a" category="paragraph">使用克隆工具，您可以快速添加与其他数据源具有相同凭据和属性的数据源。通过克隆，您可以轻松配置同一设备类型的多个实例。</block>
-  <block id="e2d9fabd9d06eb6aaafa33a7e708066c" category="list-text">在 Cloud Insights 菜单中，单击 * 管理 &gt; 数据收集器 * 。</block>
   <block id="7aa19fe5c61d4c1b3b090b6f97e1abde" category="list-text">单击 * 已安装的数据收集器 * 。</block>
   <block id="bf7749db4d5b82ac73abb6d90abc9e33" category="list-text">单击要复制的数据收集器左侧的复选框。</block>
   <block id="623a8968bde520b6006d484210fadb03" category="list-text">在选定数据收集器右侧的选项菜单中，单击 * 克隆 * 。</block>
@@ -904,7 +898,6 @@
   <block id="f23d43a2f8827bf71755047f9233d1d7" category="summary">Flink 数据收集器配置</block>
   <block id="760f80f90fb384d40bb66a9f0b4823fd" category="doc">Flink 数据收集器</block>
   <block id="54387b91997cebc2b9f94c02572ea7c8" category="paragraph">Cloud Insights 使用此数据收集器从 Flink 收集指标。</block>
-  <block id="6b7484ab321e2bb0cd1b30bf18f6dd76" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Flink 。</block>
   <block id="c1a584a645c5a21efa505b7deca25b2b" category="inline-image-macro">Flink 配置</block>
   <block id="2462dee15f2229ca8b824af60aa5037f" category="paragraph"><block ref="2462dee15f2229ca8b824af60aa5037f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="88f3c1a97fbc332ad9adb7ff5179d0f5" category="paragraph">完整的 Flink 部署包括以下组件：</block>
@@ -985,7 +978,6 @@
   <block id="958f097fe9ccbb38e85c88ca82a73170" category="list-text">如果您的系统使用的是代理，则必须在安装采集单元之前设置代理环境变量。有关详细信息，请参见 <block ref="cc8b2258e67f4301c61077ad43e8ce8b" category="inline-xref-macro-rx"></block>。</block>
   <block id="29e4728bd5327820a2862b6f2893f106" category="list-title">Linux 采集单元安装步骤</block>
   <block id="af3e8f1c899e4154e0ef2755c159cbf4" category="list-text">以管理员或帐户所有者身份登录到您的 Cloud Insights 环境。</block>
-  <block id="f6544337171161f937d7eafd6f3c1c52" category="list-text">单击 * 管理 &gt; 数据收集器 &gt; 采集单元 &gt; + 采集单元 *</block>
   <block id="c377ddafa0c23753505e4eef0b3150bf" category="paragraph">系统将显示 _Install Acquisition Unit" 对话框。选择 Linux 。</block>
   <block id="53940e3b856f2e1c626138e2f7682793" category="inline-image-macro">《 Linux AU 说明》</block>
   <block id="38501232d98de5e611cc0c9ca2418a61" category="paragraph"><block ref="38501232d98de5e611cc0c9ca2418a61" category="inline-image-macro-rx" type="image"></block></block>
@@ -994,7 +986,6 @@
   <block id="8ee1aa8c453a757e226876f731e9cd26" category="list-text">将对话框中的安装命令片段复制到要托管采集单元的服务器或虚拟机上的终端窗口中。</block>
   <block id="315fa945ac6eb373152b3ddaf9502ed0" category="list-text">在 Bash Shell 中粘贴并执行命令。</block>
   <block id="bd965e38a0c9cf27aa1bde099308e23f" category="list-title">完成后</block>
-  <block id="3d11c2f8fdd0961187e8dda5fc527dea" category="list-text">单击 * 管理 &gt; 数据收集器 &gt; 采集单元 * 以检查采集单元的状态。</block>
   <block id="71f472583171cff49390f4dae43ea6cd" category="list-text">您可以访问 /var/log/netapp/cloudinsooks/acq/acq.log 上的采集单元日志</block>
   <block id="3d2110a2733664229699d6929eef482a" category="list-text">使用以下脚本控制采集单元：</block>
   <block id="32ccd5ec27f3b1aace6be79d7b494b16" category="list-text">cloudinsights-service.sh （停止，启动，重新启动，检查状态）</block>
@@ -1015,7 +1006,6 @@
   <block id="7bb8dc49e894513db639873cb06911d4" category="list-title">Windows 采集单元安装步骤</block>
   <block id="d859eb4ae30b9eae60ffbcb09db52be6" category="list-text">以具有管理员权限的用户身份登录到采集单元服务器 /VM 。</block>
   <block id="3cf3030bbe5a24323447cf60440415e7" category="list-text">在该服务器上，打开浏览器窗口并以管理员或帐户所有者身份登录到 Cloud Insights 环境。</block>
-  <block id="7127e1b44efefedfeb8ba08e13767870" category="list-text">单击 * 管理 &gt; 数据收集器 &gt; 采集单元 &gt; + 采集单元 * 。</block>
   <block id="0c3a3bd2ed0dc5c611332312485e427f" category="paragraph">系统将显示 _Install Acquisition Unit" 对话框。选择 Windows 。</block>
   <block id="ec97136c856287bb07ca7148194c98e6" category="image-alt">Windows AU 安装</block>
   <block id="0ddeb8dc3872cd6d88bd4c549ed99742" category="list-text">验证服务器是否正在运行受支持的 Windows 版本。单击 _OS Versions supported （ i ） _ 以查看支持的版本列表。</block>
@@ -1039,10 +1029,8 @@
   <block id="957deaa4b12e9e98b0ee4181b18c7361" category="paragraph">要在同一服务器 /VM 上重新安装采集单元，必须执行以下步骤：</block>
   <block id="1405103bcf8e1e217a5c701e0664adf3" category="paragraph">在重新安装采集单元之前，您必须在单独的服务器 /VM 上配置一个临时采集单元。</block>
   <block id="0412a74c6fa998305a965b2e89cdedbf" category="list-text">登录到采集单元服务器 /VM 并卸载 AU 软件。</block>
-  <block id="fb7df762b91c6b3142717b8f5ae95fe9" category="list-text">登录到 Cloud Insights 环境，然后转到 * 管理 &gt; 数据收集器 * 。</block>
   <block id="33d249d050a70e456b1fc925b67c58f1" category="list-text">对于每个数据收集器，单击右侧的选项菜单，然后选择 _Edit_ 。将数据收集器分配给临时采集单元，然后单击 * 保存 * 。</block>
   <block id="3005f55cd54d5a821222569df6baf337" category="paragraph">您还可以选择多个相同类型的数据收集器，然后单击 * 批量操作 * 按钮。选择 _Edit_ 并将数据收集器分配给临时采集单元。</block>
-  <block id="a5d25dc71d1e825652ea199481e35d26" category="list-text">将所有数据收集器移至临时采集单元后，转到 * 管理 &gt; 数据收集器 * 并选择 * 采集单元 * 选项卡。</block>
   <block id="026a58fa6c27be328f43029729806c4b" category="list-text">单击要重新安装的采集单元右侧的选项按钮，然后选择 _Delete_ 。只有在未分配任何数据收集器的情况下，才能删除采集单元。</block>
   <block id="4f529479185a997ea1538b00643e7fd0" category="list-text">现在，您可以在原始服务器 /VM 上重新安装采集单元软件。单击 * + 采集单元 * ，然后按照上述说明安装采集单元。</block>
   <block id="5cdf029d7ee5a4116eb823d71cbead39" category="list-text">重新安装采集单元后，将数据收集器重新分配给采集单元。</block>
@@ -2004,7 +1992,6 @@
   <block id="1565534c3529832edbcb4b0a747b70e6" category="section-title">改进了 UI 加载时间</block>
   <block id="57f7d6ec228afeb80fff9d41654bbca4" category="list-text">Cloud Insights 用户界面（ UI ）的初始加载时间已显著缩短。在加载元数据的情况下， UI 的刷新时间也会因这种改进而受益。</block>
   <block id="997b600cf8160cf5b1e3859e2bb60473" category="section-title">批量编辑数据收集器</block>
-  <block id="b830fc81cf4e90f6b02cca4ead4d3941" category="list-text">您可以同时编辑多个数据收集器的信息。在 * 管理 &gt; 数据收集器 * 页面上，选中每个收集器左侧的框并单击 * 批量操作 * 按钮，以选择要修改的数据收集器。选择 * 编辑 * 并修改必要的字段。</block>
   <block id="c3fe0955bd183cc44d168a97c2353942" category="section-title">支持和订阅页面可在入职期间使用</block>
   <block id="e61ce8796090b19c99188c4a47f73495" category="list-text">在入职工作流期间，您可以导航到 * 帮助 &gt; 支持 * 和 * 管理员 &gt; 订阅 * 页面。如果您尚未关闭浏览器选项卡，则从这些页面返回将返回到入职工作流。</block>
   <block id="a10ba827ae758dee0e50d44366fd3d6d" category="section-title">2018年11月</block>
@@ -2305,7 +2292,6 @@
   <block id="5fad6c174e90a6bce3c3685434f27610" category="cell">请尝试此操作</block>
   <block id="92232e830756517d2e51d25331f14f25" category="cell">在 "All actives" 表的 ‘User ' 列下，用户名显示为： "ldap ： HQ.COMPANYNAME.COM:S-1-5-21-3577637-1906459482-1437260136-1831817” 或 "ldap ： default ： 80038003"</block>
   <block id="0c4a0e9a569be65e94908f9222457694" category="inline-link-macro">用户目录收集器故障排除</block>
-  <block id="0b15e5ecfcaabb3952c7992d37b94c97" category="cell">可能的原因可能是： 1.尚未配置任何用户目录收集器。要添加一个，请转到 * 管理 &gt; 数据收集器 &gt; 用户目录收集器 * ，然后单击 * + 用户目录收集器 * 。选择 _Active Directory_ 或 _LDAP Directory Server_ 。2. 已配置用户目录收集器，但它已停止或处于错误状态。请转到 * 管理 &gt; 数据收集器 &gt; 用户目录收集器 * 并检查状态。请参见 <block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block> 文档中有关故障排除提示的章节。正确配置后，此名称将在 24 小时内自动解析。如果仍无法解决此问题，请检查您是否添加了正确的用户数据收集器。确保用户确实属于添加的 Active Directory/LDAP 目录服务器。</block>
   <block id="60453af0c088f387fbb9feedaf6a6608" category="summary">取证用户活动数据</block>
   <block id="e899418418f8726548f15884cedbfb9b" category="doc">取证用户活动数据</block>
   <block id="046e37efe4ac085b2093fb97904fbe6c" category="paragraph">" 用户活动 " 页面可帮助您了解用户对实体执行的操作。</block>
@@ -2411,7 +2397,6 @@
   <block id="3e647ef93d862cebdd7fa80573f126aa" category="summary">MongoDB 数据收集器配置</block>
   <block id="53e70a8dd3a918a24f705909a168c35c" category="doc">MongoDB 数据收集器</block>
   <block id="5365ec2fc489501ed613b8ad5b954e9c" category="paragraph">Cloud Insights 使用此数据收集器从 MongoDB 收集指标。</block>
-  <block id="79d5a85827de0c0dacd0986e20079d62" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 MongoDB 。</block>
   <block id="06dc92e8ae707ce9c6046e102df5a214" category="inline-image-macro">MongoDB 配置</block>
   <block id="0f54e55841a24b143c2104aab4935f7b" category="paragraph"><block ref="0f54e55841a24b143c2104aab4935f7b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38d4b2dc2b4a57b1ac9fd3ffb91a1e4e" category="inline-link-macro">MongoDB 文档</block>
@@ -2746,7 +2731,6 @@
   <block id="4002c18c39606cdbd9ec7cf8e2a090ad" category="summary">Redis 数据收集器配置</block>
   <block id="9d2537f158357c95ae162019d658de08" category="doc">RethinkDB 数据收集器</block>
   <block id="86e303e0c497b52b7c3e448d2a739f78" category="paragraph">Cloud Insights 使用此数据收集器从 RethinkDB 收集指标。</block>
-  <block id="195db1a7dc11e7296624dbf54cf9c3cf" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 RethinkDB 。</block>
   <block id="10e1e1205ffd97adbe671ede9a7d4f2d" category="inline-image-macro">RethinkDB Data Collector 配置</block>
   <block id="dd379e6631df8e94fe26188b06220cf7" category="paragraph"><block ref="dd379e6631df8e94fe26188b06220cf7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7fc41d1df644e11b26a2696444f69499" category="inline-link-macro">RethinkDB 文档</block>
@@ -2892,7 +2876,6 @@
 <block ref="e2ee1872ae14f9b079a5e15b45b85992" category="inline-link-macro-rx"></block></block>
   <block id="6e043661fa5856f26501d44b41838596" category="cell">配置数据收集器</block>
   <block id="9a588e9b6b88f5c90c86bde96fc3f0c1" category="inline-link-macro">* 视频 * ： ONTAP SVM 连接</block>
-  <block id="edecb6d917822e3e174b7b29c7e80c50" category="cell">单击 * 管理 &gt; 数据收集器 * 单击要配置的数据收集器。请参见文档中的《 Data Collector Vendor Reference 》一节。<block ref="49902fc743c67e64ddcf4901ef2c69bf" category="inline-link-macro-rx"></block></block>
   <block id="a1d0a98f6922d21edbc391782fbb69e3" category="cell">创建用户帐户</block>
   <block id="8e9fceaaf84bd1591dc11726965a5b35" category="inline-link-macro">管理用户帐户</block>
   <block id="a6fe30cef6ad189dc3685c855c858b10" category="cell"><block ref="a6fe30cef6ad189dc3685c855c858b10" category="inline-link-macro-rx"></block></block>
@@ -2950,7 +2933,6 @@
   <block id="3ed1623d8dee972d71ef8f8f97d1e7b7" category="summary">JVM 数据收集器配置</block>
   <block id="83940d42e25b16f92792429af8696c02" category="doc">JVM 数据收集器</block>
   <block id="1df30fc376f79b28898758816aee8108" category="paragraph">Cloud Insights 使用此数据收集器从 JVM 收集指标。</block>
-  <block id="361e3edbe3bc9b14124c39095c18dd68" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 JVM 。</block>
   <block id="cfc15582c99f2d93d641ceef808c0dea" category="inline-image-macro">JVM 配置</block>
   <block id="a1a11aab15942415d5fa3dbff92e14bd" category="paragraph"><block ref="a1a11aab15942415d5fa3dbff92e14bd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1d4d54ae01b1b207ad71b19545e065d0" category="inline-link-macro">JVM 文档</block>
@@ -2968,7 +2950,6 @@
   <block id="f4b59a337513071e6d4843f553d49bc6" category="section-title">凭据安全性</block>
   <block id="4a2fd5083496ddce3be60eef8073b637" category="paragraph">在 Cloud Insights 中输入数据收集器凭据时，这些凭据会进行加密，并首先通过 AU 的公有密钥加密并通过 HTTPS 加密发送到采集单元（ AU ）。当 AU 使用加密值与设备和软件进行通信时，加密值会进行解密。</block>
   <block id="ca28d4c52bb2a654a2678ff8d3dcefa2" category="section-title">配置 Data Collector</block>
-  <block id="50fad681fab3955ee03277012c672831" category="list-text">从 Cloud Insights 菜单中，单击 * 管理 &gt; 数据收集器 * ，然后单击 * + 数据收集器 * 按钮。您可以选择显示所有数据收集器，也可以选择筛选以仅显示根据您的订阅可供您使用的数据收集器。</block>
   <block id="c339d1a32a95310d9e4a053f77cad28b" category="list-text">根据您选择的数据收集器类型，安装步骤会有所不同。</block>
   <block id="13762a4c9e8fa47d574db722fc1b3fa2" category="section-title">操作系统：</block>
   <block id="b00d7c7ac92f4aaddc21f00ae51e9ffb" category="paragraph">要开始从环境中收集操作系统或服务数据，必须至少安装一个 Cloud Insights 代理。您可以根据需要安装任意数量的代理。每个代理都可以从多个服务收集数据。</block>
@@ -3200,7 +3181,6 @@
   <block id="1da80b1336c0c9594d16e3d3dab10d20" category="summary">Consul 数据收集器配置</block>
   <block id="c4079b6998dfb2e5f02a35b303e1acce" category="doc">Consul 数据收集器</block>
   <block id="44aa5a1c223b0773b5006801b857966b" category="paragraph">Cloud Insights 使用此数据收集器从 Consul 收集指标。</block>
-  <block id="0ba4d88a843ce3dab96f8e8dce5648fc" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Consul 。</block>
   <block id="90b5256380802f2feaca144a438190c3" category="inline-link-macro">安装代理</block>
   <block id="dc31f8b70f914e6d9f6e9267b53fb552" category="paragraph">如果尚未配置代理进行收集，系统将提示您 <block ref="a1b69a79c96be75135c991d76ebf15bb" category="inline-link-macro-rx"></block> 在您的环境中。</block>
   <block id="bfd9f9769236435b451e6625d2b38cd5" category="paragraph">如果已配置代理，请选择相应的操作系统或平台，然后单击 * 继续 * 。</block>
@@ -3219,7 +3199,6 @@
   <block id="1194c1f585884540788ba8946023cc33" category="list-text">您必须已设置 Apache HTTP 服务器并正确运行</block>
   <block id="6b1dbef46026830edbb8a38bb35f7c07" category="list-text">您必须对代理主机 /VM 具有 sudo 或管理员权限</block>
   <block id="c16390c8cf2123acd316f38a743628ab" category="list-text">通常， Apache _mod_status_ 模块会配置为在 Apache 服务器的 /server-status ？ auto 位置公开页面。要收集所有可用字段，必须启用 _ExtendedStatus_ 选项。有关如何配置服务器的信息，请参见 Apache 模块文档：<block ref="7174f93683616a9a4040d970e3c6eb19" category="inline-link-rx"></block></block>
-  <block id="f91d09ac9216dbbb2c3095fadb4d31c8" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Apache 。</block>
   <block id="db3b3ca5f6c31a760f5aa49a9a809802" category="inline-image-macro">Apache 配置</block>
   <block id="5ec6fd62051ccff5584535e6108b55ba" category="paragraph"><block ref="5ec6fd62051ccff5584535e6108b55ba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ed6e8b2146d5bd121cfea083307611f3" category="paragraph">Telegraf 用于 Apache HTTP 服务器的插件依赖于 "mod_status" 模块的启用。启用此选项后， Apache 的 HTTP 服务器将显示一个 HTML 端点，您可以在浏览器上查看此端点，也可以对其进行擦除，以便提取所有 Apache 的 HTTP 服务器配置的状态。</block>
@@ -3656,7 +3635,6 @@
   <block id="170ac79db4abf3af53c36b5ba23d297a" category="summary">CouchDB 数据收集器配置</block>
   <block id="1aa7fb61fdaf60c81a318c790c7e545e" category="doc">CouchDB Data Collector</block>
   <block id="2aa655c0610f5e45884f5257e54d539e" category="paragraph">Cloud Insights 使用此数据收集器从 CouchDB 收集指标。</block>
-  <block id="bd6bf57fa1ccea508d5b9f2b66a2f54d" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 CouchDB 。</block>
   <block id="9d3601e78c51a4b184d2fe86128539e4" category="inline-image-macro">CouchDB 配置</block>
   <block id="61d7e3da551b2e4c1549750fbb518e22" category="paragraph"><block ref="61d7e3da551b2e4c1549750fbb518e22" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8a7006055e2291f0b9e46ee915f0ad0c" category="inline-link-macro">CouchDB 文档</block>
@@ -3672,7 +3650,6 @@
   <block id="64253e1fcc0aae98a2a4e076304feca3" category="paragraph">单击此消息将显示一个表，其中包含数据收集器名称，状态和上次成功采集时间。如果您以管理员身份登录，则单击表中的数据收集器名称链接将转到该数据收集器的详细信息页面。</block>
   <block id="001dce6e76a3b3b754db59e538750dd8" category="doc">Redis Data Collector</block>
   <block id="0188f056a49bdb8c4c3a015b2229d13e" category="paragraph">Cloud Insights 使用此数据收集器从 Redis 收集指标。Redis 是一种开源内存数据结构存储，用作数据库，缓存和消息代理，支持以下数据结构：字符串，哈希，列表，集等。</block>
-  <block id="f7f5396aa94565cefc881e1c6728756d" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Redis 。</block>
   <block id="602c395372ffc11185f0cc2291099c7f" category="inline-image-macro">Redis Data Collector 配置</block>
   <block id="5c452c3f36884795da26d34b96db691c" category="paragraph"><block ref="5c452c3f36884795da26d34b96db691c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6f6c7e0bd9df07afbd8f27f303fba934" category="inline-link-macro">Redis 文档</block>
@@ -3805,7 +3782,6 @@
   <block id="799af4349bd49a845da3921295bd9dbe" category="paragraph">您可以在此处找到有关排除 Linux 服务器上采集单元问题的建议。</block>
   <block id="a6484180ab52e1912f65cd3c8a857673" category="cell">* 问题： *</block>
   <block id="710c77cfc8d2136c51aad6a8316043b9" category="cell">* 请尝试此操作： *</block>
-  <block id="a7179f7901a2f6257761977d760a253d" category="cell">在 * 采集单元 * 选项卡的 * 管理 &gt; 数据收集器 * 页面上， AU 状态显示 " 证书已过期 " 或 " 证书已撤销 " 。</block>
   <block id="a56fa9c38676d6ae98991340b46ca3ad" category="cell">单击 AU 右侧的菜单，然后选择 * 还原连接 * 。按照说明还原采集单元： 1.停止采集单元（ Acquisition Unit ， AU ）服务。您可以单击 _Copy Stop Command_ 按钮将命令快速复制到剪贴板，然后将此命令粘贴到采集单元计算机上的命令提示符中。2. 在 AU 上的 /var/lib/netapp/cloudinsides/acq/conf_ 文件夹中创建一个名为 "token" 的文件。3. 单击 _Copy Token_ 按钮，然后将此令牌粘贴到您创建的文件中。4. 重新启动 AU 服务。单击 _Copy Restart Command_ 按钮，然后将命令粘贴到 AU 上的命令提示符中。</block>
   <block id="f8c1f64e9a97f83b0f209268bdd07bcb" category="cell">未满足服务器要求</block>
   <block id="b4851e92b19af0c5c82447fc0937709d" category="inline-link-macro">要求</block>
@@ -4218,7 +4194,6 @@
   <block id="3dc395f34d5747fa5d58e08302ab67fd" category="summary">nginx 数据收集器配置</block>
   <block id="21a6c8824057335f8e9dc232584c6ea0" category="doc">nginx 数据收集器</block>
   <block id="a04ac927bc32d4712f954795733890da" category="paragraph">Cloud Insights 使用此数据收集器从 nginx 收集指标。</block>
-  <block id="bd78dc47276d0b2f96cf76b9264e3719" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 nginx 。</block>
   <block id="e7e86cae130886a78274ae9b77db6f35" category="inline-image-macro">Linux nginx 配置</block>
   <block id="de93697b48f7103f9289abf65ca587b4" category="paragraph"><block ref="f310f9809260b458b5b99732eb2d720e" category="inline-image-macro-rx" type="image"></block>
 <block ref="884ba5b9c64ace436091d4a7d4619c6c" category="inline-image-macro-rx" type="image"></block></block>
@@ -4232,7 +4207,6 @@
   <block id="0982f7ddf38c72531e91321d3b4e198e" category="summary">Docker 数据收集器配置</block>
   <block id="d80788e8d22d139775039533ead6bae8" category="doc">Docker Data Collector</block>
   <block id="6e48769f92efb7218705b56e64b2cc22" category="paragraph">Cloud Insights 使用此数据收集器从 Docker 收集指标。</block>
-  <block id="554a779a5b12eab44643786faec81a00" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Docker 。</block>
   <block id="0f4a5a5b8072d8e43816253b9197d0f1" category="list-text">按照 Docker 配置屏幕中的说明配置数据收集器。这些说明因用于收集数据的操作系统或平台的类型而异。</block>
   <block id="4ed4e51db0aa02d2ed7e8fb292cc39c8" category="inline-image-macro">Docker 配置</block>
   <block id="ee96e45eed0143814810825fc37d2fa8" category="paragraph"><block ref="ee96e45eed0143814810825fc37d2fa8" category="inline-image-macro-rx" type="image"></block></block>
@@ -4298,7 +4272,6 @@
   <block id="a2eff2103f669c457b93354a8c3f5dce" category="paragraph">要创建新用户，请使用集群管理管理员用户名 / 密码登录到 ONTAP ，然后在 ONTAP 服务器上执行以下命令。为了方便，请将这些命令复制到文本编辑器中，并将 &lt;vservername&gt; 替换为您的 Vserver 名称，然后在 ONTAP 上执行这些命令：</block>
   <block id="e96ded369b9e59a3e1b17c09ebacf307" category="section-title">配置数据收集器</block>
   <block id="51bdd5739ec46025074c8dd62983fe18" category="list-title">配置步骤</block>
-  <block id="ec7545874efeb6d35ece424954185bc7" category="list-text">单击 * 管理 &gt; 数据收集器 &gt; + 数据收集器 *</block>
   <block id="f740a49ca955ba7a2c53c734ec5644af" category="paragraph">系统将显示可用的数据收集器。</block>
   <block id="ccae37a4062faaa234bc03e54a73f635" category="list-text">将鼠标悬停在 * NetApp SVM 磁贴上，然后单击 * + 监控 * 。</block>
   <block id="4bbcb2378867aa5e0452759f6639206c" category="paragraph">系统将显示 ONTAP SVM 配置页面。为每个字段输入所需数据。</block>
@@ -4458,7 +4431,6 @@
   <block id="13b9b5c6c0fb1445ca79a2155f4dc602" category="summary">Hadoop 数据收集器配置</block>
   <block id="38af629ca8cce22e7b7e641b96f8197b" category="doc">Hadoop Data Collector</block>
   <block id="20bacb7d7672e3432126a809496c0ace" category="paragraph">Cloud Insights 使用此数据收集器从 Hadoop 收集指标。</block>
-  <block id="a21fbfcb9b79178469092d796d580b0c" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Hadoop 。</block>
   <block id="e844ff1ebc3eef465aed7960b58160c3" category="inline-image-macro">Hadoop 配置</block>
   <block id="026b451ea6f45b0c92de7f54611efaf2" category="paragraph"><block ref="47353d83abd9981302d8e2ae7057d5b3" category="inline-image-macro-rx" type="image"></block>
 <block ref="7afda35c9e63e32c054b3ad27f5a4ccb" category="inline-image-macro-rx" type="image"></block></block>
@@ -4501,7 +4473,6 @@
   <block id="18906ecb044421552f4c94c742621646" category="summary">kapacitor. 配置</block>
   <block id="d3761f3a03696694e546430b624f3542" category="doc">Kapacitor 数据收集器</block>
   <block id="1d82355e9a49b0e00b0df8f87a981b73" category="paragraph">Cloud Insights 使用此数据收集器从影响数据的 Kapacitor 收集指标。</block>
-  <block id="83ed2ac7ca6d8bcb30aa864e5274fa97" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Kapacitor.</block>
   <block id="6501fa3c86462ded7187a4c119d46e5b" category="inline-image-macro">Kapacitor 配置</block>
   <block id="dbf6b5b2cdedf021b5f438c1d0d94f55" category="paragraph"><block ref="dbf6b5b2cdedf021b5f438c1d0d94f55" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e711cd4bbd4573cce8f56f9019ee69f5" category="inline-link">Kapacitor 文档</block>
@@ -4699,7 +4670,6 @@
   <block id="29f2c433c8324679db838494d114ace0" category="summary">Elasticsearch 数据收集器配置</block>
   <block id="b254328dbad8d7bef169a1d38f1b1bec" category="doc">Elasticsearch Data Collector</block>
   <block id="7ad1c9b2a026e8cd588b98357fc68620" category="paragraph">Cloud Insights 使用此数据收集器从 Elasticsearch 收集指标。</block>
-  <block id="59c6bcdf12427f3d11799d143d31e3bb" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Elasticsearch 。</block>
   <block id="8dc7af6f97dac4ac46d66b12e0c86974" category="inline-image-macro">Elasticsearch 配置</block>
   <block id="5b3344ac5bf291f59c070db863943014" category="paragraph"><block ref="5b3344ac5bf291f59c070db863943014" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7423bcb1039be167bcf002d43ee6670e" category="inline-link-macro">Elasticsearch 文档</block>
@@ -4805,7 +4775,6 @@
   <block id="3af2b23a1e0e5c8f8f71ba7f0645e753" category="summary">HAProxy 数据收集器配置</block>
   <block id="d7f6334a8fd2ef6e012df8e7d1bc1840" category="doc">HAProxy 数据收集器</block>
   <block id="f43901d1ca245307f30d36ef67a4ef53" category="paragraph">Cloud Insights 使用此数据收集器从 HAProxy 收集指标。</block>
-  <block id="5819bbcb21b285d34fbde739069c0b6d" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 HAProxy 。</block>
   <block id="6c1dacdba2adca5cfa22ff19b2d327fe" category="inline-image-macro">HAProxy 配置</block>
   <block id="00f9d91055267fed1b468bf28bbfbb04" category="paragraph"><block ref="00f9d91055267fed1b468bf28bbfbb04" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb69e07b7e1dc3bc5864b07b79bba857" category="paragraph">Telegraf 的 HAProxy 插件依赖于启用 HAProxy 统计信息。这是一种内置在 HAProxy 中的配置，但它不会开箱即用。启用后， HAProxy 将显示一个 HTML 端点，您可以在浏览器上查看此端点或对其进行擦除，以便提取所有 HAProxy 配置的状态。</block>
@@ -4929,7 +4898,6 @@
   <block id="9447267c06cce84dba179c481872fb16" category="cell">Cloud Volumes 密钥</block>
   <block id="43b4fe530611e0a29d40ae51f1110192" category="doc">节点数据收集</block>
   <block id="a95bc37c275448ac1c6069158f92b809" category="paragraph">Cloud Insights 从安装代理的节点收集指标。</block>
-  <block id="ce735cbd33ce6bba099eff6991d48cec" category="list-text">从 * 管理 &gt; 数据收集器 * 中，选择操作系统 / 平台。请注意，安装任何集成数据收集器（ Kubernetes ， Docker ， Apache 等）也会配置节点数据收集。</block>
   <block id="5f6ce12582c69bad9341e28467c0c0d0" category="list-text">按照说明配置代理。这些说明因用于收集数据的操作系统或平台的类型而异。</block>
   <block id="c166791fe89a8eb17ee0a37ad809ba2b" category="paragraph">以下对象及其计数器将作为节点指标收集：</block>
   <block id="1f8c535824144ce794fd8ac5fdcfe9f1" category="cell">节点文件系统</block>
@@ -4959,7 +4927,6 @@
   <block id="8250aff5bf291c0fd6c60d86a94af326" category="summary">Couchbase 数据收集器配置</block>
   <block id="c85700224d4de4029d47e8f7419f121a" category="doc">Couchbase 数据收集器</block>
   <block id="2cc7a39d9220b0a6ca309f2f84801606" category="paragraph">Cloud Insights 使用此数据收集器从 Couchbase 收集指标。</block>
-  <block id="876d2d741f04d145a3f8da9d95b50ca9" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Couchbase 。</block>
   <block id="d7712cfab308e47f5bb1445e9fbcb070" category="inline-image-macro">Couchbase 配置</block>
   <block id="64fffda04d6b10150c8c8726100e6239" category="paragraph"><block ref="64fffda04d6b10150c8c8726100e6239" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41bdcd289793051395a360769595211c" category="inline-link-macro">Couchbase 文档</block>
@@ -4974,7 +4941,6 @@
   <block id="83fbc11c171008ea835730f7922a6417" category="summary">OpenZFS 数据收集器配置</block>
   <block id="280698a257edec445fc9d2a3c41f9089" category="doc">OpenZFS 数据收集器</block>
   <block id="9109116c1e875f98e978783a131e4466" category="paragraph">Cloud Insights 使用此数据收集器从 OpenZFS 收集指标。</block>
-  <block id="7bc2f3c2ab06e68dd0a06b93dedec7a5" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 OpenZFS 。</block>
   <block id="c5ea32057bfe11187d339d524ccea393" category="inline-image-macro">Linux OpenZFS 配置</block>
   <block id="252ab915aaf37678f2c31259844d9830" category="paragraph"><block ref="252ab915aaf37678f2c31259844d9830" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b016f6d8b58fbc57dff98ba0460cd713" category="inline-link-macro">OpenZFS 文档</block>
@@ -5026,7 +4992,6 @@
   <block id="a1151f371f1db5ddea0adcadbc49738e" category="summary">PostgreSQL 数据收集器配置</block>
   <block id="28279ca1d2fa23440d64e252b10c2f2e" category="doc">PostgreSQL 数据收集器</block>
   <block id="45946606e52c951c2b379ff7a77d2b76" category="paragraph">Cloud Insights 使用此数据收集器从 PostgreSQL 收集指标。</block>
-  <block id="7bd41331ff9ce374fa5ffed7696f0c41" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 PostgreSQL 。</block>
   <block id="9efde47a7f6913de0fa15c50384c3916" category="inline-image-macro">PostgreSQL 配置</block>
   <block id="ee807d599c86ec0cddb65a95252754a9" category="paragraph"><block ref="ee807d599c86ec0cddb65a95252754a9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="939acd793e013bec3f238716d1e5a1e9" category="inline-link-macro">PostgreSQL 文档</block>
@@ -5053,7 +5018,6 @@
   <block id="d500a402a0f4d5ab2dedb2c5a7ec2eaf" category="summary">memcached 数据收集器配置</block>
   <block id="0f5c57f0abc7ee69be3379cf9f5ede78" category="doc">内存缓存的 Data Collector</block>
   <block id="353f811fa170b612fa3a1340d62d9219" category="paragraph">Cloud Insights 使用此数据收集器从已缓存的收集指标。</block>
-  <block id="a622b2ddd943ae801409ac3947b322c2" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择已缓存的。</block>
   <block id="198cd654ded33685760b4676e579ff66" category="inline-image-macro">memcached 配置</block>
   <block id="a986c1bc689361d60658b48c116b9bda" category="paragraph"><block ref="a986c1bc689361d60658b48c116b9bda" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e26124564f900a300b66ae6ad54d0791" category="inline-link-macro">memcached wiki</block>
@@ -5069,7 +5033,6 @@
   <block id="d41bd76f36789e8fddb867c10a5eca40" category="list-text"><block ref="f0b8d86b1d5e602002cf4f7e7b6c1cac" category="inline-xref-macro-rx"></block></block>
   <block id="4705018fb833a2cd4979b3acd0c3171f" category="paragraph">要安装代理，无论您使用的是哪个平台，都必须先执行以下操作：</block>
   <block id="60e927136e016a2a126538b1a592e8c5" category="list-text">登录到要用于代理的主机。</block>
-  <block id="e9604f31aba2ec7275fd08fdb30a45f9" category="list-text">登录到 Cloud Insights 站点并转到 * 管理员 &gt; 数据收集器 * 。</block>
   <block id="212039b527f83b6053ae8fd23bb11e26" category="list-text">单击 * + Data Collector* 并选择要安装的数据收集器。</block>
   <block id="0b5b60f6bf77a0318f6283c5d8ce5be7" category="list-text">对每个平台执行其余步骤。</block>
   <block id="09e0466fcc22c337dc6af8a799296033" category="admonition">在主机上安装代理后，无需在该主机上重新安装代理。</block>
@@ -5186,7 +5149,6 @@
   <block id="3adad2012916d4fe2406e6c49b979206" category="list-text">输入用于访问 SVM 的用户名</block>
   <block id="7bc230cfdf8694094a44dd4b8ecf760a" category="list-text">输入用于访问 SVM 的密码</block>
   <block id="73d6fcfd5229e0ecee1d38b803bee178" category="list-text">单击 * + 添加收集器 *</block>
-  <block id="8a785e1472191f0628c391c1a63b6bee" category="list-text">单击 * 管理 &gt; 数据收集器 * 以检查您配置的收集器的状态。</block>
   <block id="b0506ef14ff473094f5c0bea0c3c41bc" category="paragraph">收集器状态显示通常会有一段延迟。</block>
   <block id="5865d512ef44ce9af5c898e3838da358" category="summary">介绍了 Kubernetes 登录页面</block>
   <block id="e069a872dd6153588f1350dd2d1c2289" category="doc">Kubernetes 集群概述</block>
@@ -5693,7 +5655,6 @@
   <block id="16bcb6504859efb370124aaf61c89fb1" category="paragraph">注意：如果所有关联的收集器都处于 stopped 状态，请忽略此步骤。</block>
   <block id="ab71eb10a75782a66759f743954f1bf4" category="list-title">删除代理的步骤：</block>
   <block id="4011c5dae5360156cb9edb8b312334ab" category="list-text">通过 SSH 连接到代理 VM 并执行以下命令。出现提示时，输入 "y" 以继续。</block>
-  <block id="b5ba91ff29a00af62e0f8e16efcb41fd" category="list-text">单击 * 管理 &gt; 数据收集器 &gt; 代理 *</block>
   <block id="3fc177ab7a838f0ae5c224683acf4418" category="paragraph">系统将显示已配置代理的列表。</block>
   <block id="53d62f54f4323b076c538750bbea9371" category="list-text">单击要删除的代理的选项菜单。</block>
   <block id="e08b25c0c2d46e96d0ac5d6faca80bbf" category="paragraph">系统将显示 * 删除代理 * 页面。</block>
@@ -5886,7 +5847,6 @@
   <block id="2214d2294c225c2125b0860b83519fed" category="list-text">您必须先配置采集单元，然后才能开始收集数据。</block>
   <block id="e1408e9d63eaa4ab5d669ec525031645" category="list-text">您需要从中收集数据的设备的凭据。</block>
   <block id="a7470cf0d04f7133bf593832f6b10367" category="list-text">要从中收集数据的所有设备都需要设备网络地址，帐户信息和密码。</block>
-  <block id="02c241a8f52ea083e207247048e27655" category="list-text">从 Cloud Insights 菜单中，单击 * 管理 &gt; 数据收集器 *</block>
   <block id="8ee4098d58fcec0a8ad1bbc6ef3a278b" category="paragraph">系统将显示供应商安排的可用数据收集器。</block>
   <block id="98340026125b30253a889a183c2af3e1" category="list-text">单击所需供应商上的 * + Collector* ，然后选择要配置的数据收集器。</block>
   <block id="d0db1cfd406b8574a7bc2d171e484e1e" category="paragraph">在对话框中，您可以配置数据收集器并添加采集单元。</block>
@@ -5964,7 +5924,6 @@
   <block id="dc1e65eec84ecdddd9d944665f004c81" category="summary">Kafka 数据收集器配置</block>
   <block id="20c91ea30ac10f88575658fade0888da" category="doc">Kafka 数据收集器</block>
   <block id="2f36f64899c7519b8c8cd9277f2bb502" category="paragraph">Cloud Insights 使用此数据收集器从 Kafka 收集指标。</block>
-  <block id="641a02928125f2cf211e4001ecb0067d" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Kafka 。</block>
   <block id="a57380b3846ffa1f0e4bfb5181cdd4cc" category="inline-image-macro">Kafka 配置</block>
   <block id="581191fc8057a11baa82fdf0c8a4684d" category="paragraph"><block ref="581191fc8057a11baa82fdf0c8a4684d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="13369c33358db64680a157cf34f27d9c" category="paragraph">Kafka 插件基于此电报的 JOLokia 插件。例如，需要从所有 Kafka 代理收集信息，因此需要在所有组件上通过 Jallokia 配置和公开 JMX 。</block>
@@ -6230,7 +6189,6 @@
   <block id="d1f2d0eb68a6b45c8dc6a6dba792539e" category="summary">Dcos 配置</block>
   <block id="072a17ceb11d2f7027c8a1539261d0b0" category="doc">数据中心 / 操作系统数据收集器</block>
   <block id="54005140701b4d1ac4638683a951ef68" category="paragraph">Cloud Insights 使用此数据收集器从数据中心 / 操作系统收集指标。</block>
-  <block id="08dec1f580b03429f9af42c9b6c5d154" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 * 数据中心 /OS* 。</block>
   <block id="906f9dd57fb2872473e89e09bf5bf50e" category="list-text">按照 DC/OS 配置屏幕中的说明配置数据收集器。这些说明因用于收集数据的操作系统或平台的类型而异。</block>
   <block id="169d74d7790e089aeca58cb836db2fcc" category="inline-link">DC/OS 文档</block>
   <block id="b0f77e8918eef13e0142c8675b792231" category="paragraph">有关设置信息，请参见<block ref="bcf6b27a44ba394f1a86a682cd050dc1" category="inline-link-rx"></block>。</block>
@@ -6366,7 +6324,6 @@
   <block id="4c35289465431b7541002dd365bad198" category="summary">MySQL 数据收集器配置</block>
   <block id="d1f43c925400e37adcd15285deaac430" category="doc">MySQL Data Collector</block>
   <block id="5d1d986fa74eaeda0a328a24da34dc8f" category="paragraph">Cloud Insights 使用此数据收集器从 MySQL 收集指标。</block>
-  <block id="ab4bf0a03f41519bbb1301fb38d65e36" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 MySQL 。</block>
   <block id="cfe3b09f39613d05db4ca7532b374386" category="inline-image-macro">MySQL 配置</block>
   <block id="acd86359b435b0d32d73a66fa03be887" category="paragraph"><block ref="acd86359b435b0d32d73a66fa03be887" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0281cf739776a9c6b7c6cb01c1accf40" category="inline-link-macro">MySQL 文档</block>
@@ -6520,7 +6477,6 @@
   <block id="aee1b49e2ea5679073623959ef024069" category="summary">HTTP 数据收集器配置</block>
   <block id="d5418d1fa8d23d7e5951dbf339c3c5a8" category="doc">ActiveMQ 数据收集器</block>
   <block id="123afee47eb477e020c1546a00fd80a1" category="paragraph">Cloud Insights 使用此数据收集器从 ActiveMQ 收集指标。</block>
-  <block id="19fe91396be7930f3d73bd8df1426ef4" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 ActiveMQ 。</block>
   <block id="52e070f5418cead2f633bf0a2288946c" category="inline-image-macro">ActiveMQ 配置</block>
   <block id="21562149e2176820b6c8d39f6bf47011" category="paragraph"><block ref="21562149e2176820b6c8d39f6bf47011" category="inline-image-macro-rx" type="image"></block></block>
   <block id="16fc9b4d33f552995ec677b1a481fba5" category="inline-link">ActiveMQ 文档</block>
@@ -9312,7 +9268,6 @@
   <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">我在旧安装上运行了安装程序脚本、现在代理不发送数据</block>
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">卸载此电报代理、然后重新运行安装脚本。请按照此页面上适用于您的相应平台的*升级代理*步骤进行操作。</block>
   <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">检测到攻击后24小时收到电子邮件警报。在UI中、当Cloud Insights 工作负载安全收到电子邮件时、警报会在24小时之前显示。</block>
-  <block id="41515808c69d7153bb45ebb8e41a4426" category="list-text">在*安全性*菜单下、选择*管理&gt;数据收集器&gt;代理&gt;+Agent*</block>
   <block id="9608ad0a6050ac9fa535a95a22aa7db4" category="list-text">原始容量—分配给FSX文件系统的所有SSD存储的基数为2的总和。</block>
   <block id="dc17e2eb752d75a670b36698bc346864" category="list-text">IOPS—此存储池上分配的所有卷的IOPS之和。</block>
   <block id="056a8b3d2b7210d266cc3fdb33710dc2" category="list-text">吞吐量—在此存储池上分配的所有卷的总吞吐量。</block>
@@ -9434,7 +9389,6 @@
   <block id="bb374d8c356a5d359ebba50b5ef633f2" category="paragraph">如果要卸载* Windows *采集单元：</block>
   <block id="a886e4f3e66f17a2a7e88a935487cb43" category="paragraph">如果要卸载* Linux *采集单元：</block>
   <block id="1a4b5bab3c6a1557ac96614783640d94" category="paragraph">*卸载AU后*：</block>
-  <block id="f84622756d630c61f2eb9ed3a66d0828" category="list-text">在Cloud Insights 中、转到*管理&gt;数据收集器*、然后选择*采集单元*选项卡。</block>
   <block id="d4753c8dc9f05ec4405ea93fbcb61bf4" category="paragraph">* Windows和Linux：*</block>
   <block id="7e21d0cb987bd6dbc8582754783e182c" category="list-text">GET /｛schema｝/**-从报告数据库检索数据。</block>
   <block id="b3431d54476e0f70ea6fc00bae48572b" category="summary">在安装 ONTAP SVM DSC 之前，可以运行此脚本来检查 SVM 中的事件速率</block>
@@ -9464,7 +9418,6 @@
   <block id="2e51f9cf2f419fb083d896473cf49193" category="paragraph">工作负载安全性也可以与其他工具集成。例如： <block ref="4ccd3ce9fc5ce8804b14aeb0860cf515" category="inline-link-macro-rx"></block> 与Splunk集成。</block>
   <block id="67db66af222a8d458fedb178121497e4" category="summary">配置工作负载安全性LDAP用户目录收集器</block>
   <block id="773b00ecd31fcc8e604b5759c8df2d1e" category="paragraph">您可以将工作负载安全性配置为从LDAP目录服务器收集用户属性。</block>
-  <block id="0769cb17506298e1a0fd45ed42ba3e8d" category="list-text">在工作负载安全性菜单中、单击：*管理员&gt;数据收集器&gt;用户目录收集器&gt;+用户目录收集器*、然后选择* LDAP目录服务器*</block>
   <block id="d449caeff5b9c80604d3878de0500478" category="list-text">使用以下命令验证工作负载安全性LDAP用户权限：</block>
   <block id="65c4f6bc3272e61ec3bacf8385c9aca1" category="cell">域用户的可选属性未显示在工作负载安全用户配置文件页面中。</block>
   <block id="44f9e39b6d01a9bb96134d1fa664c4a9" category="cell">如果在Active Directory (AD)服务器上启用了加密证书(SSL)、则工作负载安全用户目录收集器无法连接到AD服务器。</block>
@@ -9506,7 +9459,6 @@
   <block id="9491cdf060c59bf0f883c94db8cfe73d" category="paragraph">要配置工作负载安全警报收件人、请单击*管理员&gt;通知*、然后在相应的部分中为每个收件人输入电子邮件地址。</block>
   <block id="dee5cfb5319806eabd9b28296b26207a" category="summary">配置工作负载安全性Active Directory用户目录收集器</block>
   <block id="8dccebe9a8725eed9d49bcce51664895" category="paragraph">可以将工作负载安全性配置为从Active Directory服务器收集用户属性。</block>
-  <block id="68c7fae76dd5832ab65259eca0632822" category="list-text">在工作负载安全性菜单中、单击：*管理员&gt;数据收集器&gt;用户目录收集器&gt;+用户目录收集器*、然后选择* Active Directory*</block>
   <block id="392b73413f817556c91d974c59c48d26" category="summary">借助工作负载安全性、您可以在发生可疑破坏时限制用户访问</block>
   <block id="54fc3d93cd49948e1764882084d106cc" category="paragraph">检测到攻击后、工作负载安全性可以通过阻止用户访问文件系统来阻止攻击。可以使用自动响应策略自动阻止访问、也可以从警报或用户详细信息页面手动阻止访问。</block>
   <block id="036ce35e40fa3fbcc9c9e500c29c6bf9" category="paragraph">SMB会直接阻止用户访问、NFS会阻止导致攻击的主机的IP地址。这些计算机IP地址将被阻止访问工作负载安全性监控的任何Storage Virtual Machine (SVM)。</block>
@@ -9569,7 +9521,6 @@
   <block id="830d10f97264e90663c5e3935c2d632d" category="paragraph">在AWS中、按照以下步骤配置要用作工作负载安全代理的计算机：</block>
   <block id="1c670cb717b4140f57366cd8d3f7073b" category="paragraph">按照以下步骤配置要用作工作负载安全代理的计算机：</block>
   <block id="9661d643a1d7bcdfae7260083848fe7c" category="section-title">安装工作负载安全代理</block>
-  <block id="24e9816bffbf8174c3d54d3085dfdebb" category="list-text">导航到工作负载安全性*管理&gt;数据收集器*、然后单击*代理*选项卡。</block>
   <block id="e6827eaa9bdbd78ae7e7018263f370fb" category="list-text">将代理安装命令粘贴到您已登录的 RHEL EC2 实例中。此时将安装工作负载安全代理、并提供所有 <block ref="f5706ef9ce891542a2a7f34eef5c175e" category="inline-link-macro-rx"></block> 已满足。</block>
   <block id="27bdcc1bb00d03f954143a84da9b6cce" category="cell">数据收集器显示"工作负载安全性：无法确定Amazon FxSN数据收集器的ONTAP 类型"错误。客户无法将新的Amazon FSxN数据收集器添加到工作负载安全性中。从代理通过端口443连接到FSxN集群时超时。防火墙和AWS安全组启用了允许通信所需的规则。代理已部署且位于同一AWS帐户中。同一代理用于连接和监控其余NetApp设备(并且所有设备均正常运行)。</block>
   <block id="e885f70b36e77978775e5bda02528ac9" category="summary">工作负载安全性与ONTAP 自主勒索软件保护相集成、可提高勒索软件检测能力。</block>
@@ -10336,9 +10287,7 @@
   <block id="1c4e1e0caf2fa69be4c90526b51f5f8e" category="list-text">将_datesource-war-data-zip_复制&lt;version&gt;到工作文件夹。例如：</block>
   <block id="bf52ab28c85a4589393e5d683a2d027e" category="list-text">更改为下载文件夹并解压缩文件：</block>
   <block id="0fcc45fcd734d4323f5a5d9ea3360815" category="list-text">确保所有文件的用户、组和权限均正确无误：</block>
-  <block id="a0698382f5e68c4355ea29e32842015d" category="list-text">注意：如果您计划使用不同的自定义用户管理AU、请确保将所有者和组的组权限设置为读写(_chmod 660…_)</block>
   <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">重新启动AU。</block>
-  <block id="cd949e1f65deb02e57f3144acb21e0aa" category="list-text">在Cloud Insights中、导航到*管理&gt;数据收集器*并选择*采集单元*选项卡。从AU右侧的“三个点”菜单中选择_Restart。</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 可以自定义安装和配置。</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">监视操作员选项</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">Kube-state-metrics部署的CPU限制</block>
@@ -12767,4 +12716,68 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">显示“检查”的行处于活动状态。"X"表示非活动设备。</block>
   <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">Inventory Recent status：unreached data unreached -Array reported 0 volume</block>
   <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">通常表示授权(而非身份验证)问题描述。请确保您的凭据正确无误、并且用户名有权列出所有卷并查看其属性。</block>
+  <block id="ff4b0f3d8b62285c71936aba1b29d4cc" category="list-text">单击*AObservability &gt; Collectors &gt; Acquisition Unit &gt;+Acquisition Unit*</block>
+  <block id="293bcc0e7d6a9406090147d0fa8794ee" category="list-text">单击*可观察性&gt;收集器&gt;采集单元*以检查采集单元的状态。</block>
+  <block id="2e275d8e6835810edeb214f1d2d93419" category="list-text">单击*Observability &gt; Collectors &gt; Acquisition Unit &gt;+Acquisition Unit*。</block>
+  <block id="304161318d9b8fb676a16c964b6f8f50" category="list-text">单击*&gt;可观察性&gt;收集器&gt;采集单元*以检查采集单元的状态。</block>
+  <block id="b61c07e7a0fb367b275d84c4f406ea62" category="list-text">在Cloud Insights中，转至*Observability &gt; Collectors并选择*Acquisition Unit*选项卡。</block>
+  <block id="3fca9907aed6b150137f898d0280fff6" category="list-text">登录到Cloud Insights环境并转到*Observability &gt; Collectors *。</block>
+  <block id="be73cc0144104fdc76d1908fc25c13b8" category="list-text">将所有数据收集器移至临时采集单元后、转到*可观察性&gt;收集器*并选择*采集单元*选项卡。</block>
+  <block id="fa754fd7176d2dbf75086e702bb8e0ba" category="cell">可能的原因包括：
+1.尚未配置任何用户目录收集器。要添加一个，请转到*工作负载安全性&gt;收集器&gt;用户目录收集器*，然后单击*+用户目录收集器*。选择 _Active Directory_ 或 _LDAP Directory Server_ 。
+2. 已配置用户目录收集器，但它已停止或处于错误状态。请进入*收集器&gt;用户目录收集器*并检查状态。请参见 <block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block> 文档中有关故障排除提示的章节。
+正确配置后，此名称将在 24 小时内自动解析。
+如果仍无法解决此问题，请检查您是否添加了正确的用户数据收集器。确保用户确实属于添加的 Active Directory/LDAP 目录服务器。</block>
+  <block id="43d39371e7465fe75cfe3d390dbe2744" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 RethinkDB 。</block>
+  <block id="7ef7f61ee5433c00d6e2bd93b6a72b5f" category="cell">采集单元*选项卡中的*Observability &gt; Collectors*页面上的AU状态显示“证书已过期”或“证书已撤销”。</block>
+  <block id="d6f8e9ba9cfb77dee7f1eacdddd32143" category="list-text">选择*Collectors &gt; Agents&gt;+Agent*</block>
+  <block id="b0bdf1289c168696fcf69f90ddc82ab2" category="cell">单击*工作负载安全性&gt;收集器*
+
+单击要配置的数据收集器。
+
+请参见文档中的《 Data Collector Vendor Reference 》一节。
+
+<block ref="49902fc743c67e64ddcf4901ef2c69bf" category="inline-link-macro-rx"></block></block>
+  <block id="0408a4c64dc1f3ab40855164b4b6f38d" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 nginx 。</block>
+  <block id="bdb77c4a55fae38966a8493c526d4be0" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Redis 。</block>
+  <block id="2652c4ffbd453ec1aefdecf31ada9e0b" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Kafka 。</block>
+  <block id="4ee3dacc3b31186e6116102c2ab72d19" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 MySQL 。</block>
+  <block id="ebb792d33abbc8326e1a943e8426035a" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Docker 。</block>
+  <block id="dbc1393b73d772391a52f39c8694a13c" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Kibana 。</block>
+  <block id="9db4a00fe92c69a4d0bf878ff50fc95a" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 JVM 。</block>
+  <block id="b655d6566293cffcbf9e4e65bb4f042d" category="list-text">单击*Observability &gt; Collectors &gt;+Data Collectors *</block>
+  <block id="baaf023f6d75d85198bf4906a1760b9a" category="list-text">从*Observability &gt; Collectors*中，选择操作系统/平台。请注意，安装任何集成数据收集器（ Kubernetes ， Docker ， Apache 等）也会配置节点数据收集。</block>
+  <block id="5fbd88686e262efcf8b00d22f5dffa35" category="list-text">在Workload Security菜单中、单击：
+*收集器&gt;用户目录收集器&gt;+用户目录收集器*并选择*LDAP目录服务器*</block>
+  <block id="4af3803e0bed14e15bd7e0f351022969" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Consul 。</block>
+  <block id="232088b7a66f0b9f18bd94f0ff1ccbd9" category="list-text">注意：如果您计划使用不同的自定义用户注册AU、请确保将所有者和组的组权限设置为读写(_chmod 660…_)</block>
+  <block id="d9089236da8f5cf946e4497f9e886125" category="list-text">在Cloud Insights中、导航到*可观察性&gt;收集器*并选择*采集单元*选项卡。从AU右侧的“三个点”菜单中选择_Restart。</block>
+  <block id="e54adc338b6508055df6c2c6fb796a92" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Apache 。</block>
+  <block id="658caf28e4d04a4c56e83fd4c34621bd" category="list-text">您可以同时编辑多个数据收集器的信息。在*Observability &gt; Collectors*页面上，选中每个数据收集器左侧的框并单击*散装 操作*按钮，以选择要修改的数据收集器。选择 * 编辑 * 并修改必要的字段。</block>
+  <block id="a1093e0f58751f9a01960a1fbf7beb53" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择已缓存的。</block>
+  <block id="f5d9cddb5529cde22dbbfac64ed116e4" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 MongoDB 。</block>
+  <block id="601816c89a0810f8802681f16fb50cc5" category="list-text">在Workload Security菜单中、单击：
+*收集器&gt;用户目录收集器&gt;+用户目录收集器*并选择*Active Directory*</block>
+  <block id="6c9b3e4dd62551cbb0cf3069e831b84b" category="list-text">在Cloud Insights菜单中，单击*Observability &gt; Collectors*</block>
+  <block id="2b7c39a8b273585cdba65d37a11b97e0" category="list-text">在Cloud Insights菜单中，单击*Observability &gt; Collectors*以打开已安装的数据收集器列表。</block>
+  <block id="41e52ba1f9b8b7cdf15e151317830ed2" category="list-text">在Cloud Insights菜单中，单击*Observability &gt; Collectors*。</block>
+  <block id="f47fcfa022338bb85388c62d011288a2" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 PostgreSQL 。</block>
+  <block id="b375a95628217618f913ff0addcb4f8e" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 OpenZFS 。</block>
+  <block id="513f11f8d213c209a990a1bb086ea780" category="list-text">登录到Cloud Insights环境并导航到*Observability &gt; Collectors *。</block>
+  <block id="4b079dc3088a9e53c6c6851870343850" category="list-text">单击*工作负载安全性&gt;收集器&gt;代理*</block>
+  <block id="f7a71c08cded2c36e48dd402ecadd5ba" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Puppet 。</block>
+  <block id="8bcbe1a1fde4e3d96f7aca6694b75230" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Couchbase 。</block>
+  <block id="29f60eabcc5e39b67a2b7e9560e07dc6" category="list-text">从Cloud Insights菜单中、单击*可观察性&gt;收集器*、然后单击*+ Data Collector*按钮。您可以选择显示所有数据收集器，也可以选择筛选以仅显示根据您的订阅可供您使用的数据收集器。</block>
+  <block id="fd3211acf4f48156142e8f687cbe6c6b" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Kapacitor.</block>
+  <block id="588c730d062048ef78564e2278564813" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Netstat 。</block>
+  <block id="e65f7cc9f07286d1ff22f4c88e1d6fdb" category="list-text">单击*工作负载安全性&gt;收集器*以检查您配置的收集器的状态。</block>
+  <block id="38d938dede033e6fd6e3fba721cdf402" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 HAProxy 。</block>
+  <block id="b9e357a2b86f1ae6976d85b140c34304" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 * 数据中心 /OS* 。</block>
+  <block id="efe524f42d2c837542d4da8626dd93a7" category="list-text">从Cloud Insights菜单中，单击*Observability &gt; Collectors*</block>
+  <block id="ec35f90f2dd5badf0a40cb0d12d855be" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 ActiveMQ 。</block>
+  <block id="ca888e8799d75a60bf8835194141e443" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Elasticsearch 。</block>
+  <block id="f1f3071daba335689c22cb4ecf169b27" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Hadoop 。</block>
+  <block id="0cf0ef4f45a100c43159cff0855fdcd8" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 CouchDB 。</block>
+  <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Flink 。</block>
+  <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">导航到工作负载安全性*Collectors*并单击*Agents*选项卡。</block>
 </blocks>

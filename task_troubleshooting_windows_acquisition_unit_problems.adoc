@@ -27,7 +27,7 @@ keywords: AU, acquisition unit, trioubleshooting
 | * 问题： * | * 请尝试此操作： * 
 
 
-| 在 * 采集单元 * 选项卡的 * 管理 > 数据收集器 * 页面上， AU 状态显示 " 证书已过期 " 或 " 证书已撤销 " 。 | 单击 AU 右侧的菜单，然后选择 * 还原连接 * 。按照说明还原采集单元： 1.停止采集单元（ Acquisition Unit ， AU ）服务。您可以单击 _Copy Stop Command_ 按钮将命令快速复制到剪贴板，然后将此命令粘贴到采集单元计算机上的命令提示符中。2. 在 AU 上的 _c ： \Program Files\Cloud Insights \Acquisition Unit\conf\_ 文件夹中创建一个名为 "token" 的文件。3. 单击 _Copy Token_ 按钮，然后将此令牌粘贴到您创建的文件中。4. 重新启动 AU 服务。单击 _Copy Restart Command_ 按钮，然后将命令粘贴到 AU 上的命令提示符中。 
+| 采集单元*选项卡中的*Observability > Collectors*页面上的AU状态显示“证书已过期”或“证书已撤销”。 | 单击 AU 右侧的菜单，然后选择 * 还原连接 * 。按照说明还原采集单元： 1.停止采集单元（ Acquisition Unit ， AU ）服务。您可以单击 _Copy Stop Command_ 按钮将命令快速复制到剪贴板，然后将此命令粘贴到采集单元计算机上的命令提示符中。2. 在 AU 上的 _c ： \Program Files\Cloud Insights \Acquisition Unit\conf\_ 文件夹中创建一个名为 "token" 的文件。3. 单击 _Copy Token_ 按钮，然后将此令牌粘贴到您创建的文件中。4. 重新启动 AU 服务。单击 _Copy Restart Command_ 按钮，然后将命令粘贴到 AU 上的命令提示符中。 
 
 
 | 未满足服务器要求 | 确保您的采集单元服务器或虚拟机满足要求 link:concept_acquisition_unit_requirements.html["要求"] 
