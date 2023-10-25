@@ -5848,7 +5848,6 @@
   <block id="e1408e9d63eaa4ab5d669ec525031645" category="list-text">您需要从中收集数据的设备的凭据。</block>
   <block id="a7470cf0d04f7133bf593832f6b10367" category="list-text">要从中收集数据的所有设备都需要设备网络地址，帐户信息和密码。</block>
   <block id="8ee4098d58fcec0a8ad1bbc6ef3a278b" category="paragraph">系统将显示供应商安排的可用数据收集器。</block>
-  <block id="98340026125b30253a889a183c2af3e1" category="list-text">单击所需供应商上的 * + Collector* ，然后选择要配置的数据收集器。</block>
   <block id="d0db1cfd406b8574a7bc2d171e484e1e" category="paragraph">在对话框中，您可以配置数据收集器并添加采集单元。</block>
   <block id="8e90b5dce519000dad943c071bfdb2d7" category="list-text">输入数据收集器的名称。</block>
   <block id="b24e662ae4d73165d52933b92edea048" category="paragraph">名称可以包含字母（ a-z ），数字（ 0-9 ），短划线（ - ），下划线（ _ ），撇号（ ' ）， 和句点（ . ）。</block>
@@ -12780,4 +12779,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="0cf0ef4f45a100c43159cff0855fdcd8" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 CouchDB 。</block>
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Flink 。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">导航到工作负载安全性*Collectors*并单击*Agents*选项卡。</block>
+  <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">单击*+ Collector *并选择要配置的数据收集器。</block>
 </blocks>
