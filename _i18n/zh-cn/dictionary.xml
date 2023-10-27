@@ -12780,4 +12780,12 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Flink 。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">导航到工作负载安全性*Collectors*并单击*Agents*选项卡。</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">单击*+ Collector *并选择要配置的数据收集器。</block>
+  <block id="4933fe8ec451e47e707dad28cf0d6a6f" category="summary">将文件扩展名添加到白列表以减少警报</block>
+  <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">允许的文件类型策略</block>
+  <block id="e028554bdfbf2b31dfa2c86ea5c58f3b" category="paragraph">如果检测到已知文件扩展名的勒索软件攻击、并且在"警报"屏幕上生成警报、则可以将该文件扩展名列入白名单、以防止发出不必要的警报。</block>
+  <block id="66c0454949e8e45058f66b8dbe1d1a38" category="paragraph">导航到*工作负载安全性&gt;策略*并转到_允许的文件类型策略_选项卡。</block>
+  <block id="8c06b62ca830efbad93bfb2ce294e0ef" category="paragraph"><block ref="8c06b62ca830efbad93bfb2ce294e0ef" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">列入白名单后、不会针对该允许的文件类型生成任何勒索软件攻击警报。请注意、_Allowed File Types_策略仅适用于勒索软件检测。</block>
+  <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">例如、如果名为_test.txt的文件重命名为_test.txt．abc_、而Workload Security由于扩展名_.abc_而检测到勒索软件攻击、则可以将_.abc_扩展名列入白名单。列入白名单后、将不再对扩展名为_.abc_的文件生成勒索软件攻击。</block>
+  <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">允许的文件类型可以是完全匹配(例如".abc")或表达式(例如".*type"、".type*"或"*type*")。不支持类型为".A*c"、".p*f"的表达式。</block>
 </blocks>
