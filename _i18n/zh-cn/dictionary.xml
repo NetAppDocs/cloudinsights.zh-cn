@@ -2429,7 +2429,6 @@
   <block id="1affaa3c0d19c2e084afa700debb8740" category="paragraph">OpenStack （ REST API/KVM ）数据收集器可采集所有 OpenStack 实例的清单数据，也可采集虚拟机性能数据。</block>
   <block id="ee627d472fc6df1e0c1367deb7ee0063" category="list-text">OpenStack 控制器的 IP 地址</block>
   <block id="280f91bd66acb7cf04ec960fca75f64a" category="list-text">OpenStack 管理员角色凭据和对 Linux KVM 虚拟机管理程序的 sudo 访问权限。如果您不使用管理员帐户或管理员等效权限，则需要使用试用和错误来确定数据收集器用户 ID 要放宽的默认策略。</block>
-  <block id="ab920cce93179165ef5649da2b8c17f4" category="list-text">必须安装并配置 OpenStack Ceilometer 模块以收集性能。要配置 Ceilmeter ，可以编辑每个虚拟机管理程序的 nva.conf 文件，然后在每个虚拟机管理程序上重新启动 Nova 计算服务。对于不同版本的 OpenStack ，选项名称会发生变化：</block>
   <block id="8beeeec38dbc6258291f2e47130835d8" category="list-text">Icehouse</block>
   <block id="291b02b25fbb9789119d2383e9f08e29" category="list-text">6 月</block>
   <block id="3afe87a2a8c61f8023e56883b9baccb8" category="list-text">千克</block>
@@ -2443,7 +2442,6 @@
   <block id="5829ef3d89411d46f0a05f6867ff2efd" category="list-text">22 表示 KVM SSH</block>
   <block id="a58963a7c2c9eafce2ab09ca28270ee0" category="list-text">8774 用于 Nova 计算服务</block>
   <block id="745b1ee1989bc6dd0ac838e4dcb448e5" category="list-text">8776 用于 Cinder 块服务</block>
-  <block id="3c96098040036cf157077588c3a5792d" category="list-text">8777 ，适用于 Ceilmeter 性能服务</block>
   <block id="ca3d2d05f916b41d8f53f506ace2e80e" category="list-text">9292 for Glance Image Service * 注意 * 端口绑定到特定服务，该服务可以在较大环境中的控制器或其他主机上运行。</block>
   <block id="9be07620e581c90b777b5fef1296cc28" category="cell">OpenStack 控制器 IP 地址</block>
   <block id="c5e968faf75175530ec61fb1846cfdce" category="cell">OpenStack 控制器的 IP 地址或完全限定域名</block>
@@ -12788,4 +12786,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">列入白名单后、不会针对该允许的文件类型生成任何勒索软件攻击警报。请注意、_Allowed File Types_策略仅适用于勒索软件检测。</block>
   <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">例如、如果名为_test.txt的文件重命名为_test.txt．abc_、而Workload Security由于扩展名_.abc_而检测到勒索软件攻击、则可以将_.abc_扩展名列入白名单。列入白名单后、将不再对扩展名为_.abc_的文件生成勒索软件攻击。</block>
   <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">允许的文件类型可以是完全匹配(例如".abc")或表达式(例如".*type"、".type*"或"*type*")。不支持类型为".A*c"、".p*f"的表达式。</block>
+  <block id="c0ea429a2fadacc206fdc8f17cfa492c" category="list-text">必须安装并配置OpenStack软件包模块、才能收集性能数据。要配置诺瓦图、可以编辑每个虚拟机管理程序的nova.conf文件、然后在每个虚拟机管理程序上重新启动Nova计算服务。对于不同版本的 OpenStack ，选项名称会发生变化：</block>
+  <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777、用于"保证 性能"服务</block>
 </blocks>
