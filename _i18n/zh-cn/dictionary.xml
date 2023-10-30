@@ -12788,4 +12788,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">允许的文件类型可以是完全匹配(例如".abc")或表达式(例如".*type"、".type*"或"*type*")。不支持类型为".A*c"、".p*f"的表达式。</block>
   <block id="c0ea429a2fadacc206fdc8f17cfa492c" category="list-text">必须安装并配置OpenStack软件包模块、才能收集性能数据。要配置诺瓦图、可以编辑每个虚拟机管理程序的nova.conf文件、然后在每个虚拟机管理程序上重新启动Nova计算服务。对于不同版本的 OpenStack ，选项名称会发生变化：</block>
   <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777、用于"保证 性能"服务</block>
+  <block id="ef4b4f7d7c8a48dd95b30b14ab90dd62" category="section-title">增强的工作负载安全性</block>
+  <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">工作负载安全性已通过以下功能得到改进：</block>
+  <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*拒绝访问*：工作负载安全性与ONTAP集成、可接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
+  <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">白名单*允许的文件类型*：如果检测到已知文件扩展名受到勒索软件攻击，可以将该文件扩展名列入白名单，以防止发出不必要的警报。- <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
 </blocks>

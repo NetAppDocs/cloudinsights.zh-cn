@@ -29,6 +29,16 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
+=== 增强的工作负载安全性
+
+工作负载安全性已通过以下功能得到改进：
+
+* *拒绝访问*：工作负载安全性与ONTAP集成、可接收"拒绝访问"事件、并提供额外的分析和自动响应层。
+* 白名单*允许的文件类型*：如果检测到已知文件扩展名受到勒索软件攻击，可以将该文件扩展名列入白名单，以防止发出不必要的警报。- link:/ws_allowed_file_types.html["了解更多信息。"]
+
+
+
+
 === 单元试用
 
 除了Cloud Insights的初始试用之外、您还可以利用 link:concept_subscribing_to_cloud_insights.html#module-trials["单元试用"]。例如、如果您已订阅基础架构可观察性、但要将Kubennetes添加到您的环境中、则您将自动进入30天的Kubennetes可观察性试用版。只有在试用期结束时、您才会因使用Kubbernetes Observability管理的单元而付费。
