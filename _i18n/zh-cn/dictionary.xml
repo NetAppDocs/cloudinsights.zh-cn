@@ -12588,8 +12588,6 @@ kubect get all -n &lt;namespace&gt;| grep -i psp (应显示未找到任何内容
 --
 
 •Net-observer Pod要求Linux内核版本至少为4.18.0。使用命令"uname -r "检查内核版本、并确保它们&gt;= 4.18.0</block>
-  <block id="43eb2ebe757bb3f2957ebacdbe1e409c" category="cell">NKMO命名空间中的Net-Observer Pod位于OpenShift 4环境中的CrashLoopBackOff中</block>
-  <block id="c16b414538506d32ed8a234fa2331767" category="cell">目前不支持此功能。请留意将来更新中要添加的支持。</block>
   <block id="c37dcb848a7244594adc1af67cc44fb5" category="cell">Pod正在KMO命名空间中运行(默认值：netapo-monitoring)、但在查询中、UI中不会显示工作负载映射数据或Kubornetes指标数据</block>
   <block id="b301a7b156c241fb466de1bca776811c" category="cell">检查K8S集群节点上的时间设置。为了准确地进行审核和数据报告、强烈建议使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。</block>
   <block id="4ded7a1a9e117c3e40fb8fd746b0652d" category="cell">在新工单命名空间中、某些Net-observer Pod处于Pending状态</block>
@@ -12792,4 +12790,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">工作负载安全性已通过以下功能得到改进：</block>
   <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*拒绝访问*：工作负载安全性与ONTAP集成、可接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
   <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">白名单*允许的文件类型*：如果检测到已知文件扩展名受到勒索软件攻击，可以将该文件扩展名列入白名单，以防止发出不必要的警报。- <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
+  <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">我的Kubbernetes事件意外停止向Cloud Insights报告。</block>
+  <block id="530877d75874db688a349c68f4d664d6" category="cell">检索事件导出器Pod的名称`kubecl -n NetApp-monitoring GET Pod</block>
+  <block id="40de8508a016cb1e936ce464cfc06e93" category="cell">grep事件导出器</block>
+  <block id="60154ad86ed086052b09e30faded046b" category="cell">AWK "｛print $1｝"</block>
 </blocks>
