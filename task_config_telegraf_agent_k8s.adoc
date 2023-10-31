@@ -468,9 +468,6 @@ kubect get all -n <namespace>| grep -i psp (应显示未找到任何内容)
 •Net-observer Pod要求Linux内核版本至少为4.18.0。使用命令"uname -r "检查内核版本、并确保它们>= 4.18.0 
 
 
-| NKMO命名空间中的Net-Observer Pod位于OpenShift 4环境中的CrashLoopBackOff中 | 目前不支持此功能。请留意将来更新中要添加的支持。 
-
-
 | Pod正在KMO命名空间中运行(默认值：netapo-monitoring)、但在查询中、UI中不会显示工作负载映射数据或Kubornetes指标数据 | 检查K8S集群节点上的时间设置。为了准确地进行审核和数据报告、强烈建议使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。 
 
 
