@@ -3710,21 +3710,15 @@
 <block ref="9afa071c2420f8347dcfd0e1bd5f4e5c" category="inline-link-macro-rx"></block></block>
   <block id="97d56c15017ad32b1cbc85383d592281" category="summary">配置 ECS 数据收集器。</block>
   <block id="696067539a48ac7ca42724de79fbd051" category="doc">配置 EMC ECS 数据收集器</block>
-  <block id="0dd54ea5de1f0186d88f6171945bf17a" category="paragraph">此数据收集器从 EMC ECS 存储系统采集清单和性能数据。在配置方面，数据收集器需要 ECS 服务器的 IP 地址和管理级别域帐户。</block>
   <block id="babd4a2879d509662ea2e8a9168f34ed" category="paragraph">Cloud Insights 从 ECS 数据收集器获取以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="6252d0571760e3d285e2e41a2b1e7743" category="cell">租户</block>
   <block id="30edf70db68aa84f05d3e72326807b0c" category="cell">存储分段</block>
-  <block id="f3d2ef1b407f9dac845144f7222446b0" category="list-text">ECS 管理控制台的 IP 地址</block>
-  <block id="d53717de9f42bb927d66332c1b99aa0a" category="list-text">ECS 系统的管理级别域帐户</block>
-  <block id="b28ad04cb96e374334fe66f0c126a953" category="list-text">端口 443 （ HTTPS ）。需要与 ECS 系统上的 TCP 端口 443 建立出站连接。</block>
   <block id="c7ddbb8aa01975e2d488fdf90d356f2e" category="list-text">对于性能，使用只读用户名和密码访问 ssh/scp 。</block>
   <block id="7f493bcc752a7f12df179d4529291e82" category="list-text">为提高性能，需要端口 22 。</block>
   <block id="7a03f89966abe32a9145c5711baac2c6" category="cell">ECS 主机</block>
   <block id="60103158e1fa8a921007c1692b656462" category="cell">ECS 系统的 IP 地址或完全限定域名</block>
   <block id="2ef0586f8254b68b62f3912e0765fb08" category="cell">ECS 主机端口</block>
   <block id="55f849af32f2bc9f6a84120627639721" category="cell">用于与 ECS 主机通信的端口</block>
-  <block id="2e610591aff0a1797343c00ad6a93ae8" category="cell">ECS 供应商 ID</block>
-  <block id="b523f7997888942f06b8d3a5bcbc4a29" category="cell">ECS 的供应商 ID</block>
   <block id="0750f8ac8a07b8a8acba23993fc3de34" category="cell">用于 ECS 的密码</block>
   <block id="2d74084218f04becb882422545c77d5f" category="cell">默认值为 360 分钟。</block>
   <block id="076bbaec175ed2e9d97fd0fcabbee2cb" category="paragraph">NetApp 非常重视客户信息的安全性。下面介绍了 Cloud Insights 如何以及将您的信息存储在何处。</block>
@@ -12794,4 +12788,10 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="530877d75874db688a349c68f4d664d6" category="cell">检索事件导出器Pod的名称`kubecl -n NetApp-monitoring GET Pod</block>
   <block id="40de8508a016cb1e936ce464cfc06e93" category="cell">grep事件导出器</block>
   <block id="60154ad86ed086052b09e30faded046b" category="cell">AWK "｛print $1｝"</block>
+  <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">此数据收集器从 EMC ECS 存储系统采集清单和性能数据。在配置方面、数据收集器需要ECS集群的IP地址或主机名以及用户名和密码。</block>
+  <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">ECS集群的IP地址或主机名</block>
+  <block id="2ed72e68497591d0803bef6bc9c16f79" category="list-text">ECS系统的用户名和密码</block>
+  <block id="4b10979e526e6c6ecbe9f247ba883305" category="list-text">端口4443 (HTTPS)。  需要与ECS系统上的TCP端口4443建立出站连接。</block>
+  <block id="e3bd341282cc459a09900310d9ce8e73" category="cell">ECS用户ID</block>
+  <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ECS的用户ID</block>
 </blocks>
