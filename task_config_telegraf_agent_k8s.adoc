@@ -534,9 +534,12 @@ kubect get all -n <namespace>| grep -i psp (应显示未找到任何内容)
 
 此名称应为"NetApp-CI-event-exporter "或"event-exporter。  接下来、编辑监控代理 `kubectl -n netapp-monitoring edit agent`，然后设置log_file的值，以反映在上一步中找到的相应事件导出器POD名称。  更具体地说、log_file应设置为"/var/log/containers/NetApp-CI-event-exporter .log"或"/var/log/containers/event-exporter *。log"
 
-    -关键字：log_file
-      值：
-      —/var/log/containers/NetApp-CI-event-exporter *。log
+....
+ -关键字：log_file
+   值：
+   —/var/log/containers/NetApp-CI-event-exporter *。log
+....
+
 或者、也可以这样做 <<uninstalling,卸载>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,重新安装>> 代理。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。
