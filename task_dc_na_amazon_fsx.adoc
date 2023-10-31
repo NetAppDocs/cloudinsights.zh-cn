@@ -120,6 +120,8 @@ Cloud Insights 从 FSx-NetApp 数据收集器采集清单和性能数据。对�
 * workload_volume
 
 
+请注意、FSx命令行界面命令会检索FSx通过API禁止的某些容量值。由于Cloud Insights尝试通过API检索FSx数据、因此Cloud Insights中的某些容量值(例如存储池的容量值)可能与FSx本身不同。有关更多信息、请联系您的亚马逊代表。
+
 
 
 == 故障排除
