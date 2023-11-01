@@ -12692,7 +12692,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="1735ce1061c1858dd6651e91b4e18f24" category="paragraph">除了Cloud Insights的初始试用之外、您还可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您已订阅基础架构可观察性、但要将Kubennetes添加到您的环境中、则您将自动进入30天的Kubennetes可观察性试用版。只有在试用期结束时、您才会因使用Kubbernetes Observability管理的单元而付费。</block>
   <block id="33c5eb3627d84eaead652d4a93ba52dc" category="paragraph">管理员和帐户所有者现在可以执行此操作 <block ref="e2c73aceed008b4a66710907280db867" category="inline-link-macro-rx"></block> 以通过电子邮件发送指定的域。进入*管理&gt;用户管理*并选择_限制域_按钮。</block>
   <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">角色和规则</block>
-  <block id="020c152c55787ea0a64eb78645d75f3e" category="admonition">此Cloud Insights收集器需要一个具有_Fileseme-Scoped_角色的ONTAP用户。请查看AWS <block ref="800e02d33bb8784b1a5d31d79acfd455" category="inline-link-macro-rx"></block> 有关可用选项的文档。目前、AWS仅支持文件系统范围的一种用户角色、即_fsxadmin_。这是Cloud Insights收集器要使用的适当角色。</block>
   <block id="7f6383a46fdc2ac52c791c8ea4cf03b6" category="summary">介绍了数据保留时间和缩减采样</block>
   <block id="2acd8b96cc968efd569f0e0169390b9b" category="doc">数据保留和缩减采样数据</block>
   <block id="8221571bdb4085e5cf8534456c5e5750" category="paragraph">Cloud Insights 会保留数据一段时间，具体时间由活动订阅版本决定。</block>
@@ -12801,7 +12800,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 ....
 
 或者、也可以这样做 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理。</block>
-  <block id="548f0024784a56dbfee8711265bd0855" category="paragraph">请注意、FSx命令行界面命令会检索FSx通过API禁止的某些容量值。由于Cloud Insights尝试通过API检索FSx数据、因此Cloud Insights中的某些容量值(例如存储池的容量值)可能与FSx本身不同。有关更多信息、请联系您的亚马逊代表。</block>
   <block id="2ec4305521a87758c3d2cf93b9fd5b14" category="cell">在输入Cognos报告计划时间时、有时会在计划时间中额外增加"m"。例如、如果我输入时间为"02：15 PM"、则可能会添加一个额外的字符："02：15 PMM"(或PMM)。当我单击"外部"时、它将更改为"凌晨2：15 "。
 
 我可以保存报告、但当我重新打开已保存的报告时、计划时间显示为AM (即上午)、无论我在计划时间中输入的是AM还是PM。</block>
@@ -12812,4 +12810,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="3a0a3011be8f34f267c24177c748de10" category="paragraph">如果检测到已知文件扩展名的勒索软件攻击、并且在"警报"屏幕上生成警报、则可以将该文件扩展名添加到_允许的文件类型_列表中、以防止发出不必要的警报。</block>
   <block id="bdf27b4c983630ae6531f89136fe0963" category="paragraph">添加到_ALLOWD FILE Types_列表后、不会为该允许的文件类型生成任何勒索软件攻击警报。请注意、_Allowed File Types_策略仅适用于勒索软件检测。</block>
   <block id="492f463a35ea215d77ae021c64cddb64" category="paragraph">例如、如果名为_test.txt的文件重命名为_test.txt．abc_、并且工作负载安全性由于扩展名_.abc_而检测到勒索软件攻击、则可以将_.abc_扩展名添加到_ALLOWED FILE Types_列表中。添加到列表后、将不再对扩展名为_.abc_的文件生成勒索软件攻击。</block>
+  <block id="1fb3ebafe871ac85c69ff35be5818dae" category="admonition">此Cloud Insights收集器需要一个具有_Fileseme-Scoped_角色的ONTAP用户。请查看AWS <block ref="800e02d33bb8784b1a5d31d79acfd455" category="inline-link-macro-rx"></block> 有关可用选项的文档。目前、AWS仅支持文件系统范围的一种用户角色、即_fsxadmin_。这是Cloud Insights收集器要使用的适当角色。此外、还应为用户分配以下三个应用程序：HTTP、ontapi、ssh。</block>
+  <block id="b85d0b41b181eb69881d2617c5514ba3" category="list-text">您必须有权访问具有"fsxadmin"角色的帐户、并为其分配三个应用程序—ssh、ontapi、http</block>
+  <block id="702a15850842eff4dc2587a96c210640" category="list-text">端口要求：443</block>
+  <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">请注意、FSx命令行界面和API命令会检索Cloud Insights ZAPI不收集的某些容量值、因此Cloud Insights中的某些容量值(例如存储池的容量值)可能与FSx本身不同。</block>
 </blocks>

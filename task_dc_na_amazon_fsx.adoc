@@ -22,7 +22,7 @@ summary: 适用于 NetApp ONTAP 数据收集器的 Amazon FSX
 此数据收集器从适用于 NetApp ONTAP 的 Amazon FSX 采集清单和性能数据。此数据收集器将在整个 Cloud Insights 服务区域内逐渐可用。如果您在 Cloud Insights 环境中未看到此收集器的图标，请联系您的销售人员。
 
 
-NOTE: 此Cloud Insights收集器需要一个具有_Fileseme-Scoped_角色的ONTAP用户。请查看AWS link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["角色和规则"] 有关可用选项的文档。目前、AWS仅支持文件系统范围的一种用户角色、即_fsxadmin_。这是Cloud Insights收集器要使用的适当角色。
+NOTE: 此Cloud Insights收集器需要一个具有_Fileseme-Scoped_角色的ONTAP用户。请查看AWS link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["角色和规则"] 有关可用选项的文档。目前、AWS仅支持文件系统范围的一种用户角色、即_fsxadmin_。这是Cloud Insights收集器要使用的适当角色。此外、还应为用户分配以下三个应用程序：HTTP、ontapi、ssh。
 
 
 
@@ -79,9 +79,9 @@ Cloud Insights 从 FSx-NetApp 数据收集器采集清单和性能数据。对�
 
 配置和使用此数据收集器的要求如下：
 
-* 您必须有权访问为只读 API 调用配置的管理员帐户。
+* 您必须有权访问具有"fsxadmin"角色的帐户、并为其分配三个应用程序—ssh、ontapi、http
 * 帐户详细信息包括用户名和密码。
-* 端口要求： 80 或 443
+* 端口要求：443
 
 
 
@@ -120,7 +120,7 @@ Cloud Insights 从 FSx-NetApp 数据收集器采集清单和性能数据。对�
 * workload_volume
 
 
-请注意、FSx命令行界面命令会检索FSx通过API禁止的某些容量值。由于Cloud Insights尝试通过API检索FSx数据、因此Cloud Insights中的某些容量值(例如存储池的容量值)可能与FSx本身不同。有关更多信息、请联系您的亚马逊代表。
+请注意、FSx命令行界面和API命令会检索Cloud Insights ZAPI不收集的某些容量值、因此Cloud Insights中的某些容量值(例如存储池的容量值)可能与FSx本身不同。
 
 
 
