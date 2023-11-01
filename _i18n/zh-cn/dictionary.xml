@@ -12770,20 +12770,15 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Flink 。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">导航到工作负载安全性*Collectors*并单击*Agents*选项卡。</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">单击*+ Collector *并选择要配置的数据收集器。</block>
-  <block id="4933fe8ec451e47e707dad28cf0d6a6f" category="summary">将文件扩展名添加到白列表以减少警报</block>
   <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">允许的文件类型策略</block>
-  <block id="e028554bdfbf2b31dfa2c86ea5c58f3b" category="paragraph">如果检测到已知文件扩展名的勒索软件攻击、并且在"警报"屏幕上生成警报、则可以将该文件扩展名列入白名单、以防止发出不必要的警报。</block>
   <block id="66c0454949e8e45058f66b8dbe1d1a38" category="paragraph">导航到*工作负载安全性&gt;策略*并转到_允许的文件类型策略_选项卡。</block>
   <block id="8c06b62ca830efbad93bfb2ce294e0ef" category="paragraph"><block ref="8c06b62ca830efbad93bfb2ce294e0ef" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="36d54fae49a56a7a2d78ca70082b370b" category="paragraph">列入白名单后、不会针对该允许的文件类型生成任何勒索软件攻击警报。请注意、_Allowed File Types_策略仅适用于勒索软件检测。</block>
-  <block id="0aad5fb8995241aab40da2f6461ed327" category="paragraph">例如、如果名为_test.txt的文件重命名为_test.txt．abc_、而Workload Security由于扩展名_.abc_而检测到勒索软件攻击、则可以将_.abc_扩展名列入白名单。列入白名单后、将不再对扩展名为_.abc_的文件生成勒索软件攻击。</block>
   <block id="b778d3252b5cc52999f0c844a033362f" category="paragraph">允许的文件类型可以是完全匹配(例如".abc")或表达式(例如".*type"、".type*"或"*type*")。不支持类型为".A*c"、".p*f"的表达式。</block>
   <block id="c0ea429a2fadacc206fdc8f17cfa492c" category="list-text">必须安装并配置OpenStack软件包模块、才能收集性能数据。要配置诺瓦图、可以编辑每个虚拟机管理程序的nova.conf文件、然后在每个虚拟机管理程序上重新启动Nova计算服务。对于不同版本的 OpenStack ，选项名称会发生变化：</block>
   <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777、用于"保证 性能"服务</block>
   <block id="ef4b4f7d7c8a48dd95b30b14ab90dd62" category="section-title">增强的工作负载安全性</block>
   <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">工作负载安全性已通过以下功能得到改进：</block>
   <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*拒绝访问*：工作负载安全性与ONTAP集成、可接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
-  <block id="b96f76a4321a90cf4dd8cf2472f58624" category="list-text">白名单*允许的文件类型*：如果检测到已知文件扩展名受到勒索软件攻击，可以将该文件扩展名列入白名单，以防止发出不必要的警报。- <block ref="9ca779e4c57ed180231e35c02d12040d" category="inline-link-macro-rx"></block></block>
   <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">我的Kubbernetes事件意外停止向Cloud Insights报告。</block>
   <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">此数据收集器从 EMC ECS 存储系统采集清单和性能数据。在配置方面、数据收集器需要ECS集群的IP地址或主机名以及用户名和密码。</block>
   <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">ECS集群的IP地址或主机名</block>
@@ -12811,4 +12806,10 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
 我可以保存报告、但当我重新打开已保存的报告时、计划时间显示为AM (即上午)、无论我在计划时间中输入的是AM还是PM。</block>
   <block id="05b4ddcb7946bd7615ac3f1458e51d47" category="cell">重新输入计划时间、注意不要输入完整的"AM"或"PM"字符；只需键入"A"表示"AM"或"P"表示"PM"即可。如果未显示多余字符、则计划时间将正确设置。</block>
+  <block id="ec6303682456657014f28b879941ffc3" category="inline-link-macro">允许的文件类型</block>
+  <block id="a962ae55ac740140e0980c56c9ca3d02" category="list-text">*允许的文件类型*：如果检测到已知文件扩展名的勒索软件攻击、则可以将该文件扩展名添加到 <block ref="dc41f7077cede687c60abe45cd8114a8" category="inline-link-macro-rx"></block> 列表以防止不必要的警报。</block>
+  <block id="f998abe6d6e1433185e617432fa562a7" category="summary">将文件扩展名添加到允许的文件类型列表以减少警报。</block>
+  <block id="3a0a3011be8f34f267c24177c748de10" category="paragraph">如果检测到已知文件扩展名的勒索软件攻击、并且在"警报"屏幕上生成警报、则可以将该文件扩展名添加到_允许的文件类型_列表中、以防止发出不必要的警报。</block>
+  <block id="bdf27b4c983630ae6531f89136fe0963" category="paragraph">添加到_ALLOWD FILE Types_列表后、不会为该允许的文件类型生成任何勒索软件攻击警报。请注意、_Allowed File Types_策略仅适用于勒索软件检测。</block>
+  <block id="492f463a35ea215d77ae021c64cddb64" category="paragraph">例如、如果名为_test.txt的文件重命名为_test.txt．abc_、并且工作负载安全性由于扩展名_.abc_而检测到勒索软件攻击、则可以将_.abc_扩展名添加到_ALLOWED FILE Types_列表中。添加到列表后、将不再对扩展名为_.abc_的文件生成勒索软件攻击。</block>
 </blocks>
