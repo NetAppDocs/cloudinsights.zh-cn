@@ -21,6 +21,9 @@ summary: Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成�
 [role="lead"]
 Cloud Insights 为Kubernetes收集提供了* NetApp Kubernetes监控操作员*(NKMO）。添加数据收集器时、只需选择"Kubernetes "图块即可。
 
+
+NOTE: 如果您使用的是Cloud Insights联邦版、则安装和配置说明可能与此页面上的说明不同。按照Cloud Insights中的说明安装NetApp Kubnetes监控操作员。
+
 image:kubernetes_tile.png["Kubernetes Data Collector Tile"]
 
 

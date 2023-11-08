@@ -12814,4 +12814,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="702a15850842eff4dc2587a96c210640" category="list-text">端口要求：443</block>
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">请注意、FSx命令行界面和API命令会检索Cloud Insights ZAPI不收集的某些容量值、因此Cloud Insights中的某些容量值(例如存储池的容量值)可能与FSx本身不同。</block>
   <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">有关在Kubnetes上安装的信息、请参见 <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>。</block>
+  <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">如果您使用的是Cloud Insights联邦版、则安装和配置说明可能与此页面上的说明不同。按照Cloud Insights中的说明安装NetApp Kubnetes监控操作员。</block>
 </blocks>
