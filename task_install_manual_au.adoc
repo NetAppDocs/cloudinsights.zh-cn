@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_install_manual_au.html 
-keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving 
+keywords: Acquisition Unit, AU, install, configure, Linux, add, remove, uninstall, delete, deleting, move, moving, manual, AU, Patch 
 summary: 您可以为Cloud Insights配置手动更新AU软件、以便更好地控制环境中安装的软件。 
 ---
 = 手动安装采集单元软件
@@ -27,14 +27,14 @@ Linux和Windows的过程类似。
 
 
 
-=== 在Linux上执行新的AU安装：
+== 在Linux上执行新的AU安装：
 
 . 在Cloud Insights中、创建API令牌。
 +
 .. 导航到*Admin > API Access*并选择*+API Access Token。
 +
 ... 设置易于问题描述识别的*Name*和*Name*
-... 类型：*采集单元*
+... 类型：选择*采集单元*和*数据收集*
 ... 权限：*读/写*
 ... 选择所需的*Expiry*和*Auto-Renew*值
 
@@ -109,68 +109,90 @@ image:Manual_AU_one_time_token_response.png[""]
 
 
 
-此时、AU软件将安装在系统上、并可由自定义用户和组访问。但是、您无法添加数据收集器。要手动执行此操作、必须将databources.war文件复制到正确的位置。
+此时、AU软件将安装在系统上、并可由自定义用户和组访问。但是、您无法添加数据收集器。要手动执行此操作、请阅读以下说明。如果您只想安装修补程序、请参见 <<downloading-a-patch,patch>> 部分。
 
-. 导航到datsources.war的源位置、并在此验证zip文件：
-+
-....
-cd /opt/netapp/cloudinsights/acq
-ls -al
-…
--rw-rw----  1 test-user1 test-group1 282103053 Mar 12 12:27 datasources-war-<version>>.zip
-…
-....
-. 记下默认datesources.war文件夹上的权限：
-+
-....
-ls -al /var/lib/netapp/cloudinsights/acq/
-…
-drwxrwx--- 2 test-user1 test-group-1  4096 Feb 16 10:10 datasources.war
-…
-....
+
+
+== 手动安装数据收集器
+
+使用/Collector /修补程序/datesourceswar/latest API下载最新的datesources.war：
+
+image:API_Manual_Download_datasources.png["用于检索最新datesources.war的API"]
+
+注意：如果您不下载最新版本、请与NetApp确认要指定下载的版本。
+
+单击下载文件。如果在AU系统以外的系统上执行这些步骤，请将下载的databources.war zip包复制到AU系统。
+
+确保datacources.war zip包已复制到以下目录：/var/lib/NetApp/云云 景点/acq/download
+
+导航到datacese.war的/var/lib/NetApp/云 环境/acq/download目录、并在此验证zip文件：
+
 . 要执行后续步骤、您必须切换到自定义用户(或注销root用户并使用登录用户)。
 +
  su <custom user>
 +
-.. 注意：如果您使用的是默认的"cisys"用户和组、则无需执行此步骤。
-.. 注意：自定义用户可以是您在AU安装期间向cloudinsights-install.sh提供的自定义组的任何成员用户、也可以与您在AU安装期间提供的自定义用户相同或不同。
+注意：如果您使用的是默认的"cisys"用户和组、则无需执行此步骤。
 
++
+注意：自定义用户可以是您在AU安装期间向cloudinsights-install.sh提供的自定义组的任何成员用户、也可以与您在AU安装期间提供的自定义用户相同或不同。
 
-. 创建一个工作文件夹并调整为对其具有相同权限：
+. 执行以下操作：
 +
 ....
-mkdir /var/lib/netapp/cloudinsights/acq/download
-chmod 770 /var/lib/netapp/cloudinsights/acq/download
-ls -al /var/lib/netapp/cloudinsights/acq
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/datasources-war-<version>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
 …
-drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources.war
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 datasources-war-<version>.zip
 …
 ....
 +
-.. 注意：如果使用"cisys"用户和组、则这些用户和组将显示在上面的输出中。
+注意：如果使用"cisys"用户和组、则这些用户和组将显示在上面的输出中。
+
++
+注意：如果您计划使用不同的自定义用户进行安装、请确保将所有者和组的组权限设置为读写(chmod 660…)
+
+. 重新启动AU。在Cloud Insights中、导航到"可观察性">"收集器"、然后选择"采集单元"选项卡。从AU右侧的“三个点”菜单中选择“重新启动”。
 
 
-. 将_datesource-war-data-zip_复制<version>到工作文件夹。例如：
+
+
+== 正在下载修补程序
+
+使用/Collector /修补程序/file/｛version｝API下载修补程序：
+
+image:API_Manual_Download_patch.png["用于检索修补程序的API"]
+
+注意：请与NetApp确认要指定下载的版本。
+
+单击下载文件。如果在AU系统以外的系统上执行这些步骤、请将下载的修补程序zip包复制到AU系统。
+
+请确保将修补程序zip包复制到以下目录：/var/lib/NetApp/ldinsights /acq/download
+
+导航到修补程序的/var/lib/NetApp/ldinsights /acq/download目录、并在此验证.zip文件：
+
+. 要执行后续步骤、您必须切换到自定义用户(或注销root用户并使用登录用户)。
 +
- cp /opt/netapp/cloudinsights/acq/ TBD/var/lib/netapp/cloudinsights/acq/download
-. 更改为下载文件夹并解压缩文件：
+ su <custom user>
 +
- cd /var/lib/netapp/cloudinsights/acq/download
+注意：如果您使用的是默认的"cisys"用户和组、则无需执行此步骤。
+
++
+注意：自定义用户可以是您在AU安装期间向cloudinsights-install.sh提供的自定义组的任何成员用户、也可以与您在AU安装期间提供的自定义用户相同或不同。
+
+. 执行以下操作：
 +
 ....
-unzip datasources-war-<version>.zip -d /var/lib/netapp/cloudinsights/acq/datasources.war/
-ls -al /var/lib/netapp/cloudinsights/acq/datasources.war
+chmod 770 /var/lib/netapp/cloudinsights/acq/download/<patch_file_name>.zip
+ls -al /var/lib/netapp/cloudinsights/acq/download
+…
+drwxrwx--- 2 test-user2 test-group-1  4096 Feb 16 10:10 <patch_file_name>.zip
+…
 ....
 +
-.. 确保所有文件的用户、组和权限均正确无误：
+注意：如果使用"cisys"用户和组、则这些用户和组将显示在上面的输出中。
+
 +
- -rw-rw---- 1 test-user2 test-group1  3420067 Mar 10 17:20 netapp_ontap.jar
+注意：如果您计划使用不同的自定义用户进行安装、请确保将所有者和组的组权限设置为读写(chmod 660…)
 
-
-. 注意：如果您计划使用不同的自定义用户注册AU、请确保将所有者和组的组权限设置为读写(_chmod 660…_)
-. 重新启动AU。
-+
-.. 在Cloud Insights中、导航到*可观察性>收集器*并选择*采集单元*选项卡。从AU右侧的“三个点”菜单中选择_Restart。
-
-
+. 重新启动AU。在Cloud Insights中、导航到"可观察性">"收集器"、然后选择"采集单元"选项卡。从AU右侧的“三个点”菜单中选择“重新启动”。
 

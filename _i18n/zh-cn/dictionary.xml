@@ -10235,7 +10235,6 @@
   <block id="f472c9f862f3493f5a8208582f693c5f" category="list-text">在Cloud Insights中、创建API令牌。</block>
   <block id="a2bab409e871524b831f0d1ac1686378" category="list-text">导航到*Admin &gt; API Access*并选择*+API Access Token。</block>
   <block id="c3a742ff169c1de23c1c540f84b7ba61" category="list-text">设置易于问题描述识别的*Name*和*Name*</block>
-  <block id="095edbf2eeed607f4203d4060d6bebab" category="list-text">类型：*采集单元*</block>
   <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">权限：*读/写*</block>
   <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">选择所需的*Expiry*和*Auto-Renew*值</block>
   <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">复制生成的API访问令牌。必须先执行此步骤、然后才能关闭窗口。</block>
@@ -10266,18 +10265,10 @@
   <block id="b03ba9c0b65f3d61c05a13e6e0556f6e" category="list-text">执行以下操作、将一次性令牌和安装程序版本导出到环境变量：</block>
   <block id="f355abfc0309011b2480d033a0bd5a7c" category="list-text">运行以下命令，使用自定义用户和组安装CI：</block>
   <block id="c2edf0fde07151d96c99ce933b5db7fc" category="paragraph">注意：如果您不想使用自定义用户和组、则可以使用默认的"cisys"用户和组。  在这种情况下、请运行上述安装命令、但不要指定用户和组。</block>
-  <block id="442acde7a27750391de6a8358d813ebf" category="paragraph">此时、AU软件将安装在系统上、并可由自定义用户和组访问。但是、您无法添加数据收集器。要手动执行此操作、必须将databources.war文件复制到正确的位置。</block>
-  <block id="aa65691c6297c950fcee712307bb1a91" category="list-text">导航到datsources.war的源位置、并在此验证zip文件：</block>
-  <block id="a97626ad22c898bbe0080f7f7799f0e0" category="list-text">记下默认datesources.war文件夹上的权限：</block>
   <block id="43b4370cb1861295e2cf1d82e2cf71ce" category="list-text">要执行后续步骤、您必须切换到自定义用户(或注销root用户并使用登录用户)。</block>
   <block id="c228e145e9e61000d0f54dd253874651" category="list-text">注意：如果您使用的是默认的"cisys"用户和组、则无需执行此步骤。</block>
   <block id="579e7c70138d11bebf2d5787d6df5c96" category="list-text">注意：自定义用户可以是您在AU安装期间向cloudinsights-install.sh提供的自定义组的任何成员用户、也可以与您在AU安装期间提供的自定义用户相同或不同。</block>
-  <block id="802dfb282c205a5ce3de537f88b12f68" category="list-text">创建一个工作文件夹并调整为对其具有相同权限：</block>
   <block id="93fb085f87c8ff2c36aa100fa213c9c8" category="list-text">注意：如果使用"cisys"用户和组、则这些用户和组将显示在上面的输出中。</block>
-  <block id="1c4e1e0caf2fa69be4c90526b51f5f8e" category="list-text">将_datesource-war-data-zip_复制&lt;version&gt;到工作文件夹。例如：</block>
-  <block id="bf52ab28c85a4589393e5d683a2d027e" category="list-text">更改为下载文件夹并解压缩文件：</block>
-  <block id="0fcc45fcd734d4323f5a5d9ea3360815" category="list-text">确保所有文件的用户、组和权限均正确无误：</block>
-  <block id="c894bcc14d41b007df81ed9d077a249c" category="list-text">重新启动AU。</block>
   <block id="c35a33c9875991494585fbfbed175784" category="paragraph">。 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 可以自定义安装和配置。</block>
   <block id="8d44687186d37f705aa7f2282722aeb5" category="sidebar">监视操作员选项</block>
   <block id="8b673d5f702e58efd947465ead5c9647" category="cell">Kube-state-metrics部署的CPU限制</block>
@@ -12737,8 +12728,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="5fbd88686e262efcf8b00d22f5dffa35" category="list-text">在Workload Security菜单中、单击：
 *收集器&gt;用户目录收集器&gt;+用户目录收集器*并选择*LDAP目录服务器*</block>
   <block id="4af3803e0bed14e15bd7e0f351022969" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Consul 。</block>
-  <block id="232088b7a66f0b9f18bd94f0ff1ccbd9" category="list-text">注意：如果您计划使用不同的自定义用户注册AU、请确保将所有者和组的组权限设置为读写(_chmod 660…_)</block>
-  <block id="d9089236da8f5cf946e4497f9e886125" category="list-text">在Cloud Insights中、导航到*可观察性&gt;收集器*并选择*采集单元*选项卡。从AU右侧的“三个点”菜单中选择_Restart。</block>
   <block id="e54adc338b6508055df6c2c6fb796a92" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Apache 。</block>
   <block id="658caf28e4d04a4c56e83fd4c34621bd" category="list-text">您可以同时编辑多个数据收集器的信息。在*Observability &gt; Collectors*页面上，选中每个数据收集器左侧的框并单击*散装 操作*按钮，以选择要修改的数据收集器。选择 * 编辑 * 并修改必要的字段。</block>
   <block id="a1093e0f58751f9a01960a1fbf7beb53" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择已缓存的。</block>
@@ -12815,4 +12804,26 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="6106de3fb9edc97d16b4426ca0ae0dc8" category="paragraph">请注意、FSx命令行界面和API命令会检索Cloud Insights ZAPI不收集的某些容量值、因此Cloud Insights中的某些容量值(例如存储池的容量值)可能与FSx本身不同。</block>
   <block id="6dac8d8f7e40ada8d5686e3e8192f90f" category="paragraph">有关在Kubnetes上安装的信息、请参见 <block ref="36dbd85d6f83f853e5478a62019a359b" category="inline-link-macro-rx"></block>。</block>
   <block id="4f39aea7decea72af93c7cb4ba3fe487" category="admonition">如果您使用的是Cloud Insights联邦版、则安装和配置说明可能与此页面上的说明不同。按照Cloud Insights中的说明安装NetApp Kubnetes监控操作员。</block>
+  <block id="a5e641ea50deeae492ae44180a6c1cd9" category="list-text">类型：选择*采集单元*和*数据收集*</block>
+  <block id="156e10596fdc76ee5300bab931d89c0f" category="inline-xref">patch</block>
+  <block id="1b61043ff027934bc2900e3c686978de" category="paragraph">此时、AU软件将安装在系统上、并可由自定义用户和组访问。但是、您无法添加数据收集器。要手动执行此操作、请阅读以下说明。如果您只想安装修补程序、请参见 <block ref="40c0527ef35e12c3a3ce0496a70ee226" category="inline-xref-macro-rx"></block> 部分。</block>
+  <block id="7235d692fc62fcacd964ca3ad6df04b4" category="section-title">手动安装数据收集器</block>
+  <block id="afa6999c343d1ebcba786b51f19dd530" category="paragraph">使用/Collector /修补程序/datesourceswar/latest API下载最新的datesources.war：</block>
+  <block id="c627c3d68517a1230074d11fcf8e07e0" category="inline-image-macro">用于检索最新datesources.war的API</block>
+  <block id="bbfdaaee0b61ad57c8df04fd101b7d16" category="paragraph"><block ref="bbfdaaee0b61ad57c8df04fd101b7d16" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c1ab1322fbfe20363f4fc51283afd1d" category="paragraph">注意：如果您不下载最新版本、请与NetApp确认要指定下载的版本。</block>
+  <block id="00945739bcbd26c8c0d12c48597c0dbb" category="paragraph">单击下载文件。如果在AU系统以外的系统上执行这些步骤，请将下载的databources.war zip包复制到AU系统。</block>
+  <block id="efe48ed5576d7a3ea1584a18c0c39de9" category="paragraph">确保datacources.war zip包已复制到以下目录：/var/lib/NetApp/云云 景点/acq/download</block>
+  <block id="5edf51309b0e54b161dde9f3f2dbe815" category="paragraph">导航到datacese.war的/var/lib/NetApp/云 环境/acq/download目录、并在此验证zip文件：</block>
+  <block id="ed7dc5789cb36687315d95140bf88b49" category="list-text">执行以下操作：</block>
+  <block id="60b0ec4bd2a387eb3da948b9a799f786" category="paragraph">注意：如果您计划使用不同的自定义用户进行安装、请确保将所有者和组的组权限设置为读写(chmod 660…)</block>
+  <block id="9acc35fb262bf83f278335070c7ea2f2" category="list-text">重新启动AU。在Cloud Insights中、导航到"可观察性"&gt;"收集器"、然后选择"采集单元"选项卡。从AU右侧的“三个点”菜单中选择“重新启动”。</block>
+  <block id="57858de47985c55285f0cbb5890decfc" category="section-title">正在下载修补程序</block>
+  <block id="fc5e990e77fa1bad66c2b07f217c85ab" category="paragraph">使用/Collector /修补程序/file/｛version｝API下载修补程序：</block>
+  <block id="be2277f73c347adaa72509bcb1829517" category="inline-image-macro">用于检索修补程序的API</block>
+  <block id="0c80703f9063a302ebd010cfe3b646e3" category="paragraph"><block ref="0c80703f9063a302ebd010cfe3b646e3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="de0ee35fb580f6913af161cbc6c1cc65" category="paragraph">注意：请与NetApp确认要指定下载的版本。</block>
+  <block id="b20aea1fa1664bcc048770ea0e008918" category="paragraph">单击下载文件。如果在AU系统以外的系统上执行这些步骤、请将下载的修补程序zip包复制到AU系统。</block>
+  <block id="3e7f4643e7c9ebf9318c59a568b2521c" category="paragraph">请确保将修补程序zip包复制到以下目录：/var/lib/NetApp/ldinsights /acq/download</block>
+  <block id="9cb12f64263025528c33b8d045cd0c4a" category="paragraph">导航到修补程序的/var/lib/NetApp/ldinsights /acq/download目录、并在此验证.zip文件：</block>
 </blocks>
