@@ -136,6 +136,21 @@ Cloud Insights 从 VMware vSphere 数据收集器获取以下清单信息。对�
 |===
 
 
+== 将VMware标记映射到Cloud Insights标注
+
+通过VMware数据收集器、您可以使用在VMware上配置的标记填充Cloud Insights标注。标注的名称必须与VMware标记完全相同。Cloud Insights 将始终填充同名文本类型的标注，并 " 尽力 " 填充其他类型（数字，布尔值等）的标注。如果您的标注类型不同，而数据收集器无法填充，则可能需要删除此标注并将其重新创建为文本类型。
+
+请注意、VMware标记可能区分大小写、而Cloud Insights标记不区分大小写。因此、如果您在Cloud Insights中创建名为"owner"的标注、并在VMware中创建名为"owner"、"owner"和"owner"的标记、则所有这些"owner"变体都会映射到Cloud Insight的"owner"标注。
+
+请记住以下几点：
+
+* Cloud Insights当前仅自动发布NetApp设备的支持信息。
+* 由于此支持信息以标注形式保存、因此您可以查询它或在信息板中使用它。
+* 如果用户覆盖或清空标注值、则在Cloud Insights更新标注时、该值会再次自动调整、每天更新一次。
+
+
+
+
 == 故障排除
 
 如果此数据收集器出现问题，请尝试执行以下操作：

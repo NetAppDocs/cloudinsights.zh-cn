@@ -113,7 +113,7 @@ Cloud Insights 按 * 受管单元 * 定价。受管单元的使用量是根据�
 
 * 1 个受管单元 = 2 个主机（任何虚拟机或物理机）
 * 1 个受管单元 = 4 TiB 的未格式化物理或虚拟磁盘容量
-* 1个受管单元=选定二级存储的40 TiB未格式化容量：AWS S3、CoHesity SmartFiles、Dell EMC Data Domain、Dell EMC ECS、Hitachi内容平台、IBM Cleversafe、NetApp StorageGRID。
+* 1个受管单元=选定二级存储的40 TiB未格式化容量：AWS S3、CoHesity SmartFiles、Dell EMC Data Domain、Dell EMC ECS、Hitachi内容平台、IBM Cleversafe、NetApp StorageGRID、 Rubeck。
 * 1个受管单元= 4个库贝特斯vCPU
 
 

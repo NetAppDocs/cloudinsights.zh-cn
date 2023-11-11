@@ -25,6 +25,33 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
+== 2023年11月
+
+
+
+=== 存储节点支持信息
+
+在存储节点登录页面上、_User Data_部分可提供有关您的支持服务、当前状态、支持状态和保修结束日期的概览信息。请注意、Cloud Insights当前仅会自动为NetApp设备发布此信息。另请注意、这些支持字段是标注、因此可以在查询和信息板中使用。
+
+image:StorageNodeSupportData.png["存储节点支持信息"]
+
+
+
+=== 将VMware标记映射到Cloud Insights标注
+
+。 link:task_dc_vmware.html#mapping-vmware-tags-to-cloud-insights-annotations["VMware"] 通过数据收集器、您可以使用在VMware上配置的同名标记填充Cloud Insights文本标注。
+
+
+
+=== 适用于FOS 9.1.1c及更高版本固件的Brocade CLI收集器可靠性增强功能
+
+在某些运行9.1.1c固件的Brocade光纤通道交换机上、某些命令行界面命令的输出可能会在"moded"登录横幅文本前添加、或者警告用户更改默认密码。Brocade CLI收集器已得到增强、可忽略这两种类型的无关文本。
+
+在此增强功能之前、使用此收集器类型只能发现不存在虚拟结构的FOS 9.1.1c交换机。
+
+'''
+
+
 == 2023年10月
 
 

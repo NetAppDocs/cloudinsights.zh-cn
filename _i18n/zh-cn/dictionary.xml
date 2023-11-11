@@ -12664,7 +12664,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">限制对默认域的访问：默认域是Cloud Insights环境帐户所有者使用的域。这些域始终可访问。</block>
   <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">限制对指定默认值和域的访问。列出除了默认域之外、您还希望有权访问Cloud Insights环境的任何域。</block>
   <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1a67db23e86df970f58242b726cddbe4" category="list-text">1个受管单元=选定二级存储的40 TiB未格式化容量：AWS S3、CoHesity SmartFiles、Dell EMC Data Domain、Dell EMC ECS、Hitachi内容平台、IBM Cleversafe、NetApp StorageGRID。</block>
   <block id="b0ec3d3ab3b33bd69418a7bd9e4d8f9e" category="section-title">2023年10月</block>
   <block id="e76d326e7377a93bd9d473077ecdd257" category="section-title">限制对指定域的访问</block>
   <block id="e391d7f1ca15dcf0f9409952796c6e9f" category="inline-link-macro">限制Cloud Insights访问</block>
@@ -12826,4 +12825,20 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b20aea1fa1664bcc048770ea0e008918" category="paragraph">单击下载文件。如果在AU系统以外的系统上执行这些步骤、请将下载的修补程序zip包复制到AU系统。</block>
   <block id="3e7f4643e7c9ebf9318c59a568b2521c" category="paragraph">请确保将修补程序zip包复制到以下目录：/var/lib/NetApp/ldinsights /acq/download</block>
   <block id="9cb12f64263025528c33b8d045cd0c4a" category="paragraph">导航到修补程序的/var/lib/NetApp/ldinsights /acq/download目录、并在此验证.zip文件：</block>
+  <block id="1c5c258274f71ebb61b16a0e0935d305" category="list-text">1个受管单元=选定二级存储的40 TiB未格式化容量：AWS S3、CoHesity SmartFiles、Dell EMC Data Domain、Dell EMC ECS、Hitachi内容平台、IBM Cleversafe、NetApp StorageGRID、 Rubeck。</block>
+  <block id="fb784db76f57bc935639ba5340089d77" category="section-title">2023年11月</block>
+  <block id="1cbf46f257da65cfaddea13008fd61b1" category="section-title">存储节点支持信息</block>
+  <block id="13914928279d372f0f0a3086f0823ccd" category="paragraph">在存储节点登录页面上、_User Data_部分可提供有关您的支持服务、当前状态、支持状态和保修结束日期的概览信息。请注意、Cloud Insights当前仅会自动为NetApp设备发布此信息。另请注意、这些支持字段是标注、因此可以在查询和信息板中使用。</block>
+  <block id="135a3d8d94bbc8eb1cd03dbd8fa28277" category="paragraph"><block ref="135a3d8d94bbc8eb1cd03dbd8fa28277" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ad437072c1980f7cddeaf25e082880bb" category="section-title">将VMware标记映射到Cloud Insights标注</block>
+  <block id="b67ffcdf52573a01af5e6400d8043174" category="paragraph">。 <block ref="eb8043f75c4f74e4780785affa0e63c3" category="inline-link-macro-rx"></block> 通过数据收集器、您可以使用在VMware上配置的同名标记填充Cloud Insights文本标注。</block>
+  <block id="02892541231ed9b9797890da851659d1" category="section-title">适用于FOS 9.1.1c及更高版本固件的Brocade CLI收集器可靠性增强功能</block>
+  <block id="f451a3db1d946e0e6f7a6faff75241f4" category="paragraph">在某些运行9.1.1c固件的Brocade光纤通道交换机上、某些命令行界面命令的输出可能会在"moded"登录横幅文本前添加、或者警告用户更改默认密码。Brocade CLI收集器已得到增强、可忽略这两种类型的无关文本。</block>
+  <block id="08cc9fe40f6d675ceb9852acf6cb4d2d" category="paragraph">在此增强功能之前、使用此收集器类型只能发现不存在虚拟结构的FOS 9.1.1c交换机。</block>
+  <block id="fdbc837080bf746694718923941b3ca6" category="section-title">将VMware标记映射到Cloud Insights标注</block>
+  <block id="556f5b9e77a7546a1dbeab74aa1190e0" category="paragraph">通过VMware数据收集器、您可以使用在VMware上配置的标记填充Cloud Insights标注。标注的名称必须与VMware标记完全相同。Cloud Insights 将始终填充同名文本类型的标注，并 " 尽力 " 填充其他类型（数字，布尔值等）的标注。如果您的标注类型不同，而数据收集器无法填充，则可能需要删除此标注并将其重新创建为文本类型。</block>
+  <block id="8354fa58be11dc6519c7b2d92ba17795" category="paragraph">请注意、VMware标记可能区分大小写、而Cloud Insights标记不区分大小写。因此、如果您在Cloud Insights中创建名为"owner"的标注、并在VMware中创建名为"owner"、"owner"和"owner"的标记、则所有这些"owner"变体都会映射到Cloud Insight的"owner"标注。</block>
+  <block id="f528aa737a09ffef3755a1a747557c7a" category="list-text">Cloud Insights当前仅自动发布NetApp设备的支持信息。</block>
+  <block id="8455a8bde7347555ff461cd652af2821" category="list-text">由于此支持信息以标注形式保存、因此您可以查询它或在信息板中使用它。</block>
+  <block id="8ed3dc52c7734ad3388658bf20175200" category="list-text">如果用户覆盖或清空标注值、则在Cloud Insights更新标注时、该值会再次自动调整、每天更新一次。</block>
 </blocks>
