@@ -6896,7 +6896,6 @@
   <block id="7c9f5399bb10652ab7e06778c4de02e1" category="paragraph">可以通过确认 PEM 文件的指纹为以下内容来验证 PEM 文件：</block>
   <block id="7a2babd4fa48c9b0c07e4b865ff53efa" category="paragraph">更具体地说，</block>
   <block id="76dfc651463ab4e67ce2140b8aadb473" category="paragraph">可以使用 PEM 文件验证签名校验和文件：</block>
-  <block id="fbc384836aa7cdd1a408df0773faf595" category="list-text">Windows （通过上述 Import-Certificate 安装证书后）：</block>
   <block id="6c32334bfce9f857b0fdbdca68040a0b" category="paragraph">在对所有项目进行满意的验证后，可以通过运行以下命令启动代理安装：</block>
   <block id="013aa4ffc40507022dd1b0b1a936ff20" category="paragraph">Kubernetes 筛选器为上下文筛选器，例如，如果您位于特定节点页面上，则 pod_name 筛选器仅会列出与该节点相关的 Pod 。此外，如果您对特定命名空间应用筛选器，则 pod_name 筛选器将仅列出该命名空间中节点 _and_ 上的 Pod 。</block>
   <block id="e2b330c7ae678ef7cd6514d5ae7e7e7c" category="list-text">当系统提示您配置通知时，选择通过电子邮件， Webhook 或这两者发出警报，然后选择要通知的警报类型（严重，警告，信息和 / 或已解决）。您可以选择通知到全局监控器收件人列表（在 * 管理 &gt; 通知 * 中配置），也可以指定其他收件人。准备好继续后，单击 * 完成设置 *</block>
@@ -8266,7 +8265,6 @@
   <block id="486f30ea223e9ebeeba1fe336355cc78" category="paragraph">具有管理员或帐户所有者角色的用户可以从信息板库导入。</block>
   <block id="dea63246826e0f6304016e25a14623cf" category="section-title">安全最佳实践</block>
   <block id="ab08067a1ae057eadce5a75286225507" category="paragraph">Cloud Insights 警报旨在突出显示环境中的数据点和趋势、而Cloud Insights 允许您以警报收件人的身份输入任何有效的电子邮件地址。如果您在安全环境中工作、请特别注意谁在接收通知或以其他方式有权访问警报。</block>
-  <block id="2f5e8cecf93bcfa467580ff86ae3e64a" category="list-text">签名校验和文件(以SHA256.signed或SHA256.ps1结尾)</block>
   <block id="a00b5aaaee55b7761231c3b425e0aebd" category="list-text">安装代理时、会在计算机上创建一个本地用户_cssys_和一个本地组_cssys_。如果权限设置不允许创建本地用户、而需要Active Directory、则必须在Active Directory服务器中创建用户名为_cssys_的用户。</block>
   <block id="100c37ccf9bdbedac2e35d90d41d3be9" category="inline-link-macro">请参见本指南</block>
   <block id="a4c1554c68c13d90856edc78740b6673" category="list-text">性能访问验证：在采集单元上的Web浏览器中、转至：//SMI-S主机名或IP、其中&lt;SMI-S Hostname or IP&gt; ：5989/ecomconfig_是SMI-S服务器的IP地址或主机名。此URL用于EMC SMI-S (也称为"ECOM")服务的管理门户-您将收到登录弹出窗口。</block>
@@ -9173,7 +9171,6 @@
   <block id="d8f6d626cfe2a4f97d97ff93d95db51b" category="section-title">生成校验和值</block>
   <block id="d1703bc5bb53c90ffbbae52dfe829603" category="paragraph">要生成校验和值、请对相应平台执行以下命令：</block>
   <block id="9374ddadb9776b458a2963573b22f63d" category="list-text">RHEL/Ubuntu：</block>
-  <block id="2759aa04a78ddf03f5db1a25acdca496" category="section-title">使用PEM文件验证校验和</block>
   <block id="b59ea01f26635c31c3c1df660848f6c8" category="section-title">安装下载的软件包</block>
   <block id="e8cdc72b15f2eb76eb1815f526758f2e" category="doc">洞察力：高耗工作负载</block>
   <block id="b6178403f1fb13fa361db9ac6d3f0273" category="paragraph">高影响工作负载会降低共享资源中其他工作负载的性能。Cloud Insights 提供的工具可帮助您调查资源饱和情况以及环境中的影响。</block>
@@ -12900,4 +12897,7 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b738fcd06367fb3c33e6d367c3e7c7ba" category="paragraph">如果将_prePed_选项设置为_True_、则通过API命令传递的任何密码都将被视为*已加密*；API不会重新加密此密码。构建API时、只需将先前加密的密码粘贴到相应位置即可。</block>
   <block id="d9d5abe9014e781e9e8b7465a4527c53" category="inline-image-macro">API示例、宽度=600</block>
   <block id="adf35aae3d2f06ba0ccf5e21b031b3d6" category="paragraph"><block ref="adf35aae3d2f06ba0ccf5e21b031b3d6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">校验和文件(以SHA256.signed/SHA256.ps1结尾)</block>
+  <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">验证校验和</block>
+  <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">从校验和文件中提取预期的校验和</block>
 </blocks>

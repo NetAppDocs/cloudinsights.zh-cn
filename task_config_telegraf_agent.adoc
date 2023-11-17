@@ -408,24 +408,10 @@ Windows
 * 安装脚本
 * 环境文件
 * YAML 文件
-* 签名校验和文件(以SHA256.signed或SHA256.ps1结尾)
-* 用于签名验证的 PEM 文件（ netapp_cert.pem ）
+* 校验和文件(以SHA256.signed/SHA256.ps1结尾)
 
 
 安装脚本，环境文件和 YAML 文件可以通过目视检查进行验证。
-
-可以通过确认 PEM 文件的指纹为以下内容来验证 PEM 文件：
-
- 1A918038E8E127BB5C87A202DF173B97A05B4996
-更具体地说，
-
-* 非 Windows ：
-+
- openssl x509 -fingerprint -sha1 -noout -inform pem -in netapp_cert.pem
-* Windows
-+
- Import-Certificate -Filepath .\netapp_cert.pem -CertStoreLocation Cert:\CurrentUser\Root
-
 
 
 
@@ -443,24 +429,18 @@ Windows
 
 
 
-=== 使用PEM文件验证校验和
+=== 验证校验和
 
-可以使用 PEM 文件验证签名校验和文件：
+从校验和文件中提取预期的校验和
 
 * 非 Windows ：
++
+ openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any -nosigs -noverify
+* Windows
++
+ (Get-Content telegraf.zip.sha256.ps1 -First 1).toUpper()
 
 
- openssl smime -verify -in telegraf*.sha256.signed -CAfile netapp_cert.pem -purpose any
-* Windows （通过上述 Import-Certificate 安装证书后）：
-
-
-....
-Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1
-$result = Get-AuthenticodeSignature -FilePath .\telegraf.zip.sha256.ps1
-$signer = $result.SignerCertificate
-Add-Type -Assembly System.Security
-[Security.Cryptography.x509Certificates.X509Certificate2UI]::DisplayCertificate($signer)
-....
 
 
 === 安装下载的软件包
