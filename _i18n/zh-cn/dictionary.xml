@@ -12841,4 +12841,23 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="f528aa737a09ffef3755a1a747557c7a" category="list-text">Cloud Insights当前仅自动发布NetApp设备的支持信息。</block>
   <block id="8455a8bde7347555ff461cd652af2821" category="list-text">由于此支持信息以标注形式保存、因此您可以查询它或在信息板中使用它。</block>
   <block id="8ed3dc52c7734ad3388658bf20175200" category="list-text">如果用户覆盖或清空标注值、则在Cloud Insights更新标注时、该值会再次自动调整、每天更新一次。</block>
+  <block id="b63d58d10a7cf952ba50c71631f55b80" category="section-title">工作负载安全性：暂停/恢复收集器</block>
+  <block id="84a9e424bdf106d03d3d28925f9d139f" category="paragraph">在"工作负载安全性"中、如果数据收集器处于_running"或"_Error"状态、则可以暂停该收集器。打开收集器的"三点"菜单、然后选择暂停。暂停收集器时、不会从ONTAP收集任何数据、也不会从收集器向ONTAP发送任何数据。选择恢复以重新开始收集。</block>
+  <block id="27f986eca60850ba6afaf4deb6c8be29" category="section-title">播放-暂停Data Collector</block>
+  <block id="fc0a37407f79a45598558116e07830ba" category="paragraph">现在、2个新操作显示在收集器的"CAE"菜单上(暂停和恢复)。</block>
+  <block id="a1f56413bb240260818b1874baafc3b6" category="paragraph">如果Data Collector处于_running"或"_Error"状态、则可以暂停收集。打开收集器的"三点"菜单、然后选择暂停。暂停收集器时、不会从ONTAP收集任何数据、也不会从收集器向ONTAP发送任何数据。这意味着不会有Fpolicy事件从ONTAP流向数据收集器、也不会从该数据收集器流向Cloud Insights。</block>
+  <block id="12a77ef251456c14c7516a531e07f62b" category="paragraph">请注意、如果在收集器暂停时在ONTAP上创建了任何新卷等、则"工作负载安全性"不会收集数据、这些卷等也不会反映在信息板或表中。</block>
+  <block id="01abfc750a0c942167651c40d088531d" category="cell">#</block>
+  <block id="a466ef2a0eac5ccca070b3013eaba386" category="cell">收集器已暂停行为</block>
+  <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1.</block>
+  <block id="ac08b45e1e6b3f3cb0a5ffc7cb738447" category="cell">根据已暂停收集器上配置的设置、不会执行Snapshot清除。</block>
+  <block id="301be6cbe57eeb518e76a0dacc06942b" category="cell">暂停的收集器不会处理EMS事件(如ONTAP ARP)。这意味着、如果ONTAP发现勒索软件攻击、Cloud Insights工作负载安全性将无法获取该事件。</block>
+  <block id="eccbc87e4b5ce2fe28308fd9f2a7baf3" category="cell">3.</block>
+  <block id="7e41836b686c17a31fd348a24ad244d1" category="cell">不会为已暂停的收集器发送运行状况通知电子邮件。</block>
+  <block id="3683774ed8a4e1ec359bda17c740e07d" category="cell">暂停的收集器不支持手动或自动操作(例如Snapshot或用户阻止)。</block>
+  <block id="e4da3b7fbbce2345d7772b0674a318d5" category="cell">5.</block>
+  <block id="fa80f305470263b5f75374e020afeacd" category="cell">在代理或收集器升级、代理VM重新启动/重新启动或代理服务重新启动时、暂停的收集器将保持_Paused.</block>
+  <block id="1679091c5a880faf6fb5e6087eb1b2dc" category="cell">6.</block>
+  <block id="90328fccc937505ade5c16d577869c88" category="cell">如果数据收集器处于_Error_状态、则无法将此收集器更改为_Paused _状态。只有当收集器的状态为_running"时、暂停按钮才会启用。</block>
+  <block id="59a5587328a48d1f89316c0bf4e4be6f" category="cell">如果代理已断开连接、则无法将收集器更改为_Paused _状态。收集器将进入_STOPPED _状态、暂停按钮将被禁用。</block>
 </blocks>
