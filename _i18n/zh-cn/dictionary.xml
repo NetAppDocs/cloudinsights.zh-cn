@@ -7776,7 +7776,6 @@
   <block id="779ce1f6c23a08b510ed7a6c996d255a" category="list-text">编辑 Telegraf 配置文件，并将旧 API 令牌的所有实例替换为新 API 令牌。</block>
   <block id="e89f4056c39669637fb609320173681a" category="list-text">重新启动 Telegraf 。</block>
   <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">对于 _C ： \Program Files\telecraf\telecraf.d_ 中的每个 Telegraf 配置文件，请将旧 API 令牌的所有实例替换为新 API 令牌。</block>
-  <block id="474b549bf76599f904f9c951a609a127" category="cell">50 GB对于Linux、应按以下方式分配磁盘空间：/opt/netapp 10 GB /var/log/netapp 40 GB /tmp安装期间至少1 GB可用空间</block>
   <block id="e7e11e47420c10995bd13aa4ca018d9d" category="inline-link-macro">NetApp Config Advisor</block>
   <block id="b0dfae0e334f78eb272eea393c0dbe9c" category="cell"><block ref="b0dfae0e334f78eb272eea393c0dbe9c" category="inline-link-macro-rx"></block></block>
   <block id="fbf36f3c6d60eb5668138c4d75d88089" category="summary">NetApp Config Advisor 数据收集器</block>
@@ -12901,4 +12900,12 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">用于登录到ScaleIO/PowerFlex设备的密码</block>
   <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">允许搜索目录的用户。例如： _username@companyname.com_ 或 _username@domainname.com_
 此外、还需要域只读权限。</block>
+  <block id="dada9839975856f2fd06228d265fea07" category="list-text">网络监控：</block>
+  <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">需要Linux内核版本4.18.0及更高版本</block>
+  <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">不支持光子操作系统。</block>
+  <block id="e51abfd3fc3e12a9fe8f5f800312a852" category="cell">50 GB (建议使用100 GB)
+对于Linux、应按以下方式分配磁盘空间：
+/opt/NetApp 10 GB (大型环境为20 GB)
+/var/log/NetApp 40 GB (大型环境为80 GB)
+/tmp安装期间至少有1 GB可用空间</block>
 </blocks>

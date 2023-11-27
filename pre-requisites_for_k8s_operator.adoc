@@ -51,6 +51,12 @@ summary: Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成�
 * NetApp Kubernetes监控操作员会安装自己的Kube-state-metrics、以避免与任何其他实例发生冲突。为了准确地进行审核和数据报告、强烈建议使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。
 * 如果要重新部署Operator (即更新或替换Operator)、则无需创建_new_ API令牌；您可以重新使用先前的令牌。
 * 另请注意、如果您最近安装了NetApp Kubnetes Monitoring Operator、并且正在使用可续订的API访问令牌、则即将过期的令牌将自动替换为新的/刷新的API访问令牌。
+* 网络监控：
++
+** 需要Linux内核版本4.18.0及更高版本
+** 不支持光子操作系统。
+
+
 
 
 
