@@ -1067,7 +1067,6 @@
   <block id="864914e40a7ee3d290b244de196d4f2e" category="cell">托管 Active Directory 的服务器的 IP 地址或完全限定域名（ FQDN ）</block>
   <block id="592b09bd3291d67037bc036b0c714470" category="cell">林名称</block>
   <block id="58384d924f3205aaac5f4a09d3b33801" category="cell">绑定 DN</block>
-  <block id="c84f7a37a2691cf36f1774d52de72e5c" category="cell">允许搜索目录的用户。例如： _username@companyname.com_ 或 _username@domainname.com_</block>
   <block id="7066ea6d497311d6e3c4be6a9523999c" category="cell">绑定密码</block>
   <block id="0d91a6f24e197b2dbd20b358e4f84785" category="cell">目录服务器密码（即绑定 DN 中使用的用户名的密码）</block>
   <block id="888a77f5ac0748b6c8001822417df8b6" category="cell">协议</block>
@@ -12900,4 +12899,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">ScaleIO/PowerFlex网关的IP地址或FQDN、以逗号(、)或分号(；)分隔</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">用于登录到ScaleIO/PowerFlex设备的管理员用户名</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">用于登录到ScaleIO/PowerFlex设备的密码</block>
+  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">允许搜索目录的用户。例如： _username@companyname.com_ 或 _username@domainname.com_
+此外、还需要域只读权限。</block>
 </blocks>
