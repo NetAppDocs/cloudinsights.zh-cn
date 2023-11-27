@@ -2201,19 +2201,10 @@
   <block id="010e8a3ade245a1718e7c4b5540ac2e3" category="cell">错误： " 机箱 IP 地址不匹配 "</block>
   <block id="e73a974e5f64b7f2d040fb59fd2aafcd" category="cell">更改数据源配置以使用机箱 IP 地址。</block>
   <block id="04eb81d16943e8c8a6314aaac38a4f4b" category="cell">收到一条消息，指出有多个节点已登录到访问网关端口</block>
-  <block id="cf38d319bc1b083afe717ce8be4a0e2a" category="summary">配置 Dell EMC ScaleIO 数据收集器。</block>
-  <block id="a502d590a35b78e5a42f13e7f79aefd5" category="doc">Dell EMC ScaleIO 数据收集器</block>
-  <block id="c502d2755afbc827d0b78e7bf29a63c3" category="paragraph">ScaleIO 数据收集器从 ScaleIO 存储收集清单信息。要进行配置，此数据收集器需要 ScaleIO 网关地址以及管理员用户名和密码。</block>
-  <block id="0711dbe30737a04c398a5d6577ea7fb6" category="paragraph">Cloud Insights 从 ScaleIO 数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="d84428ff629eae2252af86f5b0c68597" category="cell">MDM（ Meta Data Manager ）集群</block>
-  <block id="32de3bca35dcedbe5dd77438efe818cd" category="cell">SDS （ ScaleIO 数据服务器）</block>
   <block id="e0ac20adce6ffee48c7151b070aa5737" category="cell">设备</block>
   <block id="9bc4ba1e74d4345d8fb67c1039e8ee31" category="list-text">对管理员用户帐户的只读访问权限</block>
   <block id="0e75d3cb4ff238983ed93446b3df10b4" category="list-text">端口要求： HTTPS 端口 443</block>
-  <block id="b598786f418563a6288a22d6b801761e" category="cell">ScaleIO 网关</block>
-  <block id="7f1dace1c2447400ca7e254d9f7c680d" category="cell">ScaleIO 网关的 IP 地址或 FQDN ，以逗号（，）或分号（；）分隔</block>
-  <block id="d44a2e308ec90ea99344ff3ca9a81883" category="cell">用于登录到 ScaleIO 设备的管理员用户名</block>
-  <block id="358e9f4d894beeefdde1369e74db160f" category="cell">用于登录到 ScaleIO 设备的密码</block>
   <block id="fd4515531c9ce1d6eae38a306629e6eb" category="paragraph">单击清单复选框以启用清单收集。</block>
   <block id="f7130526f999ef4eed4ac1dbf86a0a03" category="cell">HTTPS 端口</block>
   <block id="13f3cf8c531952d72e5847c4183e6910" category="cell">443.</block>
@@ -3027,8 +3018,6 @@
   <block id="1b109b38fea9959dbc53058628693aef" category="cell"><block ref="1b109b38fea9959dbc53058628693aef" category="inline-link-macro-rx"></block></block>
   <block id="f8e3c055426933bde369444cdafa0c6b" category="inline-link-macro">Dell EMC Recoverpoint</block>
   <block id="32f16e66f82b765e2355b037f437f0d6" category="cell"><block ref="32f16e66f82b765e2355b037f437f0d6" category="inline-link-macro-rx"></block></block>
-  <block id="9e41c813bafe9260d22ac12ca1d86d6b" category="inline-link-macro">Dell EMC ScaleIO</block>
-  <block id="e05a976ebc9a4cca05ffe391dc9aea64" category="cell"><block ref="e05a976ebc9a4cca05ffe391dc9aea64" category="inline-link-macro-rx"></block></block>
   <block id="42658796d03fcc8216277518ea2d5203" category="inline-link-macro">Dell EMC Unity</block>
   <block id="7d4fe4e454bc9f68e87ed3a86244c35a" category="cell"><block ref="7d4fe4e454bc9f68e87ed3a86244c35a" category="inline-link-macro-rx"></block></block>
   <block id="20efc9aa81289aa30cb8621f0a4eadf8" category="inline-link-macro">Dell EMC VMAX/PowerMax 系列设备</block>
@@ -12900,4 +12889,15 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="9f32134bbefffdc9df70a2d73c2df6a6" category="list-text">校验和文件(以SHA256.signed/SHA256.ps1结尾)</block>
   <block id="aacd43790bd404cab1a350cb047a9a9d" category="section-title">验证校验和</block>
   <block id="43e3c65a555911ad6d7235d9e9206e4c" category="paragraph">从校验和文件中提取预期的校验和</block>
+  <block id="e399d76f82d333fa1c49eb069522e8ac" category="inline-link-macro">Dell EMC ScaleIO/PowerFlex </block>
+  <block id="f7ee83c5589aae26abcd6b7c1b853e5a" category="cell"><block ref="f7ee83c5589aae26abcd6b7c1b853e5a" category="inline-link-macro-rx"></block></block>
+  <block id="e3628e8ad35243dc8938a2b601a40729" category="summary">配置Dell EMC ScaleIO/PowerFlex数据收集器。</block>
+  <block id="b7cfbf9d7104ab3206a9e36e4f1cfed8" category="doc">Dell EMC ScaleIO/PowerFlex数据收集器</block>
+  <block id="eb2970c74f4003234e24b8bb86f7f1b1" category="paragraph">ScaleIO/PowerFlex数据收集器从ScaleIO和PowerFlex存储收集清单信息。在配置方面、此数据收集器需要ScaleIO/PowerFlex网关地址以及管理员用户名和密码。</block>
+  <block id="0605f6ce75ae8707c23e729bfc341dd5" category="paragraph">Cloud Insights从ScaleIO/PowerFlex数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="1504819ba5c6757e9100d77628a826a2" category="cell">SDS (ScaleIO/PowerFlex数据服务器)</block>
+  <block id="52775d60a5ff510b7b7db324e92a528a" category="cell">ScaleIO/PowerFlex网关</block>
+  <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">ScaleIO/PowerFlex网关的IP地址或FQDN、以逗号(、)或分号(；)分隔</block>
+  <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">用于登录到ScaleIO/PowerFlex设备的管理员用户名</block>
+  <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">用于登录到ScaleIO/PowerFlex设备的密码</block>
 </blocks>
