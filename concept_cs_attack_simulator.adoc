@@ -173,5 +173,5 @@ echo 3 > /proc/sys/vm/drop_caches ; sync
 +
 如果您在步骤 1 中禁用了数据收集器，请编辑该数据收集器，输入正确的密码并保存。确保数据收集器重新处于运行状态。
 
-. 如果您在执行以下步骤之前暂停了收集器、请确保 link:task_add_collector_svm.html#play-pause-data-collector["恢复收集器"]。
+. 如果您在执行这些步骤之前暂停了收集器、请确保 link:task_add_collector_svm.html#play-pause-data-collector["恢复收集器"]。
 
