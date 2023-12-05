@@ -60,8 +60,8 @@ Cloud Insights从Brocade FOS REST数据收集器采集以下清单信息。对�
 
 == 要求
 
-* 网络结构中的所有交换机都必须具有 IP 连接。如果选中_Discover all switches in the Fabric _复选框、则Cloud Insights将标识网络结构中的所有交换机；但是、它需要通过与这些附加交换机的IP连接来发现它们。
-* 网络结构中的所有交换机需要全局使用同一个帐户。您可以使用 PuTTY （开源终端模拟器）确认访问。
+* 必须与网络结构中的所有交换机建立TCP连接。此数据收集器类型将为网络结构中的每个设备无缝尝试HTTP和HTTPS。如果选中_Discover all switches in the Fabric _复选框、则Cloud Insights将标识网络结构中的所有交换机；但是、它需要通过与这些附加交换机的TCP连接来发现它们。
+* 网络结构中的所有交换机需要全局使用同一个帐户。您可以使用设备的Web界面确认访问。
 
 
 
@@ -73,7 +73,7 @@ Cloud Insights从Brocade FOS REST数据收集器采集以下清单信息。对�
 | 字段 | 说明 
 
 
-| 交换机 IP | EFC 服务器的 IP 地址或完全限定域名 
+| 交换机 IP | FOS交换机的IP地址或完全限定域名 
 
 
 | 用户名 | 交换机的用户名 
@@ -90,7 +90,7 @@ Cloud Insights从Brocade FOS REST数据收集器采集以下清单信息。对�
 | 字段 | 说明 
 
 
-| 排除的设备 | 要从轮询中排除的设备ID的逗号分隔列表。 
+| 排除的设备 | 要从轮询中排除的设备IPv4地址的逗号分隔列表。 
 
 
 | 清单轮询间隔（分钟） | 两次清单轮询的间隔。默认值为 60. 。 
@@ -105,10 +105,10 @@ Cloud Insights从Brocade FOS REST数据收集器采集以下清单信息。对�
 | 连接类型 | HTTP或HTTPS。 
 
 
-| 覆盖 TCP 端口 | 如果未使用默认端口、请指定一个端口。 
+| 请注意，此设置仅更改CI首先尝试按设备使用的协议-如果默认失败，CI将自动尝试相反协议 | 覆盖 TCP 端口 
 
 
-| 性能轮询间隔（秒） | 性能轮询之间的时间间隔。默认值为 300. 。 
+| 如果未使用默认端口、请指定一个端口。 | 性能轮询间隔（秒） 
 |===
 
 
@@ -125,7 +125,7 @@ Cloud Insights从Brocade FOS REST数据收集器采集以下清单信息。对�
 | 问题： | 请尝试以下操作： 
 
 
-| Brocade 数据源的清单采集失败，并显示错误： <date> <time> error com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Error 2 out of 2 ： <datasource name>[Internal error] - Unable to generate the model for device <IP> 。检测提示时出错（ [Device name <name> ：无法生成设备 <IP> 的型号。检测提示时出错） | 如果 Brocade 交换机返回提示所需的时间过长，超过默认的 5 秒超时时间，则可能会导致出现问题描述 。在 Cloud Insights 的数据收集器的高级配置设置中，尝试将 _SSH 横幅等待超时（秒） _ 增加到更高的值。 
+| 测试功能警告我协议不可访问 | 给定的Brocade FOS 8.1+设备只想通过HTTP或HTTPS进行通信-如果交换机安装了数字证书、则在尝试使用未加密HTTP与HTTPS进行通信时、交换机将引发HTTP错误。此测试功能会尝试与HTTP和HTTPS进行通信-如果此测试告诉您一个协议通过、您可以安全地保存此收集器、而不必担心另一个协议失败-此收集器会在收集期间尝试使用这两个协议、并且只有在这两个协议都不起作用时才会失败。 
 
 
 | 错误： Cloud Insights 收到无效机箱角色 | 检查是否已为此数据源中配置的用户授予机箱角色权限。 
