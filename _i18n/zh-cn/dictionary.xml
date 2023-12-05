@@ -12915,4 +12915,15 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="40e2d40b31fb9557e4b0f6ca0bff37f3" category="cell">在将ONTAP与工作负载安全性结合使用时、有时可能会在ONTAP中出现延迟问题。出现这种情况的可能原因如下： <block ref="5b7caa0ef6cc830703e594488c525913" category="inline-link-macro-rx"></block>，<block ref="b861ec6ca06b8e18b9d090dd75b00a26" category="inline-link-rx"></block>，<block ref="a5fade3ab29d18b9b976189fcb9919ed" category="inline-link-rx"></block>，<block ref="8899da2205eee6e62b28641da3533e12" category="inline-link-rx"></block>，<block ref="c9d1d03c1b92a8bbffc617ad493e8619" category="inline-link-rx"></block>。所有这些问题在ONTAP 9.13.1.及更高版本中均已修复；强烈建议使用这些更高版本之一。</block>
   <block id="31f9d742d99e2999530fc9c1dfb9a6c3" category="cell">通知：查看</block>
   <block id="33a69926e89c1993d0f64ae85dde0a8a" category="cell">通知：修改</block>
+  <block id="e04ebf98a9012bb6a191a7804699c68b" category="summary">正在配置Brocade FOS REST数据收集器。</block>
+  <block id="706579d23b1ddf6c6ff6115a0f9271b4" category="doc">Brocade FOS REST数据收集器</block>
+  <block id="78803855559e90468b9778e0cfe3fb9d" category="paragraph">Cloud Insights使用Brocade FOS REST收集器发现运行FabricOS (FOS)固件8.2及更高版本的Brocade交换机设备的清单和性能。</block>
+  <block id="2a8ee44741d591b5a5bbaeb9a53b8601" category="paragraph">默认情况下、此收集器将尝试发现交换机所属所有网络结构中的所有FOS设备。</block>
+  <block id="632dd9f1c3d874c126028ed203b0dd9f" category="paragraph">Cloud Insights从Brocade FOS REST数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="de498d77f85838129d5e5e0244f3218d" category="list-text">网络结构中的所有交换机都必须具有 IP 连接。如果选中_Discover all switches in the Fabric _复选框、则Cloud Insights将标识网络结构中的所有交换机；但是、它需要通过与这些附加交换机的IP连接来发现它们。</block>
+  <block id="52ee9cef67200578c869ec0a47f47d75" category="cell">要从轮询中排除的设备ID的逗号分隔列表。</block>
+  <block id="809ecc8a9a52f55bd82e3c640ecb9190" category="cell">选择此选项可发现网络结构中的所有交换机。</block>
+  <block id="5ed56420d721e3c99ed9cd5fe2bb84c1" category="cell">选择是支持HBA还是分区别名。</block>
+  <block id="42bf55c2417a1711c1eea84d1c100c52" category="cell">HTTP或HTTPS。</block>
+  <block id="fd2660e8af5b6a90d0b853f19433e552" category="cell">如果未使用默认端口、请指定一个端口。</block>
 </blocks>
