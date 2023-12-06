@@ -12872,4 +12872,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="7339b2d54f0d972dcd8f403df7ed08df" category="cell">请注意，此设置仅更改CI首先尝试按设备使用的协议-如果默认失败，CI将自动尝试相反协议</block>
   <block id="5ea4f4a83e327d73eba3355881f8048d" category="cell">测试功能警告我协议不可访问</block>
   <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">给定的Brocade FOS 8.1+设备只想通过HTTP或HTTPS进行通信-如果交换机安装了数字证书、则在尝试使用未加密HTTP与HTTPS进行通信时、交换机将引发HTTP错误。此测试功能会尝试与HTTP和HTTPS进行通信-如果此测试告诉您一个协议通过、您可以安全地保存此收集器、而不必担心另一个协议失败-此收集器会在收集期间尝试使用这两个协议、并且只有在这两个协议都不起作用时才会失败。</block>
+  <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">如果监控操作员部署在自己的专用命名空间中、请删除此命名空间：</block>
 </blocks>

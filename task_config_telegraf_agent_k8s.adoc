@@ -134,9 +134,12 @@ image:K8s_Modify_Deployment_Screen.png["显示\"日志收集\"复选框的\"修�
 可以使用以下命令卸载较新版本的监控操作员：
 
 ....
-kubectl delete agent -A -l installed-by=nkmo-<name-space>
-kubectl delete ns,clusterrole,clusterrolebinding,crd -l installed-by=nkmo-<name-space>
+kubectl -n <NAMESPACE> delete agent -l installed-by=nkmo-<NAMESPACE>
+kubectl -n <NAMESPACE> delete clusterrole,clusterrolebinding,crd,svc,deploy,role,rolebinding,secret,sa -l installed-by=nkmo-<NAMESPACE>
 ....
+如果监控操作员部署在自己的专用命名空间中、请删除此命名空间：
+
+ kubectl delete ns <NAMESPACE>
 如果第一个命令返回"未找到资源"、请按照以下说明卸载旧版本的监控操作员。
 
 按顺序执行以下每个命令。根据您当前的安装情况、其中某些命令可能会返回‘object not found '消息。可以安全地忽略这些消息。
