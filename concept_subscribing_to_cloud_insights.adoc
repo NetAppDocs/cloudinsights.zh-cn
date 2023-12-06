@@ -151,7 +151,7 @@ image:Subscription_Cost_Calculators.png["显示基础架构和Kubnetes成本估�
 
 NOTE: 您必须是客户所有者或管理员，才能将 AWS Marketplace 订阅应用于现有 Cloud Insights 试用帐户。此外，您还必须拥有 Amazon Web Services （ AWS ）帐户。
 
-单击Amazon Marketplace链接将打开AWS link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["Cloud Insights"] 订阅页面，在此可以完成订阅。请注意，您在计算器中输入的值不会填充到 AWS 订阅页面中；您需要在此页面上输入总受管单元数。
+单击Amazon Marketplace链接将打开AWS https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["Cloud Insights"] 订阅页面，在此可以完成订阅。请注意，您在计算器中输入的值不会填充到 AWS 订阅页面中；您需要在此页面上输入总受管单元数。
 
 输入总受管单元数并选择 12 个月或 36 个月订阅期限后，单击 * 设置您的帐户 * 以完成订阅过程。
 

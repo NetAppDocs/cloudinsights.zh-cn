@@ -10104,7 +10104,6 @@
 注意：计算器仅用于估计。订阅时将设置您的确切定价。</block>
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">显示基础架构和Kubnetes成本估算计算器的订阅页面</block>
   <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e45641d408ce7d31aa423768c5c36d43" category="paragraph">单击Amazon Marketplace链接将打开AWS <block ref="18f95e1d1c5900ac50aeb97eecf08dc0" category="inline-link-macro-rx"></block> 订阅页面，在此可以完成订阅。请注意，您在计算器中输入的值不会填充到 AWS 订阅页面中；您需要在此页面上输入总受管单元数。</block>
   <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">完成 AWS 订阅过程后，您将返回到 Cloud Insights 环境。或者、如果环境不再处于活动状态(例如、您已注销)、则会转到NetApp BlueXP登录页面。当您再次登录到 Cloud Insights 时，您的订阅将处于活动状态。</block>
   <block id="d1f15ae17b64c6a381736fceb36824b1" category="paragraph">"订阅摘要"选项卡显示以下内容：</block>
   <block id="2638d109f7501322af782022ec53f096" category="list-text">当前版本</block>
@@ -12873,4 +12872,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="5ea4f4a83e327d73eba3355881f8048d" category="cell">测试功能警告我协议不可访问</block>
   <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">给定的Brocade FOS 8.1+设备只想通过HTTP或HTTPS进行通信-如果交换机安装了数字证书、则在尝试使用未加密HTTP与HTTPS进行通信时、交换机将引发HTTP错误。此测试功能会尝试与HTTP和HTTPS进行通信-如果此测试告诉您一个协议通过、您可以安全地保存此收集器、而不必担心另一个协议失败-此收集器会在收集期间尝试使用这两个协议、并且只有在这两个协议都不起作用时才会失败。</block>
   <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">如果监控操作员部署在自己的专用命名空间中、请删除此命名空间：</block>
+  <block id="8e457ed4c1581d4ae53957e8e78fd202" category="paragraph">单击Amazon Marketplace链接将打开AWS<block ref="3f7ea064444693988ba2187721fbf454" category="inline-link-rx"></block> 订阅页面，在此可以完成订阅。请注意，您在计算器中输入的值不会填充到 AWS 订阅页面中；您需要在此页面上输入总受管单元数。</block>
 </blocks>
