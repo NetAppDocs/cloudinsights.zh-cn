@@ -217,7 +217,7 @@ NOTE: 受管单元的总和可能与摘要部分中的数据收集器计数略�
 
 == 直接订阅并跳过试用版
 
-您也可以直接从订阅 Cloud Insights link:https://aws.amazon.com/marketplace/pp/B07HM8QQGY["AWS Marketplace"]，而不是先创建试用环境。订阅完成并设置好环境后，您将立即订阅。
+您也可以直接从订阅 Cloud Insights https://aws.amazon.com/marketplace/pp/prodview-pbc3h2mkgaqxe["AWS Marketplace"]，而不是先创建试用环境。订阅完成并设置好环境后，您将立即订阅。
 
 
 

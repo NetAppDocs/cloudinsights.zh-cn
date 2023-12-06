@@ -52,7 +52,6 @@
   <block id="96be5547ac122332a0bde6fd0939dc1a" category="cell">此时将显示警告横幅。您可能需要增加订阅的受管单元数。</block>
   <block id="8bc50a0b28a2cb63377733efc9b75798" category="cell">* 100% *</block>
   <block id="9abc552e8e9480b60ac735a93fa16b7c" category="section-title">直接订阅并跳过试用版</block>
-  <block id="ba90132b61afa4afdc494902547c62bf" category="paragraph">您也可以直接从订阅 Cloud Insights <block ref="71bf9afbc646fc95bce99ca169e1cd95" category="inline-link-macro-rx"></block>，而不是先创建试用环境。订阅完成并设置好环境后，您将立即订阅。</block>
   <block id="57e45a1f550d7e2a276b57b6bca05dca" category="summary">netstat 数据收集器配置</block>
   <block id="38fe3e3fc1af1752c621d2c58ca1d537" category="doc">Netstat 数据收集器</block>
   <block id="1d90778793975e863bbd8302e8bebf4f" category="paragraph">Cloud Insights 使用此数据收集器收集 Netstat 指标。</block>
@@ -12873,4 +12872,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="8eb07dc327c14e3d1af48bf6f3b15f2a" category="cell">给定的Brocade FOS 8.1+设备只想通过HTTP或HTTPS进行通信-如果交换机安装了数字证书、则在尝试使用未加密HTTP与HTTPS进行通信时、交换机将引发HTTP错误。此测试功能会尝试与HTTP和HTTPS进行通信-如果此测试告诉您一个协议通过、您可以安全地保存此收集器、而不必担心另一个协议失败-此收集器会在收集期间尝试使用这两个协议、并且只有在这两个协议都不起作用时才会失败。</block>
   <block id="aee5f180cc531b30ec6cf8dcf509d9b8" category="paragraph">如果监控操作员部署在自己的专用命名空间中、请删除此命名空间：</block>
   <block id="8e457ed4c1581d4ae53957e8e78fd202" category="paragraph">单击Amazon Marketplace链接将打开AWS<block ref="3f7ea064444693988ba2187721fbf454" category="inline-link-rx"></block> 订阅页面，在此可以完成订阅。请注意，您在计算器中输入的值不会填充到 AWS 订阅页面中；您需要在此页面上输入总受管单元数。</block>
+  <block id="cf15bbe6cd227a924c3717e47e474a31" category="paragraph">您也可以直接从订阅 Cloud Insights<block ref="eae66bec507f0b1bc5acf3fdd4b6a83b" category="inline-link-rx"></block>，而不是先创建试用环境。订阅完成并设置好环境后，您将立即订阅。</block>
 </blocks>
