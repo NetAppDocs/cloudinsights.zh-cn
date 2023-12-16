@@ -25,6 +25,50 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
+== 2023年12月
+
+
+
+=== 变更分析概览
+
+Kubernetes link:kubernetes_change_analytics.html["变更分析"] 为您提供一个一体化视图、用于查看Kubbernetes环境的最新更改。警报和部署状态触手可及。借助变更分析、您可以跟踪每个部署和配置变更、并将其与K8s服务、基础架构和集群的运行状况和性能相关联。
+
+image:ChangeAnalytitcs_Main_Screen.png["更改分析信息板"]
+
+
+
+=== Kubbernetes工作负载性能信息板
+
+工作负载性能可通过全面的Kubnetes工作负载性能信息板一目了然。快速查看有关卷、吞吐量、延迟和重新传输趋势的图形、以及环境中每个命名空间的工作负载流量表。筛选器可轻松聚焦到感兴趣的区域。
+
+image:K8s_Workload_performance.png["Workload Performance菜单、宽度=400"]
+
+image:K8s_Workload_performance_dashboard.png["工作负载性能信息板"]
+
+
+
+=== 在一个屏幕上查询详细信息
+
+在查询中、选择一行将打开一个侧面板、其中显示了选定行的属性、标注和指标详细信息、无需深入查看对象的登录页面即可提供有用的信息。行或侧面板中的链接便于导航。
+
+image:MetricQuerySlideoutPanel.png["用于衡量指标查询的\"插件\"面板"]
+
+
+
+=== Data Collector更新：
+
+* *Brocade FOS Rest*：此收集器已从"预览"中移出、现已公开发布。需要注意的事项：
++
+** FOS在FOS 8.2中引入了REST API。但是、某些功能(如路由)在9.0中仅获得REST API功能。
+** 如果您的网络结构包含更高版本的混合FOS资产8.2以及某些< 8.2的资产、则Cloud Insights FOS REST收集器将无法发现这些旧资产。您可以编辑FOS REST收集器、并为这些设备的IPv4地址构建一个逗号分隔列表、以便从该收集器中排除。
+
+
+* *SELinux*：Cloud Insights对Linux采集单元初始安装进行了增强，以确保在启用SELinux强制实施的情况下Linux环境中运行的稳定性。这些增强功能仅会影响_new_ AU部署；如果您有任何与AU升级相关的SELinux问题、请联系NetApp支持部门以修复您的SELinux配置。
+
+
+'''
+
+
 == 2023年11月
 
 
