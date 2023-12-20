@@ -12914,7 +12914,7 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同样、选择警报可提供有关警报的详细信息、包括触发警报的监控器以及显示警报可视时间线的图表。</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">webhook列表页面</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">在Webhook列表页面上、显示的是名称、创建者、创建日期、状态、安全、 和上次报告的字段。</block>
-  <block id="160f07c3cffd1000365e042aeeaeb427" category="cell">运行以下许可版本之一的计算机：
+  <block id="f58657b4c7806c2ae7d24a62c56cfb94" category="cell">运行以下许可版本之一的计算机：
 
 * CentOS (64位)：7.2到7.9、Stream 8、Stream 9
 * Debian (64位)：9和10
@@ -12925,11 +12925,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
 此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; SELinux
 如果您运行的是SELinux、建议在采集单元系统上执行以下命令：
 
- _sudo semanage fcontext-A -t user_t "//opt/netapp/kludsights (/.*)？"_
- _sudo reatorecon -R /op/NetApp/云 景点_
-===
-&gt;&gt;&gt;&gt;&gt; 主要</block>
+ sudo semanage fcontext-A -t user_t "//opt/netap/kludinsights (/.*)？"
+ sudo reatorecon -R /op/NetApp/云 景点</block>
 </blocks>
