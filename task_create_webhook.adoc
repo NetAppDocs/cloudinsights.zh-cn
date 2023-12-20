@@ -84,6 +84,12 @@ image:Webhook_Default_Parameters.png["Cloud Insights 默认 Webhook 参数"]
 
 
 
+=== webhook列表页面
+
+在Webhook列表页面上、显示的是名称、创建者、创建日期、状态、安全、 和上次报告的字段。
+
+
+
 == 选择监控器中的 Webhook 通知
 
 在中选择网络挂机通知 link:task_create_monitor.html#creating-a-monitor["监控"]，转至 * 警报 > 管理监控器 * 并选择所需的监控器，或者添加新的监控器。在 _set up team notifications _ 部分中，选择 _Webhook_ 作为交付方法。选择警报级别（严重，警告，已解决），然后选择所需的网络连接。

@@ -12922,4 +12922,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="48a3bc3cb899a72fd89e65ce93812a1b" category="inline-image-macro">部署故障详细信息面板</block>
   <block id="14414cf8ddb2977c5888a488317daa8d" category="paragraph"><block ref="14414cf8ddb2977c5888a488317daa8d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同样、选择警报可提供有关警报的详细信息、包括触发警报的监控器以及显示警报可视时间线的图表。</block>
+  <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">webhook列表页面</block>
+  <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">在Webhook列表页面上、显示的是名称、创建者、创建日期、状态、安全、 和上次报告的字段。</block>
 </blocks>
