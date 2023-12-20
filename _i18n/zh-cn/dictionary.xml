@@ -12151,16 +12151,6 @@ v9.2.4.2</block>
   <block id="8c5de4bef31a79ea191d0f5740fcd0d7" category="paragraph">通过Cloud Insights、可以更轻松地显示和查找数据收集器信息：</block>
   <block id="203714762dd5efde1be30c09220249eb" category="list-text">*数据收集器列表*的处理效率更高，这意味着显示和导航这些列表所需的时间大大减少。如果您的大型环境包含许多数据收集器、则在列出数据收集器时会有显著的改进。</block>
   <block id="213f6f47f9ff1cc9f4851725d89b4a7e" category="list-text">数据收集器支持表*已从.PDF文件移至基于.HTML的页面，导航速度更快，维护更方便。在此处查看新矩阵：<block ref="8ac5ec571a7bfa27b3b068af3462bfb9" category="inline-link-rx"></block></block>
-  <block id="76bcb8d1f49c96aae75d78c035df4a9b" category="cell">运行以下许可版本之一的计算机：
-
-* CentOS (64位)：7.2到7.9、Stream 8、Stream 9
-* Debian (64位)：9和10
-* Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4
-* Red Hat Enterprise Linux (64位)：7.2到7.9、8.1到8.7、9.1
-*洛基9.0、9.1
-* Ubuntu服务器：18.04和20.04 LTS
-
-此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
   <block id="bef6178937f26cf5776d5c67e6c1d23c" category="cell">Net-obler-L4-DS附加容错。</block>
   <block id="5549e3ded48b31ecc7b00b810fa6b7ea" category="cell">更正操作</block>
   <block id="dacff74646dd80517d0cffd123266041" category="cell">严重性/阈值</block>
@@ -12924,4 +12914,22 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同样、选择警报可提供有关警报的详细信息、包括触发警报的监控器以及显示警报可视时间线的图表。</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">webhook列表页面</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">在Webhook列表页面上、显示的是名称、创建者、创建日期、状态、安全、 和上次报告的字段。</block>
+  <block id="160f07c3cffd1000365e042aeeaeb427" category="cell">运行以下许可版本之一的计算机：
+
+* CentOS (64位)：7.2到7.9、Stream 8、Stream 9
+* Debian (64位)：9和10
+* Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4
+* Red Hat Enterprise Linux (64位)：7.2到7.9、8.1到8.7、9.1
+*洛基9.0、9.1
+* Ubuntu服务器：18.04和20.04 LTS
+
+此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
+
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; SELinux
+如果您运行的是SELinux、建议在采集单元系统上执行以下命令：
+
+ _sudo semanage fcontext-A -t user_t "//opt/netapp/kludsights (/.*)？"_
+ _sudo reatorecon -R /op/NetApp/云 景点_
+===
+&gt;&gt;&gt;&gt;&gt; 主要</block>
 </blocks>

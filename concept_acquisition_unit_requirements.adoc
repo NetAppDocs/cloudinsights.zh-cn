@@ -40,7 +40,15 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 *洛基9.0、9.1
 * Ubuntu服务器：18.04和20.04 LTS
 
-此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。 | 运行以下许可版本之一的计算机： * Microsoft Windows 10 64位* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。 
+此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
+
+<<<<<<< SELinux
+如果您运行的是SELinux、建议在采集单元系统上执行以下命令：
+
+ _sudo semanage fcontext-A -t user_t "//opt/netapp/kludsights (/.*)？"_
+ _sudo reatorecon -R /op/NetApp/云 景点_
+===
+>>>>> 主要 | 运行以下许可版本之一的计算机： * Microsoft Windows 10 64位* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。 
 
 
 | CPU | 2 个 CPU 核 | 相同 
