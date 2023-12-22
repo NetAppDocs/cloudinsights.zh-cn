@@ -10204,7 +10204,6 @@
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
   <block id="63c80d21f4266efe4883c2f6f1d26fc2" category="list-text">在数据保留期限之后清除(有关详细信息、请参见版本页面)。请注意、根据定义、监控器没有解决问题的条件、因此警报将保持_active__状态、并禁止所有后续的警报、这些警报与此监控器生成的_group_by_匹配、直到数据保留期限结束为止。</block>
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根据日志条目解决：在发现日志行时按照以下定义中所述解决警报、或者在数据保留期限过后清除。</block>
-  <block id="e3177fae37278722b7908e612a5b872b" category="list-text">SMB协议3.1及更早版本。  请注意、工作负载安全性不适用于使用FlexCache 的SMB配置。从ONTAP 9.7开始、在使用FlexCache的系统中、Fpolicy仅在NFS环境中受支持。</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1个受管单元= 4个库贝特斯vCPU</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">订阅计算器可帮助您根据所需的托管单元数量估算Cloud Insights订阅成本。当前值已预先填充、您可以调整这些值、以帮助您规划未来的预计增长。您可以调整基础架构和/或Kubornetes的值。</block>
   <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">托管单元使用情况视图</block>
@@ -12929,4 +12928,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
  sudo semanage fcontext-A -t user_t "//opt/netap/kludinsights (/.*)？"
  sudo reatorecon -R /op/NetApp/云 景点</block>
+  <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB协议3.1及更早版本。</block>
 </blocks>
