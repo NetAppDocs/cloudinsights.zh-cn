@@ -34,9 +34,6 @@ image:Webhooks_Slack_Create_Webhook.png["创建 Slack Webhook"]
 
 * 转至传入的 Webhooks ，单击 _Activate Incoming Webhook_ ，请求 _Add New Webhook_ ，然后选择要发布的通道。
 * 复制 Webhook URL 。您需要将此文件粘贴到 Cloud Insights webhook 配置中。
-+
-image:Webhook_Slack_Config.jpg["Slack Webhook URL"]
-
 
 
 
