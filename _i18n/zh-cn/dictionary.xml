@@ -3571,8 +3571,6 @@
   <block id="6d850c1b8745f8f15a5216d868cd9cd7" category="inline-image-macro">创建 Slack Webhook</block>
   <block id="1718403f08c32585848d7d3c2dcf311b" category="paragraph"><block ref="1718403f08c32585848d7d3c2dcf311b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ad8a37e07ad3b700a99d9565d7a44843" category="list-text">转至传入的 Webhooks ，单击 _Activate Incoming Webhook_ ，请求 _Add New Webhook_ ，然后选择要发布的通道。</block>
-  <block id="55077038253242c2be9a96af7725a814" category="inline-image-macro">Slack Webhook URL</block>
-  <block id="0c818f35934ac007c89967d7ee8faa3c" category="paragraph"><block ref="0c818f35934ac007c89967d7ee8faa3c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="703a2fff4ffc0a10f86335937d4af331" category="list-text">为 webhook 指定一个有意义的名称，例如 "slack Webhook" 。</block>
   <block id="82097f3f5575ce3befccf2d55fab468d" category="list-text">在 _Template Type_ 下拉列表中，选择 * 可宽延 * 。</block>
   <block id="b8be5d787d20404395e80ce1c1614ddb" category="inline-image-macro">Slack webhook 模板</block>
@@ -12929,4 +12927,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
  sudo semanage fcontext-A -t user_t "//opt/netap/kludinsights (/.*)？"
  sudo reatorecon -R /op/NetApp/云 景点</block>
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB协议3.1及更早版本。</block>
+  <block id="44922767e817f1f23f68cda06b3e0da9" category="list-text">您可以阅读有关Cloud Insights安全性的信息 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
+  <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">阅读了解Cloud Insights安全性 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
+  <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp安全通报</block>
+  <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以查看NetApp提供的安全建议 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
 </blocks>

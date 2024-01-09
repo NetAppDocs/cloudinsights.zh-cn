@@ -26,6 +26,8 @@ Cloud Insights 使用本地服务器上安装的一个或多个采集单元收�
 
 NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步采集单元计算机上的时间。
 
+阅读了解Cloud Insights安全性 link:security_overview.html["此处"]。
+
 
 
 == 添加 Linux 采集单元

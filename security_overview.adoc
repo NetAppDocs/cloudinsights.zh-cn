@@ -108,3 +108,9 @@ Cloud Insights 遵循行业最佳实践，并使用内部和外部安全专业�
 === 合规性
 
 Cloud Insights 对外部许可的 CPA 公司的安全性，流程和服务执行独立的第三方审核和验证，包括完成 SOC 2 审核。
+
+
+
+=== NetApp安全通报
+
+您可以查看NetApp提供的安全建议 link:https://security.netapp.com/advisory/["此处"]。
