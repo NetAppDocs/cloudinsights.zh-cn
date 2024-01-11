@@ -122,8 +122,7 @@ security login role create -vserver <vservername> -role csrole -cmddirname vserv
 security login role create -vserver <vservername> -role csrole -cmddirname "vserver fpolicy" -access all
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 ....
-security login create -user-or-group-name CsUser -application ontapi -authtMethod password -Role csRole -vserver <vservername>
-
+ security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
 
 
 == 配置数据收集器
