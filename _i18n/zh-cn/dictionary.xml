@@ -765,7 +765,6 @@
   <block id="b8ebf4409c7ad7b050814935893a9c1f" category="paragraph">但是，如果满足以下任一条件，请勿启用 _SSO 用户自动配置 _ ：</block>
   <block id="0a4ddee9467e17088a4ed61c86d33e29" category="list-text">您的组织具有多个 Cloud Insights 租户</block>
   <block id="5fa16e988bd57824af7b89bb4e983aef" category="list-text">您的组织不希望联合域中的任何 / 每个用户对 Cloud Insights 租户具有一定程度的自动访问权限。_at this point in time ， we do not have the ability to use groups to control role access with this op选项 _ 。</block>
-  <block id="2837a19125070133e6e88f25d23f955b" category="summary">您可以创建标注规则，以便根据定义的条件自动将标注应用于多个资产。</block>
   <block id="e42dae64f8e80d611352315992a2460d" category="doc">创建应用程序</block>
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">要跟踪与环境中运行的特定应用程序相关的数据，您可以在 Cloud Insights 中定义这些应用程序。</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">如果要将应用程序与业务实体关联，必须在定义该应用程序之前创建业务实体。</block>
@@ -12931,5 +12930,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">阅读了解Cloud Insights安全性 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp安全通报</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以查看NetApp提供的安全建议 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
-  <block id="5d0efaff5017b27ebd557fe6acfbf979" category="paragraph">security login create -user-or-group-name CsUser -application ontapi -authtMethod password -Role csRole -vserver &lt;vservername&gt;</block>
+  <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">您可以定义应用程序、然后根据需要将其应用于环境中的资产。</block>
 </blocks>

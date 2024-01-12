@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_create_application.html 
-summary: 您可以创建标注规则，以便根据定义的条件自动将标注应用于多个资产。 
+summary: 您可以定义应用程序、然后根据需要将其应用于环境中的资产。 
 keywords: application, create application, 
 ---
 = 创建应用程序
