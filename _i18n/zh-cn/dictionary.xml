@@ -12680,19 +12680,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b0ee45b6cf0875310e7eca0039f3378c" category="cell">ECS的用户ID</block>
   <block id="fe98497efedbe156ecc4b953aea77e07" category="inline-xref">卸载</block>
   <block id="7b4d917229221f1292dd0dc7b693cccf" category="inline-xref">重新安装</block>
-  <block id="6491871b517e6620a9b0675a45a5322a" category="cell">检索事件导出器Pod的名称：
-
-<block ref="981dffeaa3be6364470478327b8dd179" prefix=" " category="inline-code"></block>
-
-此名称应为"NetApp-CI-event-exporter "或"event-exporter。  接下来、编辑监控代理<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，然后设置log_file的值，以反映在上一步中找到的相应事件导出器POD名称。  更具体地说、log_file应设置为"/var/log/containers/NetApp-CI-event-exporter .log"或"/var/log/containers/event-exporter *。log"
-
-....
- -关键字：log_file
-   值：
-   —/var/log/containers/NetApp-CI-event-exporter *。log
-....
-
-或者、也可以这样做 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理。</block>
   <block id="2ec4305521a87758c3d2cf93b9fd5b14" category="cell">在输入Cognos报告计划时间时、有时会在计划时间中额外增加"m"。例如、如果我输入时间为"02：15 PM"、则可能会添加一个额外的字符："02：15 PMM"(或PMM)。当我单击"外部"时、它将更改为"凌晨2：15 "。
 
 我可以保存报告、但当我重新打开已保存的报告时、计划时间显示为AM (即上午)、无论我在计划时间中输入的是AM还是PM。</block>
@@ -12931,4 +12918,9 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp安全通报</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以查看NetApp提供的安全建议 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
   <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">您可以定义应用程序、然后根据需要将其应用于环境中的资产。</block>
+  <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">检索事件导出器Pod的名称：</block>
+  <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">此名称应为"NetApp-CI-event-exporter "或"event-exporter。  接下来、编辑监控代理<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，然后设置log_file的值，以反映在上一步中找到的相应事件导出器POD名称。  更具体地说、log_file应设置为"/var/log/containers/NetApp-CI-event-exporter .log"或"/var/log/containers/event-exporter *。log"</block>
+  <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">或者、也可以这样做 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理。</block>
+  <block id="5be7a9b90aa61d46f99cd06715e40a54" category="cell">我发现NetApp Kubenetes监控操作员部署的POD因资源不足而崩溃。</block>
+  <block id="740cd109d583d1b28a1ebd66338906b7" category="cell">请参见NetApp Kubnetes监控操作员 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 根据需要增加CPU和/或内存限制。</block>
 </blocks>

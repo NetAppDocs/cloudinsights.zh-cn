@@ -534,18 +534,26 @@ kubect get all -n <namespace>| grep -i psp (应显示未找到任何内容)
 | 为什么我看到两个监控操作员Pod正在运行、一个名为NetApp-CI-monitoring operator-Pod <pod>、另一个名为monitoring operator-Pod？<pod> | 自2023年10月12日起、Cloud Insights已对运营商进行重构、以更好地为用户服务；要全面采用这些更改、您必须执行 <<uninstalling,删除旧运算符>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,安装新的>>。 
 
 
-| 我的Kubbernetes事件意外停止向Cloud Insights报告。 | 检索事件导出器Pod的名称：
+| 我的Kubbernetes事件意外停止向Cloud Insights报告。  a| 
+检索事件导出器Pod的名称：
 
  `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/`
-
 此名称应为"NetApp-CI-event-exporter "或"event-exporter。  接下来、编辑监控代理 `kubectl -n netapp-monitoring edit agent`，然后设置log_file的值，以反映在上一步中找到的相应事件导出器POD名称。  更具体地说、log_file应设置为"/var/log/containers/NetApp-CI-event-exporter .log"或"/var/log/containers/event-exporter *。log"
 
 ....
- -关键字：log_file
-   值：
-   —/var/log/containers/NetApp-CI-event-exporter *。log
+fluent-bit:
+...
+- name: event-exporter-ci
+  substitutions:
+  - key: LOG_FILE
+    values:
+    - /var/log/containers/netapp-ci-event-exporter*.log
+...
 ....
+或者、也可以这样做 <<uninstalling,卸载>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,重新安装>> 代理。
 
-或者、也可以这样做 <<uninstalling,卸载>> 和 <<installing-the-netapp-kubernetes-monitoring-operator,重新安装>> 代理。 
+
+
+| 我发现NetApp Kubenetes监控操作员部署的POD因资源不足而崩溃。 | 请参见NetApp Kubnetes监控操作员 link:telegraf_agent_k8s_config_options.html["配置选项"] 根据需要增加CPU和/或内存限制。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。
