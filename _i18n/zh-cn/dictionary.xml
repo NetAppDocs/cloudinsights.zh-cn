@@ -12923,4 +12923,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="8878dc3c5cd3e696f38ddc994eba9593" category="paragraph">或者、也可以这样做 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="2be7be71447d2c340aab35ab29970e30" category="inline-xref-macro-rx"></block> 代理。</block>
   <block id="5be7a9b90aa61d46f99cd06715e40a54" category="cell">我发现NetApp Kubenetes监控操作员部署的POD因资源不足而崩溃。</block>
   <block id="740cd109d583d1b28a1ebd66338906b7" category="cell">请参见NetApp Kubnetes监控操作员 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 根据需要增加CPU和/或内存限制。</block>
+  <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">关于安全的注意事项</block>
+  <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">要删除NetApp Kubernetes监控操作员在集群范围内查看机密的权限、请在安装之前从_operator-setup.yaml文件中删除以下资源：</block>
+  <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">如果是升级、请同时从集群中删除资源：</block>
+  <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">如果启用了"变更分析"、请修改_AgentConfiguration_或_operator-config.yaml_以取消注释change-management部分、并在change-management部分下包括_kindsToIgnoreFamWatch："secnes"_。记下此行中单引号和双引号的存在和位置。</block>
 </blocks>
