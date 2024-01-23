@@ -12927,4 +12927,9 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="1169bc31edb2122ab9876b9b0289225c" category="paragraph">要删除NetApp Kubernetes监控操作员在集群范围内查看机密的权限、请在安装之前从_operator-setup.yaml文件中删除以下资源：</block>
   <block id="1790cdbccc4ddd4389eb90d73e043f4b" category="paragraph">如果是升级、请同时从集群中删除资源：</block>
   <block id="a66e68a20b3b94a700f3a3b9baa06764" category="paragraph">如果启用了"变更分析"、请修改_AgentConfiguration_或_operator-config.yaml_以取消注释change-management部分、并在change-management部分下包括_kindsToIgnoreFamWatch："secnes"_。记下此行中单引号和双引号的存在和位置。</block>
+  <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">2024年1月</block>
+  <block id="03fe115860a60e02eaf2df94adba350a" category="section-title">提高了工作负载安全性</block>
+  <block id="c8bb883652ae26ad6b1ae229879d02ef" category="paragraph">工作负载安全性包括以下改进：</block>
+  <block id="39d95be3c95b6807c34781066d955324" category="list-text">检测算法已得到增强、可减少误报警告的数量。</block>
+  <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">用户界面在加载、显示和滚动"验证"页面时的性能得到了提高。</block>
 </blocks>
