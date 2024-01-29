@@ -12932,4 +12932,12 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="c8bb883652ae26ad6b1ae229879d02ef" category="paragraph">工作负载安全性包括以下改进：</block>
   <block id="39d95be3c95b6807c34781066d955324" category="list-text">检测算法已得到增强、可减少误报警告的数量。</block>
   <block id="ee1e8678e1e060e50af00e870fcbfa17" category="list-text">用户界面在加载、显示和滚动"验证"页面时的性能得到了提高。</block>
+  <block id="a06394795b8f53802b059da7ff53b836" category="section-title">试用您尚未使用的Cloud Insights功能</block>
+  <block id="136e1a5570d9865595898fcb8d0bf787" category="paragraph">除了Cloud Insights的初始试用之外、您还可以利用 <block ref="0a393d5915f3031e3913a845dbcd9869" category="inline-link-macro-rx"></block>。例如、如果您订阅了Cloud Insights并一直在监控存储和虚拟机、则在向环境添加Kubennetes时、您将自动开始试用30天的Kubennetes Observability。在试用期结束之前、Kubbernetes可观察性受管单元的使用量不会计入您订阅的授权。</block>
+  <block id="5dbb51f66b1a3074265f272db5200fa9" category="section-title">我的工作负载运行状况如何？</block>
+  <block id="724d9fcddedbe051bb60333c24d60088" category="paragraph">工作负载运行状况可在* Kubernetes &gt; Explore &gt; Workloads*页面上一目了然地查看、因此您可以快速查看哪些工作负载运行良好以及哪些工作负载可能需要一些帮助。</block>
+  <block id="32881fe09cf4dd3fd8228ed220fe9e0b" category="inline-image-macro">工作负载运行状况概览</block>
+  <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">数据域标识</block>
+  <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">数据域收集器已得到改进、可以更好地识别HA系统、以确保故障转移事件的持久性。此更改将发生原因对HA系统中的Data Domain设备进行*一次性*重新标识、之后会对要删除的资产上的任何标注进行发生原因(因为这些阵列将重新标识)。您需要将标注重新附加到Data Domain对象。</block>
 </blocks>

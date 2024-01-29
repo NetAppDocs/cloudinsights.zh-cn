@@ -29,6 +29,45 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
+=== 试用您尚未使用的Cloud Insights功能
+
+除了Cloud Insights的初始试用之外、您还可以利用 link:/concept_subscribing_to_cloud_insights.html#module-trials["单元试用"]。例如、如果您订阅了Cloud Insights并一直在监控存储和虚拟机、则在向环境添加Kubennetes时、您将自动开始试用30天的Kubennetes Observability。在试用期结束之前、Kubbernetes可观察性受管单元的使用量不会计入您订阅的授权。
+
+
+
+=== 我的工作负载运行状况如何？
+
+工作负载运行状况可在* Kubernetes > Explore > Workloads*页面上一目了然地查看、因此您可以快速查看哪些工作负载运行良好以及哪些工作负载可能需要一些帮助。
+
+image:WorkloadHealth.png["工作负载运行状况概览"]
+
+
+
+=== Data Collector 更新
+
+
+
+==== 数据域标识
+
+数据域收集器已得到改进、可以更好地识别HA系统、以确保故障转移事件的持久性。此更改将发生原因对HA系统中的Data Domain设备进行*一次性*重新标识、之后会对要删除的资产上的任何标注进行发生原因(因为这些阵列将重新标识)。您需要将标注重新附加到Data Domain对象。
+
+
+
+=== 提高了工作负载安全性
+
+工作负载安全性包括以下改进：
+
+* 检测算法已得到增强、可减少误报警告的数量。
+* 用户界面在加载、显示和滚动"验证"页面时的性能得到了提高。
+
+
+'''
+
+
+== 2024年1月
+
+
+
 === 提高了工作负载安全性
 
 工作负载安全性包括以下改进：
