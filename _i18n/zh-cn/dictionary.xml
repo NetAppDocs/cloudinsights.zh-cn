@@ -12941,4 +12941,20 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="255f8c35566fa90bd6092dbfbebecfe2" category="paragraph">数据域收集器已得到改进、可以更好地识别HA系统、以确保故障转移事件的持久性。此更改将发生原因对HA系统中的Data Domain设备进行*一次性*重新标识、之后会对要删除的资产上的任何标注进行发生原因(因为这些阵列将重新标识)。您需要将标注重新附加到Data Domain对象。</block>
   <block id="6961ed92ff5a391c2815df010a84b302" category="paragraph">除了Cloud Insights的初始试用之外、您还可以利用 <block ref="5e0a10d0899fa6ad6bbdfd72b26442bb" category="inline-link-macro-rx"></block>。例如、如果您订阅了Cloud Insights并一直在监控存储和虚拟机、则在向环境添加Kubennetes时、您将自动开始试用30天的Kubennetes Observability。在试用期结束之前、Kubbernetes可观察性受管单元的使用量不会计入您订阅的授权。</block>
   <block id="3a16a434dce801908698971e622dd4d6" category="paragraph">新的工作负载安全API可用于管理数据收集器(添加/更新/删除)和代理。导航到*Admin &gt; API Access &gt; API Documentation*并选择_Workload Security_ API类型以了解更多信息。</block>
+  <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">工作负载安全性可与ONTAP集成、以接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
+  <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">与ONTAP集成访问被拒绝</block>
+  <block id="c74fa865502a71610c2bcdb74da1afac" category="paragraph">ONTAP访问被拒绝功能会在NAS环境(NFS和SMB)中使用工作负载分析来主动检测文件操作失败(即尝试执行其无权限操作的用户)并发出警告。这些失败的文件操作通知(尤其是在出现与安全相关的故障时)将进一步有助于在早期阶段阻止内部攻击。</block>
+  <block id="454eafdb8e7a9a5507e578af411d82d5" category="paragraph">Cloud Insights工作负载安全性与ONTAP相集成、可接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
+  <block id="265cb660bad001dd1edf92723a8d4d4e" category="list-text">最低ONTAP版本：9.13.0。</block>
+  <block id="b125c8dabe7599cb2999397450c6d677" category="list-text">工作负载安全管理员必须在添加新收集器或编辑现有收集器时启用"访问被拒绝"功能、方法是选中"高级配置"下的_Monitor Access Denied Events_复选框。</block>
+  <block id="1a4be5ca764787caaf41b91668c3ea9f" category="inline-image-macro">在ONTAP收集器高级配置中启用拒绝访问</block>
+  <block id="6e0dfd81ddc34b1c1736fb0d236a55db" category="paragraph"><block ref="6e0dfd81ddc34b1c1736fb0d236a55db" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8e590479d69be0679e0d2b7c5a78d3ab" category="paragraph">如果使用集群管理凭据添加Data Collector、则无需新权限。</block>
+  <block id="a3fef797358352dd57f209719f4590ca" category="paragraph">如果使用自定义用户(例如、-CsUser_)添加收集器并授予该用户权限、请按照以下步骤为工作负载安全性授予向ONTAP注册"拒绝访问"事件所需的权限。</block>
+  <block id="04b888e98eb37f7a0061538c4af0da8a" category="paragraph">对于具有_cluster-_凭据的CsUser、从ONTAP命令行执行以下命令。请注意、_csRole"是自定义角色、而-CsUser_是ONTAP自定义用户。</block>
+  <block id="7a1aa4b5b013e91e379aedbfb6a633f3" category="paragraph">对于凭据为_svm_的CsUser、从ONTAP命令行执行以下命令：</block>
+  <block id="6b112db6b76b4a3d519b727558f34cb6" category="section-title">拒绝访问事件</block>
+  <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">从ONTAP系统获取事件后、Workload Security Foreness页面将显示Access Denied Events。除了显示的信息之外、您还可以通过将_Desired Activity_列从齿轮图标添加到表中来查看特定操作缺少的用户权限。</block>
+  <block id="fb4e4dc5cb185934a7a50a8b788d9a18" category="inline-image-macro">拒绝访问事件示例</block>
+  <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
