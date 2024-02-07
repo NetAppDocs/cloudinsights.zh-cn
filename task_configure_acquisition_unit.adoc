@@ -38,7 +38,7 @@ NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络�
 
 .Linux 采集单元安装步骤
 . 以管理员或帐户所有者身份登录到您的 Cloud Insights 环境。
-. 单击*AObservability > Collectors > Acquisition Unit >+Acquisition Unit*
+. 单击*可观察性>收集器>采集单元>+采集单元*
 +
 系统将显示 _Install Acquisition Unit" 对话框。选择 Linux 。
 

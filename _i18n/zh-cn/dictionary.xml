@@ -12599,7 +12599,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="49eec5d17a233960170b22a7e35d15a7" category="paragraph">显示“检查”的行处于活动状态。"X"表示非活动设备。</block>
   <block id="94199173f712baeb6cb5de3780bf07fa" category="cell">Inventory Recent status：unreached data unreached -Array reported 0 volume</block>
   <block id="7e7b57722f915378d4f91beba7dfeeda" category="cell">通常表示授权(而非身份验证)问题描述。请确保您的凭据正确无误、并且用户名有权列出所有卷并查看其属性。</block>
-  <block id="ff4b0f3d8b62285c71936aba1b29d4cc" category="list-text">单击*AObservability &gt; Collectors &gt; Acquisition Unit &gt;+Acquisition Unit*</block>
   <block id="293bcc0e7d6a9406090147d0fa8794ee" category="list-text">单击*可观察性&gt;收集器&gt;采集单元*以检查采集单元的状态。</block>
   <block id="2e275d8e6835810edeb214f1d2d93419" category="list-text">单击*Observability &gt; Collectors &gt; Acquisition Unit &gt;+Acquisition Unit*。</block>
   <block id="304161318d9b8fb676a16c964b6f8f50" category="list-text">单击*&gt;可观察性&gt;收集器&gt;采集单元*以检查采集单元的状态。</block>
@@ -12957,4 +12956,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="d3717aec38baca9f86dd49ee974d2ccf" category="paragraph">从ONTAP系统获取事件后、Workload Security Foreness页面将显示Access Denied Events。除了显示的信息之外、您还可以通过将_Desired Activity_列从齿轮图标添加到表中来查看特定操作缺少的用户权限。</block>
   <block id="fb4e4dc5cb185934a7a50a8b788d9a18" category="inline-image-macro">拒绝访问事件示例</block>
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fa7fb7843c2ca38571ee7a2500a1072e" category="list-text">单击*可观察性&gt;收集器&gt;采集单元&gt;+采集单元*</block>
 </blocks>
