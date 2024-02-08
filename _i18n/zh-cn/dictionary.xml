@@ -12490,42 +12490,9 @@ kubect get all -n &lt;namespace&gt;| grep -i psp (应显示未找到任何内容
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">我没有看到为集群中的Kubnetes CronJobs收集任何指标。</block>
   <block id="81467098050f12a1f4ece9dea82405f0" category="cell">验证您的Kubbernetes版本(即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是v1.20.x或更低版本、则这是预期的限制。  随NetApp Kubernetes监控操作员部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。</block>
-  <block id="856e2dfd00ab497c6f91560e87be666f" category="cell">编辑_AgentConfiguration_中的NetApp-monitoring配置部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息、请参见操作员的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
-
-注意： 如果您使用的是Cloud Insights联邦版、则对_su_的使用有限制的用户将无法收集Docker指标、因为要访问Docker套接字、需要以root用户身份运行预制数据容器或使用_su_将预制数据用户添加到Docker组。默认情况下、Docker指标收集和_su_的使用处于启用状态；要同时禁用这两者、请删除_AgentConfiguration_文件中的_tenderaf.Docker条目：
-
-...
-规格：
-...
-电报：
-    ...
-     -名称：Docker
-            运行模式：
-              - DemonSet
-            可进行的其他操作：
-              -关键字：Docker _UNIS_sdoc_PLATORY
-                值：UNIX：//run/Docker。sk
-    ...
-...</block>
   <block id="9de497f607f8a73311408d3d7b337399" category="cell">我在Telegraf日志中看到重复出现以下错误消息：
 
  E！[agent]写入Outputs.http：POST时出错 <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> 超过上下文期限(等待标头时超出客户端超时)</block>
-  <block id="34e1dafcca7166ebef6820ec79ddd7cf" category="cell">编辑每个Telegraf配置文件(即/etc/telegraf/Telegraf.d/*.conf)，并增加Telegraf输出插件的超时。  例如、在每个.conf文件中、替换所有实例...
-
-[[Outputs.http]]
-...
-超时="5s"
-...
-
-
-以下内容：
-
-[[Outputs.http]]
-...
-超时="10s"
-...
-
-然后、重新启动Telegraf。</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">安装或升级操作员之前</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">安装Monitoring Operator</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">metricRegationInterval</block>
@@ -12958,4 +12925,22 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="ad7abfbe23406b97a783bcc153795841" category="paragraph"><block ref="ad7abfbe23406b97a783bcc153795841" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fa7fb7843c2ca38571ee7a2500a1072e" category="list-text">单击*可观察性&gt;收集器&gt;采集单元&gt;+采集单元*</block>
   <block id="f76b3457c69f53525d8080927e20d41d" category="section-title">2024年2月</block>
+  <block id="80423bf256c338862372efdf1e8a1473" category="cell">编辑_AgentConfiguration_中的"特拉夫"部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息、请参见操作员的  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。
+
+注意： 如果您使用的是Cloud Insights联邦版、则对_su_的使用有限制的用户将无法收集Docker指标、因为要访问Docker套接字、需要以root用户身份运行预制数据容器或使用_su_将预制数据用户添加到Docker组。默认情况下、Docker指标收集和_su_的使用处于启用状态；要同时禁用这两者、请删除_AgentConfiguration_文件中的_tenderaf.Docker条目：
+
+...
+规格：
+...
+电报：
+    ...
+     -名称：Docker
+            运行模式：
+              - DemonSet
+            可进行的其他操作：
+              -关键字：Docker _UNIS_sdoc_PLATORY
+                值：UNIX：//run/Docker。sk
+    ...
+...</block>
+  <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">编辑_AgentConfiguration_中的"特拉夫"部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息、请参见操作员的  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
 </blocks>
