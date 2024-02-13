@@ -12636,7 +12636,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="dfe1b74026ff6682b451240881e76be4" category="list-text">8777、用于"保证 性能"服务</block>
   <block id="ef4b4f7d7c8a48dd95b30b14ab90dd62" category="section-title">增强的工作负载安全性</block>
   <block id="ed2b4bf5978e7c4c0546efaff8756311" category="paragraph">工作负载安全性已通过以下功能得到改进：</block>
-  <block id="b1f51a36e1f83c62064c47e5488e10c9" category="list-text">*拒绝访问*：工作负载安全性与ONTAP集成、可接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
   <block id="23cda888e57eaac9d48f4167127da1b8" category="cell">我的Kubbernetes事件意外停止向Cloud Insights报告。</block>
   <block id="51a7a0a9ece41f3000834202c4f9b529" category="paragraph">此数据收集器从 EMC ECS 存储系统采集清单和性能数据。在配置方面、数据收集器需要ECS集群的IP地址或主机名以及用户名和密码。</block>
   <block id="f62de35c42266dd92c1a10e3daf56fd2" category="list-text">ECS集群的IP地址或主机名</block>
@@ -12943,4 +12942,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
     ...
 ...</block>
   <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">编辑_AgentConfiguration_中的"特拉夫"部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息、请参见操作员的  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="1ec5bf0286a53dd8fc091a9a9b037623" category="inline-link-macro">"访问被拒绝"事件</block>
+  <block id="f6682194485ec630bf22981ff1031e29" category="list-text">*访问被拒绝*：工作负载安全性与ONTAP集成以接收 <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> 并提供额外的分析和自动响应层。</block>
 </blocks>

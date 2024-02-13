@@ -160,7 +160,7 @@ image:StorageNodeSupportData.png["存储节点支持信息"]
 
 工作负载安全性已通过以下功能得到改进：
 
-* *拒绝访问*：工作负载安全性与ONTAP集成、可接收"拒绝访问"事件、并提供额外的分析和自动响应层。
+* *访问被拒绝*：工作负载安全性与ONTAP集成以接收 link:concept_ws_integration_with_ontap_access_denied.html[""访问被拒绝"事件"] 并提供额外的分析和自动响应层。
 * *允许的文件类型*：如果检测到已知文件扩展名的勒索软件攻击、则可以将该文件扩展名添加到 link:ws_allowed_file_types.html["允许的文件类型"] 列表以防止不必要的警报。
 
 
