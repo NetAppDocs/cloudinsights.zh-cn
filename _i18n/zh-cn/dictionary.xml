@@ -12946,4 +12946,5 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="f3f66b8b59d9644a598941acf89639a4" category="section-title">增强型反洗钱检测ML算法</block>
   <block id="c8bf494d8f410006e7c19ac8fa00ded4" category="paragraph">工作负载安全性包括新的第二代勒索软件检测ML算法、可更快、更准确地检测最复杂的攻击。</block>
   <block id="c082d0e57443bf019246b67c029c585b" category="paragraph">行为的"季节性"：周末行为可能与工作日不同、早晨行为可能与下午不同。工作负载安全算法会将这种季节性因素考虑在内。</block>
+  <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAP访问被拒绝集成</block>
 </blocks>
