@@ -5868,10 +5868,6 @@
   <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">与 ONTAP 通信以处理 Fpolicy 事件</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">事件速率检查器</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">请参见 <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> 有关规模估算的信息的文档。</block>
-  <block id="ce090ea7bc89bd5ec37a141c636c69de" category="summary">此主题尚未准备就绪。</block>
-  <block id="4a00b82df023b0f0fb303ec1d7a1ebfc" category="doc">此主题正在构建中</block>
-  <block id="27871ea7cd2bc4814101455654163190" category="paragraph">敬请原谅我们在 Cloud Insights 预览期间的亮相。许多主题仍在构建中，这似乎是其中一个主题。请与我们联系，并经常查看文档更新。</block>
-  <block id="ba94b4c8120f35a3763a9a410b2b6647" category="image-alt">正在构建</block>
   <block id="961208029de208a5d667bc4557cd4628" category="summary">用作采集单元的服务器或 VM 必须满足最低要求</block>
   <block id="1e6f2d5fb7c78a27ba0dc78e9cc7c9b5" category="doc">采集单元要求</block>
   <block id="15948ad6c9474a20f044eee0ea809fda" category="paragraph">您必须安装采集单元（ AU ），才能从基础架构数据收集器（存储， VM ，端口， EC2 等）中获取信息。在安装采集单元之前，您应确保环境满足操作系统， CPU ，内存和磁盘空间要求。</block>
@@ -12947,4 +12943,32 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="c8bf494d8f410006e7c19ac8fa00ded4" category="paragraph">工作负载安全性包括新的第二代勒索软件检测ML算法、可更快、更准确地检测最复杂的攻击。</block>
   <block id="c082d0e57443bf019246b67c029c585b" category="paragraph">行为的"季节性"：周末行为可能与工作日不同、早晨行为可能与下午不同。工作负载安全算法会将这种季节性因素考虑在内。</block>
   <block id="1c31d515d2e78422350a8dfc6a331a38" category="sidebar">ONTAP访问被拒绝集成</block>
+  <block id="2b954573bdfbf3e6f7cd041ebd3f3682" category="section-title">可用性改进</block>
+  <block id="dd02e3f2ac2d39316775658f3f6fef9c" category="paragraph">从右下拉列表中选择_Export as Image_、保存当前信息板的*快照*。Cloud Insights会创建当前小工具状态的.PNG。</block>
+  <block id="d53957f8a1aee068b3b3326766554570" category="inline-image-macro">导出为图像下拉列表</block>
+  <block id="37cada8c4f46b21c02df2939356a5c89" category="paragraph"><block ref="37cada8c4f46b21c02df2939356a5c89" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5d2a24755cf47ed77e9e34a1df4ef815" category="paragraph">*对象和度量选择*比以往任何时候都更容易用于小组件、显示器等 选择所需的对象类型、然后在单独的下拉列表中选择与该对象相关的度量指标。</block>
+  <block id="2f4107aef619081a1d89d75c6a93321e" category="inline-image-macro">对象选择器和度量选择器分开</block>
+  <block id="ea67434ac421e1de9d939a1647e74e51" category="paragraph"><block ref="ea67434ac421e1de9d939a1647e74e51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cda669774eba29c91f639af08adb1a4a" category="paragraph">*通过选择这些页面顶部的图标、将数据收集器和采集单元*导出为.CSV。</block>
+  <block id="6be2ffb5d4b79f5272ab1074fc6603b6" category="inline-image-macro">将跟单信用证和澳大利亚(AU)列表导出为.csv格式</block>
+  <block id="c6d0dc8d7ec51429c2c7300a7f8f69a4" category="paragraph"><block ref="c6d0dc8d7ec51429c2c7300a7f8f69a4" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d480fd0b5ff9d58e0bc8785e82c7eb5b" category="paragraph">我们*重新组织了“帮助”&gt;“支持”*页面，以便更容易找到您要查找的内容。由于您要求提供这些内容，我们在此页面上添加了指向*API Swagger *和用户文档的直接链接。</block>
+  <block id="6b2eef8adc0e95db95014a8b08724379" category="inline-image-macro">API链接</block>
+  <block id="4c976a75386e11bb66ac24e8ee6af999" category="paragraph"><block ref="e8dee020306df51938caf982452d1304" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="95489108ef80ef1f702494f344d95ea2" category="paragraph">如果此对象有登录页面、则"Alerts"(警报)列表页面上"RTKEERedOn"(触发)列中的*链接*将导航到相应的登录页面。</block>
+  <block id="c032f8e7ba44d91d7b9c57d652e0a033" category="inline-image-macro">触发警报字段中的链接</block>
+  <block id="fffe3fe21c35b168a145c010bce26160" category="paragraph"><block ref="fffe3fe21c35b168a145c010bce26160" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="139836acf897f8ef3c4fb19d21c35155" category="section-title">查看命名空间中的所有更改</block>
+  <block id="9143a0f1ce37b1e53b957a49833f9322" category="paragraph">现在、您可以在选择集群和命名空间时查看更改时间线。以前、还必须选择工作负载。  按集群和命名空间筛选时、该命名空间中所有工作负载更改的时间线将显示在一行中。</block>
+  <block id="5ed610ab86efcfb43954fb9ef0b7a72e" category="inline-image-macro">命名空间时间线</block>
+  <block id="0b0562ef30238191f797d9225f3024c0" category="paragraph"><block ref="0b0562ef30238191f797d9225f3024c0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c91be2a24e6b73c8e2a2275adc2bef10" category="section-title">相关警报日志</block>
+  <block id="5c5683919f4c326b9a4d4e83bff8dd91" category="paragraph">查看日志警报时、相关日志条目将显示在新表中。  如果日志条目与警报位于相同的来源和时间范围内、并且受相同条件的约束、则日志条目是相关的。选择"Analyze Logs"(分析日志)以进一步了解。</block>
+  <block id="cf7dab299bf1390e2d44ac5a3f5aef74" category="inline-image-macro">日志警报登录页面上的相关日志</block>
+  <block id="29869d564dea811db493659e276c4afb" category="paragraph"><block ref="29869d564dea811db493659e276c4afb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c15484a80236e65cd94c3fa859c0aca2" category="section-title">收集ONTAP交换机数据</block>
+  <block id="ff435ef5470e714750e57427557cc34e" category="inline-link-macro">交换机信息</block>
+  <block id="41275a535677f79ff347e01bc530c176" category="inline-link-macro">权限</block>
+  <block id="006486695c60df697c0abcefc81426d9" category="paragraph">Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 并具有相应的 <block ref="8500b277c562368e86ad7d69d1827230" category="inline-link-macro-rx"></block> 设置。</block>
 </blocks>

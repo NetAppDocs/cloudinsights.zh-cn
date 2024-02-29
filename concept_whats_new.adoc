@@ -5,17 +5,14 @@ summary: Cloud Insights 中提供的新特性和功能。
 keywords: features 
 ---
 = Cloud Insights的新增功能
-:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 NetApp 不断改进和完善其产品和服务。下面是Cloud Insights 商业版中提供的一些最新特性和功能。
@@ -26,6 +23,52 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 == 2024年2月
+
+
+
+=== 可用性改进
+
+从右下拉列表中选择_Export as Image_、保存当前信息板的*快照*。Cloud Insights会创建当前小工具状态的.PNG。
+
+image:ExportAsImage.png["导出为图像下拉列表"]
+
+*对象和度量选择*比以往任何时候都更容易用于小组件、显示器等 选择所需的对象类型、然后在单独的下拉列表中选择与该对象相关的度量指标。
+
+image:ObjectAndMetricSelection.png["对象选择器和度量选择器分开"]
+
+*通过选择这些页面顶部的图标、将数据收集器和采集单元*导出为.CSV。
+
+image:ExportDCList.png["将跟单信用证和澳大利亚(AU)列表导出为.csv格式"]
+
+我们*重新组织了“帮助”>“支持”*页面，以便更容易找到您要查找的内容。由于您要求提供这些内容，我们在此页面上添加了指向*API Swagger *和用户文档的直接链接。
+
+image:Support_APIAccess.png["API链接"]
+
+如果此对象有登录页面、则"Alerts"(警报)列表页面上"RTKEERedOn"(触发)列中的*链接*将导航到相应的登录页面。
+
+image:TriggeredOnLink.png["触发警报字段中的链接"]
+
+
+
+=== 查看命名空间中的所有更改
+
+现在、您可以在选择集群和命名空间时查看更改时间线。以前、还必须选择工作负载。  按集群和命名空间筛选时、该命名空间中所有工作负载更改的时间线将显示在一行中。
+
+image:NamespaceTimeline.png["命名空间时间线"]
+
+
+
+=== 相关警报日志
+
+查看日志警报时、相关日志条目将显示在新表中。  如果日志条目与警报位于相同的来源和时间范围内、并且受相同条件的约束、则日志条目是相关的。选择"Analyze Logs"(分析日志)以进一步了解。
+
+image:RelatedLogsTable.png["日志警报登录页面上的相关日志"]
+
+
+
+=== 收集ONTAP交换机数据
+
+Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交换机信息"] 并具有相应的 link:["权限"] 设置。
 
 
 

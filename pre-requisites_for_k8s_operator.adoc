@@ -79,7 +79,7 @@ summary: Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成�
 
 如果您使用运行 <<configuring-proxy-support,代理>>、具有 <<using-a-custom-or-private-docker-repository,自定义存储库>>或正在使用 <<openshift-instructions,OpenShift>>、请仔细阅读以下各节。
 
-另请阅读相关内容 <<permissions,权限>>。
+另请阅读相关内容 <<权限,权限>>。
 
 如果要从先前安装升级、请阅读 <<升级,升级>> 信息。
 
