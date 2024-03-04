@@ -12971,4 +12971,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="ff435ef5470e714750e57427557cc34e" category="inline-link-macro">交换机信息</block>
   <block id="41275a535677f79ff347e01bc530c176" category="inline-link-macro">权限</block>
   <block id="006486695c60df697c0abcefc81426d9" category="paragraph">Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 并具有相应的 <block ref="8500b277c562368e86ad7d69d1827230" category="inline-link-macro-rx"></block> 设置。</block>
+  <block id="cce3c9f8c5193ee861459b69a1aed6b4" category="cell">集群交换机指标</block>
+  <block id="85ba393ee9d8bf6787cbec3a43f3e58c" category="cell">允许Cloud Insights收集集群交换机数据。请注意、除了在Cloud Insights端启用此功能之外、您还必须将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>，并确保正确 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 设置、以便允许将交换机数据发送到Cloud Insights。请参见下面的"权限注意事项"。</block>
+  <block id="466b14af7b02408eac035880aecf9915" category="paragraph">如果要收集集群交换机数据：</block>
+  <block id="4ba371a33d0081d06951a5868ba9b9f6" category="admonition">如果ONTAP访问控制设置不正确、则Cloud Insights REST调用可能会失败、从而导致设备数据出现空隙。  例如、如果您在Cloud Insights收集器上启用了该功能、但尚未在ONTAP上配置权限、则采集将失败。  此外、如果先前已在ONTAP上定义此角色、而您要添加REST API功能、请确保将_http_添加到此角色中。</block>
 </blocks>

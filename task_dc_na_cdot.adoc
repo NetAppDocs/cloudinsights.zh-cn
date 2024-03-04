@@ -182,6 +182,9 @@ Cloud Insights 从 ONTAP 数据收集器采集清单和性能数据。对于所�
 
 
 | 高级计数器数据收集 | 启用 ONTAP 集成。选择此选项可在轮询中包含 ONTAP 高级计数器数据。从列表中选择所需的计数器。 
+
+
+| 集群交换机指标 | 允许Cloud Insights收集集群交换机数据。请注意、除了在Cloud Insights端启用此功能之外、您还必须将ONTAP系统配置为提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交换机信息"]，并确保正确 <<a-note-about-permissions,权限>> 设置、以便允许将交换机数据发送到Cloud Insights。请参见下面的"权限注意事项"。 
 |===
 
 
@@ -250,6 +253,9 @@ security login role create -role ci_readonly -access all -cmddirname {cluster ap
 如果使用 AD/LDAP 帐户，则命令应为
 
  security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
+如果要收集集群交换机数据：
+
+ security login rest-role create -role ci_readonly -api /api/network/ethernet -access readonly
 生成的角色和用户登录信息如下所示。实际输出可能会有所不同：
 
 ....
@@ -267,6 +273,9 @@ UserName    Application   Method      Role Name      Locked
 ---------   -------      ----------- -------------- --------
 ci_user     ontapi      password    ci_readonly   no
 ....
+
+NOTE: 如果ONTAP访问控制设置不正确、则Cloud Insights REST调用可能会失败、从而导致设备数据出现空隙。  例如、如果您在Cloud Insights收集器上启用了该功能、但尚未在ONTAP上配置权限、则采集将失败。  此外、如果先前已在ONTAP上定义此角色、而您要添加REST API功能、请确保将_http_添加到此角色中。
+
 
 
 == 故障排除
