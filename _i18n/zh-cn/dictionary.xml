@@ -7969,7 +7969,6 @@
   <block id="7b007d3b8d88462a6ae312862d2e1a99" category="list-text">当没有数据点且您等待的时间足够长时、将触发计时器</block>
   <block id="e6db331de4ca0c6709383397a70e2641" category="paragraph">与数据到达缓慢或数据未到达一样、由于数据到达率不足以"实时"触发警报、因此需要接管计时器机制。 因此、问题通常会变成"在关闭分析窗口并查看我拥有的内容之前、我需要等待多长时间？" 如果等待时间过长、则生成警报的速度将不够快、无法发挥作用。</block>
   <block id="789343a1c1b97d934e8e57c75feed488" category="paragraph">如果您的监控器有一个30分钟的窗口、其中指出、在发生长期数据丢失之前、最后一个数据点违反了某种条件、 此时将生成警报、因为监控器未收到任何其他信息来确认指标的恢复、或者注意到此情况持续存在。</block>
-  <block id="e3277885339370179f3086f0f0ab17cc" category="cell">100 Mbps/1 Gbps以太网连接、静态IP地址以及从采集单元到*.cloudinsights.netapp.com或您的Cloud Insights 环境(即 \https://&lt;environment_id&gt;.c01.cloudinsights.netapp.com)为必填项。有关采集单元与每个数据收集器之间的要求、请参见的说明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的组织需要使用代理来访问 Internet ，则您可能需要了解您的组织的代理行为并寻求某些例外情况， Cloud Insights 才能正常工作。例如、您的组织是否默认阻止访问、并且例外情况下仅允许访问特定网站/域？如果是、您需要将以下域添加到异常列表中：*.cloudinsights.netapp.com有关详细信息、请准备好Proxies <block ref="c8de79af776ad5401fc2435a47b93554" category="inline-link-macro-rx"></block> 或 <block ref="72aa87d84bbc45ebd36bcd7399b0482e" category="inline-link-macro-rx"></block>。</block>
   <block id="d429655e140835b91db45b4324358975" category="list-text">使用cluster _admin_凭据登录到ONTAP 集群(要解除对用户的阻止)。(对于Amazon FSX、使用FSX凭据登录)。</block>
   <block id="8eb6e3d15a14daab42fbb2f986622059" category="paragraph">在上述输出中、域CSL阻止了2个用户(US030、US040)。</block>
   <block id="22ee7904617969fe778ac3e28eded28c" category="list-text">从上述输出中确定位置后、运行以下命令以解除对用户的阻止：</block>
@@ -12975,4 +12974,13 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="85ba393ee9d8bf6787cbec3a43f3e58c" category="cell">允许Cloud Insights收集集群交换机数据。请注意、除了在Cloud Insights端启用此功能之外、您还必须将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>，并确保正确 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 设置、以便允许将交换机数据发送到Cloud Insights。请参见下面的"权限注意事项"。</block>
   <block id="466b14af7b02408eac035880aecf9915" category="paragraph">如果要收集集群交换机数据：</block>
   <block id="4ba371a33d0081d06951a5868ba9b9f6" category="admonition">如果ONTAP访问控制设置不正确、则Cloud Insights REST调用可能会失败、从而导致设备数据出现空隙。  例如、如果您在Cloud Insights收集器上启用了该功能、但尚未在ONTAP上配置权限、则采集将失败。  此外、如果先前已在ONTAP上定义此角色、而您要添加REST API功能、请确保将_http_添加到此角色中。</block>
+  <block id="fcf3c8b7073234871f47a3a68559837a" category="inline-link-macro">此处(Linux)</block>
+  <block id="5543adb6f73fddb3a3944d6d35b0de3e" category="inline-link-macro">此处(Windows)</block>
+  <block id="a619708c636cd548a93f5ec4dde89bb3" category="cell">从采集单元到*。.cloudinsights.netapp.com或您的Cloud Insights环境(即\https：//https：//Gbps.c01.cloudinsights.netapp.com)需要100 Mbps/1 &lt;environment_id&gt;以太网连接、静态IP地址以及端口80或443连接。有关采集单元与每个数据收集器之间的要求、请参见的说明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。
+
+如果您的组织需要使用代理来访问 Internet ，则您可能需要了解您的组织的代理行为并寻求某些例外情况， Cloud Insights 才能正常工作。例如、您的组织是否默认阻止访问、并且例外情况下仅允许访问特定网站/域？如果是，则需要将以下域添加到异常列表中：
+
+*.cloudinsights.netapp.com
+
+有关详细信息、请阅读有关代理的信息 <block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block> 或 <block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
 </blocks>
