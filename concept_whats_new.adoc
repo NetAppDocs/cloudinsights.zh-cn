@@ -22,6 +22,31 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
+== 2024年3月
+
+
+
+=== 工作负载安全代理详细信息
+
+您的每个工作负载安全代理都有自己的登录页，您可以在该页上轻松查看有关代理以及与该代理关联的已安装数据和用户目录收集器的摘要信息。
+
+image:Agent_Detail_Page.png["工程师详细信息登录页面示例"]
+
+
+
+=== 更快地绘制更多数据图表
+
+在分析资产登录页面上的数据时、只需将其他数据添加到"Expert View"图表即可。对于登录页面上的每个表、如果某个对象类型具有相关数据、请将鼠标悬停在该对象上方以显示"Add to Expert View"图标。选择此图标可将该对象添加到其他资源中、并将其显示在"Expert View"图表中。
+
+image:AddToChartIcon.png["将表数据添加到专家视图"]
+
+或者、您可能希望在登录页面表的图表中查看其数据。只需选择_Show Chart_图标即可打开表下方的图表：
+
+image:LPTableShowChartIcon.png["显示图表图标"]
+
+'''
+
+
 == 2024年2月
 
 
@@ -68,7 +93,7 @@ image:RelatedLogsTable.png["日志警报登录页面上的相关日志"]
 
 === 收集ONTAP交换机数据
 
-Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交换机信息"] 并具有相应的 link:["权限"] 设置。
+Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交换机信息"] 并具有相应的 <<a-note-about-permissions,权限>> 设置。
 
 
 

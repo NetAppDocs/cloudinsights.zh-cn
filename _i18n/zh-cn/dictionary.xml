@@ -3425,40 +3425,6 @@
   <block id="cac1498b0664af832998cc7789e61533" category="cell">HTTPS 端口</block>
   <block id="41395ab86c81cb80d6e2a4797feea94e" category="cell">默认值为 443</block>
   <block id="c9b3a25e54faeacff7f868ac4dcca9c0" category="paragraph">Cloud Insight 的 PowerStore 性能收集利用了 PowerStore 的 5 分钟粒度源数据。因此， Cloud Insights 每五分钟轮询一次该数据，这是不可配置的。</block>
-  <block id="c7a7127c54e3e8ac9e699f2540a909f5" category="summary">开始使用云成本。</block>
-  <block id="15870627e10ad6ebeb6e55af499ed0ce" category="doc">开始使用云成本</block>
-  <block id="617bd6c0c962503351aba8343b7e2031" category="paragraph">云成本可对过去，现在和估计支出进行详细的成本分析，从而了解您环境中的云使用情况。云成本信息板可清晰地显示您的组织的云支出，并深入了解各个工作负载，帐户和服务。</block>
-  <block id="2436885db1284f5d1c2ff04e166657c2" category="paragraph">云成本有助于应对以下主要挑战：</block>
-  <block id="58ef2f09c91f0fd135a3d546f584315b" category="paragraph">要配置或查看云成本，您必须具有 Cloud Insights _Administrator_ 或 _Account Owner_ 权限。配置完云后，具有这些权限的任何 Cloud Insights 用户都可以访问云成本。</block>
-  <block id="38a46fd15de299d3085b6d3dcc7d3430" category="inline-link-macro">_management_</block>
-  <block id="da164e3dc4a981bd337a49f689e13200" category="paragraph">通过将云成本链接到您的 _AWS Organizations_account 来配置云成本。这有时称为 <block ref="3aa6332afca6836ed5a3930d857d43b2" category="inline-link-macro-rx"></block> 帐户。</block>
-  <block id="8618496c14a763783ab7f0c9eb553da9" category="admonition">云成本仅适用于美国地区 Cloud Insights 环境，并且只能为一个 AWS 组织帐户配置。云成本必须与您在 Cloud Insights 中可能拥有的任何 AWS 收集器分开配置。</block>
-  <block id="f208452147328c902e5da2feaa57ec40" category="section-title">设置云成本</block>
-  <block id="619dbf025f83f3c776b6a035aa29dc02" category="paragraph">当您登录到 Cloud Insights 并首次单击 * 云成本 * 菜单项时，系统将显示欢迎屏幕并提示您开始设置云成本。</block>
-  <block id="27588501638faf04454522b3d6a19cd9" category="paragraph"><block ref="27588501638faf04454522b3d6a19cd9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2963dc85866064c6cb6cb2543783d2b4" category="list-text">单击 * 将 AWS 凭据添加到启动 * 按钮开始。此时将显示 AWS 连接屏幕。按照此屏幕上的说明将您的 * AWS Organizations Account* 链接到 Cloud Cost 。</block>
-  <block id="9023e604130974a0e2aead65b2a53c56" category="inline-image-macro">AWS Connect</block>
-  <block id="f0446b6fd2f4706bc37399b459a99543" category="paragraph"><block ref="f0446b6fd2f4706bc37399b459a99543" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="39199f99ce2b20fe642d78ec53195f92" category="list-text">配置完帐户后， Cloud Cost 将显示一条 " 欢迎 " 消息。</block>
-  <block id="8a2bb02f16fe17b41c9642016536e145" category="inline-image-macro">欢迎使用 Cloud Cost ！</block>
-  <block id="7643e3d44596fe8d41e06fd8ef5d5008" category="paragraph"><block ref="7643e3d44596fe8d41e06fd8ef5d5008" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ad9da31b13649ea1789aabfc332bab9c" category="inline-link-macro">NetApp Spot 支持</block>
-  <block id="2ff55ebf268b23235a4afaed6bf89fb0" category="admonition">云成本可能需要长达 24 小时才能完全配置。配置完成后，您将收到电子邮件通知。如果您遇到困难，可以单击 "Chat" 图标或访问以联系 NetApp 支持部门 <block ref="ddb599aec35fadd08f10b2a7f518a6f5" category="inline-link-macro-rx"></block>。</block>
-  <block id="dfda23b36ad3b1b19c6acceaf8146420" category="list-text">设置完成后，单击 * 云成本 * 菜单项将显示成本分析信息板，类似于以下示例。</block>
-  <block id="2be09169680c9bdccb002888ac05e690" category="inline-image-macro">云成本示例信息板</block>
-  <block id="ebbee65277192e15bc1a4fcba1601350" category="paragraph"><block ref="ebbee65277192e15bc1a4fcba1601350" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d2ec72f5faac6ab8927b0c00e7f4c5ff" category="section-title">有关云成本的更多信息</block>
-  <block id="b02d07667db7239b36a8fa517318b9b8" category="inline-link-macro">NetApp 的专有解决方案</block>
-  <block id="1d57a93afc649a9c2d41f3fefc479f4a" category="paragraph">云成本可将您的 Cloud Insights 环境与的 Cloud Analyzer 功能连接起来 <block ref="6367240bb380cab47f55b37fa9dde00f" category="inline-link-macro-rx"></block>，可为 Cloud Insights 提供与您的云成本数据最相关的视图。通过单击云成本信息板右上角的 _Get Full Analysis_ 链接，您可以在 Spot 中打开完整的 Cloud Analyzer 信息板。全面分析可能会提供更多数据和深入分析，以便进一步了解您的云支出。</block>
-  <block id="2f0b05ac17e2cbf6a46b1c047243119b" category="paragraph">遇到问题时要尝试的一些操作：</block>
-  <block id="3a67edf2eb58216defabf9354d0156ad" category="cell">我从 Spot 收到了一封确认设置的电子邮件，但这些链接似乎与 Cloud Insights 无关</block>
-  <block id="f272bb9eb6f00902a89ad005fe94d698" category="cell">现场电子邮件中的链接与 Cloud Insights 云成本无关。忽略 Spot 电子邮件中的链接。</block>
-  <block id="eb3a1bdcddcd493484c3a1038b124c46" category="cell">Cloud Cost 向我提供了一个现场登录提示。</block>
-  <block id="c5983ab7d31b675699b599da7e266e76" category="cell">您的云成本会话可能已过期。导航到 Cloud Insights 主页屏幕，然后返回到云成本以重新启动云成本会话。</block>
-  <block id="35b56f4439b474687713caf1080761c0" category="cell">我收到 " 检测到云成本会话冲突 " 消息。</block>
-  <block id="b09b95fdf3a131d8cd1e62eca14f3c7d" category="cell">在同一浏览器中不支持在多个帐户中打开的云成本会话。注销 Cloud Insights 并重新登录以查看您帐户的云成本信息。</block>
-  <block id="1e46d28a00235a5e640c2a81d0bdade0" category="cell">尝试登录时，我看到一个错误： "unauthorized 。凭据无效。 "</block>
-  <block id="e4a2acf8eb6f077af0a6c0c59fbe6b64" category="cell">验证您是否使用正确的凭据登录。如果此问题仍然存在，请联系 NetApp Spot 支持部门。</block>
   <block id="53ce3d33a1c95868dbf8263124e5b551" category="summary">创建一个网络挂钩，以便在性能或清单阈值出现不和时发出警报</block>
   <block id="f053f7ee22dc353143571fe1d9a1c585" category="doc">不和的 webhook 示例</block>
   <block id="4a4e6a83623dd6209332792d66f10386" category="paragraph">网络挂机允许用户使用自定义的网络挂机通道向各种应用程序发送警报通知。此页面提供了一个设置 webhooks 以防止不和的示例。</block>
@@ -12968,7 +12934,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="c15484a80236e65cd94c3fa859c0aca2" category="section-title">收集ONTAP交换机数据</block>
   <block id="ff435ef5470e714750e57427557cc34e" category="inline-link-macro">交换机信息</block>
   <block id="41275a535677f79ff347e01bc530c176" category="inline-link-macro">权限</block>
-  <block id="006486695c60df697c0abcefc81426d9" category="paragraph">Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 并具有相应的 <block ref="8500b277c562368e86ad7d69d1827230" category="inline-link-macro-rx"></block> 设置。</block>
   <block id="cce3c9f8c5193ee861459b69a1aed6b4" category="cell">集群交换机指标</block>
   <block id="85ba393ee9d8bf6787cbec3a43f3e58c" category="cell">允许Cloud Insights收集集群交换机数据。请注意、除了在Cloud Insights端启用此功能之外、您还必须将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>，并确保正确 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 设置、以便允许将交换机数据发送到Cloud Insights。请参见下面的"权限注意事项"。</block>
   <block id="466b14af7b02408eac035880aecf9915" category="paragraph">如果要收集集群交换机数据：</block>
@@ -12983,4 +12948,17 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
 有关详细信息、请阅读有关代理的信息 <block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block> 或 <block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
   <block id="b30a6e7a75eaf5af9f2106e8d96d324b" category="paragraph">对于具有_cluster-_凭据的CsUser、从ONTAP命令行执行以下命令。请注意、_csrestrolle_是自定义角色、而-CsUser_是ONTAP自定义用户。</block>
+  <block id="d7a15f16d93378f9428254d47703abd2" category="section-title">2024年3月</block>
+  <block id="375ee0c976167dd35b8f93758415f360" category="section-title">工作负载安全代理详细信息</block>
+  <block id="a59325a77a64da5b76b0405b20ca4aa1" category="paragraph">您的每个工作负载安全代理都有自己的登录页，您可以在该页上轻松查看有关代理以及与该代理关联的已安装数据和用户目录收集器的摘要信息。</block>
+  <block id="1ebfa37f92431bca4f057938f83d738b" category="inline-image-macro">工程师详细信息登录页面示例</block>
+  <block id="bf03dc5843be707280c57c5a93024db8" category="paragraph"><block ref="bf03dc5843be707280c57c5a93024db8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9661fefae66a141a067dc636d0fea82a" category="section-title">更快地绘制更多数据图表</block>
+  <block id="ca7f408ca9b8a293ab5c4fdeac08cd5e" category="paragraph">在分析资产登录页面上的数据时、只需将其他数据添加到"Expert View"图表即可。对于登录页面上的每个表、如果某个对象类型具有相关数据、请将鼠标悬停在该对象上方以显示"Add to Expert View"图标。选择此图标可将该对象添加到其他资源中、并将其显示在"Expert View"图表中。</block>
+  <block id="cff2d6fe0f7f87e18aab8d5161b8ea50" category="inline-image-macro">将表数据添加到专家视图</block>
+  <block id="e5c53045d0520fd4816c1ccc930d7386" category="paragraph"><block ref="e5c53045d0520fd4816c1ccc930d7386" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4dc21e298acee929dd835589e6d5c640" category="paragraph">或者、您可能希望在登录页面表的图表中查看其数据。只需选择_Show Chart_图标即可打开表下方的图表：</block>
+  <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">显示图表图标</block>
+  <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 并具有相应的 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 设置。</block>
 </blocks>
