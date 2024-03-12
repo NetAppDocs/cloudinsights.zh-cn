@@ -12961,4 +12961,10 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">显示图表图标</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 并具有相应的 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 设置。</block>
+  <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">ONTAP 权限</block>
+  <block id="b4adf3d9e051be6ec8f7f311fd08d8dc" category="paragraph">阅读有关配置其他的更多信息 <block ref="364cb0af9008be29fffbb0635783d098" category="inline-xref-macro-rx"></block>。</block>
+  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP自主防兰软件保护的权限</block>
+  <block id="b015c01a5cd691f38c07727636f5e429" category="paragraph">有关详细信息、请阅读 <block ref="619ffa717a0c9eee469ccc9f3ce569e2" category="inline-xref-macro-rx"></block></block>
+  <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAP访问权限被拒绝</block>
+  <block id="2bf48db6b4ef5793137bd23562d2759b" category="paragraph">有关详细信息、请阅读 <block ref="56f4e785b0c10fe49372cccb28182a22" category="inline-xref-macro-rx"></block></block>
 </blocks>
