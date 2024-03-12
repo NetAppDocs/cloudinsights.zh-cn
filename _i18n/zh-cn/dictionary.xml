@@ -6711,8 +6711,6 @@
   <block id="36e498f46668dc7b2127a0e5f83abd6c" category="section-title">删除用户</block>
   <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">具有管理员角色的用户可以通过单击用户的名称并单击对话框中的 _Delete User_ 来删除用户（例如，不再与公司合作的用户）。此用户将从 Cloud Insights 环境中删除。</block>
   <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">请注意，即使删除用户，用户创建的任何信息板，查询等也将在 Cloud Insights 环境中保持可用。</block>
-  <block id="951c04e880867f48ee0c8c023c066950" category="inline-link-macro">此问题描述</block>
-  <block id="c335e20fcf63e64f7ad3799d0c6d5e4f" category="list-text">Data ONTAP 9.2 及更高版本要获得最佳性能，请使用 Data ONTAP 版本，其中 <block ref="1a759d0cc6a190cf88e8cd818eb0eba6" category="inline-link-macro-rx"></block> 已修复。</block>
   <block id="664eaf7f7371b5bb01b58dd1401a3f24" category="cell">安装代理时，安装将在解压缩后挂起。</block>
   <block id="af5d24d9bf0b86e25aac0207e1738aa7" category="cell">"chmod 755 -rf " 命令失败。如果代理安装命令由非 root sudo 用户运行，而该用户的文件位于工作目录中，属于另一个用户，并且无法更改这些文件的权限，则此命令将失败。由于 chmod 命令失败，其余安装不会执行。1. 创建一个名为 cloudsecure 的新目录。2. 转到该目录。3. 复制并粘贴完整的 "token=…… … ./cloudsure-agent-install.sh" 安装命令并按 Enter 键。4. 安装应能继续进行。</block>
   <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">以下是配置此数据源的要求：</block>
@@ -12963,8 +12961,9 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 并具有相应的 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 设置。</block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">ONTAP 权限</block>
   <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP自主防兰软件保护的权限</block>
-  <block id="b015c01a5cd691f38c07727636f5e429" category="paragraph">有关详细信息、请阅读 <block ref="619ffa717a0c9eee469ccc9f3ce569e2" category="inline-xref-macro-rx"></block></block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAP访问权限被拒绝</block>
-  <block id="c6c97bd1479ffe465a30e57bf1ff7581" category="paragraph">阅读有关配置其他的更多信息 <block ref="3990874aa220042887a75572ad807b54" category="inline-link-macro-rx"></block>。</block>
-  <block id="1200ae7d3913c7aad712f5d03b78b8b3" category="paragraph">有关详细信息、请阅读 <block ref="b67f08aa6844c92496ffea9c366ea7ee" category="inline-link-macro-rx"></block></block>
+  <block id="5dfd36f9b502b0a938cb4adb94d23ffa" category="paragraph">阅读有关配置其他的更多信息 <block ref="7848240acae0977cc36a630dabe55aa3" category="inline-link-macro-rx"></block>。</block>
+  <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 及更高版本为获得最佳性能、请使用9.13.1.以上的Data ONTAP版本。</block>
+  <block id="74f912aa47d1bbf141926fbf2185abdf" category="paragraph">有关详细信息、请阅读 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
+  <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">有关详细信息、请阅读 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
 </blocks>

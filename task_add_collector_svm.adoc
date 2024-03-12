@@ -27,7 +27,7 @@ summary: 添加工作负载安全性数据收集器
 
 * 此数据收集器支持以下功能：
 +
-** Data ONTAP 9.2 及更高版本要获得最佳性能，请使用 Data ONTAP 版本，其中 link:https://mysupport.netapp.com/site/bugs-online/product/ONTAP/BURT/1372994["此问题描述"] 已修复。
+** Data ONTAP 9.2 及更高版本为获得最佳性能、请使用9.13.1.以上的Data ONTAP版本。
 ** SMB协议3.1及更早版本。
 ** NFS 协议 4.0 及更早版本
 ** ONTAP 9.4 及更高版本支持 FlexGroup
@@ -138,7 +138,7 @@ security login rest-role create -role arwrole -api /api/storage/volumes -access 
 security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
 security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
 ....
-有关详细信息、请阅读 <<concept_cs_integration_with_ontap_arp.html,与ONTAP 自主勒索软件保护相集成>>
+有关详细信息、请阅读 link:concept_cs_integration_with_ontap_arp.html["与ONTAP 自主勒索软件保护相集成"]
 
 
 
@@ -162,7 +162,7 @@ security login create -user-or-group-name csuser -application http -authmethod p
  security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
  security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
-有关详细信息、请阅读 link:\concept_ws_integration_with_ontap_access_denied.html["与ONTAP集成访问被拒绝"]
+有关详细信息、请阅读 link:concept_ws_integration_with_ontap_access_denied.html["与ONTAP集成访问被拒绝"]
 
 
 
