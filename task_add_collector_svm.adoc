@@ -162,7 +162,7 @@ security login create -user-or-group-name csuser -application http -authmethod p
  security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
  security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
 ----
-有关详细信息、请阅读 <<concept_ws_integration_with_ontap_access_denied.html,与ONTAP集成访问被拒绝>>
+有关详细信息、请阅读 link:\concept_ws_integration_with_ontap_access_denied.html["与ONTAP集成访问被拒绝"]
 
 
 
