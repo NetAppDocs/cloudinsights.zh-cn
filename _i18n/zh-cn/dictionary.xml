@@ -12968,11 +12968,9 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">有关详细信息、请阅读 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
   <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">ONTAP REST数据收集器</block>
   <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP REST数据收集器</block>
-  <block id="51c8777ccbe8cbbe060fa364f308995c" category="paragraph">此数据收集器使用ONTAP帐户的只读REST API调用从运行ONTAP的存储系统采集清单和性能数据。此数据收集器还会在集群应用程序注册表中创建一条记录，以加快支持速度。</block>
   <block id="90242ff563fa212860e5c6a5b21da8f6" category="list-text">IOPS—直接源自节点对象上的ONTAP REST调用。</block>
   <block id="ea32a37fff2b9c40d4e8dd0e0803a04b" category="list-text">延迟—直接源自节点对象上的ONTAP REST调用。</block>
   <block id="4084aa6c02ea4a6ea3d32bd1c73f4888" category="list-text">吞吐量—直接源自节点对象上的ONTAP REST调用。</block>
-  <block id="4493cd6343183bf0a790cf01a53cddd1" category="list-text">您必须有权访问为只读REST API调用配置的管理员帐户。</block>
   <block id="cc5802bcc5281dcb68264fed31e4a4a1" category="cell">ONTAP管理IP地址</block>
   <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">ONTAP REST用户名</block>
   <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">ONTAP REST密码</block>
@@ -12981,7 +12979,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">启用EMS事件收集</block>
   <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">选择此选项可包括ONTAP EMS日志事件数据。</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMS轮询间隔(秒)</block>
-  <block id="961f9cd0cfe447f73a20455c4f8f7973" category="paragraph">此外、还应确保已启用对ONTAP REST API的写入权限。这通常需要一个集群级别的帐户，并具有必要的权限。</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">使用以下命令创建角色：</block>
   <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">security login rest-Role create -Role｛Role name｝-api /api -access readonly
 security login ret-Role create -Role｛Role name｝-api /api/cluster-agents -access all</block>
@@ -12993,4 +12990,10 @@ security login create -user-or-group-name｛username｝-application http -authen
 
 对于支持REST但不支持9.14.1或更高版本的ONTAP版本、您可能会看到以下simillar消息：
 配置：10.193.98.84：10.193.98.84下的ONTAP REST API不可用：10.193.98.84下的ONTAP REST API可用：cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7、但不是最低版本9.14.1。</block>
+  <block id="550bad6f96e635103df31a148cb33c00" category="paragraph">此数据收集器使用REST API调用从运行ONTAP 9.14.1及更高版本的存储系统采集清单、EMS日志和性能数据。对于早期版本的ONTAP系统、请使用基于ZAPI的NetApp ONTAP数据管理软件收集器类型。</block>
+  <block id="65e871e42dd717b74cdb0435f27e32f6" category="paragraph">Cloud Insights从ONTAP数据收集器采集清单、日志和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="5eeda23f92dad663daa058631cc10210" category="list-text">Serial Number—阵列UUID</block>
+  <block id="fb6ea45004cffe21e52cde14678c6744" category="list-text">您必须能够访问具有所需访问级别的用户帐户</block>
+  <block id="c40d45712b08c1aba1ce04dd1ac4cc5e" category="list-text">从功能上讲，Cloud Insights正在发出读取请求，但要使CI向ONTAP阵列注册，需要一些写入权限。请参见下面的 " 关于权限的注释 " 。</block>
+  <block id="b697879d40ceeef13c6f9527808724fe" category="paragraph">由于许多Cloud Insights的ONTAP信息板都依赖于高级ONTAP计数器，因此应在数据收集器高级配置部分中保持启用*启用高级计数器数据收集*。</block>
 </blocks>
