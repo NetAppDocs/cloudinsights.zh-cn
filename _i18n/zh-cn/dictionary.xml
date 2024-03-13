@@ -12966,4 +12966,31 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 及更高版本为获得最佳性能、请使用9.13.1.以上的Data ONTAP版本。</block>
   <block id="74f912aa47d1bbf141926fbf2185abdf" category="paragraph">有关详细信息、请阅读 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">有关详细信息、请阅读 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
+  <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">ONTAP REST数据收集器</block>
+  <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP REST数据收集器</block>
+  <block id="51c8777ccbe8cbbe060fa364f308995c" category="paragraph">此数据收集器使用ONTAP帐户的只读REST API调用从运行ONTAP的存储系统采集清单和性能数据。此数据收集器还会在集群应用程序注册表中创建一条记录，以加快支持速度。</block>
+  <block id="90242ff563fa212860e5c6a5b21da8f6" category="list-text">IOPS—直接源自节点对象上的ONTAP REST调用。</block>
+  <block id="ea32a37fff2b9c40d4e8dd0e0803a04b" category="list-text">延迟—直接源自节点对象上的ONTAP REST调用。</block>
+  <block id="4084aa6c02ea4a6ea3d32bd1c73f4888" category="list-text">吞吐量—直接源自节点对象上的ONTAP REST调用。</block>
+  <block id="4493cd6343183bf0a790cf01a53cddd1" category="list-text">您必须有权访问为只读REST API调用配置的管理员帐户。</block>
+  <block id="cc5802bcc5281dcb68264fed31e4a4a1" category="cell">ONTAP管理IP地址</block>
+  <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">ONTAP REST用户名</block>
+  <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">ONTAP REST密码</block>
+  <block id="87a7b8cc9265881e0bc0f09c410ec474" category="cell">默认值为60秒。</block>
+  <block id="5062d1b8a50da7152b0877114d23bf65" category="cell">选择此选项可在轮询中包含 ONTAP 高级计数器数据。</block>
+  <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">启用EMS事件收集</block>
+  <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">选择此选项可包括ONTAP EMS日志事件数据。</block>
+  <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMS轮询间隔(秒)</block>
+  <block id="961f9cd0cfe447f73a20455c4f8f7973" category="paragraph">此外、还应确保已启用对ONTAP REST API的写入权限。这通常需要一个集群级别的帐户，并具有必要的权限。</block>
+  <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">使用以下命令创建角色：</block>
+  <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">security login rest-Role create -Role｛Role name｝-api /api -access readonly
+security login ret-Role create -Role｛Role name｝-api /api/cluster-agents -access all</block>
+  <block id="6765c1ce40f9ed10162dff1db4e987ca" category="paragraph">vserver services web access create -name SPI -Role｛Role name｝-vserver｛name from 짏 述命令｝
+security login create -user-or-group-name｛username｝-application http -authentication方法密码-Role｛Role name｝</block>
+  <block id="7483de82186016bc69ffb8a75489f338" category="cell">尝试创建ONTAP REST数据收集器时、会出现如下错误：
+配置：10.193.70.14：10.193.70.14上的ONTAP REST API不可用：10.193.70.14无法获取/API/cluster：400错误请求</block>
+  <block id="40c54a6b7dcfa9b1202222c4928cb872" category="cell">这可能是由于older ONTAP阵列(例如ONTAP 9.6)没有REST API功能。ONTAP 9.14.1是ONTAP REST收集器支持的最低ONTAP版本。在REST之前的ONTAP版本中、应该会收到"400 Bad Request"响应。
+
+对于支持REST但不支持9.14.1或更高版本的ONTAP版本、您可能会看到以下simillar消息：
+配置：10.193.98.84：10.193.98.84下的ONTAP REST API不可用：10.193.98.84下的ONTAP REST API可用：cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7、但不是最低版本9.14.1。</block>
 </blocks>
