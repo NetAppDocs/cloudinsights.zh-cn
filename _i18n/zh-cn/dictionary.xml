@@ -12975,9 +12975,7 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="7bcaf6369b1398f73e17d298aa39db60" category="cell">ONTAP REST用户名</block>
   <block id="bdb8fd1a64839a7885f10d1e33166bec" category="cell">ONTAP REST密码</block>
   <block id="87a7b8cc9265881e0bc0f09c410ec474" category="cell">默认值为60秒。</block>
-  <block id="5062d1b8a50da7152b0877114d23bf65" category="cell">选择此选项可在轮询中包含 ONTAP 高级计数器数据。</block>
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">启用EMS事件收集</block>
-  <block id="615eb0992cfadcf1dacb23db15c3598d" category="cell">选择此选项可包括ONTAP EMS日志事件数据。</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMS轮询间隔(秒)</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">使用以下命令创建角色：</block>
   <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">security login rest-Role create -Role｛Role name｝-api /api -access readonly
@@ -12993,7 +12991,10 @@ security login create -user-or-group-name｛username｝-application http -authen
   <block id="550bad6f96e635103df31a148cb33c00" category="paragraph">此数据收集器使用REST API调用从运行ONTAP 9.14.1及更高版本的存储系统采集清单、EMS日志和性能数据。对于早期版本的ONTAP系统、请使用基于ZAPI的NetApp ONTAP数据管理软件收集器类型。</block>
   <block id="65e871e42dd717b74cdb0435f27e32f6" category="paragraph">Cloud Insights从ONTAP数据收集器采集清单、日志和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="5eeda23f92dad663daa058631cc10210" category="list-text">Serial Number—阵列UUID</block>
-  <block id="fb6ea45004cffe21e52cde14678c6744" category="list-text">您必须能够访问具有所需访问级别的用户帐户</block>
-  <block id="c40d45712b08c1aba1ce04dd1ac4cc5e" category="list-text">从功能上讲，Cloud Insights正在发出读取请求，但要使CI向ONTAP阵列注册，需要一些写入权限。请参见下面的 " 关于权限的注释 " 。</block>
   <block id="b697879d40ceeef13c6f9527808724fe" category="paragraph">由于许多Cloud Insights的ONTAP信息板都依赖于高级ONTAP计数器，因此应在数据收集器高级配置部分中保持启用*启用高级计数器数据收集*。</block>
+  <block id="992ec6f152c405f64da205561d5810c3" category="list-text">您必须能够访问具有所需访问级别的用户帐户。请注意、创建新的REST用户/角色时需要管理员权限。</block>
+  <block id="7716cde88803d3b7d809cbffb39a1d82" category="inline-xref">有关权限的注意事项</block>
+  <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">在功能上、Cloud Insights会发出读取请求、但要向ONTAP阵列注册Cloud Insights、需要一些写入权限。请参见 <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">选择此选项可在轮询中包含 ONTAP 高级计数器数据。默认情况下处于启用状态。</block>
+  <block id="19decc8950209e44f521507a99ab0792" category="cell">选择此选项可包括ONTAP EMS日志事件数据。默认情况下处于启用状态。</block>
 </blocks>
