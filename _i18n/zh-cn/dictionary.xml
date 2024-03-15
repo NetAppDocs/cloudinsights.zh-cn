@@ -3883,7 +3883,6 @@
   <block id="a03c76235dfe1278dd742bbf81c45283" category="list-text">将 * 单元 * 字段更改为 "%" 或 "percent" 。</block>
   <block id="296ee886ac2db46f818124c2c72ace21" category="paragraph">此图表显示选定存储设备的 IOPS 读取百分比随时间的变化。如果需要，您可以设置筛选器或选择其他汇总方法。请注意，如果选择 Sum 作为汇总方法，则所有百分比值将相加，这可能会高于 100% 。</block>
   <block id="8cc1f1662d28c12dd361aa641ce8a9de" category="list-text">单击 * 保存 * 将图表保存到信息板。</block>
-  <block id="ff66fe277c0c407bea9d4ee21c5148f3" category="paragraph">您还可以在折线图， Spline 图表或堆栈区域图表小工具中使用表达式。</block>
   <block id="2164661e44bb6d157bb0697319a902cb" category="section-title">表达式示例： "system" I/O</block>
   <block id="247041ff979b61cd999f4f2c24a31eb9" category="paragraph">示例 2 ：从数据源收集的指标包括读取，写入和总 IOPS 。但是，数据源报告的 IOPS 总数有时包括 " 系统 "IOPS ，而这些 IOPS 不是数据读取或写入的直接部分。此系统 I/O 也可视为 " 开销 " I/O ，这对于系统正常运行是必需的，但与数据操作没有直接关系。</block>
   <block id="423d1df3523f2a34cef35f332f00c002" category="paragraph">要显示这些系统 I/O ，您可以从采集报告的总 IOPS 中减去读取和写入 IOPS 。公式可能如下所示：</block>
@@ -6862,7 +6861,6 @@
   <block id="91771bf0d5be307a250d706e57df1eb1" category="summary">创建监控器，以便针对性能或清单阈值以及指标或日志条件发出警报。</block>
   <block id="7d5581330314d1ed3096701515939e9d" category="doc">系统监控器</block>
   <block id="4cdcdb149afd3a4dfdaaf3ff86277a6b" category="list-text">* 已采取更正操作 * ：警报已建议更正操作。打开警报页面以查看这些内容。</block>
-  <block id="39785ac77a465811e3584e33640cbff4" category="paragraph">在信息板中，任何时间序列小工具（线，样条曲线，区域，堆积区），单值， 或 Gauge Widget 可用于根据您选择的指标构建表达式，并在一个图形中显示这些表达式的结果。以下示例使用表达式解决特定问题。在第一个示例中，我们希望将环境中所有存储资产的读取 IOPS 显示为总 IOPS 的百分比。第二个示例显示了环境中发生的 " 系统 " 或 " 开销 " IOPS ，即不直接从读取或写入数据中获取的 IOPS 。</block>
   <block id="295ae6b0d3f79982844cbe49616552f4" category="paragraph">您可以在表达式中使用变量（例如： _$VAR1 * 100_ ）</block>
   <block id="0f17f6019d7d24f40bc97f9856c0ef14" category="paragraph">要在表达式中使用变量，只需键入变量名称即可，例如 _$var1 * 100_ 。表达式只能使用数字变量。</block>
   <block id="1634ed475d7378ae8b2f149b1a4c43e3" category="list-text">* 属性 * ：使用对象的属性或指标进行筛选</block>
@@ -12997,4 +12995,10 @@ security login create -user-or-group-name｛username｝-application http -authen
   <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">在功能上、Cloud Insights会发出读取请求、但要向ONTAP阵列注册Cloud Insights、需要一些写入权限。请参见 <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> 。</block>
   <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">选择此选项可在轮询中包含 ONTAP 高级计数器数据。默认情况下处于启用状态。</block>
   <block id="19decc8950209e44f521507a99ab0792" category="cell">选择此选项可包括ONTAP EMS日志事件数据。默认情况下处于启用状态。</block>
+  <block id="b8da12392eaf9647590629afc8e5e321" category="inline-xref">表小工具</block>
+  <block id="c886b395cb0cef3864cbd88d54b558b3" category="paragraph">在信息板中、任何时间序列小工具(折线图、样条图、面积图、堆积面积图)条形图、柱形图、饼图或表小工具均可用于根据所选指标构建表达式、并在单个图(对于、为列)中显示这些表达式的结果 <block ref="71a5b5d38cba985f9b4b8f746073d5cb" category="inline-xref-macro-rx"></block>）。以下示例使用表达式解决特定问题。在第一个示例中，我们希望将环境中所有存储资产的读取 IOPS 显示为总 IOPS 的百分比。第二个示例显示了环境中发生的 " 系统 " 或 " 开销 " IOPS ，即不直接从读取或写入数据中获取的 IOPS 。</block>
+  <block id="4b10d5d55ab9803778e910ea6ce31bf3" category="section-title">表小工具中的表达式</block>
+  <block id="57b48c75a9a8cae2e174d4d2e1a20e06" category="paragraph">表小工具处理表达式的方式略有不同。一个表小工具中最多可以包含五个表达式、每个表达式都会作为新列添加到表中。每个表达式最多可以包含五个用于计算的值。您可以轻松地为该列命名有意义的名称。</block>
+  <block id="65d2c24b071888fa849372a7a32969e8" category="inline-image-macro">表小工具中的表达式</block>
+  <block id="87e868e2dc8c898d0c4017d8f7f66ea8" category="paragraph"><block ref="87e868e2dc8c898d0c4017d8f7f66ea8" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
