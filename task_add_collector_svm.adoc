@@ -170,7 +170,7 @@ security login create -user-or-group-name csuser -application http -authmethod p
 
 .配置步骤
 . 以管理员或帐户所有者身份登录到您的 Cloud Insights 环境。
-. 单击*Observability > Collectors >+Data Collectors *
+. 单击*工作负载安全性>收集器>+数据收集器*
 +
 系统将显示可用的数据收集器。
 
