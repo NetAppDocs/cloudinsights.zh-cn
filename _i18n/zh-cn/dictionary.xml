@@ -6242,7 +6242,6 @@
   <block id="ada50db1408dec13820898d804a4f56f" category="list-text">端口 443 上的 HTTPS 为必填项</block>
   <block id="17bd2c44c34a8a609dc17702d5a497ae" category="list-text">EMC VNXe 数据收集器为清单提供 NAS 和 iSCSI 支持；将发现光纤通道卷，但 Cloud Insights 不会报告 FC 映射，屏蔽或存储端口。</block>
   <block id="1c53dd7e07f75f42d5053d830e23cf8a" category="paragraph">Cloud Insights 从 VNXe 数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
-  <block id="34c07cab78ed0e865a0f65e8c93c21fb" category="cell">常规 iSCSI 块信息， VMware VMFS</block>
   <block id="823c34885b0ed3470261b5a7d915fc12" category="cell">复制远程系统</block>
   <block id="454c65346b592d2a6ddcf6e6cd91d9b3" category="cell">同步</block>
   <block id="1b5c8b57673db23e69bf32b928fab1da" category="cell">iSCSI 节点</block>
@@ -9075,7 +9074,6 @@
   <block id="54dac5afe1fcac2f65c059fc97b44a58" category="inline-link-macro">已弃用</block>
   <block id="924501eebf901f2348c9e37f56b7f6f0" category="paragraph">Cloud Insights 提供了三种类型的数据收集器：</block>
   <block id="d877172ec451e194a086d0d40021e8b8" category="list-text">基础架构(存储设备、网络交换机、计算基础架构)</block>
-  <block id="31b29af38563f95fcd16900aef967adf" category="list-text">操作系统(例如VMware或Windows)</block>
   <block id="ab9f8384afda29296f5ceaa4ff77f3b8" category="list-text">服务(例如Kafka)</block>
   <block id="3e3d1f4256fe73b88a0ea758b3951eb9" category="paragraph">如果选择了 _Infrastructure_ 数据收集器，则需要使用采集单元将数据注入 Cloud Insights 。您需要在要从中收集数据的数据中心的服务器或虚拟机上下载并安装采集单元软件。一个采集单元可用于多个数据收集器。</block>
   <block id="344ab1c74a04a4daec201f19f0c5e693" category="list-text">根据需要输入用于连接到设备的凭据(用户名和密码)。</block>
@@ -12646,9 +12644,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="02892541231ed9b9797890da851659d1" category="section-title">适用于FOS 9.1.1c及更高版本固件的Brocade CLI收集器可靠性增强功能</block>
   <block id="f451a3db1d946e0e6f7a6faff75241f4" category="paragraph">在某些运行9.1.1c固件的Brocade光纤通道交换机上、某些命令行界面命令的输出可能会在"moded"登录横幅文本前添加、或者警告用户更改默认密码。Brocade CLI收集器已得到增强、可忽略这两种类型的无关文本。</block>
   <block id="08cc9fe40f6d675ceb9852acf6cb4d2d" category="paragraph">在此增强功能之前、使用此收集器类型只能发现不存在虚拟结构的FOS 9.1.1c交换机。</block>
-  <block id="fdbc837080bf746694718923941b3ca6" category="section-title">将VMware标记映射到Cloud Insights标注</block>
-  <block id="556f5b9e77a7546a1dbeab74aa1190e0" category="paragraph">通过VMware数据收集器、您可以使用在VMware上配置的标记填充Cloud Insights标注。标注的名称必须与VMware标记完全相同。Cloud Insights 将始终填充同名文本类型的标注，并 " 尽力 " 填充其他类型（数字，布尔值等）的标注。如果您的标注类型不同，而数据收集器无法填充，则可能需要删除此标注并将其重新创建为文本类型。</block>
-  <block id="8354fa58be11dc6519c7b2d92ba17795" category="paragraph">请注意、VMware标记可能区分大小写、而Cloud Insights标记不区分大小写。因此、如果您在Cloud Insights中创建名为"owner"的标注、并在VMware中创建名为"owner"、"owner"和"owner"的标记、则所有这些"owner"变体都会映射到Cloud Insight的"owner"标注。</block>
   <block id="f528aa737a09ffef3755a1a747557c7a" category="list-text">Cloud Insights当前仅自动发布NetApp设备的支持信息。</block>
   <block id="8455a8bde7347555ff461cd652af2821" category="list-text">由于此支持信息以标注形式保存、因此您可以查询它或在信息板中使用它。</block>
   <block id="8ed3dc52c7734ad3388658bf20175200" category="list-text">如果用户覆盖或清空标注值、则在Cloud Insights更新标注时、该值会再次自动调整、每天更新一次。</block>
@@ -13002,4 +12997,10 @@ security login create -user-or-group-name｛username｝-application http -authen
   <block id="690b59689f385d15b45ee131216725c7" category="list-text">在工作负载安全性中，导航到*工作负载安全性&gt;策略&gt;自动响应策略*。  选择*+攻击策略*。</block>
   <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">选择(选中)_Block User File Access_。</block>
   <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">取消选择(取消选中)_Block User File Access_。</block>
+  <block id="b1a9e545f7d7952c0575fd3c825b523c" category="section-title">将VMware标记映射到Cloud Insights标注</block>
+  <block id="98d5008742fe1974f056048f2891c18d" category="paragraph">通过VMware数据收集器、您可以使用在VMware上配置的标记填充Cloud Insights标注。标注的名称必须与VMware标记完全相同。Cloud Insights 将始终填充同名文本类型的标注，并 " 尽力 " 填充其他类型（数字，布尔值等）的标注。如果您的标注类型不同，而数据收集器无法填充，则可能需要删除此标注并将其重新创建为文本类型。</block>
+  <block id="8d1b85d225aca014c162676a1f06f465" category="paragraph">请注意、VMware标记可能区分大小写、而Cloud Insights标记不区分大小写。因此、如果您在Cloud Insights中创建名为"owner"的标注、并在VMware中创建名为"owner"、"owner"和"owner"的标记、则所有这些"owner"变体都会映射到Cloud Insight的"owner"标注。</block>
+  <block id="865ccb9e69aad9a527770df196a2c282" category="list-text">操作系统(如VMware或Windows)</block>
+  <block id="6244cebffae6eb1472a9a0487a099c77" category="cell">常规iSCSI块信息、VMware VMFS</block>
+  <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
 </blocks>
