@@ -7904,7 +7904,6 @@
   <block id="09ea31b2f879daa3575f90741cc1d791" category="section-title">阻止用户访问的前提条件</block>
   <block id="4c03839c4d4987ac81496c7f17d6f092" category="paragraph">要使此功能正常运行、需要集群级别的凭据。</block>
   <block id="9a517e6700abab3e080100846703ab51" category="paragraph">如果您使用的是集群管理凭据、则不需要任何新权限。</block>
-  <block id="d024f8c400c18ed25e7c797f6b13a110" category="list-text">将"启用块用户访问"设置为_enabled"。</block>
   <block id="8bdb8cb044f5c9cc0cc87ec310782e1a" category="section-title">如何设置自动用户访问阻止？</block>
   <block id="83fce3228306e4223f72e5a98ed7923e" category="list-text">单击"阻止用户文件访问"复选框。选择此选项后，此功能将启用。</block>
   <block id="982ff1f57d1f125e6f9bb1f94dcef71e" category="list-text">在"时间段"下、选择应用阻止的截止时间。</block>
@@ -7916,7 +7915,6 @@
   <block id="f169ac98d63faf28e5387c7068cdc42d" category="list-text">您可以转到警报详细信息或用户详细信息屏幕、然后从这些屏幕手动阻止或还原用户。</block>
   <block id="f21a59e38c0c86324abe189f2666efd8" category="section-title">用户访问限制历史记录</block>
   <block id="b030dc666e324798ee9403442dd23eb1" category="paragraph">在警报详细信息和用户详细信息页面的用户面板中、您可以查看对用户访问限制历史记录的审核：时间、操作(阻止、取消阻止)、持续时间、采取的操作、 NFS的手动/自动IP以及受影响的IP。</block>
-  <block id="01aa451dc1421e1b9d5fe5148ef31be7" category="list-text">取消选择"启用块用户访问"以禁用。</block>
   <block id="fdf597bf8083a921059736ff839ffae8" category="section-title">手动还原NFS的IP</block>
   <block id="b368496b943e902a72e3e0bed2267ee2" category="cell">无法修改策略。原因：未获得该命令的授权。</block>
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">检查是否使用CsUser、是否已按上述方式为用户授予权限。</block>
@@ -9330,8 +9328,6 @@
   <block id="036ce35e40fa3fbcc9c9e500c29c6bf9" category="paragraph">SMB会直接阻止用户访问、NFS会阻止导致攻击的主机的IP地址。这些计算机IP地址将被阻止访问工作负载安全性监控的任何Storage Virtual Machine (SVM)。</block>
   <block id="f19379ce165a902f81548ae9d7b2e07c" category="paragraph">例如、假设工作负载安全性管理10个SVM、并且为其中4个SVM配置了自动响应策略。如果攻击源自四个SVM中的一个、则用户的访问将在所有10个SVM中被阻止。仍会在源 SVM 上创建 Snapshot 。</block>
   <block id="4965f6590d5121fa73cf823f64ef219b" category="paragraph">如果您使用的自定义用户(例如_CSUser_)具有为该用户授予的权限、请按照以下步骤为工作负载安全性授予权限以阻止用户。</block>
-  <block id="8e0c9f34f42be5c07c87ecae239a8823" category="list-text">在工作负载安全性中、导航到*管理员&gt;自动响应策略&gt;响应策略设置&gt;阻止用户访问*。</block>
-  <block id="d9c1a964d322cb7ed68da85eaa8a06b0" category="list-text">在工作负载安全性中、导航到*管理员&gt;自动响应策略&gt;响应策略设置&gt;阻止用户访问*</block>
   <block id="ef3c0a55c240483a8b3ffe2b395d514d" category="paragraph">如果您的工作负载安全试用版已过期或代理/收集器已关闭、请按照以下步骤手动从ONTAP 还原任何IP。</block>
   <block id="1b0bdf15231b05a92c86cf44b6c5280e" category="list-text">通过指定相应的RuleIndex、删除SVM上所有策略中的规则、这些策略将"cloudsure_rule"设置为客户端匹配。工作负载安全规则通常为1。</block>
   <block id="a117ae2a490977bedd4a55878386b06c" category="list-text">确保已删除工作负载安全规则(确认的可选步骤)。</block>
@@ -12721,8 +12717,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="4fd45e6b48ed24b4e3dbd4f7522cab8c" category="cell">ScaleIO/PowerFlex网关的IP地址或FQDN、以逗号(、)或分号(；)分隔</block>
   <block id="68d34ea912eb8ba5af30d244ed0f9227" category="cell">用于登录到ScaleIO/PowerFlex设备的管理员用户名</block>
   <block id="682ba587c3d6c301fba76aadc4ddd8af" category="cell">用于登录到ScaleIO/PowerFlex设备的密码</block>
-  <block id="9f3d8c0615d1ceba9f0f905f22c7d950" category="cell">允许搜索目录的用户。例如： _username@companyname.com_ 或 _username@domainname.com_
-此外、还需要域只读权限。</block>
   <block id="dada9839975856f2fd06228d265fea07" category="list-text">网络监控：</block>
   <block id="50e4ed16bb9f1a58d102b41d11b009d5" category="list-text">需要Linux内核版本4.18.0及更高版本</block>
   <block id="7ae2ba2018b8e11d966acfdd0fce7a55" category="list-text">不支持光子操作系统。</block>
@@ -13001,4 +12995,11 @@ security login create -user-or-group-name｛username｝-application http -authen
   <block id="57b48c75a9a8cae2e174d4d2e1a20e06" category="paragraph">表小工具处理表达式的方式略有不同。一个表小工具中最多可以包含五个表达式、每个表达式都会作为新列添加到表中。每个表达式最多可以包含五个用于计算的值。您可以轻松地为该列命名有意义的名称。</block>
   <block id="65d2c24b071888fa849372a7a32969e8" category="inline-image-macro">表小工具中的表达式</block>
   <block id="87e868e2dc8c898d0c4017d8f7f66ea8" category="paragraph"><block ref="87e868e2dc8c898d0c4017d8f7f66ea8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6dd0ae1f18b7c9b4d5e3b4eec7ff6352" category="cell">允许搜索目录的用户。例如： _username@companyname.com_ 或 _username@domainname.com_
+此外、还需要域只读权限。
+用户必须是安全组_read-only Domain Controllers_的成员。</block>
+  <block id="644ee4d8e32f0fd5525b3665f3b1be90" category="cell">链接：task_dc_brocade_rest.html</block>
+  <block id="690b59689f385d15b45ee131216725c7" category="list-text">在工作负载安全性中，导航到*工作负载安全性&gt;策略&gt;自动响应策略*。  选择*+攻击策略*。</block>
+  <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">选择(选中)_Block User File Access_。</block>
+  <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">取消选择(取消选中)_Block User File Access_。</block>
 </blocks>

@@ -50,8 +50,8 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 == 如何启用此功能？
 
-* 在工作负载安全性中、导航到*管理员>自动响应策略>响应策略设置>阻止用户访问*。
-* 将"启用块用户访问"设置为_enabled"。
+* 在工作负载安全性中，导航到*工作负载安全性>策略>自动响应策略*。  选择*+攻击策略*。
+* 选择(选中)_Block User File Access_。
 
 
 
@@ -93,8 +93,8 @@ security login role create -role csrole -cmddirname "vserver name-mapping" -acce
 
 您可以随时禁用此功能。如果系统中存在受限用户，则必须先还原其访问权限。
 
-* 在工作负载安全性中、导航到*管理员>自动响应策略>响应策略设置>阻止用户访问*
-* 取消选择"启用块用户访问"以禁用。
+* 在工作负载安全性中，导航到*工作负载安全性>策略>自动响应策略*。  选择*+攻击策略*。
+* 取消选择(取消选中)_Block User File Access_。
 
 
 此功能将在所有页面中隐藏。

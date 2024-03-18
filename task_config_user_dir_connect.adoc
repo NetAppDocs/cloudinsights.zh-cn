@@ -57,7 +57,8 @@ summary: 配置工作负载安全性Active Directory用户目录收集器
 
 
 | 绑定 DN | 允许搜索目录的用户。例如： _username@companyname.com_ 或 _username@domainname.com_
-此外、还需要域只读权限。 
+此外、还需要域只读权限。
+用户必须是安全组_read-only Domain Controllers_的成员。 
 
 
 | 绑定密码 | 目录服务器密码（即绑定 DN 中使用的用户名的密码） 
