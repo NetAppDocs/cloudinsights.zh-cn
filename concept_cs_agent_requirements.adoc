@@ -50,7 +50,13 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 | 内存 | 16 GB RAM 
 
 
-| 可用磁盘空间 | 应按以下方式分配磁盘空间：/opt/netapp 35 GB (最小)如果/opt是NAS存储中的挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 link:task_cs_add_agent.html#troubleshooting-agent-errors["故障排除"] 部分、了解更多详细信息。 
+| 可用磁盘空间 | 磁盘空间应按以下方式分配：
+/opt/NetApp 35 GB (最低)
+
+注意：建议额外分配一点磁盘空间、以便创建文件系统。确保文件系统中至少有35 GB的可用空间。
+
+
+如果/opt是NAS存储中的已挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 link:task_cs_add_agent.html#troubleshooting-agent-errors["故障排除"] 部分、了解更多详细信息。 
 
 
 | 网络 | 100 Mbps到1 Gbps以太网连接、静态IP地址、与所有设备的IP连接以及与工作负载安全实例(80或443)的所需端口。 

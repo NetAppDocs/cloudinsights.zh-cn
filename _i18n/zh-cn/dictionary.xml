@@ -8052,7 +8052,6 @@
   <block id="a1667a4627338ab4bba192e79668af02" category="paragraph"><block ref="a1667a4627338ab4bba192e79668af02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d37e34400d307dbed8b2907c8c7e8964" category="cell">如果您尝试在不受支持的系统上安装代理、则会出现此错误。请参见 <block ref="7db04bd496cdb9ab394c662c3f00f7ed" category="inline-link-macro-rx"></block>。</block>
   <block id="e09245effc62059e51f926fad603e413" category="inline-link-macro">故障排除</block>
-  <block id="64ecfa2ee741849d8a5def32fdb1eef6" category="cell">应按以下方式分配磁盘空间：/opt/netapp 35 GB (最小)如果/opt是NAS存储中的挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 部分、了解更多详细信息。</block>
   <block id="fde8afa3fd65a9f38d9b11377453846e" category="doc">为NetApp ONTAP 收集器配置Cloud Volumes ONTAP 和Amazon FSX</block>
   <block id="4aa02491d3ee690a6a014b190a75060e" category="section-title">支持的平台</block>
   <block id="bf6a182a4bf96601e8aa50ed356b9b9f" category="list-text">Cloud Volumes ONTAP 、在所有可用的云服务提供商中均受支持。例如：Amazon、Azure、Google Cloud。</block>
@@ -13019,4 +13018,11 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">针对Fpolicy事件与ONTAP进行通信。必须向工作负载安全代理打开这些端口、ONTAP才能向其发送事件、包括工作负载安全代理本身(如果存在)上的任何防火墙。</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI到REST的映射</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP REST收集器可用于替代以前基于ONTAPI的收集器。因此、收集或报告的指标可能存在差异。有关ONTAPI和REST之间差异的详细信息、请参见 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> 文档。</block>
+  <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">磁盘空间应按以下方式分配：
+/opt/NetApp 35 GB (最低)
+
+注意：建议额外分配一点磁盘空间、以便创建文件系统。确保文件系统中至少有35 GB的可用空间。
+
+
+如果/opt是NAS存储中的已挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 部分、了解更多详细信息。</block>
 </blocks>
