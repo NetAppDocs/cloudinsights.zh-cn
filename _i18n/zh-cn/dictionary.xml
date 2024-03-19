@@ -12961,10 +12961,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="216ade60a8bebfa7b9ef8f8fec32e876" category="cell">启用EMS事件收集</block>
   <block id="22454981300d227862b5ebd81b19f7de" category="cell">EMS轮询间隔(秒)</block>
   <block id="cfb13b3b743770c7f9772001c506ed28" category="list-text">使用以下命令创建角色：</block>
-  <block id="7d0153c84324ec12ea855f4910fdc574" category="paragraph">security login rest-Role create -Role｛Role name｝-api /api -access readonly
-security login ret-Role create -Role｛Role name｝-api /api/cluster-agents -access all</block>
-  <block id="6765c1ce40f9ed10162dff1db4e987ca" category="paragraph">vserver services web access create -name SPI -Role｛Role name｝-vserver｛name from 짏 述命令｝
-security login create -user-or-group-name｛username｝-application http -authentication方法密码-Role｛Role name｝</block>
   <block id="7483de82186016bc69ffb8a75489f338" category="cell">尝试创建ONTAP REST数据收集器时、会出现如下错误：
 配置：10.193.70.14：10.193.70.14上的ONTAP REST API不可用：10.193.70.14无法获取/API/cluster：400错误请求</block>
   <block id="40c54a6b7dcfa9b1202222c4928cb872" category="cell">这可能是由于older ONTAP阵列(例如ONTAP 9.6)没有REST API功能。ONTAP 9.14.1是ONTAP REST收集器支持的最低ONTAP版本。在REST之前的ONTAP版本中、应该会收到"400 Bad Request"响应。
@@ -13021,4 +13017,6 @@ security login create -user-or-group-name｛username｝-application http -authen
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">报告WWN别名</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">选择此选项可报告WWN别名</block>
   <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">针对Fpolicy事件与ONTAP进行通信。必须向工作负载安全代理打开这些端口、ONTAP才能向其发送事件、包括工作负载安全代理本身(如果存在)上的任何防火墙。</block>
+  <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI到REST的映射</block>
+  <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP REST收集器可用于替代以前基于ONTAPI的收集器。因此、收集或报告的指标可能存在差异。有关ONTAPI和REST之间差异的详细信息、请参见 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> 文档。</block>
 </blocks>
