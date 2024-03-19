@@ -5812,10 +5812,8 @@
   <block id="d35391dc3c80304f928b511837b6f6a5" category="list-text">强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 来同步 ONTAP 系统和代理计算机上的时间。</block>
   <block id="2209fa650bb8459f4028b704176e2a4b" category="section-title">云网络访问规则</block>
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">目标</block>
-  <block id="02674a4ef33e11c879283629996c8ff8" category="cell">方向</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="1e5d29d467aa39ff7343d30dc2f8de5b" category="cell">&lt;site_name&gt;.cs01.cloudinsights.netapp.com &lt;site_name&gt;.c01.cloudinsights.netapp.com &lt;site_name&gt;.c02.cloudinsights.netapp.com</block>
-  <block id="4c32be4a0b4f48cdd593aef35fd69e44" category="cell">出站</block>
   <block id="800d899720a1567094af6346ee35787a" category="cell">访问 Cloud Insights</block>
   <block id="4ce4e8664144d2ca2f89818a65da41cc" category="cell">gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com</block>
   <block id="d4fedc7f035f96436f1598f9626876e2" category="cell">访问身份验证服务</block>
@@ -9724,7 +9722,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 联邦版不支持存储工作负载安全性。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">默认情况下、许多系统监控器处于_Paused.状态。您可以通过为系统监视器选择_Resume_选项来启用该监视器。确保在数据收集器中启用了_Advanced Counter Data Collection _和_Enable ONTAP EMS log Collection _。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6c7e3200049198face0d2648e9d1a27d" category="cell">入站</block>
   <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">在ONTAP 和工作负载安全性之间实现单向。代理对 SVM LIF 执行 Ping 操作。</block>
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
@@ -13004,4 +13001,5 @@ security login create -user-or-group-name｛username｝-application http -authen
   <block id="6244cebffae6eb1472a9a0487a099c77" category="cell">常规iSCSI块信息、VMware VMFS</block>
   <block id="56079badd056a19303cc26e6a4fcc7e0" category="sidebar">VMware</block>
   <block id="45dd5be4ea94f7d41cb728ccc4186440" category="list-text">单击*工作负载安全性&gt;收集器&gt;+数据收集器*</block>
+  <block id="d0c65e48e2de27f37b54853eb602f10b" category="cell">工作负载安全代理</block>
 </blocks>

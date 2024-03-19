@@ -77,37 +77,37 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
 [cols="5*"]
 |===
-| 协议 | 端口 | 目标 | 方向 | 说明 
+| 协议 | 端口 | 源 | 目标 | 说明 
 
 
-| TCP | 443. | <site_name>.cs01.cloudinsights.netapp.com <site_name>.c01.cloudinsights.netapp.com <site_name>.c02.cloudinsights.netapp.com | 出站 | 访问 Cloud Insights 
+| TCP | 443. | 工作负载安全代理 | <site_name>.cs01.cloudinsights.netapp.com <site_name>.c01.cloudinsights.netapp.com <site_name>.c02.cloudinsights.netapp.com | 访问 Cloud Insights 
 
 
-| TCP | 443. | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | 出站 | 访问身份验证服务 
+| TCP | 443. | 工作负载安全代理 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com | 访问身份验证服务 
 |===
 对于*基于欧洲*的工作负载安全环境：
 
 [cols="5*"]
 |===
-| 协议 | 端口 | 目标 | 方向 | 说明 
+| 协议 | 端口 | 源 | 目标 | 说明 
 
 
-| TCP | 443. | <site_name>.cs01-eu-1.cloudinsights.netapp.com <site_name>.c01-eu-1.cloudinsights.netapp.com <site_name>.c02-eu-1.cloudinsights.netapp.com | 出站 | 访问 Cloud Insights 
+| TCP | 443. | 工作负载安全代理 | <site_name>.cs01-eu-1.cloudinsights.netapp.com <site_name>.c01-eu-1.cloudinsights.netapp.com <site_name>.c02-eu-1.cloudinsights.netapp.com | 访问 Cloud Insights 
 
 
-| TCP | 443. | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | 出站 | 访问身份验证服务 
+| TCP | 443. | 工作负载安全代理 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-eu-1.cloudinsights.netapp.com | 访问身份验证服务 
 |===
 对于基于*亚太地区*的工作负载安全环境：
 
 [cols="5*"]
 |===
-| 协议 | 端口 | 目标 | 方向 | 说明 
+| 协议 | 端口 | 源 | 目标 | 说明 
 
 
-| TCP | 443. | <site_name>.cs01-ap-1.cloudinsights.netapp.com <site_name>.c01-ap-1.cloudinsights.netapp.com <site_name>.c02-ap-1.cloudinsights.netapp.com | 出站 | 访问 Cloud Insights 
+| TCP | 443. | 工作负载安全代理 | <site_name>.cs01-ap-1.cloudinsights.netapp.com <site_name>.c01-ap-1.cloudinsights.netapp.com <site_name>.c02-ap-1.cloudinsights.netapp.com | 访问 Cloud Insights 
 
 
-| TCP | 443. | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com | 出站 | 访问身份验证服务 
+| TCP | 443. | 工作负载安全代理 | gateway.c01.cloudinsights.netapp.com agentlogin.cs01-ap-1.cloudinsights.netapp.com | 访问身份验证服务 
 |===
 
 
@@ -117,22 +117,22 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
 [cols="5*"]
 |===
-| 协议 | 端口 | 目标 | 方向 | 说明 
+| 协议 | 端口 | 源 | 目标 | 说明 
 
 
-| TCP | 389 （ LDAP ） 636 （ LDAPS / START-TLS ） | LDAP 服务器 URL | 出站 | 连接到 LDAP 
+| TCP | 389 （ LDAP ） 636 （ LDAPS / START-TLS ） | 工作负载安全代理 | LDAP 服务器 URL | 连接到 LDAP 
 
 
-| TCP | 443. | 集群或SVM管理IP地址(取决于SVM收集器配置) | 出站 | 与 ONTAP 的 API 通信 
+| TCP | 443. | 工作负载安全代理 | 集群或SVM管理IP地址(取决于SVM收集器配置) | 与 ONTAP 的 API 通信 
 
 
-| TCP | 35000 - 55000 | SVM 数据 LIF IP 地址 | 入站 | 与 ONTAP 通信以处理 Fpolicy 事件 
+| TCP | 35000 - 55000 | SVM 数据 LIF IP 地址 | 工作负载安全代理 | 与 ONTAP 通信以处理 Fpolicy 事件 
 
 
-| TCP | 7. | SVM 数据 LIF IP 地址 | 出站 | 在ONTAP 和工作负载安全性之间实现单向。代理对 SVM LIF 执行 Ping 操作。 
+| TCP | 7. | 工作负载安全代理 | SVM 数据 LIF IP 地址 | 在ONTAP 和工作负载安全性之间实现单向。代理对 SVM LIF 执行 Ping 操作。 
 
 
-| SSH | 22. | 集群管理 | 出站 | CIFS/SMB用户阻止所需。 
+| SSH | 22. | 工作负载安全代理 | 集群管理 | CIFS/SMB用户阻止所需。 
 |===
 
 
