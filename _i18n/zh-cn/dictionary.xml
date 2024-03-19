@@ -5828,7 +5828,6 @@
   <block id="9bf305870fa281c6eff0d16d2e8d6b6d" category="cell">与 ONTAP 的 API 通信</block>
   <block id="c1d0965e767c67506aa60bc80d5b716e" category="cell">35000 - 55000</block>
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM 数据 LIF IP 地址</block>
-  <block id="3931fc64139cf87ea57a9ac2d318fe52" category="cell">与 ONTAP 通信以处理 Fpolicy 事件</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">事件速率检查器</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">请参见 <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> 有关规模估算的信息的文档。</block>
   <block id="961208029de208a5d667bc4557cd4628" category="summary">用作采集单元的服务器或 VM 必须满足最低要求</block>
@@ -13021,4 +13020,5 @@ security login create -user-or-group-name｛username｝-application http -authen
   <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">选择此项可启用通过SSL的连接</block>
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">报告WWN别名</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">选择此选项可报告WWN别名</block>
+  <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">针对Fpolicy事件与ONTAP进行通信。必须向工作负载安全代理打开这些端口、ONTAP才能向其发送事件、包括工作负载安全代理本身(如果存在)上的任何防火墙。</block>
 </blocks>

@@ -126,7 +126,7 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 | TCP | 443. | 工作负载安全代理 | 集群或SVM管理IP地址(取决于SVM收集器配置) | 与 ONTAP 的 API 通信 
 
 
-| TCP | 35000 - 55000 | SVM 数据 LIF IP 地址 | 工作负载安全代理 | 与 ONTAP 通信以处理 Fpolicy 事件 
+| TCP | 35000 - 55000 | SVM 数据 LIF IP 地址 | 工作负载安全代理 | 针对Fpolicy事件与ONTAP进行通信。必须向工作负载安全代理打开这些端口、ONTAP才能向其发送事件、包括工作负载安全代理本身(如果存在)上的任何防火墙。 
 
 
 | TCP | 7. | 工作负载安全代理 | SVM 数据 LIF IP 地址 | 在ONTAP 和工作负载安全性之间实现单向。代理对 SVM LIF 执行 Ping 操作。 
