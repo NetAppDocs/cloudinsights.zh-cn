@@ -12984,7 +12984,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="6dd0ae1f18b7c9b4d5e3b4eec7ff6352" category="cell">允许搜索目录的用户。例如： _username@companyname.com_ 或 _username@domainname.com_
 此外、还需要域只读权限。
 用户必须是安全组_read-only Domain Controllers_的成员。</block>
-  <block id="644ee4d8e32f0fd5525b3665f3b1be90" category="cell">链接：task_dc_brocade_rest.html</block>
   <block id="690b59689f385d15b45ee131216725c7" category="list-text">在工作负载安全性中，导航到*工作负载安全性&gt;策略&gt;自动响应策略*。  选择*+攻击策略*。</block>
   <block id="a0e5daf37fbc5d356df1518610cdff22" category="list-text">选择(选中)_Block User File Access_。</block>
   <block id="97436105e7ddd0da98d7e0207d74958a" category="list-text">取消选择(取消选中)_Block User File Access_。</block>
@@ -13025,4 +13024,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
 
 如果/opt是NAS存储中的已挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 部分、了解更多详细信息。</block>
+  <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST </block>
+  <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
 </blocks>

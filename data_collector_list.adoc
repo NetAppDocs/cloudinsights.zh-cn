@@ -61,257 +61,257 @@ Cloud Insights 支持的数据收集器的按字母顺序列表：
 | link:task_dc_brocade_fc_switch.html["Brocade 光纤通道交换机"] | 基础架构 
 
 
-| 链接：task_dc_brocade_rest.html | Brocade FOS REST 
+| link:task_dc_brocade_rest.html["Brocade FOS REST "] | 基础架构 
 
 
-| 基础架构 | link:task_dc_cisco_fc_switch.html["Cisco MDS 光纤交换机"] 
+| link:task_dc_cisco_fc_switch.html["Cisco MDS 光纤交换机"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_consul.html["Consu"] 
+| link:task_config_telegraf_consul.html["Consu"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_couchbase.html["Couchbase"] 
+| link:task_config_telegraf_couchbase.html["Couchbase"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_couchdb.html["CouchDB"] 
+| link:task_config_telegraf_couchdb.html["CouchDB"] | 服务 
 
 
-| 服务 | link:task_dc_cohesity_smartfiles.html["Cohesity SmartFiles"] 
+| link:task_dc_cohesity_smartfiles.html["Cohesity SmartFiles"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_datadomain.html["Dell EMC 数据域"] 
+| link:task_dc_emc_datadomain.html["Dell EMC 数据域"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_ecs.html["Dell EMC ECS"] 
+| link:task_dc_emc_ecs.html["Dell EMC ECS"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_isilon.html["Dell EMC PowerScale （以前称为 Isilon ）"] 
+| link:task_dc_emc_isilon.html["Dell EMC PowerScale （以前称为 Isilon ）"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_isilon_rest.html["Dell EMC Isilon / PowerScale REST"] 
+| link:task_dc_emc_isilon_rest.html["Dell EMC Isilon / PowerScale REST"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_powerstore.html["Dell EMC PowerStore"] 
+| link:task_dc_emc_powerstore.html["Dell EMC PowerStore"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_recoverpoint.html["Dell EMC Recoverpoint"] 
+| link:task_dc_emc_recoverpoint.html["Dell EMC Recoverpoint"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_scaleio.html["Dell EMC ScaleIO/PowerFlex "] 
+| link:task_dc_emc_scaleio.html["Dell EMC ScaleIO/PowerFlex "] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_unity.html["Dell EMC Unity"] 
+| link:task_dc_emc_unity.html["Dell EMC Unity"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_unisphere_rest.html["Dell EMC Unisphere REST"] 
+| link:task_dc_emc_unisphere_rest.html["Dell EMC Unisphere REST"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_vmax_powermax.html["Dell EMC VMAX/PowerMax 系列设备"] 
+| link:task_dc_emc_vmax_powermax.html["Dell EMC VMAX/PowerMax 系列设备"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_vnx_block.html["Dell EMC VNX 块存储"] 
+| link:task_dc_emc_vnx_block.html["Dell EMC VNX 块存储"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_vnx_file.html["Dell EMC VNX 文件"] 
+| link:task_dc_emc_vnx_file.html["Dell EMC VNX 文件"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_vnx_unified.html["Dell EMC VNX Unified"] 
+| link:task_dc_emc_vnx_unified.html["Dell EMC VNX Unified"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_vplex.html["Dell EMC VPLEX"] 
+| link:task_dc_emc_vplex.html["Dell EMC VPLEX"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_emc_xio.html["Dell EMC XtremIO"] 
+| link:task_dc_emc_xio.html["Dell EMC XtremIO"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_dell_xc_series.html["Dell xC 系列"] 
+| link:task_dc_dell_xc_series.html["Dell xC 系列"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_docker.html["Docker"] 
+| link:task_config_telegraf_docker.html["Docker"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_elasticsearch.html["Elasticsearch"] 
+| link:task_config_telegraf_elasticsearch.html["Elasticsearch"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_flink.html["Flink"] 
+| link:task_config_telegraf_flink.html["Flink"] | 服务 
 
 
-| 服务 | link:task_dc_fujitsu_eternus.html["Fujitsu ETERNUS DX"] 
+| link:task_dc_fujitsu_eternus.html["Fujitsu ETERNUS DX"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_google_cloud.html["Google 计算和存储"] 
+| link:task_dc_google_cloud.html["Google 计算和存储"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_hadoop.html["Hadoop"] 
+| link:task_config_telegraf_hadoop.html["Hadoop"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_haproxy.html["HA 代理"] 
+| link:task_config_telegraf_haproxy.html["HA 代理"] | 服务 
 
 
-| 服务 | link:task_dc_hds_hcp.html["Hitachi 内容平台（ HCP ）"] 
+| link:task_dc_hds_hcp.html["Hitachi 内容平台（ HCP ）"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_hds_commandsuite.html["Hitachi Vantara Command Suite"] 
+| link:task_dc_hds_commandsuite.html["Hitachi Vantara Command Suite"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_hds_nas.html["Hitachi Vantara NAS 平台"] 
+| link:task_dc_hds_nas.html["Hitachi Vantara NAS 平台"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_hds_ops_center.html["Hitachi 运营中心"] 
+| link:task_dc_hds_ops_center.html["Hitachi 运营中心"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_hpe_nimble.html["HP Enterprise Alletra 6000 （以前称为 Nimble ）存储"] 
+| link:task_dc_hpe_nimble.html["HP Enterprise Alletra 6000 （以前称为 Nimble ）存储"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_hp_3par.html["HP Enterprise Alletra 9000/Primera （以前称为 3PAR ）存储"] 
+| link:task_dc_hp_3par.html["HP Enterprise Alletra 9000/Primera （以前称为 3PAR ）存储"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_hpe_commandview.html["HP Enterprise Command View"] 
+| link:task_dc_hpe_commandview.html["HP Enterprise Command View"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_huawei_oceanstor.html["Huawei OceanStor 和 Dorado Devices"] 
+| link:task_dc_huawei_oceanstor.html["Huawei OceanStor 和 Dorado Devices"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_ibm_cleversafe.html["IBM Cleversafe"] 
+| link:task_dc_ibm_cleversafe.html["IBM Cleversafe"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_ibm_cs.html["IBM CS 系列"] 
+| link:task_dc_ibm_cs.html["IBM CS 系列"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_ibm_powervm.html["IBM PowerVM"] 
+| link:task_dc_ibm_powervm.html["IBM PowerVM"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_ibm_svc.html["IBM SAN 卷控制器（ SVC ）"] 
+| link:task_dc_ibm_svc.html["IBM SAN 卷控制器（ SVC ）"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_ibm_ds.html["IBM 系统存储 DS8000 系列"] 
+| link:task_dc_ibm_ds.html["IBM 系统存储 DS8000 系列"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_ibm_xiv.html["IBM XIV 和 A9000 存储"] 
+| link:task_dc_ibm_xiv.html["IBM XIV 和 A9000 存储"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_infinidat_infinibox.html["Infinidat InfiniBox"] 
+| link:task_dc_infinidat_infinibox.html["Infinidat InfiniBox"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_jvm.html["Java"] 
+| link:task_config_telegraf_jvm.html["Java"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_kafka.html["Kafka"] 
+| link:task_config_telegraf_kafka.html["Kafka"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_kapacitor.html["Kapacitor"] 
+| link:task_config_telegraf_kapacitor.html["Kapacitor"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_kibana.html["Kibana"] 
+| link:task_config_telegraf_kibana.html["Kibana"] | 服务 
 
 
-| 服务 | link:https:task_config_telegraf_agent.html#kubernetes["Kubernetes"] 
+| link:https:task_config_telegraf_agent.html#kubernetes["Kubernetes"] | 服务 
 
 
-| 服务 | link:task_dc_lenovo.html["联想 HX 系列"] 
+| link:task_dc_lenovo.html["联想 HX 系列"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_memcached.html["已缓存内存"] 
+| link:task_config_telegraf_memcached.html["已缓存内存"] | 服务 
 
 
-| 服务 | link:task_dc_ms_anf.html["Microsoft Azure NetApp Files"] 
+| link:task_dc_ms_anf.html["Microsoft Azure NetApp Files"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_ms_hyperv.html["Microsoft Hyper-V"] 
+| link:task_dc_ms_hyperv.html["Microsoft Hyper-V"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_mongodb.html["MongoDB"] 
+| link:task_config_telegraf_mongodb.html["MongoDB"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_mysql.html["MySQL"] 
+| link:task_config_telegraf_mysql.html["MySQL"] | 服务 
 
 
-| 服务 | link:task_dc_na_cloud_volumes_ontap.html["NetApp Cloud Volumes ONTAP"] 
+| link:task_dc_na_cloud_volumes_ontap.html["NetApp Cloud Volumes ONTAP"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_na_cloud_volumes.html["适用于 AWS 的 NetApp Cloud Volumes Services"] 
+| link:task_dc_na_cloud_volumes.html["适用于 AWS 的 NetApp Cloud Volumes Services"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_na_cloud_connection.html["适用于 ONTAP 9.9+ 的 NetApp 云连接"] 
+| link:task_dc_na_cloud_connection.html["适用于 ONTAP 9.9+ 的 NetApp 云连接"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_na_7mode.html["NetApp Data ONTAP 7- 模式"] 
+| link:task_dc_na_7mode.html["NetApp Data ONTAP 7- 模式"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_na_eseries.html["NetApp E-Series"] 
+| link:task_dc_na_eseries.html["NetApp E-Series"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_na_amazon_fsx.html["适用于 NetApp ONTAP 的 Amazon FSX"] 
+| link:task_dc_na_amazon_fsx.html["适用于 NetApp ONTAP 的 Amazon FSX"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_na_hci.html["NetApp HCI 虚拟中心"] 
+| link:task_dc_na_hci.html["NetApp HCI 虚拟中心"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_na_cdot.html["NetApp ONTAP 数据管理软件"] 
+| link:task_dc_na_cdot.html["NetApp ONTAP 数据管理软件"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_na_cdot.html["NetApp ONTAP Select"] 
+| link:task_dc_na_cdot.html["NetApp ONTAP Select"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_na_solidfire.html["NetApp SolidFire 全闪存阵列"] 
+| link:task_dc_na_solidfire.html["NetApp SolidFire 全闪存阵列"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_na_storagegrid.html["NetApp StorageGRID"] 
+| link:task_dc_na_storagegrid.html["NetApp StorageGRID"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_netstat.html["netstat"] 
+| link:task_config_telegraf_netstat.html["netstat"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_nginx.html["nginx"] 
+| link:task_config_telegraf_nginx.html["nginx"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_node.html["节点"] 
+| link:task_config_telegraf_node.html["节点"] | 服务 
 
 
-| 服务 | link:task_dc_nutanix.html["Nutanix NX 系列"] 
+| link:task_dc_nutanix.html["Nutanix NX 系列"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_openstack.html["OpenStack"] 
+| link:task_dc_openstack.html["OpenStack"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_openzfs.html["OpenZFS"] 
+| link:task_config_telegraf_openzfs.html["OpenZFS"] | 服务 
 
 
-| 服务 | link:task_dc_oracle_zfs.html["Oracle ZFS 存储设备"] 
+| link:task_dc_oracle_zfs.html["Oracle ZFS 存储设备"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_postgresql.html["PostgreSQL"] 
+| link:task_config_telegraf_postgresql.html["PostgreSQL"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_puppetagent.html["Puppet 代理"] 
+| link:task_config_telegraf_puppetagent.html["Puppet 代理"] | 服务 
 
 
-| 服务 | link:task_dc_pure_flasharray.html["Pure Storage FlashArray"] 
+| link:task_dc_pure_flasharray.html["Pure Storage FlashArray"] | 基础架构 
 
 
-| 基础架构 | link:task_dc_redhat_virtualization.html["Red Hat 虚拟化"] 
+| link:task_dc_redhat_virtualization.html["Red Hat 虚拟化"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_redis.html["Redis"] 
+| link:task_config_telegraf_redis.html["Redis"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_rethinkdb.html["RethinkDB"] 
+| link:task_config_telegraf_rethinkdb.html["RethinkDB"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_agent.html#rhel-and-centos["RHEL 和 AMP ； CentOS"] 
+| link:task_config_telegraf_agent.html#rhel-and-centos["RHEL 和 AMP ； CentOS"] | 服务 
 
 
-| 服务 | link:task_dc_rubrik_cdm.html["Rubrik CDM存储"] 
+| link:task_dc_rubrik_cdm.html["Rubrik CDM存储"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_agent.html#ubuntu-and-debian["Ubuntu 和 AMP ； Debian"] 
+| link:task_config_telegraf_agent.html#ubuntu-and-debian["Ubuntu 和 AMP ； Debian"] | 服务 
 
 
-| 服务 | link:task_dc_vmware.html["VMware vSphere"] 
+| link:task_dc_vmware.html["VMware vSphere"] | 基础架构 
 
 
-| 基础架构 | link:task_config_telegraf_agent.html#windows["Windows"] 
+| link:task_config_telegraf_agent.html#windows["Windows"] | 服务 
 
 
-| 服务 | link:task_config_telegraf_zookeeper.html["Zookeeper"] 
+| link:task_config_telegraf_zookeeper.html["Zookeeper"] | 服务 
 |===
