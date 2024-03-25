@@ -23,6 +23,18 @@ NOTE: ONTAP REST收集器可用于替代以前基于ONTAPI的收集器。因此�
 
 
 
+== migration
+
+要从先前的ONTAP (ontapi)数据收集器迁移到新的ONTAP REST收集器、请执行以下操作：
+
+. 添加REST收集器、输入所有相同的用户/权限等 您已为上一个收集器设置了。
+. 暂停上一个收集器。
+. 让系统收集~30分钟的数据。忽略在此期间的任何数据古怪。
+. 休息期结束后、REST收集器上的数据将稳定持续。
+
+
+
+
 == 术语
 
 Cloud Insights从ONTAP数据收集器采集清单、日志和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
@@ -51,6 +63,9 @@ Cloud Insights从ONTAP数据收集器采集清单、日志和性能数据。对�
 
 
 | 卷 | 内部卷 
+
+
+| Storage Virtual Machine/Vserver | Storage Virtual Machine 
 |===
 
 
@@ -113,6 +128,7 @@ Cloud Insights从ONTAP数据收集器采集清单、日志和性能数据。对�
 配置和使用此数据收集器的要求如下：
 
 * 您必须能够访问具有所需访问级别的用户帐户。请注意、创建新的REST用户/角色时需要管理员权限。
+* ONTAP 9.14.1或更高版本。
 * 帐户详细信息包括用户名和密码。
 * 端口要求：443
 * 帐户权限：
@@ -131,7 +147,7 @@ Cloud Insights从ONTAP数据收集器采集清单、日志和性能数据。对�
 | 字段 | 说明 
 
 
-| ONTAP管理IP地址 | NetApp 集群的 IP 地址或完全限定域名 
+| ONTAP管理IP地址 | NetApp集群的IP地址或完全限定域名。必须为集群管理IP/FQDN。 
 
 
 | ONTAP REST用户名 | NetApp 集群的用户名 
@@ -212,41 +228,47 @@ FAS/AF8080
 要在集群级别为 Cloud Insights 创建本地帐户，请使用集群管理管理员用户名 / 密码登录到 ONTAP ，然后在 ONTAP 服务器上执行以下命令：
 
 . 开始之前，您必须使用 _Administrator_ 帐户登录到 ONTAP ，并且必须启用 _diagnostic-level commands_。
+. 检索类型为_admin_的Vserver的名称。您将在后续命令中使用此名称。
++
+ vserver show -type admin
 . 使用以下命令创建角色：
 +
 ....
 security login rest-role create -role {role name} -api /api -access readonly
 security login rest-role create -role {role name} -api /api/cluster/agents -access all
-vserver services web access create -name spi -role {role name} -vserver {name from above command}
+vserver services web access create -name spi -role {role name} -vserver {vserver name as retrieved above}
 security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
 ....
-
-
 . 使用以下命令创建只读用户。执行 create 命令后，系统将提示您输入此用户的密码。
 +
- security login create -username ci_user -application ontapi -authentication-method password -role ci_readonly
+ security login create -username ci_user -application http -authentication-method password -role ci_readonly
 
 
 如果使用 AD/LDAP 帐户，则命令应为
 
- security login create -user-or-group-name DOMAIN\aduser/adgroup -application ontapi -authentication-method domain -role ci_readonly
+ security login create -user-or-group-name DOMAIN\aduser/adgroup -application http -authentication-method domain -role ci_readonly
 生成的角色和用户登录信息如下所示。实际输出可能会有所不同：
 
-....
-Role Command/ Access
-Vserver Name Directory Query Level
----------- ------------- --------- ------------------ --------
-cluster1   ci_readonly   DEFAULT   read only
-cluster1   ci_readonly   security  read only
-....
-....
-cluster1::security login> show
-Vserver: cluster1
-Authentication Acct
-UserName    Application   Method      Role Name      Locked
----------   -------      ----------- -------------- --------
-ci_user     ontapi       password    ci_readonly    no
-....
+[listing]
+----
+security login rest-role show -vserver <vserver name> -role restRole
+
+               Role                                    Access
+Vserver        Name            API                     Level
+----------     -------------   -------------------     ------
+<vserver name> restRole        /api                    readonly
+                               /api/cluster/agents     all
+2 entries were displayed.
+
+security login show -vserver <vserver name> -user-or-group-name restUser
+
+Vserver: <vserver name>
+                                                                 Second
+User/Group                 Authentication                 Acct   Authentication
+Name           Application Method        Role Name        Locked Method
+-------------- ----------- ------------- ---------------- ------ --------------
+restUser       http        password      restRole         no     none
+----
 
 
 == 故障排除
@@ -263,5 +285,8 @@ ci_user     ontapi       password    ci_readonly    no
 
 对于支持REST但不支持9.14.1或更高版本的ONTAP版本、您可能会看到以下simillar消息：
 配置：10.193.98.84：10.193.98.84下的ONTAP REST API不可用：10.193.98.84下的ONTAP REST API可用：cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7、但不是最低版本9.14.1。 
+
+
+| 我看到ONTAP ontapi收集器显示数据的指标为空或"0"。 | ONTAP REST不会报告仅在ONTAP系统内部使用的指标。例如、ONTAP REST不会收集系统聚合、只会收集类型为"数据"的SVM。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。
