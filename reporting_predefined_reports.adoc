@@ -30,8 +30,6 @@ NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_ins
 
 您可以生成各种格式的报告，包括 HTML ， PDF ， CSV ， XML ， 和 Excel 。
 
-Cloud Insights 允许您将用户与业务单位相关联，从而在报告中容纳多个租户。借助此功能，管理员可以根据用户的属性或其从属关系来分隔数据或报告。
-
 
 
 == 导航到预定义报告
