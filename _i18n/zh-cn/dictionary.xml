@@ -9719,7 +9719,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 联邦版不支持存储工作负载安全性。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">默认情况下、许多系统监控器处于_Paused.状态。您可以通过为系统监视器选择_Resume_选项来启用该监视器。确保在数据收集器中启用了_Advanced Counter Data Collection _和_Enable ONTAP EMS log Collection _。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="52e3eb8960d4500b67360febd3b16b26" category="cell">在ONTAP 和工作负载安全性之间实现单向。代理对 SVM LIF 执行 Ping 操作。</block>
   <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
 <block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">您可以单击 "Activity History" 表上方的 _Export_ 按钮将活动历史记录导出到 .CSV 文件。请注意、仅导出排名前10万位的记录。根据数据量的不同、导出可能需要几秒钟到几分钟才能完成。</block>
@@ -13013,7 +13012,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="d0768c091a340f3c6007fff30de3ea50" category="cell">选择此项可启用通过SSL的连接</block>
   <block id="ac5ff7aa53ae721accfc89d2e8327f56" category="cell">报告WWN别名</block>
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">选择此选项可报告WWN别名</block>
-  <block id="fd3eaf47a54b3fb99f483aa91af951ad" category="cell">针对Fpolicy事件与ONTAP进行通信。必须向工作负载安全代理打开这些端口、ONTAP才能向其发送事件、包括工作负载安全代理本身(如果存在)上的任何防火墙。</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI到REST的映射</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP REST收集器可用于替代以前基于ONTAPI的收集器。因此、收集或报告的指标可能存在差异。有关ONTAPI和REST之间差异的详细信息、请参见 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> 文档。</block>
   <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">磁盘空间应按以下方式分配：
@@ -13041,4 +13039,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">我看到ONTAP ontapi收集器显示数据的指标为空或"0"。</block>
   <block id="e33c3a41c8a37e74fdb59ca792c91d5a" category="cell">ONTAP REST不会报告仅在ONTAP系统内部使用的指标。例如、ONTAP REST不会收集系统聚合、只会收集类型为"数据"的SVM。</block>
   <block id="93411b670be12318c5a6613f3fca054f" category="list-text">添加REST收集器、输入所有相同的用户/权限等 您已为上一个收集器设置了。</block>
+  <block id="7e0b2932c814704a91b543d4f713d658" category="cell">从ONTAP到工作负载安全代理的Fpolicy事件通信。  必须向工作负载安全代理打开这些端口、ONTAP才能向其发送事件、包括工作负载安全代理本身(如果存在)上的任何防火墙。</block>
+  <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">从代理到SVM数据Lifs的回显</block>
 </blocks>
