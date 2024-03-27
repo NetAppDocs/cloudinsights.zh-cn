@@ -212,7 +212,7 @@ OpenShift可以实施更高的安全级别、从而可能阻止对某些Kubernet
 
 === 容差和污物
 
-要正确收集所有节点上的数据、_tendentaf_、_fluent-bit_和_net-oborder-demonSets必须在集群中的每个节点上计划一个POD。操作器已配置为允许某些众所周知的*污染*。如果您在节点上配置了任何自定义污染、从而阻止Pod在每个节点上运行、则可以为这些污染创建一个*容错* link:telegraf_agent_k8s_config_options.html["在_AgentConfiguration_中"]。如果已将自定义污染应用于集群中的所有节点、则还必须向操作员部署添加必要的容错值、以便可以计划和执行操作员POD。
+netapp-CI-tentlaf-ds_、_netapp-CI-fluent-bit-ds_和_netapp-CI-net-oboder-L4-DS_ DemonSets必须在集群中的每个节点上计划一个POD、以便正确收集所有节点上的数据。操作器已配置为允许某些众所周知的*污染*。如果您在节点上配置了任何自定义污染、从而阻止Pod在每个节点上运行、则可以为这些污染创建一个*容错* link:telegraf_agent_k8s_config_options.html["在_AgentConfiguration_中"]。如果已将自定义污染应用于集群中的所有节点、则还必须向操作员部署添加必要的容错值、以便可以计划和执行操作员POD。
 
 详细了解Kubbernetes link:https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/["损害和公差"]。
 

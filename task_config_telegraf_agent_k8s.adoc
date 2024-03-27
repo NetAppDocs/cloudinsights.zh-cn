@@ -260,16 +260,16 @@ agent:
 核心操作员功能和Kubornetes监控
 
 * NetApp监控
-* Kube-RBAC-代理
-* Kube-state-metrics
-* 电报
+* CI-KKube-RBAC-代理
+* CI-KSM
+* CI-(国际通信
 * distroless root用户
 
 
 事件日志
 
-* 流畅位
-* Kubbernetes-event-exporter
+* CI-流畅位
+* CI-Kuber-netes-event-exporter
 
 
 网络性能和映射
@@ -282,7 +282,7 @@ agent:
 在operator-DEPLOYAML中编辑monitor-operator部署、并修改所有映像引用以使用私有Docker存储库。
 
 ....
-image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
+image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<ci-kube-rbac-proxy version>
 image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
 ....
 编辑operator-config.yaml中的AgentConfiguration以反映新的Docker repo位置。为私有存储库创建新的imagePullSecret,有关更多详细信息，请参见_https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_

@@ -10209,7 +10209,6 @@
   <block id="d43e029b6a4626717198326d15889721" category="list-text">使用监控器主动检测后端性能问题</block>
   <block id="ae233b4bee0ed9f611ffe211f5804e00" category="section-title">容差和污物</block>
   <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">在_AgentConfiguration_中</block>
-  <block id="896815f9ea37359e86504cac9ab58b31" category="paragraph">要正确收集所有节点上的数据、_tendentaf_、_fluent-bit_和_net-oborder-demonSets必须在集群中的每个节点上计划一个POD。操作器已配置为允许某些众所周知的*污染*。如果您在节点上配置了任何自定义污染、从而阻止Pod在每个节点上运行、则可以为这些污染创建一个*容错* <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果已将自定义污染应用于集群中的所有节点、则还必须向操作员部署添加必要的容错值、以便可以计划和执行操作员POD。</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">损害和公差</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">详细了解Kubbernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
   <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">已启用dockerMetricCollection</block>
@@ -13041,4 +13040,10 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="93411b670be12318c5a6613f3fca054f" category="list-text">添加REST收集器、输入所有相同的用户/权限等 您已为上一个收集器设置了。</block>
   <block id="7e0b2932c814704a91b543d4f713d658" category="cell">从ONTAP到工作负载安全代理的Fpolicy事件通信。  必须向工作负载安全代理打开这些端口、ONTAP才能向其发送事件、包括工作负载安全代理本身(如果存在)上的任何防火墙。</block>
   <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">从代理到SVM数据Lifs的回显</block>
+  <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">netapp-CI-tentlaf-ds_、_netapp-CI-fluent-bit-ds_和_netapp-CI-net-oboder-L4-DS_ DemonSets必须在集群中的每个节点上计划一个POD、以便正确收集所有节点上的数据。操作器已配置为允许某些众所周知的*污染*。如果您在节点上配置了任何自定义污染、从而阻止Pod在每个节点上运行、则可以为这些污染创建一个*容错* <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果已将自定义污染应用于集群中的所有节点、则还必须向操作员部署添加必要的容错值、以便可以计划和执行操作员POD。</block>
+  <block id="b1dbe9124bd000f8918a20bf61bc24f6" category="list-text">CI-KKube-RBAC-代理</block>
+  <block id="67efe5df179f0f50a5a5e82fd46a07fc" category="list-text">CI-KSM</block>
+  <block id="217b41d0f229477b95c3b46b9905e8a6" category="list-text">CI-(国际通信</block>
+  <block id="7357e4ce1b613c72370aa11b8881c327" category="list-text">CI-流畅位</block>
+  <block id="fe05143e1e28d056a7092a13c7ef1fda" category="list-text">CI-Kuber-netes-event-exporter</block>
 </blocks>
