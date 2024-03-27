@@ -12968,8 +12968,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="5eeda23f92dad663daa058631cc10210" category="list-text">Serial Number—阵列UUID</block>
   <block id="b697879d40ceeef13c6f9527808724fe" category="paragraph">由于许多Cloud Insights的ONTAP信息板都依赖于高级ONTAP计数器，因此应在数据收集器高级配置部分中保持启用*启用高级计数器数据收集*。</block>
   <block id="992ec6f152c405f64da205561d5810c3" category="list-text">您必须能够访问具有所需访问级别的用户帐户。请注意、创建新的REST用户/角色时需要管理员权限。</block>
-  <block id="7716cde88803d3b7d809cbffb39a1d82" category="inline-xref">有关权限的注意事项</block>
-  <block id="267142a6c5298e3a85dfd745d6a91771" category="list-text">在功能上、Cloud Insights会发出读取请求、但要向ONTAP阵列注册Cloud Insights、需要一些写入权限。请参见 <block ref="2cd5e7e54a305dd942a55b6d20ef8f9c" category="inline-xref-macro-rx"></block> 。</block>
   <block id="45d6bfd686219a198a0983bc084e3b92" category="cell">选择此选项可在轮询中包含 ONTAP 高级计数器数据。默认情况下处于启用状态。</block>
   <block id="19decc8950209e44f521507a99ab0792" category="cell">选择此选项可包括ONTAP EMS日志事件数据。默认情况下处于启用状态。</block>
   <block id="b8da12392eaf9647590629afc8e5e321" category="inline-xref">表小工具</block>
@@ -13027,9 +13025,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="d725c02924790a2eff9bb2c7121e839d" category="paragraph">请务必查看的权限部分 <block ref="8a91694a94b506bcdf4d50b0df6ab8bc" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="19f59b74448f6a27519db281a44e4b12" category="section-title">migration</block>
   <block id="326a85558498d8aa2718dbf52e3bf722" category="paragraph">要从先前的ONTAP (ontapi)数据收集器迁移到新的ONTAP REST收集器、请执行以下操作：</block>
-  <block id="7aa31458c5152c5d27f8fbb18c369015" category="list-text">暂停上一个收集器。</block>
-  <block id="36c201f32e3f02bd95c1dd1ccdbc73dc" category="list-text">让系统收集~30分钟的数据。忽略在此期间的任何数据古怪。</block>
-  <block id="dede93f696efdb5fb1be1cde69b231cb" category="list-text">休息期结束后、REST收集器上的数据将稳定持续。</block>
   <block id="0a6cb81f2c451b8ffdd5fb04d030bc4b" category="cell">Storage Virtual Machine/Vserver</block>
   <block id="40a9aa8d8be93bdef25a488011f71fcb" category="cell">Storage Virtual Machine</block>
   <block id="b34043f2adcaed7afb95502f8e304bd7" category="list-text">ONTAP 9.14.1或更高版本。</block>
@@ -13037,7 +13032,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="ee57d855cd754beda08e0483c4002ab2" category="list-text">检索类型为_admin_的Vserver的名称。您将在后续命令中使用此名称。</block>
   <block id="01489ea97f62d455d744d92e643e44a9" category="cell">我看到ONTAP ontapi收集器显示数据的指标为空或"0"。</block>
   <block id="e33c3a41c8a37e74fdb59ca792c91d5a" category="cell">ONTAP REST不会报告仅在ONTAP系统内部使用的指标。例如、ONTAP REST不会收集系统聚合、只会收集类型为"数据"的SVM。</block>
-  <block id="93411b670be12318c5a6613f3fca054f" category="list-text">添加REST收集器、输入所有相同的用户/权限等 您已为上一个收集器设置了。</block>
   <block id="7e0b2932c814704a91b543d4f713d658" category="cell">从ONTAP到工作负载安全代理的Fpolicy事件通信。  必须向工作负载安全代理打开这些端口、ONTAP才能向其发送事件、包括工作负载安全代理本身(如果存在)上的任何防火墙。</block>
   <block id="a01bf0188d9c5ff4efed61a66bd7061b" category="cell">从代理到SVM数据Lifs的回显</block>
   <block id="d6f0c62217650cf8ede1bd5e1e862b5a" category="paragraph">netapp-CI-tentlaf-ds_、_netapp-CI-fluent-bit-ds_和_netapp-CI-net-oboder-L4-DS_ DemonSets必须在集群中的每个节点上计划一个POD、以便正确收集所有节点上的数据。操作器已配置为允许某些众所周知的*污染*。如果您在节点上配置了任何自定义污染、从而阻止Pod在每个节点上运行、则可以为这些污染创建一个*容错* <block ref="dc90f93af5ccf5020646213d9b7d2c3d" category="inline-link-macro-rx"></block>。如果已将自定义污染应用于集群中的所有节点、则还必须向操作员部署添加必要的容错值、以便可以计划和执行操作员POD。</block>
@@ -13046,4 +13040,10 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="217b41d0f229477b95c3b46b9905e8a6" category="list-text">CI-(国际通信</block>
   <block id="7357e4ce1b613c72370aa11b8881c327" category="list-text">CI-流畅位</block>
   <block id="fe05143e1e28d056a7092a13c7ef1fda" category="list-text">CI-Kuber-netes-event-exporter</block>
+  <block id="b13ab503ee5934c2c0407ff674faaeb8" category="list-text">在功能上、Cloud Insights主要发出读取请求、但要向ONTAP阵列注册Cloud Insights、需要一些写入权限。请参见下面的_关于权限的注意事项_。</block>
+  <block id="de9f71590e427b6d3c16175ce4dda19f" category="list-text">添加REST收集器。建议输入的用户信息与为上一个收集器配置的用户不同。例如、使用上面权限部分中记下的用户。</block>
+  <block id="46788dbd82cfe187cc4603bdb4760c26" category="list-text">暂停上一个收集器、使其不再继续收集数据。</block>
+  <block id="5b006d79d014a1860daf684ecea7e093" category="list-text">让新的REST收集器采集数据至少30分钟。忽略在此期间不显示为"正常"的任何数据。</block>
+  <block id="6e81cdef5dd14e3cf193147eefe83cc4" category="list-text">休息期过后、随着REST收集器继续采集数据、您应该会看到数据保持稳定。</block>
+  <block id="d2098b0b84e989c49759cf70450a78d8" category="paragraph">如果需要、您可以使用相同的过程返回到上一个收集器。</block>
 </blocks>

@@ -23,16 +23,123 @@ NOTE: ONTAP REST收集器可用于替代以前基于ONTAPI的收集器。因此�
 
 
 
+== 要求
+
+配置和使用此数据收集器的要求如下：
+
+* 您必须能够访问具有所需访问级别的用户帐户。请注意、创建新的REST用户/角色时需要管理员权限。
++
+** 在功能上、Cloud Insights主要发出读取请求、但要向ONTAP阵列注册Cloud Insights、需要一些写入权限。请参见下面的_关于权限的注意事项_。
+
+
+* ONTAP 9.14.1或更高版本。
+* 端口要求：443
+
+
+
+
+== 有关权限的注释
+
+由于许多Cloud Insights的ONTAP信息板都依赖于高级ONTAP计数器，因此应在数据收集器高级配置部分中保持启用*启用高级计数器数据收集*。
+
+要在集群级别为 Cloud Insights 创建本地帐户，请使用集群管理管理员用户名 / 密码登录到 ONTAP ，然后在 ONTAP 服务器上执行以下命令：
+
+. 开始之前，您必须使用 _Administrator_ 帐户登录到 ONTAP ，并且必须启用 _diagnostic-level commands_。
+. 检索类型为_admin_的Vserver的名称。您将在后续命令中使用此名称。
++
+ vserver show -type admin
+. 使用以下命令创建角色：
++
+....
+security login rest-role create -role {role name} -api /api -access readonly
+security login rest-role create -role {role name} -api /api/cluster/agents -access all
+vserver services web access create -name spi -role {role name} -vserver {vserver name as retrieved above}
+security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
+....
+. 使用以下命令创建只读用户。执行 create 命令后，系统将提示您输入此用户的密码。
++
+ security login create -username ci_user -application http -authentication-method password -role ci_readonly
+
+
+如果使用 AD/LDAP 帐户，则命令应为
+
+ security login create -user-or-group-name DOMAIN\aduser/adgroup -application http -authentication-method domain -role ci_readonly
+生成的角色和用户登录信息如下所示。实际输出可能会有所不同：
+
+[listing]
+----
+security login rest-role show -vserver <vserver name> -role restRole
+
+               Role                                    Access
+Vserver        Name            API                     Level
+----------     -------------   -------------------     ------
+<vserver name> restRole        /api                    readonly
+                               /api/cluster/agents     all
+2 entries were displayed.
+
+security login show -vserver <vserver name> -user-or-group-name restUser
+
+Vserver: <vserver name>
+                                                                 Second
+User/Group                 Authentication                 Acct   Authentication
+Name           Application Method        Role Name        Locked Method
+-------------- ----------- ------------- ---------------- ------ --------------
+restUser       http        password      restRole         no     none
+----
+
+
 == migration
 
 要从先前的ONTAP (ontapi)数据收集器迁移到新的ONTAP REST收集器、请执行以下操作：
 
-. 添加REST收集器、输入所有相同的用户/权限等 您已为上一个收集器设置了。
-. 暂停上一个收集器。
-. 让系统收集~30分钟的数据。忽略在此期间的任何数据古怪。
-. 休息期结束后、REST收集器上的数据将稳定持续。
+. 添加REST收集器。建议输入的用户信息与为上一个收集器配置的用户不同。例如、使用上面权限部分中记下的用户。
+. 暂停上一个收集器、使其不再继续收集数据。
+. 让新的REST收集器采集数据至少30分钟。忽略在此期间不显示为"正常"的任何数据。
+. 休息期过后、随着REST收集器继续采集数据、您应该会看到数据保持稳定。
 
 
+如果需要、您可以使用相同的过程返回到上一个收集器。
+
+
+
+== 配置
+
+[cols="2*"]
+|===
+| 字段 | 说明 
+
+
+| ONTAP管理IP地址 | NetApp集群的IP地址或完全限定域名。必须为集群管理IP/FQDN。 
+
+
+| ONTAP REST用户名 | NetApp 集群的用户名 
+
+
+| ONTAP REST密码 | NetApp 集群的密码 
+|===
+
+
+== 高级配置
+
+[cols="2*"]
+|===
+| 字段 | 说明 
+
+
+| 清单轮询间隔（分钟） | 默认值为 60 分钟。 
+
+
+| 性能轮询间隔（秒） | 默认值为60秒。 
+
+
+| 高级计数器数据收集 | 选择此选项可在轮询中包含 ONTAP 高级计数器数据。默认情况下处于启用状态。 
+
+
+| 启用EMS事件收集 | 选择此选项可包括ONTAP EMS日志事件数据。默认情况下处于启用状态。 
+
+
+| EMS轮询间隔(秒) | 默认值为60秒。 
+|===
 
 
 == 术语
@@ -123,63 +230,6 @@ Cloud Insights从ONTAP数据收集器采集清单、日志和性能数据。对�
 
 
 
-== 要求
-
-配置和使用此数据收集器的要求如下：
-
-* 您必须能够访问具有所需访问级别的用户帐户。请注意、创建新的REST用户/角色时需要管理员权限。
-* ONTAP 9.14.1或更高版本。
-* 帐户详细信息包括用户名和密码。
-* 端口要求：443
-* 帐户权限：
-+
-** 在功能上、Cloud Insights会发出读取请求、但要向ONTAP阵列注册Cloud Insights、需要一些写入权限。请参见 <<a-note-about-permissions,有关权限的注意事项>> 。
-
-
-
-
-
-
-== 配置
-
-[cols="2*"]
-|===
-| 字段 | 说明 
-
-
-| ONTAP管理IP地址 | NetApp集群的IP地址或完全限定域名。必须为集群管理IP/FQDN。 
-
-
-| ONTAP REST用户名 | NetApp 集群的用户名 
-
-
-| ONTAP REST密码 | NetApp 集群的密码 
-|===
-
-
-== 高级配置
-
-[cols="2*"]
-|===
-| 字段 | 说明 
-
-
-| 清单轮询间隔（分钟） | 默认值为 60 分钟。 
-
-
-| 性能轮询间隔（秒） | 默认值为60秒。 
-
-
-| 高级计数器数据收集 | 选择此选项可在轮询中包含 ONTAP 高级计数器数据。默认情况下处于启用状态。 
-
-
-| 启用EMS事件收集 | 选择此选项可包括ONTAP EMS日志事件数据。默认情况下处于启用状态。 
-
-
-| EMS轮询间隔(秒) | 默认值为60秒。 
-|===
-
-
 == ONTAP功率指标
 
 多种ONTAP型号提供了Cloud Insights的电源指标、可用于监控或发出警报。下面列出的受支持和不受支持的型号并不全面、但应提供一些指导；一般来说、如果型号与列表中的型号属于同一系列、则支持应相同。
@@ -219,56 +269,6 @@ FAS/AF8040
 FAS/AF8060
 FAS/AF8080
 
-
-
-== 有关权限的注释
-
-由于许多Cloud Insights的ONTAP信息板都依赖于高级ONTAP计数器，因此应在数据收集器高级配置部分中保持启用*启用高级计数器数据收集*。
-
-要在集群级别为 Cloud Insights 创建本地帐户，请使用集群管理管理员用户名 / 密码登录到 ONTAP ，然后在 ONTAP 服务器上执行以下命令：
-
-. 开始之前，您必须使用 _Administrator_ 帐户登录到 ONTAP ，并且必须启用 _diagnostic-level commands_。
-. 检索类型为_admin_的Vserver的名称。您将在后续命令中使用此名称。
-+
- vserver show -type admin
-. 使用以下命令创建角色：
-+
-....
-security login rest-role create -role {role name} -api /api -access readonly
-security login rest-role create -role {role name} -api /api/cluster/agents -access all
-vserver services web access create -name spi -role {role name} -vserver {vserver name as retrieved above}
-security login create -user-or-group-name {username} -application http -authentication-method password -role {role name}
-....
-. 使用以下命令创建只读用户。执行 create 命令后，系统将提示您输入此用户的密码。
-+
- security login create -username ci_user -application http -authentication-method password -role ci_readonly
-
-
-如果使用 AD/LDAP 帐户，则命令应为
-
- security login create -user-or-group-name DOMAIN\aduser/adgroup -application http -authentication-method domain -role ci_readonly
-生成的角色和用户登录信息如下所示。实际输出可能会有所不同：
-
-[listing]
-----
-security login rest-role show -vserver <vserver name> -role restRole
-
-               Role                                    Access
-Vserver        Name            API                     Level
-----------     -------------   -------------------     ------
-<vserver name> restRole        /api                    readonly
-                               /api/cluster/agents     all
-2 entries were displayed.
-
-security login show -vserver <vserver name> -user-or-group-name restUser
-
-Vserver: <vserver name>
-                                                                 Second
-User/Group                 Authentication                 Acct   Authentication
-Name           Application Method        Role Name        Locked Method
--------------- ----------- ------------- ---------------- ------ --------------
-restUser       http        password      restRole         no     none
-----
 
 
 == 故障排除
