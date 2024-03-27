@@ -1,0 +1,4573 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>向监控器发出警报</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="向监控器发出警报" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloudinsights/task_create_monitor.html" />
+	<meta property="og:description" content="创建监控器，以便针对性能或清单阈值以及指标或日志条件发出警报。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloudinsights/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="创建监控器，以便针对性能或清单阈值以及指标或日志条件发出警报。">
+  <meta name="keywords" content=" monitors, alerts, log, metric, system-defined, system, metric,"><!-- Icons -->
+  <link rel="icon" href="/zh-cn/cloudinsights/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloudinsights/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-cn/cloudinsights/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/cloudinsights/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-cn/cloudinsights/task_create_monitor.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/cloudinsights/task_create_monitor.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/cloudinsights/task_create_monitor.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/cloudinsights/task_create_monitor.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/cloudinsights/task_create_monitor.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/cloudinsights/task_create_monitor.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/cloudinsights/task_create_monitor.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/cloudinsights/task_create_monitor.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/cloudinsights/task_create_monitor.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/cloudinsights/js/na-search.js'></script><script src='/zh-cn/cloudinsights/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-cn/cloudinsights/js/custom-dropdown.js'></script>
+  <script src='/zh-cn/cloudinsights/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/cloudinsights/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/cloudinsights/js/jszip.min.js'></script><script src='/zh-cn/cloudinsights/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-cn/cloudinsights/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/cn">
+                <image id="ie-header-logo" src="/zh-cn/cloudinsights/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文档</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-cn/cloudinsights/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">简体中文</span>
+                    <img src="/zh-cn/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-cn/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-cn/cloudinsights/task_create_monitor.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/cloudinsights/task_create_monitor.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/cloudinsights/task_create_monitor.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/cloudinsights/task_create_monitor.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/cloudinsights/task_create_monitor.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/cloudinsights/task_create_monitor.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/cloudinsights/task_create_monitor.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/cloudinsights/task_create_monitor.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-cn/cloudinsights/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">全部来自 NetApp</span>
+                    <img src="/zh-cn/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-cn/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支持</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知识库</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/zh-hans/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">训练</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-cn/cloudinsights/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-cn/cloudinsights/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文档</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-cn/cloudinsights/">-->
+      Cloud Insights
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-cn/cloudinsights/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-cn/cloudinsights/search.html" 
+        data-type="widget"
+        data-placeholder="搜索文档"
+        data-no-results-found="未找到 {query} 的相关结果"
+        data-did-you-mean="搜索 {suggestion}。"
+        data-no-results-found-did-you-mean="未找到 {query} 的相关结果。您是指 {suggestion}？"
+        data-results-found="找到 {hitCount} 个结果"
+        data-error-message="发生错误。请重试。"
+        data-error-reset="重置搜索"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Insights 文档"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/index.html">
+        Cloud Insights 文档
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="新增功能"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_whats_new.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/concept_whats_new.html">
+        新增功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="注册 Cloud Insights"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_cloud_insights_onboarding_1.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/task_cloud_insights_onboarding_1.html">
+        注册 Cloud Insights
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安全性"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 安全性</div>-->
+         安全性
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安全实践"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/security_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/security_overview.html">
+        安全实践
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="我们的存储内容以及存储位置"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/security_information_and_region.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/security_information_and_region.html">
+        我们的存储内容以及存储位置
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="securityadmin工具"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/security_admin_tool.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/security_admin_tool.html">
+        securityadmin工具
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="入门"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 入门</div>-->
+         入门
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="功能教程"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_feature_tutorials.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_feature_tutorials.html">
+        功能教程
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="正在收集数据"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 正在收集数据</div>-->
+         正在收集数据
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概述"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_getting_started_with_cloud_insights.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_getting_started_with_cloud_insights.html">
+        概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="采集单元要求"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_acquisition_unit_requirements.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/concept_acquisition_unit_requirements.html">
+        采集单元要求
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置采集单元"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_configure_acquisition_unit.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_configure_acquisition_unit.html">
+        配置采集单元
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="在Windows/Linux上配置代理"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_agent.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_agent.html">
+        在Windows/Linux上配置代理
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置数据收集器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_configure_data_collectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_configure_data_collectors.html">
+        配置数据收集器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="确定 Data Collector 采集状态"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_determining_data_collector_acq_status.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/concept_determining_data_collector_acq_status.html">
+        确定 Data Collector 采集状态
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理已配置的数据收集器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_view_configured_data_collectors.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_view_configured_data_collectors.html">
+        管理已配置的数据收集器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="研究数据收集器错误"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_research_failed_collector.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_research_failed_collector.html">
+        研究数据收集器错误
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="导入建议的信息板"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_import_from_dashboard_gallery.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_import_from_dashboard_gallery.html">
+        导入建议的信息板
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="用户帐户和角色"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_user_roles.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_user_roles.html">
+        用户帐户和角色
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="数据收集器列表"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/data_collector_list.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/data_collector_list.html">
+        数据收集器列表
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="订阅 Cloud Insights"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_subscribing_to_cloud_insights.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/concept_subscribing_to_cloud_insights.html">
+        订阅 Cloud Insights
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="自动设备解析"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 自动设备解析</div>-->
+         自动设备解析
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="设备解析概述"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_device_resolution_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_device_resolution_overview.html">
+        设备解析概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="设备解析规则"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_device_resolution_rules.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_device_resolution_rules.html">
+        设备解析规则
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="光纤通道设备解析"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_device_resolution_fibre_channel.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_device_resolution_fibre_channel.html">
+        光纤通道设备解析
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="IP 设备解析"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_device_resolution_ip.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_device_resolution_ip.html">
+        IP 设备解析
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="设置设备解析首选项"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_device_resolution_preferences.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_device_resolution_preferences.html">
+        设置设备解析首选项
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="正则表达式示例"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_device_resolution_regex_examples.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_device_resolution_regex_examples.html">
+        正则表达式示例
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="创建信息板"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 创建信息板</div>-->
+         创建信息板
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="信息板概述"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_dashboards_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_dashboards_overview.html">
+        信息板概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="信息板的功能"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_dashboard_features.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_dashboard_features.html">
+        信息板的功能
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="示例信息板"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 示例信息板</div>-->
+         示例信息板
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="虚拟机性能"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dashboard_example_VM_performance.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dashboard_example_VM_performance.html">
+        虚拟机性能
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="信息板最佳实践"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_dashboard_best_practices.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_dashboard_best_practices.html">
+        信息板最佳实践
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Kubernetes</div>-->
+         Kubernetes
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes 概述页面"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/kubernetes_landing_page.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/kubernetes_landing_page.html">
+        Kubernetes 概述页面
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安装或升级操作员之前"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/pre-requisites_for_k8s_operator.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/pre-requisites_for_k8s_operator.html">
+        安装或升级操作员之前
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="安装Monitoring Operator"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_agent_k8s.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_config_telegraf_agent_k8s.html">
+        安装Monitoring Operator
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="监视操作员选项"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/telegraf_agent_k8s_config_options.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/telegraf_agent_k8s_config_options.html">
+        监视操作员选项
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes 集群页面"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/kubernetes_cluster_detail.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/kubernetes_cluster_detail.html">
+        Kubernetes 集群页面
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="网络监控和映射"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_kubernetes_network_monitoring_and_map.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_kubernetes_network_monitoring_and_map.html">
+        网络监控和映射
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="变更分析"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/kubernetes_change_analytics.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/kubernetes_change_analytics.html">
+        变更分析
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="洞察力"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 洞察力</div>-->
+         洞察力
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概述"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/insights_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/insights_overview.html">
+        概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="共享资源面临压力"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/insights_shared_resources_under_stress.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/insights_shared_resources_under_stress.html">
+        共享资源面临压力
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes命名空间即将用尽"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/insights_k8s_namespaces_running_out_of_space.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/insights_k8s_namespaces_running_out_of_space.html">
+        Kubernetes命名空间即将用尽
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="回收ONTAP 冷存储"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/insights_reclaim_ontap_cold_storage.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/insights_reclaim_ontap_cold_storage.html">
+        回收ONTAP 冷存储
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP 基础知识"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_ontap_essentials.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/concept_ontap_essentials.html">
+        ONTAP 基础知识
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用查询"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 使用查询</div>-->
+         使用查询
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="正在查询资产"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_querying_assets.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_querying_assets.html">
+        正在查询资产
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="创建查询"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_create_query.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_create_query.html">
+        创建查询
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="查看可用查询"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_view_queries.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_view_queries.html">
+        查看可用查询
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="将查询结果导出到 .CSV"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_export_query_results.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_export_query_results.html">
+        将查询结果导出到 .CSV
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="修改或删除查询"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_modify_delete_query.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_modify_delete_query.html">
+        修改或删除查询
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="为对象分配多个应用程序 / 标注"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_query_assign_multiple_applicationss.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_query_assign_multiple_applicationss.html">
+        为对象分配多个应用程序 / 标注
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="将表值复制到剪贴板"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_query_copy_table_values.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_query_copy_table_values.html">
+        将表值复制到剪贴板
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="正在查询日志"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_log_explorer.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_log_explorer.html">
+        正在查询日志
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用标注"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 使用标注</div>-->
+         使用标注
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="定义标注"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_defining_annotations.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_defining_annotations.html">
+        定义标注
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用标注"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_create_annotation.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_create_annotation.html">
+        使用标注
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用标注规则"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_create_annotation_rules.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_create_annotation_rules.html">
+        使用标注规则
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用 API 导入标注"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_annotation_import.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_annotation_import.html">
+        使用 API 导入标注
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用应用程序"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 使用应用程序</div>-->
+         使用应用程序
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="应用程序概念"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_about_applications.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_about_applications.html">
+        应用程序概念
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置应用程序"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_create_application.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_create_application.html">
+        配置应用程序
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="监控和警报"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 监控和警报</div>-->
+         监控和警报
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="创建监控器"
+      data-li-level="2#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_create_monitor.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_create_monitor.html">
+        创建监控器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="查看和管理警报"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_view_and_manage_alerts.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_view_and_manage_alerts.html">
+        查看和管理警报
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置通知收件人"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_notifications_email.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_notifications_email.html">
+        配置通知收件人
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="系统定义的监控器"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_system_monitors.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_system_monitors.html">
+        系统定义的监控器
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用 API"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/API_Overview.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/API_Overview.html">
+        使用 API
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="网络挂机通知"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_create_webhook.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/task_create_webhook.html">
+        网络挂机通知
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="监控环境"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 监控环境</div>-->
+         监控环境
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="审核事件"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_audit.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_audit.html">
+        审核事件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="TTL 和下抽样"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="concept_ttl_and_downsampling.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_ttl_and_downsampling.html">
+        TTL 和下抽样
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="资产页面信息"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 资产页面信息</div>-->
+         资产页面信息
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="资产页面概述"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_asset_page_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_asset_page_overview.html">
+        资产页面概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="对象的上下文内筛选"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_in_context_filters.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_in_context_filters.html">
+        对象的上下文内筛选
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="摘要拓扑部分"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_asset_summary_section.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_asset_summary_section.html">
+        摘要拓扑部分
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="专家视图部分"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_asset_expert_view_section.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_asset_expert_view_section.html">
+        专家视图部分
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="用户数据部分"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_asset_user_data_section.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_asset_user_data_section.html">
+        用户数据部分
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="相关警报部分"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_asset_alerts_section.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_asset_alerts_section.html">
+        相关警报部分
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="存储虚拟化"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_storage_virtualization.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_storage_virtualization.html">
+        存储虚拟化
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="搜索资产的提示和提示"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_searching_assets.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_searching_assets.html">
+        搜索资产的提示和提示
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="报告"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 报告</div>-->
+         报告
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="报告概述"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_overview.html">
+        报告概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="报告用户角色"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_user_roles.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_user_roles.html">
+        报告用户角色
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用预定义报告"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_predefined_reports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_predefined_reports.html">
+        使用预定义报告
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Storage Manager 信息板"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_storage_manager_dashboard.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_storage_manager_dashboard.html">
+        Storage Manager 信息板
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="创建示例报告"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_create_example.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_create_example.html">
+        创建示例报告
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理报告"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_managing_reports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_managing_reports.html">
+        管理报告
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="自定义报告"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_creating_custom_reports.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_creating_custom_reports.html">
+        自定义报告
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="数据模型"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_creating_custom_reports.html#reporting-data-models" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_creating_custom_reports.html#reporting-data-models">
+        数据模型
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="报告数据库 API"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_querying_database.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_querying_database.html">
+        报告数据库 API
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="数据保留"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_data_retention.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_data_retention.html">
+        数据保留
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="架构图"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reporting_schema_diagrams.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reporting_schema_diagrams.html">
+        架构图
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="模式表"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reference_schemas.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reference_schemas.html">
+        模式表
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="工作负载安全性"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 工作负载安全性</div>-->
+         工作负载安全性
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="关于工作负载安全性"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/cs_intro.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/cs_intro.html">
+        关于工作负载安全性
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="入门"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 入门</div>-->
+         入门
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="工作负载安全性入门"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_cs_getting_started.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_cs_getting_started.html">
+        工作负载安全性入门
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="工作负载安全代理要求"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_cs_agent_requirements.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/concept_cs_agent_requirements.html">
+        工作负载安全代理要求
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置工作负载安全代理"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_cs_add_agent.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_cs_add_agent.html">
+        配置工作负载安全代理
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="删除工作负载安全代理"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_cs_delete_agent.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_cs_delete_agent.html">
+        删除工作负载安全代理
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置 AD 目录收集器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_user_dir_connect.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_user_dir_connect.html">
+        配置 AD 目录收集器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置 LDAP 目录收集器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_user_dir_connect_ldap.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_user_dir_connect_ldap.html">
+        配置 LDAP 目录收集器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置 ONTAP SVM 数据收集器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_add_collector_svm.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_add_collector_svm.html">
+        配置 ONTAP SVM 数据收集器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="配置 Cloud ONTAP 数据收集器"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_cs_incloud.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_cs_incloud.html">
+        配置 Cloud ONTAP 数据收集器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="工作负载安全性用户管理"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_cs_user_management.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_cs_user_management.html">
+        工作负载安全性用户管理
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Event Rate Checker (代理规模估算指南)"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_cs_event_rate_checker.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/concept_cs_event_rate_checker.html">
+        Event Rate Checker (代理规模估算指南)
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="警报"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/cs_alert_data.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/cs_alert_data.html">
+        警报
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="取证"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 取证</div>-->
+         取证
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="活动取证—所有活动"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/forensic_activity_history.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/forensic_activity_history.html">
+        活动取证—所有活动
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="活动取证—实体"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/forensic_entity_detail.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/forensic_entity_detail.html">
+        活动取证—实体
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="用户"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/forensic_user_overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/forensic_user_overview.html">
+        用户
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="自动响应策略"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/cs_automated_response_policies.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/cs_automated_response_policies.html">
+        自动响应策略
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="允许的文件类型策略"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/ws_allowed_file_types.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/ws_allowed_file_types.html">
+        允许的文件类型策略
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP 自主勒索软件保护集成"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_cs_integration_with_ontap_arp.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_cs_integration_with_ontap_arp.html">
+        ONTAP 自主勒索软件保护集成
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP访问被拒绝集成"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_ws_integration_with_ontap_access_denied.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_ws_integration_with_ontap_access_denied.html">
+        ONTAP访问被拒绝集成
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="正在阻止用户访问"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/cs_restrict_user_access.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/cs_restrict_user_access.html">
+        正在阻止用户访问
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="模拟勒索软件攻击"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_cs_attack_simulator.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_cs_attack_simulator.html">
+        模拟勒索软件攻击
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="通知"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/cs_notifications_email.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/cs_notifications_email.html">
+        通知
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="工作负载安全API"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_cs_api.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_cs_api.html">
+        工作负载安全API
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Active IQ"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_activeiq.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/concept_activeiq.html">
+        Active IQ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="故障排除"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 故障排除</div>-->
+         故障排除
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="常规故障排除"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_troubleshooting_general_problems.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_troubleshooting_general_problems.html">
+        常规故障排除
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="排除 Linux 采集单元问题"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_troubleshooting_linux_acquisition_unit_problems.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_troubleshooting_linux_acquisition_unit_problems.html">
+        排除 Linux 采集单元问题
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="对 Windows 采集单元问题进行故障排除"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_troubleshooting_windows_acquisition_unit_problems.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_troubleshooting_windows_acquisition_unit_problems.html">
+        对 Windows 采集单元问题进行故障排除
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="调查数据收集器错误"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_research_failed_collector.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/task_research_failed_collector.html">
+        调查数据收集器错误
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="数据收集器支持列表"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reference_data_collector_support_matrix.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/reference_data_collector_support_matrix.html">
+        数据收集器支持列表
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="参考支持"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 参考支持</div>-->
+         参考支持
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="请求支持"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_requesting_support.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/concept_requesting_support.html">
+        请求支持
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="《数据收集器参考—基础架构》"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 《数据收集器参考—基础架构》</div>-->
+         《数据收集器参考—基础架构》
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="供应商参考概述"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/concept_data_collector_reference.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/concept_data_collector_reference.html">
+        供应商参考概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="AWS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_amazon_ec2.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_amazon_ec2.html">
+        AWS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="适用于 NetApp ONTAP 的 Amazon FSX"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_na_amazon_fsx.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_na_amazon_fsx.html">
+        适用于 NetApp ONTAP 的 Amazon FSX
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure 酒店"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_ms_azure.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_ms_azure.html">
+        Azure 酒店
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Broadcom"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Broadcom</div>-->
+         Broadcom
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Brocade Network Advisor"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_brocade_bna.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_brocade_bna.html">
+        Brocade Network Advisor
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="光纤通道交换机"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_brocade_fc_switch.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_brocade_fc_switch.html">
+        光纤通道交换机
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cisco"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_cisco_fc_switch.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_cisco_fc_switch.html">
+        Cisco
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cohesity SmartfFiles"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_cohesity_smartfiles.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_cohesity_smartfiles.html">
+        Cohesity SmartfFiles
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Dell"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Dell</div>-->
+         Dell
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="xC 系列"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_dell_xc_series.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_dell_xc_series.html">
+        xC 系列
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Dell EMC"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Dell EMC</div>-->
+         Dell EMC
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="数据域"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_datadomain.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_datadomain.html">
+        数据域
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ECS"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_ecs.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_ecs.html">
+        ECS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="PowerScale"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_isilon.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_isilon.html">
+        PowerScale
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Isilon / PowerScale REST"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_isilon_rest.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_isilon_rest.html">
+        Isilon / PowerScale REST
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="PowerStore"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_powerstore.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_powerstore.html">
+        PowerStore
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="RecoverPoint"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_recoverpoint.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_recoverpoint.html">
+        RecoverPoint
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ScaleIO"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_scaleio.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_scaleio.html">
+        ScaleIO
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Unity （ VNXe ）"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_unity.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_unity.html">
+        Unity （ VNXe ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMAX/PowerMax"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_vmax_powermax.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_vmax_powermax.html">
+        VMAX/PowerMax
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VNX 块（ Clariion ）"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_vnx_block.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_vnx_block.html">
+        VNX 块（ Clariion ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VNX 文件（ Celerra ）"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_vnx_file.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_vnx_file.html">
+        VNX 文件（ Celerra ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VNX 统一"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_vnx_unified.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_vnx_unified.html">
+        VNX 统一
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VPLEX"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_vplex.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_vplex.html">
+        VPLEX
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="XtremIO"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_emc_xio.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_emc_xio.html">
+        XtremIO
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Fujitsu"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_fujitsu_eternus.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_fujitsu_eternus.html">
+        Fujitsu
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Google"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_google_cloud.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_google_cloud.html">
+        Google
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HP 企业"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> HP 企业</div>-->
+         HP 企业
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HP Alletra 9000 和 Primera"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_hp_3par.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_hp_3par.html">
+        HP Alletra 9000 和 Primera
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HP Command View AE"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_hpe_commandview.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_hpe_commandview.html">
+        HP Command View AE
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HPE Alletra 6000"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_hpe_nimble.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_hpe_nimble.html">
+        HPE Alletra 6000
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Hitachi Data Systems"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Hitachi Data Systems</div>-->
+         Hitachi Data Systems
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HDS 命令套件"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_hds_commandsuite.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_hds_commandsuite.html">
+        HDS 命令套件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HDS HNAS"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_hds_nas.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_hds_nas.html">
+        HDS HNAS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HDS 运营中心"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_hds_ops_center.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_hds_ops_center.html">
+        HDS 运营中心
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="无限"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_infinidat_infinibox.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_infinidat_infinibox.html">
+        无限
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="华为"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_huawei_oceanstor.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_huawei_oceanstor.html">
+        华为
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="IBM"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> IBM</div>-->
+         IBM
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cleverssafe"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_ibm_cleversafe.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_ibm_cleversafe.html">
+        Cleverssafe
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CS 系列"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_ibm_cs.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_ibm_cs.html">
+        CS 系列
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="系统存储 DS8000 系列"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_ibm_ds.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_ibm_ds.html">
+        系统存储 DS8000 系列
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="PowerVM"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_ibm_powervm.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_ibm_powervm.html">
+        PowerVM
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SAN 卷控制器（ SVC ）"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_ibm_svc.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_ibm_svc.html">
+        SAN 卷控制器（ SVC ）
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="XIV/A9000"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_ibm_xiv.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_ibm_xiv.html">
+        XIV/A9000
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="联想"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_lenovo.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_lenovo.html">
+        联想
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Microsoft"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Microsoft</div>-->
+         Microsoft
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Azure NetApp Files"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_ms_anf.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_ms_anf.html">
+        Azure NetApp Files
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Hyper-V"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_ms_hyperv.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_ms_hyperv.html">
+        Hyper-V
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp"
+      data-li-level="3" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-3  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> NetApp</div>-->
+         NetApp
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="适用于 ONTAP 9.9+ 的云连接"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_na_cloud_connection.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_na_cloud_connection.html">
+        适用于 ONTAP 9.9+ 的云连接
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Cloud Volumes ONTAP"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_na_cloud_volumes_ontap.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_na_cloud_volumes_ontap.html">
+        Cloud Volumes ONTAP
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="适用于 AWS 的 Cloud Volumes Services"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_na_cloud_volumes.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_na_cloud_volumes.html">
+        适用于 AWS 的 Cloud Volumes Services
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ONTAP 数据管理软件"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_na_cdot.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_na_cdot.html">
+        ONTAP 数据管理软件
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Data ONTAP 7- 模式"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_na_7mode.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_na_7mode.html">
+        Data ONTAP 7- 模式
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="E 系列"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_na_eseries.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_na_eseries.html">
+        E 系列
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp HCI 管理服务器"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_na_hci.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_na_hci.html">
+        NetApp HCI 管理服务器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="SolidFire"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_na_solidfire.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_na_solidfire.html">
+        SolidFire
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="StorageGRID"
+      data-li-level="4#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_na_storagegrid.html" 
+    ><a class="ie-sidebar-menuitem-4 " href="/zh-cn/cloudinsights/task_dc_na_storagegrid.html">
+        StorageGRID
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Nutanix"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_nutanix.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_nutanix.html">
+        Nutanix
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="OpenStack"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_openstack.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_openstack.html">
+        OpenStack
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Oracle"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_oracle_zfs.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_oracle_zfs.html">
+        Oracle
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="纯净"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_pure_flasharray.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_pure_flasharray.html">
+        纯净
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Red Hat"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_redhat_virtualization.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_redhat_virtualization.html">
+        Red Hat
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Rubrik CDM"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_rubrik_cdm.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_rubrik_cdm.html">
+        Rubrik CDM
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_dc_vmware.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_dc_vmware.html">
+        VMware
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="《数据收集器参考—服务》"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/cloudinsights/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/cloudinsights/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 《数据收集器参考—服务》</div>-->
+         《数据收集器参考—服务》
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="主机 / 节点"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_node.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_node.html">
+        主机 / 节点
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="ActiveMQ"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_activemq.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_activemq.html">
+        ActiveMQ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Apache"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_apache.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_apache.html">
+        Apache
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Consu"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_consul.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_consul.html">
+        Consu
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Couchbase"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_couchbase.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_couchbase.html">
+        Couchbase
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="CouchDB"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_couchdb.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_couchdb.html">
+        CouchDB
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Docker"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_docker.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_docker.html">
+        Docker
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Elasticsearch"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_elasticsearch.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_elasticsearch.html">
+        Elasticsearch
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Flink"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_flink.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_flink.html">
+        Flink
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Hadoop"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_hadoop.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_hadoop.html">
+        Hadoop
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="HA 代理"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_haproxy.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_haproxy.html">
+        HA 代理
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Java"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_jvm.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_jvm.html">
+        Java
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kafka"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_kafka.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_kafka.html">
+        Kafka
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kapacitor"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="task_config_telegraf_kapacitor.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_kapacitor.html">
+        Kapacitor
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kibana"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_kibana.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_kibana.html">
+        Kibana
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Kubernetes"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_agent.html#kubernetes" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_agent.html#kubernetes">
+        Kubernetes
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="已缓存内存"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_memcached.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_memcached.html">
+        已缓存内存
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="MongoDB"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_mongodb.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_mongodb.html">
+        MongoDB
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="MySQL"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_mysql.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_mysql.html">
+        MySQL
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="netstat"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_netstat.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_netstat.html">
+        netstat
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="nginx"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_nginx.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_nginx.html">
+        nginx
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="OpenZFS"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="task_config_telegraf_openzfs.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_openzfs.html">
+        OpenZFS
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="PostgreSQL"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_postgresql.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_postgresql.html">
+        PostgreSQL
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Puppet"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_puppetagent.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_puppetagent.html">
+        Puppet
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Redis"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/task_config_telegraf_redis.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_redis.html">
+        Redis
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="RethinkDB"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="task_config_telegraf_rethinkdb.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_rethinkdb.html">
+        RethinkDB
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Zookeeper"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="task_config_telegraf_zookeeper.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/cloudinsights/task_config_telegraf_zookeeper.html">
+        Zookeeper
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="对象图标参考"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reference_object_icons.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/cloudinsights/reference_object_icons.html">
+        对象图标参考
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="法律声明"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task_create_monitor.html" 
+      dale-entry-url="/reference_legal_notices.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/cloudinsights/reference_legal_notices.html">
+        法律声明
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-cn/cloudinsights"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-cn/cloudinsights"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-cn/cloudinsights/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">向监控器发出警报</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2023-06-27 17:59:41 +0000">06/27/2023</time>
+        
+    
+    
+        <span>贡献者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-cn/cloudinsights/images/discuss-sm.svg" alt="" class="github-icon" />建议更改</span>
+        <img src="/zh-cn/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-cn/cloudinsights/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights.zh-cn/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-cn/cloudinsights/task_create_monitor.html&page-title=向监控器发出警报" class="page-nav-contribute-link" role="button">请求文档更改</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/cloudinsights/blob/main/task_create_monitor.adoc" class="page-nav-contribute-link" role="button">编辑此页面</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >了解如何贡献</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-cn/cloudinsights/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-cn/cloudinsights/pdfs/fullsite-sidebar/Cloud_Insights_文档.pdf" >
+                    <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>本文档站点的 PDF</a>
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/安全性.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            安全性
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/入门.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            入门
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/正在收集数据.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            正在收集数据
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/自动设备解析.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            自动设备解析
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/创建信息板.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            创建信息板
+          </a>
+          
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/示例信息板.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            示例信息板
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/Kubernetes.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Kubernetes
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/洞察力.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            洞察力
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/使用查询.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            使用查询
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/使用标注.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            使用标注
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/使用应用程序.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            使用应用程序
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/监控和警报.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            监控和警报
+          </a>
+          
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/监控环境.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            监控环境
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/资产页面信息.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            资产页面信息
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/报告.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            报告
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/工作负载安全性.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            工作负载安全性
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/入门.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            入门
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/取证.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            取证
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/故障排除.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            故障排除
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/参考支持.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            参考支持
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/_数据收集器参考_基础架构_.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            《数据收集器参考—基础架构》
+          </a>
+          
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/Broadcom.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Broadcom
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/Dell.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Dell
+          </a>
+          
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/Dell_EMC.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Dell EMC
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/HP_企业.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            HP 企业
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/Hitachi_Data_Systems.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Hitachi Data Systems
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/IBM.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            IBM
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/Microsoft.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Microsoft
+          </a>
+          
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/NetApp.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            NetApp
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/cloudinsights/pdfs/sidebar/_数据收集器参考_服务_.pdf" 
+            
+          >
+            <img src="/zh-cn/cloudinsights/images/pdf-icon.png" alt="" width="16" height="16"/>
+            《数据收集器参考—服务》
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-cn/cloudinsights/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>单独 PDF 文档的收集<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="toc" class="toc">
+<div id="toctitle">目录</div>
+<ul class="sectlevel1">
+<li><a href="#安全最佳实践">安全最佳实践</a></li>
+<li><a href="#衡量指标还是日志监控">衡量指标还是日志监控？</a></li>
+<li><a href="#监控列表">监控列表</a></li>
+<li><a href="#监控组">监控组</a></li>
+<li><a href="#系统定义的监控器-2">系统定义的监控器</a></li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>您可以创建监控器来设置触发警报的阈值，以便向您通知与网络中资源相关的问题。例如，您可以创建一个监控器，以便针对任意多种协议发出 _node write latency 警报。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+所有Cloud Insights 版本均提供监控和警报功能、但Basic版本需遵循以下条件：*一次最多只能有五个自定义监控器处于活动状态。超过五个的任何监控器将在_Paused_state中创建或移至_Paused_state。*不支持VMDK、虚拟机、主机和数据存储库指标监控器。如果为这些指标创建了监控器、则在降级到Basic Edition时、这些监控器将暂停、无法恢复。
+</td>
+</tr>
+</table>
+</div>
+<!-- toc disabled -->
+<div class="paragraph">
+<p>通过监控，您可以为存储， VM ， EC2 和端口等 " 基础架构 " 对象生成的指标以及为 Kubernetes ， ONTAP 高级指标和 Telegraf 插件收集的 " 集成 " 数据设置阈值。当超过警告级别或严重级别阈值时，这些 <em>metric</em> 监控器会向您发出警报。</p>
+</div>
+<div class="paragraph">
+<p>您还可以创建监控器，以便在检测到指定的 _log events_之后 触发警告，严重或信息级别的警报。</p>
+</div>
+<div class="paragraph">
+<p>Cloud Insights 提供了许多 <a href="task_system_monitors.html">"系统定义的监控器"</a> 也可以根据您的环境进行选择。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="安全最佳实践">安全最佳实践</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Insights 警报旨在突出显示环境中的数据点和趋势、而Cloud Insights 允许您以警报收件人的身份输入任何有效的电子邮件地址。如果您在安全环境中工作、请特别注意谁在接收通知或以其他方式有权访问警报。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="衡量指标还是日志监控">衡量指标还是日志监控？</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>从 Cloud Insights 菜单中，单击 * 警报 &gt; 管理监控器 *</p>
+<div class="paragraph">
+<p>此时将显示监控器列表页面，其中显示了当前配置的监控器。</p>
+</div>
+</li>
+<li>
+<p>要修改现有监控器，请单击列表中的监控器名称。</p>
+</li>
+<li>
+<p>要添加监控器，请单击 * + Monitor* 。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitor_log_or_metric.png" alt="选择系统或日志监控器"></span></p>
+</div>
+<div class="paragraph">
+<p>添加新监控器时，系统会提示您创建指标监控器或日志监控器。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>_Metric _ 监控与基础架构或性能相关的触发器的警报</p>
+</li>
+<li>
+<p><em>Log</em> 监控日志相关活动的警报</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>选择监控器类型后，将显示监控器配置对话框。配置因要创建的监控器类型而异。</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="指标监控器">指标监控器</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>在下拉列表中，搜索并选择要监控的对象类型和指标。</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>您可以设置筛选器以缩小要监控的对象属性或指标范围。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/MonitorMetricFilter.png" alt="指标筛选"></span></p>
+</div>
+<div class="paragraph">
+<p>使用集成数据（ Kubernetes ， ONTAP 高级数据等）时，指标筛选会从绘制的数据系列中删除单个 / 不匹配的数据点，而不像基础架构数据（存储， VM ，端口等）那样，基础架构数据（存储， VM ，端口等）中的筛选器会处理数据系列的聚合值，并可能从图表中删除整个对象。</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/tip.svg" alt="提示">
+</td>
+<td class="content">
+要创建多条件监控器（例如， IOPS &gt; X 和延迟 &gt; Y ），请将第一个条件定义为阈值，将第二个条件定义为筛选器。
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="定义监控器的条件">定义监控器的条件。</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>选择要监控的对象和指标后，设置警告级别和 / 或严重级别阈值。</p>
+</li>
+<li>
+<p>对于 <em>Warning</em> 级别，为我们的示例输入 200 。指示此警告级别的虚线显示在示例图中。</p>
+</li>
+<li>
+<p>对于 <em>critical</em> 级别，输入 400 。指示此严重级别的虚线显示在示例图中。</p>
+<div class="paragraph">
+<p>此图显示历史数据。图中的 " 警告 " 和 " 严重 " 级别行是监控器的可视表示，因此您可以轻松查看监控器在每种情况下何时可能触发警报。</p>
+</div>
+</li>
+<li>
+<p>对于发生时间间隔，请选择 <em>continuous</em> ，持续时间为 _15 分钟。</p>
+<div class="paragraph">
+<p>您可以选择在违反阈值时触发警报，或者等待阈值在一段时间内持续违反。在我们的示例中，我们不希望在总 IOPS 峰值高于 " 警告 " 或 " 严重 " 级别时都收到警报，但仅当受监控对象持续超过其中一个级别至少 15 分钟时才会收到警报。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitor_metric_conditions.png" alt="定义监控器的条件"></span></p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="日志监控器">日志监控器</h3>
+<div class="paragraph">
+<p>创建 * 日志监控器 * 时，首先从可用日志列表中选择要监控的日志。然后，您可以根据上述可用属性进行筛选。您还可以选择一个或多个"分组依据"属性。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="备注">
+</td>
+<td class="content">
+日志监控器筛选器不能为空。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitor_Group_By_Example.png" alt="选择要监控的日志、设置筛选器、然后根据需要选择按方法分组"></span></p>
+</div>
+<div class="sect3">
+<h4 id="定义警报行为">定义警报行为</h4>
+<div class="paragraph">
+<p>您可以创建监控器、以便在发生上述条件一次(即立即发生)时以_critical_、_Warning_或_Informational_的严重性级别发出警报、或者等待发出警报、直到条件出现2次或更多次。</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="定义警报解析行为">定义警报解析行为</h4>
+<div class="paragraph">
+<p>您可以选择如何解决日志监控警报。您可以选择三种方式：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>立即解决</p>
+</li>
+<li>
+<p>在数据保留期限之后清除(有关详细信息、请参见版本页面)。请注意、根据定义、监控器没有解决问题的条件、因此警报将保持_active__状态、并禁止所有后续的警报、这些警报与此监控器生成的_group_by_匹配、直到数据保留期限结束为止。</p>
+</li>
+<li>
+<p>根据日志条目解决：在发现日志行时按照以下定义中所述解决警报、或者在数据保留期限过后清除。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/LogMonitorAlertResolution.png" alt="警报解决选项"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="选择通知类型和收件人">选择通知类型和收件人</h3>
+<div class="paragraph">
+<p>在 _set up team notification （ s ） _ 部分中，您可以选择是通过电子邮件还是 Webhook 向您的团队发出警报。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Webhook_Choose_Monitor_Notification.png" alt="选择警报方法"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>通过电子邮件警报： *</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>指定警报通知的电子邮件收件人。如果需要，您可以为警告或严重警报选择不同的收件人。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/email_monitor_alerts.png" alt="通过电子邮件发送警报收件人"></span></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>通过 Webhook 警报： *</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>指定警报通知的 webhook 。如果需要，您可以为警告或严重警报选择不同的网络挂钩。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Webhook_Monitor_Notifications.png" alt="webhook 警报"></span></p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="备注">
+</td>
+<td class="content">
+ONTAP 数据收集器通知优先于与集群/数据收集器相关的任何特定监控器通知。您为Data Collector本身设置的收件人列表将接收数据收集器警报。如果没有活动的数据收集器警报、则监控器生成的警报将发送到特定的监控器收件人。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="设置更正操作或追加信息">设置更正操作或追加信息</h3>
+<div class="paragraph">
+<p>您可以通过填写 * 添加警报问题描述 * 部分来添加可选的问题描述以及其他见解和 / 或更正操作。问题描述最多可以包含 1024 个字符，并将随警报一起发送。洞察力 / 更正操作字段最多可包含 67 ， 000 个字符，并将显示在警报登录页面的摘要部分中。</p>
+</div>
+<div class="paragraph">
+<p>在这些字段中，您可以提供注释，链接或更正警报或以其他方式解决警报的步骤。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitors_Alert_Description.png" alt="警报更正操作和问题描述"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="保存您的显示器">保存您的显示器</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>如果需要，您可以添加监控器的问题描述。</p>
+</li>
+<li>
+<p>为 Monitor 指定一个有意义的名称，然后单击 * 保存 * 。</p>
+<div class="paragraph">
+<p>新的监控器将添加到活动监控器列表中。</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="监控列表">监控列表</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>" 监控 " 页面列出了当前配置的监控器，显示以下内容：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>监控器名称</p>
+</li>
+<li>
+<p>状态</p>
+</li>
+<li>
+<p>正在监控的对象 / 指标</p>
+</li>
+<li>
+<p>监控器的条件</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>您可以通过单击显示器右侧的菜单并选择 * 暂停 * 来选择临时暂停对某个对象类型的监控。准备好恢复监控后，单击 * 恢复 * 。</p>
+</div>
+<div class="paragraph">
+<p>您可以从菜单中选择 * 复制 * 来复制监控器。然后，您可以修改新的监控器并更改对象 / 指标，筛选器，条件，电子邮件收件人等</p>
+</div>
+<div class="paragraph">
+<p>如果不再需要显示器，您可以从菜单中选择 * 删除 * 来将其删除。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="监控组">监控组</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>通过分组，您可以查看和管理相关监控器。例如，您可以为环境中的存储配置一个专用监控组，也可以为特定收件人列表配置相关监控器。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitors_GroupList.png" alt="监控分组"></span></p>
+</div>
+<div class="paragraph">
+<p>此时将显示以下监控组。组名称旁边会显示组中包含的监控器数量。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>所有显示器 * 列出所有显示器。</p>
+</li>
+<li>
+<p>* 自定义监控器 * 列出用户创建的所有监控器。</p>
+</li>
+<li>
+<p>* 已暂停的监控器 * 将列出已被 Cloud Insights 暂停的所有系统监控器。</p>
+</li>
+<li>
+<p>Cloud Insights 还将显示许多 * 系统监控组 * ，其中将列出一个或多个组 <a href="task_system_monitors.html">"系统定义的监控器"</a>，包括 ONTAP 基础架构和工作负载监控器。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="备注">
+</td>
+<td class="content">
+自定义监控器可以暂停，恢复，删除或移动到其他组。系统定义的监控器可以暂停和恢复，但不能删除或移动。
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="已暂停的监控器">已暂停的监控器</h3>
+<div class="paragraph">
+<p>只有当 Cloud Insights 已暂停一个或多个监控器时，才会显示此组。如果监控器生成的警报过多或持续，则可能会暂停。如果此监控器是自定义监控器，请修改条件以防止持续发出警报，然后恢复此监控器。解决导致暂停的问题描述 后，此监控器将从暂停的监控器组中删除。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="系统定义的监控器">系统定义的监控器</h3>
+<div class="paragraph">
+<p>只要您的环境包含监控器所需的设备和 / 或日志可用性，这些组就会显示 Cloud Insights 提供的监控器。</p>
+</div>
+<div class="paragraph">
+<p>无法修改，移动到另一个组或删除系统定义的监控器。但是，您可以复制系统监控器并修改或移动此副本。</p>
+</div>
+<div class="paragraph">
+<p>系统监控器可能包括 ONTAP 基础架构（存储，卷等）或工作负载（例如日志监控器）或其他组的监控器。NetApp 不断评估客户需求和产品功能，并会根据需要更新或添加到系统监控器和组中。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="自定义监控组">自定义监控组</h3>
+<div class="paragraph">
+<p>您可以根据需要创建自己的组来包含监控器。例如，您可能需要为所有存储相关监控器配置一个组。</p>
+</div>
+<div class="paragraph">
+<p>要创建新的自定义监控组，请单击 * "+" 创建新监控组 * 按钮。输入组的名称，然后单击 * 创建组 * 。此时将创建一个具有此名称的空组。</p>
+</div>
+<div class="paragraph">
+<p>要向组中添加监控器，请转到 <em>all monitors</em> 组（建议）并执行以下操作之一：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>要添加单个显示器，请单击该显示器右侧的菜单，然后选择 <em>Add to Group</em> 。选择要将监控器添加到的组。</p>
+</li>
+<li>
+<p>单击监控器名称以打开监控器的编辑视图，然后在 <em>Associate to a monitor group</em> 部分中选择一个组。</p>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitors_AssociateToGroup.png" alt="与组关联"></span></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>通过单击某个组并从菜单中选择 <em>Remove from Group</em> 来删除监控器。您不能从 <em>all monitors</em> 或 <em>Custom Monitors</em> 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloudinsights/images/note.svg" alt="备注">
+</td>
+<td class="content">
+从组中删除监控器不会从 Cloud Insights 中删除该监控器。要完全删除某个监控器，请选择该监控器，然后单击 <em>Delete</em> 。此操作还会将其从所属组中删除，并且任何用户都无法再使用它。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>您也可以按相同方式将显示器移动到其他组，选择 <em>move to Group</em> 。</p>
+</div>
+<div class="paragraph">
+<p>要一次性暂停或恢复组中的所有监视器，请选择该组的菜单，然后单击 <em>Pause</em> 或 <em>Resume</em> 。</p>
+</div>
+<div class="paragraph">
+<p>使用同一菜单重命名或删除组。删除组不会从 Cloud Insights 中删除这些监控器；它们在 _all monitors_中 仍然可用。</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./media/Monitors_PauseGroup.png" alt="暂停组"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="系统定义的监控器-2">系统定义的监控器</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Insights 包括许多系统定义的指标和日志监控器。可用的系统监控器取决于您环境中的数据收集器。因此，随着数据收集器的添加或配置的更改， Cloud Insights 中可用的监控器可能会发生更改。</p>
+</div>
+<div class="paragraph">
+<p>查看 <a href="task_system_monitors.html">"系统定义的监控器"</a> 第页，介绍 Cloud Insights 随附的监控器。</p>
+</div>
+<div class="sect2">
+<h3 id="更多信息">更多信息</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="task_view_and_manage_alerts.html">"查看和忽略警报"</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-cn/cloudinsights/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-cn/cloudinsights/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本页面中</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2024 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用条款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私策略</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">请发送有关此页面的反馈</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/cloudinsights/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/cloudinsights/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/cloudinsights/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/cloudinsights/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-cn/cloudinsights/js/ie-sidebar.js'></script>
+  </body>
+
+</html>
