@@ -2983,8 +2983,6 @@
   <block id="8d1b7e78620c4edd1b1cb04c457422e7" category="paragraph">Cloud Insights 支持的数据收集器的按字母顺序列表：</block>
   <block id="2f704538f6c9d6459a97314be98124e2" category="cell">数据收集器</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">类型</block>
-  <block id="440599e693054b36db08ebf86d960001" category="inline-link-macro">ActiveMQ</block>
-  <block id="01c33ba55f3a95c562cab844795d98bf" category="cell"><block ref="01c33ba55f3a95c562cab844795d98bf" category="inline-link-macro-rx"></block></block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">服务</block>
   <block id="9c767a6f4aebc77e391afa6a6ca9c4ca" category="inline-link-macro">Amazon EC2 和 EBS</block>
   <block id="9fe90fd7f13100c2c90971039d08207b" category="cell"><block ref="9fe90fd7f13100c2c90971039d08207b" category="inline-link-macro-rx"></block></block>
@@ -5993,7 +5991,6 @@
   <block id="689738a624a7f72a8b98c8ed8f1ab58b" category="summary">Apache Zookeeper 数据收集器配置</block>
   <block id="b640a79fa52794aecc8878f82be8c28e" category="doc">Zookeeper Data Collector</block>
   <block id="7c19206117ce83d65989db0a25c382ee" category="paragraph">Cloud Insights 使用此数据收集器从 Apache Zookeeper 收集指标。</block>
-  <block id="9eacca645d0260ad873e91bf1da19a71" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。在 * 服务 * 下，选择 Apache Zookeeper 。</block>
   <block id="8429b9b7552e9131928dae7613de806c" category="inline-image-macro">Zookeeper 配置</block>
   <block id="95e6ebb37419864b276c313f8f6c3cbb" category="paragraph"><block ref="95e6ebb37419864b276c313f8f6c3cbb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fb4ac192a5f039c2e2c335ba5ced3583" category="inline-link-macro">Zookeeper</block>
@@ -12520,7 +12517,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 2. 已配置用户目录收集器，但它已停止或处于错误状态。请进入*收集器&gt;用户目录收集器*并检查状态。请参见 <block ref="700dae282c67631ab7fef060d50fba0f" category="inline-link-macro-rx"></block> 文档中有关故障排除提示的章节。
 正确配置后，此名称将在 24 小时内自动解析。
 如果仍无法解决此问题，请检查您是否添加了正确的用户数据收集器。确保用户确实属于添加的 Active Directory/LDAP 目录服务器。</block>
-  <block id="43d39371e7465fe75cfe3d390dbe2744" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 RethinkDB 。</block>
   <block id="7ef7f61ee5433c00d6e2bd93b6a72b5f" category="cell">采集单元*选项卡中的*Observability &gt; Collectors*页面上的AU状态显示“证书已过期”或“证书已撤销”。</block>
   <block id="d6f8e9ba9cfb77dee7f1eacdddd32143" category="list-text">选择*Collectors &gt; Agents&gt;+Agent*</block>
   <block id="b0bdf1289c168696fcf69f90ddc82ab2" category="cell">单击*工作负载安全性&gt;收集器*
@@ -12530,45 +12526,20 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 请参见文档中的《 Data Collector Vendor Reference 》一节。
 
 <block ref="49902fc743c67e64ddcf4901ef2c69bf" category="inline-link-macro-rx"></block></block>
-  <block id="0408a4c64dc1f3ab40855164b4b6f38d" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 nginx 。</block>
-  <block id="bdb77c4a55fae38966a8493c526d4be0" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Redis 。</block>
-  <block id="2652c4ffbd453ec1aefdecf31ada9e0b" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Kafka 。</block>
-  <block id="4ee3dacc3b31186e6116102c2ab72d19" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 MySQL 。</block>
-  <block id="ebb792d33abbc8326e1a943e8426035a" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Docker 。</block>
-  <block id="dbc1393b73d772391a52f39c8694a13c" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Kibana 。</block>
-  <block id="9db4a00fe92c69a4d0bf878ff50fc95a" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 JVM 。</block>
   <block id="b655d6566293cffcbf9e4e65bb4f042d" category="list-text">单击*Observability &gt; Collectors &gt;+Data Collectors *</block>
   <block id="baaf023f6d75d85198bf4906a1760b9a" category="list-text">从*Observability &gt; Collectors*中，选择操作系统/平台。请注意，安装任何集成数据收集器（ Kubernetes ， Docker ， Apache 等）也会配置节点数据收集。</block>
   <block id="5fbd88686e262efcf8b00d22f5dffa35" category="list-text">在Workload Security菜单中、单击：
 *收集器&gt;用户目录收集器&gt;+用户目录收集器*并选择*LDAP目录服务器*</block>
-  <block id="4af3803e0bed14e15bd7e0f351022969" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Consul 。</block>
-  <block id="e54adc338b6508055df6c2c6fb796a92" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Apache 。</block>
   <block id="658caf28e4d04a4c56e83fd4c34621bd" category="list-text">您可以同时编辑多个数据收集器的信息。在*Observability &gt; Collectors*页面上，选中每个数据收集器左侧的框并单击*散装 操作*按钮，以选择要修改的数据收集器。选择 * 编辑 * 并修改必要的字段。</block>
-  <block id="a1093e0f58751f9a01960a1fbf7beb53" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择已缓存的。</block>
-  <block id="f5d9cddb5529cde22dbbfac64ed116e4" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 MongoDB 。</block>
   <block id="601816c89a0810f8802681f16fb50cc5" category="list-text">在Workload Security菜单中、单击：
 *收集器&gt;用户目录收集器&gt;+用户目录收集器*并选择*Active Directory*</block>
   <block id="6c9b3e4dd62551cbb0cf3069e831b84b" category="list-text">在Cloud Insights菜单中，单击*Observability &gt; Collectors*</block>
   <block id="2b7c39a8b273585cdba65d37a11b97e0" category="list-text">在Cloud Insights菜单中，单击*Observability &gt; Collectors*以打开已安装的数据收集器列表。</block>
   <block id="41e52ba1f9b8b7cdf15e151317830ed2" category="list-text">在Cloud Insights菜单中，单击*Observability &gt; Collectors*。</block>
-  <block id="f47fcfa022338bb85388c62d011288a2" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 PostgreSQL 。</block>
-  <block id="b375a95628217618f913ff0addcb4f8e" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 OpenZFS 。</block>
   <block id="513f11f8d213c209a990a1bb086ea780" category="list-text">登录到Cloud Insights环境并导航到*Observability &gt; Collectors *。</block>
   <block id="4b079dc3088a9e53c6c6851870343850" category="list-text">单击*工作负载安全性&gt;收集器&gt;代理*</block>
-  <block id="f7a71c08cded2c36e48dd402ecadd5ba" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Puppet 。</block>
-  <block id="8bcbe1a1fde4e3d96f7aca6694b75230" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Couchbase 。</block>
-  <block id="29f60eabcc5e39b67a2b7e9560e07dc6" category="list-text">从Cloud Insights菜单中、单击*可观察性&gt;收集器*、然后单击*+ Data Collector*按钮。您可以选择显示所有数据收集器，也可以选择筛选以仅显示根据您的订阅可供您使用的数据收集器。</block>
-  <block id="fd3211acf4f48156142e8f687cbe6c6b" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Kapacitor.</block>
-  <block id="588c730d062048ef78564e2278564813" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Netstat 。</block>
   <block id="e65f7cc9f07286d1ff22f4c88e1d6fdb" category="list-text">单击*工作负载安全性&gt;收集器*以检查您配置的收集器的状态。</block>
-  <block id="38d938dede033e6fd6e3fba721cdf402" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 HAProxy 。</block>
-  <block id="b9e357a2b86f1ae6976d85b140c34304" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 * 数据中心 /OS* 。</block>
   <block id="efe524f42d2c837542d4da8626dd93a7" category="list-text">从Cloud Insights菜单中，单击*Observability &gt; Collectors*</block>
-  <block id="ec35f90f2dd5badf0a40cb0d12d855be" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 ActiveMQ 。</block>
-  <block id="ca888e8799d75a60bf8835194141e443" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Elasticsearch 。</block>
-  <block id="f1f3071daba335689c22cb4ecf169b27" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Hadoop 。</block>
-  <block id="0cf0ef4f45a100c43159cff0855fdcd8" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 CouchDB 。</block>
-  <block id="65a869cae61dbb29a2477a2c4b396c71" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Flink 。</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">导航到工作负载安全性*Collectors*并单击*Agents*选项卡。</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">单击*+ Collector *并选择要配置的数据收集器。</block>
   <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">允许的文件类型策略</block>
@@ -13046,4 +13017,31 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="5b006d79d014a1860daf684ecea7e093" category="list-text">让新的REST收集器采集数据至少30分钟。忽略在此期间不显示为"正常"的任何数据。</block>
   <block id="6e81cdef5dd14e3cf193147eefe83cc4" category="list-text">休息期过后、随着REST收集器继续采集数据、您应该会看到数据保持稳定。</block>
   <block id="d2098b0b84e989c49759cf70450a78d8" category="paragraph">如果需要、您可以使用相同的过程返回到上一个收集器。</block>
+  <block id="34328c30b9aeceaed8fcff2dfe3eec30" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Kapacitor。</block>
+  <block id="3c9d727e041ea1596d9e67f7568b3d4b" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Redis。</block>
+  <block id="3d0738af358079dc547755789be4774a" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Netstat。</block>
+  <block id="419697cbdba3ded9f042d2b7a045a7be" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择HAProxy。</block>
+  <block id="c22bbce40f7866184fc5238e4cf0526d" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择ElASCHARSEearch。</block>
+  <block id="6ed4f0f0b93d3def9b1fe51a22e44d7a" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择"执行"。</block>
+  <block id="4bcd3cf21ebb34b835f0e6aa0d638f54" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Active魔 力象限。</block>
+  <block id="5ccd9dd8e50ca94f3cd4db51f6b42c50" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择RetinkDB。</block>
+  <block id="b0896396e0f3a7aa981b2ef8957b9208" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Apache。</block>
+  <block id="0ba3615a02f45b8a7b485192d849f02b" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择PostgreSQL。</block>
+  <block id="589728f32967406f1fdbd032c3fe018d" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Memcached.</block>
+  <block id="5888b2a0267a27f9f34b34863d7a8110" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择OpenZFS。</block>
+  <block id="2f646a2871ea4aa3befe55d29f178062" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择JVM。</block>
+  <block id="6f449010e727da85fc5dba4dc0566129" category="list-text">在 * 管理 &gt; 数据收集器 * 中，单击 * + 数据收集器 * 。选择Apache Zookeer。</block>
+  <block id="e71ca37de84258d54f5428c43e7d7278" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Kafka。</block>
+  <block id="ada6106f548a6369154652d4ea69d9a1" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择*DC/OS*。</block>
+  <block id="993b018a6d59665db1ee4e45e62026f4" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择"NGINX"。</block>
+  <block id="8a8e72cdfe9e0062f257b6b3af0a66fc" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Puppet。</block>
+  <block id="c3dba9c80e9fa5a82c71abb7fa5cf37f" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择CouchDB。</block>
+  <block id="65f4403a1570898156c13c0053e0d957" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Hadoop。</block>
+  <block id="9ee6c12aac4505f529c285b136202ce5" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Docker。</block>
+  <block id="80502f098bcf776c1d9ceec1ba9d636a" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Couchbase。</block>
+  <block id="b9edb2d8cbff35711b7021f32a2692dd" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择"链接"。</block>
+  <block id="53a22ff7bf05343afd43baa85e5c7883" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择MySQL。</block>
+  <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">从Cloud Insights菜单中、单击*可观察性&gt;收集器*、然后单击*+ Data Collector*按钮。</block>
+  <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择“Kbana”。</block>
+  <block id="c71f6654a45927e285ab22a697438b43" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择MongoDB。</block>
 </blocks>

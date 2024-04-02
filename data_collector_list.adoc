@@ -34,9 +34,6 @@ Cloud Insights 支持的数据收集器的按字母顺序列表：
 | 数据收集器 | 类型 
 
 
-| link:task_config_telegraf_activemq.html["ActiveMQ"] | 服务 
-
-
 | link:task_dc_amazon_ec2.html["Amazon EC2 和 EBS"] | 基础架构 
 
 

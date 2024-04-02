@@ -25,7 +25,7 @@ Cloud Insights 使用此数据收集器从 Consul 收集指标。
 
 == 安装
 
-. 从*Observability > Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 Consul 。
+. 从*Observability > Collectors*中，单击*+Data Collector*。选择"执行"。
 +
 如果尚未配置代理进行收集，系统将提示您 link:task_config_telegraf_agent.html["安装代理"] 在您的环境中。
 

@@ -25,7 +25,7 @@ Cloud Insights 使用此数据收集器从数据中心 / 操作系统收集指�
 
 == 安装
 
-. 从*Observability > Collectors*中，单击*+Data Collector*。在 * 服务 * 下，选择 * 数据中心 /OS* 。
+. 从*Observability > Collectors*中，单击*+Data Collector*。选择*DC/OS*。
 +
 如果尚未配置代理进行收集，系统将提示您 link:task_config_telegraf_agent.html["安装代理"] 在您的环境中。
 
