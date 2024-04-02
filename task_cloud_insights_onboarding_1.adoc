@@ -38,7 +38,7 @@ toc::[]
 
 
 
-=== 如果我已经拥有 NetApp Cloud 登录帐户，该怎么办？
+=== 如果我已经有NetApp BlueXP登录帐户、该怎么办？
 
 拥有NetApp BlueXP帐户后、只需在上选择*登录*即可 https://cloud.netapp.com["* NetApp BlueXPl*"^] 门户页面。
 
@@ -78,7 +78,7 @@ NOTE: 新用户仍必须先注册BlueXP访问权限、然后才能访问其环�
 
 == 注销
 
-要注销 Cloud Insights ，请单击您的 * 用户名 * 并选择 * 注销 * 。您将返回到BlueXP登录屏幕。
+要注销 Cloud Insights ，请单击您的 * 用户名 * 并选择 * 注销 * 。您将返回到 link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-logging-in.html["BlueXP登录"] 屏幕。
 
 
 NOTE: 注销Cloud Insights会使您注销BlueXP。您还将从使用BlueXP登录的其他NetApp云服务中注销。

@@ -5457,7 +5457,6 @@
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">输入有效的业务电子邮件地址并选择密码。</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">输入您的公司名称和全名。</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">选择 Cloud Insights 。</block>
-  <block id="136e3fa9a2b8381149c5e720a65374fa" category="section-title">如果我已经拥有 NetApp Cloud 登录帐户，该怎么办？</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">输入您的电子邮件地址和密码。然后，您将转到 NetApp 的云产品页面。</block>
   <block id="b1d39b97c6fe789fe5e7963f078e112d" category="section-title">开始 Cloud Insights 免费试用</block>
   <block id="3b1f676d06286548e11b332567f42bbd" category="inline-link-macro">开始订阅</block>
@@ -13042,8 +13041,10 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="43e7ba0a52e8b0f8e52ee853f0e4ece5" category="paragraph">创建环境后，您可以随时登录到NetApp BlueXP门户并单击*Go to BlueXP (转到Cloud Insights)*。您将直接转到 Cloud Insights 环境。</block>
   <block id="c95038e09e37b3186bbce880a572f8f5" category="paragraph">每个用户的邀请函电子邮件中也会包含此 URL ，以便于访问和添加书签。如果用户尚未登录到BlueXP、系统将提示他们登录。</block>
   <block id="30a2b0510383d7eabe73f5621c5ec906" category="admonition">新用户仍必须先注册BlueXP访问权限、然后才能访问其环境URL。</block>
-  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">要注销 Cloud Insights ，请单击您的 * 用户名 * 并选择 * 注销 * 。您将返回到BlueXP登录屏幕。</block>
-  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">注销Cloud Insights会使您注销BlueXP。您还将从使用BlueXP登录的其他NetApp云服务中注销。</block>
   <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">非活动超时</block>
   <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">默认情况下、如果6小时(360分钟)内没有活动、BlueXP会将用户注销。无论活动如何、用户都将在七天后注销。</block>
+  <block id="6670eac4232d1c66e6c936fe67e52aff" category="section-title">如果我已经有NetApp BlueXP登录帐户、该怎么办？</block>
+  <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">BlueXP登录</block>
+  <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">要注销 Cloud Insights ，请单击您的 * 用户名 * 并选择 * 注销 * 。您将返回到 <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> 屏幕。</block>
+  <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">注销Cloud Insights会使您注销BlueXP。您还将从使用BlueXP登录的其他NetApp云服务中注销。</block>
 </blocks>
