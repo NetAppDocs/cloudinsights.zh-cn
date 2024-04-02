@@ -5454,7 +5454,6 @@
   <block id="faac345f3f122d78da73c0bf89c5d9f3" category="paragraph">有关用户帐户和角色的详细信息，请参见 Cloud Insights <block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block> 文档。</block>
   <block id="e9017792019e9d0101cc81616e5cec41" category="summary">注册 Cloud Insights 并创建环境。</block>
   <block id="695d7a391bb9043561bcc3c254868311" category="doc">Cloud Insights 入职</block>
-  <block id="25866b1c01dcfb4e4ba435720ed78045" category="section-title">创建 NetApp Cloud Central 帐户</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">输入有效的业务电子邮件地址并选择密码。</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">输入您的公司名称和全名。</block>
   <block id="d02f5d878903034a62253cb17ae51c2d" category="paragraph">选择 Cloud Insights 。</block>
@@ -5465,13 +5464,9 @@
   <block id="93219f4a6fd1dbd20138a0a65d6e08de" category="paragraph">在免费试用期间，您可以 <block ref="822a67eb96671d13fff372a75b259713" category="inline-link-macro-rx"></block> 可随时访问 Cloud Insights 。订阅后，您可以根据当前订阅使用 Cloud Insights 功能。</block>
   <block id="2c4bb88652ba26d23266d851053ba465" category="section-title">登录并继续</block>
   <block id="8dac70c4541c93f0deed8b8bd734a673" category="paragraph">您也可以直接打开浏览器访问 Cloud Insights 环境 URL ，例如：</block>
-  <block id="0e15f0ff9eb552105028ff08fc92e09f" category="paragraph">每个用户的邀请函电子邮件中也会包含此 URL ，以便于访问和添加书签。如果用户尚未登录到 Cloud Central ，系统将提示他们登录。</block>
-  <block id="0df3e25ccf83cd4779234f7f928bebb5" category="admonition">新用户仍必须注册才能访问 Cloud Central ，然后才能访问其环境 URL 。</block>
   <block id="da115c4fc9cae6fc87764395ef9ff331" category="inline-link-macro">* 开始收集数据 *</block>
   <block id="8308d29f13c3d3cc69f506dfead0a733" category="paragraph">首次登录到新环境时，系统将引导您完成设置 <block ref="2949f1254245e371c2d697f481723a7e" category="inline-link-macro-rx"></block>。</block>
   <block id="cc580c5eecd9c28053db6de1830561ee" category="section-title">注销</block>
-  <block id="5f5052459ed746a225d85b63238531d1" category="paragraph">要注销 Cloud Insights ，请单击您的 * 用户名 * 并选择 * 注销 * 。您将返回到 Cloud Central 登录屏幕。</block>
-  <block id="21648aceb436779ee1938a15ced12e7e" category="admonition">注销 Cloud Insights 将使您从 Cloud Central 注销。您还将从使用 Cloud Central 登录的其他 NetApp 云服务中注销。</block>
   <block id="d5d5b9f170a27fd5f88756592b939a58" category="summary">了解公司环境中使用的应用程序有助于您跟踪资产使用情况和成本。</block>
   <block id="66eb03874fd60842ce2afb5ab2f59e21" category="doc">按应用程序跟踪资产使用情况</block>
   <block id="49376b02066c48dc7163dd18c3a35c8e" category="paragraph">在跟踪与环境中运行的应用程序关联的数据之前，您必须先定义这些应用程序并将其与相应的资产相关联。您可以将应用程序与以下资产相关联：主机，虚拟机，卷，内部卷， qtree ， 共享和虚拟机管理程序。</block>
@@ -9116,7 +9111,6 @@
   <block id="bd4968db059d70adcf0b67815d5ba188" category="list-text">Unisphere服务器的IP地址/完全限定域名</block>
   <block id="d81b3ffd1c59a02baf7dbf4e905471a5" category="list-text">用户名和密码</block>
   <block id="4723d1b438a15598881f85467c0b7be8" category="cell">性能轮询之间的时间间隔。</block>
-  <block id="485f7bb9e7cc7894cf2e75343120bbf5" category="paragraph">创建环境后、您可以随时登录到NetApp云门户并单击*转到Cloud Insights *。您将直接转到 Cloud Insights 环境。</block>
   <block id="39930ddf87d2960ef2f5a8ff06e4993e" category="cell">安装的Telegraf版本已过时。按照此页面上的步骤*为您的相应平台升级代理*。</block>
   <block id="3a0f609bf65bf53f905fdcfae464bcae" category="cell">配置新插件并重新启动Telegraf后、Telegraf无法启动。这些日志指示出现类似以下内容的错误："[caelaf] Error running agent：error loading config file /etc/caelaf/tengraf.d/cloudinsots-default.conf：plugin outputs.http：line &lt;linenumber&gt; ：configuration specified the fields ["use_system_proxy"]、but they were n't used"</block>
   <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">我在旧安装上运行了安装程序脚本、现在代理不发送数据</block>
@@ -9452,7 +9446,6 @@
   <block id="8d3d5857627846ebb0bfd18533d81373" category="list-text">立即解决</block>
   <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">警报解决选项</block>
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="964a8b3315ffa6f99cb6f09543be37c8" category="paragraph">在开始使用Cloud Insights 之前、您必须先在* NetApp BlueX*(原Cloud Central)门户上注册。如果您已登录 NetApp Cloud Central ，则可以通过几个快速步骤免费试用 Cloud Insights 。</block>
   <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">* NetApp BlueXP*</block>
   <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">要开始使用NetApp的云服务、请访问<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> 然后单击*开始使用*。</block>
   <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">如果尚未注册、请选择*注册*</block>
@@ -9463,7 +9456,6 @@
   <block id="87174dc7b61ea27d55ab152cfdbfcbb0" category="inline-image-macro">在BlueXP上免费试用Cloud Insights</block>
   <block id="5d6203b83b93ae1cf7e9b34368cd7f9d" category="paragraph"><block ref="5d6203b83b93ae1cf7e9b34368cd7f9d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7395877188489ccb99fbacc8cc003a01" category="paragraph">如果这是您首次登录到 Cloud Insights ，请在 Cloud Insights 产品下单击 * 开始免费试用 * 。Cloud Insights 将指导您完成公司环境的创建过程。</block>
-  <block id="5787741cafb89158f9880654c9e9b5a5" category="paragraph">环境创建完成后，您可以使用 Cloud Central 凭据登录并开始免费试用 Cloud Insights 30 天。在此试用期间、您可以了解Cloud Insights 必须提供的功能。</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">集群管理</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS/SMB用户阻止所需。</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">从“团队内容”中选择*Storage Manager信息板*可提供多个报告，这些报告提供有关流量和存储的信息。</block>
@@ -13044,4 +13036,14 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">从Cloud Insights菜单中、单击*可观察性&gt;收集器*、然后单击*+ Data Collector*按钮。</block>
   <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择“Kbana”。</block>
   <block id="c71f6654a45927e285ab22a697438b43" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择MongoDB。</block>
+  <block id="2e95a4622d16ffb729672b5838f5732b" category="paragraph">在开始使用Cloud Insights之前，您必须在*BlueXP* NetApp门户上注册。如果您已登录BlueXP、则只需几个快速步骤即可开始免费试用Cloud Insights。</block>
+  <block id="5bff30d13ce98c505187872963af1f25" category="section-title">正在创建NetApp BlueXP帐户</block>
+  <block id="f21c4669cdc7c8b69bb7b9e4f65412b9" category="paragraph">环境创建完成后、您可以使用BlueXP凭据登录并开始Cloud Insights 30天免费试用。在此试用期间、您可以了解Cloud Insights 必须提供的功能。</block>
+  <block id="43e7ba0a52e8b0f8e52ee853f0e4ece5" category="paragraph">创建环境后，您可以随时登录到NetApp BlueXP门户并单击*Go to BlueXP (转到Cloud Insights)*。您将直接转到 Cloud Insights 环境。</block>
+  <block id="c95038e09e37b3186bbce880a572f8f5" category="paragraph">每个用户的邀请函电子邮件中也会包含此 URL ，以便于访问和添加书签。如果用户尚未登录到BlueXP、系统将提示他们登录。</block>
+  <block id="30a2b0510383d7eabe73f5621c5ec906" category="admonition">新用户仍必须先注册BlueXP访问权限、然后才能访问其环境URL。</block>
+  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">要注销 Cloud Insights ，请单击您的 * 用户名 * 并选择 * 注销 * 。您将返回到BlueXP登录屏幕。</block>
+  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">注销Cloud Insights会使您注销BlueXP。您还将从使用BlueXP登录的其他NetApp云服务中注销。</block>
+  <block id="8463a61dd94ff5934036d4c8a8936e32" category="section-title">非活动超时</block>
+  <block id="db7d4581c8073d9c4dda50c4994c4383" category="paragraph">默认情况下、如果6小时(360分钟)内没有活动、BlueXP会将用户注销。无论活动如何、用户都将在七天后注销。</block>
 </blocks>
