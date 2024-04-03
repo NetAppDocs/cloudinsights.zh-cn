@@ -9814,7 +9814,6 @@
   <block id="3b7c5615013c6b42362845591653e503" category="cell">启用DNSLook.e.</block>
   <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">是非题、启用DNS查找</block>
   <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">AgentConfiguration文件示例</block>
-  <block id="fc8a8119975d70c9ea4470d26aa4640b" category="paragraph">下面是一个AgentConfiguration文件示例。请注意、此处并未捕获所有选项：</block>
   <block id="13f0cf7e64ed13ef0b58a80209d8e032" category="list-text">如果您使用的是自定义或私有Docker存储库、请按照使用自定义或私有Docker存储库一节中的说明进行操作</block>
   <block id="64cf739e279a21fbfd5a0a55d9453e9d" category="list-text">从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。如果您的环境使用PSP、则必须升级到最新的NetApp Kubennetes Monitoring Operator。</block>
   <block id="324c304c8e53f41411f3a55226c16d14" category="list-text">如果您运行的是OpenShift 4.6或更高版本、则除了确保满足这些前提条件之外、您还必须遵循下面的OpenShift说明。</block>
@@ -13047,4 +13046,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="e3ad3e57d0a33a78b565817ed4710dea" category="inline-link-macro">BlueXP登录</block>
   <block id="b00323e3fc84f69070c5dc2be8e5ce9e" category="paragraph">要注销 Cloud Insights ，请单击您的 * 用户名 * 并选择 * 注销 * 。您将返回到 <block ref="8d1c4f3c88725cbe8b8d86c07fb5d410" category="inline-link-macro-rx"></block> 屏幕。</block>
   <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">注销Cloud Insights会使您注销BlueXP。您还将从使用BlueXP登录的其他NetApp云服务中注销。</block>
+  <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">true或false—如果在Kubbernetes节点上启用了SELinux、则将run特权 设置为true。</block>
+  <block id="e40d435b2f81693776ecb79899e30849" category="paragraph">下面是一个AgentConfiguration文件示例。</block>
 </blocks>
