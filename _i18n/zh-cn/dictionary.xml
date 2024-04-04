@@ -9745,8 +9745,6 @@
   <block id="9f033a5b208feb9ef67ab1def3051525" category="cell">可选：客户专用repo的机密</block>
   <block id="343d28c140c3f5ce20a1ac3f8f7dae2c" category="cell">clusterName</block>
   <block id="c21207144818cb50a67a3aa45ad90cc1" category="cell">自由文本字段、用于在所有客户集群中唯一标识集群。这在Cloud Insights 租户中应该是唯一的。默认值是客户在UI中为"Cluster Name"字段输入的内容</block>
-  <block id="b5249bb082b669e275606cdef10879b6" category="cell">代理格式：代理：服务器：端口：用户名：密码：noProxy：isTelegrafProxyEnabled：isAuProxyEnabled：isFluentbitProxyEnabled：isCollectorProxyEnabled：</block>
-  <block id="f430d84b3603b6c921d2a45741baab1e" category="cell">客户可选择设置代理。这通常是客户的公司代理。</block>
   <block id="aa3a0177193f5479812eadbbb3e6c303" category="cell">电报</block>
   <block id="0c8011c6947aae43789eb8972c306e85" category="cell">配置选项、可自定义操作员的安装</block>
   <block id="fe071453b5b9af9d9a481afb504f78cb" category="cell">secionInterval</block>
@@ -9803,9 +9801,7 @@
   <block id="6f70b1b29646b4f3864aa8abbbca1c59" category="cell">工作负载映射</block>
   <block id="061016eea4bb256a8b08c9190fbefeec" category="cell">可自定义Operator的工作负载映射收集和安装的配置选项</block>
   <block id="8804d25db5f16b9db006116b6edf45bc" category="cell">cpuLimit</block>
-  <block id="3a8e375aaa03d4b48cdd1a1758a69d81" category="cell">Net observer DS的CPU限制</block>
   <block id="65a010afe1e2186ecb5c9ef8cf978e2d" category="cell">memLimit</block>
-  <block id="3803b93f400a67f6fef5fecdec95cb8c" category="cell">净观察者DS的MEM限制</block>
   <block id="967cc12aa2f5f95e9e26d28fae3bd7b3" category="cell">Net observer DS的CPU请求</block>
   <block id="0ae1bca85ce414d0f1862e84b9f66acc" category="cell">MEM请求提供Net observer DS</block>
   <block id="8d5efaeb90931394d0afdcc8d00b6b90" category="cell">指标聚合间隔(以秒为单位)</block>
@@ -13048,4 +13044,46 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="4405c285662a5ac6f84ad517037907a7" category="admonition">注销Cloud Insights会使您注销BlueXP。您还将从使用BlueXP登录的其他NetApp云服务中注销。</block>
   <block id="e04813a849ce9da2afe9f3bfcaf85f0e" category="cell">true或false—如果在Kubbernetes节点上启用了SELinux、则将run特权 设置为true。</block>
   <block id="e40d435b2f81693776ecb79899e30849" category="paragraph">下面是一个AgentConfiguration文件示例。</block>
+  <block id="5c7af4a6b686285084e62f255503c141" category="cell">代理
+
+格式。
+
+代理：
+
+  服务器：
+  端口：
+  用户名：
+  密码：
+  NoProxy：
+  已启用isTelegrafProxy: 
+  已启用isAuProxy: 
+  isFluentbitProxyEnabled：
+  已启用isCollectorProxy:</block>
+  <block id="f8ac74d8a3668ddf89efeb8e806ca908" category="cell">可选设置代理。这通常是客户的公司代理。</block>
+  <block id="27f8013ee549a9c4b57f90e2187cfe5f" category="cell">Net observer DS的CPU限制</block>
+  <block id="579e696b8054af08af33dfd55dfad78b" category="cell">净观察者DS的MEM限制</block>
+  <block id="78835e1c315b219e4c62fc613fdfd311" category="cell">变更管理</block>
+  <block id="02b609b32da65dbc17b9446c8542f3dd" category="cell">Kubnetes变更管理和分析的配置选项</block>
+  <block id="75f551b07991fea9589bce25b6abb363" category="cell">change-ob맛 달 풱-Watch RS的CPU限制</block>
+  <block id="6e753299d008aca89690ad5b5c6b784f" category="cell">change-ob맛 달 풱-Watch RS的MEM限制</block>
+  <block id="582e83d73d36aa6674624867468704da" category="cell">对change-ob맛 달 풱-手表-rs的CPU请求</block>
+  <block id="d73c96f8e69fcf08ffd440cc16f573af" category="cell">MEM请求change-ob맛 달 풱-Watch RS</block>
+  <block id="5190879b0edfb4a53603a0ab23ab40e8" category="cell">failureMins</block>
+  <block id="6e18e5efc4d170de4ac66b784ca443b6" category="cell">工作负载部署失败后将标记为失败的间隔(以分钟为单位)</block>
+  <block id="c055d40d7bbe856522ad8c59006f6754" category="cell">部署聚合IntervalSeconds</block>
+  <block id="e06e4cc3c2b6796e0850387e7147734e" category="cell">发送正在进行的工作负载部署事件的频率</block>
+  <block id="43aa9b44901fa9982cd6c7faf3f97402" category="cell">nonWorkloadAggrIntervalSeconds</block>
+  <block id="cff422cbad1df823699a6830f754d451" category="cell">合并和发送非工作负载部署的频率</block>
+  <block id="6d53bc2f7711e2d9a24631defb23b18f" category="cell">TermsToRedact</block>
+  <block id="532aa006f97c495d1734618405645779" category="cell">在env名称和数据映射中使用的一组正则表达式、其值将被编辑
+示例术语："pwd"、"password"、"t令牌"、"APIkey"、"API-key"、 "jwt"</block>
+  <block id="44011a6b8af68cc46d2d0dfb669fd887" category="cell">其他KindsToWatch</block>
+  <block id="ac3fd52049b8a2c3ba2e8b8a5eff74e0" category="cell">收集器监控的一组默认类型中要监控的其他类型的逗号分隔列表</block>
+  <block id="20e3bce2d07b4e6d70959f7793b18bc9" category="cell">kindsToIgnoreFromWatch</block>
+  <block id="003936f0b815c468a99ed57f900f3d8a" category="cell">收集器监控的一组默认类型中要忽略的监视类型的逗号分隔列表</block>
+  <block id="eee9690c1174453d706353a8a678c8a1" category="cell">LogRecordAggrIntervalSeconds</block>
+  <block id="284d60e68534479175e5c3f018cecc45" category="cell">从收集器向CI发送日志记录的频率</block>
+  <block id="73f0200abaec8d804a671e6ce4dac861" category="cell">手表耐受性</block>
+  <block id="bab1b701df004b067b068da86a62e2cf" category="cell">change-ob맛 달 풱-Watch—DS的额外容差。仅限简写单行格式。
+示例："｛key：tint1、operator：exists、effect：NoSchedule｝、｛key：tint2、operator：exists、effect：NoExecute｝"</block>
 </blocks>

@@ -40,7 +40,21 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 |  | clusterName | 自由文本字段、用于在所有客户集群中唯一标识集群。这在Cloud Insights 租户中应该是唯一的。默认值是客户在UI中为"Cluster Name"字段输入的内容 
 
 
-|  | 代理格式：代理：服务器：端口：用户名：密码：noProxy：isTelegrafProxyEnabled：isAuProxyEnabled：isFluentbitProxyEnabled：isCollectorProxyEnabled： | 客户可选择设置代理。这通常是客户的公司代理。 
+|  | 代理
+
+格式。
+
+代理：
+
+  服务器：
+  端口：
+  用户名：
+  密码：
+  NoProxy：
+  已启用isTelegrafProxy: 
+  已启用isAuProxy: 
+  isFluentbitProxyEnabled：
+  已启用isCollectorProxy: | 可选设置代理。这通常是客户的公司代理。 
 
 
 | 电报 |  | 配置选项、可自定义操作员的安装 
@@ -193,6 +207,47 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
 
 
 |  | run特权 | true或false—如果在Kubbernetes节点上启用了SELinux、则将run特权 设置为true。 
+
+
+| 变更管理 |  | Kubnetes变更管理和分析的配置选项 
+
+
+|  | cpuLimit | change-ob맛 달 풱-Watch RS的CPU限制 
+
+
+|  | memLimit | change-ob맛 달 풱-Watch RS的MEM限制 
+
+
+|  | cpuQuest | 对change-ob맛 달 풱-手表-rs的CPU请求 
+
+
+|  | MemQuest | MEM请求change-ob맛 달 풱-Watch RS 
+
+
+|  | failureMins | 工作负载部署失败后将标记为失败的间隔(以分钟为单位) 
+
+
+|  | 部署聚合IntervalSeconds | 发送正在进行的工作负载部署事件的频率 
+
+
+|  | nonWorkloadAggrIntervalSeconds | 合并和发送非工作负载部署的频率 
+
+
+|  | TermsToRedact | 在env名称和数据映射中使用的一组正则表达式、其值将被编辑
+示例术语："pwd"、"password"、"t令牌"、"APIkey"、"API-key"、 "jwt" 
+
+
+|  | 其他KindsToWatch | 收集器监控的一组默认类型中要监控的其他类型的逗号分隔列表 
+
+
+|  | kindsToIgnoreFromWatch | 收集器监控的一组默认类型中要忽略的监视类型的逗号分隔列表 
+
+
+|  | LogRecordAggrIntervalSeconds | 从收集器向CI发送日志记录的频率 
+
+
+|  | 手表耐受性 | change-ob맛 달 풱-Watch—DS的额外容差。仅限简写单行格式。
+示例："｛key：tint1、operator：exists、effect：NoSchedule｝、｛key：tint2、operator：exists、effect：NoExecute｝" 
 |===
 
 
