@@ -5822,7 +5822,6 @@
   <block id="2c2ee9a7d99b7adb60d6152c3090a0f0" category="cell">SVM 数据 LIF IP 地址</block>
   <block id="b81e4f797b30e131d43ea14e3bc8322c" category="inline-link-macro">事件速率检查器</block>
   <block id="1a46e02a3754d0daf83001fffc7c7c46" category="paragraph">请参见 <block ref="fd6f609b977fb641a06defa631019934" category="inline-link-macro-rx"></block> 有关规模估算的信息的文档。</block>
-  <block id="961208029de208a5d667bc4557cd4628" category="summary">用作采集单元的服务器或 VM 必须满足最低要求</block>
   <block id="1e6f2d5fb7c78a27ba0dc78e9cc7c9b5" category="doc">采集单元要求</block>
   <block id="15948ad6c9474a20f044eee0ea809fda" category="paragraph">您必须安装采集单元（ AU ），才能从基础架构数据收集器（存储， VM ，端口， EC2 等）中获取信息。在安装采集单元之前，您应确保环境满足操作系统， CPU ，内存和磁盘空间要求。</block>
   <block id="033d64e0352a24070b4d6ba6e37207af" category="cell">Windows 要求</block>
@@ -12757,21 +12756,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="cec6efc84112c97bd14aba77f80d27d1" category="paragraph">同样、选择警报可提供有关警报的详细信息、包括触发警报的监控器以及显示警报可视时间线的图表。</block>
   <block id="cf6b021661e577ef1017b5fe1ce38625" category="section-title">webhook列表页面</block>
   <block id="5bd2d7e216efca647c8b9d69cedb9410" category="paragraph">在Webhook列表页面上、显示的是名称、创建者、创建日期、状态、安全、 和上次报告的字段。</block>
-  <block id="f58657b4c7806c2ae7d24a62c56cfb94" category="cell">运行以下许可版本之一的计算机：
-
-* CentOS (64位)：7.2到7.9、Stream 8、Stream 9
-* Debian (64位)：9和10
-* Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4
-* Red Hat Enterprise Linux (64位)：7.2到7.9、8.1到8.7、9.1
-*洛基9.0、9.1
-* Ubuntu服务器：18.04和20.04 LTS
-
-此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
-
-如果您运行的是SELinux、建议在采集单元系统上执行以下命令：
-
- sudo semanage fcontext-A -t user_t "//opt/netap/kludinsights (/.*)？"
- sudo reatorecon -R /op/NetApp/云 景点</block>
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB协议3.1及更早版本。</block>
   <block id="44922767e817f1f23f68cda06b3e0da9" category="list-text">您可以阅读有关Cloud Insights安全性的信息 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
   <block id="eebaff443664fe8dffc2c87c72413ce8" category="paragraph">阅读了解Cloud Insights安全性 <block ref="543da5bd260d801b98cf781252e71d7c" category="inline-link-macro-rx"></block>。</block>
@@ -13086,4 +13070,23 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="73f0200abaec8d804a671e6ce4dac861" category="cell">手表耐受性</block>
   <block id="bab1b701df004b067b068da86a62e2cf" category="cell">change-ob맛 달 풱-Watch—DS的额外容差。仅限简写单行格式。
 示例："｛key：tint1、operator：exists、effect：NoSchedule｝、｛key：tint2、operator：exists、effect：NoExecute｝"</block>
+  <block id="ab8e405c19b7905ee11081815f3188e8" category="summary">用作采集单元的服务器或VM必须满足最低要求。</block>
+  <block id="a09b5775576e1f992d4b31384ff11e67" category="cell">运行以下许可版本之一的计算机：
+
+* CentOS (64位)：7.2到7.9、8.1到8.4、Stream 8、Stream 9
+* Debian (64位)：9和10
+*《第15．1至第15．5版》
+* Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.8
+* Red Hat Enterprise Linux (64位)：7.2到7.9、8.1到8.8、9.1、9.2
+*洛基9.0、9.1、9.3
+* SUSE Enterprise Linux Server 15、15 SP2至15 SP5
+* Ubuntu服务器：18.04、20.04、22.04 LTS
+*上述平台上的SELinux
+
+此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
+
+如果您运行的是SELinux、建议在采集单元系统上执行以下命令：
+
+ sudo semanage fcontext-A -t user_t "//opt/netap/kludinsights (/.*)？"
+ sudo reatorecon -R /op/NetApp/云 景点</block>
 </blocks>

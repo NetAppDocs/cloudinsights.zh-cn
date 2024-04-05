@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: concept_acquisition_unit_requirements.html 
-summary: 用作采集单元的服务器或 VM 必须满足最低要求 
-keywords: AU, acquisition unit, RAU, requirements, sizing 
+summary: 用作采集单元的服务器或VM必须满足最低要求。 
+keywords: AU, acquisition unit, requirements, sizing 
 ---
 = 采集单元要求
 :toc: macro
@@ -33,12 +33,15 @@ keywords: AU, acquisition unit, RAU, requirements, sizing
 
 | 操作系统 | 运行以下许可版本之一的计算机：
 
-* CentOS (64位)：7.2到7.9、Stream 8、Stream 9
+* CentOS (64位)：7.2到7.9、8.1到8.4、Stream 8、Stream 9
 * Debian (64位)：9和10
-* Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.4
-* Red Hat Enterprise Linux (64位)：7.2到7.9、8.1到8.7、9.1
-*洛基9.0、9.1
-* Ubuntu服务器：18.04和20.04 LTS
+*《第15．1至第15．5版》
+* Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.8
+* Red Hat Enterprise Linux (64位)：7.2到7.9、8.1到8.8、9.1、9.2
+*洛基9.0、9.1、9.3
+* SUSE Enterprise Linux Server 15、15 SP2至15 SP5
+* Ubuntu服务器：18.04、20.04、22.04 LTS
+*上述平台上的SELinux
 
 此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。
 
