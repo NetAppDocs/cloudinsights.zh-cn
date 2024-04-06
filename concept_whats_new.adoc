@@ -22,6 +22,30 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
+== 2024年4月
+
+
+
+=== iSCSI卷延迟
+
+iSCSI卷延迟指标可在信息板、警报等中使用。要收集iSCSI延迟指标、请从Kubbernetes Collector的"Modify Deployment (修改部署)"菜单项中打开_Network Performance and Map_。
+
+
+
+=== 操作系统支持
+
+除了这些操作系统之外、Cloud Insights 采集单元还支持以下操作系统 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支持"]：
+
+* Oracle Enterprise Linux 8.8
+* Red Hat Enterprise Linux 8.8
+* 落基9.3
+* 《第15．1至第15．5步
+* SUSE Enterprise Linux Server 15、15 SP2至15 SP5
+
+
+'''
+
+
 == 2024年3月
 
 
@@ -93,7 +117,7 @@ image:RelatedLogsTable.png["日志警报登录页面上的相关日志"]
 
 === 收集ONTAP交换机数据
 
-Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交换机信息"] 并具有相应的 <<a-note-about-permissions,权限>> 设置。
+Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 link:https://docs.netapp.com/us-en/ontap-cli-98/system-switch-ethernet-create.html["交换机信息"] 并具有相应的 link:task_dc_na_cdot.html#a-note-about-permissions["权限"] 设置。
 
 
 
@@ -116,7 +140,7 @@ Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数�
 
 === 我的工作负载运行状况如何？
 
-工作负载运行状况可在* Kubernetes > Explore > Workloads*页面上一目了然地查看、因此您可以快速查看哪些工作负载运行良好以及哪些工作负载可能需要一些帮助。
+工作负载运行状况可在* Kubernetes > Explore > Workloads*页面上一目了然地查看、因此您可以快速查看哪些工作负载运行良好以及哪些工作负载可能需要一些帮助。轻松确定运行状况问题描述是否与基础架构、网络或配置更改相关、并深入分析根发生原因。
 
 image:WorkloadHealth.png["工作负载运行状况概览"]
 

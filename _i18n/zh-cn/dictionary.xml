@@ -12774,7 +12774,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="efe846805e5476fec607bbf54e45dc44" category="section-title">2024年1月</block>
   <block id="a06394795b8f53802b059da7ff53b836" category="section-title">试用您尚未使用的Cloud Insights功能</block>
   <block id="5dbb51f66b1a3074265f272db5200fa9" category="section-title">我的工作负载运行状况如何？</block>
-  <block id="724d9fcddedbe051bb60333c24d60088" category="paragraph">工作负载运行状况可在* Kubernetes &gt; Explore &gt; Workloads*页面上一目了然地查看、因此您可以快速查看哪些工作负载运行良好以及哪些工作负载可能需要一些帮助。</block>
   <block id="32881fe09cf4dd3fd8228ed220fe9e0b" category="inline-image-macro">工作负载运行状况概览</block>
   <block id="89498d5fe061f9d0cd5bfa262fb798d6" category="paragraph"><block ref="89498d5fe061f9d0cd5bfa262fb798d6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5770f841572da2cfe361b72b1ca45ae8" category="section-title">数据域标识</block>
@@ -12878,7 +12877,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="4dc21e298acee929dd835589e6d5c640" category="paragraph">或者、您可能希望在登录页面表的图表中查看其数据。只需选择_Show Chart_图标即可打开表下方的图表：</block>
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">显示图表图标</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d51ad7ff0d214fb056992b26bfed4ced" category="paragraph">Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 并具有相应的 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 设置。</block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">ONTAP 权限</block>
   <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP自主防兰软件保护的权限</block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAP访问权限被拒绝</block>
@@ -13089,4 +13087,14 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 
  sudo semanage fcontext-A -t user_t "//opt/netap/kludinsights (/.*)？"
  sudo reatorecon -R /op/NetApp/云 景点</block>
+  <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">2024年4月</block>
+  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">iSCSI卷延迟</block>
+  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">iSCSI卷延迟指标可在信息板、警报等中使用。要收集iSCSI延迟指标、请从Kubbernetes Collector的"Modify Deployment (修改部署)"菜单项中打开_Network Performance and Map_。</block>
+  <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8.8</block>
+  <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8.8</block>
+  <block id="c3571084e6793888922121d12a2dca13" category="list-text">落基9.3</block>
+  <block id="7c5f962bedfb419a0baae6396bf5594d" category="list-text">《第15．1至第15．5步</block>
+  <block id="ef72ce3dbba91fd3b44036502dd167dd" category="list-text">SUSE Enterprise Linux Server 15、15 SP2至15 SP5</block>
+  <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 并具有相应的 <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> 设置。</block>
+  <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">工作负载运行状况可在* Kubernetes &gt; Explore &gt; Workloads*页面上一目了然地查看、因此您可以快速查看哪些工作负载运行良好以及哪些工作负载可能需要一些帮助。轻松确定运行状况问题描述是否与基础架构、网络或配置更改相关、并深入分析根发生原因。</block>
 </blocks>
