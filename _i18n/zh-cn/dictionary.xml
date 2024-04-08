@@ -3373,7 +3373,6 @@
   <block id="8b91cb352f837187391eccc1bbd95135" category="summary">Cloud Insights 对象图标参考。</block>
   <block id="08844d91b668f6d73a4cc2d167be69b7" category="doc">对象图标参考</block>
   <block id="9c760c96232338b3451e1d7fde6ce957" category="paragraph">Cloud Insights 中使用的对象图标的快速参考。</block>
-  <block id="ccb06b64aa7e8cb6a869d22deb1de8bd" category="summary">Kubernetes 数据收集器配置</block>
   <block id="e93e9e1daf8e7243cd54ae6878bcbd91" category="paragraph">Cloud Insights 使用此数据收集器收集 Kubernetes Pod ，节点和容器指标。</block>
   <block id="2c1099d2eb2a8a08bba13169800b9ecb" category="cell">Kubernetes 容器</block>
   <block id="5415e066c63454268882855520be8f45" category="cell">命名空间 Pod 容器集群</block>
@@ -8159,7 +8158,6 @@
   <block id="de41af8028b5287cc6d65bb0e73cae11" category="section-title">通过AWS Marketplace试用</block>
   <block id="bc8745f374e91204332a0cd070e3c20c" category="inline-xref">受管单元</block>
   <block id="6061bb3060aa3de79828df051d62babd" category="paragraph">注意：如果配置的MTU超过499个、则会进入"已违反"状态。当您的试用处于"已违反"状态时、您将无法访问某些Cloud Insights 功能、直到解决违规问题为止、方法是减少配置的MTU数量或订阅Cloud Insights。</block>
-  <block id="562442a302f1457c8c9df7cbde80c0b4" category="doc">配置NetApp Kubernetes监控操作员</block>
   <block id="b9f54c4d152facdb82c18e1719662b9f" category="paragraph">Cloud Insights 为Kubernetes收集提供了* NetApp Kubernetes监控操作员*(NKMO）。添加数据收集器时、只需选择"Kubernetes "图块即可。</block>
   <block id="6a65175f7f76169aeeaf32acdda0d82f" category="section-title">安装NetApp Kubernetes监控操作员之前</block>
   <block id="e7cd0bdb5140849b9f1cd2c88adf53d0" category="list-text">Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。</block>
@@ -12434,7 +12432,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安装之前或安装之后编辑_operator-additional－permissions．yaml．编辑资源_ClusterRole．&lt;namespace&gt;－additional－permissions</block>
   <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用动词["GET、"Watch、"list"]为所需的每个组和资源创建一个新规则。参见\https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
   <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">将所做的更改应用于集群</block>
-  <block id="449735a59883598ca6b4afe7cb57336a" category="admonition">阅读 <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> 安装或升级NetApp Kubornetes监控操作员之前的文档。</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">我缺少一些事件日志的_volvedobject_数据。</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">确保已按照中的步骤进行操作 <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> 第节。</block>
   <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">单元试用</block>
@@ -13097,4 +13094,8 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">有关在Kubnetes上安装的信息、请参见 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="ed300e62408d01715c593931df6a2352" category="paragraph">有关 Kubernetes 安装说明，请参见 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="9475d89ab72707a841c177322d6462fa" category="summary">NetApp Kubnetes监控操作员收集要在Cloud Insights中使用的Kubnetes数据。</block>
+  <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">适用于Kubbernetes的数据收集器</block>
+  <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Data Collector：KubeNet</block>
+  <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubnetes Monitoring Operator安装和配置</block>
+  <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">阅读 <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> 安装或升级NetApp Kubornetes监控操作员之前的必备文档。</block>
 </blocks>

@@ -1,21 +1,18 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
-keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s 
+keywords: kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
 summary: NetApp Kubnetes监控操作员收集要在Cloud Insights中使用的Kubnetes数据。 
 ---
-= 配置NetApp Kubernetes监控操作员
-:toc: macro
+= Kubnetes Monitoring Operator安装和配置
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :toclevels: 2
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -35,7 +32,7 @@ toc::[]
 == 安装NetApp Kubernetes监控操作员之前
 
 
-IMPORTANT: 阅读 link:pre-requisites_for_k8s_operator.html["*安装或升级前*"] 安装或升级NetApp Kubornetes监控操作员之前的文档。
+IMPORTANT: 阅读 link:pre-requisites_for_k8s_operator.html["*安装或升级前*"] 安装或升级NetApp Kubornetes监控操作员之前的必备文档。
 
 
 
