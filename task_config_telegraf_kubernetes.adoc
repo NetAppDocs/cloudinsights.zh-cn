@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_kubernetes.html 
-keywords: telegraf, installation, install, kubernetes 
+keywords: telegraf, kubernetes 
 summary: Kubernetes 数据收集器配置 
 ---
 = Kubernetes Data Collector
@@ -25,10 +25,7 @@ Cloud Insights 使用此数据收集器收集 Kubernetes Pod ，节点和容器�
 
 == 安装
 
-有关 Kubernetes 安装说明，请参见 link:task_config_telegraf_agent.html#kubernetes["代理安装"] 页面。
-
-
-NOTE: 有关 * Kube-state-metrics* 的信息已移至 link:task_config_telegraf_agent.html#kubernetes["代理安装"] 页面。
+有关 Kubernetes 安装说明，请参见 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes监控操作员"] 页面。
 
 
 

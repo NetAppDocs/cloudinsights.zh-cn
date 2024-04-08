@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
-keywords: telegraf, installation, install, agent, telegraf agent 
+keywords: telegraf, agent, telegraf agent 
 summary: Cloud Insights 支持Telegraf作为其收集集成数据的代理、并可在Windows或Linux上进行配置。 
 ---
 = 配置代理以收集数据(Windows/Linux)
@@ -23,7 +23,7 @@ Cloud Insights 使用 link:https://docs.influxdata.com/telegraf["Telegraf"] 作�
 
 Cloud Insights 的当前Telegraf版本为*。1.24.0*。
 
-有关在Kubnetes上安装的信息、请参见 link:task_config_telegraf_agent_k8s.html["此页面"]。
+有关在Kubnetes上安装的信息、请参见 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes监控操作员"] 页面。
 
 
 NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步 Agent 计算机上的时间。
