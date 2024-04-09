@@ -9727,7 +9727,6 @@
   <block id="b8adad41e88791514af597358506f749" category="cell">DNS域后缀</block>
   <block id="3b15ddcf76b613b05aa53ea7cf06a953" category="cell">与简单主机名结合使用以呈现虚拟机管理程序的FQDN的主机名后缀</block>
   <block id="8022a6c696c4f5ec847420e8ebe1de9e" category="doc">Kubnetes网络性能监控和映射</block>
-  <block id="7d69190c63825bab664b2d4ce825918a" category="admonition">Kubnetes网络性能监控和映射为 <block ref="312c0c6b46ba32b4b11ba8c9da5788ed" category="inline-link-macro-rx"></block> 功能、可能会更改。</block>
   <block id="ee14ad38dfee48bc207f90920b1efb9f" category="paragraph">在使用Kubbernetes网络性能监控和映射之前、必须先配置 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 以启用此选项。在操作员部署期间、选中"Network Performance and Map"(网络性能和映射)复选框以启用。您也可以通过导航到Kubbernetes登录页面并选择"修改部署"来启用此选项。</block>
   <block id="1d292eb6751a0db171502dec84f9f7c0" category="summary">NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。</block>
   <block id="57e4cf9437210e6248eb8a2137609c4e" category="doc">NetApp Kubnetes监控操作员配置选项</block>
@@ -9971,7 +9970,6 @@
   <block id="71841f704ed10618ca86f31ee6b5d043" category="paragraph">同样、在_find_字段中键入字符串将突出显示匹配的工作负载。</block>
   <block id="75d129f3fd06394d5b75cb67aea1f2d8" category="inline-image-macro">在"查找"框中键入将突出显示工作负载</block>
   <block id="5ddf6f9c2416ad391ccea53c53433147" category="paragraph"><block ref="5ddf6f9c2416ad391ccea53c53433147" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="642d357bd708eba3d8ac3744a27588a3" category="paragraph">Kubernetes网络性能监控和映射功能可映射Kubernetes服务(也称为工作负载)之间的依赖关系、从而简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
   <block id="98f8d8a203eae9b3f98baf54dc4901f5" category="list-text">Kubernetes.Workload</block>
   <block id="d725c339f86ba7e7be92e93dcf7902bc" category="list-text">Kubernetes.daemonset</block>
   <block id="caefb2c0b47809252c440b0c84abc26e" category="list-text">kubernetes.deployment</block>
@@ -12247,7 +12245,6 @@ v9.2.4.2</block>
   <block id="c425b824281c7958c5622dd1dc041533" category="paragraph">返回到 <block ref="6f93c3205a564eadff1f05e34704d40c" category="inline-link-macro-rx"></block></block>
   <block id="f34adaf8e760e7cb58ba333e44c4dc52" category="inline-image-macro">Kubernetes Data Collector Tile</block>
   <block id="a0eda368f17db54a54c6f0246fd5c816" category="paragraph"><block ref="a0eda368f17db54a54c6f0246fd5c816" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="eaee203e2e728070e3c454936f257fdf" category="paragraph">操作员和数据收集器将从Cloud Insights Docker注册表中下载。安装后、NKMOO将管理部署在Kubernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。</block>
   <block id="3e4299c002d64ba4e1a384acbdafad4c" category="inline-link-macro">*安装或升级前*</block>
   <block id="20e38ff1d741d05cb351043049612af2" category="section-title">升级到最新的NetApp Kubernetes监控操作员</block>
   <block id="59f9e8b92a6bc55e991031f0b5fea324" category="paragraph">确定现有Operator是否存在AgentConfiguration (如果您的命名空间不是默认的_NetApp-monitoring _、请替换相应的命名空间)：</block>
@@ -12722,9 +12719,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="fd03b080e03c993770237986acf19dc1" category="list-text">*SELinux*：Cloud Insights对Linux采集单元初始安装进行了增强，以确保在启用SELinux强制实施的情况下Linux环境中运行的稳定性。这些增强功能仅会影响_new_ AU部署；如果您有任何与AU升级相关的SELinux问题、请联系NetApp支持部门以修复您的SELinux配置。</block>
   <block id="5142ab8747c5da1b5115ffa35bacd522" category="summary">跟踪Kubbernetes更改比以往任何时候都更容易。</block>
   <block id="d75550072217b58f67a7216961c2bb8c" category="doc">Kubnetes变更分析</block>
-  <block id="745bf0c93bc131f89ec736fc36e64da7" category="paragraph">Kubnetes变更分析为您提供一个一体化视图、用于查看Kubbernetes环境的最新变更。警报和部署状态触手可及。借助变更分析、您可以跟踪每个部署和配置变更、并将其与K8s服务、基础架构和集群的运行状况和性能相关联。</block>
-  <block id="baa67b8c9085fb7f1ab7886843918360" category="list-text">在多租户Kubnetes环境中、可能会由于配置不当的更改而发生中断。在动态环境中、Cloud Insights可能无法正确跟踪所有更改。</block>
-  <block id="ee48ad51c38d1e68f90591ef3918ee29" category="list-text">变更分析提供了一个窗格、用于查看和关联工作负载的运行状况和配置更改。这可能有助于对动态Kubbernetes环境进行故障排除。</block>
   <block id="caa181b8cdb1a4fd1333f8f02b1cbaf6" category="paragraph">要查看Kubernetes变更分析、请导航到* Kubernetes &gt;变更分析*。</block>
   <block id="b23bbfd3989a8a0ebfbb036357fa19a6" category="inline-image-macro">Kubbernetes Change Analytics主屏幕、其中显示警告和严重警报、成功和失败的部署以及触发警报的前3个工作负载</block>
   <block id="133002591c6fbf37228759e489e746fc" category="paragraph"><block ref="2f43357f28dd56d00dc87ace24a5086f" category="inline-image-macro-rx" type="image"></block>。</block>
@@ -13091,7 +13085,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">工作负载运行状况可在* Kubernetes &gt; Explore &gt; Workloads*页面上一目了然地查看、因此您可以快速查看哪些工作负载运行良好以及哪些工作负载可能需要一些帮助。轻松确定运行状况问题描述是否与基础架构、网络或配置更改相关、并深入分析根发生原因。</block>
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">有关在Kubnetes上安装的信息、请参见 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="ed300e62408d01715c593931df6a2352" category="paragraph">有关 Kubernetes 安装说明，请参见 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 页面。</block>
-  <block id="9475d89ab72707a841c177322d6462fa" category="summary">NetApp Kubnetes监控操作员收集要在Cloud Insights中使用的Kubnetes数据。</block>
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">适用于Kubbernetes的数据收集器</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Data Collector：KubeNet</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubnetes Monitoring Operator安装和配置</block>
@@ -13101,4 +13094,11 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
 通过深入了解Kubbernetes应用程序的存储网络活动和未划定的存储指标、加快解决问题描述问题的速度。了解Kubnetes应用程序如何使用存储基础架构进行成本分摊和用量反馈报告。</block>
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">POD到存储示例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubnetes变更分析为您提供了一个一体化视图、用于查看K8s环境的最新变更。警报和部署状态触手可及。借助变更分析、您可以跟踪每个部署和配置变更、并将其与K8s服务、基础架构和集群的运行状况和性能相关联。</block>
+  <block id="4b4f5197cba63052758601b418b4cd40" category="list-text">在多租户环境中、由于配置不当的更改、可能会发生中断。在动态环境中、Cloud Insights可能无法正确跟踪所有更改。</block>
+  <block id="1bcd8d7a1a68529c34cd9af8cc0cfda9" category="list-text">变更分析提供了一个窗格、用于查看和关联工作负载的运行状况和配置更改。这可能有助于对动态环境进行故障排除。</block>
+  <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">Kubernetes网络性能监控和映射功能通过映射服务(也称为工作负载)之间的依赖关系来简化故障排除、并提供对网络性能等待时间和异常的实时可见性、以便在性能问题影响用户之前发现这些问题。
+此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
+  <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubbernetes监控操作员收集要在Cloud Insights中使用的Kubbernetes数据。</block>
+  <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">可从Cloud Insights Docker注册表下载Kubnetes Operator和数据收集器。安装后、操作员将管理部署在Kubbernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。</block>
 </blocks>

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: kubernetes_change_analytics.html 
-keywords: changes, management, analysis, kubernetes, k8s 
+keywords: changes, management, analysis 
 summary: 跟踪Kubbernetes更改比以往任何时候都更容易。 
 ---
 = Kubnetes变更分析
@@ -19,12 +19,12 @@ summary: 跟踪Kubbernetes更改比以往任何时候都更容易。
 
 
 [role="lead"]
-Kubnetes变更分析为您提供一个一体化视图、用于查看Kubbernetes环境的最新变更。警报和部署状态触手可及。借助变更分析、您可以跟踪每个部署和配置变更、并将其与K8s服务、基础架构和集群的运行状况和性能相关联。
+Kubnetes变更分析为您提供了一个一体化视图、用于查看K8s环境的最新变更。警报和部署状态触手可及。借助变更分析、您可以跟踪每个部署和配置变更、并将其与K8s服务、基础架构和集群的运行状况和性能相关联。
 
 请记住以下几点：
 
-* 在多租户Kubnetes环境中、可能会由于配置不当的更改而发生中断。在动态环境中、Cloud Insights可能无法正确跟踪所有更改。
-* 变更分析提供了一个窗格、用于查看和关联工作负载的运行状况和配置更改。这可能有助于对动态Kubbernetes环境进行故障排除。
+* 在多租户环境中、由于配置不当的更改、可能会发生中断。在动态环境中、Cloud Insights可能无法正确跟踪所有更改。
+* 变更分析提供了一个窗格、用于查看和关联工作负载的运行状况和配置更改。这可能有助于对动态环境进行故障排除。
 
 
 要查看Kubernetes变更分析、请导航到* Kubernetes >变更分析*。

@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
-keywords: kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
-summary: NetApp Kubnetes监控操作员收集要在Cloud Insights中使用的Kubnetes数据。 
+keywords: kubernetes, Kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
+summary: Kubbernetes监控操作员收集要在Cloud Insights中使用的Kubbernetes数据。 
 ---
 = Kubnetes Monitoring Operator安装和配置
 :hardbreaks:
@@ -25,7 +25,7 @@ image:kubernetes_tile.png["Kubernetes Data Collector Tile"]
 
 
 toc::[]
-操作员和数据收集器将从Cloud Insights Docker注册表中下载。安装后、NKMOO将管理部署在Kubernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。
+可从Cloud Insights Docker注册表下载Kubnetes Operator和数据收集器。安装后、操作员将管理部署在Kubbernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。
 
 
 
