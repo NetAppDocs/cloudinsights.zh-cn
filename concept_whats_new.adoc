@@ -26,9 +26,12 @@ NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可�
 
 
 
-=== iSCSI卷延迟
+=== 适用于Kubnetes网络映射的iSCSI SAN支持
 
-iSCSI卷延迟指标可在信息板、警报等中使用。要收集iSCSI延迟指标、请从Kubbernetes Collector的"Modify Deployment (修改部署)"菜单项中打开_Network Performance and Map_。
+确定NFS以及现在的iSCSI的Kubernetes底层存储依赖关系。
+通过深入了解Kubbernetes应用程序的存储网络活动和未划定的存储指标、加快解决问题描述问题的速度。了解Kubnetes应用程序如何使用存储基础架构进行成本分摊和用量反馈报告。
+
+image:pod-to-storage.png["POD到存储示例"]
 
 
 

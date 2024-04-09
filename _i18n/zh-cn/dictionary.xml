@@ -13082,8 +13082,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
  sudo semanage fcontext-A -t user_t "//opt/netap/kludinsights (/.*)？"
  sudo reatorecon -R /op/NetApp/云 景点</block>
   <block id="3b3d7bce734c0832c20ba464b1f2d199" category="section-title">2024年4月</block>
-  <block id="f3ef1b9644edf713f62c657ef54694d0" category="section-title">iSCSI卷延迟</block>
-  <block id="6251d6375601d27b7a63aae2bde6bf54" category="paragraph">iSCSI卷延迟指标可在信息板、警报等中使用。要收集iSCSI延迟指标、请从Kubbernetes Collector的"Modify Deployment (修改部署)"菜单项中打开_Network Performance and Map_。</block>
   <block id="d18f4b3cae368b2ec43457dddff4af20" category="list-text">Oracle Enterprise Linux 8.8</block>
   <block id="55b374c5f09d1fe118ccac20abfe40c1" category="list-text">Red Hat Enterprise Linux 8.8</block>
   <block id="c3571084e6793888922121d12a2dca13" category="list-text">落基9.3</block>
@@ -13098,4 +13096,9 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Data Collector：KubeNet</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubnetes Monitoring Operator安装和配置</block>
   <block id="0ec327c74f375d121d057b61ae7dc1be" category="admonition">阅读 <block ref="98b00674e05edc386cc19257d013cae8" category="inline-link-macro-rx"></block> 安装或升级NetApp Kubornetes监控操作员之前的必备文档。</block>
+  <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">适用于Kubnetes网络映射的iSCSI SAN支持</block>
+  <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">确定NFS以及现在的iSCSI的Kubernetes底层存储依赖关系。
+通过深入了解Kubbernetes应用程序的存储网络活动和未划定的存储指标、加快解决问题描述问题的速度。了解Kubnetes应用程序如何使用存储基础架构进行成本分摊和用量反馈报告。</block>
+  <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">POD到存储示例</block>
+  <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
