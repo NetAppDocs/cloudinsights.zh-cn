@@ -13095,10 +13095,10 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">POD到存储示例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubnetes变更分析为您提供了一个一体化视图、用于查看K8s环境的最新变更。警报和部署状态触手可及。借助变更分析、您可以跟踪每个部署和配置变更、并将其与K8s服务、基础架构和集群的运行状况和性能相关联。</block>
-  <block id="4b4f5197cba63052758601b418b4cd40" category="list-text">在多租户环境中、由于配置不当的更改、可能会发生中断。在动态环境中、Cloud Insights可能无法正确跟踪所有更改。</block>
   <block id="1bcd8d7a1a68529c34cd9af8cc0cfda9" category="list-text">变更分析提供了一个窗格、用于查看和关联工作负载的运行状况和配置更改。这可能有助于对动态环境进行故障排除。</block>
   <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">Kubernetes网络性能监控和映射功能通过映射服务(也称为工作负载)之间的依赖关系来简化故障排除、并提供对网络性能等待时间和异常的实时可见性、以便在性能问题影响用户之前发现这些问题。
 此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubbernetes监控操作员收集要在Cloud Insights中使用的Kubbernetes数据。</block>
   <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">可从Cloud Insights Docker注册表下载Kubnetes Operator和数据收集器。安装后、操作员将管理部署在Kubbernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。</block>
+  <block id="99caa80e6c446108c367beb2add705b3" category="list-text">在多租户环境中、由于配置不当的更改、可能会发生中断。在动态环境中、Cloud Insights变更分析可能无法正确跟踪所有变更。</block>
 </blocks>
