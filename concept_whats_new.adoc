@@ -165,6 +165,49 @@ image:WorkloadHealth.png["工作负载运行状况概览"]
 
 行为的"季节性"：周末行为可能与工作日不同、早晨行为可能与下午不同。工作负载安全算法会将这种季节性因素考虑在内。
 
+
+
+=== 弃用的功能
+
+有时、随着功能的发展、功能会弃用。以下是Cloud Insights中已弃用的一些特性和功能：
+
+
+
+==== 已弃用工作负载安全REST云安全取证.Actives.v1 API
+
+已弃用_云 安全取证.actives.v1_API。此API返回有关与存储工作负载安全环境中的实体关联的活动的信息。此API已替换为云安全取证.actives.*v2*_。
+
+先前为此API获取返回以下内容：
+
+[listing]
+----
+{
+  "count": 24594,
+  "limit": 1000,
+  "offset": 0,
+  "results": [
+    {
+      "accessLocation":
+----
+此API现在返回：
+
+[listing]
+----
+{
+  "limit": 1000,
+  "meta": {
+    "page": {
+      "after": "lvlvk3pp.4cpzcg4kpybl",
+      "before": "lvlxy3dz.4cq5ajdnl9fk",
+      "size": 1000
+    }
+  },
+  "results": [
+    {
+      "accessLocation": "10.249.6.220",
+----
+有关详细信息、请参见Swagger文档、网址为"Admin > API Access > API Documentation > Workload Security"。
+
 '''
 
 

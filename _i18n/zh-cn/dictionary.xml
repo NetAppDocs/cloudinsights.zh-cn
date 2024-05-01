@@ -13106,4 +13106,11 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="2b9cb1c6561901b8c103aee1d5c61dfd" category="cell">我看到"Heartbeat Error:(检测信号错误：)"消息</block>
   <block id="a79a7a75840b1e266cc0c6c037c2d7f0" category="cell">重新安装采集单元时、我看到"ValueError：File contextfor /opt/NetApp/klidsights (/.*)？已定义"。</block>
   <block id="ae27abd8286d1b98e00b46440cd90926" category="cell">在使用SELinux的系统上、此错误消息可能会在之后出现<block ref="36f17859b55b3c1f8840366ccf62d8d6" prefix=" " category="inline-code"></block> 已执行、将重新安装采集单元。运行命令<block ref="42f732f1bf8255184086b8f48ec741c3" prefix=" " category="inline-code"></block> 应更正问题描述并删除此消息。</block>
+  <block id="ae2e91be06ba70b73fa6c74eeeb93115" category="section-title">弃用的功能</block>
+  <block id="4b19ce62e1686c6b02dce6a6a618fab8" category="paragraph">有时、随着功能的发展、功能会弃用。以下是Cloud Insights中已弃用的一些特性和功能：</block>
+  <block id="f10826ff9826bc53b76b340699d7486c" category="section-title">已弃用工作负载安全REST云安全取证.Actives.v1 API</block>
+  <block id="22e1977c2373212d5a86d5500fb987b6" category="paragraph">已弃用_云 安全取证.actives.v1_API。此API返回有关与存储工作负载安全环境中的实体关联的活动的信息。此API已替换为云安全取证.actives.*v2*_。</block>
+  <block id="2f536f055cc49f30b2b045622c25fdbc" category="paragraph">先前为此API获取返回以下内容：</block>
+  <block id="4d50bab3a705e7ae04c75813a7d22ad2" category="paragraph">此API现在返回：</block>
+  <block id="c124771302bfe76ccd178d7854d906f5" category="paragraph">有关详细信息、请参见Swagger文档、网址为"Admin &gt; API Access &gt; API Documentation &gt; Workload Security"。</block>
 </blocks>
