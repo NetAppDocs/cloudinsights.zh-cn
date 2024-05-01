@@ -13103,4 +13103,7 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">ONTAP访问权限被拒绝：</block>
   <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">注意：如果已添加一个REST角色--_arwrole_或_csrestrole_--则无需再添加另一个REST角色。您只需按照以下示例添加API权限即可。</block>
   <block id="2e99c7c5f8b0c692f20c07f49b37d122" category="paragraph">示例：_csrestrole_已存在、因此我们只需启用反勒索软件保护并为现有_csrestrole_授予API权限：</block>
+  <block id="2b9cb1c6561901b8c103aee1d5c61dfd" category="cell">我看到"Heartbeat Error:(检测信号错误：)"消息</block>
+  <block id="a79a7a75840b1e266cc0c6c037c2d7f0" category="cell">重新安装采集单元时、我看到"ValueError：File contextfor /opt/NetApp/klidsights (/.*)？已定义"。</block>
+  <block id="ae27abd8286d1b98e00b46440cd90926" category="cell">在使用SELinux的系统上、此错误消息可能会在之后出现<block ref="36f17859b55b3c1f8840366ccf62d8d6" prefix=" " category="inline-code"></block> 已执行、将重新安装采集单元。运行命令<block ref="42f732f1bf8255184086b8f48ec741c3" prefix=" " category="inline-code"></block> 应更正问题描述并删除此消息。</block>
 </blocks>
