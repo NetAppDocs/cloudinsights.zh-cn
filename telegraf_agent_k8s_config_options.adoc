@@ -179,6 +179,9 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
 |  | 事件-导出器-容错 | 事件导出器附加容错。 
 
 
+|  | Event-exporter—maxEventAgeSeconds | 事件导出器最大事件期限。  请参见 https://github.com/jkroepke/resmoio-kubernetes-event-exporter[] 
+
+
 | 工作负载映射 |  | 可自定义Operator的工作负载映射收集和安装的配置选项 
 
 
@@ -391,6 +394,10 @@ spec:
     # # Example: '{key: taint1, operator: Exists, effect: NoSchedule},{key: taint2, operator: Exists, effect: NoExecute}'
     # fluent-bit-tolerations: ''
     # event-exporter-tolerations: ''
+
+    # # event-exporter max event age.
+    # # See https://github.com/jkroepke/resmoio-kubernetes-event-exporter
+    # event-exporter-maxEventAgeSeconds: '10'
 
   # # Settings for the Network Performance and Map feature.
   # workload-map:
