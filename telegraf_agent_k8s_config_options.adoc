@@ -87,15 +87,6 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 |  | rsMemRequest | 对RS的存储器请求 
 
 
-|  | dockerMountPoint | 对dockerMountPoint路径的覆盖。这适用于在K8s平台(如云代工厂)上安装非标准Docker 
-
-
-|  | 文档UnixSocket | 对dockerUnixSocket路径的覆盖。这适用于在K8s平台(如云代工厂)上安装非标准Docker。 
-
-
-|  | 配置路径 | 对克里oSockPath路径的覆盖。这适用于在K8s平台(如云代工厂)上安装非标准Docker。 
-
-
 |  | run特权 | 在特权模式下运行该特拉夫容器。如果在K8s节点上启用了SELinux、请将此选项设置为true 
 
 
@@ -121,9 +112,6 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 
 
 |  | 输出超时 | 请参见 link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf配置文档"] 
-
-
-|  | 已启用dockerMetricCollection | 收集Docker指标。默认情况下、此值设置为true、系统将为基于Docker的内部部署K8s收集Docker指标。要禁用Docker指标收集、请将此选项设置为false。 
 
 
 |  | ds.公差 | Telegraf-DS的额外耐受性。 
