@@ -9756,12 +9756,6 @@
   <block id="76b9e3aaffb44c3c4a7084bd7430088d" category="cell">对RS的CPU请求</block>
   <block id="b3e9404f7fb1acb7c3d66e587a4c411b" category="cell">rsMemRequest</block>
   <block id="dce1fa2cb47347aa09d7dceac624c5f7" category="cell">对RS的存储器请求</block>
-  <block id="04808c0fd1505eb55198b91e2910694e" category="cell">dockerMountPoint</block>
-  <block id="8b4f648381c209aa11d7baaf654c5f90" category="cell">对dockerMountPoint路径的覆盖。这适用于在K8s平台(如云代工厂)上安装非标准Docker</block>
-  <block id="986b967d4a19de83ed59389872e2eb46" category="cell">文档UnixSocket</block>
-  <block id="4dccb3941fc9760d547f9ae348685ad3" category="cell">对dockerUnixSocket路径的覆盖。这适用于在K8s平台(如云代工厂)上安装非标准Docker。</block>
-  <block id="6ae45dc429d1f96b8c63fba54419b0f7" category="cell">配置路径</block>
-  <block id="eeec0978474a40f056df3ffd9acfa360" category="cell">对克里oSockPath路径的覆盖。这适用于在K8s平台(如云代工厂)上安装非标准Docker。</block>
   <block id="6fd605953233d5564943f85815683d62" category="cell">run特权</block>
   <block id="06b131db41fa22ef6ac7de5a7eae4aef" category="cell">在特权模式下运行该特拉夫容器。如果在K8s节点上启用了SELinux、请将此选项设置为true</block>
   <block id="986b07451fa1766c43f2eead1470731c" category="cell">批大小</block>
@@ -10185,8 +10179,6 @@
   <block id="6aae913b976c156306d8a5cbbbc06ad5" category="inline-link-macro">在_AgentConfiguration_中</block>
   <block id="e1e08e40036f927a0e660c22aa837f88" category="inline-link-macro">损害和公差</block>
   <block id="9680829f0eb82d9736ac7fe477135a87" category="paragraph">详细了解Kubbernetes <block ref="2a69bcb19ea6a4db3f5d1b466ff78e77" category="inline-link-macro-rx"></block>。</block>
-  <block id="a3f0ee128de7eabdc5dbd73136882ab6" category="cell">已启用dockerMetricCollection</block>
-  <block id="0710c2522c29e39ba719becf4972a9aa" category="cell">收集Docker指标。默认情况下、此值设置为true、系统将为基于Docker的内部部署K8s收集Docker指标。要禁用Docker指标收集、请将此选项设置为false。</block>
   <block id="bb0a12c3834207119851374142a76ac0" category="cell">ds.公差</block>
   <block id="77e9ea38d66b01840eaf712dab598ce0" category="cell">Telegraf-DS的额外耐受性。</block>
   <block id="569d3e422e1e57a8d8f17b102bb10bfc" category="cell">Rs公差</block>
@@ -13093,12 +13085,10 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">POD到存储示例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubnetes变更分析为您提供了一个一体化视图、用于查看K8s环境的最新变更。警报和部署状态触手可及。借助变更分析、您可以跟踪每个部署和配置变更、并将其与K8s服务、基础架构和集群的运行状况和性能相关联。</block>
-  <block id="1bcd8d7a1a68529c34cd9af8cc0cfda9" category="list-text">变更分析提供了一个窗格、用于查看和关联工作负载的运行状况和配置更改。这可能有助于对动态环境进行故障排除。</block>
   <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">Kubernetes网络性能监控和映射功能通过映射服务(也称为工作负载)之间的依赖关系来简化故障排除、并提供对网络性能等待时间和异常的实时可见性、以便在性能问题影响用户之前发现这些问题。
 此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubbernetes监控操作员收集要在Cloud Insights中使用的Kubbernetes数据。</block>
   <block id="3c25ca8d0b15faf67f1de6aacaaaa615" category="paragraph">可从Cloud Insights Docker注册表下载Kubnetes Operator和数据收集器。安装后、操作员将管理部署在Kubbernetes集群节点中的任何与操作员兼容的收集器以获取数据、包括管理这些收集器的生命周期。在此链之后、将从收集器中获取数据并将其发送到Cloud Insights。</block>
-  <block id="99caa80e6c446108c367beb2add705b3" category="list-text">在多租户环境中、由于配置不当的更改、可能会发生中断。在动态环境中、Cloud Insights变更分析可能无法正确跟踪所有变更。</block>
   <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">ONTAP ARP集成的权限：</block>
   <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">ONTAP访问权限被拒绝：</block>
   <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">注意：如果已添加一个REST角色--_arwrole_或_csrestrole_--则无需再添加另一个REST角色。您只需按照以下示例添加API权限即可。</block>
@@ -13118,4 +13108,7 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="bf9973f393dbc9824e3e96f831e12c25" category="sidebar">ONTAP REST收集器</block>
   <block id="b6544593f70ff0a8915cbd1f9aabb49f" category="cell">Event-exporter—maxEventAgeSeconds</block>
   <block id="ec57a05c2326d433af7b24b3adb77f1a" category="cell">事件导出器最大事件期限。  请参见<block ref="6708727d05fa40eed58ce8404e60b4a3" category="inline-link-rx"></block></block>
+  <block id="639bed0f86ee37975166505f25500f59" category="paragraph">变更分析有何帮助？</block>
+  <block id="8c0ffb3a96aefd29a8b298519ff82eb8" category="list-text">在多租户Kubnetes环境中、可能会由于配置不当的更改而发生中断。在动态环境中、Cloud Insights基础架构监控可能无法正确跟踪所有更改。</block>
+  <block id="6cfc89cbc741a775222e1cd65f12a4a0" category="list-text">变更分析通过提供一个窗格来查看和关联工作负载的运行状况和配置更改、从而有助于实现这一点。这可能有助于对动态Kubbernetes环境进行故障排除。</block>
 </blocks>
