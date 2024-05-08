@@ -19,46 +19,53 @@ summary: Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成�
 
 
 [role="lead"]
-在安装或升级NetApp Kubnetes监控操作员之前、请阅读此信息
+在安装或升级之前、请阅读此信息 link:task_config_telegraf_agent_k8s.html["Kubbernetes监控操作员"]。
 
 
 
 === 前提条件：
 
-* 如果您使用的是自定义或私有Docker存储库、请按照使用自定义或私有Docker存储库一节中的说明进行操作
-* Kubernetes 1.20或更高版本支持安装NetApp Kubernetes监控操作员。
-* 当Cloud Insights 监控后端存储且Kubernetes与Docker容器运行时结合使用时、Cloud Insights 可以显示NFS和iSCSI的POD到PV到存储映射和指标；其他运行时仅显示NFS。
-* 从2022年8月开始、NetApp Kubernetes监控操作员支持Pod安全策略(PSP)。如果您的环境使用PSP、则必须升级到最新的NetApp Kubennetes Monitoring Operator。
-* 如果您运行的是OpenShift 4.6或更高版本、则除了确保满足这些前提条件之外、您还必须遵循下面的OpenShift说明。
-* 仅在Linux节点上安装监控Cloud Insights 支持监控运行Linux的KubeNet节点、方法是指定一个KubeNet节点选择器、用于在这些平台上查找以下KubeNet标签：
-
-
 |===
+| 组件 | 要求 
 
 
-| 平台 | 标签 
+| Kubernetes 版本 | Kubbernetes v1.20及更高版本。 
 
 
-| Kubernetes v1.20及更高版本 | Kubernetes 。 io/OS = Linux 
+| Kubbernetes分发 | AWS El生 性Kubelnetes服务(EKS)
+Azure Kubernetes Service （ AKS ）
+Google Kubernetes Engine （ GKEE ）
+Red Hat OpenShift
+Rancher Kubernetes Engine （ RKE）
+VMware Tanzu 
 
 
-| Rancher + catt.io 作为流程编排 /Kubernetes 平台 | catt.io/OS = Linux 
+| Linux操作系统 | Cloud Insights不支持运行ARM64架构的节点。
+
+网络监控：必须运行Linux内核版本4.18.0或更高版本。不支持光子操作系统。 
+
+
+| 标签 | Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查找以下 Kubernetes 标签，支持监控运行 Linux 的 Kubernetes 节点：
+
+Kubernetes v1.20及更高版本：Kubernetes.io/OS = Linux
+作为流程编排/Kubernetes平台的是：Catcher.io/OS = Linux 
+
+
+| 命令 | 必须提供URL和kubecl命令。；为获得最佳结果、请将这些命令添加到路径中。 
+
+
+| 连接 | 已将kubeccli配置为与目标K8s集群通信、并可通过Internet连接到您的Cloud Insights环境。
+
+如果您在安装期间使用代理、请按照中的说明进行操作 link:/task_config_telegraf_agent_k8s.html#configuring-proxy-support["配置代理支持"] 部分。
+
+为了获得准确的审核和数据报告、请使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。 
+
+
+| 其他 | 如果您运行的是OpenShift 4.6或更高版本、则除了确保满足这些前提条件之外、您还必须访问以下链接：tadd_config_testraf_agent_k8s.html#OpenShift-inInstructions [OpenShift Instructions。 
+
+
+| API令牌 | 如果要重新部署Operator (即更新或替换Operator)、则无需创建新的API令牌；您可以重复使用先前的令牌。 
 |===
-* 运行ARM64架构的节点不支持NetApp Kubernetes监控操作员及其依赖项(电报、Kube-state-metrics、fluentbit等)。
-* 必须提供以下命令：Curl、kubecl。可选安装步骤需要使用Docker命令。为获得最佳结果，请将这些命令添加到路径中。请注意、必须至少为kubect配置对以下Kubernetes对象的访问权限：代理、群集角色、群集角色、群集配置、自定义资源定义、部署、 名区、角色、rolebinbeds、密钥、服务帐户、 和服务。请参见此处、了解具有这些最小的"给予"角色权限的示例.yaml文件。
-* 要用于安装NetApp Kubennetes监控操作员的主机必须已配置kubec特 尔、以便与目标K8s集群进行通信、并可通过Internet连接到您的Cloud Insights 环境。
-* 如果您在安装期间或操作要监控的K8s集群时使用了代理、请按照配置代理支持一节中的说明进行操作。
-* NetApp Kubernetes监控操作员会安装自己的Kube-state-metrics、以避免与任何其他实例发生冲突。为了准确地进行审核和数据报告、强烈建议使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。
-* 如果要重新部署Operator (即更新或替换Operator)、则无需创建_new_ API令牌；您可以重新使用先前的令牌。
-* 另请注意、如果您最近安装了NetApp Kubnetes Monitoring Operator、并且正在使用可续订的API访问令牌、则即将过期的令牌将自动替换为新的/刷新的API访问令牌。
-* 网络监控：
-+
-** 需要Linux内核版本4.18.0及更高版本
-** 不支持光子操作系统。
-
-
-
-
 
 
 === 配置操作员
@@ -72,141 +79,6 @@ summary: Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成�
 
  kubectl get crd agentconfigurations.monitoring.netapp.com
 如果您看到“Error from server (NotFound)”消息，则必须先升级操作员，然后才能使用AgentConfiguration。
-
-
-
-== 开始之前需要注意的重要事项
-
-如果您使用运行 <<configuring-proxy-support,代理>>、具有 <<using-a-custom-or-private-docker-repository,自定义存储库>>或正在使用 <<openshift-instructions,OpenShift>>、请仔细阅读以下各节。
-
-另请阅读相关内容 <<权限,权限>>。
-
-如果要从先前安装升级、请阅读 <<升级,升级>> 信息。
-
-
-
-=== 配置代理支持
-
-要安装NetApp Kubernetes监控操作员、您可以在环境中的两个位置使用代理。这些代理系统可以是相同的、也可以是单独的：
-
-* 在执行安装代码片段(使用"curt")期间需要使用代理将执行该片段的系统连接到Cloud Insights 环境
-* 目标Kubernetes集群与Cloud Insights 环境通信所需的代理
-
-
-如果您对其中一个或两个使用代理、则要安装NetApp Kubornetes操作监控器、必须先确保将代理配置为可以与Cloud Insights环境进行良好的通信。例如、从要安装Operator的服务器/VM中、您需要能够访问Cloud Insights并能够从Cloud Insights下载二进制文件。
-
-对于用于安装NetApp Kubernetes操作监控器的代理、在安装操作员之前、请设置_http_proxy/https_proxy_environment变量。对于某些代理环境、您可能还需要设置_no_proxy environment_变量。
-
-要设置变量、请在您的系统上*在*安装NetApp Kubernetes监控操作员之前*执行以下步骤：
-
-. 为当前用户设置 _https_proxy_ 和 / 或 _http_proxy_ 环境变量：
-+
-.. 如果要设置的代理没有身份验证(用户名/密码)、请运行以下命令：
-+
- export https_proxy=<proxy_server>:<proxy_port>
-.. 如果要设置的代理具有身份验证(用户名/密码)、请运行以下命令：
-+
- export http_proxy=<proxy_username>:<proxy_password>@<proxy_server>:<proxy_port>
-
-
-
-
-要使Kubernetes集群与Cloud Insights 环境通信所使用的代理、请在阅读完所有这些说明后安装NetApp Kubernetes监控操作员。
-
-在部署NetApp Kubernetes Monitoring Operator之前、请在operator-config.yaml中配置AgentConfiguration的代理部分。
-
-[listing]
-----
-agent:
-  ...
-  proxy:
-    server: <server for proxy>
-    port: <port for proxy>
-    username: <username for proxy>
-    password: <password for proxy>
-
-    # In the noproxy section, enter a comma-separated list of
-    # IP addresses and/or resolvable hostnames that should bypass
-    # the proxy
-    noproxy: <comma separated list>
-
-    isTelegrafProxyEnabled: true
-    isFluentbitProxyEnabled: <true or false> # true if Events Log enabled
-    isCollectorsProxyEnabled: <true or false> # true if Network Performance and Map enabled
-    isAuProxyEnabled: <true or false> # true if AU enabled
-  ...
-...
-----
-
-
-=== 使用自定义或专用Docker存储库
-
-默认情况下、NetApp Kubrenetes监控操作员将从Cloud Insights 存储库中提取容器映像。如果您将某个Kubornetes集群用作监控目标、并且该集群配置为仅从自定义或私有Docker存储库或容器注册表中提取容器映像、则必须配置对NetApp Kubornetes监控操作员所需容器的访问权限。
-
-从NetApp Monitoring Operator安装磁贴运行"Image Pull Snippet"。此命令将登录到Cloud Insights 存储库、提取操作员的所有映像依赖关系、然后注销Cloud Insights 存储库。出现提示时、输入提供的存储库临时密码。此命令可下载操作员使用的所有映像、包括可选功能的映像。请参见以下内容、了解这些图像用于哪些功能。
-
-核心操作员功能和Kubornetes监控
-
-* NetApp监控
-* Kube-RBAC-代理
-* Kube-state-metrics
-* 电报
-* distroless root用户
-
-
-事件日志
-
-* 流畅位
-* Kubbernetes-event-exporter
-
-
-网络性能和映射
-
-* CI-net-observer
-
-
-根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。确保存储库中这些映像的映像标记和目录路径与Cloud Insights 存储库中的映像一致。
-
-在operator-DEPLOYAML中编辑monitor-operator部署、并修改所有映像引用以使用私有Docker存储库。
-
-....
-image: <docker repo of the enterprise/corp docker repo>/kube-rbac-proxy:<kube-rbac-proxy version>
-image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<version>
-....
-编辑operator-config.yaml中的AgentConfiguration以反映新的Docker repo位置。为私有存储库创建新的imagePullSecret,有关更多详细信息，请参见_https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_
-
-[listing]
-----
-agent:
-  ...
-  # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
-  dockerRepo: your.docker.repo/long/path/to/test
-  # Optional: A docker image pull secret that maybe needed for your private docker registry
-  dockerImagePullSecret: docker-secret-name
-----
-
-
-=== OpenShift 说明
-
-如果您运行的是OpenShift 4.6或更高版本、则必须在_operator-config.yaml中编辑AgentConfiguration以启用_run特权_设置：
-
-....
-# Set runPrivileged to true SELinux is enabled on your kubernetes nodes
-runPrivileged: true
-....
-OpenShift可以实施更高的安全级别、从而可能阻止对某些Kubernetes组件的访问。
-
-
-
-=== 权限
-
-如果您正在监控的集群包含自定义资源、而这些资源没有集群资源 link:https://kubernetes.io/docs/reference/access-authn-authz/rbac/#aggregated-clusterroles["要查看的聚合"]，则需要手动授予操作员对这些资源的访问权限，才能使用事件日志对其进行监控。
-
-. 在安装之前或安装之后编辑_operator-additional－permissions．yaml．编辑资源_ClusterRole．<namespace>－additional－permissions
-. 使用动词["GET、"Watch、"list"]为所需的每个组和资源创建一个新规则。参见\https://kubernetes.io/docs/reference/access-authn-authz/rbac/
-. 将所做的更改应用于集群
-
 
 
 

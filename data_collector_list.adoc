@@ -202,7 +202,7 @@ Cloud Insights 支持的数据收集器的按字母顺序列表：
 | link:task_config_telegraf_kibana.html["Kibana"] | 服务 
 
 
-| link:https:task_config_telegraf_agent.html#kubernetes["Kubernetes"] | 服务 
+| link:https:task_config_telegraf_agent_k8s.html["Kubernetes"] | 服务 
 
 
 | link:task_dc_lenovo.html["联想 HX 系列"] | 基础架构 
