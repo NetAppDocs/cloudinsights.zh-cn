@@ -13044,7 +13044,6 @@ Kubernetes v1.20及更高版本：Kubernetes.io/OS = Linux
   <block id="807c67eb6796ba389d19bd183fc2b317" category="paragraph">有关Kube-State-Metrics的信息、请参见 <block ref="73f7e5446269af2d39c747140597d176" category="inline-link-macro-rx"></block>。</block>
   <block id="4f20cb3e8959a7865ba5aaa5af540ddb" category="section-title">配置/自定义操作员</block>
   <block id="67dea165315ff79ce5620f051688d07c" category="paragraph">这些部分包含有关自定义操作员配置、使用代理、使用自定义或私有Docker存储库或使用OpenShift的信息。</block>
-  <block id="039369597a340d41c2e4a9df62b375fb" category="paragraph">在较新版本的运算符中，可以在_AgentConfiguration_自定义资源中配置最常修改的设置。您可以通过编辑_operator-config.yaml文件来在部署操作员之前编辑此资源。此文件包含注释掉的设置示例。请参见列表 <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 对于最新版本的运算符。</block>
   <block id="27aa502b8f8f23143b77f0800d6dd42f" category="paragraph">您也可以在部署操作员后使用以下命令编辑此资源：</block>
   <block id="c8cb2db38f5ff99219b7338226473fd2" category="paragraph">您可以在环境中的两个位置使用代理来安装Kubnetes Monitoring Operator。这些代理系统可以是相同的、也可以是单独的：</block>
   <block id="a7f189b94dda98958771dc1a3345eb8f" category="paragraph">如果您对其中一个或两个对象使用代理、则要安装Kubornetes操作监控器、必须先确保将代理配置为能够与Cloud Insights环境进行良好的通信。如果您有一个代理、并且可以从要安装此操作员的服务器/VM访问Cloud Insights 、则您的代理可能已正确配置。</block>
@@ -13085,4 +13084,6 @@ kubect get all -n &lt;namespace&gt;| grep -i psp (应显示未找到任何内容
   <block id="b3b6bea000b13acbfcb412bad49ee494" category="cell">验证您的Kubbernetes版本(即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是v1.20.x或更低版本、则这是预期的限制。  随Kubernetes Monitoring Operator部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。</block>
   <block id="cacd73b257654b42f59477320860f203" category="cell">我发现Kubenetes监控操作员部署的POD因资源不足而崩溃。</block>
   <block id="1bf4c34fd6e2ff1bf1741953bce0f5e1" category="cell">请参见Kubbernetes监控操作员 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 根据需要增加CPU和/或内存限制。</block>
+  <block id="d9a52817194c8be56b59a9d57114278a" category="section-title">配置选项</block>
+  <block id="8baa15e22ac6c7ee4ce4e0a88da9798e" category="paragraph">最常修改的设置可以在_AgentConfiguration_自定义资源中进行配置。您可以通过编辑_operator-config.yaml文件来在部署操作员之前编辑此资源。此文件包含注释掉的设置示例。请参见列表 <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 对于最新版本的运算符。</block>
 </blocks>
