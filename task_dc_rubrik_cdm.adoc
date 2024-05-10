@@ -51,6 +51,8 @@ Cloud Insights 从Rubrik数据收集器采集以下清单信息。对于 Cloud I
 * Cloud Insights 采集单元将启动与Rubrik集群的TCP端口443的连接。每个集群一个收集器。
 * Rubrik集群IP地址。
 * 集群的用户名和密码。
+* Rubeck集群IP地址或主机名。
+* 对于基本身份验证、是指集群的用户名和密码。如果您希望使用基于服务帐户的身份验证、则需要服务帐户、机密和组织ID
 * 端口要求： HTTPS 443
 
 

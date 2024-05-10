@@ -13088,4 +13088,6 @@ kubect get all -n &lt;namespace&gt;| grep -i psp (应显示未找到任何内容
   <block id="8baa15e22ac6c7ee4ce4e0a88da9798e" category="paragraph">最常修改的设置可以在_AgentConfiguration_自定义资源中进行配置。您可以通过编辑_operator-config.yaml文件来在部署操作员之前编辑此资源。此文件包含注释掉的设置示例。请参见列表 <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 对于最新版本的运算符。</block>
   <block id="55daf72da742e811f565e4ab709d3c49" category="section-title">收集ONTAP交换机指标的权限要求</block>
   <block id="1a565d9a88c6cc1a17ed9ec577431947" category="paragraph">Cloud Insights可以在收集器中选择收集ONTAP集群交换机数据 <block ref="0a74ef7985c5cbe5eb3ab6c199d26582" category="inline-xref-macro-rx"></block> 设置。除了在Cloud Insights收集器上启用此功能之外，您还必须*配置ONTAP系统*本身以提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>，并确保正确 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 设置、以便允许将交换机数据发送到Cloud Insights。</block>
+  <block id="e77307796c2832560f84fa94d82cd573" category="list-text">Rubeck集群IP地址或主机名。</block>
+  <block id="fb36183a15285a9f1f23d79072c763f7" category="list-text">对于基本身份验证、是指集群的用户名和密码。如果您希望使用基于服务帐户的身份验证、则需要服务帐户、机密和组织ID</block>
 </blocks>
