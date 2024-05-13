@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_subscribing_to_cloud_insights.html 
 summary: 在免费试用期间，您可以随时订阅 Cloud Insights 。 
-keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed 
+keywords: subscribe, trial, subscription, contract, raw capacity, region, data retention, retention, MU, managed unit, managed units, units, managed, module, evaluation 
 ---
 = 订阅 Cloud Insights
 :toc: macro
@@ -69,27 +69,25 @@ AWS Marketplace免费试用不能延长。试用期间，您可以随时访问*�
 
 
 
-== 单元试用
+== 模块评估
 
-即将推出！
-
-
-NOTE: 模块试用被视为预览功能、因此可能会更改。
-
-除了Cloud Insights的初始试用之外，您还可以利用*模块试用*。例如、如果您已订阅基础架构可观察性、但要向环境中添加Kubennetes、则从安装NetApp Kubennetes监控操作员开始、您将自动开始试用30天的Kubennetes可观察性。只有在试用期结束时、您才会因使用Kubbernetes Observability管理的单元而付费。
+您还可以利用*模块评估*。例如、如果您已订阅基础架构可观察性、但要向环境中添加Kubennetes、则从安装NetApp Kubennetes监控操作员开始、您将自动输入30天的Kubennetes可观察性评估。仅在评估期结束时、您的Kubbernetes Observability受管单元使用量才会向您收费。
 
 
-NOTE: 请注意、在试用期结束后、新的受管单元(MU)使用量将向您收费、因此请务必进行相应的计划。当您的单元试用结束时、如果您需要添加更多MU以避免服务中断、我们将通知您。
+NOTE: 请注意、评估之后、新的受管单元(MU)使用量将向您收费、因此请务必进行相应的计划。模块评估结束时、如果您需要添加更多MU以避免服务中断、系统将通知您。
 
 您可以在*Usage*选项卡的*Admin > Usage*页面上监视受管单元的使用情况。
 
 image:Module_Trials_UsageTab.png["MU使用情况屏幕"]
 
 
+NOTE: A _Module Evaluation_ is not a _Trial_-当我们为客户提供使用CI服务的免费试用期以确认是否适合并启用购买时、我们使用术语"试用"。模块评估有所不同-这是指我们允许付费客户试用其最近几个月付费订阅中未使用的Cloud Insights模块。如果评估处于活动状态、则仅对新配置的模块免除费用。客户的工作环境仍处于订阅状态、尚未恢复为免费试用。此订阅未更改。
+
+
 
 === 估算器
 
-在模块试用期间、您不会更改模块所消耗资源的MU使用量、 但您可以打开*Estimator*(在_Summary _选项卡上)，查看试用后MU的充电方式，以及使用“假设”方案和将来可能需要的MU数量。退出估算器以重置数字。
+在模块评估期间，您不会更改模块所消耗资源的MU使用量， 但是，您可以打开*Estimator*(在_Summary _选项卡上)来查看评估后MU的计费方式，并使用“假设”方案来计算将来可能需要的MU数。退出估算器以重置数字。
 
 image:Module_Trials_Estimator.png["估算器"]
 
@@ -97,7 +95,7 @@ image:Module_Trials_Estimator.png["估算器"]
 
 估算器还允许您查看附加项(您保留当前订阅期限并增加许可的受管单元数量)或续订选项(您在当前订阅时将购买的续订订)的数量累积情况 期限结束。
 
-请注意、每个订阅仅允许客户试用一次模块。
+请注意、每个订阅只能获得一次模块评估。
 
 
 

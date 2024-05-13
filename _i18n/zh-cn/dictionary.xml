@@ -12266,19 +12266,13 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">我缺少一些事件日志的_volvedobject_数据。</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">确保已按照中的步骤进行操作 <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> 第节。</block>
   <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">单元试用</block>
-  <block id="7f82331674ae138af79c9ab94e1fac67" category="paragraph">即将推出！</block>
-  <block id="5ed0b3b1884385a11f0ddcb69c41afbf" category="admonition">模块试用被视为预览功能、因此可能会更改。</block>
-  <block id="2b8d4048177d738d1e55b5d352a76442" category="paragraph">除了Cloud Insights的初始试用之外，您还可以利用*模块试用*。例如、如果您已订阅基础架构可观察性、但要向环境中添加Kubennetes、则从安装NetApp Kubennetes监控操作员开始、您将自动开始试用30天的Kubennetes可观察性。只有在试用期结束时、您才会因使用Kubbernetes Observability管理的单元而付费。</block>
-  <block id="c8ff921ed8862475c3fbdfc6e58cbc82" category="admonition">请注意、在试用期结束后、新的受管单元(MU)使用量将向您收费、因此请务必进行相应的计划。当您的单元试用结束时、如果您需要添加更多MU以避免服务中断、我们将通知您。</block>
   <block id="49ebde544abc61604ad7c6c491131bf2" category="paragraph">您可以在*Usage*选项卡的*Admin &gt; Usage*页面上监视受管单元的使用情况。</block>
   <block id="522299d35366d8b59cb57f013ff640aa" category="inline-image-macro">MU使用情况屏幕</block>
   <block id="aa0083acb9559c9abfc7553890f8f78e" category="paragraph"><block ref="aa0083acb9559c9abfc7553890f8f78e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="da2a1b654dd8965375b17b81a0874e1d" category="section-title">估算器</block>
-  <block id="12b403caef8918465c7ebf1024a4ee26" category="paragraph">在模块试用期间、您不会更改模块所消耗资源的MU使用量、 但您可以打开*Estimator*(在_Summary _选项卡上)，查看试用后MU的充电方式，以及使用“假设”方案和将来可能需要的MU数量。退出估算器以重置数字。</block>
   <block id="de81da28c1db344902ce9fbb40bd9e3a" category="paragraph"><block ref="de81da28c1db344902ce9fbb40bd9e3a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="23639e5972e5f3878de9fd64c5a01f73" category="paragraph">选择模块旁边的复选框，以从估计成本中添加或删除整个模块的MU。</block>
   <block id="3406a9b7847cf7a53e580c01031639d0" category="paragraph">估算器还允许您查看附加项(您保留当前订阅期限并增加许可的受管单元数量)或续订选项(您在当前订阅时将购买的续订订)的数量累积情况 期限结束。</block>
-  <block id="e88abbac5caee1a1c8d8af2d838a7e97" category="paragraph">请注意、每个订阅仅允许客户试用一次模块。</block>
   <block id="51551d892e3008a0a15372506e7c3778" category="section-title">按域限制访问</block>
   <block id="3a61360418d262f9d84cc867c9f6dafd" category="paragraph">Cloud Insights可以将用户访问限制为仅限您指定的域。在*Admin &gt; User Management*页上，选择“限制域”。</block>
   <block id="c55e947bf98f22cc4e8f7588d8766267" category="inline-image-macro">将域限制为仅限默认域、默认域以及您指定的其他域、或者没有限制</block>
@@ -13132,4 +13126,10 @@ Microsoft Edge会对例外情况采用与Chrome相同的格式。
   <block id="d3b55f9a8374f81f85e7606ece767371" category="paragraph">“*历史记录*”选项卡可让您深入了解过去7到90天的MU使用情况。将鼠标悬停在图表中的一列上可按模块(即可观察性、Kubbernetes)显示细分情况。</block>
   <block id="fbc13ba96b933d65afd4caf522ab96b6" category="inline-image-macro">MU使用情况历史记录</block>
   <block id="2319aa26c375ca721d328685f3585394" category="paragraph"><block ref="2319aa26c375ca721d328685f3585394" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="12ddfc86083937d7a126f2fd8615aa6b" category="section-title">模块评估</block>
+  <block id="76064df620f99261dce25de296d7e769" category="paragraph">您还可以利用*模块评估*。例如、如果您已订阅基础架构可观察性、但要向环境中添加Kubennetes、则从安装NetApp Kubennetes监控操作员开始、您将自动输入30天的Kubennetes可观察性评估。仅在评估期结束时、您的Kubbernetes Observability受管单元使用量才会向您收费。</block>
+  <block id="dcfe192ef3f3cab1ff1183df37b17e47" category="admonition">请注意、评估之后、新的受管单元(MU)使用量将向您收费、因此请务必进行相应的计划。模块评估结束时、如果您需要添加更多MU以避免服务中断、系统将通知您。</block>
+  <block id="9c420799ef765483eddc7865804e6371" category="admonition">A _Module Evaluation_ is not a _Trial_-当我们为客户提供使用CI服务的免费试用期以确认是否适合并启用购买时、我们使用术语"试用"。模块评估有所不同-这是指我们允许付费客户试用其最近几个月付费订阅中未使用的Cloud Insights模块。如果评估处于活动状态、则仅对新配置的模块免除费用。客户的工作环境仍处于订阅状态、尚未恢复为免费试用。此订阅未更改。</block>
+  <block id="8fe818ace86e2479958161998bd57015" category="paragraph">在模块评估期间，您不会更改模块所消耗资源的MU使用量， 但是，您可以打开*Estimator*(在_Summary _选项卡上)来查看评估后MU的计费方式，并使用“假设”方案来计算将来可能需要的MU数。退出估算器以重置数字。</block>
+  <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">请注意、每个订阅只能获得一次模块评估。</block>
 </blocks>
