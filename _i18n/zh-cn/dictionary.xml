@@ -3758,7 +3758,6 @@
   <block id="3d0486264987eff198cb8489a591c919" category="section-title">分组（向上滚动）</block>
   <block id="e251f9ae37a0914ac3ed0861aee9d003" category="paragraph">从采集期间收集的底层数据点对小工具中显示的数据进行分组（有时称为汇总）。例如，如果您有一个折线图小工具显示一段时间内的存储 IOPS ，则您可能希望为每个数据中心显示一条单独的行，以便进行快速比较。您可以选择通过以下几种方式之一对这些数据进行分组：</block>
   <block id="1a284984e082a2cc2ceecd12b5c25e50" category="list-text">* 求和 * ：将每行显示为基础数据的 _sum_ 。</block>
-  <block id="419981855bdd80d78c67ae74ed237d6c" category="list-text">* 计数 * ：显示在指定时间范围内报告数据的对象的 _count_ 。您可以根据信息板时间范围（或小工具时间范围，如果设置为覆盖信息板时间）或您选择的 _Custom 时间窗口 _ 来选择 _Entire Time window_ 。</block>
   <block id="d186cba97a995601fc12d97defd879c7" category="paragraph">要设置分组方法，请执行以下操作。</block>
   <block id="0886591e8bd637066947802b2c681da8" category="list-text">在小工具的查询中，选择资产类型和指标（例如 _Storage_ ）以及指标（例如 _Performance IOPS Total_ ）。</block>
   <block id="5545e86f2a092d7eeeeae79320003a7a" category="paragraph">此小工具会自动更新并显示每个数据中心的数据。</block>
@@ -3806,7 +3805,6 @@
   <block id="f23403e4c909f91a6bbdedfd4c63a940" category="paragraph">自定义时间范围允许您最多选择 31 个连续日期。您还可以为此范围设置开始时间和一天中的结束时间。默认开始时间为选定第一天的中午 12 ： 00 ，默认结束时间为选定最后一天的晚上 11 ： 59 。单击 * 应用 * 将对信息板应用自定义时间范围。</block>
   <block id="82c286e5c07573df31c7da74d9781c0b" category="section-title">覆盖各个小工具中的信息板时间</block>
   <block id="2234ef4841bda451602966ff52e300f5" category="paragraph">您可以覆盖各个小工具中的主信息板时间范围设置。这些小工具将根据其设置的时间范围而不是信息板时间范围显示数据。</block>
-  <block id="284bed60740c7fa22f92630c7d8768d8" category="paragraph">要覆盖信息板时间并强制小工具使用其自己的时间范围，请在小工具的编辑模式下将 * 覆盖信息板时间 * 设置为 * 开 * （选中此框），然后为此小工具选择一个时间范围。将小工具 * 保存到信息板。</block>
   <block id="86d95d157786463201d03f8cdf84019b" category="paragraph">小工具将根据为其设置的时间范围显示其数据，而不管您在信息板上选择的时间范围如何。</block>
   <block id="00eb21356b96cac7e56ee66948f7292e" category="paragraph">您为一个小工具设置的时间范围不会影响信息板上的任何其他小工具。</block>
   <block id="499df5a235e391725a79f411742e8626" category="section-title">主轴和二级轴</block>
@@ -3937,7 +3935,6 @@
   <block id="515e48f96ed2602b236b85efb8e1f9cb" category="cell">纳米矿石微核微核核心千兆矿石巨型矿石，千兆矿石，百万石，百万石，百万石，百万石，百万石，百万石，百万石，百万石，百万石，百万石，百万石，百万</block>
   <block id="0b85467ebafa7ca3c47e82dc38184484" category="cell">吞吐量</block>
   <block id="13a7932e1c9548786b77fba7d6a94a48" category="cell">I/O 操作数 / 秒操作数 / 秒请求数 / 秒读取数 / 秒写入数 / 秒操作数 / 分钟读取数 / 分钟写入数 / 分钟</block>
-  <block id="e8262a129757d59390413661a0f53d16" category="paragraph">信息板和资产登录页面上的小工具中的数据会根据选定信息板时间范围（或小工具时间范围，如果设置为覆盖信息板时间）确定的刷新间隔自动刷新。刷新间隔取决于小工具是时间序列（折线图，样条曲线图，面积图，堆积面积图）还是非时间序列（所有其他图表）。</block>
   <block id="a311182bfffa770574efa58415204e5e" category="cell">信息板时间范围</block>
   <block id="a381288575a9ee2b7d6fbee5abc730ee" category="cell">时间序列刷新间隔</block>
   <block id="696496081bb055864a75308dfe96791e" category="cell">非时间序列刷新间隔</block>
@@ -6522,7 +6519,6 @@
   <block id="554c387b4cc54e5b15b7b9ce27d28df0" category="section-title">小工具命名</block>
   <block id="59f8ad2450d81d69bb7178de28870ace" category="paragraph">小工具会根据为第一个小工具查询选择的对象，指标或属性自动命名。如果您还为小工具选择了分组，则 " 分组依据 " 属性将包含在自动命名（聚合方法和指标）中。</block>
   <block id="f311dd325e3f7f8553f9d8fda43458a7" category="inline-image-macro">小工具命名示例</block>
-  <block id="b22dfa24432a78bdc096d5f0126a1668" category="paragraph"><block ref="b22dfa24432a78bdc096d5f0126a1668" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ad6fcc59633fa84a4ef87cb86b15271" category="paragraph">选择新对象或分组属性将更新自动名称。</block>
   <block id="3d6c314d1d40b7ae81ed46c8b5c0488d" category="paragraph">如果您不想使用自动小工具名称，只需键入一个新名称即可。</block>
   <block id="2f9b84f8f04989f1fd035633789615c2" category="paragraph"><block ref="2f9b84f8f04989f1fd035633789615c2" category="inline-image-macro-rx" type="image"></block></block>
@@ -13132,4 +13128,10 @@ Microsoft Edge会对例外情况采用与Chrome相同的格式。
   <block id="9c420799ef765483eddc7865804e6371" category="admonition">A _Module Evaluation_ is not a _Trial_-当我们为客户提供使用CI服务的免费试用期以确认是否适合并启用购买时、我们使用术语"试用"。模块评估有所不同-这是指我们允许付费客户试用其最近几个月付费订阅中未使用的Cloud Insights模块。如果评估处于活动状态、则仅对新配置的模块免除费用。客户的工作环境仍处于订阅状态、尚未恢复为免费试用。此订阅未更改。</block>
   <block id="8fe818ace86e2479958161998bd57015" category="paragraph">在模块评估期间，您不会更改模块所消耗资源的MU使用量， 但是，您可以打开*Estimator*(在_Summary _选项卡上)来查看评估后MU的计费方式，并使用“假设”方案来计算将来可能需要的MU数。退出估算器以重置数字。</block>
   <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">请注意、每个订阅只能获得一次模块评估。</block>
+  <block id="d0016e09a888d8ae5f9a3507bcdda17c" category="paragraph"><block ref="d0016e09a888d8ae5f9a3507bcdda17c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fada1c7705d134b1361677f79eef7e6a" category="list-text">* 计数 * ：显示在指定时间范围内报告数据的对象的 _count_ 。您可以选择由信息板时间范围确定的_整个时间窗口_。</block>
+  <block id="9bd256c4a0f18dc34f706a5b2ffde80a" category="paragraph">要覆盖信息板时间并强制小工具使用自己的时间范围、请在此小工具的编辑模式下选择适当的时间范围、然后将此小工具保存到信息板。</block>
+  <block id="3b1dbe846304b427475d6a670fb96413" category="inline-image-macro">覆盖小工具的信息板时间范围</block>
+  <block id="c9b0370dc5d789bfc283022e4c0d9d9e" category="paragraph"><block ref="c9b0370dc5d789bfc283022e4c0d9d9e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="776202c829612e565a462d31af745afd" category="paragraph">信息板和资产登录页面上小工具中的数据会根据选定信息板时间范围确定的刷新间隔自动刷新。刷新间隔取决于小工具是时间序列（折线图，样条曲线图，面积图，堆积面积图）还是非时间序列（所有其他图表）。</block>
 </blocks>
