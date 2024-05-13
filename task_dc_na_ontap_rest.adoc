@@ -287,6 +287,15 @@ FAS/AF8080
 配置：10.193.98.84：10.193.98.84下的ONTAP REST API不可用：10.193.98.84下的ONTAP REST API可用：cheryl5-cluster-2 9.10.1 a3cb3247-3d3c-11ee-8ff3-005056b364a7、但不是最低版本9.14.1。 
 
 
-| 我看到ONTAP ontapi收集器显示数据的指标为空或"0"。 | ONTAP REST不会报告仅在ONTAP系统内部使用的指标。例如、ONTAP REST不会收集系统聚合、只会收集类型为"数据"的SVM。 
+| 我看到ONTAP ontapi收集器显示数据的指标为空或"0"。 | ONTAP REST不会报告仅在ONTAP系统内部使用的指标。例如、ONTAP REST不会收集系统聚合、只会收集类型为"数据"的SVM。
+
+可能报告零数据或空数据的其他ONTAP REST指标示例：
+
+内部卷：REST不再报告vol0。
+聚合：REST不再报告aggr0。
+存储：大多数指标都是内部卷指标的汇总、将受上述指标的影响。
+Storage Virtual Machine：REST不再报告类型为"数据"以外的SVM (例如、"集群"、"GMT"、"节点")。
+
+由于默认性能轮询周期从15分钟更改为5分钟、您可能还会注意到具有数据的图形的外观发生变化。  轮询频率越高、意味着要绘制的数据点就越多。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

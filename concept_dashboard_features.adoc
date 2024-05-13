@@ -798,7 +798,7 @@ image:UnitsOnPrimaryAnd SecondaryYAxis.png["两个 Y 轴上的单位"]
 与 * 电视模式 * 结合使用时，自动刷新功能可在信息板或资产页面上近乎实时地显示数据。TV 模式提供了一个清晰的显示；导航菜单将被隐藏，从而为数据显示提供更多屏幕空间，编辑按钮也是一样。TV 模式会忽略典型的 Cloud Insights 超时，使显示保持活动状态，直到通过授权安全协议手动或自动注销为止。
 
 
-NOTE: 由于 NetApp Cloud Central 自身的用户登录超时为 7 天，因此 Cloud Insights 也必须注销该事件。您只需重新登录，您的信息板就会继续显示。
+NOTE: 由于NetApp BlueXP自身的用户登录超时为7天、因此Cloud Insights也必须使用该事件注销。您只需重新登录，您的信息板就会继续显示。
 
 * 要激活 TV 模式，请单击 image:ActivateTVMode.png["TV 模式"] 按钮。
 * 要禁用 TV 模式，请单击屏幕左上角的 * 退出 * 按钮。 image:ExitTVMode.png["退出按钮"]
