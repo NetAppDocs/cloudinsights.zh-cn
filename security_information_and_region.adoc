@@ -49,7 +49,7 @@ Cloud Insights 存储以下信息：
 
 * 用户访问数据
 +
-a020ee54398cbdbb6220eb6dbbb2eea3
+允许NetApp BlueXP与区域Cloud Insights站点通信的身份验证和访问信息、包括与用户授权相关的数据。
 
 * 存储工作负载安全性用户目录数据
 +
@@ -85,7 +85,7 @@ Cloud Insights 会根据创建环境的区域存储信息。
 无论托管 Cloud Insights 环境的地区如何，以下信息都驻留在美国：
 
 * 环境站点（有时称为 " 租户 " ）信息，例如站点 / 帐户所有者。
-* 477495be48e10387478849fdda012566
+* 允许NetApp BlueXP与区域Cloud Insights站点通信的信息、包括与用户授权相关的任何信息。
 * 与 Cloud Insights 用户和租户之间的关系相关的信息。
 
 

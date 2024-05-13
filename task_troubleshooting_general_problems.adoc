@@ -31,22 +31,35 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 | * 问题： * | * 请尝试此操作： * 
 
 
-| Cloud Insights 每 5 分钟注销一次 | 396149d67edd166e53b49c38f4b707ba 
+| Cloud Insights 每 5 分钟注销一次 | 允许第三方接受所需的NetApp和auth0 cookie。
+
+示例
+在Chrome中、在浏览器URL中输入"chrome：//settings /cookie"。
+
+选择"允许所有Cookie "选项。
+*或*
+选择"阻止第三方cookie"并为[\*.]auth0.com和[*.]netapp.com添加例外。
+
+注意：创建异常时、请务必选择"在此站点上包含第三方Cookie "选项。 
 
 
-| e4ff2e59dd571d2bbd5a906b6fad2546 | a9a216fbb1fb9d774e7cedfcf74c00cf 
+| 我有BlueXP帐户、但无法登录到BlueXP。 | 从打开服务单 https://mysupport.netapp.com/site/help[]。选择类别“blueXP.netapp.com >帐户/登录问题”或“bluexp.netapp.com >联合问题”。  这些内容专门针对BlueXP问题。
+对于所有其他Cloud Insights 技术支持问题、请联系 link:concept_requesting_support.html["NetApp 支持"]。 
 
 
-| 我受邀访问 Cloud Insights ，但收到 " 未授权 " 消息。 | 199017f1d912993f091b6b969d3442ad 
+| 我受邀访问 Cloud Insights ，但收到 " 未授权 " 消息。 | 确认您已注册BlueXP帐户、或者您的组织对BlueXP使用SSO登录。
+
+验证您的BlueXP个人资料电子邮件地址是否与Cloud Insights欢迎电子邮件中显示的电子邮件地址匹配。如果此电子邮件不匹配，请使用正确的电子邮件地址请求新的邀请。 
 
 
-| 176f8c6fa466059df49f2717c021d306 | 7a8624fb56224e907698f45ef2e4cc47 
+| 我从BlueXP中注销、并自动从Cloud Insights中注销。 | 跨NetApp云服务的单点登录(Single Sign-On、SSO)会注销所有Cloud Insights会话。如果您有权访问多个 Cloud Insights 帐户，则从任一帐户注销将注销所有活动会话。重新登录以访问您的帐户。 
 
 
-| 几天后，我被自动注销。 | ed6e79e2f9b9c201ed834c6efeb7f356 
+| 几天后，我被自动注销。 | NetApp云帐户需要每隔几天重新进行一次身份验证(当前BlueXP设置为7天)。重新登录以访问您的帐户。 
 
 
-| 我收到错误消息 " 不再授权登录 " 。 | acf29dcaa06698c29122cba5402e3145 
+| 我收到错误消息 " 不再授权登录 " 。 | 请联系您的帐户管理员以验证对 Cloud Insights 的访问权限。
+验证您的BlueXP个人资料电子邮件地址是否与Cloud Insights欢迎电子邮件中显示的电子邮件地址匹配 
 
 
 | 其他登录错误 | 请尝试在 Chrome 中使用匿名模式，或者清除浏览器历史记录， Cookie 和缓存。请尝试使用其他浏览器配置文件（例如 Chrome - 添加人员）。 

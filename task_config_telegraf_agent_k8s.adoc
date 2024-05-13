@@ -562,5 +562,8 @@ fluent-bit:
 
 
 | 我发现Kubenetes监控操作员部署的POD因资源不足而崩溃。 | 请参见Kubbernetes监控操作员 link:telegraf_agent_k8s_config_options.html["配置选项"] 根据需要增加CPU和/或内存限制。 
+
+
+| 缺少映像或配置无效会导致NetApp-CI-Kube-state-metrics Pod无法启动或准备就绪。现在、StatefulSet停止运行、并且配置更改未应用于NetApp-CI-KUE-STATE-MErics Pod。 | StatefulSet位于中 link:https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/#forced-rollback["已损坏"] 状态。修复任何配置问题后、退回NetApp-CI-Kube-state-metrics Pod。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。
