@@ -9912,11 +9912,8 @@
   <block id="3d3a14a6970653e82934d70556e92edc" category="inline-image-macro">显示基础架构和Kubnetes成本估算计算器的订阅页面</block>
   <block id="93dd899a28072850f389977b64f3eb1b" category="paragraph"><block ref="93dd899a28072850f389977b64f3eb1b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="380912a894b2ed4e52150b87b17024b2" category="paragraph">完成 AWS 订阅过程后，您将返回到 Cloud Insights 环境。或者、如果环境不再处于活动状态(例如、您已注销)、则会转到NetApp BlueXP登录页面。当您再次登录到 Cloud Insights 时，您的订阅将处于活动状态。</block>
-  <block id="d1f15ae17b64c6a381736fceb36824b1" category="paragraph">"订阅摘要"选项卡显示以下内容：</block>
   <block id="2638d109f7501322af782022ec53f096" category="list-text">当前版本</block>
   <block id="19cf2ec0c9b04a9d1e83a5c88cfd0526" category="list-text">订阅序列号</block>
-  <block id="7fe46cdf8a500ce7ce79c9bab4fb0678" category="list-text">当前MU使用量和"如果？" 成本估算者</block>
-  <block id="824254db492a2daf86c1fa9977bc9c7d" category="list-text">用于修改订阅的链接</block>
   <block id="d3d856c02816952b24a5110171a09834" category="paragraph">"使用情况管理"选项卡简要显示了受管单元的使用情况、并显示了按收集器或Kubnetes集群细分受管单元使用情况的选项卡。</block>
   <block id="7702a4028f8e4df8a4c7cc7e0e9629c9" category="paragraph">如果您的使用量接近或超过您的订阅量、则可以通过删除数据收集器或停止监控Kubornetes集群来减少使用量。通过单击"三个点"菜单并选择_Delete_来 删除此列表中的项目。</block>
   <block id="718a66b23c9ea5a577883d447f892296" category="cell">此时将显示一个错误横幅、您的功能将受限、除非执行以下操作之一：
@@ -10013,7 +10010,6 @@
   <block id="46f506a87cfed781f4ca50c5456e5dea" category="list-text">根据日志条目解决：在发现日志行时按照以下定义中所述解决警报、或者在数据保留期限过后清除。</block>
   <block id="c418d072678072a9d451ca92f8cbbcdd" category="list-text">1个受管单元= 4个库贝特斯vCPU</block>
   <block id="72a8f3e5ddcd565deaadfe888f6ec6ad" category="paragraph">订阅计算器可帮助您根据所需的托管单元数量估算Cloud Insights订阅成本。当前值已预先填充、您可以调整这些值、以帮助您规划未来的预计增长。您可以调整基础架构和/或Kubornetes的值。</block>
-  <block id="e83566ec8beb942e786f102a35482e5d" category="list-text">托管单元使用情况视图</block>
   <block id="5fe48850b2ef6a213ed01dde1958dfa4" category="section-title">编辑现有报告</block>
   <block id="5bd415396ca9b48afa3306c238307445" category="paragraph">请注意、在默认位置编辑文件会面临在下次刷新报告目录时覆盖这些报告的风险。建议使用新名称保存已编辑的报告、或者将其存储在非默认位置。</block>
   <block id="9bb3efbd29374edfd5411d3bf02b3b92" category="cell">在Forsics_All Activity_或_indices_页面的筛选器中键入包含通配符(如星号(*))的某些字母后、页面加载速度非常慢。</block>
@@ -13128,4 +13124,12 @@ Storage Virtual Machine：REST不再报告类型为"数据"以外的SVM (例如�
 Microsoft Edge会对例外情况采用与Chrome相同的格式。
 
 在Firefox中、Cookie例外仅指定为_auth0.com和_netapp.com。</block>
+  <block id="8bfda936be946f758536df68a230dfab" category="paragraph">订阅*摘要*选项卡显示如下内容：</block>
+  <block id="9b7f10f52064c80bcec17905afd00559" category="list-text">当前MU授权</block>
+  <block id="f02a81449f4e8c1806fe657044887b30" category="paragraph">“*使用量*”选项卡显示了当前的MU使用量以及数据收集器对该使用量的细分情况。</block>
+  <block id="5e4b95db832e18e6c9bfe688b8cb8044" category="inline-image-macro">MU使用量(按模块)</block>
+  <block id="36be66d4e4e4fc3739c2b9f067442449" category="paragraph"><block ref="36be66d4e4e4fc3739c2b9f067442449" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3b55f9a8374f81f85e7606ece767371" category="paragraph">“*历史记录*”选项卡可让您深入了解过去7到90天的MU使用情况。将鼠标悬停在图表中的一列上可按模块(即可观察性、Kubbernetes)显示细分情况。</block>
+  <block id="fbc13ba96b933d65afd4caf522ab96b6" category="inline-image-macro">MU使用情况历史记录</block>
+  <block id="2319aa26c375ca721d328685f3585394" category="paragraph"><block ref="2319aa26c375ca721d328685f3585394" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
