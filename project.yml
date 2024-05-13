@@ -55,134 +55,32 @@ sidebar:
     url: "/data_collector_list.html"
   - title: 订阅 Cloud Insights
     url: "/concept_subscribing_to_cloud_insights.html"
-  - title: 可观察性
+  - title: 自动设备解析
     entries:
-    - title: 创建信息板
+    - title: 设备解析概述
+      url: "/concept_device_resolution_overview.html"
+    - title: 设备解析规则
+      url: "/task_device_resolution_rules.html"
+    - title: 光纤通道设备解析
+      url: "/task_device_resolution_fibre_channel.html"
+    - title: IP 设备解析
+      url: "/task_device_resolution_ip.html"
+    - title: 设置设备解析首选项
+      url: "/task_device_resolution_preferences.html"
+    - title: 正则表达式示例
+      url: "/concept_device_resolution_regex_examples.html"
+  - title: 创建信息板
+    entries:
+    - title: 信息板概述
+      url: "/concept_dashboards_overview.html"
+    - title: 信息板的功能
+      url: "/concept_dashboard_features.html"
+    - title: 示例信息板
       entries:
-      - title: 信息板概述
-        url: "/concept_dashboards_overview.html"
-      - title: 信息板的功能
-        url: "/concept_dashboard_features.html"
-      - title: 示例信息板
-        entries:
-        - title: 虚拟机性能
-          url: "/task_dashboard_example_VM_performance.html"
-      - title: 信息板最佳实践
-        url: "/concept_dashboard_best_practices.html"
-    - title: 使用查询
-      entries:
-      - title: 正在查询资产
-        url: "/concept_querying_assets.html"
-      - title: 创建查询
-        url: "/task_create_query.html"
-      - title: 查看可用查询
-        url: "/task_view_queries.html"
-      - title: 将查询结果导出到 .CSV
-        url: "/task_export_query_results.html"
-      - title: 修改或删除查询
-        url: "/task_modify_delete_query.html"
-      - title: 为对象分配多个应用程序 / 标注
-        url: "/task_query_assign_multiple_applicationss.html"
-      - title: 将表值复制到剪贴板
-        url: "/task_query_copy_table_values.html"
-      - title: 正在查询日志
-        url: "/concept_log_explorer.html"
-    - title: 洞察力
-      entries:
-      - title: 概述
-        url: "/insights_overview.html"
-      - title: 共享资源面临压力
-        url: "/insights_shared_resources_under_stress.html"
-      - title: Kubernetes命名空间即将用尽
-        url: "/insights_k8s_namespaces_running_out_of_space.html"
-      - title: 回收ONTAP 冷存储
-        url: "/insights_reclaim_ontap_cold_storage.html"
-    - title: 监控和警报
-      entries:
-      - title: 创建监控器
-        url: "/task_create_monitor.html"
-      - title: 查看和管理警报
-        url: "/task_view_and_manage_alerts.html"
-      - title: 配置通知收件人
-        url: "/concept_notifications_email.html"
-      - title: 系统定义的监控器
-        url: "/task_system_monitors.html"
-      - title: 网络挂机通知
-        url: "/task_create_webhook.html"
-    - title: 使用标注
-      entries:
-      - title: 定义标注
-        url: "/task_defining_annotations.html"
-      - title: 使用标注
-        url: "/task_create_annotation.html"
-      - title: 使用标注规则
-        url: "/task_create_annotation_rules.html"
-      - title: 使用 API 导入标注
-        url: "/task_annotation_import.html"
-    - title: 使用应用程序
-      entries:
-      - title: 应用程序概念
-        url: "/concept_about_applications.html"
-      - title: 配置应用程序
-        url: "/task_create_application.html"
-    - title: 自动设备解析
-      entries:
-      - title: 设备解析概述
-        url: "/concept_device_resolution_overview.html"
-      - title: 设备解析规则
-        url: "/task_device_resolution_rules.html"
-      - title: 光纤通道设备解析
-        url: "/task_device_resolution_fibre_channel.html"
-      - title: IP 设备解析
-        url: "/task_device_resolution_ip.html"
-      - title: 设置设备解析首选项
-        url: "/task_device_resolution_preferences.html"
-      - title: 正则表达式示例
-        url: "/concept_device_resolution_regex_examples.html"
-    - title: 资产页面信息
-      entries:
-      - title: 资产页面概述
-        url: "/concept_asset_page_overview.html"
-      - title: 对象的上下文内筛选
-        url: "/concept_in_context_filters.html"
-      - title: 摘要拓扑部分
-        url: "/concept_asset_summary_section.html"
-      - title: 专家视图部分
-        url: "/concept_asset_expert_view_section.html"
-      - title: 用户数据部分
-        url: "/concept_asset_user_data_section.html"
-      - title: 相关警报部分
-        url: "/concept_asset_alerts_section.html"
-      - title: 存储虚拟化
-        url: "/concept_storage_virtualization.html"
-      - title: 搜索资产的提示和提示
-        url: "/concept_searching_assets.html"
-    - title: 报告
-      entries:
-      - title: 报告概述
-        url: "/reporting_overview.html"
-      - title: 报告用户角色
-        url: "/reporting_user_roles.html"
-      - title: 使用预定义报告
-        url: "/reporting_predefined_reports.html"
-      - title: Storage Manager 信息板
-        url: "/reporting_storage_manager_dashboard.html"
-      - title: 创建示例报告
-        url: "/reporting_create_example.html"
-      - title: 管理报告
-        url: "/reporting_managing_reports.html"
-      - title: 自定义报告
-        url: "/reporting_creating_custom_reports.html"
-      - title: 数据模型
-        url: "/reporting_creating_custom_reports.html#reporting-data-models"
-      - title: 报告数据库 API
-        url: "/reporting_querying_database.html"
-      - title: 数据保留
-        url: "/reporting_data_retention.html"
-      - title: 架构图
-        url: "/reporting_schema_diagrams.html"
-      - title: 模式表
-        url: "/reference_schemas.html"
+      - title: 虚拟机性能
+        url: "/task_dashboard_example_VM_performance.html"
+    - title: 信息板最佳实践
+      url: "/concept_dashboard_best_practices.html"
   - title: Kubernetes
     entries:
     - title: Kubernetes 概述页面
@@ -199,20 +97,116 @@ sidebar:
       url: "/concept_kubernetes_network_monitoring_and_map.html"
     - title: 变更分析
       url: "/kubernetes_change_analytics.html"
+  - title: 洞察力
+    entries:
+    - title: 概述
+      url: "/insights_overview.html"
+    - title: 共享资源面临压力
+      url: "/insights_shared_resources_under_stress.html"
+    - title: Kubernetes命名空间即将用尽
+      url: "/insights_k8s_namespaces_running_out_of_space.html"
+    - title: 回收ONTAP 冷存储
+      url: "/insights_reclaim_ontap_cold_storage.html"
   - title: ONTAP 基础知识
     url: "/concept_ontap_essentials.html"
-  - title: 管理和其他任务
+  - title: 使用查询
     entries:
-    - title: 使用 API
-      url: "/API_Overview.html"
-    - title: 监控环境
-      entries:
-      - title: 审核事件
-        url: "/concept_audit.html"
-      - title: TTL 和下抽样
-        url: concept_ttl_and_downsampling.html
-      - title: Active IQ
-        url: "/concept_activeiq.html"
+    - title: 正在查询资产
+      url: "/concept_querying_assets.html"
+    - title: 创建查询
+      url: "/task_create_query.html"
+    - title: 查看可用查询
+      url: "/task_view_queries.html"
+    - title: 将查询结果导出到 .CSV
+      url: "/task_export_query_results.html"
+    - title: 修改或删除查询
+      url: "/task_modify_delete_query.html"
+    - title: 为对象分配多个应用程序 / 标注
+      url: "/task_query_assign_multiple_applicationss.html"
+    - title: 将表值复制到剪贴板
+      url: "/task_query_copy_table_values.html"
+    - title: 正在查询日志
+      url: "/concept_log_explorer.html"
+  - title: 使用标注
+    entries:
+    - title: 定义标注
+      url: "/task_defining_annotations.html"
+    - title: 使用标注
+      url: "/task_create_annotation.html"
+    - title: 使用标注规则
+      url: "/task_create_annotation_rules.html"
+    - title: 使用 API 导入标注
+      url: "/task_annotation_import.html"
+  - title: 使用应用程序
+    entries:
+    - title: 应用程序概念
+      url: "/concept_about_applications.html"
+    - title: 配置应用程序
+      url: "/task_create_application.html"
+  - title: 监控和警报
+    entries:
+    - title: 创建监控器
+      url: "/task_create_monitor.html"
+    - title: 查看和管理警报
+      url: "/task_view_and_manage_alerts.html"
+    - title: 配置通知收件人
+      url: "/concept_notifications_email.html"
+    - title: 系统定义的监控器
+      url: "/task_system_monitors.html"
+  - title: 使用 API
+    url: "/API_Overview.html"
+  - title: 网络挂机通知
+    url: "/task_create_webhook.html"
+  - title: 监控环境
+    entries:
+    - title: 审核事件
+      url: "/concept_audit.html"
+    - title: TTL 和下抽样
+      url: concept_ttl_and_downsampling.html
+  - title: 资产页面信息
+    entries:
+    - title: 资产页面概述
+      url: "/concept_asset_page_overview.html"
+    - title: 对象的上下文内筛选
+      url: "/concept_in_context_filters.html"
+    - title: 摘要拓扑部分
+      url: "/concept_asset_summary_section.html"
+    - title: 专家视图部分
+      url: "/concept_asset_expert_view_section.html"
+    - title: 用户数据部分
+      url: "/concept_asset_user_data_section.html"
+    - title: 相关警报部分
+      url: "/concept_asset_alerts_section.html"
+    - title: 存储虚拟化
+      url: "/concept_storage_virtualization.html"
+    - title: 搜索资产的提示和提示
+      url: "/concept_searching_assets.html"
+  - title: 报告
+    entries:
+    - title: 报告概述
+      url: "/reporting_overview.html"
+    - title: 报告用户角色
+      url: "/reporting_user_roles.html"
+    - title: 使用预定义报告
+      url: "/reporting_predefined_reports.html"
+    - title: Storage Manager 信息板
+      url: "/reporting_storage_manager_dashboard.html"
+    - title: 创建示例报告
+      url: "/reporting_create_example.html"
+    - title: 管理报告
+      url: "/reporting_managing_reports.html"
+    - title: 自定义报告
+      url: "/reporting_creating_custom_reports.html"
+    - title: 数据模型
+      url: "/reporting_creating_custom_reports.html#reporting-data-models"
+    - title: 报告数据库 API
+      url: "/reporting_querying_database.html"
+    - title: 数据保留
+      url: "/reporting_data_retention.html"
+    - title: 架构图
+      url: "/reporting_schema_diagrams.html"
+    - title: 模式表
+      url: "/reference_schemas.html"
   - title: 工作负载安全性
     entries:
     - title: 关于工作负载安全性
@@ -265,6 +259,8 @@ sidebar:
       url: "/cs_notifications_email.html"
     - title: 工作负载安全API
       url: "/concept_cs_api.html"
+  - title: Active IQ
+    url: "/concept_activeiq.html"
   - title: 故障排除
     entries:
     - title: 常规故障排除

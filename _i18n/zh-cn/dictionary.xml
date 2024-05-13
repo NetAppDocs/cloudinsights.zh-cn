@@ -13057,57 +13057,6 @@ kubect get all -n &lt;namespace&gt;| grep -i psp (应显示未找到任何内容
   <block id="1a565d9a88c6cc1a17ed9ec577431947" category="paragraph">Cloud Insights可以在收集器中选择收集ONTAP集群交换机数据 <block ref="0a74ef7985c5cbe5eb3ab6c199d26582" category="inline-xref-macro-rx"></block> 设置。除了在Cloud Insights收集器上启用此功能之外，您还必须*配置ONTAP系统*本身以提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block>，并确保正确 <block ref="e83cb79e34a9adb49ab5c30ebb0b6c54" category="inline-xref-macro-rx"></block> 设置、以便允许将交换机数据发送到Cloud Insights。</block>
   <block id="e77307796c2832560f84fa94d82cd573" category="list-text">Rubeck集群IP地址或主机名。</block>
   <block id="fb36183a15285a9f1f23d79072c763f7" category="list-text">对于基本身份验证、是指集群的用户名和密码。如果您希望使用基于服务帐户的身份验证、则需要服务帐户、机密和组织ID</block>
-  <block id="07564ad1af1bd4ed017ae241054bd345" category="paragraph">Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管理员，用户和来宾。为每个帐户分配特定的权限级别，如下表所示。  用户可以是其中之一 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> Cloud Insights 并分配了特定角色，或者可以通过登录 <block ref="47c69771a9bdd41067d8486727a07273" category="inline-link-macro-rx"></block> 具有默认角色。Cloud Insights 高级版提供了 SSO 授权功能。</block>
-  <block id="2e28d2e91336191eb4cfb9f135bf4ce2" category="paragraph">通过BlueXP创建新的用户帐户。用户可以回复通过电子邮件发送的邀请、但如果用户没有BlueXP帐户、则需要注册BlueXP、以便接受邀请。</block>
-  <block id="d26ae26dfaa208a028ca6437966e9b43" category="section-title">什么是身份联合？</block>
-  <block id="08f656c4c33fd00fad5ab1ef569dae11" category="list-text">用户只需登录一次所有NetApp BlueXP服务(单点登录)。</block>
-  <block id="02f6b1d6847323521b6d5dfdeb3f5dbf" category="paragraph">用户帐户在适用于所有云服务的NetApp BlueXP中进行管理。默认情况下、身份验证使用BlueXP本地用户配置文件完成。下面简要概述了该过程：</block>
-  <block id="58ccf39c430354a2330777ebbfdc320c" category="inline-image-macro">使用本地进行BlueXP身份验证</block>
-  <block id="6e7c9d2ac3ef07c7bcfe628147140973" category="paragraph"><block ref="6e7c9d2ac3ef07c7bcfe628147140973" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1efb7531b4ff57cf7e5dad319f452ce8" category="paragraph">但是、某些客户希望使用自己的身份提供程序对其Cloud Insights和其他NetApp BlueXP服务的用户进行身份验证。通过身份联合、NetApp BlueXP帐户将使用企业目录中的凭据进行身份验证。</block>
-  <block id="34dde67853699a7c5e92b37ac717d586" category="inline-image-macro">使用联合进行BlueXP身份验证</block>
-  <block id="14bf8864e0c03f214a9531c84f7509ff" category="paragraph"><block ref="14bf8864e0c03f214a9531c84f7509ff" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="41f5e02dabb202e2e56ff56a913cc88b" category="section-title">正在启用身份联合</block>
-  <block id="76ef581d75f4d1e4d3bdceeb091433ef" category="inline-link-macro">BlueXP联合说明</block>
-  <block id="f68beb94c4510489905761611b802b02" category="paragraph">BlueXP使用Auth0实施身份联合、并与Active Directory联合身份验证服务(ADFS)和Microsoft Azure Active Directory (AD)等服务集成。要配置身份联合、请参见 <block ref="dcb213271585f680aa429c2cd0d8d64f" category="inline-link-macro-rx"></block>。</block>
-  <block id="e806ab1149571cd13505dfbc97c18648" category="admonition">您必须先配置BlueXP身份联合、然后才能对Cloud Insights使用SSO。</block>
-  <block id="3d447ee9850a212906099a2f2e71dd7b" category="paragraph">请务必了解、在BlueXP中更改身份联合不仅适用于Cloud Insights、而且适用于所有NetApp BlueXP服务。客户应与他们拥有的每个BlueXP产品的NetApp团队讨论此更改、以确保他们使用的配置可与身份联合使用、或者在需要对任何客户进行调整时也可使用。客户还需要让内部 SSO 团队参与身份联合的变更。</block>
-  <block id="9ebe3356d760f8536e9bb24151537fda" category="paragraph">另外、还必须认识到、一旦启用身份联合、对公司身份提供程序进行的任何更改(例如从SAML迁移到Microsoft AD)都可能需要在BlueXP中进行故障排除/更改/关注、才能更新用户的配置文件。</block>
-  <block id="5688f19f1e497727b537222451f54cc6" category="paragraph">对于此联盟问题或任何其他联盟问题、您可以在上创建支持服务单<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block> 并选择类别“bluexp.netapp.com &gt;联合问题”。</block>
-  <block id="1290a9c844484dfb0ecb66679bb02236" category="admonition">_SSO 用户自动配置 _ 在 Cloud Insights 高级版中可用，必须先进行配置，然后才能为 Cloud Insights 启用它。SSO用户自动配置配置包括 <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 通过NetApp BlueXP、如上一节所述。联合允许单点登录用户使用企业目录中的凭据、并使用安全断言标记语言2.0 (SAML)和OpenID连接(OIDC)等开放式标准访问NetApp BlueXP帐户。</block>
-  <block id="5f47dcd3204dc1bc6c36abf1ce4be4cc" category="paragraph">要配置_SSO用户自动配置_，必须先在*Admin &gt; User Management*页上设置BlueXP身份联合。选择横幅中的*设置联合*链接以继续BlueXP联合。完成配置后、Cloud Insights管理员可以启用SSO用户登录。当管理员启用 _SSO 用户自动配置 _ 时，他们会为所有 SSO 用户（如来宾或用户）选择一个默认角色。通过 SSO 登录的用户将具有此默认角色。</block>
-  <block id="bbeb55e7d4d240b66f4ca24218cf7de0" category="admonition">由于NetApp BlueXP自身的用户登录超时为7天、因此Cloud Insights也必须使用该事件注销。您只需重新登录，您的信息板就会继续显示。</block>
-  <block id="10c296499c1a789621926ca2df89bad4" category="paragraph">允许NetApp BlueXP与区域Cloud Insights站点通信的身份验证和访问信息、包括与用户授权相关的数据。</block>
-  <block id="32b8c42dbc2b21fb7881d9a36bb2727a" category="list-text">允许NetApp BlueXP与区域Cloud Insights站点通信的信息、包括与用户授权相关的任何信息。</block>
-  <block id="c8c46afa6f003113c7d643310bade896" category="inline-xref">_Sync_或_Async_</block>
-  <block id="54ebec075b0ae24d1fe36b1a78b7014f" category="paragraph">它非常适合使用 <block ref="9966ea080d2324311c0da20a04f19491" category="inline-xref-macro-rx"></block>。</block>
-  <block id="1c545b4af283ca5836cafe431d1ea06a" category="section-title">同步还是异步？</block>
-  <block id="1f5c701838fc1e9c08d402a2d3562c8c" category="paragraph">默认情况下、API命令将在_synicate_mode下运行、这意味着您将发送请求、并立即返回响应。但是、有时执行查询可能需要很长时间、从而可能导致请求超时。要解决此问题、您可以执行_异 步_请求。在异步模式下、此请求将返回一个URL、通过该URL可以监控执行情况。此URL将在准备就绪后返回结果。</block>
-  <block id="3559171ac28b17714bc92816d17b2a17" category="paragraph">要在async模式下执行查询、请添加标题<block ref="1f82ebaa5a99226ba28d8d76ae41a3f8" prefix=" " category="inline-code"></block> 请求。成功执行后、响应将包含以下标题：</block>
-  <block id="a84e9c9e2352076ba01af70b577a7e6e" category="paragraph">如果响应尚未就绪、则查询位置URL将返回相同的标题、如果响应已就绪、则查询将返回状态200。响应内容将为文本类型、并包含原始查询的http状态和一些元数据、后跟原始查询的结果。</block>
-  <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">要查看所有async查询的列表以及哪些查询已准备就绪、请使用以下命令：</block>
-  <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">响应格式如下：</block>
-  <block id="1d87793fac8c219c888ab86c18c15b01" category="cell">允许第三方接受所需的NetApp和auth0 cookie。
-
-示例
-在Chrome中、在浏览器URL中输入"chrome：//settings /cookie"。
-
-选择"允许所有Cookie "选项。
-*或*
-选择"阻止第三方cookie"并为[\*.]auth0.com和[*.]netapp.com添加例外。
-
-注意：创建异常时、请务必选择"在此站点上包含第三方Cookie "选项。</block>
-  <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">我有BlueXP帐户、但无法登录到BlueXP。</block>
-  <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">从打开服务单<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。选择类别“blueXP.netapp.com &gt;帐户/登录问题”或“bluexp.netapp.com &gt;联合问题”。  这些内容专门针对BlueXP问题。
-对于所有其他Cloud Insights 技术支持问题、请联系 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
-  <block id="14c4408fc03fb9285fba74c7c30e2a8d" category="cell">确认您已注册BlueXP帐户、或者您的组织对BlueXP使用SSO登录。
-
-验证您的BlueXP个人资料电子邮件地址是否与Cloud Insights欢迎电子邮件中显示的电子邮件地址匹配。如果此电子邮件不匹配，请使用正确的电子邮件地址请求新的邀请。</block>
-  <block id="1b58998adf7a89d496bd43804045852f" category="cell">我从BlueXP中注销、并自动从Cloud Insights中注销。</block>
-  <block id="3cb73ed658069638368ac0c0f59b6393" category="cell">跨NetApp云服务的单点登录(Single Sign-On、SSO)会注销所有Cloud Insights会话。如果您有权访问多个 Cloud Insights 帐户，则从任一帐户注销将注销所有活动会话。重新登录以访问您的帐户。</block>
-  <block id="d6d54ee6b6dfdd2783aff066e96f7330" category="cell">NetApp云帐户需要每隔几天重新进行一次身份验证(当前BlueXP设置为7天)。重新登录以访问您的帐户。</block>
-  <block id="73fa543b200644c9d90cfad28a8def24" category="cell">请联系您的帐户管理员以验证对 Cloud Insights 的访问权限。
-验证您的BlueXP个人资料电子邮件地址是否与Cloud Insights欢迎电子邮件中显示的电子邮件地址匹配</block>
   <block id="d5d48d5f4dfc82bc722dda03c00023b2" category="cell">ONTAP REST不会报告仅在ONTAP系统内部使用的指标。例如、ONTAP REST不会收集系统聚合、只会收集类型为"数据"的SVM。
 
 可能报告零数据或空数据的其他ONTAP REST指标示例：
@@ -13118,9 +13067,4 @@ kubect get all -n &lt;namespace&gt;| grep -i psp (应显示未找到任何内容
 Storage Virtual Machine：REST不再报告类型为"数据"以外的SVM (例如、"集群"、"GMT"、"节点")。
 
 由于默认性能轮询周期从15分钟更改为5分钟、您可能还会注意到具有数据的图形的外观发生变化。  轮询频率越高、意味着要绘制的数据点就越多。</block>
-  <block id="fa3c2d77fbba0d391ebafed4f6bf2cb1" category="paragraph">在开始使用Cloud Insights之前，您必须在*BlueXP* NetApp门户上注册。如果您已登录NetApp BlueXP、则只需几个快速步骤即可开始免费试用Cloud Insights。</block>
-  <block id="73d58318fd6991da49fe32dc00a56f19" category="paragraph">要注销 Cloud Insights ，请单击您的 * 用户名 * 并选择 * 注销 * 。您将返回到BlueXP登录屏幕。</block>
-  <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">注销Cloud Insights会使您注销BlueXP。您还将从使用BlueXP登录的其他NetApp云服务中注销。</block>
-  <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">示例：_User *Tony Lavoie*从*10.1.20.15*登录，用户代理*Mozilla／5.0 (Windows NT 10.0；Win64；x64) AppleWebKit/537.36 (KHTML，如Gecko) Chrome／85.0.4183.121 Safari／537.36*，登录方法*BlueXP Portal Login_*</block>
-  <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">管理和其他任务</block>
 </blocks>

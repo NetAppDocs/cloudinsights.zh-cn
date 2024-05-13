@@ -4,19 +4,22 @@ permalink: task_cloud_insights_onboarding_1.html
 summary: 注册 Cloud Insights 并创建环境。 
 ---
 = Cloud Insights 入职
+:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
+:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
 :keywords: Cloud Insights, documentation, help, onboarding, getting started,
+:toc-position: content
 
 
 [role="lead"]
-在开始使用Cloud Insights之前，您必须在*BlueXP* NetApp门户上注册。如果您已登录NetApp BlueXP、则只需几个快速步骤即可开始免费试用Cloud Insights。
+2e95a4622d16ffb729672b5838f5732b
 
 
 toc::[]
@@ -75,10 +78,10 @@ NOTE: 新用户仍必须先注册BlueXP访问权限、然后才能访问其环�
 
 == 注销
 
-要注销 Cloud Insights ，请单击您的 * 用户名 * 并选择 * 注销 * 。您将返回到BlueXP登录屏幕。
+b00323e3fc84f69070c5dc2be8e5ce9e
 
 
-NOTE: 注销Cloud Insights会使您注销BlueXP。您还将从使用BlueXP登录的其他NetApp云服务中注销。
+NOTE: 4405c285662a5ac6f84ad517037907a7
 
 
 

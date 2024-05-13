@@ -49,7 +49,7 @@ Cloud Insights 报告 API 遵循 link:https://www.odata.org/["OData v4"] （开�
 * 单击 " 保存 " ，然后 * 复制密钥并将其保存 * 到安全位置。您稍后将无法访问完整密钥。
 
 
-它非常适合使用 <<synchronous-or-asynchronous,_Sync_或_Async_>>。
+a60abfe03b8079f9f0eac07879fdf93b
 
 
 
@@ -135,43 +135,3 @@ Cloud Insights 报告 API 遵循 link:https://www.odata.org/["OData v4"] （开�
 
 
 您的 API 密钥将特定于您的 Cloud Insights 环境。
-
-
-
-== 同步还是异步？
-
-默认情况下、API命令将在_synicate_mode下运行、这意味着您将发送请求、并立即返回响应。但是、有时执行查询可能需要很长时间、从而可能导致请求超时。要解决此问题、您可以执行_异 步_请求。在异步模式下、此请求将返回一个URL、通过该URL可以监控执行情况。此URL将在准备就绪后返回结果。
-
-要在async模式下执行查询、请添加标题 `*Prefer: respond-async*` 请求。成功执行后、响应将包含以下标题：
-
-....
-Status Code: 202 (which means ACCEPTED)
-preference-applied: respond-async
-location: https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>
-....
-如果响应尚未就绪、则查询位置URL将返回相同的标题、如果响应已就绪、则查询将返回状态200。响应内容将为文本类型、并包含原始查询的http状态和一些元数据、后跟原始查询的结果。
-
-....
-HTTP/1.1 200 OK
- OData-Version: 4.0
- Content-Type: application/json;odata.metadata=minimal
- oDataResponseSizeCounted: true
-
- { <JSON_RESPONSE> }
-....
-要查看所有async查询的列表以及哪些查询已准备就绪、请使用以下命令：
-
- GET https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncList
-响应格式如下：
-
-....
-{
-   "queries" : [
-       {
-           "Query": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/heavy_left_join3?$count=true",
-           "Location": "https://<Cloud Insights URL>/rest/v1/dwh-management/odata/dwh_custom/asyncStatus/<token>",
-           "Finished": false
-       }
-   ]
-}
-....
