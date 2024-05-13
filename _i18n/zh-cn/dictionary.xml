@@ -4299,7 +4299,6 @@
   <block id="33d5b65987e920095c97ae5d99207a0e" category="inline-link-macro">排除 Linux 采集单元问题</block>
   <block id="62c67fa153e5c97540977071f595a3e2" category="inline-link-macro">对 Windows 采集单元问题进行故障排除</block>
   <block id="06aca4757909dd673728a20d193d0656" category="paragraph">另请参见 <block ref="35efea8886727053938c867d4e4688d5" category="inline-link-macro-rx"></block> 和 <block ref="5e216da5f7cd032fff10ef75fa563a40" category="inline-link-macro-rx"></block>。</block>
-  <block id="55117c7bec968b88df3f1dfc434eac84" category="cell">Cloud Insights 每 5 分钟注销一次</block>
   <block id="6630a98adbdb71bde030ce83a4d0a274" category="cell">我受邀访问 Cloud Insights ，但收到 " 未授权 " 消息。</block>
   <block id="6db6d0d20a3dd35029f13f472f68dbbd" category="cell">几天后，我被自动注销。</block>
   <block id="8b6ee0d30d0749811a1b65835a1d82ad" category="cell">我收到错误消息 " 不再授权登录 " 。</block>
@@ -13100,16 +13099,6 @@ Storage Virtual Machine：REST不再报告类型为"数据"以外的SVM (例如�
   <block id="a84e9c9e2352076ba01af70b577a7e6e" category="paragraph">如果响应尚未就绪、则查询位置URL将返回相同的标题、如果响应已就绪、则查询将返回状态200。响应内容将为文本类型、并包含原始查询的http状态和一些元数据、后跟原始查询的结果。</block>
   <block id="b0ed84b2f2f19c2de4e5ffef83497b41" category="paragraph">要查看所有async查询的列表以及哪些查询已准备就绪、请使用以下命令：</block>
   <block id="699058fd0a28bd24bd4721ecd1db6615" category="paragraph">响应格式如下：</block>
-  <block id="1d87793fac8c219c888ab86c18c15b01" category="cell">允许第三方接受所需的NetApp和auth0 cookie。
-
-示例
-在Chrome中、在浏览器URL中输入"chrome：//settings /cookie"。
-
-选择"允许所有Cookie "选项。
-*或*
-选择"阻止第三方cookie"并为[\*.]auth0.com和[*.]netapp.com添加例外。
-
-注意：创建异常时、请务必选择"在此站点上包含第三方Cookie "选项。</block>
   <block id="8ff0a6baa556dcfc21fcb29db0eff472" category="cell">我有BlueXP帐户、但无法登录到BlueXP。</block>
   <block id="11412b458ed06c197e73ff0aaecb2e6c" category="cell">从打开服务单<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block>。选择类别“blueXP.netapp.com &gt;帐户/登录问题”或“bluexp.netapp.com &gt;联合问题”。  这些内容专门针对BlueXP问题。
 对于所有其他Cloud Insights 技术支持问题、请联系 <block ref="1a8b44ad735b0e8f3f08395032e9cb16" category="inline-link-macro-rx"></block>。</block>
@@ -13126,4 +13115,17 @@ Storage Virtual Machine：REST不再报告类型为"数据"以外的SVM (例如�
   <block id="201ec49877bf4303e362a0aac3add32b" category="admonition">注销Cloud Insights会使您注销BlueXP。您还将从使用BlueXP登录的其他NetApp云服务中注销。</block>
   <block id="d7a21ae00693a409dd262b09be87f4f7" category="paragraph">示例：_User *Tony Lavoie*从*10.1.20.15*登录，用户代理*Mozilla／5.0 (Windows NT 10.0；Win64；x64) AppleWebKit/537.36 (KHTML，如Gecko) Chrome／85.0.4183.121 Safari／537.36*，登录方法*BlueXP Portal Login_*</block>
   <block id="2cff43f0f641bc8705f38ceb3049b8ca" category="sidebar">管理和其他任务</block>
+  <block id="c0662b30d3408e55d4ca86a4556ab305" category="cell">Cloud Insights每6小时自动注销一次</block>
+  <block id="125d2f260a38158435c7e7d5900894da" category="cell">这是由于禁用了浏览器第三方Cookie。用户可以将其浏览器配置为启用所有第三方Cookie、也可以使用较窄的例外列表仅启用Cloud Insights的例外列表。
+
+示例
+打开浏览器的设置
+
+选择"允许所有Cookie "选项。
+*或*
+选择"阻止第三方cookie"并为_[\*.]auth0.com和_[*.]netapp.com添加例外。
+
+Microsoft Edge会对例外情况采用与Chrome相同的格式。
+
+在Firefox中、Cookie例外仅指定为_auth0.com和_netapp.com。</block>
 </blocks>

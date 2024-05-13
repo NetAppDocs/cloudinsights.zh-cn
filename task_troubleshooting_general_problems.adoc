@@ -31,16 +31,18 @@ keywords: troubleshooting, problems, browser, login, log in, accessing, access t
 | * 问题： * | * 请尝试此操作： * 
 
 
-| Cloud Insights 每 5 分钟注销一次 | 允许第三方接受所需的NetApp和auth0 cookie。
+| Cloud Insights每6小时自动注销一次 | 这是由于禁用了浏览器第三方Cookie。用户可以将其浏览器配置为启用所有第三方Cookie、也可以使用较窄的例外列表仅启用Cloud Insights的例外列表。
 
 示例
-在Chrome中、在浏览器URL中输入"chrome：//settings /cookie"。
+打开浏览器的设置
 
 选择"允许所有Cookie "选项。
 *或*
-选择"阻止第三方cookie"并为[\*.]auth0.com和[*.]netapp.com添加例外。
+选择"阻止第三方cookie"并为_[\*.]auth0.com和_[*.]netapp.com添加例外。
 
-注意：创建异常时、请务必选择"在此站点上包含第三方Cookie "选项。 
+Microsoft Edge会对例外情况采用与Chrome相同的格式。
+
+在Firefox中、Cookie例外仅指定为_auth0.com和_netapp.com。 
 
 
 | 我有BlueXP帐户、但无法登录到BlueXP。 | 从打开服务单 https://mysupport.netapp.com/site/help[]。选择类别“blueXP.netapp.com >帐户/登录问题”或“bluexp.netapp.com >联合问题”。  这些内容专门针对BlueXP问题。
