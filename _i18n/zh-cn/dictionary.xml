@@ -768,7 +768,6 @@
   <block id="f64880272c45a077dc9152ab7dd2f24a" category="paragraph">将主机分配给应用程序后，您可以将其余资产分配给应用程序。要访问应用程序的登录页面，请单击 * 管理 &gt; 应用程序 * 并选择您创建的应用程序。</block>
   <block id="ccbd604baf2f1984132ebb1bbeb588fc" category="list-text">用户的位置</block>
   <block id="6156c31e2cc5625d769ef3adb7a3ec3c" category="section-title">检查实体信息</block>
-  <block id="4a4a73d66611aace8d92f097448ce81b" category="paragraph">介绍详细信息，包括：</block>
   <block id="7a1a5f3e79fdc91edf2f5ead9d66abb4" category="list-text">读取</block>
   <block id="1129c0e4d43f2d121652a7302712cff6" category="list-text">写入</block>
   <block id="686e697538050e4664636337cc3b834f" category="list-text">创建</block>
@@ -2914,53 +2913,8 @@
   <block id="803c4a5e4b5f34cadc25972b0c14aa04" category="cell">操作系统架构操作系统名称操作系统版本运行时规范运行时规范供应商运行时规范版本正常运行时 VM 名称运行时 VM 供应商运行时 VM 版本节点名称节点 IP</block>
   <block id="a53a32f48009c614f61507a6499dfbf6" category="cell">类已加载类已加载总类已卸载内存堆已提交内存堆已使用最大内存堆已使用内存非堆已提交内存非堆初始化内存非堆最大内存未堆已使用内存对象待定最终确定操作系统处理器可用操作系统已提交虚拟内存大小操作系统可用 物理内存大小操作系统可用交换空间大小操作系统最大文件描述符计数操作系统打开文件描述符计数操作系统处理器 CPU 负载操作系统处理器 CPU 时间操作系统 CPU 负载操作系统系统负载平均操作系统总物理内存大小操作系统总交换空间大小线程守护进程计数线程峰值计数 线程计数线程已开始总数垃圾收集器副本收集计数垃圾收集器副本收集时间垃圾收集器标记 - 扫描收集计数垃圾收集器标记 - 扫描收集时间垃圾收集器 G1 旧一代收集时间垃圾收集器 G1 年轻一代收集计数垃圾收集器 G1 年轻一代收集时间垃圾收集器并发标记 - 扫描收集计数垃圾收集器并发标记 - 扫描收集时间垃圾收集器并行收集计数垃圾收集器并行收集时间垃圾收集器并行收集标记 - 扫描收集计数垃圾收集器并行收集标记 - 扫描收集时间垃圾收集器并行收集收集收集器收集计数垃圾收集器并行收集 收集时间</block>
   <block id="96633c4bbe4066df6cca5184b0c3138c" category="doc">配置数据收集器</block>
-  <block id="f2c00107b5158d2563b78a7e2ec3a970" category="paragraph">您可以在 Cloud Insights 环境中配置数据收集器，以便从数据中心中的主机，服务或设备收集数据。</block>
-  <block id="22265760d3379d0bb5a64374d95aa587" category="list-text">要配置数据收集器，您必须具有帐户所有者或管理员权限。</block>
-  <block id="b8ad8b1d3e73e72eeba197fe8cfed4ef" category="list-text">您必须先配置采集单元（用于基础架构）或代理（用于服务或主机），然后才能开始收集数据。</block>
-  <block id="b776d95fcadabfbede1f04ed42e70b38" category="list-text">您需要用于收集数据的基础架构设备的凭据。</block>
-  <block id="46b64733605b7642b18a0bb2d586bd5c" category="paragraph">要从中收集数据的所有设备都需要设备网络地址，帐户信息和密码。</block>
-  <block id="f4b59a337513071e6d4843f553d49bc6" category="section-title">凭据安全性</block>
-  <block id="4a2fd5083496ddce3be60eef8073b637" category="paragraph">在 Cloud Insights 中输入数据收集器凭据时，这些凭据会进行加密，并首先通过 AU 的公有密钥加密并通过 HTTPS 加密发送到采集单元（ AU ）。当 AU 使用加密值与设备和软件进行通信时，加密值会进行解密。</block>
-  <block id="ca28d4c52bb2a654a2678ff8d3dcefa2" category="section-title">配置 Data Collector</block>
-  <block id="c339d1a32a95310d9e4a053f77cad28b" category="list-text">根据您选择的数据收集器类型，安装步骤会有所不同。</block>
-  <block id="13762a4c9e8fa47d574db722fc1b3fa2" category="section-title">操作系统：</block>
-  <block id="b00d7c7ac92f4aaddc21f00ae51e9ffb" category="paragraph">要开始从环境中收集操作系统或服务数据，必须至少安装一个 Cloud Insights 代理。您可以根据需要安装任意数量的代理。每个代理都可以从多个服务收集数据。</block>
-  <block id="6caa4b361faebcb803a409db1b88d8a6" category="paragraph">除了从服务收集数据之外，每个代理还充当安装它的 VM/ 主机的数据收集器。收集的数据在信息板小工具或查询中显示为 " 节点 " 数据。</block>
-  <block id="78ace3389e374f5f298be8d67bfa4a58" category="list-text">单击要从中访问 Cloud Insights 的 VM 或主机（即节点）的平台类型或操作系统。</block>
   <block id="08c86f7c6085b75b443831ac2339b9eb" category="list-text">选择代理访问密钥。</block>
-  <block id="c2bfe2eaf58eb4609047a3e1eea65778" category="list-text">将显示的命令复制到剪贴板。您可以单击剪贴板图标以快速复制命令。</block>
-  <block id="a53af23d658a9535fc02012c55ef38c8" category="list-text">在代理 VM/ 主机上打开终端 / 命令窗口，然后粘贴命令。按 Enter 执行命令。</block>
-  <block id="c3b9d0200b01f416076842501c9ae206" category="list-text">安装代理后，单击 * 完成 * 。代理将开始收集数据。</block>
-  <block id="5010b1ac42dba70893a9d0885fbe6153" category="paragraph">在信息板中显示节点数据或可供查询之前，可能需要长达两个轮询周期。</block>
-  <block id="0e5b9bfd33de4aacc0a1ca8f5719168a" category="paragraph">服务数据收集器是指基于电报代理的服务数据收集器，例如 Docker 或 Kibana 。</block>
-  <block id="95237aad105439410978d832422ec5f8" category="list-text">您必须至少有一个 Cloud Insights 代理才能从您的环境中收集服务数据。如果您未安装代理，则在配置服务数据收集器时，系统将提示您安装一个代理。</block>
-  <block id="9d1d946c56f906fe4eda196507962e75" category="list-text">必须在您的环境中安装并运行要从中收集数据的服务。</block>
-  <block id="f5b3a38421e3564dc407081a58490b3b" category="list-text">单击服务数据收集器。</block>
-  <block id="7aaf5cf369a105094116ca809d0cc0c2" category="list-text">选择代理操作系统或平台。如果尚未为平台安装代理，请按照说明进行操作。</block>
-  <block id="26983a904e0717c520032a2178795368" category="list-text">单击 * 继续 * 。</block>
-  <block id="04d6e043600695763216a74149b824d0" category="list-text">按照说明配置数据收集器。您可以单击剪贴板图标以快速复制显示的命令或代码片段。</block>
-  <block id="33365fcfbdf45a4d9ec1761cc9bb43e2" category="list-text">正确配置数据收集器后，单击 * 完成 * 。</block>
   <block id="de0a3477c1c391a811d9b2911a84fb19" category="paragraph">可能需要长达两个轮询周期，才能将服务中的数据显示在信息板中或用于查询。</block>
-  <block id="cfd3e8ee788479f95905fd7f4ae27be6" category="section-title">基础架构：</block>
-  <block id="7b7102b6e1f4866e3babe053b86b90ac" category="paragraph">基础架构数据收集器包括存储或交换机等内容。</block>
-  <block id="ac637daa3ccd1254a990c56b13cbf3e9" category="list-text">您必须至少配置一个采集单元，才能开始收集基础架构数据。</block>
-  <block id="c050d9221193610ab179db826d0ebe03" category="list-text">单击基础架构数据收集器。</block>
-  <block id="211512ec77b8c6e0ce1dab5a4bb593aa" category="list-text">输入数据收集器的名称。名称可以包含以下字符：</block>
-  <block id="3fd760f5a5dc71312ce1dd808d747265" category="list-text">字母（ a-z ）</block>
-  <block id="c941c7696194a60a16e5962a0d5dbb37" category="list-text">数量（ 0-9 ）</block>
-  <block id="e5e058c4eece6b2f44372f1be024219c" category="list-text">连字符（ - ）</block>
-  <block id="7d36ba9acc13f7a9d2fc56dcb952101b" category="list-text">下划线（ _ ）</block>
-  <block id="ec69cea1e605a2ea754da699ed4b967b" category="list-text">句点（ . ）</block>
-  <block id="35f7e769e75dabc896b7969ce411cfaa" category="list-text">空间（）</block>
-  <block id="ab36095ea637c9091ba22ae50c85cc76" category="paragraph">名称不能以空格，句点或连字符开头或结尾。</block>
-  <block id="13ea58a04825bf78b2f2da7f3b0831b5" category="list-text">输入要与此数据收集器关联的采集单元。</block>
-  <block id="82f142e6d7380c3d45f29c8550f338a3" category="list-text">在配置屏幕中输入所需字段。</block>
-  <block id="19110098d937705ce65c4bb5ad97a475" category="list-text">单击 * 高级配置 * 以输入其他配置字段。并非所有数据收集器都需要高级配置。</block>
-  <block id="4279b596662924e6b4010f919f84d17c" category="list-text">单击 * 测试配置 * 以验证是否已正确配置数据收集器。</block>
-  <block id="618758304f92b490c243390d7a43774d" category="list-text">完成后，单击 * 添加收集器 * 。</block>
-  <block id="644b4fa94e97c40a6df4575a32bdb388" category="inline-link-macro">配置采集单元</block>
-  <block id="0d72fee8b671c19a26656d7fb11ab5c7" category="paragraph">有关添加新采集单元的帮助，请参见 <block ref="f6d6d1d8bb58f56bfd9166104e49bf6e" category="inline-link-macro-rx"></block></block>
-  <block id="03600e14e8c249775af21bb69579dc2c" category="paragraph">+ 可能需要长达两个轮询周期，才能将来自环境的数据显示在信息板中或用于查询。</block>
   <block id="3305ac26b15ec00c4372c85a08bb7042" category="summary">支持的数据收集器列表。</block>
   <block id="9a08f57372dad69b83256b6cf3081404" category="doc">Cloud Insights 数据收集器列表</block>
   <block id="16d256dc1b7b58638a9529e552435cb7" category="paragraph">Cloud Insights 支持许多供应商和服务提供的各种数据收集器。</block>
@@ -4829,28 +4783,6 @@
   <block id="252ab915aaf37678f2c31259844d9830" category="paragraph"><block ref="252ab915aaf37678f2c31259844d9830" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b016f6d8b58fbc57dff98ba0460cd713" category="inline-link-macro">OpenZFS 文档</block>
   <block id="5f9f2125ea94bc8ee63a894e33ebaf33" category="paragraph">可以在中找到追加信息 <block ref="0ee1b5ccb1dd9edb24ef60d421e0c18a" category="inline-link-macro-rx"></block>。</block>
-  <block id="de2080ec5e0e147976f00793ebd67db1" category="summary">取证实体详细信息</block>
-  <block id="ab440e736c2d9e3403efa72117388494" category="doc">取证实体详细信息</block>
-  <block id="0759459fd7984031945fba78588c75bb" category="paragraph">使用实体详细信息页面可访问有关实体的详细信息。</block>
-  <block id="f8db4b534ba055c3a01a896220cf7409" category="paragraph">您可以访问</block>
-  <block id="153bbbe3830b008df288fad38c0b3a83" category="list-text">实体配置文件</block>
-  <block id="8947a09168ba764c52eb7b93be315a8f" category="list-text">单击以访问 "Entity Overview"</block>
-  <block id="14526abd8bda5af347775025cd5342cf" category="list-text">社区</block>
-  <block id="54bc6f9dec592e510fe90ddcb5c6e572" category="list-text">上次访问</block>
-  <block id="22936c219b9fad247df75a21ff0a7b0e" category="list-text">单击 user 以访问 "User Overview"</block>
-  <block id="6f6cb72d544962fa333e2e34ce64f719" category="list-text">大小</block>
-  <block id="85525c565d3741d72d4f4f86d783bd00" category="list-text">用户和社区</block>
-  <block id="c1e735eead256ce16dddd5709aaef387" category="list-text">用户访问实体的次数</block>
-  <block id="0e24ee04bc9ce222c893aba101ef6d43" category="list-text">社区访问实体的次数。</block>
-  <block id="5679e71f2012621385ed2e7789f3207b" category="list-text">实体 Bahavior</block>
-  <block id="40926e069052929a1c74d824a8e32295" category="list-text">近期活动：</block>
-  <block id="a1f6abd56494e8f8aa2dd028fe6e8327" category="list-text">上次访问日期</block>
-  <block id="d31527e48f3e267b31ebf68a8452a926" category="list-text">上次访问此实体的用户</block>
-  <block id="282662c8bc8f4ccffd063bc4179b8d94" category="list-text">访问实体的位置</block>
-  <block id="456d0deba6a86c9585590550c797502d" category="list-text">操作</block>
-  <block id="e1796f873ff8ad4bc99c1496e6eb7f87" category="list-text">写入操作的数量</block>
-  <block id="740155e144f4a52eaeb72a9385ed0d33" category="list-text">读取操作的数量</block>
-  <block id="c1e108c2f999f00f38cf1ce52cc8164f" category="list-text">对元数据的访问次数</block>
   <block id="0f5b0e7a7a789ccd322ec7cb57023624" category="doc">IP 设备解析</block>
   <block id="94c40ee234b0010adb864fb9bf373a5b" category="paragraph">"IP Identify" 屏幕将显示通过自动设备解析或手动设备解析标识的任何 iSCSI 和 CIFS 或 NFS 共享。此外，还会显示未标识的设备。此屏幕包括设备的 IP 地址，名称，状态， iSCSI 节点和共享名称。此外，还会显示已成功标识的设备的百分比。</block>
   <block id="e63b461ab7abed846867f3bfde06b84e" category="paragraph"><block ref="e63b461ab7abed846867f3bfde06b84e" category="inline-image-macro-rx" type="image"></block></block>
@@ -5043,28 +4975,6 @@
   <block id="fa2a3440e30dd958c3218bca7dd89b7f" category="list-text">要调整列大小，请将鼠标悬停在列标题上，直到出现蓝条。将鼠标放在该条上并向右或向左拖动。</block>
   <block id="98ec2214f277d84c29261f104a024f01" category="list-text">要移动列，请单击列标题并向右或向左拖动。</block>
   <block id="db34aef9a8c0b8612fe136bf81640834" category="paragraph">滚动浏览查询结果时，请注意，由于 Cloud Insights 会自动轮询数据收集器，因此结果可能会发生变化。这可能会导致某些项目丢失，或者某些项目出现无序，具体取决于它们的排序方式。</block>
-  <block id="e5f2463f379aba48a0f9ca6c913203cc" category="summary">IO 密度</block>
-  <block id="169c132355ddfd9b9cf9d499b71aeb68" category="doc">确保 IO 密度数据仅描述内部数据卷</block>
-  <block id="7bb98d35c109da2ebbaa1c7a65d3f399" category="paragraph">在 NetApp 存储系统中，根聚合包含根卷，其中包含用于管理和控制存储系统的特殊目录和配置文件。这些操作可能会导致根聚合中发生大量活动。在 Cloud Insights 中查询 IO 密度最高的前 10 个内部卷时，结果可能会包括 NetApp 根聚合作为前 10 个卷的成员。</block>
-  <block id="46b224de326ea16a55f2530720d59843" category="paragraph">本指南介绍如何轻松识别 NetApp 根聚合，将其与内部卷查询结果隔离以及创建规则，以便在将任何新的 NetApp 根聚合添加到系统中时将其排除。以下 Cloud Insights 功能用于确保 I/O 密度报告源自内部数据卷。</block>
-  <block id="ea13f09d1bfd316504e8a7c0dfcf2fb4" category="list-text">系统将创建一个查询来标识由 Cloud Insights 监控的所有 NetApp 根聚合。</block>
-  <block id="289afca30f86dfd5f20fe4a89589b1db" category="list-text">系统将创建一个标注规则以排除 NetApp 根聚合。</block>
-  <block id="c0bea941d1547f078dda6774ee69c9dd" category="list-text">在 Cloud Insights 中，创建一个查询以确定环境中的 NetApp 根聚合： * 查询 &gt; +New Query &gt; 存储池 *</block>
-  <block id="68eef2c4bf0c1205a9d57f62ff34da2c" category="paragraph">此示例对名称使用 "aggr0" 。创建聚合时，只需满足以下名称要求：</block>
-  <block id="908b60c3be27b2357fa1238e02988f51" category="list-text">它必须以字母或下划线（ _ ）开头。</block>
-  <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">它只能包含字母，数字和下划线。</block>
-  <block id="7ce969a0dacdf30d2053f97537327dfe" category="list-text">字符数不能超过 250 个。</block>
-  <block id="ddc5fe45a1f8c76f3176ef59297915a5" category="paragraph">大多数情况下，聚合的名称为 aggr0 ， aggr_0 或类似的内容。要确定环境中的所有 NetApp 根聚合，可能需要一个迭代过程。</block>
-  <block id="36460e710952fbc968c76ef4e9f3d51e" category="paragraph">标注是您分配给资产的专用注释，可用于按资产标注筛选资产。您创建的标注将用于标识环境中的 NetApp 根聚合，并确保它们不包含在 IO 密度最高的内部卷列表中。</block>
-  <block id="019f9302ad1b005fa5fa6e0bdda042c7" category="list-text">创建标注以关联通过查询确定的所有 NetApp 根聚合： * 管理 &gt; 标注 *</block>
-  <block id="554a808ec0af233c17e7e70b43072e1f" category="list-text">输入标注的问题描述： * 从 " 高 I/O 密度 " 列表中删除根聚合 *</block>
-  <block id="146fab5bc96cd6aa587f1c2a260a7b70" category="paragraph">除了手动将标注应用于单个资产之外，您还可以使用标注规则自动将标注应用于多个资产。标注规则基于您创建的查询，在系统上运行时，它们会将新资产添加到现有资产集。如果不包括这些资产集，则新资产也会自动排除。</block>
-  <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">您必须已创建并保存一个查询，用于标识您在环境中标识的 NetApp 根聚合。</block>
-  <block id="21611fc590adaaf65bfbe5d847c57bdd" category="list-text">在 Cloud Insights 菜单中，单击 * 管理 &gt; 标注 *</block>
-  <block id="d6bed7bad1624af0fa9be87684edae09" category="list-text">在名称框中，输入用于描述规则的唯一名称： * 根 AggrExcluse*</block>
-  <block id="d5e6634ae4019ea4993c5fee3a276807" category="list-text">单击查询并选择 Cloud Insights 应用标注规则时应使用的查询： * 聚合 0*</block>
-  <block id="a8297ead7d4d1f0590bf46a98e70b494" category="list-text">单击标注并选择： * 根 AGG 排除 *</block>
-  <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">单击 * 值 * 并输入 * 正确 *</block>
   <block id="2ccb9ffac0ed017ddb6e68683bb0b7d5" category="list-text">安装，运行脚本和卸载需要 sudo 权限。</block>
   <block id="19b6dd145ff77b5b97341237076cba16" category="section-title">安装代理的步骤</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">系统将显示 "Add an Agent" 页面：</block>
@@ -5723,10 +5633,6 @@
   <block id="8ee4098d58fcec0a8ad1bbc6ef3a278b" category="paragraph">系统将显示供应商安排的可用数据收集器。</block>
   <block id="d0db1cfd406b8574a7bc2d171e484e1e" category="paragraph">在对话框中，您可以配置数据收集器并添加采集单元。</block>
   <block id="8e90b5dce519000dad943c071bfdb2d7" category="list-text">输入数据收集器的名称。</block>
-  <block id="b24e662ae4d73165d52933b92edea048" category="paragraph">名称可以包含字母（ a-z ），数字（ 0-9 ），短划线（ - ），下划线（ _ ），撇号（ ' ）， 和句点（ . ）。</block>
-  <block id="792171f0bd1e324307f6b4ba189249a8" category="list-text">单击 * 高级配置 * 以添加其他配置字段。（并非所有数据收集器都需要高级配置。）</block>
-  <block id="fde3f7c671a4c40a9d5099c319bbabaa" category="list-text">单击 * 添加收集器 * 以保存配置并将数据收集器添加到 Cloud Insights 租户。</block>
-  <block id="62ab4599363ab12f861dc69c2a905582" category="paragraph">添加新的数据收集器后， Cloud Insights 将启动三个轮询：</block>
   <block id="98be204914713a1fd39ff19bbc956666" category="list-text">第一次清单轮询：立即</block>
   <block id="f8be5685f8c7c5768bbc90c8ce7fb95d" category="list-text">首次执行性能数据轮询以建立基线：在清单轮询之后立即执行</block>
   <block id="9baa8b33ea662dffa7faa1d9b47e5e8d" category="list-text">第二次性能轮询：完成第一次性能轮询后 15 秒内</block>
@@ -6763,11 +6669,6 @@
   <block id="76dfc651463ab4e67ce2140b8aadb473" category="paragraph">可以使用 PEM 文件验证签名校验和文件：</block>
   <block id="6c32334bfce9f857b0fdbdca68040a0b" category="paragraph">在对所有项目进行满意的验证后，可以通过运行以下命令启动代理安装：</block>
   <block id="013aa4ffc40507022dd1b0b1a936ff20" category="paragraph">Kubernetes 筛选器为上下文筛选器，例如，如果您位于特定节点页面上，则 pod_name 筛选器仅会列出与该节点相关的 Pod 。此外，如果您对特定命名空间应用筛选器，则 pod_name 筛选器将仅列出该命名空间中节点 _and_ 上的 Pod 。</block>
-  <block id="e2b330c7ae678ef7cd6514d5ae7e7e7c" category="list-text">当系统提示您配置通知时，选择通过电子邮件， Webhook 或这两者发出警报，然后选择要通知的警报类型（严重，警告，信息和 / 或已解决）。您可以选择通知到全局监控器收件人列表（在 * 管理 &gt; 通知 * 中配置），也可以指定其他收件人。准备好继续后，单击 * 完成设置 *</block>
-  <block id="0292cc6d66cbe7b6a5ec202251834d24" category="inline-image-macro">收集器通知</block>
-  <block id="6e4e94174c881dd343d58645dcd7fece" category="paragraph"><block ref="6e4e94174c881dd343d58645dcd7fece" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5d1096bf66c89ad0f817c4dc28e58b2f" category="inline-image-macro">编辑收集器通知</block>
-  <block id="1016031bc19103211cb4e343acdc32cc" category="paragraph"><block ref="1016031bc19103211cb4e343acdc32cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="eb546fdc997b493ec3d379e70e3852fd" category="cell">webhook 目标 URL ，包括 _http ： //_ 或 _https ： //_ 前缀以及 URL 参数</block>
   <block id="227a088b608ffd64b71ecc436b993f13" category="paragraph">在本节中，您可以添加所需的任何自定义参数和 / 或密码。出于安全原因，如果定义了密钥，则只有 webhook 创建程序可以修改此 webhook 通道。它对其他用户是只读的。您可以在 URL/Headers 中使用密码： _%%&lt;secret_name&gt;%%_ 。</block>
   <block id="614568b04aa19eaf96a3b92a727988aa" category="summary">配置 Dell EMC XC 系列数据收集器。</block>
@@ -7699,7 +7600,6 @@
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">了解更多信息。</block>
   <block id="c1c7efc58c7b64cc21f3ae15934e8271" category="section-title">Kubernetes命名空间即将用尽</block>
   <block id="806f6dbcc954f0a88489885f517d1d1d" category="paragraph">通过运行空间不足Insight的Kubernetes命名空间、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。 <block ref="604196d3b206e62dba15152db76beddc" category="inline-link-macro-rx"></block></block>
-  <block id="f9696d5ebb5a2bc3b4e557d0f479e831" category="paragraph">查看* ONTAP 数据收集器*登录页面时、您可以单击数据收集器摘要部分"通知"字段中的铅笔图标来修改通知。</block>
   <block id="851540d32e033a0c14b63879881da871" category="summary">洞察力可以帮助您预测Kubernetes空间何时可能会全满。</block>
   <block id="4fef891481b95674ba195bcf5ebf7efb" category="doc">洞察力：Kubernetes命名空间即将用尽</block>
   <block id="8754218641c0cb64c48e8a8cc68703c4" category="paragraph">环境中的空间不足永远不是一种好情况。Cloud Insights 可帮助您预测Kubernetes永久性卷达到全满前的时间。</block>
@@ -9716,10 +9616,7 @@
   <block id="3b7c5615013c6b42362845591653e503" category="cell">启用DNSLook.e.</block>
   <block id="1d2b775d8b166dda0a22ca0ffa3f537c" category="cell">是非题、启用DNS查找</block>
   <block id="349a396fe021418ac0edbee3b447f4d5" category="section-title">AgentConfiguration文件示例</block>
-  <block id="44df9c10959f57dfdf2dd50f7591a9c9" category="section-title">配置操作员</block>
   <block id="cac54dc379f23a7aed8745bde8386662" category="inline-link-macro">可用设置</block>
-  <block id="cfda62a17e54042dffdf6eb6a74c7977" category="paragraph">在较新版本的运算符中，可以在_AgentConfiguration_自定义资源中配置最常修改的设置。您可以通过编辑_operator-config.yaml文件来在部署操作员之前编辑此资源。此文件包含一些已注释掉的设置示例。请参见列表 <block ref="d0a687c4569dc784e63f3960b33ab7c7" category="inline-link-macro-rx"></block> 对于最新版本的运算符。</block>
-  <block id="342414165099895140bbfbd3ffb613ca" category="paragraph">您也可以在部署操作员后使用以下命令编辑此资源：</block>
   <block id="3ab04e244a91c8a73c48633c62ac613a" category="paragraph">要确定您部署的操作员版本是否支持AgentConfiguration、请运行以下命令：</block>
   <block id="51ba9262aad7e83aa5f74ed6dc93a039" category="paragraph">如果您看到“Error from server (NotFound)”消息，则必须先升级操作员，然后才能使用AgentConfiguration。</block>
   <block id="664cfa316d48b417a500c0e898f37409" category="paragraph">从NetApp Monitoring Operator安装磁贴运行"Image Pull Snippet"。此命令将登录到Cloud Insights 存储库、提取操作员的所有映像依赖关系、然后注销Cloud Insights 存储库。出现提示时、输入提供的存储库临时密码。此命令可下载操作员使用的所有映像、包括可选功能的映像。请参见以下内容、了解这些图像用于哪些功能。</block>
@@ -10182,7 +10079,6 @@ FAS/AF8080</block>
   <block id="29dc284dcf38e4fe32feb8a0fd5c0b4b" category="cell">AWS Cloud Volumes</block>
   <block id="36df1b975561708b246ef1801ea416e5" category="cell">适用于 ONTAP 的 FSX</block>
   <block id="13816363e2eaa66d7be294be0dbaef8c" category="cell">数据 ONTAP</block>
-  <block id="64b14a7e6bb27e2b2b4b1397266f46b8" category="cell">qtree.1+</block>
   <block id="341a7ed392b3acf42503f54b89dd0954" category="cell">已用许可证百分比</block>
   <block id="88bf89db528a107f9dcf9d0ab7b1203b" category="cell">内部卷限制</block>
   <block id="7212522e5e7c1b74429f93734919f229" category="cell">克隆节省的总容量</block>
@@ -12813,7 +12709,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="80502f098bcf776c1d9ceec1ba9d636a" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择Couchbase。</block>
   <block id="b9edb2d8cbff35711b7021f32a2692dd" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择"链接"。</block>
   <block id="53a22ff7bf05343afd43baa85e5c7883" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择MySQL。</block>
-  <block id="6e79cf0edf33ec7a0066155d964eeb57" category="list-text">从Cloud Insights菜单中、单击*可观察性&gt;收集器*、然后单击*+ Data Collector*按钮。</block>
   <block id="710ec696cccefe4c3faa1d7ebf8fca87" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择“Kbana”。</block>
   <block id="c71f6654a45927e285ab22a697438b43" category="list-text">从*Observability &gt; Collectors*中，单击*+Data Collector*。选择MongoDB。</block>
   <block id="5bff30d13ce98c505187872963af1f25" category="section-title">正在创建NetApp BlueXP帐户</block>
@@ -12895,7 +12790,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="04178a20ab55400da1419fd8fb46d169" category="paragraph">Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数据收集器的_Advanced Configuration_部分中启用此收集、并确保已将ONTAP系统配置为提供 <block ref="d459f31dbd039334427e234b6edb8373" category="inline-link-macro-rx"></block> 并具有相应的 <block ref="d90f3f5210a51c1e01a73513b6257018" category="inline-link-macro-rx"></block> 设置。</block>
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">工作负载运行状况可在* Kubernetes &gt; Explore &gt; Workloads*页面上一目了然地查看、因此您可以快速查看哪些工作负载运行良好以及哪些工作负载可能需要一些帮助。轻松确定运行状况问题描述是否与基础架构、网络或配置更改相关、并深入分析根发生原因。</block>
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">有关在Kubnetes上安装的信息、请参见 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 页面。</block>
-  <block id="ed300e62408d01715c593931df6a2352" category="paragraph">有关 Kubernetes 安装说明，请参见 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">适用于Kubbernetes的数据收集器</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Data Collector：KubeNet</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubnetes Monitoring Operator安装和配置</block>
@@ -13030,9 +12924,6 @@ kubect get all -n &lt;namespace&gt;| grep -i psp (应显示未找到任何内容
   <block id="70d79a6ca6098037988336f11346dce8" category="cell">Operator命名空间中的Net-Observer (Workload Map) Pod位于CrashLoopBackOff中</block>
   <block id="e49c236734fe2ea50ae36fcb5353eed9" category="cell">Pod正在Operator命名空间中运行(默认值：netapo-monitoring)、但在查询中、UI中不会显示工作负载映射或KubeNet指标的任何数据</block>
   <block id="665dddc2adb2f34c745ef47345ee5e93" category="cell">Operator命名空间中的某些Net-observer Pod处于Pending状态</block>
-  <block id="a5ecb374e5b37ce04e31d68dc3716305" category="cell">安装Kubenetes Monitoring Operator后、我的日志中立即显示以下内容：
-
-[inputs.prometheus]插件错误：向发出HTTP请求时出错<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 获取<block ref="189319aba70d8b3a1cf8eef70b48f546" category="inline-link-rx"></block> 拨号&lt;namespace&gt; ：LOOKUP KUbe状态指标.tcp.svc.cluster-local：无此主机</block>
   <block id="b3b6bea000b13acbfcb412bad49ee494" category="cell">验证您的Kubbernetes版本(即<block ref="4fc58818ca77fb3a60cbd34a7f7d5071" prefix=" " category="inline-code"></block>）。  如果是v1.20.x或更低版本、则这是预期的限制。  随Kubernetes Monitoring Operator部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。</block>
   <block id="cacd73b257654b42f59477320860f203" category="cell">我发现Kubenetes监控操作员部署的POD因资源不足而崩溃。</block>
   <block id="1bf4c34fd6e2ff1bf1741953bce0f5e1" category="cell">请参见Kubbernetes监控操作员 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 根据需要增加CPU和/或内存限制。</block>
@@ -13134,4 +13025,29 @@ Microsoft Edge会对例外情况采用与Chrome相同的格式。
   <block id="3b1dbe846304b427475d6a670fb96413" category="inline-image-macro">覆盖小工具的信息板时间范围</block>
   <block id="c9b0370dc5d789bfc283022e4c0d9d9e" category="paragraph"><block ref="c9b0370dc5d789bfc283022e4c0d9d9e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="776202c829612e565a462d31af745afd" category="paragraph">信息板和资产登录页面上小工具中的数据会根据选定信息板时间范围确定的刷新间隔自动刷新。刷新间隔取决于小工具是时间序列（折线图，样条曲线图，面积图，堆积面积图）还是非时间序列（所有其他图表）。</block>
+  <block id="16a53ba18c619dcf3d471d85becaeee6" category="section-title">开始之前需要注意的重要事项</block>
+  <block id="ef2fbd69b6e60cf6860a0466960c15a2" category="inline-xref">自定义存储库</block>
+  <block id="ca988e68e82cbabbd81d5c8fe6c458c2" category="inline-xref">OpenShift</block>
+  <block id="fd75e30f03557ae02b87c843dca05eef" category="paragraph">如果您使用运行 <block ref="1997cc9e11e3840958347d54a5502495" category="inline-xref-macro-rx"></block>、具有 <block ref="8117c39ae2fe2d46fc88eb3e138ef1e6" category="inline-xref-macro-rx"></block>或正在使用 <block ref="355c126f2151d7a3495e6210dabdd072" category="inline-xref-macro-rx"></block>、请仔细阅读以下各节。</block>
+  <block id="ccd3239a9f19d6d508e3603882b2f0a7" category="paragraph">另请阅读相关内容 <block ref="abccd48aba555dd896a8cc74442f4360" category="inline-xref-macro-rx"></block>。</block>
+  <block id="cc2bb73c3e6fbe9cfa1882cd8e797fd4" category="paragraph">如果要从先前安装升级、请阅读 <block ref="8c16618fd0a2a4546027523bc90153a9" category="inline-xref-macro-rx"></block> 信息。</block>
+  <block id="4ce29774235b5ad70135520aad0c4a92" category="paragraph">要安装NetApp Kubernetes监控操作员、您可以在环境中的两个位置使用代理。这些代理系统可以是相同的、也可以是单独的：</block>
+  <block id="3aabe2789e92746b5404b30428bb4f9e" category="paragraph">如果您对其中一个或两个使用代理、则要安装NetApp Kubornetes操作监控器、必须先确保将代理配置为可以与Cloud Insights环境进行良好的通信。例如、从要安装Operator的服务器/VM中、您需要能够访问Cloud Insights并能够从Cloud Insights下载二进制文件。</block>
+  <block id="73689eeba538dc0b4e24b0c08682858c" category="paragraph">对于用于安装NetApp Kubernetes操作监控器的代理、在安装操作员之前、请设置_http_proxy/https_proxy_environment变量。对于某些代理环境、您可能还需要设置_no_proxy environment_变量。</block>
+  <block id="05de88b1f0962d418af51426b2e42b5c" category="paragraph">要设置变量、请在您的系统上*在*安装NetApp Kubernetes监控操作员之前*执行以下步骤：</block>
+  <block id="a4e1e6009cd02048a3c4c625810efdde" category="paragraph">要使Kubernetes集群与Cloud Insights 环境通信所使用的代理、请在阅读完所有这些说明后安装NetApp Kubernetes监控操作员。</block>
+  <block id="6a487db38d52ee4c14d91f1b1ddd2fac" category="paragraph">在部署NetApp Kubernetes Monitoring Operator之前、请在operator-config.yaml中配置AgentConfiguration的代理部分。</block>
+  <block id="496310011786854d1bf0863b20b159b3" category="paragraph">默认情况下、NetApp Kubrenetes监控操作员将从Cloud Insights 存储库中提取容器映像。如果您将某个Kubornetes集群用作监控目标、并且该集群配置为仅从自定义或私有Docker存储库或容器注册表中提取容器映像、则必须配置对NetApp Kubornetes监控操作员所需容器的访问权限。</block>
+  <block id="4a3ecd51c30dc55cebd7ed9babbb7931" category="list-text">Kube-RBAC-代理</block>
+  <block id="bb84790255aac66744320e4417143dd8" category="list-text">流畅位</block>
+  <block id="2941fa605b5a46d4cf07aade64af8b6e" category="list-text">Kubbernetes-event-exporter</block>
+  <block id="4099aa818be44a204ef7ec3ba69b96c7" category="inline-link-macro">要查看的聚合</block>
+  <block id="6046897f8c0f41425f2e47227c5932e8" category="paragraph">如果您正在监控的集群包含自定义资源、而这些资源没有集群资源 <block ref="c09eb6051f010e6e01a634a8b6a5c304" category="inline-link-macro-rx"></block>，则需要手动授予操作员对这些资源的访问权限，才能使用事件日志对其进行监控。</block>
+  <block id="8f0ae9ae8e0fd7f3e8fe6ff175a59943" category="list-text">在安装之前或安装之后编辑_operator-additional－permissions．yaml．编辑资源_ClusterRole．&lt;namespace&gt;－additional－permissions</block>
+  <block id="8a75e64ac585bb8eb6efae44768cfc8e" category="list-text">使用动词["GET、"Watch、"list"]为所需的每个组和资源创建一个新规则。参见\https://kubernetes.io/docs/reference/access-authn-authz/rbac/</block>
+  <block id="5aa700b8892918bb447b666e3ba9b2a8" category="list-text">将所做的更改应用于集群</block>
+  <block id="0b681475d547cee4e6a8aa2975d2a6ad" category="cell">安装Kubenetes Monitoring Operator后、我的日志中立即显示以下内容：
+
+[inputs.prometheus]插件错误：向\tcp.tcp.svc.cluster-local http://kube-state-metrics：8080/metrics发出请求时出错：get \tcp.tcp.svc.cluster-local:8080/metrics http://kube-state-metrics：拨号&lt;namespace&gt;&lt;namespace&gt;：LOOKUP Kupe-state-metrics.tcp.svc.cluster-local &lt;namespace&gt;：无此主机</block>
+  <block id="079771aecc679d555303419cd98137ca" category="paragraph">有关 Kubernetes 安装说明，请参见 <block ref="c4dd0ed9c7aa586e1ccc41d08bd166bb" category="inline-link-macro-rx"></block> 页面。</block>
 </blocks>

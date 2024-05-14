@@ -1,16 +1,14 @@
 ---
 sidebar: sidebar 
 permalink: forensic_entity_detail.html 
-keywords: Forensic, entity, entity overview, entity behavior, detail 
-summary: 取证实体详细信息 
+keywords: Forensic, entity, entity overview, entity behavior, entities 
+summary: 取证实体页面 
 ---
-= 取证实体详细信息
+= 取证实体页面
 :toc: macro
 :hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
 :toc: 
-:toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -18,60 +16,18 @@ summary: 取证实体详细信息
 :toc-position: content
 
 
-使用实体详细信息页面可访问有关实体的详细信息。
+" 取证实体 " 页面提供了有关环境中实体活动的详细信息。
 
 
 
 == 检查实体信息
 
-您可以访问
+单击 * 取证 > 活动取证 * ，然后单击 _entities_ 选项卡以访问实体页面。
 
-实体配置文件:: 介绍详细信息，包括：
-+
---
-* 名称
-+
-** 单击以访问 "Entity Overview"
+此页面简要介绍了环境中的实体活动，并重点介绍了以下信息： * 显示每分钟访问的 _unique entities_ 的图形 * 已访问的 _Entity types 的图表 * _ 通用路径 _ 的细分 * 在实体总数中排名前 50 位的实体 _ 的列表
 
+image:CS-Entities-Page.png["实体页面"]
 
-* 类型
-* 社区
-* 路径
-* 上次访问
-+
-** 单击 user 以访问 "User Overview"
+单击列表中的某个实体将打开该实体的概述页面，其中显示了该实体的配置文件，其中包含名称，类型，设备名称，最常访问的位置 IP 和路径等详细信息，以及用户， IP ， 和上次访问实体的时间。
 
-
-* 大小
-
-
---
-用户和社区::
-+
---
-* 用户访问实体的次数
-* 社区访问实体的次数。
-
-
---
-实体 Bahavior::
-+
---
-* 近期活动：
-+
-** 上次访问日期
-** 上次访问此实体的用户
-** 访问实体的位置
-
-
-* 操作
-+
-** 写入操作的数量
-** 读取操作的数量
-** 对元数据的访问次数
-
-
-
-
---
-
+image:CS-entity-detail-page.png["实体概述页面"]

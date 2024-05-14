@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task_query_assign_multiple_applicationss.html 
+permalink: task_query_assign_multiple_applications.html 
 summary: 使用查询为对象分配多个应用程序或标注，或者从对象中删除多个应用程序或标注。 
 keywords: query, queries, application, annotation, multiple 
 ---

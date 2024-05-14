@@ -22,7 +22,7 @@ Cloud Insights 使用此数据收集器收集 Kubernetes Pod ，节点和容器�
 
 == 安装
 
-有关 Kubernetes 安装说明，请参见 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes监控操作员"] 页面。
+有关 Kubernetes 安装说明，请参见 link:task_config_telegraf_agent_k8s.html["Kubbernetes监控操作员"] 页面。
 
 
 

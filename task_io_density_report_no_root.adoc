@@ -1,6 +1,6 @@
 ---
 sidebar: sidebar 
-permalink: task_isolate_root_volume.html 
+permalink: task_io_density_report_no_root.html 
 summary: 在查询高 I/O 密度时，您希望排除根卷。 
 keywords: NetApp, root volume, high I/O, 
 ---

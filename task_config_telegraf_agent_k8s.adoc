@@ -505,7 +505,7 @@ kubect get all -n <namespace>| grep -i psp (应显示未找到任何内容)
 
 | 安装Kubenetes Monitoring Operator后、我的日志中立即显示以下内容：
 
-[inputs.prometheus]插件错误：向发出HTTP请求时出错 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 获取 http://kube-state-metrics.<namespace>.svc.cluster.local:8080/metrics:[] 拨号<namespace> ：LOOKUP KUbe状态指标.tcp.svc.cluster-local：无此主机 | 通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。 
+[inputs.prometheus]插件错误：向\tcp.tcp.svc.cluster-local http://kube-state-metrics：8080/metrics发出请求时出错：get \tcp.tcp.svc.cluster-local:8080/metrics http://kube-state-metrics：拨号<namespace><namespace>：LOOKUP Kupe-state-metrics.tcp.svc.cluster-local <namespace>：无此主机 | 通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。 
 
 
 | 我没有看到为集群中的Kubnetes CronJobs收集任何指标。 | 验证您的Kubbernetes版本(即 `kubectl version`）。  如果是v1.20.x或更低版本、则这是预期的限制。  随Kubernetes Monitoring Operator部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。 
