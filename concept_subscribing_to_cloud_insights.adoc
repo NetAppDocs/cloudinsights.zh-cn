@@ -19,6 +19,7 @@ keywords: subscribe, trial, subscription, contract, raw capacity, region, data r
 :toc-position: content
 
 
+[role="lead"]
 Cloud Insights 入门只需简单的三个步骤即可：
 
 * 在上注册帐户 link:https://https://bluexp.netapp.com//["* NetApp BlueXP*"] 访问 NetApp 的所有云产品。

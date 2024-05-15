@@ -18,6 +18,7 @@ summary: 取证用户活动数据
 :toc-position: content
 
 
+[role="lead"]
 " 用户活动 " 页面可帮助您了解用户对实体执行的操作。
 
 此页面中提供的数据介绍：

@@ -23,7 +23,7 @@ keywords: asset, summary, landing page, topology, auto, refresh
 
 摘要部分以及资产页面上的任何表或自定义小工具中的信息会根据选定时间范围自动刷新。您可以在"Summary (摘要)"部分的右上角、表以及任何自定义小工具中查看当前刷新率。
 
-image:Summary_Section_Example.png[""]
+image:Summary_Section_Example.png["登录页面摘要部分示例"]
 
 注意：摘要部分中显示的信息因您正在查看的资产类型而异。
 
@@ -56,4 +56,4 @@ NOTE: 您可能会注意到，某些存储资产上的卷容量可能显示大�
 * 卷
 
 
-image:TopologyExample.png[""]
+image:TopologyExample.png["登录页面拓扑部分示例"]

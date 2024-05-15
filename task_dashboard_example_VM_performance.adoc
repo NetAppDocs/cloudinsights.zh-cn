@@ -47,7 +47,7 @@ keywords: dashboard, widget, custom, example, virtual machine, vm, performance
 
 
 
-image:VMDashboard-TableWidget1.png[""]
+image:VMDashboard-TableWidget1.png["编辑表小工具对话框"]
 
 . 我们可以自定义此小工具。在顶部的 Name 字段中，删除 Widget 1 并输入 Virtual Machine Performance table 。
 . 单击资产类型下拉列表并将 _Storage_ 更改为 _Virtual Machine_ 。
@@ -68,7 +68,7 @@ image:VMDashboard-TableWidget1.png[""]
 
 
 
-image:VMDashboard-TableWidgetGroup.png[""]
+image:VMDashboard-TableWidgetGroup.png["表小工具分组示例"]
 
 . 在自定义表小工具以使您满意后，单击 * ｛ Save ｝ * 按钮。
 +
@@ -88,7 +88,7 @@ image:VMDashboard-TableWidgetGroup.png[""]
 . 单击 * 。保存 * 将此小工具添加到信息板。
 
 
-image:VMDashboard-LineChartVMLatency.png[""]
+image:VMDashboard-LineChartVMLatency.png["显示延迟数据的折线图"]
 
 接下来，我们将添加一个图表，在一个图表中显示虚拟机读取，写入和总 IOPS 。
 
@@ -100,7 +100,7 @@ image:VMDashboard-LineChartVMLatency.png[""]
 . 单击 * 显示图例 * 可在信息板上显示此小工具的图例。
 
 
-image:VMDashboard-AreaChartVMIOPS.png[""]
+image:VMDashboard-AreaChartVMIOPS.png["显示虚拟机IOPS的分区图"]
 
 . 单击 * 。保存 * 将此小工具添加到信息板。
 
@@ -121,4 +121,4 @@ image:VMDashboard-AreaChartVMIOPS.png[""]
 
 最后一个虚拟机性能信息板将如下所示：
 
-image:VMDashExample1.png[""]
+image:VMDashExample1.png["VM信息板完整示例显示了所有已就位的小工具"]

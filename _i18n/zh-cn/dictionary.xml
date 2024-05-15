@@ -254,7 +254,6 @@
   <block id="eb6d8ae6f20283755b339c0dc273988b" category="cell">标准</block>
   <block id="8d5e7e72f12067991186cdf3cb7d5d9d" category="cell">高级版</block>
   <block id="7afd7da52e07dd7febdaa6f50c36644d" category="cell">采集单元</block>
-  <block id="136e04472fbaee9e921166f5e324d322" category="cell"><block ref="136e04472fbaee9e921166f5e324d322" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a8ab2a0cac3ada71ce8c170ef7fd84b5" category="cell">数据收集</block>
   <block id="df583ae7ba964fd4806b55904da81813" category="cell">警报</block>
   <block id="9aedeaf1f77b8642abe528503b8c5de8" category="cell">资产</block>
@@ -1196,7 +1195,6 @@
   <block id="e3023c7402b94962861565244cb9f3d0" category="cell">通过 Pure http 界面验证 Pure 用户帐户和密码</block>
   <block id="90b1f6651953fcf8b43ddc0da6760aaf" category="inline-link-macro">用户配置文件</block>
   <block id="6adf97f83acf6453d4a6a4b1070f3754" category="list-text">无</block>
-  <block id="d4908b1e39cc61772e5d74e5fb77d241" category="list-text">待定</block>
   <block id="ce5bf551379459c1c61d2a204061c455" category="list-text">位置</block>
   <block id="2d511a0af71415c4b6b394d9a1964225" category="summary">可以为大多数对象类型显示资产页面。</block>
   <block id="033cb70e428cff3c1584d7206da08f9c" category="doc">资产页面概述</block>
@@ -2641,7 +2639,6 @@
   <block id="695f16a5a3fec41cddb4e9b142603061" category="list-text">HiCommand Device Manager 软件的只读用户名和密码以及对等权限</block>
   <block id="2ed84ae72ff3e01616900184c1d0f692" category="list-text">端口要求： 2001 （ http ）或 2443 （ https ）</block>
   <block id="a5141f9b03e4d6eb2d3f9b1aec49d49d" category="list-text">使用用户名和密码登录到 HiCommand Device Manager 软件</block>
-  <block id="45ad2fd383f9501acfd6c1c71d85cf35" category="list-text">验证是否可以访问 HiCommand Device Manager<block ref="7090750cd79fe50b73b5b343db7f1ba7" category="inline-link-rx"></block></block>
   <block id="8f2fd5a7846dd234e704c033378310ab" category="paragraph">要收集性能数据，必须满足以下要求：</block>
   <block id="ea7b21fc8f4e748fa1970360adc14288" category="list-text">HDS USP ， USP V 和 VSP 性能</block>
   <block id="d5eaa312804cc0e494137d1c2ff1338e" category="list-text">Performance Monitor 必须获得许可。</block>
@@ -2914,7 +2911,6 @@
   <block id="a53a32f48009c614f61507a6499dfbf6" category="cell">类已加载类已加载总类已卸载内存堆已提交内存堆已使用最大内存堆已使用内存非堆已提交内存非堆初始化内存非堆最大内存未堆已使用内存对象待定最终确定操作系统处理器可用操作系统已提交虚拟内存大小操作系统可用 物理内存大小操作系统可用交换空间大小操作系统最大文件描述符计数操作系统打开文件描述符计数操作系统处理器 CPU 负载操作系统处理器 CPU 时间操作系统 CPU 负载操作系统系统负载平均操作系统总物理内存大小操作系统总交换空间大小线程守护进程计数线程峰值计数 线程计数线程已开始总数垃圾收集器副本收集计数垃圾收集器副本收集时间垃圾收集器标记 - 扫描收集计数垃圾收集器标记 - 扫描收集时间垃圾收集器 G1 旧一代收集时间垃圾收集器 G1 年轻一代收集计数垃圾收集器 G1 年轻一代收集时间垃圾收集器并发标记 - 扫描收集计数垃圾收集器并发标记 - 扫描收集时间垃圾收集器并行收集计数垃圾收集器并行收集时间垃圾收集器并行收集标记 - 扫描收集计数垃圾收集器并行收集标记 - 扫描收集时间垃圾收集器并行收集收集收集器收集计数垃圾收集器并行收集 收集时间</block>
   <block id="96633c4bbe4066df6cca5184b0c3138c" category="doc">配置数据收集器</block>
   <block id="08c86f7c6085b75b443831ac2339b9eb" category="list-text">选择代理访问密钥。</block>
-  <block id="de0a3477c1c391a811d9b2911a84fb19" category="paragraph">可能需要长达两个轮询周期，才能将服务中的数据显示在信息板中或用于查询。</block>
   <block id="3305ac26b15ec00c4372c85a08bb7042" category="summary">支持的数据收集器列表。</block>
   <block id="9a08f57372dad69b83256b6cf3081404" category="doc">Cloud Insights 数据收集器列表</block>
   <block id="16d256dc1b7b58638a9529e552435cb7" category="paragraph">Cloud Insights 支持许多供应商和服务提供的各种数据收集器。</block>
@@ -3435,7 +3431,6 @@
   <block id="a9bf74b26ee4b38e5dbb74fb19c8abef" category="paragraph">如果设备具有类似的属性，可以在 .CSV 文件中轻松编辑这些属性，然后将其导回系统，则可能会出现此情况。</block>
   <block id="20bf5c31616eac18746c551892188b95" category="paragraph">将光纤通道设备标识导出到 .CSV 文件时，该文件将按所示顺序包含以下信息：</block>
   <block id="fc5482f286ef5daafd6a8d85c7885c03" category="list-text">选择要导出其标识的一个或多个光纤通道设备。</block>
-  <block id="1831b018233352e80cd4ae41174733e5" category="list-text">单击 * 导出 * <block ref="5a6850cb7f51e9dfd8e09198487d79d2" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
   <block id="72e518a27a4c3f4be36166b3d74723b8" category="paragraph">选择是打开 .CSV 文件还是保存文件。</block>
   <block id="99f1acff1d2f1ebc7fdf8742d4379f66" category="summary">创建一个网络挂钩，以便针对可宽延性的性能或清单阈值发出警报</block>
   <block id="24b87c1b869473ea3ff363d0080b7620" category="doc">Slack 的 webhook 示例</block>
@@ -3499,8 +3494,6 @@
   <block id="bc781ab763b71df7b975bbfe7c860bba" category="paragraph">有关信息，请参见 <block ref="3147fac008aa304c440ef0d367c93828" category="inline-link-macro-rx"></block>。</block>
   <block id="dea8b0c01ac3c8f22d85423d187ec3d2" category="cell">CouchDB</block>
   <block id="64f2993184c14c565d6ba3100a20ca05" category="cell">身份验证缓存命中身份验证缓存未命中数据库读取数据库写入数据库打开打开操作系统文件最大请求时间最小请求时间 httpd 请求方法复制 httpd 请求方法删除 httpd 请求方法获取 httpd 请求方法头 httpd 请求方法 POST httpd 请求方法 PUT 状态代码 200 状态代码 201 状态代码 202 状态代码 301 状态代码 304 状态代码 400 状态代码 401 状态代码 403 状态代码 404 状态代码 405 状态代码 409 状态代码 4.12 状态代码 500</block>
-  <block id="f92acc2ebbef6e6ab56943465d44e66d" category="summary">对数据收集器故障进行故障排除。</block>
-  <block id="1f4094c2de648308d5fc49072a6bf149" category="doc">对数据收集器故障进行故障排除</block>
   <block id="f25f4da5abc374ffca5bdff0513c85b9" category="summary">Data Collector 采集状态</block>
   <block id="83da84ba526ae13c937b4eca7d4d6997" category="doc">确定数据收集器采集状态</block>
   <block id="9659bb352bce7bbad8d32a5d1436378d" category="paragraph">由于数据收集器是 Cloud Insights 的主要信息源，因此您必须确保它们保持运行状态。</block>
@@ -3522,7 +3515,6 @@
   <block id="99571eecaa5c5d622bb0d1f855752d5f" category="section-title">拓扑</block>
   <block id="aa2a179e15d11223c669195106a7e555" category="paragraph">在某些资产页面上，摘要部分包含一个链接，可用于查看资产的拓扑及其连接。</block>
   <block id="575c9466566e751977f9292115eb4416" category="paragraph">拓扑可用于以下资产类型：</block>
-  <block id="52e59638e3e7203a9a8c3071303759c9" category="paragraph"><block ref="52e59638e3e7203a9a8c3071303759c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f68bfcaa8f466fab04e83d0324cf5ddb" category="summary">自动设备解析有助于您准确跟踪环境中的性能和清单。</block>
   <block id="652c7f9f62814b7bef155e603c66cf80" category="doc">自动设备解析概述</block>
   <block id="17d5e27deb6e020cf193c0bac4cb29b1" category="paragraph">您需要确定要使用 Cloud Insights 监控的所有设备。要准确跟踪环境中的性能和清单，需要进行标识。通常，在您的环境中发现的大多数设备都是通过 _Automatic Device resolution _ 来标识的。</block>
@@ -4141,7 +4133,6 @@
   <block id="82d21a2ba2528e048a25848fe767072e" category="list-text">在 "Installed Data Collectors" 页面中，使用每个收集器右侧的选项菜单编辑数据收集器。您可以重新启动数据收集器或编辑数据收集器配置属性。</block>
   <block id="1f8b585533464977d763d893abd63588" category="paragraph">下表介绍了已知问题及其解决方法。</block>
   <block id="4b3fbac9b531aa2660d41834f330998e" category="paragraph">如果出现错误，请单击 _Status_ 列中的 _More detail_ 以了解有关该错误的详细信息。</block>
-  <block id="a03d26ec6344587e2e2eea990dc74c04" category="paragraph"><block ref="a03d26ec6344587e2e2eea990dc74c04" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d7a4e713cb63e4db8a2b51e171793fb0" category="cell">Data Collector 会运行一段时间，并在随机时间后停止，失败并显示： " 错误消息：连接器处于错误状态。服务名称： audit 。失败原因：外部 fpolicy 服务器过载。 "</block>
   <block id="6b6d7f0bb3be3abde199877bf4398807" category="cell">ONTAP 中的事件速率远远高于 Agent Box 可以处理的事件速率。因此，此连接已终止。检查断开连接时 CloudSecure 中的峰值流量。您可以从 * CloudSecure &gt; 活动取证 &gt; 所有活动 * 页面查看此信息。如果聚合流量峰值高于 Agent Box 可以处理的流量，请参阅 Event Rate Checker 页面，了解如何在 Agent Box 中估算收集器部署的规模。如果此代理安装在 2021 年 3 月 4 日之前的 Agent 框中，请在 Agent 框中运行以下命令： echo 'net.core.rmem_max_8388608' &gt;&gt; /etc/sysctl.conf echo 'net.IPv4.tcp_rmem = 4096 2097152 8388608 &gt;&gt; /etc/sysctl.conf 在调整收集器大小后重新启动系统。</block>
   <block id="7dc1f3b50a6e66da2ae31d89467342c4" category="cell">收集器报告错误消息： " 在可访问 SVM 数据接口的连接器上未找到本地 IP 地址 " 。</block>
@@ -4427,7 +4418,6 @@
   <block id="848e162feda2cd9dcd4c3740e6440441" category="list-text">我们开始添加小工具。如有必要，请单击 * 编辑 * 图标以启用编辑模式。</block>
   <block id="73e63333d34d675df97db3ad7c445e97" category="list-text">单击 * 添加小工具 * 图标并选择 * 表 * 向信息板添加新的表小工具。</block>
   <block id="255e309e4ef25e1a494f4aec136025e6" category="paragraph">此时将打开编辑小工具对话框。显示的默认数据适用于您环境中的所有存储。</block>
-  <block id="731dfd723b554eaf8151475f0d88546b" category="paragraph"><block ref="731dfd723b554eaf8151475f0d88546b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e879f4d912b34f5a466e0863317b1663" category="list-text">我们可以自定义此小工具。在顶部的 Name 字段中，删除 Widget 1 并输入 Virtual Machine Performance table 。</block>
   <block id="27e593a944a7198c37ca7fca40d69371" category="list-text">单击资产类型下拉列表并将 _Storage_ 更改为 _Virtual Machine_ 。</block>
   <block id="e6fca2bd269fb78cc3ef024756280bef" category="paragraph">此时，表数据将发生变化，以显示您环境中的所有虚拟机。</block>
@@ -4437,7 +4427,6 @@
   <block id="1630a608b6b7648ad37e46b029924aee" category="paragraph">现在，此表仅显示总 IOPS 为 10 或以上的虚拟机。</block>
   <block id="f28509ea18ff15960817dc6d0eadec87" category="list-text">我们可以通过对结果进行分组来进一步折叠此表。单击 * 分组依据 * 旁边的 * 。 * 按钮，然后选择要分组的字段，例如 _Application_or _Hypervisor name_ 。系统将自动应用分组。</block>
   <block id="ccdd47122d87f6d80edce5290dfecc00" category="paragraph">此时，表行将根据您的设置进行分组。您可以根据需要展开和折叠这些组。分组行显示每个列的汇总数据。某些列允许您为该列选择汇总方法。</block>
-  <block id="963b71ea25e0f4ac13e33745dc71f9ca" category="paragraph"><block ref="963b71ea25e0f4ac13e33745dc71f9ca" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2e841905e785227685e1d25c190838b2" category="list-text">在自定义表小工具以使您满意后，单击 * ｛ Save ｝ * 按钮。</block>
   <block id="60a2c40bda2512f24e50cf4d723ca018" category="paragraph">此时，表小工具将保存到信息板中。</block>
   <block id="3e4bc5fc68a2a8701b0de86c9e89059d" category="paragraph">您可以通过拖动右下角来调整信息板上的小工具大小。使小工具更宽，以清晰地显示所有列。单击 * 保存 * 以保存当前信息板。</block>
@@ -4448,7 +4437,6 @@
   <block id="43adcf63c14ee1ceacc1093f2b713ad2" category="list-text">选择 * 虚拟机 * ，然后选择 _Latency - Max_ 。设置所需的任何筛选器，或者将 * 筛选器方式 * 留空。对于 * 汇总 * ，选择 _Sum_ by _all_ 。将此数据显示为 _Line Chart_ ，并保留 _Y-Axis_ 作为 _Primary 。</block>
   <block id="fcd3d23ed6fbd29d4387a16fcae59460" category="list-text">单击 * （ + 查询） * 按钮以添加另一个数据线。对于此行，请选择 _VMDK_ 和 _Latency - Max_ 。设置所需的任何筛选器，或者将 * 筛选器方式 * 留空。对于 * 汇总 * ，选择 _Sum_ by _all_ 。将此数据显示为 _Line Chart_ ，并保留 _Y-Axis_ 作为 _Primary 。</block>
   <block id="b520f92d1a3f5a11af3dce0ec85a100b" category="list-text">单击 * 。保存 * 将此小工具添加到信息板。</block>
-  <block id="08bfe1563394caca311bcf6aea8b2ac2" category="paragraph"><block ref="08bfe1563394caca311bcf6aea8b2ac2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="baf9ee37915fbb747d9ef5b4d110868b" category="paragraph">接下来，我们将添加一个图表，在一个图表中显示虚拟机读取，写入和总 IOPS 。</block>
   <block id="82f304226dbde3ec59773ae390f5c0ff" category="list-text">单击 * 添加小工具 * 图标并选择 _Area Chart_ 向信息板添加新的分区图小工具。</block>
   <block id="bb3193917b080c5371689d0ba8cdbfc9" category="list-text">此时将打开编辑小工具对话框。将此小工具命名为 "VM IOPS"</block>
@@ -4456,7 +4444,6 @@
   <block id="784aade0c3e697e38ea636fb4ecc7838" category="list-text">单击 * （ + 查询） * 按钮以添加另一个数据线。对于此行，请选择 * 虚拟机 * 并选择 _IOPS - read_ 。</block>
   <block id="44c6e401ff3de1e9bb3b9bbcadb1ac6c" category="list-text">单击 * （ + 查询） * 按钮以添加第三个数据线。对于此行，选择 * 虚拟机 * ，然后选择 _IOPS - 写入 _ 。</block>
   <block id="e3b7cbf62999250ac5a349afdde63d52" category="list-text">单击 * 显示图例 * 可在信息板上显示此小工具的图例。</block>
-  <block id="4bdd47da43cd2f2c9f78fffc1ff8de13" category="paragraph"><block ref="4bdd47da43cd2f2c9f78fffc1ff8de13" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b4795fc6f6e8d075051a908449a8b433" category="paragraph">接下来，我们将添加一个图表，显示与 VM 关联的每个应用程序的 VM 吞吐量。我们将对此使用汇总功能。</block>
   <block id="06164225a98f1bbe40c8e5ee609b3a04" category="list-text">此时将打开编辑小工具对话框。将此小工具命名为 "VM Throughput by Application"</block>
   <block id="fa7d4670dcaed9a91e90d1c7bcea7028" category="list-text">选择 Virtual Machine ，然后选择 Throughput - Total 。设置所需的任何筛选器，或者将 Filter by 留空。对于 Roll up ，选择 "Max" ，然后按 "Application" 或 "Name" 进行选择。显示排名前 10 位的应用程序。将此数据显示为折线图，并保留 "Y-Axis" 为 Primary 。</block>
@@ -4464,7 +4451,6 @@
   <block id="76d4e0908cbfa58636b2811ed2ba47aa" category="paragraph">您可以通过拖动右下角来调整小工具的大小。</block>
   <block id="9681b8ede5c132930da76a11a12ee1e0" category="paragraph">在进行更改后，请务必 * 。保存 * 信息板。</block>
   <block id="ca1b516707306a7db85b8ed1c44a3272" category="paragraph">最后一个虚拟机性能信息板将如下所示：</block>
-  <block id="8b8c0577487afb0f8113ae70ab69f902" category="paragraph"><block ref="8b8c0577487afb0f8113ae70ab69f902" category="inline-image-macro-rx" type="image"></block></block>
   <block id="def36b726efed529b13ba240dd331a12" category="cell">池</block>
   <block id="d167b91043f53ee5f6f7861abfb85a30" category="cell">管理员用户帐户的密码</block>
   <block id="a9bf92fda03d47c7754371c461a7b15c" category="summary">通过资产页面的 User Data 部分，您可以为当前资产分配标注或应用程序。</block>
@@ -4661,70 +4647,41 @@
   <block id="e90f7dd992e0cf34bd039e9aea1bb153" category="inline-link-macro">模式表</block>
   <block id="d6b50e981dcf3c483f39cca16ed4a3bf" category="section-title">清单数据集市</block>
   <block id="4ee2fd4b3ba41c46dcb5c95f5ab3c98c" category="paragraph">以下图像介绍了清单数据集市。</block>
-  <block id="3e2f25b47c543aeccbef9b6b89e4e5b9" category="paragraph"><block ref="3e2f25b47c543aeccbef9b6b89e4e5b9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9918d51dd05a83e7bd33f0ccf00de8a" category="paragraph"><block ref="f9918d51dd05a83e7bd33f0ccf00de8a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5bab0780005928c1dbfdbb00ea1df4a6" category="section-title">SAN 网络结构</block>
-  <block id="d73c5fce2101d5a56bc456e6dcc553ae" category="paragraph"><block ref="d73c5fce2101d5a56bc456e6dcc553ae" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1cfe27cbd0a5a77107c6dfcf07d2629c" category="section-title">端口连接</block>
-  <block id="5962edd92cfd8a93acedc6b7e7e7a7c2" category="paragraph"><block ref="5962edd92cfd8a93acedc6b7e7e7a7c2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d63c4d97992264f467c4b6d954ffe048" category="paragraph"><block ref="d63c4d97992264f467c4b6d954ffe048" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c07ee5debf5f3a3fef16c1ee5e8e4942" category="section-title">NAS</block>
-  <block id="d605d34c925dcf2288b4a9e58160a98f" category="paragraph"><block ref="d605d34c925dcf2288b4a9e58160a98f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9d42905511528df6765f3f1a7c04b865" category="section-title">路径和违规</block>
-  <block id="db0ca9f97ed2f67290608cf211194459" category="paragraph"><block ref="db0ca9f97ed2f67290608cf211194459" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="06d49fce248546c7d82b8c1954d88572" category="paragraph"><block ref="06d49fce248546c7d82b8c1954d88572" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1ddf333c6654f7f89c739dddfb4cc429" category="section-title">应用程序</block>
-  <block id="754e09a84049d3a4b6cb4cf33780e715" category="paragraph"><block ref="754e09a84049d3a4b6cb4cf33780e715" category="inline-image-macro-rx" type="image"></block></block>
   <block id="72ef24c018bdda1f94bc3f159a543c04" category="section-title">存储和存储池容量</block>
-  <block id="f3b797f67d469dd37ce40731bcd8be54" category="paragraph"><block ref="f3b797f67d469dd37ce40731bcd8be54" category="inline-image-macro-rx" type="image"></block></block>
   <block id="69ba447dc5e9ab1619f330f106eabbf3" category="section-title">卷容量</block>
   <block id="c407084b02a56538766fb242db0b4450" category="section-title">VM 容量</block>
-  <block id="68e6551a1f63bb301cc7fca6362929c5" category="paragraph"><block ref="68e6551a1f63bb301cc7fca6362929c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ca2219979432d21faba231a579345d08" category="section-title">内部卷容量</block>
-  <block id="f4e5ca88f8ce548d1f5ffb1bca3de78d" category="paragraph"><block ref="f4e5ca88f8ce548d1f5ffb1bca3de78d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38f9518fc5a08755d8726dd013507ff6" category="section-title">qtree 容量</block>
-  <block id="586421980190a076a9b06514831910b5" category="paragraph"><block ref="586421980190a076a9b06514831910b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e0ba81e0831c363ed8d29ad89590f535" category="section-title">存储容量效率</block>
-  <block id="b1d500efdc2ccce9c1ea2de0f8d0ffb0" category="paragraph"><block ref="b1d500efdc2ccce9c1ea2de0f8d0ffb0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="87aaa09aa3753a95331c644c7b301566" category="section-title">文件系统利用率</block>
-  <block id="dc297a03f873852760b7ef869c38a64d" category="paragraph"><block ref="dc297a03f873852760b7ef869c38a64d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d024c12213e71ea6a55252fbd3311782" category="section-title">端口容量</block>
-  <block id="4e0bf17868ca0bb7a19261cd6c03ca03" category="paragraph"><block ref="4e0bf17868ca0bb7a19261cd6c03ca03" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a7b2273fe3a1293885769855e2f3e6ba" category="section-title">成本分摊</block>
-  <block id="11ff75cde151f2a83f17a32413e20d93" category="paragraph"><block ref="11ff75cde151f2a83f17a32413e20d93" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ec1d23d46d47071826c25c1be457754c" category="section-title">磁盘组容量</block>
-  <block id="e7166983d9d7cf17f7993ea13645ddc8" category="paragraph"><block ref="e7166983d9d7cf17f7993ea13645ddc8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f5a0f3d3aca1daf0fc15bc8c06641d58" category="section-title">性能数据集市</block>
   <block id="4b0a396c135d61ae9a60a4baa44adf59" category="paragraph">下图说明了性能数据集市。</block>
   <block id="b4cc8db8c41365008f6c83a7edd0c3f9" category="section-title">应用程序卷每小时性能</block>
   <block id="8ed77ce1d723e3b9eb45d36731ab5125" category="section-title">内部卷每小时性能</block>
   <block id="35a2f98661106a51b803c7959dd0906f" category="section-title">内部卷每日性能</block>
   <block id="cb25875b45e4c1358cd431cc09ff89fb" category="section-title">卷每小时性能</block>
-  <block id="1f8eb1c7e0259ec622bd786d5407e1fd" category="paragraph"><block ref="1f8eb1c7e0259ec622bd786d5407e1fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="735b6ed9b0069fd73dd0986ba5ad4bf2" category="section-title">卷每日性能</block>
   <block id="05a9ced33983772db161394893a94d72" category="section-title">qtree 每日性能</block>
-  <block id="ee8dd1c2940aea920797eeaffe912342" category="paragraph"><block ref="ee8dd1c2940aea920797eeaffe912342" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4b49234362b48d766a5b0b1863f7c92c" category="section-title">主机的交换机每小时性能</block>
-  <block id="75e0e6e560181f10490dbe7ecec89c64" category="paragraph"><block ref="75e0e6e560181f10490dbe7ecec89c64" category="inline-image-macro-rx" type="image"></block></block>
   <block id="186dbcc03644e55957a9b1b52609c7d9" category="section-title">端口的交换机每小时性能</block>
-  <block id="bfbcecf2dc0e6f38f8ade49f74a5d02a" category="paragraph"><block ref="bfbcecf2dc0e6f38f8ade49f74a5d02a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="341ebe0d593f6e0dec63405ce23a76e1" category="section-title">存储的交换机每小时性能</block>
-  <block id="5c78788c89f2721b1c5e92135d1b9aa6" category="paragraph"><block ref="5c78788c89f2721b1c5e92135d1b9aa6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94b56d759d5921c506e923eefdbe62b8" category="section-title">磁带的交换机每小时性能</block>
-  <block id="c709717967cf19240c0231f69694d044" category="paragraph"><block ref="c709717967cf19240c0231f69694d044" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5020b90850e754bc38486e80ef1e9292" category="section-title">虚拟机性能</block>
-  <block id="dc956c7fbb9b4a36aa283dd84a33bab4" category="paragraph"><block ref="dc956c7fbb9b4a36aa283dd84a33bab4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="148a0a1a0c4f5f645a32c02dd12e0313" category="section-title">主机的虚拟机每日性能</block>
-  <block id="76c8bbc18b3829ee501ea6dc371355c4" category="paragraph"><block ref="76c8bbc18b3829ee501ea6dc371355c4" category="inline-image-macro-rx" type="image"></block></block>
   <block id="94c1dd9d7823c16fea64885fdb5ac184" category="section-title">主机的虚拟机每小时性能</block>
   <block id="638d0e4f76718f4d82d0bdfd3b4c5425" category="section-title">VMDK 每日性能</block>
-  <block id="501e2d2f999e9804fedf30b741f600e1" category="paragraph"><block ref="501e2d2f999e9804fedf30b741f600e1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="520ab7e34819995ee389e0b0acd6042e" category="section-title">VMDK 每小时性能</block>
   <block id="ee5d6febefb6ed5a889b193c7b9f70d7" category="section-title">存储节点每小时性能</block>
   <block id="1dcdf4799c1661b5732a356dad0691d0" category="section-title">磁盘每日性能</block>
-  <block id="b382c057368550009cb6adaf6db9feaf" category="paragraph"><block ref="b382c057368550009cb6adaf6db9feaf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f86c571e203a9013f990c064f0b41d7a" category="section-title">磁盘每小时性能</block>
-  <block id="f553d3656eb144d0d97045c1f9b2a3c0" category="paragraph"><block ref="f553d3656eb144d0d97045c1f9b2a3c0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aa660f33d4c20ae2b92aa73acb4c5828" category="summary">为 AWS 数据收集器配置 NetApp Cloud Volumes Services</block>
   <block id="6d719c7976115879cdcafb7922e7e5fd" category="doc">适用于 AWS 数据收集器的 NetApp Cloud Volumes Services</block>
   <block id="85930060216df642a21fd8c262d1cc6c" category="paragraph">此数据收集器支持从适用于 AWS 的 NetApp Cloud Volumes Services 配置中收集清单。</block>
@@ -4978,7 +4935,6 @@
   <block id="2ccb9ffac0ed017ddb6e68683bb0b7d5" category="list-text">安装，运行脚本和卸载需要 sudo 权限。</block>
   <block id="19b6dd145ff77b5b97341237076cba16" category="section-title">安装代理的步骤</block>
   <block id="f9eb6ee79f8b49445d9d7860e9a080c0" category="paragraph">系统将显示 "Add an Agent" 页面：</block>
-  <block id="0e9fa577800a5653127fdb5f3d4400aa" category="image-alt">添加代理 1</block>
   <block id="212db90a8b360d05f82119713ca87853" category="list-text">验证代理服务器是否满足最低系统要求。</block>
   <block id="3214e3b147ee224c2ddc92c7445e5bd4" category="list-text">要验证代理服务器是否正在运行受支持的 Linux 版本，请单击 _versions supported （ i ） _ 。</block>
   <block id="8bb9382589d54088894314b485b4650a" category="list-text">如果您的网络使用代理服务器，请按照代理部分中的说明设置代理服务器详细信息。</block>
@@ -4986,7 +4942,6 @@
   <block id="7a10e2f227e4fcc6978cfba86486a764" category="list-text">单击复制到剪贴板图标以复制安装命令。</block>
   <block id="635c6559744a9cbe13ef48ca6179175e" category="list-text">在终端窗口中运行安装命令。</block>
   <block id="80f1bbe9e042c14f0ea154b144e49635" category="list-text">安装成功完成后，系统将显示以下消息：</block>
-  <block id="b1740e3ac3c505fcca225cbec7f2d4c1" category="image-alt">新代理检测</block>
   <block id="580afeaa1b1ac5a8f6d1db7819e9a5df" category="list-title">完成后</block>
   <block id="04d29c3c4604f72fc55618d9d893779a" category="inline-link-macro">用户目录收集器</block>
   <block id="efb42161e6d534718356bdb292677612" category="list-text">您需要配置 <block ref="a207b7d2a96200a9b4b411f4896b3d1d" category="inline-link-macro-rx"></block>。</block>
@@ -6544,7 +6499,6 @@
   <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">以下是配置此数据源的要求：</block>
   <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">分配了 Metric 查询和租户访问角色的用户的用户名和密码</block>
   <block id="12cfd5219151c53639372267440b1f0f" category="paragraph">在中选择网络挂机通知 <block ref="1896b2660f404c5b1ef983b849bd2fa1" category="inline-link-macro-rx"></block>，转至 * 警报 &gt; 管理监控器 * 并选择所需的监控器，或者添加新的监控器。在 _set up team notifications _ 部分中，选择 _Webhook_ 作为交付方法。选择警报级别（严重，警告，已解决），然后选择所需的网络连接。</block>
-  <block id="deb0c7f8df07119c770312dca6ff6edc" category="paragraph"><block ref="deb0c7f8df07119c770312dca6ff6edc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4739762b1e0a0ecb9ce6ddc2f357d43e" category="cell">如果工程师仍无法连接到 SaaS ，请向 NetApp 支持部门创建案例。提供 Cloud Insights 序列号以创建案例，并按照说明将日志附加到案例。</block>
   <block id="e425bb5b2301657bf74d7cac77b0f44a" category="cell">将日志附加到案例： 1.使用 root 权限执行以下脚本并共享输出文件（ cloudsure-agent-symps.zip ）。答/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh 2.在 root 权限下逐个执行以下命令，并共享输出。答ID cssys b.组 cssys c.cat /etc/os-release</block>
   <block id="20c1070136d4b279e653e88c774414d7" category="section-title">细化筛选器</block>
@@ -6584,7 +6538,6 @@
   <block id="a5a5be00af4eb57319eff500ca9e8c27" category="list-text">具有卷 QoS 限制指标的增强型 EMC Symmetrix</block>
   <block id="6737c67be3775177035b7486a3285000" category="list-text">具有存储节点父序列号的增强型 IBM SVC 和 EMC PowerStore</block>
   <block id="1928ab7a05e24c9e7bde67fb9a528d0d" category="paragraph">资产页面的摘要部分显示有关资产的常规信息，包括任何指标或性能策略是否为相关的发生原因。潜在问题区域用红色圆圈表示。</block>
-  <block id="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="paragraph"><block ref="17f0ee3eadc0fb8322ae8f39da9d8bf6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="abfbd1f823b5763f9a41683ebc883036" category="list-text">* 警报表 * ：最多显示最后 1 ， 000 个警报。</block>
   <block id="0a41ae2c369ec6839d428c359a9fa6c3" category="cell">警报 * ：创建 / 修改 / 删除</block>
   <block id="856a71f1e469ce4d8cf0d9305027ea82" category="cell">警报 * ：查看</block>
@@ -6775,8 +6728,6 @@
   <block id="fa2e624f267fd72536c09f1bb81ca72e" category="paragraph">_New variables for attributes and the ability to use variables in widerts_ 。</block>
   <block id="87cd8b8808600624d8c590cfc2e6e94b" category="inline-link-macro">变量</block>
   <block id="b9d6ed474c251dd95442fcafec00806b" category="paragraph">信息板现在比以往更强大，更灵活。使用属性变量构建自适应信息板，以便快速地实时筛选信息板。使用这些和其他原有的 <block ref="1f4728a3536b8e2cc43013fb8f17db6c" category="inline-link-macro-rx"></block> 现在，您可以创建一个高级别信息板来查看整个环境的指标，并按资源名称，类型，位置等进行无缝筛选。在小工具中使用数字变量将原始指标与成本相关联，例如存储即服务的每 GB 成本。</block>
-  <block id="3063e25af4e9f3b6080b388ac1aad070" category="paragraph"><block ref="3d859cfde5726d14af67cb7dbeb9e18a" category="inline-image-macro-rx" type="image"></block>
-<block ref="d1f7027beb3d94ad8ba6281c876e2b8a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="db974238714ca8de634a7ce1d083a14f" category="inline-link-macro">API</block>
   <block id="252b86cd65deaa141a3f516e7ef483bd" category="paragraph">增强了与第三方报告， ITSM 和自动化工具集成的功能： Cloud Insights 功能强大 <block ref="9591c9ad7e66434ec5fdd8eaa821cdd2" category="inline-link-macro-rx"></block> 允许用户直接查询 Cloud Insights 报告数据库，而无需通过 Cognos 报告环境。</block>
   <block id="6b492909f89fdcefb2c45d261f5ea471" category="section-title">VM 登录页面上的 POD 表</block>
@@ -8138,7 +8089,6 @@
   <block id="b39c055166e1e8cfc2de8f74b7b76640" category="paragraph-title">类型搜索：</block>
   <block id="be62e4fb0ce75ae1c87237e1a5947368" category="section-title">修改现有用户的角色</block>
   <block id="04f239d51d6f6978df84a2372f6abdb2" category="section-title">通过*集群管理IP*添加时的权限：</block>
-  <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">通过* Vserver Management IP*添加时的权限：</block>
   <block id="cc327506f222e6ab4e0ec6a024dcbe7b" category="section-title">如果空间不足、我该怎么办？</block>
   <block id="6baf1e00d599761ac0cdbee221c4569c" category="section-title">执行Snapshot_操作</block>
   <block id="46a1d0dbde96d466dadd916b9b7a7d65" category="section-title">系统规模估算</block>
@@ -9261,15 +9211,11 @@
   <block id="e9e214a6e16f6beca61f905fa6ce3ab9" category="inline-image-macro">警报解决选项</block>
   <block id="990eaf3ef2e3748beed4f15a2dc6d080" category="paragraph"><block ref="990eaf3ef2e3748beed4f15a2dc6d080" category="inline-image-macro-rx" type="image"></block></block>
   <block id="21a763771df4e64b083a2b050ce81f09" category="inline-link">* NetApp BlueXP*</block>
-  <block id="79f4eac777cfb8f368485c1ed783c385" category="paragraph">要开始使用NetApp的云服务、请访问<block ref="bb4bedb035450655c109a482f18f7a40" category="inline-link-rx"></block> 然后单击*开始使用*。</block>
   <block id="1e26781b207fa848ce81c7268cf016a7" category="list-text">如果尚未注册、请选择*注册*</block>
   <block id="895a961645c5f6456e2cc43102e1de8a" category="list-text">接受条款和条件并选择*继续*。</block>
   <block id="027e58ebcf59f73bde476a8af6584584" category="list-text">BlueXP将指导您完成入门。</block>
-  <block id="263bd04f886f846996f5ed624502bf8f" category="inline-link">* NetApp BlueXPl*</block>
-  <block id="361b2969b0cdb055eb84b98514758bea" category="paragraph">拥有NetApp BlueXP帐户后、只需在上选择*登录*即可<block ref="87139ca7d238418aa56c6f30bb2cbebf" category="inline-link-rx"></block> 门户页面。</block>
   <block id="87174dc7b61ea27d55ab152cfdbfcbb0" category="inline-image-macro">在BlueXP上免费试用Cloud Insights</block>
   <block id="5d6203b83b93ae1cf7e9b34368cd7f9d" category="paragraph"><block ref="5d6203b83b93ae1cf7e9b34368cd7f9d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7395877188489ccb99fbacc8cc003a01" category="paragraph">如果这是您首次登录到 Cloud Insights ，请在 Cloud Insights 产品下单击 * 开始免费试用 * 。Cloud Insights 将指导您完成公司环境的创建过程。</block>
   <block id="1eb5ae63609e68a11106494d272615bf" category="cell">集群管理</block>
   <block id="269ab41459ba8b3de391eb30b649d222" category="cell">CIFS/SMB用户阻止所需。</block>
   <block id="0d04c76d344b77c4e10b41c28526be07" category="paragraph">从“团队内容”中选择*Storage Manager信息板*可提供多个报告，这些报告提供有关流量和存储的信息。</block>
@@ -9629,8 +9575,6 @@
   <block id="a3cdf80b89a5235481aa9bc21b5857e9" category="paragraph">根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。确保存储库中这些映像的映像标记和目录路径与Cloud Insights 存储库中的映像一致。</block>
   <block id="49174c164a8c6cc17236236504f05c4e" category="paragraph">编辑operator-config.yaml中的AgentConfiguration以反映新的Docker repo位置。为私有存储库创建新的imagePullSecret,有关更多详细信息，请参见_https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/_</block>
   <block id="ed8127bf6d6013cbef18d300d151a78a" category="paragraph">如果您运行的是OpenShift 4.6或更高版本、则必须在_operator-config.yaml中编辑AgentConfiguration以启用_run特权_设置：</block>
-  <block id="e6955fda6db57ce036906d2f15519731" category="paragraph"><block ref="0ac387629bcb7a9ba3f6f8e72a2f2cd7" category="inline-image-macro-rx" type="image"></block>
-<block ref="6ba665c891b77a3a5dfb5c061b6e2ba3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="14acb12fc5baee38469b462494a56a68" category="list-text">输入这些代码后、您可以将Download Command代码录复制到剪贴板。</block>
   <block id="492eb11b2ab5e4b044176b40a2eebeac" category="list-text">将此代码片段粘贴到 _bash_ 窗口中并执行。此时将下载Operator安装文件。请注意、此代码片段具有唯一的密钥、有效期为24小时。</block>
   <block id="aa976aff83a7c1132e171f3598f5502c" category="list-text">如果您有自定义或私有存储库、请复制可选的映像提取代码段、将其粘贴到_bash_ shell中并执行该代码段。提取映像后、将其复制到您的私有存储库。请务必保持相同的标记和文件夹结构。更新_operator-DEPRAYAML_中的路径以及_operator-config.yaml_中的Docker存储库设置。</block>
@@ -9673,19 +9617,9 @@
   <block id="d260e141887ca1a59da8973861299709" category="section-title">容量数据艺术</block>
   <block id="9ad5c20e0121bd52bd3fcef56f73d00d" category="paragraph">下图说明了容量数据艺术。</block>
   <block id="d7e27f6a5d216572cc692811c6530f82" category="section-title">Kubnetes PV容量</block>
-  <block id="629604d8234527b8f55ed9a4f1119cc9" category="paragraph"><block ref="629604d8234527b8f55ed9a4f1119cc9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="955630f91d989ab6e44388b92dc3ec42" category="section-title">存储节点容量</block>
-  <block id="c99969b26ce76580fac3132d1addc9bd" category="paragraph"><block ref="c99969b26ce76580fac3132d1addc9bd" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="23f05aab2c347892b769f3ccf77b61ab" category="paragraph"><block ref="23f05aab2c347892b769f3ccf77b61ab" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3176895f7b0fd7802579ef7f42a2c642" category="section-title">主机每小时性能</block>
-  <block id="98c76a8e012a3b0335dadc45e22612b3" category="paragraph"><block ref="98c76a8e012a3b0335dadc45e22612b3" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2995061fb96ddb9884cf89bb2a0a4eba" category="paragraph"><block ref="2995061fb96ddb9884cf89bb2a0a4eba" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8c5acdb673581325ace1afb429eff665" category="paragraph"><block ref="8c5acdb673581325ace1afb429eff665" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d6b73d87facce72dbc09974de7a801e6" category="section-title">存储节点每日性能</block>
-  <block id="73ff8710d68388c0f16d396727e1bb29" category="paragraph"><block ref="73ff8710d68388c0f16d396727e1bb29" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="9991a60e97186adeafc44a72e57d42e2" category="paragraph"><block ref="9991a60e97186adeafc44a72e57d42e2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="535b57910bffdb58114895274ea04a06" category="paragraph"><block ref="535b57910bffdb58114895274ea04a06" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8751e6fe513ddc3a20be944c6caece45" category="paragraph"><block ref="8751e6fe513ddc3a20be944c6caece45" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bd8a3856de3da0db088a741e7cd81e16" category="section-title">编辑ONTAP 通知</block>
   <block id="82ade85625dc6ecdc6fabebd2e345d19" category="paragraph">您可以通过从存储登录页面的右上角下拉列表中选择_Edit通知_来修改ONTAP 集群的通知。</block>
   <block id="8328b360704f8cf7f0beb073b0b83137" category="inline-image-macro">ONTAP 编辑通知</block>
@@ -9856,13 +9790,11 @@
   <block id="c76ff4f2fa2b9f076ccfd7a6d6b3ce57" category="list-text">权限：*读/写*</block>
   <block id="e340f8e9c364a8bf77e13de322139268" category="list-text">选择所需的*Expiry*和*Auto-Renew*值</block>
   <block id="438e82c6edd42a4c9ff5f88696126a91" category="list-text">复制生成的API访问令牌。必须先执行此步骤、然后才能关闭窗口。</block>
-  <block id="c53a7287de20acd49117a565baa3a38a" category="paragraph"><block ref="c53a7287de20acd49117a565baa3a38a" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8321e64cb676f0708bf32c3a30cf0852" category="list-text">在Swagger ("Admin"&gt;"API Access"&gt;"API Documentation")中、使用令牌对Cloud Insights API进行授权</block>
   <block id="0814188098e52dbb583fd206d0c62a95" category="list-text">单击Swagger屏幕右上角的_Authorize__</block>
   <block id="636c77a99766c0f85a6b8365fd48a45f" category="list-text">将上面复制的令牌粘贴到Customer APIKey字段中</block>
   <block id="a639e40f92af65b8c27156e43b7faa89" category="list-text">单击*Authorize*</block>
   <block id="e90cef1e648cb27fd619c6f8c92f8f4d" category="list-text">关闭窗口</block>
-  <block id="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="paragraph"><block ref="24c1f8d9a9ce9ef5f1ccc8ed30695f3e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2cae2725952c883826876920381ecb59" category="list-text">使用以下API下载AU安装程序：//au/Installers/｛sp台｝/later_或//au/Installers/｛sp平台｝/｛version｝_ API：</block>
   <block id="88eb9a112ead77fb26b1599f4f223fc1" category="list-text">平台：*Linux*</block>
   <block id="52205a46ef276687ee5647ea8fe6eb0b" category="list-text">版本：*&lt;version&gt;*(最新或指定)</block>
@@ -9875,8 +9807,6 @@
   <block id="b6061fe0bcd58a5454c927579e898ab2" category="admonition">接下来的步骤需要使用临时令牌。请勿使用上面创建的API访问令牌。</block>
   <block id="7c6a0e297c6fc179417eb79844b91920" category="list-text">在Cloud Insights API交换器中、使用_/au/oneTimeToken _ API创建一次性令牌。</block>
   <block id="93a482f754d03c8395a72b120e6d0448" category="list-text">复制生成的一次性令牌。</block>
-  <block id="c7a15bab2443e9ad4efdb034095ab235" category="paragraph"><block ref="100d1787d5f8172a57c3e18a398e0c17" category="inline-image-macro-rx" type="image"></block>
-<block ref="0b1cbf7e91a826bb9e4ce0091ddf900c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5b2b856bd044010d0c003bdc6a5adebb" category="list-text">在要安装AU的计算机上、导航到包含已下载安装程序文件的文件夹。以下命令要求用户具有root权限。</block>
   <block id="cc2e35144dbcb21079393a1ee5e98b11" category="list-text">解压缩安装程序文件</block>
   <block id="f0aa130be42df30dfb32287298a294dc" category="list-text">将目录更改为生成的安装程序文件夹</block>
@@ -12033,34 +11963,18 @@ v9.2.4.2</block>
   <block id="0b14d0fbc4256c7ec7c3bb39b2c28854" category="paragraph">按顺序执行以下每个命令。根据您当前的安装情况、其中某些命令可能会返回‘object not found '消息。可以安全地忽略这些消息。</block>
   <block id="82a8cca794947463478c2f08445a8ff4" category="paragraph">如果以前创建了安全上下文约束：</block>
   <block id="a945216a5c61e628c867b8948c797454" category="section-title">关于Kube-state-metrics</block>
-  <block id="8f5d4322bbada1e271bc144d48fbd530" category="section-title">Kube-state-metrics 计数器</block>
-  <block id="0868aed0151117af81e4d8a3bf48f5d1" category="paragraph">使用以下链接访问这些Kubbe状态指标计数器的信息：</block>
   <block id="dcd18b6a9c1c857332184b4ab6b6b876" category="inline-link">ConfigMap 指标</block>
-  <block id="43c0e039eb7d522a6d4d124fdff7e06f" category="list-text"><block ref="43c0e039eb7d522a6d4d124fdff7e06f" category="inline-link-rx"></block></block>
   <block id="8369bd4693cb273c71ad92f42fb3e791" category="inline-link">DemonSet 指标</block>
-  <block id="9c6d0e0120fcf6c4d873e186cc9739bf" category="list-text"><block ref="9c6d0e0120fcf6c4d873e186cc9739bf" category="inline-link-rx"></block></block>
   <block id="b1a7a1cd05f9351c6bef8223f686cd0b" category="inline-link">部署指标</block>
-  <block id="aa7c0000dea1ded472606bf83241d554" category="list-text"><block ref="aa7c0000dea1ded472606bf83241d554" category="inline-link-rx"></block></block>
   <block id="3743b47b26a692a03362afc5a67c0463" category="inline-link">传入指标</block>
-  <block id="4cb7ce0b5790952cc6bda2997a7dabc9" category="list-text"><block ref="4cb7ce0b5790952cc6bda2997a7dabc9" category="inline-link-rx"></block></block>
   <block id="e1f5942f12d62c7e887c901f5f6c7e30" category="inline-link">命名空间指标</block>
-  <block id="5fdc0df1bae486ee24716c612b24ca02" category="list-text"><block ref="5fdc0df1bae486ee24716c612b24ca02" category="inline-link-rx"></block></block>
   <block id="1e8f3ee4ce1dbb00442a7fb041fa09e7" category="inline-link">节点指标</block>
-  <block id="8b04a06b05700061d42a433c93746a63" category="list-text"><block ref="8b04a06b05700061d42a433c93746a63" category="inline-link-rx"></block></block>
   <block id="551df464e5bd2444d259057c7eacc9f7" category="inline-link">永久性卷指标</block>
-  <block id="69207fca599a65027f8a0597b95b093d" category="list-text"><block ref="69207fca599a65027f8a0597b95b093d" category="inline-link-rx"></block></block>
-  <block id="ea541521b7c5e710af931c8e4f58eb87" category="inline-link">持久性卷声明指标</block>
-  <block id="628462d67f17543dc95a839333690c0e" category="list-text"><block ref="628462d67f17543dc95a839333690c0e" category="inline-link-rx"></block></block>
   <block id="7fc93683f45a50f207241b90641f402b" category="inline-link">POD 指标</block>
-  <block id="3962a47d5b09f2b1246c86d8bc272414" category="list-text"><block ref="3962a47d5b09f2b1246c86d8bc272414" category="inline-link-rx"></block></block>
   <block id="0017245fe792a61975ebc02c48b109c5" category="inline-link">ReplicaSet 指标</block>
-  <block id="5df76f1cf3ae3096632fd05036cd39a0" category="list-text"><block ref="5df76f1cf3ae3096632fd05036cd39a0" category="inline-link-rx"></block></block>
   <block id="8f9fbab4275b3c6156f4a1e2bd589d5e" category="inline-link">机密指标</block>
-  <block id="94500053c0d8262e7a0caa0908ba6f8d" category="list-text"><block ref="94500053c0d8262e7a0caa0908ba6f8d" category="inline-link-rx"></block></block>
   <block id="de3e236a6c33c06117bf9ae35e2b9bb0" category="inline-link">服务指标</block>
-  <block id="4e3e0b949c1506c4eb21f3ebfc141e3b" category="list-text"><block ref="4e3e0b949c1506c4eb21f3ebfc141e3b" category="inline-link-rx"></block></block>
   <block id="e0c0cc3c69b0271b0179dc71d1e9bfa7" category="inline-link">StatusSet 指标</block>
-  <block id="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="list-text"><block ref="3a41cf72ebe7dd71e2b8cb6f1a7e14ff" category="inline-link-rx"></block></block>
   <block id="342761835c95d3618833ced82b6260ac" category="section-title">验证 Kubernetes 校验和</block>
   <block id="06da10bf5b15bdaae23d623ecea6b7f6" category="paragraph">Cloud Insights 代理安装程序会执行完整性检查，但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。要执行仅下载操作（与默认的下载和安装操作相反），这些用户可以编辑从 UI 获取的代理安装命令并删除尾随的 "install" 选项。</block>
   <block id="8ff498fedef16be83cafa8d00c04dd6d" category="list-text">从命令中删除后缀"-install"。</block>
@@ -12139,9 +12053,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="d232f49a9877a99204dde54474c23ce6" category="cell">通常、只有在安装了新操作员且_craaf-RS_ POD在_KSM_ POD启动之前启动时、才会显示此消息。所有Pod运行后、这些消息应停止。</block>
   <block id="02230bab9788e4843408e124331bb1ca" category="cell">我没有看到为集群中的Kubnetes CronJobs收集任何指标。</block>
   <block id="45698e13b1c2f7241751839133834506" category="cell">安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。</block>
-  <block id="9de497f607f8a73311408d3d7b337399" category="cell">我在Telegraf日志中看到重复出现以下错误消息：
-
- E！[agent]写入Outputs.http：POST时出错 <block ref="95209f65da8fece27c962b4b503ef61a" category="inline-link-rx"></block> 超过上下文期限(等待标头时超出客户端超时)</block>
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">安装或升级操作员之前</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">安装Monitoring Operator</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">metricRegationInterval</block>
@@ -12173,7 +12084,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="1851aec30e57598577c5ea29624fe8f4" category="list-text">无限制：用户无论在哪个域、都可以访问Cloud Insights。</block>
   <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">限制对默认域的访问：默认域是Cloud Insights环境帐户所有者使用的域。这些域始终可访问。</block>
   <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">限制对指定默认值和域的访问。列出除了默认域之外、您还希望有权访问Cloud Insights环境的任何域。</block>
-  <block id="d604b89dedd622b0113a230ac1a109cc" category="paragraph"><block ref="d604b89dedd622b0113a230ac1a109cc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b0ec3d3ab3b33bd69418a7bd9e4d8f9e" category="section-title">2023年10月</block>
   <block id="e76d326e7377a93bd9d473077ecdd257" category="section-title">限制对指定域的访问</block>
   <block id="e391d7f1ca15dcf0f9409952796c6e9f" category="inline-link-macro">限制Cloud Insights访问</block>
@@ -12514,7 +12424,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
                 值：UNIX：//run/Docker。sk
     ...
 ...</block>
-  <block id="0f282a47af79839bfb5e052b5cb08dcd" category="cell">编辑_AgentConfiguration_中的"特拉夫"部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息、请参见操作员的  <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
   <block id="1ec5bf0286a53dd8fc091a9a9b037623" category="inline-link-macro">"访问被拒绝"事件</block>
   <block id="f6682194485ec630bf22981ff1031e29" category="list-text">*访问被拒绝*：工作负载安全性与ONTAP集成以接收 <block ref="cf689af48c341111dcdcd455a22874dd" category="inline-link-macro-rx"></block> 并提供额外的分析和自动响应层。</block>
   <block id="e7b6c39291eb31c1a3a49eb83274bc99" category="cell">使用路径筛选器时遇到"Request failed with status code 500/503"错误。</block>
@@ -12579,7 +12488,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="03e73ba3232dcca3cc695f108f44c898" category="inline-image-macro">显示图表图标</block>
   <block id="66a14226acec760a4af6f762f938df66" category="paragraph"><block ref="66a14226acec760a4af6f762f938df66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="67c73d0c05c627af68622cc01164ae15" category="inline-xref">ONTAP 权限</block>
-  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP自主防兰软件保护的权限</block>
   <block id="27bc78f063867505b2f0e7f6cdd03799" category="section-title">ONTAP访问权限被拒绝</block>
   <block id="5dfd36f9b502b0a938cb4adb94d23ffa" category="paragraph">阅读有关配置其他的更多信息 <block ref="7848240acae0977cc36a630dabe55aa3" category="inline-link-macro-rx"></block>。</block>
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 及更高版本为获得最佳性能、请使用9.13.1.以上的Data ONTAP版本。</block>
@@ -13050,4 +12958,125 @@ Microsoft Edge会对例外情况采用与Chrome相同的格式。
 
 [inputs.prometheus]插件错误：向\tcp.tcp.svc.cluster-local http://kube-state-metrics：8080/metrics发出请求时出错：get \tcp.tcp.svc.cluster-local:8080/metrics http://kube-state-metrics：拨号&lt;namespace&gt;&lt;namespace&gt;：LOOKUP Kupe-state-metrics.tcp.svc.cluster-local &lt;namespace&gt;：无此主机</block>
   <block id="079771aecc679d555303419cd98137ca" category="paragraph">有关 Kubernetes 安装说明，请参见 <block ref="c4dd0ed9c7aa586e1ccc41d08bd166bb" category="inline-link-macro-rx"></block> 页面。</block>
+  <block id="9be87f9e8e8a3d18f170d8e28fbce953" category="section-title">Kube-state-metrics计数器</block>
+  <block id="f4154b752e8569289468086cbe4e4e9b" category="paragraph">NetApp Kuber-netes监控操作员会提取下面列出的Kube-state-metrics计数器。有关每个计数器的更多详细信息、请访问：<block ref="79bd6f84686ecc7b61be15b7d2f69e33" category="inline-link-rx"></block>。</block>
+  <block id="7e75de4210a4f75b62291d2c27cdf70b" category="list-text">永久性卷请求指标</block>
+  <block id="84b98a8d4559f5d46404a919d1040a3e" category="inline-image-macro">"限制域"工具提示</block>
+  <block id="2e2c905356717112e73ba7de2413a7c9" category="paragraph"><block ref="2e2c905356717112e73ba7de2413a7c9" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="823fea947b864c91d6e752501473c559" category="paragraph"><block ref="823fea947b864c91d6e752501473c559" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d33bf75d5e80061b9367f195f05e3eeb" category="paragraph"><block ref="d33bf75d5e80061b9367f195f05e3eeb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b9d04cd47823420fa061075ba05345de" category="inline-image-macro">NAS</block>
+  <block id="3b4e5c73809e6994ed3212bb7ddf9c8b" category="paragraph"><block ref="3b4e5c73809e6994ed3212bb7ddf9c8b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e1f873037143ad09d4539dd078099e6d" category="inline-image-macro">路径和违规</block>
+  <block id="ebc55d7e3fe64743e28ad5ed6ec5e5b2" category="paragraph"><block ref="ebc55d7e3fe64743e28ad5ed6ec5e5b2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7f4214df4af946e8a7615e82db28d116" category="inline-image-macro">端口连接</block>
+  <block id="1206ab321eae7286620a3018bfb95cb2" category="paragraph"><block ref="1206ab321eae7286620a3018bfb95cb2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="242ecb7731cc20f39e1540965229f1ce" category="inline-image-macro">SAN网络结构</block>
+  <block id="08d595e0713ed1ea1c5bfbf317cfada7" category="paragraph"><block ref="08d595e0713ed1ea1c5bfbf317cfada7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ddecebdea58b5f264d27f1f7909bab74" category="inline-image-macro">storage</block>
+  <block id="51c14a87b4fa40df1324284a1bb28911" category="paragraph"><block ref="51c14a87b4fa40df1324284a1bb28911" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1af4d8d1e27060818e9c85e97a69ce95" category="inline-image-macro">存储节点</block>
+  <block id="8fa6c5e8edf99771f8bff4748cd4437a" category="paragraph"><block ref="8fa6c5e8edf99771f8bff4748cd4437a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cd723ed383c1d461e38f7569ed30e7fd" category="inline-image-macro">虚拟机</block>
+  <block id="fe82a552e413503d4121ee6fd50f63e5" category="paragraph"><block ref="fe82a552e413503d4121ee6fd50f63e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c5ca8dd445f709cb9110e451b4898f71" category="inline-image-macro">成本分摊</block>
+  <block id="e764fd818e8a60f10a76ae77381bfaf8" category="paragraph"><block ref="e764fd818e8a60f10a76ae77381bfaf8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="859e0945a15fa9fabbbf016a602a42fc" category="paragraph"><block ref="859e0945a15fa9fabbbf016a602a42fc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0f72ed0193c9f6e827b093b9ccb5692c" category="paragraph"><block ref="0f72ed0193c9f6e827b093b9ccb5692c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6bcd4ec60a2f1f010ce8992ba7f4c165" category="paragraph"><block ref="6bcd4ec60a2f1f010ce8992ba7f4c165" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0c42f8a4ffc0a7acc1f41a76a8aadd0d" category="paragraph"><block ref="0c42f8a4ffc0a7acc1f41a76a8aadd0d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="05ee109bb6a61c05a6e9a540d3d31c3f" category="paragraph"><block ref="05ee109bb6a61c05a6e9a540d3d31c3f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="85275511fdcd60f9afc50a8dc99e4bc5" category="paragraph"><block ref="85275511fdcd60f9afc50a8dc99e4bc5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="721aede41f047426f957ff682629e9a3" category="paragraph"><block ref="721aede41f047426f957ff682629e9a3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bffc4627852bfd98c5194d770bc8a0c7" category="paragraph"><block ref="bffc4627852bfd98c5194d770bc8a0c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="cb9ac9276d68505110a2f855e0584167" category="paragraph"><block ref="cb9ac9276d68505110a2f855e0584167" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="83b9739ec081b938c1167a09ed5eb70f" category="paragraph"><block ref="83b9739ec081b938c1167a09ed5eb70f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="84afe34b86a51d01fbe9bc82f5546c35" category="paragraph"><block ref="84afe34b86a51d01fbe9bc82f5546c35" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9938cac46b49a5874f9aae8c12197356" category="paragraph"><block ref="9938cac46b49a5874f9aae8c12197356" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="c61d5ee86f360bfb37d65d25b92d8b69" category="paragraph"><block ref="c61d5ee86f360bfb37d65d25b92d8b69" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3dbb3b6e21eea031050b31060313c408" category="paragraph"><block ref="3dbb3b6e21eea031050b31060313c408" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="52e6f974dc77751f36293cd0a12c42a1" category="paragraph"><block ref="52e6f974dc77751f36293cd0a12c42a1" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e9d346d6a7cb0b43af0243fd94dce848" category="paragraph"><block ref="e9d346d6a7cb0b43af0243fd94dce848" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="176adbc6b6bf8de89cf7f7afe5c28cf3" category="paragraph"><block ref="176adbc6b6bf8de89cf7f7afe5c28cf3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5798c65ea98d63c3c2d1ab932e8c3bbc" category="paragraph"><block ref="5798c65ea98d63c3c2d1ab932e8c3bbc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="681deee752c2eeeedda4bc3077015d16" category="paragraph"><block ref="681deee752c2eeeedda4bc3077015d16" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3cc06e501d2313afc8a5354ed8cbebe3" category="paragraph"><block ref="3cc06e501d2313afc8a5354ed8cbebe3" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="632590b38845e06be878069588e6e5c7" category="paragraph"><block ref="632590b38845e06be878069588e6e5c7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="56d66efcaf566eea795a6ebd02d2fa6e" category="paragraph"><block ref="56d66efcaf566eea795a6ebd02d2fa6e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a00a08416d4e3d2841e9c44cb8d9f65b" category="paragraph"><block ref="a00a08416d4e3d2841e9c44cb8d9f65b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7d4c86213113e6498b04a4e0c5b3d897" category="paragraph"><block ref="7d4c86213113e6498b04a4e0c5b3d897" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="fce52c04340881c99fd21c228440c1bf" category="paragraph"><block ref="fce52c04340881c99fd21c228440c1bf" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="dbc6c5b7146bafe40a30fc92b0cdaf2b" category="paragraph"><block ref="dbc6c5b7146bafe40a30fc92b0cdaf2b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4e5b033da78fbd177925f9a50abab298" category="paragraph"><block ref="4e5b033da78fbd177925f9a50abab298" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="0c8df8e69e71a378baf617f3ff985afc" category="paragraph"><block ref="0c8df8e69e71a378baf617f3ff985afc" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="17b8e5d1c10542a4c25ad27c290eb108" category="paragraph"><block ref="17b8e5d1c10542a4c25ad27c290eb108" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="9b32116d8eca48b62ed2e18d3ce0a898" category="paragraph"><block ref="9b32116d8eca48b62ed2e18d3ce0a898" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5eb8a99093a69e48aa26443ea1c211ed" category="paragraph"><block ref="5eb8a99093a69e48aa26443ea1c211ed" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
+  <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
+  <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
+  <block id="5d545fe5152641e2ebe654e336e520e5" category="paragraph"><block ref="5d545fe5152641e2ebe654e336e520e5" category="inline-link-macro-rx"></block></block>
+  <block id="88e5eabd3917048b6927c42496b98f86" category="inline-link-macro"><block ref="88e5eabd3917048b6927c42496b98f86" category="inline-link-rx"></block></block>
+  <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
+  <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
+  <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="7c3057c4ee146bbbf479dd984bac7872" category="inline-image-macro">《监控操作员说明》</block>
+  <block id="07f70080e556bb9b826d89cf6ff09947" category="paragraph"><block ref="de36a053cf630e2894fa310d38b2b180" category="inline-image-macro-rx" type="image"></block>
+<block ref="7bc6d42c5d890df69a3f5fb8b991519a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="802997bcb8e9581226b3000b8b611b1c" category="cell">我在Telegraf日志中看到重复出现以下错误消息：
+
+ E！[agent]写入至Outputs.http：POST "\https：//lace/rest/v1/lace/ingest/影响xdb"时出错：超过上下文截止时间(&lt;tenant_url&gt;。 等待标头时超时)</block>
+  <block id="5a581223d2fea6c45a7ac1278334f8c1" category="cell">编辑_AgentConfiguration_中的"特拉夫"部分、并将_outputTimeout_增加到10秒。有关详细信息、请参见操作员的 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block>。</block>
+  <block id="732ce6294370d77834ecc9c30e5bfc82" category="image-alt">正在添加工作负载安全代理</block>
+  <block id="f488844908bcd6752dde5e2291a4a5b8" category="image-alt">成功安装代理的消息</block>
+  <block id="49b8daebcc43b2c12992a3b23060a794" category="inline-image-macro">变量中的下拉标注</block>
+  <block id="46736c19ce0a9a9cd8d068df66c14a29" category="inline-image-macro">变量中的属性筛选</block>
+  <block id="5ab787adbf028819ba79cab284beffef" category="paragraph"><block ref="9d10b6a06536dc9085d80fdf43f5eadb" category="inline-image-macro-rx" type="image"></block>
+<block ref="8baccdcbf74be733d4f8068fceb4563a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="61d927a1aed666979cd431fa1e2acade" category="inline-image-macro">复选标记</block>
+  <block id="66fab3ef4e4b1b406a7d7a7d64a34f5f" category="cell"><block ref="66fab3ef4e4b1b406a7d7a7d64a34f5f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d3e3fbe658c59d92b9974e5edb4e74bb" category="list-text">验证是否可访问HiCommand设备管理器\http：//HiCommand设备管理器：&lt;HiCommand_Device_Manager_IP&gt;</block>
+  <block id="ba290115002f208a04ca127b0e17c6be" category="inline-image-macro">编辑表小工具对话框</block>
+  <block id="5e1cbcf5ef12edbfe8322ecead535dd5" category="paragraph"><block ref="5e1cbcf5ef12edbfe8322ecead535dd5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="15a8b2e76636c71ff01c1fa4acba5796" category="inline-image-macro">表小工具分组示例</block>
+  <block id="8a4191b4e2d4351048760e7beb244dba" category="paragraph"><block ref="8a4191b4e2d4351048760e7beb244dba" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="79ff0115b286a1b0ae8ff29c8f5240e1" category="inline-image-macro">显示延迟数据的折线图</block>
+  <block id="56f09862e7018b4ae795f1f94a6d6281" category="paragraph"><block ref="56f09862e7018b4ae795f1f94a6d6281" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a8c9005dfe195826080e733ddb908cc6" category="inline-image-macro">显示虚拟机IOPS的分区图</block>
+  <block id="fbac94cddfcb7945065a320f6e7feafd" category="paragraph"><block ref="fbac94cddfcb7945065a320f6e7feafd" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="401fed57c814eb5c6cee47d79b354f59" category="inline-image-macro">VM信息板完整示例显示了所有已就位的小工具</block>
+  <block id="00c340d0d431c9fa05836d10d9d9cee7" category="paragraph"><block ref="00c340d0d431c9fa05836d10d9d9cee7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="97d8e9a07abc13937635fa4d8bfc72e4" category="list-text">单击 * 导出 * <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
+  <block id="697dfb9b235783676b63d2f1ed07cad5" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 标题</block>
+  <block id="3aa39f9c69e0586976520ec48d9ad3c6" category="paragraph">&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
+===通过*Vserver Management IP*添加时的权限：</block>
+  <block id="dd1d0dc7a37fe63b5e2c257349aa6532" category="paragraph">&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
+=== ONTAP自动防软件保护的权限</block>
+  <block id="9308a4a251c0b6f099fc32506e41c24d" category="inline-image-macro">工作负载安全收集器错误更多详细信息链接</block>
+  <block id="6a6fcf99d83d56b2429dfa3ef83b50a0" category="paragraph"><block ref="6a6fcf99d83d56b2429dfa3ef83b50a0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="05245c9c713dbc0e818edff595a4246c" category="inline-image-macro">登录页面摘要部分示例</block>
+  <block id="65ef2d3ac9b8dfdd7b17c10af9a602da" category="paragraph"><block ref="65ef2d3ac9b8dfdd7b17c10af9a602da" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b3e588c8b8cdde417ea31ee3bbefd9a9" category="inline-image-macro">登录页面拓扑部分示例</block>
+  <block id="3cb6e63269aa6edf3cc66859826feb7d" category="paragraph"><block ref="3cb6e63269aa6edf3cc66859826feb7d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="609716a86af2f9467366b90e750be49d" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 标题
+。单击 * 高级配置 * 以添加其他配置字段。（并非所有数据收集器都需要高级配置。）
+。单击 * 测试配置 * 以验证是否已正确配置数据收集器。
+。单击 * 添加收集器 * 以保存配置并将数据收集器添加到 Cloud Insights 租户。</block>
+  <block id="599f97fbfc2fc945eb562d68c9aca1a8" category="paragraph">可能需要长达两个轮询周期，才能将服务中的数据显示在信息板中或用于查询。
+&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1</block>
+  <block id="67dd8a9c7300c7a68539b856568b643c" category="inline-image-macro">导出按钮</block>
+  <block id="e075c22a2e254de2972fc152e1c02118" category="list-text">单击 * 导出 * <block ref="3b91e5b29194b7fd2b5cb067b5b3e811" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
+  <block id="b73a83fb453d4638343c31abb0f03dfc" category="paragraph">要开始使用NetApp的云服务、请访问 <block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block> 然后单击*开始使用*。</block>
+  <block id="71292a4043ee880f4b2810b42954372c" category="paragraph">拥有NetApp BlueXP帐户后、只需在上选择*登录*即可 <block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block> 门户页面。</block>
+  <block id="4145d4f2ee1e46d7c8be56e8de04d6ad" category="paragraph">如果这是您首次登录到 Cloud Insights ，请在 Cloud Insights 产品下单击 * 开始免费试用 * 。Cloud Insights将引导您完成创建公司环境的过程、包括选择希望您的环境所在的区域。</block>
+  <block id="36ea7ac79a19ee180028b3bfed6a7d9d" category="inline-image-macro">选择要托管Cloud Insights环境的区域</block>
+  <block id="6d8a4061d9933ffda18b9027252d037a" category="paragraph"><block ref="6d8a4061d9933ffda18b9027252d037a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7f04c88c9abdcf0f7616d53af7878ffe" category="inline-image-macro">创建API令牌</block>
+  <block id="92ad7a2e8e52adc61ae1c672917b0a1b" category="paragraph"><block ref="92ad7a2e8e52adc61ae1c672917b0a1b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d1ccf6bac1d198cd3bf6c54076f17148" category="inline-image-macro">授权API令牌</block>
+  <block id="ca268cb1b1c68d2d9ff1bb1fadd9a98d" category="paragraph"><block ref="ca268cb1b1c68d2d9ff1bb1fadd9a98d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="444d350efa5c1aec48178823f7b07394" category="inline-image-macro">创建一次性API令牌</block>
+  <block id="a2a865d86d0249910ef35168356aaa62" category="inline-image-macro">对一次性API令牌示例的响应</block>
+  <block id="22633d390ea43b8d615492e9fc7001be" category="paragraph"><block ref="4744c410fb085b5ca5fc5f63d8aecf39" category="inline-image-macro-rx" type="image"></block>
+<block ref="b20eef6fad4f32d2d331ae785e0dc25f" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

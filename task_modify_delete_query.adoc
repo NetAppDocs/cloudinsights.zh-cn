@@ -18,7 +18,7 @@ keywords: query, queries, modify, edit, delete, remove
 :toc-position: content
 
 
-[role="lead]"]
+[role="lead"]
 如果要更改要查询的资产的搜索条件，可以更改与查询关联的条件。
 
 

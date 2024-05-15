@@ -45,7 +45,7 @@ Linux和Windows的过程类似。
 
 
 
-image:Manual_AU_Create_API_Token.png[""]
+image:Manual_AU_Create_API_Token.png["创建API令牌"]
 
 . 在Swagger ("Admin">"API Access">"API Documentation")中、使用令牌对Cloud Insights API进行授权
 +
@@ -57,7 +57,7 @@ image:Manual_AU_Create_API_Token.png[""]
 
 
 
-image:Manual_AU_Authorization.png[""]
+image:Manual_AU_Authorization.png["授权API令牌"]
 
 . 使用以下API下载AU安装程序：//au/Installers/｛sp台｝/later_或//au/Installers/｛sp平台｝/｛version｝_ API：
 +
@@ -89,8 +89,8 @@ IMPORTANT: 接下来的步骤需要使用临时令牌。请勿使用上面创建
 
 
 
-image:Manual_AU_one_time_token.png[""]
-image:Manual_AU_one_time_token_response.png[""]
+image:Manual_AU_one_time_token.png["创建一次性API令牌"]
+image:Manual_AU_one_time_token_response.png["对一次性API令牌示例的响应"]
 
 . 在要安装AU的计算机上、导航到包含已下载安装程序文件的文件夹。以下命令要求用户具有root权限。
 +

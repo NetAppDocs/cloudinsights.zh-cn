@@ -2,6 +2,7 @@
 sidebar: sidebar 
 permalink: index.html 
 summary: 欢迎使用 Cloud Insights 文档门户。 
+keywords:  
 ---
 = Cloud Insights 文档
 :toc: macro

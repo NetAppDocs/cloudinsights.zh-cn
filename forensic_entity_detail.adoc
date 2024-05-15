@@ -16,6 +16,7 @@ summary: 取证实体页面
 :toc-position: content
 
 
+[role="lead"]
 " 取证实体 " 页面提供了有关环境中实体活动的详细信息。
 
 

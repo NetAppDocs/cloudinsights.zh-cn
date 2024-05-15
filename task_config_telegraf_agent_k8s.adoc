@@ -30,8 +30,8 @@ toc::[]
 
 == 安装Kubnetes Monitoring Operator
 
-image:NKMO-Instructions-1.png[""]
-image:NKMO-Instructions-2.png[""]
+image:NKMO-Instructions-1.png["《监控操作员说明》"]
+image:NKMO-Instructions-2.png["《监控操作员说明》"]
 
 .在KubeNet上安装Kubenetes Monitoring Operator代理的步骤：
 . 输入唯一的集群名称和命名空间。如果您是 <<升级,升级>> 在先前的Kubnetes Operator中、请使用相同的集群名称和命名空间。
@@ -532,7 +532,7 @@ kubect get all -n <namespace>| grep -i psp (应显示未找到任何内容)
 
 | 我在Telegraf日志中看到重复出现以下错误消息：
 
- E！[agent]写入Outputs.http：POST时出错 "https://<tenant_url>/rest/v1/lake/ingest/influxdb":[] 超过上下文期限(等待标头时超出客户端超时) | 编辑_AgentConfiguration_中的"特拉夫"部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息、请参见操作员的  link:telegraf_agent_k8s_config_options.html["配置选项"]。 
+ E！[agent]写入至Outputs.http：POST "\https：//lace/rest/v1/lace/ingest/影响xdb"时出错：超过上下文截止时间(<tenant_url>。 等待标头时超时) | 编辑_AgentConfiguration_中的"特拉夫"部分、并将_outputTimeout_增加到10秒。有关详细信息、请参见操作员的 link:telegraf_agent_k8s_config_options.html["配置选项"]。 
 
 
 | 我缺少一些事件日志的_volvedobject_数据。 | 确保已按照中的步骤进行操作 link:pre-requisites_for_k8s_operator.html["权限"] 第节。 

@@ -15,6 +15,7 @@ keywords: features
 :imagesdir: ./media/
 
 
+[role="lead"]
 NetApp 不断改进和完善其产品和服务。下面是Cloud Insights 商业版中提供的一些最新特性和功能。
 
 
@@ -1418,8 +1419,8 @@ _New variables for attributes and the ability to use variables in widerts_ 。
 
 信息板现在比以往更强大，更灵活。使用属性变量构建自适应信息板，以便快速地实时筛选信息板。使用这些和其他原有的 link:concept_dashboard_features.html#variables["变量"] 现在，您可以创建一个高级别信息板来查看整个环境的指标，并按资源名称，类型，位置等进行无缝筛选。在小工具中使用数字变量将原始指标与成本相关联，例如存储即服务的每 GB 成本。
 
-image:Variables_Drop_Down_Showing_Annotations.png[""]
-image:Variables_Attribute_Filtering.png[""]
+image:Variables_Drop_Down_Showing_Annotations.png["变量中的下拉标注"]
+image:Variables_Attribute_Filtering.png["变量中的属性筛选"]
 
 
 
@@ -1594,19 +1595,19 @@ Cloud Insights 功能强大的 API 比以往任何时候都更易于访问，而
 | API 类别 | 基本 | 标准 | 高级版 
 
 
-| 采集单元 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 采集单元 | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 数据收集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 数据收集 | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 警报 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 警报 |  | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 资产 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 资产 |  | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 数据载入 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 数据载入 |  | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 |===
 
 
@@ -1688,19 +1689,19 @@ API 访问现在可在所有版本的 Cloud Insights 中使用。现在， Basic
 | API 类别 | 基本 | 标准 | 高级版 
 
 
-| 采集单元 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 采集单元 | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 数据收集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 数据收集 | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 资产 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 资产 |  | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 数据载入 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 数据载入 |  | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 数据仓库 |  |  | image:SmallCheckMark.png[""] 
+| 数据仓库 |  |  | image:SmallCheckMark.png["复选标记"] 
 |===
 有关 API 使用情况的详细信息，请参见 link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["API 文档"]。
 

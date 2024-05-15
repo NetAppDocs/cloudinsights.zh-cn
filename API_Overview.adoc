@@ -28,22 +28,22 @@ NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Insights API 
 | API 类型 | 基本 | 标准 | 高级版 
 
 
-| 采集单元 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 采集单元 | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 数据收集 | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 数据收集 | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 警报 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 警报 |  | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 资产 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 资产 |  | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 数据载入 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 数据载入 |  | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 
 
-| 日志载入 |  | image:SmallCheckMark.png[""] | image:SmallCheckMark.png[""] 
+| 日志载入 |  | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 |===
 此外，您还可以使用 Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。
 

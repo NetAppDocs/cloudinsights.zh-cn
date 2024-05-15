@@ -291,4 +291,4 @@ image:Restrict_Domains_Modal.png["将域限制为仅限默认域、默认域以�
 * 限制对指定默认值和域的访问。列出除了默认域之外、您还希望有权访问Cloud Insights环境的任何域。
 
 
-image:Restrict_Domains_Tooltip.png[""]
+image:Restrict_Domains_Tooltip.png["\"限制域\"工具提示"]
