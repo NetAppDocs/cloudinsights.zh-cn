@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, API
 Cloud Insights 功能强大的 API 允许用户直接查询 Cloud Insights 报告数据库，而无需通过 Cognos 报告环境。
 
 
-NOTE: 本文档涉及中提供的 Cloud Insights 报告功能 link:/concept_subscribing_to_cloud_insights.html#editions["高级版"]。
+NOTE: 本文档介绍了Cloud Insights高级版中提供的Cloud Insights报告功能。
 
 
 

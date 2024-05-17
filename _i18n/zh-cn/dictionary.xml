@@ -419,7 +419,6 @@
   <block id="b9bfbe11ded79fa1b72b327d0497f9dd" category="inline-image-macro">支持页面</block>
   <block id="e9d356ec51ae4d84881e70ea3c98b6dc" category="section-title">正在激活支持授权</block>
   <block id="27792947ed5d5da7c0d1f43327ed9dab" category="inline-link-macro">详细信息</block>
-  <block id="1b179bc63122b8c6c97a198ea6812e2a" category="paragraph">在试用模式下运行时， Cloud Insights 可提供自助服务和电子邮件支持。订阅服务后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。注册完成前，默认支持模式为自助服务。请参见 <block ref="0ac112fddddbe1a53d74b73cbe92356e" category="inline-link-macro-rx"></block> 。</block>
   <block id="8c3419f130ad04caaa52bc7ca345b657" category="paragraph">在初始订阅过程中，您的 Cloud Insights 实例将生成一个 20 位数的 NetApp 序列号，此序列号以 "950" 开头。此 NetApp 序列号表示与您的帐户关联的 Cloud Insights 订阅。您必须注册 NetApp 序列号才能激活支持授权。我们提供了两种支持注册选项：</block>
   <block id="cc8ae441e8fc2d8b41c5c0efa830b99e" category="list-text">使用已有 NetApp 支持站点（ NSS ） SSO 帐户的用户（例如，当前的 NetApp 客户）</block>
   <block id="0a0b0ec9b756ca7bf1c8323bc90df282" category="list-text">新的 NetApp 客户，没有预先存在的 NetApp 支持站点（ NSS ） SSO 帐户</block>
@@ -2269,10 +2268,8 @@
   <block id="6acc33ae48cab5cb2335531500f89b02" category="paragraph">此页面中提供的数据介绍：</block>
   <block id="add45c9b3192a1741f0078c1e3a26199" category="list-text">实体访问时间，包括月份，日期，年份和时间。</block>
   <block id="2ba01387eb193f306ecd9e0aa92ec18b" category="inline-link-macro">用户详细信息数据</block>
-  <block id="d392843964c335c1c9dd5d3a73ecffa9" category="list-text">通过指向的链接访问此实体的用户 <block ref="7c73493d9f7ea518160cd9b15865320b" category="inline-link-macro-rx"></block>。</block>
   <block id="5620854eb6d9dfc6232bbccefdbb4f0e" category="list-text">用户执行的活动：</block>
   <block id="db7ee224458b6b939d2f759930e9a9f1" category="list-text">访问元数据</block>
-  <block id="02d2d907a8cea574883286e56e5834d0" category="list-text">包含指向的链接的实体的路径 <block ref="48ae99400f35b5a30544095c0b977e4d" category="inline-link-macro-rx"></block></block>
   <block id="234e95e32a1ea9eb274c2e8437dfb0a7" category="list-text">实体类型：</block>
   <block id="0b27918290ff5323bea1e3b78a9cf04e" category="list-text">文件</block>
   <block id="ac70412e939d72a9234cdebb1af5867b" category="list-text">路径</block>
@@ -3980,7 +3977,6 @@
   <block id="c74022ec3500804719ac4dae2639c107" category="cell">Include ：仅从列表中的设备收集数据。Exclude ：不会从这些设备收集任何数据</block>
   <block id="67f88e9638429025aedc9459c104dc99" category="cell">要从性能收集中包括或排除的设备 ID 的逗号分隔列表</block>
   <block id="13cb776e94eedbe31790c3da868fce4f" category="cell">错误包含： CMUC00192E ， CMUC00191E 或 CMUC00190E</block>
-  <block id="74ce3011edbe24d23741ab64757e01b3" category="cell">* 验证输入的凭据和 IP 地址。* 尝试通过 Web 管理控制台与阵列进行通信<block ref="05cc9b0aa4749686afc5de5ae5526f25" category="inline-link-rx"></block>。将 $ ｛ IP ｝ 替换为数据收集器配置的 IP 。</block>
   <block id="b18a21f855b9b4e7ca0fae5355812eb5" category="cell">错误： * 无法运行程序 * 执行命令时出错</block>
   <block id="d3fb13aa93c07b18952569ac666e58a4" category="cell">* 从 Cloud Insights 采集单元打开 CMD * 在命令行界面的主目录 /lib 中打开 CLI.CFG 文件并检查属性 java_install ，编辑该值以匹配您的环境 * 显示此计算机上安装的 Java 版本，键入： "java -version" * 对在发出的命令行界面命令中指定的 IBM 存储设备的 IP 地址执行 Ping 操作。* 如果以上所有操作均正常，请手动运行命令行界面命令</block>
   <block id="591d64253ebae6d71d70584704dad38d" category="doc">配置 LDAP 目录服务器收集器</block>
@@ -4090,7 +4086,6 @@
   <block id="b0fa17525d310a01406e22a6a3792d8b" category="list-text">SVM 名称必须与 ONTAP 中显示的名称完全相同，并且区分大小写。</block>
   <block id="988cfc885910cb57855c7d1e3055000a" category="list-text">使用 SVM SVM 管理 IP ，用户名和密码</block>
   <block id="4f063ab303b475997c571fed2a4d2d7e" category="inline-link-macro">" 关于权限的注释 "</block>
-  <block id="b19cd1e15a68af6b243893fbf6531cb2" category="list-text">如果您不能或不愿意使用完整管理员集群 /SVM 管理用户名和密码，则可以创建一个权限较低的自定义用户，如中所述 <block ref="257f1904b32a0b6b3ad6c048be9351a6" category="inline-link-macro-rx"></block> 部分。可以为 SVM 或集群访问创建此自定义用户。</block>
   <block id="af3222f57064502de0a6067116f97f3e" category="list-text">o 您还可以使用具有至少具有 csrole 权限的角色的 AD 用户，如下面的 " 权限说明 " 一节所述。另请参见 <block ref="d4aa194db895e3203d834756bc431bad" category="inline-link-macro-rx"></block>。</block>
   <block id="af53996a121bcf0b43c612a8465b5398" category="list-text">执行以下命令，确保为 SVM 设置了正确的应用程序：</block>
   <block id="cce32d87b6a1e3cf5567d9c84f96be3f" category="inline-image-macro">SVM 命令输出示例</block>
@@ -4521,7 +4516,6 @@
   <block id="3cfba54c70b6969bcb6d6cf2f956498a" category="cell">选择 AWS 区域</block>
   <block id="a9e18ceb0cf33b5fa58eee464eb5119b" category="cell">IAM 角色</block>
   <block id="5af83476a58c870df52d1d246574922c" category="inline-link-macro">IAM 角色</block>
-  <block id="263820305fad40ce46e17fb4c0dcd2f0" category="cell">仅在 AWS 中的 AU 上采集时使用。有关的详细信息，请参见下文 <block ref="b1fa9c7402c411a5cbbd77540aba7325" category="inline-link-macro-rx"></block>。</block>
   <block id="0e174ead80150bd1646bbe3dff5be348" category="cell">AWS IAM 访问密钥 ID</block>
   <block id="ee70e7971d85d7d2d77742381912070b" category="cell">输入 AWS IAM 访问密钥 ID 。如果不使用 IAM 角色，则此为必填项。</block>
   <block id="f55ad0ad249bea7ede23875a3038fe11" category="cell">AWS IAM 机密访问密钥</block>
@@ -5457,7 +5451,6 @@
   <block id="aabf05c4f0e7b6d67364c9c3287c3f76" category="cell">错误：存储池未报告服务处理器上已配置 IP 地址的磁盘</block>
   <block id="5c794ce4033cc9a38588fdf417c99b4c" category="cell">为数据收集器配置两个服务处理器 IP ，以逗号分隔</block>
   <block id="eec4a8f5738e0ab13381d33020ad0b24" category="cell">错误：修订不匹配错误</block>
-  <block id="fd5876ba02b2687e0f759426e0298df1" category="cell">•这通常是由于更新 VNX 块存储设备上的固件而导致的，但不更新 NaviCLI.exe 的安装。这也可能是由于不同设备使用不同的固件，但只安装了一个 CLI （使用不同的固件版本）。•验证设备和主机是否都运行相同版本的软件： —在 Cloud Insights 采集单元中，打开命令行窗口—将目录更改为已配置的安装目录—通过键入 "navicli -h $ ｛ IP ｝ getagent " 与 CLARiiON 设备建立连接—在前几行中查找版本号。示例： " 代理版本： 6.16.2 （ 0.1 ） " —在第一行查找并比较版本。示例： "Navisphere CLI 修订版 6.07.00.04.07"</block>
   <block id="2224c0524fbd6e8f44ccc50ce4a96ad5" category="cell">错误：不支持的配置 - 无光纤通道端口</block>
   <block id="529b04e834f40481051d6ce9539ddc0f" category="cell">此设备未配置任何光纤通道端口。目前，仅支持 FC 配置。验证是否支持此版本 / 固件。</block>
   <block id="48e541ea8b327711fa60ab7bd3808d2b" category="summary">充分利用信息板的最佳实践</block>
@@ -5760,7 +5753,6 @@
   <block id="1c86ffb67b6c557efd57f02a8124391f" category="inline-image-macro">包含和不包含格式的单值小工具</block>
   <block id="54fd4ea8e77a36f86dbd7eb0c586dbfd" category="paragraph"><block ref="54fd4ea8e77a36f86dbd7eb0c586dbfd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cbd63d84b143ca4d977c56413f0636f8" category="inline-link-macro">自定义</block>
-  <block id="0645d2bfff769e917835d157e691f0be" category="list-text">* 量表小工具 * ：以传统（实心）量表或项目符号量表的形式显示单值数据，并根据您的 " 警告 " 或 " 严重 " 值显示颜色 <block ref="7b06cec2bc04bb3452943fbeb3b82682" category="inline-link-macro-rx"></block>。</block>
   <block id="750f1ef44e948ec90cac7cb3f1abb83c" category="inline-image-macro">采用格式的单值，传统 Gauge ， Bullet Gauge</block>
   <block id="fd3db0ae2d5cb2c027ca4fb5235885fd" category="paragraph"><block ref="fd3db0ae2d5cb2c027ca4fb5235885fd" category="inline-image-macro-rx" type="image"></block></block>
   <block id="134fad64e91be8733fd79da18b8f3061" category="list-text">* 条形图，列图表 * ：显示前 N 个或后 N 个值，例如，前 10 个存储按容量显示，后 5 个卷按 IOPS 显示。</block>
@@ -6498,7 +6490,6 @@
   <block id="af5d24d9bf0b86e25aac0207e1738aa7" category="cell">"chmod 755 -rf " 命令失败。如果代理安装命令由非 root sudo 用户运行，而该用户的文件位于工作目录中，属于另一个用户，并且无法更改这些文件的权限，则此命令将失败。由于 chmod 命令失败，其余安装不会执行。1. 创建一个名为 cloudsecure 的新目录。2. 转到该目录。3. 复制并粘贴完整的 "token=…… … ./cloudsure-agent-install.sh" 安装命令并按 Enter 键。4. 安装应能继续进行。</block>
   <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">以下是配置此数据源的要求：</block>
   <block id="53bcb5f0d3c52187126d86687f62b4e7" category="list-text">分配了 Metric 查询和租户访问角色的用户的用户名和密码</block>
-  <block id="12cfd5219151c53639372267440b1f0f" category="paragraph">在中选择网络挂机通知 <block ref="1896b2660f404c5b1ef983b849bd2fa1" category="inline-link-macro-rx"></block>，转至 * 警报 &gt; 管理监控器 * 并选择所需的监控器，或者添加新的监控器。在 _set up team notifications _ 部分中，选择 _Webhook_ 作为交付方法。选择警报级别（严重，警告，已解决），然后选择所需的网络连接。</block>
   <block id="4739762b1e0a0ecb9ce6ddc2f357d43e" category="cell">如果工程师仍无法连接到 SaaS ，请向 NetApp 支持部门创建案例。提供 Cloud Insights 序列号以创建案例，并按照说明将日志附加到案例。</block>
   <block id="e425bb5b2301657bf74d7cac77b0f44a" category="cell">将日志附加到案例： 1.使用 root 权限执行以下脚本并共享输出文件（ cloudsure-agent-symps.zip ）。答/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh 2.在 root 权限下逐个执行以下命令，并共享输出。答ID cssys b.组 cssys c.cat /etc/os-release</block>
   <block id="20c1070136d4b279e653e88c774414d7" category="section-title">细化筛选器</block>
@@ -6675,7 +6666,6 @@
   <block id="0899fcc28c04aa81ead738e68e460060" category="summary">使用 Cloud Insights API 直接查询报告数据库。</block>
   <block id="a6df26890e0a18d3e3ae4d3fdbfc8b83" category="doc">通过 API 访问报告数据库</block>
   <block id="e6c1acbe24ac928f9d0ef2fae722595a" category="paragraph">Cloud Insights 功能强大的 API 允许用户直接查询 Cloud Insights 报告数据库，而无需通过 Cognos 报告环境。</block>
-  <block id="839e9965620da680dac976910eb42800" category="admonition">本文档涉及中提供的 Cloud Insights 报告功能 <block ref="4403a1ad625c6a857c60069d4bc3b41a" category="inline-link-macro-rx"></block>。</block>
   <block id="2946f573e2e09deeeecdc2af8dba7379" category="section-title">OData</block>
   <block id="ebb397c50a10a758892e24ffe755b4e4" category="inline-link-macro">OData v4</block>
   <block id="a755b355075d62b57c54f7a8a785c054" category="inline-link-macro">本教程</block>
@@ -7691,7 +7681,6 @@
   <block id="b0b134473b7922feefa2eaac79b9fb75" category="cell">检查是否使用CsUser、是否已按上述方式为用户授予权限。</block>
   <block id="abd4328c725637aabedbd02d3b7ffd40" category="cell">双向</block>
   <block id="8334797b9b3383d4f48d98178b8845ea" category="inline-link-macro">此页面</block>
-  <block id="116c0009f8a6c3650a8638213dafb58f" category="cell">1.在数据收集器页面上、滚动到出现错误的数据收集器右侧、然后单击3点菜单。选择 _Edit_ 。再次输入数据收集器的密码。按 _Save_ 按钮保存数据收集器。Data Collector 将重新启动，并应解决此错误。2. Agent计算机可能没有足够的CPU或RAM余量、这就是DSC出现故障的原因。请检查添加到计算机中代理的数据收集器的数量。如果超过20、请增加Agent计算机的CPU和RAM容量。增加CPU和RAM后、DSCS将自动进入Initializing状态、然后自动进入Running状态。请查看上的规模估算指南 <block ref="d78d6535469308a93bd2a6c42408feef" category="inline-link-macro-rx"></block>。</block>
   <block id="e2bb2679868c6a4cb2113cadeba2c17b" category="summary">您可以使用Cloud Insights API导入标注和应用程序。</block>
   <block id="0dc88092036f29d0c951123c9b9f932e" category="section-title">缺少数据时发出警报</block>
   <block id="525a57ad5c1f150ce2c13c4797278523" category="paragraph">在Cloud Insights 等实时系统中、为了触发对监控器的分析以确定是否应生成警报、我们需要考虑以下两个因素之一：</block>
@@ -7875,7 +7864,6 @@
   <block id="51222d9334f8421be01a4c67bba211f0" category="list-text">如果使用IAM访问密钥身份验证、则为您的AWS云帐户提供* IAM访问密钥* ID和机密访问密钥。</block>
   <block id="059cecdb406ea318583165dbd87ae76a" category="list-text">AWS S3实例可以报告为虚拟机、也可以报告为主机(不太自然)。EBS 卷既可以报告为虚拟机使用的虚拟磁盘，也可以报告为虚拟磁盘提供容量的数据存储库。</block>
   <block id="eabf633dc74f78f079f74efeb11ba4c2" category="paragraph">访问密钥由一个访问密钥 ID （例如， AKIIOSFODNN7EXAMPLE ）和一个机密访问密钥（例如， wJALRXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY ）组成。如果使用AWS SDK、REST或查询API操作、则可以使用访问密钥对向AWS发出的编程请求进行签名。这些密钥随 Amazon 的合同一起提供。</block>
-  <block id="c556d79cf119c0275f5a7e5ffe17e25e" category="cell">仅在 AWS 中的 AU 上采集时使用。有关的详细信息，请参见下文 <block ref="abcc3869ca9e9148fb25f0d23e298b7f" category="inline-xref-macro-rx"></block>。</block>
   <block id="a9798702903d4f5ee46de22467eb3ccd" category="paragraph">例如、如果您创建了一个名为_InstanceS3ReadOnly"的IAM角色、则必须设置此策略以为此IAM角色向所有S3资源授予S3只读列表访问权限。此外，您还必须授予 STS （安全令牌服务）访问权限，以便允许此角色跨帐户承担角色。</block>
   <block id="56fbeb9e954ace68d534e66e58b364a1" category="paragraph">创建IAM角色后、您可以在创建新S3实例或任何现有S3实例时附加此角色。</block>
   <block id="ddaf3f263ed6f7d926e96caad7b5d807" category="paragraph">将IAM角色_InstanceS3ReadOnly"附加到S3实例后、您将能够按IAM角色名称通过实例元数据检索临时凭据、并使用它通过此S3实例上运行的任何应用程序访问AWS资源。</block>
@@ -9009,9 +8997,7 @@
   <block id="0a2bd44573247d8e7748ce7d2d2a4b8f" category="paragraph">事件速率检查器用于在安装 ONTAP SVM 数据收集器之前检查 SVM 中的 NFS/SMB 组合事件速率，以查看一个代理计算机能够监控的 SVM 数量。使用事件速率检查器作为规模估算指南、帮助您规划安全环境。</block>
   <block id="2723c4d559ff96bb42870d86c109708e" category="doc">SVM事件速率检查程序(代理规模估算指南)</block>
   <block id="abc492c54ab99cf963d50d67acb42565" category="sidebar">Event Rate Checker (代理规模估算指南)</block>
-  <block id="344b15b7319e7ac5af178bf86f71332e" category="cell">我收到一个类似此错误的错误："无法执行请求：连接到&lt;AWS region endpoint&gt; ：8080 [AWS/AWS &lt;AWS region endpoint&gt; 区域端点IP&gt;&gt;失败：连接超时：GET<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 区域端点FQDN&gt;：8080/v1/Storage/IPRanges HTTP/1.1</block>
   <block id="ef756d1229bc6f51e983884d984a03f3" category="inline-link-macro">NetApp知识库文章</block>
-  <block id="59ac6af58fe53beeb9262552cb4288e4" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> Cloud Insights 用于与采集单元通信的不会在Cloud Insights 与数据收集器本身之间进行通信。您可以尝试以下几项操作：确保采集单元能够解析FQDN并访问所需的端口。在错误消息中确认不需要代理即可访问指定端点。可以使用curl测试采集单元与端点之间的通信。确保您*不*使用代理进行此测试。示例：root@acquisitionunit# cURL -s -H accept：application/json -H "Content-type：application/json"-H api-key：&lt;api key used in the data collector credentials -H secret-key:&lt;secret key used in the data collector credentials&gt; -X get<block ref="c76ccb25cb3c0e03bc187c29ed42806c" category="inline-link-rx"></block> 区域端点&gt;：8080/v1/Storage/IPRanges请参见此内容 <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
   <block id="eb1d5185404b1a4f21a4da9c88cb536d" category="paragraph">注册 Cloud Insights 后，如果您的环境处于活动状态，则可以免费试用 30 天的 Cloud Insights 。在此试用期间、您可以了解Cloud Insights 在您自己的环境中必须提供的功能。</block>
   <block id="fca4fedbe53af4420a279beead573bdf" category="doc">工作负载安全性：模拟攻击</block>
   <block id="85bec7dd725b26542ae7c0d1c759836a" category="paragraph">您可以使用此页面上的说明来模拟攻击、以便使用随附的勒索软件模拟脚本测试或演示工作负载安全性。</block>
@@ -10075,42 +10061,6 @@ FAS/AF8080</block>
   <block id="bca37b041da64be838599cd43784ed63" category="paragraph">管理员：</block>
   <block id="bbe1851a4bf6476f10ba4c77ec78d11d" category="list-text">API 访问</block>
   <block id="4620823d389a7467f91084ea88f4f104" category="list-text">订阅信息</block>
-  <block id="384d2b3681715a5efe4a0e8ae256591a" category="cell">这很可能是由于 ONTAP 端存在网络问题描述。请按照以下步骤操作：
-
-1.确保SVM数据lf或管理lf上没有阻止与SVM连接的防火墙。
-
-2. 在通过集群管理 IP 添加 SVM 时，请确保 SVM 的数据 LIF 和管理 LIF 可从 Agent VM 执行 Ping 操作。如果出现问题，请检查网关，网络掩码和 LIF 路由。
-
-您也可以尝试使用集群管理 IP 通过 ssh 登录到集群，并对代理 IP 执行 ping 操作。确保代理IP可执行pingable：
-
-_network ping -vserver &lt;vserver name&gt;-Destination &lt;Agent IP&gt;-lf &lt;Lif Name&gt;-show-DEBIL_
-
-如果无法执行pingable，请确保ONTAP中的网络设置正确，以便Agent计算机可以执行pingable。
-
-3. 如果您尝试通过集群 IP 进行连接，但此连接无法正常工作，请尝试直接通过 SVM IP 进行连接。有关通过 SVM IP 进行连接的步骤，请参见上文。
-
-4. 通过 SVM IP 和 vsadmin 凭据添加收集器时，请检查 SVM LIF 是否已启用数据加管理角色。在这种情况下，对 SVM LIF 执行 ping 操作将有效，但对 SVM LIF 执行 SSH 将不起作用。
-如果是，请创建一个仅 SVM 管理 LIF ，并尝试通过此仅 SVM 管理 LIF 进行连接。
-
-5. 如果此 LIF 仍不起作用，请创建一个新的 SVM LIF 并尝试通过此 LIF 进行连接。确保子网掩码设置正确。
-
-6.高级调试：
-A)在ONTAP中启动数据包跟踪。
-b)尝试从CloudSecure UI将数据收集器连接到SVM。
-c)等待直至出现错误。停止 ONTAP 中的数据包跟踪。
-D)从ONTAP打开数据包跟踪。可从该位置获取
-
- _\https：&lt;cluster_mgmt_ip&gt;：//SPI/SPI/packet/etc/log/packet_traces/_&lt;clustername&gt;
-
-e)确保有一个从ONTAP到代理框的“SNT”。
-F)如果没有来自ONTAP的问题描述，则它是中带有防火墙的ONTAP。
-g)在ONTAP中打开防火墙，以便ONTAP能够连接代理盒。
-
-7. 如果此功能仍不起作用，请咨询网络团队，以确保没有外部防火墙阻止从 ONTAP 到代理框的连接。
-
-8.确认端口7已打开。
-
-9.如果上述方法均无法解决问题描述问题、请使用创建案例 <block ref="125077bdbbba42f5228b9828dd761a10" category="inline-link-macro-rx"></block> 以获得进一步帮助。</block>
   <block id="4511f2a211688512da3a86b3400de7ff" category="paragraph">此数据收集器支持的型号和版本：</block>
   <block id="2c27d357495661792f689f1125b5c6ba" category="cell">HPE Alletra 9080
 HPE_3PAR 20450
@@ -12023,7 +11973,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="8f176f657f418586c2a4828045ab0c37" category="cell">这是一个已知的问题描述。  请参见 <block ref="23bd9a1f0b26414ad35f4299a95464f0" category="inline-link-macro-rx"></block> 有关详细信息：只要 Telegraf 启动并运行，用户就可以忽略这些错误消息。</block>
   <block id="9aab00e938cede2932654042bc507309" category="cell">在Kubelnetes上、我的Telegraf Pod报告以下错误：
 "处理mountstats信息时出错：无法打开mountstats文件：/hostfs/proc/1/mountstats、错误：打开/hostfs/proc/1/mountstats：权限被拒绝"</block>
-  <block id="cf0c5ed1e47d7431af16b71ad06bfcba" category="cell">如果启用并强制实施SELinux、则可能会阻止Telegraf Pod访问Kubelnetes节点上的/proc/1/mountstats文件。要克服此限制、请编辑代理配置并启用run特权 设置。有关详细信息、请参见：<block ref="b799c83c0330c0824f3118282f39ee9e" category="inline-link-rx"></block>。</block>
   <block id="f997e79142f159c33823b9deeab809eb" category="cell">在Kubelnetes上、我的Telegraf ReporticaSet Pod报告以下错误：
 
  [ inputs.prometheus]插件错误：无法加载密钥对/etc/Kubernetes/pki/etcD/server.crt：/etc/Kubernetes/pki/etcD/server.key：打开/etc/Kubernetes/pki/etcD/server.crt：无此文件或目录</block>
@@ -12570,7 +12519,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">用户访问阻止</block>
   <block id="8ddc916ec9b2ba8508e95584974411cf" category="paragraph">请记住以下内容 <block ref="84987077236e5a9982c9d1eae9e06415" category="inline-link-macro-rx"></block>：</block>
-  <block id="d725c02924790a2eff9bb2c7121e839d" category="paragraph">请务必查看的权限部分 <block ref="8a91694a94b506bcdf4d50b0df6ab8bc" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="19f59b74448f6a27519db281a44e4b12" category="section-title">migration</block>
   <block id="326a85558498d8aa2718dbf52e3bf722" category="paragraph">要从先前的ONTAP (ontapi)数据收集器迁移到新的ONTAP REST收集器、请执行以下操作：</block>
   <block id="0a6cb81f2c451b8ffdd5fb04d030bc4b" category="cell">Storage Virtual Machine/Vserver</block>
@@ -12710,10 +12658,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="60a414e81fe118967fa6232e8eb9f5ed" category="paragraph">Kubernetes网络性能监控和映射功能通过映射服务(也称为工作负载)之间的依赖关系来简化故障排除、并提供对网络性能等待时间和异常的实时可见性、以便在性能问题影响用户之前发现这些问题。
 此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
   <block id="41f9e4070ff69cb3ab05150a383b982d" category="summary">Kubbernetes监控操作员收集要在Cloud Insights中使用的Kubbernetes数据。</block>
-  <block id="1efee558528b235998f6c37634f18ec9" category="paragraph">ONTAP ARP集成的权限：</block>
-  <block id="ea68be0a35687ab64afad562f46dff32" category="paragraph">ONTAP访问权限被拒绝：</block>
-  <block id="64ac4b9298207f0fc756c6288f8c1a80" category="paragraph">注意：如果已添加一个REST角色--_arwrole_或_csrestrole_--则无需再添加另一个REST角色。您只需按照以下示例添加API权限即可。</block>
-  <block id="2e99c7c5f8b0c692f20c07f49b37d122" category="paragraph">示例：_csrestrole_已存在、因此我们只需启用反勒索软件保护并为现有_csrestrole_授予API权限：</block>
   <block id="2b9cb1c6561901b8c103aee1d5c61dfd" category="cell">我看到"Heartbeat Error:(检测信号错误：)"消息</block>
   <block id="a79a7a75840b1e266cc0c6c037c2d7f0" category="cell">重新安装采集单元时、我看到"ValueError：File contextfor /opt/NetApp/klidsights (/.*)？已定义"。</block>
   <block id="ae27abd8286d1b98e00b46440cd90926" category="cell">在使用SELinux的系统上、此错误消息可能会在之后出现<block ref="36f17859b55b3c1f8840366ccf62d8d6" prefix=" " category="inline-code"></block> 已执行、将重新安装采集单元。运行命令<block ref="42f732f1bf8255184086b8f48ec741c3" prefix=" " category="inline-code"></block> 应更正问题描述并删除此消息。</block>
@@ -12730,8 +12674,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="b6544593f70ff0a8915cbd1f9aabb49f" category="cell">Event-exporter—maxEventAgeSeconds</block>
   <block id="ec57a05c2326d433af7b24b3adb77f1a" category="cell">事件导出器最大事件期限。  请参见<block ref="6708727d05fa40eed58ce8404e60b4a3" category="inline-link-rx"></block></block>
   <block id="639bed0f86ee37975166505f25500f59" category="paragraph">变更分析有何帮助？</block>
-  <block id="8c0ffb3a96aefd29a8b298519ff82eb8" category="list-text">在多租户Kubnetes环境中、可能会由于配置不当的更改而发生中断。在动态环境中、Cloud Insights基础架构监控可能无法正确跟踪所有更改。</block>
-  <block id="6cfc89cbc741a775222e1cd65f12a4a0" category="list-text">变更分析通过提供一个窗格来查看和关联工作负载的运行状况和配置更改、从而有助于实现这一点。这可能有助于对动态Kubbernetes环境进行故障排除。</block>
   <block id="9c64a0e0a0e22cc18b7137e967889926" category="doc">Kubnetes监控操作员配置选项</block>
   <block id="3371b7c42a338a1d63764ce6cc96fdcb" category="inline-link-macro">Kubbernetes监控操作员</block>
   <block id="f32519ffeecd98f4c4f06a7bf1c7a34c" category="paragraph">。 <block ref="025a80672f7feae526479c9984c435c7" category="inline-link-macro-rx"></block> 配置可以自定义。</block>
@@ -12759,12 +12701,6 @@ Kubernetes v1.20及更高版本：Kubernetes.io/OS = Linux
 作为流程编排/Kubernetes平台的是：Catcher.io/OS = Linux</block>
   <block id="b0c7368729c7094129da2a9003691e56" category="cell">必须提供URL和kubecl命令。；为获得最佳结果、请将这些命令添加到路径中。</block>
   <block id="9bd9d0ebc081bd74f5bef4e136bb1aed" category="cell">连接</block>
-  <block id="55a65c182f00e32a2ec3792167680870" category="cell">已将kubeccli配置为与目标K8s集群通信、并可通过Internet连接到您的Cloud Insights环境。
-
-如果您在安装期间使用代理、请按照中的说明进行操作 <block ref="64cf37673a6ed79c9da34b6623735516" category="inline-link-macro-rx"></block> 部分。
-
-为了获得准确的审核和数据报告、请使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。</block>
-  <block id="a4b54dca162f049f992f72e7505f2056" category="cell">如果您运行的是OpenShift 4.6或更高版本、则除了确保满足这些前提条件之外、您还必须访问以下链接：tadd_config_testraf_agent_k8s.html#OpenShift-inInstructions [OpenShift Instructions。</block>
   <block id="5161b4f9ce9a8b7d966e8bf3c049f6f3" category="cell">API令牌</block>
   <block id="6f45f482f0e5142bd1fcac264b61790c" category="cell">如果要重新部署Operator (即更新或替换Operator)、则无需创建新的API令牌；您可以重复使用先前的令牌。</block>
   <block id="40bdea93b8749ee61a47530602b78ba0" category="cell"><block ref="40bdea93b8749ee61a47530602b78ba0" category="inline-link-macro-rx"></block></block>
@@ -13047,11 +12983,6 @@ Microsoft Edge会对例外情况采用与Chrome相同的格式。
   <block id="401fed57c814eb5c6cee47d79b354f59" category="inline-image-macro">VM信息板完整示例显示了所有已就位的小工具</block>
   <block id="00c340d0d431c9fa05836d10d9d9cee7" category="paragraph"><block ref="00c340d0d431c9fa05836d10d9d9cee7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="97d8e9a07abc13937635fa4d8bfc72e4" category="list-text">单击 * 导出 * <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
-  <block id="697dfb9b235783676b63d2f1ed07cad5" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 标题</block>
-  <block id="3aa39f9c69e0586976520ec48d9ad3c6" category="paragraph">&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-===通过*Vserver Management IP*添加时的权限：</block>
-  <block id="dd1d0dc7a37fe63b5e2c257349aa6532" category="paragraph">&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-=== ONTAP自动防软件保护的权限</block>
   <block id="9308a4a251c0b6f099fc32506e41c24d" category="inline-image-macro">工作负载安全收集器错误更多详细信息链接</block>
   <block id="6a6fcf99d83d56b2429dfa3ef83b50a0" category="paragraph"><block ref="6a6fcf99d83d56b2429dfa3ef83b50a0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="05245c9c713dbc0e818edff595a4246c" category="inline-image-macro">登录页面摘要部分示例</block>
@@ -13079,4 +13010,99 @@ Microsoft Edge会对例外情况采用与Chrome相同的格式。
   <block id="a2a865d86d0249910ef35168356aaa62" category="inline-image-macro">对一次性API令牌示例的响应</block>
   <block id="22633d390ea43b8d615492e9fc7001be" category="paragraph"><block ref="4744c410fb085b5ca5fc5f63d8aecf39" category="inline-image-macro-rx" type="image"></block>
 <block ref="b20eef6fad4f32d2d331ae785e0dc25f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="88624c8c7afb5c98f1c473e14dcbf963" category="cell">已将kubeccli配置为与目标K8s集群通信、并可通过Internet连接到您的Cloud Insights环境。
+
+如果您在安装期间使用代理、请按照中的说明进行操作 <block ref="013ef47d0dbd50be424736fae93491dd" category="inline-link-macro-rx"></block> 部分。
+
+为了获得准确的审核和数据报告、请使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。</block>
+  <block id="7c32e6404e015057fc5db282b24077f0" category="cell">如果您运行的是OpenShift 4.6或更高版本、则必须遵循 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block> 此外、还应确保满足这些前提条件。</block>
+  <block id="122fc5eb4b307e2a1b2bef4475345326" category="cell">仅在 AWS 中的 AU 上采集时使用。有关的详细信息，请参见下文 <block ref="83d528ecd9060fb6ba0317241e0017ba" category="inline-xref-macro-rx"></block>。</block>
+  <block id="24c6fef3c58adc63ac779bde77c4fbce" category="cell">•这通常是由于更新VNX块存储设备上的固件而不更新纳维命令行界面.exe的安装导致的。这也可能是由于不同设备使用不同的固件，但只安装了一个 CLI （使用不同的固件版本）。
+•验证设备和主机是否都运行相同版本的软件：
+    -从Cloud Insights采集单元中、打开命令行窗口
+    -将目录更改为已配置的安装目录
+    -通过键入“navicli -h &lt;ip&gt; getagent”与CLARiON设备建立连接
+    -查找前几行的版本号。示例：“Agent Rev: 6.16.20.1英寸
+    -查找并比较第一行的版本。示例： "Navisphere CLI 修订版 6.07.00.04.07"</block>
+  <block id="39d9aa164a7b16c29e56edd3252953f6" category="paragraph">在中选择网络挂机通知 <block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>，转至 * 警报 &gt; 管理监控器 * 并选择所需的监控器，或者添加新的监控器。在 _set up team notifications _ 部分中，选择 _Webhook_ 作为交付方法。选择警报级别（严重，警告，已解决），然后选择所需的网络连接。</block>
+  <block id="4123cf4f6521073cef46192908207644" category="cell">如果启用并强制实施SELinux、则可能会阻止Telegraf Pod访问Kubelnetes节点上的/proc/1/mountstats文件。要克服此限制、请编辑代理配置并启用run特权 设置。有关详细信息、请参见 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block>。</block>
+  <block id="59452d431b0a4e230ef72ae0b0b00085" category="admonition">本文档介绍了Cloud Insights高级版中提供的Cloud Insights报告功能。</block>
+  <block id="f09f88f2a0cd4d59d1c5dc91fdce034b" category="cell">*打开命令提示符并将目录更改为配置的路径
+*运行命令"set=STONAVM_HOME="。
+*运行命令"auunitref"
+*确认命令输出包含IP阵列的详细信息
+*如果输出不包含阵列详细信息、请使用Storage Navigator命令行界面注册该阵列：
+    -打开命令提示符并将目录更改为配置的路径
+    -运行命令"set=STONAVM_HOME="。
+    -运行命令"auunitaddauto -IP &lt;ip&gt;"。使用正确的IP替换&lt;ip&gt;。</block>
+  <block id="106b0b60f6d1a63a5d090bb5d33b4b6a" category="list-text">* 量表小工具 * ：以传统（实心）量表或项目符号量表的形式显示单值数据，并根据您的 " 警告 " 或 " 严重 " 值显示颜色 <block ref="ce9cfc657985aa685104d6bcb1ead4a8" category="inline-link-macro-rx"></block>。</block>
+  <block id="31ec8abc1c2fff3171b9e6ba5d038ad8" category="list-text">通过指向的链接访问此实体的用户 <block ref="168fc69c3032b784e96b74cdbf6c371b" category="inline-link-macro-rx"></block>。</block>
+  <block id="9a5d498bf9b8403940f19e1ef7148f1d" category="list-text">包含指向的链接的实体的路径 <block ref="633539366fa6408c302917ca137b4662" category="inline-link-macro-rx"></block></block>
+  <block id="476381b52fc0e8c9c312bfbd66594653" category="paragraph">在试用模式下运行时， Cloud Insights 可提供自助服务和电子邮件支持。订阅服务后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。注册完成前，默认支持模式为自助服务。请参见 <block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block> 。</block>
+  <block id="ad99b83e7b10ea825777161cb8f5594b" category="cell">* 验证输入的凭据和 IP 地址。
+*尝试通过Web管理控制台\https：//DS8452/DS8000/Console与阵列进行通信&lt;ip&gt;。  将&lt;ip&gt;替换为已配置数据收集器的IP。</block>
+  <block id="bc47800fe62365013d4adf7232c1c738" category="paragraph">请务必查看的权限部分 <block ref="c5b253e6d28e76aaaf37feb5e0119ce8" category="inline-link-macro-rx"></block> 页面。</block>
+  <block id="63d71c9c8919be72ed5d5d19a3aea524" category="list-text">如果您不能或不愿意使用完整管理员集群 /SVM 管理用户名和密码，则可以创建一个权限较低的自定义用户，如中所述 <block ref="00e97c40bcd2b78ce8600bf90267e3e7" category="inline-xref-macro-rx"></block> 部分。可以为 SVM 或集群访问创建此自定义用户。</block>
+  <block id="79b84e26b610d3ce15109f8d174cdf3a" category="section-title">通过* Vserver Management IP*添加时的权限：</block>
+  <block id="11949a37d3edcc91b37d386025b80680" category="section-title">ONTAP自主防兰软件保护的权限</block>
+  <block id="ce2c442b24aec5c08788260869132fdd" category="cell">这很可能是由于 ONTAP 端存在网络问题描述。请按照以下步骤操作：
+
+1.确保SVM数据lf或管理lf上没有阻止与SVM连接的防火墙。
+
+2. 在通过集群管理 IP 添加 SVM 时，请确保 SVM 的数据 LIF 和管理 LIF 可从 Agent VM 执行 Ping 操作。如果出现问题，请检查网关，网络掩码和 LIF 路由。
+
+您也可以尝试使用集群管理 IP 通过 ssh 登录到集群，并对代理 IP 执行 ping 操作。确保代理IP可执行pingable：
+
+_network ping -vserver &lt;vserver name&gt;-Destination &lt;Agent IP&gt;-lf &lt;Lif Name&gt;-show-DEBIL_
+
+如果无法执行pingable，请确保ONTAP中的网络设置正确，以便Agent计算机可以执行pingable。
+
+3. 如果您尝试通过集群 IP 进行连接，但此连接无法正常工作，请尝试直接通过 SVM IP 进行连接。有关通过 SVM IP 进行连接的步骤，请参见上文。
+
+4. 通过 SVM IP 和 vsadmin 凭据添加收集器时，请检查 SVM LIF 是否已启用数据加管理角色。在这种情况下，对 SVM LIF 执行 ping 操作将有效，但对 SVM LIF 执行 SSH 将不起作用。
+如果是，请创建一个仅 SVM 管理 LIF ，并尝试通过此仅 SVM 管理 LIF 进行连接。
+
+5. 如果此 LIF 仍不起作用，请创建一个新的 SVM LIF 并尝试通过此 LIF 进行连接。确保子网掩码设置正确。
+
+6.高级调试：
+A)在ONTAP中启动数据包跟踪。
+b)尝试从CloudSecure UI将数据收集器连接到SVM。
+c)等待直至出现错误。停止 ONTAP 中的数据包跟踪。
+D)从ONTAP打开数据包跟踪。可从该位置获取
+
+ _\https：&lt;cluster_mgmt_ip&gt;：//SPI/SPI/packet/etc/log/packet_traces/_&lt;clustername&gt;
+
+e)确保有一个从ONTAP到代理框的“SNT”。
+F)如果没有来自ONTAP的问题描述，则它是中带有防火墙的ONTAP。
+g)在ONTAP中打开防火墙，以便ONTAP能够连接代理盒。
+
+7. 如果此功能仍不起作用，请咨询网络团队，以确保没有外部防火墙阻止从 ONTAP 到代理框的连接。
+
+8.确认端口7已打开。
+
+9.如果上述方法均无法解决问题描述问题、请使用创建案例 <block ref="d0162286c59c67bf86d01f060ee7cd04" category="inline-link-macro-rx"></block> 以获得进一步帮助。</block>
+  <block id="c54f0cb7ebe859ae013e2a39e57b38c0" category="cell">1.在数据收集器页面上、滚动到出现错误的数据收集器右侧、然后单击3点菜单。选择 _Edit_ 。
+再次输入数据收集器的密码。
+按 _Save_ 按钮保存数据收集器。
+Data Collector 将重新启动，并应解决此错误。
+
+2. Agent计算机可能没有足够的CPU或RAM余量、这就是DSC出现故障的原因。
+请检查添加到计算机中代理的数据收集器的数量。
+如果超过20、请增加Agent计算机的CPU和RAM容量。
+增加CPU和RAM后、DSCS将自动进入Initializing状态、然后自动进入Running状态。
+请查看上的规模估算指南 <block ref="830ad31fe88c5bf31dcfcc5f15ccdf0e" category="inline-link-macro-rx"></block>。</block>
+  <block id="36d35d8bdb33f254c1406a404bc7c125" category="cell">我收到类似于以下错误：
+'无法执行请求：连接到&lt;AWS区域端点&gt;：8080 [&lt;AWS区域端点&gt;/AWS区域端点IP&gt;]失败：连接超时：获取\https://&lt;AWS区域端点FQDN&gt;：8080/v1/Storage/IPRanges HTTP/1.1 '</block>
+  <block id="eb146021cef6507d29dcdce3e2090a16" category="cell">。 <block ref="588cebdad26ee4a9a3bb08c290310eb7" category="inline-link-macro-rx"></block> Cloud Insights 用于与采集单元通信的不会在Cloud Insights 与数据收集器本身之间进行通信。您可以尝试以下操作：
+
+确保采集单元能够解析FQDN并访问所需端口。
+在错误消息中确认不需要代理即可访问指定端点。
+可以使用curl测试采集单元与端点之间的通信。确保您*不*使用代理进行此测试。
+
+示例
+
+root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：application/json"-H api-key：&lt;api key used in the data Collector credifts.-H secret-key：&lt;secret-key used in the data Collector credift凭证&gt;-X get \https://&lt;AWS Regional Endpoint：8080/v1/Storage/IPRanges
+
+请参见此内容 <block ref="776b569bb4fd625ede408f144a17e02c" category="inline-link-macro-rx"></block>。</block>
+  <block id="f1a3b56f57a450a14c2cf03113d0ffcf" category="list-text">在多租户Kubnetes环境中、可能会由于配置不当的更改而发生中断。变更分析通过提供一个窗格来查看和关联工作负载的运行状况和配置更改、从而有助于实现这一点。这可能有助于对动态Kubbernetes环境进行故障排除。</block>
 </blocks>

@@ -260,6 +260,13 @@ Cloud Insights 采取强有力的立场，避免在任何成本下重复计算�
 | 错误：配置错误：清单未报告存储阵列 | 检查是否已在 HiCommand 服务器中配置有问题的存储阵列 
 
 
-| 错误： * 未向 Storage Navigator 模块化 2 命令行界面注册阵列 * 未向 Storage Navigator 模块化 2 命令行界面注册阵列 * 配置错误：未向 StorageNavigator 模块化命令行界面注册存储阵列 | * 打开命令提示符并将目录更改为已配置的路径 * 运行命令 "set=STONAVM_HOME= " 。 * 运行命令 "auunitref" * 确认命令输出包含 IP 阵列的详细信息 * 如果输出不包含阵列详细信息，请向 Storage Navigator CLI 注册该阵列： —打开命令提示符并将目录更改为已配置的路径—运行命令 "set=STONAVM_HOME= " 。 —运行命令 "auunitaddauto -IP $ ｛ ip ｝ " 。将 $ ｛ IP ｝ 替换为实际 IP 
+| 错误： * 未向 Storage Navigator 模块化 2 命令行界面注册阵列 * 未向 Storage Navigator 模块化 2 命令行界面注册阵列 * 配置错误：未向 StorageNavigator 模块化命令行界面注册存储阵列 | *打开命令提示符并将目录更改为配置的路径
+*运行命令"set=STONAVM_HOME="。
+*运行命令"auunitref"
+*确认命令输出包含IP阵列的详细信息
+*如果输出不包含阵列详细信息、请使用Storage Navigator命令行界面注册该阵列：
+    -打开命令提示符并将目录更改为配置的路径
+    -运行命令"set=STONAVM_HOME="。
+    -运行命令"auunitaddauto -IP <ip>"。使用正确的IP替换<ip>。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

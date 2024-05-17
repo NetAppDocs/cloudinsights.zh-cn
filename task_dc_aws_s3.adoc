@@ -54,7 +54,7 @@ Cloud Insights 使用AWS S3作为存储数据收集器、从AWS S3实例采集�
 | AWS 地区 | 选择 AWS 区域 
 
 
-| IAM 角色 | 仅在 AWS 中的 AU 上采集时使用。有关的详细信息，请参见下文 <<iam-roles,IAM 角色>>。 
+| IAM 角色 | 仅在 AWS 中的 AU 上采集时使用。有关的详细信息，请参见下文 <<iam-role,IAM 角色>>。 
 
 
 | AWS IAM 访问密钥 ID | 输入 AWS IAM 访问密钥 ID 。如果不使用 IAM 角色，则此为必填项。 

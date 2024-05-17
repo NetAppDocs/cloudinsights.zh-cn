@@ -52,12 +52,12 @@ Kubernetes v1.20及更高版本：Kubernetes.io/OS = Linux
 
 | 连接 | 已将kubeccli配置为与目标K8s集群通信、并可通过Internet连接到您的Cloud Insights环境。
 
-如果您在安装期间使用代理、请按照中的说明进行操作 link:/task_config_telegraf_agent_k8s.html#configuring-proxy-support["配置代理支持"] 部分。
+如果您在安装期间使用代理、请按照中的说明进行操作 link:task_config_telegraf_agent_k8s.html#configuring-proxy-support["配置代理支持"] 部分。
 
 为了获得准确的审核和数据报告、请使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。 
 
 
-| 其他 | 如果您运行的是OpenShift 4.6或更高版本、则除了确保满足这些前提条件之外、您还必须访问以下链接：tadd_config_testraf_agent_k8s.html#OpenShift-inInstructions [OpenShift Instructions。 
+| 其他 | 如果您运行的是OpenShift 4.6或更高版本、则必须遵循 link:task_config_telegraf_agent_k8s.html#openshift-instructions["OpenShift 说明"] 此外、还应确保满足这些前提条件。 
 
 
 | API令牌 | 如果要重新部署Operator (即更新或替换Operator)、则无需创建新的API令牌；您可以重复使用先前的令牌。 
@@ -169,7 +169,7 @@ image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<versi
 agent:
   ...
   # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  # Please see documentation for link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository[using a custom or private docker repository].
   dockerRepo: your.docker.repo/long/path/to/test
   # Optional: A docker image pull secret that maybe needed for your private docker registry
   dockerImagePullSecret: docker-secret-name

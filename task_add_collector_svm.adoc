@@ -49,7 +49,7 @@ summary: 添加工作负载安全性数据收集器
 
 
 ** 使用 SVM SVM 管理 IP ，用户名和密码
-** 如果您不能或不愿意使用完整管理员集群 /SVM 管理用户名和密码，则可以创建一个权限较低的自定义用户，如中所述 link:#a-note-about-permissions["" 关于权限的注释 ""] 部分。可以为 SVM 或集群访问创建此自定义用户。
+** 如果您不能或不愿意使用完整管理员集群 /SVM 管理用户名和密码，则可以创建一个权限较低的自定义用户，如中所述 <<a-note-about-permissions," 关于权限的注释 ">> 部分。可以为 SVM 或集群访问创建此自定义用户。
 +
 *** o 您还可以使用具有至少具有 csrole 权限的角色的 AD 用户，如下面的 " 权限说明 " 一节所述。另请参见 link:https://docs.netapp.com/ontap-9/index.jsp?topic=%2Fcom.netapp.doc.pow-adm-auth-rbac%2FGUID-0DB65B04-71DB-43F4-9A0F-850C93C4896C.html["ONTAP 文档"]。
 
@@ -124,33 +124,9 @@ security login role create -role csrole -cmddirname "security certificate" -acce
 security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole
 security login create -user-or-group-name csuser -application ssh -authmethod password -role csrole
 ....
-<<<<<<<<< 标题
 
-[]
-====
-ONTAP ARP集成的权限：
 
-....
-security login rest-role create -role arwrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role arwrole
-....
-ONTAP访问权限被拒绝：
-
-....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole
-....
-注意：如果已添加一个REST角色--_arwrole_或_csrestrole_--则无需再添加另一个REST角色。您只需按照以下示例添加API权限即可。
-
-示例：_csrestrole_已存在、因此我们只需启用反勒索软件保护并为现有_csrestrole_授予API权限：
-
-....
-security login rest-role create -role csrestrole -api /api/storage/volumes -access readonly -vserver <cluster_name>
-security login rest-role create -api /api/security/anti-ransomware -access readonly  -role arwrole -vserver <cluster_name>
-....
->>>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-===通过*Vserver Management IP*添加时的权限：
+=== 通过* Vserver Management IP*添加时的权限：
 
 如果您无法使用集群管理管理员用户允许工作负载安全性访问ONTAP SVM数据收集器、则可以创建一个名为"CSUser"的新用户、其角色如下命令所示。将工作负载安全数据收集器配置为使用Vserver管理IP时、请使用"CSUser"的用户名和"CSUser"的密码。
 
@@ -168,17 +144,9 @@ security login role create -vserver <vservername> -role csrole -cmddirname "vser
 security login role create -vserver <vservername> -role csrole -cmddirname "volume snapshot" -access all
 ....
  security login create -user-or-group-name csuser -application ontapi -authmethod password -role csrole -vserver <vservername>
-<<<<<<<<< 标题
 
-====
-ONTAP访问权限被拒绝：
 
-....
-security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <svm_name>
-security login create -user-or-group-name csuser -application http -authmethod password -role csrestrole -vserver <svm_name>
-....
->>>>> b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1
-=== ONTAP自动防软件保护的权限
+=== ONTAP自主防兰软件保护的权限
 
 如果您使用的是集群管理凭据、则不需要任何新权限。
 
@@ -384,7 +352,7 @@ g)在ONTAP中打开防火墙，以便ONTAP能够连接代理盒。
 
 8.确认端口7已打开。
 
-9.如果上述方法均无法解决问题描述问题、请使用创建案例 link:http://docs.netapp.com/us-en/cloudinsights/concept_requesting_support.html["NetApp 支持"] 以获得进一步帮助。 
+9.如果上述方法均无法解决问题描述问题、请使用创建案例 link:concept_requesting_support.html["NetApp 支持"] 以获得进一步帮助。 
 
 
 | 消息： "Failed to determine ONTAP type for [hostname ： <IP Address> 。原因：与存储系统 <IP 地址 > 的连接错误：主机不可访问（主机不可访问） " | 1. 验证是否提供了正确的 SVM IP 管理地址或集群管理 IP 。2. 通过 SSH 连接到要连接的 SVM 或集群。连接后，请确保 SVM 或集群名称正确无误。 
@@ -420,6 +388,15 @@ g)在ONTAP中打开防火墙，以便ONTAP能够连接代理盒。
 | 数据收集器出错，显示此错误消息。" 错误：连接器处于错误状态。服务名称： audit 。失败原因：无法在 SVM SVM_test 上配置策略。原因： ZAPI 字段： Events 缺少值。" | 从仅配置 NFS 服务的新 SVM 开始。在工作负载安全性中添加ONTAP SVM数据收集器。在工作负载安全性中添加ONTAP SVM数据收集器时、CIFS会配置为SVM的允许协议。请等待、直到工作负载安全性中的数据收集器显示错误。由于未在SVM上配置CIFS服务器、因此Workload Security将显示左侧所示的此错误。编辑 ONTAP SVM 数据收集器并取消选中 CIFS 作为允许的协议。保存数据收集器。它将在仅启用 NFS 协议的情况下开始运行。 
 
 
-| Data Collector 显示错误消息：错误：无法在 2 次重试内确定收集器的运行状况，请重新尝试重新启动收集器（错误代码： AGENT008 ）。 | 1.在数据收集器页面上、滚动到出现错误的数据收集器右侧、然后单击3点菜单。选择 _Edit_ 。再次输入数据收集器的密码。按 _Save_ 按钮保存数据收集器。Data Collector 将重新启动，并应解决此错误。2. Agent计算机可能没有足够的CPU或RAM余量、这就是DSC出现故障的原因。请检查添加到计算机中代理的数据收集器的数量。如果超过20、请增加Agent计算机的CPU和RAM容量。增加CPU和RAM后、DSCS将自动进入Initializing状态、然后自动进入Running状态。请查看上的规模估算指南 link:https://docs.netapp.com/us-en/cloudinsights/concept_cs_event_rate_checker.html["此页面"]。 
+| Data Collector 显示错误消息：错误：无法在 2 次重试内确定收集器的运行状况，请重新尝试重新启动收集器（错误代码： AGENT008 ）。 | 1.在数据收集器页面上、滚动到出现错误的数据收集器右侧、然后单击3点菜单。选择 _Edit_ 。
+再次输入数据收集器的密码。
+按 _Save_ 按钮保存数据收集器。
+Data Collector 将重新启动，并应解决此错误。
+
+2. Agent计算机可能没有足够的CPU或RAM余量、这就是DSC出现故障的原因。
+请检查添加到计算机中代理的数据收集器的数量。
+如果超过20、请增加Agent计算机的CPU和RAM容量。
+增加CPU和RAM后、DSCS将自动进入Initializing状态、然后自动进入Running状态。
+请查看上的规模估算指南 link:concept_cs_event_rate_checker.html["此页面"]。 
 |===
 如果您仍遇到问题，请访问 * 帮助 > 支持 * 页面中提到的支持链接。

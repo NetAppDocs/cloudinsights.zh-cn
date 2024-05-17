@@ -276,7 +276,7 @@ image: <docker repo of the enterprise/corp docker repo>/netapp-monitoring:<versi
 agent:
   ...
   # An optional docker registry where you want docker images to be pulled from as compared to CI's docker registry
-  # Please see documentation link here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
+  # Please see documentation link here: link:task_config_telegraf_agent_k8s.html#using-a-custom-or-private-docker-repository
   dockerRepo: your.docker.repo/long/path/to/test
   # Optional: A docker image pull secret that maybe needed for your private docker registry
   dockerImagePullSecret: docker-secret-name
@@ -434,7 +434,7 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
 
 
 | 在Kubelnetes上、我的Telegraf Pod报告以下错误：
-"处理mountstats信息时出错：无法打开mountstats文件：/hostfs/proc/1/mountstats、错误：打开/hostfs/proc/1/mountstats：权限被拒绝" | 如果启用并强制实施SELinux、则可能会阻止Telegraf Pod访问Kubelnetes节点上的/proc/1/mountstats文件。要克服此限制、请编辑代理配置并启用run特权 设置。有关详细信息、请参见： https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#openshift-instructions[]。 
+"处理mountstats信息时出错：无法打开mountstats文件：/hostfs/proc/1/mountstats、错误：打开/hostfs/proc/1/mountstats：权限被拒绝" | 如果启用并强制实施SELinux、则可能会阻止Telegraf Pod访问Kubelnetes节点上的/proc/1/mountstats文件。要克服此限制、请编辑代理配置并启用run特权 设置。有关详细信息、请参见 link:task_config_telegraf_agent_k8s.html#openshift-instructions["OpenShift 说明"]。 
 
 
 | 在Kubelnetes上、我的Telegraf ReporticaSet Pod报告以下错误：

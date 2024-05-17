@@ -31,7 +31,7 @@ image:SupportPageWithLearningCenter.png["支持页面"]
 
 == 正在激活支持授权
 
-在试用模式下运行时， Cloud Insights 可提供自助服务和电子邮件支持。订阅服务后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。注册完成前，默认支持模式为自助服务。请参见 link:#obtaining-support-information["详细信息"] 。
+在试用模式下运行时， Cloud Insights 可提供自助服务和电子邮件支持。订阅服务后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。注册完成前，默认支持模式为自助服务。请参见 <<obtaining-support-information,详细信息>> 。
 
 在初始订阅过程中，您的 Cloud Insights 实例将生成一个 20 位数的 NetApp 序列号，此序列号以 "950" 开头。此 NetApp 序列号表示与您的帐户关联的 Cloud Insights 订阅。您必须注册 NetApp 序列号才能激活支持授权。我们提供了两种支持注册选项：
 
