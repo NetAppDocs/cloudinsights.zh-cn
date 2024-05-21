@@ -81,7 +81,7 @@ summary: 添加工作负载安全性数据收集器
 
 == 阻止用户访问的前提条件
 
-请记住以下内容 link:/cloudinsights/cs_restrict_user_access.html["用户访问阻止"]：
+请记住以下内容 link:cs_restrict_user_access.html["用户访问阻止"]：
 
 要使此功能正常运行、需要集群级别的凭据。
 

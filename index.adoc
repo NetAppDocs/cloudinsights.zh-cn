@@ -46,10 +46,11 @@ Cloud Insights 提供混合多云监控功能、可为您提供对基础架构�
 * 如何执行 link:task_cloud_insights_onboarding_1.html["*开始使用*"] 是否使用Cloud Insights ？
 * 我已注册。现在我该怎么办？link:task_getting_started_with_cloud_insights.html["正在获取数据"]
 link:concept_user_roles.html["设置用户"]
-* 太棒了！下一步是什么？link:task_defining_annotations.html["准备资产：添加标注"]
+* 太棒了！下一步是什么？
+link:task_defining_annotations.html["准备资产：添加标注"]
 link:concept_querying_assets.html["查找所需资产： Querying"]
 link:concept_dashboards_overview.html["查看所需数据：信息板"]
-link:https:task_create_monitor.html["监控和警报"]
-link:https://docs.netapp.com/us-en/cloudinsights/task_cs_getting_started.html["保护数据安全"]
+link:task_create_monitor.html["监控和警报"]
+link:task_cs_getting_started.html["保护数据安全"]
 * 这是很棒的东西！我已准备好 link:concept_subscribing_to_cloud_insights.html["* 订阅 *"]。
 
