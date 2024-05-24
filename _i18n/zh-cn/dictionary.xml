@@ -1431,11 +1431,9 @@
   <block id="95f4bba88336d4f3c2fec122117e49d5" category="section-title">适用于所有版本的 Cloud Insights API</block>
   <block id="9639a8d17623d8208d1bfa965acfd83f" category="paragraph">API 访问现在可在所有版本的 Cloud Insights 中使用。现在， Basic 版本的用户可以自动执行采集单元和数据收集器的操作，而 Standard Edition 用户可以查询指标并载入自定义指标。高级版仍允许充分利用所有 API 类别。</block>
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link-macro">API 文档</block>
-  <block id="838c002eb118e710e5d61b71fc780f8f" category="paragraph">有关 API 使用情况的详细信息，请参见 <block ref="e9ed95f163178f5ba2f40600e4067842" category="inline-link-macro-rx"></block>。</block>
   <block id="9a4bface9098ff4cd4b35cca641c0042" category="section-title">2021年4月</block>
   <block id="36366a2669f22ce91b34ad6b41571aae" category="section-title">更轻松地管理监控器</block>
   <block id="b9a016ada9a329e58ded80ea7a0b1790" category="inline-link-macro">监控分组</block>
-  <block id="13b7f54c5b81552a88e3fcdf41c1053b" category="paragraph"><block ref="44c67d721560e8a84c351ce2405bfdf7" category="inline-link-macro-rx"></block> 简化环境中监控器的管理。现在，可以将多个监控器分组在一起并将其作为一个暂停。例如，如果基础架构堆栈发生更新，则只需单击一下，即可暂停所有这些设备发出的警报。</block>
   <block id="973ec05886dc84294d5bb00f09eed546" category="paragraph">监控组是一项令人兴奋的新功能的第一部分，该功能可为 Cloud Insights 改进 ONTAP 设备的管理。</block>
   <block id="4b9f459db26fdb8e016065d628e26578" category="paragraph"><block ref="4b9f459db26fdb8e016065d628e26578" category="inline-image-macro-rx" type="image"></block></block>
   <block id="562e0f00195363fb03d04ff04ed49b74" category="section-title">使用 Webhooks 增强了警报选项</block>
@@ -1843,8 +1841,6 @@
   <block id="5b0e955b901856f853a908ff572690cf" category="paragraph">Cloud Insights 中的受管单元（ MTU ）计算已更改为以下值：</block>
   <block id="0e46275de0a113142f9932c6b8964924" category="paragraph">此更改会将您可以使用现有 Cloud Insights 订阅监控的环境容量有效地提高一倍。</block>
   <block id="aafb48343bbcbc586f011c8f87a52d7f" category="section-title">2019年11月</block>
-  <block id="01c11021cc38b74d02dfdb2ef5e77fca" category="section-title">版本功能比较表</block>
-  <block id="f9acaf912b63febf0bcf7a9e4d298e9f" category="inline-link-macro">比较表</block>
   <block id="e10986a4d8d7c27e4a9031d551cb15f3" category="section-title">2019年10月</block>
   <block id="c5562ce2e22a86c247849904ecef3dc8" category="section-title">报告</block>
   <block id="4d581ab73b477b0058e9a556a352a77a" category="inline-link-macro">* Cloud Insights 报告 *</block>
@@ -5300,7 +5296,6 @@
   <block id="f117b445f62182f9fb78126941f7d60a" category="paragraph">可通过多种不同方式查看审核条目：</block>
   <block id="5392e0033662acf4510f59d25c75cb77" category="paragraph">默认情况下，此表按降序时间顺序显示条目。</block>
   <block id="4f64e4d2d0b40a09df727cdb00378860" category="summary">配置 NetApp E 系列数据收集器。</block>
-  <block id="99f7508fc77f6415a72debd8f680d7cf" category="paragraph">NetApp E 系列数据收集器可收集清单和性能数据。此收集器支持使用相同配置并报告相同数据的固件 7.x+ 。</block>
   <block id="20d1b58bf59d1451203fb42bdc412ad3" category="paragraph">Cloud Insight 从 NetApp E 系列数据收集器采集以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="36627e0e4a34d0cb2aca55f4fd1a0112" category="section-title">E 系列术语（登录页面）</block>
   <block id="5c51efdc811f9ced021d566d81d1adcb" category="paragraph">以下术语适用于您在 NetApp E 系列资产登录页面上可能找到的对象或参考。其中许多术语也适用于其他数据收集器。</block>
@@ -7565,11 +7560,9 @@
   <block id="e1c87fa2897a7e209d3911ea7c640c39" category="section-title">数据收集监控器</block>
   <block id="2745e86ed1540385bf34b3d3a304cd23" category="cell">检查数据收集器或目标系统的配置。请注意、收集器警告监控器可以发送比其他监控器类型更多的警报、因此建议不要设置任何警报收件人、除非您正在进行故障排除。</block>
   <block id="3f2608784f855ab79eaabba7e20db8cd" category="paragraph">借助Cloud Insights 的高级Kubernetes监控和集群资源管理器、您可以更轻松地启动和运行。</block>
-  <block id="c99dc7f44e492bb96fd08368b4a3ddbc" category="paragraph">。 <block ref="59560f912a73dc2f4cdb9ad27b9948a6" category="inline-link-macro-rx"></block> (NKMO）是安装适用于Cloud Insights Insights的Kubernetes的首选方法、可通过更少的步骤更灵活地配置监控、并增加监控K8s集群中运行的其他软件的机会。</block>
   <block id="d957cd4e3ae2f67fec227c3e2c78ab16" category="paragraph">单击以上链接可了解更多信息和前提条件</block>
   <block id="58943c1999eff55c3f818d8cd9208708" category="paragraph">请勿因收集器故障而错过关键指标！</block>
   <block id="abca7cba75e5a9ff86b1490f32891f82" category="inline-link-macro">警报</block>
-  <block id="b07c25215a61dbc162c04ac4e8cf464f" category="paragraph">使用新的跟踪数据收集器比以往任何时候都更容易 <block ref="465d95cf415e2e3bb54b69142e1e3a2d" category="inline-link-macro-rx"></block> 数据收集器和采集单元故障。请注意、默认情况下、这些监控器为_Paused_.要启用此功能、请导航到您的监控器页面、找到并恢复"采集单元关闭"和"收集器失败"</block>
   <block id="d79ca0965e13425b418413735c2f77b4" category="section-title">ONTAP 存储更改时发出警报</block>
   <block id="3093b62af2aca236846ea1b6c223c129" category="paragraph">不要让意外的存储更改导致中断！</block>
   <block id="7b4027634c44a41ce42886c7383adeb4" category="paragraph">现在、您可以将Cloud Insights 配置为在ONTAP 系统上检测到修改或删除FlexVol、节点和SVM时发出警报。</block>
@@ -8961,7 +8954,6 @@
   <block id="028a813ab7ca0ec1e490e58e353d0782" category="paragraph">我们增加了近20个 <block ref="21d27926b20de95eb7fd4474ce156c92" category="inline-link-macro-rx"></block> 针对互连链路断开、检测信号问题等发出警报。此外、还添加了三个新的数据保护日志监控器、用于在发生SnapMirror自动重新同步、MetroCluster 镜像和FabricPool 镜像重新同步更改时发出警报。</block>
   <block id="0fa70c383e62bf46ebd5707879e9b6c5" category="paragraph">请注意、其中某些监控器默认为_enabled_；如果您不想对其发出警报、则必须_pause_。另请注意、这些监控器未配置为传送通知；如果要通过电子邮件或网络连接发送警报、您必须在这些监控器上配置通知收件人。</block>
   <block id="3b89213aa4589489bac13286c1bc5e29" category="section-title">所有信息板表小工具的.CSV导出</block>
-  <block id="ae021423f4c5fde86bb37ab0f8579f55" category="inline-image-macro">.csv导出图标</block>
   <block id="09a68724f426e941c09d3df1f6170779" category="paragraph">现在、新的导出功能还包括列选择、重命名列和单元转换等数据自定义功能。</block>
   <block id="f5f5c23c1738f3c9d968460a7922f3de" category="list-text">登录到 Cloud Insights 。</block>
   <block id="09e37f1ff0e476ebcf643d237fbafa6c" category="admonition">此外、还可以在信息板表小工具中的"三点"菜单以及大多数登录页面表中导出到.CSV。</block>
@@ -9316,7 +9308,6 @@
   <block id="a9d1cbf71942327e98b40cf5ef38a960" category="list-text">队列</block>
   <block id="541661622185851c248b41bf0cea7ad0" category="list-text">Kafka</block>
   <block id="d487fd41764429863b69436bcc72483a" category="paragraph">NetApp 不断改进和完善其产品和服务。下面是Cloud Insights 商业版中提供的一些最新特性和功能。</block>
-  <block id="a67cb8d242ecba5601e34e5b2dbdff12" category="admonition">其中某些功能可能在Cloud Insights 联邦版中不可用、也可能随功能缩减而提供。在可能的情况下、这些差异会在文档中予以说明。</block>
   <block id="904837c9cf9bc52a96ce17d051fddec9" category="section-title">2023年4月</block>
   <block id="ff13f3d2e68843ff68c076f0df232858" category="inline-link-macro">_Kubbernetes网络性能和映射_</block>
   <block id="c7e0f6549ee8e023d19670a2bd355d16" category="paragraph">主要功能：•工作负载图显示了Kubernetes工作负载的依赖关系和流、并重点显示了网络和性能问题。•监控Kubnetes Pod、工作负载和节点之间的网络流量；确定流量来源和延迟问题。•通过分析传入、传出、跨区域和跨区域网络流量来降低整体成本。</block>
@@ -12482,13 +12473,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="2d97586297f1c09c58d04825a03405cf" category="cell">选择此选项可报告WWN别名</block>
   <block id="a5bc5e25da90f0de3436e66f223df7bc" category="inline-link-macro">ONTAP 9.14.1 ONTAPI到REST的映射</block>
   <block id="6e2fe63a1853939e7fbcdfb785f57e86" category="admonition">ONTAP REST收集器可用于替代以前基于ONTAPI的收集器。因此、收集或报告的指标可能存在差异。有关ONTAPI和REST之间差异的详细信息、请参见 <block ref="239e0ab1e46437458ce3ffae42b58457" category="inline-link-macro-rx"></block> 文档。</block>
-  <block id="e8e49e7a35d758d776738dccc87a87b1" category="cell">磁盘空间应按以下方式分配：
-/opt/NetApp 35 GB (最低)
-
-注意：建议额外分配一点磁盘空间、以便创建文件系统。确保文件系统中至少有35 GB的可用空间。
-
-
-如果/opt是NAS存储中的已挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 部分、了解更多详细信息。</block>
   <block id="764f447ccb3bf87ad75ec71c633b9966" category="inline-link-macro">Brocade FOS REST </block>
   <block id="882354c20e5e22e1c581f6c0c24ef8f3" category="cell"><block ref="882354c20e5e22e1c581f6c0c24ef8f3" category="inline-link-macro-rx"></block></block>
   <block id="5c62f1c9f30e0ad47fc12431846b6858" category="inline-link-macro">用户访问阻止</block>
@@ -12622,9 +12606,6 @@ SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">适用于Kubbernetes的数据收集器</block>
   <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Data Collector：KubeNet</block>
   <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubnetes Monitoring Operator安装和配置</block>
-  <block id="f198d7bd876499c7a876c665606e2d82" category="section-title">适用于Kubnetes网络映射的iSCSI SAN支持</block>
-  <block id="d14b2ad81a63e0273293afd80b29ec37" category="paragraph">确定NFS以及现在的iSCSI的Kubernetes底层存储依赖关系。
-通过深入了解Kubbernetes应用程序的存储网络活动和未划定的存储指标、加快解决问题描述问题的速度。了解Kubnetes应用程序如何使用存储基础架构进行成本分摊和用量反馈报告。</block>
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">POD到存储示例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubnetes变更分析为您提供了一个一体化视图、用于查看K8s环境的最新变更。警报和部署状态触手可及。借助变更分析、您可以跟踪每个部署和配置变更、并将其与K8s服务、基础架构和集群的运行状况和性能相关联。</block>
@@ -13091,13 +13072,8 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
 2. <block ref="6fd69549c3aeb303e3b2df8a94f1263f" category="inline-xref-macro-rx"></block> 监控运算符的最新版本。</block>
   <block id="24f2b5ad86e12ea4b5db8fe4e651ad48" category="cell">自2023年10月12日起、Cloud Insights已对运营商进行重构、以更好地为用户服务；要全面采用这些更改、您必须执行 <block ref="860504374016936ed59489a365e20672" category="inline-xref-macro-rx"></block> 和 <block ref="26142c5a68eb5609ee139db77de754bb" category="inline-xref-macro-rx"></block>。</block>
   <block id="e832e916ac4edbd5ff4fc3ce13949058" category="paragraph">或者、也可以这样做 <block ref="eb03b2f692ebf826fa07016cc9fa15a6" category="inline-xref-macro-rx"></block> 和 <block ref="f33f6e060928000e7af3fed4c4e6c6a0" category="inline-xref-macro-rx"></block> 代理。</block>
-  <block id="a6310e9ccedf4149dc3c1ac0eac9b701" category="paragraph">除了Cloud Insights的初始试用之外、您还可以利用 <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>。例如、如果您订阅了Cloud Insights并一直在监控存储和虚拟机、则在向环境添加Kubennetes时、您将自动开始试用30天的Kubennetes Observability。在试用期结束之前、Kubbernetes可观察性受管单元的使用量不会计入您订阅的授权。</block>
-  <block id="51ad37bbaedf65e990986c7c45cecf6b" category="paragraph">除了Cloud Insights的初始试用之外、您还可以利用 <block ref="237f682afdde35b908e076b42143082f" category="inline-link-macro-rx"></block>。例如、如果您已订阅基础架构可观察性、但要将Kubennetes添加到您的环境中、则您将自动进入30天的Kubennetes可观察性试用版。只有在试用期结束时、您才会因使用Kubbernetes Observability管理的单元而付费。</block>
-  <block id="7db8a9734f4a7b5feca7a8af308c36d8" category="paragraph">确保数据的可访问性至关重要、因此我们已导出.CSV <block ref="b3235708a4be37e405526094c229e25f" category="inline-image-macro-rx" type="image"></block> 可用于所有指标查询、信息板表小工具和对象登录页面、而不管您要查询的数据类型(资产或集成)如何。</block>
   <block id="7daeb1e9ffa3386f002669f9634f6b0d" category="paragraph">体验Spot by NetApp与云成本的强大功能、该功能可对过去、现在和预计支出进行详细的成本分析、从而深入了解您环境中的云使用情况。云成本信息板可清晰地显示云支出，并深入了解各个工作负载，帐户和服务。</block>
   <block id="e0364f4b0da4fc898b2bf6ba9b559d80" category="paragraph">Kubernetes Agent 安装经过简化，只需较少的用户交互即可完成。 <block ref="a001394c8ad50807ceb51bed4f9925c0" category="inline-link-macro-rx"></block> 现在包括 Kubernetes 数据收集。</block>
-  <block id="b4caded524c5b960f2078625c9674837" category="paragraph">借助 Cloud Insights 高级版，管理员可以启用 *<block ref="5c8d95133de190c8d2aa29b2263f0a3f" category="inline-link-macro-rx"></block>* （ SSO ）企业域中所有用户对 Cloud Insights 的访问，而无需单独邀请他们。启用 SSO 后，具有相同域电子邮件地址的任何用户均可使用其公司凭据登录到 Cloud Insights 。</block>
-  <block id="55dc3e9ac4ea7deea6bba8489b3a7ebb" category="paragraph">"* 管理 "&gt;" 订阅 * " 页面 <block ref="40b8c748cb211bbeb30a24d831f9ddd4" category="inline-link-macro-rx"></block> 已进行更新，以列出 Cloud Insights 基本版，标准版和高级版中提供的功能集。NetApp 不断改进其云服务，因此请经常查看此页面，找到适合您不断变化的业务需求的版本。</block>
   <block id="641d04ada5e7fc82332bfdbadb6f2873" category="list-text"><block ref="641d04ada5e7fc82332bfdbadb6f2873" category="inline-link-macro-rx"></block></block>
   <block id="ed5e0acf9669f57fff84572a31621d1b" category="list-text">Cloud Insights 支持 <block ref="97c4c7cd3efb536ad349bb18a2afdd73" category="inline-link-macro-rx"></block> 在一个数据收集器中。您必须将 AWS 环境配置为允许 Cloud Insights 从子帐户收集数据。</block>
   <block id="6341e61d6dc641d29b3f2e7300137ea9" category="list-text">在上注册帐户 <block ref="e0b3e45a049f223d3b91d005d1e31db5" category="inline-link-macro-rx"></block> 访问 NetApp 的所有云产品。</block>
@@ -13107,4 +13083,40 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
   <block id="c5f846375be5434ca084ef54324ae76b" category="list-text">*<block ref="e8f6304d27d1ce95657a904423bb24f0" category="inline-link-macro-rx"></block>*</block>
   <block id="801ef9b405d4e49db3e3da2aa073e5f6" category="admonition">您必须注册才能 <block ref="5dae4a2b8da6e9eee160d72287b835e3" category="inline-xref-macro-rx"></block> 适用于 NetApp Cloud 产品。要进行注册，请转到 NetApp 的 <block ref="c5b01460a42d58b3ab6bc662dda87194" category="inline-link-macro-rx"></block>。</block>
   <block id="3307ea9b101dea248dbf60bf6f93ed75" category="paragraph">请记住以下内容 <block ref="e513c094cbe732163e31cf30e277e8bc" category="inline-link-macro-rx"></block>：</block>
+  <block id="caab88a7f89273838ab79f84c1c8a49d" category="summary">配置NetApp E系列REST数据收集器。</block>
+  <block id="7d9a2bf43caef4a2c2ccab31b58ad1fb" category="doc">NetApp E系列REST数据收集器</block>
+  <block id="02bbac9de1d6cf62350e13b0ebc66279" category="paragraph">NetApp E系列REST数据收集器可收集清单和性能数据。此收集器支持使用相同配置并报告相同数据的固件 7.x+ 。REST收集器可监控存储池的加密状态以及相关磁盘和卷的加密状态、并将存储节点CPU利用率作为性能计数器来提供-传统SANtricity E系列收集器中未提供此功能。</block>
+  <block id="06026757f9dde1467a9d040a8e0ca5e8" category="paragraph">Cloud Insight使用REST从NetApp E系列采集以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
+  <block id="199cdaad4b2e2da65f3c12904a570c15" category="inline-link-macro">E系列SANtricity API</block>
+  <block id="637b0100ed897846e49020047a7a69f0" category="list-text">此收集器仅支持具有*本机REST API功能*的E系列型号阵列。E系列组织为较早的E系列阵列提供了一个可安装的阵列外REST API分发版：此收集器不支持该方案。使用较旧阵列的用户应继续使用Cloud Insights <block ref="1e9e2e04984e423436b9d1423e41c8ce" category="inline-link-macro-rx"></block> 收集器。</block>
+  <block id="1dec37be48852b1e80d1d4ddd48a1698" category="list-text">"E系列控制器IP地址"字段支持由2个IP/主机名组成的逗号分隔字符串；如果无法访问第一个IP/主机名、收集器将智能地尝试第二个IP/主机名。</block>
+  <block id="483afc2b0c89bbcbc08179996afd1bd3" category="list-text">HTTPS端口：默认值为8443。</block>
+  <block id="9ae1165f709f672a335b55af672fcede" category="cell">E系列控制器IP地址</block>
+  <block id="0e8766b280f750325a542b5489199d1e" category="cell">阵列控制器的IP地址和/或完全限定域名(以英文逗号分隔)</block>
+  <block id="92484fec13cdc76ac141bbc4fa556717" category="doc">NetApp E系列旧版SANtricity API数据收集器</block>
+  <block id="8e9fa018c5fbfdcbcf5f7eb6c96db8ca" category="paragraph">NetApp E系列旧版SANtricity API数据收集器可收集清单和性能数据。此收集器支持使用相同配置并报告相同数据的固件 7.x+ 。</block>
+  <block id="5b44aad20fbc2491f38bc99fd2eb8086" category="section-title">2024年5月</block>
+  <block id="cc0bc6461a822caeea316a8f3210d21f" category="section-title">根据时间自动解决警报</block>
+  <block id="2741e130f2ac71e99ac0cbafbb9723e0" category="paragraph">现在、可以根据时间解决日志警报；如果此警报条件停止发生、Cloud Insights可以在指定时间过后自动解决此警报。您可以选择在几分钟、几小时或几天内解决警报。</block>
+  <block id="6a16c8c6db694c5bd9f5d2b182956c8b" category="inline-image-macro">根据过去的时间解决警报</block>
+  <block id="e77cf5300b07c5139b04469146e62ab7" category="paragraph"><block ref="e77cf5300b07c5139b04469146e62ab7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a48ce2d2ead926908bf3e2f5d7de56b8" category="section-title">对Kubnetes的iSCSI支持</block>
+  <block id="f16e629d6abf8685ee4d974de80f76a2" category="paragraph">Cloud Insights现在支持映射与Kubornetes关联的iSCSI存储、从而可以使用Kubornetes网络映射加快故障排除速度、并能够通过报告提供成本分摊或用量反馈报告。</block>
+  <block id="31a81d987a44cbfb0c2a597eabf114c6" category="inline-link-macro">单元评估</block>
+  <block id="92f61f316ed304aa59fc2f9b20e73b00" category="paragraph">除了Cloud Insights的初始试用之外、您还可以利用 <block ref="4bd4692292d9f732bb0caf31164d4a95" category="inline-link-macro-rx"></block>。例如、如果您订阅了Cloud Insights并一直在监控存储和虚拟机、则在向环境添加Kubennetes时、您将自动开始试用30天的Kubennetes Observability。在试用期结束之前、Kubbernetes可观察性受管单元的使用量不会计入您订阅的授权。</block>
+  <block id="99b27c504f0c3fcdb98f75b276b0c15a" category="paragraph">除了Cloud Insights的初始试用之外、您还可以利用 <block ref="4bd4692292d9f732bb0caf31164d4a95" category="inline-link-macro-rx"></block>。例如、如果您已订阅基础架构可观察性、但要将Kubennetes添加到您的环境中、则您将自动进入30天的Kubennetes可观察性试用版。仅在评估期结束时、您的Kubbernetes Observability受管单元使用量才会向您收费。</block>
+  <block id="2e4d31af0f73e73316d16040c201d754" category="paragraph">确保数据的可访问性至关重要，因此，我们已经做到了这一点。 CSV导出可用于所有指标查询、信息板表小工具和对象登录页面、而不管您要查询的数据类型(资产或集成)如何。</block>
+  <block id="14fd8d5705fd5b8176b77dfebb7d13e4" category="paragraph">。 <block ref="c4dd0ed9c7aa586e1ccc41d08bd166bb" category="inline-link-macro-rx"></block> (NKMO）是安装适用于Cloud Insights Insights的Kubernetes的首选方法、可通过更少的步骤更灵活地配置监控、并增加监控K8s集群中运行的其他软件的机会。</block>
+  <block id="49980d8cbfcf467e48dd828ddb798a3e" category="paragraph">使用新的跟踪数据收集器比以往任何时候都更容易 <block ref="e932cbc2a5cd1eae0c0f9f3536a1f66d" category="inline-link-macro-rx"></block> 数据收集器和采集单元故障。
+请注意、默认情况下、这些监控器为_Paused_.要启用此功能、请导航到您的监控器页面、找到并恢复"采集单元关闭"和"收集器失败"</block>
+  <block id="bc27a46c4d07716aed4c7e1c5668263e" category="paragraph">有关 API 使用情况的详细信息，请参见 <block ref="84dd77938b21867afe38f6d659bbcd26" category="inline-link-macro-rx"></block>。</block>
+  <block id="b646c2538957d172cf56722332fc0c64" category="paragraph"><block ref="c1a6f5b95fc09a1273de65d4f5176a14" category="inline-link-macro-rx"></block> 简化环境中监控器的管理。现在，可以将多个监控器分组在一起并将其作为一个暂停。例如，如果基础架构堆栈发生更新，则只需单击一下，即可暂停所有这些设备发出的警报。</block>
+  <block id="47615e5adf328078e0feeaf4f57b3085" category="paragraph">借助 Cloud Insights 高级版，管理员可以启用 *<block ref="45710841bd1398dde71fdeae8706a5eb" category="inline-link-macro-rx"></block>* （ SSO ）企业域中所有用户对 Cloud Insights 的访问，而无需单独邀请他们。启用 SSO 后，具有相同域电子邮件地址的任何用户均可使用其公司凭据登录到 Cloud Insights 。</block>
+  <block id="ff6c00b335fc80bde3d634aaad097f47" category="cell">磁盘空间应按以下方式分配：
+/opt/NetApp 36 GB (创建文件系统后至少35 GB可用空间)
+
+注意：建议额外分配一点磁盘空间、以便创建文件系统。确保文件系统中至少有35 GB的可用空间。
+
+
+如果/opt是NAS存储中的已挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 部分、了解更多详细信息。</block>
 </blocks>

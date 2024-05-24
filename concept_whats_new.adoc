@@ -19,18 +19,27 @@ keywords: features
 NetApp 不断改进和完善其产品和服务。下面是Cloud Insights 商业版中提供的一些最新特性和功能。
 
 
-NOTE: 其中某些功能可能在Cloud Insights 联邦版中不可用、也可能随功能缩减而提供。在可能的情况下、这些差异会在文档中予以说明。
 
+== 2024年5月
+
+
+
+=== 根据时间自动解决警报
+
+现在、可以根据时间解决日志警报；如果此警报条件停止发生、Cloud Insights可以在指定时间过后自动解决此警报。您可以选择在几分钟、几小时或几天内解决警报。
+
+image:alerts_resolve_based_on_time.png["根据过去的时间解决警报"]
+
+'''
 
 
 == 2024年4月
 
 
 
-=== 适用于Kubnetes网络映射的iSCSI SAN支持
+=== 对Kubnetes的iSCSI支持
 
-确定NFS以及现在的iSCSI的Kubernetes底层存储依赖关系。
-通过深入了解Kubbernetes应用程序的存储网络活动和未划定的存储指标、加快解决问题描述问题的速度。了解Kubnetes应用程序如何使用存储基础架构进行成本分摊和用量反馈报告。
+Cloud Insights现在支持映射与Kubornetes关联的iSCSI存储、从而可以使用Kubornetes网络映射加快故障排除速度、并能够通过报告提供成本分摊或用量反馈报告。
 
 image:pod-to-storage.png["POD到存储示例"]
 
@@ -138,7 +147,7 @@ Cloud Insights可以从ONTAP系统的后端交换机收集数据；只需在数�
 
 === 试用您尚未使用的Cloud Insights功能
 
-除了Cloud Insights的初始试用之外、您还可以利用 link:concept_subscribing_to_cloud_insights.html#module-evaluation["模块评估"]。例如、如果您订阅了Cloud Insights并一直在监控存储和虚拟机、则在向环境添加Kubennetes时、您将自动开始试用30天的Kubennetes Observability。在试用期结束之前、Kubbernetes可观察性受管单元的使用量不会计入您订阅的授权。
+除了Cloud Insights的初始试用之外、您还可以利用 link:concept_subscribing_to_cloud_insights.html#module-evaluation["单元评估"]。例如、如果您订阅了Cloud Insights并一直在监控存储和虚拟机、则在向环境添加Kubennetes时、您将自动开始试用30天的Kubennetes Observability。在试用期结束之前、Kubbernetes可观察性受管单元的使用量不会计入您订阅的授权。
 
 
 
@@ -305,7 +314,7 @@ image:StorageNodeSupportData.png["存储节点支持信息"]
 
 === 单元试用
 
-除了Cloud Insights的初始试用之外、您还可以利用 link:concept_subscribing_to_cloud_insights.html#module-evaluation["模块评估"]。例如、如果您已订阅基础架构可观察性、但要将Kubennetes添加到您的环境中、则您将自动进入30天的Kubennetes可观察性试用版。只有在试用期结束时、您才会因使用Kubbernetes Observability管理的单元而付费。
+除了Cloud Insights的初始试用之外、您还可以利用 link:concept_subscribing_to_cloud_insights.html#module-evaluation["单元评估"]。例如、如果您已订阅基础架构可观察性、但要将Kubennetes添加到您的环境中、则您将自动进入30天的Kubennetes可观察性试用版。仅在评估期结束时、您的Kubbernetes Observability受管单元使用量才会向您收费。
 
 
 
@@ -767,7 +776,7 @@ API系统已从“订阅”页面移至“*管理> API访问*”页面。
 
 === 所有信息板表小工具的.CSV导出
 
-确保数据的可访问性至关重要、因此我们已导出.CSV image:csv_export_icon.png[".csv导出图标"] 可用于所有指标查询、信息板表小工具和对象登录页面、而不管您要查询的数据类型(资产或集成)如何。
+确保数据的可访问性至关重要，因此，我们已经做到了这一点。 CSV导出可用于所有指标查询、信息板表小工具和对象登录页面、而不管您要查询的数据类型(资产或集成)如何。
 
 现在、新的导出功能还包括列选择、重命名列和单元转换等数据自定义功能。
 
@@ -1133,7 +1142,7 @@ image:ChatIcon.png["聊天\"图标、在微笑上方显示蓝色NetApp \"N"]
 
 借助Cloud Insights 的高级Kubernetes监控和集群资源管理器、您可以更轻松地启动和运行。
 
-。 link:https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#operator-based-install-or-script-based-install["NetApp Kubernetes监控操作员"] (NKMO）是安装适用于Cloud Insights Insights的Kubernetes的首选方法、可通过更少的步骤更灵活地配置监控、并增加监控K8s集群中运行的其他软件的机会。
+。 link:task_config_telegraf_agent_k8s.html["Kubbernetes监控操作员"] (NKMO）是安装适用于Cloud Insights Insights的Kubernetes的首选方法、可通过更少的步骤更灵活地配置监控、并增加监控K8s集群中运行的其他软件的机会。
 
 单击以上链接可了解更多信息和前提条件
 
@@ -1149,7 +1158,8 @@ image:ChatIcon.png["聊天\"图标、在微笑上方显示蓝色NetApp \"N"]
 
 请勿因收集器故障而错过关键指标！
 
-使用新的跟踪数据收集器比以往任何时候都更容易 link:https://docs.netapp.com/us-en/cloudinsights/task_system_monitors.html#data-collection-monitors["警报"] 数据收集器和采集单元故障。请注意、默认情况下、这些监控器为_Paused_.要启用此功能、请导航到您的监控器页面、找到并恢复"采集单元关闭"和"收集器失败"
+使用新的跟踪数据收集器比以往任何时候都更容易 link:task_system_monitors.html#data-collection-monitors["警报"] 数据收集器和采集单元故障。
+请注意、默认情况下、这些监控器为_Paused_.要启用此功能、请导航到您的监控器页面、找到并恢复"采集单元关闭"和"收集器失败"
 
 
 
@@ -1703,7 +1713,7 @@ API 访问现在可在所有版本的 Cloud Insights 中使用。现在， Basic
 
 | 数据仓库 |  |  | image:SmallCheckMark.png["复选标记"] 
 |===
-有关 API 使用情况的详细信息，请参见 link:https://docs.netapp.com/us-en/cloudinsights/API_Overview.html#api-documentation-swagger["API 文档"]。
+有关 API 使用情况的详细信息，请参见 link:API_Overview.html#api-documentation-swagger["API 文档"]。
 
 '''
 
@@ -1714,7 +1724,7 @@ API 访问现在可在所有版本的 Cloud Insights 中使用。现在， Basic
 
 === 更轻松地管理监控器
 
-link:https://docs.netapp.com/us-en/cloudinsights/task_create_monitor.html#monitor-grouping["监控分组"] 简化环境中监控器的管理。现在，可以将多个监控器分组在一起并将其作为一个暂停。例如，如果基础架构堆栈发生更新，则只需单击一下，即可暂停所有这些设备发出的警报。
+link:task_create_monitor.html#monitor-groups["监控分组"] 简化环境中监控器的管理。现在，可以将多个监控器分组在一起并将其作为一个暂停。例如，如果基础架构堆栈发生更新，则只需单击一下，即可暂停所有这些设备发出的警报。
 
 监控组是一项令人兴奋的新功能的第一部分，该功能可为 Cloud Insights 改进 ONTAP 设备的管理。
 
@@ -2492,7 +2502,7 @@ image:DuplicateWidget.png["复制小工具"]
 
 === 单点登录（ SSO ）
 
-借助 Cloud Insights 高级版，管理员可以启用 *link:concept_user_roles.html["单个 Sign-On"]* （ SSO ）企业域中所有用户对 Cloud Insights 的访问，而无需单独邀请他们。启用 SSO 后，具有相同域电子邮件地址的任何用户均可使用其公司凭据登录到 Cloud Insights 。
+借助 Cloud Insights 高级版，管理员可以启用 *link:concept_user_roles.html#what-is-identity-federation["单个 Sign-On"]* （ SSO ）企业域中所有用户对 Cloud Insights 的访问，而无需单独邀请他们。启用 SSO 后，具有相同域电子邮件地址的任何用户均可使用其公司凭据登录到 Cloud Insights 。
 
 
 NOTE: SSO 仅在 Cloud Insights 高级版中可用，必须先进行配置，然后才能为 Cloud Insights 启用它。SSO 配置包括 link:https://services.cloud.netapp.com/misc/federation-support["身份联合"] 通过 NetApp Cloud Central 。联合允许单点登录用户使用公司目录中的凭据访问您的 NetApp Cloud Central 帐户。
@@ -2586,13 +2596,6 @@ Cloud Insights 中的受管单元（ MTU ）计算已更改为以下值：
 
 == 2019年11月
 
-
-
-=== 版本功能比较表
-
-"* 管理 ">" 订阅 * " 页面 link:concept_subscribing_to_cloud_insights.html["比较表"] 已进行更新，以列出 Cloud Insights 基本版，标准版和高级版中提供的功能集。NetApp 不断改进其云服务，因此请经常查看此页面，找到适合您不断变化的业务需求的版本。
-
-'''
 
 
 == 2019年10月
