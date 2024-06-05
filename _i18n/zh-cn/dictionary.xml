@@ -13122,4 +13122,6 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
   <block id="8fd194517d64c215a9c8b5e2b8d0f67e" category="inline-link-macro">NetApp E系列REST </block>
   <block id="015094a403d71d47872c1d0819be899a" category="cell"><block ref="015094a403d71d47872c1d0819be899a" category="inline-link-macro-rx"></block></block>
   <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">E系列REST</block>
+  <block id="ab53b155d3f5f63613ea9034aaafadbd" category="cell">运行Kubelnetes Operator升级后、netapo-CI-Kube-state-metrics Pod无法启动、引发ErrImagePull (无法提取映像)。</block>
+  <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">尝试手动重置Pod。</block>
 </blocks>
