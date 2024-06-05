@@ -13119,4 +13119,7 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
 
 
 如果/opt是NAS存储中的已挂载文件夹、请确保本地用户有权访问此文件夹。如果本地用户无权访问此文件夹、则可能无法安装代理或数据收集器。请参见 <block ref="b8e4bfa44cc0a900c6c15b3a86438fdc" category="inline-link-macro-rx"></block> 部分、了解更多详细信息。</block>
+  <block id="8fd194517d64c215a9c8b5e2b8d0f67e" category="inline-link-macro">NetApp E系列REST </block>
+  <block id="015094a403d71d47872c1d0819be899a" category="cell"><block ref="015094a403d71d47872c1d0819be899a" category="inline-link-macro-rx"></block></block>
+  <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">E系列REST</block>
 </blocks>
