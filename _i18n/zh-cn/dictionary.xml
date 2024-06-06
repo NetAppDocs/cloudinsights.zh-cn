@@ -13124,4 +13124,6 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
   <block id="8f4063b3e2653e9f3c560f79c771819b" category="sidebar">E系列REST</block>
   <block id="ab53b155d3f5f63613ea9034aaafadbd" category="cell">运行Kubelnetes Operator升级后、netapo-CI-Kube-state-metrics Pod无法启动、引发ErrImagePull (无法提取映像)。</block>
   <block id="da4a57ccdb996916b48d63fa3e08bb40" category="cell">尝试手动重置Pod。</block>
+  <block id="2bc94fccd24faa68b4153886af40ec57" category="cell">在日志分析下、我的Kubernetes集群显示"Event Discarded as older then maxEventAgeSonds"消息。</block>
+  <block id="6c71496a372f3b5c0cbc9e2eb84a5fd0" category="cell">修改Operator _agentconfiguration_并将_event-exporter maxEventAgeSonds_(例如、60秒)、_event-exporter kubeQPS_(例如、100)和_event-exporter kubeBurst _(例如、500)增加到。有关这些配置选项的更多详细信息、请参见 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 页面。</block>
 </blocks>
