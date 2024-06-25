@@ -34,11 +34,12 @@ keywords: AU, acquisition unit, requirements, sizing
 | 操作系统 | 运行以下许可版本之一的计算机：
 
 * CentOS (64位)：7.2到7.9、8.1到8.4、Stream 8、Stream 9
+* AlmaLinux 9.3和9.4
 * Debian (64位)：9和10
 *《第15．1至第15．5版》
 * Oracle Enterprise Linux (64位)：7.5到7.9、8.1到8.8
-* Red Hat Enterprise Linux (64位)：7.2到7.9、8.1到8.8、9.1、9.2
-*洛基9.0、9.1、9.3
+* Red Hat Enterprise Linux (64位)：7.2到7.9、8.1到8.10、9.1到9.4
+*洛基9.0到9.4
 * SUSE Enterprise Linux Server 15、15 SP2至15 SP5
 * Ubuntu服务器：18.04、20.04、22.04 LTS
 *上述平台上的SELinux

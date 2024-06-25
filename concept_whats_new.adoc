@@ -20,6 +20,21 @@ NetApp 不断改进和完善其产品和服务。下面是Cloud Insights 商业�
 
 
 
+== 2024年6月
+
+
+
+=== 操作系统支持
+
+除了这些操作系统之外、Cloud Insights 采集单元还支持以下操作系统 link:https://docs.netapp.com/us-en/cloudinsights/concept_acquisition_unit_requirements.html["已支持"]：
+
+* Red Hat Enterprise Linux 8.9、8.10、9.4
+* 落基9.4
+* AlmaLinux 9.3和9.4
+
+
+
+
 == 2024年5月
 
 
