@@ -571,5 +571,8 @@ fluent-bit:
 
 
 | 在日志分析下、我的Kubernetes集群显示"Event Discarded as older then maxEventAgeSonds"消息。 | 修改Operator _agentconfiguration_并将_event-exporter maxEventAgeSonds_(例如、60秒)、_event-exporter kubeQPS_(例如、100)和_event-exporter kubeBurst _(例如、500)增加到。有关这些配置选项的更多详细信息、请参见 link:telegraf_agent_k8s_config_options.html["配置选项"] 页面。 
+
+
+| Telegraf希望(或崩溃、因为)可锁定内存不足。 | 尝试增加底层操作系统/节点中Telegraf可锁定内存的限制。如果不能增加限制、请修改nLMO代理配置并将_Unproted_设置为_true。  这将指示Telegraf不尝试预留锁定的内存页。由于解密的机密可能会交换到磁盘、因此这可能会带来安全风险、但它允许在无法预留锁定内存的环境中执行。有关_UnprotECE_配置选项的更多详细信息、请参阅 link:telegraf_agent_k8s_config_options.html["配置选项"] 页面。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。
