@@ -13281,4 +13281,24 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
   <block id="0f7a6275819f9811b54d1e8c38069670" category="paragraph"><block ref="0f7a6275819f9811b54d1e8c38069670" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2.未授权错误</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">如果在生成API访问令牌时未选择所有必需的API类别、则会显示此错误。通过选择所有必需的API类别来生成新的API访问令牌。</block>
+  <block id="c7c184039a7fffa14bc4f7273cfd594f" category="paragraph">用于通过API提取取证数据的示例脚本位于：/opt/NetApp/云 安全/agent/extr导 出脚本/_。有关该脚本的更多详细信息、请参见此位置的自述文件。</block>
+  <block id="1fb20c216d1008aa26dd3559c9f0c877" category="cell">使用_path_筛选器时、取证UI加载数据的速度较慢。</block>
+  <block id="4ef9ea59ad225f2c525fb8c4286f39e1" category="cell">如果路径为_/AAA/BBB/CCC/DDD_、则不要搜索：
+
+AAA/BBB/CCC*
+
+或
+
+AAA/BBB/C/*
+
+尝试搜索：
+
+AAA/BBB/CCC/*
+
+通过此搜索、可以更快地加载数据。</block>
+  <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">•从9.151开始支持ONTAP持久存储。</block>
+  <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">无法删除已暂停的Data Collector。</block>
+  <block id="e2fd699ea37a6e30f71f4e37a88d3eaa" category="list-text">暂停后、ONTAP中的fpolicy设置将被禁用、但不会被删除。恢复后、ONTAP中的fpolicy设置将再次启用。</block>
+  <block id="f4635255d83c947a8f5c0873878fce73" category="cell">选择SVM模式后、Data Collector出现错误。</block>
+  <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">在SVM模式下连接时、如果使用集群管理IP而不是SVM管理IP进行连接、则连接将出错。确保使用正确的SVM IP。</block>
 </blocks>

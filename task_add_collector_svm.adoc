@@ -38,6 +38,7 @@ summary: 添加工作负载安全性数据收集器
 * SVM 有多个子类型。其中、仅支持_default__sync_source__sync_destination_.
 * 代理 link:task_cs_add_agent.html["必须进行配置"] 然后才能配置数据收集器。
 * 请确保已正确配置 User Directory Connector ，否则事件将在 " 活动取证 " 页面中显示编码的用户名，而不是实际用户名（存储在 Active Directory 中）。
+* •从9.151开始支持ONTAP持久存储。
 * 为了获得最佳性能，您应将 FPolicy 服务器配置为与存储系统位于同一子网中。
 
 
@@ -297,6 +298,8 @@ Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allow
 * 在代理或收集器升级、代理VM重新启动/重新启动或代理服务重新启动时、暂停的收集器将保持_Paused.
 * 如果数据收集器处于_Error_状态、则无法将此收集器更改为_Paused _状态。只有当收集器的状态为_running"时、暂停按钮才会启用。
 * 如果代理已断开连接、则无法将收集器更改为_Paused _状态。收集器将进入_STOPPED _状态、暂停按钮将被禁用。
+* 无法删除已暂停的Data Collector。
+* 暂停后、ONTAP中的fpolicy设置将被禁用、但不会被删除。恢复后、ONTAP中的fpolicy设置将再次启用。
 
 
 
@@ -398,5 +401,8 @@ Data Collector 将重新启动，并应解决此错误。
 如果超过20、请增加Agent计算机的CPU和RAM容量。
 增加CPU和RAM后、DSCS将自动进入Initializing状态、然后自动进入Running状态。
 请查看上的规模估算指南 link:concept_cs_event_rate_checker.html["此页面"]。 
+
+
+| 选择SVM模式后、Data Collector出现错误。 | 在SVM模式下连接时、如果使用集群管理IP而不是SVM管理IP进行连接、则连接将出错。确保使用正确的SVM IP。 
 |===
 如果您仍遇到问题，请访问 * 帮助 > 支持 * 页面中提到的支持链接。
