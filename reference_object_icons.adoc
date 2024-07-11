@@ -5,36 +5,10 @@ summary: Cloud Insights 对象图标参考。
 keywords: icons, assets, objects, reference, map 
 ---
 = 对象图标参考
-:toc: macro
-:hardbreaks:
-:toclevels: 1
 :allow-uri-read: 
-:toc: 
-:toclevels: 1
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
-Cloud Insights 中使用的对象图标的快速参考。
+Cloud Insights中使用的对象图标。
 
-
-
-== 基础架构图标：
-
-image:Icon_Glossary.png["基础架构图标参考"]
-
-
-
-== KubeNet图标：
-
-image:K8sIconsWithLabels.png["Kubernetes图标参考、宽度= 180"]
-
-
-
-== Kubnetes网络性能监控和映射图标：
-
-image:ServiceMap_Icons.png["Kubernetes网络性能监控和映射、宽度=640"]
+image:Icons_2024.png["\"显示Cloud Insights中使用的所有对象图标的图像、这些图标分组在\"存储\"、\"网络\"、\"计算\"和\"集成(包括KubeNet)\"等下"]
