@@ -32,16 +32,6 @@ NetApp 不断改进和完善其产品和服务。下面是Cloud Insights 商业�
 
 image:Dashboard_Nav_Group_Dropdown.png["下拉列表以选择与当前信息板位于同一组中的另一个信息板"]
 
-
-
-=== 刷新对象图标
-
-Cloud Insights现在具有更新的对象图标、可减少各个Cloud Insights页面上使用的图标的整体差异、并将类似对象(例如、与卷相关的对象)分组在一起。以前的"基于字母"图标已替换为基于图像的图形、使Cloud Insights屏幕更便于用户使用和访问。
-
-不确定图标的含义？下表(也可在页面上找到 link:reference_object_icons.html["对象图标参考"] )对此进行了说明。
-
-image:Icons_2024.png["\"显示Cloud Insights中使用的所有对象图标的图像、这些图标分组在\"存储\"、\"网络\"、\"计算\"和\"集成(包括KubeNet)\"等下"]
-
 '''
 
 

@@ -11,4 +11,20 @@ keywords: icons, assets, objects, reference, map
 [role="lead"]
 Cloud Insights中使用的对象图标。
 
-image:Icons_2024.png["\"显示Cloud Insights中使用的所有对象图标的图像、这些图标分组在\"存储\"、\"网络\"、\"计算\"和\"集成(包括KubeNet)\"等下"]
+
+
+== 基础架构图标：
+
+image:Icon_Glossary.png["基础架构图标参考"]
+
+
+
+== KubeNet图标：
+
+image:K8sIconsWithLabels.png["Kubernetes图标参考、宽度= 180"]
+
+
+
+== Kubnetes网络性能监控和映射图标：
+
+image:ServiceMap_Icons.png["Kubernetes网络性能监控和映射、宽度=640"]

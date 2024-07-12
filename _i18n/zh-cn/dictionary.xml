@@ -4317,8 +4317,6 @@
   <block id="e3d01768f4feeb31194225e495d78ad9" category="list-text">输入标注类型： * 布尔值 *</block>
   <block id="216cccf9a11330381ead4d645bc105a9" category="section-title">创建标注规则以自动从 I/O 密度报告中排除特定聚合</block>
   <block id="e4731b310642ca51f9042d77c31a36cc" category="paragraph">除了手动将标注应用于单个资产之外，您还可以使用标注规则自动将标注应用于多个资产。标注规则基于您创建的查询，在系统上运行时，它们会将新资产添加到现有资产集。如果从报告中排除这些资产集，则新资产也会自动排除。</block>
-  <block id="066dd3116632d178996fcf4d32b30c70" category="paragraph">您必须已创建并保存一个查询，用于标识您在环境中标识的 NetApp 根聚合。。步骤在 Cloud Insights 工具栏中，单击 * 管理 &gt; 标注规则 * 。单击 * 添加 * 。</block>
-  <block id="5a4064cefa68bcf6be0e69870c969e3d" category="paragraph">+ 此时将显示添加规则对话框： .在名称框中，输入用于描述规则的唯一名称： *"RootAggrExcluse"* .单击 Query 并选择 Insight 应用标注规则时应使用的查询： *"Aggregate0"* 。单击标注并选择： *" 根 AGG 排除 "* .单击 * 值 * 并输入 * 正确 *</block>
   <block id="a340c5b7f266efeac22f4296085584ff" category="summary">高级搜索技术可以帮助您找到所需的资产。</block>
   <block id="eca4e665b33eb69c5bea8a2f8e32949c" category="doc">搜索资产的提示和提示</block>
   <block id="3121ce4fa317f6b95a4b480d97ce359b" category="paragraph">可以使用多种搜索方法来搜索受监控环境中的数据或对象。</block>
@@ -5217,7 +5215,6 @@
   <block id="ac2ddb56e922acac513828fc77bc85f6" category="cell">" 配置错误 " ，并显示错误消息 "REST Service is disabled"</block>
   <block id="8c2e7ed091a4f8575b17f8af2bb59449" category="cell">验证是否已在此设备上启用 REST 服务。</block>
   <block id="8bf875173a6afe9bba37e4713c91c421" category="cell">" 配置错误 " ，并显示错误消息 " 用户未授权命令 "</block>
-  <block id="be63a0599db0a9d29e7d2b328c74dc03" category="cell">可能是由于某些角色（例如， "advanced_Analytics " ）未包含在配置的用户 &lt;username&gt; 中。可能的解决方案： * 更正具有只读角色的用户 $ ｛ user ｝ 的分析（统计信息）范围： - 从 " 配置 "-&gt;" 用户 " 屏幕中，将鼠标置于该角色上方并双击以允许编辑 - 从 " 范围 " 下拉菜单中选择 " 分析 " 。此时将显示可能属性的列表。—单击 Top most 复选框，它将选择所有三个属性。—单击右侧的添加按钮。—单击弹出窗口右上角的应用按钮。此时将关闭弹出窗口。</block>
   <block id="1b6782dde8db0793ddf35a62a6fe9534" category="summary">有关 Windows 上采集单元问题的故障排除提示。</block>
   <block id="c80b5682ac138b6ef2cfb66f5871cd6e" category="doc">对 Windows 上的采集单元问题进行故障排除</block>
   <block id="d66261bfe330aaa38171cf0aba38ed5b" category="paragraph">您可以在此处找到有关对 Windows 服务器上的采集单元问题进行故障排除的建议。</block>
@@ -6385,14 +6382,10 @@
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律声明提供对版权声明、商标、专利等的访问。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
-  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
   <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
   <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
-  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
   <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
-  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
-  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
   <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">Cloud Insights 注意事项</block>
@@ -9426,8 +9419,6 @@
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 联邦版不支持存储工作负载安全性。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">默认情况下、许多系统监控器处于_Paused.状态。您可以通过为系统监视器选择_Resume_选项来启用该监视器。确保在数据收集器中启用了_Advanced Counter Data Collection _和_Enable ONTAP EMS log Collection _。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="8fee42a04811f34097bb06266a925ef6" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block>
-<block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">您可以单击 "Activity History" 表上方的 _Export_ 按钮将活动历史记录导出到 .CSV 文件。请注意、仅导出排名前10万位的记录。根据数据量的不同、导出可能需要几秒钟到几分钟才能完成。</block>
   <block id="75089fe944982f39be6142328f8b77cf" category="paragraph">您要求我们在安装适用于Windows和Linux的代理时提供校验和值、我们认为这是一个很好的主意。因此、它们是：</block>
   <block id="89be6ffd9cf2244c68503bbda41ae112" category="summary">Cloud Insights 支持Telegraf作为其收集集成数据的代理、并可在Windows或Linux上进行配置。</block>
@@ -13326,10 +13317,24 @@ AAA/BBB/CCC/*
   <block id="06f1d2abcf2870548b998e073289d617" category="paragraph">通过对信息板进行分组、您可以更轻松地快速获得所需的可见性。现在、借助新的导航菜单、您可以在不同信息板之间切换、而不会丢失位置、从而轻松地浏览和管理基础架构。将信息板组与您的操作操作手册保持一致、以进一步增强您的体验。</block>
   <block id="88de6acb1a05ed53be1eb11796125d52" category="inline-image-macro">下拉列表以选择与当前信息板位于同一组中的另一个信息板</block>
   <block id="ebde4cb30069bf7811bcab479a98b1de" category="paragraph"><block ref="ebde4cb30069bf7811bcab479a98b1de" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="cf85d02f145fd398f6b83e53e7eae578" category="section-title">刷新对象图标</block>
-  <block id="e1146db7650c421537a792eef24c30b4" category="paragraph">Cloud Insights现在具有更新的对象图标、可减少各个Cloud Insights页面上使用的图标的整体差异、并将类似对象(例如、与卷相关的对象)分组在一起。以前的"基于字母"图标已替换为基于图像的图形、使Cloud Insights屏幕更便于用户使用和访问。</block>
-  <block id="f8064c9450e605d5bbbf34b0cea86cf7" category="paragraph">不确定图标的含义？下表(也可在页面上找到 <block ref="77ae8c6d870a7e114fd79dc75e0e0c29" category="inline-link-macro-rx"></block> )对此进行了说明。</block>
-  <block id="6668a5009a3cd3a27f3cb362ac89ff43" category="inline-image-macro">"显示Cloud Insights中使用的所有对象图标的图像、这些图标分组在"存储"、"网络"、"计算"和"集成(包括KubeNet)"等下</block>
-  <block id="f45804d947a7b131eecbbbf3efb0603f" category="paragraph"><block ref="f45804d947a7b131eecbbbf3efb0603f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf0b6689b45787134fc0c6f10cd64fd2" category="paragraph">Cloud Insights中使用的对象图标。</block>
+  <block id="f1d16f360380bc347a5a9e8768937aa7" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block></block>
+  <block id="536041084bffaf10e48c1cc03ccee7a2" category="paragraph"><block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
+  <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">基础架构图标：</block>
+  <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">基础架构图标参考</block>
+  <block id="4e28165ac3c643283efd04c55df2d70d" category="paragraph"><block ref="4e28165ac3c643283efd04c55df2d70d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="736b641409d5a49654659a490becb9df" category="section-title">KubeNet图标：</block>
+  <block id="8c33e4b99d8bd8524b8cd4b67b114b73" category="inline-image-macro">Kubernetes图标参考、宽度= 180</block>
+  <block id="374b7286b134bc4e5b85eb1d48980842" category="paragraph"><block ref="374b7286b134bc4e5b85eb1d48980842" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubnetes网络性能监控和映射图标：</block>
+  <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes网络性能监控和映射、宽度=640</block>
+  <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f206f600866607637821c713ae2b63cc" category="cell">此错误可能是由于配置的用户未包含某些角色(例如、"advanced_Analytics ")。对具有只读角色的用户应用分析范围可能会删除此错误。请按照以下步骤操作：1.在ZFS系统上，从“Configuration -&gt; Users”(配置-&gt;用户)屏幕中，将鼠标移动到角色上并双击以允许编辑2.从范围下拉菜单中选择"分析"。此时将显示可能属性的列表。3.单击最顶部的复选框、它将选择所有三个属性。4.单击右侧的添加按钮。5.单击弹出窗口右上角的应用按钮。此时将关闭弹出窗口。</block>
+  <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">您必须已创建并保存一个查询，用于标识您在环境中标识的 NetApp 根聚合。</block>
+  <block id="67820097ebadd10933dfa2562494a60e" category="list-text">在Cloud Insights工具栏中，单击*管理&gt;标注规则*。</block>
+  <block id="8292471fb31a2cafa37cc14eeade4da2" category="list-text">单击 * 添加 * 。此时将显示"Add Rule (添加规则)"对话框。</block>
+  <block id="37826f4028925f8d7c2568e9a34fb119" category="list-text">在“名称”框中，输入用于描述规则的唯一名称：*"RogAggrExcolde"*</block>
+  <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">单击"Query"、然后选择Insight应用标注规则时应使用的"Query"：*"Regate0"*</block>
+  <block id="b3e5b96fb95a6c5ae373e50472986766" category="list-text">单击Annotation"并选择：*"Root AGG excl排除"*</block>
+  <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">单击 * 值 * 并输入 * 正确 *</block>
 </blocks>
