@@ -4305,7 +4305,6 @@
   <block id="34d1e1ec387494ae7adb4531e99bcdaa" category="list-text">创建查询以确定环境中的 NetApp 根聚合：单击 * 查询 &gt; 新建查询 &gt; 选择资源类型 * （？）</block>
   <block id="7d67bb4f1a6063faca1a41fe36394d3e" category="list-text">单击 * 存储池 *</block>
   <block id="f8b3cf53a4e69e8d205a5c6f4a5dd4c8" category="list-text">输入根聚合的名称</block>
-  <block id="256df3a597f7a147ef4c2594c915c7ba" category="paragraph">此示例对名称使用 "aggr0" 。创建聚合时，只需满足以下名称要求： .它必须以字母或下划线（ _ ）开头。...它只能包含字母，数字和下划线。...字符数不能超过 250 个。在大多数情况下，聚合的名称为 aggr0 ， aggr_0 或类似的内容。要确定环境中的所有 NetApp 根聚合，可能需要一个迭代过程。</block>
   <block id="681dee9bbf117a59d6590ee3c6051976" category="list-text">单击 * 保存 * 并输入新查询的名称。</block>
   <block id="3ed6c78a3c2f0d621e647df2b3796fca" category="paragraph">如前所述，此过程可能是一个迭代过程，需要多次查询才能确定所有 NetApp 根聚合。</block>
   <block id="783606c01e3c46054cfad5b469434086" category="section-title">为查询返回的根卷创建标注</block>
@@ -5423,8 +5422,6 @@
   <block id="c986424b59283e1aa18a7ebe90190f7c" category="cell">两次清单轮询的间隔。默认值为 40 分钟。</block>
   <block id="5d113f2038d289f391614c39043629e8" category="cell">范围</block>
   <block id="529cf703eca7100792de266841b2b06b" category="cell">安全客户端范围。默认值为 "Global" 。</block>
-  <block id="7e4665920f5ea9564b167402b303e931" category="cell">错误：• Agent 未运行•找不到 naviseccli •无法执行任何命令</block>
-  <block id="6c8224496d7bc35b0ff1714bff1939e9" category="cell">•确认已在 Cloud Insight 采集单元上安装 Navisphere 命令行界面•您尚未在数据收集器配置向导中选择 " 使用安全客户端 " 选项，并且未安装非安全版本的 Navi流 层命令行界面。•确认数据收集器配置中的 Navisphere 命令行界面安装目录正确•确认数据收集器配置中的 VNX 块存储 IP 正确无误：•从 Cloud Insights 采集单元： - 打开 CMD 。—将目录更改为已配置的安装目录—尝试通过键入 "navicli -h ｛ ip ｝ getagent " （将 ｛ ip ｝ 替换为实际 IP ）与 VNX 块存储设备建立连接</block>
   <block id="080a50fd42890f08f122c21be3187e4b" category="cell">错误： 4.29 emc235848 emc241018 getall 无法解析主机别名信息</block>
   <block id="a6037a5a8dc19085b823e803eeb236da" category="cell">这可能是由于阵列本身上的主机启动程序数据库问题描述发生 FLARE 29 损坏而导致的。请参见 EMC 知识库文章： emc235848 ， emc241018 。您也可以进行检查<block ref="fcbe74266ffebefc607cd58d1002be58" category="inline-link-rx"></block></block>
   <block id="2846bc6366ffc91aee2075a2d5607161" category="cell">错误：无法检索元 LUN 。执行 Java -JAR navicli.jar 时出错</block>
@@ -11955,16 +11952,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="efe4baadff5bd15b524eb5bdb921fc23" category="sidebar">安装或升级操作员之前</block>
   <block id="0fa09a2babfce9f13e5281cf6d3521b9" category="sidebar">安装Monitoring Operator</block>
   <block id="1de805c2687b2c30b46a937270519488" category="cell">metricRegationInterval</block>
-  <block id="fc053bcc2bca8112838f33be578f7479" category="cell">运行以下许可版本之一的计算机：
-
-Red Hat Enterprise Linux 7.x、8.x 64位、SELinux
-CentOS 7.x 64位、SELinux
-CentOS 8 Stream、SELinux
-Ubuntu 20至22 64位
-Rocky 8.x 64位、Rocky 9.x 64位、SELinux
-SUSE Linux Enterprise Server 15 SP3、SUSE Linux Enterprise Server 15 SP4、SUSE 15 SP3上的SELinux
-
-此计算机不应运行任何其他应用程序级软件。建议使用专用服务器。</block>
   <block id="4f05106cca363b0f3c492314ab777534" category="cell">我缺少一些事件日志的_volvedobject_数据。</block>
   <block id="67ee92e19812baa7cedb346320ca0182" category="cell">确保已按照中的步骤进行操作 <block ref="d9283cdb1b027ed2a61fa92c8dc3e314" category="inline-link-macro-rx"></block> 第节。</block>
   <block id="dafe147a7f0074749f1e1c76f1e05008" category="section-title">单元试用</block>
@@ -12893,12 +12880,6 @@ Microsoft Edge会对例外情况采用与Chrome相同的格式。
   <block id="65ef2d3ac9b8dfdd7b17c10af9a602da" category="paragraph"><block ref="65ef2d3ac9b8dfdd7b17c10af9a602da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b3e588c8b8cdde417ea31ee3bbefd9a9" category="inline-image-macro">登录页面拓扑部分示例</block>
   <block id="3cb6e63269aa6edf3cc66859826feb7d" category="paragraph"><block ref="3cb6e63269aa6edf3cc66859826feb7d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="609716a86af2f9467366b90e750be49d" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; 标题
-。单击 * 高级配置 * 以添加其他配置字段。（并非所有数据收集器都需要高级配置。）
-。单击 * 测试配置 * 以验证是否已正确配置数据收集器。
-。单击 * 添加收集器 * 以保存配置并将数据收集器添加到 Cloud Insights 租户。</block>
-  <block id="599f97fbfc2fc945eb562d68c9aca1a8" category="paragraph">可能需要长达两个轮询周期，才能将服务中的数据显示在信息板中或用于查询。
-&gt;&gt;&gt;&gt;&gt; b8087143154c7dd9f5d1d3f33ee1bbdf97a7c9d1</block>
   <block id="67dd8a9c7300c7a68539b856568b643c" category="inline-image-macro">导出按钮</block>
   <block id="e075c22a2e254de2972fc152e1c02118" category="list-text">单击 * 导出 * <block ref="3b91e5b29194b7fd2b5cb067b5b3e811" category="inline-image-macro-rx" type="image"></block> 按钮。</block>
   <block id="b73a83fb453d4638343c31abb0f03dfc" category="paragraph">要开始使用NetApp的云服务、请访问 <block ref="b4c824fcd8d5915314065a3371563411" category="inline-link-macro-rx"></block> 然后单击*开始使用*。</block>
@@ -12921,13 +12902,6 @@ Microsoft Edge会对例外情况采用与Chrome相同的格式。
 为了获得准确的审核和数据报告、请使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。</block>
   <block id="7c32e6404e015057fc5db282b24077f0" category="cell">如果您运行的是OpenShift 4.6或更高版本、则必须遵循 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block> 此外、还应确保满足这些前提条件。</block>
   <block id="122fc5eb4b307e2a1b2bef4475345326" category="cell">仅在 AWS 中的 AU 上采集时使用。有关的详细信息，请参见下文 <block ref="83d528ecd9060fb6ba0317241e0017ba" category="inline-xref-macro-rx"></block>。</block>
-  <block id="24c6fef3c58adc63ac779bde77c4fbce" category="cell">•这通常是由于更新VNX块存储设备上的固件而不更新纳维命令行界面.exe的安装导致的。这也可能是由于不同设备使用不同的固件，但只安装了一个 CLI （使用不同的固件版本）。
-•验证设备和主机是否都运行相同版本的软件：
-    -从Cloud Insights采集单元中、打开命令行窗口
-    -将目录更改为已配置的安装目录
-    -通过键入“navicli -h &lt;ip&gt; getagent”与CLARiON设备建立连接
-    -查找前几行的版本号。示例：“Agent Rev: 6.16.20.1英寸
-    -查找并比较第一行的版本。示例： "Navisphere CLI 修订版 6.07.00.04.07"</block>
   <block id="39d9aa164a7b16c29e56edd3252953f6" category="paragraph">在中选择网络挂机通知 <block ref="79bf0d490adb807cbc06cd7e0b796905" category="inline-link-macro-rx"></block>，转至 * 警报 &gt; 管理监控器 * 并选择所需的监控器，或者添加新的监控器。在 _set up team notifications _ 部分中，选择 _Webhook_ 作为交付方法。选择警报级别（严重，警告，已解决），然后选择所需的网络连接。</block>
   <block id="4123cf4f6521073cef46192908207644" category="cell">如果启用并强制实施SELinux、则可能会阻止Telegraf Pod访问Kubelnetes节点上的/proc/1/mountstats文件。要克服此限制、请编辑代理配置并启用run特权 设置。有关详细信息、请参见 <block ref="f28efb863bb7dfcdf91b1badf5c0c340" category="inline-link-macro-rx"></block>。</block>
   <block id="59452d431b0a4e230ef72ae0b0b00085" category="admonition">本文档介绍了Cloud Insights高级版中提供的Cloud Insights报告功能。</block>
@@ -13015,10 +12989,6 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
 <block ref="4a83477a1c1cd11a9cc88c7f83441cbd" category="inline-link-macro-rx"></block>
 <block ref="0a7046f023aad7ac467f1bc6bd4c7520" category="inline-link-macro-rx"></block></block>
   <block id="8f14dd0b95751e262de2483f4584b301" category="list-text">有关如何为 SMI-S 性能收集创建帐户的信息，请参见以下链接：<block ref="2f1321aada2838c155155111cf14faf5" category="inline-link-rx"></block></block>
-  <block id="ca1a7da31fc2fe7999e74f8aa736345c" category="cell">•修改数据收集器配置以使用安全客户端(建议)
-•使用命令行界面路径安装navicli.jar以访问NaviCLI.exe或naviseccli.exe
-•注意：navicli.jar自EMC Navisphere 6.26版起已弃用
-•navicli.jar可能在\http://powerlink.emc.com上提供</block>
   <block id="47a3c2ef85d7b8f59098e0a3e25e7fed" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> 现有运算符上的最新运算符。</block>
   <block id="68a0b7243f029dd3130a0fb114a7ca00" category="list-text"><block ref="4cb6ecff5b560ef65768b9939bfe491e" category="inline-xref-macro-rx"></block> 现有操作员。</block>
   <block id="a87371c8f3e6091825251b0817597ab0" category="list-text"><block ref="69b3420fb24fd81786681a7bce7bbc4d" category="inline-xref-macro-rx"></block> 最新的运算符。</block>
@@ -13329,7 +13299,6 @@ AAA/BBB/CCC/*
   <block id="ea0512b988d2823de06af98254ea6811" category="section-title">Kubnetes网络性能监控和映射图标：</block>
   <block id="9039c950f48328372952e360cb5e909a" category="inline-image-macro">Kubernetes网络性能监控和映射、宽度=640</block>
   <block id="680bf29e063b6b3133c4881cb55b6d34" category="paragraph"><block ref="680bf29e063b6b3133c4881cb55b6d34" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f206f600866607637821c713ae2b63cc" category="cell">此错误可能是由于配置的用户未包含某些角色(例如、"advanced_Analytics ")。对具有只读角色的用户应用分析范围可能会删除此错误。请按照以下步骤操作：1.在ZFS系统上，从“Configuration -&gt; Users”(配置-&gt;用户)屏幕中，将鼠标移动到角色上并双击以允许编辑2.从范围下拉菜单中选择"分析"。此时将显示可能属性的列表。3.单击最顶部的复选框、它将选择所有三个属性。4.单击右侧的添加按钮。5.单击弹出窗口右上角的应用按钮。此时将关闭弹出窗口。</block>
   <block id="6273dfead9d8cac501012af839fb8f91" category="paragraph">您必须已创建并保存一个查询，用于标识您在环境中标识的 NetApp 根聚合。</block>
   <block id="67820097ebadd10933dfa2562494a60e" category="list-text">在Cloud Insights工具栏中，单击*管理&gt;标注规则*。</block>
   <block id="8292471fb31a2cafa37cc14eeade4da2" category="list-text">单击 * 添加 * 。此时将显示"Add Rule (添加规则)"对话框。</block>
@@ -13337,4 +13306,48 @@ AAA/BBB/CCC/*
   <block id="3cd59483bde57e839ca908da4280cde9" category="list-text">单击"Query"、然后选择Insight应用标注规则时应使用的"Query"：*"Regate0"*</block>
   <block id="b3e5b96fb95a6c5ae373e50472986766" category="list-text">单击Annotation"并选择：*"Root AGG excl排除"*</block>
   <block id="e62dcc88e7504fa135502828cf3f3374" category="list-text">单击 * 值 * 并输入 * 正确 *</block>
+  <block id="108ba1ee72dc04eca8f69cdd3be5042b" category="cell">运行以下许可版本之一的计算机：* CentOS 8 Stream (64位)、SELinux * SUSE Leap 15.3到15.5 (64位)* Oracle Linux 8.6 - 8.8、9.1到9.2 (64位)* Red Hat Enterprise Linux 8.6到8.8、9.1到9.2 (64位)、 SELinux * Rockit 9.2 (64位)、SELinux * SUSE Linux Enterprise Server 15 SP3至15 SP3 (64位)* Ubuntu 20.04 LTS和22.04 LTS (64位)此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
+  <block id="4550bd733b367bee1e03cd59abc31e8d" category="cell">I'm Getting the Error Message _sid Translate failed。__ reason：255：Error：command failed：not authorized for that commandError："access-check" is not a recognized command_、when a user should have been blocked.</block>
+  <block id="f5ce9e1caf923fc5af4671571a0fa7de" category="cell">如果-CsUser_没有正确的权限、则可能会发生这种情况。有关详细信息、请参见 <block ref="54b565a562b697bec979a5b58e397a1a" category="inline-link-macro-rx"></block> 。应用权限后、建议重新启动ONTAP数据收集器和用户目录数据收集器。下面列出了所需的权限命令。--- security login Role create -Role csRole -cmddirname "vserver Export-policy re嬖"-access all security login Role create -Role csRole -cmddirname set -access all security login Role create -Role csRole -cmddirname "vserver cIFS" session -access all security login Role create -Role csRole -cmddirname "vserver services access-check authentication Translate"-access all security login Role create -Role csRole -cmddirname "vserver name-ming"-access all --</block>
+  <block id="aebb627cd726b3cef553d204f38a30e1" category="cell">总 IOPS</block>
+  <block id="0e7eeb5ae5a9b72d3c35c2ccece0b487" category="cell">容量配额硬限制</block>
+  <block id="42912c555e8bff9f4a5fd6443fef82fe" category="cell">容量配额软限制</block>
+  <block id="b05f0d41b637f86ee2555bfc971f76bf" category="cell">文件计数</block>
+  <block id="792171f0bd1e324307f6b4ba189249a8" category="list-text">单击 * 高级配置 * 以添加其他配置字段。（并非所有数据收集器都需要高级配置。）</block>
+  <block id="4279b596662924e6b4010f919f84d17c" category="list-text">单击 * 测试配置 * 以验证是否已正确配置数据收集器。</block>
+  <block id="fde3f7c671a4c40a9d5099c319bbabaa" category="list-text">单击 * 添加收集器 * 以保存配置并将数据收集器添加到 Cloud Insights 租户。</block>
+  <block id="de0a3477c1c391a811d9b2911a84fb19" category="paragraph">可能需要长达两个轮询周期，才能将服务中的数据显示在信息板中或用于查询。</block>
+  <block id="3d9f514d46849760ef1b1412e314fd99" category="paragraph">错误：</block>
+  <block id="0764744c95ee6244fcf44e9abace1780" category="list-text">代理未运行</block>
+  <block id="50fe01395cf06f0bda9c7785c7850b3c" category="list-text">找不到navindeccli</block>
+  <block id="eef81c9905bf29aaca9fc2c2372b2d7d" category="list-text">无法执行任何命令</block>
+  <block id="adda4fad94eddad68c81a536f6fe276b" category="list-text">确认Cloud Insight采集单元上已安装Navisphere命令行界面</block>
+  <block id="1840df5cb1968b467a032c9069eeb9c6" category="list-text">您尚未在数据收集器配置向导中选择"使用安全客户端"选项、也未安装非安全版本的纳比网界面。</block>
+  <block id="45588a7df87bd65a1a96f5f04007af97" category="list-text">确认数据收集器配置中的Navisphere命令行界面安装目录是否正确</block>
+  <block id="fb08276f28e0821f5afdc80679822211" category="list-text">确认VNX块存储的IP在数据收集器配置中是否正确：</block>
+  <block id="20a681cc8b895e56eb4a894d551cb442" category="list-text">从Cloud Insights采集单元：</block>
+  <block id="be5615c3dd501caa54c15cd9e2bfcf45" category="list-text">打开CMD。</block>
+  <block id="886ad310965204f7168440eb252a084a" category="list-text">将目录更改为配置的安装目录</block>
+  <block id="3c43e9ac93c272aa4bfdc57cc935352f" category="list-text">尝试通过键入"navicli -h｛ip｝getagent"与VNX块存储设备建立连接(将｛ip｝替换为实际IP)</block>
+  <block id="a82401284e008612408db511edcb09c1" category="list-text">修改数据收集器配置以使用安全客户端(建议)</block>
+  <block id="1df66018941e95008e15a2e1c78e3726" category="list-text">按照命令行界面路径安装navicli.jar、以访问NaviCLI.exe或naviseccli.exe</block>
+  <block id="85b53449ad4b0a390d5a28a3901d67b3" category="list-text">注：navicli.jar自EMC Navisphere 6.26版起已弃用</block>
+  <block id="97000b8c373b07cac3f4aaa0293db3ff" category="list-text">navicli.jar可能位于\http://powerlink.emc.com上</block>
+  <block id="a09b98ae7e225d29e48bc82a2a3cdcc2" category="list-text">这通常是由于更新VNX块存储设备上的固件而不更新纳维命令行界面.exe的安装导致的。这也可能是由于不同设备使用不同的固件，但只安装了一个 CLI （使用不同的固件版本）。</block>
+  <block id="8d8c9c49b1496662a04f576b02a94c85" category="list-text">验证设备和主机是否都运行相同版本的软件：</block>
+  <block id="328dc93550d7121f2379427072c81a06" category="list-text">从Cloud Insights采集单元中、打开命令行窗口</block>
+  <block id="56fd873a352d97a50759ba9cf0c3f815" category="list-text">通过键入"navicli -h &lt;ip&gt; getagent"与CLARiON设备建立连接</block>
+  <block id="449910d5dfa39e01156bf9f68dd57eca" category="list-text">在前几行中查找版本号。示例：“Agent Rev: 6.16.2(0.1)"</block>
+  <block id="04adf764800f5c8a53f3220e26174673" category="list-text">在第一行查找并比较版本。示例： "Navisphere CLI 修订版 6.07.00.04.07"</block>
+  <block id="49de05ff5e80d977931bb78ae77b1fb6" category="paragraph">此错误可能是由于配置的用户未包含某些角色(例如、"advanced_Analytics ")。</block>
+  <block id="6660bb65ec23c92ba285586a7b130d42" category="paragraph">对具有只读角色的用户应用分析范围可能会删除此错误。请按照以下步骤操作：</block>
+  <block id="e26dcd427fecb2b0cd4c8a29c5778144" category="list-text">在ZFS系统上，从“Configuration -&gt; Users”(配置-&gt;用户)屏幕中，将鼠标移动到角色上并双击以进行编辑</block>
+  <block id="1b6d2e448d401a05eb632c37be03a078" category="list-text">从范围下拉菜单中选择"分析"。此时将显示可能属性的列表。</block>
+  <block id="aed974f658af4bbc8b55b50f9e1144ac" category="list-text">单击最顶部的复选框、它将选择所有三个属性。</block>
+  <block id="df1eafe25ea8ef9c03eef34a7b2fa3c0" category="list-text">单击右侧的添加按钮。</block>
+  <block id="1dc9ebcdf41f3814f2793bf8b9cc03c2" category="list-text">单击弹出窗口右上角的应用按钮。此时将关闭弹出窗口。</block>
+  <block id="68eef2c4bf0c1205a9d57f62ff34da2c" category="paragraph">此示例对名称使用 "aggr0" 。创建聚合时，只需满足以下名称要求：</block>
+  <block id="908b60c3be27b2357fa1238e02988f51" category="list-text">它必须以字母或下划线（ _ ）开头。</block>
+  <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">它只能包含字母，数字和下划线。</block>
+  <block id="916689960ce65e1de22db9f36e52d7cb" category="list-text">字符数不能超过 250 个。在大多数情况下，聚合的名称为 aggr0 ， aggr_0 或类似的内容。要确定环境中的所有 NetApp 根聚合，可能需要一个迭代过程。</block>
 </blocks>
