@@ -36,17 +36,14 @@ Kuber-netes Monitoring Operator会自动安装Kube-state-metrics；无需用户�
 
 NetApp Kuber-netes监控操作员会提取下面列出的Kube-state-metrics计数器。有关每个计数器的更多详细信息、请访问： https://github.com/kubernetes/kube-state-metrics/tree/main/docs#exposed-metrics[]。
 
-. ConfigMap 指标
 . DemonSet 指标
 . 部署指标
-. 传入指标
 . 命名空间指标
 . 节点指标
 . 永久性卷指标
 . 永久性卷请求指标
 . POD 指标
 . ReplicaSet 指标
-. 机密指标
 . 服务指标
 . StatusSet 指标
 
