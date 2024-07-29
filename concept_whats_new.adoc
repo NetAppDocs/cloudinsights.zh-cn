@@ -28,7 +28,7 @@ NetApp 不断改进和完善其产品和服务。下面是Cloud Insights 商业�
 
 *NFS 4.1支持*
 
-SVM Data Collector现在支持的NFS版本最高可达* NFS 4.1*(含* NFS 4.1*)。
+现在、SVM数据收集器支持NFS版本、此版本最高可达* NFS 4.1*、并支持ONTAP 9.15.1.或更高版本。
 
 *新的Fors不同 的活动API*
 
