@@ -2324,7 +2324,6 @@
   <block id="bab16bd280bad939243defec2ae54eba" category="cell">物理磁盘</block>
   <block id="3edcb2400ce9f6580e362c8a9d6102ff" category="cell">控制器节点</block>
   <block id="89693d6595f0aef621cb8fd0804326a5" category="cell">通用配置组</block>
-  <block id="2083196b10cec6f027f8645b9e960b3c" category="paragraph">要配置此数据收集器，需要满足以下条件：</block>
   <block id="c3deb2066e20cbed62d1bfed93943bb1" category="list-text">InServ 集群的 IP 地址或 FQDN</block>
   <block id="1b4137d092037ad17a20e57351c33d8e" category="list-text">对于清单， StoreServ 服务器的只读用户名和密码</block>
   <block id="7abd5032a929f340867545508d1a1933" category="list-text">为提高性能，请将用户名和密码读写到 StoreServ Server</block>
@@ -13188,8 +13187,6 @@ AAA/BBB/C/*
 AAA/BBB/CCC/*
 
 通过此搜索、可以更快地加载数据。</block>
-  <block id="cdce2e96d795e7005dca434f2ebf323f" category="list-text">•从9.151开始支持ONTAP持久存储。</block>
-  <block id="61d7d5d4ab7b186759d0452bd45c99d7" category="list-text">无法删除已暂停的Data Collector。</block>
   <block id="f4635255d83c947a8f5c0873878fce73" category="cell">选择SVM模式后、Data Collector出现错误。</block>
   <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">在SVM模式下连接时、如果使用集群管理IP而不是SVM管理IP进行连接、则连接将出错。确保使用正确的SVM IP。</block>
   <block id="6a5710d8de4bc30f9d19e0130e1b9cc1" category="inline-image-macro">手动安装API</block>
@@ -13362,9 +13359,67 @@ AAA/BBB/CCC/*
   <block id="712b4529dbd7ed8d4ab547cb0d833ecc" category="paragraph">" ForF需求"活动 <block ref="75acd4de005cc0eb64ec0713808ffe03" category="inline-link-macro-rx"></block> 已有新版本。调用用于取证活动的API时、请使用*云安全取证.actives._v2_* API。</block>
   <block id="7e83289e012180c50c5327cfe3e51094" category="paragraph">请注意、如果要对此API进行多个调用、则为了获得最佳结果、请确保这些调用按顺序进行、而不是并行进行。多个并行调用可能会导致API超时。</block>
   <block id="1440701fe8e2d4ab8f09b74a7443df20" category="paragraph">用于通过API提取取证数据的示例脚本位于：/opt/NetApp/云 安全/agent/extr导 出脚本/_。有关该脚本的详细信息、请参见此位置的自述文件。</block>
-  <block id="e440db99ab8972afb639115c16f2426c" category="list-text">NFS 协议 4.1 及更早版本</block>
   <block id="f58ea91d80c99ab7a1779372e221d889" category="section-title">ONTAP自动防网络软件保护和ONTAP访问权限被拒绝</block>
   <block id="f08061ff72c0b74c50af5b9af0dddb55" category="paragraph">和 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
-  <block id="243b99ee952c73f66e7461d943f01834" category="list-text">暂停后、ONTAP中的fpolicy设置将被禁用、但不会被删除。恢复后、ONTAP中的fpolicy设置将重新启用。</block>
   <block id="580c0c98d8c4eb79fb929b7b1eb5f4f2" category="paragraph">现在、SVM数据收集器支持NFS版本、此版本最高可达* NFS 4.1*、并支持ONTAP 9.15.1.或更高版本。</block>
+  <block id="be2f9224b979c292cb15fb8ca6626094" category="summary">监控指标是否存在异常</block>
+  <block id="de4898eb228c5960d7add96b5bd2ad82" category="doc">异常检测监控器</block>
+  <block id="cbcb7e323368454d1aaea827422f8ab4" category="paragraph">通过异常检测、您可以深入了解环境中数据模式的意外变化。当您的环境中对象行为模式发生变化时、会发生异常、例如、如果对象在周三的某个时间遇到特定级别的延迟、但在随后的周三的该时间、延迟峰值高于该级别、 这种峰值将被视为异常。Cloud Insights允许创建监控器、以便在出现此类异常时发出警报。</block>
+  <block id="6ee4ef3e25dbca514480336d70c68b6f" category="paragraph">异常检测适用于表现出重复性可预测模式的对象指标。当这些对象指标峰值高于或低于预期水平时、Cloud Insights可以生成警报以提示调查。</block>
+  <block id="f9e98659236dd136d51fbe90184c9350" category="inline-image-macro">显示检测到的异常的图形</block>
+  <block id="6d45093f10be1c53f9db64c498f5d580" category="paragraph"><block ref="6d45093f10be1c53f9db64c498f5d580" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2d2575e3b331dd7b57d604dc713e48c2" category="section-title">什么是异常检测？</block>
+  <block id="9191e0d6339fc5dc7a81e5a8c55ed26b" category="paragraph">如果指标的平均值是前几周与该指标加权平均值之间的一些标准偏差、而最近几周的权重比前几周多、则会出现异常。Cloud Insights可以监控数据、并在检测到异常时发出警报。您可以选择设置检测的"灵敏度"级别。例如、当平均值与平均值的标准偏差更少时、敏感度会更高、从而导致生成更多警报。相反、敏感度较低=与平均值的标准偏差较多=警报较少。</block>
+  <block id="833e967d7ee3cf2f23601ccdafe6306f" category="section-title">异常检测监控与阈值监控不同。</block>
+  <block id="707a70f8b64924d439fa4e0679dc94e9" category="list-text">*基于阈值的监控*在为特定指标预定义阈值时起作用。换言之、当您清楚地了解预期目标(即在正常范围内)时。</block>
+  <block id="c1045d44e2c7b706bb670c2d93126209" category="inline-image-macro">度量监测器适用于您了解工作范围的情况</block>
+  <block id="8a651de0b445271791957a02b7f7ab12" category="paragraph"><block ref="8a651de0b445271791957a02b7f7ab12" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="248d11a06c917163d4c218e182751e10" category="list-text">*异常检测监控*使用机器学习算法来识别偏离标准的离群值、因为"正常"的定义不明确。</block>
+  <block id="050471a8ed4b8c04c6b9d753064cc4d4" category="inline-image-macro">异常检测监控器适用于您想要了解峰值或跌落的情况</block>
+  <block id="44cf95d43f633731498e7905f9aa796f" category="paragraph"><block ref="44cf95d43f633731498e7905f9aa796f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="89998a7699ba0967d4747309973670d5" category="section-title">何时需要异常检测？</block>
+  <block id="cbe837020343dfcd14bef7b99f21f113" category="paragraph">异常检测监控可在许多情况下提供有用的警报、包括以下情况：</block>
+  <block id="515e7be6213cf58d48b39c170b448353" category="list-text">当_NORMA_的定义不明确时。例如、SAN错误率可能会因端口而有所不同。对一个错误发出警报会产生干扰、并且没有必要、但如果突然或显著增加、则可能表示问题普遍存在。</block>
+  <block id="858889ea561e10cb6de83250a829bb72" category="list-text">随时间变化的位置。表现出季节性的工作负载(即在特定时间繁忙或静默)。这可能包括意外的静默期、这可能表示批处理拖延。</block>
+  <block id="07cd3ac948fc0a9966297e9ebb6e200a" category="list-text">在无法手动定义和调整阈值的情况下处理大量数据。例如、具有大量主机和/或卷且工作负载各不相同的环境。每种SLA都可能有不同的SLA、因此了解超出标准的SLA非常重要。</block>
+  <block id="4bf3bd72ae0959df9c9f71dc2ca7782c" category="section-title">创建异常检测监控器</block>
+  <block id="181074ffe7428fd491335b80f676903b" category="paragraph">要对异常情况发出警报，请导航至*Observability &gt; Alerts &gt;+Monitor*来创建监视器。选择_An异常 检测Monitor_作为监控类型。</block>
+  <block id="53f0acb9650a3311851819fb2a0f49b0" category="inline-image-macro">创建显示器时选择异常检测、宽度=480</block>
+  <block id="e252e58b0713f9856d0a0d0b5aba870b" category="paragraph"><block ref="e252e58b0713f9856d0a0d0b5aba870b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="53475b0e462d8632e63ce95786693f94" category="paragraph">选择要监控的对象和指标。您可以像设置其他类型的监视器一样设置筛选器和分组。</block>
+  <block id="a622dfc527a1cb769a9cb8f5251c5722" category="paragraph">接下来、设置监护仪的条件。</block>
+  <block id="a2adecda270991bbe54f4b599329e2fe" category="list-text">当选定指标超出预测界限_峰值_、低于这些界限_或两者时、触发警报。</block>
+  <block id="8bc993e57aef8f829550768090da9b0d" category="list-text">将敏感度设置为_Medium _、_Low_(检测到的异常较少)或_High_(检测到的异常较多)。</block>
+  <block id="24167a985b902e0e2d7a081b6013a2c9" category="list-text">确定警报级别是_critical_还是_Warning _。</block>
+  <block id="2e8e6d4492fccf3be846da219495beea" category="list-text">(可选)设置一个值、低于此值时异常为_ignored _。这有助于降低噪音。此值在示例图上显示为虚线。</block>
+  <block id="f69a8cf61f4e95828fa362a7a3789fcc" category="inline-image-macro">设置异常检测监控器的条件</block>
+  <block id="abf46926497e07e99587de4807a2ab2a" category="paragraph"><block ref="abf46926497e07e99587de4807a2ab2a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="512aa9e270052050fd7133f7c815aba4" category="paragraph">最后、您可以配置警报的交付方法(电子邮件、webhook或两者)、为监控器提供可选说明或更正操作、并根据需要将监控器添加到自定义组。</block>
+  <block id="fab06889941e3b5c2391fd34bd7beaac" category="paragraph">使用有意义的名称保存监视器、即可完成操作。</block>
+  <block id="5b168d18500cad56ba4dfe58f2ff34a0" category="paragraph">创建后、监护仪将分析前一周的数据以建立初始基线。随着时间的推移和历史记录的增加、异常检测将变得更加准确。</block>
+  <block id="56fcf918982ae9c2b1aec4da88526a61" category="section-title">查看异常</block>
+  <block id="1d58d2f2ca69574aba1ed5f31bde491c" category="paragraph">在警报登录页面上、检测到异常时触发的警报将在图表中显示一个突出显示的条带、从指标峰值超出预计界限到返回到这些界限以内。</block>
+  <block id="2ab54321d1ba259795df47fcabb17a13" category="inline-image-macro">显示异常发生时间的图表</block>
+  <block id="2ad61a846e7819f62ef6d6e841319792" category="paragraph"><block ref="2ad61a846e7819f62ef6d6e841319792" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5dc3af95092fd8c3105a28d3093349e2" category="paragraph">在警报登录页面上查看异常图表时、您可以选择以下选项：</block>
+  <block id="cad64385bb1c47803c5bd69ef88cfa2a" category="list-text">每周趋势：将前5周的值与前5周的同一天相同时间进行比较。</block>
+  <block id="9c221afc4c43a58770febf3135de5c16" category="list-text">完整异常范围：默认情况下、图形将重点放在指标值上、以便您可以更好地分析指标行为。选择以显示完整异常范围(最大值等)</block>
+  <block id="1f8a18333ce962d420f009316db68135" category="paragraph">您还可以通过在登录页面的专家视图中选择导致异常的对象来查看这些对象。图表将显示选定对象的行为。</block>
+  <block id="7db867678d69bd78eaeb6b23565fbadb" category="inline-image-macro">绘制导致异常的对象图表</block>
+  <block id="7a739c7bd23951027862cb0746253d51" category="paragraph"><block ref="7a739c7bd23951027862cb0746253d51" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="27f579af3362e110ecd440dc8bf9e526" category="section-title">AIIOPS：异常检测</block>
+  <block id="bb488ae395c5a616e026cebeb1d22b11" category="paragraph">Cloud Insights使用机器学习检测环境中数据模式的意外变化、并主动发出警报、帮助您尽早发现问题。</block>
+  <block id="ed665f31221c4a08eef181ec8d0a72db" category="paragraph">数据中心在一天中的不同时间和一周中的不同日期以不同的方式运行。Cloud Insights使用每周季节性来比较每天和每一时间的历史行为。</block>
+  <block id="bf43ac8b8257828bb0ffddb4736d081c" category="paragraph">异常检测监控功能可以在以下情况下提供警报："正常"定义不明确、行为随时间发生变化、或者处理大量数据时手动定义阈值不切实际。</block>
+  <block id="fb60a89ddc5f4c906fea295c053a5be0" category="paragraph">如果您选择的对象指标出现此类异常、则会显示一条新 <block ref="d288de494ea9d7a329c8dfc0fccf699b" category="inline-link-macro-rx"></block> 警报。</block>
+  <block id="7c6a37577f49fc25a4c899cda17f9040" category="list-text">NFS版本(不低于NFS 4.1且安装了ONTAP 9.15.1或更高版本)。</block>
+  <block id="b8667da3102e0adbbd2fe25017f00394" category="list-text">•从9.14.1版开始支持ONTAP持久存储。</block>
+  <block id="fa10b18dd52742e5f2cd029f0249346b" category="section-title">永久性存储</block>
+  <block id="b611ad23a0a26f050542f8157d95cb61" category="paragraph">ONTAP 9.14.1及更高版本支持永久性存储。请注意、卷名称说明从ONTAP 9.14到9.15不等。</block>
+  <block id="928fe55cae4b263961426402bcf31be7" category="paragraph">通过选中收集器编辑/添加页面中的复选框、可以启用永久性存储。选中此复选框后、将显示一个文本字段、用于接受卷名称。卷名称是启用永久性存储的必填字段。</block>
+  <block id="0241f48b4ba5acc2c0fe7c5ebae0b009" category="list-text">对于ONTAP 9.14.1、必须先创建卷、然后再启用此功能、并在_Volume Name_字段中提供相同的名称。建议的卷大小为16 GB。</block>
+  <block id="9ba8df77f1ed6f2669acdf983da92bd3" category="list-text">对于ONTAP 9.151、收集器将使用_Volume Name_字段中提供的名称自动创建大小为16 GB的卷。</block>
+  <block id="90d00ac7078d36b9a3f2093e6708b52e" category="paragraph">永久性存储需要特定权限(其中部分或全部可能已存在)：</block>
+  <block id="f9555b564ff818367b2bbeb217f9f4aa" category="paragraph">集群模式：</block>
+  <block id="d21d9916425ed680af643d24ed5db91d" category="paragraph">Vserver模式：</block>
 </blocks>

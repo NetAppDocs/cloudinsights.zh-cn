@@ -29,7 +29,7 @@ summary: 添加工作负载安全性数据收集器
 +
 ** Data ONTAP 9.2 及更高版本为获得最佳性能、请使用9.13.1.以上的Data ONTAP版本。
 ** SMB协议3.1及更早版本。
-** NFS 协议 4.1 及更早版本
+** NFS版本(不低于NFS 4.1且安装了ONTAP 9.15.1或更高版本)。
 ** ONTAP 9.4 及更高版本支持 FlexGroup
 ** 支持ONTAP Select
 
@@ -38,7 +38,7 @@ summary: 添加工作负载安全性数据收集器
 * SVM 有多个子类型。其中、仅支持_default__sync_source__sync_destination_.
 * 代理 link:task_cs_add_agent.html["必须进行配置"] 然后才能配置数据收集器。
 * 请确保已正确配置 User Directory Connector ，否则事件将在 " 活动取证 " 页面中显示编码的用户名，而不是实际用户名（存储在 Active Directory 中）。
-* •从9.151开始支持ONTAP持久存储。
+* •从9.14.1版开始支持ONTAP持久存储。
 * 为了获得最佳性能，您应将 FPolicy 服务器配置为与存储系统位于同一子网中。
 
 
@@ -269,10 +269,34 @@ Testcluster-1::*> net int service-policy create -policy only_data_fpolicy -allow
 * 在代理或收集器升级、代理VM重新启动/重新启动或代理服务重新启动时、暂停的收集器将保持_Paused.
 * 如果数据收集器处于_Error_状态、则无法将此收集器更改为_Paused _状态。只有当收集器的状态为_running"时、暂停按钮才会启用。
 * 如果代理已断开连接、则无法将收集器更改为_Paused _状态。收集器将进入_STOPPED _状态、暂停按钮将被禁用。
-* 无法删除已暂停的Data Collector。
-* 暂停后、ONTAP中的fpolicy设置将被禁用、但不会被删除。恢复后、ONTAP中的fpolicy设置将重新启用。
 
 
+
+
+== 永久性存储
+
+ONTAP 9.14.1及更高版本支持永久性存储。请注意、卷名称说明从ONTAP 9.14到9.15不等。
+
+通过选中收集器编辑/添加页面中的复选框、可以启用永久性存储。选中此复选框后、将显示一个文本字段、用于接受卷名称。卷名称是启用永久性存储的必填字段。
+
+* 对于ONTAP 9.14.1、必须先创建卷、然后再启用此功能、并在_Volume Name_字段中提供相同的名称。建议的卷大小为16 GB。
+* 对于ONTAP 9.151、收集器将使用_Volume Name_字段中提供的名称自动创建大小为16 GB的卷。
+
+
+永久性存储需要特定权限(其中部分或全部可能已存在)：
+
+集群模式：
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <cluster-name>
+security login rest-role create -role csrestrole -api /api/cluster/jobs/ -access readonly -vserver <cluster-name>
+....
+Vserver模式：
+
+....
+security login rest-role create -role csrestrole -api /api/protocols/fpolicy -access all -vserver <vserver-name>
+security login rest-role create -role csrestrole -api /api/cluster/jobs/ -access readonly -vserver <vserver-name>
+....
 
 
 == 故障排除
