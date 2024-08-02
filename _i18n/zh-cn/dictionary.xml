@@ -7677,8 +7677,6 @@
   <block id="34ac3c3d3b008137a073199be9255e04" category="paragraph"><block ref="34ac3c3d3b008137a073199be9255e04" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bc551a8dcf48d42b6ea5cf411242afd9" category="cell">运行以下许可版本之一的计算机： * Microsoft Windows 10 64位* Microsoft Windows Server 2012 * Microsoft Windows Server 2012 R2 * Microsoft Windows Server 2016 * Microsoft Windows Server 2019 * Microsoft Windows Server 2022 * Microsoft Windows 11此计算机不应运行任何其他应用程序级别的软件。建议使用专用服务器。</block>
   <block id="31fd0c2c8d388a4cd2c6459234743476" category="cell">可观察性</block>
-  <block id="3285ea5e06d78f941361e69f7ae3e762" category="cell">可以修改订阅、查看计费和使用情况信息、并执行所有可观察性、安全性和报告管理员功能。所有者还可以邀请和管理用户，以及管理 SSO 身份验证和身份联合设置。注册 Cloud Insights 时会创建第一个帐户所有者。强烈建议每个 Cloud Insights 环境至少有两个帐户所有者。 </block>
-  <block id="84e7e19408ca9cadd7d1a9781e8afe16" category="cell">可以执行所有可观察性功能、所有用户功能、以及管理数据收集器、可观察性API令牌和通知。管理员还可以邀请其他用户、但只能分配可观察性角色。</block>
   <block id="364b5d76e543eea85436eecd771ddf9b" category="cell">可以执行所有安全功能、包括警报、取证、数据收集器、自动化响应策略以及安全API令牌等功能。管理员还可以邀请其他用户、但只能分配安全角色。</block>
   <block id="f69b71669c103a70c3bed015d16ff368" category="admonition">您可以选择的功能和角色取决于您以特定管理员角色访问的功能。例如、如果您只有报告管理员角色、则可以将用户分配给报告中的任何角色、但不能为可观察性或安全性分配角色。</block>
   <block id="fb2292451138606a292cb0cc5fcdeede" category="paragraph">您必须以可观察性的帐户所有者身份登录、才能将帐户所有者角色分配给其他用户。</block>
@@ -9324,7 +9322,6 @@
   <block id="e497269a2941afd9840d0178bcec0d65" category="admonition">条件格式目前在Cloud Insights 联邦版中不可用。</block>
   <block id="7dc3d22c559fc9f6b251de846b6d601b" category="paragraph">对于表中的每一列、条件格式会分别进行设置。例如、您可以为容量列选择一组阈值、为吞吐量列选择另一组阈值。</block>
   <block id="04e933e576c69389922d790b28b832e2" category="admonition">ActiveIQ在Cloud Insights 联邦版中不可用。</block>
-  <block id="6a1a692b3423f858e5d6fa10a48a203d" category="admonition">Cloud Insights 联邦版中的用户登录仅限于已配置的身份提供程序(及其指定的电子邮件域)。邀请新用户加入Cloud Insights 联邦环境时、其电子邮件地址必须与为该环境配置的域匹配。</block>
   <block id="eb969e6aae227b477dde18795955ac2a" category="paragraph">Cloud Insights 提供了一些安全功能、使您的环境能够以增强的安全性运行。这些功能包括对加密、密码哈希以及更改内部用户密码以及用于加密和解密密码的密钥对的功能进行了改进。</block>
   <block id="e2eb5a26f8f8c6cd350884687bbcf0fd" category="paragraph">为了保护敏感数据、NetApp建议您在安装或升级后更改默认密钥和_Acquisition _用户密码。</block>
   <block id="c6105c3b082c3e22a8f735511736544b" category="paragraph">数据源加密密码存储在Cloud Insights 中、当用户在数据收集器配置页面中输入密码时、会使用公共密钥对密码进行加密。Cloud Insights 没有解密数据收集器密码所需的私钥；只有采集单元(A课)具有解密数据收集器密码所需的数据收集器私钥。</block>
@@ -13422,4 +13419,10 @@ AAA/BBB/CCC/*
   <block id="90d00ac7078d36b9a3f2093e6708b52e" category="paragraph">永久性存储需要特定权限(其中部分或全部可能已存在)：</block>
   <block id="f9555b564ff818367b2bbeb217f9f4aa" category="paragraph">集群模式：</block>
   <block id="d21d9916425ed680af643d24ed5db91d" category="paragraph">Vserver模式：</block>
+  <block id="e3afed0047b08059d0fada10f400c1e5" category="cell">管理员</block>
+  <block id="ab0ef3e5340f5400b9f95e43d3b79222" category="cell">与管理员相同</block>
+  <block id="631b24afac365e771fc775aeb7fec0ad" category="cell">与管理员相同、并可管理SSO身份验证和身份联合配置。也可以分配其他所有者。</block>
+  <block id="3e2b646677d9c80b1923b7be8d77407e" category="cell">可以执行所有可观察性功能以及数据收集器管理。</block>
+  <block id="7d86034e4b4cb78c8bb38a5020649dbd" category="cell">可以邀请其他用户、但只能分配可观察性角色。可以查看但不能修改SSO配置。可以创建和管理API访问令牌。可以查看审核信息。可以查看订阅信息、使用情况和历史记录。可以管理全局警报通知和订阅通知收件人列表。</block>
+  <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">不可用</block>
 </blocks>
