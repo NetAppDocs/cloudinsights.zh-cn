@@ -13313,7 +13313,6 @@ AAA/BBB/CCC/*
   <block id="aadc1aba5d247eca2f42714ed5bcd8cf" category="list-text">它只能包含字母，数字和下划线。</block>
   <block id="916689960ce65e1de22db9f36e52d7cb" category="list-text">字符数不能超过 250 个。在大多数情况下，聚合的名称为 aggr0 ， aggr_0 或类似的内容。要确定环境中的所有 NetApp 根聚合，可能需要一个迭代过程。</block>
   <block id="ea0b91ea0d8c2da2db5e90fb9a4e9e26" category="doc">Pure Storage FlashBlade数据收集器</block>
-  <block id="c86126d1dbfe0404d7466362d438f513" category="paragraph">Cloud Insights使用PURE Storage FlashBlade数据收集器收集清单和性能数据。</block>
   <block id="f9d3bec9195ec6c5658d84fa106cf520" category="cell">FlashBlade主机IP地址</block>
   <block id="5ba53e5a2add537346e5d283255d419a" category="cell">从ONTAP到工作负载安全代理的Fpolicy事件通信。必须向工作负载安全代理打开这些端口、ONTAP才能向其发送事件、包括工作负载安全代理本身(如果存在)上的任何防火墙。请注意、您无需预留*所有*这些端口、但为此预留的端口必须在此范围内。建议首先预留~100个端口、必要时增加。</block>
   <block id="fd6114e047225ac69533d6082b3f731b" category="admonition">如果调用取证活动API、请使用云安全取证活动.*v2* API。如果要对此API进行多个调用、请确保这些调用按顺序进行、而不是并行进行。多个并行调用可能会导致API超时。</block>
@@ -13425,4 +13424,16 @@ AAA/BBB/CCC/*
   <block id="3e2b646677d9c80b1923b7be8d77407e" category="cell">可以执行所有可观察性功能以及数据收集器管理。</block>
   <block id="7d86034e4b4cb78c8bb38a5020649dbd" category="cell">可以邀请其他用户、但只能分配可观察性角色。可以查看但不能修改SSO配置。可以创建和管理API访问令牌。可以查看审核信息。可以查看订阅信息、使用情况和历史记录。可以管理全局警报通知和订阅通知收件人列表。</block>
   <block id="2d25c72c1b18e562f6654fff8e11711e" category="cell">不可用</block>
+  <block id="a8724e88fefdacdec22b256079efbc3b" category="paragraph">请注意：FOS的默认"用户"级别不足以使Cloud Insights查看设备的所有逻辑方面-我们需要一个启用了"机箱角色"的用户帐户、以及对交换机上配置的所有虚拟网络结构的权限。</block>
+  <block id="c98bbcb8f16f41d79d40524732f5085a" category="paragraph">以下示例说明了如何在与FOS设备的SSH会话中为Cloud Insights使用情况创建"最小权限"用户帐户：</block>
+  <block id="87acb0f928436de44c10589e7dfad434" category="paragraph">userconfig --add netappcIUser -r user -l 1-128 -c user -p localety!</block>
+  <block id="13a225ee351dfd6def3fc0db9ef2c5d0" category="paragraph">这将创建密码为"!"的用户"NetApp CIUser"。此用户在所有128个可能的虚拟网络结构(-l)中具有"用户"角色(-r)。此外、此用户还具有所需的"机箱"角色(-c)、并分配了用户级别访问权限。</block>
+  <block id="9269037f4e86b08be75df1f65affd8d8" category="cell">清单失败、并显示403已禁止</block>
+  <block id="5300b225712833815322a70076b43af1" category="cell">这可能只是凭据错误、也可能表明您尝试使用的角色功能不足-请记住、"用户"级别的用户没有所需的"机箱角色"权限、或者无法查看对非默认虚拟结构的访问权限。</block>
+  <block id="a5acdd594b390d17ff4ed98ab41acb5f" category="paragraph">Cloud Insights使用PURE Storage FlashBlade数据收集器从公开REST API版本2的FlashBlade集群收集清单和性能数据</block>
+  <block id="26c7e129f928f6ba8485b8308659b929" category="cell">对象存储分段</block>
+  <block id="c307e1b8edd2b5d784d81d211f67c2e5" category="list-text">存储系统IP地址或完全限定域名</block>
+  <block id="ae4fab3dbcbe018dadb4c33b8b70b2e8" category="list-text">API令牌、理想情况下具有无限生命周期。只读级别的用户就足够了。</block>
+  <block id="a4f4fd88594a0ac02050f5e403bde903" category="cell">帮助Cloud Insights管理员记住其API令牌所属用户的用户名</block>
+  <block id="51408f1c75ab7bcc90f67b3ab1801733" category="cell">API 令牌</block>
 </blocks>
