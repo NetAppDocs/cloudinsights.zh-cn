@@ -18,7 +18,6 @@
   <block id="016d7f2723a52bdce0ab9e79e02b82e3" category="paragraph">在试用期间，您可以随时订阅 Cloud Insights 。订阅 Cloud Insights 可确保无中断地访问您的数据以及进行扩展 <block ref="bfa717e8cd11c457bc6ce53c21f09bbe" category="inline-link-macro-rx"></block> 选项</block>
   <block id="d728dbb9717bde0a11f721b13a23533c" category="admonition">如果您需要更多时间来评估 Cloud Insights ，并且您的试用设置为在 4 天或更短时间内过期，则可以将试用期限再延长 30 天。您只能延长试用一次。如果您的试用已过期，则无法延长。</block>
   <block id="03742c91392961db83c5540550a3500a" category="section-title">如果我的试用已过期，该怎么办？</block>
-  <block id="c23cd2c1b4017692f424447c29e0e94a" category="paragraph">如果您的免费试用已过期，并且您尚未订阅 Cloud Insights ，则在订阅之前，您的功能将受到限制。</block>
   <block id="6dfeca588bd5c0da6ea024447ccdb31c" category="section-title">订阅选项</block>
   <block id="0b8e651376aa14f43ba4123bb6c8d139" category="list-text">1 个受管单元 = 2 个主机（任何虚拟机或物理机）</block>
   <block id="347d1bfe383416d66c880f50a77cb60f" category="list-text">1 个受管单元 = 4 TB 未格式化的物理或虚拟磁盘容量</block>
@@ -13325,23 +13324,6 @@ AAA/BBB/CCC/*
   <block id="1552a022e1b90a3bc06148ff722ce4a0" category="list-text">1个受管单元= 4个库贝特斯vCPU。</block>
   <block id="959487d08cec8dfae823bcdea09da795" category="list-text">1个受管单元K8s调整= 2个节点或主机也受基础架构监控。</block>
   <block id="f057d707b9d5c17f0fad56f8204f6bff" category="section-title">工作负载安全措施</block>
-  <block id="b5dbf3908d3c6b22dae178d413d4ce4e" category="paragraph">根据所用节点是高端节点、中端节点还是入门级节点、在以下受管单元(Managed Unit、MU)计数下计量工作负载安全性：</block>
-  <block id="9deac637ce81c2ff5c02dd677114b046" category="cell">节点类型：</block>
-  <block id="5c6b02f3e1e66cf6bc61770896381c0c" category="cell">示例型号：</block>
-  <block id="36f40ed2512ba28c547d66d7d491162f" category="cell">计量时间：</block>
-  <block id="6e01164f2c9cb0a5194189abb25109bd" category="cell">1个高端节点</block>
-  <block id="170a94d41c76a81a1b946d250f220856" category="cell">700、800、900、9xxx</block>
-  <block id="e590a5366379c2508c4a67e27f2113df" category="cell">80个托管单元</block>
-  <block id="12382b0c1437be6dd1acc8bc87687420" category="cell">1个中端节点</block>
-  <block id="683af03ee72fbf8b08496a0ce7512c64" category="cell">300、400、500、8x00</block>
-  <block id="5d7e414148bc2dc4fe724922baf5c29c" category="cell">40个托管单元</block>
-  <block id="4d163b200e42b8b9ca12ceb09cf806e4" category="cell">1个入门级节点</block>
-  <block id="1dfa056fe0e2fe2064a0a2d6557b6f51" category="cell">1xx、2xx、2xxx</block>
-  <block id="55e705ba2a458ac1ceaac25be1541fdc" category="cell">20个托管单元</block>
-  <block id="c348d250ed74551e60d0bbe9cf4411cf" category="cell">1软件ONTAP</block>
-  <block id="e9b32f06458a1207182046e76c5b5de8" category="cell">CVO、FSx</block>
-  <block id="27c5cf27d09e53151bd6502189ffb375" category="cell">10个托管单元</block>
-  <block id="0c57b1acf3284a22d04607fb0452db54" category="cell">1未知节点</block>
   <block id="3943920606f23b23925f15408e26cae2" category="paragraph">您可以在*工作负载安全性*选项卡的*管理&gt;订阅*页面中查看工作负载安全性使用情况。</block>
   <block id="36e75837cd661882faf4ce93d35cafea" category="inline-image-macro">"管理&amp;gt；订阅&amp;gt；工作负载安全性选项卡、显示高端、中端和入门级节点数"</block>
   <block id="78770d4128ce656a56bd8e8ecd580a0e" category="paragraph"><block ref="9d3e296bb7e7c4cf7ec09d1ec6e96740" category="inline-image-macro-rx" type="image"></block></block>
@@ -13436,4 +13418,10 @@ AAA/BBB/CCC/*
   <block id="ae4fab3dbcbe018dadb4c33b8b70b2e8" category="list-text">API令牌、理想情况下具有无限生命周期。只读级别的用户就足够了。</block>
   <block id="a4f4fd88594a0ac02050f5e403bde903" category="cell">帮助Cloud Insights管理员记住其API令牌所属用户的用户名</block>
   <block id="51408f1c75ab7bcc90f67b3ab1801733" category="cell">API 令牌</block>
+  <block id="72fb59b13b553d470d4daf5fafe5e2ea" category="paragraph">如果您的免费试用已过期，并且您尚未订阅 Cloud Insights ，则在订阅之前，您的功能将受到限制。数据采集可能会停止、几周后、根据我们的数据保留政策、您的数据将被删除。</block>
+  <block id="b3aa21e2b7855df7d2d86e0bcb7a55d9" category="section-title">如果我的订阅已过期、该怎么办？</block>
+  <block id="be739afed3708aea5b887ed48586b187" category="paragraph">如果您订阅了Cloud Insights、但该订阅已过期、您将有五天的宽限期来续订您的订阅。在此宽限期内、所有Cloud Insights功能都将保持活动状态。</block>
+  <block id="1f679308dcaa1cf09288bcb2c3cdaabc" category="paragraph">宽限期过后、Cloud Insights功能将暂停、直到您续订为止。要续订，请参见*Admin &gt;订阅*页面，或联系NetApp销售人员。</block>
+  <block id="0a20fc316ac6795053a9cfbf1a2cdb5b" category="admonition">在宽限期结束时收集的Cloud Insights数据将在宽限期过后的30天内保持不变。如果您在此时间内续订了订阅、则在宽限期过后、您可以使用之前的所有数据。</block>
+  <block id="c3ef097c271469a3ca9718d35396087c" category="paragraph">集群使用与可观察性衡量相同的方法来衡量工作负载安全性。</block>
 </blocks>
