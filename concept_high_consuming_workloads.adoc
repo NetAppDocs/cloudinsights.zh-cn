@@ -43,13 +43,9 @@ summary: 通过洞察，您可以了解资源如何影响环境中的其他资�
 
 === 高耗用工作负载
 
-要开始了解共享资源中影响深远的工作负载、请单击Cloud Insights 菜单中的*信息板>高消耗工作负载*。
+Cloud Insights检测到的任何高消耗性工作负载都会显示在"_shared Resources under Compends_ Insight "中。导航到*Observability > Infrastructure洞察力*以查看这些洞察。
 
-image:Impacts_Workloads_Menu.png["高耗工作负载菜单"]
-
-Cloud Insights 将显示检测到饱和的任何工作负载的列表。单击某个工作负载以打开工作负载信息板。
-
-image:Impacts_High_Consuming_Workloads.png["工作负载列表"]
+image:Impacts_Workloads_Menu.png["共享资源"]
 
 单击某个工作负载以查看其详细信息页面。顶部图表显示了发生争用的共享资源(例如存储池)上的活动。
 

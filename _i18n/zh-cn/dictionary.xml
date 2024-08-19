@@ -6794,7 +6794,6 @@
   <block id="f6ee2d35944570b247cc02129e0311be" category="paragraph">* 基线 * 是指在检测到的饱和之前的一小时内每个工作负载报告的最大数据点。</block>
   <block id="bf306d07c3ed41852c5f9cb551a07b59" category="paragraph">如果确定 IOPS 正在影响共享存储池中的其他资源或工作负载，则会发生 * 争用 * 或 * 饱和 * 。</block>
   <block id="0b34f00d1d4a3885b35a431a55efeb18" category="section-title">要求苛刻的工作负载</block>
-  <block id="f59f9eea55ba2a2439645d8e6d60708c" category="inline-image-macro">工作负载列表</block>
   <block id="d7c664bf82d9e14603a845f0ffe47993" category="paragraph">单击某个工作负载以查看其详细信息页面。顶部图表显示了共享资源（例如存储池）上发生争用 / 饱和的活动。</block>
   <block id="2ca1e64d0a4fdfcf135961f6931ac68b" category="inline-image-macro">显示争用的共享资源</block>
   <block id="7e4a0aeb0ee372dc4742c55ad85d4088" category="paragraph">下面的两个图表显示了 _demand_workloads 以及这些要求苛刻的工作负载 _ 影响 _ 的工作负载。</block>
@@ -8751,11 +8750,6 @@
   <block id="684e1f5d1d8f7ac135116fe2276f6ffa" category="paragraph">*受影响的工作负载*是受共享存储池中耗用大量工作负载影响的工作负载。由于工作负载要求苛刻，这些工作负载的 IOPS 降低和 / 或延迟增加。</block>
   <block id="3367fa0ed89a38c283ceec91a93c76d8" category="paragraph">如果确定IOPS正在影响共享存储池中的其他资源或工作负载、则会发生*争用*。</block>
   <block id="37a9aae3864b377f0900828ee037f208" category="section-title">高耗用工作负载</block>
-  <block id="b3ce303d0c6722ce9fdb558bffac60ef" category="paragraph">要开始了解共享资源中影响深远的工作负载、请单击Cloud Insights 菜单中的*信息板&gt;高消耗工作负载*。</block>
-  <block id="b992bc0e08350e51fd4652894eac27af" category="inline-image-macro">高耗工作负载菜单</block>
-  <block id="6fb82f846ba607879c539a718d458a0a" category="paragraph"><block ref="6fb82f846ba607879c539a718d458a0a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="5a72c824988fe0db628e9972163040bd" category="paragraph">Cloud Insights 将显示检测到饱和的任何工作负载的列表。单击某个工作负载以打开工作负载信息板。</block>
-  <block id="de2c31e33c3872ea890351741fe0ae8b" category="paragraph"><block ref="de2c31e33c3872ea890351741fe0ae8b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7cc92b6bf3533cd5cdb88e08f278b791" category="paragraph">单击某个工作负载以查看其详细信息页面。顶部图表显示了发生争用的共享资源(例如存储池)上的活动。</block>
   <block id="21ba7591ebed3b77699071ac2c45a2fe" category="inline-image-macro">显示共享资源上活动的图表</block>
   <block id="3cda1acec37e60b5404717c83d727453" category="paragraph"><block ref="3cda1acec37e60b5404717c83d727453" category="inline-image-macro-rx" type="image"></block></block>
@@ -13424,4 +13418,7 @@ AAA/BBB/CCC/*
   <block id="1f679308dcaa1cf09288bcb2c3cdaabc" category="paragraph">宽限期过后、Cloud Insights功能将暂停、直到您续订为止。要续订，请参见*Admin &gt;订阅*页面，或联系NetApp销售人员。</block>
   <block id="0a20fc316ac6795053a9cfbf1a2cdb5b" category="admonition">在宽限期结束时收集的Cloud Insights数据将在宽限期过后的30天内保持不变。如果您在此时间内续订了订阅、则在宽限期过后、您可以使用之前的所有数据。</block>
   <block id="c3ef097c271469a3ca9718d35396087c" category="paragraph">集群使用与可观察性衡量相同的方法来衡量工作负载安全性。</block>
+  <block id="b740b52e59449de8ca69c0abf8f65235" category="paragraph">Cloud Insights检测到的任何高消耗性工作负载都会显示在"_shared Resources under Compends_ Insight "中。导航到*Observability &gt; Infrastructure洞察力*以查看这些洞察。</block>
+  <block id="559b55d2ef8b4ca8873098ababc8733e" category="inline-image-macro">共享资源</block>
+  <block id="104a62c301b2c9494638e2812254d98d" category="paragraph"><block ref="104a62c301b2c9494638e2812254d98d" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
