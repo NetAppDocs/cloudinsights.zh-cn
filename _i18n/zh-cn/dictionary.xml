@@ -13063,7 +13063,6 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
   <block id="180648243db0d9593e75e0a7dcc9e70c" category="list-text">导航到*管理&gt; API访问&gt; API文档*(页面右上角)并选择_Workload Security_图标。此时将打开工作负载安全性API的Swagger文档。</block>
   <block id="c6e324f498c45c040c62a6fa6c3ee605" category="list-text">授权访问_Workload Security_ API。</block>
   <block id="2fb830e83b717250d3913a3a0b88988e" category="list-text">单击页面右上角的_Authorize_按钮。</block>
-  <block id="1742f0a5fd9e84cc6abbac0f91f20145" category="list-text">在_Customer ApiKey (apiKey)_文本字段中、粘贴先前从步骤1c复制的API令牌。</block>
   <block id="4d72ae66caf6c8d221f1265fef5074a4" category="list-text">单击_Authorize_并 关闭窗口。</block>
   <block id="92d059abe745a2f9412e7e28cf8d4b7a" category="list-text">下载Agent安装程序。</block>
   <block id="9bfb10dfddb775b19e5382b100f3b95c" category="list-text">在Swagger中、选择_云 安全安装程序.agent_&gt;_/v1/云 安全/代理/安装程序/｛Platform｝/later_(GET) API。单击_试用_。</block>
@@ -13076,7 +13075,6 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
   <block id="ff324aae593d3293768656baf930a788" category="list-text">创建一个新文件夹(建议)、将安装程序文件复制到此文件夹、然后解压缩：</block>
   <block id="6ce9d80723d57729143449d1cd127853" category="list-text">为"croldsece-agent-install.sh"文件设置_execute_permission。</block>
   <block id="a9446988374a9bcb4db7d1e2cb812e4e" category="list-text">为新代理安装生成一次性令牌。</block>
-  <block id="7b02da3e5513b578e65441f615ac8fc3" category="paragraph">注意：此步骤中生成的一次性令牌与步骤1c中生成的API访问令牌不同。</block>
   <block id="a3022c8d916e0189ce254d35f8530250" category="list-text">在Swagger中、执行_cluster secue_manders.agent &gt;/v1/cluster secu/agent/oneTime令牌_ api、然后从响应中复制令牌。</block>
   <block id="b49b775ebd025a1d541016edb46cce1f" category="list-text">将一次性令牌导出为环境变量。</block>
   <block id="9df5c6030692622039f21c49d8d01552" category="list-text">如果使用代理服务器、请将https_proxy"导出为以下格式的环境变量。</block>
@@ -13112,13 +13110,11 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
   <block id="e2dcb3aa661588b80bf624cee20a4d9a" category="list-text">如果收集器安装成功、则可以删除目录"/tmp/cCollector "中的所有文件。</block>
   <block id="5c988949b33fdff8d1cb685edd772a78" category="section-title">安装新的用户目录收集器</block>
   <block id="c1d3d73ef2be97edc6318c8b9e1be652" category="paragraph">注意：在本文档中、我们介绍了安装LDAP收集器的步骤。安装AD收集器的步骤相同。</block>
-  <block id="2ab3b812979b03e6897a80c035d884e3" category="list-text">现在、我们需要提取收集器版本和收集器的UUID。导航到"云 安全_config.Collector类型"API。在"corgorCategory (收集器类别)"下拉列表中、选择"user (用户)"作为收集器类型。选择"全部"可在一个请求中提取所有收集器类型详细信息。</block>
   <block id="aa26819573f8d5de196d75c2940b9140" category="list-text">复制LDAP收集器的UUID。</block>
   <block id="28a727e9a70db036cc6e4b1381a93f66" category="list-text">下载收集器安装程序。</block>
   <block id="cac3390b8d7c3963dd149f531a17b42d" category="list-text">导航到"volumee_midsors.Collector "&gt;""/v1/cluster SECURE /收集器类型/midors/｛集体类型UUID｝"(GET) API。输入从上一步复制的UUID并下载安装程序文件。</block>
   <block id="4c57cd0ffcecf9cea5cc8cd058524581" category="list-text">如果安装程序文件从外部下载到其他计算机、请将安装程序文件复制到运行代理的系统、并位于目录"/tmp/cCollector "中。</block>
   <block id="58237ddf4e8c451c3f1c93e5c96bf452" category="list-text">或者、您也可以从同一API复制curl命令、并直接在应安装收集器的系统中运行该命令。</block>
-  <block id="26b17225b626fb9238849fd60eabdf60" category="paragraph">+</block>
   <block id="5709666caa5256a262f0055350a1c41f" category="list-text">将收集器安装程序zip文件的所有权更改为cssys：cssys。</block>
   <block id="841d5bf0ac1c3f88a052517da8b24155" category="list-text">导航至‘User Directory Collectors’(用户目录收集器)页面，然后单击‘+ User Directory Collector’(+用户目录收集器)。</block>
   <block id="0e9198d5902f64b3cae6ac3671c1677e" category="list-text">选择‘LDAP Directory Server’(LDAP目录服务器)。</block>
@@ -13130,7 +13126,6 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
   <block id="62c9ab325204f66c9fca63c88b31f244" category="section-title">升级代理</block>
   <block id="d6d45cdaacc8f0955983f7639a303c90" category="paragraph">当代理/收集器的新版本可用时、将发送电子邮件通知。</block>
   <block id="e1484285201e25aff4afdd10c3789c4e" category="list-text">下载最新的代理安装程序。</block>
-  <block id="4c0a042538180edd06a6c8106e212114" category="list-text">下载最新安装程序的步骤与"安装新代理"类似。 在Swagger中、选择"lidse_installers.agent"à"/v1/lidse/agents/installers/｛spand｝/latent"api、输入平台作为"Linux"并下载安装程序zip文件。也可以使用curl命令。解压缩安装程序文件。</block>
   <block id="a6d8035a7c771338e6fad3bae1787e02" category="list-text">为"云 安全代理升级.sh"文件设置执行权限。</block>
   <block id="a6d806d0183611768f05da5cdda916fc" category="list-text">运行"云 安全代理升级.sh"脚本。如果此脚本已成功运行、则会显示消息"CloudSecure agent has successfully Upgraded"。 在输出中。</block>
   <block id="bb7c03c78b9c284bc5c206564d483190" category="list-text">‘s以下命令‘ystemcl daema-reLoad’</block>
@@ -13141,7 +13136,6 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
   <block id="f8f9f7f0d4337aaef721604bd0326c44" category="section-title">正在升级收集器</block>
   <block id="d64a61695a0497568adb11f38b555611" category="paragraph">注意：所有类型的收集器的升级步骤都相同。我们将在本文档中演示ONTAP SVM收集器升级。</block>
   <block id="1788421524c681e92ffb072cb2b16ba4" category="list-text">转到需要升级收集器的系统、如果尚未创建目录"/tmp/cCollector "、请创建该目录。</block>
-  <block id="84409f99ba6f01bcc3c8c3cfe5f4edab" category="list-text">确保目录"cCollector (收集器)"归cssys：cssys所有。</block>
   <block id="30cb8ff7690cb51e2ba4a45fa1fec47b" category="list-text">在Swagger中、导航到"gldSECURE配置.收集器类型" GET API。在"corgorCategory (收集器类别)"下拉列表中、选择"data"(数据)(为用户目录收集器选择"user"或选择"all"(全部))。</block>
   <block id="b63f1156c2b0b306d2c21686c4671290" category="paragraph">从响应正文复制UUID和版本。</block>
   <block id="26f085ec96f326a83a2cd1c9a101547a" category="list-text">下载最新的收集器安装程序文件。</block>
@@ -13151,17 +13145,12 @@ root@acemisionunit# Curl -s -H accept：application/json -H "Contemon-type：app
   <block id="1e161bf723a8e1aeb010097d8893525c" category="list-text">触发升级收集器API。</block>
   <block id="4e8e4b67b8a4e686cd0697d1631ba57f" category="list-text">在Swagger中、导航到"gldSECURE _ 0.Collector "&gt;"/v1/gldSECURE /收集器类型/升级"(Put) API。</block>
   <block id="c702d61016e786540c3423a56068d5fa" category="list-text">在"Samles"(示例)下拉列表中、选择"SVM data Collector upgrade json sSample (ONTAP SVM数据收集器升级json样本)"以填充样本有效负载。</block>
-  <block id="1658e77190c6002b3789ca2dd5bbdc65" category="list-text">将版本替换为从步骤3复制的版本，然后单击‘Execute’(执行)。</block>
-  <block id="ac934065e06072ceec86257a2f72087d" category="paragraph">等待几秒钟、收集器将自动升级。</block>
   <block id="59e00ac512bd959d2a3ded4209823e6f" category="list-text">健全性检查。</block>
   <block id="eac5a780e5ba342d31bf3d406ab502ca" category="paragraph">收集器应在UI中处于running状态。</block>
-  <block id="ab515596662ea64e3e544564ff79aeab" category="list-text">升级后清理。</block>
   <block id="f27db76a6388239fb1cfc200d1f859b7" category="list-text">如果收集器升级成功、则可以删除目录"/tmp/cCollector "中的所有文件。</block>
   <block id="991fefa76287bfa32eacbff100d426b8" category="paragraph">重复上述步骤以升级其他类型的收集器。</block>
   <block id="9d72500e8a5c053eafcdfe4056754eb8" category="section-title">共享问题和修复。</block>
-  <block id="b69ea6725a0b6525e6cf544da1adc773" category="list-text">AGENT0－0错误。</block>
   <block id="21375ff3b38428634b0bb8f11745059a" category="paragraph">如果收集器安装程序文件不在/tmp/cCollector目录中或无法访问、则会出现此错误。请确保下载安装程序文件、并且目录"canceller"和安装程序zip文件归cssys：cssys所有、然后重新启动代理服务—"systemnti restart cloudsecure-agent.service”</block>
-  <block id="3cb0a3ec16e76962936843ae69672ce5" category="list-text">2.未授权错误</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">如果在生成API访问令牌时未选择所有必需的API类别、则会显示此错误。通过选择所有必需的API类别来生成新的API访问令牌。</block>
   <block id="1fb20c216d1008aa26dd3559c9f0c877" category="cell">使用_path_筛选器时、取证UI加载数据的速度较慢。</block>
   <block id="4ef9ea59ad225f2c525fb8c4286f39e1" category="cell">如果路径为_/AAA/BBB/CCC/DDD_、则不要搜索：
@@ -13211,11 +13200,7 @@ AAA/BBB/CCC/*
   <block id="e9218de6b059dbe3d0a4b2254272060b" category="paragraph"><block ref="e9218de6b059dbe3d0a4b2254272060b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="64b7e0b2c44effc1f95d5d234d97115e" category="inline-image-macro">显示LDAP收集器UUID的API响应</block>
   <block id="4d86ae17564f5e192a9f10e1696cafc6" category="paragraph"><block ref="4d86ae17564f5e192a9f10e1696cafc6" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f3406bb8f978777c1724d6e8ca96adf4" category="inline-image-macro">API并重新响应以下载收集器</block>
-  <block id="91601075b46dcf50d3b1909d0a4bbceb" category="paragraph"><block ref="91601075b46dcf50d3b1909d0a4bbceb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1408f74b7a92dffe6114bf5f799f0f8a" category="inline-image-macro">CURL命令API</block>
-  <block id="d37182c813875a19f3816d91aff11fbb" category="paragraph">+
-<block ref="1eecc7532bc0ff49c5414691e450bb66" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b01eb85bee8dd2ac8125b4e646707f45" category="inline-image-macro">正在添加用户目录收集器</block>
   <block id="1c4b72f32b1ec160176f3d57f7519993" category="paragraph"><block ref="1c4b72f32b1ec160176f3d57f7519993" category="inline-image-macro-rx" type="image"></block></block>
   <block id="29c5aece735f28f4fe582851e174f98a" category="inline-image-macro">用于选择LDAP用户的UI窗口</block>
@@ -13421,4 +13406,20 @@ AAA/BBB/CCC/*
   <block id="b740b52e59449de8ca69c0abf8f65235" category="paragraph">Cloud Insights检测到的任何高消耗性工作负载都会显示在"_shared Resources under Compends_ Insight "中。导航到*Observability &gt; Infrastructure洞察力*以查看这些洞察。</block>
   <block id="559b55d2ef8b4ca8873098ababc8733e" category="inline-image-macro">共享资源</block>
   <block id="104a62c301b2c9494638e2812254d98d" category="paragraph"><block ref="104a62c301b2c9494638e2812254d98d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5c2ddd5fbb490260fb0b081ca3636f47" category="inline-xref">步骤1c.</block>
+  <block id="7ed1296708d839485be173aeb5a79f04" category="list-text">在_Customer ApiKey (apiKey)_文本字段中，粘贴先前从复制的API令牌<block ref="2ac1b114773e0e9c04779c9483b2de2b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="7faeefc8118dfbbbc47b861240db0774" category="paragraph">注意：此步骤中生成的一次性令牌与在中生成的API访问令牌不同<block ref="2ac1b114773e0e9c04779c9483b2de2b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="c19db618d23b8481a170708a9d8e0ff7" category="list-text">现在、我们需要提取收集器的版本和UUID。导航到"云 安全_config.Collector类型"API。在"corgorCategory (收集器类别)"下拉列表中、选择"user (用户)"作为收集器类型。选择"全部"可在一个请求中提取所有收集器类型详细信息。</block>
+  <block id="5be257826b8572b5399a6ac7cb45e005" category="inline-image-macro">下载收集器的API和响应</block>
+  <block id="24c87b789cdc065736704bc2ddff3be6" category="paragraph"><block ref="24c87b789cdc065736704bc2ddff3be6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8bafa229baea4166d12e6934ba137aa8" category="paragraph">请注意、文件名应与下载收集器API的响应标题中的名称相同。请参见以下屏幕截图。</block>
+  <block id="1eecc7532bc0ff49c5414691e450bb66" category="paragraph"><block ref="1eecc7532bc0ff49c5414691e450bb66" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e60228189debb9ac1cdd6bd6e4c53ec8" category="list-text">下载最新安装程序的步骤与"安装新代理"中的步骤类似。在Swagger中、选择"lidse_installers.agent"&gt;"/v1/lidse/agents/installers/｛spand｝/latent"api、输入平台作为"Linux"并下载安装程序zip文件。或者、也可以使用curl命令。解压缩安装程序文件。</block>
+  <block id="055271148610e8cb492f1a5f67d7061f" category="list-text">确保目录"cCollector "归_cssys：cssys_所有。</block>
+  <block id="2d5ce426423eeeead4f35769cd8b1b27" category="inline-xref">步骤3.</block>
+  <block id="20260bd9c940a3c6d27657b4a5923265" category="list-text">将version替换为从复制的版本<block ref="babb0bb47ec5fba80a09d1ff184b7544" category="inline-xref-macro-rx"></block>，然后单击‘Execute’(执行)。</block>
+  <block id="34cf29e49d5754e7536e8d72c5a866cf" category="paragraph">等待几秒钟。收集器将自动升级。</block>
+  <block id="aefca8640c6f7317db4ede982986441e" category="list-text">升级后清理：</block>
+  <block id="0b2c01fe038efdc8f7b27285140c4a04" category="list-text">AGENT0－0错误</block>
+  <block id="80c03754030e95a93e8d8526693ae86d" category="list-text">未授权错误</block>
 </blocks>
