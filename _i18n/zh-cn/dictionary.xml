@@ -13422,4 +13422,23 @@ AAA/BBB/CCC/*
   <block id="aefca8640c6f7317db4ede982986441e" category="list-text">升级后清理：</block>
   <block id="0b2c01fe038efdc8f7b27285140c4a04" category="list-text">AGENT0－0错误</block>
   <block id="80c03754030e95a93e8d8526693ae86d" category="list-text">未授权错误</block>
+  <block id="9765c3765694fadf98843a154096fbc8" category="section-title">2024年8月</block>
+  <block id="1e6efa140bfb7e4679629d8194b62518" category="section-title">查看特定于您的时间范围的数据</block>
+  <block id="63466a1339697704533771c662e97a95" category="paragraph">正在调查警报？是否放大图表？这些操作会更改这些页面的时间范围。现在、您可以锁定该时间范围、导航到其他Cloud Insights页面、并查看特定于该锁定时间范围的数据。调查和故障排除变得更加简单！</block>
+  <block id="b4d4f3a9a060bb1e2ec83e69b952584b" category="inline-image-macro">提示单击图标以锁定时间范围以在其他页面上使用的工具提示</block>
+  <block id="380958dc02dd73e95eaa4a082063f871" category="paragraph"><block ref="380958dc02dd73e95eaa4a082063f871" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b2b019dcd0bf47e844870e8113a09653" category="section-title">变更和变更比率(%)分析</block>
+  <block id="a683fea3c6e8375ed9b41bdc7ffe4a52" category="paragraph">更改比率时间聚合有助于您确定指标值随时间推移的重大变化和趋势。这些洞察信息对于了解发生了哪些变化(例如特定时间的容量大幅增长或单个端口性能发生变化)至关重要。</block>
+  <block id="615b3d3d31be175d0b1eee89348e65ab" category="list-text">*更改*-观察所选时间段内两个点之间的度量值变化。</block>
+  <block id="74809a036bca54139a2d261d2626d034" category="list-text">*变化比率*-观察所选期间内两个点之间相对于初始点的度量单位的比例变化。</block>
+  <block id="476dc2fbda7f575b4fa5a12c84315d97" category="inline-image-macro">条形图示例、用于显示更改和更改比率聚合选项</block>
+  <block id="7babf63048a268c171c9a35946c31542" category="paragraph"><block ref="7babf63048a268c171c9a35946c31542" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b422b4687d8e61310c31588c0f40502a" category="section-title">将日志查询结果导出至.CSV</block>
+  <block id="9cea24be2464c00b86b714b65366d6f7" category="paragraph">查看日志查询结果时、单击新的"导出"按钮、可轻松地将多达10、000行导出到.CSV。这增强了数据可访问性、简化了数据分析和报告、并有助于与其他Data Processing工具无缝集成。</block>
+  <block id="7a2e6dfd3424cc782f8ace3835b61f07" category="inline-image-macro">日志查询页面上的导出到CSV按钮</block>
+  <block id="0477f9f6d00aae30603158474a92755a" category="paragraph"><block ref="0477f9f6d00aae30603158474a92755a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="97ee1f978fba9c94fb5be3fd10c7458f" category="section-title">按时间解决警报</block>
+  <block id="b0d5063317400902cd605d3e001cdfe3" category="paragraph">现在、当受监控指标在指定持续时间内保持在可接受范围内时、Cloud Insights允许您解决警报。这样、您就可以将多个警报整合为一个警报、从而减少与指标重复超过定义阈值相关的干扰。</block>
+  <block id="e321661400eff0a6d2ff74375e581dfe" category="inline-image-macro">根据时间解决警报</block>
+  <block id="bf06ca1c7f8b70edeba39bebe3b60e6e" category="paragraph"><block ref="bf06ca1c7f8b70edeba39bebe3b60e6e" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
