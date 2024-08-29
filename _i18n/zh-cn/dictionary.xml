@@ -3327,7 +3327,6 @@
   <block id="5a9350e3ec5e1d6389a7846d4b45fff3" category="paragraph"><block ref="5a9350e3ec5e1d6389a7846d4b45fff3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="aa7bcff87c480aa90d0e5d1001e89590" category="summary">配置 VMware 数据收集器。</block>
   <block id="3642158841a114e36a8c869b919b1091" category="doc">配置 VMware vSphere 数据收集器</block>
-  <block id="954ef6f49e5d8376c237f5d66acaff1f" category="paragraph">适用于 VMware vSphere 的数据收集器可收集 ESX 主机信息，并要求对虚拟中心内的所有对象具有只读权限。</block>
   <block id="575e07e277bc9b78e55e69d062be7785" category="paragraph">Cloud Insights 从 VMware vSphere 数据收集器获取以下清单信息。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：</block>
   <block id="9d62e88e4c71939ef8398c5719b13bfc" category="list-text">Virtual Center 服务器的 IP 地址</block>
   <block id="cf7620ee7b4a918ec20b35a084914a6a" category="list-text">Virtual Center 中的只读用户名和密码</block>
@@ -13441,4 +13440,5 @@ AAA/BBB/CCC/*
   <block id="b0d5063317400902cd605d3e001cdfe3" category="paragraph">现在、当受监控指标在指定持续时间内保持在可接受范围内时、Cloud Insights允许您解决警报。这样、您就可以将多个警报整合为一个警报、从而减少与指标重复超过定义阈值相关的干扰。</block>
   <block id="e321661400eff0a6d2ff74375e581dfe" category="inline-image-macro">根据时间解决警报</block>
   <block id="bf06ca1c7f8b70edeba39bebe3b60e6e" category="paragraph"><block ref="bf06ca1c7f8b70edeba39bebe3b60e6e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="6eca91256cc474aa6b595cae920d2b6a" category="paragraph">适用于VMware vSphere的数据收集器可收集VM子系统和ESXi主机性能和配置信息、并要求对vSphere中的所有对象使用只读Privileges。自2024年8月起、vSphere收集器还会另外收到vSphere环境中的日志消息以及一些VMware特定指标。请注意、Cloud Insights只能从vSphere 8.0.1或更高版本的环境检索VMware日志信息。同样、只有vSphere 7+环境才支持供应商专用指标。因此、如果给定收集器指向的是旧版vSphere实例、则可能需要禁用此收集器上的日志和/或供应商特定指标复选框。</block>
 </blocks>
