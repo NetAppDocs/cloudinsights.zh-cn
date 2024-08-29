@@ -13441,4 +13441,5 @@ AAA/BBB/CCC/*
   <block id="e321661400eff0a6d2ff74375e581dfe" category="inline-image-macro">根据时间解决警报</block>
   <block id="bf06ca1c7f8b70edeba39bebe3b60e6e" category="paragraph"><block ref="bf06ca1c7f8b70edeba39bebe3b60e6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6eca91256cc474aa6b595cae920d2b6a" category="paragraph">适用于VMware vSphere的数据收集器可收集VM子系统和ESXi主机性能和配置信息、并要求对vSphere中的所有对象使用只读Privileges。自2024年8月起、vSphere收集器还会另外收到vSphere环境中的日志消息以及一些VMware特定指标。请注意、Cloud Insights只能从vSphere 8.0.1或更高版本的环境检索VMware日志信息。同样、只有vSphere 7+环境才支持供应商专用指标。因此、如果给定收集器指向的是旧版vSphere实例、则可能需要禁用此收集器上的日志和/或供应商特定指标复选框。</block>
+  <block id="88a839c0b82eee34733678fcc5ffb8bd" category="cell">如果Fluent Bit无法启动并尝试打开/创建其数据库、请将run特权 设置为true。</block>
 </blocks>
