@@ -95,6 +95,24 @@ image::new-agent-detect.png[成功安装代理的消息]
  35000-55000/tcp
 
 
+== "固定"当前版本的Agent
+
+默认情况下、Cloud Insights Workload Security会自动更新代理。某些客户可能希望暂停自动更新、这将使工程师保持其当前版本、直到出现以下情况之一：
+
+* 客户恢复自动Agent更新。
+* 30天过去了。请注意、30天从最近一次业务代表更新的那一天开始、而不是从业务代表暂停的那一天开始。
+
+
+在上述每种情况下、代理都会在下次工作负载安全性刷新时进行更新。要暂停或恢复自动代理更新、请使用_云 安全_config.agents API_：
+
+image:ws_pin_agent_apis.png["WS Pin Agent API"]
+
+请注意、暂停或恢复操作可能需要长达五分钟才能生效。您可以在"代理"选项卡的"工作负载安全性">"收集器"页面上查看当前的代理版本。
+
+image:ws_agent_version.png["WS代理版本"]
+
+
+
 == 对代理错误进行故障排除
 
 下表介绍了已知问题及其解决方法。
@@ -104,7 +122,7 @@ image::new-agent-detect.png[成功安装代理的消息]
 | 问题： | 解决方法： 
 
 
-| 代理安装无法创建 /opt/netapp/cloudsecurity/agent/logs/agent.log 文件夹，并且 install.log 文件不提供任何相关信息。 | 在启动代理期间发生此错误。此错误不会记录在日志文件中，因为它会在日志程序初始化之前发生。此错误将重定向到标准输出，并可使用 `jlogalctl -u cloudsecure-agent.service` 命令在服务日志中看到。此命令可用于进一步对问题描述进行故障排除。 
+| 代理安装无法创建 /opt/netapp/cloudsecurity/agent/logs/agent.log 文件夹，并且 install.log 文件不提供任何相关信息。 | 在启动代理期间发生此错误。此错误不会记录在日志文件中，因为它会在日志程序初始化之前发生。此错误将重定向到标准输出、并可通过 `journalctl -u cloudsecure-agent.service`命令显示在服务日志中。此命令可用于进一步解决此问题。EST 
 
 
 | 代理安装失败，并显示 ‘不支持此 Linux 版本。正在退出安装。 | 如果您尝试在不受支持的系统上安装代理、则会出现此错误。请参见 link:concept_cs_agent_requirements.html["代理要求"]。 

@@ -4920,7 +4920,6 @@
   <block id="ded4f1f8f5d9909122d1f0de13abe7c0" category="list-text">`sUdo iptables-save | grep 35000`</block>
   <block id="04d265de0148836a00102bb171aa6456" category="section-title">对代理错误进行故障排除</block>
   <block id="e71794867788b5cf67da8f5fae629c4c" category="cell">代理安装无法创建 /opt/netapp/cloudsecurity/agent/logs/agent.log 文件夹，并且 install.log 文件不提供任何相关信息。</block>
-  <block id="1d46e6c358fd06d5a1f7a440acc48347" category="cell">在启动代理期间发生此错误。此错误不会记录在日志文件中，因为它会在日志程序初始化之前发生。此错误将重定向到标准输出，并可使用 `jlogalctl -u cloudsecure-agent.service` 命令在服务日志中看到。此命令可用于进一步对问题描述进行故障排除。</block>
   <block id="0a21e5a6656a19032e65faf86ec69c83" category="cell">代理安装失败，并显示 ‘不支持此 Linux 版本。正在退出安装。</block>
   <block id="3a7e14f279ad4988e72d190c932c04e4" category="cell">代理安装失败，并显示错误： "-bash ： unzip ： command not found"</block>
   <block id="6ffa35eb057e4e4c2feada5be42e5766" category="cell">安装 unzip ，然后再次运行安装命令。如果计算机上安装了 Yum ，请尝试 " yum install unzip " 以安装解压缩软件。然后，从代理安装 UI 中重新复制此命令并将其粘贴到命令行界面中以重新执行安装。</block>
@@ -13441,5 +13440,15 @@ AAA/BBB/CCC/*
   <block id="e321661400eff0a6d2ff74375e581dfe" category="inline-image-macro">根据时间解决警报</block>
   <block id="bf06ca1c7f8b70edeba39bebe3b60e6e" category="paragraph"><block ref="bf06ca1c7f8b70edeba39bebe3b60e6e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6eca91256cc474aa6b595cae920d2b6a" category="paragraph">适用于VMware vSphere的数据收集器可收集VM子系统和ESXi主机性能和配置信息、并要求对vSphere中的所有对象使用只读Privileges。自2024年8月起、vSphere收集器还会另外收到vSphere环境中的日志消息以及一些VMware特定指标。请注意、Cloud Insights只能从vSphere 8.0.1或更高版本的环境检索VMware日志信息。同样、只有vSphere 7+环境才支持供应商专用指标。因此、如果给定收集器指向的是旧版vSphere实例、则可能需要禁用此收集器上的日志和/或供应商特定指标复选框。</block>
-  <block id="88a839c0b82eee34733678fcc5ffb8bd" category="cell">如果Fluent Bit无法启动并尝试打开/创建其数据库、请将run特权 设置为true。</block>
+  <block id="aacf7c114a34df5c220f4e375bcd0f6c" category="section-title">"固定"当前版本的Agent</block>
+  <block id="a9c7e2aeb7f9f9d656ca872f21bc9a3a" category="paragraph">默认情况下、Cloud Insights Workload Security会自动更新代理。某些客户可能希望暂停自动更新、这将使工程师保持其当前版本、直到出现以下情况之一：</block>
+  <block id="dea8f428de371d2483508970ea18bd9c" category="list-text">客户恢复自动Agent更新。</block>
+  <block id="7a82a4df03996c48bae61a1b40043abe" category="list-text">30天过去了。请注意、30天从最近一次业务代表更新的那一天开始、而不是从业务代表暂停的那一天开始。</block>
+  <block id="772bc0b6f8f9cb094b4c25a1cdebdd38" category="paragraph">在上述每种情况下、代理都会在下次工作负载安全性刷新时进行更新。要暂停或恢复自动代理更新、请使用_云 安全_config.agents API_：</block>
+  <block id="3de76c45f03acf84c51fdc95c48547c8" category="inline-image-macro">WS Pin Agent API</block>
+  <block id="d3cea9cb845d99f575c1c78a6cbcbfeb" category="paragraph"><block ref="d3cea9cb845d99f575c1c78a6cbcbfeb" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="43bc274fafd4f24a6e53e70d34b7d027" category="paragraph">请注意、暂停或恢复操作可能需要长达五分钟才能生效。您可以在"代理"选项卡的"工作负载安全性"&gt;"收集器"页面上查看当前的代理版本。</block>
+  <block id="1979148f99c797a36ae97c5382f95179" category="inline-image-macro">WS代理版本</block>
+  <block id="1958af1f939092e25b5d78caf2a1b150" category="paragraph"><block ref="1958af1f939092e25b5d78caf2a1b150" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="09d5457f1f20be8a89fee7b6f96b30e4" category="cell">在启动代理期间发生此错误。此错误不会记录在日志文件中，因为它会在日志程序初始化之前发生。此错误将重定向到标准输出、并可通过<block ref="f66ee45f9a926233b13f330bfa05ee2e" prefix=" " category="inline-code"></block>命令显示在服务日志中。此命令可用于进一步解决此问题。EST</block>
 </blocks>
