@@ -9649,7 +9649,6 @@
   <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c4f72d869c0634e89ac792627bb8171a" category="list-text">* 订阅 * Cloud Insights ，以便通过持续，无中断地访问您的数据 <block ref="ae0970f4d06315494d31beaa05a7be05" category="inline-link-macro-rx"></block> 直接或 <block ref="e91d3f98f4b43abdea3c839a7777954c" category="inline-link-macro-rx"></block>。</block>
   <block id="2b06b1f90516f17e69e0eb44bcdea94a" category="inline-link-macro">Cloud Insights定价</block>
-  <block id="f7b1eb7dc7d080352b166e30f7b16297" category="paragraph">有关Cloud Insights基础版和高级版中可用功能的完整比较、请参见 <block ref="5e4426af7e9ec6d5ba0a8454594d1f33" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="a3212607b61ab6e23624ab9cfe54fd1a" category="section-title">试用版</block>
   <block id="011273891e0a49f42abc1a209e58868a" category="paragraph">免费试用即将结束时， Cloud Insights 会显示一个横幅在该横幅中有一个_View订阅_链接、用于打开*管理-&gt;订阅*页面。非管理员用户将看到横幅，但无法转到 " 订阅 " 页面。</block>
   <block id="8d36d0a28768ec9f4de7566b028eb00b" category="paragraph">AWS Marketplace免费试用不能延长。试用期间，您可以随时访问*管理-&gt;订阅*页面，降级到Cloud Insights基本版订阅或更改为付费Cloud Insights订阅。</block>
@@ -13451,4 +13450,5 @@ AAA/BBB/CCC/*
   <block id="1979148f99c797a36ae97c5382f95179" category="inline-image-macro">WS代理版本</block>
   <block id="1958af1f939092e25b5d78caf2a1b150" category="paragraph"><block ref="1958af1f939092e25b5d78caf2a1b150" category="inline-image-macro-rx" type="image"></block></block>
   <block id="09d5457f1f20be8a89fee7b6f96b30e4" category="cell">在启动代理期间发生此错误。此错误不会记录在日志文件中，因为它会在日志程序初始化之前发生。此错误将重定向到标准输出、并可通过<block ref="f66ee45f9a926233b13f330bfa05ee2e" prefix=" " category="inline-code"></block>命令显示在服务日志中。此命令可用于进一步解决此问题。EST</block>
+  <block id="3215409bdfa80bc0793df35265a10206" category="paragraph">有关Cloud Insights基础版和高级版中可用功能的完整比较、请参见<block ref="5ae6a719f15b2f1023483afd4997e05f" category="inline-link-macro-rx"></block>页面。</block>
 </blocks>

@@ -28,7 +28,7 @@ Cloud Insights 入门只需简单的三个步骤即可：
 
 在注册过程中，您可以选择用于托管 Cloud Insights 环境的全局区域。有关详细信息，请阅读有关 Cloud Insights 的信息 link:security_information_and_region.html["信息和区域"]。
 
-有关Cloud Insights基础版和高级版中可用功能的完整比较、请参见 link:https://bluexp.netapp.com/cloud-insights-pricing["Cloud Insights定价"] 页面。
+有关Cloud Insights基础版和高级版中可用功能的完整比较、请参见link:https://www.netapp.com/cloud-services/cloud-insights/editions-pricing["Cloud Insights定价"]页面。
 
 
 WARNING: 非活动 Cloud Insights 基本版环境将被删除，其资源将被回收。如果连续 30 天没有用户活动，或者连续 7 天未载入数据，则环境将被视为非活动环境。Cloud Insights 将发送通知，并在删除环境之前提供四天的宽限期。
