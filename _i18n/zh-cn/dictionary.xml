@@ -2718,9 +2718,6 @@
   <block id="e38bf2476e8d2e225da1a053aacfd12c" category="cell">执行管理任务</block>
   <block id="654a32ee33803fd11261b8d650858744" category="section-title">设置报告（ Cognos ）电子邮件首选项</block>
   <block id="17ea205c242f02ff29a6c35d09220094" category="admonition">如果您在 Cloud Insights 报告中更改了用户电子邮件首选项（例如 Cognos 应用程序），则这些首选项对于当前会话为 active _only 。注销 Cognos 并重新登录将重置您的电子邮件首选项。</block>
-  <block id="68ee8ec8a294e5cd7317a22a04835d18" category="section-title">现有客户的重要注意事项</block>
-  <block id="de1257fde6a6c03e2ac180d51c8c79f6" category="paragraph">如果您是首次使用 Cloud Insights 报告功能的用户，欢迎使用！您无需再做任何其他事情即可开始享受报告。</block>
-  <block id="a3a23e64a26caa2ba68aabe6a653f8a3" category="paragraph">如果您是最新的 Premium Edition 客户，则不会自动为您的环境启用 SSO 。启用 SSO 后，报告门户（ Cognos ）的管理员用户将停止存在。这意味着， _My Content_ 文件夹中的任何报告都将被删除，必须在 _Team Content_ 中重新安装或重新创建。此外，启用 SSO 后，需要配置计划的报告。</block>
   <block id="64e8aee8ab5bbf42a82844d113285456" category="section-title">我应采取哪些步骤来准备现有环境以启用 SSO ？</block>
   <block id="30cf09810334fcbe4d4ece63c4a34c1f" category="paragraph">要确保您的报告得以保留，请使用以下步骤将所有报告从 _My Content_ 迁移到 _Team Content_ 。在您的环境中启用 SSO 之前，您必须先执行此操作：</block>
   <block id="380c82a01daf44bff25a9fba8565a8fc" category="list-text">如果已创建多个用户，请为每个用户创建一个单独的文件夹，以避免覆盖名称重复的报告</block>
@@ -13451,4 +13448,10 @@ AAA/BBB/CCC/*
   <block id="1958af1f939092e25b5d78caf2a1b150" category="paragraph"><block ref="1958af1f939092e25b5d78caf2a1b150" category="inline-image-macro-rx" type="image"></block></block>
   <block id="09d5457f1f20be8a89fee7b6f96b30e4" category="cell">在启动代理期间发生此错误。此错误不会记录在日志文件中，因为它会在日志程序初始化之前发生。此错误将重定向到标准输出、并可通过<block ref="f66ee45f9a926233b13f330bfa05ee2e" prefix=" " category="inline-code"></block>命令显示在服务日志中。此命令可用于进一步解决此问题。EST</block>
   <block id="3215409bdfa80bc0793df35265a10206" category="paragraph">有关Cloud Insights基础版和高级版中可用功能的完整比较、请参见<block ref="5ae6a719f15b2f1023483afd4997e05f" category="inline-link-macro-rx"></block>页面。</block>
+  <block id="6170d8ef618bd7f0badc437283eafda2" category="section-title">本地root SVM用户活动发生变化</block>
+  <block id="d8622ff198a6c984d167c00f2cf7a110" category="paragraph">如果本地root SVM用户正在执行任何活动、则会在此用户名中考虑挂载&lt;ip-address-of-the-client&gt;共享的客户端的IP、此用户名在取证活动和用户活动页面中显示为_root@NFS_。</block>
+  <block id="506c2c0c7f5b70af3df68c45c46f45a7" category="paragraph">例如：</block>
+  <block id="f3798d278d520536cd288461ba2c1858" category="list-text">如果SVM-1受工作负载安全性监控、并且该SVM的root用户在IP地址为10.197.12.40的客户端上挂载共享、则取证活动页面中显示的用户名为_root@10.197.12.40_。</block>
+  <block id="b9d319d8c871cc037bbb64830c075261" category="list-text">如果将同一个SVM-1挂载到IP地址为10.197.12.41的另一个客户端、则取证活动页面中显示的用户名为_root@10.197.12.41_。</block>
+  <block id="e3c2786769604634cbe42574b350b28f" category="list-text">这样做是为了按IP地址隔离NFS root用户活动。以前、所有活动都被视为仅由_root_用户完成、不区分IP。</block>
 </blocks>
