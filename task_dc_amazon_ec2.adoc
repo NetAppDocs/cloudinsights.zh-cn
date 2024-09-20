@@ -141,6 +141,7 @@ Cloud Insights 支持在一个 AWS 数据收集器中收集 AWS 的子帐户。�
 * 您必须将每个子帐户配置为具有一个 AWS 角色，此角色允许主帐户 ID 从子帐户访问 EC2 详细信息。
 * 每个子帐户都必须将角色名称配置为相同的字符串。
 * 在 * 跨帐户角色 * 字段的 Cloud Insights AWS 数据收集器 * 高级配置 * 部分中输入此角色名称字符串。
+* 安装收集器的帐户需要具有_Delegate access administrator_ Privileges。link:https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html["AWS 文档"]有关详细信息、请参见。
 
 
 最佳实践：强烈建议将 AWS 预定义的 _AmazonEC2ReadOnlyAccess_ 策略分配给 EC2 主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。

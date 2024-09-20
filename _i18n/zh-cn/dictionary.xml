@@ -13454,4 +13454,11 @@ AAA/BBB/CCC/*
   <block id="f3798d278d520536cd288461ba2c1858" category="list-text">如果SVM-1受工作负载安全性监控、并且该SVM的root用户在IP地址为10.197.12.40的客户端上挂载共享、则取证活动页面中显示的用户名为_root@10.197.12.40_。</block>
   <block id="b9d319d8c871cc037bbb64830c075261" category="list-text">如果将同一个SVM-1挂载到IP地址为10.197.12.41的另一个客户端、则取证活动页面中显示的用户名为_root@10.197.12.41_。</block>
   <block id="e3c2786769604634cbe42574b350b28f" category="list-text">这样做是为了按IP地址隔离NFS root用户活动。以前、所有活动都被视为仅由_root_用户完成、不区分IP。</block>
+  <block id="ce86a5aaf36b8b44516c9a3d547bc544" category="section-title">通过API提取数据的脚本</block>
+  <block id="abd1c518dbb73a973f62bdeac0383a1f" category="paragraph">工作负载安全代理包括一个导出脚本、用于通过将请求的时间范围划分为较小的批次来并行调用v2 API。</block>
+  <block id="9691b74510440e767ebe140708556d4a" category="paragraph">该脚本位于：/opt/tase/云NetApp安全/agent/export脚本_。同一目录中的README文件提供了使用说明。</block>
+  <block id="b33ce51cf90f2cebc1848ee9bdd86a73" category="paragraph">以下是调用该脚本的命令示例：</block>
+  <block id="4cee2cbc95e55efcd827954ec63679ef" category="paragraph">关键参数：-<block ref="86768c9197497f61803d2cccda886c2b" prefix=" " category="inline-code"></block>：将请求的时间范围拆分为12小时的间隔。-<block ref="90bf4ae9a260a1dab39cf85f9b78e62f" prefix=" " category="inline-code"></block>：使用3个线程并行提取这些间隔。</block>
+  <block id="6bcfb21e09554dca2e39878feec63052" category="inline-link-macro">AWS 文档</block>
+  <block id="27bd1734310b9ef60e677eeb8578ef51" category="list-text">安装收集器的帐户需要具有_Delegate access administrator_ Privileges。<block ref="c2b17d165b23584303b797053451136e" category="inline-link-macro-rx"></block>有关详细信息、请参见。</block>
 </blocks>

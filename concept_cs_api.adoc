@@ -62,3 +62,19 @@ NOTE: 您的令牌只能在创建过程中复制到剪贴板并进行保存。�
 其中， _<API_Access_Token>_ 是您在创建 API 访问密钥期间保存的令牌。
 
 有关详细信息，请参见 _API Documentation_ 链接中的 * 管理 > API 访问 * 。
+
+
+
+== 通过API提取数据的脚本
+
+工作负载安全代理包括一个导出脚本、用于通过将请求的时间范围划分为较小的批次来并行调用v2 API。
+
+该脚本位于：/opt/tase/云NetApp安全/agent/export脚本_。同一目录中的README文件提供了使用说明。
+
+以下是调用该脚本的命令示例：
+
+[source]
+----
+python3 data-export.py --tenant_url <tenant id>.cs01.cloudinsights.netapp.com --access_key %ACCESS_KEY% --path_filter "<dir path>" --user_name "<user>" --from_time "01-08-2024 00:00:00" --to_time "31-08-2024 23:59:59" --iteration_interval 12 --num_workers 3
+----
+关键参数：- `--iteration_interval 12`：将请求的时间范围拆分为12小时的间隔。- `--num_workers 3`：使用3个线程并行提取这些间隔。
