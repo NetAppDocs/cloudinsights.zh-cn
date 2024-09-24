@@ -19,7 +19,7 @@ summary: Redis 数据收集器配置
 
 
 [role="lead"]
-Cloud Insights 使用此数据收集器从 RethinkDB 收集指标。
+Data Infrastructure Insight使用此数据收集器从RetinkDB收集指标。
 
 
 

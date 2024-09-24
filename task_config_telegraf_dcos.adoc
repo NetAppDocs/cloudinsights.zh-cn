@@ -19,7 +19,7 @@ summary: Dcos 配置
 
 
 [role="lead"]
-Cloud Insights 使用此数据收集器从数据中心 / 操作系统收集指标。
+Data Infrastructure Insight使用此数据收集器从DC/DC收集指标。
 
 
 

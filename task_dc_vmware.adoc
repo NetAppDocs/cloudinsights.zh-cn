@@ -19,17 +19,17 @@ summary: 配置 VMware 数据收集器。
 
 
 [role="lead"]
-适用于VMware vSphere的数据收集器可收集VM子系统和ESXi主机性能和配置信息、并要求对vSphere中的所有对象使用只读Privileges。自2024年8月起、vSphere收集器还会另外收到vSphere环境中的日志消息以及一些VMware特定指标。请注意、Cloud Insights只能从vSphere 8.0.1或更高版本的环境检索VMware日志信息。同样、只有vSphere 7+环境才支持供应商专用指标。因此、如果给定收集器指向的是旧版vSphere实例、则可能需要禁用此收集器上的日志和/或供应商特定指标复选框。
+适用于VMware vSphere的数据收集器可收集VM子系统和ESXi主机性能和配置信息、并要求对vSphere中的所有对象使用只读Privileges。自2024年8月起、vSphere收集器还会另外收到vSphere环境中的日志消息以及一些VMware特定指标。请注意、数据基础架构洞察力只能从8.0.1或更高版本的环境中检索VMware日志信息。同样、只有vSphere 7+环境才支持供应商专用指标。因此、如果给定收集器指向的是旧版vSphere实例、则可能需要禁用此收集器上的日志和/或供应商特定指标复选框。
 
 
 
 == 术语
 
-Cloud Insights 从 VMware vSphere 数据收集器获取以下清单信息。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+Data Infrastructure Insight从VMware vSphere数据收集器采集以下清单信息。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
 
 [cols="2*"]
 |===
-| 供应商 / 型号术语 | Cloud Insights 术语 
+| 供应商 / 型号术语 | 数据基础架构洞察力一词 
 
 
 | 虚拟磁盘 | 磁盘 
@@ -129,24 +129,24 @@ Cloud Insights 从 VMware vSphere 数据收集器获取以下清单信息。对�
 | 通信端口 | 默认值为 443 
 
 
-| 筛选设备列表 ... | 此列表必须包含完全匹配的字符串 - 如果要按 ESX_host 进行筛选，则必须按 Cloud Insights 和 vSphere 中报告的 ESX 主机的确切 " 名称 " 构建一个逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时、 使用CI在虚拟机管理程序上报告的Cloud Insights模式集群名称—Cloud Insights 会在vSphere集群名称前面加上vSphere数据中心名称和正斜杠—"DC1/clusterA"是Cloud Insights 将在数据中心DC1的clusterA中报告的集群名称。 
+| 筛选设备列表 ... | 此列表必须包含完全匹配的字符串-如果要按esx_host进行筛选、则必须根据Data Infrastructure Insight和vSphere中的报告、构建一个包含ESX主机的确切"名称"的逗号分隔列表。这些 " 名称 " 可以是 IP 地址，简单主机名或完全限定域名（ FQDN ），这取决于这些主机最初添加到 vSphere 时的命名方式。按集群筛选时、请使用虚拟机管理程序上的CI报告的Data Infrastructure洞察力模式集群名称—Data Infrastructure洞察力在vSphere集群名称前面附加vSphere数据中心名称、并使用正斜杠—DC1/cluster A是Data Infrastructure Insight在数据中心DC1内的集群A上报告的集群名称。 
 
 
 | 性能轮询间隔（秒） | 默认值为 300 
 |===
 
 
-== 将VMware标记映射到Cloud Insights标注
+== 将VMware标记映射到Data Infrastructure Insight标注
 
-通过VMware数据收集器、您可以使用在VMware上配置的标记填充Cloud Insights标注。标注的名称必须与VMware标记完全相同。Cloud Insights 将始终填充同名文本类型的标注，并 " 尽力 " 填充其他类型（数字，布尔值等）的标注。如果您的标注类型不同，而数据收集器无法填充，则可能需要删除此标注并将其重新创建为文本类型。
+通过VMware数据收集器、您可以使用在VMware上配置的标记来填充Data Infrastructure Insight标注。标注的名称必须与VMware标记完全相同。Data Infrastructure Insight将始终填充同名文本类型的标注、并"尽力"填充其他类型(数字、布尔值等)的标注。如果您的标注类型不同，而数据收集器无法填充，则可能需要删除此标注并将其重新创建为文本类型。
 
-请注意、VMware标记可能区分大小写、而Cloud Insights标记不区分大小写。因此、如果您在Cloud Insights中创建名为"owner"的标注、并在VMware中创建名为"owner"、"owner"和"owner"的标记、则所有这些"owner"变体都会映射到Cloud Insight的"owner"标注。
+请注意、VMware标记可能区分大小写、而Data Infrastructure Insight标记不区分大小写。因此、如果您在Data Infrastructure Insight中创建名为"owner"的标注、并在VMware中创建名为"owner"、"owner"和"owner"的标记、则所有这些"owner"变体都会映射到Cloud Insight的"owner"标注。
 
 请记住以下几点：
 
-* Cloud Insights当前仅自动发布NetApp设备的支持信息。
+* Data Infrastructure Insight目前仅自动发布NetApp设备的支持信息。
 * 由于此支持信息以标注形式保存、因此您可以查询它或在信息板中使用它。
-* 如果用户覆盖或清空标注值、则在Cloud Insights更新标注时、该值会再次自动调整、每天更新一次。
+* 如果用户覆盖或清空标注值、则在Data Infrastructure Insight更新标注时、该值会再次自动调整、每天更新一次。
 
 
 

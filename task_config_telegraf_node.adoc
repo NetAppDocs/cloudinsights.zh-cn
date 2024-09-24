@@ -19,7 +19,7 @@ summary: Flink 数据收集器配置
 
 
 [role="lead"]
-Cloud Insights 从安装代理的节点收集指标。
+Data Infrastructure Insight从安装代理的节点收集指标。
 
 
 

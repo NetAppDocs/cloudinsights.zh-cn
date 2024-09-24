@@ -19,17 +19,17 @@ summary: 配置 Brocade FC 交换机数据收集器。
 
 
 [role="lead"]
-Cloud Insights 使用 Brocade FC 交换机（ SSH ）数据源发现运行 Factored Operating System （ FOS ）固件 4.2 及更高版本的 Brocade 或更名交换机设备的清单。支持 FC 交换机和访问网关模式下的设备。
+数据基础架构洞察使用Brocade FC交换机(SSH)数据源发现运行Factored Operating System (FOS)固件4.2及更高版本的Brocade或更名交换机设备的清单。支持 FC 交换机和访问网关模式下的设备。
 
 
 
 == 术语
 
-Cloud Insights 从 Brocade FC 交换机数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+数据基础架构洞察从Brocade FC交换机数据收集器采集以下清单信息。对于Data Infrastructure Insight采集的每种资产类型、显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
 
 [cols="2*"]
 |===
-| 供应商 / 型号术语 | Cloud Insights 术语 
+| 供应商 / 型号术语 | 数据基础架构洞察力一词 
 
 
 | 交换机 | 交换机 
@@ -58,8 +58,8 @@ Cloud Insights 从 Brocade FC 交换机数据收集器采集以下清单信息�
 
 == 要求
 
-* Cloud Insights 采集单元（ AU ）将启动与 Brocade 交换机上的 TCP 端口 22 的连接，以收集清单数据。AU 还将启动与 UDP 端口 161 的连接，以收集性能数据。
-* 网络结构中的所有交换机都必须具有 IP 连接。如果选中发现网络结构中的所有交换机复选框，则 Cloud Insights 将标识网络结构中的所有交换机；但是，它需要通过 IP 连接到这些附加交换机才能发现它们。
+* 数据基础架构洞察力采集单元(AU)将启动与Brocade交换机上TCP端口22的连接、以收集清单数据。AU 还将启动与 UDP 端口 161 的连接，以收集性能数据。
+* 必须与网络结构中的所有交换机建立IP连接。如果选中发现网络结构中的所有交换机复选框、则Data Infrastructure Insight将标识网络结构中的所有交换机；但是、它需要通过与这些附加交换机的IP连接来发现它们。
 * 网络结构中的所有交换机需要全局使用同一个帐户。您可以使用 PuTTY （开源终端模拟器）确认访问。
 * 端口 161 和 162 必须对网络结构中的所有交换机开放，才能进行 SNMP 性能轮询。
 * SNMP 只读社区字符串
@@ -156,10 +156,10 @@ Cloud Insights 从 Brocade FC 交换机数据收集器采集以下清单信息�
 | 问题： | 请尝试以下操作： 
 
 
-| Brocade 数据源的清单采集失败，并显示错误： <date> <time> error com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Error 2 out of 2 ： <datasource name>[Internal error] - Unable to generate the model for device <IP> 。检测提示时出错（ [Device name <name> ：无法生成设备 <IP> 的型号。检测提示时出错） | 如果 Brocade 交换机返回提示所需的时间过长，超过默认的 5 秒超时时间，则可能会导致出现问题描述 。在 Cloud Insights 的数据收集器的高级配置设置中，尝试将 _SSH 横幅等待超时（秒） _ 增加到更高的值。 
+| Brocade 数据源的清单采集失败，并显示错误： <date> <time> error com.onaro.sanscreen.acquisition.framework.datasource.BaseDataSource] Error 2 out of 2 ： <datasource name>[Internal error] - Unable to generate the model for device <IP> 。检测提示时出错（ [Device name <name> ：无法生成设备 <IP> 的型号。检测提示时出错） | 如果 Brocade 交换机返回提示所需的时间过长，超过默认的 5 秒超时时间，则可能会导致出现问题描述 。在Data Infrastructure Insight中的数据收集器高级配置设置中、尝试将_SSH横幅等待超时(秒)_增加到更高的值。 
 
 
-| 错误： Cloud Insights 收到无效机箱角色 | 检查是否已为此数据源中配置的用户授予机箱角色权限。 
+| 错误："Data Infrastructure Insight received Invalid Chassis Role" | 检查是否已为此数据源中配置的用户授予机箱角色权限。 
 
 
 | 错误： " 机箱 IP 地址不匹配 " | 更改数据源配置以使用机箱 IP 地址。 

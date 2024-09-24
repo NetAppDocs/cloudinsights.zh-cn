@@ -19,13 +19,13 @@ summary: 配置 Dell EMC VMAX 和 PowerMax 系列设备数据收集器。
 
 
 [role="lead"]
-Cloud Insights 可通过将 Solutions Enabler SYMCLI 命令与环境中的现有 Solutions Enabler 服务器结合使用来发现 EMC VMAX 和 PowerMax 存储阵列。现有 Solutions Enabler 服务器可通过访问 Gatekeeper 卷连接到 VMAX/PowerMax 存储阵列。
+Data Infrastructure Insight可将Solutions Enabler SYMCLI命令与环境中的现有Solutions Enabler服务器结合使用来发现EMC VMAX和PowerMax存储阵列。现有 Solutions Enabler 服务器可通过访问 Gatekeeper 卷连接到 VMAX/PowerMax 存储阵列。
 
 
 
 == 要求
 
-在配置此数据收集器之前，您应确保 Cloud Insights 与现有 Solutions Enabler 服务器上的端口 2707 具有 TCP 连接。Cloud Insights 会发现此服务器 " 本地 " 的所有 Symmetrix 阵列，如该服务器的 "symcfg list" 输出所示。
+在配置此数据收集器之前、您应确保Data Infrastructure Insight能够通过TCP连接到现有Solutions Enabler服务器上的端口2707。Data Infrastructure Insight会发现此服务器的"本地"所有Symmetrix阵列、如该服务器的"symcfg list"输出中所示。
 
 * 必须在采集单元服务器上安装带有 SMI-S 提供程序应用程序的 EMC Solutions Enabler （ CLI ），并且此版本必须与 Solutions Enabler 服务器上运行的版本匹配或早于此版本。
 * 需要一个正确配置的 ｛ installdir ｝ \EMC\SYMAPI\config\netcnfg 文件。此文件定义 Solutions Enabler 服务器的服务名称以及访问方法（ SECURE / NOSECURE /ANY ）。
@@ -58,11 +58,11 @@ cisys storapid <all>
 
 == 术语
 
-Cloud Insights 从 EMC VMAX/PowerMax 数据源采集以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+Data Infrastructure Insight从EMC VMAX/PowerMax数据源采集以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
 
 [cols="2*"]
 |===
-| 供应商 / 型号术语 | Cloud Insights 术语 
+| 供应商 / 型号术语 | 数据基础架构洞察力一词 
 
 
 | 磁盘 | 磁盘 
@@ -88,7 +88,7 @@ Cloud Insights 从 EMC VMAX/PowerMax 数据源采集以下清单信息。对于�
 
 == 配置
 
-* 注： * 如果未启用 SMI-S 用户身份验证，则会忽略 Cloud Insights 数据收集器中的默认值。
+*注意：*如果未启用SMI-S用户身份验证、则会忽略Data Infrastructure Insight数据收集器中的默认值。
 
 [cols="2*"]
 |===
@@ -121,7 +121,7 @@ Cloud Insights 从 EMC VMAX/PowerMax 数据源采集以下清单信息。对于�
 | 清单筛选器设备列表 | 要包含或排除的设备 ID 的逗号分隔列表 
 
 
-| 连接缓存 | 选择连接缓存方法： * local 表示 Cloud Insights 采集服务正在 Solutions Enabler 服务器上运行，该服务器可通过光纤通道连接到您要发现的 Symmetrix 阵列，并可访问 Gatekeeper 卷。在某些远程采集单元（ RAU ）配置中可能会出现这种情况。* remote_cached 为默认值，大多数情况下应使用。这将使用 NETCNFG 文件设置通过 IP 连接到 Solutions Enabler 服务器，该服务器必须通过光纤通道连接到您要发现的 Symmetrix 阵列，并有权访问 Gatekeeper 卷。* 如果 remote_cached 选项使 CLI 命令失败，请使用 remote 选项。请注意，这会减慢采集过程的速度（在极端情况下可能会减慢到数小时甚至数天）。NETCNFG 文件设置仍用于通过 IP 连接到 Solutions Enabler 服务器，该服务器通过光纤通道连接到正在发现的 Symmetrix 阵列。* 注： * 此设置不会更改与 "symcfg list" 输出中列为 REMOTE 的阵列相关的 Cloud Insights 行为。Cloud Insights 仅收集此命令显示为 local 的设备上的数据。 
+| 连接缓存 | 选择连接缓存方法： * local 表示 Cloud Insights 采集服务正在 Solutions Enabler 服务器上运行，该服务器可通过光纤通道连接到您要发现的 Symmetrix 阵列，并可访问 Gatekeeper 卷。在某些远程采集单元（ RAU ）配置中可能会出现这种情况。* remote_cached 为默认值，大多数情况下应使用。这将使用 NETCNFG 文件设置通过 IP 连接到 Solutions Enabler 服务器，该服务器必须通过光纤通道连接到您要发现的 Symmetrix 阵列，并有权访问 Gatekeeper 卷。* 如果 remote_cached 选项使 CLI 命令失败，请使用 remote 选项。请注意，这会减慢采集过程的速度（在极端情况下可能会减慢到数小时甚至数天）。NETCNFG 文件设置仍用于通过 IP 连接到 Solutions Enabler 服务器，该服务器通过光纤通道连接到正在发现的 Symmetrix 阵列。*注意：*此设置不会更改与symcfg list输出中列为REMOTE的阵列相关的Data Infrastructure Insight行为。Data Infrastructure Insight仅收集此命令显示为local的设备上的数据。 
 
 
 | SMI-S 协议 | 用于连接到 SMI-S 提供程序的协议。还会显示使用的默认端口。 

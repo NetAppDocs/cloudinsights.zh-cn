@@ -19,20 +19,20 @@ summary: 适用于 NetApp ONTAP 数据收集器的 Amazon FSX
 
 
 [role="lead"]
-此数据收集器从适用于 NetApp ONTAP 的 Amazon FSX 采集清单和性能数据。此数据收集器将在整个 Cloud Insights 服务区域内逐渐可用。如果您在 Cloud Insights 环境中未看到此收集器的图标，请联系您的销售人员。
+此数据收集器从适用于 NetApp ONTAP 的 Amazon FSX 采集清单和性能数据。此数据收集器将在整个Data Infrastructure Insight服务区域逐步提供。如果您在Data Infrastructure Insight环境中看不到此收集器的图标、请联系您的销售人员。
 
 
-NOTE: 此Cloud Insights收集器需要一个具有_Fileseme-Scoped_角色的ONTAP用户。请查看AWS link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["角色和规则"] 有关可用选项的文档。目前、AWS仅支持文件系统范围的一种用户角色、即_fsxadmin_。这是Cloud Insights收集器要使用的适当角色。此外、还应为用户分配以下三个应用程序：HTTP、ontapi、ssh。
+NOTE: 此数据基础架构洞察力收集器需要一个具有_Filesemics-Scoped_角色的ONTAP用户。link:https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/roles-and-users.html["角色和规则"]有关可用选项、请查看AWS文档。目前、AWS仅支持文件系统范围的一种用户角色、即_fsxadmin_。这是Data Infrastructure Insight收集器要使用的适当角色。此外、还应为用户分配以下三个应用程序：HTTP、ontapi、ssh。
 
 
 
 == 术语
 
-Cloud Insights 从 FSx-NetApp 数据收集器采集清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+数据基础架构洞察从FSX-Data NetApp数据收集器采集清单和性能数据。对于所采集的每种资产类型，都会显示该资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
 
 [cols="2*"]
 |===
-| 供应商 / 型号术语 | Cloud Insights 术语 
+| 供应商 / 型号术语 | 数据基础架构洞察力一词 
 
 
 | 集群 | 存储 
@@ -58,8 +58,8 @@ Cloud Insights 从 FSx-NetApp 数据收集器采集清单和性能数据。对�
 * Serial Number —阵列序列号。
 * IP —通常是数据源中配置的 IP 或主机名。
 * 原始容量—分配给FSX文件系统的所有SSD存储的基数为2的总和。
-* 延迟—表示主机在读取和写入工作负载方面所遇到的情况。理想情况下， Cloud Insights 会直接获取此值，但这种情况通常不会发生。Cloud Insights 通常会根据各个内部卷的统计信息执行 IOPS 加权计算，而不是采用这种计算方法的阵列。
-* 吞吐量—从内部卷聚合。管理—可能包含设备管理界面的超链接。由 Cloud Insights 数据源在清单报告中以编程方式创建。
+* 延迟—表示主机在读取和写入工作负载方面所遇到的情况。理想情况下、Data Infrastructure Insight会直接获取这种价值、但事实往往并非如此。Data Infrastructure Insight通常会根据各个内部卷的统计信息执行IOPS加权计算、而不是使用阵列来提供此功能。
+* 吞吐量—从内部卷聚合。管理—可能包含设备管理界面的超链接。由Data Infrastructure Insight数据源以编程方式在清单报告中创建。
 
 
 
@@ -120,7 +120,7 @@ Cloud Insights 从 FSx-NetApp 数据收集器采集清单和性能数据。对�
 * workload_volume
 
 
-请注意、FSx命令行界面和API命令会检索Cloud Insights ZAPI不收集的某些容量值、因此Cloud Insights中的某些容量值(例如存储池的容量值)可能与FSx本身不同。
+请注意、FSx命令行界面和API命令会检索Data Infrastructure Insight ZAPI不收集的某些容量值、因此Data Infrastructure Insight中的某些容量值(例如存储池的容量值)可能与FSx本身不同。
 
 
 

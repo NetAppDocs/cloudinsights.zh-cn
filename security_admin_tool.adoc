@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: security_admin_tool.html 
-summary: Cloud Insights 会在整个发布生命周期遵循安全最佳实践。 
+summary: Data Infrastructure Insight在整个发布生命周期遵循安全最佳实践。 
 keywords: security, risk, protection 
 ---
 = securityadmin工具
@@ -19,11 +19,11 @@ keywords: security, risk, protection
 
 
 [role="lead"]
-Cloud Insights 提供了一些安全功能、使您的环境能够以增强的安全性运行。这些功能包括对加密、密码哈希以及更改内部用户密码以及用于加密和解密密码的密钥对的功能进行了改进。
+Data Infrastructure Insight提供了多种安全功能、使您的环境能够以增强的安全性运行。这些功能包括对加密、密码哈希以及更改内部用户密码以及用于加密和解密密码的密钥对的功能进行了改进。
 
 为了保护敏感数据、NetApp建议您在安装或升级后更改默认密钥和_Acquisition _用户密码。
 
-数据源加密密码存储在Cloud Insights 中、当用户在数据收集器配置页面中输入密码时、会使用公共密钥对密码进行加密。Cloud Insights 没有解密数据收集器密码所需的私钥；只有采集单元(A课)具有解密数据收集器密码所需的数据收集器私钥。
+数据源加密密码存储在Data Infrastructure Insight中、当用户在数据收集器配置页面中输入密码时、Data Infrastructure Insight会使用公共密钥对密码进行加密。Data Infrastructure Insight没有解密数据收集器密码所需的私钥；只有采集单元(A课)具有解密数据收集器密码所需的数据收集器私钥。
 
 
 
@@ -35,7 +35,7 @@ Cloud Insights 提供了一些安全功能、使您的环境能够以增强的�
 
 == 管理采集单元上的安全性
 
-使用SecurityAdmin工具可以管理Cloud Insights 的安全选项、该工具可在采集单元系统上运行。安全管理包括管理密钥和密码、保存和还原您创建的安全配置或将配置还原为默认设置。
+通过SecurityAdmin工具、您可以管理Data Infrastructure Insight的安全选项、此工具可在采集单元系统上运行。安全管理包括管理密钥和密码、保存和还原您创建的安全配置或将配置还原为默认设置。
 
 
 
@@ -168,7 +168,7 @@ usage: securityadmin -pr -ap <arg> | -h | -rp | -upr <arg>
 
 The purpose of this tool is to enable reconfiguration of security aspects
 of the Acquisition Unit such as encryption keys, and proxy configuration,
-etc. For more information about this tool, please check the Cloud Insights
+etc. For more information about this tool, please check the Data Infrastructure Insights
 Documentation.
 
 -ap,--add-proxy <arg>       add a proxy server.  Arguments: ip=ip
@@ -207,7 +207,7 @@ Documentation.
 
 如果您提供了UNIX shell脚本、则采集单元可以执行该脚本、以便从密钥管理系统中检索*专用密钥*和*公共密钥*。
 
-要检索密钥、Cloud Insights将执行该脚本、并传递两个参数：_key id_和_key type_。_Key id_可用于标识密钥管理系统中的密钥。_Key type_"公共"或"私有"。如果密钥类型为"public"、则脚本必须返回公共密钥。如果密钥类型为"prival"、则必须返回专用密钥。
+要检索密钥、Data Infrastructure Insight将执行该脚本、并传递以下两个参数：_key id_和_key type_。_Key id_可用于标识密钥管理系统中的密钥。_Key type_"公共"或"私有"。如果密钥类型为"public"、则脚本必须返回公共密钥。如果密钥类型为"prival"、则必须返回专用密钥。
 
 要将密钥发送回采集单元、脚本必须将密钥打印到标准输出。该脚本必须打印_only标准输出的关键字；不能在标准输出中打印任何其他文本。将请求的密钥打印到标准输出后、脚本必须退出并显示退出代码0；任何其他返回代码均视为错误。
 

@@ -19,7 +19,7 @@ summary: kapacitor. 配置
 
 
 [role="lead"]
-Cloud Insights 使用此数据收集器从影响数据的 Kapacitor 收集指标。
+Data Infrastructure Insight使用此数据收集器从影响数据Kapacitor收集指标。
 
 
 

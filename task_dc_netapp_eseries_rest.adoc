@@ -29,7 +29,7 @@ Cloud Insight使用REST从NetApp E系列采集以下清单信息。对于所采�
 
 [cols="2*"]
 |===
-| 供应商 / 型号术语 | Cloud Insights 术语 
+| 供应商 / 型号术语 | 数据基础架构洞察力一词 
 
 
 | 磁盘 | 磁盘 
@@ -56,7 +56,7 @@ Cloud Insight使用REST从NetApp E系列采集以下清单信息。对于所采�
 == 要求
 
 * 阵列上每个控制器的 IP 地址
-* 此收集器仅支持具有*本机REST API功能*的E系列型号阵列。E系列组织为较早的E系列阵列提供了一个可安装的阵列外REST API分发版：此收集器不支持该方案。使用较旧阵列的用户应继续使用Cloud Insights link:task_dc_na_eseries.html["E系列SANtricity API"] 收集器。
+* 此收集器仅支持具有*本机REST API功能*的E系列型号阵列。E系列组织为较早的E系列阵列提供了一个可安装的阵列外REST API分发版：此收集器不支持该方案。使用较旧阵列的用户应继续使用Data Infrastructure Insight的link:task_dc_na_eseries.html["E系列SANtricity API"]收集器。
 * "E系列控制器IP地址"字段支持由2个IP/主机名组成的逗号分隔字符串；如果无法访问第一个IP/主机名、收集器将智能地尝试第二个IP/主机名。
 * HTTPS端口：默认值为8443。
 
@@ -102,9 +102,9 @@ Cloud Insight使用REST从NetApp E系列采集以下清单信息。对于所采�
 * IP —通常是数据源中配置的 IP 或主机名
 * 微代码版本—固件
 * 原始容量—系统中所有物理磁盘的基本 2 总和，而不管其角色如何
-* 延迟—表示主机在读取和写入工作负载方面所遇到的情况。理想情况下， Cloud Insights 会直接获取此值，但这种情况通常不会发生。Cloud Insights 通常会根据各个卷的统计信息执行 IOPS 加权计算，而不是采用这种计算方法的阵列。
-* 吞吐量—阵列面向主机的总吞吐量。理想情况下，如果阵列不可用， Cloud Insights 将对卷的吞吐量进行求和以得出此值
-* 管理—可能包含设备管理界面的超链接。由 Cloud Insights 数据源在清单报告中以编程方式创建
+* 延迟—表示主机在读取和写入工作负载方面所遇到的情况。理想情况下、Data Infrastructure Insight会直接获取这种价值、但事实往往并非如此。Data Infrastructure Insight通常会根据各个卷的统计信息执行IOPS加权计算、而不是使用阵列来提供此功能。
+* 吞吐量—阵列面向主机的总吞吐量。理想情况下、数据基础架构洞察会直接从阵列获取数据、如果不可用、则会将卷的吞吐量相加得出该值
+* 管理—可能包含设备管理界面的超链接。由Data Infrastructure Insight数据源以编程方式在清单报告中创建  
 
 
 

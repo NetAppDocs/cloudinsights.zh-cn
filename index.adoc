@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: index.html 
-summary: 欢迎使用 Cloud Insights 文档门户。 
+summary: 欢迎访问Data Infrastructure Insight文档门户。 
 keywords:  
 ---
-= Cloud Insights 文档
+= Data Infrastructure Insight文档
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,13 +19,13 @@ keywords:
 
 
 [role="lead"]
-NetApp Cloud Insights 是一款云基础架构监控工具，可让您深入了解整个基础架构。借助 Cloud Insights ，您可以监控，排除故障并优化所有资源，包括公有云和私有数据中心。
+NetApp数据基础架构洞察(原Cloud Insights)是一款云基础架构监控工具、可让您深入了解整个基础架构。借助Data Infrastructure Insight、您可以监控和优化所有资源、包括公有云和私有数据中心、并对其进行故障排除。
 
 
 
-== Cloud Insights 可以为我做什么？
+== Data Infrastructure Insight对我有何作用？
 
-Cloud Insights 提供混合多云监控功能、可为您提供对基础架构和工作负载的全堆栈可观察性。
+Data Infrastructure Insight提供混合多云监控功能、支持您对基础架构和工作负载进行全栈观察。
 
 * 用于异构基础架构和工作负载的数据收集器、包括Kubernetes
 * 开放式Telegraf收集器和开放式API、便于集成
@@ -42,7 +42,7 @@ Cloud Insights 提供混合多云监控功能、可为您提供对基础架构�
 
 == 入门
 
-* 如何执行 link:task_cloud_insights_onboarding_1.html["*开始使用*"] 是否使用Cloud Insights ？
+* 如何link:task_cloud_insights_onboarding_1.html["*开始使用*"]利用数据基础架构洞察力？
 * 我已注册。现在我该怎么办？link:task_getting_started_with_cloud_insights.html["正在获取数据"]
 link:concept_user_roles.html["设置用户"]
 * 太棒了！下一步是什么？

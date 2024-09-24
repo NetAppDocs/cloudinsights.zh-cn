@@ -100,16 +100,20 @@ image::new-agent-detect.png[成功安装代理的消息]
 默认情况下、Cloud Insights Workload Security会自动更新代理。某些客户可能希望暂停自动更新、这将使工程师保持其当前版本、直到出现以下情况之一：
 
 * 客户恢复自动Agent更新。
-* 30天过去了。请注意、30天从最近一次业务代表更新的那一天开始、而不是从业务代表暂停的那一天开始。
+* 30天过去了。请注意、这30天从最近一次Agent更新的那一天开始、而不是从Agent暂停的那一天开始。
 
 
-在上述每种情况下、代理都会在下次工作负载安全性刷新时进行更新。要暂停或恢复自动代理更新、请使用_云 安全_config.agents API_：
+在上述每种情况下、代理都会在下次工作负载安全性刷新时进行更新。
 
-image:ws_pin_agent_apis.png["WS Pin Agent API"]
+要暂停或恢复自动代理更新、请使用_云 安全_config.agents_ API：
 
-请注意、暂停或恢复操作可能需要长达五分钟才能生效。您可以在"代理"选项卡的"工作负载安全性">"收集器"页面上查看当前的代理版本。
+image:ws_pin_agent_apis.png["用于固定和取消固定代理的云安全代理API"]
 
-image:ws_agent_version.png["WS代理版本"]
+请注意、暂停或恢复操作可能需要长达五分钟才能生效。
+
+您可以在*Agents*选项卡的*Workload Security > Collectors*页面上查看当前的Agent版本。
+
+image:ws_agent_version.png["代理表中显示的WS代理版本"]
 
 
 

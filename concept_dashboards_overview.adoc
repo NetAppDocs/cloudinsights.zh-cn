@@ -68,35 +68,35 @@ image:TableWidgetPerformanceData.png["表小工具"]
 
 * * 折线图，样条曲线图，区域图，堆栈区域图 * ：这些是时间序列图表小工具，您可以在此小工具上显示性能以及随时间变化的其他数据。
 +
-image:Time-Series Charts.png["面积图，堆栈区域图，折线图，样条曲线图"]
+image:Time-SeriesCharts.png["面积图，堆栈区域图，折线图，样条曲线图"]
 
 * * 单值小工具 * ：一个小工具，可用于显示一个值，该值可以直接从计数器派生，也可以使用查询或表达式计算得出。您可以定义颜色格式阈值，以显示该值是在预期范围，警告范围还是严重范围内。
 +
-image:Single-Value Widgets.png["包含和不包含格式的单值小工具"]
+image:Single-ValueWidgets.png["包含和不包含格式的单值小工具"]
 
 * * 量表小工具 * ：以传统（实心）量表或项目符号量表的形式显示单值数据，并根据您的 " 警告 " 或 " 严重 " 值显示颜色 link:concept_dashboard_features.html#formatting-gauge-widgets["自定义"]。
 +
-image:Gauge Widgets.png["采用格式的单值，传统 Gauge ， Bullet Gauge"]
+image:GaugeWidgets.png["采用格式的单值，传统 Gauge ， Bullet Gauge"]
 
 * * 条形图，列图表 * ：显示前 N 个或后 N 个值，例如，前 10 个存储按容量显示，后 5 个卷按 IOPS 显示。
 +
-image:Bar and Column Charts.png["条形图和列图表"]
+image:BarandColumnCharts.png["条形图和列图表"]
 
 * * 框图图表 * ：一个图表中数据的最小，最大，中值以及下四分位和上四分位之间的范围的图表。
 +
-image:Box Plot.png["盒图"]
+image:BoxPlot.png["盒图"]
 
 * * 散点图 * ：将相关数据绘制为点，例如 IOPS 和延迟。在此示例中，您可以快速找到吞吐量高且 IOPS 低的资产。
 +
-image:Scatter Plot.png["散点图"]
+image:ScatterPlot.png["散点图"]
 
 * * 饼图 * ：一种传统饼图，用于将数据显示为总数的一部分。
 +
-image:Pie Chart.png["饼图"]
+image:PieChart.png["饼图"]
 
 * * 注释小工具 * ：最多 1000 个自由文本字符。
 +
-image:Note Widget.png["注释小工具"]
+image:NoteWidget.png["注释小工具"]
 
 * * 警报表 * ：最多显示最后 1 ， 000 个警报。
 

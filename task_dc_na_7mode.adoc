@@ -25,14 +25,14 @@ summary: 配置 NetApp 7- 模式数据收集器。
 
 == 术语
 
-Cloud Insights 从 NetApp 7- 模式数据收集器采集以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+数据基础架构洞察从NetApp 7-模式数据收集器采集以下清单信息。对于所采集的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
 
 
 NOTE: 此数据收集器为 link:task_getting_started_with_cloud_insights.html#useful-definitions["已弃用"]。
 
 [cols="2*"]
 |===
-| 供应商 / 型号术语 | Cloud Insights 术语 
+| 供应商 / 型号术语 | 数据基础架构洞察力一词 
 
 
 | 磁盘 | 磁盘 
@@ -138,12 +138,12 @@ NOTE: 此数据收集器为 link:task_getting_started_with_cloud_insights.html#u
 
 * 以下命令定义了用户角色功能：
 +
-** "api-*" ：使用此命令可以使 Cloud Insights 执行所有 NetApp 存储 API 命令。
+** "API"—*：使用此命令可使Data Infrastructure Insight执行所有NetApp存储API命令。
 +
 要使用 ZAPI ，需要使用此命令。
 
-** "login-http-admin" ：使用此命令可以允许 Cloud Insights 通过 HTTP 连接到 NetApp 存储。要使用 ZAPI ，需要使用此命令。
-** "security-api-vfiler" ：使用此命令可以使 Cloud Insights 执行 NetApp 存储 API 命令来检索 vFiler 单元信息。
+** login-http-admin：使用此选项可允许Data Infrastructure Insight通过HTTP连接到NetApp存储。要使用 ZAPI ，需要使用此命令。
+** secure-API-vfiler：使用此命令可使数据基础架构洞察力执行NetApp存储API命令来检索vfiler单元信息。
 ** cli-options ：用于 "options" 命令，用于配对 IP 和已启用许可证。
 ** "CLI-LUN" ：访问这些命令以管理 LUN 。显示给定 LUN 或 LUN 类的状态（ LUN 路径，大小，联机 / 脱机状态和共享状态）。
 ** cli-df ：用于 "df -s " ， "df -r" ， "df -a -r" 命令，用于显示可用空间。
@@ -181,7 +181,7 @@ NOTE: 此数据收集器为 link:task_getting_started_with_cloud_insights.html#u
 | 接收 401 HTTP 响应或 13003 ZAPI 错误代码， ZAPI 返回 " 权限不足 " 或 " 未授权使用此命令 " | 检查用户名和密码以及用户权限。 
 
 
-| " 无法执行命令 " 错误 | 检查用户是否对设备具有以下权限： • API-* • CLI-DATE • CLI-df • CLI-ifconfig • CLI-LUN • CLI-operations • CLI-rdfile • CLI-Snap • login-http-admin • security-api-vFiler 还会检查 Cloud Insights 是否支持 ONTAP 版本，并验证所使用的凭据是否与设备凭据匹配 
+| " 无法执行命令 " 错误 | 检查用户是否对设备具有以下权限：•API-*•clie-date•clie-df•clie-ifconfig•clie-LUN•clie-operas•clie-rdfile•clie-snap•login-http-admin•secure-API-vfiler此外、还会检查Data Infrastructure Insight是否支持ONTAP版本、并验证使用的凭据是否与设备凭据匹配 
 
 
 | 集群版本小于 8.1 | 集群支持的最低版本为 8.1 。升级到支持的最低版本。 

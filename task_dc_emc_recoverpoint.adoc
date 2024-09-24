@@ -23,7 +23,7 @@ EMC RecoverPoint 数据收集器的主要使用情形是，发现 RecoverPoint �
 
 在配置方面，数据收集器需要存储处理器的 IP 地址以及只读用户名和密码。
 
-EMC RecoverPoint 数据收集器收集 RecoverPoint 在其他存储阵列之间协调的卷到卷复制关系。Cloud Insights 会显示每个 RecoverPoint 集群的存储阵列，并收集该集群上节点和存储端口的清单数据。不会收集任何存储池或卷数据。
+EMC RecoverPoint 数据收集器收集 RecoverPoint 在其他存储阵列之间协调的卷到卷复制关系。Data Infrastructure Insight会显示每个RecoverPoint集群的存储阵列、并收集该集群上节点和存储端口的清单数据。不会收集任何存储池或卷数据。
 
 
 

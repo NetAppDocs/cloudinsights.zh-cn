@@ -19,7 +19,7 @@ summary: Docker 数据收集器配置
 
 
 [role="lead"]
-Cloud Insights 使用此数据收集器从 Docker 收集指标。
+Data Infrastructure Insight使用此数据收集器从Docker收集指标。
 
 
 
@@ -80,7 +80,7 @@ volumeMounts:
 - name: docker-sock
 mountPath: /var/run/docker.sock
 ----
-请注意，为 Kubernetes 平台提供的 Cloud Insights 安装程序会自动执行此映射。
+请注意、为Kubernetes平台提供的Data Infrastructure Insight安装程序会自动执行此映射。
 
 
 
@@ -122,6 +122,6 @@ mountPath: /var/run/docker.sock
 | 问题： | 请尝试以下操作： 
 
 
-| 按照配置页面上的说明进行操作后，我在 Cloud Insights 中看不到 Docker 指标。 | 检查 Telegraf 代理日志，查看它是否报告以下错误： e ！插件 [inputs.docker] 中的错误：尝试连接到 Docker 守护进程套接字时被拒绝获得权限如果确实如此，请按照上述说明执行必要的步骤为 Telegraf 代理提供对 Docker Unix 套接字的访问权限。 
+| 按照配置页面上的说明操作后、我在Data Infrastructure Insight中看不到我的Docker指标。 | 检查 Telegraf 代理日志，查看它是否报告以下错误： e ！插件 [inputs.docker] 中的错误：尝试连接到 Docker 守护进程套接字时被拒绝获得权限如果确实如此，请按照上述说明执行必要的步骤为 Telegraf 代理提供对 Docker Unix 套接字的访问权限。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面。

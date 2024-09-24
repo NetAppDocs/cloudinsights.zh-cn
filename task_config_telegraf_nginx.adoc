@@ -19,7 +19,7 @@ summary: nginx 数据收集器配置
 
 
 [role="lead"]
-Cloud Insights 使用此数据收集器从 nginx 收集指标。
+Data Infrastructure Insight使用此数据收集器从Nginx收集指标。
 
 
 

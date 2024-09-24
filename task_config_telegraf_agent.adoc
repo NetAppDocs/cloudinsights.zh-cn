@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent.html 
 keywords: telegraf, agent, telegraf agent 
-summary: Cloud Insights 支持Telegraf作为其收集集成数据的代理、并可在Windows或Linux上进行配置。 
+summary: Data Infrastructure Insight支持Telegraf作为其收集集成数据的代理、并可在Windows或Linux上进行配置。 
 ---
 = 配置代理以收集数据(Windows/Linux)
 :toc: macro
@@ -19,9 +19,9 @@ summary: Cloud Insights 支持Telegraf作为其收集集成数据的代理、并
 
 
 [role="lead"]
-Cloud Insights 使用 link:https://docs.influxdata.com/telegraf["Telegraf"] 作为收集集成数据的代理。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标，事件和日志从代理发送到 Cloud Insights 。
+Data Infrastructure Insight使用link:https://docs.influxdata.com/telegraf["Telegraf"]作为其代理来收集集成数据。Telegraf 是一种插件驱动的服务器代理，可用于收集和报告指标，事件和日志。输入插件用于通过直接访问系统 /OS ，调用第三方 API 或侦听已配置的流（例如 Kafka ， statsD 等）。输出插件用于将收集的指标、事件和日志从代理发送到Data Infrastructure Insight。
 
-Cloud Insights 的当前Telegraf版本为*。1.24.0*。
+Data Infrastructure Insight的当前Telegraf版本为*1.24.0*。
 
 有关在Kubnetes上安装的信息、请参见 link:task_config_telegraf_agent_k8s.html["NetApp Kubernetes监控操作员"] 页面。
 
@@ -45,7 +45,7 @@ NOTE: 如果要在安装代理之前验证安装文件，请参见以下章节 <
 要安装代理，无论您使用的是哪个平台，都必须先执行以下操作：
 
 . 登录到要用于代理的主机。
-. 登录到Cloud Insights环境并导航到*Observability > Collectors *。
+. 登录到Data Infrastructure Insight环境并导航到*可观察性>收集器*。
 . 单击 * + Data Collector* 并选择要安装的数据收集器。
 . 为您的主机选择合适的平台(Windows、Linux)
 . 对每个平台执行其余步骤。
@@ -55,7 +55,7 @@ NOTE: 如果要在安装代理之前验证安装文件，请参见以下章节 <
 NOTE: 在主机上安装代理后，无需在该主机上重新安装代理。
 
 
-TIP: 在服务器 /VM 上安装代理后， Cloud Insights 除了从您配置的任何数据收集器收集数据之外，还会从该系统收集指标。这些指标将作为收集 link:task_config_telegraf_node.html["" 节点 " 指标"]。
+TIP: 在服务器/VM上安装代理后、Data Infrastructure Insight除了从您配置的任何数据收集器收集指标之外、还会从该系统收集指标。这些指标将收集为link:task_config_telegraf_node.html["" 节点 " 指标"]。
 
 
 NOTE: 如果您使用的是代理，请在安装 Telegraf 代理之前阅读适用于您的平台的代理说明。
@@ -366,7 +366,7 @@ systemctl stop telegraf (If your operating system is using systemd)
 
 == 验证校验和
 
-Cloud Insights 代理安装程序会执行完整性检查，但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。为此、可以下载安装程序并为下载的软件包生成校验和、然后将校验和与安装说明中显示的值进行比较。
+Data Infrastructure Insight代理安装程序会执行完整性检查、但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。为此、可以下载安装程序并为下载的软件包生成校验和、然后将校验和与安装说明中显示的值进行比较。
 
 
 
@@ -403,7 +403,7 @@ Windows
  !$($installerName=".\cloudinsights-windows.ps1") … -and $(&$installerName -download)
 
 
-仅下载命令会将所有所需的项目从 Cloud Insights 下载到工作目录。这些项目包括但不限于：
+仅下载命令会将所有必需项目从Data Infrastructure Insight下载到工作目录。这些项目包括但不限于：
 
 * 安装脚本
 * 环境文件
@@ -470,9 +470,9 @@ Windows
 | 我在旧安装上运行了安装程序脚本、现在代理不发送数据 | 卸载此电报代理、然后重新运行安装脚本。请按照此页面上适用于您的相应平台的*升级代理*步骤进行操作。 
 
 
-| 我已使用 Cloud Insights 安装代理 | 如果您已在主机 /VM 上安装了代理，则无需重新安装该代理。在这种情况下，只需在 Agent 安装屏幕中选择适当的平台和密钥，然后单击 * 继续 * 或 * 完成 * 。 
+| 我已使用Data Infrastructure Insight安装了一个代理 | 如果您已在主机 /VM 上安装了代理，则无需重新安装该代理。在这种情况下，只需在 Agent 安装屏幕中选择适当的平台和密钥，然后单击 * 继续 * 或 * 完成 * 。 
 
 
-| 我已安装代理，但未使用 Cloud Insights 安装程序安装代理 | 删除先前的代理并运行 Cloud Insights 代理安装，以确保正确的默认配置文件设置。完成后，单击 * 继续 * 或 * 完成 * 。 
+| 我已经安装了代理、但没有使用Data Infrastructure Insight安装程序安装 | 删除先前的代理并运行Data Infrastructure Insight Agent安装、以确保正确的默认配置文件设置。完成后，单击 * 继续 * 或 * 完成 * 。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

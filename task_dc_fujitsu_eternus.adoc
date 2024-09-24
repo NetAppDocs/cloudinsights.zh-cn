@@ -25,11 +25,11 @@ Fujitsu Eternus 数据收集器通过对存储系统的管理级访问来获取�
 
 == 术语
 
-Cloud Insights 从 Fujitsu Eternus 存储获取以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+Data Infrastructure Insight从Fujitsu Eternus存储采集以下清单信息。对于Data Infrastructure Insight采集的每种资产类型、显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
 
 [cols="2*"]
 |===
-| 供应商 / 型号术语 | Cloud Insights 术语 
+| 供应商 / 型号术语 | 数据基础架构洞察力一词 
 
 
 | 磁盘 | 磁盘 

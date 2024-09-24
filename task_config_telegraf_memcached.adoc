@@ -19,7 +19,7 @@ summary: memcached 数据收集器配置
 
 
 [role="lead"]
-Cloud Insights 使用此数据收集器从已缓存的收集指标。
+Data Infrastructure Insight使用此数据收集器从Memcached...收集指标。
 
 
 

@@ -22,7 +22,7 @@ summary: 通用数据库主机解复器收集器
 
 == 术语
 
-Cloud Insights从该收集器采集清单。
+Data Infrastructure Insight从该收集器采集清单。
 
 
 

@@ -80,7 +80,7 @@ keywords: data collector, NetApp, Cloud, ONTAP
 | 性能并发线程数 | 并发线程数。 
 
 
-| 高级计数器数据收集 | 选中此复选框可让 Cloud Insights 从以下列表中收集高级指标。 
+| 高级计数器数据收集 | 选中此选项可让Data Infrastructure Insight从以下列表中收集高级指标。 
 |===
 
 

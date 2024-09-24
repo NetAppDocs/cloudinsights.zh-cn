@@ -19,17 +19,17 @@ summary: 配置 Dell EMC VNX 块存储（以前称为 CLARiiON ）。
 
 
 [role="lead"]
-Cloud Insights 使用 Dell EMC VNX 块存储（ NaviSec ）数据收集器（以前称为 CLARiiON ）采集清单和性能数据。
+Data Infrastructure Insight可使用Dell EMC VNX块存储(NAVISec)数据收集器(以前称为CLARNiON)来获取清单和性能数据。
 
 
 
 == 术语
 
-Cloud Insights 从 EMC VNX 块存储数据收集器采集以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+Data Infrastructure Insight从EMC VNX块存储数据收集器采集以下清单信息。对于Data Infrastructure Insight采集的每种资产类型、显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
 
 [cols="2*"]
 |===
-| 供应商 / 型号术语 | Cloud Insights 术语 
+| 供应商 / 型号术语 | 数据基础架构洞察力一词 
 
 
 | 磁盘 | 磁盘 
@@ -56,8 +56,8 @@ Cloud Insights 从 EMC VNX 块存储数据收集器采集以下清单信息。�
 
 * 每个 VNX 块存储处理器的 IP 地址
 * VNX 块存储阵列的只读 Navisphere 用户名和密码
-* NaviSecCli 必须安装在 Cloud Insights AU 上
-* 访问验证：使用用户名和密码运行从 Cloud Insights AU 到每个阵列的 NaviSecCLI 。
+* 必须在Data Infrastructure Insight AU上安装纳维塞克里
+* 访问验证：使用用户名和密码从Data Infrastructure Insight AU对每个阵列运行NAISecCLI。
 * 端口要求： 80 ， 443
 * NaviSecCLI 版本应与阵列上的最新 FLARE 代码相对应
 * 为了提高性能，必须启用统计信息日志记录。
@@ -133,7 +133,7 @@ naviseccli.exe -h <IP address> -user <user> -password <password> -scope <scope �
 * 您尚未在数据收集器配置向导中选择"使用安全客户端"选项、也未安装非安全版本的纳比网界面。
 * 确认数据收集器配置中的Navisphere命令行界面安装目录是否正确
 * 确认VNX块存储的IP在数据收集器配置中是否正确：
-* 从Cloud Insights采集单元：
+* 从Data Infrastructure Insight采集单元：
 +
 ** 打开CMD。
 ** 将目录更改为配置的安装目录
@@ -175,7 +175,7 @@ naviseccli.exe -h <IP address> -user <user> -password <password> -scope <scope �
 * 这通常是由于更新VNX块存储设备上的固件而不更新纳维命令行界面.exe的安装导致的。这也可能是由于不同设备使用不同的固件，但只安装了一个 CLI （使用不同的固件版本）。
 * 验证设备和主机是否都运行相同版本的软件：
 +
-** 从Cloud Insights采集单元中、打开命令行窗口
+** 从Data Infrastructure Insight采集单元中、打开命令行窗口
 ** 将目录更改为配置的安装目录
 ** 通过键入"navicli -h <ip> getagent"与CLARiON设备建立连接
 ** 在前几行中查找版本号。示例：“Agent Rev: 6.16.2(0.1)"

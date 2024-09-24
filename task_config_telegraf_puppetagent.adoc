@@ -19,7 +19,7 @@ summary: Puppet 数据收集器配置
 
 
 [role="lead"]
-Cloud Insights 使用此数据收集器从 Puppet Agent 收集指标。
+Data Infrastructure Insight使用此数据收集器从Puppet Agent收集指标。
 
 
 

@@ -19,17 +19,17 @@ summary: 配置 Brocade BNA 收集器。
 
 
 [role="lead"]
-Cloud Insights 使用 Brocade Network Advisor 数据收集器从 Brocade 交换机获取清单和性能数据。
+数据基础架构洞察使用Brocade网络顾问数据收集器从Brocade交换机获取清单和性能数据。
 
 
 
 == 术语
 
-Cloud Insights 从 Brocade Network Advisor 数据收集器获取以下清单信息。对于 Cloud Insights 收购的每种资产类型，均显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
+数据基础架构洞察从Brocade网络顾问数据收集器采集以下清单信息。对于Data Infrastructure Insight采集的每种资产类型、显示了此资产最常用的术语。查看此数据收集器或对其进行故障排除时，请记住以下术语：
 
 [cols="2*"]
 |===
-| 供应商 / 型号术语 | Cloud Insights 术语 
+| 供应商 / 型号术语 | 数据基础架构洞察力一词 
 
 
 | 交换机 | 交换机 
@@ -51,7 +51,7 @@ Cloud Insights 从 Brocade Network Advisor 数据收集器获取以下清单信�
 
 要配置此数据收集器，需要满足以下条件：
 
-* Cloud Insights 采集单元将模仿与 BNA 服务器上的 TCP 端口 443 的连接。BNA 服务器必须运行 14.2.1 或更高版本。
+* Data Infrastructure Insight采集单元将建立与BNA服务器上TCP端口443的连接。BNA 服务器必须运行 14.2.1 或更高版本。
 * Brocade Network Advisor 服务器 IP 地址
 * 管理员帐户的用户名和密码
 * 端口要求： HTTP/HTTPS 443

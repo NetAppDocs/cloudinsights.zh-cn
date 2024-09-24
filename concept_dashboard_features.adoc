@@ -47,8 +47,6 @@ image:WidgetNamingExample-C.png["小工具命名示例"]
 
 在信息板编辑模式下，单击小工具上的菜单并选择 * 重复 * 。此时将启动小工具编辑器，并预先填充原始小工具的配置，并在小工具名称中添加一个 " 副本 " 后缀。您可以轻松进行任何必要的更改并保存新小工具。小工具将放置在信息板底部，您可以根据需要进行定位。完成所有更改后，请记得保存信息板。
 
-image:DuplicateWidget.png["复制小工具"]
-
 
 
 == 显示小工具图例
@@ -471,7 +469,7 @@ image::SecondaryAxisExplained.png[二级轴示例]
 +
 此图表将显示一条线，其中显示了总 IOPS 的总和。
 
-. 单击 _ 复制此查询 _ 图标 image:DuplicateQueryIcon.png["Duplicat 查询"] 创建查询的副本。
+. 单击_复制此查询_图标以创建查询的副本。
 +
 在原始查询下方添加一个查询副本。
 
@@ -505,7 +503,7 @@ image::SecondaryAxisExplained.png[二级轴示例]
 
 表小工具处理表达式的方式略有不同。一个表小工具中最多可以包含五个表达式、每个表达式都会作为新列添加到表中。每个表达式最多可以包含五个用于计算的值。您可以轻松地为该列命名有意义的名称。
 
-image:Expression Example.png["表小工具中的表达式"]
+image:ExpressionExample.png["表小工具中的表达式"]
 
 
 
@@ -612,7 +610,7 @@ image:Variables_Automatic_Filter_Button.png["自动筛选器"]
 
 通过 Solid 和 Bullet Gauge 小工具，您可以为 _Warning_ 和 / 或 _critical_ 级别设置阈值，从而清晰地表示您指定的数据。
 
-image:Gauge Widget Formatting.png["Gauge Widget 的格式设置"]
+image:GaugeWidgetFormatting.png["Gauge Widget 的格式设置"]
 
 要为这些小工具设置格式，请执行以下步骤：
 
@@ -632,7 +630,7 @@ image:Gauge-Bullet.png["项目符号量表，宽度 = 3774"]
 
 在单值小工具中，除了设置警告（橙色）和严重（红色）阈值之外，您还可以选择以绿色或白色背景显示 " 范围内 " 值（低于警告级别的值）。
 
-image:Single-Value Widgets.png["包含和不包含格式的单值小工具"]
+image:Single-ValueWidgets.png["包含和不包含格式的单值小工具"]
 
 单击单值小工具或量表小工具中的链接将显示与此小工具中的第一个查询对应的查询页面。
 
@@ -692,7 +690,7 @@ NOTE: Cloud Insights 使用美国英语数字命名标准。美国的 " 十亿 "
 
 如果您有一个时间序列小工具（即，折线，样条，区域，堆积区），其中包含两个查询，这两个查询都绘制了主 Y 轴，则基准单位不会显示在 Y 轴的顶部。但是，如果小工具在主 Y 轴上有一个查询，在二级 Y 轴上有一个查询，则会显示每个小工具的基本单位。
 
-image:UnitsOnPrimaryAnd SecondaryYAxis.png["两个 Y 轴上的单位"]
+image:UnitsOnPrimaryAndSecondaryYAxis.png["两个 Y 轴上的单位"]
 
 如果小工具包含三个或更多查询，则基准单位不会显示在 Y 轴上。
 
@@ -802,8 +800,8 @@ image:UnitsOnPrimaryAnd SecondaryYAxis.png["两个 Y 轴上的单位"]
 
 NOTE: 由于NetApp BlueXP自身的用户登录超时为7天、因此Cloud Insights也必须使用该事件注销。您只需重新登录，您的信息板就会继续显示。
 
-* 要激活 TV 模式，请单击 image:ActivateTVMode.png["TV 模式"] 按钮。
-* 要禁用 TV 模式，请单击屏幕左上角的 * 退出 * 按钮。 image:ExitTVMode.png["退出按钮"]
+* 要激活电视模式、请单击电视模式按钮。
+* 要禁用 TV 模式，请单击屏幕左上角的 * 退出 * 按钮。
 
 
 您可以单击右上角的暂停按钮暂时暂停自动刷新。暂停后，信息板时间范围字段将显示暂停数据的活动时间范围。在暂停自动刷新期间，仍在采集和更新您的数据。单击恢复按钮继续自动刷新数据。

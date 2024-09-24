@@ -62,7 +62,7 @@ image:ADMonitor_blurb.png["异常检测监控器适用于您想要了解峰值�
 
 要对异常情况发出警报，请导航至*Observability > Alerts >+Monitor*来创建监视器。选择_An异常 检测Monitor_作为监控类型。
 
-image:Anomaly Detection Monitor Choice.png["创建显示器时选择异常检测、宽度=480"]
+image:AnomalyDetectionMonitorChoice.png["创建显示器时选择异常检测、宽度=480"]
 
 选择要监控的对象和指标。您可以像设置其他类型的监视器一样设置筛选器和分组。
 
@@ -74,7 +74,7 @@ image:Anomaly Detection Monitor Choice.png["创建显示器时选择异常检测
 * (可选)设置一个值、低于此值时异常为_ignored _。这有助于降低噪音。此值在示例图上显示为虚线。
 
 
-image:Anomaly Detection Monitor Conditions.png["设置异常检测监控器的条件"]
+image:AnomalyDetectionMonitorConditions.png["设置异常检测监控器的条件"]
 
 最后、您可以配置警报的交付方法(电子邮件、webhook或两者)、为监控器提供可选说明或更正操作、并根据需要将监控器添加到自定义组。
 

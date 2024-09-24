@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task_config_telegraf_agent_k8s.html 
 keywords: kubernetes, Kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
-summary: Kubbernetes监控操作员收集要在Cloud Insights中使用的Kubbernetes数据。 
+summary: Kubbernetes Monitoring Operator收集Kubbernetes数据、以供Data Infrastructure Insight使用。 
 ---
 = Kubnetes Monitoring Operator安装和配置
 :hardbreaks:
@@ -16,7 +16,7 @@ summary: Kubbernetes监控操作员收集要在Cloud Insights中使用的Kubbern
 
 
 [role="lead"]
-Cloud Insights为Kubernetes集合提供了*Kubernetes Monitoring Operator*。导航到*Kubernetes >收集器>+Kubernetes Collector*以部署新操作员。
+Data Infrastructure Insight为Kubernetes集合提供了* Kubernetes Monitoring Operator*。导航到*Kubernetes >收集器>+Kubernetes Collector*以部署新操作员。
 
 
 toc::[]
@@ -52,7 +52,7 @@ image:NKMO-Instructions-2.png["《监控操作员说明》"]
 
 == Kubelnetes监控组件
 
-Cloud Insights Kubenetes监控由四个监控组件组成：
+Data Infrastructure Insight Kubenetes监控由四个监控组件组成：
 
 * 集群指标
 * 网络性能和映射(可选)
@@ -90,7 +90,7 @@ image:KubernetesModifyDeploymentScreen.png["Mody部署选项、700"]
 
 如果AgentConfiguration不存在：
 
-* 记下Cloud Insights 可识别的集群名称(如果您的命名空间不是默认的NetApp监控、请替换相应的命名空间)：
+* 记下数据基础架构洞察力可识别的集群名称(如果您的命名空间不是默认的NetApp监控、请替换相应的命名空间)：
 +
  kubectl -n netapp-monitoring get agent -o jsonpath='{.items[0].spec.cluster-name}'
 * 为现有Operator创建备份(如果您的命名空间不是默认的NetApp监控、请替换相应的命名空间)：
@@ -185,11 +185,11 @@ NetApp Kubernetes监控操作员会安装自己的Kube-state-metrics、以避免
 
 您可以在环境中的两个位置使用代理来安装Kubnetes Monitoring Operator。这些代理系统可以是相同的、也可以是单独的：
 
-* 在执行安装代码片段(使用"curt")期间需要使用代理将执行该片段的系统连接到Cloud Insights 环境
-* 目标Kubernetes集群与Cloud Insights 环境通信所需的代理
+* 在执行安装代码段(使用"cURL ")期间需要代理、以便将执行此代码段的系统连接到Data Infrastructure Insight环境
+* 目标Kubnetes集群与Data Infrastructure Insight环境通信所需的代理
 
 
-如果您对其中一个或两个对象使用代理、则要安装Kubornetes操作监控器、必须先确保将代理配置为能够与Cloud Insights环境进行良好的通信。如果您有一个代理、并且可以从要安装此操作员的服务器/VM访问Cloud Insights 、则您的代理可能已正确配置。
+如果您对其中一个或这两个环境使用代理、则要安装Kubornetes Operating Monitor、必须首先确保您的代理已配置为能够与Data Infrastructure Insight环境进行良好的通信。如果您有一个代理、并且可以从要安装Operator的服务器/VM访问Data Infrastructure Insight、则您的代理可能已正确配置。
 
 对于用于安装Kubersnetes Operating Monitor的代理、在安装Operator之前、请设置_http_proxy/https_proxy_Environment变量。对于某些代理环境、您可能还需要设置_no_proxy environment_变量。
 
@@ -207,7 +207,7 @@ NetApp Kubernetes监控操作员会安装自己的Kube-state-metrics、以避免
 
 
 
-要使您的Kubennetes集群所使用的代理与您的Cloud Insights环境进行通信、请在阅读所有这些说明后安装Kubennetes监控操作员。
+要使Kubennetes集群所使用的代理与Data Infrastructure Insight环境进行通信、请在阅读所有这些说明后安装Kubennetes Monitoring Operator。
 
 在部署Kubernetes Monitoring Operator之前、请在operator-config.yaml中配置AgentConfiguration的代理部分。
 
@@ -237,9 +237,9 @@ agent:
 
 === 使用自定义或专用Docker存储库
 
-默认情况下、Kubnetes监控操作员将从Cloud Insights存储库中提取容器映像。如果您将某个Kubornetes集群用作监控目标、并且该集群配置为仅从自定义或私有Docker存储库或容器注册表中提取容器映像、则必须配置对Kubornetes监控操作员所需容器的访问权限。
+默认情况下、Kubnetes监控操作员将从Data Infrastructure Insight存储库中提取容器映像。如果您将某个Kubornetes集群用作监控目标、并且该集群配置为仅从自定义或私有Docker存储库或容器注册表中提取容器映像、则必须配置对Kubornetes监控操作员所需容器的访问权限。
 
-从NetApp Monitoring Operator安装磁贴运行"Image Pull Snippet"。此命令将登录到Cloud Insights 存储库、提取操作员的所有映像依赖关系、然后注销Cloud Insights 存储库。出现提示时、输入提供的存储库临时密码。此命令可下载操作员使用的所有映像、包括可选功能的映像。请参见以下内容、了解这些图像用于哪些功能。
+从NetApp Monitoring Operator安装磁贴运行"Image Pull Snippet"。此命令将登录到Data Infrastructure Insight存储库、提取操作员的所有映像依赖关系、然后从Data Infrastructure Insight存储库中注销。出现提示时、输入提供的存储库临时密码。此命令可下载操作员使用的所有映像、包括可选功能的映像。请参见以下内容、了解这些图像用于哪些功能。
 
 核心操作员功能和Kubornetes监控
 
@@ -261,7 +261,7 @@ agent:
 * CI-net-observer
 
 
-根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。确保存储库中这些映像的映像标记和目录路径与Cloud Insights 存储库中的映像一致。
+根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。确保存储库中这些映像的映像标记和目录路径与Data Infrastructure Insight存储库中的映像标记和目录路径一致。
 
 在operator-DEPLOYAML中编辑monitor-operator部署、并修改所有映像引用以使用私有Docker存储库。
 
@@ -326,7 +326,7 @@ OpenShift可以实施更高的安全级别、从而可能阻止对某些Kubernet
 
 == 验证 Kubernetes 校验和
 
-Cloud Insights 代理安装程序会执行完整性检查，但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。要执行仅下载操作（与默认的下载和安装操作相反），这些用户可以编辑从 UI 获取的代理安装命令并删除尾随的 "install" 选项。
+Data Infrastructure Insight代理安装程序会执行完整性检查、但某些用户可能希望在安装或应用下载的项目之前执行自己的验证。要执行仅下载操作（与默认的下载和安装操作相反），这些用户可以编辑从 UI 获取的代理安装命令并删除尾随的 "install" 选项。
 
 请按照以下步骤操作：
 
@@ -346,7 +346,7 @@ Cloud Insights 代理安装程序会执行完整性检查，但某些用户可�
 
 
 
-仅下载命令会将所有所需的项目从 Cloud Insights 下载到工作目录。  这些项目包括但不限于：
+仅下载命令会将所有必需项目从Data Infrastructure Insight下载到工作目录。这些项目包括但不限于：
 
 * 安装脚本
 * 环境文件
@@ -390,7 +390,7 @@ netapp-CI-tentlaf-ds_、_netapp-CI-fluent-bit-ds_和_netapp-CI-net-oboder-L4-DS_
 | 问题： | 请尝试以下操作： 
 
 
-| 我未看到 Kubernetes 永久性卷与相应后端存储设备之间的超链接 / 连接。我的 Kubernetes 永久性卷使用存储服务器的主机名进行配置。 | 按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。您必须使用Telegraf 2.0或更高版本、并且Cloud Insights 必须主动监控您的Kubernetes集群存储。 
+| 我未看到 Kubernetes 永久性卷与相应后端存储设备之间的超链接 / 连接。我的 Kubernetes 永久性卷使用存储服务器的主机名进行配置。 | 按照以下步骤卸载现有的 Telegraf 代理，然后重新安装最新的 Telegraf 代理。您必须使用Telegraf 2.0或更高版本、并且Data Infrastructure Insight必须主动监控Kubernetes集群存储。 
 
 
 | 我在日志中看到如下消息：
@@ -511,23 +511,7 @@ kubect get all -n <namespace>| grep -i psp (应显示未找到任何内容)
 | 我没有看到为集群中的Kubnetes CronJobs收集任何指标。 | 验证您的Kubbernetes版本(即 `kubectl version`）。  如果是v1.20.x或更低版本、则这是预期的限制。  随Kubernetes Monitoring Operator部署的Kube-state-metrics版本仅支持v1.cronjob.  对于Kubernetes 1.2.x及更低版本、cronJob资源位于v1beta.cronJob。  因此、Kube-state-metrics找不到cronJob资源。 
 
 
-| 安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。 | 编辑_AgentConfiguration_中的"特拉夫"部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息、请参见操作员的  link:telegraf_agent_k8s_config_options.html["配置选项"]。
-
-注意： 如果您使用的是Cloud Insights联邦版、则对_su_的使用有限制的用户将无法收集Docker指标、因为要访问Docker套接字、需要以root用户身份运行预制数据容器或使用_su_将预制数据用户添加到Docker组。默认情况下、Docker指标收集和_su_的使用处于启用状态；要同时禁用这两者、请删除_AgentConfiguration_文件中的_tenderaf.Docker条目：
-
-...
-规格：
-...
-电报：
-    ...
-     -名称：Docker
-            运行模式：
-              - DemonSet
-            可进行的其他操作：
-              -关键字：Docker _UNIS_sdoc_PLATORY
-                值：UNIX：//run/Docker。sk
-    ...
-... 
+| 安装操作员后、该特拉夫DS Pod进入CrashLoopBackOff、并且POD日志指示"su：authentication failure"(su：身份验证失败)。 | 编辑_AgentConfiguration_中的"特拉夫"部分、并将_dockerMetricCollectionEnabled"设置为false。有关详细信息，请参阅操作员的link:telegraf_agent_k8s_config_options.html["配置选项"]。注意：如果您使用的是Data Infrastructure Insight Federal Edition、则对_su_的使用有限制的用户将无法收集Docker指标、因为访问Docker套接字需要以root用户身份运行该特拉夫容器或使用_su_将该特拉夫用户添加到Docker组。默认情况下、Docker指标收集和_su_的使用处于启用状态；要同时禁用这两者、请删除_AgentConfiguration_文件中的_tenderaf.Docker条目：... spec：... tenderaf：...           -名称：Docker       run-mode：       - DemonSet      替换       项：-关键字：Docker _UNIS_sdoc_s占 位符        值：UNIX：///run/Docker。sk...... 
 
 
 | 我在Telegraf日志中看到重复出现以下错误消息：
@@ -538,10 +522,10 @@ kubect get all -n <namespace>| grep -i psp (应显示未找到任何内容)
 | 我缺少一些事件日志的_volvedobject_数据。 | 确保已按照中的步骤进行操作 link:pre-requisites_for_k8s_operator.html["权限"] 第节。 
 
 
-| 为什么我看到两个监控操作员Pod正在运行、一个名为NetApp-CI-monitoring operator-Pod <pod>、另一个名为monitoring operator-Pod？<pod> | 自2023年10月12日起、Cloud Insights已对运营商进行重构、以更好地为用户服务；要全面采用这些更改、您必须执行 <<uninstalling,删除旧运算符>> 和 <<installing-the-kubernetes-monitoring-operator,安装新的>>。 
+| 为什么我看到两个监控操作员Pod正在运行、一个名为NetApp-CI-monitoring operator-Pod <pod>、另一个名为monitoring operator-Pod？<pod> | 自2023年10月12日起、Data Infrastructure Insight对运营者进行了重构、以更好地为用户服务；要完全采用这些变更<<uninstalling,删除旧运算符>>、您必须和<<installing-the-kubernetes-monitoring-operator,安装新的>>。 
 
 
-| 我的Kubbernetes事件意外停止向Cloud Insights报告。  a| 
+| 我的Kubbernetes事件意外停止向Data Infrastructure Insight报告。  a| 
 检索事件导出器Pod的名称：
 
  `kubectl -n netapp-monitoring get pods |grep event-exporter |awk '{print $1}' |sed 's/event-exporter./event-exporter/'`

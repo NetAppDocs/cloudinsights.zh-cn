@@ -19,7 +19,7 @@ summary: netstat 数据收集器配置
 
 
 [role="lead"]
-Cloud Insights 使用此数据收集器收集 Netstat 指标。
+Data Infrastructure Insight使用此数据收集器收集Netstat指标。
 
 
 

@@ -222,4 +222,4 @@ image:Alerts_In_Expert_View.png["专家视图中的警报"]
 
 
 
-选择资产后，它将显示在 Additional Resources 部分中。如果不再需要查看有关资产的信息，请单击 image:TrashCanIcon.png["删除"]。
+选择资产后，它将显示在 Additional Resources 部分中。如果您不再需要查看资产的相关信息、请单击垃圾桶图标以删除。

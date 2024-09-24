@@ -19,7 +19,7 @@ summary: Hadoop 数据收集器配置
 
 
 [role="lead"]
-Cloud Insights 使用此数据收集器从 Hadoop 收集指标。
+Data Infrastructure Insight使用此数据收集器从Hadoop收集指标。
 
 
 

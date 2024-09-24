@@ -19,7 +19,7 @@ summary: 配置 Brocade 数据收集器。
 
 
 [role="lead"]
-Cloud Insights 使用 Brocade Enterprise Fabric Connectivity Manager （ EFCM ）数据收集器发现 Brocade EFCM 交换机的清单。Cloud Insights 支持 EFCM 9.5 ， 9.6 和 9.7 版。
+数据基础架构洞察力使用Brocade企业网络结构连接管理器(EFCM)数据收集器发现Brocade EFCM交换机的清单。Data Infrastructure Insight支持EFCM 9.5、9.6和9.7版。
 
 
 
@@ -29,7 +29,7 @@ Cloud Insights 使用 Brocade Enterprise Fabric Connectivity Manager （ EFCM �
 * EFCM 版本必须为 9.5 ， 9.6 或 9.7
 * EFCM 服务器的 IP 地址
 * EFCM 服务器的只读用户名和密码
-* 已通过端口 51512 使用只读用户名和密码验证通过 Telnet 从 Cloud Insights 服务器对 Connectrix 交换机的访问
+* 已通过端口51512使用只读用户名和密码验证通过Telnet从Data Infrastructure Insight服务器对连接交换机的访问
 
 
 
@@ -82,7 +82,7 @@ Cloud Insights 使用 Brocade Enterprise Fabric Connectivity Manager （ EFCM �
 | 排除设备 | 要包括在轮询中或从轮询中排除的单元名称的逗号分隔列表 
 
 
-| 使用 EFCM 交换机别名作为交换机名称 | 选择以使用 EFCM 交换机别名作为 Cloud Insights 交换机名称。 
+| 使用 EFCM 交换机别名作为交换机名称 | 选择此项可使用EFCM交换机别名作为Data Infrastructure Insight交换机名称。 
 
 
 | 性能轮询间隔（秒） | 性能轮询之间的时间间隔。默认值为 300 秒。 

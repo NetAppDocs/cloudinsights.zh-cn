@@ -19,7 +19,7 @@ summary: HTTP 数据收集器配置
 
 
 [role="lead"]
-Cloud Insights 使用此数据收集器从 ActiveMQ 收集指标。
+Data Infrastructure Insight使用此数据收集器从Active魔 力象限中收集指标。
 
 
 
