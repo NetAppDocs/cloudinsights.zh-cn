@@ -19,7 +19,7 @@ keywords: coming soon, preview,
 
 
 [role="lead"]
-Cloud Insights 以_Preview_的方式突出显示了新特性和功能。预览功能可在有限的环境中使用、也可在有限的容量下使用。
+Data Infrastructure Insight以_Preview_的方式突出显示新特性和功能。预览功能可在有限的环境中使用、也可在有限的容量下使用。
 
 如果您希望预览其中一个或多个功能，请联系您的 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["NetApp 销售团队"] 有关详细信息 ...
 

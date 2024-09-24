@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_dashboards_overview.html 
-summary: Cloud Insights 中的信息板概述。 
+summary: Data Infrastructure Insight中的信息板概述。 
 keywords: dashboard, widget, custom, view, data 
 ---
 = 信息板概述
@@ -19,7 +19,7 @@ keywords: dashboard, widget, custom, view, data
 
 
 [role="lead"]
-Cloud Insights 允许用户使用各种小工具创建自定义信息板，从而为基础架构数据创建操作视图，每个小工具都可以灵活地显示和绘制数据图表。
+Data Infrastructure Insight允许您使用各种小工具创建自定义信息板、使用户可以灵活地创建基础架构数据的运营视图、每个小工具都可以灵活地显示和绘制数据图表。
 
 
 IMPORTANT: 这些部分中的示例仅供说明之用，并不涵盖所有可能的情形。本文中的概念和步骤可用于创建您自己的信息板，以突出显示特定于您的特定需求的数据。

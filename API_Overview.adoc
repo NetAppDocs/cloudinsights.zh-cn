@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: API_Overview.html 
 keywords: API, customer API, premium, JSON, Swagger, Access Token, token, rotate, expired 
-summary: Cloud Insights API 支持与监控和报告系统等其他应用程序集成。 
+summary: 通过Data Infrastructure Insight API、可以与监控和报告系统等其他应用程序集成。 
 ---
-= Cloud Insights API
+= Data Infrastructure Insight API
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,9 +19,9 @@ summary: Cloud Insights API 支持与监控和报告系统等其他应用程序�
 
 
 [role="lead"]
-NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Insights API 将 Cloud Insights 与其他应用程序集成，例如 CMDB 或其他票证系统。
+通过数据基础架构洞察API、NetApp客户和独立软件供应商(ISV)可以将数据基础架构洞察与其他应用程序(例如CMDB或其他服务单系统)集成在一起。
 
-请注意， Cloud Insights API 基于您当前的版本提供：
+请注意、Data Infrastructure Insight API可根据您的当前版本提供：
 
 [cols="<,^s,^s,^s"]
 |===
@@ -45,25 +45,25 @@ NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Insights API 
 
 | 日志载入 |  | image:SmallCheckMark.png["复选标记"] | image:SmallCheckMark.png["复选标记"] 
 |===
-此外，您还可以使用 Cloud Insights link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"] 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。
+此外、您的数据基础架构洞察力link:https://docs.netapp.com/us-en/cloudinsights/concept_user_roles.html#permission-levels["功能集角色"]还将确定您可以访问哪些API。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。
 
 
 
 == API 访问的要求
 
 * API 访问令牌模型用于授予访问权限。
-* API 令牌管理由具有管理员角色的 Cloud Insights 用户执行。
+* API令牌管理由具有管理员角色的Data Infrastructure Insight用户执行。
 
 
 
 
 == API 文档（ Swagger ）
 
-登录到 Cloud Insights 并导航到 * 管理 > API 访问 * 可查看最新的 API 信息。单击 * API Documentation" 链接。
+登录到Data Infrastructure Insight并导航到*Admin > API Acccess*可以找到最新的API信息。单击 * API Documentation" 链接。
 
 image:API_Swagger_Types.png["API 类型"]
 
-API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。根据您的用户角色和 / 或 Cloud Insights 版本，您可以使用的 API 类型可能会有所不同。
+API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。根据您的用户角色和/或Data Infrastructure Insight版本、您可以使用的API类型可能会有所不同。
 
 image:API_Swagger_Example.png["API Swagger 示例"]
 
@@ -71,7 +71,7 @@ image:API_Swagger_Example.png["API Swagger 示例"]
 
 == API 访问令牌
 
-在使用 Cloud Insights API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌用于指定的 API 类型，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类型下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。
+在使用Data Infrastructure Insight API之前、您必须创建一个或多个*API访问令牌*。访问令牌用于指定的 API 类型，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类型下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。
 
 创建访问令牌：
 
@@ -91,7 +91,7 @@ NOTE: 您的令牌只能在创建过程中复制到剪贴板并进行保存。�
 
 您可以禁用，启用和撤消令牌。可以启用已禁用的令牌。
 
-令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以在 Cloud Insights 后端人员不直接参与的情况下授予和撤销这些令牌。
+令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以授予和撤销这些令牌、而无需Data Infrastructure Insight后端人员的直接参与。
 
 在用户成功进行身份验证并授权访问后，应用程序会收到访问令牌，然后在调用目标 API 时将访问令牌作为凭据传递。传递的令牌将通知 API 令牌的持有人已获得访问 API 的授权并执行授权期间授予的范围指定的特定操作。
 
@@ -108,12 +108,12 @@ NOTE: 您的令牌只能在创建过程中复制到剪贴板并进行保存。�
 
 == API 类型
 
-Cloud Insights API 基于类别，目前包含以下类型：
+Data Infrastructure Insight API基于类别、当前包含以下类型：
 
 * Assets type 包含 asset ， query 和 search API 。
 +
 ** 资产：枚举顶级对象并检索特定对象或对象层次结构。
-** 查询：检索和管理 Cloud Insights 查询。
+** 查询：检索和管理Data Infrastructure Insight查询。
 ** 导入：导入标注或应用程序并将其分配给对象
 ** 搜索：在不知道对象的唯一 ID 或全名的情况下找到特定对象。
 
@@ -125,13 +125,13 @@ Cloud Insights API 基于类别，目前包含以下类型：
 
 其他类型和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 link:#api-documentation-swagger["API Swagger 文档"]。
 
-请注意，用户有权访问的 API 类型也取决于 link:concept_user_roles.html["用户角色"] 它们包含在每个Cloud Insights 功能集中(监控、工作负载安全性、报告)。
+请注意、用户有权访问的API类型还取决于link:concept_user_roles.html["用户角色"]他们在每个Data Infrastructure Insight功能集中拥有的(监控、工作负载安全性、报告)。
 
 
 
 == 清单遍历
 
-本节介绍如何遍历 Cloud Insights 对象的层次结构。
+本节介绍如何遍历Data Infrastructure Insight对象的层次结构。
 
 
 
@@ -178,7 +178,7 @@ image:expands.gif["展开示例"]
 
 == 性能数据
 
-性能数据会作为单独的示例收集到多个设备中。Cloud Insights 会每小时（默认值）聚合和汇总性能示例。
+性能数据会作为单独的示例收集到多个设备中。Data Infrastructure Insight会每小时汇总和汇总一次性能示例(默认值)。
 
 通过 API ，可以访问样本和汇总数据。对于包含性能数据的对象，性能摘要可通过 _expand=performal_ 的形式提供。性能历史记录时间序列可通过嵌套的 _expand=performer.history_ 来查看。
 
@@ -203,7 +203,7 @@ image:API_Performance.png["API 性能示例"]
 * 其他每个词典密钥（ "diskThroughput " 等）都是性能指标的名称。
 
 
-每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Cloud Insights 支持本文档后面列出的多种性能指标类型。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。
+每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Data Infrastructure Insight支持本文档后面列出的多种性能指标类型。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。
 
 性能摘要计数器是性能计数器的汇总。它会显示计数器的典型聚合值，例如最小值，最大值和平均值，以及最新观察到的值，汇总数据的时间范围，计数器的单位类型以及数据的阈值。只有阈值是可选的；其余属性是必需的。
 
@@ -269,7 +269,7 @@ image:StoragePoolCapacity.png["存储池容量示例"]
 
 搜索 API 是系统的一个简单入口点。API 的唯一输入参数是自由格式的字符串，生成的 JSON 包含分类结果列表。类型与清单不同，例如存储，主机，数据存储库等。每种类型都将包含一个与搜索条件匹配的对象列表。
 
-Cloud Insights 是一种可扩展（广泛开放）的解决方案，可与第三方流程编排，业务管理，变更控制和服务单系统以及自定义 CMDB 集成进行集成。
+Data Infrastructure Insight是一款可扩展(广泛开放)的解决方案、可与第三方业务流程、业务管理、变更控制和服务单系统以及自定义CMDB集成相集成。
 
 Cloud Insight 的 RESTful API 是一个主要的集成点，支持简单有效地移动数据，并允许用户无缝访问其数据。
 

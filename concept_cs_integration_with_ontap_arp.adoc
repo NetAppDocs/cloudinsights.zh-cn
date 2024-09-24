@@ -93,5 +93,5 @@ image:CS_Ransomware_Example_3.png["勒索软件警报顶部部分"]
 | 问题： | 解决方法： 
 
 
-| 检测到攻击后24小时收到电子邮件警报。在UI中、当Cloud Insights 工作负载安全收到电子邮件时、警报会在24小时之前显示。 | 当ONTAP 将_勒索 软件检测到_事件发送到Cloud Insights 工作负载安全(即工作负载安全)时、系统会发送电子邮件。事件包含一系列攻击及其时间戳。工作负载安全UI会显示第一个受攻击文件的警报时间戳。对特定数量的文件进行编码后、ONTAP 会将_勒索 软件检测到_事件发送到Cloud Insights。因此、在UI中显示警报的时间与发送电子邮件的时间可能会有所不同。 
+| 检测到攻击后24小时收到电子邮件警报。在用户界面中、Data Infrastructure Insight Workload Security收到电子邮件前24小时会显示警报。 | 当ONTAP向Data Infrastructure洞察工作负载安全性(即工作负载安全性)发送_检测到的Ransuture _事件时、将发送电子邮件。事件包含一系列攻击及其时间戳。工作负载安全UI会显示第一个受攻击文件的警报时间戳。当对一定数量的文件进行编码时、ONTAP会向Data Infrastructure Insight发送"_检测到的Ransuture _事件"。因此、在UI中显示警报的时间与发送电子邮件的时间可能会有所不同。 
 |===

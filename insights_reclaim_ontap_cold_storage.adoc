@@ -21,7 +21,7 @@ summary: 通过洞察，您可以了解资源如何影响环境中的其他资�
 [role="lead"]
 回收ONTAP 冷存储Insight可提供有关ONTAP 系统上卷的冷容量、潜在成本/电耗节省和建议操作项的数据。
 
-要查看这些洞察、请导航到*信息板>洞察力*、然后查看_RecaLate ONTAP Cold Storage_ Insight。请注意、只有在Cloud Insights 检测到冷存储时、此Insight才会列出受影响的存储、否则您将看到"全部清除"消息。
+要查看这些洞察、请导航到*信息板>洞察力*、然后查看_RecaLate ONTAP Cold Storage_ Insight。请注意、只有在Data Infrastructure Insight检测到冷存储时、此Insight才会列出受影响的存储、否则您将看到"全部清除"消息。
 
 请注意、系统不会显示30天以内的冷数据。
 

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_feature_tutorials.html 
-summary: Cloud Insights 提供了一些教程，用于向您展示如何执行许多任务。 
+summary: Data Infrastructure Insight提供了一些教程、用于向您展示如何执行许多任务。 
 keywords: onboarding, getting started, video, tutorial, resolution, dashboard, query, troubleshooting 
 ---
 = 功能教程
@@ -19,22 +19,22 @@ keywords: onboarding, getting started, video, tutorial, resolution, dashboard, q
 
 
 [role="lead"]
-Cloud Insights 提供了许多有用的功能，可帮助您快速轻松地查找数据，解决问题并深入了解企业环境。通过功能强大的查询轻松查找数据，在信息板中直观显示数据，并针对您设置的数据阈值发送电子邮件警报。
+Data Infrastructure Insight加载了许多有用的功能、使您能够快速轻松地查找数据、解决问题并深入了解企业环境。通过功能强大的查询轻松查找数据，在信息板中直观显示数据，并针对您设置的数据阈值发送电子邮件警报。
 
-Cloud Insights 提供了许多视频教程，可帮助您了解这些功能并更好地实施业务洞察力策略。有权访问 Cloud Insights 环境的每个用户都可以利用这些教程。
+Data Infrastructure Insight提供了大量视频教程、可帮助您了解这些功能并更好地实施业务洞察力策略。能够访问Data Infrastructure Insight环境的每个用户都可以利用这些教程。
 
 
 
 == 简介
 
-观看简要教程，了解 Cloud Insights 的工作原理。
+观看简短教程、了解Data Infrastructure Insight的工作原理。
 
 video::howTo.mp4[]
 
 
 == 检查清单和视频教程
 
-Cloud Insights 站点上显示的 * 启动检查清单 * 包含几个有用的任务和概念的列表。在检查清单中选择一项将转到该概念对应的 Cloud Insights 页面。例如，单击 _Create a Dashboard_ 项可打开 Cloud Insights * Dashboards* 页面。
+Data Infrastructure Insight站点上显示的*启动检查清单*包含几个有用任务和概念的列表。在检查清单中选择一项后、您将转到该概念对应的Data Infrastructure Insight页面。例如，单击_Create a Dashboard _项可打开Data Infrastructure Insight *Dbards*页面。
 
 image:OnboardingChecklist.png["教程检查清单进度"]
 
@@ -51,7 +51,7 @@ NOTE: 您可以按自己喜欢的顺序查看教程，也可以根据需要多�
 
 === 取消检查清单
 
-启动检查清单将显示在您的站点上，直到您单击检查清单底部的 _Do don't Show this ages_ 链接为止。即使忽略了检查清单，每个相应的 Cloud Insights 页面上仍会显示教程，直到您从消息标题栏中取消每个教程为止。
+启动检查清单将显示在您的站点上，直到您单击检查清单底部的 _Do don't Show this ages_ 链接为止。即使取消检查清单、在您从消息标题栏中取消显示每个教程之前、每个相应的Data Infrastructure Insight页面上仍会显示这些教程。
 
 
 

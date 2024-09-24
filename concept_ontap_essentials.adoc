@@ -34,7 +34,7 @@ ONTAP 基础知识要求至少一个运行正常的ONTAP 数据收集器、其�
 
 == 概述
 
-要开始探索、请从Cloud Insights 主菜单中选择* ONTAP Essentials *。
+要开始探索、请从数据基础架构洞察力主菜单中选择* ONTAP Essentials *。
 
 image:OE_Overview.png["ONTAP 基础知识概述信息板"]
 
@@ -152,7 +152,7 @@ image:OE_Cluster_Compliance_Example.png["集群合规性状态"]
 
 Storage VM详细信息显示审核和SSH信息：image:OE_Storage_Slideout.png["存储选项卡"]
 
-反网络软件详细信息显示Storage VM是否受ONTAP的反网络软件保护或Cloud Insights 工作负载安全性的保护。请注意、ONTAP ARP列显示ONTAP 系统上配置的ONTAP板载防反网络防御保护的当前状态。可通过在该列中选择"保护"来启用Cloud Insights 工作负载安全性。image:OE_Anti-Ransomware_Slideout.png["Anti-Rans要 程序选项卡"]
+反网络软件详细信息显示Storage VM是否受ONTAP的反网络软件保护或数据基础架构洞察工作负载安全性的保护。请注意、ONTAP ARP列显示ONTAP 系统上配置的ONTAP板载防反网络防御保护的当前状态。可以通过在该列中选择"保护"来启用Data Infrastructure Insight工作负载安全性。image:OE_Anti-Ransomware_Slideout.png["Anti-Rans要 程序选项卡"]
 
 
 

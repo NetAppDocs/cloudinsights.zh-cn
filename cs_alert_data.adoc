@@ -16,9 +16,6 @@ summary: '工作负载安全性会在用户活动异常或潜在攻击时创建�
 [role="lead"]
 "工作负载安全警报"页面显示了近期攻击和/或警告的时间线、并可用于查看每个问题描述 的详细信息。
 
-
-NOTE: Cloud Insights 联邦版不提供工作负载安全性。
-
 image:CloudSecureAlertsListPage.png["警报列表"]
 
 

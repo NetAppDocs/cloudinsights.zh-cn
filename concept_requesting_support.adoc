@@ -20,10 +20,7 @@ keywords: support, knowledgebase, documentation, community, chat, videos, help, 
 
 
 toc::[]
-您可以通过单击 * 帮助 > 支持 * 来访问 Cloud Insights 中的支持选项。您可以使用的支持选项取决于您的Cloud Insights 版本。
-
-
-NOTE: Cloud Insights 联邦版不提供实时聊天支持选项。
+您可以通过单击*帮助>支持*来访问Data Infrastructure Insight中的支持选项。您可以使用的支持选项取决于您的Data Infrastructure Insight版。
 
 image:SupportPageWithLearningCenter.png["支持页面"]
 
@@ -31,9 +28,9 @@ image:SupportPageWithLearningCenter.png["支持页面"]
 
 == 正在激活支持授权
 
-在试用模式下运行时， Cloud Insights 可提供自助服务和电子邮件支持。订阅服务后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。注册完成前，默认支持模式为自助服务。请参见 <<obtaining-support-information,详细信息>> 。
+在试用模式下运行时、Data Infrastructure Insight提供自助服务和电子邮件支持。订阅服务后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。注册完成前，默认支持模式为自助服务。请参见<<obtaining-support-information,详细信息>>下文。
 
-在初始订阅过程中，您的 Cloud Insights 实例将生成一个 20 位数的 NetApp 序列号，此序列号以 "950" 开头。此 NetApp 序列号表示与您的帐户关联的 Cloud Insights 订阅。您必须注册 NetApp 序列号才能激活支持授权。我们提供了两种支持注册选项：
+在初始订阅过程中、您的Data Infrastructure Insight实例将生成一个以"950"开头的20位NetApp序列号。此NetApp序列号表示与您的帐户关联的Data Infrastructure Insight订阅。您必须注册 NetApp 序列号才能激活支持授权。我们提供了两种支持注册选项：
 
 . 使用已有 NetApp 支持站点（ NSS ） SSO 帐户的用户（例如，当前的 NetApp 客户）
 . 新的 NetApp 客户，没有预先存在的 NetApp 支持站点（ NSS ） SSO 帐户
@@ -45,7 +42,7 @@ image:SupportPageWithLearningCenter.png["支持页面"]
 
 .步骤
 . 导航到 NetApp 注册网站 https://register.netapp.com[]
-. 选择 " 我已注册为 NetApp 客户 " ，然后选择 _NetApp_ Cloud Insights 作为产品线。选择您的计费提供商（ NetApp 或 AWS ），并参考 Cloud Insights 用户界面中的 " 帮助 ">" 支持 " 菜单，提供您的序列号和 NetApp 订阅名称或 AWS 客户 ID ：
+. 选择"我已注册为NetApp客户"、然后选择_Data Infrastructure洞察力_作为产品线。选择您的计费提供商(NetApp或AWS)、并参阅Data Infrastructure Insight用户界面中的"Help > Support"(帮助>支持)菜单、提供您的序列号和NetApp订阅名称或AWS客户ID：
 +
 image:SupportPage_SN_Section-NA.png["SN_screen"]
 
@@ -54,7 +51,7 @@ image:SupportPage_SN_Section-NA.png["SN_screen"]
 image:ExistingCustomerRegExample.png["现有客户表单"]
 
 . 如果未发生错误，系统会将用户定向到 " 已成功提交注册 " 页面。与用于注册的 NSS SSO 用户名关联的电子邮件地址将在几分钟内收到一封电子邮件，指出 " 您的产品现在有资格获得支持 " 。
-. 这是 Cloud Insights NetApp 序列号的一次性注册。
+. 这是一次性注册的Data Infrastructure Insight NetApp序列号。
 
 
 
@@ -68,20 +65,20 @@ image:ExistingCustomerRegExample.png["现有客户表单"]
 
 image:NewCustomerRegExample.png["新的客户表单"]
 
-. 选择 _Products_ Cloud Insights 作为产品线。选择您的计费提供商（ NetApp 或 AWS ），并参考 Cloud Insights 用户界面中的 " 帮助 ">" 支持 " 菜单，提供您的序列号和 NetApp 订阅名称或 AWS 客户 ID ：
+. 选择_Data Infrastructure洞察力_作为产品线。选择您的计费提供商(NetApp或AWS)、并参阅Data Infrastructure Insight用户界面中的"Help > Support"(帮助>支持)菜单、提供您的序列号和NetApp订阅名称或AWS客户ID：
 +
 image:SupportPage_SN_Section-NA.png["SN_screen"]
 
 . 如果未发生错误，系统会将用户定向到 " 已成功提交注册 " 页面。与用于注册的 NSS SSO 用户名关联的电子邮件地址将在几小时内收到一封电子邮件，指出 " 您的产品现在有资格获得支持 " 。
-. 作为 NetApp 的新客户，您还需要创建一个 NetApp 支持站点（ NSS ）用户帐户，以便将来进行注册，并访问支持门户以获取技术支持聊天和 Web 服务单。此链接位于 https://mysupport.netapp.com/eservice/public/now.do[]。您可以提供新注册的 Cloud Insights 序列号以加快此过程。
-. 这是 Cloud Insights NetApp 序列号的一次性注册。
+. 作为 NetApp 的新客户，您还需要创建一个 NetApp 支持站点 (NSS) 用户帐户，以便将来进行注册，并访问支持门户以获取技术支持聊天和 Web 服务单。此链接位于 https://mysupport.netapp.com/eservice/public/now.do[]。您可以提供新注册的Data Infrastructure Insight序列号来加快此过程。
+. 这是一次性注册Data Infrastructure Insight NetApp序列号。
 
 
 
 
 == 获取支持信息
 
-NetApp 通过多种方式为 Cloud Insights 提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。对于订阅了任何Cloud Insights 版本(基础版*、标准版、高级版)的用户、可以通过电话或Web服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点 (NSS) SSO 帐户。
+NetApp通过多种方式为数据基础架构洞察力提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。对于订阅了任何Data Infrastructure Insight版本(Basic*、Standard、Premium)的用户，可通过电话或Web服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点 (NSS) SSO 帐户。
 
 *只要您的所有NetApp存储系统都至少在高级支持级别提供支持、即可在Basic Edition中获得支持。
 
@@ -102,48 +99,48 @@ NetApp 通过多种方式为 Cloud Insights 提供支持。全天候提供广泛
 
 * *link:https://community.netapp.com/t5/Cloud-Insights/bd-p/CloudInsights["社区"]*
 +
-单击社区链接可转到 NetApp Cloud Insights 社区，您可以在其中与同行和专家建立联系。
+单击社区链接将转到NetApp数据基础架构洞察力社区、您可以在该社区与同行和专家进行交流。
 
 
 
-此外，还提供了一个链接 link:mailto:ng-cloudinsights-customerfeedback@netapp.com["* 反馈 *"] 帮助我们改进 Cloud Insights 。
+此外、还提供了一个链接link:mailto:ng-cloudinsights-customerfeedback@netapp.com["* 反馈 *"]、帮助我们提高数据基础架构洞察力。
 
 
 
 === 订阅支持
 
-除了上述自助支持选项之外，如果您订阅了 Cloud Insights 或为受监控的 NetApp 产品或服务付费支持，则可以与 NetApp 支持工程师合作解决您的问题。
+除了上述自助支持选项之外、如果您订阅了Data Infrastructure Insight或为受监控的NetApp产品或服务提供了付费支持、则可以与NetApp支持工程师合作解决您的问题。
 
 
 NOTE: 您必须注册才能 <<activating-support-entitlement,激活支持>> 适用于 NetApp Cloud 产品。要进行注册，请转到 NetApp 的 link:https://register.netapp.com["云数据服务支持注册"]。
 
-强烈建议您选中此复选框，以便在支持会话期间允许 NetApp 支持工程师访问您的 Cloud Insights 环境。这样，工程师就可以对问题进行故障排除，并帮助您快速解决问题。解决问题描述问题或支持会话结束后，您可以取消选中此复选框。
+强烈建议您选中此复选框、以允许NetApp支持工程师在支持会话期间访问您的数据基础架构洞察力环境。这样，工程师就可以对问题进行故障排除，并帮助您快速解决问题。解决问题描述问题或支持会话结束后，您可以取消选中此复选框。
 
-您可以通过以下任一方法请求支持。要使用以下支持选项，您必须具有有效的 Cloud Insights 订阅：
+您可以通过以下任一方法请求支持。要使用以下支持选项、您必须订阅有效的Data Infrastructure Insight：
 
 * link:https://www.netapp.com/us/contact-us/support.aspx["* 电话 *"]
 * link:https://mysupport.netapp.com/portal?_nfpb=true&_st=initialPage=true&_pageLabel=submitcase["* 支持服务单 *"]
-* *Chat*-您将与NetApp支持人员联系以获得帮助(仅限工作日)。任何Cloud Insights 屏幕右上角的*帮助>实时聊天*菜单选项均提供聊天功能。
+* *Chat*-您将与NetApp支持人员联系以获得帮助(仅限工作日)。任何Data Infrastructure Insight屏幕右上角的*帮助>实时聊天*菜单选项均提供聊天功能。
 
 
 您也可以通过单击来申请销售支持 link:https://www.netapp.com/us/forms/sales-inquiry/cloud-insights-sales-inquiries.aspx["* 联系销售人员 *"] 链接。
 
-您的 Cloud Insights 序列号可通过 * 帮助 > 支持 * 菜单在服务中看到。如果您在访问服务时遇到问题，并且先前已向 NetApp 注册序列号，则还可以从 NetApp 支持站点查看 Cloud Insights 序列号列表，如下所示：
+您的Data Infrastructure Insight序列号可从服务的*帮助>支持*菜单中查看。如果您在访问此服务时遇到问题、并且之前已向NetApp注册了序列号、则还可以从NetApp支持站点查看您的数据基础架构洞察序列号列表、如下所示：
 
 * 登录到 mysupport.netapp.com
-* 在 "Products">"My Products" 菜单选项卡中，使用产品系列 "SaaS Cloud Insights " 查找所有注册序列号：
+* 从"Products">"My Products"菜单选项卡中、使用产品系列"SaaS Data Infrastructure洞察力"找到所有已注册的序列号：
 
 
 image:Support_View_SN.png["查看支持序列号"]
 
 
 
-== Cloud Insights 数据收集器支持列表
+== Data Infrastructure Insight Data Collector支持列表
 
-您可以在中查看或下载有关受支持的数据收集器的信息和详细信息 link:reference_data_collector_support_matrix.html["* Cloud Insights 数据收集器支持表 * ， role="external""]。
+您可以在中查看或下载有关受支持的数据收集器的信息和详细信息link:reference_data_collector_support_matrix.html["*数据基础架构洞察数据收集器支持表*，Role="External"]。
 
 
 
 === 学习中心
 
-无论您的订阅如何、*帮助>支持*均可链接到多项NetApp大学课程、帮助您充分利用Cloud Insights。请查看！
+无论您订阅了什么内容、*帮助>支持*都可以链接到多个NetApp大学课程、帮助您充分利用数据基础架构洞察。请查看！

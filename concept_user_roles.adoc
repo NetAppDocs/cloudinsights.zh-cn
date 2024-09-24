@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_user_roles.html 
 keywords: roles, guest, user, administrator, SSO, Federate, federation, identity, single sign-on, Account Owner, Reporting, Cloud Secure, Monitor and Optimize, security, observability 
-summary: Cloud Insights 提供了多个具有不同权限级别的用户帐户。 
+summary: Data Infrastructure Insight为多个用户帐户提供了不同的权限级别。 
 ---
 = 用户帐户和角色
 :toc: macro
@@ -19,13 +19,13 @@ summary: Cloud Insights 提供了多个具有不同权限级别的用户帐户�
 
 
 [role="lead"]
-Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管理员，用户和来宾。为每个帐户分配特定的权限级别，如下表所示。  用户可以是其中之一 link:#creating-accounts-by-inviting-users["已邀请"] Cloud Insights 并分配了特定角色，或者可以通过登录 link:#single-sign-on-sso-and-identity-federation["单点登录（ SSO ）授权"] 具有默认角色。Cloud Insights 高级版提供了 SSO 授权功能。
+Data Infrastructure Insight最多可提供四个用户帐户角色：帐户所有者、管理员、用户和来宾。为每个帐户分配特定的权限级别，如下表所示。用户可以link:#creating-accounts-by-inviting-users["已邀请"]使用Data Infrastructure Insight并分配有特定角色、也可以link:#single-sign-on-sso-and-identity-federation["单点登录（ SSO ）授权"]使用默认角色通过登录。SSO授权作为Data Infrastructure Insight高级版中的一项功能提供。
 
 
 
 == 权限级别
 
-您可以使用具有管理员权限的帐户来创建或修改用户帐户。每个用户帐户都会从以下权限级别为每个 Cloud Insights 功能分配一个角色。
+您可以使用具有管理员权限的帐户来创建或修改用户帐户。系统会为以下权限级别中的每个Data Infrastructure Insight功能为每个用户帐户分配一个角色。
 
 |===
 | 角色 | 可观察性 | 工作负载安全性 | 报告 | 管理员 
@@ -46,9 +46,9 @@ Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管�
 
 
 
-=== 按用户角色划分的 Cloud Insights 权限
+=== Data Infrastructure Insight权限(按用户角色)
 
-下表显示了为每个用户角色授予的 Cloud Insights 权限。
+下表显示了为每个用户角色授予的Data Infrastructure Insight权限。
 
 |===
 
@@ -142,7 +142,7 @@ Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管�
 
 
 .步骤
-. 登录到 Cloud Insights
+. 登录到Data Infrastructure Insight
 . 在菜单中，单击 * 管理员 > 用户管理 *
 +
 此时将显示 User Management 屏幕。此屏幕包含系统上所有帐户的列表。
@@ -157,7 +157,7 @@ Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管�
 
 
 
-. 为 Cloud Insights 的每个功能选择用户的角色。
+. 为Data Infrastructure Insight的每个功能选择用户角色。
 +
 
 NOTE: 您可以选择的功能和角色取决于您以特定管理员角色访问的功能。例如、如果您只有报告管理员角色、则可以将用户分配给报告中的任何角色、但不能为可观察性或安全性分配角色。
@@ -167,7 +167,7 @@ image:UserRoleChoices.png["用户角色选择"]
 
 . 单击 * 邀请 *
 +
-此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户，则只需登录即可访问其 Cloud Insights 环境。
+此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户、则只需登录即可访问其Data Infrastructure Insight环境。
 
 
 
@@ -179,7 +179,7 @@ image:UserRoleChoices.png["用户角色选择"]
 
 . 单击 * 管理员 > 用户管理 * 。此时，屏幕将显示系统上所有帐户的列表。
 . 单击要更改的帐户的用户名。
-. 根据需要修改用户在每个 Cloud Insights 功能集中的角色。
+. 根据需要修改每个Data Infrastructure Insight功能集中的用户角色。
 . 单击 _Save Changes_ 。
 
 
@@ -203,9 +203,9 @@ image:Assign_Account_Owner.png["显示帐户所有者选择的用户更改对话
 
 == 删除用户
 
-具有管理员角色的用户可以通过单击用户的名称并单击对话框中的 _Delete User_ 来删除用户（例如，不再与公司合作的用户）。此用户将从 Cloud Insights 环境中删除。
+具有管理员角色的用户可以通过单击用户的名称并单击对话框中的 _Delete User_ 来删除用户（例如，不再与公司合作的用户）。此用户将从Data Infrastructure Insight环境中删除。
 
-请注意，即使删除用户，用户创建的任何信息板，查询等也将在 Cloud Insights 环境中保持可用。
+请注意、即使删除了用户、用户创建的任何信息板、查询等在Data Infrastructure Insight环境中也仍然可用。
 
 
 
@@ -225,13 +225,13 @@ image:Assign_Account_Owner.png["显示帐户所有者选择的用户更改对话
 
 image:BlueXP_Authentication_Local.png["使用本地进行BlueXP身份验证"]
 
-但是、某些客户希望使用自己的身份提供程序对其Cloud Insights和其他NetApp BlueXP服务的用户进行身份验证。通过身份联合、NetApp BlueXP帐户将使用企业目录中的凭据进行身份验证。
+但是、有些客户希望使用自己的身份提供程序对其用户进行数据基础架构洞察和其他NetApp BlueXP  服务的身份验证。通过身份联合、NetApp BlueXP帐户将使用企业目录中的凭据进行身份验证。
 
 以下是该过程的简化示例：
 
 image:BlueXP_Authentication_Federated.png["使用联合进行BlueXP身份验证"]
 
-在上图中，当用户访问 Cloud Insights 时，系统会将该用户定向到客户的身份管理系统进行身份验证。帐户通过身份验证后，用户将定向到 Cloud Insights 租户 URL 。
+在上图中、当用户访问Data Infrastructure Insight时、该用户将被定向到客户的身份管理系统进行身份验证。对帐户进行身份验证后、用户将定向到Data Infrastructure Insight租户URL。
 
 
 
@@ -240,9 +240,9 @@ image:BlueXP_Authentication_Federated.png["使用联合进行BlueXP身份验证"
 BlueXP使用Auth0实施身份联合、并与Active Directory联合身份验证服务(ADFS)和Microsoft Azure Active Directory (AD)等服务集成。要配置身份联合、请参见 link:https://services.cloud.netapp.com/misc/federation-support["BlueXP联合说明"]。
 
 
-NOTE: 您必须先配置BlueXP身份联合、然后才能对Cloud Insights使用SSO。
+NOTE: 您必须先配置BlueXP  身份联合、然后才能将SSO与数据基础架构洞察结合使用。
 
-请务必了解、在BlueXP中更改身份联合不仅适用于Cloud Insights、而且适用于所有NetApp BlueXP服务。客户应与他们拥有的每个BlueXP产品的NetApp团队讨论此更改、以确保他们使用的配置可与身份联合使用、或者在需要对任何客户进行调整时也可使用。客户还需要让内部 SSO 团队参与身份联合的变更。
+请务必了解、在BlueXP  中更改身份联合不仅适用于数据基础架构洞察力、还适用于所有NetApp BlueXP  服务。客户应与他们拥有的每个BlueXP产品的NetApp团队讨论此更改、以确保他们使用的配置可与身份联合使用、或者在需要对任何客户进行调整时也可使用。客户还需要让内部 SSO 团队参与身份联合的变更。
 
 另外、还必须认识到、一旦启用身份联合、对公司身份提供程序进行的任何更改(例如从SAML迁移到Microsoft AD)都可能需要在BlueXP中进行故障排除/更改/关注、才能更新用户的配置文件。
 
@@ -252,40 +252,40 @@ NOTE: 您必须先配置BlueXP身份联合、然后才能对Cloud Insights使用
 
 === 单点登录（ SSO ）用户自动配置
 
-除了邀请用户之外，管理员还可以为公司域中的所有用户启用 * 单点登录（ SSO ）用户自动配置 * 对 Cloud Insights 的访问，而无需单独邀请用户。启用 SSO 后，具有相同域电子邮件地址的任何用户均可使用其公司凭据登录到 Cloud Insights 。
+除了邀请用户之外，管理员还可以为公司域中的所有用户启用*单点登录(SSO)用户自动配置*对Data Infrastructure Insight的访问，而无需单独邀请他们。启用SSO后、具有相同域电子邮件地址的任何用户都可以使用其企业凭据登录到Data Infrastructure Insight。
 
 
-NOTE: _SSO 用户自动配置 _ 在 Cloud Insights 高级版中可用，必须先进行配置，然后才能为 Cloud Insights 启用它。SSO用户自动配置配置包括 link:https://services.cloud.netapp.com/misc/federation-support["身份联合"] 通过NetApp BlueXP、如上一节所述。联合允许单点登录用户使用企业目录中的凭据、并使用安全断言标记语言2.0 (SAML)和OpenID连接(OIDC)等开放式标准访问NetApp BlueXP帐户。
+NOTE: _SSO用户自动配置_在Data Infrastructure Insight高级版中可用、必须先对其进行配置、然后才能为Data Infrastructure Insight启用该功能。link:https://services.cloud.netapp.com/misc/federation-support["身份联合"]如上一节所述、SSO用户自动配置包括通过NetApp BlueXP  进行的配置。联合允许单点登录用户使用企业目录中的凭据、并使用安全断言标记语言2.0 (SAML)和OpenID连接(OIDC)等开放式标准访问NetApp BlueXP帐户。
 
-要配置_SSO用户自动配置_，必须先在*Admin > User Management*页上设置BlueXP身份联合。选择横幅中的*设置联合*链接以继续BlueXP联合。完成配置后、Cloud Insights管理员可以启用SSO用户登录。当管理员启用 _SSO 用户自动配置 _ 时，他们会为所有 SSO 用户（如来宾或用户）选择一个默认角色。通过 SSO 登录的用户将具有此默认角色。
+要配置_SSO用户自动配置_，必须先在*Admin > User Management*页上设置BlueXP身份联合。选择横幅中的*设置联合*链接以继续BlueXP联合。完成配置后、Data Infrastructure Insight管理员可以启用SSO用户登录。当管理员启用 _SSO 用户自动配置 _ 时，他们会为所有 SSO 用户（如来宾或用户）选择一个默认角色。通过 SSO 登录的用户将具有此默认角色。
 
 image:Roles_federation_Banner.png["使用联合进行用户管理"]
 
-有时，管理员会希望将单个用户提升为默认 SSO 角色之外的用户（例如，使其成为管理员）。他们可以在 * 管理员 > 用户管理 * 页面上单击用户的右侧菜单并选择 _Assign role_ 来完成此操作。以这种方式分配了显式角色的用户仍可访问 Cloud Insights ，即使 _SSO 用户自动配置 _ 随后被禁用也是如此。
+有时，管理员会希望将单个用户提升为默认 SSO 角色之外的用户（例如，使其成为管理员）。他们可以在 * 管理员 > 用户管理 * 页面上单击用户的右侧菜单并选择 _Assign role_ 来完成此操作。通过这种方式分配了显式角色的用户仍可访问Data Infrastructure Insight、即使随后禁用了_SSO用户自动配置_也是如此。
 
-如果用户不再需要提升的角色，您可以单击菜单以删除用户 _ 。此用户将从列表中删除。如果启用了 _SSO 用户自动配置 _ ，则用户可以继续使用默认角色通过 SSO 登录到 Cloud Insights 。
+如果用户不再需要提升的角色，您可以单击菜单以删除用户 _ 。此用户将从列表中删除。如果启用了_SSO用户自动配置_、则用户可以使用默认角色继续通过SSO登录到Data Infrastructure Insight。
 
 您可以通过取消选中 * 显示 SSO 用户 * 复选框来选择隐藏 SSO 用户。
 
 但是，如果满足以下任一条件，请勿启用 _SSO 用户自动配置 _ ：
 
-* 您的组织具有多个 Cloud Insights 租户
-* 您的组织不希望联合域中的任何 / 每个用户对 Cloud Insights 租户具有一定程度的自动访问权限。_at this point in time ， we do not have the ability to use groups to control role access with this op选项 _ 。
+* 您的组织有多个Data Infrastructure Insight租户
+* 您的组织不希望联合域中的任何/每个用户都对Data Infrastructure Insight租户具有某种级别的自动访问权限。_at this point in time ， we do not have the ability to use groups to control role access with this op选项 _ 。
 
 
 
 
 == 按域限制访问
 
-Cloud Insights可以将用户访问限制为仅限您指定的域。在*Admin > User Management*页上，选择“限制域”。
+Data Infrastructure Insight可以将用户访问限制为仅限您指定的域。在*Admin > User Management*页上，选择“限制域”。
 
 image:Restrict_Domains_Modal.png["将域限制为仅限默认域、默认域以及您指定的其他域、或者没有限制"]
 
 您将看到以下选项：
 
-* 无限制：用户无论在哪个域、都可以访问Cloud Insights。
-* 限制对默认域的访问：默认域是Cloud Insights环境帐户所有者使用的域。这些域始终可访问。
-* 限制对指定默认值和域的访问。列出除了默认域之外、您还希望有权访问Cloud Insights环境的任何域。
+* 无限制：用户无论在哪个域、都可以访问Data Infrastructure Insight。
+* 限制对默认域的访问：默认域是Data Infrastructure Insight环境帐户所有者使用的域。这些域始终可访问。
+* 限制对指定默认值和域的访问。列出除了默认域之外、您希望有权访问Data Infrastructure Insight环境的任何域。
 
 
 image:Restrict_Domains_Tooltip.png["\"限制域\"工具提示"]

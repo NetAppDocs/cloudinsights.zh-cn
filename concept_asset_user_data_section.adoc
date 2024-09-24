@@ -48,7 +48,7 @@ keywords: asset page, user data, applications, annotations
 
 == 使用 User Data 部分分配或修改标注
 
-在自定义 Cloud Insights 以根据企业要求跟踪数据时，您可以定义称为标注的专用注释并将其分配给资产。资产页面的 "User Data" 部分显示分配给资产的标注，还可以用于更改分配给该资产的标注。
+在自定义Data Infrastructure Insight以根据企业需求跟踪数据时、您可以定义称为标注的专用注释并将其分配给资产。资产页面的 "User Data" 部分显示分配给资产的标注，还可以用于更改分配给该资产的标注。
 
 .步骤
 . 要向资产添加标注，请在资产页面的 User Data 部分中单击 * + Annotation * 。

@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: concept_storage_virtualization.html 
-summary: Cloud Insights 可以提供前端和后端虚拟化存储的视图。 
+summary: Data Infrastructure Insight可以提供前端和后端虚拟化存储的视图。 
 keywords: storage, virtual, virtualized, virtualization, 
 ---
 = 存储虚拟化
@@ -19,7 +19,7 @@ keywords: storage, virtual, virtualized, virtualization,
 
 
 [role="lead"]
-Cloud Insights 可以区分具有本地存储的存储阵列或虚拟化其他存储阵列的存储阵列。这样、您就可以将成本和性能从前端一直与基础架构的后端关联起来。
+Data Infrastructure Insight可以区分具有本地存储的存储阵列或虚拟化其他存储阵列的存储阵列。这样、您就可以将成本和性能从前端一直与基础架构的后端关联起来。
 
 
 

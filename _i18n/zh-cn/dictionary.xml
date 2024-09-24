@@ -226,10 +226,6 @@
   <block id="96ed6b62876920e3adcad08fdc6c210d" category="paragraph">此组件按层显示总孤立容量和孤立容量，并将其与总可用容量的可接受范围进行比较，同时显示实际孤立容量。孤立容量由配置和性能定义。由配置孤立的存储表示已将存储分配给主机的情况。但是，配置未正确执行，主机无法访问存储。性能孤立的情况是，存储已正确配置为可由主机访问。但是，没有存储流量。</block>
   <block id="52f190ea0e2468504f68afdff42e9e4a" category="paragraph">水平堆积条形图显示了可接受的范围。灰色越暗，无法接受的情况就越多。实际情况显示为窄铜条，用于显示孤立的实际容量。</block>
   <block id="d5b17477309e32977641d3e796c399fa" category="paragraph">您可以单击某个层以显示孤立存储详细信息报告，其中显示了根据选定层的配置和性能确定为孤立的所有卷。单击此报告中的任何存储，存储池或卷可显示资产页面，其中汇总了该资源的当前状态。</block>
-  <block id="137b3f649398a1f9fa1259c39d880c93" category="summary">Cloud Insights API 支持与监控和报告系统等其他应用程序集成。</block>
-  <block id="2be3c4c4132fe06361d81b1c1784eac3" category="doc">Cloud Insights API</block>
-  <block id="551279e83d2a3c07e1a53609f28238f1" category="paragraph">NetApp 客户和独立软件供应商（ ISV ）可以通过 Cloud Insights API 将 Cloud Insights 与其他应用程序集成，例如 CMDB 或其他票证系统。</block>
-  <block id="842ffa230636a6a4c9507048374c4b1b" category="paragraph">请注意， Cloud Insights API 基于您当前的版本提供：</block>
   <block id="035e3e6d938b35e91f1bb87878049544" category="cell">API 类别</block>
   <block id="972e73b7a882d0802a4e3a16946a2f94" category="cell">基本</block>
   <block id="eb6d8ae6f20283755b339c0dc273988b" category="cell">标准</block>
@@ -242,9 +238,7 @@
   <block id="e7394567670b4276802996b88134c0a5" category="cell">数据仓库</block>
   <block id="d8202577b4c172c137f1ab3f213b8496" category="section-title">API 访问的要求</block>
   <block id="93a0562a2b63ec1b782c635861ca9d50" category="list-text">API 访问令牌模型用于授予访问权限。</block>
-  <block id="e47707bad3d8c571eb585885b9d8e5ea" category="list-text">API 令牌管理由具有管理员角色的 Cloud Insights 用户执行。</block>
   <block id="76090d35c59f1912752ed0abdd2b8feb" category="section-title">API 文档（ Swagger ）</block>
-  <block id="cbc8f04159b7864cfdf1f3f9a0639b83" category="paragraph">登录到 Cloud Insights 并导航到 * 管理 &gt; API 访问 * 可查看最新的 API 信息。单击 * API Documentation" 链接。</block>
   <block id="6ce2d3c8c549ab0fd691398bb443efb2" category="inline-image-macro">API 文档</block>
   <block id="6b74edd5cf286c3a22a41e5e6740cb33" category="paragraph"><block ref="6b74edd5cf286c3a22a41e5e6740cb33" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cbb70567b5f7ab27a565172b8e1bc114" category="inline-image-macro">API Swagger 示例</block>
@@ -263,12 +257,10 @@
   <block id="a3edb14694b58a006156d05e3c4b6d5b" category="paragraph">例如，使用以下命令检索存储资产：</block>
   <block id="eceeec5380f54a75da4fa160c300d56b" category="paragraph">其中， _&lt;API_Access_Token&gt;_ 是您在创建 API 访问密钥期间保存的令牌。</block>
   <block id="bf9403ca9242451b7ef055feae5711bb" category="list-text">资产：枚举顶级对象并检索特定对象或对象层次结构。</block>
-  <block id="8a471bf409138f673b99273d8183156b" category="list-text">查询：检索和管理 Cloud Insights 查询。</block>
   <block id="c9de14b5a5af8684e29a00e86f5ea9f1" category="list-text">导入：导入标注或应用程序并将其分配给对象</block>
   <block id="cfce3085ae85f2087671061798f85476" category="list-text">搜索：在不知道对象的唯一 ID 或全名的情况下找到特定对象。</block>
   <block id="c99f25325f86d3f0c79c43f7e35c908e" category="inline-link-macro">API Swagger 文档</block>
   <block id="f62c375c71b04a523593c5019e4aa100" category="section-title">清单遍历</block>
-  <block id="f4f1eb3a3565596e151b069fef518185" category="paragraph">本节介绍如何遍历 Cloud Insights 对象的层次结构。</block>
   <block id="c22744ffcc9ee65a97cb166bcf41b4f4" category="section-title">顶级对象</block>
   <block id="b5d25a3c87971757e3508e3927c1eb57" category="paragraph">各个对象在请求中通过唯一 URL （在 JSON 中称为 "self-" ）进行标识，并需要了解对象类型和内部 ID 。对于某些顶级对象（主机，存储等）， REST API 可提供对完整收集的访问权限。</block>
   <block id="68bbea204e2fc73e16b79f9ab4eee347" category="paragraph">API URL 的常规格式为：</block>
@@ -286,7 +278,6 @@
   <block id="4d43ae6abcd24740518bcb12bcc96e08" category="paragraph">通过 Expand ，您可以在一个响应中引入大量相关数据。NetApp 建议您一次不要请求太多信息；这可能会导致发生原因性能下降。</block>
   <block id="c77a0d869d2583884da5938fccd502a7" category="paragraph">要阻止这种情况，无法扩展对顶级收集的请求。例如，您不能同时请求所有存储对象的扩展数据。客户端需要检索对象列表，然后选择要扩展的特定对象。</block>
   <block id="d5b98609a55b3150795644a9edeed62e" category="section-title">性能数据</block>
-  <block id="f40f528afef0cb9f4ed55bbb94522864" category="paragraph">性能数据会作为单独的示例收集到多个设备中。Cloud Insights 会每小时（默认值）聚合和汇总性能示例。</block>
   <block id="ca5a65340e1e9968b3ba72279d4368f3" category="paragraph">通过 API ，可以访问样本和汇总数据。对于包含性能数据的对象，性能摘要可通过 _expand=performal_ 的形式提供。性能历史记录时间序列可通过嵌套的 _expand=performer.history_ 来查看。</block>
   <block id="d89836bffdb6530b2e666cac7c77f872" category="paragraph">性能数据对象示例包括：</block>
   <block id="e84c5392fd775dfbe036fde574b8c406" category="list-text">存储性能</block>
@@ -328,7 +319,6 @@
   <block id="85aa7a55c03d4a7d205562096674066a" category="inline-image-macro">存储池容量示例</block>
   <block id="6f0ac10b550f7a116f9d902d16213da3" category="paragraph"><block ref="6f0ac10b550f7a116f9d902d16213da3" category="inline-image-macro-rx" type="image"></block></block>
   <block id="109d056fe4a5bfafadc37d21bc6e5654" category="section-title">使用搜索查找对象</block>
-  <block id="01ebbdd0a50dbc56d987ceb25032be7b" category="paragraph">Cloud Insights 是一种可扩展（广泛开放）的解决方案，可与第三方流程编排，业务管理，变更控制和服务单系统以及自定义 CMDB 集成进行集成。</block>
   <block id="b64fa7905e81fd64c5b00971051ce0f8" category="paragraph">Cloud Insight 的 RESTful API 是一个主要的集成点，支持简单有效地移动数据，并允许用户无缝访问其数据。</block>
   <block id="c13fb1b2303d8e94acc9569811c7a5b8" category="summary">配置 Dell EMC Celerra 数据收集器。</block>
   <block id="8d466f056da16c035c31b6b6000a2e84" category="doc">Dell EMC VNX 文件（以前称为 Celerra 统一存储系统）数据收集器</block>
@@ -397,27 +387,21 @@
   <block id="b9bfbe11ded79fa1b72b327d0497f9dd" category="inline-image-macro">支持页面</block>
   <block id="e9d356ec51ae4d84881e70ea3c98b6dc" category="section-title">正在激活支持授权</block>
   <block id="27792947ed5d5da7c0d1f43327ed9dab" category="inline-link-macro">详细信息</block>
-  <block id="8c3419f130ad04caaa52bc7ca345b657" category="paragraph">在初始订阅过程中，您的 Cloud Insights 实例将生成一个 20 位数的 NetApp 序列号，此序列号以 "950" 开头。此 NetApp 序列号表示与您的帐户关联的 Cloud Insights 订阅。您必须注册 NetApp 序列号才能激活支持授权。我们提供了两种支持注册选项：</block>
   <block id="cc8ae441e8fc2d8b41c5c0efa830b99e" category="list-text">使用已有 NetApp 支持站点（ NSS ） SSO 帐户的用户（例如，当前的 NetApp 客户）</block>
   <block id="0a0b0ec9b756ca7bf1c8323bc90df282" category="list-text">新的 NetApp 客户，没有预先存在的 NetApp 支持站点（ NSS ） SSO 帐户</block>
   <block id="46ccdfc99b7c3549431cd8228c7969aa" category="section-title">选项 1 ：使用已有 NetApp 支持站点（ NSS ） SSO 帐户的用户的步骤</block>
   <block id="9908d321822f7404bb0eafaba2bfdd4f" category="list-text">导航到 NetApp 注册网站<block ref="25901fb2084c068b072ad2e600cb7393" category="inline-link-rx"></block></block>
-  <block id="8694dd7d89b8138c63654f3ad3d52d60" category="list-text">选择 " 我已注册为 NetApp 客户 " ，然后选择 _NetApp_ Cloud Insights 作为产品线。选择您的计费提供商（ NetApp 或 AWS ），并参考 Cloud Insights 用户界面中的 " 帮助 "&gt;" 支持 " 菜单，提供您的序列号和 NetApp 订阅名称或 AWS 客户 ID ：</block>
   <block id="4ec6efe1597d12aeecb3770711c6b28e" category="inline-image-macro">SN_screen</block>
   <block id="25318cb05f745d8a82809b53bdcd98cb" category="paragraph"><block ref="25318cb05f745d8a82809b53bdcd98cb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="528a21e927794c9e56d9aa019556d356" category="list-text">填写现有的客户注册表单，然后单击 * 提交 * 。</block>
   <block id="bdbfe218df1a9d120c971b693e61849c" category="inline-image-macro">现有客户表单</block>
   <block id="16ed2e83008b21b0f31573753edaead2" category="paragraph"><block ref="16ed2e83008b21b0f31573753edaead2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="f23c46d71e19dfb195752037ae011e67" category="list-text">如果未发生错误，系统会将用户定向到 " 已成功提交注册 " 页面。与用于注册的 NSS SSO 用户名关联的电子邮件地址将在几分钟内收到一封电子邮件，指出 " 您的产品现在有资格获得支持 " 。</block>
-  <block id="c30a3265bc001e80f716f8d152bb02bf" category="list-text">这是 Cloud Insights NetApp 序列号的一次性注册。</block>
   <block id="d168d988bc50e92c9d125916b9fd204b" category="section-title">选项 2 ：适用于没有已有 NetApp 支持站点（ NSS ） SSO 帐户的新 NetApp 客户的步骤</block>
   <block id="12306141d4f52746734da7a6d2fcbcd3" category="list-text">选择 " 我不是 NetApp 的注册客户 " ，并以下面的示例形式填写所需信息：</block>
   <block id="86ff60e4ea8410ddf103afe0ac4a2c04" category="inline-image-macro">新的客户表单</block>
   <block id="9ff2e299ad4aa21f1b2da73ae35e14c1" category="paragraph"><block ref="9ff2e299ad4aa21f1b2da73ae35e14c1" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="46907f9e919eaa8e36538ae653230af5" category="list-text">选择 _Products_ Cloud Insights 作为产品线。选择您的计费提供商（ NetApp 或 AWS ），并参考 Cloud Insights 用户界面中的 " 帮助 "&gt;" 支持 " 菜单，提供您的序列号和 NetApp 订阅名称或 AWS 客户 ID ：</block>
   <block id="310e9bfbb0987bc588b6f281357bc81c" category="list-text">如果未发生错误，系统会将用户定向到 " 已成功提交注册 " 页面。与用于注册的 NSS SSO 用户名关联的电子邮件地址将在几小时内收到一封电子邮件，指出 " 您的产品现在有资格获得支持 " 。</block>
-  <block id="563ab1cab19237118c0d565ded4f7493" category="list-text">作为 NetApp 的新客户，您还需要创建一个 NetApp 支持站点（ NSS ）用户帐户，以便将来进行注册，并访问支持门户以获取技术支持聊天和 Web 服务单。此链接位于<block ref="4b0df7f6652ef877e322a199d6b6edce" category="inline-link-rx"></block>。您可以提供新注册的 Cloud Insights 序列号以加快此过程。</block>
-  <block id="0e458a16f853c4e326f689913acf2dfe" category="list-text">这是 Cloud Insights NetApp 序列号的一次性注册。</block>
   <block id="bc4afdcc32d9a7d1bc03c2d8ad5b1828" category="section-title">获取支持信息</block>
   <block id="0ead5de583924ac8d48848b85f68e778" category="section-title">自助服务支持：</block>
   <block id="6c0afebc7e7822e3ca22734d7b5d42c0" category="paragraph">这些支持选项在试用模式下提供，并且全天候免费提供：</block>
@@ -426,27 +410,18 @@
   <block id="7cef246d709d34533b9dea3e15d3f5a2" category="list-text">*<block ref="2ecfa39652ed0f06ca436cc3b19d2bbb" category="inline-link-macro-rx"></block>*</block>
   <block id="15d10c3fd39c9846221b3ea9c93b55e0" category="paragraph">单击文档链接可转到此文档中心。</block>
   <block id="7d61983c34edc2a8cabbea71c4732f62" category="inline-link-macro">社区</block>
-  <block id="a7a9e9720c642358ce4d75836f0323d7" category="paragraph">单击社区链接可转到 NetApp Cloud Insights 社区，您可以在其中与同行和专家建立联系。</block>
   <block id="c48730cb532534ed8ded87a7e1e63743" category="inline-link-macro">* 反馈 *</block>
-  <block id="1ee12c9d2a4f0460caa4b5f609d4b32e" category="paragraph">此外，还提供了一个链接 <block ref="845d40e8369612c1d8dd285f0ebc254e" category="inline-link-macro-rx"></block> 帮助我们改进 Cloud Insights 。</block>
   <block id="52fcceb1925114589eec173daab1c999" category="section-title">订阅支持</block>
-  <block id="8af88bdd2f4549eb670a6c4568c51014" category="paragraph">除了上述自助支持选项之外，如果您订阅了 Cloud Insights 或为受监控的 NetApp 产品或服务付费支持，则可以与 NetApp 支持工程师合作解决您的问题。</block>
   <block id="8e2e894a8f2d0c798eda10b04a6aae2c" category="inline-link-macro">云数据服务支持注册</block>
   <block id="960807b3a38d77ca1916570b1732dda1" category="inline-xref">激活支持</block>
-  <block id="59ec599572265c11af88366fc10b5d22" category="paragraph">强烈建议您选中此复选框，以便在支持会话期间允许 NetApp 支持工程师访问您的 Cloud Insights 环境。这样，工程师就可以对问题进行故障排除，并帮助您快速解决问题。解决问题描述问题或支持会话结束后，您可以取消选中此复选框。</block>
-  <block id="1178d064739e36d66d617e550b890b3c" category="paragraph">您可以通过以下任一方法请求支持。要使用以下支持选项，您必须具有有效的 Cloud Insights 订阅：</block>
   <block id="e145a699aa519b4431527a84030fe1fd" category="inline-link-macro">* 电话 *</block>
   <block id="d509e88fe0d420e546f838c2bf3149e4" category="list-text"><block ref="d509e88fe0d420e546f838c2bf3149e4" category="inline-link-macro-rx"></block></block>
   <block id="78ce7a1ba00884845ede733dc79b1141" category="inline-link-macro">* 支持服务单 *</block>
   <block id="1ce9a43d63998783a781596de13b0965" category="list-text"><block ref="fa5b9c38e8e5b8e1f4e408b08ce16532" category="inline-link-macro-rx"></block></block>
   <block id="5c0e6c90408c98d6eca3e09416c4ee77" category="paragraph">您也可以通过单击来申请销售支持 <block ref="57d2406fdd9ad62e0bb0722bd44749df" category="inline-link-macro-rx"></block> 链接。</block>
-  <block id="6c45ba81e807bdb7fd46fdc507e78d04" category="paragraph">您的 Cloud Insights 序列号可通过 * 帮助 &gt; 支持 * 菜单在服务中看到。如果您在访问服务时遇到问题，并且先前已向 NetApp 注册序列号，则还可以从 NetApp 支持站点查看 Cloud Insights 序列号列表，如下所示：</block>
   <block id="290bf19e1ed3fabfc80a0ac6d77f6466" category="list-text">登录到 mysupport.netapp.com</block>
-  <block id="96535de75983e775c212ac1a50cbb261" category="list-text">在 "Products"&gt;"My Products" 菜单选项卡中，使用产品系列 "SaaS Cloud Insights " 查找所有注册序列号：</block>
   <block id="159164cf75b6b2213362f17761977a0c" category="inline-image-macro">查看支持序列号</block>
   <block id="533e65443960283ff24073ad80db0e3d" category="paragraph"><block ref="533e65443960283ff24073ad80db0e3d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1c52cf8dba7f709e8910813b93418d94" category="section-title">Cloud Insights 数据收集器支持列表</block>
-  <block id="d59e2e05079f7c9c24f5bbba7c6e3547" category="inline-link-macro">* Cloud Insights 数据收集器支持表 * ， role="external"</block>
   <block id="3871fa64d8d00271e0576dbb10e625f8" category="summary">创建监控器，以便针对性能或清单阈值发出警报</block>
   <block id="25c90ccdccf440be40d0382cdd38edf8" category="doc">使用 Webhooks 发送通知</block>
   <block id="9c4196469ee8f7193233b70aa5a0dc44" category="paragraph">网络挂机允许用户使用自定义的网络挂机通道向各种应用程序发送警报通知。</block>
@@ -578,7 +553,6 @@
   <block id="f898c70cb805b23cff78a911fac16f85" category="cell">要排除的设备 ID 或显示名称的逗号分隔列表</block>
   <block id="09d6123310780f93d8f4d27e5bea4c38" category="summary">摘要。</block>
   <block id="d094b5589a83ff9dbfcc2d0e99295078" category="doc">管理已配置的数据收集器</block>
-  <block id="53b9802b3b72e00a64f054ac84f78c11" category="paragraph">通过 "Installed Data Collectors" 页面，您可以访问为 Cloud Insights 配置的数据收集器。您可以使用此页面修改现有数据收集器。</block>
   <block id="b931042a6d27500a3c3952e7af9907a5" category="paragraph">此时将显示 Available Data Collector 屏幕。</block>
   <block id="e57a6ec1c32ee71fdeae09f16bf7524f" category="list-text">单击 * 已安装的数据收集器 *</block>
   <block id="25d0acec025a9863386eb668b19dff06" category="paragraph">此时将显示所有已安装的数据收集器的列表。此列表提供了收集器名称，状态，收集器正在访问的 IP 地址以及上次从 A 设备采集数据的时间。可在此屏幕上执行的操作包括：</block>
@@ -662,11 +636,9 @@
   <block id="a1e8cc2c5f503818ad3e7f8ecfaa8763" category="cell">SMI-S Provider 主机的用户名</block>
   <block id="b63a1c6d2cba6eafec34be4992c1cbd7" category="cell">SMI-S Provider 主机的密码</block>
   <block id="3f1b70a3ec875ea55e15beb4035704a0" category="cell">性能轮询之间的时间间隔。默认值为 300 秒。</block>
-  <block id="350ff3e6edca65920342bf3e930281fd" category="summary">Cloud Insights 提供了多个具有不同权限级别的用户帐户。</block>
   <block id="0f9642bcff1dc3cd224f1f3e2f1ca629" category="inline-link-macro">已邀请</block>
   <block id="4239d1a0d4b43b912ff81e4656377274" category="section-title">权限级别</block>
   <block id="14c247a563d9d05855d0098eb6c48901" category="paragraph">最佳实践是限制具有管理员权限的用户数量。最大数量的帐户应为用户或来宾帐户。</block>
-  <block id="493f8916db2d1425825fe2b7b914f379" category="paragraph">下表显示了为每个用户角色授予的 Cloud Insights 权限。</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">功能</block>
   <block id="6072e63b8d5a9912977c211ab173fe58" category="cell">管理员 / 帐户所有者</block>
   <block id="8f9bfe9d1345237cb3b2b205864da075" category="cell">用户</block>
@@ -697,7 +669,6 @@
   <block id="2261218e5eda0b1a833ad7434d235af5" category="list-text">用户名是邀请函的电子邮件地址。</block>
   <block id="ee878f787b1f1f1d4994736d075986bd" category="list-text">了解要分配的用户角色。</block>
   <block id="b9d905aec198b1e4b3ae4b7e048ef2e4" category="list-text">密码由用户在注册过程中定义。</block>
-  <block id="98d89b3de3b439c5c0a0c9ee73d7bd3b" category="list-text">登录到 Cloud Insights</block>
   <block id="d40cbac53e949a73a04e1b3c9429ce6d" category="list-text">在菜单中，单击 * 管理员 &gt; 用户管理 *</block>
   <block id="3e6242ac7db75513d10bbda86f1b5f28" category="paragraph">此时将显示 User Management 屏幕。此屏幕包含系统上所有帐户的列表。</block>
   <block id="067d60b53a30aa45ea83511a9c364c37" category="list-text">单击 * + User*</block>
@@ -709,16 +680,10 @@
   <block id="3c55703ac1b754437c4ca4d09b9083c0" category="paragraph">使用身份联合：</block>
   <block id="1fa3ec89d7b92a55ab22349de75a4680" category="list-text">身份验证会使用企业目录中的客户凭据以及多因素身份验证（ Multi-Factor Authentication ， MFA ）等自动化策略委派给客户的身份管理系统。</block>
   <block id="5bdf50c3632df05e809cd15e1fcb4ca9" category="paragraph">以下是该过程的简化示例：</block>
-  <block id="b8922583597ff9f65c02b62c61bfa22a" category="paragraph">在上图中，当用户访问 Cloud Insights 时，系统会将该用户定向到客户的身份管理系统进行身份验证。帐户通过身份验证后，用户将定向到 Cloud Insights 租户 URL 。</block>
   <block id="fa8a297cebb990edca45e0364e7e6b45" category="inline-link-macro">身份联合</block>
   <block id="d6034d333b0966edaeeea729724c4988" category="section-title">单点登录（ SSO ）用户自动配置</block>
-  <block id="6c59be6231105da08319ced12f4e659b" category="paragraph">除了邀请用户之外，管理员还可以为公司域中的所有用户启用 * 单点登录（ SSO ）用户自动配置 * 对 Cloud Insights 的访问，而无需单独邀请用户。启用 SSO 后，具有相同域电子邮件地址的任何用户均可使用其公司凭据登录到 Cloud Insights 。</block>
-  <block id="8180ff7e185bcd2693971907be3065b6" category="paragraph">有时，管理员会希望将单个用户提升为默认 SSO 角色之外的用户（例如，使其成为管理员）。他们可以在 * 管理员 &gt; 用户管理 * 页面上单击用户的右侧菜单并选择 _Assign role_ 来完成此操作。以这种方式分配了显式角色的用户仍可访问 Cloud Insights ，即使 _SSO 用户自动配置 _ 随后被禁用也是如此。</block>
-  <block id="784219fd668203a8e5c8b86ac08efba1" category="paragraph">如果用户不再需要提升的角色，您可以单击菜单以删除用户 _ 。此用户将从列表中删除。如果启用了 _SSO 用户自动配置 _ ，则用户可以继续使用默认角色通过 SSO 登录到 Cloud Insights 。</block>
   <block id="5b838d1db2b0c90f3965d582815bd387" category="paragraph">您可以通过取消选中 * 显示 SSO 用户 * 复选框来选择隐藏 SSO 用户。</block>
   <block id="b8ebf4409c7ad7b050814935893a9c1f" category="paragraph">但是，如果满足以下任一条件，请勿启用 _SSO 用户自动配置 _ ：</block>
-  <block id="0a4ddee9467e17088a4ed61c86d33e29" category="list-text">您的组织具有多个 Cloud Insights 租户</block>
-  <block id="5fa16e988bd57824af7b89bb4e983aef" category="list-text">您的组织不希望联合域中的任何 / 每个用户对 Cloud Insights 租户具有一定程度的自动访问权限。_at this point in time ， we do not have the ability to use groups to control role access with this op选项 _ 。</block>
   <block id="e42dae64f8e80d611352315992a2460d" category="doc">创建应用程序</block>
   <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">要跟踪与环境中运行的特定应用程序相关的数据，您可以在 Cloud Insights 中定义这些应用程序。</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">如果要将应用程序与业务实体关联，必须在定义该应用程序之前创建业务实体。</block>
@@ -1139,7 +1104,6 @@
   <block id="033cb70e428cff3c1584d7206da08f9c" category="doc">资产页面概述</block>
   <block id="ab24a36f89b07d59e5cf53d5754754b1" category="paragraph">资产页面汇总了资产的当前状态，并包含指向有关资产及其相关资产的追加信息的链接。</block>
   <block id="39e070e3a04350745af06b7d21eb87f6" category="section-title">资产页面的类型</block>
-  <block id="f7fb011bfea370495ed789e2e9a46026" category="paragraph">Cloud Insights 提供了以下资产的资产页面：</block>
   <block id="76c3fe1d90eec0f4dbe5dd8bf85ff05b" category="list-text">虚拟机</block>
   <block id="40bb64e121f0b3462502ccc0affca51a" category="list-text">Storage Virtual Machine （ SVM ）</block>
   <block id="1ceffbda4be274c0fd1204742b0a6d69" category="list-text">内部卷</block>
@@ -2151,9 +2115,6 @@
   <block id="993bee13d79883a291c5bf94757d27d8" category="list-text">提取协议专用活动的 * 协议 * 。</block>
   <block id="c3d430182436845185c1ac182ba51c05" category="list-text">执行活动的用户的 * 用户名 * 。您需要提供确切的用户名以进行筛选。使用部分用户名或部分用户名预先设置或后缀为‘ * ' 的搜索将不起作用。</block>
   <block id="5e5226f8443d6c79a977ffd6e71a8d9d" category="paragraph">以下字段受特殊筛选规则的约束：</block>
-  <block id="3d96016f7628ba3b55f9ed124fe9a321" category="list-text">* 实体类型 * ，使用实体（文件）扩展名</block>
-  <block id="5c50b1e65ca02ceaca4a85e8cc5af6bf" category="list-text">实体的 * 路径 *</block>
-  <block id="1ff83304db55b980e25a5b333c61a80c" category="list-text">* 用户 * 正在执行活动</block>
   <block id="793b0425edef55b10657fd6cc2a5ab5a" category="list-text">实体所在的 * 设备 * （ SVM ）</block>
   <block id="6bbd4f26d0615caf6a29b9c2d238dad2" category="list-text">实体所在的 * 卷 *</block>
   <block id="6edcb8abb66cf4a0700d1ea8dac389e5" category="list-text">重命名原始文件时用于重命名事件的 * 原始路径 * 。</block>
@@ -2583,11 +2544,7 @@
   <block id="dd379e6631df8e94fe26188b06220cf7" category="paragraph"><block ref="dd379e6631df8e94fe26188b06220cf7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7fc41d1df644e11b26a2696444f69499" category="inline-link-macro">RethinkDB 文档</block>
   <block id="61c63e4b6fa084c1807e368faaf150e4" category="paragraph">有关信息，请参见 <block ref="02af3cecada50a802d68e28a6a325991" category="inline-link-macro-rx"></block>。</block>
-  <block id="3ddf2898e2fb1338de74883b4c68f0b1" category="summary">Cloud Insights 从 NetApp Active IQ 收集风险数据</block>
   <block id="df0ddcb04f0e5278d49d2c87dfa7f7fc" category="paragraph">NetApp <block ref="5d418eb60d51fa035e4b287bd4191a07" category="inline-link-macro-rx"></block> 为 NetApp 客户的硬件 / 软件系统提供一系列可视化，分析和其他支持相关服务。Active IQ 报告的数据可以增强系统问题的故障排除能力，还可以深入了解与您的设备相关的优化和预测性分析。</block>
-  <block id="35b5dc06126b83d7f3bd5d91c90bc273" category="paragraph">Cloud Insights 为 Active IQ 监控和报告的任何 NetApp 集群模式 Data ONTAP 存储系统收集 * 风险 * 。Cloud Insights 会在从这些设备收集数据时自动收集为存储系统报告的风险。您必须将相应的数据收集器添加到 Cloud Insights 中以收集 Active IQ 风险信息。</block>
-  <block id="36a3be21cb3190ce7322960932796541" category="paragraph">Cloud Insights 不会显示 Active IQ 未监控和报告的 ONTAP 系统的风险数据。</block>
-  <block id="7b46c393e53a5e3f798e6fec0937030a" category="paragraph">报告的风险显示在 _storage_ 和 _storage node_ 资产登录页面的 Cloud Insights 中的 "Risks" 表中。此表显示了风险详细信息，风险类别和风险的潜在影响，还提供了一个指向 Active IQ 页面的链接，其中汇总了存储节点的所有风险（需要登录 NetApp 支持帐户）。</block>
   <block id="44def9cfd3c785a71c36d95e24981147" category="inline-image-macro">Active IQ 风险表</block>
   <block id="253139fff686e1ef9f39ced79055cc70" category="paragraph"><block ref="253139fff686e1ef9f39ced79055cc70" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8887b934719a6de0be9e0e43f0ab23d0" category="paragraph">登录页面的 " 摘要 " 小工具还会显示报告的风险计数，并提供指向相应 Active IQ 页面的链接。在 _storage_ 登录页面上，计数是所有底层存储节点的风险之和。</block>
@@ -2595,7 +2552,6 @@
   <block id="1be3faf6a174e90a1b900868f94e4600" category="paragraph"><block ref="1be3faf6a174e90a1b900868f94e4600" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4a45597eae979dc62d93cd1d748058bd" category="section-title">打开 Active IQ 页面</block>
   <block id="487f4fcccb6a34d5590990b8e54ace74" category="paragraph">单击指向 Active IQ 页面的链接时，如果您当前未登录到 Active IQ 帐户，则必须执行以下步骤才能查看存储节点的 Active IQ 页面。</block>
-  <block id="85d55fc2c50a3ced7f7d81d3dc3040a6" category="list-text">在 Cloud Insights 摘要小工具或风险表中，单击 Active IQ 链接。</block>
   <block id="cd2403e73e741b8001cced6aa04fa472" category="list-text">登录到您的 NetApp 支持帐户。您将直接转到 Active IQ 中的存储节点页面。</block>
   <block id="62fcdd34f555d8c4a7cdda3b94732063" category="section-title">正在查询风险</block>
   <block id="0ba8adc53c16a6ffe145978e834b02f8" category="section-title">信息板</block>
@@ -2785,12 +2741,9 @@
   <block id="96633c4bbe4066df6cca5184b0c3138c" category="doc">配置数据收集器</block>
   <block id="08c86f7c6085b75b443831ac2339b9eb" category="list-text">选择代理访问密钥。</block>
   <block id="3305ac26b15ec00c4372c85a08bb7042" category="summary">支持的数据收集器列表。</block>
-  <block id="9a08f57372dad69b83256b6cf3081404" category="doc">Cloud Insights 数据收集器列表</block>
-  <block id="16d256dc1b7b58638a9529e552435cb7" category="paragraph">Cloud Insights 支持许多供应商和服务提供的各种数据收集器。</block>
   <block id="247727b698ccc6204ad7466cac97b566" category="paragraph">数据收集器按以下类型进行分类：</block>
   <block id="3688337d7dae83e1ae45c29303993fc2" category="list-text">基础架构：从存储阵列，交换机，虚拟机管理程序或备份设备等供应商设备中获取。</block>
   <block id="63bee0ce61faf34ba2eb5eaf1772a185" category="list-text">服务：从 Kubernetes 或 Docker 等服务中获取。也称为 _Integration_ 。</block>
-  <block id="8d1b7e78620c4edd1b1cb04c457422e7" category="paragraph">Cloud Insights 支持的数据收集器的按字母顺序列表：</block>
   <block id="2f704538f6c9d6459a97314be98124e2" category="cell">数据收集器</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">类型</block>
   <block id="c2ba7e785c49050f48da9aacc45c2b85" category="cell">服务</block>
@@ -3356,7 +3309,6 @@
   <block id="64f2993184c14c565d6ba3100a20ca05" category="cell">身份验证缓存命中身份验证缓存未命中数据库读取数据库写入数据库打开打开操作系统文件最大请求时间最小请求时间 httpd 请求方法复制 httpd 请求方法删除 httpd 请求方法获取 httpd 请求方法头 httpd 请求方法 POST httpd 请求方法 PUT 状态代码 200 状态代码 201 状态代码 202 状态代码 301 状态代码 304 状态代码 400 状态代码 401 状态代码 403 状态代码 404 状态代码 405 状态代码 409 状态代码 4.12 状态代码 500</block>
   <block id="f25f4da5abc374ffca5bdff0513c85b9" category="summary">Data Collector 采集状态</block>
   <block id="83da84ba526ae13c937b4eca7d4d6997" category="doc">确定数据收集器采集状态</block>
-  <block id="9659bb352bce7bbad8d32a5d1436378d" category="paragraph">由于数据收集器是 Cloud Insights 的主要信息源，因此您必须确保它们保持运行状态。</block>
   <block id="d6937e3df97b816e56ded218889958b1" category="paragraph">数据收集器状态显示在任何资产页面的右上角，显示为消息 "acquired N minutes agy" ，其中 N 表示资产数据收集器的最新采集时间。同时，还会显示采集时间 / 日期。</block>
   <block id="64253e1fcc0aae98a2a4e076304feca3" category="paragraph">单击此消息将显示一个表，其中包含数据收集器名称，状态和上次成功采集时间。如果您以管理员身份登录，则单击表中的数据收集器名称链接将转到该数据收集器的详细信息页面。</block>
   <block id="001dce6e76a3b3b754db59e538750dd8" category="doc">Redis Data Collector</block>
@@ -3365,7 +3317,6 @@
   <block id="6f6c7e0bd9df07afbd8f27f303fba934" category="inline-link-macro">Redis 文档</block>
   <block id="ae042fc4879ccb38022624b37b7c15bd" category="paragraph">有关信息，请参见 <block ref="f84fd6d9d2467b4d3f4dd370ee4175c5" category="inline-link-macro-rx"></block>。</block>
   <block id="e111446745a1825b862f8727ae63bce4" category="cell">Redis</block>
-  <block id="07d8a20311bb7ef0fdd0a319b9667a65" category="summary">Cloud Insights 中的资产页面摘要部分概述。</block>
   <block id="29128cb5215fb2e80e1ee7a20fe86126" category="doc">资产页面摘要部分</block>
   <block id="ce7951793151a0f69487b414bdd8b498" category="paragraph">注意：摘要部分中显示的信息因您正在查看的资产类型而异。</block>
   <block id="77e5be94869a677b15024b30a6f71dbd" category="paragraph">您可以单击任何资产链接以查看其资产页面。例如，如果您正在查看存储节点，则可以单击某个链接以查看与其关联的存储的资产页面。</block>
@@ -3376,14 +3327,12 @@
   <block id="575c9466566e751977f9292115eb4416" category="paragraph">拓扑可用于以下资产类型：</block>
   <block id="f68bfcaa8f466fab04e83d0324cf5ddb" category="summary">自动设备解析有助于您准确跟踪环境中的性能和清单。</block>
   <block id="652c7f9f62814b7bef155e603c66cf80" category="doc">自动设备解析概述</block>
-  <block id="17d5e27deb6e020cf193c0bac4cb29b1" category="paragraph">您需要确定要使用 Cloud Insights 监控的所有设备。要准确跟踪环境中的性能和清单，需要进行标识。通常，在您的环境中发现的大多数设备都是通过 _Automatic Device resolution _ 来标识的。</block>
   <block id="886acc65f9d8a83db54bcb8c080e5bd3" category="paragraph">配置数据收集器后，系统将确定环境中的设备，包括交换机，存储阵列以及虚拟机管理程序和 VM 的虚拟基础架构。但是，这通常并不能识别您环境中的 100% 设备。</block>
   <block id="eb540e24eeed2c1bd302626c15930ba9" category="paragraph">配置数据收集器类型的设备后，最佳实践是利用设备解析规则来帮助确定环境中其余未知设备。设备解析有助于将未知设备解析为以下设备类型：</block>
   <block id="fb04a8a878080ea8c029ce81da959c55" category="list-text">物理主机</block>
   <block id="a390959c210a5bb0121c5a6ddb212a48" category="list-text">存储阵列</block>
   <block id="339b6fc9a3f07b3c7c1163a94575b69a" category="list-text">磁带</block>
   <block id="0c1402fd06dfee899cf7242173fe4072" category="paragraph">设备解析后仍为未知的设备被视为通用设备，您也可以在查询和信息板上显示这些设备。</block>
-  <block id="afb114cd68723466101a7b03cbc7cc6c" category="paragraph">然后，创建的规则将自动识别添加到环境中的具有类似属性的新设备。在某些情况下，设备解析还允许手动标识，绕过 Cloud Insights 中未发现的设备的设备解析规则。</block>
   <block id="b6f270b8f672d86446f73aff850cc503" category="paragraph">设备标识不完整可能会导致以下问题：</block>
   <block id="83d0aa8b7352bbb7f2adeaadfac4275c" category="list-text">路径不完整</block>
   <block id="912955e0fcea2c7fb6c97abdb885d27c" category="list-text">未标识的多路径连接</block>
@@ -3513,7 +3462,6 @@
   <block id="0d2b2f3c45dbaf28541a7d9396f19c09" category="list-text">显示信息板时，单击小工具上的 * 选项 * 按钮，然后在菜单中选择 * 显示图例 * 。</block>
   <block id="a3a2f93a19a918920bc0e61acda30756" category="paragraph">显示图例时，如果图例指示的资产登录页面可以导航到，则该图例将显示为指向该资产页面的链接。如果图例显示 " 全部 " ，则单击此链接将显示与小工具中的第一个查询对应的查询页面。</block>
   <block id="59a039b9bdde97f886d094af635410bd" category="section-title">转变指标</block>
-  <block id="d66e199a7109fa5e8cb92ddc071162c4" category="paragraph">Cloud Insights 在小工具中为某些指标提供了不同的 * 转换 * 选项（具体而言，称为 " 自定义 " 或集成指标的指标，例如来自 Kubernetes ， ONTAP 高级数据， Telegraf 插件等），允许您以多种方式显示数据。向小工具添加可转换指标时，系统会显示一个下拉列表，其中提供了以下转换选项：</block>
   <block id="8dff9b3275d903bce911a227cbed3634" category="list-text">数据显示为 " 是 " ，不会进行任何操作。</block>
   <block id="dcb66ff6e4a2517ade22183779939c9d" category="list-text">速率</block>
   <block id="9b3e9f4a548e4f107c31fe2a21eed22a" category="list-text">当前值除以自上次观察以来的时间范围。</block>
@@ -3677,8 +3625,6 @@
   <block id="670616244b43ae6baa3f7977bae769d9" category="inline-image-macro">包含和不包含格式的单值小工具</block>
   <block id="7cf514f5919cb28bfec05b4c4f4c46c6" category="paragraph">单击单值小工具或量表小工具中的链接将显示与此小工具中的第一个查询对应的查询页面。</block>
   <block id="8887fb0da398cbd5a40ebbe4bb001e9e" category="section-title">选择用于显示数据的单位</block>
-  <block id="544d699124d6f6d0209bb6641b0b3bd4" category="paragraph">信息板上的大多数小工具都允许您指定显示值的单位，例如 _migums_ ， _migents_ ， _percentage _ ， _mms （ ms ） _ ， 等。在许多情况下， Cloud Insights 知道所采集数据的最佳格式。如果不知道最佳格式，您可以设置所需的格式。</block>
-  <block id="cc55a3a8eac56ea30ca27b963b224a0c" category="paragraph">在下面的折线图示例中，为小工具选择的数据已知为 _bytes_ （基本 IEC 数据单元：请参见下表），因此基本单元会自动选择为 "byte （ B ） " 。但是，数据值足够大，可以显示为吉字节（ GiB ），因此默认情况下， Cloud Insights 会将这些值自动格式化为吉字节（ GiB ）。图中的 Y 轴显示 "GiB" 作为显示单位，所有值均以该单位显示。</block>
   <block id="9c5fc6548d2d02da447f14ea71304a18" category="inline-image-macro">以千兆字节为单位显示的基本单位字节，宽 = 640</block>
   <block id="6dfd8abfbea3a77fb93a2f7c41bb1321" category="paragraph"><block ref="6dfd8abfbea3a77fb93a2f7c41bb1321" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c57c37eff4dd444e95f9c9552b8b7f60" category="paragraph">如果要以其他单位显示图形，可以选择其他格式来显示值。由于本示例中的基本单位是 _byte_ ，因此您可以从支持的 " 基于字节 " 格式中进行选择：位（ b ），字节（ B ），千字节（ KiB ），兆字节（ MiB ），千字节（ GiB ）。Y 轴标签和值会根据您选择的格式进行更改。</block>
@@ -3690,8 +3636,6 @@
   <block id="de41ef208cfaf87a5a5ff3ac0c977f7b" category="paragraph"><block ref="de41ef208cfaf87a5a5ff3ac0c977f7b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="63887a8f357f208852bb207d3e2a20a0" category="paragraph">要清除设置并重新开始，请单击 * 重置默认值 * 。</block>
   <block id="37e0d3752b5baa80b22de7d284e9c574" category="section-title">关于自动格式化的一句话</block>
-  <block id="e93bbb02ffa04092e4c539a2a5763bde" category="paragraph">大多数指标都是由数据收集器以最小单位报告的，例如，以 1 ， 234 ， 567 ， 890 字节等整数形式报告。默认情况下， Cloud Insights 会自动为可读性最高的显示设置值格式。例如， 1 ， 234 ， 567 ， 890 字节的数据值将自动格式化为 1.23 _Gibibytes_ 。您可以选择以其他格式显示，例如 _mebibybes_ 。此时将相应地显示此值。</block>
-  <block id="e774349e9e2fc82d40139ee4ff483f88" category="admonition">Cloud Insights 使用美国英语数字命名标准。美国的 " 十亿 " 相当于 " 千亿 " 。</block>
   <block id="8a673ad2bbf188cd3419def00657255d" category="section-title">包含多个查询的小工具</block>
   <block id="9f663564e5048592524182394ba9244c" category="paragraph">如果您有一个时间序列小工具（即，折线，样条，区域，堆积区），其中包含两个查询，这两个查询都绘制了主 Y 轴，则基准单位不会显示在 Y 轴的顶部。但是，如果小工具在主 Y 轴上有一个查询，在二级 Y 轴上有一个查询，则会显示每个小工具的基本单位。</block>
   <block id="3842d9022c9b5345af18ad89f0ed6f04" category="inline-image-macro">两个 Y 轴上的单位</block>
@@ -3741,7 +3685,6 @@
   <block id="5ce155ac62ee03701f7a117676333008" category="cell">2 小时</block>
   <block id="b7ead3a19a9e810bd9a56c2d0ba0970d" category="paragraph">每个小工具都会在小工具的右上角显示其自动刷新间隔。</block>
   <block id="2d5591e725889a349c977cc4e7cae6db" category="paragraph">自定义信息板时间范围不支持自动刷新。</block>
-  <block id="b9aa7ebd34479fa35d4742937dc6d82d" category="paragraph">与 * 电视模式 * 结合使用时，自动刷新功能可在信息板或资产页面上近乎实时地显示数据。TV 模式提供了一个清晰的显示；导航菜单将被隐藏，从而为数据显示提供更多屏幕空间，编辑按钮也是一样。TV 模式会忽略典型的 Cloud Insights 超时，使显示保持活动状态，直到通过授权安全协议手动或自动注销为止。</block>
   <block id="ab725dcaf8aab4f9267b993fc1b48570" category="paragraph">您可以单击右上角的暂停按钮暂时暂停自动刷新。暂停后，信息板时间范围字段将显示暂停数据的活动时间范围。在暂停自动刷新期间，仍在采集和更新您的数据。单击恢复按钮继续自动刷新数据。</block>
   <block id="8ab7fb1354818b117ddd5a7e3a5381e9" category="inline-image-macro">自动刷新已暂停</block>
   <block id="8ce131e8456d9b17b2e6beb2825e1f49" category="paragraph"><block ref="8ce131e8456d9b17b2e6beb2825e1f49" category="inline-image-macro-rx" type="image"></block></block>
@@ -3756,7 +3699,6 @@
   <block id="be8dec6767693b950aba100386430036" category="list-text">要添加单个信息板，请单击信息板右侧的菜单，然后选择 _Add to Group_ 。</block>
   <block id="b34295eda497f890ecd6d31542fb89cb" category="list-text">要将多个信息板添加到一个组中，请通过单击每个信息板旁边的复选框来选择这些信息板，然后单击 * 批量操作 * 按钮并选择 _Add to Group_ 。</block>
   <block id="c9ddb140b7bb858e872e0d9eb3ac3255" category="paragraph">通过选择 _Remove from Group_ ，以相同的方式从当前组中删除信息板。您不能从 _All Dashboards_ 或 _My Dashboards_ 组中删除信息板。</block>
-  <block id="c4a3d911009a39f37f83869783055226" category="admonition">从组中删除信息板不会从 Cloud Insights 中删除信息板。要完全删除信息板，请选择信息板并单击 _Delete_ 。此操作会将其从其所属的任何组中删除，并且任何用户都无法再使用它。</block>
   <block id="8586ee80873d7b4eda60b14fe2702a4a" category="section-title">固定您喜爱的信息板</block>
   <block id="1637020c87c8643cd14513152af85aac" category="paragraph">您可以通过将收藏的信息板固定到信息板列表顶部来进一步管理信息板。要固定信息板，只需单击将鼠标悬停在任意列表中的信息板上时显示的拇指锁定按钮即可。</block>
   <block id="f1008575ca85fdeed9dfc1def97f3af9" category="paragraph">信息板固定 / 取消固定是单个用户首选项，与信息板所属的组无关。</block>
@@ -4006,21 +3948,15 @@
   <block id="d673c4f593dbf920c9f4bc8e56bf17d5" category="inline-link-macro">查找所需资产： Querying</block>
   <block id="381137dc478970e10f9007a45be6554a" category="inline-link-macro">查看所需数据：信息板</block>
   <block id="d17aef0dcce543eeda80f0586306b127" category="inline-link-macro">* 订阅 *</block>
-  <block id="81c7383b650665d348221da3b0b08e7f" category="summary">Cloud Insights 提供了一些教程，用于向您展示如何执行许多任务。</block>
   <block id="5b425cd08035f29c3dad5d45f1d2ea6e" category="doc">功能教程</block>
-  <block id="66dc6c98ce15c9bec5a1bac245e6f799" category="paragraph">Cloud Insights 提供了许多有用的功能，可帮助您快速轻松地查找数据，解决问题并深入了解企业环境。通过功能强大的查询轻松查找数据，在信息板中直观显示数据，并针对您设置的数据阈值发送电子邮件警报。</block>
-  <block id="6a724de2bb90dc111e97626ecb3108c5" category="paragraph">Cloud Insights 提供了许多视频教程，可帮助您了解这些功能并更好地实施业务洞察力策略。有权访问 Cloud Insights 环境的每个用户都可以利用这些教程。</block>
   <block id="0b79795d3efc95b9976c7c5b933afce2" category="section-title">简介</block>
-  <block id="99ef70f6f3250f1fadde641675fed420" category="paragraph">观看简要教程，了解 Cloud Insights 的工作原理。</block>
   <block id="7dc1d63676b307452b778906ec63a727" category="section-title">检查清单和视频教程</block>
-  <block id="6b8fe8afd1e5e4ce5664f3b9e282dece" category="paragraph">Cloud Insights 站点上显示的 * 启动检查清单 * 包含几个有用的任务和概念的列表。在检查清单中选择一项将转到该概念对应的 Cloud Insights 页面。例如，单击 _Create a Dashboard_ 项可打开 Cloud Insights * Dashboards* 页面。</block>
   <block id="76139ab832813477c275f09a383293c0" category="paragraph">页面顶部是一个视频教程链接，用于显示如何创建信息板。您可以根据需要多次查看此视频，直到单击 _got it ！不要再显示此内容 _ 链接。每次转到 " 信息板 " 页面时，都会显示此视频，直到您将其取消为止。</block>
   <block id="221ebbda47c384ed7364c0d57a0a4169" category="inline-image-macro">观看视频链接</block>
   <block id="b3526f19a52e79f7273b63c25d65a40e" category="paragraph"><block ref="b3526f19a52e79f7273b63c25d65a40e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0aac9dc0b59278dac24dcb96f42f6674" category="paragraph">至少观看一次视频后，检查清单中的 _Create a Dashboard_ 项将被选中，表示您已完成此教程。然后，您可以继续学习下一个教程。</block>
   <block id="02bf91ef19eb660db8593e97292dde1c" category="admonition">您可以按自己喜欢的顺序查看教程，也可以根据需要多次查看，直到被取消为止。</block>
   <block id="2d7a0a906729c332280875fa9c1ea09c" category="section-title">取消检查清单</block>
-  <block id="bbb4a1b3033324321c2b07a4e4939be7" category="paragraph">启动检查清单将显示在您的站点上，直到您单击检查清单底部的 _Do don't Show this ages_ 链接为止。即使忽略了检查清单，每个相应的 Cloud Insights 页面上仍会显示教程，直到您从消息标题栏中取消每个教程为止。</block>
   <block id="ec7cecc5c967770303bd0879fae9fa97" category="section-title">查看教程</block>
   <block id="dd0d7945a3c6cc8c8a340c913a130d8d" category="section-title">正在查询数据</block>
   <block id="760d211d5ae560f52f862c13806f5865" category="section-title">创建信息板</block>
@@ -4075,12 +4011,8 @@
   <block id="b0441ab0b89b994706e83faa77bbe107" category="paragraph"><block ref="5924baf98227cb4c4a870a2369035bbd" category="inline-link-macro-rx"></block>
 <block ref="de1cde84399fb2a6056b099cf302293f" category="inline-link-macro-rx"></block></block>
   <block id="b1dcce069d63ced71a6dcf2e76c2ac23" category="inline-link">Cloud Insights 支持文档</block>
-  <block id="c7f969b5afde9ddd59008de6e90242fd" category="summary">在本节中，您将找到一些提示和技巧，可帮助您解决 Cloud Insights 环境中的问题。</block>
-  <block id="1da3ee5df88bebf25333c76ca47fa680" category="doc">对 Cloud Insights 问题进行故障排除</block>
-  <block id="595d5a6ca6bc47b43d6f21ee94bcfc0e" category="paragraph">本节中的主题提供了在 Cloud Insights 环境出现问题时的故障排除建议。</block>
   <block id="651139665bc5c206486de63f5570eaa4" category="paragraph">单击左侧菜单中的某个类别可查看该类别的故障排除信息。</block>
   <block id="434990c8a25d2be94863561ae98bd682" category="inline-link-macro">支持</block>
-  <block id="95e51c7c04a63a565b8ae1bf3258cf9e" category="paragraph">您可以找到更多故障排除和其他信息 <block ref="f3a940944ed2b77ff0757ee9675312e7" category="inline-link-macro-rx"></block> Cloud Insights * 帮助 &gt; 支持 * 页面上的信息。</block>
   <block id="13b9b5c6c0fb1445ca79a2155f4dc602" category="summary">Hadoop 数据收集器配置</block>
   <block id="38af629ca8cce22e7b7e641b96f8197b" category="doc">Hadoop Data Collector</block>
   <block id="e844ff1ebc3eef465aed7960b58160c3" category="inline-image-macro">Hadoop 配置</block>
@@ -4283,7 +4215,6 @@
   <block id="a9056fadee2a71f2b772c5b13ca6a7cd" category="paragraph">要更改分配的应用程序，或者分配应用程序或其他应用程序，请下拉 * 应用程序 * 列表并选择要分配给资产的应用程序。您可以键入以搜索应用程序，也可以从列表中选择一个应用程序。</block>
   <block id="c0c2054f108c67bf07db8edb2e5f4577" category="paragraph">要删除应用程序，请下拉应用程序列表并取消选中该应用程序。</block>
   <block id="75fe6daf02320a7a9ee762011885ad71" category="section-title">使用 User Data 部分分配或修改标注</block>
-  <block id="d98f3dd7446db00a31cb738430ad7c20" category="paragraph">在自定义 Cloud Insights 以根据企业要求跟踪数据时，您可以定义称为标注的专用注释并将其分配给资产。资产页面的 "User Data" 部分显示分配给资产的标注，还可以用于更改分配给该资产的标注。</block>
   <block id="3640c2deb76d280217ae871d65f34c63" category="list-text">要向资产添加标注，请在资产页面的 User Data 部分中单击 * + Annotation * 。</block>
   <block id="7557bd62e953fb4d48f07977151ea94f" category="list-text">单击保存。</block>
   <block id="dd125cab0ba3f21f8ca824dc7a729268" category="paragraph">标注将分配给资产。您可以稍后使用查询按标注筛选资产。</block>
@@ -4831,9 +4762,7 @@
   <block id="5c97ae1ca6e09dea931e3a91bbab11bb" category="cell">HTTPS 通信端口</block>
   <block id="483009c845c12271e1af9e7688f6a2ad" category="cell">用于与 RHEV-HTTPS 通信的端口</block>
   <block id="f3affd068b3b1c8b1c14040de68e962f" category="doc">正则表达式示例</block>
-  <block id="6e56e07c6a060470f30f55387ae47aef" category="paragraph">如果您选择正则表达式方法作为源命名策略，则可以使用正则表达式示例作为在 Cloud Insights 自动解析方法中使用的表达式的参考。</block>
   <block id="29fcd384116085fb186a63a78e0b427c" category="section-title">设置正则表达式的格式</block>
-  <block id="6eceb3c9a6a31e416295ccd0bc808749" category="paragraph">在为 Cloud Insights 自动解析创建正则表达式时，您可以通过在名为 _format_ 的字段中输入值来配置输出格式。</block>
   <block id="27bed4f48c0572f7db0283ee7a726fe8" category="paragraph">默认设置为 \1 ，这意味着与正则表达式匹配的分区名称将替换为正则表达式创建的第一个变量的内容。在正则表达式中，变量值由括号语句创建。如果出现多个括号语句，则变量将从左到右以数字形式引用。这些变量可以按任意顺序以输出格式使用。通过将常量文本添加到格式字段，也可以在输出中插入常量文本。</block>
   <block id="953494e81bcdc49b5ba6d90cca70794e" category="paragraph">例如，根据此分区命名约定，您可能具有以下分区名称：</block>
   <block id="eb12761d3747588f445ba4a991bad602" category="list-text">S123_Miami_hostname1_filer_fc1</block>
@@ -4935,7 +4864,6 @@
   <block id="e8db211169651e6f9c932a841a4efe25" category="paragraph">^ （周长或记号） * 内方括号 * 将否定表达式，例如， [^FF] 表示除大写或小写 F 以外的任何内容，而 [^a-z] 表示除小写 a 到 z 以外的所有内容，在上述情况下，除 _ 以外的任何内容。format 语句将 "-" 添加到输出主机名中。</block>
   <block id="49eebef5fc03c181abe50e8ac9ba8d43" category="paragraph">* 分区： * mhs_apps44_d_A_10a0_0429</block>
   <block id="5618ec066e657e6ffd45163c0a7a3cc9" category="paragraph">* 主机名： * mhs-apps44-d</block>
-  <block id="89f9c722a29b74cffe37426ad75f33e0" category="paragraph">* 格式： * （^ _]+ ） _ （^ ） .* 格式（在 Cloud Insights 中）： \1-\2 （ [^ _]+ ） _ （^ _]+ ） _ （（ _]+ ）。 * 格式（在 Cloud Insights 中）： \1-\2-\3</block>
   <block id="a67fd3ed749ccfc3d39b84b143d59aae" category="section-title">示例 13</block>
   <block id="8ec5b00d8e9c513bebcde49493909a5a" category="paragraph">在此示例中，存储别名以 "\" 分隔，表达式需要使用 "\\" 来定义字符串中实际正在使用 "\" ，而这些字符串不属于表达式本身。</block>
   <block id="f643dab2031d4677d444418a50ecb694" category="paragraph">* 存储别名： * \hosts\E2DOC01C1\E2DOC01N1</block>
@@ -5089,7 +5017,6 @@
   <block id="c409b03ce5b8004d77238d6745f5cce9" category="cell">用于连接到联想 HX 的 TCP 端口。默认值为 9440. 。</block>
   <block id="e6b366c925b4cac6b44a37f5f479307f" category="cell">清单轮询间隔</block>
   <block id="df6a21f670066b82b5409a049dec0efe" category="doc">自动响应策略</block>
-  <block id="8cddd68e9275728e34c400e58a9183d1" category="summary">Audit 可提供 Cloud Insights 系统中系统和用户活动的视图。</block>
   <block id="78f48b8a03facd61000db8f7ae6f9227" category="doc">审核</block>
   <block id="879d66cd75bfedef98a5f78c91d00905" category="section-title">显示审核条目</block>
   <block id="f117b445f62182f9fb78126941f7d60a" category="paragraph">可通过多种不同方式查看审核条目：</block>
@@ -5171,7 +5098,6 @@
   <block id="53d62f54f4323b076c538750bbea9371" category="list-text">单击要删除的代理的选项菜单。</block>
   <block id="e08b25c0c2d46e96d0ac5d6faca80bbf" category="paragraph">系统将显示 * 删除代理 * 页面。</block>
   <block id="bd69c8c7685e8cb8cbe42da9c5c9d5e0" category="list-text">单击 * 删除 * 确认删除。</block>
-  <block id="6ced38f7d8372fb9ae8761297e3a7cee" category="paragraph">由于 Cloud Insights 会将数据保留一段时间（按版本），因此可能会处理数千个数据点。因此，数据可能会先进行缩减采样，然后再显示在图表和表中。</block>
   <block id="226c03c443192cffffa4a924b4ccffde" category="cell">版本</block>
   <block id="876f04f443f4acb1176812eb95c5206c" category="section-title">数据缩减采样</block>
   <block id="832befb5fcd1bf513bc9413c7b9a2e13" category="paragraph">* 下采样 * 可提供图表中数据的统计近似值，让您可以高效地查看数据，而无需显示每个数据点，同时还可以准确地查看收集的数据。</block>
@@ -5187,7 +5113,6 @@
   <block id="1b59194b7f83d1b9f7c8f6c8b95f73b0" category="paragraph">由于我们选择的时间范围小于 7 天，并且要绘制的数据点少于 1 ， 000 个，因此显示的数据为实际数据。不会发生缩减采样。</block>
   <block id="63fbd3cd056c3f311a965ba53124aa1b" category="inline-image-macro">无下抽样</block>
   <block id="abb49dbb2174a9d9b3ca4e4aec43a737" category="paragraph"><block ref="abb49dbb2174a9d9b3ca4e4aec43a737" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f9887e610719e8fb427e5f65a9f3b26e" category="paragraph">但是，如果要通过在资产页面时间选择器上选择 30d 来查看数据， 或者，如果将自定义时间范围设置为 7 天以上（或者如果 Cloud Insights 在选定时间段内收集了 1 ， 000 个以上的数据样本），则会在显示数据之前对数据进行缩减采样。放大缩减采样图表时，屏幕将继续显示近似数据。</block>
   <block id="89d0f4224105c74f5ba553c8e1d6eae9" category="admonition">放大缩减采样的图表时，缩放为数字缩放。此时将继续显示近似数据。</block>
   <block id="60feee952ab2bc7f5b90562b3201bfd8" category="paragraph">您可以在下图中看到这一点，其中时间范围首先设置为 30 天，然后放大图表以显示与上述相同的 24 小时时间段。</block>
   <block id="917d8a1ae9d36081db734856e16d57f7" category="inline-image-macro">缩减采样</block>
@@ -5230,8 +5155,6 @@
   <block id="30d41b0aa6a845f67fdda29577dfc2e7" category="doc">信息板和小工具的最佳实践</block>
   <block id="d012476aa8fdb87aabf9587f68381dc1" category="paragraph">帮助您充分利用信息板和小工具的强大功能的提示和技巧。</block>
   <block id="d934b755bc4f16d28bfbe3aefa9c9927" category="section-title">查找正确的指标</block>
-  <block id="5130b21031ccad28c4211013e95525cf" category="paragraph">Cloud Insights 会使用有时因数据收集器而异的名称来采集计数器和指标。</block>
-  <block id="18b7dd989d250b86f1143d178cee117d" category="paragraph">在为信息板小工具搜索合适的指标或计数器时，请记住，您所需的指标可能与您正在考虑的指标名称不同。虽然 Cloud Insights 中的下拉列表通常按字母顺序排列，但有时某个术语可能不会显示在您认为应该显示的列表中。例如， " 原始容量 " 和 " 已用容量 " 等术语不会显示在大多数列表中。</block>
   <block id="b20ec3101e268b1e96921e05f0b6591f" category="paragraph">* 最佳实践 * ：在 Filter by 等字段或列选择器等位置中使用搜索功能查找所需内容。例如，搜索 "cap" 将显示名称中包含 "capacity" 的所有指标，无论这些指标在列表中的哪个位置。然后，您可以轻松地从较短的列表中选择所需的指标。</block>
   <block id="085fe6b732602e100988fd61c10a4a3e" category="paragraph">以下是您在搜索指标时可以尝试使用的一些备用短语：</block>
   <block id="6f5dff1913b7ce19d92d1d49c3377bba" category="cell">要查找的内容：</block>
@@ -5342,7 +5265,6 @@
   <block id="ba47f8d8510049a6a646bcaab9868c9b" category="cell">" 无法从 ZAPI 收集性能 " 错误</block>
   <block id="60c7f1e49f405a1836fb656a8fffe2aa" category="cell">这通常是因为性能统计未运行。在每个节点上尝试以下命令： &gt;_system node systemshell -node * -command "spmctl -h cmd – stop ； spmctl -h cmd – exec</block>
   <block id="d88662e1a105ca69f2e4f75dda790104" category="summary">一般数据收集器说明</block>
-  <block id="6fb5f9ef43ff68eda49ae0153f4e20c7" category="paragraph">您可以在 Cloud Insights 环境中配置数据收集器，以便从数据中心中的设备收集数据。</block>
   <block id="2214d2294c225c2125b0860b83519fed" category="list-text">您必须先配置采集单元，然后才能开始收集数据。</block>
   <block id="e1408e9d63eaa4ab5d669ec525031645" category="list-text">您需要从中收集数据的设备的凭据。</block>
   <block id="a7470cf0d04f7133bf593832f6b10367" category="list-text">要从中收集数据的所有设备都需要设备网络地址，帐户信息和密码。</block>
@@ -5369,7 +5291,6 @@
   <block id="12007e1d59f4d09c87dbe2c438256244" category="cell">目标</block>
   <block id="b136ef5f6a01d816991fe3cf7a6ac763" category="cell">TCP</block>
   <block id="1e5d29d467aa39ff7343d30dc2f8de5b" category="cell">&lt;site_name&gt;.cs01.cloudinsights.netapp.com &lt;site_name&gt;.c01.cloudinsights.netapp.com &lt;site_name&gt;.c02.cloudinsights.netapp.com</block>
-  <block id="800d899720a1567094af6346ee35787a" category="cell">访问 Cloud Insights</block>
   <block id="4ce4e8664144d2ca2f89818a65da41cc" category="cell">gateway.c01.cloudinsights.netapp.com agentlogin.cs01.cloudinsights.netapp.com</block>
   <block id="d4fedc7f035f96436f1598f9626876e2" category="cell">访问身份验证服务</block>
   <block id="c4bd63902a8959d209469ec987ed87db" category="cell">&lt;site_name&gt;.cs01-eu-1.cloudinsights.netapp.com &lt;site_name&gt;.c01-eu-1.cloudinsights.netapp.com &lt;site_name&gt;.c02-eu-1.cloudinsights.netapp.com</block>
@@ -5398,7 +5319,6 @@
   <block id="4f4f1acccf64ba28d2afa3aec1fb206b" category="cell">病毒扫描</block>
   <block id="f903a03dee9b7e1bc20944e4094e208c" category="cell">在安装期间，您必须完全禁用所有病毒扫描程序。安装后，采集单元软件使用的路径必须从病毒扫描中排除。</block>
   <block id="00aa35cd2ad7f27d6f122e0e11fbfc82" category="section-title">关于规模估算</block>
-  <block id="5a54a6a63c3925e4e34795f96e2f4aec" category="paragraph">您可以先使用一个仅包含 8 GB 内存和 50 GB 磁盘空间的 Cloud Insights 采集单元，但是，对于较大的环境，您应该问自己以下问题：</block>
   <block id="f44484d5ce5419fb11093a3c170b223c" category="paragraph">您是否希望：</block>
   <block id="e0dc2ed956b3711e722d965954939344" category="list-text">在此采集单元上总共部署 75 个或更多数据收集器？</block>
   <block id="11bb1da5c9cf0248245ce5b24119d183" category="paragraph">有关其他规模估算问题，请联系 NetApp 支持部门。</block>
@@ -5494,9 +5414,7 @@
   <block id="89ec4e12f0fff9f1c5f297f7ac6e9a24" category="paragraph">XIV Capacity by Array 报告显示了该阵列的已用和未用容量。</block>
   <block id="0b4d8c251e2dfb1eead179c1134336fd" category="section-title">XIV 容量，按池计算</block>
   <block id="dff813d382afd170b121f4a3001876f2" category="paragraph">"XIV Capacity by Pool" 报告显示了存储池的已用和未用容量。</block>
-  <block id="9762d6effdc4ec8c70238aef8eebc7c7" category="summary">Cloud Insights 中的信息板概述。</block>
   <block id="36d33d9f788712f837a1b7b78bd38df7" category="doc">信息板概述</block>
-  <block id="2e3abda56100e1b82e53593a641dfd55" category="paragraph">Cloud Insights 允许用户使用各种小工具创建自定义信息板，从而为基础架构数据创建操作视图，每个小工具都可以灵活地显示和绘制数据图表。</block>
   <block id="4445b92d47c6064291aa06a6396a0733" category="admonition">这些部分中的示例仅供说明之用，并不涵盖所有可能的情形。本文中的概念和步骤可用于创建您自己的信息板，以突出显示特定于您的特定需求的数据。</block>
   <block id="1da60b5bc1bcd40bbbacad066fdf2da8" category="paragraph">您可以在以下两个位置之一创建一个新信息板：</block>
   <block id="c6bc321a9cd383f150b99f1408230ee0" category="list-text">* 信息板 &gt;+New dashboard]*</block>
@@ -5842,7 +5760,6 @@
   <block id="04d99d40563d55904f96d7cf5a364c93" category="paragraph">创建或修改监控器时，您始终可以覆盖单个监控器的全局收件人列表。</block>
   <block id="4e2217a1fba6817d301befaa05659074" category="summary">您可以导入建议的信息板，以协助回答业务洞察力问题。</block>
   <block id="cfa4bbfe8fe25421b55d6bc77170da89" category="doc">从信息板库导入</block>
-  <block id="75ff2ecca247e32bd11a679fc97fbdab" category="paragraph">Cloud Insights 提供了许多建议的信息板，用于提供有关数据的业务洞察力。每个信息板都包含一些小工具，这些小工具旨在帮助问题解答您解决与环境中当前收集的数据相关的特定问题或特定问题。</block>
   <block id="62a23650084673f5c844edf6588b4cbc" category="paragraph">要从库导入信息板，请执行以下操作：</block>
   <block id="bb6ec7619f5b7d24eeed488d054902d5" category="list-text">单击 * + 从图库 *</block>
   <block id="58e1b019dfb18a656bddd772932b2be5" category="paragraph">此时将显示 * 建议的信息板 * 列表。每个信息板的名称都包含一个特定问题，信息板可以帮助您解决这些问题。可通过信息板帮助您了解有关不同类型对象的问题解答问题，包括 AWS ， NetApp ，存储， VMware ， 和其他</block>
@@ -6084,15 +6001,12 @@
   <block id="f4300936bf66917c778b4197c0a05315" category="cell">请尝试在 Chrome 中使用匿名模式，或者清除浏览器历史记录， Cookie 和缓存。请尝试使用其他浏览器配置文件（例如 Chrome - 添加人员）。</block>
   <block id="c02b35445d4efc8848ff73b7c8b709df" category="paragraph">有关详细信息，请参见<block ref="6d3eb8a6271eaafdfd21a62ff90e8f46" category="inline-link-rx"></block>。</block>
   <block id="fc1a24cc0d6d7c3e25a51a3d66a9d033" category="inline-link-macro">单点登录（ SSO ）授权</block>
-  <block id="9e81fe47cff9df70ea875a449221eb62" category="paragraph">您可以使用具有管理员权限的帐户来创建或修改用户帐户。每个用户帐户都会从以下权限级别为每个 Cloud Insights 功能分配一个角色。</block>
   <block id="305de530147912d72a50568ee4d65d26" category="cell">帐户所有者</block>
   <block id="3ef783c8ab0b0ca9f4834b6aa0f8fdf6" category="cell">可以执行所有 Cloud Secure 功能，包括警报，取证，数据收集器，自动响应策略和 Cloud Secure API 等功能。管理员还可以邀请其他用户，但只能分配 Cloud Secure 角色。</block>
   <block id="9912eb0cfbb27a071ceaf89334fe4dbc" category="cell">可以查看和修改信息板，查询，警报，标注，标注规则， 和应用程序，并管理设备解析。</block>
   <block id="70fb52e38580a301b191eb366ac4d029" category="cell">可以执行所有来宾 / 使用者功能以及创建和管理报告和信息板。</block>
   <block id="76da35e3189c47f58355f9b7d58e7e97" category="cell">对资产页面，信息板，警报具有只读访问权限，并且可以查看和运行查询。</block>
   <block id="024adade9cb0061af998b7d3f3e85f0a" category="cell">可以查看，计划和运行报告并设置个人首选项，例如语言和时区的首选项。来宾 / 使用者无法创建报告或执行管理任务。</block>
-  <block id="ec0921e40c81a97ba64c076f0ada5cc3" category="section-title">按用户角色划分的 Cloud Insights 权限</block>
-  <block id="83182dfe9652d91a9dff49ae5051115e" category="list-text">为 Cloud Insights 的每个功能选择用户的角色。</block>
   <block id="0e37aaee59fd92b0c2231a3435ccb705" category="inline-image-macro">用户角色选择</block>
   <block id="be79de8824d9bc14fde4037b481d09cf" category="paragraph"><block ref="be79de8824d9bc14fde4037b481d09cf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="248f830b158797f9c038ea35ea266b89" category="section-title">2021年8月</block>
@@ -6114,7 +6028,6 @@
   <block id="785ec09cddf9283f24922c1e4d3f399c" category="paragraph">已通过手动解析解决的设备的状态为 _OK_ ，并标识用于标识设备的规则。缺少的设备的状态为 _unidentifed_.明确排除在标识之外的设备的状态为 _excluded_.此页面列出了用于标识设备的总覆盖范围。</block>
   <block id="61e633e96f8c431ad3c5895ac9689491" category="admonition">磁带的设备解析规则仅适用于 WWN ，如果此 WWN 的供应商在供应商首选项中设置为 _included as Tape only_ 。</block>
   <block id="43523ef8cffdeaaafa0e6c8e15986699" category="doc">搜索资产和警报的提示和提示</block>
-  <block id="55d1aacd9076657a9c3f2551a759f3f7" category="summary">Cloud Insights 中的资产页面相关警报部分概述。</block>
   <block id="1b7dc1deafc07ca39a6334e1152f20e6" category="doc">资产页面相关警报部分</block>
   <block id="3608951e73671567ed9225929310279b" category="paragraph">您可以使用资产页面的相关警报部分查看因分配给资产的监控器而在您的环境中发生的任何警报。监控器会根据您设置的条件生成警报，并使您能够识别问题的含义，并分析问题的影响和根本发生原因，以便快速有效地进行更正。</block>
   <block id="1da67e7bef682d4c0fcc23895b1a2b8e" category="paragraph">以下示例显示了资产页面上显示的 " 典型相关警报 " 部分：</block>
@@ -6140,7 +6053,6 @@
   <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
-  <block id="4e9ba34cd64303c28d17d7ef9da12d0b" category="inline-link-macro">Cloud Insights 注意事项</block>
   <block id="042f2a856726ac957ea57dbbe84766ca" category="section-title">查看代理 URL</block>
   <block id="ab7992748e11f14996bdc2646a49e293" category="paragraph">您可以通过以下方式查看代理端点 URL ：在入职期间选择数据收集器时单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接。此时将显示如下表。</block>
   <block id="2d606071517d0747fae04dd73f7f6408" category="inline-image-macro">代理端点表</block>
@@ -6149,12 +6061,10 @@
   <block id="a6f1dcc9d358c0cdb54ec05673906e45" category="section-title">新的审核页面用户界面</block>
   <block id="50c786c9efcadf10b6b80a91b4bb98cf" category="inline-link-macro">审核页面</block>
   <block id="34da7615df3d3af56927cee9350f8197" category="paragraph">。 <block ref="0fc95413be1f4602f176a8d23796c479" category="inline-link-macro-rx"></block> 提供了一个更清晰的界面，现在可以将审核事件导出到 .CSV 文件。</block>
-  <block id="96da8a4e581dd2bee953a91b4a726a87" category="paragraph">要确定预期更改（用于跟踪）或意外更改（用于故障排除），您可以查看 Cloud Insights 系统事件和用户活动的审核跟踪。</block>
   <block id="651bba7950593ebb3a30ce056e02d435" category="section-title">查看已审核事件</block>
   <block id="50c2e307c62b6bdee9bab7a06a0f94bd" category="paragraph">要查看审核页面，请单击菜单中的 * 管理员 &gt; 审核 * 。此时将显示 Audit 页面，其中为每个审核条目提供了以下详细信息：</block>
   <block id="ddd4c9a31b3ca91ed60983b390c54a28" category="list-text">* 时间 * - 事件或活动的日期和时间</block>
   <block id="328ce41e650b8ebabdfb846f83c36310" category="list-text">* 用户 * —启动活动的用户</block>
-  <block id="d17a9db742265dcdd4ca05c00d1d0b96" category="list-text">* 角色 * —用户在 Cloud Insights 中的角色（来宾，用户，管理员）</block>
   <block id="2371d3134aba5e426570bddc2f309af4" category="list-text">*IP* —与事件关联的 IP 地址</block>
   <block id="57a6064ecdf5f0ef23cc5dc68b3df3ed" category="list-text">* 操作 * - 活动类型，例如登录，创建，更新</block>
   <block id="5cfe8205bb7066b1f512040e2274a7ee" category="list-text">* 类别 * —活动类别</block>
@@ -6173,7 +6083,6 @@
   <block id="048e5b41d504e581f9dfd5df04b0de4b" category="cell">"NetApp*"</block>
   <block id="08612e5f3ea69a3841565d99fc760eed" category="cell">返回包含确切文字字符串 _NetApp* _ 的结果</block>
   <block id="e79313bfe03c4561628e01c7102ba5fb" category="section-title">已审核的事件和操作</block>
-  <block id="6fffa02826aca9a14ee11d85609b3e25" category="paragraph">Cloud Insights 审核的事件和操作可分为以下几大类：</block>
   <block id="c5c594e685367681b202d84ba0c87407" category="list-text">* 用户帐户 * ：登录，注销，角色更改等</block>
   <block id="f8c4f6c2455f59fa0c1cc9fed5a8c6c1" category="list-text">* 采集单元 * ：创建，删除等</block>
   <block id="c1e8e78730ec648eeb7339e916d33231" category="paragraph">示例： _Acquisition unit * 澳大利亚 - 波士顿 1* removed_.</block>
@@ -6191,11 +6100,9 @@
   <block id="a7db7dc4150ec783edb2d63c007de590" category="paragraph">示例：已创建 Recipient _cI-alers-notifications -dl_</block>
   <block id="448e25eb5970504212b6d755b8adce41" category="section-title">导出审核事件</block>
   <block id="17d3fac6e64b0db4110d016480972d5a" category="paragraph">您可以将审核显示结果导出到 .CSV 文件，以便分析数据或将其导入到其他应用程序中。</block>
-  <block id="4654b0becf9d1cd6185abd5644dddf77" category="list-text">在 Audit 页面上，设置所需的时间范围以及所需的任何筛选器。Cloud Insights 将仅导出与您设置的筛选和时间范围匹配的审核条目。</block>
   <block id="81e9e10a5416438d2549dae075160792" category="list-text">单击 _Export_ 按钮 <block ref="7d9204e8192ad34899f7f874d914194c" category="inline-image-macro-rx" type="image"></block> 在表的右上角。</block>
   <block id="7201440e51225680b60dccf28366c73d" category="paragraph">显示的审核事件将导出到 .CSV 文件，最多 10 ， 000 行。</block>
   <block id="74a747110c8997f51592b496d16006be" category="cell">对于 Linux ，应按以下方式分配磁盘空间： /opt/netapp 25-30 GB /var/log/netapp 25 GB</block>
-  <block id="1b4bbf8ddf0638b3bdfb9ee9619e8b51" category="paragraph">此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户，则只需登录即可访问其 Cloud Insights 环境。</block>
   <block id="e0d7a90b12ef3cae3c8429a34b69736a" category="inline-image-macro">RHEL/CentOS 代理安装</block>
   <block id="530723ab95ea5239b9c308f8890b5069" category="paragraph"><block ref="530723ab95ea5239b9c308f8890b5069" category="inline-image-macro-rx" type="image"></block></block>
   <block id="49d620df1cdf6184275e83524131195e" category="paragraph"><block ref="49d620df1cdf6184275e83524131195e" category="inline-image-macro-rx" type="image"></block></block>
@@ -6212,8 +6119,6 @@
   <block id="61e3c9516f5f3d6a1d770780589866f5" category="paragraph">可以对监控器进行配置，使其状态为 "* 始终 * " 存在于受监控对象上，例如， IOPS &gt; 1 或延迟 &gt; 0 。它们通常创建为 " 测试 " 监控器，然后被遗忘。此类监控器会创建在成分卷对象上永久处于打开状态的警报，这些警报可能会随着时间的推移出现发生原因系统压力和稳定性问题。</block>
   <block id="074eac2d2550921cfca0dbad722daa0f" category="paragraph">为防止出现这种情况， Cloud Insights 将在 7 天后自动关闭任何 " 永久活动 " 警报。请注意，底层监控条件可能会（可能会）继续存在，从而导致几乎立即发出新警报，但关闭 " 始终处于活动状态 " 警报可缓解否则可能发生的某些系统压力。</block>
   <block id="36e498f46668dc7b2127a0e5f83abd6c" category="section-title">删除用户</block>
-  <block id="22d99a67c79bd33570e7939b98936b65" category="paragraph">具有管理员角色的用户可以通过单击用户的名称并单击对话框中的 _Delete User_ 来删除用户（例如，不再与公司合作的用户）。此用户将从 Cloud Insights 环境中删除。</block>
-  <block id="75a9e302cafe4be34215caa129cabcfc" category="paragraph">请注意，即使删除用户，用户创建的任何信息板，查询等也将在 Cloud Insights 环境中保持可用。</block>
   <block id="664eaf7f7371b5bb01b58dd1401a3f24" category="cell">安装代理时，安装将在解压缩后挂起。</block>
   <block id="af5d24d9bf0b86e25aac0207e1738aa7" category="cell">"chmod 755 -rf " 命令失败。如果代理安装命令由非 root sudo 用户运行，而该用户的文件位于工作目录中，属于另一个用户，并且无法更改这些文件的权限，则此命令将失败。由于 chmod 命令失败，其余安装不会执行。1. 创建一个名为 cloudsecure 的新目录。2. 转到该目录。3. 复制并粘贴完整的 "token=…… … ./cloudsure-agent-install.sh" 安装命令并按 Enter 键。4. 安装应能继续进行。</block>
   <block id="71939180bcd43cc6a5d2266fda82622f" category="paragraph">以下是配置此数据源的要求：</block>
@@ -6308,7 +6213,6 @@
   <block id="89d2c05fd752bacd15546a3e7343e4ca" category="list-text">适用于 ONTAP 的 Amazon FSX 的新收集器</block>
   <block id="b18c8095ec7b7cd0c63a4e28b715f6c1" category="inline-link-macro">系统定义的监控器</block>
   <block id="e1043b98a3cb90eb47cd13ebba153f39" category="section-title">暗主题</block>
-  <block id="3165b1e68882eb4c8b5a4eb378f539a0" category="paragraph">您可以选择使用浅色主题（默认设置）来显示 Cloud Insights ，该主题使用浅色背景和暗文本显示大多数屏幕，或者使用暗背景和浅文本显示大多数屏幕。</block>
   <block id="13952a31cfc47a6b1bb37f7aa091cd46" category="paragraph">要在浅色和暗色主题之间切换，请单击屏幕右上角的用户名按钮并选择所需主题。</block>
   <block id="c8fd30c576e80caca5481c6f50542358" category="inline-image-macro">在浅色和暗色主题之间切换</block>
   <block id="e0681ae9763ce64f8166eea32156ceb2" category="paragraph"><block ref="e0681ae9763ce64f8166eea32156ceb2" category="inline-image-macro-rx" type="image"></block></block>
@@ -6364,7 +6268,6 @@
   <block id="c3953a499e26fb5cad07e67c40f3db25" category="paragraph">但是，如果您暂时只想查看环境中各个子网上的节点，则可以将变量设置或更改为特定的代理节点 IP 。此处，我们仅查看 "123" 子网上的节点：</block>
   <block id="5246fe894302a8a0c6ddc8e1a8eabbac" category="inline-image-macro">变量筛选器后的代理节点</block>
   <block id="56fe99e38514c0cce0008ef626b7a0cf" category="paragraph"><block ref="56fe99e38514c0cce0008ef626b7a0cf" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ef91a7cc72502b96c9cf6aab818dfd2d" category="paragraph">此外，您还可以通过在变量字段中指定 _* 。 vendor_ 来设置一个变量以筛选具有特定属性的 _all_ 对象，而不考虑对象类型，例如属性为 "vendor" 的对象。您无需键入 "* 。 " ；如果选择通配符选项， Cloud Insights 将提供此选项。</block>
   <block id="ed7dd290eed78fda8a7e6e57c0454d62" category="inline-image-macro">供应商的属性变量</block>
   <block id="bf22e0e1581a335446f830bdd58ad47d" category="paragraph"><block ref="bf22e0e1581a335446f830bdd58ad47d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="88c2cb6ab02290c4fc8aef63c5b379a8" category="paragraph">下拉可变值的选项列表时，结果将进行筛选，以便根据信息板上的对象仅显示可用供应商。</block>
@@ -6461,7 +6364,6 @@
   <block id="f605eb6ac9043e9f1502d006629b9dc3" category="doc">日志资源管理器</block>
   <block id="0aa526404a7affc36dc5d2429d255945" category="inline-image-macro">选择日志</block>
   <block id="32daa822b566f93b5c95aa039268049d" category="paragraph">您可以设置筛选器以进一步细化查询结果。例如，要查找显示失败的所有日志消息，请为包含单词 "Failed" 的 _MESSAGES 设置一个筛选器。</block>
-  <block id="e290a1958705f522c7d916c05fcad28c" category="admonition">您可以开始在筛选器字段中键入所需的文本；键入时， Cloud Insights 将提示您创建包含字符串的通配符搜索。</block>
   <block id="4fc206dee5c28b63ff442e3ed9df6b96" category="paragraph">结果将显示在一个图形中，其中显示了所示每个时间段内的日志实例数。图下方是日志条目临时文件。图形和条目会根据选定时间范围自动刷新。</block>
   <block id="8ef03d84e3fb3a5e09cc1a40b1e60f8d" category="inline-image-macro">显示筛选器的查询示例</block>
   <block id="a5841d3432662ae9190489b4bf13e03c" category="paragraph"><block ref="a5841d3432662ae9190489b4bf13e03c" category="inline-image-macro-rx" type="image"></block></block>
@@ -6542,7 +6444,6 @@
   <block id="6762a399f5334f6d77cd7de65d4350ce" category="paragraph">现在， Kubernetes 数据可用于报告，从而可以创建成本分摊或其他报告。要将 Kubernetes 成本分摊数据传递到报告，您必须与 Kubernetes 集群及其后端存储建立活动连接，并且 Cloud Insights 必须从这些集群接收数据。如果未从后端存储收到任何数据，则 Cloud Insights 无法将 Kubernetes 对象数据发送到报告。</block>
   <block id="137130f586fe8fbaec289a38be336008" category="summary">通过洞察，您可以了解资源如何影响环境中的其他资源。</block>
   <block id="2d78443087bc495d923e93521efb0c1d" category="doc">洞察力：共享资源面临压力</block>
-  <block id="a8ec16373cb24bc082189b278c4cb448" category="paragraph">高影响工作负载会降低共享资源中其他工作负载的性能。这会使共享资源承受压力。Cloud Insights 提供的工具可帮助您调查资源饱和情况以及环境中的影响。</block>
   <block id="7f595b1ef82026007f2533413106e7d8" category="paragraph">在讨论工作负载或资源影响时，以下定义非常有用。</block>
   <block id="aea124b45b62324984b67a059ea0da7f" category="paragraph">要求苛刻的工作负载 * 是指当前已确定影响共享存储池中其他资源的工作负载。这些工作负载可提高 IOPS （例如），从而降低受影响工作负载的 IOPS 。要求苛刻的工作负载有时称为 " 高耗工作负载 " 。</block>
   <block id="7bddab02c6c096040f0edf52e1623868" category="paragraph">* 受影响的工作负载 * 是受共享存储池中耗用大量工作负载影响的工作负载。由于工作负载要求苛刻，这些工作负载的 IOPS 降低和 / 或延迟增加。</block>
@@ -6640,7 +6541,6 @@
   <block id="2ab997129d2c5216ff0d477e12280e8a" category="cell">尽管存在攻击，但某些用户并未受到限制。</block>
   <block id="9d9d839297abd5b6559ef681c302109c" category="cell">要限制的 IP 已被其他用户限制。</block>
   <block id="e229d51ca45046e23340982a0d911a30" category="section-title">保留审核数据</block>
-  <block id="c5ba523259d5f0a8abbc98e09089879a" category="paragraph">Cloud Insights 保留审核数据的时间量取决于您的版本：</block>
   <block id="6140d54709a2f0707aaa20367fd479a2" category="list-text">基本版本：审核数据保留 30 天</block>
   <block id="ef14a516a82a51d74eaeb8e2193667cb" category="list-text">标准版和高级版：审核数据保留 1 年 + 1 天</block>
   <block id="7ad87c3be379b9de0a9009199fb5401c" category="paragraph">系统会自动清除早于保留时间的审核条目。无需用户交互。</block>
@@ -6679,7 +6579,6 @@
   <block id="92bc1b7a13a5372aed9762b4aaea086f" category="paragraph">单击页面上的任何链接，进一步探索 Kubernetes 环境或对其进行故障排除。</block>
   <block id="f8a3f6c3840b144728e1066d84db53ec" category="section-title">折线图插值</block>
   <block id="d1458c295da095c4f0b8cdf2e41ceaf6" category="paragraph">不同的数据收集器通常会按不同的时间间隔轮询数据。例如，数据收集器 A 可能每 15 分钟轮询一次，而数据收集器 B 则每 5 分钟轮询一次。当折线图小工具（也包括样条曲线图，分区图和堆积分区图）将多个数据收集器中的数据聚合为一行时（例如，当小工具按 " 全部 " 分组时）， 并且每五分钟刷新一次该行，收集器 B 中的数据可能会准确显示，而收集器 A 中的数据可能会出现空隙，从而影响聚合，直到收集器 A 再次轮询为止。</block>
-  <block id="ccf8880e1018ebb2fd1bb2e959e62092" category="paragraph">为了缓解这种情况， Cloud Insights 会在聚合时对数据进行内插，并使用周围的数据点对数据进行 " 最佳推测 " ，直到数据收集器再次轮询为止。您始终可以通过调整小工具的分组来单独查看每个数据收集器的对象数据。</block>
   <block id="c1f58328aeef13bbe14c188aa6c895ea" category="paragraph">您可以在此处找到有关报告问题故障排除的建议。</block>
   <block id="f6742e49587a771a1225e7c6e472c682" category="cell">在计划通过电子邮件发送报告时，已登录用户的名称会预先填充到电子邮件的 " 收件人 " 字段中。但是，此名称的形式为 "firstname lastname" （名字，空格，姓氏）。由于此地址不是有效的电子邮件地址，因此在运行计划的报告时，此电子邮件将无法发送。</block>
   <block id="155db2ed9995e9882b3be492b37935dc" category="cell">在计划通过电子邮件发送报告时，请清除预先填充的名称，然后在 " 收件人 " 字段中输入格式正确的有效电子邮件地址。</block>
@@ -6746,20 +6645,15 @@
   <block id="45268bdcc9ffe3a5807e75085e768efb" category="cell">API 类型</block>
   <block id="c73695e7529146d82731a287d36e3f1d" category="cell">日志载入</block>
   <block id="dc1a2dd04ef0a485bbca321805f8ea84" category="inline-link-macro">功能集角色</block>
-  <block id="9229d75b73e189809aaf32ca1941e5cb" category="paragraph">此外，您还可以使用 Cloud Insights <block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block> 将确定您可以访问的 API 。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。</block>
   <block id="990550983c2107ed5ccd87b4a6690b0a" category="inline-image-macro">API 类型</block>
   <block id="e86bb8cbf77ec00646c7b5fe6b42e633" category="paragraph"><block ref="e86bb8cbf77ec00646c7b5fe6b42e633" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f229a25d4d4958d97a50dc8a836a921f" category="paragraph">API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。根据您的用户角色和 / 或 Cloud Insights 版本，您可以使用的 API 类型可能会有所不同。</block>
-  <block id="9bda043a75ddd802178719c5bb4e0e71" category="paragraph">在使用 Cloud Insights API 之前，必须创建一个或多个 * API 访问令牌 * 。访问令牌用于指定的 API 类型，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类型下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。</block>
   <block id="815a8361cf9eb2836d28b11b65b2dc3b" category="list-text">选择 API 类型</block>
-  <block id="9eaefcbfb99d876f3642ba3d021c04d6" category="paragraph">Cloud Insights API 基于类别，目前包含以下类型：</block>
   <block id="16d532fd527f8b9de1c866f621fb7569" category="list-text">Assets type 包含 asset ， query 和 search API 。</block>
   <block id="c7ff46f17aacbcc8f9caba752c2fd410" category="list-text">数据收集类型用于检索和管理数据收集器。</block>
   <block id="c13a40ffc26f5f762f6de126cf232cf5" category="list-text">数据载入类型用于检索和管理载入数据和自定义指标，例如从 Telegraf 代理检索和管理</block>
   <block id="e2838ba9f29d27f412035bd037388732" category="list-text">日志载入用于检索和管理日志数据</block>
   <block id="133f61531451649a036c6c806600058c" category="paragraph">其他类型和 / 或 API 可能会随着时间的推移而变为可用。您可以在中找到最新的 API 信息 <block ref="26737cef142923769504b229d3be204d" category="inline-link-macro-rx"></block>。</block>
   <block id="8811c3ab0c7b0cc46d2ac67e164d0fc9" category="paragraph">性能指标具有问题描述 和类型，并包含一组性能摘要。例如，延迟，流量和速率。</block>
-  <block id="2bf7ed4a0e334f4b972f700945f47a56" category="paragraph">每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Cloud Insights 支持本文档后面列出的多种性能指标类型。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。</block>
   <block id="9d31f56324b0322ffe68df1873845bca" category="paragraph">搜索 API 是系统的一个简单入口点。API 的唯一输入参数是自由格式的字符串，生成的 JSON 包含分类结果列表。类型与清单不同，例如存储，主机，数据存储库等。每种类型都将包含一个与搜索条件匹配的对象列表。</block>
   <block id="20fdb910f7dde76d54b3392d04f062a5" category="section-title">禁用或撤消 API 令牌</block>
   <block id="e5f3c9e3c596a48a99e4d03c8e19c62a" category="paragraph">要临时禁用 API 令牌，请在 API 令牌列表页面上单击此 API 的 " 三点 " 菜单，然后选择 _Disable_ 。您可以随时使用同一菜单并选择 _Enable_ 来重新启用令牌。</block>
@@ -6796,7 +6690,6 @@
   <block id="566a4c81478be8a9ccd7d6589cefe57c" category="list-text">欧洲，中东和非洲： EU-central-1.</block>
   <block id="7b1afe899e5efa6ba9f4935be9f98d92" category="list-text">亚太地区： AP-东南部 2</block>
   <block id="a042a0a750858e6060db4dfe64a00752" category="summary">日志资源管理器是一个功能强大的工具，可用于通过不同的系统日志调查问题。</block>
-  <block id="8525c63db9fcf944b97e51df898b6440" category="paragraph">Cloud Insights 日志资源管理器是一个功能强大的工具，可用于查询系统日志。除了有助于调查之外，您还可以将日志查询保存在 Monitor 中，以便在激活特定日志触发器后发出警报。</block>
   <block id="20d54bcfce082123adf73a66c93e11f1" category="admonition">根据您的环境，可供查询的日志类型可能会有所不同。随着时间的推移，可能会添加其他日志类型。</block>
   <block id="bf74dd0ba8bacde3d960739103ba63c6" category="paragraph">从列表中选择一个可用日志。</block>
   <block id="d64c94573b121a79214c7bf24c4a546d" category="paragraph">最佳实践：强烈建议将 AWS 预定义的 _AmazonEC2ReadOnlyAccess_ 策略分配给 EC2 主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。</block>
@@ -6807,14 +6700,12 @@
   <block id="c75d4b042f6604bc016e5b15ff4dea18" category="summary">Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成数据的代理。</block>
   <block id="08c320e9abdbb73b135ebdf6b73de8ef" category="list-text">* 已取消 * ：已将警报视为误报或预期行为而解除。</block>
   <block id="876a3f6e99a6a623eff957c61ab96f8a" category="paragraph">Cloud Insights 会定期重点介绍许多令人兴奋的新预览功能。如果您希望预览其中一个或多个功能，请联系您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
-  <block id="0c352b5d8cf5928163a8ab955706157d" category="paragraph">令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以在 Cloud Insights 后端人员不直接参与的情况下授予和撤销这些令牌。</block>
   <block id="827fb03d4709eeb5398e14962ee560c2" category="paragraph">其中， _&lt;API_Access_Token&gt;_ 是您在创建 API 访问期间保存的令牌。</block>
   <block id="cc259063b1a06b482634601b8fc9068b" category="paragraph">。 <block ref="4379d12a92ab7b417b2efd216b13a5b7" category="inline-link-macro-rx"></block> 数据收集器无需安装外部采集单元，从而简化了故障排除，维护和初始部署。</block>
   <block id="d7652c841f9f6f67155b6c416335e932" category="paragraph">生成的角色和用户登录信息如下所示。实际输出可能会有所不同：</block>
   <block id="9b207ebd40869bfc10be14cb4279b22c" category="paragraph">要修改现有用户的角色，包括将其添加为 * 二级帐户所有者 * ，请执行以下步骤。</block>
   <block id="bb10192e5b1a488b6e0bf0a436918863" category="list-text">单击 * 管理员 &gt; 用户管理 * 。此时，屏幕将显示系统上所有帐户的列表。</block>
   <block id="27821658abae724fdd49cbd24489bb01" category="list-text">单击要更改的帐户的用户名。</block>
-  <block id="fb00f883d7bba803b24e9d29087a3f05" category="list-text">根据需要修改用户在每个 Cloud Insights 功能集中的角色。</block>
   <block id="fbf90baf7d2aee8b9e682b8648241121" category="list-text">单击 _Save Changes_ 。</block>
   <block id="45d8ada80e1217d6ce7177e21f1e6c70" category="section-title">分配二级帐户所有者</block>
   <block id="9ee18dbf71b3091f256475408a6072d3" category="list-text">单击 * 管理员 &gt; 用户管理 * 。</block>
@@ -7200,7 +7091,6 @@
   <block id="e31fe47af805d4bd3f7f8847ce8bdf7a" category="list-text">对于 _C ： \Program Files\telecraf\telecraf.d_ 中的每个 Telegraf 配置文件，请将旧 API 令牌的所有实例替换为新 API 令牌。</block>
   <block id="68f0f62deae94ea2573e440bd6203542" category="summary">预览功能的可用容量有限、并且突出显示功能尚未准备好在黄金时段使用。</block>
   <block id="b865b0f0f94674aa0d7878e2253f2c1b" category="doc">预览功能和特性</block>
-  <block id="f06798e708a78e76d30364617ea53340" category="paragraph">Cloud Insights 以_Preview_的方式突出显示了新特性和功能。预览功能可在有限的环境中使用、也可在有限的容量下使用。</block>
   <block id="1faeb81be1b403bf2b660e33e3c7e5f7" category="paragraph">如果您希望预览其中一个或多个功能，请联系您的 <block ref="16ff11ed878ec2cb7f479192bb9f1a7d" category="inline-link-macro-rx"></block> 有关详细信息 ...</block>
   <block id="d07e55df7f133c0213955a67c979d808" category="admonition">ONTAP 数据收集器通知优先于与集群/数据收集器相关的任何特定监控器通知。您为Data Collector本身设置的收件人列表将接收数据收集器警报。如果没有活动的数据收集器警报、则监控器生成的警报将发送到特定的监控器收件人。</block>
   <block id="9e3717c8a856a8fff78d3ed35be3524a" category="section-title">日志监控器</block>
@@ -7244,13 +7134,11 @@
   <block id="93b6b2ecbe8e38118f0e38a7f128eb90" category="paragraph">我们提供了许多Insights。导航到*信息板&gt; Insights *开始深入了解。您可以在主选项卡上查看主动洞察(当前正在发生的洞察)、也可以在非活动Insights _选项卡上查看非活动Insights。非活动洞察力是指以前处于活动状态但不再发生的洞察力。</block>
   <block id="fe9a216d65384f5afb0047e612bf386e" category="section-title">Insight类型</block>
   <block id="9e9013279f80acdb151d7cad5bc3f7d8" category="section-title">共享资源面临压力</block>
-  <block id="5f002a5fdb5afaacfc165c3a324751d5" category="paragraph">高影响工作负载会降低共享资源中其他工作负载的性能。这会使共享资源承受压力。Cloud Insights 提供的工具可帮助您调查资源饱和情况以及环境中的影响。 <block ref="de4400096db30b5f709799778e050e2c" category="inline-link-macro-rx"></block></block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">了解更多信息。</block>
   <block id="c1c7efc58c7b64cc21f3ae15934e8271" category="section-title">Kubernetes命名空间即将用尽</block>
   <block id="806f6dbcc954f0a88489885f517d1d1d" category="paragraph">通过运行空间不足Insight的Kubernetes命名空间、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个空间达到全满前的剩余天数。 <block ref="604196d3b206e62dba15152db76beddc" category="inline-link-macro-rx"></block></block>
   <block id="851540d32e033a0c14b63879881da871" category="summary">洞察力可以帮助您预测Kubernetes空间何时可能会全满。</block>
   <block id="4fef891481b95674ba195bcf5ebf7efb" category="doc">洞察力：Kubernetes命名空间即将用尽</block>
-  <block id="8754218641c0cb64c48e8a8cc68703c4" category="paragraph">环境中的空间不足永远不是一种好情况。Cloud Insights 可帮助您预测Kubernetes永久性卷达到全满前的时间。</block>
   <block id="8dc9b2ee1508011b53e7f0f04a3b46a8" category="paragraph">通过运行空间不足的_Kubernetes命名空间_ Insight、您可以查看Kubernetes命名空间上可能会用尽空间的工作负载、并估算每个永久性卷达到全满前的剩余天数。</block>
   <block id="f2c0221f294a823d827a375c35966fc9" category="paragraph">您可以通过导航到*信息板&gt; Insightions*来查看此Insight。</block>
   <block id="6f6740f128ff4e7b81b3e550f00f9705" category="inline-image-macro">K8s命名空间中存在空间即将用尽风险的工作负载列表</block>
@@ -7263,7 +7151,6 @@
   <block id="95458ffe03f081fb38d0e5630d7836c6" category="list-text">后端存储资源受到影响、当前容量已用不包括在总容量中。单击此链接将打开后端卷的详细登录页面。</block>
   <block id="9b6de7d57253456e4f416bcef90b76e5" category="inline-image-macro">显示详细信息的工作负载表</block>
   <block id="e589c155ffae6696761533f45ef69b7c" category="paragraph"><block ref="e589c155ffae6696761533f45ef69b7c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d6fe83f2685cfec3bef24ac55c5aa793" category="paragraph">在Insight页面上、单击*+显示建议*以查看可能的解决方案。空间不足时、最简单的选择是始终添加更多容量、Cloud Insights 会向您显示要添加的最佳容量、以将达到60天目标预测的时间延长到达到最大值。此外、还会显示其他建议。</block>
   <block id="501f2f9df98b83cc872cd59f0493d08d" category="inline-image-macro">要添加的容量以返回到60天TTF</block>
   <block id="1349caff32af26b4b92540943cbbecc2" category="paragraph"><block ref="1349caff32af26b4b92540943cbbecc2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="103ede5225263a5f8e396b6adb9b4898" category="paragraph">您也可以在此复制指向此Insight的便捷链接、将此页面添加到书签或轻松地与您的团队共享。</block>
@@ -7400,11 +7287,9 @@
   <block id="dfb65f9e847424acb7569e9d1d256de5" category="section-title">手动还原SMB用户</block>
   <block id="2a0a63dd16c8b87a179a933b2e9eb92e" category="paragraph"><block ref="2a0a63dd16c8b87a179a933b2e9eb92e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ab7edf5d95e4001229e2908ae791460a" category="section-title">学习中心</block>
-  <block id="b81816f08eee3d7d65d91572590180d0" category="paragraph">无论您的订阅如何、*帮助&gt;支持*均可链接到多项NetApp大学课程、帮助您充分利用Cloud Insights。请查看！</block>
   <block id="87d26f2a744f5c5f07151656de6a1390" category="summary">ONTAP 基础知识是一组信息板和工作流、用于详细概述您的环境。</block>
   <block id="f7e8a669ab2a5aca497e3123c1f3935b" category="doc">ONTAP 基础知识</block>
   <block id="7aaa3b04c62b1d6b52635ad40e8ff0a2" category="paragraph">ONTAP 基础知识是一组信息板和工作流、用于详细概述ONTAP 清单和工作负载。在ONTAP 基础知识中使用时、您可能会看到以下术语：</block>
-  <block id="a13907a785102ea69b2891d9e6233f6f" category="paragraph">要开始探索、请从Cloud Insights 主菜单中选择* ONTAP Essentials *。</block>
   <block id="da61c5d249c3bbc25d9cee2d6d64b53a" category="inline-image-macro">ONTAP 基础知识概述信息板</block>
   <block id="f0104a81a8bbf75874c8612df2bea3f7" category="paragraph"><block ref="f0104a81a8bbf75874c8612df2bea3f7" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e8bfd68d700d556e8faa4883b15480df" category="paragraph">注意："Days to Full"数字为"0"(零)表示预计达到全满的天数超过90天。换言之、您的系统很快就不会面临空间用尽的风险。</block>
@@ -7473,20 +7358,12 @@
   <block id="d157607d4f3b74d5627170cf0c710ee9" category="admonition">Dell EMC ECS按不同的原始TB到受管单元速率进行计量。未格式化的ECS容量每40 TB计费为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="719cb8a818a4675afed135a249f933cf" category="admonition">Hitachi内容平台按不同的原始TB到受管单元速率进行计量。每40 TB未格式化的HCP容量计费为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
   <block id="75538d7973020af3db4059fd4aefea12" category="admonition">IBM Cleversafe按不同的原始TB到受管单元速率进行计量。每40 TB未格式化的IBM Cleverssafe容量计为1 <block ref="1802ea889a272a3510701d2ff63bbea6" category="inline-link-macro-rx"></block>。</block>
-  <block id="33b1e192582408583865dca3abd0c740" category="cell">适用于哪些筛选器？</block>
-  <block id="8c553135b1cf58374ff9e4c775f2f164" category="cell">不适用于哪些筛选器</block>
-  <block id="eaaa45bccc15257d9f55e54b64c70aba" category="cell">* （星号）</block>
-  <block id="df292297b638e12c44f52c855ad511fb" category="cell">Auto* 03172022</block>
-  <block id="b95e1188e58582673c69e6683b36a626" category="cell">用户、路径、实体类型、设备类型、卷、 原始路径</block>
   <block id="de49d77f1ec8a76ce0ab6d070d1a883c" category="cell">返回以"Auto"开头、以"03172022 "结尾的所有资源</block>
   <block id="3518217f55c95e834c4ea7984f8aa0cd" category="cell">AutoSabotageUser1_03172022？</block>
   <block id="4e264b37a7e8d68a4e163769aad53d58" category="cell">用户、实体类型、设备、卷</block>
-  <block id="d3d8e64d1f98a044ea17ac6dc3edc1da" category="cell">返回AutoSabotageUser1_03172022A、AutoSabotageUser1_03172022AB、AutoSabotageUser1_031720225等</block>
   <block id="3adefd54fc738f8196af6304ed8929ac" category="cell">AutoSabotageUser1_03172022或AutoRansomUser4_03162022</block>
-  <block id="815a68f09aeea81a589436dc96205729" category="cell">用户、域、用户名、路径、实体类型、 设备、原始路径</block>
   <block id="0a01700b4705c6c47c24699ad7d4a4cb" category="cell">返回任意AutoSabotageUser1_03172022或AutoRansomUser4_03162022</block>
   <block id="0ca071eb91357e8d4685daee24bd3360" category="cell">非AutoRansomUser4_03162022</block>
-  <block id="323be35d43a1b0a294bddc8533167538" category="cell">用户、域、用户名、路径、实体类型、 原始路径、卷</block>
   <block id="e0c965c954b5a9fdc33c5b0516799f7d" category="cell">返回不以"AutoRansomUser4_03162022 "开头的所有内容</block>
   <block id="eae639a70006feff484a39363c977e24" category="cell">domain</block>
   <block id="64048c881c93933680d02730e9d9ce63" category="paragraph">使用和不使用/的搜索结果将有所不同</block>
@@ -7568,7 +7445,6 @@
   <block id="ddaf3f263ed6f7d926e96caad7b5d807" category="paragraph">将IAM角色_InstanceS3ReadOnly"附加到S3实例后、您将能够按IAM角色名称通过实例元数据检索临时凭据、并使用它通过此S3实例上运行的任何应用程序访问AWS资源。</block>
   <block id="b58d88529471c847df19b1d8e63b1fe9" category="list-text">您必须将每个子帐户配置为具有一个AWS角色、此角色允许主帐户ID从子帐户访问S3详细信息。</block>
   <block id="38cfe5a8a180b915d5558a3770b76e3e" category="paragraph">最佳实践：强烈建议将AWS预定义的_AmazonS3ReadOnlyAccess_策略分配给S3主帐户。此外，在数据源中配置的用户应至少分配预定义的 _AWSOrganizationsReadOnlyAccess_ 策略，以便查询 AWS 。</block>
-  <block id="3e58ddc58d5563a5027058f56555ea62" category="paragraph">请注意、如果Cloud Insights 未发现领先的计算工作负载、则卷或内部卷本身将被识别为工作负载。此适用场景 既适用于要求苛刻的工作负载、也适用于受影响的工作负载。</block>
   <block id="b6679962f8c42c1ba1776113605353b7" category="section-title">所需性能指标</block>
   <block id="20d28687278d151933891014ac36ae04" category="list-text">SMB2.ops[共享]</block>
   <block id="dadc05c753e1aa1130d425a298bf1e99" category="list-text">nfs3.ops[共享]</block>
@@ -7633,7 +7509,6 @@
   <block id="493c4ff608e06cc5a02d0561f6bb02a3" category="paragraph">OpenShift可以实施更高的安全级别、从而可能阻止对某些Kubernetes组件的访问。</block>
   <block id="b1709369b19b51deac976f5fc9dce527" category="inline-xref">升级</block>
   <block id="b56f48fe0a536b86709924e6707beb7d" category="section-title">整个基础架构的拓扑视图是否可用？Cloud Insights 是否显示 " 端到端可见性 " ？</block>
-  <block id="e89de726c7174f2e5799c51b43bdda84" category="paragraph">在Cloud Insights 中、您可以将*监控.count*列添加到存储或存储节点查询中。如果返回的结果包括Active IQ监控的存储系统、则monitor.count列将显示存储系统或节点的风险数。</block>
   <block id="92094f10227c0d6e4da9a65b1cc23700" category="cell">安装需要"unzip "。此外、安装、运行脚本和卸载都需要使用"sudo su–"命令。</block>
   <block id="e58c27818bf68b1f92513ad4f99972c4" category="inline-xref">返回顶部</block>
   <block id="9bf2c4cb7192740e06519a5e67f22e59" category="paragraph"><block ref="5166de7f06aaa174e185aec47426a1b7" category="inline-xref-macro-rx"></block></block>
@@ -7749,7 +7624,6 @@
   <block id="acf6b70a4e6ba36ec7116e8e7747c507" category="paragraph">请注意、如果运行多个规则来更新资产上的相同标注、则第一个规则(从上至下运行)将应用标注并更新资产、然后第二个规则将适用、但不会更改先前规则已设置的任何标注。</block>
   <block id="15ac0cdbe87a38b3f0c5588fd122123c" category="list-text">* 降噪 * 用于筛选用户在过去 2 小时内创建的文件。它还用于筛选用户访问的临时文件（例如 .tmp 文件）。</block>
   <block id="b94c2ef661065c39f8d83558c3eafe45" category="section-title">对取证活动历史记录数据进行排序</block>
-  <block id="530784dc2e1fded20e31ab140fb699c9" category="section-title">导出所有活动</block>
   <block id="db7f539a64befdbef8a36c1e95be3922" category="section-title">为所有活动选择列</block>
   <block id="e6c7e24b363310e398fd7191b14a5729" category="section-title">活动历史记录保留</block>
   <block id="19d8a8363cc18927f8f792b40e752c60" category="section-title">取证页面中的筛选器适用性</block>
@@ -7846,7 +7720,6 @@
   <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">如果要使用ONTAP 9.1.1版中的服务策略连接到数据源收集器、则需要_data-fpolicy-client_服务以及数据服务_data-nfs_和/或_data-cifs_。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">在9.1.1之前的ONTAP 版本中、不需要设置_data-fpolicy-client_。</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注意：如果您安装了最新的NetApp Kubernetes监控操作员并使用可续订的API访问令牌、则过期的令牌将自动替换为新的/刷新的API访问令牌。无需执行下面列出的手动步骤。</block>
-  <block id="dea5f9ab95bb253b826201d228922448" category="paragraph">《数据收集器支持列表》为Cloud Insights 支持的数据收集器提供了参考、其中包括供应商和型号信息。</block>
   <block id="3337a607cd5a33d6b8d3f27ce7da458d" category="cell">API版本</block>
   <block id="25ac429f9072293d27a836ee2a148f47" category="cell">型号</block>
   <block id="798084429970e88fa1f49f12b5f60f32" category="cell">固件版本</block>
@@ -8449,14 +8322,10 @@
   <block id="0cf39fe422a1bfd5d8bce06d5ce1b64f" category="inline-link-macro">Dell EMC Unisphere REST</block>
   <block id="7bb1c93f44835a04f1a5d46dd4f4b400" category="cell"><block ref="7bb1c93f44835a04f1a5d46dd4f4b400" category="inline-link-macro-rx"></block></block>
   <block id="39fdcbcd2a4c753babbc68973712e367" category="summary">从一个控制平台构建、保护和管理混合多云数据资产。</block>
-  <block id="7ce49ad36572c616df2b7b18f0f3c2d5" category="doc">Cloud Insights 是BlueXP的一部分</block>
-  <block id="76609753d56a9030bf88cac400655be7" category="paragraph">借助BlueXP、您可以从一个界面管理所有NetApp存储和数据资产。在BlueXP中、您会发现许多新的存储服务以及数据服务以前仅作为具有单独UI的独立服务提供。Cloud Insights 是这些服务之一。</block>
   <block id="fa0f9b91b9b3862eb566219b032aa9f6" category="inline-link-macro">_Preview_</block>
   <block id="8a281fcc91b3d1c2a8f6a3503b98db32" category="admonition">BlueXP导航菜单集成被视为 <block ref="27c8300c0999ba5a7834ba70e02e86cc" category="inline-link-macro-rx"></block> 功能、因此可能会更改。</block>
-  <block id="6486ea659268f29cee1791885ddfd7c8" category="paragraph">全新的直观菜单在BlueXP的导航菜单中、数据服务按类别进行组织、并根据其功能进行命名。例如、可以在"Observability "菜单中找到Cloud Insights 功能集。在探索Cloud Insights 时、"可观察性"部分将显示在导航菜单的顶部。在您探索时、每个BlueXP服务都是如此。</block>
   <block id="dc2328c73b90d6c1704bed2d775bd562" category="inline-image-macro">BlueXP导航菜单、在顶部显示可观察性、在下方显示其他NetApp服务</block>
   <block id="070ed5b249a03236a4b58ef440cd9a27" category="paragraph"><block ref="070ed5b249a03236a4b58ef440cd9a27" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e82617a45c06fc64ba2c7a8022ad2c26" category="admonition">在本文档中、术语"可互换使用" Cloud Insights "和"可观察性"。</block>
   <block id="27a7deb0ec1bdff43e3eb6bbcee65f55" category="paragraph">悬停工具提示可提供更多信息。</block>
   <block id="03aa38861ba70a29a2ebce320835a31b" category="paragraph">您可以在BlueXP网站上了解有关BlueXP的更多信息。</block>
   <block id="db18ee26726e25e2183f42a056469c60" category="summary">配置Dell EMC Unisphere REST数据收集器。</block>
@@ -8479,9 +8348,7 @@
   <block id="9374ddadb9776b458a2963573b22f63d" category="list-text">RHEL/Ubuntu：</block>
   <block id="b59ea01f26635c31c3c1df660848f6c8" category="section-title">安装下载的软件包</block>
   <block id="e8cdc72b15f2eb76eb1815f526758f2e" category="doc">洞察力：高耗工作负载</block>
-  <block id="b6178403f1fb13fa361db9ac6d3f0273" category="paragraph">高影响工作负载会降低共享资源中其他工作负载的性能。Cloud Insights 提供的工具可帮助您调查资源饱和情况以及环境中的影响。</block>
   <block id="7dbc3325f8c8ce0b9644c6385df9308d" category="paragraph">一个*有影响*或_greedage_资源会对另一个资源造成负面影响。例如， IOPS 极高的卷可能会导致其他卷（例如 _ 受影响 _ 或 _ 已降级 _ 资源）。有影响和受影响的资源是使用相同共享资源的"对等方"、例如存储池或卷。</block>
-  <block id="e6a3a9e372453a57b268bcc244809130" category="paragraph">"高耗用工作负载"是指当前已确定影响共享存储池中其他资源的工作负载。这些工作负载可提高IOPS、从而降低受影响工作负载的IOPS。在Cloud Insights 中、这些工作负载被确定为*要求苛刻的工作负载*。</block>
   <block id="684e1f5d1d8f7ac135116fe2276f6ffa" category="paragraph">*受影响的工作负载*是受共享存储池中耗用大量工作负载影响的工作负载。由于工作负载要求苛刻，这些工作负载的 IOPS 降低和 / 或延迟增加。</block>
   <block id="3367fa0ed89a38c283ceec91a93c76d8" category="paragraph">如果确定IOPS正在影响共享存储池中的其他资源或工作负载、则会发生*争用*。</block>
   <block id="37a9aae3864b377f0900828ee037f208" category="section-title">高耗用工作负载</block>
@@ -8554,7 +8421,6 @@
   <block id="3a0f609bf65bf53f905fdcfae464bcae" category="cell">配置新插件并重新启动Telegraf后、Telegraf无法启动。这些日志指示出现类似以下内容的错误："[caelaf] Error running agent：error loading config file /etc/caelaf/tengraf.d/cloudinsots-default.conf：plugin outputs.http：line &lt;linenumber&gt; ：configuration specified the fields ["use_system_proxy"]、but they were n't used"</block>
   <block id="90388b17e672eeaae8e092ebd4bf6362" category="cell">我在旧安装上运行了安装程序脚本、现在代理不发送数据</block>
   <block id="7cc579c6f20ffbe0b9452d6f5fff9167" category="cell">卸载此电报代理、然后重新运行安装脚本。请按照此页面上适用于您的相应平台的*升级代理*步骤进行操作。</block>
-  <block id="6ff3c19fa7be83723b830f7a88ebff57" category="cell">检测到攻击后24小时收到电子邮件警报。在UI中、当Cloud Insights 工作负载安全收到电子邮件时、警报会在24小时之前显示。</block>
   <block id="9608ad0a6050ac9fa535a95a22aa7db4" category="list-text">原始容量—分配给FSX文件系统的所有SSD存储的基数为2的总和。</block>
   <block id="dc17e2eb752d75a670b36698bc346864" category="list-text">IOPS—此存储池上分配的所有卷的IOPS之和。</block>
   <block id="056a8b3d2b7210d266cc3fdb33710dc2" category="list-text">吞吐量—在此存储池上分配的所有卷的总吞吐量。</block>
@@ -8715,12 +8581,10 @@
   <block id="2cdbeeb863ed7a8522ac9190b6294a61" category="paragraph">在入职期间选择数据收集器时，您可以单击 * 代理设置 * 链接，或者单击 * 帮助 &gt; 支持 * 页面上 _ 代理设置 _ 下的链接来查看代理端点。此时将显示如下表。如果您的环境中具有工作负载安全性、则已配置的端点URL也会显示在此列表中。</block>
   <block id="a7ef8f0bed1d94220b7abd3877b10643" category="doc">工作负载安全代理要求</block>
   <block id="78280ee4e050e617aae8c514d1f4d00a" category="cell">100 Mbps到1 Gbps以太网连接、静态IP地址、与所有设备的IP连接以及与工作负载安全实例(80或443)的所需端口。</block>
-  <block id="380053981c7042c95864932736052cac" category="paragraph">请注意：工作负载安全代理可以与Cloud Insights 采集单元和/或代理安装在同一台计算机上。但是，最佳做法是在不同的计算机上安装这些软件。如果这些磁盘安装在同一台计算机上，请按如下所示分配磁盘空间：</block>
   <block id="2d69c680da957bdb43dc65f6b48df46d" category="paragraph">对于*基于美国*的工作负载安全环境：</block>
   <block id="cd901a4d0c763788558340776fd2cdb5" category="paragraph">对于*基于欧洲*的工作负载安全环境：</block>
   <block id="fa226e3679ae6b7dab2869292b192728" category="paragraph">对于基于*亚太地区*的工作负载安全环境：</block>
   <block id="2c5dab3d48c104492de8592e45b7fe9f" category="paragraph">如果您的环境中具有工作负载安全性、则已配置的端点URL也会显示在此列表中。</block>
-  <block id="5711e9cabb01e59f7ce2f48ba56a6e96" category="paragraph">请注意，用户有权访问的 API 类型也取决于 <block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block> 它们包含在每个Cloud Insights 功能集中(监控、工作负载安全性、报告)。</block>
   <block id="db2b463a10fb6295be04f3c3bae06fde" category="paragraph">工作负载安全性将根据Snapshot清除设置每天自动删除一次快照。</block>
   <block id="1e66f3ea1e335e37bed1a50e1a8bb94c" category="summary">工作负载安全用户帐户通过Cloud Insights 用户管理进行管理</block>
   <block id="b6ddb5866df8e3256ac245cbce10a9a2" category="paragraph">工作负载安全性用户帐户通过Cloud Insights 进行管理。</block>
@@ -8781,7 +8645,6 @@
   <block id="63deecc7a53992db1697a520a67af0bd" category="cell">启用工作负载安全性后、ONTAP 性能将受到影响：延迟偶尔会高、IOPS偶尔会低。</block>
   <block id="0631a8aa5414db88c4ba11ffa8ff89e8" category="cell">从仅配置 NFS 服务的新 SVM 开始。在工作负载安全性中添加ONTAP SVM数据收集器。在工作负载安全性中添加ONTAP SVM数据收集器时、CIFS会配置为SVM的允许协议。请等待、直到工作负载安全性中的数据收集器显示错误。由于未在SVM上配置CIFS服务器、因此Workload Security将显示左侧所示的此错误。编辑 ONTAP SVM 数据收集器并取消选中 CIFS 作为允许的协议。保存数据收集器。它将在仅启用 NFS 协议的情况下开始运行。</block>
   <block id="b451cdd4206327fd0afecbb2df7b2bec" category="doc">关于存储工作负载安全性</block>
-  <block id="7d29e14ab81a7f2d743b14063e512bf7" category="paragraph">Cloud Insights 存储工作负载安全性(以前称为Cloud Secure)可通过针对内部威胁的可操作智能来帮助保护您的数据。它可以集中查看和控制混合云环境中的所有企业数据访问，以确保实现安全性和合规性目标。</block>
   <block id="6bb784bfbef2792b99ae322d0ce648b6" category="paragraph">更换无法及时准确地查看数据访问和控制情况的工具和手动流程。工作负载安全性在云和内部存储系统上都是唯一的、可为您提供有关恶意用户行为的实时警报。</block>
   <block id="4d8cd5134c1193f4d301c7e6bcaa38a7" category="inline-link-macro">工作负载安全注意事项(原Cloud Secure)</block>
   <block id="58ecb418298e803c7a0ae49007466440" category="paragraph">所有活动页面可帮助您了解对工作负载安全环境中的实体执行的操作。</block>
@@ -8799,7 +8662,6 @@
   <block id="03d2c7455bd90d94b2c2a27995cee3a6" category="list-text">应通过集群IP添加工作负载安全收集器。</block>
   <block id="8d490c030112e962535224e18e452ee2" category="paragraph">如果您使用的自定义用户(例如_CSUser_)具有为该用户授予的权限、请按照以下步骤为工作负载安全性授予权限、以便从ONTAP 收集与ARP相关的信息。</block>
   <block id="56684562f1f82eb99e69650845acd6ad" category="paragraph">如果SVM不受工作负载安全性监控、但ONTAP 生成了ARP事件、则工作负载安全性仍会接收和显示这些事件。但是、不会捕获或显示与警报相关的取证信息以及用户映射。</block>
-  <block id="bd8fcf14aeb2fa880d8470e2c4fee0a5" category="cell">当ONTAP 将_勒索 软件检测到_事件发送到Cloud Insights 工作负载安全(即工作负载安全)时、系统会发送电子邮件。事件包含一系列攻击及其时间戳。工作负载安全UI会显示第一个受攻击文件的警报时间戳。对特定数量的文件进行编码后、ONTAP 会将_勒索 软件检测到_事件发送到Cloud Insights。因此、在UI中显示警报的时间与发送电子邮件的时间可能会有所不同。</block>
   <block id="9655cd831b69781db448703e74b15bf4" category="sidebar">关于工作负载安全性</block>
   <block id="db6129c16869ab28d6476f3e30e7d24e" category="sidebar">工作负载安全性入门</block>
   <block id="fe6cdf9e3b45ba510d852c0481680e2f" category="sidebar">配置工作负载安全代理</block>
@@ -8818,7 +8680,6 @@
   <block id="9406d81673e1646c43299c62b0289100" category="sidebar">Isilon / PowerScale REST</block>
   <block id="601e2f4bdb8c8d256c0862eb39ab26dd" category="list-text">如果要设置的代理没有身份验证(用户名/密码)、请运行以下命令：</block>
   <block id="aec78dde754edc4769d775d718da8408" category="list-text">如果要设置的代理具有身份验证(用户名/密码)、请运行以下命令：</block>
-  <block id="79c7ccf004cab46d7dd6a51e885aae3f" category="paragraph">NetApp 通过多种方式为 Cloud Insights 提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。对于订阅了任何Cloud Insights 版本(基础版*、标准版、高级版)的用户、可以通过电话或Web服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点 (NSS) SSO 帐户。</block>
   <block id="54b9dfbc2f7a4721e38bff7e643a574c" category="paragraph">*只要您的所有NetApp存储系统都至少在高级支持级别提供支持、即可在Basic Edition中获得支持。</block>
   <block id="575b95a19de7e191bf400580ceab0b27" category="cell">如果未在Solutions Enabler服务器的守护进程配置文件中声明权限、您可能会看到此消息(请参见 <block ref="48ee54aab4fee6d43a8bd3ed26dff2b5" category="inline-xref-macro-rx"></block> )假定您的SE客户端版本与您的SE服务器版本匹配。如果未在/var/symapi/config/daemon用户配置文件中为_cisys_用户(用于执行Solutions Enabler命令)配置所需的守护进程权限、也可能会发生此错误。要修复此问题、请编辑/var/symapi/config/daemon用户文件、并确保cisys用户具有为storapid守护进程指定的&lt;all&gt; 权限。示例：14：11：25 # tail /var/symapi/config/daem_users ... Cisys storapid &lt;all&gt;</block>
   <block id="347129195bfdcce2fcf0d362a84ed033" category="inline-link-macro">知识库</block>
@@ -8912,10 +8773,8 @@
   <block id="c848dd7c163b8af16c0a29a9cf8b2578" category="inline-image-macro">存储选项卡</block>
   <block id="13c8c56ee088f3e66c6a2dc2117add80" category="paragraph">Storage VM详细信息显示审核和SSH信息：<block ref="0e7da2c2237a480e976d46827598a2be" category="inline-image-macro-rx" type="image"></block></block>
   <block id="598b6b9767b632d5f8782aee146b8657" category="inline-image-macro">Anti-Rans要 程序选项卡</block>
-  <block id="1da8d683ba248a66e7f1920206b6497b" category="paragraph">反网络软件详细信息显示Storage VM是否受ONTAP的反网络软件保护或Cloud Insights 工作负载安全性的保护。请注意、ONTAP ARP列显示ONTAP 系统上配置的ONTAP板载防反网络防御保护的当前状态。可通过在该列中选择"保护"来启用Cloud Insights 工作负载安全性。<block ref="cd09409d17429adfa1d9264e8890d599" category="inline-image-macro-rx" type="image"></block></block>
   <block id="39f24b5dfbebdf196cf3620d23c570e9" category="inline-image-macro">ONTAP 基础知识警报列表</block>
   <block id="cfe004eb013b3b1ab9775c51e75f954d" category="paragraph"><block ref="cfe004eb013b3b1ab9775c51e75f954d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="790c40cc1a1c9962041f45f681e47393" category="admonition">Cloud Insights 联邦版不提供工作负载安全性。</block>
   <block id="c579fb48f9c33179f548470338a589f8" category="section-title">容量数据模型</block>
   <block id="171f897b82746fe136ca00d1742ea44a" category="paragraph">用于问题解答有关卷，应用程序卷，内部卷，交换机，应用程序， VM ， VMDK ， ESX 与 VM ，主机和应用程序节点的对比。其中许多报告_shourly_ data、_daily_data或这两者。使用此数据模型，您可以创建报告，说明问题解答有多种类型的性能管理问题：</block>
   <block id="d972e288b86634fdb9a758828b4d511a" category="cell">回收ONTAP 冷存储</block>
@@ -8951,8 +8810,6 @@
   <block id="0407a7c5b366f01d5671805c1f907afe" category="inline-image-macro">Cognos左上角菜单</block>
   <block id="837aabd72a7904f0806179e23fe0d6e5" category="paragraph"><block ref="837aabd72a7904f0806179e23fe0d6e5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e816756750f33badae1d375877be4d7" category="list-text">在*_Team Content_*中创建新文件夹</block>
-  <block id="5452e6774adb97c1d8607e2b1af1851a" category="paragraph">您可以通过单击 * 帮助 &gt; 支持 * 来访问 Cloud Insights 中的支持选项。您可以使用的支持选项取决于您的Cloud Insights 版本。</block>
-  <block id="3c99b9f872acb5e317804aaff9d10cfb" category="admonition">Cloud Insights 联邦版不提供实时聊天支持选项。</block>
   <block id="4b1a441cee8ab7a3e24907f03ffb3043" category="summary">显示Kubernetes工作负载的依赖关系和流、并突出显示网络和性能问题</block>
   <block id="75ff8d1aa96e6d68f1ba6bda0e071dc8" category="doc">Kubnetes性能监控和映射</block>
   <block id="31fde7b05ac8952dacf4af8a704074ec" category="inline-link-macro">预览</block>
@@ -8964,7 +8821,6 @@
   <block id="629532624af8fab6b66dfadc2398dfe1" category="paragraph"><block ref="629532624af8fab6b66dfadc2398dfe1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8c2288858ee6061ed208feb40c842e9a" category="section-title">监控器</block>
   <block id="4cbba110d06cbe92766e7957041807de" category="inline-link-macro">监控器</block>
-  <block id="398ef11564cb3ebb8d3480da183b89bb" category="paragraph">Workload Map使用 <block ref="8c1e0925f4a3d217ad73e0845030a6c1" category="inline-link-macro-rx"></block> 派生信息。Cloud Insights 提供了许多默认的Kubbernetes监控器(请注意、默认情况下、这些监控器可能为_Pauses_。您可以_Resume_(即启用)所需的监控器)、也可以为Kubornetes对象创建自定义监控器、工作负载映射也将使用这些监控器。</block>
   <block id="cfd443d1fe6acb5a33edeb19eee876d8" category="section-title">地图</block>
   <block id="7e31e16b7e4d0bdec82f97e29845098b" category="inline-image-macro">工作负载映射工作负载示例</block>
   <block id="05790ee528b0026e6b4e1c22baf014ea" category="paragraph"><block ref="05790ee528b0026e6b4e1c22baf014ea" category="inline-image-macro-rx" type="image"></block></block>
@@ -8980,7 +8836,6 @@
   <block id="ab65509e81982c2ab448e5662c4ee09d" category="paragraph">以颜色显示的圆圈表示工作负载的警告或严重级别警报。将鼠标悬停在圆圈上可查看问题描述 摘要、或者单击圆圈可打开包含更多详细信息的滑出面板。</block>
   <block id="1c33583ae1317aec595232a0f94991fd" category="inline-image-macro">工作负载详细信息和警报</block>
   <block id="219e34cfe0519a78647d5d9fbcaf4c78" category="paragraph"><block ref="219e34cfe0519a78647d5d9fbcaf4c78" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a3b909b3fe9805c43492b38e32cc76dd" category="paragraph">与其他Cloud Insights 功能一样、您可以轻松地设置筛选器、以关注所需的特定对象或工作负载属性。</block>
   <block id="e4fe29302896c288d2a9ee7fe931c67b" category="inline-image-macro">工作负载映射筛选</block>
   <block id="45a01cb04b2dc86e6def6376c184f9a1" category="paragraph"><block ref="45a01cb04b2dc86e6def6376c184f9a1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1da4b5e074a63813b09ebd31c36c3b70" category="section-title">工作负载标签</block>
@@ -9031,9 +8886,7 @@
   <block id="48bcae107d50992efecf85a6c4736dba" category="paragraph"><block ref="042d6428eca469dceeec3a1b4202ab56" category="inline-image-macro-rx" type="image"></block>
 <block ref="9aede4345f2bc9132f2c99c71d833e20" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5ad69c2277563fc580296910106cfd2f" category="paragraph">此时将转到报告界面。Cloud Insights 使用 IBM Cognos 分析作为其报告引擎。</block>
-  <block id="e497269a2941afd9840d0178bcec0d65" category="admonition">条件格式目前在Cloud Insights 联邦版中不可用。</block>
   <block id="7dc3d22c559fc9f6b251de846b6d601b" category="paragraph">对于表中的每一列、条件格式会分别进行设置。例如、您可以为容量列选择一组阈值、为吞吐量列选择另一组阈值。</block>
-  <block id="04e933e576c69389922d790b28b832e2" category="admonition">ActiveIQ在Cloud Insights 联邦版中不可用。</block>
   <block id="e2eb5a26f8f8c6cd350884687bbcf0fd" category="paragraph">为了保护敏感数据、NetApp建议您在安装或升级后更改默认密钥和_Acquisition _用户密码。</block>
   <block id="d39add7e6bc84e58e3541f2c6e6019d4" category="list-text">要安装采集单元软件(包括SecurityAdmin工具)、您必须在AU系统上拥有管理员权限。</block>
   <block id="81c4b8e957fe3d7a1f7f310a21a6029d" category="list-text">如果您的非管理员用户随后需要访问SecurityAdmin工具、则必须将其添加到_cisys_组中。_cisys_组是在AU安装期间创建的。</block>
@@ -9081,7 +8934,6 @@
   <block id="2ed6d0911bda563375b8a7f38ece8cba" category="paragraph">要更新代理、请使用命令</block>
   <block id="9d6898c9d6fff2bd62d85b66643bb3d1" category="doc">洞察：回收ONTAP 冷存储</block>
   <block id="0d76fbb36f181c92649274af9d5b537e" category="paragraph">回收ONTAP 冷存储Insight可提供有关ONTAP 系统上卷的冷容量、潜在成本/电耗节省和建议操作项的数据。</block>
-  <block id="62cbec5499f7528b78b111c904e78b71" category="paragraph">要查看这些洞察、请导航到*信息板&gt;洞察力*、然后查看_RecaLate ONTAP Cold Storage_ Insight。请注意、只有在Cloud Insights 检测到冷存储时、此Insight才会列出受影响的存储、否则您将看到"全部清除"消息。</block>
   <block id="da69b960f5bb93c02fdd4886868836f6" category="inline-image-macro">Insight列表显示了3个包含冷数据的存储</block>
   <block id="7718245a70dcc6279bf8af86a72c2e35" category="paragraph"><block ref="7718245a70dcc6279bf8af86a72c2e35" category="inline-image-macro-rx" type="image"></block></block>
   <block id="930fd15ae62cafe82d62d6912f307087" category="paragraph">Insight问题描述 可快速指示检测到的"冷"数据量以及数据所在的存储。该表还提供了包含冷数据的工作负载计数。</block>
@@ -9093,7 +8945,6 @@
   <block id="42bb4c2dadbccfef009beef19eb60c44" category="paragraph">确认哪些工作负载未在使用中、并考虑将其归档或从存储系统中删除。</block>
   <block id="30dc3fa30dc934a0d0aa98e3789e46c2" category="list-text">请考虑NetApp的Fabric Pool解决方案</block>
   <block id="db08e6b1d619064fa3fd2035f5926d18" category="paragraph">回收ONTAP 冷存储Insight可提供有关ONTAP 系统上卷的冷容量、潜在成本/电耗节省和建议操作项的数据。 <block ref="82cab8f639b07ead699dc071830d992e" category="inline-link-macro-rx"></block></block>
-  <block id="3a4ab80b2583f296b4bc5d2e0c2c4b5d" category="admonition">这是一项_Preview_功能、可能会随着时间的推移进行更改。 <block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> 关于Cloud Insights 预览功能。</block>
   <block id="ec1ac4271fbf56890989ecb3a691d684" category="list-text">导航到*菜单&gt;内容&gt;团队内容&gt;报告*</block>
   <block id="a59e6206d800a2b43147a3078e8831f3" category="list-text">在屏幕右上角，选择*[New +]*</block>
   <block id="ab8be94533c1cad6ab42818425762606" category="list-text">选择*报告*</block>
@@ -9110,9 +8961,7 @@
   <block id="40cbfe4ff90102c4f28a5dd9034c30ca" category="list-text">从*Run*菜单中选择输出类型，以运行报告。</block>
   <block id="8ed7b905a59e5488e500fdbff4d3cf32" category="inline-image-macro">选择报告输出</block>
   <block id="c0404d66fec1056cbbdcf7bc76589700" category="paragraph"><block ref="c0404d66fec1056cbbdcf7bc76589700" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="f6706b55dc0bef6b9951c40daa3a0ee2" category="admonition">Cloud Insights 联邦版不支持存储工作负载安全性。</block>
   <block id="af5f3409a3cec43a03f959371f642cae" category="admonition">默认情况下、许多系统监控器处于_Paused.状态。您可以通过为系统监视器选择_Resume_选项来启用该监视器。确保在数据收集器中启用了_Advanced Counter Data Collection _和_Enable ONTAP EMS log Collection _。可以在 ONTAP 数据收集器中的 _Advanced Configuration_ 下找到这些选项：<block ref="c9fb5b808ac97b65ea1073e21fb359f9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="13c40afab8bb116e2a274838e229f575" category="paragraph">您可以单击 "Activity History" 表上方的 _Export_ 按钮将活动历史记录导出到 .CSV 文件。请注意、仅导出排名前10万位的记录。根据数据量的不同、导出可能需要几秒钟到几分钟才能完成。</block>
   <block id="75089fe944982f39be6142328f8b77cf" category="paragraph">您要求我们在安装适用于Windows和Linux的代理时提供校验和值、我们认为这是一个很好的主意。因此、它们是：</block>
   <block id="2ddc4416c197500bc7619829b98c8b77" category="doc">配置代理以收集数据(Windows/Linux)</block>
   <block id="72213a3f462eab56462e1fd1892f6fc0" category="list-text">为您的主机选择合适的平台(Windows、Linux)</block>
@@ -9270,8 +9119,6 @@
   <block id="ea06c8a4bc5e070206dea22d4c09ea4a" category="list-text">environment <block ref="9d0f209eaf780338551d5fb55073783e" category="inline-link-macro-rx"></block> 保存在一个自行记录的配置文件中。</block>
   <block id="4626ec11333b1630cfeee22687c063f2" category="paragraph">。 <block ref="bfbd4b14aa5d5e760ae10e06c192ceef" category="inline-link-macro-rx"></block> 功能可通过映射Kubernetes工作负载之间的依赖关系来简化故障排除。它可以实时查看Kubbernetes网络性能的等待时间和异常情况、以便在性能问题影响用户之前发现这些问题。此功能可通过分析和审核Kubnetes流量来帮助企业降低整体成本。</block>
   <block id="da9f9625eb860a1ad92687973f4b6f55" category="section-title">联邦版的其他要求</block>
-  <block id="dff4dc08edcbd6b7929f7f987fa14f17" category="list-text">对于Cloud Insights 联邦版集群中的采集单元安装、底层操作系统必须具有良好的熵源。在Linux系统上、通常通过安装_rng-tools_或使用硬件随机数生成(RNG)来完成此操作。客户有责任确保采集单元机器满足此要求。</block>
-  <block id="4b051b13595634958e002ebbf8d92506" category="summary">Cloud Insights 可以提供前端和后端虚拟化存储的视图。</block>
   <block id="f489c820bd49075e9fac81860fe93688" category="section-title">表小工具中的虚拟化</block>
   <block id="b54537489c4ac4c2d2a2fc686c6b85a7" category="paragraph">开始了解存储虚拟化的最简单方法之一是创建一个显示虚拟化类型的信息板表小工具。在为小工具构建查询时、只需将"虚拟 类型"添加到您的分组或筛选器中即可。</block>
   <block id="faffd9673a91f79b7697893831a280c9" category="inline-image-macro">用于显示存储虚拟化的T型 的基本查询</block>
@@ -9340,7 +9187,6 @@
   <block id="5b5c93dfe04a64ec52da6b4603542b2d" category="paragraph">该映射显示了服务/工作负载及其相互关系。箭头显示交通方向。将鼠标悬停在某个工作负载上可显示该工作负载的摘要信息、如以下示例所示：</block>
   <block id="85adf3862ca2037a273ff3441c2be5f9" category="list-text">标签源自POD的工作负载标签</block>
   <block id="cf568df890526e57bf700e2dc4b65a7c" category="list-text">如果源位于Kubnetes集群外部：</block>
-  <block id="87ff7926a3611a5c9e94e85db4fa5bea" category="list-text">Cloud Insights 将尝试解析DNS解析名称以提取服务类型。</block>
   <block id="bd1a60f90cea9c1c50d2670c398e61e4" category="paragraph">例如、如果DNS解析名称为_s3.eu-north-1.amazonaws.com、则解析后的名称将获取_S3_作为服务类型。</block>
   <block id="500b3306f51ddde04e4c6da822f4a0e1" category="section-title">深入剖析</block>
   <block id="85b2e2afff81bc570758ed245f94e0ab" category="paragraph">右键单击工作负载可提供更多选项供您进一步了解。例如、您可以从此处放大查看该工作负载的连接。</block>
@@ -9352,7 +9198,6 @@
   <block id="bc73b2df84aeadcf404198608adc15f8" category="paragraph">最后、选择_Go to Asset Page_将打开工作负载的详细资产登录页面。</block>
   <block id="1f77b1ef877148b891f2cb01d5adad8a" category="inline-image-macro">工作负载资产页面</block>
   <block id="208df78ccb496daba189129b4e1d9439" category="paragraph"><block ref="208df78ccb496daba189129b4e1d9439" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="2ec69e962ebca3d9f0e5279aa138f19a" category="paragraph">您可以在以下任意对象类型上创建Cloud Insights 指标警报。确保数据按默认对象类型分组。</block>
   <block id="be00894fb094481f332cdeb18d58160f" category="section-title">报告Kubbernetes数据</block>
   <block id="aa0a317cf28a0f0d299d7319c70613b5" category="paragraph">Cloud Insight收集的Kubernetes数据(包括永久性卷(PV)、PVC、工作负载、集群和命名区)现在可用于报告、支持成本分摊、趋势分析、预测、TTF计算、 和其他业务报告有关Kubbernetes指标的信息。</block>
   <block id="3b1c56e7c6b15724089ac1fbd8291af2" category="section-title">正在接收代理和Data Collector升级通知</block>
@@ -9360,7 +9205,6 @@
   <block id="2ea94aba509e4f34b59231b813dd33f2" category="list-text">此时、"Enable upgrade通知"复选框将变为启用状态。</block>
   <block id="f7e530357a9fe13372b34f49bcbf5513" category="list-text">代理和Data Collector升级电子邮件通知会在计划升级的前一天发送到电子邮件ID。</block>
   <block id="be8e3ac01b05912cba21f26369a5a852" category="cell">"Data Collector运行状况警报"中存在电子邮件ID、但我未收到通知。</block>
-  <block id="9080956b20cd0e2cc8124ec3684655c3" category="cell">通知电子邮件从NetApp Cloud Insights域发送、即从_accounts@service.cloudinsights.netapp.com_发送。某些公司会阻止来自外部域的传入电子邮件。确保来自NetApp Cloud Insights域的外部通知已列入白名单。</block>
   <block id="8816114441548a7f4d390de764f25ad9" category="paragraph">您可以在特定设备或所有设备上设置策略。要设置响应策略，请选择*管理&gt;自动响应策略*，然后单击相应的*+Policy*按钮。您可以为攻击或警告创建策略。</block>
   <block id="7ee8aae70113b376d8eb550719ded4da" category="paragraph"><block ref="7ee8aae70113b376d8eb550719ded4da" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a3212607b61ab6e23624ab9cfe54fd1a" category="section-title">试用版</block>
@@ -9386,13 +9230,6 @@
   <block id="62a0cfde3778aefa78f4b178eaa97a76" category="paragraph">Cloud Insights附带了以下系统监视器：</block>
   <block id="ba58cfebfc4230ab4f6ab822a49aa1fe" category="list-text">Storage VM FCP服务不可用</block>
   <block id="99f7dcb5d0bc844ef56cc6cd317f2555" category="list-text">Storage VM iSCSI服务不可用</block>
-  <block id="2fdbb1db4127b83dadc134e367935c11" category="cell">搜索字符串中的星号(\*)将搜索所有内容。但是，诸如_*&lt;searchTerm&gt;_或_*&lt;searchTerm&gt;*_之类的前导通配符字符串会导致查询速度较慢。
-要获得更好的性能，请改用前缀字符串，格式为_&lt;searchTerm&gt;*_(换言之，请附加星号(*)_after_搜索词)。
-示例：使用字符串_testvolume*_，而不是_*testvolume_或_*test*volume_。
-
-使用基于前缀的搜索以递归方式查看给定文件夹下的所有活动(分层搜索)。例如、_/path1/path2/path3_或_"/path1/path2/path3"_将以递归方式列出_/path1/path2/path3_下的所有活动。
-或者、使用所有活动选项卡下的"Add to Filter"(添加到筛选器)选项。</block>
-  <block id="119a624f6eb573c06e0ae3a7429c9891" category="list-text">*Chat*-您将与NetApp支持人员联系以获得帮助(仅限工作日)。任何Cloud Insights 屏幕右上角的*帮助&gt;实时聊天*菜单选项均提供聊天功能。</block>
   <block id="b2997605f7b826343b475f71837415f4" category="section-title">日志位置</block>
   <block id="21872dffda230726cb93a6dddff7dd00" category="paragraph">Telegraf日志消息会从stdout重定向到以下日志文件(默认为)：</block>
   <block id="176f2e3b515143c4119028872457ab70" category="list-text">rell/CentOS：/var/log/centraf/telegraf.log</block>
@@ -9447,7 +9284,6 @@
   <block id="ae8f504ff2e83723f08fc4f873fcdca5" category="paragraph">要开始了解共享资源中要求苛刻和受影响的工作负载、请单击*仪表板&gt;洞察力*、然后在压力下选择*共享资源* Insight。</block>
   <block id="923231dd5cc497f857ab7bc31259567c" category="inline-image-macro">洞察菜单</block>
   <block id="4ad858c99ade794af9d0e0a1491e01bc" category="paragraph"><block ref="4ad858c99ade794af9d0e0a1491e01bc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0111ce9fed5023fdfdac30af08350a0d" category="paragraph">Cloud Insights 将显示检测到饱和的任何工作负载的列表。请注意、Cloud Insights将显示至少检测到一个_苛 求的资源_*或*受影响的资源_的工作负载。</block>
   <block id="6345c18147755da14a72a1bcc448c878" category="paragraph"><block ref="6345c18147755da14a72a1bcc448c878" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bea93c5448a53dbeae5f078ae207efa5" category="paragraph"><block ref="416a8d7353098379fdb36ba6e8aa6da8" category="inline-image-macro-rx" type="image"></block>
 <block ref="abda75af4f4de4a9d5c96cfad5c94c77" category="inline-image-macro-rx" type="image"></block></block>
@@ -11031,7 +10867,6 @@ VMware vCenter Server 8.0.1内部版本21860503</block>
   <block id="a86bd6cf348747cd34bce0fd7d6a84a9" category="paragraph">可从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="47c66df8007a6168673191bfaef7dfab" category="paragraph">可以从找到追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
   <block id="e07849f7cb6b62fcc60bd889bb8954df" category="paragraph">可以从中找到此数据收集器上的追加信息 <block ref="d34993add17c6dd464dba2ccd7f99cbb" category="inline-link-macro-rx"></block> 页面或中的 <block ref="9dd2beb67fe62b2f58f66806d3cbe842" category="inline-link-macro-rx"></block>。</block>
-  <block id="4a186b8a397cc2aad62c7d9c7e9d9a66" category="paragraph">您可以在中查看或下载有关受支持的数据收集器的信息和详细信息 <block ref="1300170f2732d2d2d53f76de553810b4" category="inline-link-macro-rx"></block>。</block>
   <block id="c00642d871f5ba7dbc50bbe96271824a" category="cell">3.1.1 (MU1)
 3.1.2 (MU3)
 3.1.3 (MU1)
@@ -11294,7 +11129,6 @@ v9.2.4.2</block>
   <block id="8cc6fe8efec4a3d6fc5ed7b779e8c094" category="list-text">筛选带有_reason_且包含单词"Failed"的日志条目、但不包含任何特定原因"FailedMount"的日志条目。</block>
   <block id="0d08e6b786ad26cf3562710d1355fea7" category="list-text">请包括也包含_metadata.namespace_(包含单词"monitoring")的任何条目、但不包括"cm-monitoring"或"eg-monitoring"的特定名空间。</block>
   <block id="2b54fd64a2706073e8bc271891bd6d2d" category="paragraph">请注意、在上述情况下、由于"cm-monitoring"和"eg-monitoring"都包含短划线("-")、因此必须将这些字符串包含在双引号中、否则会显示解析错误。不包含短划线、空格等的字符串不需要用引号括起来。如果有疑问、请尝试将字符串放在引号中。</block>
-  <block id="b61d5955be1f96c1051d023bbbb0885a" category="list-text">图形已放大、仅显示特定时间范围内发生的日志结果。此处显示的时间范围反映了当前的缩放级别。选择_重置缩放_按钮可将缩放级别设置回当前Cloud Insights时间范围。</block>
   <block id="e9c3a605437c1d21260249137747effc" category="list-text">图表结果已按_sSource_字段进行分组。图表将在分组为颜色的每列中显示结果。将鼠标悬停在图表中的一列上将显示有关特定条目的一些详细信息。</block>
   <block id="ddebec2cff3de7b17694a2b5c55254a5" category="inline-image-macro">分组的Hover详细信息</block>
   <block id="540bd2dacf8012f1036c7cbb4c950e57" category="paragraph"><block ref="540bd2dacf8012f1036c7cbb4c950e57" category="inline-image-macro-rx" type="image"></block></block>
@@ -11622,13 +11456,9 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="23639e5972e5f3878de9fd64c5a01f73" category="paragraph">选择模块旁边的复选框，以从估计成本中添加或删除整个模块的MU。</block>
   <block id="3406a9b7847cf7a53e580c01031639d0" category="paragraph">估算器还允许您查看附加项(您保留当前订阅期限并增加许可的受管单元数量)或续订选项(您在当前订阅时将购买的续订订)的数量累积情况 期限结束。</block>
   <block id="51551d892e3008a0a15372506e7c3778" category="section-title">按域限制访问</block>
-  <block id="3a61360418d262f9d84cc867c9f6dafd" category="paragraph">Cloud Insights可以将用户访问限制为仅限您指定的域。在*Admin &gt; User Management*页上，选择“限制域”。</block>
   <block id="c55e947bf98f22cc4e8f7588d8766267" category="inline-image-macro">将域限制为仅限默认域、默认域以及您指定的其他域、或者没有限制</block>
   <block id="3918febcb400c73584a46d9496f559c5" category="paragraph"><block ref="3918febcb400c73584a46d9496f559c5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d8aa9f67356322fd8d0293bb016de3df" category="paragraph">您将看到以下选项：</block>
-  <block id="1851aec30e57598577c5ea29624fe8f4" category="list-text">无限制：用户无论在哪个域、都可以访问Cloud Insights。</block>
-  <block id="3fd4ae48fb6a82b317e55d474c186cee" category="list-text">限制对默认域的访问：默认域是Cloud Insights环境帐户所有者使用的域。这些域始终可访问。</block>
-  <block id="846c4bffd2bae99bec40857d4f18da12" category="list-text">限制对指定默认值和域的访问。列出除了默认域之外、您还希望有权访问Cloud Insights环境的任何域。</block>
   <block id="b0ec3d3ab3b33bd69418a7bd9e4d8f9e" category="section-title">2023年10月</block>
   <block id="e76d326e7377a93bd9d473077ecdd257" category="section-title">限制对指定域的访问</block>
   <block id="e391d7f1ca15dcf0f9409952796c6e9f" category="inline-link-macro">限制Cloud Insights访问</block>
@@ -11646,10 +11476,8 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="ad61c1ba38ff9af26797e324a38dc514" category="inline-link-macro">角色和规则</block>
   <block id="7f6383a46fdc2ac52c791c8ea4cf03b6" category="summary">介绍了数据保留时间和缩减采样</block>
   <block id="2acd8b96cc968efd569f0e0169390b9b" category="doc">数据保留和缩减采样数据</block>
-  <block id="8221571bdb4085e5cf8534456c5e5750" category="paragraph">Cloud Insights 会保留数据一段时间，具体时间由活动订阅版本决定。</block>
   <block id="025025548582d3777fd0b072c16e2656" category="cell">13 个月</block>
   <block id="a4d110a0ddc628e94b4e9223300af49b" category="inline-link-macro">版本和定价</block>
-  <block id="8a5a5004d445ce710c5fb829b859257b" category="paragraph">Cloud Insights上提供了每个版本中可用功能的完整列表 <block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="62a2ac40719f6cb31d5e1ad43d9d8a19" category="list-text">导航到*浏览-&gt;+New Metric Query*。</block>
   <block id="9ec73c52f582999e7cc8d920ca844c81" category="list-text">从下拉列表中选择_Storage_。</block>
   <block id="4c6af067d4990a4c05731f55b8095467" category="list-text">单击齿轮并添加_isActive_as列。</block>
@@ -11683,12 +11511,8 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="658caf28e4d04a4c56e83fd4c34621bd" category="list-text">您可以同时编辑多个数据收集器的信息。在*Observability &gt; Collectors*页面上，选中每个数据收集器左侧的框并单击*散装 操作*按钮，以选择要修改的数据收集器。选择 * 编辑 * 并修改必要的字段。</block>
   <block id="601816c89a0810f8802681f16fb50cc5" category="list-text">在Workload Security菜单中、单击：
 *收集器&gt;用户目录收集器&gt;+用户目录收集器*并选择*Active Directory*</block>
-  <block id="6c9b3e4dd62551cbb0cf3069e831b84b" category="list-text">在Cloud Insights菜单中，单击*Observability &gt; Collectors*</block>
-  <block id="2b7c39a8b273585cdba65d37a11b97e0" category="list-text">在Cloud Insights菜单中，单击*Observability &gt; Collectors*以打开已安装的数据收集器列表。</block>
-  <block id="41e52ba1f9b8b7cdf15e151317830ed2" category="list-text">在Cloud Insights菜单中，单击*Observability &gt; Collectors*。</block>
   <block id="4b079dc3088a9e53c6c6851870343850" category="list-text">单击*工作负载安全性&gt;收集器&gt;代理*</block>
   <block id="e65f7cc9f07286d1ff22f4c88e1d6fdb" category="list-text">单击*工作负载安全性&gt;收集器*以检查您配置的收集器的状态。</block>
-  <block id="efe524f42d2c837542d4da8626dd93a7" category="list-text">从Cloud Insights菜单中，单击*Observability &gt; Collectors*</block>
   <block id="a5436f2e1642a935e668be1ae1bc7cb4" category="list-text">导航到工作负载安全性*Collectors*并单击*Agents*选项卡。</block>
   <block id="3db8e6e28be63b5639b42d1210ec94f9" category="list-text">单击*+ Collector *并选择要配置的数据收集器。</block>
   <block id="2b38e4e9371e68c324f4d975aeec0b8b" category="doc">允许的文件类型策略</block>
@@ -11757,7 +11581,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="fc0a37407f79a45598558116e07830ba" category="paragraph">现在、2个新操作显示在收集器的"CAE"菜单上(暂停和恢复)。</block>
   <block id="12a77ef251456c14c7516a531e07f62b" category="paragraph">请注意、如果在收集器暂停时在ONTAP上创建了任何新卷等、则"工作负载安全性"不会收集数据、这些卷等也不会反映在信息板或表中。</block>
   <block id="ac08b45e1e6b3f3cb0a5ffc7cb738447" category="cell">根据已暂停收集器上配置的设置、不会执行Snapshot清除。</block>
-  <block id="301be6cbe57eeb518e76a0dacc06942b" category="cell">暂停的收集器不会处理EMS事件(如ONTAP ARP)。这意味着、如果ONTAP发现勒索软件攻击、Cloud Insights工作负载安全性将无法获取该事件。</block>
   <block id="7e41836b686c17a31fd348a24ad244d1" category="cell">不会为已暂停的收集器发送运行状况通知电子邮件。</block>
   <block id="3683774ed8a4e1ec359bda17c740e07d" category="cell">暂停的收集器不支持手动或自动操作(例如Snapshot或用户阻止)。</block>
   <block id="fa80f305470263b5f75374e020afeacd" category="cell">在代理或收集器升级、代理VM重新启动/重新启动或代理服务重新启动时、暂停的收集器将保持_Paused.</block>
@@ -11827,7 +11650,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="3fc1bb029faccb362d05bb964b9a5532" category="admonition">建议的选项为 <block ref="fab3704c9565365da788d72b33d2f55f" category="inline-link-macro-rx"></block> 创建文件之前。]</block>
   <block id="77b868151a2234cc10d342f43b6cbb14" category="inline-link-macro">恢复收集器</block>
   <block id="60d7b95e24d1ecfc57f6986cabb1871a" category="paragraph">在"工作负载安全性"中、如果数据收集器处于_running"状态、则可以暂停该收集器。打开收集器的"三点"菜单、然后选择暂停。暂停收集器时、不会从ONTAP收集任何数据、也不会从收集器向ONTAP发送任何数据。选择恢复以重新开始收集。</block>
-  <block id="cb4cb59ec3d83f1c614ac2210509e260" category="paragraph">如果Data Collector处于_running"状态、则可以暂停收集。打开收集器的"三点"菜单、然后选择暂停。暂停收集器时、不会从ONTAP收集任何数据、也不会从收集器向ONTAP发送任何数据。这意味着不会有Fpolicy事件从ONTAP流向数据收集器、也不会从该数据收集器流向Cloud Insights。</block>
   <block id="7cf0ebff62dd478662f71d56cd0334d1" category="list-text">如果您在执行这些步骤之前暂停了收集器、请确保 <block ref="277e805b18142e57dd69c30e47ad86c3" category="inline-link-macro-rx"></block>。</block>
   <block id="17f6f686e23fbca9f92a7a9926136c2d" category="cell">性能收集失败、并显示"SNMP请求发送期间超时"。</block>
   <block id="212277044ae3f4c8673a76ebbe182cbd" category="cell">根据查询变量和交换机配置、某些查询可能会超过默认超时时间。  <block ref="0374e985eaa396deda9975ede578752d" category="inline-link-macro-rx"></block>。</block>
@@ -11922,7 +11744,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="fbfc60b12bca0c131c59f525f76f22bf" category="summary">工作负载安全性可与ONTAP集成、以接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
   <block id="3ba4371c57b90b9ee49e030d7db47a1f" category="doc">与ONTAP集成访问被拒绝</block>
   <block id="c74fa865502a71610c2bcdb74da1afac" category="paragraph">ONTAP访问被拒绝功能会在NAS环境(NFS和SMB)中使用工作负载分析来主动检测文件操作失败(即尝试执行其无权限操作的用户)并发出警告。这些失败的文件操作通知(尤其是在出现与安全相关的故障时)将进一步有助于在早期阶段阻止内部攻击。</block>
-  <block id="454eafdb8e7a9a5507e578af411d82d5" category="paragraph">Cloud Insights工作负载安全性与ONTAP相集成、可接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
   <block id="265cb660bad001dd1edf92723a8d4d4e" category="list-text">最低ONTAP版本：9.13.0。</block>
   <block id="b125c8dabe7599cb2999397450c6d677" category="list-text">工作负载安全管理员必须在添加新收集器或编辑现有收集器时启用"访问被拒绝"功能、方法是选中"高级配置"下的_Monitor Access Denied Events_复选框。</block>
   <block id="1a4be5ca764787caaf41b91668c3ea9f" category="inline-image-macro">在ONTAP收集器高级配置中启用拒绝访问</block>
@@ -11977,13 +11798,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="466b14af7b02408eac035880aecf9915" category="paragraph">如果要收集集群交换机数据：</block>
   <block id="fcf3c8b7073234871f47a3a68559837a" category="inline-link-macro">此处(Linux)</block>
   <block id="5543adb6f73fddb3a3944d6d35b0de3e" category="inline-link-macro">此处(Windows)</block>
-  <block id="a619708c636cd548a93f5ec4dde89bb3" category="cell">从采集单元到*。.cloudinsights.netapp.com或您的Cloud Insights环境(即\https：//https：//Gbps.c01.cloudinsights.netapp.com)需要100 Mbps/1 &lt;environment_id&gt;以太网连接、静态IP地址以及端口80或443连接。有关采集单元与每个数据收集器之间的要求、请参见的说明 <block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。
-
-如果您的组织需要使用代理来访问 Internet ，则您可能需要了解您的组织的代理行为并寻求某些例外情况， Cloud Insights 才能正常工作。例如、您的组织是否默认阻止访问、并且例外情况下仅允许访问特定网站/域？如果是，则需要将以下域添加到异常列表中：
-
-*.cloudinsights.netapp.com
-
-有关详细信息、请阅读有关代理的信息 <block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block> 或 <block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
   <block id="b30a6e7a75eaf5af9f2106e8d96d324b" category="paragraph">对于具有_cluster-_凭据的CsUser、从ONTAP命令行执行以下命令。请注意、_csrestrolle_是自定义角色、而-CsUser_是ONTAP自定义用户。</block>
   <block id="d7a15f16d93378f9428254d47703abd2" category="section-title">2024年3月</block>
   <block id="375ee0c976167dd35b8f93758415f360" category="section-title">工作负载安全代理详细信息</block>
@@ -12287,26 +12101,19 @@ kubect get all -n &lt;namespace&gt;| grep -i psp (应显示未找到任何内容
 Storage Virtual Machine：REST不再报告类型为"数据"以外的SVM (例如、"集群"、"GMT"、"节点")。
 
 由于默认性能轮询周期从15分钟更改为5分钟、您可能还会注意到具有数据的图形的外观发生变化。  轮询频率越高、意味着要绘制的数据点就越多。</block>
-  <block id="07564ad1af1bd4ed017ae241054bd345" category="paragraph">Cloud Insights 最多可提供四个用户帐户角色：帐户所有者，管理员，用户和来宾。为每个帐户分配特定的权限级别，如下表所示。  用户可以是其中之一 <block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block> Cloud Insights 并分配了特定角色，或者可以通过登录 <block ref="47c69771a9bdd41067d8486727a07273" category="inline-link-macro-rx"></block> 具有默认角色。Cloud Insights 高级版提供了 SSO 授权功能。</block>
   <block id="2e28d2e91336191eb4cfb9f135bf4ce2" category="paragraph">通过BlueXP创建新的用户帐户。用户可以回复通过电子邮件发送的邀请、但如果用户没有BlueXP帐户、则需要注册BlueXP、以便接受邀请。</block>
   <block id="d26ae26dfaa208a028ca6437966e9b43" category="section-title">什么是身份联合？</block>
   <block id="08f656c4c33fd00fad5ab1ef569dae11" category="list-text">用户只需登录一次所有NetApp BlueXP服务(单点登录)。</block>
   <block id="02f6b1d6847323521b6d5dfdeb3f5dbf" category="paragraph">用户帐户在适用于所有云服务的NetApp BlueXP中进行管理。默认情况下、身份验证使用BlueXP本地用户配置文件完成。下面简要概述了该过程：</block>
   <block id="58ccf39c430354a2330777ebbfdc320c" category="inline-image-macro">使用本地进行BlueXP身份验证</block>
   <block id="6e7c9d2ac3ef07c7bcfe628147140973" category="paragraph"><block ref="6e7c9d2ac3ef07c7bcfe628147140973" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1efb7531b4ff57cf7e5dad319f452ce8" category="paragraph">但是、某些客户希望使用自己的身份提供程序对其Cloud Insights和其他NetApp BlueXP服务的用户进行身份验证。通过身份联合、NetApp BlueXP帐户将使用企业目录中的凭据进行身份验证。</block>
   <block id="34dde67853699a7c5e92b37ac717d586" category="inline-image-macro">使用联合进行BlueXP身份验证</block>
   <block id="14bf8864e0c03f214a9531c84f7509ff" category="paragraph"><block ref="14bf8864e0c03f214a9531c84f7509ff" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41f5e02dabb202e2e56ff56a913cc88b" category="section-title">正在启用身份联合</block>
   <block id="76ef581d75f4d1e4d3bdceeb091433ef" category="inline-link-macro">BlueXP联合说明</block>
   <block id="f68beb94c4510489905761611b802b02" category="paragraph">BlueXP使用Auth0实施身份联合、并与Active Directory联合身份验证服务(ADFS)和Microsoft Azure Active Directory (AD)等服务集成。要配置身份联合、请参见 <block ref="dcb213271585f680aa429c2cd0d8d64f" category="inline-link-macro-rx"></block>。</block>
-  <block id="e806ab1149571cd13505dfbc97c18648" category="admonition">您必须先配置BlueXP身份联合、然后才能对Cloud Insights使用SSO。</block>
-  <block id="3d447ee9850a212906099a2f2e71dd7b" category="paragraph">请务必了解、在BlueXP中更改身份联合不仅适用于Cloud Insights、而且适用于所有NetApp BlueXP服务。客户应与他们拥有的每个BlueXP产品的NetApp团队讨论此更改、以确保他们使用的配置可与身份联合使用、或者在需要对任何客户进行调整时也可使用。客户还需要让内部 SSO 团队参与身份联合的变更。</block>
   <block id="9ebe3356d760f8536e9bb24151537fda" category="paragraph">另外、还必须认识到、一旦启用身份联合、对公司身份提供程序进行的任何更改(例如从SAML迁移到Microsoft AD)都可能需要在BlueXP中进行故障排除/更改/关注、才能更新用户的配置文件。</block>
   <block id="5688f19f1e497727b537222451f54cc6" category="paragraph">对于此联盟问题或任何其他联盟问题、您可以在上创建支持服务单<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block> 并选择类别“bluexp.netapp.com &gt;联合问题”。</block>
-  <block id="1290a9c844484dfb0ecb66679bb02236" category="admonition">_SSO 用户自动配置 _ 在 Cloud Insights 高级版中可用，必须先进行配置，然后才能为 Cloud Insights 启用它。SSO用户自动配置配置包括 <block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block> 通过NetApp BlueXP、如上一节所述。联合允许单点登录用户使用企业目录中的凭据、并使用安全断言标记语言2.0 (SAML)和OpenID连接(OIDC)等开放式标准访问NetApp BlueXP帐户。</block>
-  <block id="5f47dcd3204dc1bc6c36abf1ce4be4cc" category="paragraph">要配置_SSO用户自动配置_，必须先在*Admin &gt; User Management*页上设置BlueXP身份联合。选择横幅中的*设置联合*链接以继续BlueXP联合。完成配置后、Cloud Insights管理员可以启用SSO用户登录。当管理员启用 _SSO 用户自动配置 _ 时，他们会为所有 SSO 用户（如来宾或用户）选择一个默认角色。通过 SSO 登录的用户将具有此默认角色。</block>
-  <block id="bbeb55e7d4d240b66f4ca24218cf7de0" category="admonition">由于NetApp BlueXP自身的用户登录超时为7天、因此Cloud Insights也必须使用该事件注销。您只需重新登录，您的信息板就会继续显示。</block>
   <block id="d30a0cd77a13a9c540651e05cf93b85c" category="cell">缺少映像或配置无效会导致NetApp-CI-Kube-state-metrics Pod无法启动或准备就绪。现在、StatefulSet停止运行、并且配置更改未应用于NetApp-CI-KUE-STATE-MErics Pod。</block>
   <block id="54ddc3c7d064822eed932015d8740336" category="inline-link-macro">已损坏</block>
   <block id="24842c3920322c32befcba0bfb6c67b4" category="cell">StatefulSet位于中 <block ref="01cb4c066842f659530df33ef9ef5308" category="inline-link-macro-rx"></block> 状态。修复任何配置问题后、退回NetApp-CI-Kube-state-metrics Pod。</block>
@@ -12514,7 +12321,6 @@ Microsoft Edge会对例外情况采用与Chrome相同的格式。
     -运行命令"auunitaddauto -IP &lt;ip&gt;"。使用正确的IP替换&lt;ip&gt;。</block>
   <block id="106b0b60f6d1a63a5d090bb5d33b4b6a" category="list-text">* 量表小工具 * ：以传统（实心）量表或项目符号量表的形式显示单值数据，并根据您的 " 警告 " 或 " 严重 " 值显示颜色 <block ref="ce9cfc657985aa685104d6bcb1ead4a8" category="inline-link-macro-rx"></block>。</block>
   <block id="9a5d498bf9b8403940f19e1ef7148f1d" category="list-text">包含指向的链接的实体的路径 <block ref="633539366fa6408c302917ca137b4662" category="inline-link-macro-rx"></block></block>
-  <block id="476381b52fc0e8c9c312bfbd66594653" category="paragraph">在试用模式下运行时， Cloud Insights 可提供自助服务和电子邮件支持。订阅服务后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。注册完成前，默认支持模式为自助服务。请参见 <block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block> 。</block>
   <block id="ad99b83e7b10ea825777161cb8f5594b" category="cell">* 验证输入的凭据和 IP 地址。
 *尝试通过Web管理控制台\https：//DS8452/DS8000/Console与阵列进行通信&lt;ip&gt;。  将&lt;ip&gt;替换为已配置数据收集器的IP。</block>
   <block id="bc47800fe62365013d4adf7232c1c738" category="paragraph">请务必查看的权限部分 <block ref="c5b253e6d28e76aaaf37feb5e0119ce8" category="inline-link-macro-rx"></block> 页面。</block>
@@ -12779,19 +12585,6 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="21375ff3b38428634b0bb8f11745059a" category="paragraph">如果收集器安装程序文件不在/tmp/cCollector目录中或无法访问、则会出现此错误。请确保下载安装程序文件、并且目录"canceller"和安装程序zip文件归cssys：cssys所有、然后重新启动代理服务—"systemnti restart cloudsecure-agent.service”</block>
   <block id="c10b2daccdd9136337eaaa94938222bc" category="paragraph">如果在生成API访问令牌时未选择所有必需的API类别、则会显示此错误。通过选择所有必需的API类别来生成新的API访问令牌。</block>
   <block id="1fb20c216d1008aa26dd3559c9f0c877" category="cell">使用_path_筛选器时、取证UI加载数据的速度较慢。</block>
-  <block id="4ef9ea59ad225f2c525fb8c4286f39e1" category="cell">如果路径为_/AAA/BBB/CCC/DDD_、则不要搜索：
-
-AAA/BBB/CCC*
-
-或
-
-AAA/BBB/C/*
-
-尝试搜索：
-
-AAA/BBB/CCC/*
-
-通过此搜索、可以更快地加载数据。</block>
   <block id="f4635255d83c947a8f5c0873878fce73" category="cell">选择SVM模式后、Data Collector出现错误。</block>
   <block id="e01a5196bbb9ef19ecab5eb2b9c9a7a8" category="cell">在SVM模式下连接时、如果使用集群管理IP而不是SVM管理IP进行连接、则连接将出错。确保使用正确的SVM IP。</block>
   <block id="6a5710d8de4bc30f9d19e0130e1b9cc1" category="inline-image-macro">手动安装API</block>
@@ -12854,7 +12647,6 @@ AAA/BBB/CCC/*
   <block id="88de6acb1a05ed53be1eb11796125d52" category="inline-image-macro">下拉列表以选择与当前信息板位于同一组中的另一个信息板</block>
   <block id="ebde4cb30069bf7811bcab479a98b1de" category="paragraph"><block ref="ebde4cb30069bf7811bcab479a98b1de" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cf0b6689b45787134fc0c6f10cd64fd2" category="paragraph">Cloud Insights中使用的对象图标。</block>
-  <block id="f1d16f360380bc347a5a9e8768937aa7" category="paragraph"><block ref="f1d16f360380bc347a5a9e8768937aa7" category="inline-link-macro-rx"></block></block>
   <block id="536041084bffaf10e48c1cc03ccee7a2" category="paragraph"><block ref="536041084bffaf10e48c1cc03ccee7a2" category="inline-link-macro-rx"></block></block>
   <block id="4d0f1a88ac64f025d3fa96e291e7a276" category="section-title">基础架构图标：</block>
   <block id="2a8b7bf5296e8ac5b8214e85ec2bab16" category="inline-image-macro">基础架构图标参考</block>
@@ -12881,7 +12673,6 @@ AAA/BBB/CCC/*
   <block id="b05f0d41b637f86ee2555bfc971f76bf" category="cell">文件计数</block>
   <block id="792171f0bd1e324307f6b4ba189249a8" category="list-text">单击 * 高级配置 * 以添加其他配置字段。（并非所有数据收集器都需要高级配置。）</block>
   <block id="4279b596662924e6b4010f919f84d17c" category="list-text">单击 * 测试配置 * 以验证是否已正确配置数据收集器。</block>
-  <block id="fde3f7c671a4c40a9d5099c319bbabaa" category="list-text">单击 * 添加收集器 * 以保存配置并将数据收集器添加到 Cloud Insights 租户。</block>
   <block id="de0a3477c1c391a811d9b2911a84fb19" category="paragraph">可能需要长达两个轮询周期，才能将服务中的数据显示在信息板中或用于查询。</block>
   <block id="3d9f514d46849760ef1b1412e314fd99" category="paragraph">错误：</block>
   <block id="0764744c95ee6244fcf44e9abace1780" category="list-text">代理未运行</block>
@@ -12940,12 +12731,9 @@ AAA/BBB/CCC/*
   <block id="580c0c98d8c4eb79fb929b7b1eb5f4f2" category="paragraph">现在、SVM数据收集器支持NFS版本、此版本最高可达* NFS 4.1*、并支持ONTAP 9.15.1.或更高版本。</block>
   <block id="be2f9224b979c292cb15fb8ca6626094" category="summary">监控指标是否存在异常</block>
   <block id="de4898eb228c5960d7add96b5bd2ad82" category="doc">异常检测监控器</block>
-  <block id="cbcb7e323368454d1aaea827422f8ab4" category="paragraph">通过异常检测、您可以深入了解环境中数据模式的意外变化。当您的环境中对象行为模式发生变化时、会发生异常、例如、如果对象在周三的某个时间遇到特定级别的延迟、但在随后的周三的该时间、延迟峰值高于该级别、 这种峰值将被视为异常。Cloud Insights允许创建监控器、以便在出现此类异常时发出警报。</block>
-  <block id="6ee4ef3e25dbca514480336d70c68b6f" category="paragraph">异常检测适用于表现出重复性可预测模式的对象指标。当这些对象指标峰值高于或低于预期水平时、Cloud Insights可以生成警报以提示调查。</block>
   <block id="f9e98659236dd136d51fbe90184c9350" category="inline-image-macro">显示检测到的异常的图形</block>
   <block id="6d45093f10be1c53f9db64c498f5d580" category="paragraph"><block ref="6d45093f10be1c53f9db64c498f5d580" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2d2575e3b331dd7b57d604dc713e48c2" category="section-title">什么是异常检测？</block>
-  <block id="9191e0d6339fc5dc7a81e5a8c55ed26b" category="paragraph">如果指标的平均值是前几周与该指标加权平均值之间的一些标准偏差、而最近几周的权重比前几周多、则会出现异常。Cloud Insights可以监控数据、并在检测到异常时发出警报。您可以选择设置检测的"灵敏度"级别。例如、当平均值与平均值的标准偏差更少时、敏感度会更高、从而导致生成更多警报。相反、敏感度较低=与平均值的标准偏差较多=警报较少。</block>
   <block id="833e967d7ee3cf2f23601ccdafe6306f" category="section-title">异常检测监控与阈值监控不同。</block>
   <block id="707a70f8b64924d439fa4e0679dc94e9" category="list-text">*基于阈值的监控*在为特定指标预定义阈值时起作用。换言之、当您清楚地了解预期目标(即在正常范围内)时。</block>
   <block id="c1045d44e2c7b706bb670c2d93126209" category="inline-image-macro">度量监测器适用于您了解工作范围的情况</block>
@@ -13012,7 +12800,6 @@ AAA/BBB/CCC/*
   <block id="51408f1c75ab7bcc90f67b3ab1801733" category="cell">API 令牌</block>
   <block id="b3aa21e2b7855df7d2d86e0bcb7a55d9" category="section-title">如果我的订阅已过期、该怎么办？</block>
   <block id="c3ef097c271469a3ca9718d35396087c" category="paragraph">集群使用与可观察性衡量相同的方法来衡量工作负载安全性。</block>
-  <block id="b740b52e59449de8ca69c0abf8f65235" category="paragraph">Cloud Insights检测到的任何高消耗性工作负载都会显示在"_shared Resources under Compends_ Insight "中。导航到*Observability &gt; Infrastructure洞察力*以查看这些洞察。</block>
   <block id="559b55d2ef8b4ca8873098ababc8733e" category="inline-image-macro">共享资源</block>
   <block id="104a62c301b2c9494638e2812254d98d" category="paragraph"><block ref="104a62c301b2c9494638e2812254d98d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5c2ddd5fbb490260fb0b081ca3636f47" category="inline-xref">步骤1c.</block>
@@ -13458,4 +13245,224 @@ AAA/BBB/CCC/*
   <block id="872c0f593dab2b44f4dff49641e77590" category="list-text">此时将显示一个列表，其中最多包含最近 1 ， 000 个警报。您可以通过单击任何字段的列标题对此列表进行排序。此列表将显示以下信息。请注意，默认情况下并不会显示所有这些列。您可以通过单击"齿轮"图标来选择要显示的列：</block>
   <block id="88a839c0b82eee34733678fcc5ffb8bd" category="cell">如果Fluent Bit无法启动并尝试打开/创建其数据库、请将run特权 设置为true。</block>
   <block id="ab5cb6794af58d6cd4132b44aa3d3d04" category="sidebar">注册获取Data Infrastructure Insight</block>
+  <block id="30accaf6a3626f10ec929da93cbf92a5" category="summary">通过Data Infrastructure Insight API、可以与监控和报告系统等其他应用程序集成。</block>
+  <block id="6d6db1bb67f06328b211ea82a7f47cbd" category="doc">Data Infrastructure Insight API</block>
+  <block id="eac3abc77b1aae81a7bfc1ff05078f3c" category="paragraph">通过数据基础架构洞察API、NetApp客户和独立软件供应商(ISV)可以将数据基础架构洞察与其他应用程序(例如CMDB或其他服务单系统)集成在一起。</block>
+  <block id="4ca8e0cdf82e94476f54fca7c9b08a02" category="paragraph">请注意、Data Infrastructure Insight API可根据您的当前版本提供：</block>
+  <block id="78b105b7e2a3c96f1ef28d2a96f59830" category="paragraph">此外、您的数据基础架构洞察力<block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block>还将确定您可以访问哪些API。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。</block>
+  <block id="da9fb37ca66951f2715562f74dd167af" category="list-text">API令牌管理由具有管理员角色的Data Infrastructure Insight用户执行。</block>
+  <block id="e72088ab32f20f058f4f46fe9cad2b0c" category="paragraph">登录到Data Infrastructure Insight并导航到*Admin &gt; API Acccess*可以找到最新的API信息。单击 * API Documentation" 链接。</block>
+  <block id="30a47f88beaa0845897dd8164cdcdd08" category="paragraph">API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。根据您的用户角色和/或Data Infrastructure Insight版本、您可以使用的API类型可能会有所不同。</block>
+  <block id="d8a31e083fdfb77629ea20abe7a2af70" category="paragraph">在使用Data Infrastructure Insight API之前、您必须创建一个或多个*API访问令牌*。访问令牌用于指定的 API 类型，并且可以授予读取和 / 或写入权限。您还可以为每个访问令牌设置到期时间。指定类型下的所有 API 对访问令牌有效。每个令牌都不包含用户名或密码。</block>
+  <block id="2ad881941db239e74f1523da2782c39a" category="paragraph">令牌从客户角度授予对 API 的通用访问权限；在其自己的租户范围内管理对 API 的访问权限。客户管理员可以授予和撤销这些令牌、而无需Data Infrastructure Insight后端人员的直接参与。</block>
+  <block id="14b84a3791e7a10fe4d65ea9a7ff7363" category="paragraph">Data Infrastructure Insight API基于类别、当前包含以下类型：</block>
+  <block id="90782e54bcf29265124126b5b3be24ad" category="list-text">查询：检索和管理Data Infrastructure Insight查询。</block>
+  <block id="63c9291ffc47b71cb537e7ecab415dab" category="paragraph">请注意、用户有权访问的API类型还取决于<block ref="ead2141fb682d81a2f0b1deca7bb95c5" category="inline-link-macro-rx"></block>他们在每个Data Infrastructure Insight功能集中拥有的(监控、工作负载安全性、报告)。</block>
+  <block id="475ea4ca6d29c1eb379b49090f81aea7" category="paragraph">本节介绍如何遍历Data Infrastructure Insight对象的层次结构。</block>
+  <block id="cc3cee81cef851f2f036f9ae6b1ac477" category="paragraph">性能数据会作为单独的示例收集到多个设备中。Data Infrastructure Insight会每小时汇总和汇总一次性能示例(默认值)。</block>
+  <block id="1852e85c98f9e7216ff053507e056147" category="paragraph">每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Data Infrastructure Insight支持本文档后面列出的多种性能指标类型。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。</block>
+  <block id="257f0ceb0672288b52ab4e080578e700" category="paragraph">Data Infrastructure Insight是一款可扩展(广泛开放)的解决方案、可与第三方业务流程、业务管理、变更控制和服务单系统以及自定义CMDB集成相集成。</block>
+  <block id="c92924fbf7861a093c4349a94f8bcf0e" category="doc">数据基础架构洞察力是BlueXP  的一部分</block>
+  <block id="e5e173192c2f69b363ad91f5ed6b33d3" category="paragraph">借助BlueXP、您可以从一个界面管理所有NetApp存储和数据资产。在BlueXP中、您会发现许多新的存储服务以及数据服务以前仅作为具有单独UI的独立服务提供。数据基础架构洞察(以前称为Cloud Insights)就是这些服务之一。</block>
+  <block id="fde977b4517b5a88b8ee2d3fcd1c0fd8" category="paragraph">全新的直观菜单在BlueXP的导航菜单中、数据服务按类别进行组织、并根据其功能进行命名。例如、"Data Infrastructure洞察力"功能集位于"Observability (可观察性)"菜单中。在探索Data Infrastructure Insight时、导航菜单顶部将显示"Observability (可观察性)"部分。在您探索时、每个BlueXP服务都是如此。</block>
+  <block id="9ecae0812a01df2d2809eccbaae9fb2d" category="admonition">在本文档中、术语"数据基础架构洞察力"和"可观察性"可以互换使用。</block>
+  <block id="fed6c86359bd4096089340c1d5328e42" category="cell">需要使用100 Mbps/1 Gbps以太网连接、静态IP地址以及端口80或443连接从采集单元连接到*。Cloud：com或您的Data Infrastructure NetApp环境(即\https：//Data &lt;environment_id&gt;：C01.Cloud NetApp：com)。有关采集单元和每个Data Collector之间的要求，请参阅的说明<block ref="be56515064596049a4b61d9d1a149cf9" category="inline-link-macro-rx"></block>。如果您的组织需要使用代理访问Internet、您可能需要了解组织的代理行为并寻求某些例外情况、以便Data Infrastructure Insight能够正常工作。例如、您的组织是否默认阻止访问、并且例外情况下仅允许访问特定网站/域？如果是这样，您需要将以下域添加到例外列表中：*.ldinsights．Proxs.com有关详细信息，请阅读关于NetApp<block ref="05c875968683001fc59f206218314b72" category="inline-link-macro-rx"></block>或<block ref="554efdd06704a764ab0a7e3947e279ff" category="inline-link-macro-rx"></block>。</block>
+  <block id="c0775283da3261d158df55d820b4e47b" category="paragraph">您可以开始使用仅具有8 GB内存和50 GB磁盘空间的Data Infrastructure Insight采集单元、但是、对于较大的环境、您应该问自己以下问题：</block>
+  <block id="cde8307fb591a6c3934539dcb5919f06" category="list-text">对于Data Infrastructure Insight Federal Edition集群中的采集单元安装、底层操作系统必须具有良好的熵源。在Linux系统上、通常通过安装_rng-tools_或使用硬件随机数生成(RNG)来完成此操作。客户有责任确保采集单元机器满足此要求。</block>
+  <block id="96cb7682ad0362f3aff6ef6f90dd2520" category="summary">数据基础架构洞察从NetApp Active IQ收集风险数据</block>
+  <block id="ace71aa31322ae1c7e3740649676adf8" category="admonition">ActiveIQ在Data Infrastructure Insight Federal Edition中不可用。</block>
+  <block id="97ba27a6c978c304ea9138ee01781875" category="paragraph">数据基础架构洞察会收集由Active IQ监控和报告的任何NetApp集群模式Data ONTAP存储系统的*风险*。Data Infrastructure Insight会在从这些设备收集数据的过程中自动收集为存储系统报告的风险。您必须将相应的数据收集器添加到数据基础架构洞察力中、以收集Active IQ风险信息。</block>
+  <block id="bfdb97c5bb51966044d87207708e9888" category="paragraph">数据基础架构洞察不会显示Active IQ未监控和报告的ONTAP系统的风险数据。</block>
+  <block id="a98980e7429cd68c3207593853e627fe" category="paragraph">报告的风险显示在_storage_和_storage nnode _资产登录页面上的"风险"表中。此表显示了风险详细信息，风险类别和风险的潜在影响，还提供了一个指向 Active IQ 页面的链接，其中汇总了存储节点的所有风险（需要登录 NetApp 支持帐户）。</block>
+  <block id="ae19f5b6992b8d45f55c8e5baa5492c8" category="list-text">在"数据基础架构洞察力摘要"小工具或"风险"表中、单击Active IQ链接。</block>
+  <block id="32a5da80264ae98c83852181734d819d" category="paragraph">在Data Infrastructure Insight中、您可以将*监控.COUNT*列添加到存储或存储节点查询中。如果返回的结果包括Active IQ监控的存储系统、则monitor.count列将显示存储系统或节点的风险数。</block>
+  <block id="c70b857b688fa0886bd92f47efc9aee9" category="paragraph">通过异常检测、您可以深入了解环境中数据模式的意外变化。当您的环境中对象行为模式发生变化时、会发生异常、例如、如果对象在周三的某个时间遇到特定级别的延迟、但在随后的周三的该时间、延迟峰值高于该级别、 这种峰值将被视为异常。通过Data Infrastructure Insight、可以创建监控器、以便在出现此类异常时发出警报。</block>
+  <block id="a9c58deb51d9ab3f5cb1d229a9ac4c1a" category="paragraph">异常检测适用于表现出重复性可预测模式的对象指标。当这些对象指标峰值高于或低于预期水平时、Data Infrastructure Insight可以生成警报以提示调查。</block>
+  <block id="27d62d3d84eed52cb789a9ff7cafd3e4" category="paragraph">如果指标的平均值是前几周与该指标加权平均值之间的一些标准偏差、而最近几周的权重比前几周多、则会出现异常。通过Data Infrastructure Insight、可以监控数据、并在检测到异常时发出警报。您可以选择设置检测的"灵敏度"级别。例如、当平均值与平均值的标准偏差更少时、敏感度会更高、从而导致生成更多警报。相反、敏感度较低=与平均值的标准偏差较多=警报较少。</block>
+  <block id="4fa35f12de5375907e8ec16299aec762" category="summary">Data Infrastructure Insight中的资产页面相关警报部分概述。</block>
+  <block id="03d9b057f92af8e6f6c95a445dacda02" category="paragraph">Data Infrastructure Insight为以下资产提供了资产页面：</block>
+  <block id="9dc6acc34988c6b63dea4000b689a580" category="summary">Data Infrastructure Insight中的资产页面摘要部分概述。</block>
+  <block id="04cc60c8bfb31fe4074db1390eebfa0d" category="paragraph">在自定义Data Infrastructure Insight以根据企业需求跟踪数据时、您可以定义称为标注的专用注释并将其分配给资产。资产页面的 "User Data" 部分显示分配给资产的标注，还可以用于更改分配给该资产的标注。</block>
+  <block id="b4fcf782325af2dd362e41537f96c462" category="summary">通过Audit可以查看Data Infrastructure Insight系统中的系统和用户活动。</block>
+  <block id="f23941203be0c6dbfd9be4fa378f54f1" category="paragraph">要确定预期的更改(用于跟踪)或意外的更改(用于故障排除)、您可以查看Data Infrastructure Insight系统事件和用户活动的审核跟踪。</block>
+  <block id="8fdc810ef5bd420752b7e9ed201788fa" category="list-text">*角色*—用户在Data Infrastructure Insight中的角色(来宾、用户、管理员)</block>
+  <block id="8b967231ec2e102ec5001f95b74a1fbd" category="paragraph">Data Infrastructure Insight审核的事件和操作可分为以下几大类：</block>
+  <block id="2b73bb47d0764b36c7237f0d7626ee2f" category="list-text">在 Audit 页面上，设置所需的时间范围以及所需的任何筛选器。Data Infrastructure Insight将仅导出与您设置的筛选和时间范围匹配的审核条目。</block>
+  <block id="f16df2bb3736cac60f6b4d0b1344f646" category="paragraph">Data Infrastructure Insight根据您的版本保留审计数据的时间量：</block>
+  <block id="645b54d937d4f7925b22329fd049cd0d" category="paragraph">请注意：Workload Security代理可以与Data Infrastructure Insight采集单元和/或代理安装在同一台计算机上。但是，最佳做法是在不同的计算机上安装这些软件。如果这些磁盘安装在同一台计算机上，请按如下所示分配磁盘空间：</block>
+  <block id="e3af7e29e4f0d53ce53a1e5fef5c3577" category="cell">访问数据基础架构洞察力</block>
+  <block id="95524184da43a6b53391528cc33e5efd" category="cell">检测到攻击后24小时收到电子邮件警报。在用户界面中、Data Infrastructure Insight Workload Security收到电子邮件前24小时会显示警报。</block>
+  <block id="e82a63ea247ecd6c098c0cfc9ffdb493" category="cell">当ONTAP向Data Infrastructure洞察工作负载安全性(即工作负载安全性)发送_检测到的Ransuture _事件时、将发送电子邮件。事件包含一系列攻击及其时间戳。工作负载安全UI会显示第一个受攻击文件的警报时间戳。当对一定数量的文件进行编码时、ONTAP会向Data Infrastructure Insight发送"_检测到的Ransuture _事件"。因此、在UI中显示警报的时间与发送电子邮件的时间可能会有所不同。</block>
+  <block id="da394a4a6384221c7a1e0ae64cf23d6c" category="paragraph">Data Infrastructure Insight使用不同数据收集器有时不同的名称来采集计数器和指标。</block>
+  <block id="bafc7a119d4f6fbf1cb4ea645eaee406" category="paragraph">在为信息板小工具搜索合适的指标或计数器时，请记住，您所需的指标可能与您正在考虑的指标名称不同。虽然Data Infrastructure Insight中的下拉列表通常按字母顺序排列、但有时某个术语可能不会显示在您认为应该显示的列表中。例如， " 原始容量 " 和 " 已用容量 " 等术语不会显示在大多数列表中。</block>
+  <block id="f7c36dece720648d179dbf6c974f9288" category="paragraph">数据基础架构洞察为小工具中的某些指标(具体而言、称为"自定义"或集成指标的指标、例如Kubernetes、ONTAP高级数据、电报插件等)提供了不同的*转换*选项、允许您以多种方式显示数据。向小工具添加可转换指标时，系统会显示一个下拉列表，其中提供了以下转换选项：</block>
+  <block id="60f699add32c184545decef7c7e6e8f3" category="paragraph">此外，您还可以通过在变量字段中指定 _* 。 vendor_ 来设置一个变量以筛选具有特定属性的 _all_ 对象，而不考虑对象类型，例如属性为 "vendor" 的对象。您不需要键入"*."；如果选择通配符选项，Data Infrastructure Insight将提供此选项。</block>
+  <block id="5fd3ff776b149305fbc059482c2bb581" category="admonition">Data Infrastructure Insight Federal Edition目前不提供条件格式。</block>
+  <block id="ebdf6cc1f9a2296098a5c3a29513f211" category="paragraph">信息板上的大多数小工具都允许您指定显示值的单位、例如_mabbes"、"_thousand"、"_PERFORMONG"、"_M毫 秒"等。在许多情况下、Data Infrastructure Insight知道要采集的数据的最佳格式。如果不知道最佳格式，您可以设置所需的格式。</block>
+  <block id="455c7999478315ac7aeeb66129a754d6" category="paragraph">在下面的折线图示例中，为小工具选择的数据已知为 _bytes_ （基本 IEC 数据单元：请参见下表），因此基本单元会自动选择为 "byte （ B ） " 。但是、数据值足够大、可以显示为GiB (GiB)、因此Data Infrastructure Insight会默认将值自动设置为GiB格式。图中的 Y 轴显示 "GiB" 作为显示单位，所有值均以该单位显示。</block>
+  <block id="b5714fdf5f2bd38ef2ca9a775feaa547" category="paragraph">大多数指标都是由数据收集器以最小单位报告的，例如，以 1 ， 234 ， 567 ， 890 字节等整数形式报告。默认情况下、Data Infrastructure Insight会自动设置最易读显示值的格式。例如， 1 ， 234 ， 567 ， 890 字节的数据值将自动格式化为 1.23 _Gibibytes_ 。您可以选择以其他格式显示，例如 _mebibybes_ 。此时将相应地显示此值。</block>
+  <block id="17293d484736accbabc794ff8791d5a6" category="admonition">Data Infrastructure Insight使用美国英语编号命名标准。美国的 " 十亿 " 相当于 " 千亿 " 。</block>
+  <block id="86a98ce9895b65a865ec666b2d4a77a5" category="paragraph">与 * 电视模式 * 结合使用时，自动刷新功能可在信息板或资产页面上近乎实时地显示数据。TV 模式提供了一个清晰的显示；导航菜单将被隐藏，从而为数据显示提供更多屏幕空间，编辑按钮也是一样。TV模式会忽略典型的Data Infrastructure Insight超时、在通过授权安全协议手动或自动注销之前、显示屏将保持活动状态。</block>
+  <block id="e1ce05359ad592db56c9190034f73bb2" category="admonition">由于NetApp BlueXP  自己的用户登录超时为7天、因此Data Infrastructure Insight也必须在该事件中注销。您只需重新登录，您的信息板就会继续显示。</block>
+  <block id="71ea5681f65d3bf2b206c41c61e6bcaf" category="admonition">从组中删除信息板不会从Data Infrastructure Insight中删除此信息板。要完全删除信息板，请选择信息板并单击 _Delete_ 。此操作会将其从其所属的任何组中删除，并且任何用户都无法再使用它。</block>
+  <block id="08b3ee3cd6628de2689b09d4f2d6c1ba" category="paragraph">您可以选择使用浅色主题(默认)显示数据基础架构洞察、浅色主题使用浅色背景和深色文本显示大多数屏幕、或者使用深色背景和浅色文本显示大多数屏幕。</block>
+  <block id="4f10509c2a32107a6208072023436244" category="paragraph">为了缓解这种情况、Data Infrastructure Insight会在聚合时对数据进行内插、并使用周围数据点对数据进行"最佳猜测"、直到数据收集器再次轮询为止。您始终可以通过调整小工具的分组来单独查看每个数据收集器的对象数据。</block>
+  <block id="f76c5114e30bafab7ce8af90f1b06ba4" category="summary">Data Infrastructure Insight中的信息板概述。</block>
+  <block id="bec89705ab499dea383ff97a344267a6" category="paragraph">Data Infrastructure Insight允许您使用各种小工具创建自定义信息板、使用户可以灵活地创建基础架构数据的运营视图、每个小工具都可以灵活地显示和绘制数据图表。</block>
+  <block id="2f91211499a7c569b583d094d99ecfc3" category="paragraph">由于数据收集器是Data Infrastructure Insight的主要信息来源、因此您必须确保它们保持运行状态。</block>
+  <block id="0991641b2530dee080547302dd0fbf33" category="paragraph">您需要确定要使用Data Infrastructure Insight监控的所有设备。要准确跟踪环境中的性能和清单，需要进行标识。通常，在您的环境中发现的大多数设备都是通过 _Automatic Device resolution _ 来标识的。</block>
+  <block id="1b08d73e9563bd969f039d26e1dd84fe" category="paragraph">然后，创建的规则将自动识别添加到环境中的具有类似属性的新设备。在某些情况下、设备解析还允许手动标识、绕过Data Infrastructure Insight中未发现设备的设备解析规则。</block>
+  <block id="1fe81f9f4710db3289870fa8fd04a6bb" category="paragraph">如果您选择正则表达式方法作为源命名策略、则可以使用正则表达式示例作为指南、指导您在Data Infrastructure Insight自动解析方法中使用自己的表达式。</block>
+  <block id="8361374e32f98fd9d4ef699c1b3d79d7" category="paragraph">在为Data Infrastructure Insight自动解析创建正则表达式时、您可以通过在名为_format_的字段中输入值来配置输出格式。</block>
+  <block id="9b78512c0541901505da8a15cf49b9ca" category="paragraph">* RegExp：*([^_]+)_([AB])。*数据基础架构洞察力格式：\1-\2 ([^_]+)_([^_]+)_([^_]+)。*数据基础架构洞察力格式：\1-\2-\3</block>
+  <block id="08b3c5691f5c3cb584dc1a3ec5321962" category="summary">Data Infrastructure Insight提供了一些教程、用于向您展示如何执行许多任务。</block>
+  <block id="c11546e49fdd67698723459cc158d58e" category="paragraph">Data Infrastructure Insight加载了许多有用的功能、使您能够快速轻松地查找数据、解决问题并深入了解企业环境。通过功能强大的查询轻松查找数据，在信息板中直观显示数据，并针对您设置的数据阈值发送电子邮件警报。</block>
+  <block id="5411eb93161338db91098dc2c3e9a63f" category="paragraph">Data Infrastructure Insight提供了大量视频教程、可帮助您了解这些功能并更好地实施业务洞察力策略。能够访问Data Infrastructure Insight环境的每个用户都可以利用这些教程。</block>
+  <block id="1a2d0d51ce048c550f58a12da3a8a0b7" category="paragraph">观看简短教程、了解Data Infrastructure Insight的工作原理。</block>
+  <block id="bb32edd6cfeb5b70b9425ab7efaffc7d" category="paragraph">Data Infrastructure Insight站点上显示的*启动检查清单*包含几个有用任务和概念的列表。在检查清单中选择一项后、您将转到该概念对应的Data Infrastructure Insight页面。例如，单击_Create a Dashboard _项可打开Data Infrastructure Insight *Dbards*页面。</block>
+  <block id="9fd687d950079f0d903acce7d665006e" category="paragraph">启动检查清单将显示在您的站点上，直到您单击检查清单底部的 _Do don't Show this ages_ 链接为止。即使取消检查清单、在您从消息标题栏中取消显示每个教程之前、每个相应的Data Infrastructure Insight页面上仍会显示这些教程。</block>
+  <block id="1f04a48525a16838ed1c5c801491f4f1" category="paragraph">高影响工作负载会降低共享资源中其他工作负载的性能。Data Infrastructure Insight提供的工具可帮助您调查资源饱和和对环境的影响。</block>
+  <block id="b0c034e2b0d7556fe8093122404f5738" category="paragraph">"高耗用工作负载"是指当前已确定影响共享存储池中其他资源的工作负载。这些工作负载可提高IOPS、从而降低受影响工作负载的IOPS。在Data Infrastructure Insight中、这些工作负载被视为*要求苛刻的工作负载*。</block>
+  <block id="d1e1350fdee8d58e193ad9e5e0aa7df2" category="paragraph">Data Infrastructure Insight检测到的任何高消耗性工作负载都会显示在"Compends_ Insight下的_Shared Resources "中。导航到*Observability &gt; Infrastructure洞察力*以查看这些洞察。</block>
+  <block id="e0a8be8ea7c8fce4e34080342408d903" category="paragraph">Data Infrastructure Insight提供了许多建议的信息板、用于提供对数据的业务洞察力。每个信息板都包含一些小工具，这些小工具旨在帮助问题解答您解决与环境中当前收集的数据相关的特定问题或特定问题。</block>
+  <block id="d3997e2a8704f771b1f9fdb009a6d9af" category="paragraph">Workload Map可使用<block ref="8c1e0925f4a3d217ad73e0845030a6c1" category="inline-link-macro-rx"></block>来派生信息。Data Infrastructure Insight提供了许多默认的Kubbernetes监控器(请注意、默认情况下、这些监控器可能为_Pauses_。您可以_Resume_(即启用)所需的监控器)、也可以为Kubornetes对象创建自定义监控器、工作负载映射也将使用这些监控器。</block>
+  <block id="e5291f595dadb4bdc89d9490c1224ac5" category="paragraph">您可以为以下任何对象类型创建Data Infrastructure Insight指标警报。确保数据按默认对象类型分组。</block>
+  <block id="047cbc9feb93921ae5115af0b77d3816" category="paragraph">与其他Data Infrastructure Insight功能一样、您可以轻松设置筛选器、以关注所需的特定对象或工作负载属性。</block>
+  <block id="d5877647261e64358d30b275317b769a" category="list-text">Data Infrastructure Insight将尝试解析DNS解析名称以提取服务类型。</block>
+  <block id="829f5504de06d7e8f69dc7b22c656476" category="paragraph">Data Infrastructure Insight日志资源管理器是一款用于查询系统日志的强大工具。除了有助于调查之外，您还可以将日志查询保存在 Monitor 中，以便在激活特定日志触发器后发出警报。</block>
+  <block id="19775d2342d78d4a68c894fc09c655f3" category="admonition">您可以开始在筛选器字段中键入所需文本；Data Infrastructure Insight将提示您创建一个通配符搜索、其中包含您键入的字符串。</block>
+  <block id="acf1da50348742e50e4292ba030599a2" category="list-text">图形已放大、仅显示特定时间范围内发生的日志结果。此处显示的时间范围反映了当前的缩放级别。选择_Reset Zendo_按钮、将缩放级别设置回当前Data Infrastructure Insight时间范围。</block>
+  <block id="1ddb69e4f388391f07257df72c44f86c" category="paragraph">要开始探索、请从数据基础架构洞察力主菜单中选择* ONTAP Essentials *。</block>
+  <block id="848315f653219ceef8d2a4e0d76f64d8" category="paragraph">反网络软件详细信息显示Storage VM是否受ONTAP的反网络软件保护或数据基础架构洞察工作负载安全性的保护。请注意、ONTAP ARP列显示ONTAP 系统上配置的ONTAP板载防反网络防御保护的当前状态。可以通过在该列中选择"保护"来启用Data Infrastructure Insight工作负载安全性。<block ref="cd09409d17429adfa1d9264e8890d599" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8a0d14c15291ab894b50ee0f241e5564" category="paragraph">Data Infrastructure Insight以_Preview_的方式突出显示新特性和功能。预览功能可在有限的环境中使用、也可在有限的容量下使用。</block>
+  <block id="fbecb4e743bc1aa59e79031c4717bf84" category="paragraph">您可以通过单击*帮助&gt;支持*来访问Data Infrastructure Insight中的支持选项。您可以使用的支持选项取决于您的Data Infrastructure Insight版。</block>
+  <block id="7b205ab2cecff2344de68946f6fcafe2" category="paragraph">在试用模式下运行时、Data Infrastructure Insight提供自助服务和电子邮件支持。订阅服务后，强烈建议您激活支持授权。激活支持授权后，您可以通过在线聊天， Web 服务单系统和电话访问技术支持。注册完成前，默认支持模式为自助服务。请参见<block ref="055db438ec51479bd53b937469434a7e" category="inline-xref-macro-rx"></block>下文。</block>
+  <block id="933754a1936f865bf848ed02693c2c26" category="paragraph">在初始订阅过程中、您的Data Infrastructure Insight实例将生成一个以"950"开头的20位NetApp序列号。此NetApp序列号表示与您的帐户关联的Data Infrastructure Insight订阅。您必须注册 NetApp 序列号才能激活支持授权。我们提供了两种支持注册选项：</block>
+  <block id="28fdcbdc93339227400a48d5f1095939" category="list-text">选择"我已注册为NetApp客户"、然后选择_Data Infrastructure洞察力_作为产品线。选择您的计费提供商(NetApp或AWS)、并参阅Data Infrastructure Insight用户界面中的"Help &gt; Support"(帮助&gt;支持)菜单、提供您的序列号和NetApp订阅名称或AWS客户ID：</block>
+  <block id="1fc262220817b8bd9b66b826a0b977f6" category="list-text">这是一次性注册的Data Infrastructure Insight NetApp序列号。</block>
+  <block id="d0666b8b7ae744d105cb544ddc03d8c8" category="list-text">选择_Data Infrastructure洞察力_作为产品线。选择您的计费提供商(NetApp或AWS)、并参阅Data Infrastructure Insight用户界面中的"Help &gt; Support"(帮助&gt;支持)菜单、提供您的序列号和NetApp订阅名称或AWS客户ID：</block>
+  <block id="d41c7a89c53943f7c86e80fe6a27b4dc" category="list-text">作为 NetApp 的新客户，您还需要创建一个 NetApp 支持站点 (NSS) 用户帐户，以便将来进行注册，并访问支持门户以获取技术支持聊天和 Web 服务单。此链接位于<block ref="4b0df7f6652ef877e322a199d6b6edce" category="inline-link-rx"></block>。您可以提供新注册的Data Infrastructure Insight序列号来加快此过程。</block>
+  <block id="3757ee6dbdcabe2780104f98224939d5" category="list-text">这是一次性注册Data Infrastructure Insight NetApp序列号。</block>
+  <block id="1c571e65fbdab33b85ec4c8a56603087" category="paragraph">NetApp通过多种方式为数据基础架构洞察力提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。对于订阅了任何Data Infrastructure Insight版本(Basic*、Standard、Premium)的用户，可通过电话或Web服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点 (NSS) SSO 帐户。</block>
+  <block id="6d1e73b5dbcd7708fd39eecb9fec99a8" category="paragraph">单击社区链接将转到NetApp数据基础架构洞察力社区、您可以在该社区与同行和专家进行交流。</block>
+  <block id="adbe0a8623b0464eb83d4da31c8e858e" category="paragraph">此外、还提供了一个链接<block ref="845d40e8369612c1d8dd285f0ebc254e" category="inline-link-macro-rx"></block>、帮助我们提高数据基础架构洞察力。</block>
+  <block id="24b17ddd1757d7b4e6373b656d50555a" category="paragraph">除了上述自助支持选项之外、如果您订阅了Data Infrastructure Insight或为受监控的NetApp产品或服务提供了付费支持、则可以与NetApp支持工程师合作解决您的问题。</block>
+  <block id="c600d309e84c1e4729095d87bd1b6d07" category="paragraph">强烈建议您选中此复选框、以允许NetApp支持工程师在支持会话期间访问您的数据基础架构洞察力环境。这样，工程师就可以对问题进行故障排除，并帮助您快速解决问题。解决问题描述问题或支持会话结束后，您可以取消选中此复选框。</block>
+  <block id="26bf81182a5b7a20da27b311cdf97f3d" category="paragraph">您可以通过以下任一方法请求支持。要使用以下支持选项、您必须订阅有效的Data Infrastructure Insight：</block>
+  <block id="2911a8a094a0fc515bf83ad1a0cf9eba" category="list-text">*Chat*-您将与NetApp支持人员联系以获得帮助(仅限工作日)。任何Data Infrastructure Insight屏幕右上角的*帮助&gt;实时聊天*菜单选项均提供聊天功能。</block>
+  <block id="30a12dfd5908adfdb9f06395cb4b5c34" category="paragraph">您的Data Infrastructure Insight序列号可从服务的*帮助&gt;支持*菜单中查看。如果您在访问此服务时遇到问题、并且之前已向NetApp注册了序列号、则还可以从NetApp支持站点查看您的数据基础架构洞察序列号列表、如下所示：</block>
+  <block id="77cb462f113aa28274c4c9d4a0bd4124" category="list-text">从"Products"&gt;"My Products"菜单选项卡中、使用产品系列"SaaS Data Infrastructure洞察力"找到所有已注册的序列号：</block>
+  <block id="e586db5530b7590b2a2bcfd037d854f9" category="section-title">Data Infrastructure Insight Data Collector支持列表</block>
+  <block id="dadb39addfd4b0487871de7e7f6f610f" category="inline-link-macro">*数据基础架构洞察数据收集器支持表*，Role="External</block>
+  <block id="930bcbbcfc7ac73403055e452c530c48" category="paragraph">您可以在中查看或下载有关受支持的数据收集器的信息和详细信息<block ref="ebae36c5cd2a39aad37989cf18f531f5" category="inline-link-macro-rx"></block>。</block>
+  <block id="c654b625e718b4552b4ca2d5a4ebbfe8" category="paragraph">无论您订阅了什么内容、*帮助&gt;支持*都可以链接到多个NetApp大学课程、帮助您充分利用数据基础架构洞察。请查看！</block>
+  <block id="d3dd939f36c39f480cbad87a65a11454" category="summary">Data Infrastructure Insight可以提供前端和后端虚拟化存储的视图。</block>
+  <block id="b0f7ed48c6b5779233c24d5ec4c3162f" category="paragraph">Data Infrastructure Insight可以区分具有本地存储的存储阵列或虚拟化其他存储阵列的存储阵列。这样、您就可以将成本和性能从前端一直与基础架构的后端关联起来。</block>
+  <block id="65a30f6e274195824462ed6f772b7d84" category="summary">在本节中、您将找到一些提示和技巧、帮助您对Data Infrastructure Insight环境中的问题进行故障排除。</block>
+  <block id="bf51213a7e7e4a64b72df7743f4ba9a8" category="doc">对数据基础架构洞察力问题进行故障排除</block>
+  <block id="fb777b762061c712e819d8df2fb3f217" category="paragraph">本节中的主题将在Data Infrastructure Insight环境出现问题时提供故障排除建议。</block>
+  <block id="aa7aad98c338c5186d969cd18fc94b86" category="paragraph">您可以<block ref="f3a940944ed2b77ff0757ee9675312e7" category="inline-link-macro-rx"></block>在Data Infrastructure Insight *帮助&gt;支持*页面上找到更多故障排除和其他信息。</block>
+  <block id="51eee046c9fbdc20d91f82f659d9904f" category="paragraph">由于Data Infrastructure Insight会将数据保留一段规定的时间(按版本)、因此可能会处理数千个数据点。因此，数据可能会先进行缩减采样，然后再显示在图表和表中。</block>
+  <block id="79f48f9e4032922de4c24d6a18806c0c" category="paragraph">Data Infrastructure Insight会将数据保留一段时间、保留时间由活动订阅版本决定。</block>
+  <block id="cc0d9aba6833845d2acc4d718cf71f18" category="paragraph">有关每个版本中可用功能的完整列表、请参见Data Infrastructure Insight<block ref="9f9283f57379e70b90560c22a58eac88" category="inline-link-macro-rx"></block>页面。</block>
+  <block id="36620239c4ba71c5e4e55b18e3e120dc" category="paragraph">但是、如果通过在资产页面时间选择器上选择30d来查看数据、或者通过将自定义时间范围设置为7天以上(或者如果Data Infrastructure Insight在所选时间段内收集了1、000个以上的数据样本)、则会在显示数据之前对其进行缩减采样。放大缩减采样图表时，屏幕将继续显示近似数据。</block>
+  <block id="eaef26e21c378acc34beea5769c44ab6" category="summary">Data Infrastructure Insight为多个用户帐户提供了不同的权限级别。</block>
+  <block id="38ad10c8a82fc90c1f820cb0f67d88cc" category="paragraph">Data Infrastructure Insight最多可提供四个用户帐户角色：帐户所有者、管理员、用户和来宾。为每个帐户分配特定的权限级别，如下表所示。用户可以<block ref="6a05e97c185d2e103748dff93c559f3b" category="inline-link-macro-rx"></block>使用Data Infrastructure Insight并分配有特定角色、也可以<block ref="47c69771a9bdd41067d8486727a07273" category="inline-link-macro-rx"></block>使用默认角色通过登录。SSO授权作为Data Infrastructure Insight高级版中的一项功能提供。</block>
+  <block id="08a5e69701e67efa7bf0e0c030874036" category="paragraph">您可以使用具有管理员权限的帐户来创建或修改用户帐户。系统会为以下权限级别中的每个Data Infrastructure Insight功能为每个用户帐户分配一个角色。</block>
+  <block id="1a952bb523eee92fd4b21dde78f30684" category="section-title">Data Infrastructure Insight权限(按用户角色)</block>
+  <block id="ae310c96bbba9741ce44a3d1e9e360c1" category="paragraph">下表显示了为每个用户角色授予的Data Infrastructure Insight权限。</block>
+  <block id="fbf94f38d1dfbd681591f8f229eda4d3" category="list-text">登录到Data Infrastructure Insight</block>
+  <block id="42f0f86c0ee77ee914a985ccce2df046" category="list-text">为Data Infrastructure Insight的每个功能选择用户角色。</block>
+  <block id="4e8586ec25981c373557827121a111f8" category="paragraph">此时将向用户发送邀请。用户有 14 天的时间接受此邀请。用户接受邀请后，将被带到 NetApp 云门户，并使用邀请函中的电子邮件地址进行注册。如果他们拥有该电子邮件地址的现有帐户、则只需登录即可访问其Data Infrastructure Insight环境。</block>
+  <block id="6dc098ac9daa4bc608fd53c820702a24" category="list-text">根据需要修改每个Data Infrastructure Insight功能集中的用户角色。</block>
+  <block id="b91f238d3629ac342537c056fa4a1a9a" category="paragraph">具有管理员角色的用户可以通过单击用户的名称并单击对话框中的 _Delete User_ 来删除用户（例如，不再与公司合作的用户）。此用户将从Data Infrastructure Insight环境中删除。</block>
+  <block id="b658b4e68b6ec616e6da1da1a58e2519" category="paragraph">请注意、即使删除了用户、用户创建的任何信息板、查询等在Data Infrastructure Insight环境中也仍然可用。</block>
+  <block id="8307f5e5195927d36157a98119d50cb2" category="paragraph">但是、有些客户希望使用自己的身份提供程序对其用户进行数据基础架构洞察和其他NetApp BlueXP  服务的身份验证。通过身份联合、NetApp BlueXP帐户将使用企业目录中的凭据进行身份验证。</block>
+  <block id="7492f425dcc16dfdb3bf6df60569e6fb" category="paragraph">在上图中、当用户访问Data Infrastructure Insight时、该用户将被定向到客户的身份管理系统进行身份验证。对帐户进行身份验证后、用户将定向到Data Infrastructure Insight租户URL。</block>
+  <block id="885922ff1b836c95f53f6ede8cf15917" category="admonition">您必须先配置BlueXP  身份联合、然后才能将SSO与数据基础架构洞察结合使用。</block>
+  <block id="5bb414ee12d60beb5148ebd546560765" category="paragraph">请务必了解、在BlueXP  中更改身份联合不仅适用于数据基础架构洞察力、还适用于所有NetApp BlueXP  服务。客户应与他们拥有的每个BlueXP产品的NetApp团队讨论此更改、以确保他们使用的配置可与身份联合使用、或者在需要对任何客户进行调整时也可使用。客户还需要让内部 SSO 团队参与身份联合的变更。</block>
+  <block id="5ca34449651a28aef2f66150bbdab559" category="paragraph">除了邀请用户之外，管理员还可以为公司域中的所有用户启用*单点登录(SSO)用户自动配置*对Data Infrastructure Insight的访问，而无需单独邀请他们。启用SSO后、具有相同域电子邮件地址的任何用户都可以使用其企业凭据登录到Data Infrastructure Insight。</block>
+  <block id="700b1528a54f585af4e6babcff795f22" category="admonition">_SSO用户自动配置_在Data Infrastructure Insight高级版中可用、必须先对其进行配置、然后才能为Data Infrastructure Insight启用该功能。<block ref="822fb5372050010317b40dcb63a546f0" category="inline-link-macro-rx"></block>如上一节所述、SSO用户自动配置包括通过NetApp BlueXP  进行的配置。联合允许单点登录用户使用企业目录中的凭据、并使用安全断言标记语言2.0 (SAML)和OpenID连接(OIDC)等开放式标准访问NetApp BlueXP帐户。</block>
+  <block id="3e1bcd2d4d8f98d94d9ab44d7d7c4163" category="paragraph">要配置_SSO用户自动配置_，必须先在*Admin &gt; User Management*页上设置BlueXP身份联合。选择横幅中的*设置联合*链接以继续BlueXP联合。完成配置后、Data Infrastructure Insight管理员可以启用SSO用户登录。当管理员启用 _SSO 用户自动配置 _ 时，他们会为所有 SSO 用户（如来宾或用户）选择一个默认角色。通过 SSO 登录的用户将具有此默认角色。</block>
+  <block id="a813fe1072f1f4f8421f847135972e39" category="paragraph">有时，管理员会希望将单个用户提升为默认 SSO 角色之外的用户（例如，使其成为管理员）。他们可以在 * 管理员 &gt; 用户管理 * 页面上单击用户的右侧菜单并选择 _Assign role_ 来完成此操作。通过这种方式分配了显式角色的用户仍可访问Data Infrastructure Insight、即使随后禁用了_SSO用户自动配置_也是如此。</block>
+  <block id="e6a5ee339593ea08e7a930351bd4611c" category="paragraph">如果用户不再需要提升的角色，您可以单击菜单以删除用户 _ 。此用户将从列表中删除。如果启用了_SSO用户自动配置_、则用户可以使用默认角色继续通过SSO登录到Data Infrastructure Insight。</block>
+  <block id="ea316b44bce3dbed4c9c0c2ef4e40ce7" category="list-text">您的组织有多个Data Infrastructure Insight租户</block>
+  <block id="2c58d9c85b99af40847a1bfe252c399c" category="list-text">您的组织不希望联合域中的任何/每个用户都对Data Infrastructure Insight租户具有某种级别的自动访问权限。_at this point in time ， we do not have the ability to use groups to control role access with this op选项 _ 。</block>
+  <block id="cdac881f9fbd9635a12d04d6b9197cf4" category="paragraph">Data Infrastructure Insight可以将用户访问限制为仅限您指定的域。在*Admin &gt; User Management*页上，选择“限制域”。</block>
+  <block id="aa14d82c6e0f87197739b59836fd6bc1" category="list-text">无限制：用户无论在哪个域、都可以访问Data Infrastructure Insight。</block>
+  <block id="6382687621125dc6ec018be8007b94d0" category="list-text">限制对默认域的访问：默认域是Data Infrastructure Insight环境帐户所有者使用的域。这些域始终可访问。</block>
+  <block id="da7c34be0a4d8b37b17232f75362b9ff" category="list-text">限制对指定默认值和域的访问。列出除了默认域之外、您希望有权访问Data Infrastructure Insight环境的任何域。</block>
+  <block id="12ad5320cf231ab684b9cf1b739d799f" category="paragraph">数据基础架构洞察工作负载安全性可与ONTAP集成、以接收"拒绝访问"事件、并提供额外的分析和自动响应层。</block>
+  <block id="d91922a1bdba61ab374e14011d46cddf" category="paragraph">数据基础架构洞察力存储工作负载安全性(原Cloud Secure)可利用可指导行动的内部威胁情报来保护您的数据。它可以集中查看和控制混合云环境中的所有企业数据访问，以确保实现安全性和合规性目标。</block>
+  <block id="f685e8c506c41657d74fe2fe7ec4ca60" category="admonition">Data Infrastructure Insight Federal Edition不提供工作负载安全性功能。</block>
+  <block id="3cd7d46a06774e1cc6f2ece4407891a3" category="cell">通知电子邮件会从NetApp数据基础架构洞察力域(即、从_accounts@service.clouNetApp .com_)发送。某些公司会阻止来自外部域的传入电子邮件。确保来自NetApp数据基础架构洞察力域的外部通知已列入白名单。</block>
+  <block id="3a6b9b02361ff37889bb4453f5ce5933" category="doc">Data Infrastructure Insight数据收集器列表</block>
+  <block id="4a67aaff87a4b62a93d49b26e8eab486" category="paragraph">Data Infrastructure Insight支持来自许多供应商和服务的各种数据收集器。</block>
+  <block id="0469e242e5d1ebfd7553d7a981ac63a5" category="paragraph">Data Infrastructure Insight支持的数据收集器的字母顺序列表：</block>
+  <block id="5988d58aa29664a0117f2c6b8e13d96b" category="list-text">执行活动的用户的*域*。您需要提供*精确域*才能进行筛选。不能搜索部分域、或者以通配符()'*'作为前缀或后缀的部分域。可以指定_None_以搜索缺少的域。</block>
+  <block id="28894211649d8f9f99c54dc12f77784e" category="list-text">*实体类型*，使用实体(文件)扩展名-最好在引号内指定确切的实体类型。例如_"TXT"_。</block>
+  <block id="cfacc3a890c7b76e916de509a258355f" category="list-text">*实体的路径*-目录路径筛选器(以/结尾的路径字符串)建议目录深度最多为4个，以便更快地获得结果。例如、_/HOME/userX/nosted1/nosted2/_或_"/HOME/userX/nosted1/nosted2/"_。有关详细信息、请参见下表。</block>
+  <block id="b8859d75b29f26c843546ce2c6d19fbd" category="list-text">*用户*执行活动-最好在引号中指定确切的用户。例如、"Administrator (管理员)"。</block>
+  <block id="98979e670bd293d9570a2b24562e08a2" category="section-title">活动法证筛选器示例：</block>
+  <block id="0930b50f995b3a6af46dc5f205e5c2be" category="cell">用户应用的筛选器表达式</block>
+  <block id="13876d45cb0b459833e4aebb72877939" category="cell">预期结果</block>
+  <block id="b77349ead71592d04cbccd89fee71c70" category="cell">性能评估</block>
+  <block id="f2e392688127fe27ba86956a289d1516" category="cell">路径=/HOME/userX/nesed1/nesed2/或/HOME/userX/nesed1/nesed2/*或"/HOME/userX/nesed1/nesed2/"</block>
+  <block id="1fec62ac6ef0096301dec6c9552701f7" category="cell">递归查找给定目录下的所有文件和文件夹</block>
+  <block id="e16b5b7f26f54214445cbe38d72c2828" category="cell">快速</block>
+  <block id="f6a092f816e6eb604694d6a921395ccb" category="cell">目录搜索最多可达4个目录。</block>
+  <block id="aec252fe472926926066b015c61018d2" category="cell">路径=/HOME/userX/nosted1/或/HOME/userX/nosted1/*或"/HOME/userX/nosted1/"</block>
+  <block id="83f594a149a47f77a9d0ffd06bd887fa" category="cell">路径=/HOME/userX/nESTed1/test*或/HOME/userX/nESTed1/test</block>
+  <block id="840207e609d7b9a7b687b3b2712e903d" category="cell">递归查找给定路径正则表达式下的所有文件和文件夹(test*可以表示文件或目录，也可以同时表示这两者)</block>
+  <block id="e7b02c274fe199317927b2a2d54e280e" category="cell">速度较慢</block>
+  <block id="4b88bc6659fa6ffa1353db049ea38556" category="cell">目录+文件正则表达式搜索比目录搜索慢。</block>
+  <block id="5ebfaf9d735f32f7095e67382caa89fa" category="cell">路径=/HOME/userX/nosted1/nosted2/nosted3/或/HOME/userX/nosted1/nsteed2/nsted3/*或"/HOME/userX/nosted1/nosted2/nosted3/"</block>
+  <block id="1bd0462f5987c1382af61035c6ea62ff" category="cell">超过4个目录搜索速度较慢。</block>
+  <block id="60f679d95b13137d0f02dac90990fa24" category="cell">path=\*userX/nESTD1/test*</block>
+  <block id="42779f1f471dcd0efc744707a9d12fb3" category="cell">在给定通配符路径字符串下递归查找所有文件和文件夹(test*可以表示文件或目录，也可以同时表示这两者)</block>
+  <block id="53ad658aa3b68ee6f8ac34262f27efc5" category="cell">速度最慢</block>
+  <block id="baf0959545ccd91564d61f6f09d3d6fc" category="cell">前导通配符搜索是速度最慢的搜索。</block>
+  <block id="2127f473d96f54c997a492a6ca024c5b" category="cell">任何其他非基于路径的筛选器。建议将用户和实体类型筛选器放在引号中、例如User="Adminator"实体Type="txt</block>
+  <block id="9b9935ad5969c28de13381a2e512b47c" category="paragraph">注意：</block>
+  <block id="d8255e556913387acdb6c6f885c59f99" category="list-text">当所选时间范围跨越3天以上时、所有活动图标旁边显示的活动计数将四舍五入为30分钟。例如、_ 9月1日上午10：15到9月7日上午10：15 _的时间范围将显示9月1日上午10：00到9月7日上午10：30的活动计数。</block>
+  <block id="3ba96afd89f810071e642a2580c035d0" category="list-text">同样、当选定时间范围超过3天时、"活动类型"、"实体类型上的活动"和"活动历史记录"图中显示的计数指标也会四舍五入为30分钟。</block>
+  <block id="5203772926767a923fffeec0454915d0" category="section-title">异步导出用户指南</block>
+  <block id="e51ee07acf4b7676b7e8d7d9ddfcc237" category="paragraph">存储工作负载安全性中的异步导出功能旨在处理大型数据导出。</block>
+  <block id="34e6887c3fe7a34ac28d932e0916f098" category="section-title">分步指南：使用异步导出导出数据</block>
+  <block id="b9f86bbacfbca9956a57372b5ce15f68" category="list-text">*启动导出*：选择导出所需的持续时间和筛选器、然后单击导出按钮。</block>
+  <block id="5addbd908b76e38709a3256b2eba74c5" category="list-text">*等待导出完成*：处理时间从几分钟到几小时不等。您可能需要刷新取证页面几次。导出作业完成后、将启用"下载上次导出CSV文件"按钮。</block>
+  <block id="fb56822932e96a02d5b71841b0bb86a7" category="list-text">*下载*：单击"下载上次创建的导出文件"按钮以.zip格式获取导出的数据。此数据将可供下载、直到用户启动另一个异步导出或3天后(以先发生者为准)为止。此按钮将保持启用状态、直到启动另一个异步导出为止。</block>
+  <block id="8ab0a5a1cd44cd0d41ee8657d513b901" category="list-text">*限制*：</block>
+  <block id="60ace3612e0acf6a0941aadafd7b24ab" category="list-text">异步下载的数量目前限制为每个用户1次、每个租户3次。</block>
+  <block id="db0adf696c53371ef4510888d244f184" category="list-text">导出的数据限制为最多100万条记录。</block>
+  <block id="5ac805f98623b1f23909793e4ff3a262" category="cell">适用于这些筛选器</block>
+  <block id="b1b275726951e4adc620b69d947baf49" category="cell">不适用于这些筛选器</block>
+  <block id="0a3087cfc2ea9ac71095f821d14ee027" category="cell">Auto*03172022如果搜索文本包含连字符或下划线、请在方括号中提供表达式。例如、(SVM*)用于搜索SVM-123</block>
+  <block id="a95d3431c2b5559d818d2555fcc3e835" category="cell">用户、路径、实体类型、设备、卷、原始路径</block>
+  <block id="a28771ee6ad9a7771a86f5d6ceeed78e" category="cell">返回AutoSabotageUser1_03172022A、AutoSabotageUser1_03172022B、AutoSabotageUser1_031720225等</block>
+  <block id="c7cf1f6ecae876f330364b876e6cbc83" category="cell">用户、域、路径、实体类型、原始路径</block>
+  <block id="317a59d89beb67b7ebe23ef56d3b409e" category="cell">用户、域、路径、实体类型、原始路径</block>
+  <block id="a4bef4c7f69527b57f21a4e1042859e6" category="cell">搜索字符串中的星号(\*)将搜索所有内容。但是，诸如_*&lt;searchTerm&gt;_或_*&lt;searchTerm&gt;*_之类的前导通配符字符串会导致查询速度较慢。要获得更好的性能，请改用前缀字符串，格式为_&lt;searchTerm&gt;*_(换言之，请附加星号(*)_after_搜索词)。示例：使用字符串_testvolume*_，而不是_*testvolume_或_*test*volume_。使用目录搜索以递归方式查看给定文件夹下的所有活动(分层搜索)。例如、/path1/path2/path3/或"/path1/path2/path3/"将以递归方式在/path1/path2/path3下列出所有活动。或者、使用所有活动选项卡下的"Add to Filter"(添加到筛选器)选项。</block>
+  <block id="5476c41b7c022f91a0f9bbdf0fc8ce23" category="cell">目录路径筛选器(路径字符串以/结尾)建议目录深度最多为4个、以获得更快的结果。例如、如果目录路径为/AAA/BBB/CCCC/DDD、请尝试搜索/AAA/BBB/CCCC/DDD/或"/AAA/BBB/CCC/DDD/"以更快地加载数据。</block>
+  <block id="aed35f9a809126ef92adc8485610871c" category="paragraph">环境中的空间不足永远不是一种好情况。Data Infrastructure Insight可帮助您预测Kubbernetes永久性卷变满之前的时间。</block>
+  <block id="35e8ae7798ae468988eef02594bca5d5" category="paragraph">在Insight页面上、单击*+显示建议*以查看可能的解决方案。用尽空间时、最简单的选择是始终添加更多容量、Data Infrastructure Insight会向您显示要添加的最佳容量、以便将达到目标60天预测的时间延长到全满时间。此外、还会显示其他建议。</block>
+  <block id="fcea8b8d2049d69d4ebdf1d180a93db4" category="paragraph">高影响工作负载会降低共享资源中其他工作负载的性能。这会使共享资源承受压力。Data Infrastructure Insight提供的工具可帮助您调查资源饱和和对环境的影响。<block ref="de4400096db30b5f709799778e050e2c" category="inline-link-macro-rx"></block></block>
+  <block id="102e3d38f56cb877356cf974fdeb3270" category="admonition">这是一项_Preview_功能、可能会随着时间的推移进行更改。<block ref="ee58f03d7eaea0665aa8a572992ca1b8" category="inline-link-macro-rx"></block> 关于Data Infrastructure Insight Preview功能。</block>
+  <block id="385dd98ce9aff23db04e71230c28efd7" category="paragraph">要查看这些洞察、请导航到*信息板&gt;洞察力*、然后查看_RecaLate ONTAP Cold Storage_ Insight。请注意、只有在Data Infrastructure Insight检测到冷存储时、此Insight才会列出受影响的存储、否则您将看到"全部清除"消息。</block>
+  <block id="900274161abd76427edc29ac0bef953a" category="paragraph">高影响工作负载会降低共享资源中其他工作负载的性能。这会使共享资源承受压力。Data Infrastructure Insight提供的工具可帮助您调查资源饱和和对环境的影响。</block>
+  <block id="f4addcedcbf7b58a235a6de1cfeb96b7" category="paragraph">请注意、如果Data Infrastructure Insight尚未发现领先的计算工作负载、则卷或内部卷本身将被识别为工作负载。此适用场景 既适用于要求苛刻的工作负载、也适用于受影响的工作负载。</block>
+  <block id="decacd0d9c5727c8132dacde092c0382" category="paragraph">Data Infrastructure Insight会显示检测到饱和的任何工作负载的列表。请注意、Data Infrastructure Insight将显示至少检测到一个_strat苛刻 的资源_*或*受影响的资源_的工作负载。</block>
+  <block id="c7f50a9f133f1f71a9f91fe12f7c7f7e" category="inline-link-macro">数据基础架构洞察(原Cloud Insights)通知</block>
+  <block id="552bbf7b91025a7ce4d57570549e5d96" category="paragraph"><block ref="552bbf7b91025a7ce4d57570549e5d96" category="inline-link-macro-rx"></block></block>
+  <block id="cd7e7970b42b429cc98a79d8c1b34bf7" category="paragraph">Data Collector支持列表提供了Data Infrastructure Insight支持的数据收集器的参考、包括供应商和型号信息。</block>
+  <block id="0ba16e92a6a7d9434b114d6048c1b883" category="list-text">以管理员或帐户所有者身份登录到您的Data Infrastructure Insight环境。</block>
+  <block id="37387a4cc8252dafbc2c17f057568ef6" category="paragraph">如果Data Collector处于_running"状态、则可以暂停收集。打开收集器的"三点"菜单、然后选择暂停。暂停收集器时、不会从ONTAP收集任何数据、也不会从收集器向ONTAP发送任何数据。这意味着、不会有Fpolicy事件从ONTAP流向数据收集器、也不会从数据收集器流向数据基础架构洞察。</block>
+  <block id="4a0a97ef2afa5a536e5dc77411dedca9" category="list-text">暂停的收集器不会处理EMS事件(如ONTAP ARP)。这意味着、如果ONTAP发现勒索软件攻击、Data Infrastructure Insight Workload Security将无法获得该事件。</block>
+  <block id="4f6d8fa52629afca87f28620c31656dd" category="paragraph">您可以在Data Infrastructure Insight环境中配置数据收集器、以便从数据中心的设备收集数据。</block>
+  <block id="a9ad83475759029dd2514bbade586aaa" category="list-text">从Data Infrastructure Insight菜单中、单击*可观察性&gt;收集器*</block>
+  <block id="f6e6a6c23499143c06e6a6eb38dceb0a" category="list-text">单击*添加收集器*以保存配置并将数据收集器添加到Data Infrastructure Insight租户中。</block>
+  <block id="7eb15f142a33487f87761b2be5f0c0c6" category="paragraph">通过"已安装数据收集器"页面、可以访问为Data Infrastructure Insight配置的数据收集器。您可以使用此页面修改现有数据收集器。</block>
+  <block id="2c000eb53a0410e6ec55bf0a669d2f86" category="list-text">在Data Infrastructure Insight菜单中、单击*可观察性&gt;收集器*</block>
+  <block id="b23f93b206dc7149eff63aba0082e7bc" category="list-text">在Data Infrastructure Insight菜单中、单击*可观察性&gt;收集器*以打开已安装的数据收集器列表。</block>
+  <block id="50356cf9fa0a08b9ec2e7091b8a2923c" category="list-text">在Data Infrastructure Insight菜单中、单击*可观察性&gt;收集器*。</block>
 </blocks>

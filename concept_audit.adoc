@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: concept_audit.html 
 keywords: audit, users, activities 
-summary: Audit 可提供 Cloud Insights 系统中系统和用户活动的视图。 
+summary: 通过Audit可以查看Data Infrastructure Insight系统中的系统和用户活动。 
 ---
 = 审核
 :toc: macro
@@ -19,7 +19,7 @@ summary: Audit 可提供 Cloud Insights 系统中系统和用户活动的视图�
 
 
 [role="lead"]
-要确定预期更改（用于跟踪）或意外更改（用于故障排除），您可以查看 Cloud Insights 系统事件和用户活动的审核跟踪。
+要确定预期的更改(用于跟踪)或意外的更改(用于故障排除)、您可以查看Data Infrastructure Insight系统事件和用户活动的审核跟踪。
 
 
 
@@ -29,7 +29,7 @@ summary: Audit 可提供 Cloud Insights 系统中系统和用户活动的视图�
 
 * * 时间 * - 事件或活动的日期和时间
 * * 用户 * —启动活动的用户
-* * 角色 * —用户在 Cloud Insights 中的角色（来宾，用户，管理员）
+* *角色*—用户在Data Infrastructure Insight中的角色(来宾、用户、管理员)
 * *IP* —与事件关联的 IP 地址
 * * 操作 * - 活动类型，例如登录，创建，更新
 * * 类别 * —活动类别
@@ -91,7 +91,7 @@ image:Audit_Filters.png["审核筛选器"]
 
 == 已审核的事件和操作
 
-Cloud Insights 审核的事件和操作可分为以下几大类：
+Data Infrastructure Insight审核的事件和操作可分为以下几大类：
 
 * * 用户帐户 * ：登录，注销，角色更改等
 +
@@ -134,7 +134,7 @@ Cloud Insights 审核的事件和操作可分为以下几大类：
 您可以将审核显示结果导出到 .CSV 文件，以便分析数据或将其导入到其他应用程序中。
 
 .步骤
-. 在 Audit 页面上，设置所需的时间范围以及所需的任何筛选器。Cloud Insights 将仅导出与您设置的筛选和时间范围匹配的审核条目。
+. 在 Audit 页面上，设置所需的时间范围以及所需的任何筛选器。Data Infrastructure Insight将仅导出与您设置的筛选和时间范围匹配的审核条目。
 . 单击 _Export_ 按钮 image:ExportButton.png["导出按钮"] 在表的右上角。
 
 
@@ -144,7 +144,7 @@ Cloud Insights 审核的事件和操作可分为以下几大类：
 
 == 保留审核数据
 
-Cloud Insights 保留审核数据的时间量取决于您的版本：
+Data Infrastructure Insight根据您的版本保留审计数据的时间量：
 
 * 基本版本：审核数据保留 30 天
 * 标准版和高级版：审核数据保留 1 年 + 1 天
