@@ -2122,7 +2122,6 @@
   <block id="9f5698d8ff9580fb0292b0180a70711f" category="list-text">确切值应在引号内：示例： "searchText"</block>
   <block id="ae908dd27651e4f543cd1488054f03ce" category="list-text">通配符字符串不能包含任何引号：例如： searchText ， \* searchText* 将筛选包含 ‘searchtext ' 的任何字符串。</block>
   <block id="6de2a99ab7d1b49c0d30165b7f923bde" category="list-text">带有前缀的字符串示例： searchText* 将搜索以 ‘searchtext ' 开头的任何字符串。</block>
-  <block id="2cd547acae3ea849dabf33eb81807e43" category="paragraph">您可以按 _time ，用户，源 IP ，活动，路径 _ 和 _Entity Type_ 对活动历史记录数据进行排序。默认情况下，此表按降序 _time_ 顺序排序，这意味着将首先显示最新数据。已对 _Device_ 和 _Protocol_ 字段禁用排序。</block>
   <block id="2c196fb6f976fd067f518fa5198011f3" category="paragraph">默认情况下， _all activity_ 表会显示 SELECT 列。要添加，删除或更改列，请单击表右侧的齿轮图标，然后从可用列列表中进行选择。</block>
   <block id="c6eae53556b2ad3b578a3cf2907baf44" category="inline-image-macro">活动选择器，宽度 = 30%</block>
   <block id="590dd2dc5bca645aeb542ed0a125bd23" category="paragraph"><block ref="590dd2dc5bca645aeb542ed0a125bd23" category="inline-image-macro-rx" type="image"></block></block>
@@ -12725,7 +12724,6 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="04bcd65528979db2a56f4aa0e2aa03d7" category="paragraph">*新的Fors不同 的活动API*</block>
   <block id="712b4529dbd7ed8d4ab547cb0d833ecc" category="paragraph">" ForF需求"活动 <block ref="75acd4de005cc0eb64ec0713808ffe03" category="inline-link-macro-rx"></block> 已有新版本。调用用于取证活动的API时、请使用*云安全取证.actives._v2_* API。</block>
   <block id="7e83289e012180c50c5327cfe3e51094" category="paragraph">请注意、如果要对此API进行多个调用、则为了获得最佳结果、请确保这些调用按顺序进行、而不是并行进行。多个并行调用可能会导致API超时。</block>
-  <block id="1440701fe8e2d4ab8f09b74a7443df20" category="paragraph">用于通过API提取取证数据的示例脚本位于：/opt/NetApp/云 安全/agent/extr导 出脚本/_。有关该脚本的详细信息、请参见此位置的自述文件。</block>
   <block id="f58ea91d80c99ab7a1779372e221d889" category="section-title">ONTAP自动防网络软件保护和ONTAP访问权限被拒绝</block>
   <block id="f08061ff72c0b74c50af5b9af0dddb55" category="paragraph">和 <block ref="b175fa20c42bfc20eae9965f6210437c" category="inline-link-macro-rx"></block></block>
   <block id="580c0c98d8c4eb79fb929b7b1eb5f4f2" category="paragraph">现在、SVM数据收集器支持NFS版本、此版本最高可达* NFS 4.1*、并支持ONTAP 9.15.1.或更高版本。</block>
@@ -13399,10 +13397,8 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="3a6b9b02361ff37889bb4453f5ce5933" category="doc">Data Infrastructure Insight数据收集器列表</block>
   <block id="4a67aaff87a4b62a93d49b26e8eab486" category="paragraph">Data Infrastructure Insight支持来自许多供应商和服务的各种数据收集器。</block>
   <block id="0469e242e5d1ebfd7553d7a981ac63a5" category="paragraph">Data Infrastructure Insight支持的数据收集器的字母顺序列表：</block>
-  <block id="5988d58aa29664a0117f2c6b8e13d96b" category="list-text">执行活动的用户的*域*。您需要提供*精确域*才能进行筛选。不能搜索部分域、或者以通配符()'*'作为前缀或后缀的部分域。可以指定_None_以搜索缺少的域。</block>
   <block id="28894211649d8f9f99c54dc12f77784e" category="list-text">*实体类型*，使用实体(文件)扩展名-最好在引号内指定确切的实体类型。例如_"TXT"_。</block>
   <block id="cfacc3a890c7b76e916de509a258355f" category="list-text">*实体的路径*-目录路径筛选器(以/结尾的路径字符串)建议目录深度最多为4个，以便更快地获得结果。例如、_/HOME/userX/nosted1/nosted2/_或_"/HOME/userX/nosted1/nosted2/"_。有关详细信息、请参见下表。</block>
-  <block id="b8859d75b29f26c843546ce2c6d19fbd" category="list-text">*用户*执行活动-最好在引号中指定确切的用户。例如、"Administrator (管理员)"。</block>
   <block id="98979e670bd293d9570a2b24562e08a2" category="section-title">活动法证筛选器示例：</block>
   <block id="0930b50f995b3a6af46dc5f205e5c2be" category="cell">用户应用的筛选器表达式</block>
   <block id="13876d45cb0b459833e4aebb72877939" category="cell">预期结果</block>
@@ -13465,4 +13461,8 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="2c000eb53a0410e6ec55bf0a669d2f86" category="list-text">在Data Infrastructure Insight菜单中、单击*可观察性&gt;收集器*</block>
   <block id="b23f93b206dc7149eff63aba0082e7bc" category="list-text">在Data Infrastructure Insight菜单中、单击*可观察性&gt;收集器*以打开已安装的数据收集器列表。</block>
   <block id="50356cf9fa0a08b9ec2e7091b8a2923c" category="list-text">在Data Infrastructure Insight菜单中、单击*可观察性&gt;收集器*。</block>
+  <block id="3a6aae5bc174d27a503441e1d24d0c68" category="list-text">执行活动的用户的*域*。您需要提供*精确域*才能进行筛选。不能搜索部分域、或者以通配符('*')前缀或后缀的部分域。可以指定_None_以搜索缺少的域。</block>
+  <block id="0d97b222b080d69a549c4eb4a4bfe399" category="list-text">*用户*执行活动-最好在引号中指定确切的用户。例如、"Administrator (管理员)"_。</block>
+  <block id="95389b3cb82b7172ea6147fa876a9ffa" category="paragraph">您可以按_time、User、Source IP、Activity_和_Enity Type_对活动历史记录数据进行排序。默认情况下，此表按降序 _time_ 顺序排序，这意味着将首先显示最新数据。已对 _Device_ 和 _Protocol_ 字段禁用排序。</block>
+  <block id="f61af81d2b9edda67ad225742bd8e959" category="paragraph">用于通过API提取取证数据的示例脚本位于NetApp代理上的_/opt/API/云 安全/agent/extr导 出脚本/_。有关该脚本的详细信息、请参见此位置的自述文件。</block>
 </blocks>
