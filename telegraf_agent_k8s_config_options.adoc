@@ -31,13 +31,13 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 | 代理 |  | 操作员可以安装的所有组件通用的配置选项。这些选项可视为"全局"选项。 
 
 
-|  | 文档报告员报告 | 与Cloud Insights Docker repo相比、使用dockerRepo覆盖从客户的专用Docker reposo中提取映像。默认值为Cloud Insights Docker repo 
+|  | 文档报告员报告 | 与Data Infrastructure Insight Docker repo相比、使用dockerRepo覆盖从客户的私有Docker reposo中提取映像。默认值为Data Infrastructure Insight Docker repo 
 
 
 |  | dockerImagePullSecret | 可选：客户专用repo的机密 
 
 
-|  | clusterName | 自由文本字段、用于在所有客户集群中唯一标识集群。这在Cloud Insights 租户中应该是唯一的。默认值是客户在UI中为"Cluster Name"字段输入的内容 
+|  | clusterName | 自由文本字段、用于在所有客户集群中唯一标识集群。这在Data Infrastructure Insight租户中应该是唯一的。默认值是客户在UI中为"Cluster Name"字段输入的内容 
 
 
 |  | 代理
@@ -271,10 +271,10 @@ spec:
   # #   To update them, uncomment the line, change the value, and apply the updated AgentConfiguration.
   agent:
     # # [Required Field] A uniquely identifiable user-friendly clustername.
-    # # clusterName must be unique across all clusters in your Cloud Insights environment.
+    # # clusterName must be unique across all clusters in your Data Infrastructure Insights environment.
     clusterName: "my_cluster"
 
-    # # Proxy settings. The proxy that the operator should use to send metrics to Cloud Insights.
+    # # Proxy settings. The proxy that the operator should use to send metrics to Data Infrastructure Insights.
     # # Please see documentation here: https://docs.netapp.com/us-en/cloudinsights/task_config_telegraf_agent_k8s.html#configuring-proxy-support
     # proxy:
     #   server:

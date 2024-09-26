@@ -22,7 +22,7 @@ summary: 配置工作负载安全性Active Directory用户目录收集器
 可以将工作负载安全性配置为从Active Directory服务器收集用户属性。
 
 .开始之前
-* 要执行此任务，您必须是 Cloud Insights 管理员或帐户所有者。
+* 您必须是Data Infrastructure Insight管理员或帐户所有者才能执行此任务。
 * 您必须具有托管 Active Directory 服务器的服务器的 IP 地址。
 * 在配置用户目录连接器之前，必须先配置代理。
 

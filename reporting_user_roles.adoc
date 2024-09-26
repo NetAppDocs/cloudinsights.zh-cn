@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
 permalink: reporting_user_roles.html 
-summary: 您可以使用 Cloud Insights 报告执行哪些操作取决于您的用户角色。 
+summary: 您可以使用Data Infrastructure Insight报告执行哪些操作取决于您的用户角色。 
 keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles 
 ---
-= Cloud Insights 报告用户角色
+= Data Infrastructure Insight报告用户角色
 :toc: macro
 :hardbreaks:
 :toclevels: 2
@@ -19,14 +19,14 @@ keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles
 
 
 [role="lead"]
-如果您拥有具有报告功能的 Cloud Insights 高级版，则环境中的每个 Cloud Insights 用户还可以通过单点登录（ Single Sign-On ， SSO ）登录到报告应用程序（即 Cognos ）。只需单击菜单中的 * 报告 * 链接，您就会自动登录到报告。
+如果您的Data Infrastructure Insight Premium Edition包含报告功能、则您环境中的每个Data Infrastructure Insight用户还可以通过单点登录(Single Sign-On、SSO)登录到报告应用程序(即Cognos)。只需单击菜单中的 * 报告 * 链接，您就会自动登录到报告。
 
-您在 Cloud Insights 中的用户角色决定了您的报告用户角色：
+您在Data Infrastructure Insight中的用户角色决定了您的报告用户角色：
 
 |===
 
 
-| Cloud Insights 角色 | 报告角色 | 报告权限 
+| 数据基础架构洞察力角色 | 报告角色 | 报告权限 
 
 
 | 来宾 | 使用者 | 可以查看，计划和运行报告并设置个人首选项，例如语言和时区的首选项。使用者不能创建报告或执行管理任务。 
@@ -88,7 +88,7 @@ keywords: reporting, cognos, data warehouse, dwh, users, roles, user roles
 == 设置报告（ Cognos ）电子邮件首选项
 
 
-NOTE: 如果您在 Cloud Insights 报告中更改了用户电子邮件首选项（例如 Cognos 应用程序），则这些首选项对于当前会话为 active _only 。注销 Cognos 并重新登录将重置您的电子邮件首选项。
+NOTE: 如果您在Data Infrastructure Insight报告(即Cognos应用程序)中更改了用户电子邮件首选项、则这些首选项对于当前会话为active_only。注销 Cognos 并重新登录将重置您的电子邮件首选项。
 
 
 
@@ -111,6 +111,6 @@ image:Reporting_Menu.png["Cognos左上角菜单"]
 . 在菜单右上角，选择 " 复制或移动 "
 . 导航到 _Team Content_ 中新创建的文件夹
 . 使用 " 复制到 " 或 " 移动到 " 按钮将报告粘贴到新创建的文件夹中
-. 为 Cognos 启用 SSO 后，使用用于创建帐户的电子邮件地址登录到 Cloud Insights 。
+. 为Cognos启用SSO后、使用用于创建帐户的电子邮件地址登录到Data Infrastructure Insight。
 . 导航到 Cognos 中的 _Team Content_ 文件夹，然后将先前保存的报告复制或移动回 _My Content_ 。
 

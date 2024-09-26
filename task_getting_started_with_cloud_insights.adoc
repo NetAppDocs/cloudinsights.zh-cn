@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task_getting_started_with_cloud_insights.html 
-summary: Cloud Insights 入门。 
+summary: Data Infrastructure Insight入门。 
 keywords: invite, roles, data collector, acquisition unit, AU 
 ---
 = 开始收集数据
@@ -19,11 +19,11 @@ keywords: invite, roles, data collector, acquisition unit, AU
 
 
 [role="lead"]
-注册 Cloud Insights 并首次登录到您的环境后，系统将引导您完成以下步骤，以便开始收集和管理数据。
+注册Data Infrastructure Insight并首次登录到您的环境后、系统将引导您完成以下步骤、以便开始收集和管理数据。
 
 数据收集器可从存储设备，网络交换机和虚拟机等数据源发现信息。收集的信息用于分析，验证，监控和故障排除。
 
-Cloud Insights 提供了三种类型的数据收集器：
+Data Infrastructure Insight提供了三种类型的数据收集器：
 
 * 基础架构(存储设备、网络交换机、计算基础架构)
 * 操作系统(如VMware或Windows)
@@ -36,7 +36,7 @@ Cloud Insights 提供了三种类型的数据收集器：
 
 == 安装采集单元
 
-如果选择了 _Infrastructure_ 数据收集器，则需要使用采集单元将数据注入 Cloud Insights 。您需要在要从中收集数据的数据中心的服务器或虚拟机上下载并安装采集单元软件。一个采集单元可用于多个数据收集器。
+如果您选择了_Infrastructure数据收集器、则需要使用采集单元将数据注入Data Infrastructure Insight。您需要在要从中收集数据的数据中心的服务器或虚拟机上下载并安装采集单元软件。一个采集单元可用于多个数据收集器。
 
 image:NewLinuxAUInstall.png["《 Linux AU 说明》"]
 
@@ -69,7 +69,7 @@ image:NewAUDetected.png["检测到新 AU"]
 
 === 操作系统
 
-对于_Operating System_数据收集器、请选择一个平台(Linux、Windows)来安装Cloud Insights 代理。您必须至少有一个代理才能从服务收集数据。代理还会从主机本身收集数据，以便在 Cloud Insights 中使用。此数据在小工具等中归类为 " 节点 " 数据
+对于_Operating System_数据收集器、请选择一个平台(Linux、Windows)来安装Data Infrastructure Insight Agent。您必须至少有一个代理才能从服务收集数据。代理还会从主机本身收集数据、以供Data Infrastructure Insight使用。此数据在小工具等中归类为 " 节点 " 数据
 
 * 在代理主机或 VM 上打开一个终端或命令窗口，然后粘贴显示的命令以安装代理。
 * 安装完成后，单击 * 完成设置 * 。
@@ -92,7 +92,7 @@ image:NewAUDetected.png["检测到新 AU"]
 
 == 添加信息板
 
-根据您选择配置的初始数据收集器类型（存储，交换机等），将导入一个或多个相关信息板。例如，如果您配置了存储数据收集器，则会导入一组与存储相关的信息板，其中一个信息板将设置为您的 Cloud Insights 主页。您可以从 * 信息板 > 显示所有信息板 * 列表更改主页。
+根据您选择配置的初始数据收集器类型（存储，交换机等），将导入一个或多个相关信息板。例如、如果您配置了存储数据收集器、则会导入一组与存储相关的信息板、其中一个信息板将设置为Data Infrastructure Insight主页。您可以从 * 信息板 > 显示所有信息板 * 列表更改主页。
 
 您可以稍后导入其他信息板，或 link:concept_dashboards_overview.html["创建您自己的"]。
 
@@ -113,7 +113,7 @@ image:NewAUDetected.png["检测到新 AU"]
 
 == 有用的定义
 
-在讨论Cloud Insights 数据收集器或功能时、以下定义可能会很有用：
+在讨论Data Infrastructure Insight数据收集器或功能时、以下定义可能很有用：
 
 * 收集器生命周期：收集器在其生命周期中属于以下状态之一：
 +

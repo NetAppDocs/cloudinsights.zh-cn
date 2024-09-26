@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: pre-requisites_for_k8s_operator.html 
 keywords: telegraf, installation, install, agent, telegraf agent, kubernetes, eks, operator, k8s 
-summary: Cloud Insights 支持 Telegraf 作为其在 Kubernetes 上收集集成数据的代理。 
+summary: Data Infrastructure Insight支持Telegraf作为其代理来收集Kubelnetes上的集成数据。 
 ---
 = 在安装或升级NetApp Kubornetes监控操作员之前
 :toc: macro
@@ -36,25 +36,16 @@ Rancher Kubernetes Engine （ RKE）
 VMware Tanzu 
 
 
-| Linux操作系统 | Cloud Insights不支持运行ARM64架构的节点。
-
-网络监控：必须运行Linux内核版本4.18.0或更高版本。不支持光子操作系统。 
+| Linux操作系统 | Data Infrastructure Insight不支持运行ARM64架构的节点。网络监控：必须运行Linux内核版本4.18.0或更高版本。不支持光子操作系统。 
 
 
-| 标签 | Cloud Insights 通过指定 Kubernetes 节点选择器来在这些平台上查找以下 Kubernetes 标签，支持监控运行 Linux 的 Kubernetes 节点：
-
-Kubernetes v1.20及更高版本：Kubernetes.io/OS = Linux
-作为流程编排/Kubernetes平台的是：Catcher.io/OS = Linux 
+| 标签 | Data Infrastructure Insight支持监控运行Linux的Kubernetes节点、方法是指定一个Kubernetes节点选择器、用于在这些平台上查找以下Kubernetes标签：Kubernetes v1.20及更高版本：Kubernetes.io/OS = Linux Randcher + Catch.io作为流程编排/Kubernetes平台：Catch.io/OS = Linux 
 
 
 | 命令 | 必须提供URL和kubecl命令。；为获得最佳结果、请将这些命令添加到路径中。 
 
 
-| 连接 | 已将kubeccli配置为与目标K8s集群通信、并可通过Internet连接到您的Cloud Insights环境。
-
-如果您在安装期间使用代理、请按照中的说明进行操作 link:task_config_telegraf_agent_k8s.html#configuring-proxy-support["配置代理支持"] 部分。
-
-为了获得准确的审核和数据报告、请使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。 
+| 连接 | 已将kubecl命令行界面配置为与目标K8s集群通信、并可通过Internet连接到Data Infrastructure Insight环境。如果您在安装期间使用代理、请按照操作员安装部分中的说明link:task_config_telegraf_agent_k8s.html#configuring-proxy-support["配置代理支持"]进行操作。为了获得准确的审核和数据报告、请使用网络时间协议(NTP)或简单网络时间协议(SNTP)同步Agent计算机上的时间。 
 
 
 | 其他 | 如果您运行的是OpenShift 4.6或更高版本、则必须遵循 link:task_config_telegraf_agent_k8s.html#openshift-instructions["OpenShift 说明"] 此外、还应确保满足这些前提条件。 
@@ -76,11 +67,11 @@ Kubernetes v1.20及更高版本：Kubernetes.io/OS = Linux
 
 要安装NetApp Kubernetes监控操作员、您可以在环境中的两个位置使用代理。这些代理系统可以是相同的、也可以是单独的：
 
-* 在执行安装代码片段(使用"curt")期间需要使用代理将执行该片段的系统连接到Cloud Insights 环境
-* 目标Kubernetes集群与Cloud Insights 环境通信所需的代理
+* 在执行安装代码段(使用"cURL ")期间需要代理、以便将执行此代码段的系统连接到Data Infrastructure Insight环境
+* 目标Kubnetes集群与Data Infrastructure Insight环境通信所需的代理
 
 
-如果您对其中一个或两个使用代理、则要安装NetApp Kubornetes操作监控器、必须先确保将代理配置为可以与Cloud Insights环境进行良好的通信。例如、从要安装Operator的服务器/VM中、您需要能够访问Cloud Insights并能够从Cloud Insights下载二进制文件。
+如果您对其中一个或这两个环境使用代理、则要安装NetApp Kubornetes操作监控器、必须先确保将代理配置为与Data Infrastructure Insight环境进行良好通信。例如、您需要能够从要安装Operator的服务器/VM访问Data Infrastructure Insight并从Data Infrastructure Insight下载二进制文件。
 
 对于用于安装NetApp Kubernetes操作监控器的代理、在安装操作员之前、请设置_http_proxy/https_proxy_environment变量。对于某些代理环境、您可能还需要设置_no_proxy environment_变量。
 
@@ -98,7 +89,7 @@ Kubernetes v1.20及更高版本：Kubernetes.io/OS = Linux
 
 
 
-要使Kubernetes集群与Cloud Insights 环境通信所使用的代理、请在阅读完所有这些说明后安装NetApp Kubernetes监控操作员。
+要使您的Kubnetes集群所使用的代理与您的Data Infrastructure Insight环境进行通信、请在阅读所有这些说明后安装NetApp Kubnetes监控操作员。
 
 在部署NetApp Kubernetes Monitoring Operator之前、请在operator-config.yaml中配置AgentConfiguration的代理部分。
 
@@ -128,9 +119,9 @@ agent:
 
 === 使用自定义或专用Docker存储库
 
-默认情况下、NetApp Kubrenetes监控操作员将从Cloud Insights 存储库中提取容器映像。如果您将某个Kubornetes集群用作监控目标、并且该集群配置为仅从自定义或私有Docker存储库或容器注册表中提取容器映像、则必须配置对NetApp Kubornetes监控操作员所需容器的访问权限。
+默认情况下、NetApp Kubrenetes监控操作员将从Data Infrastructure Insight存储库中提取容器映像。如果您将某个Kubornetes集群用作监控目标、并且该集群配置为仅从自定义或私有Docker存储库或容器注册表中提取容器映像、则必须配置对NetApp Kubornetes监控操作员所需容器的访问权限。
 
-从NetApp Monitoring Operator安装磁贴运行"Image Pull Snippet"。此命令将登录到Cloud Insights 存储库、提取操作员的所有映像依赖关系、然后注销Cloud Insights 存储库。出现提示时、输入提供的存储库临时密码。此命令可下载操作员使用的所有映像、包括可选功能的映像。请参见以下内容、了解这些图像用于哪些功能。
+从NetApp Monitoring Operator安装磁贴运行"Image Pull Snippet"。此命令将登录到Data Infrastructure Insight存储库、提取操作员的所有映像依赖关系、然后从Data Infrastructure Insight存储库中注销。出现提示时、输入提供的存储库临时密码。此命令可下载操作员使用的所有映像、包括可选功能的映像。请参见以下内容、了解这些图像用于哪些功能。
 
 核心操作员功能和Kubornetes监控
 
@@ -152,7 +143,7 @@ agent:
 * CI-net-observer
 
 
-根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。确保存储库中这些映像的映像标记和目录路径与Cloud Insights 存储库中的映像一致。
+根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。确保存储库中这些映像的映像标记和目录路径与Data Infrastructure Insight存储库中的映像标记和目录路径一致。
 
 在operator-DEPLOYAML中编辑monitor-operator部署、并修改所有映像引用以使用私有Docker存储库。
 

@@ -27,10 +27,10 @@ image:Device_Resolution_IP.png["IP 设备解析"]
 
 == 手动添加 IP 设备
 
-您可以使用 "IP Identify" 屏幕中提供的手动添加功能将 IP 设备手动添加到 Cloud Insights 。
+您可以使用"IP标识"屏幕中提供的手动添加功能手动将IP设备添加到Data Infrastructure Insight。
 
 .操作步骤
-. 登录到 Cloud Insights Web UI 。
+. 登录到Data Infrastructure Insight Web UI。
 . 单击 * 管理 > 设备解析 *
 . 单击 * IP 地址标识 * 选项卡。
 . 单击 * 添加 * 按钮。
@@ -74,7 +74,7 @@ NOTE: 作为最佳实践，建议先将 IP Address Identify 信息导出到 .CSV
 
 == 将 IP 设备标识导出到 .CSV 文件
 
-您可以通过 Cloud Insights 设备解析功能将现有 IP 设备标识导出到 .CSV 文件。您可能希望导出设备标识，以便对其进行修改，然后将其导回 Cloud Insights ，在此可以使用它来标识与导出标识最初匹配的设备类似的设备。
+您可以通过Data Infrastructure Insight设备解析功能将现有IP设备标识导出到.CSV文件。您可能希望导出设备标识以便进行修改、然后将其导回Data Infrastructure Insight、在该洞察中、可以使用它来标识与最初匹配导出标识的设备类似的设备。
 
 .关于此任务
 。如果设备具有类似的属性，可以在 .CSV 文件中轻松编辑这些属性，然后将其导回系统，则可能会出现此情况。
@@ -87,7 +87,7 @@ NOTE: 作为最佳实践，建议先将 IP Address Identify 信息导出到 .CSV
 | 地址 | IP | 名称 
 |===
 .操作步骤
-. 登录到 Cloud Insights Web UI 。
+. 登录到Data Infrastructure Insight Web UI。
 . 单击 * 管理 > 设备解析 *
 . 选择 * IP 地址标识 * 选项卡。
 . 选择要导出其标识的 IP 设备。

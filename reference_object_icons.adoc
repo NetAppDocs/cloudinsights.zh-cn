@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference_object_icons.html 
-summary: Cloud Insights 对象图标参考。 
+summary: Data Infrastructure Insight对象图标参考。 
 keywords: icons, assets, objects, reference, map 
 ---
 = 对象图标参考
@@ -9,7 +9,7 @@ keywords: icons, assets, objects, reference, map
 
 
 [role="lead"]
-Cloud Insights中使用的对象图标。
+Data Infrastructure Insight中使用的对象图标。
 
 
 

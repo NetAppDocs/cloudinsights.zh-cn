@@ -5,17 +5,14 @@ keywords: k8s, pods, clusters, nodes. troubleshooting, planning
 summary: 通过 Kubernetes 节点详细信息页面，您可以深入了解后端 PV 和 Pod 存储。 
 ---
 = Kubernetes Node 详细信息页面
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -27,9 +24,9 @@ image:KubernetesNodeFiltering.png["显示筛选的 Kubernetes Node 详细信息�
 
 == 了解节点的Pod和永久性卷
 
-通过 Cloud Insights ，您可以查看 Kubernetes 环境的后端存储，从而深入了解 Kubernetes Pod 和永久性卷（ Persistent Volume ， PV ）。您可以跟踪从单个 Pod 的使用情况到 PV 以及一直到后端存储设备的 PV 计数器，例如 IOPS ，延迟和吞吐量。
+通过Data Infrastructure Insight、您可以深入了解Kubbernetes环境的后端存储、从而深入了解Kubbernetes Pods和永久性卷(PV)。您可以跟踪从单个 Pod 的使用情况到 PV 以及一直到后端存储设备的 PV 计数器，例如 IOPS ，延迟和吞吐量。
 
-在 PV 级别， Cloud Insights 会收集后端（内部卷或卷，具体取决于 PV 类型）容量信息（总容量，已用容量，已用容量百分比）以及内部卷快照计数。在 Pod 到存储级别，它会收集后端容量和内部卷快照计数。
+在PV级别、Data Infrastructure Insight会收集后端(内部卷或卷、具体取决于PV类型)容量信息(总容量、已用容量、已用容量百分比)以及内部卷快照计数。在 Pod 到存储级别，它会收集后端容量和内部卷快照计数。
 
 在卷或内部卷登录页面上，将显示两个表：
 

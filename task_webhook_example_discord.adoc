@@ -30,14 +30,14 @@ NOTE: 此页面引用第三方说明，可能会有所更改。请参见 link:ht
 
 * 在不和的情况下，选择服务器，在文本通道下，选择编辑通道（齿轮图标）
 * 选择 * 集成 > 查看 Webhook* ，然后单击 * 新建 Webhook*
-* 复制 Webhook URL 。您需要将此文件粘贴到 Cloud Insights webhook 配置中。
+* 复制 Webhook URL 。您需要将此信息粘贴到Data Infrastructure Insight webhook配置中。
 
 
 
 
-== 创建 Cloud Insights Webhook ：
+== 创建数据基础架构洞察力Webhook：
 
-. 在 Cloud Insights 中，导航到 * 管理员 > 通知 * ，然后选择 * Webhook* 选项卡。单击 * + Webhook* 以创建新的 webhook 。
+. 在Data Infrastructure Insight中、导航到*管理>通知*、然后选择* Webhook *选项卡。单击 * + Webhook* 以创建新的 webhook 。
 . 为网络挂钩指定一个有意义的名称，例如 " 不和 " 。
 . 在 _Template Type_ 下拉列表中，选择 * 不和 * 。
 . 将上述 URL 粘贴到 _url_ 字段中。
@@ -52,7 +52,7 @@ NOTE: 要测试 webhook ，请临时将消息正文中的 URL 值替换为任何
 
 == 通过 Webhook 发送通知
 
-要通过 webhook 通知事件，请在 Cloud Insights 中导航到 * 警报 > 监控 * ，然后单击 * + 监控 * 以创建新的 link:task_create_monitor.html["监控"]。
+要通过webhook通知事件，请在Data Infrastructure Insight中导航到*Alerts > Monitors*，然后单击*+Monitor*创建新的link:task_create_monitor.html["监控"]。
 
 * 选择一个指标并定义监控器的条件。
 * 在 _set up team notification （ s ）下，选择 * Webhook* 传送方法。

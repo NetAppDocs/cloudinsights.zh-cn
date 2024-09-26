@@ -22,7 +22,7 @@ keywords: query, queries, export, csv
 您可以将任何查询的结果导出到 .CSV 文件，这样您可以分析数据或将其导入到其他应用程序中。
 
 .步骤
-. 登录到 Cloud Insights 。
+. 登录到Data Infrastructure Insight。
 . 单击 * 查询 * 并选择 * 显示所有查询 * 。
 +
 此时将显示 "Queries" 页面。

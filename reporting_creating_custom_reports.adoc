@@ -22,9 +22,9 @@ keywords: reporting, cognos, data warehouse, dwh, ad-hoc, custom
 您可以使用报告创作工具创建自定义报告。创建报告后，您可以保存这些报告并定期运行它们。报告结果可以通过电子邮件自动发送给您自己和其他人。
 
 
-NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_insights.html["高级版"]。
+NOTE: 数据基础架构洞察中提供了报告功能link:concept_subscribing_to_cloud_insights.html["高级版"]。
 
-本节中的示例显示了以下过程，可用于任何 Cloud Insights 报告数据模型：
+本节中的示例介绍了以下过程、可用于任何Data Infrastructure Insight报告数据模型：
 
 * 确定要使用报告回答的问题
 * 确定支持结果所需的数据
@@ -38,7 +38,7 @@ NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_ins
 在设计报告之前，请完成以下任务：
 
 * 全部配置 link:task_configure_data_collectors.html["数据收集器"] 正确。
-* 在环境中的设备和资源上输入标注（例如层，数据中心和业务单位）。在生成报告之前使标注保持稳定很有帮助，因为 Cloud Insights 报告会收集历史信息。
+* 在环境中的设备和资源上输入标注（例如层，数据中心和业务单位）。在生成报告之前保持标注稳定非常有用、因为Data Infrastructure Insight报告会收集历史信息。
 
 
 
@@ -87,9 +87,9 @@ NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_ins
 
 * 确定您需要使用当前数据还是历史数据。
 +
-大多数报告只需要报告 Cloud Insights 中提供的最新数据。
+大多数报告只需要报告Data Infrastructure Insight中提供的最新数据即可。
 
-* Cloud Insights 报告提供有关容量和性能的历史信息，但不提供有关清单的历史信息。
+* Data Infrastructure Insight报告可提供有关容量和性能的历史信息、但不能提供清单信息。
 * 每个人都能看到所有数据；但是，您可能需要将数据限制为特定受众。
 +
 要为不同用户细分信息，您可以创建报告并为其设置访问权限。
@@ -100,7 +100,7 @@ NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_ins
 
 == 报告数据模型
 
-Cloud Insights 包含多个数据模型，您可以从中选择预定义报告或创建自己的自定义报告。
+Data Infrastructure Insight包括多个数据模型、您可以从中选择预定义报告或创建自己的自定义报告。
 
 每个数据模型都包含一个简单的数据集市和一个高级数据集市：
 
@@ -188,7 +188,7 @@ Cloud Insights 包含多个数据模型，您可以从中选择预定义报告�
 * 使用存储精简配置和重复数据删除技术可以节省多少存储效率？
 
 
-VM 容量数据模型中的容量来自虚拟磁盘（ VMDK ）。这意味着，使用 VM 容量数据模型的 VM 的已配置大小等于其虚拟磁盘的大小。这与 Cloud Insights 虚拟机视图中的已配置容量不同，该视图显示了 VM 本身的已配置大小。
+VM 容量数据模型中的容量来自虚拟磁盘（ VMDK ）。这意味着，使用 VM 容量数据模型的 VM 的已配置大小等于其虚拟磁盘的大小。这与Data Infrastructure Insight中的虚拟机视图中的配置容量不同、该视图显示虚拟机本身的配置大小。
 
 
 
@@ -302,7 +302,7 @@ VM 容量数据模型中的容量来自虚拟磁盘（ VMDK ）。这意味着�
 
 === 存储效率数据模型
 
-可用于跟踪存储效率得分和随时间变化的潜力。此数据模型不仅存储已配置容量的测量值，还存储已用或已用容量的测量值（物理测量值）。例如，启用精简配置时， Cloud Insights 指示从设备中获取的容量。您也可以使用此模型来确定启用重复数据删除时的效率。您可以问题解答使用存储效率数据集市回答各种问题：
+可用于跟踪存储效率得分和随时间变化的潜力。此数据模型不仅存储已配置容量的测量值，还存储已用或已用容量的测量值（物理测量值）。例如、启用精简配置后、Data Infrastructure Insight会指示从设备中获取的容量。您也可以使用此模型来确定启用重复数据删除时的效率。您可以问题解答使用存储效率数据集市回答各种问题：
 
 * 实施精简配置和重复数据删除技术可以节省多少存储效率？
 * 数据中心之间的存储节省量是多少？

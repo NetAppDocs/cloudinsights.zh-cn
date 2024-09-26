@@ -19,13 +19,13 @@ keywords: annotate, annotation, rules
 
 
 [role="lead"]
-您可以使用标注规则根据定义的条件自动将标注应用于多个资产。Cloud Insights 会根据这些规则为资产分配标注。在 Cloud Insight 评估标注规则时，在单个资产页面上手动设置的标注优先于基于规则的标注。
+您可以使用标注规则根据定义的条件自动将标注应用于多个资产。Data Infrastructure Insight会根据这些规则为资产分配标注。在 Cloud Insight 评估标注规则时，在单个资产页面上手动设置的标注优先于基于规则的标注。
 
 .开始之前
 您必须已为标注规则创建查询。
 
 .步骤
-. 在 Cloud Insights 菜单中，单击 * 管理 > 标注规则 * 。
+. 在Data Infrastructure Insight菜单中、单击*管理>标注规则*。
 . 单击 * + Rule* 以添加新的标注规则。
 +
 此时将显示添加规则对话框。
@@ -36,7 +36,7 @@ keywords: annotate, annotation, rules
 +
 此名称将显示在 "Annotation Rules" 页面中。
 
-.. 单击 * 查询 * ，然后选择 Cloud Insights 用于标识标注适用场景的资产的查询。
+.. 单击*Query*并选择Data Infrastructure Insight用于标识标注所应用于的资产的查询。
 .. 单击 * 标注 * 并选择要应用的标注。
 .. 单击 * 值 * 并为标注选择一个值。
 +
@@ -46,7 +46,7 @@ keywords: annotate, annotation, rules
 .. 如果要立即运行所有规则，请单击 * 运行所有规则 * ；否则，这些规则将按计划的定期间隔运行。
 +
 
-NOTE: 在大型 Cloud Insights 环境中，您可能会发现运行标注规则似乎需要一段时间才能完成。这是因为索引器首先运行，并且必须在运行规则之前完成。通过索引器， Cloud Insights 可以搜索或筛选数据中的新对象和计数器或更新的对象和计数器。规则引擎会等待索引器完成更新，然后再应用规则。
+NOTE: 在大型Data Infrastructure Insight环境中、您可能会注意到运行标注规则似乎需要一段时间才能完成。这是因为索引器首先运行，并且必须在运行规则之前完成。通过索引器、Data Infrastructure Insight可以在数据中搜索或筛选新的或更新的对象和计数器。规则引擎会等待索引器完成更新，然后再应用规则。
 
 
 
@@ -59,7 +59,7 @@ NOTE: 在大型 Cloud Insights 环境中，您可能会发现运行标注规则�
 您可以修改标注规则以更改规则的名称，标注，标注值或与规则关联的查询。
 
 .步骤
-. 在 Cloud Insights 菜单中，单击 * 管理 > 标注规则 * 。
+. 在Data Infrastructure Insight菜单中、单击*管理>标注规则*。
 +
 " 标注规则 " 页面将显示现有标注规则的列表。
 
@@ -95,7 +95,7 @@ NOTE: 在大型 Cloud Insights 环境中，您可能会发现运行标注规则�
 您可能希望删除不再使用的标注规则。
 
 .步骤
-. 在 Cloud Insights 菜单中，单击 * 管理 > 标注规则 * 。
+. 在Data Infrastructure Insight菜单中、单击*管理>标注规则*。
 +
 " 标注规则 " 页面将显示现有标注规则的列表。
 

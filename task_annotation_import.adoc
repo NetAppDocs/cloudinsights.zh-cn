@@ -2,27 +2,24 @@
 sidebar: sidebar 
 permalink: task_annotation_import.html 
 keywords: annotations, import, api 
-summary: 您可以使用Cloud Insights API导入标注和应用程序。 
+summary: 您可以使用Data Infrastructure Insight API导入标注和应用程序。 
 ---
 = 导入标注
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
-Cloud Insights 提供了一个 API ，用于从 CSV 文件导入标注或应用程序并将其分配给您指定的对象。
+Data Infrastructure Insight提供了一个API、用于从CSV文件导入标注或应用程序、并将其分配给您指定的对象。
 
 
-NOTE: Cloud Insights API 可在 * Cloud Insights 高级版 * 中使用。
+NOTE: Data Infrastructure Insight API在*Data Infrastructure Insight高级版*中可用。
 
 
 

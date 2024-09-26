@@ -4,7 +4,7 @@ permalink: reporting_schema_diagrams.html
 keywords: Schema, DB Schema, premium, dwh, data warehouse 
 summary: 报告架构图 
 ---
-= Cloud Insights 报告架构图
+= Data Infrastructure Insight报告架构图
 :toc: macro
 :hardbreaks:
 :allow-uri-read: 
@@ -21,7 +21,7 @@ summary: 报告架构图
 本文档提供了报告数据库的架构图。您也可以下载包含的文件 link:ci_reporting_database_schema.pdf["模式表"]。
 
 
-NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_insights.html["高级版"]。
+NOTE: 数据基础架构洞察中提供了报告功能link:concept_subscribing_to_cloud_insights.html["高级版"]。
 
 
 

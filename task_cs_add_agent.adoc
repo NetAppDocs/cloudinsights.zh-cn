@@ -27,7 +27,7 @@ summary: 正在添加工作负载安全代理
 
 * 安装，运行脚本和卸载需要 sudo 权限。
 * 安装代理时、会在计算机上创建一个本地用户_cssys_和一个本地组_cssys_。如果权限设置不允许创建本地用户、而需要Active Directory、则必须在Active Directory服务器中创建用户名为_cssys_的用户。
-* 您可以阅读有关Cloud Insights安全性的信息 link:security_overview.html["此处"]。
+* 您可以阅读有关Data Infrastructure Insight安全性的link:security_overview.html["此处"]信息。
 
 
 
@@ -94,7 +94,7 @@ image::new-agent-detect.png[成功安装代理的消息]
 
 == "固定"当前版本的Agent
 
-默认情况下、Cloud Insights Workload Security会自动更新代理。某些客户可能希望暂停自动更新、这将使工程师保持其当前版本、直到出现以下情况之一：
+默认情况下、Data Infrastructure Insight Workload Security会自动更新代理。某些客户可能希望暂停自动更新、这将使工程师保持其当前版本、直到出现以下情况之一：
 
 * 客户恢复自动Agent更新。
 * 30天过去了。请注意、这30天从最近一次Agent更新的那一天开始、而不是从Agent暂停的那一天开始。
@@ -152,7 +152,7 @@ image:ws_agent_version.png["代理表中显示的WS代理版本"]
 | 安装代理时，安装将在解压缩后挂起。 | "chmod 755 -rf " 命令失败。如果代理安装命令由非 root sudo 用户运行，而该用户的文件位于工作目录中，属于另一个用户，并且无法更改这些文件的权限，则此命令将失败。由于 chmod 命令失败，其余安装不会执行。1. 创建一个名为 cloudsecure 的新目录。2. 转到该目录。3. 复制并粘贴完整的 "token=…… … ./cloudsure-agent-install.sh" 安装命令并按 Enter 键。4. 安装应能继续进行。 
 
 
-| 如果工程师仍无法连接到 SaaS ，请向 NetApp 支持部门创建案例。提供 Cloud Insights 序列号以创建案例，并按照说明将日志附加到案例。 | 将日志附加到案例： 1.使用 root 权限执行以下脚本并共享输出文件（ cloudsure-agent-symps.zip ）。答/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh 2.在 root 权限下逐个执行以下命令，并共享输出。答ID cssys b.组 cssys c.cat /etc/os-release 
+| 如果工程师仍无法连接到 SaaS ，请向 NetApp 支持部门创建案例。提供用于创建案例的Data Infrastructure Insight序列号、并按照说明将日志附加到案例中。 | 将日志附加到案例： 1.使用 root 权限执行以下脚本并共享输出文件（ cloudsure-agent-symps.zip ）。答/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh 2.在 root 权限下逐个执行以下命令，并共享输出。答ID cssys b.组 cssys c.cat /etc/os-release 
 
 
 | cloudsecure-agent-symptom-collector.sh脚本失败、并显示以下错误。根@计算机tmp]#/opt/netapp/cloudsecurity/agent/bin/cloudsecure-agent-symptom-collector.sh收集服务日志收集应用程序日志收集代理配置获取服务状态快照获取代理目录结构快照………………… 。………………… 。/opt/netapp/cloudsecurity/agent/bin/cloudsure-agent-smp-collector.sh：行52：zip：command not found error：failed to create /tmp/cloudsecure-agent-symptoms.zip | 未安装zip工具。运行命令"yum install zip "来安装zip工具。然后再次运行cloudsecure-agent-symptom-collector.sh。 

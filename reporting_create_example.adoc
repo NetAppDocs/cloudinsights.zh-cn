@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_create_example.html 
-summary: 使用此操作步骤可使用预定义的 Cloud Insights 报告创建报告。 
+summary: 使用此过程创建使用预定义Data Infrastructure Insight报告的报告。 
 keywords: reporting, cognos, data warehouse, dwh, create, report 
 ---
 = 创建报告（示例）

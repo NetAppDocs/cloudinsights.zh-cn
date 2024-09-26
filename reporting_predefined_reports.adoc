@@ -19,12 +19,12 @@ keywords: reporting, cognos, data warehouse, dwh, pre-defined
 
 
 [role="lead"]
-Cloud Insights 报告包括一些预定义报告，可满足多种常见报告要求，从而为利益相关方提供关键洞察力，帮助他们做出明智的存储基础架构决策。
+Data Infrastructure Insight报告包括一些预定义报告、这些报告可满足许多常见的报告要求、为利益相关方提供重要的洞察力、帮助他们就其存储基础架构做出明智的决策。
 
 
-NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_insights.html["高级版"]。
+NOTE: 数据基础架构洞察中提供了报告功能link:concept_subscribing_to_cloud_insights.html["高级版"]。
 
-您可以从 Cloud Insights 报告门户生成预定义报告，并通过电子邮件将其发送给其他用户，甚至可以对其进行修改。您可以通过多个报告按设备，业务实体或层进行筛选。报告工具使用 IBM Cognos 作为基础，并为您提供多种数据呈现选项。
+您可以从Data Infrastructure Insight报告门户生成预定义报告、通过电子邮件将其发送给其他用户、甚至可以对其进行修改。您可以通过多个报告按设备，业务实体或层进行筛选。报告工具使用 IBM Cognos 作为基础，并为您提供多种数据呈现选项。
 
 预定义报告显示您的清单，存储容量，成本分摊，性能，存储效率， 和云成本数据。您可以修改这些预定义报告并保存所做的修改。
 
@@ -34,7 +34,7 @@ NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_ins
 
 == 导航到预定义报告
 
-打开报告门户时， _Team Content_ 文件夹是您选择 Cloud Insights 报告中所需信息类型的起点。
+打开报告门户时、可以从_Team Content_文件夹中选择Data Infrastructure Insight报告中所需的信息类型。
 
 . 在左侧导航窗格中，选择*内容>团队内容*。
 . 选择*报告*以访问预定义报告。
@@ -121,7 +121,7 @@ NetApp 容量和性能报告提供有关已分配，已利用和已提交容量�
 
 === 记分卡
 
-" 记分卡 " 报告提供了 Cloud Insights 收购的所有资产的摘要和一般状态。状态以绿色，黄色和红色标志表示：
+"记分卡"报告提供了Data Infrastructure Insight采集的所有资产的摘要和常规状态。状态以绿色，黄色和红色标志表示：
 
 * 绿色表示正常情况
 * 黄色表示环境中可能存在问题描述

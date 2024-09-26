@@ -5,23 +5,20 @@ keywords: webhook, notification, slack, integration
 summary: 创建监控器，以便针对性能或清单阈值发出警报 
 ---
 = 使用 Webhooks 发送通知
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
 网络挂机允许用户使用自定义的网络挂机通道向各种应用程序发送警报通知。
 
-许多商业应用程序都支持使用 webhooks 作为标准输入接口，例如， Slack ， PagerDty ， Teams 和 Chand 都支持 webhooks 。通过支持通用的可自定义 webhook 通道， Cloud Insights 可以支持其中许多交付通道。有关 webhooks 的信息，请访问这些应用程序网站。例如， Slack 提供 link:https://api.slack.com/messaging/webhooks["本指南非常有用"]。
+许多商业应用程序都支持使用 webhooks 作为标准输入接口，例如， Slack ， PagerDty ， Teams 和 Chand 都支持 webhooks 。通过支持通用的可自定义webhook渠道、Data Infrastructure Insight可以支持其中许多交付渠道。有关 webhooks 的信息，请访问这些应用程序网站。例如，Sl延 时提供link:https://api.slack.com/messaging/webhooks["本指南非常有用"]。
 
 您可以创建多个 webhook 通道，每个通道的目标是不同的用途；不同的应用程序，不同的收件人等
 
@@ -54,7 +51,7 @@ webhook 通道实例由以下元素组成：
 
 == 创建 Webhook
 
-要创建 Cloud Insights webhook ，请转到 * 管理 > 通知 * 并选择 * Webhook* 选项卡。
+要创建Data Infrastructure Insight webhook、请转到*管理>通知*并选择* Webhooks*选项卡。
 
 下图显示了一个为 Slack 配置的示例 webhook ：
 
@@ -64,9 +61,9 @@ image:Webhook_Example_Slack.png["webhook 示例"]
 
 您也可以单击"Test Webhook"按钮来测试连接。请注意、此操作将根据选定方法将"消息正文"(不含替换项)发送到定义的URL。
 
-Cloud Insights webhooks 包含许多默认参数。此外，您还可以创建自己的自定义参数或密码。
+Data Infrastructure Insight webhook包含许多默认参数。此外，您还可以创建自己的自定义参数或密码。
 
-image:Webhook_Default_Parameters.png["Cloud Insights 默认 Webhook 参数"]
+image:Webhook_Default_Parameters.png["Data Infrastructure Insight默认Webhook参数"]
 
 
 

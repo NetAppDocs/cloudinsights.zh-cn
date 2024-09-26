@@ -19,10 +19,10 @@ keywords: monitor, alert, viewing
 
 
 [role="lead"]
-Cloud Insights 将在何时显示警报 link:task_create_monitor.html["监控的阈值"] 已超过。
+超过此限制时、Data Infrastructure Insight会显示警报link:task_create_monitor.html["监控的阈值"]。
 
 
-TIP: Cloud Insights 标准版及更高版本提供了监控和警报功能。
+TIP: 监控和报告功能在Data Infrastructure Insight标准版及更高版本中可用。
 
 
 
@@ -71,7 +71,7 @@ image:alert_detail_page.png["警报详细信息页面"]
 
 == 缺少数据时发出警报
 
-在Cloud Insights 等实时系统中、为了触发对监控器的分析以确定是否应生成警报、我们需要考虑以下两个因素之一：
+在实时系统(如Data Infrastructure Insight)中、要触发监视器分析以确定是否应生成警报、我们需要遵循以下两项操作之一：
 
 * 要到达的下一个数据点
 * 当没有数据点且您等待的时间足够长时、将触发计时器
@@ -87,4 +87,4 @@ image:alert_detail_page.png["警报详细信息页面"]
 
 可以对监控器进行配置，使其状态为 "* 始终 * " 存在于受监控对象上，例如， IOPS > 1 或延迟 > 0 。它们通常创建为 " 测试 " 监控器，然后被遗忘。此类监控器会创建在成分卷对象上永久处于打开状态的警报，这些警报可能会随着时间的推移出现发生原因系统压力和稳定性问题。
 
-为防止出现这种情况， Cloud Insights 将在 7 天后自动关闭任何 " 永久活动 " 警报。请注意，底层监控条件可能会（可能会）继续存在，从而导致几乎立即发出新警报，但关闭 " 始终处于活动状态 " 警报可缓解否则可能发生的某些系统压力。
+为了防止这种情况发生、Data Infrastructure Insight将在7天后自动关闭任何"永久活动"警报。请注意，底层监控条件可能会（可能会）继续存在，从而导致几乎立即发出新警报，但关闭 " 始终处于活动状态 " 警报可缓解否则可能发生的某些系统压力。

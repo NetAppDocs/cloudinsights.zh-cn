@@ -22,7 +22,7 @@ summary: 创建监控器，以便针对性能或清单阈值以及指标或日�
 您可以创建监控器来设置触发警报的阈值，以便向您通知与网络中资源相关的问题。例如，您可以创建一个监控器，以便针对任意多种协议发出 _node write latency 警报。
 
 
-TIP: 所有Cloud Insights 版本均提供监控和警报功能、但Basic版本需遵循以下条件：*一次最多只能有五个自定义监控器处于活动状态。超过五个的任何监控器将在_Paused_state中创建或移至_Paused_state。*不支持VMDK、虚拟机、主机和数据存储库指标监控器。如果为这些指标创建了监控器、则在降级到Basic Edition时、这些监控器将暂停、无法恢复。
+TIP: 所有Data Infrastructure Insight版本均提供"监控和通知"功能、但基本版本需遵循以下条件：*一次最多只能有五个活动的自定义监控器。超过五个的任何监控器将在_Paused_state中创建或移至_Paused_state。*不支持VMDK、虚拟机、主机和数据存储库指标监控器。如果为这些指标创建了监控器、则在降级到Basic Edition时、这些监控器将暂停、无法恢复。
 
 
 toc::[]
@@ -30,19 +30,19 @@ toc::[]
 
 您还可以创建监控器，以便在检测到指定的 _log events_之后 触发警告，严重或信息级别的警报。
 
-Cloud Insights 提供了许多 link:task_system_monitors.html["系统定义的监控器"] 也可以根据您的环境进行选择。
+Data Infrastructure Insight还根据您的环境提供了许多link:task_system_monitors.html["系统定义的监控器"]。
 
 
 
 == 安全最佳实践
 
-Cloud Insights 警报旨在突出显示环境中的数据点和趋势、而Cloud Insights 允许您以警报收件人的身份输入任何有效的电子邮件地址。如果您在安全环境中工作、请特别注意谁在接收通知或以其他方式有权访问警报。
+Data Infrastructure Insight警报旨在突出显示您环境中的数据点和趋势、Data Infrastructure Insight允许您输入任何有效的电子邮件地址作为警报收件人。如果您在安全环境中工作、请特别注意谁在接收通知或以其他方式有权访问警报。
 
 
 
 == 衡量指标还是日志监控？
 
-. 从 Cloud Insights 菜单中，单击 * 警报 > 管理监控器 *
+. 从"Data Infrastructure洞察力"菜单中、单击*警报>管理监控器*
 +
 此时将显示监控器列表页面，其中显示了当前配置的监控器。
 
@@ -240,8 +240,8 @@ image:Monitors_GroupList.png["监控分组"]
 
 * 所有显示器 * 列出所有显示器。
 * * 自定义监控器 * 列出用户创建的所有监控器。
-* * 已暂停的监控器 * 将列出已被 Cloud Insights 暂停的所有系统监控器。
-* Cloud Insights 还将显示许多 * 系统监控组 * ，其中将列出一个或多个组 link:task_system_monitors.html["系统定义的监控器"]，包括 ONTAP 基础架构和工作负载监控器。
+* *暂停的监控器*将列出Data Infrastructure Insight暂停的所有系统监控器。
+* 数据基础架构洞察还将显示许多*系统监控器组*，其中将列出一个或多个组link:task_system_monitors.html["系统定义的监控器"]，包括ONTAP基础架构和工作负载监控器。
 
 
 
@@ -251,13 +251,13 @@ NOTE: 自定义监控器可以暂停，恢复，删除或移动到其他组。�
 
 === 已暂停的监控器
 
-只有当 Cloud Insights 已暂停一个或多个监控器时，才会显示此组。如果监控器生成的警报过多或持续，则可能会暂停。如果此监控器是自定义监控器，请修改条件以防止持续发出警报，然后恢复此监控器。解决导致暂停的问题描述 后，此监控器将从暂停的监控器组中删除。
+只有在Data Infrastructure Insight暂停了一个或多个显示器时、才会显示此组。如果监控器生成的警报过多或持续，则可能会暂停。如果此监控器是自定义监控器，请修改条件以防止持续发出警报，然后恢复此监控器。解决导致暂停的问题描述 后，此监控器将从暂停的监控器组中删除。
 
 
 
 === 系统定义的监控器
 
-只要您的环境包含监控器所需的设备和 / 或日志可用性，这些组就会显示 Cloud Insights 提供的监控器。
+这些组将显示Data Infrastructure Insight提供的监控器、只要您的环境包含这些监控器所需的设备和/或日志可用性即可。
 
 无法修改，移动到另一个组或删除系统定义的监控器。但是，您可以复制系统监控器并修改或移动此副本。
 
@@ -283,13 +283,13 @@ image:Monitors_AssociateToGroup.png["与组关联"]
 通过单击某个组并从菜单中选择 _Remove from Group_ 来删除监控器。您不能从 _all monitors_ 或 _Custom Monitors_ 组中删除监控器。要从这些组中删除监控器，必须删除该监控器本身。
 
 
-NOTE: 从组中删除监控器不会从 Cloud Insights 中删除该监控器。要完全删除某个监控器，请选择该监控器，然后单击 _Delete_ 。此操作还会将其从所属组中删除，并且任何用户都无法再使用它。
+NOTE: 从组中删除显示器不会从Data Infrastructure Insight中删除该显示器。要完全删除某个监控器，请选择该监控器，然后单击 _Delete_ 。此操作还会将其从所属组中删除，并且任何用户都无法再使用它。
 
 您也可以按相同方式将显示器移动到其他组，选择 _move to Group_ 。
 
 要一次性暂停或恢复组中的所有监视器，请选择该组的菜单，然后单击 _Pause_ 或 _Resume_ 。
 
-使用同一菜单重命名或删除组。删除组不会从 Cloud Insights 中删除这些监控器；它们在 _all monitors_中 仍然可用。
+使用同一菜单重命名或删除组。删除组不会从Data Infrastructure Insight中删除这些显示器；它们仍可在_all monitors_中使用。
 
 image:Monitors_PauseGroup.png["暂停组"]
 
@@ -297,9 +297,9 @@ image:Monitors_PauseGroup.png["暂停组"]
 
 == 系统定义的监控器
 
-Cloud Insights 包括许多系统定义的指标和日志监控器。可用的系统监控器取决于您环境中的数据收集器。因此，随着数据收集器的添加或配置的更改， Cloud Insights 中可用的监控器可能会发生更改。
+Data Infrastructure Insight包括许多系统定义的指标和日志监控器。可用的系统监控器取决于您环境中的数据收集器。因此、Data Infrastructure Insight中的监控器可能会随着数据收集器的添加或其配置的更改而发生变化。
 
-查看 link:task_system_monitors.html["系统定义的监控器"] 第页，介绍 Cloud Insights 随附的监控器。
+查看link:task_system_monitors.html["系统定义的监控器"]页面、了解Data Infrastructure Insight附带的显示器的说明。
 
 
 

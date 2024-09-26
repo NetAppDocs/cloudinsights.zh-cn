@@ -5,17 +5,14 @@ summary: 您可以定义应用程序、然后根据需要将其应用于环境�
 keywords: application, create application, 
 ---
 = 创建应用程序
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
@@ -28,7 +25,7 @@ keywords: application, create application,
 通过 Cloud Insights ，您可以跟踪与应用程序关联的资产中的数据，例如使用情况或成本报告。
 
 .步骤
-. 在 Cloud Insights 菜单中，单击 * 管理 > 应用程序 * 。
+. 在Cloud Insights菜单中，单击*Observability > Enrich > Applications*。选择
 +
 此时将显示添加应用程序对话框。
 

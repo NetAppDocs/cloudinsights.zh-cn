@@ -33,14 +33,14 @@ NOTE: 此页面引用第三方说明，可能会有所更改。请参见 link:ht
 image:Webhooks_Teams_Create_Webhook.png["团队中的传入 Webhook"]
 
 . 选择 * 添加到组 > 选择一个组 > 设置连接器 * 。
-. 复制 Webhook URL 。您需要将此文件粘贴到 Cloud Insights webhook 配置中。
+. 复制 Webhook URL 。您需要将此信息粘贴到Data Infrastructure Insight webhook配置中。
 
 
 
 
-== 创建 Cloud Insights Webhook ：
+== 创建数据基础架构洞察力Webhook：
 
-. 在 Cloud Insights 中，导航到 * 管理员 > 通知 * ，然后选择 * Webhook* 选项卡。单击 * + Webhook* 以创建新的 webhook 。
+. 在Data Infrastructure Insight中、导航到*管理>通知*、然后选择* Webhook *选项卡。单击 * + Webhook* 以创建新的 webhook 。
 . 为 webhook 指定一个有意义的名称，例如 "Teams Webhook" 。
 . 在 _Template Type_ 下拉列表中，选择 * 团队 * 。
 
@@ -54,7 +54,7 @@ image:Webhooks-Teams_example.png["团队 webhook 模板"]
 
 == 通过 Webhook 发送通知
 
-要通过 webhook 通知事件，请在 Cloud Insights 中导航到 * 警报 > 监控 * ，然后单击 * + 监控 * 以创建新的 link:task_create_monitor.html["监控"]。
+要通过webhook通知事件，请在Data Infrastructure Insight中导航到*Alerts > Monitors*，然后单击*+Monitor*创建新的link:task_create_monitor.html["监控"]。
 
 * 选择一个指标并定义监控器的条件。
 * 在 _set up team notification （ s ）下，选择 * Webhook* 传送方法。

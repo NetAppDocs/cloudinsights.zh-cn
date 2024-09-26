@@ -19,14 +19,14 @@ summary: 采集单元在Windows和Linux上安装、卸载、配置代理支持�
 
 
 [role="lead"]
-Cloud Insights 使用本地服务器上安装的一个或多个采集单元收集设备数据。每个采集单元都可以托管多个数据收集器，这些数据收集器会将设备指标发送到 Cloud Insights 进行分析。
+Data Infrastructure Insight使用安装在本地服务器上的一个或多个采集单元收集设备数据。每个采集单元可以托管多个数据收集器、这些收集器会将设备指标发送给Data Infrastructure Insight进行分析。
 
 本主题介绍如何添加采集单元，并介绍环境使用代理时所需的其他步骤。
 
 
 NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络时间协议（ NTP ） * 或 * 简单网络时间协议（ SNTP ） * 同步采集单元计算机上的时间。
 
-阅读了解Cloud Insights安全性 link:security_overview.html["此处"]。
+阅读有关Data Infrastructure Insight安全性的link:security_overview.html["此处"]信息。
 
 
 
@@ -37,7 +37,7 @@ NOTE: 为了准确地进行审核和报告数据，强烈建议使用 * 网络�
 
 
 .Linux 采集单元安装步骤
-. 以管理员或帐户所有者身份登录到您的 Cloud Insights 环境。
+. 以管理员或帐户所有者身份登录到您的Data Infrastructure Insight环境。
 . 单击*可观察性>收集器>采集单元>+采集单元*
 +
 系统将显示 _Install Acquisition Unit" 对话框。选择 Linux 。
@@ -87,9 +87,9 @@ image:NewLinuxAUInstall.png["《 Linux AU 说明》"]
 
 === 代理配置：
 
-采集单元使用双向 / 相互身份验证连接到 Cloud Insights 服务器。客户端证书必须传递到 Cloud Insights 服务器，才能进行身份验证。为此，必须设置代理，以便将 https 请求转发到 Cloud Insights 服务器，而无需对数据进行解密。
+采集单元使用双向/相互身份验证连接到Data Infrastructure Insight服务器。客户端证书必须传递到Data Infrastructure Insight服务器才能进行身份验证。为此、必须将代理设置为将https请求转发到Data Infrastructure Insight服务器、而不对数据进行解密。
 
-执行此操作的最简单方法是在代理 / 防火墙中指定通配符配置，以便与 Cloud Insights 进行通信，例如：
+最简单的方法是、在代理/防火墙中指定通配符配置、以便与Data Infrastructure Insight进行通信、例如：
 
  *.cloudinsights.netapp.com
 
@@ -113,7 +113,7 @@ image:ProxyEndpoints_NewTable.png["代理端点表"]
 
 .Windows 采集单元安装步骤
 . 以具有管理员权限的用户身份登录到采集单元服务器 /VM 。
-. 在该服务器上，打开浏览器窗口并以管理员或帐户所有者身份登录到 Cloud Insights 环境。
+. 在该服务器上、打开浏览器窗口、并以管理员或帐户所有者身份登录到Data Infrastructure Insight环境。
 . 单击*Observability > Collectors > Acquisition Unit >+Acquisition Unit*。
 +
 系统将显示 _Install Acquisition Unit" 对话框。选择 Windows 。
@@ -143,9 +143,9 @@ image::NewWindowsAUInstall.png[Windows AU 安装]
 
 === 代理配置：
 
-采集单元使用双向 / 相互身份验证连接到 Cloud Insights 服务器。客户端证书必须传递到 Cloud Insights 服务器，才能进行身份验证。为此，必须设置代理，以便将 https 请求转发到 Cloud Insights 服务器，而无需对数据进行解密。
+采集单元使用双向/相互身份验证连接到Data Infrastructure Insight服务器。客户端证书必须传递到Data Infrastructure Insight服务器才能进行身份验证。为此、必须将代理设置为将https请求转发到Data Infrastructure Insight服务器、而不对数据进行解密。
 
-执行此操作的最简单方法是在代理 / 防火墙中指定通配符配置，以便与 Cloud Insights 进行通信，例如：
+最简单的方法是、在代理/防火墙中指定通配符配置、以便与Data Infrastructure Insight进行通信、例如：
 
  *.cloudinsights.netapp.com
 
@@ -174,7 +174,7 @@ image:ProxyEndpoints_NewTable.png["代理端点表"]
 
 如果要卸载* Windows *采集单元：
 
-. 在采集单元服务器 /VM 上，打开控制面板并选择 * 卸载程序 * 。选择要删除的 Cloud Insights 采集单元程序。
+. 在采集单元服务器 /VM 上，打开控制面板并选择 * 卸载程序 * 。选择要删除的Data Infrastructure Insight采集单元计划。
 . 单击卸载并按照提示进行操作。
 
 
@@ -196,7 +196,7 @@ image:ProxyEndpoints_NewTable.png["代理端点表"]
 
 *卸载AU后*：
 
-. 在Cloud Insights中，转至*Observability > Collectors并选择*Acquisition Unit*选项卡。
+. 在Data Infrastructure Insight中、转到*可观察性>收集器、然后选择*采集单元*选项卡。
 . 单击要卸载的采集单元右侧的选项按钮，然后选择 _Delete_ 。只有在未分配任何数据收集器的情况下，才能删除采集单元。
 
 
@@ -218,7 +218,7 @@ image:AU_for_Device_Resolution.png["au用于设备解析"]
 
 .步骤
 . 登录到采集单元服务器 /VM 并卸载 AU 软件。
-. 登录到Cloud Insights环境并转到*Observability > Collectors *。
+. 登录到Data Infrastructure Insight环境、然后转到*可观察性>收集器*。
 . 对于每个数据收集器，单击右侧的选项菜单，然后选择 _Edit_ 。将数据收集器分配给临时采集单元，然后单击 * 保存 * 。
 +
 您还可以选择多个相同类型的数据收集器，然后单击 * 批量操作 * 按钮。选择 _Edit_ 并将数据收集器分配给临时采集单元。

@@ -22,7 +22,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 您可以自定义报告的输出格式和传送，设置报告属性或计划以及通过电子邮件发送报告。
 
 
-NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_insights.html["高级版"]。
+NOTE: 数据基础架构洞察中提供了报告功能link:concept_subscribing_to_cloud_insights.html["高级版"]。
 
 
 
@@ -30,7 +30,7 @@ NOTE: Cloud Insights 提供了报告功能 link:concept_subscribing_to_cloud_ins
 
 您可以自定义报告的格式和交付方法。
 
-. 在Cloud Insights 报告门户中，转至*菜单>内容>我的内容/团队内容*。将鼠标悬停在要自定义的报告上、然后打开"三点"菜单。
+. 在Data Infrastructure Insight报告门户中、转到*菜单>内容>我的内容/团队内容*。将鼠标悬停在要自定义的报告上、然后打开"三点"菜单。
 
 
 image:Reporting_Output_and_Delivery.png["报告输出和交付"]

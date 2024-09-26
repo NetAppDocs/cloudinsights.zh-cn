@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reporting_data_retention.html 
-summary: 用于报告的 Cloud Insights 数据保留 
+summary: 数据基础架构洞察数据保留以用于报告 
 keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying, retention 
 ---
 = 如何保留历史数据以进行报告
@@ -19,7 +19,7 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 
 
 [role="lead"]
-Cloud Insights 会保留历史数据，以便根据数据集市和数据粒度进行报告，如下表所示。
+Data Infrastructure Insight会根据数据数据市场和数据粒度保留历史数据、以供报告使用、如下表所示。
 
 |===
 

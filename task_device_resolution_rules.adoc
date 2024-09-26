@@ -19,7 +19,7 @@ summary: 设备解析有助于您准确跟踪环境中的性能和清单。
 
 
 [role="lead"]
-您可以创建设备解析规则来标识 Cloud Insights 当前未自动标识的主机，存储和磁带。您创建的规则用于标识当前环境中的设备，并在将类似设备添加到环境中时标识这些设备。
+您可以创建设备解析规则来标识Data Infrastructure Insight当前未自动标识的主机、存储和磁带。您创建的规则用于标识当前环境中的设备，并在将类似设备添加到环境中时标识这些设备。
 
 
 
@@ -57,13 +57,13 @@ NOTE: 单击 _view matching Criteria_ 链接，获取有关创建正则表达式
 
 . 在 * 源 * 列表中，选择要用于标识主机的源。
 +
-根据您选择的源， Cloud Insights 将显示以下响应：
+根据您选择的源、Data Infrastructure Insight会显示以下响应：
 
 +
-.. * 分区 * 列出了需要通过 Cloud Insights 标识的分区和 WWN 。
-.. * SRM * 列出了需要由 Cloud Insights 标识的未标识别名
-.. * 存储别名 * 列出了需要由 Cloud Insights 标识的存储别名和 WWN
-.. * 交换机别名 * 列出了需要由 Cloud Insights 标识的交换机别名
+.. *Zones*列出了需要由Data Infrastructure Insight标识的分区和WWN。
+.. *SRM*列出了需要由Data Infrastructure Insight标识的未标识别名
+.. *存储别名*列出了需要由Data Infrastructure Insight标识的存储别名和WWN
+.. *Switch alies*列出了需要由Data Infrastructure Insight标识的交换机别名
 
 
 . 在 * 方法 * 列表中，选择要用于标识主机的方法。
@@ -86,7 +86,7 @@ NOTE: 单击 _view matching Criteria_ 链接，获取有关创建正则表达式
 | 分区 | 分隔符，正则表达式 
 |===
 +
-** 使用分隔符的规则需要使用分隔符和主机名的最小长度。主机名的最小长度是 Cloud Insights 标识主机时应使用的字符数。Cloud Insights 仅对长度超过此长度的主机名执行 DNS 查找。
+** 使用分隔符的规则需要使用分隔符和主机名的最小长度。主机名的最小长度是Data Infrastructure Insight标识主机时应使用的字符数。Data Infrastructure Insight仅会对长度大于或等于此长度的主机名执行DNS查找。
 +
 对于使用分隔符的规则，输入字符串由分隔符标记，并通过对相邻令牌进行多种组合来创建主机名候选对象列表。然后，该列表将按从大到小的顺序进行排序。例如，对于 _vipsnq03_hba3_emc3_12ep0_ 的输入 sring ，此列表将导致以下结果：
 
@@ -119,7 +119,7 @@ NOTE: 单击 _view matching Criteria_ 链接，获取有关创建正则表达式
 设备解析更新会提交自上次运行完全自动设备解析以来添加的手动更改。运行更新只能用于提交和运行对设备解析配置所做的新手动条目。不执行完整的设备解析运行。
 
 .操作步骤
-. 登录到 Cloud Insights Web UI 。
+. 登录到Data Infrastructure Insight Web UI。
 . 单击 * 管理 > 设备解析 *
 . 在 * 设备解析 * 屏幕中，单击 * 运行 AR* 按钮中的向下箭头。
 . 单击 * 更新 * 开始更新。
@@ -138,7 +138,7 @@ NOTE: 单击 _view matching Criteria_ 链接，获取有关创建正则表达式
 NOTE: 如果源仅包含主机或设备名称的一部分，请使用正则表达式规则并对其进行格式化以添加缺少的文本。
 
 .操作步骤
-. 登录到 Cloud Insights Web UI 。
+. 登录到Data Infrastructure Insight Web UI。
 . 单击 * 管理 > 设备解析 *
 . 单击 * 光纤通道标识 * 选项卡。
 +
@@ -156,7 +156,7 @@ NOTE: 如果源仅包含主机或设备名称的一部分，请使用正则表�
 . 选择满足您需求的方法。
 
 
-Cloud Insights 按照方法的显示顺序执行主机解析过程，从顶部的顺序开始。
+Data Infrastructure Insight会按照方法的显示顺序执行主机解析过程、从方法顶部开始。
 
 遇到应用的规则时，规则名称将显示在规则列中，并标识为手动。
 
