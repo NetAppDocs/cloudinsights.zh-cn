@@ -7536,8 +7536,6 @@
   <block id="6da07aa5f066875b812525d42f923d0d" category="paragraph">以下是具有适当cisys权限的示例文件。</block>
   <block id="1b177c66fc08f105ae2d0bcc67959194" category="cell">我看到数据收集错误并显示消息："unknown code"</block>
   <block id="e2079cb79abadfe109c02ddf1f9e67eb" category="list-text">SVM 有多个子类型。其中、仅支持_default__sync_source__sync_destination_.</block>
-  <block id="6d7dcfcccd12536dde9ff30f070659ea" category="section-title">建议的Metro Cluster配置</block>
-  <block id="dbefbdd0db747220531f4b1da3847502" category="paragraph">对于Metro Cluster、建议使用以下配置：</block>
   <block id="65b46bd8eed280f6feefa47f4a74d302" category="list-text">将两个数据收集器连接起来、一个连接到源SVM、另一个连接到目标SVM。</block>
   <block id="d5d55b52a220ca4d14feac2aa8b83d23" category="list-text">数据收集器应通过_Cluster IP_进行连接。</block>
   <block id="c2e2e688fedcc6b98883e05a15afc9b8" category="list-text">在任何时刻、一个数据收集器应正在运行、另一个数据收集器将出现错误。</block>
@@ -13438,4 +13436,6 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="cdf3e3a169b144bb9d2bce1646acfedc" category="paragraph">下表和图像显示了PagerDuty和Data Infrastructure Insight之间的字段映射：</block>
   <block id="55f37f5127b4085cc0881e89df336196" category="cell">与Data Infrastructure Insight Docker repo相比、使用dockerRepo覆盖从客户的私有Docker reposo中提取映像。默认值为Data Infrastructure Insight Docker repo</block>
   <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">自由文本字段、用于在所有客户集群中唯一标识集群。这在Data Infrastructure Insight租户中应该是唯一的。默认值是客户在UI中为"Cluster Name"字段输入的内容</block>
+  <block id="3ea40c0971a5d2af49b6f75088f94403" category="section-title">MetroCluster的建议配置</block>
+  <block id="eff16f7e2ed55dec2fc30b6481ebf593" category="paragraph">对于MetroCluster、建议执行以下操作：</block>
 </blocks>
