@@ -679,9 +679,7 @@
   <block id="5b838d1db2b0c90f3965d582815bd387" category="paragraph">您可以通过取消选中 * 显示 SSO 用户 * 复选框来选择隐藏 SSO 用户。</block>
   <block id="b8ebf4409c7ad7b050814935893a9c1f" category="paragraph">但是，如果满足以下任一条件，请勿启用 _SSO 用户自动配置 _ ：</block>
   <block id="e42dae64f8e80d611352315992a2460d" category="doc">创建应用程序</block>
-  <block id="a2f4ff91518afeccf570d0fb794c2f7f" category="paragraph">要跟踪与环境中运行的特定应用程序相关的数据，您可以在 Cloud Insights 中定义这些应用程序。</block>
   <block id="598c4639acaf0f3c5a419f9cf865ef56" category="paragraph">如果要将应用程序与业务实体关联，必须在定义该应用程序之前创建业务实体。</block>
-  <block id="2aa126063928df72d8a5e53cda4a3e12" category="paragraph">通过 Cloud Insights ，您可以跟踪与应用程序关联的资产中的数据，例如使用情况或成本报告。</block>
   <block id="b32a7920a5087ed62d85b129fb5ce33b" category="list-text">输入应用程序的唯一名称。</block>
   <block id="c418529bd36204e932f103b225c97cb8" category="list-text">选择应用程序的优先级。</block>
   <block id="9bf2dd1afa4d073358de477920a2956b" category="section-title">将应用程序分配给资产</block>
@@ -4849,9 +4847,7 @@
   <block id="55d00560611b7ac6ad1fbc07da675be3" category="inline-link-macro">NetApp 知识库</block>
   <block id="b4bfb3ce4e8b9e9d62106cb32011d02d" category="paragraph">有关其他故障排除提示，请参见 <block ref="15447e468ec3e05469147de69518b15c" category="inline-link-macro-rx"></block> （需要支持部门登录）。</block>
   <block id="92726ab5faeb2cb9208eaac9af0346bd" category="doc">用户管理</block>
-  <block id="6ebd484a6c09e27c3b5f9d6a61ad9a6a" category="paragraph">您将被转发到 Cloud Insights 的用户管理页面。</block>
   <block id="7bc31a95e4a1ee6f8948af20440df0c6" category="inline-link-macro">用户角色</block>
-  <block id="faac345f3f122d78da73c0bf89c5d9f3" category="paragraph">有关用户帐户和角色的详细信息，请参见 Cloud Insights <block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block> 文档。</block>
   <block id="05d2a837df7692f0d65e4466b2fb05bd" category="list-text">输入有效的业务电子邮件地址并选择密码。</block>
   <block id="ad66d403ef43ddd58a7b527874c51878" category="list-text">输入您的公司名称和全名。</block>
   <block id="a46b8a484704b65f978247cb9b3901aa" category="paragraph">输入您的电子邮件地址和密码。然后，您将转到 NetApp 的云产品页面。</block>
@@ -8407,9 +8403,6 @@
   <block id="fa226e3679ae6b7dab2869292b192728" category="paragraph">对于基于*亚太地区*的工作负载安全环境：</block>
   <block id="2c5dab3d48c104492de8592e45b7fe9f" category="paragraph">如果您的环境中具有工作负载安全性、则已配置的端点URL也会显示在此列表中。</block>
   <block id="db2b463a10fb6295be04f3c3bae06fde" category="paragraph">工作负载安全性将根据Snapshot清除设置每天自动删除一次快照。</block>
-  <block id="1e66f3ea1e335e37bed1a50e1a8bb94c" category="summary">工作负载安全用户帐户通过Cloud Insights 用户管理进行管理</block>
-  <block id="b6ddb5866df8e3256ac245cbce10a9a2" category="paragraph">工作负载安全性用户帐户通过Cloud Insights 进行管理。</block>
-  <block id="c407c269e51ab79aa3aca330eca9d8ee" category="paragraph">Cloud Insights 提供了四个用户帐户级别：帐户所有者，管理员，用户和来宾。系统会为每个帐户分配特定的权限级别。具有管理员权限的用户帐户可以创建或修改用户、并为每个用户分配以下工作负载安全角色之一：</block>
   <block id="b77a904f25ddc84b77fcb809d8f2f86b" category="cell">工作负载安全访问</block>
   <block id="e234e3c5cb64670391b843b3fc72500e" category="cell">可以执行所有工作负载安全功能、包括警报、取证、数据收集器、自动化响应策略以及工作负载安全API等功能。管理员还可以邀请其他用户、但只能分配工作负载安全角色。</block>
   <block id="5a26acadc0fa5b833d36974bd6536459" category="list-text">登录到工作负载安全性</block>
@@ -11528,7 +11521,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="343a405f2f06197f662e42373c7fb059" category="list-text">SMB协议3.1及更早版本。</block>
   <block id="33443a936cc78a75cfb9473405764a37" category="section-title">NetApp安全通报</block>
   <block id="eaf8ac7783e69f8aba13d1bece2acbd5" category="paragraph">您可以查看NetApp提供的安全建议 <block ref="c748e422d42ad69f84a6f8d804551466" category="inline-link-macro-rx"></block>。</block>
-  <block id="570e0fa2a37c6838af341575ad05aec5" category="summary">您可以定义应用程序、然后根据需要将其应用于环境中的资产。</block>
   <block id="0f21fa822dc46792cc163d7e77fe6c2c" category="paragraph">检索事件导出器Pod的名称：</block>
   <block id="9df5220f9f1e94f2849e58be10655af5" category="paragraph">此名称应为"NetApp-CI-event-exporter "或"event-exporter。  接下来、编辑监控代理<block ref="254deec50834604297ddd3caab0d8ce7" prefix=" " category="inline-code"></block>，然后设置log_file的值，以反映在上一步中找到的相应事件导出器POD名称。  更具体地说、log_file应设置为"/var/log/containers/NetApp-CI-event-exporter .log"或"/var/log/containers/event-exporter *。log"</block>
   <block id="d8c9294ea12d1c7d12e34008f3ecee39" category="section-title">关于安全的注意事项</block>
@@ -13332,7 +13324,6 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="429e5ff0d154ea9f0d8b69e75866a8b4" category="list-text">单击*Query*并选择Data Infrastructure Insight用于标识标注所应用于的资产的查询。</block>
   <block id="a1301e0af88fd655ae64d39d2d7a0e93" category="admonition">在大型Data Infrastructure Insight环境中、您可能会注意到运行标注规则似乎需要一段时间才能完成。这是因为索引器首先运行，并且必须在运行规则之前完成。通过索引器、Data Infrastructure Insight可以在数据中搜索或筛选新的或更新的对象和计数器。规则引擎会等待索引器完成更新，然后再应用规则。</block>
   <block id="df92eb52ff49723465239116d2f4aed4" category="list-text">在Data Infrastructure Insight菜单中、单击*管理&gt;标注规则*。</block>
-  <block id="0809c964b790df4295890dec5b75e498" category="list-text">在Cloud Insights菜单中，单击*Observability &gt; Enrich &gt; Applications*。选择</block>
   <block id="bd49848e16630c106919628a09948a9c" category="admonition">所有Data Infrastructure Insight版本均提供"监控和通知"功能、但基本版本需遵循以下条件：*一次最多只能有五个活动的自定义监控器。超过五个的任何监控器将在_Paused_state中创建或移至_Paused_state。*不支持VMDK、虚拟机、主机和数据存储库指标监控器。如果为这些指标创建了监控器、则在降级到Basic Edition时、这些监控器将暂停、无法恢复。</block>
   <block id="80645013d90d9d1449dffdd829fc24a4" category="paragraph">Data Infrastructure Insight还根据您的环境提供了许多<block ref="c48a3e56f23a81aaf8fad75ccfbc3d89" category="inline-link-macro-rx"></block>。</block>
   <block id="a46093383ff280c45e2e0a8cf945ef64" category="paragraph">Data Infrastructure Insight警报旨在突出显示您环境中的数据点和趋势、Data Infrastructure Insight允许您输入任何有效的电子邮件地址作为警报收件人。如果您在安全环境中工作、请特别注意谁在接收通知或以其他方式有权访问警报。</block>
@@ -13438,4 +13429,13 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="5a550f6f445193e3c7e81200a2c9d8de" category="cell">自由文本字段、用于在所有客户集群中唯一标识集群。这在Data Infrastructure Insight租户中应该是唯一的。默认值是客户在UI中为"Cluster Name"字段输入的内容</block>
   <block id="3ea40c0971a5d2af49b6f75088f94403" category="section-title">MetroCluster的建议配置</block>
   <block id="eff16f7e2ed55dec2fc30b6481ebf593" category="paragraph">对于MetroCluster、建议执行以下操作：</block>
+  <block id="f80f3d49464581261837031819491342" category="summary">您可以定义应用程序、然后根据需要将其应用于环境中的资产。</block>
+  <block id="b13c7fc8e7d731532637ee70388e60c6" category="paragraph">要跟踪与环境中运行的特定应用程序相关的数据、您可以在Data Infrastructure Insight中定义这些应用程序。</block>
+  <block id="ba52eab802a385ced7d6e9782614bf0b" category="paragraph">借助Data Infrastructure Insight、您可以跟踪与应用程序关联的资产中的数据、例如使用情况或成本报告。</block>
+  <block id="91ee28fc3faa982ecdc71598fe7ce8b9" category="list-text">在Data Infrastructure Insight菜单中、单击*可观察性&gt;丰富&gt;应用程序*。选择</block>
+  <block id="90fbffa9ff3e21a719cc9451531fc673" category="summary">工作负载安全性用户帐户通过Data Infrastructure Insight用户管理进行管理</block>
+  <block id="6afa550edbd038252585482045e7d48e" category="paragraph">Workload Security用户帐户通过Data Infrastructure Insight进行管理。</block>
+  <block id="02598d7e3c811d7e921678ae0729a2a6" category="paragraph">Data Infrastructure Insight提供了四个用户帐户级别：帐户所有者、管理员、用户和来宾。系统会为每个帐户分配特定的权限级别。具有管理员权限的用户帐户可以创建或修改用户、并为每个用户分配以下工作负载安全角色之一：</block>
+  <block id="de07c612d573c4710cb7e561e6de98b4" category="paragraph">您将被转发到Data Infrastructure Insight的User Management页面。</block>
+  <block id="1c823102aa56424a5f80a9b5c5c2fdff" category="paragraph">有关用户帐户和角色的详细信息、请参见Data Infrastructure Insight<block ref="3bb7d59230d413058ffce58eae85db7e" category="inline-link-macro-rx"></block>文档。</block>
 </blocks>
