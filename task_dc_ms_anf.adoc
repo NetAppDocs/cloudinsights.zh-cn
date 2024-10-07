@@ -76,7 +76,7 @@ https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-ser
 
 == 故障排除
 
-* ANF 数据收集器使用的凭据不得访问包含 ANF 卷的任何 Azure 订阅。
+* ANF数据收集器使用的凭据必须有权访问包含ANF卷的任何Azure订阅。
 * 如果读取器访问导致性能收集失败，请尝试在资源组级别授予贡献者访问权限。
 
 

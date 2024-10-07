@@ -33,7 +33,7 @@ keywords: AU, acquisition unit, trioubleshooting
 | 未满足服务器要求 | 确保您的采集单元服务器或虚拟机满足要求 link:concept_acquisition_unit_requirements.html["要求"] 
 
 
-| 未满足网络要求 | 确保采集单元服务器/VM可以通过端口443通过<environment-name>连接访问数据基础架构洞察力环境(SSL.C01.Cloud NetApp、com)。请尝试以下命令：_ping <environment-name><environment-name>．C01.Cloud．NetApp．com_ traceroute <environment-name>．C01.Cloud．NetApp．com__cURL \https：<environment-name>．C01．Cloud．NetApp．com__wget \https：//Cloud．C01．NetApp．com_ 
+| 未满足网络要求 | 确保采集单元服务器/VM可以通过端口443通过<environment-name>连接访问数据基础架构洞察力环境(SSL.C01.Cloud NetApp、com)。请尝试以下命令：_ping <environment-name>．C01.Cloud．NetApp NetApp．com_ traceroute．C01.Cloud．NetApp．com__cURL \https：//Data．C01.Cloud．NetApp．com_ wget \https：//Data．C01．<environment-name>．<environment-name>．com_请注意、端口基础架构需要从<environment-name> 443 "出站"打开到Data。 
 
 
 | 代理服务器配置不正确 | 验证代理设置，并根据需要卸载 / 重新安装采集单元软件以输入正确的代理设置。1. 尝试 "curt" 。有关代理的信息 / 文档请参见 "man curle" ： -preproxy ， -proxy-* （这是通配符 "*" ，因为 cURL 支持多种代理设置）。2. 尝试 "wget" 。有关代理选项，请查看文档。 
