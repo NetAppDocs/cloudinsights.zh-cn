@@ -11924,7 +11924,6 @@ Storage Virtual Machine：REST不再报告类型为"数据"以外的SVM (例如�
   <block id="12ddfc86083937d7a126f2fd8615aa6b" category="section-title">模块评估</block>
   <block id="76064df620f99261dce25de296d7e769" category="paragraph">您还可以利用*模块评估*。例如、如果您已订阅基础架构可观察性、但要向环境中添加Kubennetes、则从安装NetApp Kubennetes监控操作员开始、您将自动输入30天的Kubennetes可观察性评估。仅在评估期结束时、您的Kubbernetes Observability受管单元使用量才会向您收费。</block>
   <block id="dcfe192ef3f3cab1ff1183df37b17e47" category="admonition">请注意、评估之后、新的受管单元(MU)使用量将向您收费、因此请务必进行相应的计划。模块评估结束时、如果您需要添加更多MU以避免服务中断、系统将通知您。</block>
-  <block id="8fe818ace86e2479958161998bd57015" category="paragraph">在模块评估期间，您不会更改模块所消耗资源的MU使用量， 但是，您可以打开*Estimator*(在_Summary _选项卡上)来查看评估后MU的计费方式，并使用“假设”方案来计算将来可能需要的MU数。退出估算器以重置数字。</block>
   <block id="bb2065e29292a8686e6f017d42762298" category="paragraph">请注意、每个订阅只能获得一次模块评估。</block>
   <block id="d0016e09a888d8ae5f9a3507bcdda17c" category="paragraph"><block ref="d0016e09a888d8ae5f9a3507bcdda17c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="fada1c7705d134b1361677f79eef7e6a" category="list-text">* 计数 * ：显示在指定时间范围内报告数据的对象的 _count_ 。您可以选择由信息板时间范围确定的_整个时间窗口_。</block>
@@ -12646,7 +12645,6 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="267ff18a74a9df19266142dc71925a29" category="section-title">如果我的*订阅*已过期该怎么办？</block>
   <block id="5ee83dda0a980eba56098446eee3b5e4" category="admonition">您的Data Infrastructure Insight数据在宽限期过后30天内保持不变。如果您在此时间内续订了订阅、则在宽限期过后、您可以使用之前的所有数据。</block>
   <block id="ed1fbcb7f668aa56f9f3d98fe312ea0c" category="admonition">A _Module Evaluation_ is not a _Trial_-我们使用术语"试用"来为客户提供使用Data Infrastructure Insight服务的免费试用期、以确认是否适合购买并启用购买。模块评估有所不同-我们允许付费客户试用在最近几个月的付费订阅中未使用过的Data Infrastructure Insight模块。如果评估处于活动状态、则仅对新配置的模块免除费用。客户的工作环境仍处于订阅状态、尚未恢复为免费试用。此订阅未更改。</block>
-  <block id="8155adb227486698b8e777b82a8fc369" category="paragraph">Data Infrastructure Insight基础架构可观察性和Kubernetes可观察性按*受管单元*进行计量。受管单元的使用量是根据基础架构环境中管理的 * 主机或虚拟机 * 数量和 * 未格式化容量 * 计算得出的。</block>
   <block id="daba1c6ff8590913bcb10d43d3bfcf13" category="admonition">现有Workload Security订阅会调整其MU使用量、以便节点使用量不会占用受管单元。Data Infrastructure Insight会对使用量进行计量、以确保符合许可使用量。</block>
   <block id="0313fe3f07d732172e3b8700c1cea6f1" category="paragraph">您必须将数据基础架构洞察*序列号*提供给NetApp销售代表、才能将您的付费订阅应用于您的数据基础架构洞察环境。此序列号唯一标识了您的Data Infrastructure Insight试用环境、可在*管理&gt;订阅*页面上找到。</block>
   <block id="75df7bd83cb6391af3c2bb23c74cb72d" category="admonition">您必须是帐户所有者或管理员、才能将AWS Marketplace订阅应用于现有Data Infrastructure Insight试用帐户。此外，您还必须拥有 Amazon Web Services （ AWS ）帐户。</block>
@@ -13441,4 +13439,16 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="d2402cb2e8bc53d6f0ea3a592a927071" category="cell">我看到Telegraf发出的警告消息如下所示：_W！[Inputs.diskio]无法收集"vdc"的磁盘名称：读取/dev/vdc时出错：没有此文件或目录_</block>
   <block id="d167beea70a778e86c7a57bc2bd4338a" category="inline-link-macro">操作员配置选项</block>
   <block id="9de6368f45ca30e61d7d6eb11d0da5a5" category="cell">对于Kubnetes监控操作员、这些警告消息不会产生负面影响、可以放心地忽略。或者、也可以编辑AgentConfiguration中的"特拉夫"部分、并将run特权 设置为true。有关详细信息，请参阅<block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>。</block>
+  <block id="c2a794ea709fc6031fad37bbb11353ed" category="paragraph">在模块评估期间，您不会为模块消耗的资源的MU使用量付费，但您可以打开*Estimator*(在_Summary _选项卡上)来查看评估后MU的收费方式，以及使用“假设”方案以及将来可能需要的MU数量。退出估算器以重置数字。</block>
+  <block id="6b3c6b1f0dcfdec2952b9d7ebe9ff11f" category="paragraph">Data Infrastructure Insight可观察性可通过以下两种方式之一进行计量：</block>
+  <block id="5e787d0212aa58a0466b454df1baca59" category="list-text">容量量</block>
+  <block id="662fe1d2a1a3efd75d89fbc577bfbc93" category="list-text">受管单元计分(旧)</block>
+  <block id="507a2c5714efe8c42af4cb4e8c6a1db9" category="paragraph">您的订阅将按以下方法之一进行计量、具体取决于您是拥有现有订阅还是正在启动新订阅。</block>
+  <block id="45dfbbe96d29f311a340f91e2da71bef" category="paragraph">Data Infrastructure Insight可观察性根据您环境中的存储层来测量使用情况。您的存储可能属于以下一个或多个类别：</block>
+  <block id="6e52566e82d306ca143ec27c3c65784e" category="list-text">主原始</block>
+  <block id="c3a44b5ae4d0db1da47414cf32828287" category="list-text">对象原始</block>
+  <block id="49a22ea7d938494c1ed0f89b1259e69d" category="list-text">云已用</block>
+  <block id="9530a67a23d320926f20ff19d1667b8c" category="paragraph">每个层以不同的速率计量、并将整数加起来计算、以提供有效授权。计算有效使用量的公式如下：</block>
+  <block id="f00305fde34ce30d58eb994d36b91d7f" category="admonition">受管单元的总和可能与摘要部分中的数据收集器计数略有不同。这是因为受管单元计数将向上取整为最接近的受管单元。数据收集器列表中这些数字的总和可能略高于状态部分中的总受管单元数。摘要部分反映了您的订阅的实际受管单元数。为便于实现此目的、DII会根据_subscribed _数量计算一个*有效授权*编号；然后、它会根据_DIsc发现_存储计算同一个编号、并且只有在发现的有效容量大于有效授权时才会声明违反。这样、您就可以灵活地监控与每个层的订阅量不同的数量、只要发现的总存储在订阅的有效授权范围内、DII就允许这样做。</block>
+  <block id="f2dddeb36ea97f1d320b0c83ef58c28c" category="paragraph">数据基础架构洞察每个*托管单元*的基础架构可观察性和Kubernetes可观察性计量使用量。受管单元的使用量是根据基础架构环境中管理的 * 主机或虚拟机 * 数量和 * 未格式化容量 * 计算得出的。</block>
 </blocks>
