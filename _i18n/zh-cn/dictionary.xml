@@ -7538,7 +7538,6 @@
   <block id="6d1fbd196541e759b0a79fdf2b671bcd" category="list-text">只要发生切换、数据收集器的状态就会从‘running '更改为‘error '、反之亦然。</block>
   <block id="34d88af94446d0d86575e402898fc1b0" category="list-text">数据收集器需要长达两分钟的时间才能从"错误"状态变为"正在运行"状态。</block>
   <block id="f0240b95ecfe16d637a84130b5ed57d9" category="section-title">服务策略</block>
-  <block id="264c2ff438f1c2937cbafcf5ecabe5b5" category="paragraph">如果要使用ONTAP 9.1.1版中的服务策略连接到数据源收集器、则需要_data-fpolicy-client_服务以及数据服务_data-nfs_和/或_data-cifs_。</block>
   <block id="ee22588534e4e3b699a85e968f56f4a7" category="paragraph">在9.1.1之前的ONTAP 版本中、不需要设置_data-fpolicy-client_。</block>
   <block id="cab974fdccabc8d42fdf59c797a3fc04" category="paragraph">注意：如果您安装了最新的NetApp Kubernetes监控操作员并使用可续订的API访问令牌、则过期的令牌将自动替换为新的/刷新的API访问令牌。无需执行下面列出的手动步骤。</block>
   <block id="3337a607cd5a33d6b8d3f27ce7da458d" category="cell">API版本</block>
@@ -13451,4 +13450,5 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="9530a67a23d320926f20ff19d1667b8c" category="paragraph">每个层以不同的速率计量、并将整数加起来计算、以提供有效授权。计算有效使用量的公式如下：</block>
   <block id="f00305fde34ce30d58eb994d36b91d7f" category="admonition">受管单元的总和可能与摘要部分中的数据收集器计数略有不同。这是因为受管单元计数将向上取整为最接近的受管单元。数据收集器列表中这些数字的总和可能略高于状态部分中的总受管单元数。摘要部分反映了您的订阅的实际受管单元数。为便于实现此目的、DII会根据_subscribed _数量计算一个*有效授权*编号；然后、它会根据_DIsc发现_存储计算同一个编号、并且只有在发现的有效容量大于有效授权时才会声明违反。这样、您就可以灵活地监控与每个层的订阅量不同的数量、只要发现的总存储在订阅的有效授权范围内、DII就允许这样做。</block>
   <block id="f2dddeb36ea97f1d320b0c83ef58c28c" category="paragraph">数据基础架构洞察每个*托管单元*的基础架构可观察性和Kubernetes可观察性计量使用量。受管单元的使用量是根据基础架构环境中管理的 * 主机或虚拟机 * 数量和 * 未格式化容量 * 计算得出的。</block>
+  <block id="4cb8e0d8b1d299b402fd5ddce7d39cd5" category="paragraph">如果将服务策略与ONTAP * 9.9.1或更高版本*结合使用、则要连接到数据源收集器、需要使用_data-fpolicy-client_服务以及数据服务_data-nfs_和/或_data-CIFS_。</block>
 </blocks>

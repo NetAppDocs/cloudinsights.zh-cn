@@ -239,7 +239,7 @@ security login role create -vserver <vservername> -role csrole -cmddirname "volu
 
 == 服务策略
 
-如果要使用ONTAP 9.1.1版中的服务策略连接到数据源收集器、则需要_data-fpolicy-client_服务以及数据服务_data-nfs_和/或_data-cifs_。
+如果将服务策略与ONTAP * 9.9.1或更高版本*结合使用、则要连接到数据源收集器、需要使用_data-fpolicy-client_服务以及数据服务_data-nfs_和/或_data-CIFS_。
 
 示例
 
