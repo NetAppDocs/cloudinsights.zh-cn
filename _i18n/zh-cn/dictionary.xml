@@ -13509,4 +13509,5 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="47740590cbaabba0f1b4f325ae5fe6de" category="doc">NetApp通用数据库主机解析程序:硬中断:</block>
   <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">NetApp ONTAP REST数据收集器:硬断路器:</block>
   <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">手动安装工作负载安全代理和收集器：硬分页：</block>
+  <block id="11ad95cf52a6f6d0f02121ba7f3398ce" category="admonition">在更改报告权限或安全性之前、您必须将"我的内容"报告复制到"团队内容"文件夹、以确保报告已保存。</block>
 </blocks>

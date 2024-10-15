@@ -22,6 +22,9 @@ keywords: reporting, cognos, data warehouse, dwh, managing, customizing, copying
 NOTE: 数据基础架构洞察中提供了报告功能link:concept_subscribing_to_cloud_insights.html["高级版"]。
 
 
+IMPORTANT: 在更改报告权限或安全性之前、您必须将"我的内容"报告复制到"团队内容"文件夹、以确保报告已保存。
+
+
 
 == 自定义报告的输出格式和交付
 
