@@ -4,13 +4,12 @@ permalink: cs_alert_data.html
 keywords: alert, attack, ransomware, activity, security, abnormal 
 summary: '工作负载安全性会在用户活动异常或潜在攻击时创建警报。" 警报 " 页面列出了这些活动，便于快速轻松地进行调查。' 
 ---
-= 警报
-:hardbreaks:
+= 警报:硬中断:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]

@@ -3822,7 +3822,6 @@
   <block id="82e15291d012761eb5c9c9dc7f78a45f" category="cell">共享名称必须在不带任何引号的情况下提供。编辑 ONTAP SVM DSC 配置以更正共享名称。_include 和 exclude shares_ 不适用于长列表的共享名称。如果要包含或排除大量共享，请改用按卷筛选。</block>
   <block id="489efd89349dbbe0899a6a7b922044da" category="paragraph">如果您仍遇到问题，请访问 * 帮助 &gt; 支持 * 页面中提到的支持链接。</block>
   <block id="a2c01caa68fd6219777bc4e45ae6bcf9" category="summary">取证用户详细信息</block>
-  <block id="0165cb96455a1e606acc88df8cbdf5ca" category="doc">取证用户概述</block>
   <block id="46908a81012f08e6ddb150123e078dfa" category="paragraph">用户概述中提供了每个用户的信息。使用这些视图可以了解用户特征，关联实体和近期活动。</block>
   <block id="69d45fa7ab318401ed2859781d5d2daf" category="paragraph">用户配置文件信息包括用户的联系信息和位置。配置文件提供以下信息：</block>
   <block id="08418257ab1b725d0b94e0a07d943fe8" category="list-text">用户的名称</block>
@@ -11606,7 +11605,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="b497cf0f1b1568d837947f6ad7ece7af" category="list-text">Data ONTAP 9.2 及更高版本为获得最佳性能、请使用9.13.1.以上的Data ONTAP版本。</block>
   <block id="8a943496be1ad7baf6ce391c6f895b32" category="paragraph">有关详细信息、请阅读 <block ref="263966d0f12d0c50ce396f6ff55a2e0d" category="inline-link-macro-rx"></block></block>
   <block id="2b9be21f00b184f2a6ee90f1574df505" category="summary">ONTAP REST数据收集器</block>
-  <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP REST数据收集器</block>
   <block id="90242ff563fa212860e5c6a5b21da8f6" category="list-text">IOPS—直接源自节点对象上的ONTAP REST调用。</block>
   <block id="ea32a37fff2b9c40d4e8dd0e0803a04b" category="list-text">延迟—直接源自节点对象上的ONTAP REST调用。</block>
   <block id="4084aa6c02ea4a6ea3d32bd1c73f4888" category="list-text">吞吐量—直接源自节点对象上的ONTAP REST调用。</block>
@@ -11645,7 +11643,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="45dd5be4ea94f7d41cb728ccc4186440" category="list-text">单击*工作负载安全性&gt;收集器&gt;+数据收集器*</block>
   <block id="d0c65e48e2de27f37b54853eb602f10b" category="cell">工作负载安全代理</block>
   <block id="13dc8fdf158db5a2d5b4333f157d56f1" category="summary">通用数据库主机解复器收集器</block>
-  <block id="7ca1df328d6c4c2791d1be4c81d122dc" category="doc">NetApp通用数据库主机解析程序</block>
   <block id="bf69c00bf7c53458f130b812692fec27" category="paragraph">此数据收集器用于采集清单</block>
   <block id="7cfb24a71b3d4346f06e58f1c56504c4" category="cell">数据库服务器IP地址</block>
   <block id="fc0adf601bb47f61aeb001d2ca0fd014" category="cell">数据库服务器的IP地址</block>
@@ -11773,8 +11770,6 @@ CHE：权限被拒绝。已忽略\n" func="gosnowsclap.（*DEPLOADER).Errorf" fi
   <block id="4cfa97a1b14caa2256ef4dc5cd3d0fed" category="paragraph">工作负载运行状况可在* Kubernetes &gt; Explore &gt; Workloads*页面上一目了然地查看、因此您可以快速查看哪些工作负载运行良好以及哪些工作负载可能需要一些帮助。轻松确定运行状况问题描述是否与基础架构、网络或配置更改相关、并深入分析根发生原因。</block>
   <block id="2041337c363c1ecaeb2a1aa9c8999494" category="paragraph">有关在Kubnetes上安装的信息、请参见 <block ref="f0d3e43e41da35ba651820db811551cd" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="8c362b737d9d3a6fff5acfc29aaa5225" category="summary">适用于Kubbernetes的数据收集器</block>
-  <block id="3ce5067a26bb6509b15cfb6487590ed5" category="doc">Data Collector：KubeNet</block>
-  <block id="c7e254ef92577e872c85b9cc18b384ea" category="doc">Kubnetes Monitoring Operator安装和配置</block>
   <block id="54fc47ade0e8b56477f3a565a1183811" category="inline-image-macro">POD到存储示例</block>
   <block id="b4ee1759943c32311eab48ecd432c0d9" category="paragraph"><block ref="b4ee1759943c32311eab48ecd432c0d9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9ec645581caafa9fbb6d571ba008b9cc" category="paragraph">Kubnetes变更分析为您提供了一个一体化视图、用于查看K8s环境的最新变更。警报和部署状态触手可及。借助变更分析、您可以跟踪每个部署和配置变更、并将其与K8s服务、基础架构和集群的运行状况和性能相关联。</block>
@@ -12231,7 +12226,6 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="9953ac1176fec4ceef2b233ecd286c7b" category="cell">尝试增加底层操作系统/节点中Telegraf可锁定内存的限制。如果不能增加限制、请修改nLMO代理配置并将_Unproted_设置为_true。  这将指示Telegraf不尝试预留锁定的内存页。由于解密的机密可能会交换到磁盘、因此这可能会带来安全风险、但它允许在无法预留锁定内存的环境中执行。有关_UnprotECE_配置选项的更多详细信息、请参阅 <block ref="74a91e6274b6ee5f9fd240fb978eb1d9" category="inline-link-macro-rx"></block> 页面。</block>
   <block id="7438b4e926a47d987228924d394e21fc" category="cell">Telegraf会发出警告、指出可锁定内存不足或崩溃。</block>
   <block id="8c8a571e456c6997313d3c14bc8e2e33" category="summary">您可以手动安装或更新Workload Security代理、以便更好地控制环境中安装的软件。</block>
-  <block id="5ecfbb1f5f3536161517dc33155eaa58" category="doc">手动安装工作负载安全代理和收集器</block>
   <block id="b18da8c028e8898757dd43e098d29586" category="paragraph">默认情况下、当新版本的工作负载安全代理或收集器可用时、系统会发送升级前通知、并自动更新环境中的代理和收集器。但是、在受控安全环境中、可能不需要自动升级。在这种情况下、可以为手动安装/升级代理和收集器配置工作负载安全性、从而更好地控制系统上安装的软件。</block>
   <block id="1d7c0bdfd6486be2ad7378309185dd8d" category="list-text">在Swagger中验证名为"candse_manders.agent"和"candse_manders.Collector "的API类别是否可用。如果不支持、则不会启用手动代理安装支持。请联系NetApp支持部门以启用此功能。</block>
   <block id="b47cdf24f25c792e7f7bee977b59785f" category="list-text">以‘sroot’用户的身份执行本文档中提到的所有命令，或者如果使用其他用户运行，则使用‘Udo’执行这些命令。</block>
@@ -13451,4 +13445,68 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="f00305fde34ce30d58eb994d36b91d7f" category="admonition">受管单元的总和可能与摘要部分中的数据收集器计数略有不同。这是因为受管单元计数将向上取整为最接近的受管单元。数据收集器列表中这些数字的总和可能略高于状态部分中的总受管单元数。摘要部分反映了您的订阅的实际受管单元数。为便于实现此目的、DII会根据_subscribed _数量计算一个*有效授权*编号；然后、它会根据_DIsc发现_存储计算同一个编号、并且只有在发现的有效容量大于有效授权时才会声明违反。这样、您就可以灵活地监控与每个层的订阅量不同的数量、只要发现的总存储在订阅的有效授权范围内、DII就允许这样做。</block>
   <block id="f2dddeb36ea97f1d320b0c83ef58c28c" category="paragraph">数据基础架构洞察每个*托管单元*的基础架构可观察性和Kubernetes可观察性计量使用量。受管单元的使用量是根据基础架构环境中管理的 * 主机或虚拟机 * 数量和 * 未格式化容量 * 计算得出的。</block>
   <block id="4cb8e0d8b1d299b402fd5ddce7d39cd5" category="paragraph">如果将服务策略与ONTAP * 9.9.1或更高版本*结合使用、则要连接到数据源收集器、需要使用_data-fpolicy-client_服务以及数据服务_data-nfs_和/或_data-CIFS_。</block>
+  <block id="fcef7a70b7e9119c20e30e9ab1556015" category="paragraph">了解公司环境中使用的应用程序有助于跟踪资产使用情况和成本。</block>
+  <block id="159323715ecc1d8fcad837d9c9c4d406" category="doc">工作负载安全性API:硬中断:</block>
+  <block id="48e1b88553e176ff4b0d72847caa479e" category="doc">警报:硬中断:</block>
+  <block id="32cefbb29da0cc11665c898601ad0126" category="doc">自动响应策略:硬分段:</block>
+  <block id="04b7ceed12fc64983e08bfb1ca5c75c8" category="doc">阻止用户访问:硬接线:</block>
+  <block id="0fbc3e2fe123644bc4fb286ec3eba14e" category="doc">取证用户概述：硬断点：</block>
+  <block id="a6a9e422cc6712614bdeb1c7c082055f" category="summary">Cloud Insights可跟踪基础架构变更、以便于分析和故障排除。</block>
+  <block id="d649532ab115aad7a384e236d1028844" category="doc">基础架构变更分析</block>
+  <block id="997466d044b252bcf172645985a47372" category="paragraph">基础架构变更分析可为您提供一个一体化视图、用于查看环境中基础架构(存储、交换机等)最近发生的变更。借助变更分析、您可以跟踪配置更改、并深入了解预期和意外问题。</block>
+  <block id="2309f522d85e82b60b3b59f8e753778b" category="section-title">基础架构变更分析有何帮助？</block>
+  <block id="3216da7ed32569fc5fa15ade122a1b26" category="paragraph">在任何环境中、存储或设备可能会因配置不当的更改、断电等而发生更改。更改分析通过提供一个窗格来查看设备运行状况并将其与中断或计划内更改相关联、从而有助于实现这一点。更改将通过每个清单轮询(在新收集器上的首次轮询之后)进行计算。</block>
+  <block id="1c6509b652f7545660bff48c66566fec" category="paragraph">要分析基础架构变更，请导航到*Observability &gt; Change Analysi*。此时将列出当前时间范围的警报和配置更改。警报行显示当前警报状态(活动或已解决)。</block>
+  <block id="48bbecb173ed1c0caf1522961ed271c1" category="inline-image-macro">基础架构变更分析主屏幕</block>
+  <block id="06d8bb0704add4e2715c22018e610f73" category="paragraph"><block ref="197eeda000b01cb315c8b2c17a24ba41" category="inline-image-macro-rx" type="image"></block>(英文)</block>
+  <block id="f20ff884eb3f78de6a242bafa4e10807" category="paragraph">在列表中选择一个项目将打开一个分页窗格、提供有关警报或变更的更多详细信息。</block>
+  <block id="87349240d4ace40c54355981baaf30a6" category="inline-image-macro">配置更改详细信息窗格示例</block>
+  <block id="3e1b7ed4f9a6d715199155e12807fd85" category="paragraph"><block ref="3e1b7ed4f9a6d715199155e12807fd85" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="4c492a69b6ced7c7862c68bf201a27f8" category="paragraph">与Cloud Insights的所有功能一样、筛选更改列表也非常直观：在页面顶部、您可以筛选特定资产类型(_T触发 时间：type_)、和/或仅筛选具有特定名称的资产(_T触发 时间：name_)、也可以通过选择｛+]按钮添加您自己的筛选器。</block>
+  <block id="3d18ed1b0765c3ff3a8b70a5e01f1145" category="inline-image-macro">基础架构变更筛选下拉列表</block>
+  <block id="39aef14303366c760b69423a359db8c5" category="paragraph"><block ref="39aef14303366c760b69423a359db8c5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3c23c4d2f8805d5407d1c75a5768fb8a" category="paragraph">您也可以直接从筛选器设置下方的状态部分转到关键警报或更改、包括警报最多的当前前三个资源。</block>
+  <block id="25f02ce36b100468e64ed54f3c3363ee" category="inline-image-macro">警报和更改的状态和快速链接</block>
+  <block id="882b696f70983281eeb19bc55ebc780c" category="paragraph"><block ref="882b696f70983281eeb19bc55ebc780c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="50bcf8de16583b6a1faf9be5623c2cba" category="section-title">对哪些对象进行变更分析？</block>
+  <block id="f7ebe84da89ad9a2837d074c206d9a87" category="paragraph">下表列出了基础架构变更分析中包含的对象和属性。</block>
+  <block id="f2eefee9325c4a73a639ac4e71a791da" category="cell">扩展属性</block>
+  <block id="4d0789af18c097c73fcd9996c209e1e6" category="cell">disksize.Total isVirtual diskGroup速度类型位置序列号角色状态供应商型号storage.name storagePools.name名称</block>
+  <block id="a9986c0a5945531e535ac282c2a8121e" category="cell">已加密</block>
+  <block id="e391f3304128a83d3518a1c4e35d2608" category="cell">datasources.name系列IP isActive microcodeVersion型号名称协议序列号供应商</block>
+  <block id="198133b0776d728b17d5105bbb0ac5aa" category="cell">名称storage.name nodeVersion modelSerialNumber numberOfProcessors状态partner.name缓存内存</block>
+  <block id="af00b3e9fc6ed83402400634fffcef0d" category="cell">管理IpAddresses parentSerialNumber siteName</block>
+  <block id="e1f85d77e8208d60c3c781157f81a728" category="cell">名称类型isAutoTiering isVirtual冗余供应商层usesFlashPools storage.Vendor storage.ip storage.modelStorage．系列storage.name storageNodes.name Capacity．Total (动态属性)</block>
+  <block id="4e5fc0aadbf1d8d41eb0ae9e5c6f422a" category="cell">isCompactionSavingsEnabled是加密的objectStoreName objectStoreProviderType objectStoreSizeLimit objectStoreTier ingFullnessThreshold objectStoreS3Name objectStoreServer</block>
+  <block id="5eb77d34ea21d5e1cf90033426998666" category="cell">键入datasources.name seclitystyisoplocksEnabled shares.name storage.name internalVolume.storagePool.name internalVolume.name storageVirtualMachine.name interalVolume.virtualStorage simpleName STATUSTEXT名称</block>
+  <block id="d6aba08882d71471c2b6b52815ea184f" category="cell">StorageVirtualMachine</block>
+  <block id="5c3f6a7f7c6fdff5f1351a9949951514" category="cell">名称storage.name状态类型IPSpace protocols interalVolumeLimit注释</block>
+  <block id="ab85afd2efdf6ae9720b28e9649513d8" category="cell">名称simpleName标签类型storage.name storage.Vendor storage.ip storage.model.storage系列isAutoTiering isThinVirtualedisGroup is大型 机Ismeta isReplication icaSource isReplication目标isSnapshot isVirtual interalVolume.virtualStorage storageVirtualMachine.name storagePoools.minDiskSize.Total storagePoools.minDiskSpeed storagePoools.minDiskType storagePools.name storagePendools.minDisks.minDiskType storagePools.usesFlashPools storagePVendorageinternalVolume.name冗余层storageNodes.name storageNodes.partner.name</block>
+  <block id="07d55762b61402e9f236688ff661747d" category="cell">存储组已加密isCompresEnabled qosBurstIOPS qosLimitIOPS qosLimitMBPS qosMinIOPS qosPolicy qosLimitRaw</block>
+  <block id="c756c59e28aa8e347b00a3bd0fe08bd9" category="cell">flashPoolEligility名称simpleName space保证 状态类型virtualStorage replicaSources.name storageNodes.name storageNodes.partner.name storagePool.name StoragePool.disks.disksize.Total storage.供应商storage.ip storage.model.storage．系列StoragePool.disks.speed storageVirtualMachine.name StoragePool.Redundancy.Redundancy.type storagePool.usesFlashPools StoragePool.disks.type storage.name Capacity．Thinis已 配置</block>
+  <block id="1d7292d0a7e1e47f2ee3b03c79eebdf8" category="cell">qosPolicy qosLimitRaw qosLimitIOPS qosLimitMBPS注释为已加密的适配器QosPolicy jumionPath objectStoreTieringPolicy TieringMinimumCoolingDays</block>
+  <block id="0775662a98ec14ff846583c9cd6761a5" category="cell">名称dnsName IP OS memory processors guest State powerstate host.name host.集群 名称host.ip host.os datastore.name</block>
+  <block id="cdae133139543d7031e5fa681b3189c6" category="cell">instanceType publicIps安全组virtualCenterIp</block>
+  <block id="825c5fc312927882b716b6c2da3b816d" category="cell">数据存储库</block>
+  <block id="26b3b9ba946886eaef175c67e9696e69" category="cell">名称为virtualCenterIp</block>
+  <block id="599dcce2998a6b40b1e38e8c6006cb0a" category="cell">type</block>
+  <block id="b4a606c5f87b63f4f7157dc4fb92c30b" category="cell">名称型号IP isActive操作系统制造商CPUCount内存isHypervisorp集群名称</block>
+  <block id="b794217d3ee3c8ed6935fef3569befb9" category="cell">virtualCenterIp</block>
+  <block id="8bcb15bb664a03c6a9d894c33fe5f07c" category="cell">VMDK (VirtualMachineDisk)</block>
+  <block id="12ac32cb82500ccb5cd4fac54ef6d4d8" category="cell">名称键入datastore.name isRdm virtualMachine.host.name virtualMachine.name</block>
+  <block id="930b37d278565ffa7ba9e1e20ed02df4" category="cell">isSnapshot</block>
+  <block id="44b32834b64ca3490fec05e69b5b0897" category="cell">名称isActive WWN type portIndex blade speed gbicType connectedPorts.device.name connectedPorts.device.type connectedPorts.name connectedPorts.nodeWwn连接端口wwncontroller device.name device.type fabrics.name网络结构.vsanId nodeWwn</block>
+  <block id="67daf92c833c41c95db874e18fcb2786" category="cell">description</block>
+  <block id="aa4237e942403057a55c170360da8347" category="paragraph">&lt;&lt;&lt;&lt;&lt;&lt;&lt; head Data Infrastructure Insight列出了针对以下日志创建的警报和更改：</block>
+  <block id="9d8153be52deeed49e78d2a079b21fe5" category="paragraph">Data Infrastructure Insight列出了针对以下日志创建的警报和更改：&gt;&gt;&gt;&gt;&gt; 2d5e94be3615a400bce1e7a050d2d523cc06b5b8</block>
+  <block id="09a1f59ca2813556e3c9cc6b5d8ec1a1" category="list-text">logs.vmware.Events</block>
+  <block id="32e5b85eb2266a4723d9c5067a92e3d0" category="list-text">logs.EMS.. NetApp</block>
+  <block id="a1a1048ea48921a7bd280fbc92eebf07" category="paragraph">此外、还会监视指标监控器上表中的对象和属性。在监控器中、必须在_Group by _选项中选择这些选项、才能使变更分析跟踪它们。</block>
+  <block id="1e3299dcf38c1e3bb2a16a39942989bb" category="doc">Kubernetes Monitoring Operator安装和配置：硬断路器：</block>
+  <block id="3e021c6004e444ced45e08a6ac9e1e61" category="paragraph">变更分析</block>
+  <block id="25a317566de430ddfd2c6f4b3fdea612" category="list-text">CI-K8s-change-observer</block>
+  <block id="a21e71e8b6b5d3e4af611be860082f95" category="doc">Data Collector：Kubernetes：硬中断：</block>
+  <block id="47740590cbaabba0f1b4f325ae5fe6de" category="doc">NetApp通用数据库主机解析程序:硬中断:</block>
+  <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">NetApp ONTAP REST数据收集器:硬断路器:</block>
+  <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">手动安装工作负载安全代理和收集器：硬分页：</block>
 </blocks>

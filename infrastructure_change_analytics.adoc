@@ -1,0 +1,109 @@
+---
+sidebar: sidebar 
+permalink: infrastructure_change_analytics.html 
+keywords: changes, management, analysis, infra, infrastructure 
+summary: Cloud Insights可跟踪基础架构变更、以便于分析和故障排除。 
+---
+= 基础架构变更分析
+:hardbreaks:
+:toclevels: 1
+:allow-uri-read: 
+:toclevels: 1
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+基础架构变更分析可为您提供一个一体化视图、用于查看环境中基础架构(存储、交换机等)最近发生的变更。借助变更分析、您可以跟踪配置更改、并深入了解预期和意外问题。
+
+
+
+== 基础架构变更分析有何帮助？
+
+在任何环境中、存储或设备可能会因配置不当的更改、断电等而发生更改。更改分析通过提供一个窗格来查看设备运行状况并将其与中断或计划内更改相关联、从而有助于实现这一点。更改将通过每个清单轮询(在新收集器上的首次轮询之后)进行计算。
+
+要分析基础架构变更，请导航到*Observability > Change Analysi*。此时将列出当前时间范围的警报和配置更改。警报行显示当前警报状态(活动或已解决)。
+
+image:infraChange_list_example.png["基础架构变更分析主屏幕"](英文)
+
+在列表中选择一个项目将打开一个分页窗格、提供有关警报或变更的更多详细信息。
+
+image:infraChange_config_detail.png["配置更改详细信息窗格示例"]
+
+
+
+== 筛选
+
+与Cloud Insights的所有功能一样、筛选更改列表也非常直观：在页面顶部、您可以筛选特定资产类型(_T触发 时间：type_)、和/或仅筛选具有特定名称的资产(_T触发 时间：name_)、也可以通过选择｛+]按钮添加您自己的筛选器。
+
+image:infraChange_filter_dropdown.png["基础架构变更筛选下拉列表"]
+
+您也可以直接从筛选器设置下方的状态部分转到关键警报或更改、包括警报最多的当前前三个资源。
+
+image:Change_Analysis_filters_and_status.png["警报和更改的状态和快速链接"]
+
+
+
+== 对哪些对象进行变更分析？
+
+下表列出了基础架构变更分析中包含的对象和属性。
+
+|===
+
+
+| 对象类型 | 属性 | 扩展属性 
+
+
+| 磁盘 | disksize.Total isVirtual diskGroup速度类型位置序列号角色状态供应商型号storage.name storagePools.name名称 | 已加密 
+
+
+| 存储 | datasources.name系列IP isActive microcodeVersion型号名称协议序列号供应商 |  
+
+
+| StorageNode | 名称storage.name nodeVersion modelSerialNumber numberOfProcessors状态partner.name缓存内存 | 管理IpAddresses parentSerialNumber siteName 
+
+
+| StoragePool | 名称类型isAutoTiering isVirtual冗余供应商层usesFlashPools storage.Vendor storage.ip storage.modelStorage．系列storage.name storageNodes.name Capacity．Total (动态属性) | isCompactionSavingsEnabled是加密的objectStoreName objectStoreProviderType objectStoreSizeLimit objectStoreTier ingFullnessThreshold objectStoreS3Name objectStoreServer 
+
+
+| qtree | 键入datasources.name seclitystyisoplocksEnabled shares.name storage.name internalVolume.storagePool.name internalVolume.name storageVirtualMachine.name interalVolume.virtualStorage simpleName STATUSTEXT名称 |  
+
+
+| StorageVirtualMachine | 名称storage.name状态类型IPSpace protocols interalVolumeLimit注释 |  
+
+
+| 卷 | 名称simpleName标签类型storage.name storage.Vendor storage.ip storage.model.storage系列isAutoTiering isThinVirtualedisGroup is大型 机Ismeta isReplication icaSource isReplication目标isSnapshot isVirtual interalVolume.virtualStorage storageVirtualMachine.name storagePoools.minDiskSize.Total storagePoools.minDiskSpeed storagePoools.minDiskType storagePools.name storagePendools.minDisks.minDiskType storagePools.usesFlashPools storagePVendorageinternalVolume.name冗余层storageNodes.name storageNodes.partner.name | 存储组已加密isCompresEnabled qosBurstIOPS qosLimitIOPS qosLimitMBPS qosMinIOPS qosPolicy qosLimitRaw 
+
+
+| 内部卷 | flashPoolEligility名称simpleName space保证 状态类型virtualStorage replicaSources.name storageNodes.name storageNodes.partner.name storagePool.name StoragePool.disks.disksize.Total storage.供应商storage.ip storage.model.storage．系列StoragePool.disks.speed storageVirtualMachine.name StoragePool.Redundancy.Redundancy.type storagePool.usesFlashPools StoragePool.disks.type storage.name Capacity．Thinis已 配置 | qosPolicy qosLimitRaw qosLimitIOPS qosLimitMBPS注释为已加密的适配器QosPolicy jumionPath objectStoreTieringPolicy TieringMinimumCoolingDays 
+
+
+| 虚拟机 | 名称dnsName IP OS memory processors guest State powerstate host.name host.集群 名称host.ip host.os datastore.name | instanceType publicIps安全组virtualCenterIp 
+
+
+| 数据存储库 | 名称为virtualCenterIp | type 
+
+
+| 主机 | 名称型号IP isActive操作系统制造商CPUCount内存isHypervisorp集群名称 | virtualCenterIp 
+
+
+| VMDK (VirtualMachineDisk) | 名称键入datastore.name isRdm virtualMachine.host.name virtualMachine.name | isSnapshot 
+
+
+| 端口 | 名称isActive WWN type portIndex blade speed gbicType connectedPorts.device.name connectedPorts.device.type connectedPorts.name connectedPorts.nodeWwn连接端口wwncontroller device.name device.type fabrics.name网络结构.vsanId nodeWwn | description 
+|===
+<<<<<<< head Data Infrastructure Insight列出了针对以下日志创建的警报和更改：
+
+[]
+====
+Data Infrastructure Insight列出了针对以下日志创建的警报和更改：>>>>> 2d5e94be3615a400bce1e7a050d2d523cc06b5b8
+
+* logs.vmware.Events
+* logs.EMS.. NetApp
+
+
+此外、还会监视指标监控器上表中的对象和属性。在监控器中、必须在_Group by _选项中选择这些选项、才能使变更分析跟踪它们。
+
+====

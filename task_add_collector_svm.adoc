@@ -5,17 +5,14 @@ keywords: data collector, ONTAP, NetApp, SVM, cloud ontap, firewall
 summary: 添加工作负载安全性数据收集器 
 ---
 = 配置 ONTAP SVM 数据收集器
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

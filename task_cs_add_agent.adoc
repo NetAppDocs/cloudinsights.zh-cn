@@ -5,17 +5,14 @@ keywords: agent, Workload Security, installation, Cloud Secure
 summary: 正在添加工作负载安全代理 
 ---
 = 安装工作负载安全代理
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]

@@ -4,8 +4,7 @@ permalink: forensic_user_overview.html
 keywords: Forensic, user, user, activity 
 summary: 取证用户详细信息 
 ---
-= 取证用户概述
-:hardbreaks:
+= 取证用户概述：硬断点：
 :allow-uri-read: 
 :nofooter: 
 :icons: font

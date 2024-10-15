@@ -4,8 +4,7 @@ permalink: task_dc_na_db_host.html
 keywords: data collector, generic db 
 summary: 通用数据库主机解复器收集器 
 ---
-= NetApp通用数据库主机解析程序
-:hardbreaks:
+= NetApp通用数据库主机解析程序:硬中断:
 :toclevels: 2
 :allow-uri-read: 
 :toclevels: 2

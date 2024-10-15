@@ -4,13 +4,12 @@ permalink: cs_restrict_user_access.html
 keywords: alert, snapshot,  attack 
 summary: 借助工作负载安全性、您可以在发生可疑破坏时限制用户访问 
 ---
-= 正在阻止用户访问
-:hardbreaks:
+= 阻止用户访问:硬接线:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media
+:imagesdir: ./media/
 
 
 [role="lead"]
