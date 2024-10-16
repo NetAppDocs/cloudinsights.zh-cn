@@ -4,12 +4,13 @@ permalink: cs_automated_response_policies.html
 keywords: alert, snapshot, ransomware, attack 
 summary: 您可以为潜在攻击（例如勒索软件）和 / 或活动警告设置自动响应策略 
 ---
-= 自动响应策略:硬分段:
+= 自动响应策略
+:hardbreaks:
 :allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
-:imagesdir: ./media/
+:imagesdir: ./media
 
 
 [role="lead"]

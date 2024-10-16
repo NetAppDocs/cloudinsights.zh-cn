@@ -5,14 +5,17 @@ keywords: annotations, monitor, notes, tags
 summary: 使用标注跟踪数据。 
 ---
 = 定义标注
+:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
+:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

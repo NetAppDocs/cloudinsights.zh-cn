@@ -5,14 +5,17 @@ summary: Data Infrastructure Insight中的信息板概述。
 keywords: dashboard, widget, custom, view, data 
 ---
 = 信息板概述
+:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
+:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

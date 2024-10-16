@@ -4,7 +4,8 @@ permalink: task_config_telegraf_kubernetes.html
 keywords: telegraf 
 summary: 适用于Kubbernetes的数据收集器 
 ---
-= Data Collector：Kubernetes：硬中断：
+= Data Collector：KubeNet
+:hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
 :toclevels: 1

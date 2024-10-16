@@ -4,7 +4,8 @@ permalink: task_config_telegraf_agent_k8s.html
 keywords: kubernetes, Kubernetes, k8s, telegraf, installation, install, agent, telegraf agent, eks, operator 
 summary: Kubbernetes Monitoring Operator收集Kubbernetes数据、以供Data Infrastructure Insight使用。 
 ---
-= Kubernetes Monitoring Operator安装和配置：硬断路器：
+= Kubnetes Monitoring Operator安装和配置
+:hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
 :nofooter: 
@@ -258,11 +259,6 @@ agent:
 网络性能和映射
 
 * CI-net-observer
-
-
-变更分析
-
-* CI-K8s-change-observer
 
 
 根据您的企业策略，将操作员 Docker 映像推送到您的私有 / 本地 / 企业 Docker 存储库。确保存储库中这些映像的映像标记和目录路径与Data Infrastructure Insight存储库中的映像标记和目录路径一致。

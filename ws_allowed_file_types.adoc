@@ -5,12 +5,7 @@ keywords: workload security, cloud secure, include list, allowed, file types, ra
 summary: 将文件扩展名添加到允许的文件类型列表以减少警报。 
 ---
 = 允许的文件类型策略
-:hardbreaks:
 :allow-uri-read: 
-:nofooter: 
-:icons: font
-:linkattrs: 
-:imagesdir: ./media/
 
 
 [role="lead"]

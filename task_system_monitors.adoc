@@ -5,14 +5,17 @@ keywords: monitors, alerts, log, metric
 summary: 创建监控器，以便针对性能或清单阈值以及指标或日志条件发出警报。 
 ---
 = 系统监控器
+:toc: macro
 :hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
+:toc: 
 :toclevels: 2
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
+:toc-position: content
 
 
 [role="lead"]

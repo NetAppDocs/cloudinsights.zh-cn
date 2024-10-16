@@ -4,7 +4,8 @@ permalink: ws_manually_installing_agent_and_collector.html
 keywords: install, configure, agent, collector, workload, security, cloud secure 
 summary: 您可以手动安装或更新Workload Security代理、以便更好地控制环境中安装的软件。 
 ---
-= 手动安装工作负载安全代理和收集器：硬分页：
+= 手动安装工作负载安全代理和收集器
+:hardbreaks:
 :toclevels: 2
 :allow-uri-read: 
 :toclevels: 2
