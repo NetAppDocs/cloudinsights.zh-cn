@@ -6483,7 +6483,6 @@
   <block id="3d64508ab84203107071583e56c26993" category="list-text">Broadcom 光纤通道交换机数据收集器已进行优化，可减少每次清单轮询发出的 CLI 命令数量。</block>
   <block id="ceecc9f892b56b1081be5d007d545aab" category="cell">可以执行所有用户 / 作者功能，包括管理报告 API 令牌以及所有管理任务，例如配置报告以及关闭和重新启动报告任务。管理员还可以邀请其他用户，但只能分配报告角色。</block>
   <block id="45268bdcc9ffe3a5807e75085e768efb" category="cell">API 类型</block>
-  <block id="c73695e7529146d82731a287d36e3f1d" category="cell">日志载入</block>
   <block id="dc1a2dd04ef0a485bbca321805f8ea84" category="inline-link-macro">功能集角色</block>
   <block id="990550983c2107ed5ccd87b4a6690b0a" category="inline-image-macro">API 类型</block>
   <block id="e86bb8cbf77ec00646c7b5fe6b42e633" category="paragraph"><block ref="e86bb8cbf77ec00646c7b5fe6b42e633" category="inline-image-macro-rx" type="image"></block></block>
@@ -12988,8 +12987,6 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="30accaf6a3626f10ec929da93cbf92a5" category="summary">通过Data Infrastructure Insight API、可以与监控和报告系统等其他应用程序集成。</block>
   <block id="6d6db1bb67f06328b211ea82a7f47cbd" category="doc">Data Infrastructure Insight API</block>
   <block id="eac3abc77b1aae81a7bfc1ff05078f3c" category="paragraph">通过数据基础架构洞察API、NetApp客户和独立软件供应商(ISV)可以将数据基础架构洞察与其他应用程序(例如CMDB或其他服务单系统)集成在一起。</block>
-  <block id="4ca8e0cdf82e94476f54fca7c9b08a02" category="paragraph">请注意、Data Infrastructure Insight API可根据您的当前版本提供：</block>
-  <block id="78b105b7e2a3c96f1ef28d2a96f59830" category="paragraph">此外、您的数据基础架构洞察力<block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block>还将确定您可以访问哪些API。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。</block>
   <block id="da9fb37ca66951f2715562f74dd167af" category="list-text">API令牌管理由具有管理员角色的Data Infrastructure Insight用户执行。</block>
   <block id="e72088ab32f20f058f4f46fe9cad2b0c" category="paragraph">登录到Data Infrastructure Insight并导航到*Admin &gt; API Acccess*可以找到最新的API信息。单击 * API Documentation" 链接。</block>
   <block id="30a47f88beaa0845897dd8164cdcdd08" category="paragraph">API 文档基于 Swagger ，其中提供了 API 的简短问题描述和使用情况信息，您可以在环境中试用这些文档。根据您的用户角色和/或Data Infrastructure Insight版本、您可以使用的API类型可能会有所不同。</block>
@@ -13082,7 +13079,6 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="d0666b8b7ae744d105cb544ddc03d8c8" category="list-text">选择_Data Infrastructure洞察力_作为产品线。选择您的计费提供商(NetApp或AWS)、并参阅Data Infrastructure Insight用户界面中的"Help &gt; Support"(帮助&gt;支持)菜单、提供您的序列号和NetApp订阅名称或AWS客户ID：</block>
   <block id="d41c7a89c53943f7c86e80fe6a27b4dc" category="list-text">作为 NetApp 的新客户，您还需要创建一个 NetApp 支持站点 (NSS) 用户帐户，以便将来进行注册，并访问支持门户以获取技术支持聊天和 Web 服务单。此链接位于<block ref="4b0df7f6652ef877e322a199d6b6edce" category="inline-link-rx"></block>。您可以提供新注册的Data Infrastructure Insight序列号来加快此过程。</block>
   <block id="3757ee6dbdcabe2780104f98224939d5" category="list-text">这是一次性注册Data Infrastructure Insight NetApp序列号。</block>
-  <block id="1c571e65fbdab33b85ec4c8a56603087" category="paragraph">NetApp通过多种方式为数据基础架构洞察力提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。对于订阅了任何Data Infrastructure Insight版本(Basic*、Standard、Premium)的用户，可通过电话或Web服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点 (NSS) SSO 帐户。</block>
   <block id="6d1e73b5dbcd7708fd39eecb9fec99a8" category="paragraph">单击社区链接将转到NetApp数据基础架构洞察力社区、您可以在该社区与同行和专家进行交流。</block>
   <block id="adbe0a8623b0464eb83d4da31c8e858e" category="paragraph">此外、还提供了一个链接<block ref="845d40e8369612c1d8dd285f0ebc254e" category="inline-link-macro-rx"></block>、帮助我们提高数据基础架构洞察力。</block>
   <block id="24b17ddd1757d7b4e6373b656d50555a" category="paragraph">除了上述自助支持选项之外、如果您订阅了Data Infrastructure Insight或为受监控的NetApp产品或服务提供了付费支持、则可以与NetApp支持工程师合作解决您的问题。</block>
@@ -13510,4 +13506,7 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="89a6e68ed7edbbdfb7886ea0a445b999" category="doc">NetApp ONTAP REST数据收集器:硬断路器:</block>
   <block id="56868b2777c66c74c7926c97d5cbfc1e" category="doc">手动安装工作负载安全代理和收集器：硬分页：</block>
   <block id="11ad95cf52a6f6d0f02121ba7f3398ce" category="admonition">在更改报告权限或安全性之前、您必须将"我的内容"报告复制到"团队内容"文件夹、以确保报告已保存。</block>
+  <block id="7d18259ee7e2ef822cedec281a19a33d" category="paragraph">您的数据基础架构洞察力<block ref="ca56f933f1431ce18e092150c84b745d" category="inline-link-macro-rx"></block>将决定您可以访问哪些API。用户和来宾角色的权限比管理员角色更少。例如，如果您在 " 监控和优化 " 中具有管理员角色，而在 " 报告 " 中具有用户角色，则您可以管理除数据仓库之外的所有 API 类型。</block>
+  <block id="1f3c67de4e7c07c414ec4689b1724561" category="paragraph">NetApp通过多种方式为数据基础架构洞察力提供支持。全天候提供广泛的免费自助支持选项，例如知识库（ KB ）文章或 NetApp 社区。订阅* Data Infrastructure Insight的用户可通过电话或Web服务单获得技术支持。Web 服务单以及案例管理需要使用 NetApp 支持站点 (NSS) SSO 帐户。</block>
+  <block id="3b2314bf0168715cc6642c0246916477" category="paragraph">许多NetApp产品都将数据基础架构洞察力基础版作为软件包的一部分提供。如果您要升级到高级版、请联系您的销售代表。</block>
 </blocks>
