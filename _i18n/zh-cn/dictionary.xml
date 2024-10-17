@@ -8139,13 +8139,7 @@
   <block id="94eb3621c8500b8badf206c854e5b5f5" category="cell">qtree</block>
   <block id="0cf39fe422a1bfd5d8bce06d5ce1b64f" category="inline-link-macro">Dell EMC Unisphere REST</block>
   <block id="7bb1c93f44835a04f1a5d46dd4f4b400" category="cell"><block ref="7bb1c93f44835a04f1a5d46dd4f4b400" category="inline-link-macro-rx"></block></block>
-  <block id="39fdcbcd2a4c753babbc68973712e367" category="summary">从一个控制平台构建、保护和管理混合多云数据资产。</block>
   <block id="fa0f9b91b9b3862eb566219b032aa9f6" category="inline-link-macro">_Preview_</block>
-  <block id="8a281fcc91b3d1c2a8f6a3503b98db32" category="admonition">BlueXP导航菜单集成被视为 <block ref="27c8300c0999ba5a7834ba70e02e86cc" category="inline-link-macro-rx"></block> 功能、因此可能会更改。</block>
-  <block id="dc2328c73b90d6c1704bed2d775bd562" category="inline-image-macro">BlueXP导航菜单、在顶部显示可观察性、在下方显示其他NetApp服务</block>
-  <block id="070ed5b249a03236a4b58ef440cd9a27" category="paragraph"><block ref="070ed5b249a03236a4b58ef440cd9a27" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="27a7deb0ec1bdff43e3eb6bbcee65f55" category="paragraph">悬停工具提示可提供更多信息。</block>
-  <block id="03aa38861ba70a29a2ebce320835a31b" category="paragraph">您可以在BlueXP网站上了解有关BlueXP的更多信息。</block>
   <block id="db18ee26726e25e2183f42a056469c60" category="summary">配置Dell EMC Unisphere REST数据收集器。</block>
   <block id="35c1883b40d011465b36533e553b9174" category="doc">配置Dell EMC Unisphere REST数据收集器</block>
   <block id="0dd81cc00ee33beff836edf2f63e0184" category="list-text">端口8443。</block>
@@ -8817,7 +8811,6 @@
   <block id="b3e9404f7fb1acb7c3d66e587a4c411b" category="cell">rsMemRequest</block>
   <block id="dce1fa2cb47347aa09d7dceac624c5f7" category="cell">对RS的存储器请求</block>
   <block id="6fd605953233d5564943f85815683d62" category="cell">run特权</block>
-  <block id="06b131db41fa22ef6ac7de5a7eae4aef" category="cell">在特权模式下运行该特拉夫容器。如果在K8s节点上启用了SELinux、请将此选项设置为true</block>
   <block id="986b07451fa1766c43f2eead1470731c" category="cell">批大小</block>
   <block id="f73038607dbfd988c8ed06aa707b67b6" category="inline-link-macro">Telegraf配置文档</block>
   <block id="4a686d41d5d06d7af488bce13a4b6b1c" category="cell">请参见 <block ref="1220f98ff4e67fb30a54b092e87489e7" category="inline-link-macro-rx"></block></block>
@@ -8845,7 +8838,6 @@
   <block id="a28f540659f42fa52be34b45558bb6c6" category="cell">dnsMode</block>
   <block id="5c0864cc25dbf397d47948de9ac342f1" category="cell">TCP/UDP、DNS的模式</block>
   <block id="6f70b1b29646b4f3864aa8abbbca1c59" category="cell">工作负载映射</block>
-  <block id="061016eea4bb256a8b08c9190fbefeec" category="cell">可自定义Operator的工作负载映射收集和安装的配置选项</block>
   <block id="8804d25db5f16b9db006116b6edf45bc" category="cell">cpuLimit</block>
   <block id="65a010afe1e2186ecb5c9ef8cf978e2d" category="cell">memLimit</block>
   <block id="967cc12aa2f5f95e9e26d28fae3bd7b3" category="cell">Net observer DS的CPU请求</block>
@@ -12999,10 +12991,6 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="cc3cee81cef851f2f036f9ae6b1ac477" category="paragraph">性能数据会作为单独的示例收集到多个设备中。Data Infrastructure Insight会每小时汇总和汇总一次性能示例(默认值)。</block>
   <block id="1852e85c98f9e7216ff053507e056147" category="paragraph">每个性能数据对象类型都有一组唯一的性能指标。例如，虚拟机性能对象支持使用 "diskThroughput " 作为性能指标。每个受支持的性能指标都属于指标词典中提供的特定 " 性能类别 " 。Data Infrastructure Insight支持本文档后面列出的多种性能指标类型。每个性能指标词典还将包含一个可供用户读取的此性能指标问题描述字段问题描述以及一组性能摘要计数器条目。</block>
   <block id="257f0ceb0672288b52ab4e080578e700" category="paragraph">Data Infrastructure Insight是一款可扩展(广泛开放)的解决方案、可与第三方业务流程、业务管理、变更控制和服务单系统以及自定义CMDB集成相集成。</block>
-  <block id="c92924fbf7861a093c4349a94f8bcf0e" category="doc">数据基础架构洞察力是BlueXP  的一部分</block>
-  <block id="e5e173192c2f69b363ad91f5ed6b33d3" category="paragraph">借助BlueXP、您可以从一个界面管理所有NetApp存储和数据资产。在BlueXP中、您会发现许多新的存储服务以及数据服务以前仅作为具有单独UI的独立服务提供。数据基础架构洞察(以前称为Cloud Insights)就是这些服务之一。</block>
-  <block id="fde977b4517b5a88b8ee2d3fcd1c0fd8" category="paragraph">全新的直观菜单在BlueXP的导航菜单中、数据服务按类别进行组织、并根据其功能进行命名。例如、"Data Infrastructure洞察力"功能集位于"Observability (可观察性)"菜单中。在探索Data Infrastructure Insight时、导航菜单顶部将显示"Observability (可观察性)"部分。在您探索时、每个BlueXP服务都是如此。</block>
-  <block id="9ecae0812a01df2d2809eccbaae9fb2d" category="admonition">在本文档中、术语"数据基础架构洞察力"和"可观察性"可以互换使用。</block>
   <block id="c0775283da3261d158df55d820b4e47b" category="paragraph">您可以开始使用仅具有8 GB内存和50 GB磁盘空间的Data Infrastructure Insight采集单元、但是、对于较大的环境、您应该问自己以下问题：</block>
   <block id="cde8307fb591a6c3934539dcb5919f06" category="list-text">对于Data Infrastructure Insight Federal Edition集群中的采集单元安装、底层操作系统必须具有良好的熵源。在Linux系统上、通常通过安装_rng-tools_或使用硬件随机数生成(RNG)来完成此操作。客户有责任确保采集单元机器满足此要求。</block>
   <block id="96cb7682ad0362f3aff6ef6f90dd2520" category="summary">数据基础架构洞察从NetApp Active IQ收集风险数据</block>
@@ -13427,7 +13415,6 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="631118e6a302427a45c08e77b6d37e3b" category="cell">确保采集单元服务器/VM可以通过端口443通过&lt;environment-name&gt;连接访问数据基础架构洞察力环境(SSL.C01.Cloud NetApp、com)。请尝试以下命令：_ping &lt;environment-name&gt;．C01.Cloud．NetApp NetApp．com_ traceroute．C01.Cloud．NetApp．com__cURL \https：//Data．C01.Cloud．NetApp．com_ wget \https：//Data．C01．&lt;environment-name&gt;．&lt;environment-name&gt;．com_请注意、端口基础架构需要从&lt;environment-name&gt; 443 "出站"打开到Data。</block>
   <block id="d2402cb2e8bc53d6f0ea3a592a927071" category="cell">我看到Telegraf发出的警告消息如下所示：_W！[Inputs.diskio]无法收集"vdc"的磁盘名称：读取/dev/vdc时出错：没有此文件或目录_</block>
   <block id="d167beea70a778e86c7a57bc2bd4338a" category="inline-link-macro">操作员配置选项</block>
-  <block id="9de6368f45ca30e61d7d6eb11d0da5a5" category="cell">对于Kubnetes监控操作员、这些警告消息不会产生负面影响、可以放心地忽略。或者、也可以编辑AgentConfiguration中的"特拉夫"部分、并将run特权 设置为true。有关详细信息，请参阅<block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>。</block>
   <block id="c2a794ea709fc6031fad37bbb11353ed" category="paragraph">在模块评估期间，您不会为模块消耗的资源的MU使用量付费，但您可以打开*Estimator*(在_Summary _选项卡上)来查看评估后MU的收费方式，以及使用“假设”方案以及将来可能需要的MU数量。退出估算器以重置数字。</block>
   <block id="6b3c6b1f0dcfdec2952b9d7ebe9ff11f" category="paragraph">Data Infrastructure Insight可观察性可通过以下两种方式之一进行计量：</block>
   <block id="5e787d0212aa58a0466b454df1baca59" category="list-text">容量量</block>
@@ -13451,4 +13438,9 @@ Data Collector 将重新启动，并应解决此错误。
   <block id="7ca1df328d6c4c2791d1be4c81d122dc" category="doc">NetApp通用数据库主机解析程序</block>
   <block id="e61b2d254813ba4e2bc2a8a223f0e0eb" category="doc">NetApp ONTAP REST数据收集器</block>
   <block id="5ecfbb1f5f3536161517dc33155eaa58" category="doc">手动安装工作负载安全代理和收集器</block>
+  <block id="1f3c6b9eb496e3586cb89ac14caca626" category="cell">对于Kubnetes监控操作员、这些警告消息不会产生负面影响、可以放心地忽略。  或者、也可以编辑AgentConfiguration中的"tendraf"部分、并将_runDs专用_设置为true。有关详细信息，请参阅<block ref="ebda7113c4f0b0fd6090a6c2a6162dc1" category="inline-link-macro-rx"></block>。</block>
+  <block id="03d93e1826c4b75f5882487510637b6a" category="cell">在特权模式下运行特拉特夫DemonSet的_table-mountstats-poller_容器。如果在Kubnetes节点上启用了SELinux、请将此选项设置为true。</block>
+  <block id="324bdfa0e3afdc96a6b7ec1a6d383285" category="cell">运行特权</block>
+  <block id="853d5e0ee500d0a29752a0f7c287f08d" category="cell">将runDs专用 设置为true可在特权模式下运行特拉特拉夫DemonSet的特拉特拉特容器。</block>
+  <block id="f39ed19a7c5e5e2b0cff68ee1bedc0ef" category="cell">可自定义Operator的工作负载映射收集和安装的配置选项。</block>
 </blocks>

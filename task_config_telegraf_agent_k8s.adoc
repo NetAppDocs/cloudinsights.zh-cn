@@ -560,6 +560,6 @@ fluent-bit:
 | Telegraf会发出警告、指出可锁定内存不足或崩溃。 | 尝试增加底层操作系统/节点中Telegraf可锁定内存的限制。如果不能增加限制、请修改nLMO代理配置并将_Unproted_设置为_true。  这将指示Telegraf不尝试预留锁定的内存页。由于解密的机密可能会交换到磁盘、因此这可能会带来安全风险、但它允许在无法预留锁定内存的环境中执行。有关_UnprotECE_配置选项的更多详细信息、请参阅 link:telegraf_agent_k8s_config_options.html["配置选项"] 页面。 
 
 
-| 我看到Telegraf发出的警告消息如下所示：_W！[Inputs.diskio]无法收集"vdc"的磁盘名称：读取/dev/vdc时出错：没有此文件或目录_ | 对于Kubnetes监控操作员、这些警告消息不会产生负面影响、可以放心地忽略。或者、也可以编辑AgentConfiguration中的"特拉夫"部分、并将run特权 设置为true。有关详细信息，请参阅link:telegraf_agent_k8s_config_options.html["操作员配置选项"]。 
+| 我看到Telegraf发出的警告消息如下所示：_W！[Inputs.diskio]无法收集"vdc"的磁盘名称：读取/dev/vdc时出错：没有此文件或目录_ | 对于Kubnetes监控操作员、这些警告消息不会产生负面影响、可以放心地忽略。  或者、也可以编辑AgentConfiguration中的"tendraf"部分、并将_runDs专用_设置为true。有关详细信息，请参阅link:telegraf_agent_k8s_config_options.html["操作员配置选项"]。 
 |===
 可以从找到追加信息 link:concept_requesting_support.html["支持"] 页面或中的 link:reference_data_collector_support_matrix.html["数据收集器支持列表"]。

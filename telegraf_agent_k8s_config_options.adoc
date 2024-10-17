@@ -87,7 +87,7 @@ summary: NetApp Kubarnetes Monitoring Operator提供了许多可配置选项。
 |  | rsMemRequest | 对RS的存储器请求 
 
 
-|  | run特权 | 在特权模式下运行该特拉夫容器。如果在K8s节点上启用了SELinux、请将此选项设置为true 
+|  | run特权 | 在特权模式下运行特拉特夫DemonSet的_table-mountstats-poller_容器。如果在Kubnetes节点上启用了SELinux、请将此选项设置为true。 
 
 
 |  | 批大小 | 请参见 link:https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#agent["Telegraf配置文档"] 
@@ -179,7 +179,10 @@ persistentvolumeclaims=[*]，persistentvolumes=[*]，Pod=[*]，复制集=[*]，�
 |  | run特权 | 如果Fluent Bit无法启动并尝试打开/创建其数据库、请将run特权 设置为true。 
 
 
-| 工作负载映射 |  | 可自定义Operator的工作负载映射收集和安装的配置选项 
+|  | 运行特权 | 将runDs专用 设置为true可在特权模式下运行特拉特拉夫DemonSet的特拉特拉特容器。 
+
+
+| 工作负载映射 |  | 可自定义Operator的工作负载映射收集和安装的配置选项。 
 
 
 |  | cpuLimit | Net observer DS的CPU限制 
