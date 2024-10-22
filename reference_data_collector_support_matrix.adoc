@@ -5,27 +5,19 @@ summary: Data Collector 支持列表包含有关支持的数据收集器的详�
 keywords: support matrix, vendor, NetApp, IBM, EMC, Dell, HP, Hitachi, VMware, Huawei, OpenStack, 
 ---
 = Data Infrastructure Insight Data Collector支持列表
-:toc: macro
 :hardbreaks:
 :toclevels: 1
 :allow-uri-read: 
-:toc: 
 :toclevels: 1
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:firstname: [.lead]
-:author: [.lead]
-:authorinitials: [
-:authors: [.lead]
-:toc-position: content
 
 
+[role="lead"]
 Data Collector支持列表提供了Data Infrastructure Insight支持的数据收集器的参考、包括供应商和型号信息。
 
-
-toc::[]
 
 
 == HP Enterprise 3PAR/Alletra 9000/Primetra StoreServ存储
@@ -675,20 +667,17 @@ InServ V400 | 3.1.1 (MU1)
 
 | 3PAR命令行界面 | SSH | SSH | 22. |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Amazon AWS EC2
 
 此数据收集器支持的型号和版本：
 
-|===
-| API版本 
+API版本：
+
+* 2014-10-01.
 
 
-| 2014-10-01. 
-|===
 此数据收集器支持的产品：
 
 |===
@@ -960,8 +949,6 @@ InServ V400 | 3.1.1 (MU1)
 
 | EC2 API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Amazon AWS S3
@@ -1119,8 +1106,6 @@ InServ V400 | 3.1.1 (MU1)
 
 | S3 API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Microsoft Azure NetApp Files
@@ -1422,8 +1407,6 @@ InServ V400 | 3.1.1 (MU1)
 
 | Azure NetApp Files REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Brocade 光纤通道交换机
@@ -1845,8 +1828,6 @@ v9.1.1b
 
 | 数据源向导配置 | 手动输入 |  |  |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Brocade Network Advisor HTTP
@@ -2118,8 +2099,6 @@ v9.0.1E1
 
 | Brocade Network Advisor REST API | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Brocade FOS REST
@@ -2447,8 +2426,6 @@ v9.1.1b
 
 | Brocade FOS REST API | HTTPS |  | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Cisco MDS和Nexus光纤交换机
@@ -2868,8 +2845,6 @@ UCS—FI-6454 | 3.3 (1c)
 
 | Cisco SNMP | SNMP | SNMPv1 (仅限清单)、SNMPv2、SNMPv3 | 161. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == 协作
@@ -3182,8 +3157,6 @@ UCS—C240M5H10 | 6.5.1f_Release 20210913_13f6a4bf
 
 | 联合REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC Celerra (SSH)
@@ -3478,8 +3451,6 @@ VNX6600 | 5.5.38-1.
 
 | Celerra命令行界面 | SSH | SSH |  |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC CLARiiON (NaviCLI)
@@ -4044,8 +4015,6 @@ VNX8000 | 04.28.000.5.710
 
 | Navi命令行界面 | 命令行界面 |  | 6389、216、216、443 (HTTPS)/80 (HTTP) |  | true | true | true | false 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC数据域(SSH)
@@ -4365,8 +4334,6 @@ DD9900 | 6.1.2.051-633576
 
 | 数据域命令行界面 | SSH | SSH | 22. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC ECS
@@ -4650,8 +4617,6 @@ DD9900 | 6.1.2.051-633576
 
 | EMC ECS REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Dell EMC Isilar和PowerScale REST
@@ -5256,8 +5221,6 @@ v8.0.0.7
 
 | EMC Isilar和PowerScale REST API | HTTPS |  | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Dell EMC Isila/PowerScale (命令行界面)
@@ -5781,8 +5744,6 @@ v8.0.1.1
 
 | Isilon SSH | SSH | SSH | 22. |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC PowerStore REST
@@ -6304,8 +6265,6 @@ PowerStore 9200T | 2.0.1.3.
 
 | EMC PowerStore REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC RecoverPoint (HTTP)
@@ -6437,8 +6396,6 @@ PowerStore 9200T | 2.0.1.3.
 
 | RecoverPoint REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC ScaleIO和PowerFlex REST
@@ -6739,8 +6696,6 @@ R3_6.700.103
 
 | EMC ScaleIO和PowerFlex REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC Symmetrix命令行界面
@@ -7504,8 +7459,6 @@ VMAX950F | 5793.198.142 (168D0000)内部版本5
 
 | Symmetrix SMI-S | SMI-S | HTTP/HTTPS | 598/5989 |  | true | false | false | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Dell Unisphere REST
@@ -7931,8 +7884,6 @@ VMAX950F | 5978.479.479内部版本350
 
 | Dell Unisphere API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC VNX (SSH)
@@ -8450,8 +8401,6 @@ VNX5800 | 05.33.009.5.231
 
 | VNX SSH和CLI | SSH | SSH | 22. |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC VNXe和Unity Unisphere (命令行界面)
@@ -9011,8 +8960,6 @@ VNXe3200 | 3.1.17.10223906
 
 | VNXe和Unisphere命令行界面 | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC VPLEX
@@ -9331,8 +9278,6 @@ VNXe3200 | 3.1.17.10223906
 
 | EMC VPLEX API | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == EMC XtremIO (HTTP)
@@ -9791,8 +9736,6 @@ VNXe3200 | 3.1.17.10223906
 
 | EMC XtremIO REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == NetApp E-Series
@@ -10377,20 +10320,17 @@ VNXe3200 | 3.1.17.10223906
 
 | SANtricity API | RMI | TCP |  |  | true | true | false | false 
 |===
-<<top,返回顶部>>
-
 
 
 == Google Cloud计算
 
 此数据收集器支持的型号和版本：
 
-|===
-| API版本 
+API版本：
+
+* V1
 
 
-| V1 
-|===
 此数据收集器支持的产品：
 
 |===
@@ -10629,8 +10569,6 @@ VNXe3200 | 3.1.17.10223906
 
 | Google计算平台REST API | HTTPS |  | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == HDS HCP (HTTPS)
@@ -10837,8 +10775,6 @@ VNXe3200 | 3.1.17.10223906
 
 | HDS HCP REST API | HTTPS | HTTPS | 9090 |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == HiCommand Device Manager
@@ -11404,8 +11340,6 @@ SVP：90-8-83/00
 
 | HiCommand Device Manager XML API | HDS XML API | HTTP/HTTPS | 2001年 |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Hitachi 运营中心
@@ -11848,8 +11782,6 @@ VSP G800 | 80-06-92-00/00:01-65-03/05.
 
 | Hitachi Ops Center REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == HDS HNAS (命令行界面)
@@ -12142,8 +12074,6 @@ N800 | 13.9.6918.05.
 
 | HDS HNAS命令行界面 | SSH | SSH | 22. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == HPE Nimble / Alletra 6000存储
@@ -12612,8 +12542,6 @@ H2020
 
 | HP Nimble REST API | HTTPS | HTTPS | 5392 |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == 华为OceanStor (REST/HTTPS)
@@ -13132,8 +13060,6 @@ V600R005C03
 
 | 华为OceANStor性能REST API | HTTPS | HTTPS | 8088 |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == IBM Cleversafe
@@ -13324,8 +13250,6 @@ V600R005C03
 
 | IBM Cleversafe REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == IBM DS 8K (DSCLI)
@@ -13721,8 +13645,6 @@ V600R005C03
 
 | IBM DS命令行界面 | DSNI | DSNI |  |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == IBM PowerVM (SSH)
@@ -13904,8 +13826,6 @@ V600R005C03
 
 | IBM硬件管理控制台SSH访问 | SSH | SSH | 22. |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == IBM SVC (命令行界面)
@@ -14494,8 +14414,6 @@ V600R005C03
 
 | IBM SVC命令行界面 | SSH | SSH | 22. |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == IBM XIV和A9000 (XIVCLI)
@@ -14907,8 +14825,6 @@ V600R005C03
 
 | IBM XIV命令行界面 | XIV命令行界面 | TCP | 7778 |  | true | false | true | false 
 |===
-<<top,返回顶部>>
-
 
 
 == Infinidat Infiniband (HTTP)
@@ -15235,20 +15151,17 @@ F6304 | 6.0.31.0
 
 | Infinidat REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Microsoft Azure计算
 
 此数据收集器支持的型号和版本：
 
-|===
-| API版本 
+API版本：
+
+* 2018年6月1日
 
 
-| 2018年6月1日 
-|===
 此数据收集器支持的产品：
 
 |===
@@ -15484,8 +15397,6 @@ F6304 | 6.0.31.0
 
 | Microsoft Azure计算REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Microsoft Hyper-V
@@ -15883,8 +15794,6 @@ F6304 | 6.0.31.0
 
 | WMI | WMI | WMI | 135. |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == NetApp 7模式
@@ -16784,8 +16693,6 @@ Data ONTAP 8.2.5 7-模式版
 
 | NetApp 7模式ZAPI | ZAPI | ZAPI |  |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == NetApp Cloud Volumes Service
@@ -16973,8 +16880,6 @@ Data ONTAP 8.2.5 7-模式版
 
 | Cloud Volumes Service REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == 适用于 NetApp ONTAP 的 Amazon FSX
@@ -17615,8 +17520,6 @@ Data ONTAP 8.2.5 7-模式版
 
 | NetApp ONTAP API | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == NetApp集群模式Data ONTAP 8.1.1及更高版本
@@ -19069,8 +18972,6 @@ V6240 | 8.2.3P5
 
 | NetApp ONTAP API | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == NetApp SolidFire 8.1+
@@ -19666,8 +19567,6 @@ SF9605 | 11.1.0.72
 
 | SolidFire REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == NetApp StorageGRID (HTTPS)
@@ -19976,8 +19875,6 @@ SF9605 | 11.1.0.72
 
 | StorageGRID REST API | HTTPS | HTTPS | 443. |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Nutanix存储(REST)
@@ -20538,8 +20435,6 @@ NX-8150-G8 | 6.5.1.6.
 
 | Nutanix REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == OpenStack (REST API/SSH)
@@ -20820,8 +20715,6 @@ NX-8150-G8 | 6.5.1.6.
 
 | OpenStack SSH | SSH | SSH | 22. |  | true | false | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Oracle ZFS (HTTPS)
@@ -21338,8 +21231,6 @@ Sun ZFS Storage 7450 | 1-1.1
 
 | Oracle ZFS REST API | HTTP/HTTPS | HTTP/HTTPS | 215. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Pure Storage FlashArray (HTTP)
@@ -21832,8 +21723,6 @@ FA-x70 | 4.8.8.
 
 | Pure Storage REST API | HTTP/HTTPS | HTTP/HTTPS | 80/443 |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Red Hat RHV (REST)
@@ -22075,8 +21964,6 @@ FA-x70 | 4.8.8.
 
 | Red Hat RHEV REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == Rubeck存储
@@ -22367,8 +22254,6 @@ FA-x70 | 4.8.8.
 
 | Rub里克 存储REST API | HTTPS | HTTPS | 443. |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == NetApp HCI 虚拟中心
@@ -22834,22 +22719,19 @@ VMware vCenter Server 8.0.1内部版本21815093
 
 | VMware REST API | Web 服务 | HTTP/HTTPS | 80/443 |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == 基于 AWS 的 VMware Cloud
 
 此数据收集器支持的型号和版本：
 
-|===
-| API版本 
+API版本：
+
+* VMware vCenter Server 7.0.3内部版本20532039
+* VMware vCenter Server 7.0.3内部版本20870699
+* VMware vCenter Server 8.0.0内部版本21709157
 
 
-| VMware vCenter Server 7.0.3内部版本20532039
-VMware vCenter Server 7.0.3内部版本20870699
-VMware vCenter Server 8.0.0内部版本21709157 
-|===
 此数据收集器支持的产品：
 
 |===
@@ -23226,104 +23108,101 @@ VMware vCenter Server 8.0.0内部版本21709157
 
 | VMware REST API | Web 服务 | HTTP/HTTPS | 80/443 |  | true | true | true | true 
 |===
-<<top,返回顶部>>
-
 
 
 == VMware vSphere (Web服务)
 
 此数据收集器支持的型号和版本：
 
-|===
-| API版本 
+API版本：
+
+* VMware ESXi 6.0.0内部版本10719132
+* VMware ESXi 6.0.0内部版本2494585
+* VMware ESXi 6.0.0内部版本5572656
+* VMware ESXi 6.0.0内部版本9313334
+* VMware ESXi 6.5.0内部版本14990892
+* VMware ESXi 6.5.0内部版本5969303
+* VMware ESXi 7.0.0内部版本-55843807
+* VMware ESXi 7.0.3内部版本20036589
+* VMware ESXi 7.0.3内部版本20328353
+* VMware ESXi 7.0.3内部版本20842708
+* VMware vCenter Server 5.0.0内部版本3073236
+* VMware vCenter Server 5.0.0内部版本455964
+* VMware vCenter Server 5.0.0内部版本623373
+* VMware vCenter Server 5.1.0内部版本38147.9
+* VMware vCenter Server 5.5.0内部版本1750787
+* VMware vCenter Server 5.5.0内部版本2442329
+* VMware vCenter Server 5.5.0内部版本3000241
+* VMware vCenter Server 5.5.0内部版本3252642
+* VMware vCenter 5.5.0内部版本-3721164
+* VMware vCenter Server 5.5.0内部版本4180647
+* VMware vCenter Server 5.5.0内部版本6516310
+* VMware vCenter Server 5.5.0内部版本9911218
+* VMware vCenter Server 6.0.0内部版本13638472
+* VMware vCenter Server 6.0.0内部版本14510545
+* VMware vCenter Server 6.0.0内部版本-27.6511
+* VMware vCenter Server 6.0.0内部版本3634793
+* VMware vCenter Server 6.0.0内部版本3634794
+* VMware vCenter Server 6.0.0内部版本5960大型 机
+* VMware vCenter 6.0.0内部版本-7924803
+* VMware vCenter Server 6.0.0内部版本8803875
+* VMware vCenter Server 6.0.0内部版本9313458
+* VMware vCenter Server 6.5.0内部版本10964411
+* VMware vCenter Server 6.5.0内部版本15679215
+* VMware vCenter Server 6.5.0内部版本17590285
+* VMware vCenter Server 6.5.0内部版本17994927
+* VMware vCenter Server 6.5.0内部版本184998uce.
+* VMware vCenter Server 6.5.0内部版本18711281
+* VMware vCenter Server 6.5.0内部版本19261680
+* VMware vCenter Server 6.5.0内部版本20510539
+* VMware vCenter Server 6.5.0内部版本7119157
+* VMware vCenter 6.7.0内部版本-10244857
+* VMware vCenter Server 6.7.0内部版本11727113
+* VMware vCenter Server 6.7.0内部版本-213M7421
+* VMware vCenter 6.7.0内部版本-13639324
+* VMware vCenter 6.7.0内部版本-14368073
+* VMware vCenter Server 6.7.0内部版本15129973
+* VMware vCenter 6.7.0内部版本15679289
+* VMware vCenter 6.7.0内部版本17137327
+* VMware vCenter Server 6.7.0内部版本18010597
+* VMware vCenter Server 6.7.0内部版本18485185
+* VMware vCenter Server 6.7.0内部版本18831049
+* VMware vCenter 6.7.0内部版本-19299595
+* VMware vCenter 6.7.0内部版本-19832247
+* VMware vCenter 6.7.0内部版本-19832280
+* VMware vCenter Server 6.7.0内部版本20504301
+* VMware vCenter Server 6.7.0内部版本20504362
+* VMware vCenter Server 6.7.0内部版本8170161
+* VMware vCenter 6.7.0内部版本9433931
+* VMware vCenter Server 7.0.0内部版本16620013
+* VMware vCenter Server 7.0.0内部版本1674670
+* VMware vCenter Server 7.0.1内部版本17491160
+* VMware vCenter Server 7.0.2内部版本17694817
+* VMware vCenter Server 7.0.2内部版本17958471
+* VMware vCenter Server 7.0.2内部版本18356314
+* VMware vCenter Server 7.0.2内部版本18455184
+* VMware vCenter Server 7.0.3内部版本18700403
+* VMware vCenter Server 7.0.3内部版本18778458
+* VMware vCenter 7.0.3内部版本19234570
+* VMware vCenter 7.0.3内部版本-19480866
+* VMware vCenter 7.0.3内部版本-19717403
+* VMware vCenter Server 7.0.3内部版本-211473
+* VMware vCenter Server 7.0.3内部版本20150588
+* VMware vCenter Server 7.0.3内部版本20395099
+* VMware vCenter Server 7.0.3内部版本20845200
+* VMware vCenter Server 7.0.3内部版本20990077
+* VMware vCenter Server 7.0.3内部版本21290409
+* VMware vCenter Server 7.0.3内部版本21477706
+* VMware vCenter Server 7.0.3内部版本21784236
+* VMware vCenter 7.0.3内部版本21958406
+* VMware vCenter 8.0.0内部版本-20920323
+* VMware vCenter Server 8.0.0内部版本21216066
+* VMware vCenter Server 8.0.0内部版本21457384
+* VMware vCenter Server 8.0.1内部版本21560480
+* VMware vCenter Server 8.0.1内部版本21815093
+* VMware vCenter Server 8.0.1内部版本21860503
 
 
-| VMware ESXi 6.0.0内部版本10719132
-VMware ESXi 6.0.0内部版本2494585
-VMware ESXi 6.0.0内部版本5572656
-VMware ESXi 6.0.0内部版本9313334
-VMware ESXi 6.5.0内部版本14990892
-VMware ESXi 6.5.0内部版本5969303
-VMware ESXi 7.0.0内部版本-55843807
-VMware ESXi 7.0.3内部版本20036589
-VMware ESXi 7.0.3内部版本20328353
-VMware ESXi 7.0.3内部版本20842708
-VMware vCenter Server 5.0.0内部版本3073236
-VMware vCenter Server 5.0.0内部版本455964
-VMware vCenter Server 5.0.0内部版本623373
-VMware vCenter Server 5.1.0内部版本38147.9
-VMware vCenter Server 5.5.0内部版本1750787
-VMware vCenter Server 5.5.0内部版本2442329
-VMware vCenter Server 5.5.0内部版本3000241
-VMware vCenter Server 5.5.0内部版本3252642
-VMware vCenter Server 5.5.0内部版本-3721164
-VMware vCenter Server 5.5.0内部版本4180647
-VMware vCenter Server 5.5.0内部版本6516310
-VMware vCenter Server 5.5.0内部版本9911218
-VMware vCenter Server 6.0.0内部版本13638472
-VMware vCenter Server 6.0.0内部版本14510545
-VMware vCenter Server 6.0.0内部版本-27.6511
-VMware vCenter Server 6.0.0内部版本3634793
-VMware vCenter Server 6.0.0内部版本3634794
-VMware vCenter Server 6.0.0内部版本5960大型 机
-VMware vCenter Server 6.0.0内部版本-7924803
-VMware vCenter Server 6.0.0内部版本8803875
-VMware vCenter Server 6.0.0内部版本9313458
-VMware vCenter Server 6.5.0内部版本10964411
-VMware vCenter Server 6.5.0内部版本15679215
-VMware vCenter Server 6.5.0内部版本17590285
-VMware vCenter Server 6.5.0内部版本17994927
-VMware vCenter Server 6.5.0内部版本184998uce.
-VMware vCenter Server 6.5.0内部版本18711281
-VMware vCenter Server 6.5.0内部版本19261680
-VMware vCenter Server 6.5.0内部版本20510539
-VMware vCenter Server 6.5.0内部版本7119157
-VMware vCenter Server 6.7.0内部版本-10244857
-VMware vCenter Server 6.7.0内部版本11727113
-VMware vCenter Server 6.7.0内部版本-213M7421
-VMware vCenter Server 6.7.0内部版本-13639324
-VMware vCenter Server 6.7.0内部版本-14368073
-VMware vCenter Server 6.7.0内部版本15129973
-VMware vCenter Server 6.7.0内部版本-15679289
-VMware vCenter Server 6.7.0内部版本-17137327
-VMware vCenter Server 6.7.0内部版本18010597
-VMware vCenter Server 6.7.0内部版本18485185
-VMware vCenter Server 6.7.0内部版本18831049
-VMware vCenter Server 6.7.0内部版本-19299595
-VMware vCenter Server 6.7.0内部版本-19832247
-VMware vCenter Server 6.7.0内部版本-19832280
-VMware vCenter Server 6.7.0内部版本20504301
-VMware vCenter Server 6.7.0内部版本20504362
-VMware vCenter Server 6.7.0内部版本8170161
-VMware vCenter Server 6.7.0内部版本-9433931
-VMware vCenter Server 7.0.0内部版本16620013
-VMware vCenter Server 7.0.0内部版本1674670
-VMware vCenter Server 7.0.1内部版本17491160
-VMware vCenter Server 7.0.2内部版本17694817
-VMware vCenter Server 7.0.2内部版本17958471
-VMware vCenter Server 7.0.2内部版本18356314
-VMware vCenter Server 7.0.2内部版本18455184
-VMware vCenter Server 7.0.3内部版本18700403
-VMware vCenter Server 7.0.3内部版本18778458
-VMware vCenter Server 7.0.3内部版本-19234570
-VMware vCenter Server 7.0.3内部版本-19480866
-VMware vCenter Server 7.0.3内部版本-19717403
-VMware vCenter Server 7.0.3内部版本-211473
-VMware vCenter Server 7.0.3内部版本20150588
-VMware vCenter Server 7.0.3内部版本20395099
-VMware vCenter Server 7.0.3内部版本20845200
-VMware vCenter Server 7.0.3内部版本20990077
-VMware vCenter Server 7.0.3内部版本21290409
-VMware vCenter Server 7.0.3内部版本21477706
-VMware vCenter Server 7.0.3内部版本21784236
-VMware vCenter Server 7.0.3内部版本-21958406
-VMware vCenter Server 8.0.0内部版本-20920323
-VMware vCenter Server 8.0.0内部版本21216066
-VMware vCenter Server 8.0.0内部版本21457384
-VMware vCenter Server 8.0.1内部版本21560480
-VMware vCenter Server 8.0.1内部版本21815093
-VMware vCenter Server 8.0.1内部版本21860503 
-|===
 此数据收集器支持的产品：
 
 |===
@@ -23814,4 +23693,3 @@ VMware vCenter Server 8.0.1内部版本21860503
 
 | VMware REST API | Web 服务 | HTTP/HTTPS | 80/443 |  | true | true | true | true 
 |===
-<<top,返回顶部>>
